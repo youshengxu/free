@@ -1,179 +1,231 @@
-﻿port: 7890
+port: 7890
 socks-port: 7891
 allow-lan: true
 mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: SG_1011 |19.32Mb, server: 13.250.32.154, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: SG_1010 |18.47Mb, server: 13.250.2.10, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 新加坡(绿头外网集团)(Public), server: 101.67.8.178, port: 61232, type: trojan, password: 1b693eb3-3241-362a-9001-5b503789cfbe, skip-cert-verify: true, udp: true}
-  - {name: 台灣(绿头外网集团)(Public), server: 60.249.3.231, port: 3389, type: trojan, password: 22e7ebb2dc8ab524, skip-cert-verify: true, udp: true}
-  - {name: 新加坡(绿头外网集团)(Public) 2, server: 120.232.192.115, port: 3389, type: trojan, password: 22e7ebb2dc8ab524, skip-cert-verify: true, udp: true}
-  - {name: 台灣(绿头外网集团)(Public) 2, server: 60.249.3.231, port: 3389, type: trojan, password: cd39f62aed7b90f6, skip-cert-verify: true, udp: true}
-  - {name: 台灣(绿头外网集团)(Public) 3, server: 211.72.35.153, port: 3389, type: trojan, password: 22e7ebb2dc8ab524, skip-cert-verify: true, udp: true}
-  - {name: 台灣(绿头外网集团)(Public) 4, server: 211.72.35.153, port: 3389, type: trojan, password: cd39f62aed7b90f6, skip-cert-verify: true, udp: true}
-  - {name: 台灣(绿头外网集团)(Public) 5, server: 116.129.253.201, port: 3389, type: trojan, password: 22e7ebb2dc8ab524, skip-cert-verify: true, udp: true}
-  - {name: 台灣(绿头外网集团)(Public) 6, server: 116.129.253.191, port: 3389, type: trojan, password: cd39f62aed7b90f6, skip-cert-verify: true, udp: true}
-  - {name: 印度(绿头外网集团)(Public), server: 183.240.132.27, port: 21228, type: trojan, password: 1b693eb3-3241-362a-9001-5b503789cfbe, skip-cert-verify: true, udp: true}
-  - {name: HK_731 |25.09Mb, server: 13.70.56.108, port: 11172, type: ss, cipher: chacha20-ietf-poly1305, password: mrjgsYsfaXLp, udp: true}
-  - {name: 台灣(绿头外网集团)(Public) 7, server: 112.15.9.146, port: 3389, type: trojan, password: 22e7ebb2dc8ab524, skip-cert-verify: true, udp: true}
-  - {name: 香港(绿头外网集团)(Public), server: 104.208.112.171, port: 3389, type: trojan, password: 22e7ebb2dc8ab524, skip-cert-verify: true, udp: true}
-  - {name: 台灣(绿头外网集团)(Public) 8, server: 60.249.3.125, port: 3389, type: trojan, password: 22e7ebb2dc8ab524, skip-cert-verify: true, udp: true}
-  - {name: 台灣(绿头外网集团)(Public) 9, server: 112.15.9.146, port: 3389, type: trojan, password: cd39f62aed7b90f6, skip-cert-verify: true, udp: true}
-  - {name: 新加坡(绿头外网集团)(Public) 3, server: 112.15.9.129, port: 3389, type: trojan, password: cd39f62aed7b90f6, skip-cert-verify: true, udp: true}
-  - {name: 日本(绿头外网集团)(Public), server: 20.89.238.230, port: 3389, type: trojan, password: cd39f62aed7b90f6, skip-cert-verify: true, udp: true}
   - {name: 新加坡(绿头外网集团)(Public) 4, server: 117.185.229.24, port: 61233, type: trojan, password: 1b693eb3-3241-362a-9001-5b503789cfbe, skip-cert-verify: true, udp: true}
-  - {name: 台灣(绿头外网集团)(Public) 10, server: 60.249.3.125, port: 3389, type: trojan, password: cd39f62aed7b90f6, skip-cert-verify: true, udp: true}
-  - {name: 香港(绿头外网集团)(Public) 2, server: 13.70.31.16, port: 3389, type: trojan, password: 22e7ebb2dc8ab524, skip-cert-verify: true, udp: true}
-  - {name: 日本(绿头外网集团)(Public) 2, server: 116.129.253.245, port: 3389, type: trojan, password: 22e7ebb2dc8ab524, skip-cert-verify: true, udp: true}
-  - {name: (Youtube技术分享室), server: 104.16.181.103, port: 443, type: vmess, uuid: 7be43971-52f1-48af-9036-454a94b4723a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/ws/?ed=2048", ws-headers: {Host: download.china666.ml}, udp: true}
-  - {name: US_1192 |27.46Mb, server: 52.11.250.183, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: AE_油管 TG 8度科技 3, server: bi.oracleusa.ml, port: 2053, type: vmess, uuid: d176bc78-9bf9-4ab3-9af9-a1e412d95c53, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: bi.oracleusa.ml}, udp: true}
-  - {name: US_油管 TG 8度科技 6, server: usaadm.oracleusa.ml, port: 2053, type: vmess, uuid: c0a40c0e-1724-4cdc-8795-8c2397bb5594, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: usaadm.oracleusa.ml}, udp: true}
-  - {name: 台灣(绿头外网集团)(Public) 11, server: 116.129.253.134, port: 3389, type: trojan, password: cd39f62aed7b90f6, skip-cert-verify: true, udp: true}
-  - {name: AE_油管 TG 8度科技 2, server: bi.oracleusa.ml, port: 2053, type: vmess, uuid: 810a7deb-4fcf-4e21-93bd-3d7685bb8cb4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: bi.oracleusa.ml}, udp: true}
-  - {name: AE_油管 TG 8度科技, server: uae.oracleusa.ml, port: 2053, type: vmess, uuid: 810a7deb-4fcf-4e21-93bd-3d7685bb8cb4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: uae.oracleusa.ml}, udp: true}
-  - {name: 台灣(绿头外网集团)(Public) 12, server: 116.129.253.191, port: 3389, type: trojan, password: 22e7ebb2dc8ab524, skip-cert-verify: true, udp: true}
-  - {name: US_1233 |42.45Mb, server: 209.94.56.152, port: 443, type: vmess, uuid: 3033e157-fdc3-47c0-ae32-fc4fe65fc64d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /9apQabyg9le, ws-headers: {Host: 209.94.56.152}, udp: true}
-  - {name: 日本(绿头外网集团)(Public) 3, server: 123.59.87.29, port: 3389, type: trojan, password: cd39f62aed7b90f6, skip-cert-verify: true, udp: true}
+  - {name: SG_1010 |18.47Mb, server: 13.250.2.10, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
   - {name: 日本(绿头外网集团)(Public) 4, server: 123.59.87.29, port: 3389, type: trojan, password: 22e7ebb2dc8ab524, skip-cert-verify: true, udp: true}
-  - {name: HK_油管 TG 8度科技 3, server: zf.hk01.xfss.cc, port: 24814, type: vmess, uuid: d176bc78-9bf9-4ab3-9af9-a1e412d95c53, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: zf.hk01.xfss.cc}, udp: true}
-  - {name: 油管 TG 8度科技 3, server: nl.oracleusa.ml, port: 2053, type: vmess, uuid: d176bc78-9bf9-4ab3-9af9-a1e412d95c53, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: nl.oracleusa.ml}, udp: true}
-  - {name: 日本(绿头外网集团)(Public) 5, server: 116.129.253.227, port: 3389, type: trojan, password: 22e7ebb2dc8ab524, skip-cert-verify: true, udp: true}
-  - {name: CN_油管 TG 8度科技 25, server: 120.233.7.78, port: 50111, type: ssr, cipher: rc4-md5, password: abK09D1FnV, protocol: auth_aes128_md5, obfs: http_post, protocol-param: 294799:MioZb37IlY, obfs-param: "", udp: true}
+  - {name: 印度(绿头外网集团)(Public), server: 183.240.132.27, port: 21228, type: trojan, password: 1b693eb3-3241-362a-9001-5b503789cfbe, skip-cert-verify: true, udp: true}
+  - {name: 日本(绿头外网集团)(Public) 3, server: 123.59.87.29, port: 3389, type: trojan, password: cd39f62aed7b90f6, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇦🇺AU-🇦🇺AU_85, server: www.sanjose2021.ga, port: 443, type: trojan, password: 6cfa5ab4-c2a5-4ad1-8b75-ff12bc59b770, sni: www.sanjose2021.ga, skip-cert-verify: true, udp: true}
   - {name: US_油管 TG 8度科技 25, server: 169.197.142.99, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: Relay_🇨🇳CN-🇺🇸US_483, server: g3.gs1024.com, port: 21224, type: trojan, password: 1b693eb3-3241-362a-9001-5b503789cfbe, sni: g3.gs1024.com, skip-cert-verify: true, udp: true}
+  - {name: (Youtube技术分享室), server: 104.16.181.103, port: 443, type: vmess, uuid: 7be43971-52f1-48af-9036-454a94b4723a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/ws/?ed=2048", ws-headers: {Host: download.china666.ml}, udp: true}
+  - {name: jp-am48-9.eqnode.net:8081, server: jp-am48-9.eqnode.net, port: 8081, type: ssr, cipher: aes-256-cfb, password: 3H2aN5Gnm, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
+  - {name: US_1192 |27.46Mb, server: 52.11.250.183, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: Relay_🇨🇳CN-🇹🇼TW_390, server: 117.28.243.154, port: 6150, type: ss, cipher: rc4-md5, password: passinfo123, udp: true}
+  - {name: Relay_🇨🇳CN-🇺🇸US_495, server: 117.185.229.24, port: 21224, type: trojan, password: 1b693eb3-3241-362a-9001-5b503789cfbe, skip-cert-verify: true, udp: true}
+  - {name: NONE 9, server: g3.gs1024.com, port: 21225, type: trojan, password: 1b693eb3-3241-362a-9001-5b503789cfbe, sni: g3.gs1024.com, skip-cert-verify: true, udp: true}
+  - {name: US_1233 |42.45Mb, server: 209.94.56.152, port: 443, type: vmess, uuid: 3033e157-fdc3-47c0-ae32-fc4fe65fc64d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /9apQabyg9le, ws-headers: {Host: 209.94.56.152}, udp: true}
+  - {name: ZZ_3032, server: 134.195.196.81, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: Relay_🇨🇳CN-🇩🇪DE_380, server: 117.28.243.220, port: 8186, type: ss, cipher: rc4-md5, password: passinfo123, udp: true}
+  - {name: ZZ_3018, server: 134.195.196.81, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 新加坡(绿头外网集团)(Public), server: 101.67.8.178, port: 61232, type: trojan, password: 1b693eb3-3241-362a-9001-5b503789cfbe, skip-cert-verify: true, udp: true}
+  - {name: HK_738 | 2.76Mb, server: az01.thenodemoon365.xyz, port: 20005, type: ss, cipher: chacha20-ietf-poly1305, password: f5937a46-7fb1-480f-95d5-abe8f1dad53f, udp: true}
+  - {name: 日本(绿头外网集团)(Public), server: 106.75.233.91, port: 3389, type: trojan, password: cd39f62aed7b90f6, skip-cert-verify: true, udp: true}
+  - {name: 日本(绿头外网集团)(Public) 2, server: 113.31.109.30, port: 3389, type: trojan, password: 22e7ebb2dc8ab524, skip-cert-verify: true, udp: true}
+  - {name: 日本(绿头外网集团)(Public) 3 2, server: 113.31.155.165, port: 3389, type: trojan, password: 22e7ebb2dc8ab524, skip-cert-verify: true, udp: true}
+  - {name: 日本(绿头外网集团)(Public) 4 2, server: 106.75.168.104, port: 3389, type: trojan, password: cd39f62aed7b90f6, skip-cert-verify: true, udp: true}
+  - {name: 印度(绿头外网集团)(Public) 2, server: 183.240.132.27, port: 21228, type: trojan, password: 1b693eb3-3241-362a-9001-5b503789cfbe, skip-cert-verify: true, udp: true}
+  - {name: JP_929 | 6.50Mb, server: 106.180.225.69, port: 1443, type: trojan, password: 7x42LetRa0, skip-cert-verify: true, udp: true}
+  - {name: 日本(绿头外网集团)(Public) 5, server: 106.75.154.24, port: 3389, type: trojan, password: 22e7ebb2dc8ab524, skip-cert-verify: true, udp: true}
+  - {name: 日本(绿头外网集团)(Public) 6, server: 123.59.72.193, port: 3389, type: trojan, password: 22e7ebb2dc8ab524, skip-cert-verify: true, udp: true}
+  - {name: 日本(绿头外网集团)(Public) 7, server: 120.132.50.158, port: 3389, type: trojan, password: cd39f62aed7b90f6, skip-cert-verify: true, udp: true}
+  - {name: 日本(绿头外网集团)(Public) 8, server: 123.59.87.29, port: 3389, type: trojan, password: 22e7ebb2dc8ab524, skip-cert-verify: true, udp: true}
+  - {name: HK_742 | 9.40Mb, server: az01.thenodemoon365.xyz, port: 20000, type: ss, cipher: chacha20-ietf-poly1305, password: f5937a46-7fb1-480f-95d5-abe8f1dad53f, udp: true}
+  - {name: 日本(绿头外网集团)(Public) 9, server: 106.75.154.24, port: 3389, type: trojan, password: cd39f62aed7b90f6, skip-cert-verify: true, udp: true}
+  - {name: 日本(绿头外网集团)(Public) 10, server: 123.59.72.193, port: 3389, type: trojan, password: cd39f62aed7b90f6, skip-cert-verify: true, udp: true}
+  - {name: 日本(绿头外网集团)(Public) 11, server: 123.59.87.29, port: 3389, type: trojan, password: cd39f62aed7b90f6, skip-cert-verify: true, udp: true}
+  - {name: 日本(绿头外网集团)(Public) 12, server: 106.75.233.91, port: 3389, type: trojan, password: 22e7ebb2dc8ab524, skip-cert-verify: true, udp: true}
+  - {name: SG_1044 | 2.95Mb, server: sg27.holiganfan.com, port: 10088, type: trojan, password: 17882ef6-b07d-401c-8cee-636e512c77ba, sni: sg27.holiganfan.com, skip-cert-verify: true, udp: true}
+  - {name: 日本(绿头外网集团)(Public) 13, server: 113.31.109.30, port: 3389, type: trojan, password: cd39f62aed7b90f6, skip-cert-verify: true, udp: true}
+  - {name: JP_861 | 9.67Mb, server: 172.105.222.98, port: 80, type: vmess, uuid: 4e1d0b12-25f0-363f-8659-9c6a3ca1fcda, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 172.105.222.98}, udp: true}
+  - {name: 日本(绿头外网集团)(Public) 14, server: 113.31.155.165, port: 3389, type: trojan, password: cd39f62aed7b90f6, skip-cert-verify: true, udp: true}
+  - {name: HK_741 | 9.55Mb, server: az01.thenodemoon365.xyz, port: 20007, type: ss, cipher: chacha20-ietf-poly1305, password: f5937a46-7fb1-480f-95d5-abe8f1dad53f, udp: true}
+  - {name: 日本(绿头外网集团)(Public) 15, server: 120.132.50.158, port: 3389, type: trojan, password: 22e7ebb2dc8ab524, skip-cert-verify: true, udp: true}
+  - {name: US_1202, server: 104.243.30.59, port: 247, type: ss, cipher: aes-256-cfb, password: bwhskrskr05, udp: true}
+  - {name: US_1242 | 0.58Mb, server: 45.32.94.166, port: 31676, type: vmess, uuid: 6f3ec45c-5283-40e8-aea9-7749f4c75753, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [45.32.94.166]}}, udp: true}
+  - {name: US_1192 |27.46Mb 2, server: 52.11.250.183, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: US_2886 | 8.30Mb, server: www.gomacau.gq, port: 443, type: trojan, password: b5fc9fa9-796d-4185-a316-395ecac04a85, sni: www.gomacau.gq, skip-cert-verify: true, udp: true}
+  - {name: JP_923 | 6.60Mb, server: jp-am48-9.eqnode.net, port: 8081, type: ssr, cipher: aes-256-cfb, password: 3H2aN5Gnm, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
+  - {name: US_1238 |43.15Mb, server: 209.94.56.152, port: 443, type: vmess, uuid: 3033e157-fdc3-47c0-ae32-fc4fe65fc64d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /9apQabyg9le, ws-headers: {Host: 209.94.56.152}, udp: true}
+  - {name: HK_740 | 6.86Mb, server: az01.thenodemoon365.xyz, port: 20002, type: ss, cipher: aes-256-gcm, password: f5937a46-7fb1-480f-95d5-abe8f1dad53f, udp: true}
+  - {name: 日本(绿头外网集团)(Public) 16, server: 106.75.168.104, port: 3389, type: trojan, password: 22e7ebb2dc8ab524, skip-cert-verify: true, udp: true}
+  - {name: US_2360 |16.18Mb, server: 167.88.61.175, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: HK_739 | 6.94Mb, server: az01.thenodemoon365.xyz, port: 20001, type: ss, cipher: chacha20-ietf-poly1305, password: f5937a46-7fb1-480f-95d5-abe8f1dad53f, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - SG_1011 |19.32Mb
-      - SG_1010 |18.47Mb
-      - 新加坡(绿头外网集团)(Public)
-      - 台灣(绿头外网集团)(Public)
-      - 新加坡(绿头外网集团)(Public) 2
-      - 台灣(绿头外网集团)(Public) 2
-      - 台灣(绿头外网集团)(Public) 3
-      - 台灣(绿头外网集团)(Public) 4
-      - 台灣(绿头外网集团)(Public) 5
-      - 台灣(绿头外网集团)(Public) 6
-      - 印度(绿头外网集团)(Public)
-      - HK_731 |25.09Mb
-      - 台灣(绿头外网集团)(Public) 7
-      - 香港(绿头外网集团)(Public)
-      - 台灣(绿头外网集团)(Public) 8
-      - 台灣(绿头外网集团)(Public) 9
-      - 新加坡(绿头外网集团)(Public) 3
-      - 日本(绿头外网集团)(Public)
       - 新加坡(绿头外网集团)(Public) 4
-      - 台灣(绿头外网集团)(Public) 10
-      - 香港(绿头外网集团)(Public) 2
-      - 日本(绿头外网集团)(Public) 2
-      - (Youtube技术分享室)
-      - US_1192 |27.46Mb
-      - AE_油管 TG 8度科技 3
-      - US_油管 TG 8度科技 6
-      - 台灣(绿头外网集团)(Public) 11
-      - AE_油管 TG 8度科技 2
-      - AE_油管 TG 8度科技
-      - 台灣(绿头外网集团)(Public) 12
-      - US_1233 |42.45Mb
-      - 日本(绿头外网集团)(Public) 3
+      - SG_1010 |18.47Mb
       - 日本(绿头外网集团)(Public) 4
-      - HK_油管 TG 8度科技 3
-      - 油管 TG 8度科技 3
-      - 日本(绿头外网集团)(Public) 5
-      - CN_油管 TG 8度科技 25
+      - 印度(绿头外网集团)(Public)
+      - 日本(绿头外网集团)(Public) 3
+      - Relay_🇦🇺AU-🇦🇺AU_85
       - US_油管 TG 8度科技 25
+      - Relay_🇨🇳CN-🇺🇸US_483
+      - (Youtube技术分享室)
+      - jp-am48-9.eqnode.net:8081
+      - US_1192 |27.46Mb
+      - Relay_🇨🇳CN-🇹🇼TW_390
+      - Relay_🇨🇳CN-🇺🇸US_495
+      - NONE 9
+      - US_1233 |42.45Mb
+      - ZZ_3032
+      - Relay_🇨🇳CN-🇩🇪DE_380
+      - ZZ_3018
+      - 新加坡(绿头外网集团)(Public)
+      - HK_738 | 2.76Mb
+      - 日本(绿头外网集团)(Public)
+      - 日本(绿头外网集团)(Public) 2
+      - 日本(绿头外网集团)(Public) 3 2
+      - 日本(绿头外网集团)(Public) 4 2
+      - 印度(绿头外网集团)(Public) 2
+      - JP_929 | 6.50Mb
+      - 日本(绿头外网集团)(Public) 5
+      - 日本(绿头外网集团)(Public) 6
+      - 日本(绿头外网集团)(Public) 7
+      - 日本(绿头外网集团)(Public) 8
+      - HK_742 | 9.40Mb
+      - 日本(绿头外网集团)(Public) 9
+      - 日本(绿头外网集团)(Public) 10
+      - 日本(绿头外网集团)(Public) 11
+      - 日本(绿头外网集团)(Public) 12
+      - SG_1044 | 2.95Mb
+      - 日本(绿头外网集团)(Public) 13
+      - JP_861 | 9.67Mb
+      - 日本(绿头外网集团)(Public) 14
+      - HK_741 | 9.55Mb
+      - 日本(绿头外网集团)(Public) 15
+      - US_1202
+      - US_1242 | 0.58Mb
+      - US_1192 |27.46Mb 2
+      - US_2886 | 8.30Mb
+      - JP_923 | 6.60Mb
+      - US_1238 |43.15Mb
+      - HK_740 | 6.86Mb
+      - 日本(绿头外网集团)(Public) 16
+      - US_2360 |16.18Mb
+      - HK_739 | 6.94Mb
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - SG_1011 |19.32Mb
-      - SG_1010 |18.47Mb
-      - 新加坡(绿头外网集团)(Public)
-      - 台灣(绿头外网集团)(Public)
-      - 新加坡(绿头外网集团)(Public) 2
-      - 台灣(绿头外网集团)(Public) 2
-      - 台灣(绿头外网集团)(Public) 3
-      - 台灣(绿头外网集团)(Public) 4
-      - 台灣(绿头外网集团)(Public) 5
-      - 台灣(绿头外网集团)(Public) 6
-      - 印度(绿头外网集团)(Public)
-      - HK_731 |25.09Mb
-      - 台灣(绿头外网集团)(Public) 7
-      - 香港(绿头外网集团)(Public)
-      - 台灣(绿头外网集团)(Public) 8
-      - 台灣(绿头外网集团)(Public) 9
-      - 新加坡(绿头外网集团)(Public) 3
-      - 日本(绿头外网集团)(Public)
       - 新加坡(绿头外网集团)(Public) 4
-      - 台灣(绿头外网集团)(Public) 10
-      - 香港(绿头外网集团)(Public) 2
-      - 日本(绿头外网集团)(Public) 2
-      - (Youtube技术分享室)
-      - US_1192 |27.46Mb
-      - AE_油管 TG 8度科技 3
-      - US_油管 TG 8度科技 6
-      - 台灣(绿头外网集团)(Public) 11
-      - AE_油管 TG 8度科技 2
-      - AE_油管 TG 8度科技
-      - 台灣(绿头外网集团)(Public) 12
-      - US_1233 |42.45Mb
-      - 日本(绿头外网集团)(Public) 3
+      - SG_1010 |18.47Mb
       - 日本(绿头外网集团)(Public) 4
-      - HK_油管 TG 8度科技 3
-      - 油管 TG 8度科技 3
-      - 日本(绿头外网集团)(Public) 5
-      - CN_油管 TG 8度科技 25
+      - 印度(绿头外网集团)(Public)
+      - 日本(绿头外网集团)(Public) 3
+      - Relay_🇦🇺AU-🇦🇺AU_85
       - US_油管 TG 8度科技 25
+      - Relay_🇨🇳CN-🇺🇸US_483
+      - (Youtube技术分享室)
+      - jp-am48-9.eqnode.net:8081
+      - US_1192 |27.46Mb
+      - Relay_🇨🇳CN-🇹🇼TW_390
+      - Relay_🇨🇳CN-🇺🇸US_495
+      - NONE 9
+      - US_1233 |42.45Mb
+      - ZZ_3032
+      - Relay_🇨🇳CN-🇩🇪DE_380
+      - ZZ_3018
+      - 新加坡(绿头外网集团)(Public)
+      - HK_738 | 2.76Mb
+      - 日本(绿头外网集团)(Public)
+      - 日本(绿头外网集团)(Public) 2
+      - 日本(绿头外网集团)(Public) 3 2
+      - 日本(绿头外网集团)(Public) 4 2
+      - 印度(绿头外网集团)(Public) 2
+      - JP_929 | 6.50Mb
+      - 日本(绿头外网集团)(Public) 5
+      - 日本(绿头外网集团)(Public) 6
+      - 日本(绿头外网集团)(Public) 7
+      - 日本(绿头外网集团)(Public) 8
+      - HK_742 | 9.40Mb
+      - 日本(绿头外网集团)(Public) 9
+      - 日本(绿头外网集团)(Public) 10
+      - 日本(绿头外网集团)(Public) 11
+      - 日本(绿头外网集团)(Public) 12
+      - SG_1044 | 2.95Mb
+      - 日本(绿头外网集团)(Public) 13
+      - JP_861 | 9.67Mb
+      - 日本(绿头外网集团)(Public) 14
+      - HK_741 | 9.55Mb
+      - 日本(绿头外网集团)(Public) 15
+      - US_1202
+      - US_1242 | 0.58Mb
+      - US_1192 |27.46Mb 2
+      - US_2886 | 8.30Mb
+      - JP_923 | 6.60Mb
+      - US_1238 |43.15Mb
+      - HK_740 | 6.86Mb
+      - 日本(绿头外网集团)(Public) 16
+      - US_2360 |16.18Mb
+      - HK_739 | 6.94Mb
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - SG_1011 |19.32Mb
-      - SG_1010 |18.47Mb
-      - 新加坡(绿头外网集团)(Public)
-      - 台灣(绿头外网集团)(Public)
-      - 新加坡(绿头外网集团)(Public) 2
-      - 台灣(绿头外网集团)(Public) 2
-      - 台灣(绿头外网集团)(Public) 3
-      - 台灣(绿头外网集团)(Public) 4
-      - 台灣(绿头外网集团)(Public) 5
-      - 台灣(绿头外网集团)(Public) 6
-      - 印度(绿头外网集团)(Public)
-      - HK_731 |25.09Mb
-      - 台灣(绿头外网集团)(Public) 7
-      - 香港(绿头外网集团)(Public)
-      - 台灣(绿头外网集团)(Public) 8
-      - 台灣(绿头外网集团)(Public) 9
-      - 新加坡(绿头外网集团)(Public) 3
-      - 日本(绿头外网集团)(Public)
       - 新加坡(绿头外网集团)(Public) 4
-      - 台灣(绿头外网集团)(Public) 10
-      - 香港(绿头外网集团)(Public) 2
-      - 日本(绿头外网集团)(Public) 2
-      - (Youtube技术分享室)
-      - US_1192 |27.46Mb
-      - AE_油管 TG 8度科技 3
-      - US_油管 TG 8度科技 6
-      - 台灣(绿头外网集团)(Public) 11
-      - AE_油管 TG 8度科技 2
-      - AE_油管 TG 8度科技
-      - 台灣(绿头外网集团)(Public) 12
-      - US_1233 |42.45Mb
-      - 日本(绿头外网集团)(Public) 3
+      - SG_1010 |18.47Mb
       - 日本(绿头外网集团)(Public) 4
-      - HK_油管 TG 8度科技 3
-      - 油管 TG 8度科技 3
-      - 日本(绿头外网集团)(Public) 5
-      - CN_油管 TG 8度科技 25
+      - 印度(绿头外网集团)(Public)
+      - 日本(绿头外网集团)(Public) 3
+      - Relay_🇦🇺AU-🇦🇺AU_85
       - US_油管 TG 8度科技 25
+      - Relay_🇨🇳CN-🇺🇸US_483
+      - (Youtube技术分享室)
+      - jp-am48-9.eqnode.net:8081
+      - US_1192 |27.46Mb
+      - Relay_🇨🇳CN-🇹🇼TW_390
+      - Relay_🇨🇳CN-🇺🇸US_495
+      - NONE 9
+      - US_1233 |42.45Mb
+      - ZZ_3032
+      - Relay_🇨🇳CN-🇩🇪DE_380
+      - ZZ_3018
+      - 新加坡(绿头外网集团)(Public)
+      - HK_738 | 2.76Mb
+      - 日本(绿头外网集团)(Public)
+      - 日本(绿头外网集团)(Public) 2
+      - 日本(绿头外网集团)(Public) 3 2
+      - 日本(绿头外网集团)(Public) 4 2
+      - 印度(绿头外网集团)(Public) 2
+      - JP_929 | 6.50Mb
+      - 日本(绿头外网集团)(Public) 5
+      - 日本(绿头外网集团)(Public) 6
+      - 日本(绿头外网集团)(Public) 7
+      - 日本(绿头外网集团)(Public) 8
+      - HK_742 | 9.40Mb
+      - 日本(绿头外网集团)(Public) 9
+      - 日本(绿头外网集团)(Public) 10
+      - 日本(绿头外网集团)(Public) 11
+      - 日本(绿头外网集团)(Public) 12
+      - SG_1044 | 2.95Mb
+      - 日本(绿头外网集团)(Public) 13
+      - JP_861 | 9.67Mb
+      - 日本(绿头外网集团)(Public) 14
+      - HK_741 | 9.55Mb
+      - 日本(绿头外网集团)(Public) 15
+      - US_1202
+      - US_1242 | 0.58Mb
+      - US_1192 |27.46Mb 2
+      - US_2886 | 8.30Mb
+      - JP_923 | 6.60Mb
+      - US_1238 |43.15Mb
+      - HK_740 | 6.86Mb
+      - 日本(绿头外网集团)(Public) 16
+      - US_2360 |16.18Mb
+      - HK_739 | 6.94Mb
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -192,193 +244,231 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - SG_1011 |19.32Mb
-      - SG_1010 |18.47Mb
-      - 新加坡(绿头外网集团)(Public)
-      - 台灣(绿头外网集团)(Public)
-      - 新加坡(绿头外网集团)(Public) 2
-      - 台灣(绿头外网集团)(Public) 2
-      - 台灣(绿头外网集团)(Public) 3
-      - 台灣(绿头外网集团)(Public) 4
-      - 台灣(绿头外网集团)(Public) 5
-      - 台灣(绿头外网集团)(Public) 6
-      - 印度(绿头外网集团)(Public)
-      - HK_731 |25.09Mb
-      - 台灣(绿头外网集团)(Public) 7
-      - 香港(绿头外网集团)(Public)
-      - 台灣(绿头外网集团)(Public) 8
-      - 台灣(绿头外网集团)(Public) 9
-      - 新加坡(绿头外网集团)(Public) 3
-      - 日本(绿头外网集团)(Public)
       - 新加坡(绿头外网集团)(Public) 4
-      - 台灣(绿头外网集团)(Public) 10
-      - 香港(绿头外网集团)(Public) 2
-      - 日本(绿头外网集团)(Public) 2
-      - (Youtube技术分享室)
-      - US_1192 |27.46Mb
-      - AE_油管 TG 8度科技 3
-      - US_油管 TG 8度科技 6
-      - 台灣(绿头外网集团)(Public) 11
-      - AE_油管 TG 8度科技 2
-      - AE_油管 TG 8度科技
-      - 台灣(绿头外网集团)(Public) 12
-      - US_1233 |42.45Mb
-      - 日本(绿头外网集团)(Public) 3
+      - SG_1010 |18.47Mb
       - 日本(绿头外网集团)(Public) 4
-      - HK_油管 TG 8度科技 3
-      - 油管 TG 8度科技 3
-      - 日本(绿头外网集团)(Public) 5
-      - CN_油管 TG 8度科技 25
+      - 印度(绿头外网集团)(Public)
+      - 日本(绿头外网集团)(Public) 3
+      - Relay_🇦🇺AU-🇦🇺AU_85
       - US_油管 TG 8度科技 25
+      - Relay_🇨🇳CN-🇺🇸US_483
+      - (Youtube技术分享室)
+      - jp-am48-9.eqnode.net:8081
+      - US_1192 |27.46Mb
+      - Relay_🇨🇳CN-🇹🇼TW_390
+      - Relay_🇨🇳CN-🇺🇸US_495
+      - NONE 9
+      - US_1233 |42.45Mb
+      - ZZ_3032
+      - Relay_🇨🇳CN-🇩🇪DE_380
+      - ZZ_3018
+      - 新加坡(绿头外网集团)(Public)
+      - HK_738 | 2.76Mb
+      - 日本(绿头外网集团)(Public)
+      - 日本(绿头外网集团)(Public) 2
+      - 日本(绿头外网集团)(Public) 3 2
+      - 日本(绿头外网集团)(Public) 4 2
+      - 印度(绿头外网集团)(Public) 2
+      - JP_929 | 6.50Mb
+      - 日本(绿头外网集团)(Public) 5
+      - 日本(绿头外网集团)(Public) 6
+      - 日本(绿头外网集团)(Public) 7
+      - 日本(绿头外网集团)(Public) 8
+      - HK_742 | 9.40Mb
+      - 日本(绿头外网集团)(Public) 9
+      - 日本(绿头外网集团)(Public) 10
+      - 日本(绿头外网集团)(Public) 11
+      - 日本(绿头外网集团)(Public) 12
+      - SG_1044 | 2.95Mb
+      - 日本(绿头外网集团)(Public) 13
+      - JP_861 | 9.67Mb
+      - 日本(绿头外网集团)(Public) 14
+      - HK_741 | 9.55Mb
+      - 日本(绿头外网集团)(Public) 15
+      - US_1202
+      - US_1242 | 0.58Mb
+      - US_1192 |27.46Mb 2
+      - US_2886 | 8.30Mb
+      - JP_923 | 6.60Mb
+      - US_1238 |43.15Mb
+      - HK_740 | 6.86Mb
+      - 日本(绿头外网集团)(Public) 16
+      - US_2360 |16.18Mb
+      - HK_739 | 6.94Mb
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 台灣(绿头外网集团)(Public)
-      - 台灣(绿头外网集团)(Public) 2
-      - 台灣(绿头外网集团)(Public) 3
-      - 台灣(绿头外网集团)(Public) 4
-      - 台灣(绿头外网集团)(Public) 5
-      - 台灣(绿头外网集团)(Public) 6
-      - 台灣(绿头外网集团)(Public) 7
-      - 香港(绿头外网集团)(Public)
-      - 台灣(绿头外网集团)(Public) 8
-      - 台灣(绿头外网集团)(Public) 9
-      - 台灣(绿头外网集团)(Public) 10
-      - 香港(绿头外网集团)(Public) 2
-      - 台灣(绿头外网集团)(Public) 11
-      - 台灣(绿头外网集团)(Public) 12
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - SG_1011 |19.32Mb
-      - SG_1010 |18.47Mb
-      - 新加坡(绿头外网集团)(Public)
-      - 台灣(绿头外网集团)(Public)
-      - 新加坡(绿头外网集团)(Public) 2
-      - 台灣(绿头外网集团)(Public) 2
-      - 台灣(绿头外网集团)(Public) 3
-      - 台灣(绿头外网集团)(Public) 4
-      - 台灣(绿头外网集团)(Public) 5
-      - 台灣(绿头外网集团)(Public) 6
-      - 印度(绿头外网集团)(Public)
-      - HK_731 |25.09Mb
-      - 台灣(绿头外网集团)(Public) 7
-      - 香港(绿头外网集团)(Public)
-      - 台灣(绿头外网集团)(Public) 8
-      - 台灣(绿头外网集团)(Public) 9
-      - 新加坡(绿头外网集团)(Public) 3
-      - 日本(绿头外网集团)(Public)
       - 新加坡(绿头外网集团)(Public) 4
-      - 台灣(绿头外网集团)(Public) 10
-      - 香港(绿头外网集团)(Public) 2
-      - 日本(绿头外网集团)(Public) 2
-      - (Youtube技术分享室)
-      - US_1192 |27.46Mb
-      - AE_油管 TG 8度科技 3
-      - US_油管 TG 8度科技 6
-      - 台灣(绿头外网集团)(Public) 11
-      - AE_油管 TG 8度科技 2
-      - AE_油管 TG 8度科技
-      - 台灣(绿头外网集团)(Public) 12
-      - US_1233 |42.45Mb
-      - 日本(绿头外网集团)(Public) 3
+      - SG_1010 |18.47Mb
       - 日本(绿头外网集团)(Public) 4
-      - HK_油管 TG 8度科技 3
-      - 油管 TG 8度科技 3
-      - 日本(绿头外网集团)(Public) 5
-      - CN_油管 TG 8度科技 25
+      - 印度(绿头外网集团)(Public)
+      - 日本(绿头外网集团)(Public) 3
+      - Relay_🇦🇺AU-🇦🇺AU_85
       - US_油管 TG 8度科技 25
+      - Relay_🇨🇳CN-🇺🇸US_483
+      - (Youtube技术分享室)
+      - jp-am48-9.eqnode.net:8081
+      - US_1192 |27.46Mb
+      - Relay_🇨🇳CN-🇹🇼TW_390
+      - Relay_🇨🇳CN-🇺🇸US_495
+      - NONE 9
+      - US_1233 |42.45Mb
+      - ZZ_3032
+      - Relay_🇨🇳CN-🇩🇪DE_380
+      - ZZ_3018
+      - 新加坡(绿头外网集团)(Public)
+      - HK_738 | 2.76Mb
+      - 日本(绿头外网集团)(Public)
+      - 日本(绿头外网集团)(Public) 2
+      - 日本(绿头外网集团)(Public) 3 2
+      - 日本(绿头外网集团)(Public) 4 2
+      - 印度(绿头外网集团)(Public) 2
+      - JP_929 | 6.50Mb
+      - 日本(绿头外网集团)(Public) 5
+      - 日本(绿头外网集团)(Public) 6
+      - 日本(绿头外网集团)(Public) 7
+      - 日本(绿头外网集团)(Public) 8
+      - HK_742 | 9.40Mb
+      - 日本(绿头外网集团)(Public) 9
+      - 日本(绿头外网集团)(Public) 10
+      - 日本(绿头外网集团)(Public) 11
+      - 日本(绿头外网集团)(Public) 12
+      - SG_1044 | 2.95Mb
+      - 日本(绿头外网集团)(Public) 13
+      - JP_861 | 9.67Mb
+      - 日本(绿头外网集团)(Public) 14
+      - HK_741 | 9.55Mb
+      - 日本(绿头外网集团)(Public) 15
+      - US_1202
+      - US_1242 | 0.58Mb
+      - US_1192 |27.46Mb 2
+      - US_2886 | 8.30Mb
+      - JP_923 | 6.60Mb
+      - US_1238 |43.15Mb
+      - HK_740 | 6.86Mb
+      - 日本(绿头外网集团)(Public) 16
+      - US_2360 |16.18Mb
+      - HK_739 | 6.94Mb
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - SG_1011 |19.32Mb
-      - SG_1010 |18.47Mb
-      - 新加坡(绿头外网集团)(Public)
-      - 台灣(绿头外网集团)(Public)
-      - 新加坡(绿头外网集团)(Public) 2
-      - 台灣(绿头外网集团)(Public) 2
-      - 台灣(绿头外网集团)(Public) 3
-      - 台灣(绿头外网集团)(Public) 4
-      - 台灣(绿头外网集团)(Public) 5
-      - 台灣(绿头外网集团)(Public) 6
-      - 印度(绿头外网集团)(Public)
-      - HK_731 |25.09Mb
-      - 台灣(绿头外网集团)(Public) 7
-      - 香港(绿头外网集团)(Public)
-      - 台灣(绿头外网集团)(Public) 8
-      - 台灣(绿头外网集团)(Public) 9
-      - 新加坡(绿头外网集团)(Public) 3
-      - 日本(绿头外网集团)(Public)
       - 新加坡(绿头外网集团)(Public) 4
-      - 台灣(绿头外网集团)(Public) 10
-      - 香港(绿头外网集团)(Public) 2
-      - 日本(绿头外网集团)(Public) 2
-      - (Youtube技术分享室)
-      - US_1192 |27.46Mb
-      - AE_油管 TG 8度科技 3
-      - US_油管 TG 8度科技 6
-      - 台灣(绿头外网集团)(Public) 11
-      - AE_油管 TG 8度科技 2
-      - AE_油管 TG 8度科技
-      - 台灣(绿头外网集团)(Public) 12
-      - US_1233 |42.45Mb
-      - 日本(绿头外网集团)(Public) 3
+      - SG_1010 |18.47Mb
       - 日本(绿头外网集团)(Public) 4
-      - HK_油管 TG 8度科技 3
-      - 油管 TG 8度科技 3
-      - 日本(绿头外网集团)(Public) 5
-      - CN_油管 TG 8度科技 25
+      - 印度(绿头外网集团)(Public)
+      - 日本(绿头外网集团)(Public) 3
+      - Relay_🇦🇺AU-🇦🇺AU_85
       - US_油管 TG 8度科技 25
+      - Relay_🇨🇳CN-🇺🇸US_483
+      - (Youtube技术分享室)
+      - jp-am48-9.eqnode.net:8081
+      - US_1192 |27.46Mb
+      - Relay_🇨🇳CN-🇹🇼TW_390
+      - Relay_🇨🇳CN-🇺🇸US_495
+      - NONE 9
+      - US_1233 |42.45Mb
+      - ZZ_3032
+      - Relay_🇨🇳CN-🇩🇪DE_380
+      - ZZ_3018
+      - 新加坡(绿头外网集团)(Public)
+      - HK_738 | 2.76Mb
+      - 日本(绿头外网集团)(Public)
+      - 日本(绿头外网集团)(Public) 2
+      - 日本(绿头外网集团)(Public) 3 2
+      - 日本(绿头外网集团)(Public) 4 2
+      - 印度(绿头外网集团)(Public) 2
+      - JP_929 | 6.50Mb
+      - 日本(绿头外网集团)(Public) 5
+      - 日本(绿头外网集团)(Public) 6
+      - 日本(绿头外网集团)(Public) 7
+      - 日本(绿头外网集团)(Public) 8
+      - HK_742 | 9.40Mb
+      - 日本(绿头外网集团)(Public) 9
+      - 日本(绿头外网集团)(Public) 10
+      - 日本(绿头外网集团)(Public) 11
+      - 日本(绿头外网集团)(Public) 12
+      - SG_1044 | 2.95Mb
+      - 日本(绿头外网集团)(Public) 13
+      - JP_861 | 9.67Mb
+      - 日本(绿头外网集团)(Public) 14
+      - HK_741 | 9.55Mb
+      - 日本(绿头外网集团)(Public) 15
+      - US_1202
+      - US_1242 | 0.58Mb
+      - US_1192 |27.46Mb 2
+      - US_2886 | 8.30Mb
+      - JP_923 | 6.60Mb
+      - US_1238 |43.15Mb
+      - HK_740 | 6.86Mb
+      - 日本(绿头外网集团)(Public) 16
+      - US_2360 |16.18Mb
+      - HK_739 | 6.94Mb
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - SG_1011 |19.32Mb
-      - SG_1010 |18.47Mb
-      - 新加坡(绿头外网集团)(Public)
-      - 台灣(绿头外网集团)(Public)
-      - 新加坡(绿头外网集团)(Public) 2
-      - 台灣(绿头外网集团)(Public) 2
-      - 台灣(绿头外网集团)(Public) 3
-      - 台灣(绿头外网集团)(Public) 4
-      - 台灣(绿头外网集团)(Public) 5
-      - 台灣(绿头外网集团)(Public) 6
-      - 印度(绿头外网集团)(Public)
-      - HK_731 |25.09Mb
-      - 台灣(绿头外网集团)(Public) 7
-      - 香港(绿头外网集团)(Public)
-      - 台灣(绿头外网集团)(Public) 8
-      - 台灣(绿头外网集团)(Public) 9
-      - 新加坡(绿头外网集团)(Public) 3
-      - 日本(绿头外网集团)(Public)
       - 新加坡(绿头外网集团)(Public) 4
-      - 台灣(绿头外网集团)(Public) 10
-      - 香港(绿头外网集团)(Public) 2
-      - 日本(绿头外网集团)(Public) 2
-      - (Youtube技术分享室)
-      - US_1192 |27.46Mb
-      - AE_油管 TG 8度科技 3
-      - US_油管 TG 8度科技 6
-      - 台灣(绿头外网集团)(Public) 11
-      - AE_油管 TG 8度科技 2
-      - AE_油管 TG 8度科技
-      - 台灣(绿头外网集团)(Public) 12
-      - US_1233 |42.45Mb
-      - 日本(绿头外网集团)(Public) 3
+      - SG_1010 |18.47Mb
       - 日本(绿头外网集团)(Public) 4
-      - HK_油管 TG 8度科技 3
-      - 油管 TG 8度科技 3
-      - 日本(绿头外网集团)(Public) 5
-      - CN_油管 TG 8度科技 25
+      - 印度(绿头外网集团)(Public)
+      - 日本(绿头外网集团)(Public) 3
+      - Relay_🇦🇺AU-🇦🇺AU_85
       - US_油管 TG 8度科技 25
+      - Relay_🇨🇳CN-🇺🇸US_483
+      - (Youtube技术分享室)
+      - jp-am48-9.eqnode.net:8081
+      - US_1192 |27.46Mb
+      - Relay_🇨🇳CN-🇹🇼TW_390
+      - Relay_🇨🇳CN-🇺🇸US_495
+      - NONE 9
+      - US_1233 |42.45Mb
+      - ZZ_3032
+      - Relay_🇨🇳CN-🇩🇪DE_380
+      - ZZ_3018
+      - 新加坡(绿头外网集团)(Public)
+      - HK_738 | 2.76Mb
+      - 日本(绿头外网集团)(Public)
+      - 日本(绿头外网集团)(Public) 2
+      - 日本(绿头外网集团)(Public) 3 2
+      - 日本(绿头外网集团)(Public) 4 2
+      - 印度(绿头外网集团)(Public) 2
+      - JP_929 | 6.50Mb
+      - 日本(绿头外网集团)(Public) 5
+      - 日本(绿头外网集团)(Public) 6
+      - 日本(绿头外网集团)(Public) 7
+      - 日本(绿头外网集团)(Public) 8
+      - HK_742 | 9.40Mb
+      - 日本(绿头外网集团)(Public) 9
+      - 日本(绿头外网集团)(Public) 10
+      - 日本(绿头外网集团)(Public) 11
+      - 日本(绿头外网集团)(Public) 12
+      - SG_1044 | 2.95Mb
+      - 日本(绿头外网集团)(Public) 13
+      - JP_861 | 9.67Mb
+      - 日本(绿头外网集团)(Public) 14
+      - HK_741 | 9.55Mb
+      - 日本(绿头外网集团)(Public) 15
+      - US_1202
+      - US_1242 | 0.58Mb
+      - US_1192 |27.46Mb 2
+      - US_2886 | 8.30Mb
+      - JP_923 | 6.60Mb
+      - US_1238 |43.15Mb
+      - HK_740 | 6.86Mb
+      - 日本(绿头外网集团)(Public) 16
+      - US_2360 |16.18Mb
+      - HK_739 | 6.94Mb
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -394,44 +484,57 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - SG_1011 |19.32Mb
-      - SG_1010 |18.47Mb
-      - 新加坡(绿头外网集团)(Public)
-      - 台灣(绿头外网集团)(Public)
-      - 新加坡(绿头外网集团)(Public) 2
-      - 台灣(绿头外网集团)(Public) 2
-      - 台灣(绿头外网集团)(Public) 3
-      - 台灣(绿头外网集团)(Public) 4
-      - 台灣(绿头外网集团)(Public) 5
-      - 台灣(绿头外网集团)(Public) 6
-      - 印度(绿头外网集团)(Public)
-      - HK_731 |25.09Mb
-      - 台灣(绿头外网集团)(Public) 7
-      - 香港(绿头外网集团)(Public)
-      - 台灣(绿头外网集团)(Public) 8
-      - 台灣(绿头外网集团)(Public) 9
-      - 新加坡(绿头外网集团)(Public) 3
-      - 日本(绿头外网集团)(Public)
       - 新加坡(绿头外网集团)(Public) 4
-      - 台灣(绿头外网集团)(Public) 10
-      - 香港(绿头外网集团)(Public) 2
-      - 日本(绿头外网集团)(Public) 2
-      - (Youtube技术分享室)
-      - US_1192 |27.46Mb
-      - AE_油管 TG 8度科技 3
-      - US_油管 TG 8度科技 6
-      - 台灣(绿头外网集团)(Public) 11
-      - AE_油管 TG 8度科技 2
-      - AE_油管 TG 8度科技
-      - 台灣(绿头外网集团)(Public) 12
-      - US_1233 |42.45Mb
-      - 日本(绿头外网集团)(Public) 3
+      - SG_1010 |18.47Mb
       - 日本(绿头外网集团)(Public) 4
-      - HK_油管 TG 8度科技 3
-      - 油管 TG 8度科技 3
-      - 日本(绿头外网集团)(Public) 5
-      - CN_油管 TG 8度科技 25
+      - 印度(绿头外网集团)(Public)
+      - 日本(绿头外网集团)(Public) 3
+      - Relay_🇦🇺AU-🇦🇺AU_85
       - US_油管 TG 8度科技 25
+      - Relay_🇨🇳CN-🇺🇸US_483
+      - (Youtube技术分享室)
+      - jp-am48-9.eqnode.net:8081
+      - US_1192 |27.46Mb
+      - Relay_🇨🇳CN-🇹🇼TW_390
+      - Relay_🇨🇳CN-🇺🇸US_495
+      - NONE 9
+      - US_1233 |42.45Mb
+      - ZZ_3032
+      - Relay_🇨🇳CN-🇩🇪DE_380
+      - ZZ_3018
+      - 新加坡(绿头外网集团)(Public)
+      - HK_738 | 2.76Mb
+      - 日本(绿头外网集团)(Public)
+      - 日本(绿头外网集团)(Public) 2
+      - 日本(绿头外网集团)(Public) 3 2
+      - 日本(绿头外网集团)(Public) 4 2
+      - 印度(绿头外网集团)(Public) 2
+      - JP_929 | 6.50Mb
+      - 日本(绿头外网集团)(Public) 5
+      - 日本(绿头外网集团)(Public) 6
+      - 日本(绿头外网集团)(Public) 7
+      - 日本(绿头外网集团)(Public) 8
+      - HK_742 | 9.40Mb
+      - 日本(绿头外网集团)(Public) 9
+      - 日本(绿头外网集团)(Public) 10
+      - 日本(绿头外网集团)(Public) 11
+      - 日本(绿头外网集团)(Public) 12
+      - SG_1044 | 2.95Mb
+      - 日本(绿头外网集团)(Public) 13
+      - JP_861 | 9.67Mb
+      - 日本(绿头外网集团)(Public) 14
+      - HK_741 | 9.55Mb
+      - 日本(绿头外网集团)(Public) 15
+      - US_1202
+      - US_1242 | 0.58Mb
+      - US_1192 |27.46Mb 2
+      - US_2886 | 8.30Mb
+      - JP_923 | 6.60Mb
+      - US_1238 |43.15Mb
+      - HK_740 | 6.86Mb
+      - 日本(绿头外网集团)(Public) 16
+      - US_2360 |16.18Mb
+      - HK_739 | 6.94Mb
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
