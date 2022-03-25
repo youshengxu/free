@@ -5,79 +5,159 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 香港(绿头外网集团)(Public) 15, server: fc.jm.wokuaitule.xyz, port: 40019, type: vmess, uuid: ff4d9b23-23de-374b-8900-aa03ff957e12, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: telegram.channel.p2psharing}, udp: true}
-  - {name: 香港(绿头外网集团)(Public), server: fc.st.wokuaitule.xyz, port: 40015, type: vmess, uuid: ff4d9b23-23de-374b-8900-aa03ff957e12, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: telegram.channel.p2psharing}, udp: true}
-  - {name: 新加坡(绿头外网集团)(Public), server: fc.jm.wokuaitule.xyz, port: 40012, type: vmess, uuid: ff4d9b23-23de-374b-8900-aa03ff957e12, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: telegram.channel.p2psharing}, udp: true}
-  - {name: FR, server: s4.upyun.online, port: 12340, type: trojan, password: 4809af3e-b8f2-4f07-9cfb-79d0a7bb1219, sni: s4.upyun.online, skip-cert-verify: true, udp: true}
-  - {name: CN, server: s1.upyun.online, port: 12340, type: trojan, password: 4809af3e-b8f2-4f07-9cfb-79d0a7bb1219, sni: s1.upyun.online, skip-cert-verify: true, udp: true}
-  - {name: US, server: us2.tcpbbr.net, port: 443, type: trojan, password: 2e5f2a78-14d8-11eb-ad8c-f23c9164ca5d, sni: us2.tcpbbr.net, skip-cert-verify: true, udp: true}
-  - {name: 香港(绿头外网集团)(Public) 11, server: f2s.wokuaitule.xyz, port: 20078, type: vmess, uuid: ff4d9b23-23de-374b-8900-aa03ff957e12, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: telegram.channel.p2psharing}, udp: true}
-  - {name: US 2, server: us2.tcpbbr.net, port: 443, type: trojan, password: 283695dc-fcc8-11ea-8684-f23c913c8d2b, sni: us2.tcpbbr.net, skip-cert-verify: true, udp: true}
-  - {name: 美国(绿头外网集团)(Public) 3, server: 38.75.137.66, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 香港(绿头外网集团)(Public) 8, server: f2s.wokuaitule.xyz, port: 17723, type: vmess, uuid: ff4d9b23-23de-374b-8900-aa03ff957e12, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: telegram.channel.p2psharing}, udp: true}
-  - {name: NONE, server: jgwdb4.gaox.ml, port: 443, type: trojan, password: d06a3f01-1ff0-4792-9b8e-a5a604bc74a2, sni: jgwdb4.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: ZZ, server: 5.44.249.43, port: 3389, type: trojan, password: 6f0a9d0fa39d65fa, skip-cert-verify: true, udp: true}
-  - {name: CN 2, server: s3.upyun.online, port: 12340, type: trojan, password: 4809af3e-b8f2-4f07-9cfb-79d0a7bb1219, sni: s3.upyun.online, skip-cert-verify: true, udp: true}
-  - {name: CN 3, server: s2.upyun.online, port: 12340, type: trojan, password: 4809af3e-b8f2-4f07-9cfb-79d0a7bb1219, sni: s2.upyun.online, skip-cert-verify: true, udp: true}
+  - {name: 新加坡(绿头外网集团)(Public), server: fc.jm.wokuaitule.xyz, port: 40019, type: vmess, uuid: ff4d9b23-23de-374b-8900-aa03ff957e12, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: fc.jm.wokuaitule.xyz}, udp: true}
+  - {name: 香港(绿头外网集团)(Public) 31, server: 20.205.42.94, port: 48720, type: vmess, uuid: c9e6bb13-1fb2-4d72-9bf3-6086bf8e3144, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 新加坡(绿头外网集团)(Public) 2, server: fc.jm.wokuaitule.xyz, port: 40011, type: vmess, uuid: ff4d9b23-23de-374b-8900-aa03ff957e12, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: fc.jm.wokuaitule.xyz}, udp: true}
+  - {name: 美国(绿头外网集团)(Public), server: pmah.wokuaitule.xyz, port: 40016, type: vmess, uuid: ff4d9b23-23de-374b-8900-aa03ff957e12, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: telegram.channel.p2psharing}, udp: true}
+  - {name: 香港(绿头外网集团)(Public), server: fc.st.wokuaitule.xyz, port: 40015, type: vmess, uuid: ff4d9b23-23de-374b-8900-aa03ff957e12, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: fc.st.wokuaitule.xyz}, udp: true}
+  - {name: 新加坡(绿头外网集团)(Public) 3, server: sg-7.tjjjt.top, port: 443, type: trojan, password: iyinglong, sni: sg-7.tjjjt.top, skip-cert-verify: true, udp: true}
+  - {name: 香港(绿头外网集团)(Public) 2, server: centralchina1.cloudlink123.com, port: 37005, type: ss, cipher: aes-128-gcm, password: d96cf6fe-7b12-4233-8243-15258f74ea92, udp: true}
+  - {name: 香港(绿头外网集团)(Public) 3, server: fc.gzbgp.wokuaitule.xyz, port: 10029, type: vmess, uuid: ff4d9b23-23de-374b-8900-aa03ff957e12, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: fc.gzbgp.wokuaitule.xyz}, udp: true}
+  - {name: 香港(绿头外网集团)(Public) 4, server: 20.205.42.94, port: 48720, type: vmess, uuid: c9e6bb13-1fb2-4d72-9bf3-6086bf8e3144, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国(绿头外网集团)(Public) 7, server: 192.9.232.174, port: 64684, type: vmess, uuid: 5068ac49-8503-49f5-8ba9-5b34f0dd23e2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 香港(绿头外网集团)(Public) 5, server: f2s.wokuaitule.xyz, port: 17723, type: vmess, uuid: ff4d9b23-23de-374b-8900-aa03ff957e12, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: f2s.wokuaitule.xyz}, udp: true}
+  - {name: 美国(绿头外网集团)(Public) 2, server: us-3.tjjjt.top, port: 443, type: trojan, password: iyinglong, sni: us-3.tjjjt.top, skip-cert-verify: true, udp: true}
+  - {name: 香港(绿头外网集团)(Public) 6, server: f2s.wokuaitule.xyz, port: 21168, type: vmess, uuid: ff4d9b23-23de-374b-8900-aa03ff957e12, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: f2s.wokuaitule.xyz}, udp: true}
+  - {name: 香港(绿头外网集团)(Public) 7, server: f2s.wokuaitule.xyz, port: 20078, type: vmess, uuid: ff4d9b23-23de-374b-8900-aa03ff957e12, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: f2s.wokuaitule.xyz}, udp: true}
+  - {name: 美国(绿头外网集团)(Public) 3, server: 38.75.137.66, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: 美国(绿头外网集团)(Public) 4, server: tj-us02.yiyodns.xyz, port: 443, type: trojan, password: 7dafe71e-2be6-302f-bdfc-e6319a3299bc, sni: tj-us02.yiyodns.xyz, skip-cert-verify: true, udp: true}
+  - {name: 香港(绿头外网集团)(Public) 8, server: f2s.wokuaitule.xyz, port: 17777, type: vmess, uuid: ff4d9b23-23de-374b-8900-aa03ff957e12, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: f2s.wokuaitule.xyz}, udp: true}
+  - {name: 俄罗斯(绿头外网集团)(Public), server: ru2.peakerselling.com, port: 443, type: vmess, uuid: d3435521-3d1f-37f7-ab48-f5302bc6a4fb, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /helloman, ws-headers: {Host: ru2.peakerselling.com}, udp: true}
+  - {name: 法国(绿头外网集团)(Public), server: fr-9.tjjjt.top, port: 443, type: trojan, password: iyinglong, sni: fr-9.tjjjt.top, skip-cert-verify: true, udp: true}
+  - {name: 美国(绿头外网集团)(Public) 5, server: us2.tcpbbr.net, port: 443, type: trojan, password: 5a3d9b78-cb5b-11ea-82ef-f23c9164ca5d, sni: us2.tcpbbr.net, skip-cert-verify: true, udp: true}
+  - {name: 法国(绿头外网集团)(Public) 2, server: fr-2.tjjjt.top, port: 443, type: trojan, password: iyinglong, sni: fr-2.tjjjt.top, skip-cert-verify: true, udp: true}
+  - {name: 法国(绿头外网集团)(Public) 3, server: 147.135.164.113, port: 44423, type: vmess, uuid: e6ee3fe5-7602-47b0-8d8f-52853321107f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 147.135.164.113}, udp: true}
+  - {name: 美国(绿头外网集团)(Public) 6, server: us-2.tjjjt.top, port: 443, type: trojan, password: iyinglong, sni: us-2.tjjjt.top, skip-cert-verify: true, udp: true}
+  - {name: 加拿大(绿头外网集团)(Public), server: 134.195.196.51, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 加拿大(绿头外网集团)(Public) 2, server: 134.195.196.51, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: 加拿大(绿头外网集团)(Public) 3, server: 134.195.196.51, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 加拿大(绿头外网集团)(Public) 4, server: 134.195.196.51, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: 加拿大(绿头外网集团)(Public) 5, server: 134.195.196.51, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: 美国(绿头外网集团)(Public) 8, server: raoy1.rnmtq.gq, port: 63530, type: vmess, uuid: 461bb2aa-af57-4d89-8450-3aad54a8c337, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: raoy1.rnmtq.gq}, udp: true}
+  - {name: 台湾(绿头外网集团)(Public), server: 5.44.249.43, port: 3389, type: trojan, password: 6f0a9d0fa39d65fa, skip-cert-verify: true, udp: true}
+  - {name: 加拿大(绿头外网集团)(Public) 6, server: 134.195.196.51, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: 香港(绿头外网集团)(Public) 9, server: tj-hk04.yiyodns.xyz, port: 443, type: trojan, password: 7dafe71e-2be6-302f-bdfc-e6319a3299bc, sni: tj-hk04.yiyodns.xyz, skip-cert-verify: true, udp: true}
+  - {name: 韩国(绿头外网集团)(Public), server: jgwcc2.gaox.ml, port: 443, type: trojan, password: 9c822f05-cfdc-479a-9534-60f3d4127435, sni: jgwcc2.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: 香港(绿头外网集团)(Public) 10, server: tj-hk08.yiyodns.xyz, port: 443, type: trojan, password: 7dafe71e-2be6-302f-bdfc-e6319a3299bc, sni: tj-hk08.yiyodns.xyz, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港(绿头外网集团)(Public) 15
-      - 香港(绿头外网集团)(Public)
       - 新加坡(绿头外网集团)(Public)
-      - FR
-      - CN
-      - US
-      - 香港(绿头外网集团)(Public) 11
-      - US 2
+      - 香港(绿头外网集团)(Public) 31
+      - 新加坡(绿头外网集团)(Public) 2
+      - 美国(绿头外网集团)(Public)
+      - 香港(绿头外网集团)(Public)
+      - 新加坡(绿头外网集团)(Public) 3
+      - 香港(绿头外网集团)(Public) 2
+      - 香港(绿头外网集团)(Public) 3
+      - 香港(绿头外网集团)(Public) 4
+      - 美国(绿头外网集团)(Public) 7
+      - 香港(绿头外网集团)(Public) 5
+      - 美国(绿头外网集团)(Public) 2
+      - 香港(绿头外网集团)(Public) 6
+      - 香港(绿头外网集团)(Public) 7
       - 美国(绿头外网集团)(Public) 3
+      - 美国(绿头外网集团)(Public) 4
       - 香港(绿头外网集团)(Public) 8
-      - NONE
-      - ZZ
-      - CN 2
-      - CN 3
+      - 俄罗斯(绿头外网集团)(Public)
+      - 法国(绿头外网集团)(Public)
+      - 美国(绿头外网集团)(Public) 5
+      - 法国(绿头外网集团)(Public) 2
+      - 法国(绿头外网集团)(Public) 3
+      - 美国(绿头外网集团)(Public) 6
+      - 加拿大(绿头外网集团)(Public)
+      - 加拿大(绿头外网集团)(Public) 2
+      - 加拿大(绿头外网集团)(Public) 3
+      - 加拿大(绿头外网集团)(Public) 4
+      - 加拿大(绿头外网集团)(Public) 5
+      - 美国(绿头外网集团)(Public) 8
+      - 台湾(绿头外网集团)(Public)
+      - 加拿大(绿头外网集团)(Public) 6
+      - 香港(绿头外网集团)(Public) 9
+      - 韩国(绿头外网集团)(Public)
+      - 香港(绿头外网集团)(Public) 10
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 香港(绿头外网集团)(Public) 15
-      - 香港(绿头外网集团)(Public)
       - 新加坡(绿头外网集团)(Public)
-      - FR
-      - CN
-      - US
-      - 香港(绿头外网集团)(Public) 11
-      - US 2
+      - 香港(绿头外网集团)(Public) 31
+      - 新加坡(绿头外网集团)(Public) 2
+      - 美国(绿头外网集团)(Public)
+      - 香港(绿头外网集团)(Public)
+      - 新加坡(绿头外网集团)(Public) 3
+      - 香港(绿头外网集团)(Public) 2
+      - 香港(绿头外网集团)(Public) 3
+      - 香港(绿头外网集团)(Public) 4
+      - 美国(绿头外网集团)(Public) 7
+      - 香港(绿头外网集团)(Public) 5
+      - 美国(绿头外网集团)(Public) 2
+      - 香港(绿头外网集团)(Public) 6
+      - 香港(绿头外网集团)(Public) 7
       - 美国(绿头外网集团)(Public) 3
+      - 美国(绿头外网集团)(Public) 4
       - 香港(绿头外网集团)(Public) 8
-      - NONE
-      - ZZ
-      - CN 2
-      - CN 3
+      - 俄罗斯(绿头外网集团)(Public)
+      - 法国(绿头外网集团)(Public)
+      - 美国(绿头外网集团)(Public) 5
+      - 法国(绿头外网集团)(Public) 2
+      - 法国(绿头外网集团)(Public) 3
+      - 美国(绿头外网集团)(Public) 6
+      - 加拿大(绿头外网集团)(Public)
+      - 加拿大(绿头外网集团)(Public) 2
+      - 加拿大(绿头外网集团)(Public) 3
+      - 加拿大(绿头外网集团)(Public) 4
+      - 加拿大(绿头外网集团)(Public) 5
+      - 美国(绿头外网集团)(Public) 8
+      - 台湾(绿头外网集团)(Public)
+      - 加拿大(绿头外网集团)(Public) 6
+      - 香港(绿头外网集团)(Public) 9
+      - 韩国(绿头外网集团)(Public)
+      - 香港(绿头外网集团)(Public) 10
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港(绿头外网集团)(Public) 15
-      - 香港(绿头外网集团)(Public)
       - 新加坡(绿头外网集团)(Public)
-      - FR
-      - CN
-      - US
-      - 香港(绿头外网集团)(Public) 11
-      - US 2
+      - 香港(绿头外网集团)(Public) 31
+      - 新加坡(绿头外网集团)(Public) 2
+      - 美国(绿头外网集团)(Public)
+      - 香港(绿头外网集团)(Public)
+      - 新加坡(绿头外网集团)(Public) 3
+      - 香港(绿头外网集团)(Public) 2
+      - 香港(绿头外网集团)(Public) 3
+      - 香港(绿头外网集团)(Public) 4
+      - 美国(绿头外网集团)(Public) 7
+      - 香港(绿头外网集团)(Public) 5
+      - 美国(绿头外网集团)(Public) 2
+      - 香港(绿头外网集团)(Public) 6
+      - 香港(绿头外网集团)(Public) 7
       - 美国(绿头外网集团)(Public) 3
+      - 美国(绿头外网集团)(Public) 4
       - 香港(绿头外网集团)(Public) 8
-      - NONE
-      - ZZ
-      - CN 2
-      - CN 3
+      - 俄罗斯(绿头外网集团)(Public)
+      - 法国(绿头外网集团)(Public)
+      - 美国(绿头外网集团)(Public) 5
+      - 法国(绿头外网集团)(Public) 2
+      - 法国(绿头外网集团)(Public) 3
+      - 美国(绿头外网集团)(Public) 6
+      - 加拿大(绿头外网集团)(Public)
+      - 加拿大(绿头外网集团)(Public) 2
+      - 加拿大(绿头外网集团)(Public) 3
+      - 加拿大(绿头外网集团)(Public) 4
+      - 加拿大(绿头外网集团)(Public) 5
+      - 美国(绿头外网集团)(Public) 8
+      - 台湾(绿头外网集团)(Public)
+      - 加拿大(绿头外网集团)(Public) 6
+      - 香港(绿头外网集团)(Public) 9
+      - 韩国(绿头外网集团)(Public)
+      - 香港(绿头外网集团)(Public) 10
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -96,87 +176,175 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港(绿头外网集团)(Public) 15
-      - 香港(绿头外网集团)(Public)
       - 新加坡(绿头外网集团)(Public)
-      - FR
-      - CN
-      - US
-      - 香港(绿头外网集团)(Public) 11
-      - US 2
+      - 香港(绿头外网集团)(Public) 31
+      - 新加坡(绿头外网集团)(Public) 2
+      - 美国(绿头外网集团)(Public)
+      - 香港(绿头外网集团)(Public)
+      - 新加坡(绿头外网集团)(Public) 3
+      - 香港(绿头外网集团)(Public) 2
+      - 香港(绿头外网集团)(Public) 3
+      - 香港(绿头外网集团)(Public) 4
+      - 美国(绿头外网集团)(Public) 7
+      - 香港(绿头外网集团)(Public) 5
+      - 美国(绿头外网集团)(Public) 2
+      - 香港(绿头外网集团)(Public) 6
+      - 香港(绿头外网集团)(Public) 7
       - 美国(绿头外网集团)(Public) 3
+      - 美国(绿头外网集团)(Public) 4
       - 香港(绿头外网集团)(Public) 8
-      - NONE
-      - ZZ
-      - CN 2
-      - CN 3
+      - 俄罗斯(绿头外网集团)(Public)
+      - 法国(绿头外网集团)(Public)
+      - 美国(绿头外网集团)(Public) 5
+      - 法国(绿头外网集团)(Public) 2
+      - 法国(绿头外网集团)(Public) 3
+      - 美国(绿头外网集团)(Public) 6
+      - 加拿大(绿头外网集团)(Public)
+      - 加拿大(绿头外网集团)(Public) 2
+      - 加拿大(绿头外网集团)(Public) 3
+      - 加拿大(绿头外网集团)(Public) 4
+      - 加拿大(绿头外网集团)(Public) 5
+      - 美国(绿头外网集团)(Public) 8
+      - 台湾(绿头外网集团)(Public)
+      - 加拿大(绿头外网集团)(Public) 6
+      - 香港(绿头外网集团)(Public) 9
+      - 韩国(绿头外网集团)(Public)
+      - 香港(绿头外网集团)(Public) 10
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港(绿头外网集团)(Public) 15
+      - 香港(绿头外网集团)(Public) 31
       - 香港(绿头外网集团)(Public)
-      - 香港(绿头外网集团)(Public) 11
+      - 香港(绿头外网集团)(Public) 2
+      - 香港(绿头外网集团)(Public) 3
+      - 香港(绿头外网集团)(Public) 4
+      - 香港(绿头外网集团)(Public) 5
+      - 香港(绿头外网集团)(Public) 6
+      - 香港(绿头外网集团)(Public) 7
       - 香港(绿头外网集团)(Public) 8
+      - 台湾(绿头外网集团)(Public)
+      - 香港(绿头外网集团)(Public) 9
+      - 香港(绿头外网集团)(Public) 10
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 香港(绿头外网集团)(Public) 15
-      - 香港(绿头外网集团)(Public)
       - 新加坡(绿头外网集团)(Public)
-      - FR
-      - CN
-      - US
-      - 香港(绿头外网集团)(Public) 11
-      - US 2
+      - 香港(绿头外网集团)(Public) 31
+      - 新加坡(绿头外网集团)(Public) 2
+      - 美国(绿头外网集团)(Public)
+      - 香港(绿头外网集团)(Public)
+      - 新加坡(绿头外网集团)(Public) 3
+      - 香港(绿头外网集团)(Public) 2
+      - 香港(绿头外网集团)(Public) 3
+      - 香港(绿头外网集团)(Public) 4
+      - 美国(绿头外网集团)(Public) 7
+      - 香港(绿头外网集团)(Public) 5
+      - 美国(绿头外网集团)(Public) 2
+      - 香港(绿头外网集团)(Public) 6
+      - 香港(绿头外网集团)(Public) 7
       - 美国(绿头外网集团)(Public) 3
+      - 美国(绿头外网集团)(Public) 4
       - 香港(绿头外网集团)(Public) 8
-      - NONE
-      - ZZ
-      - CN 2
-      - CN 3
+      - 俄罗斯(绿头外网集团)(Public)
+      - 法国(绿头外网集团)(Public)
+      - 美国(绿头外网集团)(Public) 5
+      - 法国(绿头外网集团)(Public) 2
+      - 法国(绿头外网集团)(Public) 3
+      - 美国(绿头外网集团)(Public) 6
+      - 加拿大(绿头外网集团)(Public)
+      - 加拿大(绿头外网集团)(Public) 2
+      - 加拿大(绿头外网集团)(Public) 3
+      - 加拿大(绿头外网集团)(Public) 4
+      - 加拿大(绿头外网集团)(Public) 5
+      - 美国(绿头外网集团)(Public) 8
+      - 台湾(绿头外网集团)(Public)
+      - 加拿大(绿头外网集团)(Public) 6
+      - 香港(绿头外网集团)(Public) 9
+      - 韩国(绿头外网集团)(Public)
+      - 香港(绿头外网集团)(Public) 10
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 香港(绿头外网集团)(Public) 15
-      - 香港(绿头外网集团)(Public)
       - 新加坡(绿头外网集团)(Public)
-      - FR
-      - CN
-      - US
-      - 香港(绿头外网集团)(Public) 11
-      - US 2
+      - 香港(绿头外网集团)(Public) 31
+      - 新加坡(绿头外网集团)(Public) 2
+      - 美国(绿头外网集团)(Public)
+      - 香港(绿头外网集团)(Public)
+      - 新加坡(绿头外网集团)(Public) 3
+      - 香港(绿头外网集团)(Public) 2
+      - 香港(绿头外网集团)(Public) 3
+      - 香港(绿头外网集团)(Public) 4
+      - 美国(绿头外网集团)(Public) 7
+      - 香港(绿头外网集团)(Public) 5
+      - 美国(绿头外网集团)(Public) 2
+      - 香港(绿头外网集团)(Public) 6
+      - 香港(绿头外网集团)(Public) 7
       - 美国(绿头外网集团)(Public) 3
+      - 美国(绿头外网集团)(Public) 4
       - 香港(绿头外网集团)(Public) 8
-      - NONE
-      - ZZ
-      - CN 2
-      - CN 3
+      - 俄罗斯(绿头外网集团)(Public)
+      - 法国(绿头外网集团)(Public)
+      - 美国(绿头外网集团)(Public) 5
+      - 法国(绿头外网集团)(Public) 2
+      - 法国(绿头外网集团)(Public) 3
+      - 美国(绿头外网集团)(Public) 6
+      - 加拿大(绿头外网集团)(Public)
+      - 加拿大(绿头外网集团)(Public) 2
+      - 加拿大(绿头外网集团)(Public) 3
+      - 加拿大(绿头外网集团)(Public) 4
+      - 加拿大(绿头外网集团)(Public) 5
+      - 美国(绿头外网集团)(Public) 8
+      - 台湾(绿头外网集团)(Public)
+      - 加拿大(绿头外网集团)(Public) 6
+      - 香港(绿头外网集团)(Public) 9
+      - 韩国(绿头外网集团)(Public)
+      - 香港(绿头外网集团)(Public) 10
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港(绿头外网集团)(Public) 15
-      - 香港(绿头外网集团)(Public)
       - 新加坡(绿头外网集团)(Public)
-      - FR
-      - CN
-      - US
-      - 香港(绿头外网集团)(Public) 11
-      - US 2
+      - 香港(绿头外网集团)(Public) 31
+      - 新加坡(绿头外网集团)(Public) 2
+      - 美国(绿头外网集团)(Public)
+      - 香港(绿头外网集团)(Public)
+      - 新加坡(绿头外网集团)(Public) 3
+      - 香港(绿头外网集团)(Public) 2
+      - 香港(绿头外网集团)(Public) 3
+      - 香港(绿头外网集团)(Public) 4
+      - 美国(绿头外网集团)(Public) 7
+      - 香港(绿头外网集团)(Public) 5
+      - 美国(绿头外网集团)(Public) 2
+      - 香港(绿头外网集团)(Public) 6
+      - 香港(绿头外网集团)(Public) 7
       - 美国(绿头外网集团)(Public) 3
+      - 美国(绿头外网集团)(Public) 4
       - 香港(绿头外网集团)(Public) 8
-      - NONE
-      - ZZ
-      - CN 2
-      - CN 3
+      - 俄罗斯(绿头外网集团)(Public)
+      - 法国(绿头外网集团)(Public)
+      - 美国(绿头外网集团)(Public) 5
+      - 法国(绿头外网集团)(Public) 2
+      - 法国(绿头外网集团)(Public) 3
+      - 美国(绿头外网集团)(Public) 6
+      - 加拿大(绿头外网集团)(Public)
+      - 加拿大(绿头外网集团)(Public) 2
+      - 加拿大(绿头外网集团)(Public) 3
+      - 加拿大(绿头外网集团)(Public) 4
+      - 加拿大(绿头外网集团)(Public) 5
+      - 美国(绿头外网集团)(Public) 8
+      - 台湾(绿头外网集团)(Public)
+      - 加拿大(绿头外网集团)(Public) 6
+      - 香港(绿头外网集团)(Public) 9
+      - 韩国(绿头外网集团)(Public)
+      - 香港(绿头外网集团)(Public) 10
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -192,20 +360,40 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港(绿头外网集团)(Public) 15
-      - 香港(绿头外网集团)(Public)
       - 新加坡(绿头外网集团)(Public)
-      - FR
-      - CN
-      - US
-      - 香港(绿头外网集团)(Public) 11
-      - US 2
+      - 香港(绿头外网集团)(Public) 31
+      - 新加坡(绿头外网集团)(Public) 2
+      - 美国(绿头外网集团)(Public)
+      - 香港(绿头外网集团)(Public)
+      - 新加坡(绿头外网集团)(Public) 3
+      - 香港(绿头外网集团)(Public) 2
+      - 香港(绿头外网集团)(Public) 3
+      - 香港(绿头外网集团)(Public) 4
+      - 美国(绿头外网集团)(Public) 7
+      - 香港(绿头外网集团)(Public) 5
+      - 美国(绿头外网集团)(Public) 2
+      - 香港(绿头外网集团)(Public) 6
+      - 香港(绿头外网集团)(Public) 7
       - 美国(绿头外网集团)(Public) 3
+      - 美国(绿头外网集团)(Public) 4
       - 香港(绿头外网集团)(Public) 8
-      - NONE
-      - ZZ
-      - CN 2
-      - CN 3
+      - 俄罗斯(绿头外网集团)(Public)
+      - 法国(绿头外网集团)(Public)
+      - 美国(绿头外网集团)(Public) 5
+      - 法国(绿头外网集团)(Public) 2
+      - 法国(绿头外网集团)(Public) 3
+      - 美国(绿头外网集团)(Public) 6
+      - 加拿大(绿头外网集团)(Public)
+      - 加拿大(绿头外网集团)(Public) 2
+      - 加拿大(绿头外网集团)(Public) 3
+      - 加拿大(绿头外网集团)(Public) 4
+      - 加拿大(绿头外网集团)(Public) 5
+      - 美国(绿头外网集团)(Public) 8
+      - 台湾(绿头外网集团)(Public)
+      - 加拿大(绿头外网集团)(Public) 6
+      - 香港(绿头外网集团)(Public) 9
+      - 韩国(绿头外网集团)(Public)
+      - 香港(绿头外网集团)(Public) 10
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
