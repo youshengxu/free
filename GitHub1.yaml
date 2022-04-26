@@ -5,79 +5,43 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: Relay_🇹🇼TW-🇹🇼TW_984, server: tw03.kuli888.xyz, port: 35256, type: trojan, password: 54acbfdc-34ec-3d72-8182-3b437e4747eb, sni: tw03.kuli888.xyz, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇳CN-🇹🇼TW_267, server: guangzhou.kuli888.xyz, port: 52004, type: trojan, password: 54acbfdc-34ec-3d72-8182-3b437e4747eb, sni: guangzhou.kuli888.xyz, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇦🇺AU-🇦🇺AU_108, server: jgwxn3.gaox.ml, port: 443, type: trojan, password: cb43b7c2-b744-41c5-bcc2-fd7467b332cf, sni: jgwxn3.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: 美国-3.46MB/s(Youtube:不良林), server: 38.68.134.191, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: Relay_🇳🇱NL-🇳🇱NL_814, server: trojan2.free4444.xyz, port: 443, type: trojan, password: dongtaiwang.com, sni: trojan2.free4444.xyz, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_1411, server: fhcarm2.gaox.ml, port: 443, type: trojan, password: f39bd244-f5fe-415c-8b98-a1e5250bf178, sni: fhcarm2.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇳CN-🇩🇪DE_271, server: s3.upyun.online, port: 12340, type: trojan, password: 316b40c0-0dab-4ea1-9666-ac1658b033b2, sni: s3.upyun.online, skip-cert-verify: true, udp: true}
-  - {name: gz2.52168.xyz:2104, server: gz2.52168.xyz, port: 2104, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:gt9img0d2jp, obfs-param: ee821149.baidu.com, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_1424, server: jgwhdlb2.gaox.ml, port: 443, type: trojan, password: 54080134-2cba-4535-8599-95650bd9aa54, sni: jgwhdlb2.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇦🇺AU-🇦🇺AU_106, server: jgwxn1.gaox.ml, port: 443, type: trojan, password: 0f715619-0037-4358-a7c6-958106bc6b49, sni: jgwxn1.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: 中国-17.28MB/s(Youtube:不良林), server: cm07.paofuvip.xyz, port: 5966, type: ss, cipher: rc4-md5, password: Paofu, plugin: obfs, plugin-opts: {mode: http, host: 47eaf191202.microsoft.com}, udp: true}
-  - {name: 中国-17.84MB/s(Youtube:不良林), server: cm07.paofuvip.xyz, port: 5967, type: ss, cipher: rc4-md5, password: Paofu, plugin: obfs, plugin-opts: {mode: http, host: 47eaf191202.microsoft.com}, udp: true}
-  - {name: gz2.52168.xyz:2102, server: gz2.52168.xyz, port: 2102, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:gt9img0d2jp, obfs-param: ee821149.baidu.com, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_1408, server: fhcarm1.gaox.ml, port: 443, type: trojan, password: 05742120-ce23-4cc8-88f5-6d221ce45bf4, sni: fhcarm1.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇨🇳CN-🏁ZZ_258, server: gy.sharecentrepro.tk, port: 13397, type: trojan, password: d3b04e55-f2ae-4500-b317-e23946dde463, sni: gy.sharecentrepro.tk, skip-cert-verify: true, udp: true}
+  - {name: 中国-3.51MB/s(Youtube:不良林), server: cm-jm.okvpn.xyz, port: 20000, type: trojan, password: fdb88add-f0a3-4984-8a54-2969d84d6aef, sni: cm-jm.okvpn.xyz, skip-cert-verify: true, udp: true}
+  - {name: us-am32-5.eqnode.net:8081, server: us-am32-5.eqnode.net, port: 8081, type: ssr, cipher: aes-256-cfb, password: YFVrXZgRo, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
+  - {name: Relay_🇨🇳CN-🇩🇪DE_255, server: s3.upyun.online, port: 12340, type: trojan, password: 316b40c0-0dab-4ea1-9666-ac1658b033b2, sni: s3.upyun.online, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_1353, server: jgwhdlb3.gaox.ml, port: 443, type: trojan, password: 006baa3f-4bc3-4915-b60d-c8c5dae11a11, sni: jgwhdlb3.gaox.ml, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay_🇹🇼TW-🇹🇼TW_984
-      - Relay_🇨🇳CN-🇹🇼TW_267
-      - Relay_🇦🇺AU-🇦🇺AU_108
-      - 美国-3.46MB/s(Youtube:不良林)
-      - Relay_🇳🇱NL-🇳🇱NL_814
-      - Relay_🇺🇸US-🇺🇸US_1411
-      - Relay_🇨🇳CN-🇩🇪DE_271
-      - gz2.52168.xyz:2104
-      - Relay_🇺🇸US-🇺🇸US_1424
-      - Relay_🇦🇺AU-🇦🇺AU_106
-      - 中国-17.28MB/s(Youtube:不良林)
-      - 中国-17.84MB/s(Youtube:不良林)
-      - gz2.52168.xyz:2102
-      - Relay_🇺🇸US-🇺🇸US_1408
+      - Relay_🇨🇳CN-🏁ZZ_258
+      - 中国-3.51MB/s(Youtube:不良林)
+      - us-am32-5.eqnode.net:8081
+      - Relay_🇨🇳CN-🇩🇪DE_255
+      - Relay_🇺🇸US-🇺🇸US_1353
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - Relay_🇹🇼TW-🇹🇼TW_984
-      - Relay_🇨🇳CN-🇹🇼TW_267
-      - Relay_🇦🇺AU-🇦🇺AU_108
-      - 美国-3.46MB/s(Youtube:不良林)
-      - Relay_🇳🇱NL-🇳🇱NL_814
-      - Relay_🇺🇸US-🇺🇸US_1411
-      - Relay_🇨🇳CN-🇩🇪DE_271
-      - gz2.52168.xyz:2104
-      - Relay_🇺🇸US-🇺🇸US_1424
-      - Relay_🇦🇺AU-🇦🇺AU_106
-      - 中国-17.28MB/s(Youtube:不良林)
-      - 中国-17.84MB/s(Youtube:不良林)
-      - gz2.52168.xyz:2102
-      - Relay_🇺🇸US-🇺🇸US_1408
+      - Relay_🇨🇳CN-🏁ZZ_258
+      - 中国-3.51MB/s(Youtube:不良林)
+      - us-am32-5.eqnode.net:8081
+      - Relay_🇨🇳CN-🇩🇪DE_255
+      - Relay_🇺🇸US-🇺🇸US_1353
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay_🇹🇼TW-🇹🇼TW_984
-      - Relay_🇨🇳CN-🇹🇼TW_267
-      - Relay_🇦🇺AU-🇦🇺AU_108
-      - 美国-3.46MB/s(Youtube:不良林)
-      - Relay_🇳🇱NL-🇳🇱NL_814
-      - Relay_🇺🇸US-🇺🇸US_1411
-      - Relay_🇨🇳CN-🇩🇪DE_271
-      - gz2.52168.xyz:2104
-      - Relay_🇺🇸US-🇺🇸US_1424
-      - Relay_🇦🇺AU-🇦🇺AU_106
-      - 中国-17.28MB/s(Youtube:不良林)
-      - 中国-17.84MB/s(Youtube:不良林)
-      - gz2.52168.xyz:2102
-      - Relay_🇺🇸US-🇺🇸US_1408
+      - Relay_🇨🇳CN-🏁ZZ_258
+      - 中国-3.51MB/s(Youtube:不良林)
+      - us-am32-5.eqnode.net:8081
+      - Relay_🇨🇳CN-🇩🇪DE_255
+      - Relay_🇺🇸US-🇺🇸US_1353
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -96,20 +60,11 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay_🇹🇼TW-🇹🇼TW_984
-      - Relay_🇨🇳CN-🇹🇼TW_267
-      - Relay_🇦🇺AU-🇦🇺AU_108
-      - 美国-3.46MB/s(Youtube:不良林)
-      - Relay_🇳🇱NL-🇳🇱NL_814
-      - Relay_🇺🇸US-🇺🇸US_1411
-      - Relay_🇨🇳CN-🇩🇪DE_271
-      - gz2.52168.xyz:2104
-      - Relay_🇺🇸US-🇺🇸US_1424
-      - Relay_🇦🇺AU-🇦🇺AU_106
-      - 中国-17.28MB/s(Youtube:不良林)
-      - 中国-17.84MB/s(Youtube:不良林)
-      - gz2.52168.xyz:2102
-      - Relay_🇺🇸US-🇺🇸US_1408
+      - Relay_🇨🇳CN-🏁ZZ_258
+      - 中国-3.51MB/s(Youtube:不良林)
+      - us-am32-5.eqnode.net:8081
+      - Relay_🇨🇳CN-🇩🇪DE_255
+      - Relay_🇺🇸US-🇺🇸US_1353
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -120,59 +75,32 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - Relay_🇹🇼TW-🇹🇼TW_984
-      - Relay_🇨🇳CN-🇹🇼TW_267
-      - Relay_🇦🇺AU-🇦🇺AU_108
-      - 美国-3.46MB/s(Youtube:不良林)
-      - Relay_🇳🇱NL-🇳🇱NL_814
-      - Relay_🇺🇸US-🇺🇸US_1411
-      - Relay_🇨🇳CN-🇩🇪DE_271
-      - gz2.52168.xyz:2104
-      - Relay_🇺🇸US-🇺🇸US_1424
-      - Relay_🇦🇺AU-🇦🇺AU_106
-      - 中国-17.28MB/s(Youtube:不良林)
-      - 中国-17.84MB/s(Youtube:不良林)
-      - gz2.52168.xyz:2102
-      - Relay_🇺🇸US-🇺🇸US_1408
+      - Relay_🇨🇳CN-🏁ZZ_258
+      - 中国-3.51MB/s(Youtube:不良林)
+      - us-am32-5.eqnode.net:8081
+      - Relay_🇨🇳CN-🇩🇪DE_255
+      - Relay_🇺🇸US-🇺🇸US_1353
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - Relay_🇹🇼TW-🇹🇼TW_984
-      - Relay_🇨🇳CN-🇹🇼TW_267
-      - Relay_🇦🇺AU-🇦🇺AU_108
-      - 美国-3.46MB/s(Youtube:不良林)
-      - Relay_🇳🇱NL-🇳🇱NL_814
-      - Relay_🇺🇸US-🇺🇸US_1411
-      - Relay_🇨🇳CN-🇩🇪DE_271
-      - gz2.52168.xyz:2104
-      - Relay_🇺🇸US-🇺🇸US_1424
-      - Relay_🇦🇺AU-🇦🇺AU_106
-      - 中国-17.28MB/s(Youtube:不良林)
-      - 中国-17.84MB/s(Youtube:不良林)
-      - gz2.52168.xyz:2102
-      - Relay_🇺🇸US-🇺🇸US_1408
+      - Relay_🇨🇳CN-🏁ZZ_258
+      - 中国-3.51MB/s(Youtube:不良林)
+      - us-am32-5.eqnode.net:8081
+      - Relay_🇨🇳CN-🇩🇪DE_255
+      - Relay_🇺🇸US-🇺🇸US_1353
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Relay_🇹🇼TW-🇹🇼TW_984
-      - Relay_🇨🇳CN-🇹🇼TW_267
-      - Relay_🇦🇺AU-🇦🇺AU_108
-      - 美国-3.46MB/s(Youtube:不良林)
-      - Relay_🇳🇱NL-🇳🇱NL_814
-      - Relay_🇺🇸US-🇺🇸US_1411
-      - Relay_🇨🇳CN-🇩🇪DE_271
-      - gz2.52168.xyz:2104
-      - Relay_🇺🇸US-🇺🇸US_1424
-      - Relay_🇦🇺AU-🇦🇺AU_106
-      - 中国-17.28MB/s(Youtube:不良林)
-      - 中国-17.84MB/s(Youtube:不良林)
-      - gz2.52168.xyz:2102
-      - Relay_🇺🇸US-🇺🇸US_1408
+      - Relay_🇨🇳CN-🏁ZZ_258
+      - 中国-3.51MB/s(Youtube:不良林)
+      - us-am32-5.eqnode.net:8081
+      - Relay_🇨🇳CN-🇩🇪DE_255
+      - Relay_🇺🇸US-🇺🇸US_1353
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -188,20 +116,11 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Relay_🇹🇼TW-🇹🇼TW_984
-      - Relay_🇨🇳CN-🇹🇼TW_267
-      - Relay_🇦🇺AU-🇦🇺AU_108
-      - 美国-3.46MB/s(Youtube:不良林)
-      - Relay_🇳🇱NL-🇳🇱NL_814
-      - Relay_🇺🇸US-🇺🇸US_1411
-      - Relay_🇨🇳CN-🇩🇪DE_271
-      - gz2.52168.xyz:2104
-      - Relay_🇺🇸US-🇺🇸US_1424
-      - Relay_🇦🇺AU-🇦🇺AU_106
-      - 中国-17.28MB/s(Youtube:不良林)
-      - 中国-17.84MB/s(Youtube:不良林)
-      - gz2.52168.xyz:2102
-      - Relay_🇺🇸US-🇺🇸US_1408
+      - Relay_🇨🇳CN-🏁ZZ_258
+      - 中国-3.51MB/s(Youtube:不良林)
+      - us-am32-5.eqnode.net:8081
+      - Relay_🇨🇳CN-🇩🇪DE_255
+      - Relay_🇺🇸US-🇺🇸US_1353
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
