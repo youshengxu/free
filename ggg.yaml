@@ -5,55 +5,63 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: Relay_🇨🇳CN-🇭🇰HK_466, server: cm-jm.okvpn.xyz, port: 20000, type: trojan, password: fdb88add-f0a3-4984-8a54-2969d84d6aef, sni: cm-jm.okvpn.xyz, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_3753, server: us-am32-5.eqnode.net, port: 8081, type: ssr, cipher: aes-256-cfb, password: YFVrXZgRo, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_3780, server: node.774.gs, port: 8443, type: vmess, uuid: 28f6159e-ed46-4bfe-b893-0e7531c28143, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: node.774.gs}, udp: true}
+  - {name: 日本(绿头外网集团)(Public), server: hncu.relay.qchwnd.moe, port: 10201, type: trojan, password: 5b059403-c05c-4609-ab01-a9352041d2e4, sni: hncu.relay.qchwnd.moe, skip-cert-verify: true, udp: true}
   - {name: Relay_🇺🇸US-🇺🇸US_1411, server: fhcarm2.gaox.ml, port: 443, type: trojan, password: f39bd244-f5fe-415c-8b98-a1e5250bf178, sni: fhcarm2.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: _新加坡_Ytb:鹏哥分享_5, server: v2-3.godlight.xyz, port: 39276, type: vmess, uuid: 6a52f259-4367-468c-a828-7b8283c2f059, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /f45361465j175, ws-headers: {Host: v2-3.godlight.xyz}, udp: true}
+  - {name: _英国_Ytb:鹏哥分享_17, server: jgwcc1.gaox.ml, port: 443, type: trojan, password: 7118b5f4-0ea4-4c11-be7f-11471cb91e4a, sni: jgwcc1.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: _日本_Ytb:鹏哥分享_2, server: v2-1.godlight.xyz, port: 12236, type: vmess, uuid: 719d4cec-82a8-4a65-ad01-32cf08f2c988, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /j75g1461x, ws-headers: {Host: v2-1.godlight.xyz}, udp: true}
+  - {name: _韩国_Ytb:鹏哥分享_4, server: v2-5.godlight.xyz, port: 39786, type: vmess, uuid: 767e55a4-43fa-4301-a9c2-ad30eaa9f61a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /71h4b3s1f53, ws-headers: {Host: v2-5.godlight.xyz}, udp: true}
   - {name: Relay_🇨🇳CN-🇩🇪DE_271, server: s3.upyun.online, port: 12340, type: trojan, password: 316b40c0-0dab-4ea1-9666-ac1658b033b2, sni: s3.upyun.online, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇳CN-🏁ZZ_255, server: gy.sharecentrepro.tk, port: 13397, type: trojan, password: d3b04e55-f2ae-4500-b317-e23946dde463, sni: gy.sharecentrepro.tk, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇳CN-🇨🇳CN_461, server: cm-jm.okvpn.xyz, port: 20004, type: trojan, password: fdb88add-f0a3-4984-8a54-2969d84d6aef, sni: cm-jm.okvpn.xyz, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_1408, server: fhcarm1.gaox.ml, port: 443, type: trojan, password: 05742120-ce23-4cc8-88f5-6d221ce45bf4, sni: fhcarm1.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: _中国_Ytb:鹏哥分享_12, server: shcu.forgebukkit.com, port: 47389, type: vmess, uuid: f680dfd8-3b59-48af-aea8-1d4bc09a1705, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _中国_Ytb:鹏哥分享_40, server: 120.233.10.71, port: 38007, type: ss, cipher: chacha20-ietf-poly1305, password: 66aa4ba9-8df9-4d58-ad8e-1026a2b0219b, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_3780, server: node.774.gs, port: 8443, type: vmess, uuid: 28f6159e-ed46-4bfe-b893-0e7531c28143, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: node.774.gs}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay_🇨🇳CN-🇭🇰HK_466
-      - Relay_🇺🇸US-🇺🇸US_3753
-      - Relay_🇺🇸US-🇺🇸US_3780
+      - 日本(绿头外网集团)(Public)
       - Relay_🇺🇸US-🇺🇸US_1411
+      - _新加坡_Ytb:鹏哥分享_5
+      - _英国_Ytb:鹏哥分享_17
+      - _日本_Ytb:鹏哥分享_2
+      - _韩国_Ytb:鹏哥分享_4
       - Relay_🇨🇳CN-🇩🇪DE_271
-      - Relay_🇨🇳CN-🏁ZZ_255
-      - Relay_🇨🇳CN-🇨🇳CN_461
-      - Relay_🇺🇸US-🇺🇸US_1408
+      - _中国_Ytb:鹏哥分享_12
+      - _中国_Ytb:鹏哥分享_40
+      - Relay_🇺🇸US-🇺🇸US_3780
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - Relay_🇨🇳CN-🇭🇰HK_466
-      - Relay_🇺🇸US-🇺🇸US_3753
-      - Relay_🇺🇸US-🇺🇸US_3780
+      - 日本(绿头外网集团)(Public)
       - Relay_🇺🇸US-🇺🇸US_1411
+      - _新加坡_Ytb:鹏哥分享_5
+      - _英国_Ytb:鹏哥分享_17
+      - _日本_Ytb:鹏哥分享_2
+      - _韩国_Ytb:鹏哥分享_4
       - Relay_🇨🇳CN-🇩🇪DE_271
-      - Relay_🇨🇳CN-🏁ZZ_255
-      - Relay_🇨🇳CN-🇨🇳CN_461
-      - Relay_🇺🇸US-🇺🇸US_1408
+      - _中国_Ytb:鹏哥分享_12
+      - _中国_Ytb:鹏哥分享_40
+      - Relay_🇺🇸US-🇺🇸US_3780
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay_🇨🇳CN-🇭🇰HK_466
-      - Relay_🇺🇸US-🇺🇸US_3753
-      - Relay_🇺🇸US-🇺🇸US_3780
+      - 日本(绿头外网集团)(Public)
       - Relay_🇺🇸US-🇺🇸US_1411
+      - _新加坡_Ytb:鹏哥分享_5
+      - _英国_Ytb:鹏哥分享_17
+      - _日本_Ytb:鹏哥分享_2
+      - _韩国_Ytb:鹏哥分享_4
       - Relay_🇨🇳CN-🇩🇪DE_271
-      - Relay_🇨🇳CN-🏁ZZ_255
-      - Relay_🇨🇳CN-🇨🇳CN_461
-      - Relay_🇺🇸US-🇺🇸US_1408
+      - _中国_Ytb:鹏哥分享_12
+      - _中国_Ytb:鹏哥分享_40
+      - Relay_🇺🇸US-🇺🇸US_3780
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -72,14 +80,16 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay_🇨🇳CN-🇭🇰HK_466
-      - Relay_🇺🇸US-🇺🇸US_3753
-      - Relay_🇺🇸US-🇺🇸US_3780
+      - 日本(绿头外网集团)(Public)
       - Relay_🇺🇸US-🇺🇸US_1411
+      - _新加坡_Ytb:鹏哥分享_5
+      - _英国_Ytb:鹏哥分享_17
+      - _日本_Ytb:鹏哥分享_2
+      - _韩国_Ytb:鹏哥分享_4
       - Relay_🇨🇳CN-🇩🇪DE_271
-      - Relay_🇨🇳CN-🏁ZZ_255
-      - Relay_🇨🇳CN-🇨🇳CN_461
-      - Relay_🇺🇸US-🇺🇸US_1408
+      - _中国_Ytb:鹏哥分享_12
+      - _中国_Ytb:鹏哥分享_40
+      - Relay_🇺🇸US-🇺🇸US_3780
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -90,41 +100,47 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - Relay_🇨🇳CN-🇭🇰HK_466
-      - Relay_🇺🇸US-🇺🇸US_3753
-      - Relay_🇺🇸US-🇺🇸US_3780
+      - 日本(绿头外网集团)(Public)
       - Relay_🇺🇸US-🇺🇸US_1411
+      - _新加坡_Ytb:鹏哥分享_5
+      - _英国_Ytb:鹏哥分享_17
+      - _日本_Ytb:鹏哥分享_2
+      - _韩国_Ytb:鹏哥分享_4
       - Relay_🇨🇳CN-🇩🇪DE_271
-      - Relay_🇨🇳CN-🏁ZZ_255
-      - Relay_🇨🇳CN-🇨🇳CN_461
-      - Relay_🇺🇸US-🇺🇸US_1408
+      - _中国_Ytb:鹏哥分享_12
+      - _中国_Ytb:鹏哥分享_40
+      - Relay_🇺🇸US-🇺🇸US_3780
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - Relay_🇨🇳CN-🇭🇰HK_466
-      - Relay_🇺🇸US-🇺🇸US_3753
-      - Relay_🇺🇸US-🇺🇸US_3780
+      - 日本(绿头外网集团)(Public)
       - Relay_🇺🇸US-🇺🇸US_1411
+      - _新加坡_Ytb:鹏哥分享_5
+      - _英国_Ytb:鹏哥分享_17
+      - _日本_Ytb:鹏哥分享_2
+      - _韩国_Ytb:鹏哥分享_4
       - Relay_🇨🇳CN-🇩🇪DE_271
-      - Relay_🇨🇳CN-🏁ZZ_255
-      - Relay_🇨🇳CN-🇨🇳CN_461
-      - Relay_🇺🇸US-🇺🇸US_1408
+      - _中国_Ytb:鹏哥分享_12
+      - _中国_Ytb:鹏哥分享_40
+      - Relay_🇺🇸US-🇺🇸US_3780
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Relay_🇨🇳CN-🇭🇰HK_466
-      - Relay_🇺🇸US-🇺🇸US_3753
-      - Relay_🇺🇸US-🇺🇸US_3780
+      - 日本(绿头外网集团)(Public)
       - Relay_🇺🇸US-🇺🇸US_1411
+      - _新加坡_Ytb:鹏哥分享_5
+      - _英国_Ytb:鹏哥分享_17
+      - _日本_Ytb:鹏哥分享_2
+      - _韩国_Ytb:鹏哥分享_4
       - Relay_🇨🇳CN-🇩🇪DE_271
-      - Relay_🇨🇳CN-🏁ZZ_255
-      - Relay_🇨🇳CN-🇨🇳CN_461
-      - Relay_🇺🇸US-🇺🇸US_1408
+      - _中国_Ytb:鹏哥分享_12
+      - _中国_Ytb:鹏哥分享_40
+      - Relay_🇺🇸US-🇺🇸US_3780
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -140,14 +156,16 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Relay_🇨🇳CN-🇭🇰HK_466
-      - Relay_🇺🇸US-🇺🇸US_3753
-      - Relay_🇺🇸US-🇺🇸US_3780
+      - 日本(绿头外网集团)(Public)
       - Relay_🇺🇸US-🇺🇸US_1411
+      - _新加坡_Ytb:鹏哥分享_5
+      - _英国_Ytb:鹏哥分享_17
+      - _日本_Ytb:鹏哥分享_2
+      - _韩国_Ytb:鹏哥分享_4
       - Relay_🇨🇳CN-🇩🇪DE_271
-      - Relay_🇨🇳CN-🏁ZZ_255
-      - Relay_🇨🇳CN-🇨🇳CN_461
-      - Relay_🇺🇸US-🇺🇸US_1408
+      - _中国_Ytb:鹏哥分享_12
+      - _中国_Ytb:鹏哥分享_40
+      - Relay_🇺🇸US-🇺🇸US_3780
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
