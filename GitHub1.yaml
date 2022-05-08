@@ -5,219 +5,195 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 日本(绿头外网集团)(Public), server: jgwdj3.gaox.ml, port: 443, type: trojan, password: da777aae-defb-41d0-a183-2c27da2b4677, sni: jgwdj3.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: 日本(绿头外网集团)(Public) 2, server: 4k.fanqiangvpn.com, port: 443, type: vmess, uuid: 32eca3f7-e224-45bc-8b91-61b28ce0fea0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /www.fanqiangvpn.com, ws-headers: {Host: 4k.fanqiangvpn.com}, udp: true}
-  - {name: 美国(绿头外网集团)(Public), server: cloudflare-warp.fanqiangvpn.com, port: 443, type: vmess, uuid: 32eca3f7-e224-45bc-8b91-61b28ce0fea0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /www.fanqiangvpn.com, ws-headers: {Host: cloudflare-warp.fanqiangvpn.com}, udp: true}
-  - {name: 美国(绿头外网集团)(Public) 2, server: 38.68.135.19, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 加拿大(绿头外网集团)(Public), server: 134.195.196.205, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 加拿大(绿头外网集团)(Public) 2, server: 134.195.196.205, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 加拿大(绿头外网集团)(Public) 3, server: 134.195.196.205, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: 加拿大(绿头外网集团)(Public) 4, server: 134.195.196.205, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 英国(绿头外网集团)(Public), server: 172.99.190.35, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 英国(绿头外网集团)(Public) 2, server: 172.99.190.61, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 英国(绿头外网集团)(Public) 3, server: 172.99.190.35, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: 英国(绿头外网集团)(Public) 4, server: 172.99.190.61, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 英国(绿头外网集团)(Public) 5, server: 172.99.190.50, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: 英国(绿头外网集团)(Public) 6, server: 172.99.190.61, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: 英国(绿头外网集团)(Public) 7, server: 172.99.190.61, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: 英国(绿头外网集团)(Public) 8, server: 172.99.190.50, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 英国(绿头外网集团)(Public) 9, server: 172.99.190.50, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 英国(绿头外网集团)(Public) 10, server: 172.99.190.50, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 英国(绿头外网集团)(Public) 11, server: 172.99.190.35, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 英国(绿头外网集团)(Public) 12, server: 172.99.190.50, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 英国(绿头外网集团)(Public) 13, server: 172.99.190.35, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: 英国(绿头外网集团)(Public) 14, server: 172.99.190.35, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 英国(绿头外网集团)(Public) 15, server: 172.99.190.35, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 英国(绿头外网集团)(Public) 16, server: 172.99.190.35, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 英国(绿头外网集团)(Public) 17, server: 172.99.190.61, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 英国(绿头外网集团)(Public) 18, server: 172.99.190.61, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 英国(绿头外网集团)(Public) 19, server: 172.99.190.50, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 英国(绿头外网集团)(Public) 20, server: 172.99.190.61, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 英国(绿头外网集团)(Public) 21, server: 172.99.190.61, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 美国(绿头外网集团)(Public) 3, server: jgwhdlb2.gaox.ml, port: 443, type: trojan, password: 54080134-2cba-4535-8599-95650bd9aa54, sni: jgwhdlb2.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: 英国(绿头外网集团)(Public) 22, server: 172.99.190.35, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: 英国(绿头外网集团)(Public) 23, server: 172.99.190.35, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 英国(绿头外网集团)(Public) 24, server: 172.99.190.35, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 爱尔兰(绿头外网集团)(Public), server: lluucc3.herokuapp.com, port: 443, type: vmess, uuid: 7ff3d9c9-2153-4d3c-939d-697850c95b21, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /f495ba1f, ws-headers: {Host: lluucc3.herokuapp.com}, udp: true}
-  - {name: 印度(绿头外网集团)(Public), server: jgwhdlb3.gaox.ml, port: 443, type: trojan, password: 006baa3f-4bc3-4915-b60d-c8c5dae11a11, sni: jgwhdlb3.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: 新加坡(绿头外网集团)(Public), server: v2-2.godlight.xyz, port: 30540, type: vmess, uuid: 43308d27-94ec-408e-a8f6-d682cfb99ca9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /54f634fs, ws-headers: {Host: v2-2.godlight.xyz}, udp: true}
+  - {name: 新加坡(绿头外网集团)(Public) 2, server: 116.129.254.33, port: 63087, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: 日本(绿头外网集团)(Public), server: 116.129.254.65, port: 63086, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: 日本(绿头外网集团)(Public) 2, server: 116.129.254.33, port: 63086, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: 新加坡(绿头外网集团)(Public) 3, server: 116.129.254.65, port: 63087, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: 印度(绿头外网集团)(Public), server: 116.129.254.33, port: 63004, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: 印度(绿头外网集团)(Public) 2, server: 116.129.254.65, port: 63004, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: github.com/freefq - 美国  22, server: fhcarm1.gaox.ml, port: 443, type: trojan, password: 05742120-ce23-4cc8-88f5-6d221ce45bf4, sni: fhcarm1.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: GB_882, server: 152.89.210.84, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
+  - {name: 加拿大(绿头外网集团)(Public), server: 134.195.196.205, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: 加拿大(绿头外网集团)(Public) 2, server: 134.195.196.205, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: 美国(绿头外网集团)(Public), server: hncu.relay.qchwnd.moe, port: 44611, type: trojan, password: cfaa1d87-16c9-45f2-8ca1-833badb6b790, sni: hncu.relay.qchwnd.moe, skip-cert-verify: true, udp: true}
+  - {name: GB_896, server: 152.89.210.84, port: 9024, type: ss, cipher: aes-256-cfb, password: BejrQvtu9sqUeNuZ, udp: true}
+  - {name: Relay_🇯🇵JP-🇯🇵JP_1015, server: jgwdb3.gaox.ml, port: 443, type: trojan, password: 8d2d5953-d649-4034-94f2-72f2df2623da, sni: jgwdb3.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: 欧洲(欢迎订阅Youtube破解资源君) 9, server: 198.57.27.225, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: 加拿大(绿头外网集团)(Public) 3, server: 134.195.196.205, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: CA_308, server: 198.57.27.225, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: CA_209, server: 198.57.27.225, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: ‌‌🇨🇦加拿大(绿头外网集团)(Public), server: 198.57.27.225, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: CA_284, server: 198.57.27.225, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: CA_195, server: 198.57.27.225, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: 俄罗斯(绿头外网集团)(Public), server: ru.node.qchwnd.moe, port: 44606, type: trojan, password: cfaa1d87-16c9-45f2-8ca1-833badb6b790, sni: ru.node.qchwnd.moe, skip-cert-verify: true, udp: true}
+  - {name: GB_894, server: 152.89.210.84, port: 9059, type: ss, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY, udp: true}
+  - {name: 法国(绿头外网集团)(Public), server: fr.node.qchwnd.moe, port: 44612, type: trojan, password: cfaa1d87-16c9-45f2-8ca1-833badb6b790, sni: fr.node.qchwnd.moe, skip-cert-verify: true, udp: true}
+  - {name: CA_323, server: 198.57.27.225, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: 法国(绿头外网集团)(Public) 2, server: hncu.relay.qchwnd.moe, port: 44612, type: trojan, password: cfaa1d87-16c9-45f2-8ca1-833badb6b790, sni: hncu.relay.qchwnd.moe, skip-cert-verify: true, udp: true}
+  - {name: 英国(绿头外网集团)(Public), server: jgwld3.gaox.ml, port: 443, type: trojan, password: 71b55a84-3fac-4458-abff-eaad79219c91, sni: jgwld3.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: 加拿大(欢迎订阅Youtube破解资源君), server: 198.57.27.225, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: CA_215, server: 198.57.27.225, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: GB_840, server: 152.89.210.84, port: 9032, type: ss, cipher: aes-256-cfb, password: UWZQeLRWnkqgkseq, udp: true}
+  - {name: 美国(绿头外网集团)(Public) 2, server: 116.129.254.33, port: 63069, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: 加拿大(欢迎订阅Youtube破解资源君) 2, server: 198.57.27.225, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: Relay_🇬🇧GB-🇬🇧GB_930, server: jgwld2.gaox.ml, port: 443, type: trojan, password: d7fd8aaa-4581-4281-80aa-4b63e5e1f157, sni: jgwld2.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: 美国(绿头外网集团)(Public) 3, server: 116.129.254.65, port: 63069, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
   - {name: 澳大利亚(绿头外网集团)(Public), server: jgwxn3.gaox.ml, port: 443, type: trojan, password: cb43b7c2-b744-41c5-bcc2-fd7467b332cf, sni: jgwxn3.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: 英国(绿头外网集团)(Public) 25, server: 172.99.190.61, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 英国(绿头外网集团)(Public) 26, server: 172.99.190.35, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 英国(绿头外网集团)(Public) 27, server: 172.99.190.61, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 英国(绿头外网集团)(Public) 28, server: 172.99.190.35, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 英国(绿头外网集团)(Public) 29, server: 172.99.190.35, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 美国(绿头外网集团)(Public) 4, server: jgwhdlb4.gaox.ml, port: 443, type: trojan, password: 081a4198-d664-4bc5-a7c6-e35982da964b, sni: jgwhdlb4.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: 英国(绿头外网集团)(Public) 30, server: 172.99.190.50, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: 英国(绿头外网集团)(Public) 31, server: 172.99.190.61, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 印度(绿头外网集团)(Public) 2, server: jgwhdlb1.gaox.ml, port: 443, type: trojan, password: e05c749b-7c6b-41b8-9c71-9dcf685edf4a, sni: jgwhdlb1.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: 美国(绿头外网集团)(Public) 5, server: jgwcc2.gaox.ml, port: 443, type: trojan, password: 9c822f05-cfdc-479a-9534-60f3d4127435, sni: jgwcc2.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: 英国(绿头外网集团)(Public) 32, server: 172.99.190.61, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: 台湾(绿头外网集团)(Public), server: tw99-direct.myn1des.com, port: 2087, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /t.me/nfeng6, ws-headers: {Host: tw99-direct.myn1des.com}, udp: true}
-  - {name: 英国(绿头外网集团)(Public) 33, server: 172.99.190.50, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_3647, server: jgwhdlb4.gaox.ml, port: 443, type: trojan, password: 081a4198-d664-4bc5-a7c6-e35982da964b, sni: jgwhdlb4.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_3860, server: jgwhdlb2.gaox.ml, port: 443, type: trojan, password: 54080134-2cba-4535-8599-95650bd9aa54, sni: jgwhdlb2.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: 韩国(绿头外网集团)(Public), server: ocikr.node.qchwnd.moe, port: 44600, type: trojan, password: cfaa1d87-16c9-45f2-8ca1-833badb6b790, sni: ocikr.node.qchwnd.moe, skip-cert-verify: true, udp: true}
+  - {name: CA_248, server: 198.57.27.225, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: 美国(绿头外网集团)(Public) 4, server: jgwdj2.gaox.ml, port: 443, type: trojan, password: 86231db5-96d0-4271-9977-cae3a0cba614, sni: jgwdj2.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: 美国(绿头外网集团)(Public) 5, server: azure-hk-1.forwardserver.xyz, port: 48851, type: trojan, password: c488b664-a0a5-4a4e-a7e8-a7a41ba04ae9, sni: azure-hk-1.forwardserver.xyz, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_3862, server: jgwhdlb3.gaox.ml, port: 443, type: trojan, password: 006baa3f-4bc3-4915-b60d-c8c5dae11a11, sni: jgwhdlb3.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: CA_332, server: 198.57.27.225, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 新加坡(绿头外网集团)(Public)
+      - 新加坡(绿头外网集团)(Public) 2
       - 日本(绿头外网集团)(Public)
       - 日本(绿头外网集团)(Public) 2
-      - 美国(绿头外网集团)(Public)
-      - 美国(绿头外网集团)(Public) 2
+      - 新加坡(绿头外网集团)(Public) 3
+      - 印度(绿头外网集团)(Public)
+      - 印度(绿头外网集团)(Public) 2
+      - github.com/freefq - 美国  22
+      - GB_882
       - 加拿大(绿头外网集团)(Public)
       - 加拿大(绿头外网集团)(Public) 2
+      - 美国(绿头外网集团)(Public)
+      - GB_896
+      - Relay_🇯🇵JP-🇯🇵JP_1015
+      - 欧洲(欢迎订阅Youtube破解资源君) 9
       - 加拿大(绿头外网集团)(Public) 3
-      - 加拿大(绿头外网集团)(Public) 4
+      - CA_308
+      - CA_209
+      - ‌‌🇨🇦加拿大(绿头外网集团)(Public)
+      - CA_284
+      - CA_195
+      - 俄罗斯(绿头外网集团)(Public)
+      - GB_894
+      - 法国(绿头外网集团)(Public)
+      - CA_323
+      - 法国(绿头外网集团)(Public) 2
       - 英国(绿头外网集团)(Public)
-      - 英国(绿头外网集团)(Public) 2
-      - 英国(绿头外网集团)(Public) 3
-      - 英国(绿头外网集团)(Public) 4
-      - 英国(绿头外网集团)(Public) 5
-      - 英国(绿头外网集团)(Public) 6
-      - 英国(绿头外网集团)(Public) 7
-      - 英国(绿头外网集团)(Public) 8
-      - 英国(绿头外网集团)(Public) 9
-      - 英国(绿头外网集团)(Public) 10
-      - 英国(绿头外网集团)(Public) 11
-      - 英国(绿头外网集团)(Public) 12
-      - 英国(绿头外网集团)(Public) 13
-      - 英国(绿头外网集团)(Public) 14
-      - 英国(绿头外网集团)(Public) 15
-      - 英国(绿头外网集团)(Public) 16
-      - 英国(绿头外网集团)(Public) 17
-      - 英国(绿头外网集团)(Public) 18
-      - 英国(绿头外网集团)(Public) 19
-      - 英国(绿头外网集团)(Public) 20
-      - 英国(绿头外网集团)(Public) 21
+      - 加拿大(欢迎订阅Youtube破解资源君)
+      - CA_215
+      - GB_840
+      - 美国(绿头外网集团)(Public) 2
+      - 加拿大(欢迎订阅Youtube破解资源君) 2
+      - Relay_🇬🇧GB-🇬🇧GB_930
       - 美国(绿头外网集团)(Public) 3
-      - 英国(绿头外网集团)(Public) 22
-      - 英国(绿头外网集团)(Public) 23
-      - 英国(绿头外网集团)(Public) 24
-      - 爱尔兰(绿头外网集团)(Public)
-      - 印度(绿头外网集团)(Public)
       - 澳大利亚(绿头外网集团)(Public)
-      - 英国(绿头外网集团)(Public) 25
-      - 英国(绿头外网集团)(Public) 26
-      - 英国(绿头外网集团)(Public) 27
-      - 英国(绿头外网集团)(Public) 28
-      - 英国(绿头外网集团)(Public) 29
+      - Relay_🇺🇸US-🇺🇸US_3647
+      - Relay_🇺🇸US-🇺🇸US_3860
+      - 韩国(绿头外网集团)(Public)
+      - CA_248
       - 美国(绿头外网集团)(Public) 4
-      - 英国(绿头外网集团)(Public) 30
-      - 英国(绿头外网集团)(Public) 31
-      - 印度(绿头外网集团)(Public) 2
       - 美国(绿头外网集团)(Public) 5
-      - 英国(绿头外网集团)(Public) 32
-      - 台湾(绿头外网集团)(Public)
-      - 英国(绿头外网集团)(Public) 33
+      - Relay_🇺🇸US-🇺🇸US_3862
+      - CA_332
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
+      - 新加坡(绿头外网集团)(Public)
+      - 新加坡(绿头外网集团)(Public) 2
       - 日本(绿头外网集团)(Public)
       - 日本(绿头外网集团)(Public) 2
-      - 美国(绿头外网集团)(Public)
-      - 美国(绿头外网集团)(Public) 2
+      - 新加坡(绿头外网集团)(Public) 3
+      - 印度(绿头外网集团)(Public)
+      - 印度(绿头外网集团)(Public) 2
+      - github.com/freefq - 美国  22
+      - GB_882
       - 加拿大(绿头外网集团)(Public)
       - 加拿大(绿头外网集团)(Public) 2
+      - 美国(绿头外网集团)(Public)
+      - GB_896
+      - Relay_🇯🇵JP-🇯🇵JP_1015
+      - 欧洲(欢迎订阅Youtube破解资源君) 9
       - 加拿大(绿头外网集团)(Public) 3
-      - 加拿大(绿头外网集团)(Public) 4
+      - CA_308
+      - CA_209
+      - ‌‌🇨🇦加拿大(绿头外网集团)(Public)
+      - CA_284
+      - CA_195
+      - 俄罗斯(绿头外网集团)(Public)
+      - GB_894
+      - 法国(绿头外网集团)(Public)
+      - CA_323
+      - 法国(绿头外网集团)(Public) 2
       - 英国(绿头外网集团)(Public)
-      - 英国(绿头外网集团)(Public) 2
-      - 英国(绿头外网集团)(Public) 3
-      - 英国(绿头外网集团)(Public) 4
-      - 英国(绿头外网集团)(Public) 5
-      - 英国(绿头外网集团)(Public) 6
-      - 英国(绿头外网集团)(Public) 7
-      - 英国(绿头外网集团)(Public) 8
-      - 英国(绿头外网集团)(Public) 9
-      - 英国(绿头外网集团)(Public) 10
-      - 英国(绿头外网集团)(Public) 11
-      - 英国(绿头外网集团)(Public) 12
-      - 英国(绿头外网集团)(Public) 13
-      - 英国(绿头外网集团)(Public) 14
-      - 英国(绿头外网集团)(Public) 15
-      - 英国(绿头外网集团)(Public) 16
-      - 英国(绿头外网集团)(Public) 17
-      - 英国(绿头外网集团)(Public) 18
-      - 英国(绿头外网集团)(Public) 19
-      - 英国(绿头外网集团)(Public) 20
-      - 英国(绿头外网集团)(Public) 21
+      - 加拿大(欢迎订阅Youtube破解资源君)
+      - CA_215
+      - GB_840
+      - 美国(绿头外网集团)(Public) 2
+      - 加拿大(欢迎订阅Youtube破解资源君) 2
+      - Relay_🇬🇧GB-🇬🇧GB_930
       - 美国(绿头外网集团)(Public) 3
-      - 英国(绿头外网集团)(Public) 22
-      - 英国(绿头外网集团)(Public) 23
-      - 英国(绿头外网集团)(Public) 24
-      - 爱尔兰(绿头外网集团)(Public)
-      - 印度(绿头外网集团)(Public)
       - 澳大利亚(绿头外网集团)(Public)
-      - 英国(绿头外网集团)(Public) 25
-      - 英国(绿头外网集团)(Public) 26
-      - 英国(绿头外网集团)(Public) 27
-      - 英国(绿头外网集团)(Public) 28
-      - 英国(绿头外网集团)(Public) 29
+      - Relay_🇺🇸US-🇺🇸US_3647
+      - Relay_🇺🇸US-🇺🇸US_3860
+      - 韩国(绿头外网集团)(Public)
+      - CA_248
       - 美国(绿头外网集团)(Public) 4
-      - 英国(绿头外网集团)(Public) 30
-      - 英国(绿头外网集团)(Public) 31
-      - 印度(绿头外网集团)(Public) 2
       - 美国(绿头外网集团)(Public) 5
-      - 英国(绿头外网集团)(Public) 32
-      - 台湾(绿头外网集团)(Public)
-      - 英国(绿头外网集团)(Public) 33
+      - Relay_🇺🇸US-🇺🇸US_3862
+      - CA_332
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 新加坡(绿头外网集团)(Public)
+      - 新加坡(绿头外网集团)(Public) 2
       - 日本(绿头外网集团)(Public)
       - 日本(绿头外网集团)(Public) 2
-      - 美国(绿头外网集团)(Public)
-      - 美国(绿头外网集团)(Public) 2
+      - 新加坡(绿头外网集团)(Public) 3
+      - 印度(绿头外网集团)(Public)
+      - 印度(绿头外网集团)(Public) 2
+      - github.com/freefq - 美国  22
+      - GB_882
       - 加拿大(绿头外网集团)(Public)
       - 加拿大(绿头外网集团)(Public) 2
+      - 美国(绿头外网集团)(Public)
+      - GB_896
+      - Relay_🇯🇵JP-🇯🇵JP_1015
+      - 欧洲(欢迎订阅Youtube破解资源君) 9
       - 加拿大(绿头外网集团)(Public) 3
-      - 加拿大(绿头外网集团)(Public) 4
+      - CA_308
+      - CA_209
+      - ‌‌🇨🇦加拿大(绿头外网集团)(Public)
+      - CA_284
+      - CA_195
+      - 俄罗斯(绿头外网集团)(Public)
+      - GB_894
+      - 法国(绿头外网集团)(Public)
+      - CA_323
+      - 法国(绿头外网集团)(Public) 2
       - 英国(绿头外网集团)(Public)
-      - 英国(绿头外网集团)(Public) 2
-      - 英国(绿头外网集团)(Public) 3
-      - 英国(绿头外网集团)(Public) 4
-      - 英国(绿头外网集团)(Public) 5
-      - 英国(绿头外网集团)(Public) 6
-      - 英国(绿头外网集团)(Public) 7
-      - 英国(绿头外网集团)(Public) 8
-      - 英国(绿头外网集团)(Public) 9
-      - 英国(绿头外网集团)(Public) 10
-      - 英国(绿头外网集团)(Public) 11
-      - 英国(绿头外网集团)(Public) 12
-      - 英国(绿头外网集团)(Public) 13
-      - 英国(绿头外网集团)(Public) 14
-      - 英国(绿头外网集团)(Public) 15
-      - 英国(绿头外网集团)(Public) 16
-      - 英国(绿头外网集团)(Public) 17
-      - 英国(绿头外网集团)(Public) 18
-      - 英国(绿头外网集团)(Public) 19
-      - 英国(绿头外网集团)(Public) 20
-      - 英国(绿头外网集团)(Public) 21
+      - 加拿大(欢迎订阅Youtube破解资源君)
+      - CA_215
+      - GB_840
+      - 美国(绿头外网集团)(Public) 2
+      - 加拿大(欢迎订阅Youtube破解资源君) 2
+      - Relay_🇬🇧GB-🇬🇧GB_930
       - 美国(绿头外网集团)(Public) 3
-      - 英国(绿头外网集团)(Public) 22
-      - 英国(绿头外网集团)(Public) 23
-      - 英国(绿头外网集团)(Public) 24
-      - 爱尔兰(绿头外网集团)(Public)
-      - 印度(绿头外网集团)(Public)
       - 澳大利亚(绿头外网集团)(Public)
-      - 英国(绿头外网集团)(Public) 25
-      - 英国(绿头外网集团)(Public) 26
-      - 英国(绿头外网集团)(Public) 27
-      - 英国(绿头外网集团)(Public) 28
-      - 英国(绿头外网集团)(Public) 29
+      - Relay_🇺🇸US-🇺🇸US_3647
+      - Relay_🇺🇸US-🇺🇸US_3860
+      - 韩国(绿头外网集团)(Public)
+      - CA_248
       - 美国(绿头外网集团)(Public) 4
-      - 英国(绿头外网集团)(Public) 30
-      - 英国(绿头外网集团)(Public) 31
-      - 印度(绿头外网集团)(Public) 2
       - 美国(绿头外网集团)(Public) 5
-      - 英国(绿头外网集团)(Public) 32
-      - 台湾(绿头外网集团)(Public)
-      - 英国(绿头外网集团)(Public) 33
+      - Relay_🇺🇸US-🇺🇸US_3862
+      - CA_332
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -236,224 +212,199 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 新加坡(绿头外网集团)(Public)
+      - 新加坡(绿头外网集团)(Public) 2
       - 日本(绿头外网集团)(Public)
       - 日本(绿头外网集团)(Public) 2
-      - 美国(绿头外网集团)(Public)
-      - 美国(绿头外网集团)(Public) 2
+      - 新加坡(绿头外网集团)(Public) 3
+      - 印度(绿头外网集团)(Public)
+      - 印度(绿头外网集团)(Public) 2
+      - github.com/freefq - 美国  22
+      - GB_882
       - 加拿大(绿头外网集团)(Public)
       - 加拿大(绿头外网集团)(Public) 2
+      - 美国(绿头外网集团)(Public)
+      - GB_896
+      - Relay_🇯🇵JP-🇯🇵JP_1015
+      - 欧洲(欢迎订阅Youtube破解资源君) 9
       - 加拿大(绿头外网集团)(Public) 3
-      - 加拿大(绿头外网集团)(Public) 4
+      - CA_308
+      - CA_209
+      - ‌‌🇨🇦加拿大(绿头外网集团)(Public)
+      - CA_284
+      - CA_195
+      - 俄罗斯(绿头外网集团)(Public)
+      - GB_894
+      - 法国(绿头外网集团)(Public)
+      - CA_323
+      - 法国(绿头外网集团)(Public) 2
       - 英国(绿头外网集团)(Public)
-      - 英国(绿头外网集团)(Public) 2
-      - 英国(绿头外网集团)(Public) 3
-      - 英国(绿头外网集团)(Public) 4
-      - 英国(绿头外网集团)(Public) 5
-      - 英国(绿头外网集团)(Public) 6
-      - 英国(绿头外网集团)(Public) 7
-      - 英国(绿头外网集团)(Public) 8
-      - 英国(绿头外网集团)(Public) 9
-      - 英国(绿头外网集团)(Public) 10
-      - 英国(绿头外网集团)(Public) 11
-      - 英国(绿头外网集团)(Public) 12
-      - 英国(绿头外网集团)(Public) 13
-      - 英国(绿头外网集团)(Public) 14
-      - 英国(绿头外网集团)(Public) 15
-      - 英国(绿头外网集团)(Public) 16
-      - 英国(绿头外网集团)(Public) 17
-      - 英国(绿头外网集团)(Public) 18
-      - 英国(绿头外网集团)(Public) 19
-      - 英国(绿头外网集团)(Public) 20
-      - 英国(绿头外网集团)(Public) 21
+      - 加拿大(欢迎订阅Youtube破解资源君)
+      - CA_215
+      - GB_840
+      - 美国(绿头外网集团)(Public) 2
+      - 加拿大(欢迎订阅Youtube破解资源君) 2
+      - Relay_🇬🇧GB-🇬🇧GB_930
       - 美国(绿头外网集团)(Public) 3
-      - 英国(绿头外网集团)(Public) 22
-      - 英国(绿头外网集团)(Public) 23
-      - 英国(绿头外网集团)(Public) 24
-      - 爱尔兰(绿头外网集团)(Public)
-      - 印度(绿头外网集团)(Public)
       - 澳大利亚(绿头外网集团)(Public)
-      - 英国(绿头外网集团)(Public) 25
-      - 英国(绿头外网集团)(Public) 26
-      - 英国(绿头外网集团)(Public) 27
-      - 英国(绿头外网集团)(Public) 28
-      - 英国(绿头外网集团)(Public) 29
+      - Relay_🇺🇸US-🇺🇸US_3647
+      - Relay_🇺🇸US-🇺🇸US_3860
+      - 韩国(绿头外网集团)(Public)
+      - CA_248
       - 美国(绿头外网集团)(Public) 4
-      - 英国(绿头外网集团)(Public) 30
-      - 英国(绿头外网集团)(Public) 31
-      - 印度(绿头外网集团)(Public) 2
       - 美国(绿头外网集团)(Public) 5
-      - 英国(绿头外网集团)(Public) 32
-      - 台湾(绿头外网集团)(Public)
-      - 英国(绿头外网集团)(Public) 33
+      - Relay_🇺🇸US-🇺🇸US_3862
+      - CA_332
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 台湾(绿头外网集团)(Public)
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
+      - 新加坡(绿头外网集团)(Public)
+      - 新加坡(绿头外网集团)(Public) 2
       - 日本(绿头外网集团)(Public)
       - 日本(绿头外网集团)(Public) 2
-      - 美国(绿头外网集团)(Public)
-      - 美国(绿头外网集团)(Public) 2
+      - 新加坡(绿头外网集团)(Public) 3
+      - 印度(绿头外网集团)(Public)
+      - 印度(绿头外网集团)(Public) 2
+      - github.com/freefq - 美国  22
+      - GB_882
       - 加拿大(绿头外网集团)(Public)
       - 加拿大(绿头外网集团)(Public) 2
+      - 美国(绿头外网集团)(Public)
+      - GB_896
+      - Relay_🇯🇵JP-🇯🇵JP_1015
+      - 欧洲(欢迎订阅Youtube破解资源君) 9
       - 加拿大(绿头外网集团)(Public) 3
-      - 加拿大(绿头外网集团)(Public) 4
+      - CA_308
+      - CA_209
+      - ‌‌🇨🇦加拿大(绿头外网集团)(Public)
+      - CA_284
+      - CA_195
+      - 俄罗斯(绿头外网集团)(Public)
+      - GB_894
+      - 法国(绿头外网集团)(Public)
+      - CA_323
+      - 法国(绿头外网集团)(Public) 2
       - 英国(绿头外网集团)(Public)
-      - 英国(绿头外网集团)(Public) 2
-      - 英国(绿头外网集团)(Public) 3
-      - 英国(绿头外网集团)(Public) 4
-      - 英国(绿头外网集团)(Public) 5
-      - 英国(绿头外网集团)(Public) 6
-      - 英国(绿头外网集团)(Public) 7
-      - 英国(绿头外网集团)(Public) 8
-      - 英国(绿头外网集团)(Public) 9
-      - 英国(绿头外网集团)(Public) 10
-      - 英国(绿头外网集团)(Public) 11
-      - 英国(绿头外网集团)(Public) 12
-      - 英国(绿头外网集团)(Public) 13
-      - 英国(绿头外网集团)(Public) 14
-      - 英国(绿头外网集团)(Public) 15
-      - 英国(绿头外网集团)(Public) 16
-      - 英国(绿头外网集团)(Public) 17
-      - 英国(绿头外网集团)(Public) 18
-      - 英国(绿头外网集团)(Public) 19
-      - 英国(绿头外网集团)(Public) 20
-      - 英国(绿头外网集团)(Public) 21
+      - 加拿大(欢迎订阅Youtube破解资源君)
+      - CA_215
+      - GB_840
+      - 美国(绿头外网集团)(Public) 2
+      - 加拿大(欢迎订阅Youtube破解资源君) 2
+      - Relay_🇬🇧GB-🇬🇧GB_930
       - 美国(绿头外网集团)(Public) 3
-      - 英国(绿头外网集团)(Public) 22
-      - 英国(绿头外网集团)(Public) 23
-      - 英国(绿头外网集团)(Public) 24
-      - 爱尔兰(绿头外网集团)(Public)
-      - 印度(绿头外网集团)(Public)
       - 澳大利亚(绿头外网集团)(Public)
-      - 英国(绿头外网集团)(Public) 25
-      - 英国(绿头外网集团)(Public) 26
-      - 英国(绿头外网集团)(Public) 27
-      - 英国(绿头外网集团)(Public) 28
-      - 英国(绿头外网集团)(Public) 29
+      - Relay_🇺🇸US-🇺🇸US_3647
+      - Relay_🇺🇸US-🇺🇸US_3860
+      - 韩国(绿头外网集团)(Public)
+      - CA_248
       - 美国(绿头外网集团)(Public) 4
-      - 英国(绿头外网集团)(Public) 30
-      - 英国(绿头外网集团)(Public) 31
-      - 印度(绿头外网集团)(Public) 2
       - 美国(绿头外网集团)(Public) 5
-      - 英国(绿头外网集团)(Public) 32
-      - 台湾(绿头外网集团)(Public)
-      - 英国(绿头外网集团)(Public) 33
+      - Relay_🇺🇸US-🇺🇸US_3862
+      - CA_332
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
+      - 新加坡(绿头外网集团)(Public)
+      - 新加坡(绿头外网集团)(Public) 2
       - 日本(绿头外网集团)(Public)
       - 日本(绿头外网集团)(Public) 2
-      - 美国(绿头外网集团)(Public)
-      - 美国(绿头外网集团)(Public) 2
+      - 新加坡(绿头外网集团)(Public) 3
+      - 印度(绿头外网集团)(Public)
+      - 印度(绿头外网集团)(Public) 2
+      - github.com/freefq - 美国  22
+      - GB_882
       - 加拿大(绿头外网集团)(Public)
       - 加拿大(绿头外网集团)(Public) 2
+      - 美国(绿头外网集团)(Public)
+      - GB_896
+      - Relay_🇯🇵JP-🇯🇵JP_1015
+      - 欧洲(欢迎订阅Youtube破解资源君) 9
       - 加拿大(绿头外网集团)(Public) 3
-      - 加拿大(绿头外网集团)(Public) 4
+      - CA_308
+      - CA_209
+      - ‌‌🇨🇦加拿大(绿头外网集团)(Public)
+      - CA_284
+      - CA_195
+      - 俄罗斯(绿头外网集团)(Public)
+      - GB_894
+      - 法国(绿头外网集团)(Public)
+      - CA_323
+      - 法国(绿头外网集团)(Public) 2
       - 英国(绿头外网集团)(Public)
-      - 英国(绿头外网集团)(Public) 2
-      - 英国(绿头外网集团)(Public) 3
-      - 英国(绿头外网集团)(Public) 4
-      - 英国(绿头外网集团)(Public) 5
-      - 英国(绿头外网集团)(Public) 6
-      - 英国(绿头外网集团)(Public) 7
-      - 英国(绿头外网集团)(Public) 8
-      - 英国(绿头外网集团)(Public) 9
-      - 英国(绿头外网集团)(Public) 10
-      - 英国(绿头外网集团)(Public) 11
-      - 英国(绿头外网集团)(Public) 12
-      - 英国(绿头外网集团)(Public) 13
-      - 英国(绿头外网集团)(Public) 14
-      - 英国(绿头外网集团)(Public) 15
-      - 英国(绿头外网集团)(Public) 16
-      - 英国(绿头外网集团)(Public) 17
-      - 英国(绿头外网集团)(Public) 18
-      - 英国(绿头外网集团)(Public) 19
-      - 英国(绿头外网集团)(Public) 20
-      - 英国(绿头外网集团)(Public) 21
+      - 加拿大(欢迎订阅Youtube破解资源君)
+      - CA_215
+      - GB_840
+      - 美国(绿头外网集团)(Public) 2
+      - 加拿大(欢迎订阅Youtube破解资源君) 2
+      - Relay_🇬🇧GB-🇬🇧GB_930
       - 美国(绿头外网集团)(Public) 3
-      - 英国(绿头外网集团)(Public) 22
-      - 英国(绿头外网集团)(Public) 23
-      - 英国(绿头外网集团)(Public) 24
-      - 爱尔兰(绿头外网集团)(Public)
-      - 印度(绿头外网集团)(Public)
       - 澳大利亚(绿头外网集团)(Public)
-      - 英国(绿头外网集团)(Public) 25
-      - 英国(绿头外网集团)(Public) 26
-      - 英国(绿头外网集团)(Public) 27
-      - 英国(绿头外网集团)(Public) 28
-      - 英国(绿头外网集团)(Public) 29
+      - Relay_🇺🇸US-🇺🇸US_3647
+      - Relay_🇺🇸US-🇺🇸US_3860
+      - 韩国(绿头外网集团)(Public)
+      - CA_248
       - 美国(绿头外网集团)(Public) 4
-      - 英国(绿头外网集团)(Public) 30
-      - 英国(绿头外网集团)(Public) 31
-      - 印度(绿头外网集团)(Public) 2
       - 美国(绿头外网集团)(Public) 5
-      - 英国(绿头外网集团)(Public) 32
-      - 台湾(绿头外网集团)(Public)
-      - 英国(绿头外网集团)(Public) 33
+      - Relay_🇺🇸US-🇺🇸US_3862
+      - CA_332
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 新加坡(绿头外网集团)(Public)
+      - 新加坡(绿头外网集团)(Public) 2
       - 日本(绿头外网集团)(Public)
       - 日本(绿头外网集团)(Public) 2
-      - 美国(绿头外网集团)(Public)
-      - 美国(绿头外网集团)(Public) 2
+      - 新加坡(绿头外网集团)(Public) 3
+      - 印度(绿头外网集团)(Public)
+      - 印度(绿头外网集团)(Public) 2
+      - github.com/freefq - 美国  22
+      - GB_882
       - 加拿大(绿头外网集团)(Public)
       - 加拿大(绿头外网集团)(Public) 2
+      - 美国(绿头外网集团)(Public)
+      - GB_896
+      - Relay_🇯🇵JP-🇯🇵JP_1015
+      - 欧洲(欢迎订阅Youtube破解资源君) 9
       - 加拿大(绿头外网集团)(Public) 3
-      - 加拿大(绿头外网集团)(Public) 4
+      - CA_308
+      - CA_209
+      - ‌‌🇨🇦加拿大(绿头外网集团)(Public)
+      - CA_284
+      - CA_195
+      - 俄罗斯(绿头外网集团)(Public)
+      - GB_894
+      - 法国(绿头外网集团)(Public)
+      - CA_323
+      - 法国(绿头外网集团)(Public) 2
       - 英国(绿头外网集团)(Public)
-      - 英国(绿头外网集团)(Public) 2
-      - 英国(绿头外网集团)(Public) 3
-      - 英国(绿头外网集团)(Public) 4
-      - 英国(绿头外网集团)(Public) 5
-      - 英国(绿头外网集团)(Public) 6
-      - 英国(绿头外网集团)(Public) 7
-      - 英国(绿头外网集团)(Public) 8
-      - 英国(绿头外网集团)(Public) 9
-      - 英国(绿头外网集团)(Public) 10
-      - 英国(绿头外网集团)(Public) 11
-      - 英国(绿头外网集团)(Public) 12
-      - 英国(绿头外网集团)(Public) 13
-      - 英国(绿头外网集团)(Public) 14
-      - 英国(绿头外网集团)(Public) 15
-      - 英国(绿头外网集团)(Public) 16
-      - 英国(绿头外网集团)(Public) 17
-      - 英国(绿头外网集团)(Public) 18
-      - 英国(绿头外网集团)(Public) 19
-      - 英国(绿头外网集团)(Public) 20
-      - 英国(绿头外网集团)(Public) 21
+      - 加拿大(欢迎订阅Youtube破解资源君)
+      - CA_215
+      - GB_840
+      - 美国(绿头外网集团)(Public) 2
+      - 加拿大(欢迎订阅Youtube破解资源君) 2
+      - Relay_🇬🇧GB-🇬🇧GB_930
       - 美国(绿头外网集团)(Public) 3
-      - 英国(绿头外网集团)(Public) 22
-      - 英国(绿头外网集团)(Public) 23
-      - 英国(绿头外网集团)(Public) 24
-      - 爱尔兰(绿头外网集团)(Public)
-      - 印度(绿头外网集团)(Public)
       - 澳大利亚(绿头外网集团)(Public)
-      - 英国(绿头外网集团)(Public) 25
-      - 英国(绿头外网集团)(Public) 26
-      - 英国(绿头外网集团)(Public) 27
-      - 英国(绿头外网集团)(Public) 28
-      - 英国(绿头外网集团)(Public) 29
+      - Relay_🇺🇸US-🇺🇸US_3647
+      - Relay_🇺🇸US-🇺🇸US_3860
+      - 韩国(绿头外网集团)(Public)
+      - CA_248
       - 美国(绿头外网集团)(Public) 4
-      - 英国(绿头外网集团)(Public) 30
-      - 英国(绿头外网集团)(Public) 31
-      - 印度(绿头外网集团)(Public) 2
       - 美国(绿头外网集团)(Public) 5
-      - 英国(绿头外网集团)(Public) 32
-      - 台湾(绿头外网集团)(Public)
-      - 英国(绿头外网集团)(Public) 33
+      - Relay_🇺🇸US-🇺🇸US_3862
+      - CA_332
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -469,55 +420,49 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 新加坡(绿头外网集团)(Public)
+      - 新加坡(绿头外网集团)(Public) 2
       - 日本(绿头外网集团)(Public)
       - 日本(绿头外网集团)(Public) 2
-      - 美国(绿头外网集团)(Public)
-      - 美国(绿头外网集团)(Public) 2
+      - 新加坡(绿头外网集团)(Public) 3
+      - 印度(绿头外网集团)(Public)
+      - 印度(绿头外网集团)(Public) 2
+      - github.com/freefq - 美国  22
+      - GB_882
       - 加拿大(绿头外网集团)(Public)
       - 加拿大(绿头外网集团)(Public) 2
+      - 美国(绿头外网集团)(Public)
+      - GB_896
+      - Relay_🇯🇵JP-🇯🇵JP_1015
+      - 欧洲(欢迎订阅Youtube破解资源君) 9
       - 加拿大(绿头外网集团)(Public) 3
-      - 加拿大(绿头外网集团)(Public) 4
+      - CA_308
+      - CA_209
+      - ‌‌🇨🇦加拿大(绿头外网集团)(Public)
+      - CA_284
+      - CA_195
+      - 俄罗斯(绿头外网集团)(Public)
+      - GB_894
+      - 法国(绿头外网集团)(Public)
+      - CA_323
+      - 法国(绿头外网集团)(Public) 2
       - 英国(绿头外网集团)(Public)
-      - 英国(绿头外网集团)(Public) 2
-      - 英国(绿头外网集团)(Public) 3
-      - 英国(绿头外网集团)(Public) 4
-      - 英国(绿头外网集团)(Public) 5
-      - 英国(绿头外网集团)(Public) 6
-      - 英国(绿头外网集团)(Public) 7
-      - 英国(绿头外网集团)(Public) 8
-      - 英国(绿头外网集团)(Public) 9
-      - 英国(绿头外网集团)(Public) 10
-      - 英国(绿头外网集团)(Public) 11
-      - 英国(绿头外网集团)(Public) 12
-      - 英国(绿头外网集团)(Public) 13
-      - 英国(绿头外网集团)(Public) 14
-      - 英国(绿头外网集团)(Public) 15
-      - 英国(绿头外网集团)(Public) 16
-      - 英国(绿头外网集团)(Public) 17
-      - 英国(绿头外网集团)(Public) 18
-      - 英国(绿头外网集团)(Public) 19
-      - 英国(绿头外网集团)(Public) 20
-      - 英国(绿头外网集团)(Public) 21
+      - 加拿大(欢迎订阅Youtube破解资源君)
+      - CA_215
+      - GB_840
+      - 美国(绿头外网集团)(Public) 2
+      - 加拿大(欢迎订阅Youtube破解资源君) 2
+      - Relay_🇬🇧GB-🇬🇧GB_930
       - 美国(绿头外网集团)(Public) 3
-      - 英国(绿头外网集团)(Public) 22
-      - 英国(绿头外网集团)(Public) 23
-      - 英国(绿头外网集团)(Public) 24
-      - 爱尔兰(绿头外网集团)(Public)
-      - 印度(绿头外网集团)(Public)
       - 澳大利亚(绿头外网集团)(Public)
-      - 英国(绿头外网集团)(Public) 25
-      - 英国(绿头外网集团)(Public) 26
-      - 英国(绿头外网集团)(Public) 27
-      - 英国(绿头外网集团)(Public) 28
-      - 英国(绿头外网集团)(Public) 29
+      - Relay_🇺🇸US-🇺🇸US_3647
+      - Relay_🇺🇸US-🇺🇸US_3860
+      - 韩国(绿头外网集团)(Public)
+      - CA_248
       - 美国(绿头外网集团)(Public) 4
-      - 英国(绿头外网集团)(Public) 30
-      - 英国(绿头外网集团)(Public) 31
-      - 印度(绿头外网集团)(Public) 2
       - 美国(绿头外网集团)(Public) 5
-      - 英国(绿头外网集团)(Public) 32
-      - 台湾(绿头外网集团)(Public)
-      - 英国(绿头外网集团)(Public) 33
+      - Relay_🇺🇸US-🇺🇸US_3862
+      - CA_332
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
