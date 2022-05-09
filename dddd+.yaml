@@ -1,623 +1,203 @@
-﻿port: 7890
+port: 7890
 socks-port: 7891
 allow-lan: true
 mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: Relay_🇨🇳CN-🇹🇼TW_446, server: n119.boom.party, port: 17000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 343767:3StTW5, obfs-param: download.windowsupdate.com, udp: true}
-  - {name: Relay_🇨🇳CN-🇹🇼TW_444, server: s100.boom.party, port: 19000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 343767:3StTW5, obfs-param: download.windowsupdate.com, udp: true}
-  - {name: US_3599, server: 45.9.10.56, port: 14994, type: vmess, uuid: 01b663ce-ae56-47e3-a455-01944f4e1a42, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: AU_54, server: 185.167.116.253, port: 9073, type: ss, cipher: aes-256-cfb, password: daFYagqDdBdA6VTX, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_3640, server: usa-sr-106.mitoption.com, port: 443, type: trojan, password: e5d46365e25e31d94279c2bcf93390a2, sni: usa-sr-106.mitoption.com, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇯🇵JP-🇯🇵JP_1015, server: jgwdb3.gaox.ml, port: 443, type: trojan, password: 8d2d5953-d649-4034-94f2-72f2df2623da, sni: jgwdb3.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇦🇺AU-🇦🇺AU_125, server: jgwdb1.gaox.ml, port: 443, type: trojan, password: a580d839-ee41-4df1-bf03-6789dca32e30, sni: jgwdb1.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: ZZ_3922, server: 169.197.142.99, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: US_3627, server: 45.12.110.8, port: 31432, type: vmess, uuid: d7729364-2135-4af5-aa4f-e1f565a5c23e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: DE_592, server: 5.183.179.170, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH, udp: true}
-  - {name: DE_617, server: 5.183.179.145, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
-  - {name: US_1768, server: 38.68.135.19, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: DE_660, server: 5.183.179.170, port: 9059, type: ss, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY, udp: true}
-  - {name: DE_583, server: 5.183.179.137, port: 9010, type: ss, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4, udp: true}
-  - {name: US_1778, server: 38.68.135.19, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: DE_543, server: 5.183.179.170, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
-  - {name: AU_123, server: 43.129.227.60, port: 27727, type: vmess, uuid: d00f5ea9-4658-4f0a-a6c3-e29ef711cf3b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [43.129.227.60]}}, udp: true}
-  - {name: DE_542, server: 5.183.179.170, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_3635, server: sg-sr-116.mitoption.com, port: 443, type: trojan, password: e5d46365e25e31d94279c2bcf93390a2, sni: sg-sr-116.mitoption.com, skip-cert-verify: true, udp: true}
-  - {name: DE_676, server: 5.183.179.137, port: 9033, type: ss, cipher: aes-256-cfb, password: UTJA57ypk2XKQpnm, udp: true}
-  - {name: DE_517, server: 5.183.179.170, port: 9060, type: ss, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ, udp: true}
-  - {name: DE_665, server: 5.183.179.170, port: 9045, type: ss, cipher: aes-256-cfb, password: Lp27rqyJq72bZsqX, udp: true}
-  - {name: RU_1486, server: 217.30.10.66, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
-  - {name: RU_1527, server: 217.30.10.66, port: 9041, type: ss, cipher: aes-256-cfb, password: U6qnYRhfyDmn8sgn, udp: true}
-  - {name: DE_503, server: 5.183.179.145, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
-  - {name: DE_699, server: 5.183.179.170, port: 9046, type: ss, cipher: aes-256-cfb, password: NvS8N4Vf8qAGPSCL, udp: true}
-  - {name: DE_576, server: 5.183.179.145, port: 9026, type: ss, cipher: aes-256-cfb, password: QWDDvVE9npNurQfA, udp: true}
-  - {name: CA_323, server: 198.57.27.225, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: DE_615, server: 5.183.179.167, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa, udp: true}
-  - {name: RU_1553, server: 217.30.10.66, port: 9093, type: ss, cipher: aes-256-cfb, password: wfLC2y7rzZyCmuyt, udp: true}
-  - {name: CA_209, server: 198.57.27.225, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: DE_637, server: 5.183.179.167, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga, udp: true}
-  - {name: DE_505, server: 5.183.179.140, port: 9053, type: ss, cipher: aes-256-cfb, password: SBM7R883jBmnqe6C, udp: true}
-  - {name: US_3620, server: 45.76.71.233, port: 46983, type: vmess, uuid: 69099258-1476-46dd-a51b-84e915e941be, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /1tGK82lU/, ws-headers: {Host: 45.76.71.233}, udp: true}
-  - {name: CA_215, server: 198.57.27.225, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: DE_701, server: 5.183.179.170, port: 9005, type: ss, cipher: aes-256-cfb, password: ZET59LF6DvCC8KVt, udp: true}
-  - {name: CA_332, server: 198.57.27.225, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: RO_1405, server: 185.126.116.125, port: 9043, type: ss, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF, udp: true}
-  - {name: Relay_🇬🇧GB-🇬🇧GB_898, server: jgwld4.gaox.ml, port: 443, type: trojan, password: 58d32c66-43b1-4561-9951-d87c9123774e, sni: jgwld4.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇬🇧GB-🇬🇧GB_904, server: jgwld1.gaox.ml, port: 443, type: trojan, password: 02e653c9-7c93-46a9-999d-11834bd0c577, sni: jgwld1.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇬🇧GB-🇬🇧GB_900, server: jgwld3.gaox.ml, port: 443, type: trojan, password: 71b55a84-3fac-4458-abff-eaad79219c91, sni: jgwld3.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: DE_474, server: 5.183.179.167, port: 9010, type: ss, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4, udp: true}
-  - {name: RU_1540, server: 217.30.10.66, port: 9045, type: ss, cipher: aes-256-cfb, password: Lp27rqyJq72bZsqX, udp: true}
-  - {name: DE_492, server: 5.183.179.140, port: 9015, type: ss, cipher: aes-256-cfb, password: ZpNDDKRu9MagNvaf, udp: true}
-  - {name: DE_566, server: 5.183.179.170, port: 9031, type: ss, cipher: aes-256-cfb, password: BwcAUZk8hUFAkDGN, udp: true}
-  - {name: LT_1093, server: 213.183.63.219, port: 9027, type: ss, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8, udp: true}
-  - {name: RU_1510, server: 217.30.10.66, port: 9001, type: ss, cipher: aes-256-cfb, password: UkXRsXvR6buDMG2Y, udp: true}
-  - {name: RU_1538, server: 217.30.10.66, port: 9027, type: ss, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8, udp: true}
-  - {name: Relay_🇨🇳CN-🇺🇸US_447, server: dajbxus.naikonode.top, port: 15106, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 1596:vsqvobohcqs, obfs-param: 6371f1596.microsoft.com, udp: true}
-  - {name: DE_516, server: 5.183.179.137, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
-  - {name: AU_57, server: 185.167.116.253, port: 9038, type: ss, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ, udp: true}
+  - {name: Relay_🇯🇵JP-🇯🇵JP_999, server: v2.godlight.xyz, port: 26940, type: vmess, uuid: 1a059eff-ad8a-42ad-921c-465c5b31f183, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /dajdklw231f, ws-headers: {Host: v2.godlight.xyz}, udp: true}
+  - {name: 韩国(欢迎订阅Youtube破解资源君), server: v2-5.godlight.xyz, port: 39787, type: vmess, uuid: 767e55a4-43fa-4301-a9c2-ad30eaa9f61a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /71h4b3s1f53, ws-headers: {Host: v2-5.godlight.xyz}, udp: true}
+  - {name: 新加坡(绿头外网集团)(Public) 2, server: 116.129.254.33, port: 63087, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: 日本(绿头外网集团)(Public) 2, server: 116.129.254.33, port: 63086, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: 日本(绿头外网集团)(Public), server: 116.129.254.65, port: 63086, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: 新加坡(绿头外网集团)(Public) 3, server: 116.129.254.65, port: 63087, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: 印度(绿头外网集团)(Public) 2, server: 116.129.254.65, port: 63004, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: 印度(绿头外网集团)(Public), server: 116.129.254.33, port: 63004, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: 美国(绿头外网集团)(Public), server: hncu.relay.qchwnd.moe, port: 44611, type: trojan, password: cfaa1d87-16c9-45f2-8ca1-833badb6b790, sni: hncu.relay.qchwnd.moe, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 美国  22, server: fhcarm1.gaox.ml, port: 443, type: trojan, password: 05742120-ce23-4cc8-88f5-6d221ce45bf4, sni: fhcarm1.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: 欧洲(欢迎订阅Youtube破解资源君) 22, server: 134.195.196.205, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: 加拿大(绿头外网集团)(Public), server: 134.195.196.205, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: 加拿大(欢迎订阅Youtube破解资源君), server: 198.57.27.225, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: ‌‌🇨🇦加拿大(绿头外网集团)(Public), server: 198.57.27.225, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_3673, server: jgwdb2.gaox.ml, port: 443, type: trojan, password: c19d1432-8b3e-4818-8837-3d160cf65908, sni: jgwdb2.gaox.ml, skip-cert-verify: true, udp: true}
   - {name: CA_195, server: 198.57.27.225, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: RU_1466, server: 217.30.10.66, port: 9008, type: ss, cipher: aes-256-cfb, password: y9VURyNzJWNRYEGQ, udp: true}
-  - {name: LT_1139, server: 213.183.63.219, port: 9003, type: ss, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP, udp: true}
-  - {name: ZZ_3843, server: 169.197.142.99, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: AU_67, server: 185.167.116.253, port: 9057, type: ss, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z, udp: true}
-  - {name: Relay_🇨🇳CN-🇺🇸US_449, server: dajbxus.naikonode.top, port: 15105, type: ssr, cipher: chacha20-ietf, password: NaikoCloud, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 1596:vsqvobohcqs, obfs-param: 6371f1596.microsoft.com, udp: true}
-  - {name: DE_693, server: 5.183.179.170, port: 9041, type: ss, cipher: aes-256-cfb, password: U6qnYRhfyDmn8sgn, udp: true}
-  - {name: RU_1545, server: 217.30.10.66, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
-  - {name: CA_248, server: 198.57.27.225, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: RO_1362, server: 62.216.91.229, port: 9080, type: ss, cipher: aes-256-cfb, password: VP8ZPxQpJtZRCjfZ, udp: true}
-  - {name: LT_1110, server: 213.183.63.219, port: 9033, type: ss, cipher: aes-256-cfb, password: UTJA57ypk2XKQpnm, udp: true}
-  - {name: GB_840, server: 152.89.210.84, port: 9032, type: ss, cipher: aes-256-cfb, password: UWZQeLRWnkqgkseq, udp: true}
-  - {name: RU_1547, server: 217.30.10.66, port: 9057, type: ss, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z, udp: true}
-  - {name: Relay_🇯🇵JP-🇯🇵JP_1012, server: jgwdb4.gaox.ml, port: 443, type: trojan, password: d06a3f01-1ff0-4792-9b8e-a5a604bc74a2, sni: jgwdb4.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: DE_515, server: 5.183.179.140, port: 9026, type: ss, cipher: aes-256-cfb, password: QWDDvVE9npNurQfA, udp: true}
-  - {name: RU_1499, server: 217.30.10.66, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_3647, server: jgwhdlb4.gaox.ml, port: 443, type: trojan, password: 081a4198-d664-4bc5-a7c6-e35982da964b, sni: jgwhdlb4.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇦🇺AU-🇦🇺AU_126, server: jgwxn2.gaox.ml, port: 443, type: trojan, password: c2b60d6a-a2f5-40ff-b7f9-f7658abcbf26, sni: jgwxn2.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: DE_688, server: 5.183.179.170, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
-  - {name: DE_618, server: 5.183.179.170, port: 9032, type: ss, cipher: aes-256-cfb, password: UWZQeLRWnkqgkseq, udp: true}
-  - {name: RU_1430, server: 217.30.10.65, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga, udp: true}
-  - {name: RU_1448, server: 217.30.10.66, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX, udp: true}
-  - {name: US_2138, server: 38.68.135.19, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: ZZ_4591, server: 169.197.142.99, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: DE_578, server: 5.183.179.167, port: 9053, type: ss, cipher: aes-256-cfb, password: SBM7R883jBmnqe6C, udp: true}
-  - {name: CA_202, server: 198.57.27.225, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: ZZ_3771, server: 169.197.142.99, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: RO_1391, server: 185.126.116.117, port: 9007, type: ss, cipher: aes-256-cfb, password: kSPmvwdFzGMMW5pY, udp: true}
-  - {name: RU_1434, server: 217.30.10.66, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
-  - {name: GB_847, server: 152.89.210.84, port: 9027, type: ss, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8, udp: true}
-  - {name: RU_1516, server: 217.30.10.66, port: 9038, type: ss, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ, udp: true}
+  - {name: 加拿大(欢迎订阅Youtube破解资源君) 2, server: 198.57.27.225, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 欧洲(欢迎订阅Youtube破解资源君) 3, server: 198.57.27.225, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: CA_209, server: 198.57.27.225, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 加拿大(绿头外网集团)(Public) 2, server: 198.57.27.225, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
   - {name: CA_308, server: 198.57.27.225, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: RO_1387, server: 185.126.116.117, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
-  - {name: GB_866, server: 152.89.210.84, port: 9015, type: ss, cipher: aes-256-cfb, password: ZpNDDKRu9MagNvaf, udp: true}
-  - {name: AU_111, server: 185.167.116.253, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa, udp: true}
-  - {name: DE_475, server: 5.183.179.167, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH, udp: true}
-  - {name: DE_589, server: 5.183.179.140, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH, udp: true}
-  - {name: RU_1420, server: 217.30.10.67, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga, udp: true}
-  - {name: AU_87, server: 185.167.116.253, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
-  - {name: Relay_🇨🇳CN-🇭🇰HK_452, server: shonlinesandcu03.proconcn.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 50252:123321Ddd, obfs-param: "", udp: true}
-  - {name: AU_50, server: 185.167.116.253, port: 9043, type: ss, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF, udp: true}
-  - {name: RU_1444, server: 217.30.10.67, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
-  - {name: RU_1480, server: 217.30.10.67, port: 9031, type: ss, cipher: aes-256-cfb, password: BwcAUZk8hUFAkDGN, udp: true}
-  - {name: RU_1484, server: 217.30.10.65, port: 9060, type: ss, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ, udp: true}
-  - {name: RU_1453, server: 217.30.10.65, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
-  - {name: RU_1503, server: 217.30.10.67, port: 9097, type: ss, cipher: aes-256-cfb, password: Sn5B7jTqr76aCJT8, udp: true}
-  - {name: RU_1442, server: 217.30.10.67, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
-  - {name: RU_1440, server: 217.30.10.67, port: 9057, type: ss, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z, udp: true}
-  - {name: NL_1317, server: 213.183.59.229, port: 9007, type: ss, cipher: aes-256-cfb, password: kSPmvwdFzGMMW5pY, udp: true}
-  - {name: DE_659, server: 5.183.179.140, port: 9025, type: ss, cipher: aes-256-cfb, password: XPtzA9sCug3SPR4c, udp: true}
-  - {name: RU_1458, server: 217.30.10.65, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH, udp: true}
-  - {name: RU_1496, server: 217.30.10.67, port: 9093, type: ss, cipher: aes-256-cfb, password: wfLC2y7rzZyCmuyt, udp: true}
-  - {name: RU_1414, server: 217.30.10.67, port: 9059, type: ss, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY, udp: true}
-  - {name: CA_341, server: 198.57.27.225, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_3646, server: jgwhdlb1.gaox.ml, port: 443, type: trojan, password: e05c749b-7c6b-41b8-9c71-9dcf685edf4a, sni: jgwhdlb1.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: DE_677, server: 5.183.179.170, port: 9097, type: ss, cipher: aes-256-cfb, password: Sn5B7jTqr76aCJT8, udp: true}
-  - {name: DE_482, server: 5.183.179.166, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
-  - {name: RO_1377, server: 185.126.116.117, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
-  - {name: RU_1519, server: 217.30.10.65, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
-  - {name: US_2157, server: 38.68.135.19, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: NL_1265, server: 85.208.108.58, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: RU_1462, server: 217.30.10.67, port: 9043, type: ss, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF, udp: true}
-  - {name: CA_212, server: 198.57.27.225, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: RU_1482, server: 217.30.10.65, port: 9045, type: ss, cipher: aes-256-cfb, password: Lp27rqyJq72bZsqX, udp: true}
-  - {name: RO_1394, server: 185.126.116.117, port: 9027, type: ss, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8, udp: true}
-  - {name: RU_1550, server: 217.30.10.65, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
-  - {name: RU_1541, server: 217.30.10.65, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
-  - {name: RO_1403, server: 185.126.116.117, port: 9041, type: ss, cipher: aes-256-cfb, password: U6qnYRhfyDmn8sgn, udp: true}
-  - {name: DE_508, server: 5.183.179.167, port: 9059, type: ss, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY, udp: true}
-  - {name: RU_1408, server: 217.30.10.65, port: 9053, type: ss, cipher: aes-256-cfb, password: SBM7R883jBmnqe6C, udp: true}
-  - {name: RU_1489, server: 217.30.10.67, port: 9025, type: ss, cipher: aes-256-cfb, password: XPtzA9sCug3SPR4c, udp: true}
-  - {name: DE_574, server: 5.183.179.170, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
-  - {name: RU_1543, server: 217.30.10.65, port: 9084, type: ss, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj, udp: true}
-  - {name: DE_664, server: 5.183.179.145, port: 9053, type: ss, cipher: aes-256-cfb, password: SBM7R883jBmnqe6C, udp: true}
-  - {name: DE_504, server: 5.183.179.167, port: 9027, type: ss, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8, udp: true}
-  - {name: DE_519, server: 5.183.179.140, port: 9010, type: ss, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4, udp: true}
-  - {name: NL_1279, server: 213.183.59.229, port: 9084, type: ss, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj, udp: true}
-  - {name: RU_1525, server: 217.30.10.65, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
-  - {name: LT_1061, server: 213.183.63.219, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
   - {name: CA_284, server: 198.57.27.225, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: RO_1384, server: 185.126.116.117, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
-  - {name: LT_1023, server: 213.183.63.218, port: 9098, type: ss, cipher: aes-256-cfb, password: aLpQtfEZe445QyHk, udp: true}
-  - {name: RO_1363, server: 185.126.116.117, port: 9025, type: ss, cipher: aes-256-cfb, password: XPtzA9sCug3SPR4c, udp: true}
-  - {name: LT_1043, server: 213.183.63.219, port: 9008, type: ss, cipher: aes-256-cfb, password: y9VURyNzJWNRYEGQ, udp: true}
-  - {name: RU_1429, server: 217.30.10.65, port: 9088, type: ss, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn, udp: true}
-  - {name: DE_478, server: 5.183.179.167, port: 9008, type: ss, cipher: aes-256-cfb, password: y9VURyNzJWNRYEGQ, udp: true}
-  - {name: RU_1508, server: 217.30.10.67, port: 9098, type: ss, cipher: aes-256-cfb, password: aLpQtfEZe445QyHk, udp: true}
-  - {name: LT_1105, server: 213.183.63.218, port: 9031, type: ss, cipher: aes-256-cfb, password: BwcAUZk8hUFAkDGN, udp: true}
-  - {name: RU_1546, server: 217.30.10.66, port: 9060, type: ss, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ, udp: true}
-  - {name: RO_1397, server: 185.126.116.117, port: 9045, type: ss, cipher: aes-256-cfb, password: Lp27rqyJq72bZsqX, udp: true}
-  - {name: LT_1062, server: 213.183.63.218, port: 9057, type: ss, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z, udp: true}
-  - {name: TR_1658, server: 84.54.13.134, port: 470, type: trojan, password: ed407b65-ffdf-3eff-87c8-01f094d355e7, skip-cert-verify: true, udp: true}
-  - {name: RO_1356, server: 185.126.116.117, port: 9057, type: ss, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z, udp: true}
-  - {name: NL_1311, server: 213.183.59.229, port: 9010, type: ss, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4, udp: true}
-  - {name: DE_545, server: 5.183.179.140, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
-  - {name: LT_1070, server: 213.183.63.218, port: 9060, type: ss, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ, udp: true}
-  - {name: US_1679, server: 38.68.135.19, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: CN_440, server: 101.91.121.247, port: 50004, type: ss, cipher: aes-256-cfb, password: !<str> 4415934295, udp: true}
+  - {name: 法国(绿头外网集团)(Public) 2, server: hncu.relay.qchwnd.moe, port: 44612, type: trojan, password: cfaa1d87-16c9-45f2-8ca1-833badb6b790, sni: hncu.relay.qchwnd.moe, skip-cert-verify: true, udp: true}
+  - {name: 法国(绿头外网集团)(Public), server: fr.node.qchwnd.moe, port: 44612, type: trojan, password: cfaa1d87-16c9-45f2-8ca1-833badb6b790, sni: fr.node.qchwnd.moe, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_3860, server: jgwhdlb2.gaox.ml, port: 443, type: trojan, password: 54080134-2cba-4535-8599-95650bd9aa54, sni: jgwhdlb2.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: 美国(绿头外网集团)(Public) 3, server: 116.129.254.65, port: 63069, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: 欧洲(欢迎订阅Youtube破解资源君) 10, server: v1.ssrsub.com, port: 8443, type: vmess, uuid: b7c70df3-f92f-4800-a8e1-67e6dc833256, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ssrsub, ws-headers: {Host: v1.ssrsub.com}, udp: true}
+  - {name: 欧洲(欢迎订阅Youtube破解资源君) 4, server: 198.57.27.225, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_3647, server: jgwhdlb4.gaox.ml, port: 443, type: trojan, password: 081a4198-d664-4bc5-a7c6-e35982da964b, sni: jgwhdlb4.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: 欧洲(欢迎订阅Youtube破解资源君) 2, server: jgwxn3.gaox.ml, port: 443, type: trojan, password: cb43b7c2-b744-41c5-bcc2-fd7467b332cf, sni: jgwxn3.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇦🇺AU-🇦🇺AU_120, server: jgwxn2.gaox.ml, port: 443, type: trojan, password: c2b60d6a-a2f5-40ff-b7f9-f7658abcbf26, sni: jgwxn2.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: 印度(绿头外网集团)(Public) 3, server: jgwhdlb3.gaox.ml, port: 443, type: trojan, password: 006baa3f-4bc3-4915-b60d-c8c5dae11a11, sni: jgwhdlb3.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: 欧洲(欢迎订阅Youtube破解资源君) 14, server: 198.57.27.225, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: Relay_🇯🇵JP-🇯🇵JP_1000, server: s3.upyun.online, port: 12340, type: trojan, password: 316b40c0-0dab-4ea1-9666-ac1658b033b2, sni: s3.upyun.online, skip-cert-verify: true, udp: true}
+  - {name: 加拿大(绿头外网集团)(Public) 2 2, server: 134.195.196.205, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: 美国(绿头外网集团)(Public) 2, server: jgwdj2.gaox.ml, port: 443, type: trojan, password: 86231db5-96d0-4271-9977-cae3a0cba614, sni: jgwdj2.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: 美国(欢迎订阅Youtube破解资源君) 15, server: jgwhdlb1.gaox.ml, port: 443, type: trojan, password: e05c749b-7c6b-41b8-9c71-9dcf685edf4a, sni: jgwhdlb1.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇦🇺AU-🇦🇺AU_154, server: jgwxn4.gaox.ml, port: 443, type: trojan, password: e8c1ab3c-89b3-4933-92df-682e6dce7819, sni: jgwxn4.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: 欧洲(欢迎订阅Youtube破解资源君) 15, server: 198.57.27.225, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: 美国(欢迎订阅Youtube破解资源君) 2, server: 172.67.140.112, port: 443, type: vmess, uuid: 4ac06183-feca-48f8-9f7d-3355bd950e2a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: yzjd01-ublubeu.koyeb.app}, udp: true}
+  - {name: 韩国(绿头外网集团)(Public), server: ocikr.node.qchwnd.moe, port: 44600, type: trojan, password: cfaa1d87-16c9-45f2-8ca1-833badb6b790, sni: ocikr.node.qchwnd.moe, skip-cert-verify: true, udp: true}
+  - {name: 欧洲(欢迎订阅Youtube破解资源君) 9, server: 198.57.27.225, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: 美国(绿头外网集团)(Public) 2 2, server: 116.129.254.33, port: 63069, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: 香港(欢迎订阅Youtube破解资源君) 3, server: hkbn.henyo.us, port: 44614, type: trojan, password: cfaa1d87-16c9-45f2-8ca1-833badb6b790, sni: hkbn.henyo.us, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay_🇨🇳CN-🇹🇼TW_446
-      - Relay_🇨🇳CN-🇹🇼TW_444
-      - US_3599
-      - AU_54
-      - Relay_🇺🇸US-🇺🇸US_3640
-      - Relay_🇯🇵JP-🇯🇵JP_1015
-      - Relay_🇦🇺AU-🇦🇺AU_125
-      - ZZ_3922
-      - US_3627
-      - DE_592
-      - DE_617
-      - US_1768
-      - DE_660
-      - DE_583
-      - US_1778
-      - DE_543
-      - AU_123
-      - DE_542
-      - Relay_🇺🇸US-🇺🇸US_3635
-      - DE_676
-      - DE_517
-      - DE_665
-      - RU_1486
-      - RU_1527
-      - DE_503
-      - DE_699
-      - DE_576
-      - CA_323
-      - DE_615
-      - RU_1553
-      - CA_209
-      - DE_637
-      - DE_505
-      - US_3620
-      - CA_215
-      - DE_701
-      - CA_332
-      - RO_1405
-      - Relay_🇬🇧GB-🇬🇧GB_898
-      - Relay_🇬🇧GB-🇬🇧GB_904
-      - Relay_🇬🇧GB-🇬🇧GB_900
-      - DE_474
-      - RU_1540
-      - DE_492
-      - DE_566
-      - LT_1093
-      - RU_1510
-      - RU_1538
-      - Relay_🇨🇳CN-🇺🇸US_447
-      - DE_516
-      - AU_57
+      - Relay_🇯🇵JP-🇯🇵JP_999
+      - 韩国(欢迎订阅Youtube破解资源君)
+      - 新加坡(绿头外网集团)(Public) 2
+      - 日本(绿头外网集团)(Public) 2
+      - 日本(绿头外网集团)(Public)
+      - 新加坡(绿头外网集团)(Public) 3
+      - 印度(绿头外网集团)(Public) 2
+      - 印度(绿头外网集团)(Public)
+      - 美国(绿头外网集团)(Public)
+      - github.com/freefq - 美国  22
+      - 欧洲(欢迎订阅Youtube破解资源君) 22
+      - 加拿大(绿头外网集团)(Public)
+      - 加拿大(欢迎订阅Youtube破解资源君)
+      - ‌‌🇨🇦加拿大(绿头外网集团)(Public)
+      - Relay_🇺🇸US-🇺🇸US_3673
       - CA_195
-      - RU_1466
-      - LT_1139
-      - ZZ_3843
-      - AU_67
-      - Relay_🇨🇳CN-🇺🇸US_449
-      - DE_693
-      - RU_1545
-      - CA_248
-      - RO_1362
-      - LT_1110
-      - GB_840
-      - RU_1547
-      - Relay_🇯🇵JP-🇯🇵JP_1012
-      - DE_515
-      - RU_1499
-      - Relay_🇺🇸US-🇺🇸US_3647
-      - Relay_🇦🇺AU-🇦🇺AU_126
-      - DE_688
-      - DE_618
-      - RU_1430
-      - RU_1448
-      - US_2138
-      - ZZ_4591
-      - DE_578
-      - CA_202
-      - ZZ_3771
-      - RO_1391
-      - RU_1434
-      - GB_847
-      - RU_1516
+      - 加拿大(欢迎订阅Youtube破解资源君) 2
+      - 欧洲(欢迎订阅Youtube破解资源君) 3
+      - CA_209
+      - 加拿大(绿头外网集团)(Public) 2
       - CA_308
-      - RO_1387
-      - GB_866
-      - AU_111
-      - DE_475
-      - DE_589
-      - RU_1420
-      - AU_87
-      - Relay_🇨🇳CN-🇭🇰HK_452
-      - AU_50
-      - RU_1444
-      - RU_1480
-      - RU_1484
-      - RU_1453
-      - RU_1503
-      - RU_1442
-      - RU_1440
-      - NL_1317
-      - DE_659
-      - RU_1458
-      - RU_1496
-      - RU_1414
-      - CA_341
-      - Relay_🇺🇸US-🇺🇸US_3646
-      - DE_677
-      - DE_482
-      - RO_1377
-      - RU_1519
-      - US_2157
-      - NL_1265
-      - RU_1462
-      - CA_212
-      - RU_1482
-      - RO_1394
-      - RU_1550
-      - RU_1541
-      - RO_1403
-      - DE_508
-      - RU_1408
-      - RU_1489
-      - DE_574
-      - RU_1543
-      - DE_664
-      - DE_504
-      - DE_519
-      - NL_1279
-      - RU_1525
-      - LT_1061
       - CA_284
-      - RO_1384
-      - LT_1023
-      - RO_1363
-      - LT_1043
-      - RU_1429
-      - DE_478
-      - RU_1508
-      - LT_1105
-      - RU_1546
-      - RO_1397
-      - LT_1062
-      - TR_1658
-      - RO_1356
-      - NL_1311
-      - DE_545
-      - LT_1070
-      - US_1679
-      - CN_440
+      - 法国(绿头外网集团)(Public) 2
+      - 法国(绿头外网集团)(Public)
+      - Relay_🇺🇸US-🇺🇸US_3860
+      - 美国(绿头外网集团)(Public) 3
+      - 欧洲(欢迎订阅Youtube破解资源君) 10
+      - 欧洲(欢迎订阅Youtube破解资源君) 4
+      - Relay_🇺🇸US-🇺🇸US_3647
+      - 欧洲(欢迎订阅Youtube破解资源君) 2
+      - Relay_🇦🇺AU-🇦🇺AU_120
+      - 印度(绿头外网集团)(Public) 3
+      - 欧洲(欢迎订阅Youtube破解资源君) 14
+      - Relay_🇯🇵JP-🇯🇵JP_1000
+      - 加拿大(绿头外网集团)(Public) 2 2
+      - 美国(绿头外网集团)(Public) 2
+      - 美国(欢迎订阅Youtube破解资源君) 15
+      - Relay_🇦🇺AU-🇦🇺AU_154
+      - 欧洲(欢迎订阅Youtube破解资源君) 15
+      - 美国(欢迎订阅Youtube破解资源君) 2
+      - 韩国(绿头外网集团)(Public)
+      - 欧洲(欢迎订阅Youtube破解资源君) 9
+      - 美国(绿头外网集团)(Public) 2 2
+      - 香港(欢迎订阅Youtube破解资源君) 3
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - Relay_🇨🇳CN-🇹🇼TW_446
-      - Relay_🇨🇳CN-🇹🇼TW_444
-      - US_3599
-      - AU_54
-      - Relay_🇺🇸US-🇺🇸US_3640
-      - Relay_🇯🇵JP-🇯🇵JP_1015
-      - Relay_🇦🇺AU-🇦🇺AU_125
-      - ZZ_3922
-      - US_3627
-      - DE_592
-      - DE_617
-      - US_1768
-      - DE_660
-      - DE_583
-      - US_1778
-      - DE_543
-      - AU_123
-      - DE_542
-      - Relay_🇺🇸US-🇺🇸US_3635
-      - DE_676
-      - DE_517
-      - DE_665
-      - RU_1486
-      - RU_1527
-      - DE_503
-      - DE_699
-      - DE_576
-      - CA_323
-      - DE_615
-      - RU_1553
-      - CA_209
-      - DE_637
-      - DE_505
-      - US_3620
-      - CA_215
-      - DE_701
-      - CA_332
-      - RO_1405
-      - Relay_🇬🇧GB-🇬🇧GB_898
-      - Relay_🇬🇧GB-🇬🇧GB_904
-      - Relay_🇬🇧GB-🇬🇧GB_900
-      - DE_474
-      - RU_1540
-      - DE_492
-      - DE_566
-      - LT_1093
-      - RU_1510
-      - RU_1538
-      - Relay_🇨🇳CN-🇺🇸US_447
-      - DE_516
-      - AU_57
+      - Relay_🇯🇵JP-🇯🇵JP_999
+      - 韩国(欢迎订阅Youtube破解资源君)
+      - 新加坡(绿头外网集团)(Public) 2
+      - 日本(绿头外网集团)(Public) 2
+      - 日本(绿头外网集团)(Public)
+      - 新加坡(绿头外网集团)(Public) 3
+      - 印度(绿头外网集团)(Public) 2
+      - 印度(绿头外网集团)(Public)
+      - 美国(绿头外网集团)(Public)
+      - github.com/freefq - 美国  22
+      - 欧洲(欢迎订阅Youtube破解资源君) 22
+      - 加拿大(绿头外网集团)(Public)
+      - 加拿大(欢迎订阅Youtube破解资源君)
+      - ‌‌🇨🇦加拿大(绿头外网集团)(Public)
+      - Relay_🇺🇸US-🇺🇸US_3673
       - CA_195
-      - RU_1466
-      - LT_1139
-      - ZZ_3843
-      - AU_67
-      - Relay_🇨🇳CN-🇺🇸US_449
-      - DE_693
-      - RU_1545
-      - CA_248
-      - RO_1362
-      - LT_1110
-      - GB_840
-      - RU_1547
-      - Relay_🇯🇵JP-🇯🇵JP_1012
-      - DE_515
-      - RU_1499
-      - Relay_🇺🇸US-🇺🇸US_3647
-      - Relay_🇦🇺AU-🇦🇺AU_126
-      - DE_688
-      - DE_618
-      - RU_1430
-      - RU_1448
-      - US_2138
-      - ZZ_4591
-      - DE_578
-      - CA_202
-      - ZZ_3771
-      - RO_1391
-      - RU_1434
-      - GB_847
-      - RU_1516
+      - 加拿大(欢迎订阅Youtube破解资源君) 2
+      - 欧洲(欢迎订阅Youtube破解资源君) 3
+      - CA_209
+      - 加拿大(绿头外网集团)(Public) 2
       - CA_308
-      - RO_1387
-      - GB_866
-      - AU_111
-      - DE_475
-      - DE_589
-      - RU_1420
-      - AU_87
-      - Relay_🇨🇳CN-🇭🇰HK_452
-      - AU_50
-      - RU_1444
-      - RU_1480
-      - RU_1484
-      - RU_1453
-      - RU_1503
-      - RU_1442
-      - RU_1440
-      - NL_1317
-      - DE_659
-      - RU_1458
-      - RU_1496
-      - RU_1414
-      - CA_341
-      - Relay_🇺🇸US-🇺🇸US_3646
-      - DE_677
-      - DE_482
-      - RO_1377
-      - RU_1519
-      - US_2157
-      - NL_1265
-      - RU_1462
-      - CA_212
-      - RU_1482
-      - RO_1394
-      - RU_1550
-      - RU_1541
-      - RO_1403
-      - DE_508
-      - RU_1408
-      - RU_1489
-      - DE_574
-      - RU_1543
-      - DE_664
-      - DE_504
-      - DE_519
-      - NL_1279
-      - RU_1525
-      - LT_1061
       - CA_284
-      - RO_1384
-      - LT_1023
-      - RO_1363
-      - LT_1043
-      - RU_1429
-      - DE_478
-      - RU_1508
-      - LT_1105
-      - RU_1546
-      - RO_1397
-      - LT_1062
-      - TR_1658
-      - RO_1356
-      - NL_1311
-      - DE_545
-      - LT_1070
-      - US_1679
-      - CN_440
+      - 法国(绿头外网集团)(Public) 2
+      - 法国(绿头外网集团)(Public)
+      - Relay_🇺🇸US-🇺🇸US_3860
+      - 美国(绿头外网集团)(Public) 3
+      - 欧洲(欢迎订阅Youtube破解资源君) 10
+      - 欧洲(欢迎订阅Youtube破解资源君) 4
+      - Relay_🇺🇸US-🇺🇸US_3647
+      - 欧洲(欢迎订阅Youtube破解资源君) 2
+      - Relay_🇦🇺AU-🇦🇺AU_120
+      - 印度(绿头外网集团)(Public) 3
+      - 欧洲(欢迎订阅Youtube破解资源君) 14
+      - Relay_🇯🇵JP-🇯🇵JP_1000
+      - 加拿大(绿头外网集团)(Public) 2 2
+      - 美国(绿头外网集团)(Public) 2
+      - 美国(欢迎订阅Youtube破解资源君) 15
+      - Relay_🇦🇺AU-🇦🇺AU_154
+      - 欧洲(欢迎订阅Youtube破解资源君) 15
+      - 美国(欢迎订阅Youtube破解资源君) 2
+      - 韩国(绿头外网集团)(Public)
+      - 欧洲(欢迎订阅Youtube破解资源君) 9
+      - 美国(绿头外网集团)(Public) 2 2
+      - 香港(欢迎订阅Youtube破解资源君) 3
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay_🇨🇳CN-🇹🇼TW_446
-      - Relay_🇨🇳CN-🇹🇼TW_444
-      - US_3599
-      - AU_54
-      - Relay_🇺🇸US-🇺🇸US_3640
-      - Relay_🇯🇵JP-🇯🇵JP_1015
-      - Relay_🇦🇺AU-🇦🇺AU_125
-      - ZZ_3922
-      - US_3627
-      - DE_592
-      - DE_617
-      - US_1768
-      - DE_660
-      - DE_583
-      - US_1778
-      - DE_543
-      - AU_123
-      - DE_542
-      - Relay_🇺🇸US-🇺🇸US_3635
-      - DE_676
-      - DE_517
-      - DE_665
-      - RU_1486
-      - RU_1527
-      - DE_503
-      - DE_699
-      - DE_576
-      - CA_323
-      - DE_615
-      - RU_1553
-      - CA_209
-      - DE_637
-      - DE_505
-      - US_3620
-      - CA_215
-      - DE_701
-      - CA_332
-      - RO_1405
-      - Relay_🇬🇧GB-🇬🇧GB_898
-      - Relay_🇬🇧GB-🇬🇧GB_904
-      - Relay_🇬🇧GB-🇬🇧GB_900
-      - DE_474
-      - RU_1540
-      - DE_492
-      - DE_566
-      - LT_1093
-      - RU_1510
-      - RU_1538
-      - Relay_🇨🇳CN-🇺🇸US_447
-      - DE_516
-      - AU_57
+      - Relay_🇯🇵JP-🇯🇵JP_999
+      - 韩国(欢迎订阅Youtube破解资源君)
+      - 新加坡(绿头外网集团)(Public) 2
+      - 日本(绿头外网集团)(Public) 2
+      - 日本(绿头外网集团)(Public)
+      - 新加坡(绿头外网集团)(Public) 3
+      - 印度(绿头外网集团)(Public) 2
+      - 印度(绿头外网集团)(Public)
+      - 美国(绿头外网集团)(Public)
+      - github.com/freefq - 美国  22
+      - 欧洲(欢迎订阅Youtube破解资源君) 22
+      - 加拿大(绿头外网集团)(Public)
+      - 加拿大(欢迎订阅Youtube破解资源君)
+      - ‌‌🇨🇦加拿大(绿头外网集团)(Public)
+      - Relay_🇺🇸US-🇺🇸US_3673
       - CA_195
-      - RU_1466
-      - LT_1139
-      - ZZ_3843
-      - AU_67
-      - Relay_🇨🇳CN-🇺🇸US_449
-      - DE_693
-      - RU_1545
-      - CA_248
-      - RO_1362
-      - LT_1110
-      - GB_840
-      - RU_1547
-      - Relay_🇯🇵JP-🇯🇵JP_1012
-      - DE_515
-      - RU_1499
-      - Relay_🇺🇸US-🇺🇸US_3647
-      - Relay_🇦🇺AU-🇦🇺AU_126
-      - DE_688
-      - DE_618
-      - RU_1430
-      - RU_1448
-      - US_2138
-      - ZZ_4591
-      - DE_578
-      - CA_202
-      - ZZ_3771
-      - RO_1391
-      - RU_1434
-      - GB_847
-      - RU_1516
+      - 加拿大(欢迎订阅Youtube破解资源君) 2
+      - 欧洲(欢迎订阅Youtube破解资源君) 3
+      - CA_209
+      - 加拿大(绿头外网集团)(Public) 2
       - CA_308
-      - RO_1387
-      - GB_866
-      - AU_111
-      - DE_475
-      - DE_589
-      - RU_1420
-      - AU_87
-      - Relay_🇨🇳CN-🇭🇰HK_452
-      - AU_50
-      - RU_1444
-      - RU_1480
-      - RU_1484
-      - RU_1453
-      - RU_1503
-      - RU_1442
-      - RU_1440
-      - NL_1317
-      - DE_659
-      - RU_1458
-      - RU_1496
-      - RU_1414
-      - CA_341
-      - Relay_🇺🇸US-🇺🇸US_3646
-      - DE_677
-      - DE_482
-      - RO_1377
-      - RU_1519
-      - US_2157
-      - NL_1265
-      - RU_1462
-      - CA_212
-      - RU_1482
-      - RO_1394
-      - RU_1550
-      - RU_1541
-      - RO_1403
-      - DE_508
-      - RU_1408
-      - RU_1489
-      - DE_574
-      - RU_1543
-      - DE_664
-      - DE_504
-      - DE_519
-      - NL_1279
-      - RU_1525
-      - LT_1061
       - CA_284
-      - RO_1384
-      - LT_1023
-      - RO_1363
-      - LT_1043
-      - RU_1429
-      - DE_478
-      - RU_1508
-      - LT_1105
-      - RU_1546
-      - RO_1397
-      - LT_1062
-      - TR_1658
-      - RO_1356
-      - NL_1311
-      - DE_545
-      - LT_1070
-      - US_1679
-      - CN_440
+      - 法国(绿头外网集团)(Public) 2
+      - 法国(绿头外网集团)(Public)
+      - Relay_🇺🇸US-🇺🇸US_3860
+      - 美国(绿头外网集团)(Public) 3
+      - 欧洲(欢迎订阅Youtube破解资源君) 10
+      - 欧洲(欢迎订阅Youtube破解资源君) 4
+      - Relay_🇺🇸US-🇺🇸US_3647
+      - 欧洲(欢迎订阅Youtube破解资源君) 2
+      - Relay_🇦🇺AU-🇦🇺AU_120
+      - 印度(绿头外网集团)(Public) 3
+      - 欧洲(欢迎订阅Youtube破解资源君) 14
+      - Relay_🇯🇵JP-🇯🇵JP_1000
+      - 加拿大(绿头外网集团)(Public) 2 2
+      - 美国(绿头外网集团)(Public) 2
+      - 美国(欢迎订阅Youtube破解资源君) 15
+      - Relay_🇦🇺AU-🇦🇺AU_154
+      - 欧洲(欢迎订阅Youtube破解资源君) 15
+      - 美国(欢迎订阅Youtube破解资源君) 2
+      - 韩国(绿头外网集团)(Public)
+      - 欧洲(欢迎订阅Youtube破解资源君) 9
+      - 美国(绿头外网集团)(Public) 2 2
+      - 香港(欢迎订阅Youtube破解资源君) 3
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -636,623 +216,204 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay_🇨🇳CN-🇹🇼TW_446
-      - Relay_🇨🇳CN-🇹🇼TW_444
-      - US_3599
-      - AU_54
-      - Relay_🇺🇸US-🇺🇸US_3640
-      - Relay_🇯🇵JP-🇯🇵JP_1015
-      - Relay_🇦🇺AU-🇦🇺AU_125
-      - ZZ_3922
-      - US_3627
-      - DE_592
-      - DE_617
-      - US_1768
-      - DE_660
-      - DE_583
-      - US_1778
-      - DE_543
-      - AU_123
-      - DE_542
-      - Relay_🇺🇸US-🇺🇸US_3635
-      - DE_676
-      - DE_517
-      - DE_665
-      - RU_1486
-      - RU_1527
-      - DE_503
-      - DE_699
-      - DE_576
-      - CA_323
-      - DE_615
-      - RU_1553
-      - CA_209
-      - DE_637
-      - DE_505
-      - US_3620
-      - CA_215
-      - DE_701
-      - CA_332
-      - RO_1405
-      - Relay_🇬🇧GB-🇬🇧GB_898
-      - Relay_🇬🇧GB-🇬🇧GB_904
-      - Relay_🇬🇧GB-🇬🇧GB_900
-      - DE_474
-      - RU_1540
-      - DE_492
-      - DE_566
-      - LT_1093
-      - RU_1510
-      - RU_1538
-      - Relay_🇨🇳CN-🇺🇸US_447
-      - DE_516
-      - AU_57
+      - Relay_🇯🇵JP-🇯🇵JP_999
+      - 韩国(欢迎订阅Youtube破解资源君)
+      - 新加坡(绿头外网集团)(Public) 2
+      - 日本(绿头外网集团)(Public) 2
+      - 日本(绿头外网集团)(Public)
+      - 新加坡(绿头外网集团)(Public) 3
+      - 印度(绿头外网集团)(Public) 2
+      - 印度(绿头外网集团)(Public)
+      - 美国(绿头外网集团)(Public)
+      - github.com/freefq - 美国  22
+      - 欧洲(欢迎订阅Youtube破解资源君) 22
+      - 加拿大(绿头外网集团)(Public)
+      - 加拿大(欢迎订阅Youtube破解资源君)
+      - ‌‌🇨🇦加拿大(绿头外网集团)(Public)
+      - Relay_🇺🇸US-🇺🇸US_3673
       - CA_195
-      - RU_1466
-      - LT_1139
-      - ZZ_3843
-      - AU_67
-      - Relay_🇨🇳CN-🇺🇸US_449
-      - DE_693
-      - RU_1545
-      - CA_248
-      - RO_1362
-      - LT_1110
-      - GB_840
-      - RU_1547
-      - Relay_🇯🇵JP-🇯🇵JP_1012
-      - DE_515
-      - RU_1499
-      - Relay_🇺🇸US-🇺🇸US_3647
-      - Relay_🇦🇺AU-🇦🇺AU_126
-      - DE_688
-      - DE_618
-      - RU_1430
-      - RU_1448
-      - US_2138
-      - ZZ_4591
-      - DE_578
-      - CA_202
-      - ZZ_3771
-      - RO_1391
-      - RU_1434
-      - GB_847
-      - RU_1516
+      - 加拿大(欢迎订阅Youtube破解资源君) 2
+      - 欧洲(欢迎订阅Youtube破解资源君) 3
+      - CA_209
+      - 加拿大(绿头外网集团)(Public) 2
       - CA_308
-      - RO_1387
-      - GB_866
-      - AU_111
-      - DE_475
-      - DE_589
-      - RU_1420
-      - AU_87
-      - Relay_🇨🇳CN-🇭🇰HK_452
-      - AU_50
-      - RU_1444
-      - RU_1480
-      - RU_1484
-      - RU_1453
-      - RU_1503
-      - RU_1442
-      - RU_1440
-      - NL_1317
-      - DE_659
-      - RU_1458
-      - RU_1496
-      - RU_1414
-      - CA_341
-      - Relay_🇺🇸US-🇺🇸US_3646
-      - DE_677
-      - DE_482
-      - RO_1377
-      - RU_1519
-      - US_2157
-      - NL_1265
-      - RU_1462
-      - CA_212
-      - RU_1482
-      - RO_1394
-      - RU_1550
-      - RU_1541
-      - RO_1403
-      - DE_508
-      - RU_1408
-      - RU_1489
-      - DE_574
-      - RU_1543
-      - DE_664
-      - DE_504
-      - DE_519
-      - NL_1279
-      - RU_1525
-      - LT_1061
       - CA_284
-      - RO_1384
-      - LT_1023
-      - RO_1363
-      - LT_1043
-      - RU_1429
-      - DE_478
-      - RU_1508
-      - LT_1105
-      - RU_1546
-      - RO_1397
-      - LT_1062
-      - TR_1658
-      - RO_1356
-      - NL_1311
-      - DE_545
-      - LT_1070
-      - US_1679
-      - CN_440
+      - 法国(绿头外网集团)(Public) 2
+      - 法国(绿头外网集团)(Public)
+      - Relay_🇺🇸US-🇺🇸US_3860
+      - 美国(绿头外网集团)(Public) 3
+      - 欧洲(欢迎订阅Youtube破解资源君) 10
+      - 欧洲(欢迎订阅Youtube破解资源君) 4
+      - Relay_🇺🇸US-🇺🇸US_3647
+      - 欧洲(欢迎订阅Youtube破解资源君) 2
+      - Relay_🇦🇺AU-🇦🇺AU_120
+      - 印度(绿头外网集团)(Public) 3
+      - 欧洲(欢迎订阅Youtube破解资源君) 14
+      - Relay_🇯🇵JP-🇯🇵JP_1000
+      - 加拿大(绿头外网集团)(Public) 2 2
+      - 美国(绿头外网集团)(Public) 2
+      - 美国(欢迎订阅Youtube破解资源君) 15
+      - Relay_🇦🇺AU-🇦🇺AU_154
+      - 欧洲(欢迎订阅Youtube破解资源君) 15
+      - 美国(欢迎订阅Youtube破解资源君) 2
+      - 韩国(绿头外网集团)(Public)
+      - 欧洲(欢迎订阅Youtube破解资源君) 9
+      - 美国(绿头外网集团)(Public) 2 2
+      - 香港(欢迎订阅Youtube破解资源君) 3
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 香港(欢迎订阅Youtube破解资源君) 3
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - Relay_🇨🇳CN-🇹🇼TW_446
-      - Relay_🇨🇳CN-🇹🇼TW_444
-      - US_3599
-      - AU_54
-      - Relay_🇺🇸US-🇺🇸US_3640
-      - Relay_🇯🇵JP-🇯🇵JP_1015
-      - Relay_🇦🇺AU-🇦🇺AU_125
-      - ZZ_3922
-      - US_3627
-      - DE_592
-      - DE_617
-      - US_1768
-      - DE_660
-      - DE_583
-      - US_1778
-      - DE_543
-      - AU_123
-      - DE_542
-      - Relay_🇺🇸US-🇺🇸US_3635
-      - DE_676
-      - DE_517
-      - DE_665
-      - RU_1486
-      - RU_1527
-      - DE_503
-      - DE_699
-      - DE_576
-      - CA_323
-      - DE_615
-      - RU_1553
-      - CA_209
-      - DE_637
-      - DE_505
-      - US_3620
-      - CA_215
-      - DE_701
-      - CA_332
-      - RO_1405
-      - Relay_🇬🇧GB-🇬🇧GB_898
-      - Relay_🇬🇧GB-🇬🇧GB_904
-      - Relay_🇬🇧GB-🇬🇧GB_900
-      - DE_474
-      - RU_1540
-      - DE_492
-      - DE_566
-      - LT_1093
-      - RU_1510
-      - RU_1538
-      - Relay_🇨🇳CN-🇺🇸US_447
-      - DE_516
-      - AU_57
+      - Relay_🇯🇵JP-🇯🇵JP_999
+      - 韩国(欢迎订阅Youtube破解资源君)
+      - 新加坡(绿头外网集团)(Public) 2
+      - 日本(绿头外网集团)(Public) 2
+      - 日本(绿头外网集团)(Public)
+      - 新加坡(绿头外网集团)(Public) 3
+      - 印度(绿头外网集团)(Public) 2
+      - 印度(绿头外网集团)(Public)
+      - 美国(绿头外网集团)(Public)
+      - github.com/freefq - 美国  22
+      - 欧洲(欢迎订阅Youtube破解资源君) 22
+      - 加拿大(绿头外网集团)(Public)
+      - 加拿大(欢迎订阅Youtube破解资源君)
+      - ‌‌🇨🇦加拿大(绿头外网集团)(Public)
+      - Relay_🇺🇸US-🇺🇸US_3673
       - CA_195
-      - RU_1466
-      - LT_1139
-      - ZZ_3843
-      - AU_67
-      - Relay_🇨🇳CN-🇺🇸US_449
-      - DE_693
-      - RU_1545
-      - CA_248
-      - RO_1362
-      - LT_1110
-      - GB_840
-      - RU_1547
-      - Relay_🇯🇵JP-🇯🇵JP_1012
-      - DE_515
-      - RU_1499
-      - Relay_🇺🇸US-🇺🇸US_3647
-      - Relay_🇦🇺AU-🇦🇺AU_126
-      - DE_688
-      - DE_618
-      - RU_1430
-      - RU_1448
-      - US_2138
-      - ZZ_4591
-      - DE_578
-      - CA_202
-      - ZZ_3771
-      - RO_1391
-      - RU_1434
-      - GB_847
-      - RU_1516
+      - 加拿大(欢迎订阅Youtube破解资源君) 2
+      - 欧洲(欢迎订阅Youtube破解资源君) 3
+      - CA_209
+      - 加拿大(绿头外网集团)(Public) 2
       - CA_308
-      - RO_1387
-      - GB_866
-      - AU_111
-      - DE_475
-      - DE_589
-      - RU_1420
-      - AU_87
-      - Relay_🇨🇳CN-🇭🇰HK_452
-      - AU_50
-      - RU_1444
-      - RU_1480
-      - RU_1484
-      - RU_1453
-      - RU_1503
-      - RU_1442
-      - RU_1440
-      - NL_1317
-      - DE_659
-      - RU_1458
-      - RU_1496
-      - RU_1414
-      - CA_341
-      - Relay_🇺🇸US-🇺🇸US_3646
-      - DE_677
-      - DE_482
-      - RO_1377
-      - RU_1519
-      - US_2157
-      - NL_1265
-      - RU_1462
-      - CA_212
-      - RU_1482
-      - RO_1394
-      - RU_1550
-      - RU_1541
-      - RO_1403
-      - DE_508
-      - RU_1408
-      - RU_1489
-      - DE_574
-      - RU_1543
-      - DE_664
-      - DE_504
-      - DE_519
-      - NL_1279
-      - RU_1525
-      - LT_1061
       - CA_284
-      - RO_1384
-      - LT_1023
-      - RO_1363
-      - LT_1043
-      - RU_1429
-      - DE_478
-      - RU_1508
-      - LT_1105
-      - RU_1546
-      - RO_1397
-      - LT_1062
-      - TR_1658
-      - RO_1356
-      - NL_1311
-      - DE_545
-      - LT_1070
-      - US_1679
-      - CN_440
+      - 法国(绿头外网集团)(Public) 2
+      - 法国(绿头外网集团)(Public)
+      - Relay_🇺🇸US-🇺🇸US_3860
+      - 美国(绿头外网集团)(Public) 3
+      - 欧洲(欢迎订阅Youtube破解资源君) 10
+      - 欧洲(欢迎订阅Youtube破解资源君) 4
+      - Relay_🇺🇸US-🇺🇸US_3647
+      - 欧洲(欢迎订阅Youtube破解资源君) 2
+      - Relay_🇦🇺AU-🇦🇺AU_120
+      - 印度(绿头外网集团)(Public) 3
+      - 欧洲(欢迎订阅Youtube破解资源君) 14
+      - Relay_🇯🇵JP-🇯🇵JP_1000
+      - 加拿大(绿头外网集团)(Public) 2 2
+      - 美国(绿头外网集团)(Public) 2
+      - 美国(欢迎订阅Youtube破解资源君) 15
+      - Relay_🇦🇺AU-🇦🇺AU_154
+      - 欧洲(欢迎订阅Youtube破解资源君) 15
+      - 美国(欢迎订阅Youtube破解资源君) 2
+      - 韩国(绿头外网集团)(Public)
+      - 欧洲(欢迎订阅Youtube破解资源君) 9
+      - 美国(绿头外网集团)(Public) 2 2
+      - 香港(欢迎订阅Youtube破解资源君) 3
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - Relay_🇨🇳CN-🇹🇼TW_446
-      - Relay_🇨🇳CN-🇹🇼TW_444
-      - US_3599
-      - AU_54
-      - Relay_🇺🇸US-🇺🇸US_3640
-      - Relay_🇯🇵JP-🇯🇵JP_1015
-      - Relay_🇦🇺AU-🇦🇺AU_125
-      - ZZ_3922
-      - US_3627
-      - DE_592
-      - DE_617
-      - US_1768
-      - DE_660
-      - DE_583
-      - US_1778
-      - DE_543
-      - AU_123
-      - DE_542
-      - Relay_🇺🇸US-🇺🇸US_3635
-      - DE_676
-      - DE_517
-      - DE_665
-      - RU_1486
-      - RU_1527
-      - DE_503
-      - DE_699
-      - DE_576
-      - CA_323
-      - DE_615
-      - RU_1553
-      - CA_209
-      - DE_637
-      - DE_505
-      - US_3620
-      - CA_215
-      - DE_701
-      - CA_332
-      - RO_1405
-      - Relay_🇬🇧GB-🇬🇧GB_898
-      - Relay_🇬🇧GB-🇬🇧GB_904
-      - Relay_🇬🇧GB-🇬🇧GB_900
-      - DE_474
-      - RU_1540
-      - DE_492
-      - DE_566
-      - LT_1093
-      - RU_1510
-      - RU_1538
-      - Relay_🇨🇳CN-🇺🇸US_447
-      - DE_516
-      - AU_57
+      - Relay_🇯🇵JP-🇯🇵JP_999
+      - 韩国(欢迎订阅Youtube破解资源君)
+      - 新加坡(绿头外网集团)(Public) 2
+      - 日本(绿头外网集团)(Public) 2
+      - 日本(绿头外网集团)(Public)
+      - 新加坡(绿头外网集团)(Public) 3
+      - 印度(绿头外网集团)(Public) 2
+      - 印度(绿头外网集团)(Public)
+      - 美国(绿头外网集团)(Public)
+      - github.com/freefq - 美国  22
+      - 欧洲(欢迎订阅Youtube破解资源君) 22
+      - 加拿大(绿头外网集团)(Public)
+      - 加拿大(欢迎订阅Youtube破解资源君)
+      - ‌‌🇨🇦加拿大(绿头外网集团)(Public)
+      - Relay_🇺🇸US-🇺🇸US_3673
       - CA_195
-      - RU_1466
-      - LT_1139
-      - ZZ_3843
-      - AU_67
-      - Relay_🇨🇳CN-🇺🇸US_449
-      - DE_693
-      - RU_1545
-      - CA_248
-      - RO_1362
-      - LT_1110
-      - GB_840
-      - RU_1547
-      - Relay_🇯🇵JP-🇯🇵JP_1012
-      - DE_515
-      - RU_1499
-      - Relay_🇺🇸US-🇺🇸US_3647
-      - Relay_🇦🇺AU-🇦🇺AU_126
-      - DE_688
-      - DE_618
-      - RU_1430
-      - RU_1448
-      - US_2138
-      - ZZ_4591
-      - DE_578
-      - CA_202
-      - ZZ_3771
-      - RO_1391
-      - RU_1434
-      - GB_847
-      - RU_1516
+      - 加拿大(欢迎订阅Youtube破解资源君) 2
+      - 欧洲(欢迎订阅Youtube破解资源君) 3
+      - CA_209
+      - 加拿大(绿头外网集团)(Public) 2
       - CA_308
-      - RO_1387
-      - GB_866
-      - AU_111
-      - DE_475
-      - DE_589
-      - RU_1420
-      - AU_87
-      - Relay_🇨🇳CN-🇭🇰HK_452
-      - AU_50
-      - RU_1444
-      - RU_1480
-      - RU_1484
-      - RU_1453
-      - RU_1503
-      - RU_1442
-      - RU_1440
-      - NL_1317
-      - DE_659
-      - RU_1458
-      - RU_1496
-      - RU_1414
-      - CA_341
-      - Relay_🇺🇸US-🇺🇸US_3646
-      - DE_677
-      - DE_482
-      - RO_1377
-      - RU_1519
-      - US_2157
-      - NL_1265
-      - RU_1462
-      - CA_212
-      - RU_1482
-      - RO_1394
-      - RU_1550
-      - RU_1541
-      - RO_1403
-      - DE_508
-      - RU_1408
-      - RU_1489
-      - DE_574
-      - RU_1543
-      - DE_664
-      - DE_504
-      - DE_519
-      - NL_1279
-      - RU_1525
-      - LT_1061
       - CA_284
-      - RO_1384
-      - LT_1023
-      - RO_1363
-      - LT_1043
-      - RU_1429
-      - DE_478
-      - RU_1508
-      - LT_1105
-      - RU_1546
-      - RO_1397
-      - LT_1062
-      - TR_1658
-      - RO_1356
-      - NL_1311
-      - DE_545
-      - LT_1070
-      - US_1679
-      - CN_440
+      - 法国(绿头外网集团)(Public) 2
+      - 法国(绿头外网集团)(Public)
+      - Relay_🇺🇸US-🇺🇸US_3860
+      - 美国(绿头外网集团)(Public) 3
+      - 欧洲(欢迎订阅Youtube破解资源君) 10
+      - 欧洲(欢迎订阅Youtube破解资源君) 4
+      - Relay_🇺🇸US-🇺🇸US_3647
+      - 欧洲(欢迎订阅Youtube破解资源君) 2
+      - Relay_🇦🇺AU-🇦🇺AU_120
+      - 印度(绿头外网集团)(Public) 3
+      - 欧洲(欢迎订阅Youtube破解资源君) 14
+      - Relay_🇯🇵JP-🇯🇵JP_1000
+      - 加拿大(绿头外网集团)(Public) 2 2
+      - 美国(绿头外网集团)(Public) 2
+      - 美国(欢迎订阅Youtube破解资源君) 15
+      - Relay_🇦🇺AU-🇦🇺AU_154
+      - 欧洲(欢迎订阅Youtube破解资源君) 15
+      - 美国(欢迎订阅Youtube破解资源君) 2
+      - 韩国(绿头外网集团)(Public)
+      - 欧洲(欢迎订阅Youtube破解资源君) 9
+      - 美国(绿头外网集团)(Public) 2 2
+      - 香港(欢迎订阅Youtube破解资源君) 3
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Relay_🇨🇳CN-🇹🇼TW_446
-      - Relay_🇨🇳CN-🇹🇼TW_444
-      - US_3599
-      - AU_54
-      - Relay_🇺🇸US-🇺🇸US_3640
-      - Relay_🇯🇵JP-🇯🇵JP_1015
-      - Relay_🇦🇺AU-🇦🇺AU_125
-      - ZZ_3922
-      - US_3627
-      - DE_592
-      - DE_617
-      - US_1768
-      - DE_660
-      - DE_583
-      - US_1778
-      - DE_543
-      - AU_123
-      - DE_542
-      - Relay_🇺🇸US-🇺🇸US_3635
-      - DE_676
-      - DE_517
-      - DE_665
-      - RU_1486
-      - RU_1527
-      - DE_503
-      - DE_699
-      - DE_576
-      - CA_323
-      - DE_615
-      - RU_1553
-      - CA_209
-      - DE_637
-      - DE_505
-      - US_3620
-      - CA_215
-      - DE_701
-      - CA_332
-      - RO_1405
-      - Relay_🇬🇧GB-🇬🇧GB_898
-      - Relay_🇬🇧GB-🇬🇧GB_904
-      - Relay_🇬🇧GB-🇬🇧GB_900
-      - DE_474
-      - RU_1540
-      - DE_492
-      - DE_566
-      - LT_1093
-      - RU_1510
-      - RU_1538
-      - Relay_🇨🇳CN-🇺🇸US_447
-      - DE_516
-      - AU_57
+      - Relay_🇯🇵JP-🇯🇵JP_999
+      - 韩国(欢迎订阅Youtube破解资源君)
+      - 新加坡(绿头外网集团)(Public) 2
+      - 日本(绿头外网集团)(Public) 2
+      - 日本(绿头外网集团)(Public)
+      - 新加坡(绿头外网集团)(Public) 3
+      - 印度(绿头外网集团)(Public) 2
+      - 印度(绿头外网集团)(Public)
+      - 美国(绿头外网集团)(Public)
+      - github.com/freefq - 美国  22
+      - 欧洲(欢迎订阅Youtube破解资源君) 22
+      - 加拿大(绿头外网集团)(Public)
+      - 加拿大(欢迎订阅Youtube破解资源君)
+      - ‌‌🇨🇦加拿大(绿头外网集团)(Public)
+      - Relay_🇺🇸US-🇺🇸US_3673
       - CA_195
-      - RU_1466
-      - LT_1139
-      - ZZ_3843
-      - AU_67
-      - Relay_🇨🇳CN-🇺🇸US_449
-      - DE_693
-      - RU_1545
-      - CA_248
-      - RO_1362
-      - LT_1110
-      - GB_840
-      - RU_1547
-      - Relay_🇯🇵JP-🇯🇵JP_1012
-      - DE_515
-      - RU_1499
-      - Relay_🇺🇸US-🇺🇸US_3647
-      - Relay_🇦🇺AU-🇦🇺AU_126
-      - DE_688
-      - DE_618
-      - RU_1430
-      - RU_1448
-      - US_2138
-      - ZZ_4591
-      - DE_578
-      - CA_202
-      - ZZ_3771
-      - RO_1391
-      - RU_1434
-      - GB_847
-      - RU_1516
+      - 加拿大(欢迎订阅Youtube破解资源君) 2
+      - 欧洲(欢迎订阅Youtube破解资源君) 3
+      - CA_209
+      - 加拿大(绿头外网集团)(Public) 2
       - CA_308
-      - RO_1387
-      - GB_866
-      - AU_111
-      - DE_475
-      - DE_589
-      - RU_1420
-      - AU_87
-      - Relay_🇨🇳CN-🇭🇰HK_452
-      - AU_50
-      - RU_1444
-      - RU_1480
-      - RU_1484
-      - RU_1453
-      - RU_1503
-      - RU_1442
-      - RU_1440
-      - NL_1317
-      - DE_659
-      - RU_1458
-      - RU_1496
-      - RU_1414
-      - CA_341
-      - Relay_🇺🇸US-🇺🇸US_3646
-      - DE_677
-      - DE_482
-      - RO_1377
-      - RU_1519
-      - US_2157
-      - NL_1265
-      - RU_1462
-      - CA_212
-      - RU_1482
-      - RO_1394
-      - RU_1550
-      - RU_1541
-      - RO_1403
-      - DE_508
-      - RU_1408
-      - RU_1489
-      - DE_574
-      - RU_1543
-      - DE_664
-      - DE_504
-      - DE_519
-      - NL_1279
-      - RU_1525
-      - LT_1061
       - CA_284
-      - RO_1384
-      - LT_1023
-      - RO_1363
-      - LT_1043
-      - RU_1429
-      - DE_478
-      - RU_1508
-      - LT_1105
-      - RU_1546
-      - RO_1397
-      - LT_1062
-      - TR_1658
-      - RO_1356
-      - NL_1311
-      - DE_545
-      - LT_1070
-      - US_1679
-      - CN_440
+      - 法国(绿头外网集团)(Public) 2
+      - 法国(绿头外网集团)(Public)
+      - Relay_🇺🇸US-🇺🇸US_3860
+      - 美国(绿头外网集团)(Public) 3
+      - 欧洲(欢迎订阅Youtube破解资源君) 10
+      - 欧洲(欢迎订阅Youtube破解资源君) 4
+      - Relay_🇺🇸US-🇺🇸US_3647
+      - 欧洲(欢迎订阅Youtube破解资源君) 2
+      - Relay_🇦🇺AU-🇦🇺AU_120
+      - 印度(绿头外网集团)(Public) 3
+      - 欧洲(欢迎订阅Youtube破解资源君) 14
+      - Relay_🇯🇵JP-🇯🇵JP_1000
+      - 加拿大(绿头外网集团)(Public) 2 2
+      - 美国(绿头外网集团)(Public) 2
+      - 美国(欢迎订阅Youtube破解资源君) 15
+      - Relay_🇦🇺AU-🇦🇺AU_154
+      - 欧洲(欢迎订阅Youtube破解资源君) 15
+      - 美国(欢迎订阅Youtube破解资源君) 2
+      - 韩国(绿头外网集团)(Public)
+      - 欧洲(欢迎订阅Youtube破解资源君) 9
+      - 美国(绿头外网集团)(Public) 2 2
+      - 香港(欢迎订阅Youtube破解资源君) 3
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1268,155 +429,50 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Relay_🇨🇳CN-🇹🇼TW_446
-      - Relay_🇨🇳CN-🇹🇼TW_444
-      - US_3599
-      - AU_54
-      - Relay_🇺🇸US-🇺🇸US_3640
-      - Relay_🇯🇵JP-🇯🇵JP_1015
-      - Relay_🇦🇺AU-🇦🇺AU_125
-      - ZZ_3922
-      - US_3627
-      - DE_592
-      - DE_617
-      - US_1768
-      - DE_660
-      - DE_583
-      - US_1778
-      - DE_543
-      - AU_123
-      - DE_542
-      - Relay_🇺🇸US-🇺🇸US_3635
-      - DE_676
-      - DE_517
-      - DE_665
-      - RU_1486
-      - RU_1527
-      - DE_503
-      - DE_699
-      - DE_576
-      - CA_323
-      - DE_615
-      - RU_1553
-      - CA_209
-      - DE_637
-      - DE_505
-      - US_3620
-      - CA_215
-      - DE_701
-      - CA_332
-      - RO_1405
-      - Relay_🇬🇧GB-🇬🇧GB_898
-      - Relay_🇬🇧GB-🇬🇧GB_904
-      - Relay_🇬🇧GB-🇬🇧GB_900
-      - DE_474
-      - RU_1540
-      - DE_492
-      - DE_566
-      - LT_1093
-      - RU_1510
-      - RU_1538
-      - Relay_🇨🇳CN-🇺🇸US_447
-      - DE_516
-      - AU_57
+      - Relay_🇯🇵JP-🇯🇵JP_999
+      - 韩国(欢迎订阅Youtube破解资源君)
+      - 新加坡(绿头外网集团)(Public) 2
+      - 日本(绿头外网集团)(Public) 2
+      - 日本(绿头外网集团)(Public)
+      - 新加坡(绿头外网集团)(Public) 3
+      - 印度(绿头外网集团)(Public) 2
+      - 印度(绿头外网集团)(Public)
+      - 美国(绿头外网集团)(Public)
+      - github.com/freefq - 美国  22
+      - 欧洲(欢迎订阅Youtube破解资源君) 22
+      - 加拿大(绿头外网集团)(Public)
+      - 加拿大(欢迎订阅Youtube破解资源君)
+      - ‌‌🇨🇦加拿大(绿头外网集团)(Public)
+      - Relay_🇺🇸US-🇺🇸US_3673
       - CA_195
-      - RU_1466
-      - LT_1139
-      - ZZ_3843
-      - AU_67
-      - Relay_🇨🇳CN-🇺🇸US_449
-      - DE_693
-      - RU_1545
-      - CA_248
-      - RO_1362
-      - LT_1110
-      - GB_840
-      - RU_1547
-      - Relay_🇯🇵JP-🇯🇵JP_1012
-      - DE_515
-      - RU_1499
-      - Relay_🇺🇸US-🇺🇸US_3647
-      - Relay_🇦🇺AU-🇦🇺AU_126
-      - DE_688
-      - DE_618
-      - RU_1430
-      - RU_1448
-      - US_2138
-      - ZZ_4591
-      - DE_578
-      - CA_202
-      - ZZ_3771
-      - RO_1391
-      - RU_1434
-      - GB_847
-      - RU_1516
+      - 加拿大(欢迎订阅Youtube破解资源君) 2
+      - 欧洲(欢迎订阅Youtube破解资源君) 3
+      - CA_209
+      - 加拿大(绿头外网集团)(Public) 2
       - CA_308
-      - RO_1387
-      - GB_866
-      - AU_111
-      - DE_475
-      - DE_589
-      - RU_1420
-      - AU_87
-      - Relay_🇨🇳CN-🇭🇰HK_452
-      - AU_50
-      - RU_1444
-      - RU_1480
-      - RU_1484
-      - RU_1453
-      - RU_1503
-      - RU_1442
-      - RU_1440
-      - NL_1317
-      - DE_659
-      - RU_1458
-      - RU_1496
-      - RU_1414
-      - CA_341
-      - Relay_🇺🇸US-🇺🇸US_3646
-      - DE_677
-      - DE_482
-      - RO_1377
-      - RU_1519
-      - US_2157
-      - NL_1265
-      - RU_1462
-      - CA_212
-      - RU_1482
-      - RO_1394
-      - RU_1550
-      - RU_1541
-      - RO_1403
-      - DE_508
-      - RU_1408
-      - RU_1489
-      - DE_574
-      - RU_1543
-      - DE_664
-      - DE_504
-      - DE_519
-      - NL_1279
-      - RU_1525
-      - LT_1061
       - CA_284
-      - RO_1384
-      - LT_1023
-      - RO_1363
-      - LT_1043
-      - RU_1429
-      - DE_478
-      - RU_1508
-      - LT_1105
-      - RU_1546
-      - RO_1397
-      - LT_1062
-      - TR_1658
-      - RO_1356
-      - NL_1311
-      - DE_545
-      - LT_1070
-      - US_1679
-      - CN_440
+      - 法国(绿头外网集团)(Public) 2
+      - 法国(绿头外网集团)(Public)
+      - Relay_🇺🇸US-🇺🇸US_3860
+      - 美国(绿头外网集团)(Public) 3
+      - 欧洲(欢迎订阅Youtube破解资源君) 10
+      - 欧洲(欢迎订阅Youtube破解资源君) 4
+      - Relay_🇺🇸US-🇺🇸US_3647
+      - 欧洲(欢迎订阅Youtube破解资源君) 2
+      - Relay_🇦🇺AU-🇦🇺AU_120
+      - 印度(绿头外网集团)(Public) 3
+      - 欧洲(欢迎订阅Youtube破解资源君) 14
+      - Relay_🇯🇵JP-🇯🇵JP_1000
+      - 加拿大(绿头外网集团)(Public) 2 2
+      - 美国(绿头外网集团)(Public) 2
+      - 美国(欢迎订阅Youtube破解资源君) 15
+      - Relay_🇦🇺AU-🇦🇺AU_154
+      - 欧洲(欢迎订阅Youtube破解资源君) 15
+      - 美国(欢迎订阅Youtube破解资源君) 2
+      - 韩国(绿头外网集团)(Public)
+      - 欧洲(欢迎订阅Youtube破解资源君) 9
+      - 美国(绿头外网集团)(Public) 2 2
+      - 香港(欢迎订阅Youtube破解资源君) 3
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
