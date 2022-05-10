@@ -5,151 +5,283 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 新加坡(绿头外网集团)(Public), server: 116.129.254.33, port: 63087, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: 新加坡(绿头外网集团)(Public) 2, server: 120.240.168.118, port: 63087, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: 日本(绿头外网集团)(Public), server: 116.129.254.33, port: 63086, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: 日本(绿头外网集团)(Public) 2, server: 116.129.254.65, port: 63086, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: 新加坡(绿头外网集团)(Public) 3, server: 116.129.254.65, port: 63087, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: 日本(绿头外网集团)(Public) 3, server: 120.240.168.118, port: 63086, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: 印度(绿头外网集团)(Public), server: 116.129.254.65, port: 63004, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: 美国(绿头外网集团)(Public), server: hncu.relay.qchwnd.moe, port: 44611, type: trojan, password: cfaa1d87-16c9-45f2-8ca1-833badb6b790, sni: hncu.relay.qchwnd.moe, skip-cert-verify: true, udp: true}
-  - {name: 印度(绿头外网集团)(Public) 2, server: 116.129.254.33, port: 63004, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: 加拿大(绿头外网集团)(Public), server: 134.195.196.205, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 美国(绿头外网集团)(Public) 2, server: 116.129.254.33, port: 63014, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mg, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: 加拿大(绿头外网集团)(Public) 2, server: 134.195.196.205, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 香港(绿头外网集团)(Public), server: 116.129.254.33, port: 63078, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: 美国(绿头外网集团)(Public) 3, server: 116.129.254.65, port: 63014, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mg, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: 美国(绿头外网集团)(Public) 4, server: 159.27.115.21, port: 63069, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: 美国(绿头外网集团)(Public) 5, server: gg04.nfeng6.pp.ua, port: 63069, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /t.me/nfeng6, ws-headers: {Host: gg04.nfeng6.pp.ua}, udp: true}
-  - {name: 加拿大(绿头外网集团)(Public) 3, server: 134.195.196.205, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 香港(绿头外网集团)(Public) 2, server: 159.27.115.21, port: 63078, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: 印度(绿头外网集团)(Public) 3, server: 159.27.115.21, port: 63051, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /hls, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: 英国(绿头外网集团)(Public), server: 172.99.190.35, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 英国(绿头外网集团)(Public) 2, server: jgwld3.gaox.ml, port: 443, type: trojan, password: 71b55a84-3fac-4458-abff-eaad79219c91, sni: jgwld3.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: 英国(绿头外网集团)(Public) 3, server: 172.99.190.35, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 英国(绿头外网集团)(Public) 4, server: 172.99.190.35, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 法国(绿头外网集团)(Public), server: hncu.relay.qchwnd.moe, port: 44612, type: trojan, password: cfaa1d87-16c9-45f2-8ca1-833badb6b790, sni: hncu.relay.qchwnd.moe, skip-cert-verify: true, udp: true}
-  - {name: 英国(绿头外网集团)(Public) 5, server: 172.99.190.35, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 英国(绿头外网集团)(Public) 6, server: 172.99.190.35, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 英国(绿头外网集团)(Public) 7, server: 172.99.190.35, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 英国(绿头外网集团)(Public) 8, server: 172.99.190.35, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: 法国(绿头外网集团)(Public) 2, server: fr.node.qchwnd.moe, port: 44612, type: trojan, password: cfaa1d87-16c9-45f2-8ca1-833badb6b790, sni: fr.node.qchwnd.moe, skip-cert-verify: true, udp: true}
-  - {name: 美国(绿头外网集团)(Public) 6, server: 116.129.254.33, port: 63069, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: 美国(绿头外网集团)(Public) 7, server: 116.129.254.65, port: 63069, type: vmess, uuid: 49a0585b-6abe-3e62-ae2e-aacf364d88c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: 韩国(绿头外网集团)(Public), server: 144.24.76.223, port: 44600, type: trojan, password: cfaa1d87-16c9-45f2-8ca1-833badb6b790, skip-cert-verify: true, udp: true}
+  - {name: KR-Openit.ml, server: 129.154.48.221, port: 37372, type: vmess, uuid: 6f4454a9-e732-46c6-c50f-73f13da31f7b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: JP-Openit.ml, server: jgwdj2.gaox.ml, port: 443, type: trojan, password: 86231db5-96d0-4271-9977-cae3a0cba614, sni: jgwdj2.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: JP-Openit.ml 2, server: jgwdj4.gaox.ml, port: 443, type: trojan, password: c09eb137-bf68-4658-84e0-102d94b74168, sni: jgwdj4.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 台湾省新北市中华电信 35, server: tw.node.qchwnd.moe, port: 44608, type: trojan, password: cfaa1d87-16c9-45f2-8ca1-833badb6b790, sni: tw.node.qchwnd.moe, skip-cert-verify: true, udp: true}
+  - {name: JP-Openit.ml 3, server: s3.upyun.online, port: 12340, type: trojan, password: 316b40c0-0dab-4ea1-9666-ac1658b033b2, sni: s3.upyun.online, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 美国加利福尼亚州洛杉矶IT7网络 9, server: 104.243.25.95, port: 253, type: ss, cipher: aes-256-cfb, password: bwhskrskr03, udp: true}
+  - {name: github.com/freefq - 美国圣斯考拉斯蒂卡大学 14, server: bai-piao-wang-zhe-iplc.98848.xyz, port: 443, type: trojan, password: a97edd5e-f9c9-4320-a8aa-753dd99d74d4, sni: bai-piao-wang-zhe-iplc.98848.xyz, skip-cert-verify: true, udp: true}
+  - {name: HK-Openit.ml, server: 43.154.46.228, port: 49930, type: vmess, uuid: 051088e3-f62e-4cf6-a199-ab98adcb822b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [43.154.46.228]}}, udp: true}
+  - {name: github.com/freefq - 北京市新国信通信有限公司 25, server: sgpcu.dfnode.top, port: 15736, type: vmess, uuid: a6ef37c5-1a0f-3204-8ca6-fa7a18c062c1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: sgpcu.dfnode.top}, udp: true}
+  - {name: RELAY-Openit.ml, server: hncu.relay.qchwnd.moe, port: 44611, type: trojan, password: cfaa1d87-16c9-45f2-8ca1-833badb6b790, sni: hncu.relay.qchwnd.moe, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 广东省佛山市移动 13, server: mplsgz1.ggbbba.xyz, port: 45787, type: ss, cipher: aes-256-gcm, password: gDQ8kr1HdHEK5DGU, udp: true}
+  - {name: github.com/freefq - 荷兰  18, server: ru1.lolvps.xyz, port: 40040, type: vmess, uuid: 2b8e4fc6-0112-4b26-8c17-1bfef9a3ff99, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /6129CFHR, ws-headers: {Host: ru1.lolvps.xyz}, udp: true}
+  - {name: US-Openit.ml, server: fhcamd2.gaox.ml, port: 443, type: trojan, password: dbf9bf9c-2c3f-474a-8031-d4c00666a989, sni: fhcamd2.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: US-Openit.ml 2, server: 38.114.114.67, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: US-Openit.ml 3, server: 38.114.114.67, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: US-Openit.ml 4, server: 38.114.114.67, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: US-Openit.ml 5, server: 158.101.0.204, port: 50203, type: vmess, uuid: b4b57f71-93e7-4faf-9af2-2f9d8629b60e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 日本  8, server: 146.56.112.141, port: 17776, type: vmess, uuid: aa990962-a99b-4aa7-fdb8-bdbd19f61a79, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 美国亚利桑那州凤凰城Oracle云计算数据中心 10, server: 158.101.0.204, port: 50203, type: vmess, uuid: b4b57f71-93e7-4faf-9af2-2f9d8629b60e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 美国  15, server: fhcarm2.gaox.ml, port: 443, type: trojan, password: f39bd244-f5fe-415c-8b98-a1e5250bf178, sni: fhcarm2.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 美国圣斯考拉斯蒂卡大学 11, server: bai-piao-wang-zhe-iplc.98848.xyz, port: 11459, type: vmess, uuid: 7ef159a7-2c15-45ca-f5c3-b9798143afaa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /bit.ly/36b6iJh, ws-headers: {Host: bai-piao-wang-zhe-iplc.98848.xyz}, udp: true}
+  - {name: github.com/freefq - 美国CloudFlare节点 34, server: douban.babazhuji.com, port: 443, type: vmess, uuid: 27848739-7e62-4138-9fd3-098a63964b6b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /movies, ws-headers: {Host: douban.babazhuji.com}, udp: true}
+  - {name: github.com/freefq - 美国  19, server: fhcarm1.gaox.ml, port: 443, type: trojan, password: 05742120-ce23-4cc8-88f5-6d221ce45bf4, sni: fhcarm1.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: KR-Openit.ml 2, server: 129.154.48.221, port: 37372, type: vmess, uuid: 6f4454a9-e732-46c6-c50f-73f13da31f7b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: SG-Openit.ml, server: cp-asus.ml, port: 50275, type: trojan, password: 7Z29DRr1ts, sni: cp-asus.ml, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 美国CloudFlare节点 43, server: lu1.gogogoo.cyou, port: 443, type: vmess, uuid: db5d1aa3-908b-44d1-be0a-4e6a8d4e4cda, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /go, ws-headers: {Host: lu1.gogogoo.cyou}, udp: true}
+  - {name: KR-Openit.ml 3, server: jgwcc2.gaox.ml, port: 443, type: trojan, password: 9c822f05-cfdc-479a-9534-60f3d4127435, sni: jgwcc2.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: JP-Openit.ml 4, server: jgwdb4.gaox.ml, port: 443, type: trojan, password: d06a3f01-1ff0-4792-9b8e-a5a604bc74a2, sni: jgwdb4.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 美国CloudFlare节点 46, server: v2ray.788644.xyz, port: 443, type: vmess, uuid: 000fe881-b655-4212-b804-b00f9970d5aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /happy, ws-headers: {Host: v2ray.788644.xyz}, udp: true}
+  - {name: github.com/freefq - 北美地区  51, server: 198.57.27.225, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: US-Openit.ml 6, server: trojan2.free4444.xyz, port: 443, type: trojan, password: dongtaiwang.com, sni: trojan2.free4444.xyz, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 澳大利亚  20, server: jgwdb1.gaox.ml, port: 443, type: trojan, password: a580d839-ee41-4df1-bf03-6789dca32e30, sni: jgwdb1.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 美国  17, server: 172.99.190.35, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: github.com/freefq - 北美地区  50, server: 198.57.27.225, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: GB-Openit.ml, server: 172.99.190.35, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: github.com/freefq - 英国伦敦Oracle云计算数据中心 29, server: jgwld2.gaox.ml, port: 443, type: trojan, password: d7fd8aaa-4581-4281-80aa-4b63e5e1f157, sni: jgwld2.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: JP-Openit.ml 5, server: jgwdb3.gaox.ml, port: 443, type: trojan, password: 8d2d5953-d649-4034-94f2-72f2df2623da, sni: jgwdb3.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: GB-Openit.ml 2, server: 172.99.190.35, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: GB-Openit.ml 3, server: 172.99.190.35, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: KR-Openit.ml 4, server: 144.24.76.223, port: 44600, type: trojan, password: cfaa1d87-16c9-45f2-8ca1-833badb6b790, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 俄罗斯  22, server: 92.38.184.228, port: 55231, type: ss, cipher: chacha20-ietf-poly1305, password: zidKl2rcLVBm, udp: true}
+  - {name: github.com/freefq - 英国伦敦Oracle云计算数据中心 26, server: jgwld4.gaox.ml, port: 443, type: trojan, password: 58d32c66-43b1-4561-9951-d87c9123774e, sni: jgwld4.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: GB-Openit.ml 4, server: 172.99.190.35, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: NL-Openit.ml, server: 152.70.49.174, port: 55988, type: vmess, uuid: 2c644a6a-5817-40b2-b149-2f3ac7eb2447, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: GB-Openit.ml 5, server: 172.99.190.35, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: github.com/freefq - 英国伦敦Oracle云计算数据中心 30, server: jgwld3.gaox.ml, port: 443, type: trojan, password: 71b55a84-3fac-4458-abff-eaad79219c91, sni: jgwld3.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 美国CloudFlare公司CDN节点 45, server: krr1.liuwei01.tk, port: 443, type: vmess, uuid: d965d82e-b325-44e8-a472-84721a3ab07c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /liuwei, ws-headers: {Host: krr1.liuwei01.tk}, udp: true}
+  - {name: NL-Openit.ml 2, server: 152.70.49.174, port: 55988, type: vmess, uuid: 2c644a6a-5817-40b2-b149-2f3ac7eb2447, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: NL-Openit.ml 3, server: 152.70.49.174, port: 55988, type: vmess, uuid: 2c644a6a-5817-40b2-b149-2f3ac7eb2447, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 美国CloudFlare节点 56, server: sg-ovh.clown1i.cf, port: 443, type: vmess, uuid: 165af2cb-4bf4-472a-9565-68d55927668e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /vmess-ws, ws-headers: {Host: sg-ovh.clown1i.cf}, udp: true}
+  - {name: US-Openit.ml 7, server: 167.88.63.60, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: github.com/freefq - 美国3COM公司企业网 37, server: jgwhdlb4.gaox.ml, port: 443, type: trojan, password: 081a4198-d664-4bc5-a7c6-e35982da964b, sni: jgwhdlb4.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: GB-Openit.ml 6, server: 172.99.190.35, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: github.com/freefq - 香港亚太环通(Pacnet)有限公司 2, server: 202.64.1.102, port: 553, type: vmess, uuid: 30ef0f29-da14-349d-9c49-728d5adc4ba8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 香港HKCABLE 1, server: hkbn.okvpn.xyz, port: 12000, type: trojan, password: 0ce2ee7d-4889-4c64-8a75-4a86e6bbb1c4, sni: hkbn.okvpn.xyz, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 美国  39, server: jgwcc3.gaox.ml, port: 443, type: trojan, password: b291d129-ee55-4801-a9b8-b5316e5c37b7, sni: jgwcc3.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 美国3COM公司企业网 41, server: jgwhdlb1.gaox.ml, port: 443, type: trojan, password: e05c749b-7c6b-41b8-9c71-9dcf685edf4a, sni: jgwhdlb1.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 伊朗  48, server: asr-farda.ir, port: 49110, type: vmess, uuid: 47bce6b8-c260-11ec-b514-000c297a3bfd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /pdOa1847/, ws-headers: {Host: asr-farda.ir}, udp: true}
+  - {name: github.com/freefq - 美国3COM公司企业网 36, server: jgwhdlb3.gaox.ml, port: 443, type: trojan, password: 006baa3f-4bc3-4915-b60d-c8c5dae11a11, sni: jgwhdlb3.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 美国3COM公司企业网 42, server: jgwhdlb2.gaox.ml, port: 443, type: trojan, password: 54080134-2cba-4535-8599-95650bd9aa54, sni: jgwhdlb2.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 澳大利亚悉尼Oracle云计算数据中心 52, server: jgwxn2.gaox.ml, port: 443, type: trojan, password: c2b60d6a-a2f5-40ff-b7f9-f7658abcbf26, sni: jgwxn2.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: SG-Openit.ml 2, server: sgp02ul.vpnsieure.com, port: 80, type: vmess, uuid: 330efbdb-7171-4fd1-a524-d7b7d8e76732, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: sgp02ul.vpnsieure.com}, udp: true}
+  - {name: github.com/freefq - 美国CloudFlare公司CDN节点 44, server: sg-cf.clown1i.cf, port: 443, type: vmess, uuid: ba2bd5e1-3cd6-4ac5-8234-803b2ca4d4f7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /vmess-ws, ws-headers: {Host: sg-cf.clown1i.cf}, udp: true}
+  - {name: github.com/freefq - 美国  31, server: free.spcloud.us, port: 10001, type: trojan, password: fdb6f3a3-9d29-47c3-8c92-5a279626dc5b, sni: free.spcloud.us, skip-cert-verify: true, udp: true}
+  - {name: RELAY-Openit.ml 2, server: fr-direct-cdn.node001.xyz, port: 2086, type: vmess, uuid: a1f3e867-8f8d-3763-bb80-21da561e6714, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /mg, ws-headers: {Host: fr-direct-cdn.node001.xyz}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 新加坡(绿头外网集团)(Public)
-      - 新加坡(绿头外网集团)(Public) 2
-      - 日本(绿头外网集团)(Public)
-      - 日本(绿头外网集团)(Public) 2
-      - 新加坡(绿头外网集团)(Public) 3
-      - 日本(绿头外网集团)(Public) 3
-      - 印度(绿头外网集团)(Public)
-      - 美国(绿头外网集团)(Public)
-      - 印度(绿头外网集团)(Public) 2
-      - 加拿大(绿头外网集团)(Public)
-      - 美国(绿头外网集团)(Public) 2
-      - 加拿大(绿头外网集团)(Public) 2
-      - 香港(绿头外网集团)(Public)
-      - 美国(绿头外网集团)(Public) 3
-      - 美国(绿头外网集团)(Public) 4
-      - 美国(绿头外网集团)(Public) 5
-      - 加拿大(绿头外网集团)(Public) 3
-      - 香港(绿头外网集团)(Public) 2
-      - 印度(绿头外网集团)(Public) 3
-      - 英国(绿头外网集团)(Public)
-      - 英国(绿头外网集团)(Public) 2
-      - 英国(绿头外网集团)(Public) 3
-      - 英国(绿头外网集团)(Public) 4
-      - 法国(绿头外网集团)(Public)
-      - 英国(绿头外网集团)(Public) 5
-      - 英国(绿头外网集团)(Public) 6
-      - 英国(绿头外网集团)(Public) 7
-      - 英国(绿头外网集团)(Public) 8
-      - 法国(绿头外网集团)(Public) 2
-      - 美国(绿头外网集团)(Public) 6
-      - 美国(绿头外网集团)(Public) 7
-      - 韩国(绿头外网集团)(Public)
+      - KR-Openit.ml
+      - JP-Openit.ml
+      - JP-Openit.ml 2
+      - github.com/freefq - 台湾省新北市中华电信 35
+      - JP-Openit.ml 3
+      - github.com/freefq - 美国加利福尼亚州洛杉矶IT7网络 9
+      - github.com/freefq - 美国圣斯考拉斯蒂卡大学 14
+      - HK-Openit.ml
+      - github.com/freefq - 北京市新国信通信有限公司 25
+      - RELAY-Openit.ml
+      - github.com/freefq - 广东省佛山市移动 13
+      - github.com/freefq - 荷兰  18
+      - US-Openit.ml
+      - US-Openit.ml 2
+      - US-Openit.ml 3
+      - US-Openit.ml 4
+      - US-Openit.ml 5
+      - github.com/freefq - 日本  8
+      - github.com/freefq - 美国亚利桑那州凤凰城Oracle云计算数据中心 10
+      - github.com/freefq - 美国  15
+      - github.com/freefq - 美国圣斯考拉斯蒂卡大学 11
+      - github.com/freefq - 美国CloudFlare节点 34
+      - github.com/freefq - 美国  19
+      - KR-Openit.ml 2
+      - SG-Openit.ml
+      - github.com/freefq - 美国CloudFlare节点 43
+      - KR-Openit.ml 3
+      - JP-Openit.ml 4
+      - github.com/freefq - 美国CloudFlare节点 46
+      - github.com/freefq - 北美地区  51
+      - US-Openit.ml 6
+      - github.com/freefq - 澳大利亚  20
+      - github.com/freefq - 美国  17
+      - github.com/freefq - 北美地区  50
+      - GB-Openit.ml
+      - github.com/freefq - 英国伦敦Oracle云计算数据中心 29
+      - JP-Openit.ml 5
+      - GB-Openit.ml 2
+      - GB-Openit.ml 3
+      - KR-Openit.ml 4
+      - github.com/freefq - 俄罗斯  22
+      - github.com/freefq - 英国伦敦Oracle云计算数据中心 26
+      - GB-Openit.ml 4
+      - NL-Openit.ml
+      - GB-Openit.ml 5
+      - github.com/freefq - 英国伦敦Oracle云计算数据中心 30
+      - github.com/freefq - 美国CloudFlare公司CDN节点 45
+      - NL-Openit.ml 2
+      - NL-Openit.ml 3
+      - github.com/freefq - 美国CloudFlare节点 56
+      - US-Openit.ml 7
+      - github.com/freefq - 美国3COM公司企业网 37
+      - GB-Openit.ml 6
+      - github.com/freefq - 香港亚太环通(Pacnet)有限公司 2
+      - github.com/freefq - 香港HKCABLE 1
+      - github.com/freefq - 美国  39
+      - github.com/freefq - 美国3COM公司企业网 41
+      - github.com/freefq - 伊朗  48
+      - github.com/freefq - 美国3COM公司企业网 36
+      - github.com/freefq - 美国3COM公司企业网 42
+      - github.com/freefq - 澳大利亚悉尼Oracle云计算数据中心 52
+      - SG-Openit.ml 2
+      - github.com/freefq - 美国CloudFlare公司CDN节点 44
+      - github.com/freefq - 美国  31
+      - RELAY-Openit.ml 2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 新加坡(绿头外网集团)(Public)
-      - 新加坡(绿头外网集团)(Public) 2
-      - 日本(绿头外网集团)(Public)
-      - 日本(绿头外网集团)(Public) 2
-      - 新加坡(绿头外网集团)(Public) 3
-      - 日本(绿头外网集团)(Public) 3
-      - 印度(绿头外网集团)(Public)
-      - 美国(绿头外网集团)(Public)
-      - 印度(绿头外网集团)(Public) 2
-      - 加拿大(绿头外网集团)(Public)
-      - 美国(绿头外网集团)(Public) 2
-      - 加拿大(绿头外网集团)(Public) 2
-      - 香港(绿头外网集团)(Public)
-      - 美国(绿头外网集团)(Public) 3
-      - 美国(绿头外网集团)(Public) 4
-      - 美国(绿头外网集团)(Public) 5
-      - 加拿大(绿头外网集团)(Public) 3
-      - 香港(绿头外网集团)(Public) 2
-      - 印度(绿头外网集团)(Public) 3
-      - 英国(绿头外网集团)(Public)
-      - 英国(绿头外网集团)(Public) 2
-      - 英国(绿头外网集团)(Public) 3
-      - 英国(绿头外网集团)(Public) 4
-      - 法国(绿头外网集团)(Public)
-      - 英国(绿头外网集团)(Public) 5
-      - 英国(绿头外网集团)(Public) 6
-      - 英国(绿头外网集团)(Public) 7
-      - 英国(绿头外网集团)(Public) 8
-      - 法国(绿头外网集团)(Public) 2
-      - 美国(绿头外网集团)(Public) 6
-      - 美国(绿头外网集团)(Public) 7
-      - 韩国(绿头外网集团)(Public)
+      - KR-Openit.ml
+      - JP-Openit.ml
+      - JP-Openit.ml 2
+      - github.com/freefq - 台湾省新北市中华电信 35
+      - JP-Openit.ml 3
+      - github.com/freefq - 美国加利福尼亚州洛杉矶IT7网络 9
+      - github.com/freefq - 美国圣斯考拉斯蒂卡大学 14
+      - HK-Openit.ml
+      - github.com/freefq - 北京市新国信通信有限公司 25
+      - RELAY-Openit.ml
+      - github.com/freefq - 广东省佛山市移动 13
+      - github.com/freefq - 荷兰  18
+      - US-Openit.ml
+      - US-Openit.ml 2
+      - US-Openit.ml 3
+      - US-Openit.ml 4
+      - US-Openit.ml 5
+      - github.com/freefq - 日本  8
+      - github.com/freefq - 美国亚利桑那州凤凰城Oracle云计算数据中心 10
+      - github.com/freefq - 美国  15
+      - github.com/freefq - 美国圣斯考拉斯蒂卡大学 11
+      - github.com/freefq - 美国CloudFlare节点 34
+      - github.com/freefq - 美国  19
+      - KR-Openit.ml 2
+      - SG-Openit.ml
+      - github.com/freefq - 美国CloudFlare节点 43
+      - KR-Openit.ml 3
+      - JP-Openit.ml 4
+      - github.com/freefq - 美国CloudFlare节点 46
+      - github.com/freefq - 北美地区  51
+      - US-Openit.ml 6
+      - github.com/freefq - 澳大利亚  20
+      - github.com/freefq - 美国  17
+      - github.com/freefq - 北美地区  50
+      - GB-Openit.ml
+      - github.com/freefq - 英国伦敦Oracle云计算数据中心 29
+      - JP-Openit.ml 5
+      - GB-Openit.ml 2
+      - GB-Openit.ml 3
+      - KR-Openit.ml 4
+      - github.com/freefq - 俄罗斯  22
+      - github.com/freefq - 英国伦敦Oracle云计算数据中心 26
+      - GB-Openit.ml 4
+      - NL-Openit.ml
+      - GB-Openit.ml 5
+      - github.com/freefq - 英国伦敦Oracle云计算数据中心 30
+      - github.com/freefq - 美国CloudFlare公司CDN节点 45
+      - NL-Openit.ml 2
+      - NL-Openit.ml 3
+      - github.com/freefq - 美国CloudFlare节点 56
+      - US-Openit.ml 7
+      - github.com/freefq - 美国3COM公司企业网 37
+      - GB-Openit.ml 6
+      - github.com/freefq - 香港亚太环通(Pacnet)有限公司 2
+      - github.com/freefq - 香港HKCABLE 1
+      - github.com/freefq - 美国  39
+      - github.com/freefq - 美国3COM公司企业网 41
+      - github.com/freefq - 伊朗  48
+      - github.com/freefq - 美国3COM公司企业网 36
+      - github.com/freefq - 美国3COM公司企业网 42
+      - github.com/freefq - 澳大利亚悉尼Oracle云计算数据中心 52
+      - SG-Openit.ml 2
+      - github.com/freefq - 美国CloudFlare公司CDN节点 44
+      - github.com/freefq - 美国  31
+      - RELAY-Openit.ml 2
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 新加坡(绿头外网集团)(Public)
-      - 新加坡(绿头外网集团)(Public) 2
-      - 日本(绿头外网集团)(Public)
-      - 日本(绿头外网集团)(Public) 2
-      - 新加坡(绿头外网集团)(Public) 3
-      - 日本(绿头外网集团)(Public) 3
-      - 印度(绿头外网集团)(Public)
-      - 美国(绿头外网集团)(Public)
-      - 印度(绿头外网集团)(Public) 2
-      - 加拿大(绿头外网集团)(Public)
-      - 美国(绿头外网集团)(Public) 2
-      - 加拿大(绿头外网集团)(Public) 2
-      - 香港(绿头外网集团)(Public)
-      - 美国(绿头外网集团)(Public) 3
-      - 美国(绿头外网集团)(Public) 4
-      - 美国(绿头外网集团)(Public) 5
-      - 加拿大(绿头外网集团)(Public) 3
-      - 香港(绿头外网集团)(Public) 2
-      - 印度(绿头外网集团)(Public) 3
-      - 英国(绿头外网集团)(Public)
-      - 英国(绿头外网集团)(Public) 2
-      - 英国(绿头外网集团)(Public) 3
-      - 英国(绿头外网集团)(Public) 4
-      - 法国(绿头外网集团)(Public)
-      - 英国(绿头外网集团)(Public) 5
-      - 英国(绿头外网集团)(Public) 6
-      - 英国(绿头外网集团)(Public) 7
-      - 英国(绿头外网集团)(Public) 8
-      - 法国(绿头外网集团)(Public) 2
-      - 美国(绿头外网集团)(Public) 6
-      - 美国(绿头外网集团)(Public) 7
-      - 韩国(绿头外网集团)(Public)
+      - KR-Openit.ml
+      - JP-Openit.ml
+      - JP-Openit.ml 2
+      - github.com/freefq - 台湾省新北市中华电信 35
+      - JP-Openit.ml 3
+      - github.com/freefq - 美国加利福尼亚州洛杉矶IT7网络 9
+      - github.com/freefq - 美国圣斯考拉斯蒂卡大学 14
+      - HK-Openit.ml
+      - github.com/freefq - 北京市新国信通信有限公司 25
+      - RELAY-Openit.ml
+      - github.com/freefq - 广东省佛山市移动 13
+      - github.com/freefq - 荷兰  18
+      - US-Openit.ml
+      - US-Openit.ml 2
+      - US-Openit.ml 3
+      - US-Openit.ml 4
+      - US-Openit.ml 5
+      - github.com/freefq - 日本  8
+      - github.com/freefq - 美国亚利桑那州凤凰城Oracle云计算数据中心 10
+      - github.com/freefq - 美国  15
+      - github.com/freefq - 美国圣斯考拉斯蒂卡大学 11
+      - github.com/freefq - 美国CloudFlare节点 34
+      - github.com/freefq - 美国  19
+      - KR-Openit.ml 2
+      - SG-Openit.ml
+      - github.com/freefq - 美国CloudFlare节点 43
+      - KR-Openit.ml 3
+      - JP-Openit.ml 4
+      - github.com/freefq - 美国CloudFlare节点 46
+      - github.com/freefq - 北美地区  51
+      - US-Openit.ml 6
+      - github.com/freefq - 澳大利亚  20
+      - github.com/freefq - 美国  17
+      - github.com/freefq - 北美地区  50
+      - GB-Openit.ml
+      - github.com/freefq - 英国伦敦Oracle云计算数据中心 29
+      - JP-Openit.ml 5
+      - GB-Openit.ml 2
+      - GB-Openit.ml 3
+      - KR-Openit.ml 4
+      - github.com/freefq - 俄罗斯  22
+      - github.com/freefq - 英国伦敦Oracle云计算数据中心 26
+      - GB-Openit.ml 4
+      - NL-Openit.ml
+      - GB-Openit.ml 5
+      - github.com/freefq - 英国伦敦Oracle云计算数据中心 30
+      - github.com/freefq - 美国CloudFlare公司CDN节点 45
+      - NL-Openit.ml 2
+      - NL-Openit.ml 3
+      - github.com/freefq - 美国CloudFlare节点 56
+      - US-Openit.ml 7
+      - github.com/freefq - 美国3COM公司企业网 37
+      - GB-Openit.ml 6
+      - github.com/freefq - 香港亚太环通(Pacnet)有限公司 2
+      - github.com/freefq - 香港HKCABLE 1
+      - github.com/freefq - 美国  39
+      - github.com/freefq - 美国3COM公司企业网 41
+      - github.com/freefq - 伊朗  48
+      - github.com/freefq - 美国3COM公司企业网 36
+      - github.com/freefq - 美国3COM公司企业网 42
+      - github.com/freefq - 澳大利亚悉尼Oracle云计算数据中心 52
+      - SG-Openit.ml 2
+      - github.com/freefq - 美国CloudFlare公司CDN节点 44
+      - github.com/freefq - 美国  31
+      - RELAY-Openit.ml 2
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -168,157 +300,290 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 新加坡(绿头外网集团)(Public)
-      - 新加坡(绿头外网集团)(Public) 2
-      - 日本(绿头外网集团)(Public)
-      - 日本(绿头外网集团)(Public) 2
-      - 新加坡(绿头外网集团)(Public) 3
-      - 日本(绿头外网集团)(Public) 3
-      - 印度(绿头外网集团)(Public)
-      - 美国(绿头外网集团)(Public)
-      - 印度(绿头外网集团)(Public) 2
-      - 加拿大(绿头外网集团)(Public)
-      - 美国(绿头外网集团)(Public) 2
-      - 加拿大(绿头外网集团)(Public) 2
-      - 香港(绿头外网集团)(Public)
-      - 美国(绿头外网集团)(Public) 3
-      - 美国(绿头外网集团)(Public) 4
-      - 美国(绿头外网集团)(Public) 5
-      - 加拿大(绿头外网集团)(Public) 3
-      - 香港(绿头外网集团)(Public) 2
-      - 印度(绿头外网集团)(Public) 3
-      - 英国(绿头外网集团)(Public)
-      - 英国(绿头外网集团)(Public) 2
-      - 英国(绿头外网集团)(Public) 3
-      - 英国(绿头外网集团)(Public) 4
-      - 法国(绿头外网集团)(Public)
-      - 英国(绿头外网集团)(Public) 5
-      - 英国(绿头外网集团)(Public) 6
-      - 英国(绿头外网集团)(Public) 7
-      - 英国(绿头外网集团)(Public) 8
-      - 法国(绿头外网集团)(Public) 2
-      - 美国(绿头外网集团)(Public) 6
-      - 美国(绿头外网集团)(Public) 7
-      - 韩国(绿头外网集团)(Public)
+      - KR-Openit.ml
+      - JP-Openit.ml
+      - JP-Openit.ml 2
+      - github.com/freefq - 台湾省新北市中华电信 35
+      - JP-Openit.ml 3
+      - github.com/freefq - 美国加利福尼亚州洛杉矶IT7网络 9
+      - github.com/freefq - 美国圣斯考拉斯蒂卡大学 14
+      - HK-Openit.ml
+      - github.com/freefq - 北京市新国信通信有限公司 25
+      - RELAY-Openit.ml
+      - github.com/freefq - 广东省佛山市移动 13
+      - github.com/freefq - 荷兰  18
+      - US-Openit.ml
+      - US-Openit.ml 2
+      - US-Openit.ml 3
+      - US-Openit.ml 4
+      - US-Openit.ml 5
+      - github.com/freefq - 日本  8
+      - github.com/freefq - 美国亚利桑那州凤凰城Oracle云计算数据中心 10
+      - github.com/freefq - 美国  15
+      - github.com/freefq - 美国圣斯考拉斯蒂卡大学 11
+      - github.com/freefq - 美国CloudFlare节点 34
+      - github.com/freefq - 美国  19
+      - KR-Openit.ml 2
+      - SG-Openit.ml
+      - github.com/freefq - 美国CloudFlare节点 43
+      - KR-Openit.ml 3
+      - JP-Openit.ml 4
+      - github.com/freefq - 美国CloudFlare节点 46
+      - github.com/freefq - 北美地区  51
+      - US-Openit.ml 6
+      - github.com/freefq - 澳大利亚  20
+      - github.com/freefq - 美国  17
+      - github.com/freefq - 北美地区  50
+      - GB-Openit.ml
+      - github.com/freefq - 英国伦敦Oracle云计算数据中心 29
+      - JP-Openit.ml 5
+      - GB-Openit.ml 2
+      - GB-Openit.ml 3
+      - KR-Openit.ml 4
+      - github.com/freefq - 俄罗斯  22
+      - github.com/freefq - 英国伦敦Oracle云计算数据中心 26
+      - GB-Openit.ml 4
+      - NL-Openit.ml
+      - GB-Openit.ml 5
+      - github.com/freefq - 英国伦敦Oracle云计算数据中心 30
+      - github.com/freefq - 美国CloudFlare公司CDN节点 45
+      - NL-Openit.ml 2
+      - NL-Openit.ml 3
+      - github.com/freefq - 美国CloudFlare节点 56
+      - US-Openit.ml 7
+      - github.com/freefq - 美国3COM公司企业网 37
+      - GB-Openit.ml 6
+      - github.com/freefq - 香港亚太环通(Pacnet)有限公司 2
+      - github.com/freefq - 香港HKCABLE 1
+      - github.com/freefq - 美国  39
+      - github.com/freefq - 美国3COM公司企业网 41
+      - github.com/freefq - 伊朗  48
+      - github.com/freefq - 美国3COM公司企业网 36
+      - github.com/freefq - 美国3COM公司企业网 42
+      - github.com/freefq - 澳大利亚悉尼Oracle云计算数据中心 52
+      - SG-Openit.ml 2
+      - github.com/freefq - 美国CloudFlare公司CDN节点 44
+      - github.com/freefq - 美国  31
+      - RELAY-Openit.ml 2
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港(绿头外网集团)(Public)
-      - 香港(绿头外网集团)(Public) 2
+      - github.com/freefq - 台湾省新北市中华电信 35
+      - github.com/freefq - 香港亚太环通(Pacnet)有限公司 2
+      - github.com/freefq - 香港HKCABLE 1
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 新加坡(绿头外网集团)(Public)
-      - 新加坡(绿头外网集团)(Public) 2
-      - 日本(绿头外网集团)(Public)
-      - 日本(绿头外网集团)(Public) 2
-      - 新加坡(绿头外网集团)(Public) 3
-      - 日本(绿头外网集团)(Public) 3
-      - 印度(绿头外网集团)(Public)
-      - 美国(绿头外网集团)(Public)
-      - 印度(绿头外网集团)(Public) 2
-      - 加拿大(绿头外网集团)(Public)
-      - 美国(绿头外网集团)(Public) 2
-      - 加拿大(绿头外网集团)(Public) 2
-      - 香港(绿头外网集团)(Public)
-      - 美国(绿头外网集团)(Public) 3
-      - 美国(绿头外网集团)(Public) 4
-      - 美国(绿头外网集团)(Public) 5
-      - 加拿大(绿头外网集团)(Public) 3
-      - 香港(绿头外网集团)(Public) 2
-      - 印度(绿头外网集团)(Public) 3
-      - 英国(绿头外网集团)(Public)
-      - 英国(绿头外网集团)(Public) 2
-      - 英国(绿头外网集团)(Public) 3
-      - 英国(绿头外网集团)(Public) 4
-      - 法国(绿头外网集团)(Public)
-      - 英国(绿头外网集团)(Public) 5
-      - 英国(绿头外网集团)(Public) 6
-      - 英国(绿头外网集团)(Public) 7
-      - 英国(绿头外网集团)(Public) 8
-      - 法国(绿头外网集团)(Public) 2
-      - 美国(绿头外网集团)(Public) 6
-      - 美国(绿头外网集团)(Public) 7
-      - 韩国(绿头外网集团)(Public)
+      - KR-Openit.ml
+      - JP-Openit.ml
+      - JP-Openit.ml 2
+      - github.com/freefq - 台湾省新北市中华电信 35
+      - JP-Openit.ml 3
+      - github.com/freefq - 美国加利福尼亚州洛杉矶IT7网络 9
+      - github.com/freefq - 美国圣斯考拉斯蒂卡大学 14
+      - HK-Openit.ml
+      - github.com/freefq - 北京市新国信通信有限公司 25
+      - RELAY-Openit.ml
+      - github.com/freefq - 广东省佛山市移动 13
+      - github.com/freefq - 荷兰  18
+      - US-Openit.ml
+      - US-Openit.ml 2
+      - US-Openit.ml 3
+      - US-Openit.ml 4
+      - US-Openit.ml 5
+      - github.com/freefq - 日本  8
+      - github.com/freefq - 美国亚利桑那州凤凰城Oracle云计算数据中心 10
+      - github.com/freefq - 美国  15
+      - github.com/freefq - 美国圣斯考拉斯蒂卡大学 11
+      - github.com/freefq - 美国CloudFlare节点 34
+      - github.com/freefq - 美国  19
+      - KR-Openit.ml 2
+      - SG-Openit.ml
+      - github.com/freefq - 美国CloudFlare节点 43
+      - KR-Openit.ml 3
+      - JP-Openit.ml 4
+      - github.com/freefq - 美国CloudFlare节点 46
+      - github.com/freefq - 北美地区  51
+      - US-Openit.ml 6
+      - github.com/freefq - 澳大利亚  20
+      - github.com/freefq - 美国  17
+      - github.com/freefq - 北美地区  50
+      - GB-Openit.ml
+      - github.com/freefq - 英国伦敦Oracle云计算数据中心 29
+      - JP-Openit.ml 5
+      - GB-Openit.ml 2
+      - GB-Openit.ml 3
+      - KR-Openit.ml 4
+      - github.com/freefq - 俄罗斯  22
+      - github.com/freefq - 英国伦敦Oracle云计算数据中心 26
+      - GB-Openit.ml 4
+      - NL-Openit.ml
+      - GB-Openit.ml 5
+      - github.com/freefq - 英国伦敦Oracle云计算数据中心 30
+      - github.com/freefq - 美国CloudFlare公司CDN节点 45
+      - NL-Openit.ml 2
+      - NL-Openit.ml 3
+      - github.com/freefq - 美国CloudFlare节点 56
+      - US-Openit.ml 7
+      - github.com/freefq - 美国3COM公司企业网 37
+      - GB-Openit.ml 6
+      - github.com/freefq - 香港亚太环通(Pacnet)有限公司 2
+      - github.com/freefq - 香港HKCABLE 1
+      - github.com/freefq - 美国  39
+      - github.com/freefq - 美国3COM公司企业网 41
+      - github.com/freefq - 伊朗  48
+      - github.com/freefq - 美国3COM公司企业网 36
+      - github.com/freefq - 美国3COM公司企业网 42
+      - github.com/freefq - 澳大利亚悉尼Oracle云计算数据中心 52
+      - SG-Openit.ml 2
+      - github.com/freefq - 美国CloudFlare公司CDN节点 44
+      - github.com/freefq - 美国  31
+      - RELAY-Openit.ml 2
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 新加坡(绿头外网集团)(Public)
-      - 新加坡(绿头外网集团)(Public) 2
-      - 日本(绿头外网集团)(Public)
-      - 日本(绿头外网集团)(Public) 2
-      - 新加坡(绿头外网集团)(Public) 3
-      - 日本(绿头外网集团)(Public) 3
-      - 印度(绿头外网集团)(Public)
-      - 美国(绿头外网集团)(Public)
-      - 印度(绿头外网集团)(Public) 2
-      - 加拿大(绿头外网集团)(Public)
-      - 美国(绿头外网集团)(Public) 2
-      - 加拿大(绿头外网集团)(Public) 2
-      - 香港(绿头外网集团)(Public)
-      - 美国(绿头外网集团)(Public) 3
-      - 美国(绿头外网集团)(Public) 4
-      - 美国(绿头外网集团)(Public) 5
-      - 加拿大(绿头外网集团)(Public) 3
-      - 香港(绿头外网集团)(Public) 2
-      - 印度(绿头外网集团)(Public) 3
-      - 英国(绿头外网集团)(Public)
-      - 英国(绿头外网集团)(Public) 2
-      - 英国(绿头外网集团)(Public) 3
-      - 英国(绿头外网集团)(Public) 4
-      - 法国(绿头外网集团)(Public)
-      - 英国(绿头外网集团)(Public) 5
-      - 英国(绿头外网集团)(Public) 6
-      - 英国(绿头外网集团)(Public) 7
-      - 英国(绿头外网集团)(Public) 8
-      - 法国(绿头外网集团)(Public) 2
-      - 美国(绿头外网集团)(Public) 6
-      - 美国(绿头外网集团)(Public) 7
-      - 韩国(绿头外网集团)(Public)
+      - KR-Openit.ml
+      - JP-Openit.ml
+      - JP-Openit.ml 2
+      - github.com/freefq - 台湾省新北市中华电信 35
+      - JP-Openit.ml 3
+      - github.com/freefq - 美国加利福尼亚州洛杉矶IT7网络 9
+      - github.com/freefq - 美国圣斯考拉斯蒂卡大学 14
+      - HK-Openit.ml
+      - github.com/freefq - 北京市新国信通信有限公司 25
+      - RELAY-Openit.ml
+      - github.com/freefq - 广东省佛山市移动 13
+      - github.com/freefq - 荷兰  18
+      - US-Openit.ml
+      - US-Openit.ml 2
+      - US-Openit.ml 3
+      - US-Openit.ml 4
+      - US-Openit.ml 5
+      - github.com/freefq - 日本  8
+      - github.com/freefq - 美国亚利桑那州凤凰城Oracle云计算数据中心 10
+      - github.com/freefq - 美国  15
+      - github.com/freefq - 美国圣斯考拉斯蒂卡大学 11
+      - github.com/freefq - 美国CloudFlare节点 34
+      - github.com/freefq - 美国  19
+      - KR-Openit.ml 2
+      - SG-Openit.ml
+      - github.com/freefq - 美国CloudFlare节点 43
+      - KR-Openit.ml 3
+      - JP-Openit.ml 4
+      - github.com/freefq - 美国CloudFlare节点 46
+      - github.com/freefq - 北美地区  51
+      - US-Openit.ml 6
+      - github.com/freefq - 澳大利亚  20
+      - github.com/freefq - 美国  17
+      - github.com/freefq - 北美地区  50
+      - GB-Openit.ml
+      - github.com/freefq - 英国伦敦Oracle云计算数据中心 29
+      - JP-Openit.ml 5
+      - GB-Openit.ml 2
+      - GB-Openit.ml 3
+      - KR-Openit.ml 4
+      - github.com/freefq - 俄罗斯  22
+      - github.com/freefq - 英国伦敦Oracle云计算数据中心 26
+      - GB-Openit.ml 4
+      - NL-Openit.ml
+      - GB-Openit.ml 5
+      - github.com/freefq - 英国伦敦Oracle云计算数据中心 30
+      - github.com/freefq - 美国CloudFlare公司CDN节点 45
+      - NL-Openit.ml 2
+      - NL-Openit.ml 3
+      - github.com/freefq - 美国CloudFlare节点 56
+      - US-Openit.ml 7
+      - github.com/freefq - 美国3COM公司企业网 37
+      - GB-Openit.ml 6
+      - github.com/freefq - 香港亚太环通(Pacnet)有限公司 2
+      - github.com/freefq - 香港HKCABLE 1
+      - github.com/freefq - 美国  39
+      - github.com/freefq - 美国3COM公司企业网 41
+      - github.com/freefq - 伊朗  48
+      - github.com/freefq - 美国3COM公司企业网 36
+      - github.com/freefq - 美国3COM公司企业网 42
+      - github.com/freefq - 澳大利亚悉尼Oracle云计算数据中心 52
+      - SG-Openit.ml 2
+      - github.com/freefq - 美国CloudFlare公司CDN节点 44
+      - github.com/freefq - 美国  31
+      - RELAY-Openit.ml 2
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 新加坡(绿头外网集团)(Public)
-      - 新加坡(绿头外网集团)(Public) 2
-      - 日本(绿头外网集团)(Public)
-      - 日本(绿头外网集团)(Public) 2
-      - 新加坡(绿头外网集团)(Public) 3
-      - 日本(绿头外网集团)(Public) 3
-      - 印度(绿头外网集团)(Public)
-      - 美国(绿头外网集团)(Public)
-      - 印度(绿头外网集团)(Public) 2
-      - 加拿大(绿头外网集团)(Public)
-      - 美国(绿头外网集团)(Public) 2
-      - 加拿大(绿头外网集团)(Public) 2
-      - 香港(绿头外网集团)(Public)
-      - 美国(绿头外网集团)(Public) 3
-      - 美国(绿头外网集团)(Public) 4
-      - 美国(绿头外网集团)(Public) 5
-      - 加拿大(绿头外网集团)(Public) 3
-      - 香港(绿头外网集团)(Public) 2
-      - 印度(绿头外网集团)(Public) 3
-      - 英国(绿头外网集团)(Public)
-      - 英国(绿头外网集团)(Public) 2
-      - 英国(绿头外网集团)(Public) 3
-      - 英国(绿头外网集团)(Public) 4
-      - 法国(绿头外网集团)(Public)
-      - 英国(绿头外网集团)(Public) 5
-      - 英国(绿头外网集团)(Public) 6
-      - 英国(绿头外网集团)(Public) 7
-      - 英国(绿头外网集团)(Public) 8
-      - 法国(绿头外网集团)(Public) 2
-      - 美国(绿头外网集团)(Public) 6
-      - 美国(绿头外网集团)(Public) 7
-      - 韩国(绿头外网集团)(Public)
+      - KR-Openit.ml
+      - JP-Openit.ml
+      - JP-Openit.ml 2
+      - github.com/freefq - 台湾省新北市中华电信 35
+      - JP-Openit.ml 3
+      - github.com/freefq - 美国加利福尼亚州洛杉矶IT7网络 9
+      - github.com/freefq - 美国圣斯考拉斯蒂卡大学 14
+      - HK-Openit.ml
+      - github.com/freefq - 北京市新国信通信有限公司 25
+      - RELAY-Openit.ml
+      - github.com/freefq - 广东省佛山市移动 13
+      - github.com/freefq - 荷兰  18
+      - US-Openit.ml
+      - US-Openit.ml 2
+      - US-Openit.ml 3
+      - US-Openit.ml 4
+      - US-Openit.ml 5
+      - github.com/freefq - 日本  8
+      - github.com/freefq - 美国亚利桑那州凤凰城Oracle云计算数据中心 10
+      - github.com/freefq - 美国  15
+      - github.com/freefq - 美国圣斯考拉斯蒂卡大学 11
+      - github.com/freefq - 美国CloudFlare节点 34
+      - github.com/freefq - 美国  19
+      - KR-Openit.ml 2
+      - SG-Openit.ml
+      - github.com/freefq - 美国CloudFlare节点 43
+      - KR-Openit.ml 3
+      - JP-Openit.ml 4
+      - github.com/freefq - 美国CloudFlare节点 46
+      - github.com/freefq - 北美地区  51
+      - US-Openit.ml 6
+      - github.com/freefq - 澳大利亚  20
+      - github.com/freefq - 美国  17
+      - github.com/freefq - 北美地区  50
+      - GB-Openit.ml
+      - github.com/freefq - 英国伦敦Oracle云计算数据中心 29
+      - JP-Openit.ml 5
+      - GB-Openit.ml 2
+      - GB-Openit.ml 3
+      - KR-Openit.ml 4
+      - github.com/freefq - 俄罗斯  22
+      - github.com/freefq - 英国伦敦Oracle云计算数据中心 26
+      - GB-Openit.ml 4
+      - NL-Openit.ml
+      - GB-Openit.ml 5
+      - github.com/freefq - 英国伦敦Oracle云计算数据中心 30
+      - github.com/freefq - 美国CloudFlare公司CDN节点 45
+      - NL-Openit.ml 2
+      - NL-Openit.ml 3
+      - github.com/freefq - 美国CloudFlare节点 56
+      - US-Openit.ml 7
+      - github.com/freefq - 美国3COM公司企业网 37
+      - GB-Openit.ml 6
+      - github.com/freefq - 香港亚太环通(Pacnet)有限公司 2
+      - github.com/freefq - 香港HKCABLE 1
+      - github.com/freefq - 美国  39
+      - github.com/freefq - 美国3COM公司企业网 41
+      - github.com/freefq - 伊朗  48
+      - github.com/freefq - 美国3COM公司企业网 36
+      - github.com/freefq - 美国3COM公司企业网 42
+      - github.com/freefq - 澳大利亚悉尼Oracle云计算数据中心 52
+      - SG-Openit.ml 2
+      - github.com/freefq - 美国CloudFlare公司CDN节点 44
+      - github.com/freefq - 美国  31
+      - RELAY-Openit.ml 2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -334,38 +599,71 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 新加坡(绿头外网集团)(Public)
-      - 新加坡(绿头外网集团)(Public) 2
-      - 日本(绿头外网集团)(Public)
-      - 日本(绿头外网集团)(Public) 2
-      - 新加坡(绿头外网集团)(Public) 3
-      - 日本(绿头外网集团)(Public) 3
-      - 印度(绿头外网集团)(Public)
-      - 美国(绿头外网集团)(Public)
-      - 印度(绿头外网集团)(Public) 2
-      - 加拿大(绿头外网集团)(Public)
-      - 美国(绿头外网集团)(Public) 2
-      - 加拿大(绿头外网集团)(Public) 2
-      - 香港(绿头外网集团)(Public)
-      - 美国(绿头外网集团)(Public) 3
-      - 美国(绿头外网集团)(Public) 4
-      - 美国(绿头外网集团)(Public) 5
-      - 加拿大(绿头外网集团)(Public) 3
-      - 香港(绿头外网集团)(Public) 2
-      - 印度(绿头外网集团)(Public) 3
-      - 英国(绿头外网集团)(Public)
-      - 英国(绿头外网集团)(Public) 2
-      - 英国(绿头外网集团)(Public) 3
-      - 英国(绿头外网集团)(Public) 4
-      - 法国(绿头外网集团)(Public)
-      - 英国(绿头外网集团)(Public) 5
-      - 英国(绿头外网集团)(Public) 6
-      - 英国(绿头外网集团)(Public) 7
-      - 英国(绿头外网集团)(Public) 8
-      - 法国(绿头外网集团)(Public) 2
-      - 美国(绿头外网集团)(Public) 6
-      - 美国(绿头外网集团)(Public) 7
-      - 韩国(绿头外网集团)(Public)
+      - KR-Openit.ml
+      - JP-Openit.ml
+      - JP-Openit.ml 2
+      - github.com/freefq - 台湾省新北市中华电信 35
+      - JP-Openit.ml 3
+      - github.com/freefq - 美国加利福尼亚州洛杉矶IT7网络 9
+      - github.com/freefq - 美国圣斯考拉斯蒂卡大学 14
+      - HK-Openit.ml
+      - github.com/freefq - 北京市新国信通信有限公司 25
+      - RELAY-Openit.ml
+      - github.com/freefq - 广东省佛山市移动 13
+      - github.com/freefq - 荷兰  18
+      - US-Openit.ml
+      - US-Openit.ml 2
+      - US-Openit.ml 3
+      - US-Openit.ml 4
+      - US-Openit.ml 5
+      - github.com/freefq - 日本  8
+      - github.com/freefq - 美国亚利桑那州凤凰城Oracle云计算数据中心 10
+      - github.com/freefq - 美国  15
+      - github.com/freefq - 美国圣斯考拉斯蒂卡大学 11
+      - github.com/freefq - 美国CloudFlare节点 34
+      - github.com/freefq - 美国  19
+      - KR-Openit.ml 2
+      - SG-Openit.ml
+      - github.com/freefq - 美国CloudFlare节点 43
+      - KR-Openit.ml 3
+      - JP-Openit.ml 4
+      - github.com/freefq - 美国CloudFlare节点 46
+      - github.com/freefq - 北美地区  51
+      - US-Openit.ml 6
+      - github.com/freefq - 澳大利亚  20
+      - github.com/freefq - 美国  17
+      - github.com/freefq - 北美地区  50
+      - GB-Openit.ml
+      - github.com/freefq - 英国伦敦Oracle云计算数据中心 29
+      - JP-Openit.ml 5
+      - GB-Openit.ml 2
+      - GB-Openit.ml 3
+      - KR-Openit.ml 4
+      - github.com/freefq - 俄罗斯  22
+      - github.com/freefq - 英国伦敦Oracle云计算数据中心 26
+      - GB-Openit.ml 4
+      - NL-Openit.ml
+      - GB-Openit.ml 5
+      - github.com/freefq - 英国伦敦Oracle云计算数据中心 30
+      - github.com/freefq - 美国CloudFlare公司CDN节点 45
+      - NL-Openit.ml 2
+      - NL-Openit.ml 3
+      - github.com/freefq - 美国CloudFlare节点 56
+      - US-Openit.ml 7
+      - github.com/freefq - 美国3COM公司企业网 37
+      - GB-Openit.ml 6
+      - github.com/freefq - 香港亚太环通(Pacnet)有限公司 2
+      - github.com/freefq - 香港HKCABLE 1
+      - github.com/freefq - 美国  39
+      - github.com/freefq - 美国3COM公司企业网 41
+      - github.com/freefq - 伊朗  48
+      - github.com/freefq - 美国3COM公司企业网 36
+      - github.com/freefq - 美国3COM公司企业网 42
+      - github.com/freefq - 澳大利亚悉尼Oracle云计算数据中心 52
+      - SG-Openit.ml 2
+      - github.com/freefq - 美国CloudFlare公司CDN节点 44
+      - github.com/freefq - 美国  31
+      - RELAY-Openit.ml 2
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
