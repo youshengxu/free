@@ -5,127 +5,363 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: RELAY-Openit.ml, server: szdx.sub-nthu.com, port: 35005, type: trojan, password: 87d5ee80-9dfa-4cb5-b644-062803bd0c19, sni: szdx.sub-nthu.com, skip-cert-verify: true, udp: true}
-  - {name: RELAY-Openit.ml 2, server: hnlt.sub-nthu.com, port: 35005, type: trojan, password: 87d5ee80-9dfa-4cb5-b644-062803bd0c19, sni: hnlt.sub-nthu.com, skip-cert-verify: true, udp: true}
-  - {name: JP-Openit.ml, server: jgwdj2.gaox.ml, port: 443, type: trojan, password: 86231db5-96d0-4271-9977-cae3a0cba614, sni: jgwdj2.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: RELAY-Openit.ml 3, server: cn2hn.sub-nthu.com, port: 35001, type: trojan, password: 87d5ee80-9dfa-4cb5-b644-062803bd0c19, sni: cn2hn.sub-nthu.com, skip-cert-verify: true, udp: true}
-  - {name: US-Openit.ml, server: bai-piao-wang-zhe-iplc.98848.xyz, port: 11459, type: vmess, uuid: 7ef159a7-2c15-45ca-f5c3-b9798143afaa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /bit.ly/36b6iJh, ws-headers: {Host: bai-piao-wang-zhe-iplc.98848.xyz}, udp: true}
-  - {name: US-Openit.ml 2, server: bai-piao-wang-zhe-iplc.98848.xyz, port: 443, type: trojan, password: a97edd5e-f9c9-4320-a8aa-753dd99d74d4, sni: bai-piao-wang-zhe-iplc.98848.xyz, skip-cert-verify: true, udp: true}
-  - {name: US-Openit.ml 3, server: 93.179.112.142, port: 54317, type: vmess, uuid: faeb79e5-6549-4b08-8e87-3d7c5457930d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: JP-Openit.ml 2, server: jgwdb4.gaox.ml, port: 443, type: trojan, password: d06a3f01-1ff0-4792-9b8e-a5a604bc74a2, sni: jgwdb4.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: US-Openit.ml 4, server: 93.179.112.142, port: 54317, type: vmess, uuid: faeb79e5-6549-4b08-8e87-3d7c5457930d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: HK-Openit.ml, server: 43.154.72.145, port: 27091, type: vmess, uuid: 2f1e82e4-5319-4278-92aa-74d49c04683f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [43.154.72.145]}}, udp: true}
-  - {name: DE-Openit.ml, server: 20.79.186.124, port: 103, type: vmess, uuid: 8826e489-7cab-433d-dd18-c9489c1b7e7b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: AU-Openit.ml, server: 185.167.116.252, port: 9006, type: ss, cipher: aes-256-cfb, password: FAdUvMJUq5vDgKEq, udp: true}
-  - {name: AU-Openit.ml 2, server: 185.167.116.252, port: 9005, type: ss, cipher: aes-256-cfb, password: ZET59LF6DvCC8KVt, udp: true}
-  - {name: AU-Openit.ml 3, server: 185.167.116.252, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa, udp: true}
-  - {name: AU-Openit.ml 4, server: 185.167.116.252, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
-  - {name: AU-Openit.ml 5, server: 185.167.116.252, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX, udp: true}
-  - {name: AU-Openit.ml 6, server: 185.167.116.252, port: 9007, type: ss, cipher: aes-256-cfb, password: kSPmvwdFzGMMW5pY, udp: true}
-  - {name: IN-Openit.ml, server: jgwhdlb1.gaox.ml, port: 443, type: trojan, password: e05c749b-7c6b-41b8-9c71-9dcf685edf4a, sni: jgwhdlb1.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: AU-Openit.ml 7, server: 185.167.116.252, port: 9008, type: ss, cipher: aes-256-cfb, password: y9VURyNzJWNRYEGQ, udp: true}
-  - {name: AU-Openit.ml 8, server: jgwxn4.gaox.ml, port: 443, type: trojan, password: e8c1ab3c-89b3-4933-92df-682e6dce7819, sni: jgwxn4.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: RELAY-Openit.ml 4, server: gz.bgp.rx.naiun.pw, port: 45394, type: vmess, uuid: f7818bd7-36cf-42f2-bf06-8ae7ddc94514, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gz.bgp.rx.naiun.pw}, udp: true}
-  - {name: RELAY-Openit.ml 5, server: hnlt.sub-nthu.com, port: 35002, type: trojan, password: 87d5ee80-9dfa-4cb5-b644-062803bd0c19, sni: hnlt.sub-nthu.com, skip-cert-verify: true, udp: true}
-  - {name: RELAY-Openit.ml 6, server: cn2hn.sub-nthu.com, port: 35002, type: trojan, password: 87d5ee80-9dfa-4cb5-b644-062803bd0c19, sni: cn2hn.sub-nthu.com, skip-cert-verify: true, udp: true}
-  - {name: RELAY-Openit.ml 7, server: hz.bgp.rx.naiun.pw, port: 45240, type: ss, cipher: chacha20-ietf-poly1305, password: 4a050446-8653-4c92-8f76-cda609c4a257, udp: true}
-  - {name: SG-Openit.ml, server: 172.104.35.84, port: 2771, type: vmess, uuid: f06560c3-e6e8-4ed5-fb6c-67068dfa9c78, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: SG-Openit.ml 2, server: 165.232.169.142, port: 29332, type: ss, cipher: aes-256-cfb, password: 1e5111699c45496da84112f35db665c4, udp: true}
+  - {name: JP-150.230.107.75-065, server: aling.gq, port: 443, type: trojan, password: f727337d-52af-4cf9-b260-26ac9a23ddc2, sni: aling.gq, skip-cert-verify: true, udp: true}
+  - {name: GB-140.238.71.244-003, server: jgwld3.gaox.ml, port: 443, type: trojan, password: 71b55a84-3fac-4458-abff-eaad79219c91, sni: jgwld3.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: RELAY-120.232.214.248-154, server: zzcm01.bdate.xyz, port: 1320, type: vmess, uuid: b9ecdb44-236b-30a7-94f2-f464993d84cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: zzcm01.bdate.xyz}, udp: true}
+  - {name: RELAY-125.94.37.119-177, server: zzcm06.bdate.xyz, port: 1930, type: vmess, uuid: b9ecdb44-236b-30a7-94f2-f464993d84cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: zzcm06.bdate.xyz}, udp: true}
+  - {name: US-164.90.149.75-139, server: free.spcloud.us, port: 21010, type: trojan, password: 118fc04e-fb8c-4154-9092-352cf1958fcd, sni: free.spcloud.us, skip-cert-verify: true, udp: true}
+  - {name: RELAY-120.79.75.120-143, server: s4.mine.com.cn, port: 3333, type: vmess, uuid: 5eea1f96-6e33-4409-b8b4-a8d3596ec991, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: RELAY-120.232.214.248-148, server: zzcm01.bdate.xyz, port: 2000, type: vmess, uuid: b9ecdb44-236b-30a7-94f2-f464993d84cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: zzcm01.bdate.xyz}, udp: true}
+  - {name: RELAY-116.129.253.134-142, server: 116.129.253.134, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
+  - {name: JP-150.230.217.213-020, server: jgwdj4.gaox.ml, port: 443, type: trojan, password: c09eb137-bf68-4658-84e0-102d94b74168, sni: jgwdj4.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: RELAY-120.232.214.248-146, server: zzcm07.bdate.xyz, port: 1510, type: vmess, uuid: b9ecdb44-236b-30a7-94f2-f464993d84cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: zzcm07.bdate.xyz}, udp: true}
+  - {name: RELAY-125.94.37.119-156, server: zzcm06.bdate.xyz, port: 1030, type: vmess, uuid: b9ecdb44-236b-30a7-94f2-f464993d84cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: zzcm06.bdate.xyz}, udp: true}
+  - {name: TW-114.43.153.190-130, server: tw.tcpbbr.net, port: 443, type: trojan, password: 280a1162-00cb-11ec-a8bf-f23c91cfbbc9, sni: tw.tcpbbr.net, skip-cert-verify: true, udp: true}
+  - {name: RO-178.157.94.190-131, server: jp.tcpbbr.net, port: 443, type: trojan, password: 280a1162-00cb-11ec-a8bf-f23c91cfbbc9, sni: jp.tcpbbr.net, skip-cert-verify: true, udp: true}
+  - {name: RELAY-120.232.214.143-157, server: zzcm09.bdate.xyz, port: 1320, type: vmess, uuid: b9ecdb44-236b-30a7-94f2-f464993d84cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: zzcm09.bdate.xyz}, udp: true}
+  - {name: RELAY-116.129.253.134-024, server: 116.129.253.134, port: 3389, type: trojan, password: e37c6d7efa845d60, skip-cert-verify: true, udp: true}
+  - {name: RELAY-120.232.214.248-179, server: zzcm01.bdate.xyz, port: 1420, type: vmess, uuid: b9ecdb44-236b-30a7-94f2-f464993d84cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: zzcm01.bdate.xyz}, udp: true}
+  - {name: JP-45.142.167.21-134, server: ty2-1.nigirocloud.com, port: 443, type: trojan, password: ruWkGdbUKT4RN7kZ8t, sni: ty2-1.nigirocloud.com, skip-cert-verify: true, udp: true}
+  - {name: KR-138.2.113.248-071, server: jgwcc2.gaox.ml, port: 443, type: trojan, password: 9c822f05-cfdc-479a-9534-60f3d4127435, sni: jgwcc2.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: RELAY-120.232.214.143-151, server: zzcm09.bdate.xyz, port: 1510, type: vmess, uuid: b9ecdb44-236b-30a7-94f2-f464993d84cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: zzcm09.bdate.xyz}, udp: true}
+  - {name: RELAY-120.232.214.248-153, server: zzcm07.bdate.xyz, port: 1420, type: vmess, uuid: b9ecdb44-236b-30a7-94f2-f464993d84cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: zzcm07.bdate.xyz}, udp: true}
+  - {name: RELAY-120.232.214.143-181, server: zzcm09.bdate.xyz, port: 1980, type: vmess, uuid: b9ecdb44-236b-30a7-94f2-f464993d84cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: zzcm09.bdate.xyz}, udp: true}
+  - {name: JP-45.142.167.22-212, server: ty2-2.nigirocloud.com, port: 443, type: trojan, password: ruWkGdbUKT4RN7kZ8t, sni: ty2-2.nigirocloud.com, skip-cert-verify: true, udp: true}
+  - {name: JP-45.142.167.24-224, server: ty2-4.nigirocloud.com, port: 443, type: trojan, password: ruWkGdbUKT4RN7kZ8t, sni: ty2-4.nigirocloud.com, skip-cert-verify: true, udp: true}
+  - {name: RELAY-125.94.37.119-187, server: zzcm06.bdate.xyz, port: 1980, type: vmess, uuid: b9ecdb44-236b-30a7-94f2-f464993d84cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: zzcm06.bdate.xyz}, udp: true}
+  - {name: US-143.110.227.174-215, server: bai-piao-wang-zhe-iplc.98848.xyz, port: 11459, type: vmess, uuid: 7ef159a7-2c15-45ca-f5c3-b9798143afaa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /bit.ly/36b6iJh, ws-headers: {Host: bai-piao-wang-zhe-iplc.98848.xyz}, udp: true}
+  - {name: JP-45.142.167.25-216, server: ty2-5.nigirocloud.com, port: 443, type: trojan, password: ruWkGdbUKT4RN7kZ8t, sni: ty2-5.nigirocloud.com, skip-cert-verify: true, udp: true}
+  - {name: HK-43.154.72.145-159, server: 43.154.72.145, port: 27091, type: vmess, uuid: 2f1e82e4-5319-4278-92aa-74d49c04683f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [43.154.72.145]}}, udp: true}
+  - {name: RELAY-125.94.37.119-184, server: zzcm06.bdate.xyz, port: 1580, type: vmess, uuid: b9ecdb44-236b-30a7-94f2-f464993d84cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: zzcm06.bdate.xyz}, udp: true}
+  - {name: RELAY-120.232.214.143-155, server: zzcm09.bdate.xyz, port: 1420, type: vmess, uuid: b9ecdb44-236b-30a7-94f2-f464993d84cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: zzcm09.bdate.xyz}, udp: true}
+  - {name: KR-150.230.249.169-098, server: 150.230.249.169, port: 8888, type: vmess, uuid: f836d00e-73e0-4eb5-a0ac-18a8e9ee61ef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US-208.109.190.68-070, server: o7cx6bd6t4yjiqsm.xiongsonglin.com, port: 443, type: trojan, password: e5d46365e25e31d94279c2bcf93390a2, sni: o7cx6bd6t4yjiqsm.xiongsonglin.com, skip-cert-verify: true, udp: true}
+  - {name: US-208.109.189.58-072, server: usa-sr-105.mitoption.com, port: 443, type: trojan, password: e5d46365e25e31d94279c2bcf93390a2, sni: usa-sr-105.mitoption.com, skip-cert-verify: true, udp: true}
+  - {name: JP-140.83.58.17-174, server: jgwdb1.gaox.ml, port: 443, type: trojan, password: a580d839-ee41-4df1-bf03-6789dca32e30, sni: jgwdb1.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: RELAY-125.94.37.119-203, server: zzcm06.bdate.xyz, port: 1260, type: vmess, uuid: b9ecdb44-236b-30a7-94f2-f464993d84cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: zzcm06.bdate.xyz}, udp: true}
+  - {name: RELAY-120.232.214.248-195, server: zzcm01.bdate.xyz, port: 1580, type: vmess, uuid: b9ecdb44-236b-30a7-94f2-f464993d84cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: zzcm01.bdate.xyz}, udp: true}
+  - {name: US-185.202.172.243-074, server: 185.202.172.243, port: 40941, type: vmess, uuid: 48537820-14f3-4de7-d26e-a3b88bcf015a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US-129.146.242.130-075, server: fhcarm1.gaox.ml, port: 443, type: trojan, password: 05742120-ce23-4cc8-88f5-6d221ce45bf4, sni: fhcarm1.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: KR-146.56.115.242-002, server: hgmf.speedcncnforward2.tk, port: 10004, type: trojan, password: eb40a3f4-3b04-4a1c-993d-d71b44fee92c, sni: hgmf.speedcncnforward2.tk, skip-cert-verify: true, udp: true}
+  - {name: RELAY-120.232.214.143-178, server: zzcm09.bdate.xyz, port: 1350, type: vmess, uuid: b9ecdb44-236b-30a7-94f2-f464993d84cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: zzcm09.bdate.xyz}, udp: true}
+  - {name: US-198.52.115.12-140, server: us-a.vmess.top, port: 39123, type: trojan, password: 5581796e-1eee-4a22-b86c-eb0974352e33, sni: us-a.vmess.top, skip-cert-verify: true, udp: true}
+  - {name: US-129.146.255.158-076, server: fhcarm2.gaox.ml, port: 443, type: trojan, password: f39bd244-f5fe-415c-8b98-a1e5250bf178, sni: fhcarm2.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: RELAY-120.232.214.143-186, server: zzcm09.bdate.xyz, port: 1260, type: vmess, uuid: b9ecdb44-236b-30a7-94f2-f464993d84cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: zzcm09.bdate.xyz}, udp: true}
+  - {name: RELAY-120.232.214.248-194, server: zzcm07.bdate.xyz, port: 1580, type: vmess, uuid: b9ecdb44-236b-30a7-94f2-f464993d84cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: zzcm07.bdate.xyz}, udp: true}
+  - {name: US-129.146.135.157-080, server: fhcamd1.gaox.ml, port: 443, type: trojan, password: e23f408a-012e-4030-8b31-02022031cb50, sni: fhcamd1.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: RELAY-125.94.37.119-189, server: zzcm06.bdate.xyz, port: 1370, type: vmess, uuid: b9ecdb44-236b-30a7-94f2-f464993d84cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: zzcm06.bdate.xyz}, udp: true}
+  - {name: US-45.76.173.250-228, server: 45.76.173.250, port: 65340, type: vmess, uuid: b620d78a-d3a7-496f-af32-565185473eb8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /5Ci3h6YB/, ws-headers: {Host: 45.76.173.250}, udp: true}
+  - {name: SG-97.74.83.164-062, server: sg-sr-114.mitoption.com, port: 443, type: trojan, password: e5d46365e25e31d94279c2bcf93390a2, sni: sg-sr-114.mitoption.com, skip-cert-verify: true, udp: true}
+  - {name: RELAY-125.94.37.119-202, server: zzcm06.bdate.xyz, port: 1360, type: vmess, uuid: b9ecdb44-236b-30a7-94f2-f464993d84cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: zzcm06.bdate.xyz}, udp: true}
+  - {name: US-150.230.43.65-096, server: 150.230.43.65, port: 14564, type: vmess, uuid: 1556e040-31d3-4c47-b0d2-ddf888010b4e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: RELAY-120.232.214.248-166, server: zzcm07.bdate.xyz, port: 1360, type: vmess, uuid: b9ecdb44-236b-30a7-94f2-f464993d84cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: zzcm07.bdate.xyz}, udp: true}
+  - {name: VN-103.167.198.231-136, server: hcm4.aqvpn.me, port: 80, type: vmess, uuid: fc1905c5-8a19-4948-9f0d-e6e5427bc72f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hcm4.aqvpn.me}, udp: true}
+  - {name: RELAY-120.232.214.248-188, server: zzcm07.bdate.xyz, port: 1370, type: vmess, uuid: b9ecdb44-236b-30a7-94f2-f464993d84cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: zzcm07.bdate.xyz}, udp: true}
+  - {name: RELAY-120.232.214.248-198, server: zzcm01.bdate.xyz, port: 1370, type: vmess, uuid: b9ecdb44-236b-30a7-94f2-f464993d84cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: zzcm01.bdate.xyz}, udp: true}
+  - {name: GB-132.145.51.172-006, server: jgwld1.gaox.ml, port: 443, type: trojan, password: 02e653c9-7c93-46a9-999d-11834bd0c577, sni: jgwld1.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: JP-138.2.45.243-073, server: jgwdb2.gaox.ml, port: 443, type: trojan, password: c19d1432-8b3e-4818-8837-3d160cf65908, sni: jgwdb2.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: RELAY-120.232.214.248-169, server: zzcm01.bdate.xyz, port: 1360, type: vmess, uuid: b9ecdb44-236b-30a7-94f2-f464993d84cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: zzcm01.bdate.xyz}, udp: true}
+  - {name: RELAY-120.232.214.143-173, server: zzcm09.bdate.xyz, port: 1040, type: vmess, uuid: b9ecdb44-236b-30a7-94f2-f464993d84cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: zzcm09.bdate.xyz}, udp: true}
+  - {name: GB-140.238.87.136-036, server: jgwld4.gaox.ml, port: 443, type: trojan, password: 58d32c66-43b1-4561-9951-d87c9123774e, sni: jgwld4.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: IN-152.67.160.174-010, server: jgwhdlb2.gaox.ml, port: 443, type: trojan, password: 54080134-2cba-4535-8599-95650bd9aa54, sni: jgwhdlb2.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: IN-152.67.190.183-135, server: jgwhdlb3.gaox.ml, port: 443, type: trojan, password: 006baa3f-4bc3-4915-b60d-c8c5dae11a11, sni: jgwhdlb3.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: RELAY-120.232.214.248-185, server: zzcm01.bdate.xyz, port: 1260, type: vmess, uuid: b9ecdb44-236b-30a7-94f2-f464993d84cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: zzcm01.bdate.xyz}, udp: true}
+  - {name: GB-64.227.43.191-220, server: s4.upyun.online, port: 12340, type: trojan, password: c0276440-f163-4f40-a08c-78b158ce6c4f, sni: s4.upyun.online, skip-cert-verify: true, udp: true}
+  - {name: RELAY-120.232.214.143-196, server: zzcm09.bdate.xyz, port: 1580, type: vmess, uuid: b9ecdb44-236b-30a7-94f2-f464993d84cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: zzcm09.bdate.xyz}, udp: true}
+  - {name: RELAY-125.94.37.119-205, server: zzcm06.bdate.xyz, port: 1150, type: vmess, uuid: b9ecdb44-236b-30a7-94f2-f464993d84cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: zzcm06.bdate.xyz}, udp: true}
+  - {name: AU-140.238.205.173-005, server: jgwxn3.gaox.ml, port: 443, type: trojan, password: cb43b7c2-b744-41c5-bcc2-fd7467b332cf, sni: jgwxn3.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: IN-152.67.162.166-012, server: jgwhdlb1.gaox.ml, port: 443, type: trojan, password: e05c749b-7c6b-41b8-9c71-9dcf685edf4a, sni: jgwhdlb1.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: RELAY-120.232.214.248-204, server: zzcm07.bdate.xyz, port: 1350, type: vmess, uuid: b9ecdb44-236b-30a7-94f2-f464993d84cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: zzcm07.bdate.xyz}, udp: true}
+  - {name: RELAY-120.232.214.143-197, server: zzcm09.bdate.xyz, port: 1370, type: vmess, uuid: b9ecdb44-236b-30a7-94f2-f464993d84cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: zzcm09.bdate.xyz}, udp: true}
+  - {name: HK-20.24.220.181-128, server: hk.aqvpn.me, port: 80, type: vmess, uuid: fc1905c5-8a19-4948-9f0d-e6e5427bc72f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hk.aqvpn.me}, udp: true}
+  - {name: JP-45.142.167.26-175, server: ty2-6.nigirocloud.com, port: 443, type: trojan, password: ruWkGdbUKT4RN7kZ8t, sni: ty2-6.nigirocloud.com, skip-cert-verify: true, udp: true}
+  - {name: RELAY-125.94.37.119-200, server: zzcm06.bdate.xyz, port: 2000, type: vmess, uuid: b9ecdb44-236b-30a7-94f2-f464993d84cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: zzcm06.bdate.xyz}, udp: true}
+  - {name: RELAY-120.232.214.248-145, server: zzcm01.bdate.xyz, port: 1030, type: vmess, uuid: b9ecdb44-236b-30a7-94f2-f464993d84cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: zzcm01.bdate.xyz}, udp: true}
+  - {name: JP-45.142.167.23-121, server: ty2-3.nigirocloud.com, port: 443, type: trojan, password: ruWkGdbUKT4RN7kZ8t, sni: ty2-3.nigirocloud.com, skip-cert-verify: true, udp: true}
+  - {name: JP-150.230.96.103-011, server: jgwdj3.gaox.ml, port: 443, type: trojan, password: da777aae-defb-41d0-a183-2c27da2b4677, sni: jgwdj3.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: RELAY-120.232.214.248-150, server: zzcm07.bdate.xyz, port: 1320, type: vmess, uuid: b9ecdb44-236b-30a7-94f2-f464993d84cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: zzcm07.bdate.xyz}, udp: true}
+  - {name: SG-5.44.249.43-009, server: 5.44.249.43, port: 3389, type: trojan, password: 6f0a9d0fa39d65fa, skip-cert-verify: true, udp: true}
+  - {name: RELAY-125.94.37.119-180, server: zzcm06.bdate.xyz, port: 1040, type: vmess, uuid: b9ecdb44-236b-30a7-94f2-f464993d84cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: zzcm06.bdate.xyz}, udp: true}
+  - {name: RELAY-120.232.214.248-182, server: zzcm01.bdate.xyz, port: 1350, type: vmess, uuid: b9ecdb44-236b-30a7-94f2-f464993d84cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: zzcm01.bdate.xyz}, udp: true}
+  - {name: US-154.17.21.223-014, server: zones.defun.us, port: 443, type: trojan, password: lpmMwDKeBbKKPq8K, sni: zones.defun.us, skip-cert-verify: true, udp: true}
+  - {name: RELAY-120.232.214.248-172, server: zzcm01.bdate.xyz, port: 1980, type: vmess, uuid: b9ecdb44-236b-30a7-94f2-f464993d84cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: zzcm01.bdate.xyz}, udp: true}
+  - {name: SG-5.44.249.43-008, server: 5.44.249.43, port: 3389, type: trojan, password: cd39f62aed7b90f6, skip-cert-verify: true, udp: true}
+  - {name: SG-45.118.133.251-119, server: 45.118.133.251, port: 1080, type: vmess, uuid: 3d6fa91a-6186-4d7f-e0b3-a6d2a23f575e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: RELAY-120.232.214.248-158, server: zzcm01.bdate.xyz, port: 1510, type: vmess, uuid: b9ecdb44-236b-30a7-94f2-f464993d84cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: zzcm01.bdate.xyz}, udp: true}
+  - {name: RELAY-120.232.215.188-103, server: game.tcpbbr.net, port: 5228, type: trojan, password: 280a1162-00cb-11ec-a8bf-f23c91cfbbc9, sni: game.tcpbbr.net, skip-cert-verify: true, udp: true}
+  - {name: GB-132.145.50.184-038, server: jgwld2.gaox.ml, port: 443, type: trojan, password: d7fd8aaa-4581-4281-80aa-4b63e5e1f157, sni: jgwld2.gaox.ml, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - RELAY-Openit.ml
-      - RELAY-Openit.ml 2
-      - JP-Openit.ml
-      - RELAY-Openit.ml 3
-      - US-Openit.ml
-      - US-Openit.ml 2
-      - US-Openit.ml 3
-      - JP-Openit.ml 2
-      - US-Openit.ml 4
-      - HK-Openit.ml
-      - DE-Openit.ml
-      - AU-Openit.ml
-      - AU-Openit.ml 2
-      - AU-Openit.ml 3
-      - AU-Openit.ml 4
-      - AU-Openit.ml 5
-      - AU-Openit.ml 6
-      - IN-Openit.ml
-      - AU-Openit.ml 7
-      - AU-Openit.ml 8
-      - RELAY-Openit.ml 4
-      - RELAY-Openit.ml 5
-      - RELAY-Openit.ml 6
-      - RELAY-Openit.ml 7
-      - SG-Openit.ml
-      - SG-Openit.ml 2
+      - JP-150.230.107.75-065
+      - GB-140.238.71.244-003
+      - RELAY-120.232.214.248-154
+      - RELAY-125.94.37.119-177
+      - US-164.90.149.75-139
+      - RELAY-120.79.75.120-143
+      - RELAY-120.232.214.248-148
+      - RELAY-116.129.253.134-142
+      - JP-150.230.217.213-020
+      - RELAY-120.232.214.248-146
+      - RELAY-125.94.37.119-156
+      - TW-114.43.153.190-130
+      - RO-178.157.94.190-131
+      - RELAY-120.232.214.143-157
+      - RELAY-116.129.253.134-024
+      - RELAY-120.232.214.248-179
+      - JP-45.142.167.21-134
+      - KR-138.2.113.248-071
+      - RELAY-120.232.214.143-151
+      - RELAY-120.232.214.248-153
+      - RELAY-120.232.214.143-181
+      - JP-45.142.167.22-212
+      - JP-45.142.167.24-224
+      - RELAY-125.94.37.119-187
+      - US-143.110.227.174-215
+      - JP-45.142.167.25-216
+      - HK-43.154.72.145-159
+      - RELAY-125.94.37.119-184
+      - RELAY-120.232.214.143-155
+      - KR-150.230.249.169-098
+      - US-208.109.190.68-070
+      - US-208.109.189.58-072
+      - JP-140.83.58.17-174
+      - RELAY-125.94.37.119-203
+      - RELAY-120.232.214.248-195
+      - US-185.202.172.243-074
+      - US-129.146.242.130-075
+      - KR-146.56.115.242-002
+      - RELAY-120.232.214.143-178
+      - US-198.52.115.12-140
+      - US-129.146.255.158-076
+      - RELAY-120.232.214.143-186
+      - RELAY-120.232.214.248-194
+      - US-129.146.135.157-080
+      - RELAY-125.94.37.119-189
+      - US-45.76.173.250-228
+      - SG-97.74.83.164-062
+      - RELAY-125.94.37.119-202
+      - US-150.230.43.65-096
+      - RELAY-120.232.214.248-166
+      - VN-103.167.198.231-136
+      - RELAY-120.232.214.248-188
+      - RELAY-120.232.214.248-198
+      - GB-132.145.51.172-006
+      - JP-138.2.45.243-073
+      - RELAY-120.232.214.248-169
+      - RELAY-120.232.214.143-173
+      - GB-140.238.87.136-036
+      - IN-152.67.160.174-010
+      - IN-152.67.190.183-135
+      - RELAY-120.232.214.248-185
+      - GB-64.227.43.191-220
+      - RELAY-120.232.214.143-196
+      - RELAY-125.94.37.119-205
+      - AU-140.238.205.173-005
+      - IN-152.67.162.166-012
+      - RELAY-120.232.214.248-204
+      - RELAY-120.232.214.143-197
+      - HK-20.24.220.181-128
+      - JP-45.142.167.26-175
+      - RELAY-125.94.37.119-200
+      - RELAY-120.232.214.248-145
+      - JP-45.142.167.23-121
+      - JP-150.230.96.103-011
+      - RELAY-120.232.214.248-150
+      - SG-5.44.249.43-009
+      - RELAY-125.94.37.119-180
+      - RELAY-120.232.214.248-182
+      - US-154.17.21.223-014
+      - RELAY-120.232.214.248-172
+      - SG-5.44.249.43-008
+      - SG-45.118.133.251-119
+      - RELAY-120.232.214.248-158
+      - RELAY-120.232.215.188-103
+      - GB-132.145.50.184-038
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - RELAY-Openit.ml
-      - RELAY-Openit.ml 2
-      - JP-Openit.ml
-      - RELAY-Openit.ml 3
-      - US-Openit.ml
-      - US-Openit.ml 2
-      - US-Openit.ml 3
-      - JP-Openit.ml 2
-      - US-Openit.ml 4
-      - HK-Openit.ml
-      - DE-Openit.ml
-      - AU-Openit.ml
-      - AU-Openit.ml 2
-      - AU-Openit.ml 3
-      - AU-Openit.ml 4
-      - AU-Openit.ml 5
-      - AU-Openit.ml 6
-      - IN-Openit.ml
-      - AU-Openit.ml 7
-      - AU-Openit.ml 8
-      - RELAY-Openit.ml 4
-      - RELAY-Openit.ml 5
-      - RELAY-Openit.ml 6
-      - RELAY-Openit.ml 7
-      - SG-Openit.ml
-      - SG-Openit.ml 2
+      - JP-150.230.107.75-065
+      - GB-140.238.71.244-003
+      - RELAY-120.232.214.248-154
+      - RELAY-125.94.37.119-177
+      - US-164.90.149.75-139
+      - RELAY-120.79.75.120-143
+      - RELAY-120.232.214.248-148
+      - RELAY-116.129.253.134-142
+      - JP-150.230.217.213-020
+      - RELAY-120.232.214.248-146
+      - RELAY-125.94.37.119-156
+      - TW-114.43.153.190-130
+      - RO-178.157.94.190-131
+      - RELAY-120.232.214.143-157
+      - RELAY-116.129.253.134-024
+      - RELAY-120.232.214.248-179
+      - JP-45.142.167.21-134
+      - KR-138.2.113.248-071
+      - RELAY-120.232.214.143-151
+      - RELAY-120.232.214.248-153
+      - RELAY-120.232.214.143-181
+      - JP-45.142.167.22-212
+      - JP-45.142.167.24-224
+      - RELAY-125.94.37.119-187
+      - US-143.110.227.174-215
+      - JP-45.142.167.25-216
+      - HK-43.154.72.145-159
+      - RELAY-125.94.37.119-184
+      - RELAY-120.232.214.143-155
+      - KR-150.230.249.169-098
+      - US-208.109.190.68-070
+      - US-208.109.189.58-072
+      - JP-140.83.58.17-174
+      - RELAY-125.94.37.119-203
+      - RELAY-120.232.214.248-195
+      - US-185.202.172.243-074
+      - US-129.146.242.130-075
+      - KR-146.56.115.242-002
+      - RELAY-120.232.214.143-178
+      - US-198.52.115.12-140
+      - US-129.146.255.158-076
+      - RELAY-120.232.214.143-186
+      - RELAY-120.232.214.248-194
+      - US-129.146.135.157-080
+      - RELAY-125.94.37.119-189
+      - US-45.76.173.250-228
+      - SG-97.74.83.164-062
+      - RELAY-125.94.37.119-202
+      - US-150.230.43.65-096
+      - RELAY-120.232.214.248-166
+      - VN-103.167.198.231-136
+      - RELAY-120.232.214.248-188
+      - RELAY-120.232.214.248-198
+      - GB-132.145.51.172-006
+      - JP-138.2.45.243-073
+      - RELAY-120.232.214.248-169
+      - RELAY-120.232.214.143-173
+      - GB-140.238.87.136-036
+      - IN-152.67.160.174-010
+      - IN-152.67.190.183-135
+      - RELAY-120.232.214.248-185
+      - GB-64.227.43.191-220
+      - RELAY-120.232.214.143-196
+      - RELAY-125.94.37.119-205
+      - AU-140.238.205.173-005
+      - IN-152.67.162.166-012
+      - RELAY-120.232.214.248-204
+      - RELAY-120.232.214.143-197
+      - HK-20.24.220.181-128
+      - JP-45.142.167.26-175
+      - RELAY-125.94.37.119-200
+      - RELAY-120.232.214.248-145
+      - JP-45.142.167.23-121
+      - JP-150.230.96.103-011
+      - RELAY-120.232.214.248-150
+      - SG-5.44.249.43-009
+      - RELAY-125.94.37.119-180
+      - RELAY-120.232.214.248-182
+      - US-154.17.21.223-014
+      - RELAY-120.232.214.248-172
+      - SG-5.44.249.43-008
+      - SG-45.118.133.251-119
+      - RELAY-120.232.214.248-158
+      - RELAY-120.232.215.188-103
+      - GB-132.145.50.184-038
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - RELAY-Openit.ml
-      - RELAY-Openit.ml 2
-      - JP-Openit.ml
-      - RELAY-Openit.ml 3
-      - US-Openit.ml
-      - US-Openit.ml 2
-      - US-Openit.ml 3
-      - JP-Openit.ml 2
-      - US-Openit.ml 4
-      - HK-Openit.ml
-      - DE-Openit.ml
-      - AU-Openit.ml
-      - AU-Openit.ml 2
-      - AU-Openit.ml 3
-      - AU-Openit.ml 4
-      - AU-Openit.ml 5
-      - AU-Openit.ml 6
-      - IN-Openit.ml
-      - AU-Openit.ml 7
-      - AU-Openit.ml 8
-      - RELAY-Openit.ml 4
-      - RELAY-Openit.ml 5
-      - RELAY-Openit.ml 6
-      - RELAY-Openit.ml 7
-      - SG-Openit.ml
-      - SG-Openit.ml 2
+      - JP-150.230.107.75-065
+      - GB-140.238.71.244-003
+      - RELAY-120.232.214.248-154
+      - RELAY-125.94.37.119-177
+      - US-164.90.149.75-139
+      - RELAY-120.79.75.120-143
+      - RELAY-120.232.214.248-148
+      - RELAY-116.129.253.134-142
+      - JP-150.230.217.213-020
+      - RELAY-120.232.214.248-146
+      - RELAY-125.94.37.119-156
+      - TW-114.43.153.190-130
+      - RO-178.157.94.190-131
+      - RELAY-120.232.214.143-157
+      - RELAY-116.129.253.134-024
+      - RELAY-120.232.214.248-179
+      - JP-45.142.167.21-134
+      - KR-138.2.113.248-071
+      - RELAY-120.232.214.143-151
+      - RELAY-120.232.214.248-153
+      - RELAY-120.232.214.143-181
+      - JP-45.142.167.22-212
+      - JP-45.142.167.24-224
+      - RELAY-125.94.37.119-187
+      - US-143.110.227.174-215
+      - JP-45.142.167.25-216
+      - HK-43.154.72.145-159
+      - RELAY-125.94.37.119-184
+      - RELAY-120.232.214.143-155
+      - KR-150.230.249.169-098
+      - US-208.109.190.68-070
+      - US-208.109.189.58-072
+      - JP-140.83.58.17-174
+      - RELAY-125.94.37.119-203
+      - RELAY-120.232.214.248-195
+      - US-185.202.172.243-074
+      - US-129.146.242.130-075
+      - KR-146.56.115.242-002
+      - RELAY-120.232.214.143-178
+      - US-198.52.115.12-140
+      - US-129.146.255.158-076
+      - RELAY-120.232.214.143-186
+      - RELAY-120.232.214.248-194
+      - US-129.146.135.157-080
+      - RELAY-125.94.37.119-189
+      - US-45.76.173.250-228
+      - SG-97.74.83.164-062
+      - RELAY-125.94.37.119-202
+      - US-150.230.43.65-096
+      - RELAY-120.232.214.248-166
+      - VN-103.167.198.231-136
+      - RELAY-120.232.214.248-188
+      - RELAY-120.232.214.248-198
+      - GB-132.145.51.172-006
+      - JP-138.2.45.243-073
+      - RELAY-120.232.214.248-169
+      - RELAY-120.232.214.143-173
+      - GB-140.238.87.136-036
+      - IN-152.67.160.174-010
+      - IN-152.67.190.183-135
+      - RELAY-120.232.214.248-185
+      - GB-64.227.43.191-220
+      - RELAY-120.232.214.143-196
+      - RELAY-125.94.37.119-205
+      - AU-140.238.205.173-005
+      - IN-152.67.162.166-012
+      - RELAY-120.232.214.248-204
+      - RELAY-120.232.214.143-197
+      - HK-20.24.220.181-128
+      - JP-45.142.167.26-175
+      - RELAY-125.94.37.119-200
+      - RELAY-120.232.214.248-145
+      - JP-45.142.167.23-121
+      - JP-150.230.96.103-011
+      - RELAY-120.232.214.248-150
+      - SG-5.44.249.43-009
+      - RELAY-125.94.37.119-180
+      - RELAY-120.232.214.248-182
+      - US-154.17.21.223-014
+      - RELAY-120.232.214.248-172
+      - SG-5.44.249.43-008
+      - SG-45.118.133.251-119
+      - RELAY-120.232.214.248-158
+      - RELAY-120.232.215.188-103
+      - GB-132.145.50.184-038
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -144,32 +380,91 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - RELAY-Openit.ml
-      - RELAY-Openit.ml 2
-      - JP-Openit.ml
-      - RELAY-Openit.ml 3
-      - US-Openit.ml
-      - US-Openit.ml 2
-      - US-Openit.ml 3
-      - JP-Openit.ml 2
-      - US-Openit.ml 4
-      - HK-Openit.ml
-      - DE-Openit.ml
-      - AU-Openit.ml
-      - AU-Openit.ml 2
-      - AU-Openit.ml 3
-      - AU-Openit.ml 4
-      - AU-Openit.ml 5
-      - AU-Openit.ml 6
-      - IN-Openit.ml
-      - AU-Openit.ml 7
-      - AU-Openit.ml 8
-      - RELAY-Openit.ml 4
-      - RELAY-Openit.ml 5
-      - RELAY-Openit.ml 6
-      - RELAY-Openit.ml 7
-      - SG-Openit.ml
-      - SG-Openit.ml 2
+      - JP-150.230.107.75-065
+      - GB-140.238.71.244-003
+      - RELAY-120.232.214.248-154
+      - RELAY-125.94.37.119-177
+      - US-164.90.149.75-139
+      - RELAY-120.79.75.120-143
+      - RELAY-120.232.214.248-148
+      - RELAY-116.129.253.134-142
+      - JP-150.230.217.213-020
+      - RELAY-120.232.214.248-146
+      - RELAY-125.94.37.119-156
+      - TW-114.43.153.190-130
+      - RO-178.157.94.190-131
+      - RELAY-120.232.214.143-157
+      - RELAY-116.129.253.134-024
+      - RELAY-120.232.214.248-179
+      - JP-45.142.167.21-134
+      - KR-138.2.113.248-071
+      - RELAY-120.232.214.143-151
+      - RELAY-120.232.214.248-153
+      - RELAY-120.232.214.143-181
+      - JP-45.142.167.22-212
+      - JP-45.142.167.24-224
+      - RELAY-125.94.37.119-187
+      - US-143.110.227.174-215
+      - JP-45.142.167.25-216
+      - HK-43.154.72.145-159
+      - RELAY-125.94.37.119-184
+      - RELAY-120.232.214.143-155
+      - KR-150.230.249.169-098
+      - US-208.109.190.68-070
+      - US-208.109.189.58-072
+      - JP-140.83.58.17-174
+      - RELAY-125.94.37.119-203
+      - RELAY-120.232.214.248-195
+      - US-185.202.172.243-074
+      - US-129.146.242.130-075
+      - KR-146.56.115.242-002
+      - RELAY-120.232.214.143-178
+      - US-198.52.115.12-140
+      - US-129.146.255.158-076
+      - RELAY-120.232.214.143-186
+      - RELAY-120.232.214.248-194
+      - US-129.146.135.157-080
+      - RELAY-125.94.37.119-189
+      - US-45.76.173.250-228
+      - SG-97.74.83.164-062
+      - RELAY-125.94.37.119-202
+      - US-150.230.43.65-096
+      - RELAY-120.232.214.248-166
+      - VN-103.167.198.231-136
+      - RELAY-120.232.214.248-188
+      - RELAY-120.232.214.248-198
+      - GB-132.145.51.172-006
+      - JP-138.2.45.243-073
+      - RELAY-120.232.214.248-169
+      - RELAY-120.232.214.143-173
+      - GB-140.238.87.136-036
+      - IN-152.67.160.174-010
+      - IN-152.67.190.183-135
+      - RELAY-120.232.214.248-185
+      - GB-64.227.43.191-220
+      - RELAY-120.232.214.143-196
+      - RELAY-125.94.37.119-205
+      - AU-140.238.205.173-005
+      - IN-152.67.162.166-012
+      - RELAY-120.232.214.248-204
+      - RELAY-120.232.214.143-197
+      - HK-20.24.220.181-128
+      - JP-45.142.167.26-175
+      - RELAY-125.94.37.119-200
+      - RELAY-120.232.214.248-145
+      - JP-45.142.167.23-121
+      - JP-150.230.96.103-011
+      - RELAY-120.232.214.248-150
+      - SG-5.44.249.43-009
+      - RELAY-125.94.37.119-180
+      - RELAY-120.232.214.248-182
+      - US-154.17.21.223-014
+      - RELAY-120.232.214.248-172
+      - SG-5.44.249.43-008
+      - SG-45.118.133.251-119
+      - RELAY-120.232.214.248-158
+      - RELAY-120.232.215.188-103
+      - GB-132.145.50.184-038
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -180,95 +475,272 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - RELAY-Openit.ml
-      - RELAY-Openit.ml 2
-      - JP-Openit.ml
-      - RELAY-Openit.ml 3
-      - US-Openit.ml
-      - US-Openit.ml 2
-      - US-Openit.ml 3
-      - JP-Openit.ml 2
-      - US-Openit.ml 4
-      - HK-Openit.ml
-      - DE-Openit.ml
-      - AU-Openit.ml
-      - AU-Openit.ml 2
-      - AU-Openit.ml 3
-      - AU-Openit.ml 4
-      - AU-Openit.ml 5
-      - AU-Openit.ml 6
-      - IN-Openit.ml
-      - AU-Openit.ml 7
-      - AU-Openit.ml 8
-      - RELAY-Openit.ml 4
-      - RELAY-Openit.ml 5
-      - RELAY-Openit.ml 6
-      - RELAY-Openit.ml 7
-      - SG-Openit.ml
-      - SG-Openit.ml 2
+      - JP-150.230.107.75-065
+      - GB-140.238.71.244-003
+      - RELAY-120.232.214.248-154
+      - RELAY-125.94.37.119-177
+      - US-164.90.149.75-139
+      - RELAY-120.79.75.120-143
+      - RELAY-120.232.214.248-148
+      - RELAY-116.129.253.134-142
+      - JP-150.230.217.213-020
+      - RELAY-120.232.214.248-146
+      - RELAY-125.94.37.119-156
+      - TW-114.43.153.190-130
+      - RO-178.157.94.190-131
+      - RELAY-120.232.214.143-157
+      - RELAY-116.129.253.134-024
+      - RELAY-120.232.214.248-179
+      - JP-45.142.167.21-134
+      - KR-138.2.113.248-071
+      - RELAY-120.232.214.143-151
+      - RELAY-120.232.214.248-153
+      - RELAY-120.232.214.143-181
+      - JP-45.142.167.22-212
+      - JP-45.142.167.24-224
+      - RELAY-125.94.37.119-187
+      - US-143.110.227.174-215
+      - JP-45.142.167.25-216
+      - HK-43.154.72.145-159
+      - RELAY-125.94.37.119-184
+      - RELAY-120.232.214.143-155
+      - KR-150.230.249.169-098
+      - US-208.109.190.68-070
+      - US-208.109.189.58-072
+      - JP-140.83.58.17-174
+      - RELAY-125.94.37.119-203
+      - RELAY-120.232.214.248-195
+      - US-185.202.172.243-074
+      - US-129.146.242.130-075
+      - KR-146.56.115.242-002
+      - RELAY-120.232.214.143-178
+      - US-198.52.115.12-140
+      - US-129.146.255.158-076
+      - RELAY-120.232.214.143-186
+      - RELAY-120.232.214.248-194
+      - US-129.146.135.157-080
+      - RELAY-125.94.37.119-189
+      - US-45.76.173.250-228
+      - SG-97.74.83.164-062
+      - RELAY-125.94.37.119-202
+      - US-150.230.43.65-096
+      - RELAY-120.232.214.248-166
+      - VN-103.167.198.231-136
+      - RELAY-120.232.214.248-188
+      - RELAY-120.232.214.248-198
+      - GB-132.145.51.172-006
+      - JP-138.2.45.243-073
+      - RELAY-120.232.214.248-169
+      - RELAY-120.232.214.143-173
+      - GB-140.238.87.136-036
+      - IN-152.67.160.174-010
+      - IN-152.67.190.183-135
+      - RELAY-120.232.214.248-185
+      - GB-64.227.43.191-220
+      - RELAY-120.232.214.143-196
+      - RELAY-125.94.37.119-205
+      - AU-140.238.205.173-005
+      - IN-152.67.162.166-012
+      - RELAY-120.232.214.248-204
+      - RELAY-120.232.214.143-197
+      - HK-20.24.220.181-128
+      - JP-45.142.167.26-175
+      - RELAY-125.94.37.119-200
+      - RELAY-120.232.214.248-145
+      - JP-45.142.167.23-121
+      - JP-150.230.96.103-011
+      - RELAY-120.232.214.248-150
+      - SG-5.44.249.43-009
+      - RELAY-125.94.37.119-180
+      - RELAY-120.232.214.248-182
+      - US-154.17.21.223-014
+      - RELAY-120.232.214.248-172
+      - SG-5.44.249.43-008
+      - SG-45.118.133.251-119
+      - RELAY-120.232.214.248-158
+      - RELAY-120.232.215.188-103
+      - GB-132.145.50.184-038
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - RELAY-Openit.ml
-      - RELAY-Openit.ml 2
-      - JP-Openit.ml
-      - RELAY-Openit.ml 3
-      - US-Openit.ml
-      - US-Openit.ml 2
-      - US-Openit.ml 3
-      - JP-Openit.ml 2
-      - US-Openit.ml 4
-      - HK-Openit.ml
-      - DE-Openit.ml
-      - AU-Openit.ml
-      - AU-Openit.ml 2
-      - AU-Openit.ml 3
-      - AU-Openit.ml 4
-      - AU-Openit.ml 5
-      - AU-Openit.ml 6
-      - IN-Openit.ml
-      - AU-Openit.ml 7
-      - AU-Openit.ml 8
-      - RELAY-Openit.ml 4
-      - RELAY-Openit.ml 5
-      - RELAY-Openit.ml 6
-      - RELAY-Openit.ml 7
-      - SG-Openit.ml
-      - SG-Openit.ml 2
+      - JP-150.230.107.75-065
+      - GB-140.238.71.244-003
+      - RELAY-120.232.214.248-154
+      - RELAY-125.94.37.119-177
+      - US-164.90.149.75-139
+      - RELAY-120.79.75.120-143
+      - RELAY-120.232.214.248-148
+      - RELAY-116.129.253.134-142
+      - JP-150.230.217.213-020
+      - RELAY-120.232.214.248-146
+      - RELAY-125.94.37.119-156
+      - TW-114.43.153.190-130
+      - RO-178.157.94.190-131
+      - RELAY-120.232.214.143-157
+      - RELAY-116.129.253.134-024
+      - RELAY-120.232.214.248-179
+      - JP-45.142.167.21-134
+      - KR-138.2.113.248-071
+      - RELAY-120.232.214.143-151
+      - RELAY-120.232.214.248-153
+      - RELAY-120.232.214.143-181
+      - JP-45.142.167.22-212
+      - JP-45.142.167.24-224
+      - RELAY-125.94.37.119-187
+      - US-143.110.227.174-215
+      - JP-45.142.167.25-216
+      - HK-43.154.72.145-159
+      - RELAY-125.94.37.119-184
+      - RELAY-120.232.214.143-155
+      - KR-150.230.249.169-098
+      - US-208.109.190.68-070
+      - US-208.109.189.58-072
+      - JP-140.83.58.17-174
+      - RELAY-125.94.37.119-203
+      - RELAY-120.232.214.248-195
+      - US-185.202.172.243-074
+      - US-129.146.242.130-075
+      - KR-146.56.115.242-002
+      - RELAY-120.232.214.143-178
+      - US-198.52.115.12-140
+      - US-129.146.255.158-076
+      - RELAY-120.232.214.143-186
+      - RELAY-120.232.214.248-194
+      - US-129.146.135.157-080
+      - RELAY-125.94.37.119-189
+      - US-45.76.173.250-228
+      - SG-97.74.83.164-062
+      - RELAY-125.94.37.119-202
+      - US-150.230.43.65-096
+      - RELAY-120.232.214.248-166
+      - VN-103.167.198.231-136
+      - RELAY-120.232.214.248-188
+      - RELAY-120.232.214.248-198
+      - GB-132.145.51.172-006
+      - JP-138.2.45.243-073
+      - RELAY-120.232.214.248-169
+      - RELAY-120.232.214.143-173
+      - GB-140.238.87.136-036
+      - IN-152.67.160.174-010
+      - IN-152.67.190.183-135
+      - RELAY-120.232.214.248-185
+      - GB-64.227.43.191-220
+      - RELAY-120.232.214.143-196
+      - RELAY-125.94.37.119-205
+      - AU-140.238.205.173-005
+      - IN-152.67.162.166-012
+      - RELAY-120.232.214.248-204
+      - RELAY-120.232.214.143-197
+      - HK-20.24.220.181-128
+      - JP-45.142.167.26-175
+      - RELAY-125.94.37.119-200
+      - RELAY-120.232.214.248-145
+      - JP-45.142.167.23-121
+      - JP-150.230.96.103-011
+      - RELAY-120.232.214.248-150
+      - SG-5.44.249.43-009
+      - RELAY-125.94.37.119-180
+      - RELAY-120.232.214.248-182
+      - US-154.17.21.223-014
+      - RELAY-120.232.214.248-172
+      - SG-5.44.249.43-008
+      - SG-45.118.133.251-119
+      - RELAY-120.232.214.248-158
+      - RELAY-120.232.215.188-103
+      - GB-132.145.50.184-038
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - RELAY-Openit.ml
-      - RELAY-Openit.ml 2
-      - JP-Openit.ml
-      - RELAY-Openit.ml 3
-      - US-Openit.ml
-      - US-Openit.ml 2
-      - US-Openit.ml 3
-      - JP-Openit.ml 2
-      - US-Openit.ml 4
-      - HK-Openit.ml
-      - DE-Openit.ml
-      - AU-Openit.ml
-      - AU-Openit.ml 2
-      - AU-Openit.ml 3
-      - AU-Openit.ml 4
-      - AU-Openit.ml 5
-      - AU-Openit.ml 6
-      - IN-Openit.ml
-      - AU-Openit.ml 7
-      - AU-Openit.ml 8
-      - RELAY-Openit.ml 4
-      - RELAY-Openit.ml 5
-      - RELAY-Openit.ml 6
-      - RELAY-Openit.ml 7
-      - SG-Openit.ml
-      - SG-Openit.ml 2
+      - JP-150.230.107.75-065
+      - GB-140.238.71.244-003
+      - RELAY-120.232.214.248-154
+      - RELAY-125.94.37.119-177
+      - US-164.90.149.75-139
+      - RELAY-120.79.75.120-143
+      - RELAY-120.232.214.248-148
+      - RELAY-116.129.253.134-142
+      - JP-150.230.217.213-020
+      - RELAY-120.232.214.248-146
+      - RELAY-125.94.37.119-156
+      - TW-114.43.153.190-130
+      - RO-178.157.94.190-131
+      - RELAY-120.232.214.143-157
+      - RELAY-116.129.253.134-024
+      - RELAY-120.232.214.248-179
+      - JP-45.142.167.21-134
+      - KR-138.2.113.248-071
+      - RELAY-120.232.214.143-151
+      - RELAY-120.232.214.248-153
+      - RELAY-120.232.214.143-181
+      - JP-45.142.167.22-212
+      - JP-45.142.167.24-224
+      - RELAY-125.94.37.119-187
+      - US-143.110.227.174-215
+      - JP-45.142.167.25-216
+      - HK-43.154.72.145-159
+      - RELAY-125.94.37.119-184
+      - RELAY-120.232.214.143-155
+      - KR-150.230.249.169-098
+      - US-208.109.190.68-070
+      - US-208.109.189.58-072
+      - JP-140.83.58.17-174
+      - RELAY-125.94.37.119-203
+      - RELAY-120.232.214.248-195
+      - US-185.202.172.243-074
+      - US-129.146.242.130-075
+      - KR-146.56.115.242-002
+      - RELAY-120.232.214.143-178
+      - US-198.52.115.12-140
+      - US-129.146.255.158-076
+      - RELAY-120.232.214.143-186
+      - RELAY-120.232.214.248-194
+      - US-129.146.135.157-080
+      - RELAY-125.94.37.119-189
+      - US-45.76.173.250-228
+      - SG-97.74.83.164-062
+      - RELAY-125.94.37.119-202
+      - US-150.230.43.65-096
+      - RELAY-120.232.214.248-166
+      - VN-103.167.198.231-136
+      - RELAY-120.232.214.248-188
+      - RELAY-120.232.214.248-198
+      - GB-132.145.51.172-006
+      - JP-138.2.45.243-073
+      - RELAY-120.232.214.248-169
+      - RELAY-120.232.214.143-173
+      - GB-140.238.87.136-036
+      - IN-152.67.160.174-010
+      - IN-152.67.190.183-135
+      - RELAY-120.232.214.248-185
+      - GB-64.227.43.191-220
+      - RELAY-120.232.214.143-196
+      - RELAY-125.94.37.119-205
+      - AU-140.238.205.173-005
+      - IN-152.67.162.166-012
+      - RELAY-120.232.214.248-204
+      - RELAY-120.232.214.143-197
+      - HK-20.24.220.181-128
+      - JP-45.142.167.26-175
+      - RELAY-125.94.37.119-200
+      - RELAY-120.232.214.248-145
+      - JP-45.142.167.23-121
+      - JP-150.230.96.103-011
+      - RELAY-120.232.214.248-150
+      - SG-5.44.249.43-009
+      - RELAY-125.94.37.119-180
+      - RELAY-120.232.214.248-182
+      - US-154.17.21.223-014
+      - RELAY-120.232.214.248-172
+      - SG-5.44.249.43-008
+      - SG-45.118.133.251-119
+      - RELAY-120.232.214.248-158
+      - RELAY-120.232.215.188-103
+      - GB-132.145.50.184-038
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -284,32 +756,91 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - RELAY-Openit.ml
-      - RELAY-Openit.ml 2
-      - JP-Openit.ml
-      - RELAY-Openit.ml 3
-      - US-Openit.ml
-      - US-Openit.ml 2
-      - US-Openit.ml 3
-      - JP-Openit.ml 2
-      - US-Openit.ml 4
-      - HK-Openit.ml
-      - DE-Openit.ml
-      - AU-Openit.ml
-      - AU-Openit.ml 2
-      - AU-Openit.ml 3
-      - AU-Openit.ml 4
-      - AU-Openit.ml 5
-      - AU-Openit.ml 6
-      - IN-Openit.ml
-      - AU-Openit.ml 7
-      - AU-Openit.ml 8
-      - RELAY-Openit.ml 4
-      - RELAY-Openit.ml 5
-      - RELAY-Openit.ml 6
-      - RELAY-Openit.ml 7
-      - SG-Openit.ml
-      - SG-Openit.ml 2
+      - JP-150.230.107.75-065
+      - GB-140.238.71.244-003
+      - RELAY-120.232.214.248-154
+      - RELAY-125.94.37.119-177
+      - US-164.90.149.75-139
+      - RELAY-120.79.75.120-143
+      - RELAY-120.232.214.248-148
+      - RELAY-116.129.253.134-142
+      - JP-150.230.217.213-020
+      - RELAY-120.232.214.248-146
+      - RELAY-125.94.37.119-156
+      - TW-114.43.153.190-130
+      - RO-178.157.94.190-131
+      - RELAY-120.232.214.143-157
+      - RELAY-116.129.253.134-024
+      - RELAY-120.232.214.248-179
+      - JP-45.142.167.21-134
+      - KR-138.2.113.248-071
+      - RELAY-120.232.214.143-151
+      - RELAY-120.232.214.248-153
+      - RELAY-120.232.214.143-181
+      - JP-45.142.167.22-212
+      - JP-45.142.167.24-224
+      - RELAY-125.94.37.119-187
+      - US-143.110.227.174-215
+      - JP-45.142.167.25-216
+      - HK-43.154.72.145-159
+      - RELAY-125.94.37.119-184
+      - RELAY-120.232.214.143-155
+      - KR-150.230.249.169-098
+      - US-208.109.190.68-070
+      - US-208.109.189.58-072
+      - JP-140.83.58.17-174
+      - RELAY-125.94.37.119-203
+      - RELAY-120.232.214.248-195
+      - US-185.202.172.243-074
+      - US-129.146.242.130-075
+      - KR-146.56.115.242-002
+      - RELAY-120.232.214.143-178
+      - US-198.52.115.12-140
+      - US-129.146.255.158-076
+      - RELAY-120.232.214.143-186
+      - RELAY-120.232.214.248-194
+      - US-129.146.135.157-080
+      - RELAY-125.94.37.119-189
+      - US-45.76.173.250-228
+      - SG-97.74.83.164-062
+      - RELAY-125.94.37.119-202
+      - US-150.230.43.65-096
+      - RELAY-120.232.214.248-166
+      - VN-103.167.198.231-136
+      - RELAY-120.232.214.248-188
+      - RELAY-120.232.214.248-198
+      - GB-132.145.51.172-006
+      - JP-138.2.45.243-073
+      - RELAY-120.232.214.248-169
+      - RELAY-120.232.214.143-173
+      - GB-140.238.87.136-036
+      - IN-152.67.160.174-010
+      - IN-152.67.190.183-135
+      - RELAY-120.232.214.248-185
+      - GB-64.227.43.191-220
+      - RELAY-120.232.214.143-196
+      - RELAY-125.94.37.119-205
+      - AU-140.238.205.173-005
+      - IN-152.67.162.166-012
+      - RELAY-120.232.214.248-204
+      - RELAY-120.232.214.143-197
+      - HK-20.24.220.181-128
+      - JP-45.142.167.26-175
+      - RELAY-125.94.37.119-200
+      - RELAY-120.232.214.248-145
+      - JP-45.142.167.23-121
+      - JP-150.230.96.103-011
+      - RELAY-120.232.214.248-150
+      - SG-5.44.249.43-009
+      - RELAY-125.94.37.119-180
+      - RELAY-120.232.214.248-182
+      - US-154.17.21.223-014
+      - RELAY-120.232.214.248-172
+      - SG-5.44.249.43-008
+      - SG-45.118.133.251-119
+      - RELAY-120.232.214.248-158
+      - RELAY-120.232.215.188-103
+      - GB-132.145.50.184-038
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
