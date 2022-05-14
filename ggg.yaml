@@ -5,127 +5,51 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: KR-Openit.ml 2, server: jgwcc2.gaox.ml, port: 443, type: trojan, password: 9c822f05-cfdc-479a-9534-60f3d4127435, sni: jgwcc2.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: RELAY-Openit.ml, server: szdx.sub-nthu.com, port: 35005, type: trojan, password: 87d5ee80-9dfa-4cb5-b644-062803bd0c19, sni: szdx.sub-nthu.com, skip-cert-verify: true, udp: true}
-  - {name: JP-Openit.ml 2, server: jgwdb1.gaox.ml, port: 443, type: trojan, password: a580d839-ee41-4df1-bf03-6789dca32e30, sni: jgwdb1.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: US-Openit.ml, server: bai-piao-wang-zhe-iplc.98848.xyz, port: 11459, type: vmess, uuid: 7ef159a7-2c15-45ca-f5c3-b9798143afaa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /bit.ly/36b6iJh, ws-headers: {Host: bai-piao-wang-zhe-iplc.98848.xyz}, udp: true}
-  - {name: JP-Openit.ml 2 2, server: jgwdj4.gaox.ml, port: 443, type: trojan, password: c09eb137-bf68-4658-84e0-102d94b74168, sni: jgwdj4.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: US-Openit.ml 3, server: fhcarm1.gaox.ml, port: 443, type: trojan, password: 05742120-ce23-4cc8-88f5-6d221ce45bf4, sni: fhcarm1.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_3493, server: 1.ezydfdd.com, port: 443, type: vmess, uuid: 4ee48ad8-178c-40a2-9c52-a14e90a06e49, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /nmsl, ws-headers: {Host: 1.ezydfdd.com}, udp: true}
-  - {name: 欧洲(欢迎订阅Youtube破解资源君) 3, server: v1.ssrsub.com, port: 8443, type: vmess, uuid: b7c70df3-f92f-4800-a8e1-67e6dc833256, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ssrsub, ws-headers: {Host: v1.ssrsub.com}, udp: true}
-  - {name: github.com/freefq - 美国CloudFlare公司CDN节点 45, server: krr1.liuwei01.tk, port: 443, type: vmess, uuid: d965d82e-b325-44e8-a472-84721a3ab07c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /liuwei, ws-headers: {Host: krr1.liuwei01.tk}, udp: true}
-  - {name: AU-Openit.ml 3, server: jgwxn3.gaox.ml, port: 443, type: trojan, password: cb43b7c2-b744-41c5-bcc2-fd7467b332cf, sni: jgwxn3.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: AU-Openit.ml 2, server: jgwxn2.gaox.ml, port: 443, type: trojan, password: c2b60d6a-a2f5-40ff-b7f9-f7658abcbf26, sni: jgwxn2.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: 美国(欢迎订阅Youtube破解资源君) 7, server: kr-direct-cdn.node001.xyz, port: 2086, type: vmess, uuid: a1f3e867-8f8d-3763-bb80-21da561e6714, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /mg, ws-headers: {Host: /t.me/mengge88888888}, udp: true}
-  - {name: AU-Openit.ml 11, server: 185.167.116.252, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX, udp: true}
-  - {name: RO_1392, server: 185.225.19.64, port: 50003, type: ss, cipher: aes-256-cfb, password: !<str> 8460400130, udp: true}
-  - {name: AU-Openit.ml 6, server: 185.167.116.252, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
-  - {name: AU-Openit.ml 12, server: 185.167.116.252, port: 9008, type: ss, cipher: aes-256-cfb, password: y9VURyNzJWNRYEGQ, udp: true}
-  - {name: AU-Openit.ml 8, server: 185.167.116.252, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa, udp: true}
-  - {name: AU-Openit.ml 4, server: 185.167.116.252, port: 9001, type: ss, cipher: aes-256-cfb, password: UkXRsXvR6buDMG2Y, udp: true}
-  - {name: AU-Openit.ml 5, server: 185.167.116.252, port: 9006, type: ss, cipher: aes-256-cfb, password: FAdUvMJUq5vDgKEq, udp: true}
-  - {name: US-Openit.ml 3 2, server: 93.179.112.142, port: 54317, type: vmess, uuid: faeb79e5-6549-4b08-8e87-3d7c5457930d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CYL-科技（2022_04_20）_70, server: fkgfw-prod.i.sxl.cn, port: 443, type: ss, cipher: aes-256-cfb, password: E4DNMf73kHPrd8Qq7aqGPf7f, udp: true}
-  - {name: JP-Openit.ml, server: s3.upyun.online, port: 12340, type: trojan, password: 316b40c0-0dab-4ea1-9666-ac1658b033b2, sni: s3.upyun.online, skip-cert-verify: true, udp: true}
-  - {name: AU-Openit.ml 7, server: 185.167.116.252, port: 9007, type: ss, cipher: aes-256-cfb, password: kSPmvwdFzGMMW5pY, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_3668, server: jgwhdlb3.gaox.ml, port: 443, type: trojan, password: 006baa3f-4bc3-4915-b60d-c8c5dae11a11, sni: jgwhdlb3.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: github.com/freefq - 美国CloudFlare节点 43, server: lu1.gogogoo.cyou, port: 443, type: vmess, uuid: db5d1aa3-908b-44d1-be0a-4e6a8d4e4cda, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /go, ws-headers: {Host: lu1.gogogoo.cyou}, udp: true}
-  - {name: GB-Openit.ml, server: jgwld4.gaox.ml, port: 443, type: trojan, password: 58d32c66-43b1-4561-9951-d87c9123774e, sni: jgwld4.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: 美国(欢迎订阅Youtube破解资源君) 4, server: bai-piao-wang-zhe-iplc.98848.xyz, port: 443, type: trojan, password: a97edd5e-f9c9-4320-a8aa-753dd99d74d4, sni: bai-piao-wang-zhe-iplc.98848.xyz, skip-cert-verify: true, udp: true}
+  - {name: US-208.109.190.68-053, server: o7cx6bd6t4yjiqsm.xiongsonglin.com, port: 443, type: trojan, password: e5d46365e25e31d94279c2bcf93390a2, sni: o7cx6bd6t4yjiqsm.xiongsonglin.com, skip-cert-verify: true, udp: true}
+  - {name: AU_53, server: 43.154.72.145, port: 27091, type: vmess, uuid: 2f1e82e4-5319-4278-92aa-74d49c04683f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [43.154.72.145]}}, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_3133, server: free.spcloud.us, port: 21010, type: trojan, password: 118fc04e-fb8c-4154-9092-352cf1958fcd, sni: free.spcloud.us, skip-cert-verify: true, udp: true}
+  - {name: US-154.17.21.223-050, server: zones.defun.us, port: 443, type: trojan, password: lpmMwDKeBbKKPq8K, sni: zones.defun.us, skip-cert-verify: true, udp: true}
+  - {name: JP-45.142.167.27-105, server: ty2-7.nigirocloud.com, port: 443, type: trojan, password: ruWkGdbUKT4RN7kZ8t, sni: ty2-7.nigirocloud.com, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇨🇳CN-🇲🇾MY_389, server: s101.boom.party, port: 32000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 421983:wPIiy0, obfs-param: download.windowsupdate.com, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - KR-Openit.ml 2
-      - RELAY-Openit.ml
-      - JP-Openit.ml 2
-      - US-Openit.ml
-      - JP-Openit.ml 2 2
-      - US-Openit.ml 3
-      - Relay_🇺🇸US-🇺🇸US_3493
-      - 欧洲(欢迎订阅Youtube破解资源君) 3
-      - github.com/freefq - 美国CloudFlare公司CDN节点 45
-      - AU-Openit.ml 3
-      - AU-Openit.ml 2
-      - 美国(欢迎订阅Youtube破解资源君) 7
-      - AU-Openit.ml 11
-      - RO_1392
-      - AU-Openit.ml 6
-      - AU-Openit.ml 12
-      - AU-Openit.ml 8
-      - AU-Openit.ml 4
-      - AU-Openit.ml 5
-      - US-Openit.ml 3 2
-      - CYL-科技（2022_04_20）_70
-      - JP-Openit.ml
-      - AU-Openit.ml 7
-      - Relay_🇺🇸US-🇺🇸US_3668
-      - github.com/freefq - 美国CloudFlare节点 43
-      - GB-Openit.ml
+      - 美国(欢迎订阅Youtube破解资源君) 4
+      - US-208.109.190.68-053
+      - AU_53
+      - Relay_🇺🇸US-🇺🇸US_3133
+      - US-154.17.21.223-050
+      - JP-45.142.167.27-105
+      - Relay_🇨🇳CN-🇲🇾MY_389
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - KR-Openit.ml 2
-      - RELAY-Openit.ml
-      - JP-Openit.ml 2
-      - US-Openit.ml
-      - JP-Openit.ml 2 2
-      - US-Openit.ml 3
-      - Relay_🇺🇸US-🇺🇸US_3493
-      - 欧洲(欢迎订阅Youtube破解资源君) 3
-      - github.com/freefq - 美国CloudFlare公司CDN节点 45
-      - AU-Openit.ml 3
-      - AU-Openit.ml 2
-      - 美国(欢迎订阅Youtube破解资源君) 7
-      - AU-Openit.ml 11
-      - RO_1392
-      - AU-Openit.ml 6
-      - AU-Openit.ml 12
-      - AU-Openit.ml 8
-      - AU-Openit.ml 4
-      - AU-Openit.ml 5
-      - US-Openit.ml 3 2
-      - CYL-科技（2022_04_20）_70
-      - JP-Openit.ml
-      - AU-Openit.ml 7
-      - Relay_🇺🇸US-🇺🇸US_3668
-      - github.com/freefq - 美国CloudFlare节点 43
-      - GB-Openit.ml
+      - 美国(欢迎订阅Youtube破解资源君) 4
+      - US-208.109.190.68-053
+      - AU_53
+      - Relay_🇺🇸US-🇺🇸US_3133
+      - US-154.17.21.223-050
+      - JP-45.142.167.27-105
+      - Relay_🇨🇳CN-🇲🇾MY_389
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - KR-Openit.ml 2
-      - RELAY-Openit.ml
-      - JP-Openit.ml 2
-      - US-Openit.ml
-      - JP-Openit.ml 2 2
-      - US-Openit.ml 3
-      - Relay_🇺🇸US-🇺🇸US_3493
-      - 欧洲(欢迎订阅Youtube破解资源君) 3
-      - github.com/freefq - 美国CloudFlare公司CDN节点 45
-      - AU-Openit.ml 3
-      - AU-Openit.ml 2
-      - 美国(欢迎订阅Youtube破解资源君) 7
-      - AU-Openit.ml 11
-      - RO_1392
-      - AU-Openit.ml 6
-      - AU-Openit.ml 12
-      - AU-Openit.ml 8
-      - AU-Openit.ml 4
-      - AU-Openit.ml 5
-      - US-Openit.ml 3 2
-      - CYL-科技（2022_04_20）_70
-      - JP-Openit.ml
-      - AU-Openit.ml 7
-      - Relay_🇺🇸US-🇺🇸US_3668
-      - github.com/freefq - 美国CloudFlare节点 43
-      - GB-Openit.ml
+      - 美国(欢迎订阅Youtube破解资源君) 4
+      - US-208.109.190.68-053
+      - AU_53
+      - Relay_🇺🇸US-🇺🇸US_3133
+      - US-154.17.21.223-050
+      - JP-45.142.167.27-105
+      - Relay_🇨🇳CN-🇲🇾MY_389
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -144,32 +68,13 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - KR-Openit.ml 2
-      - RELAY-Openit.ml
-      - JP-Openit.ml 2
-      - US-Openit.ml
-      - JP-Openit.ml 2 2
-      - US-Openit.ml 3
-      - Relay_🇺🇸US-🇺🇸US_3493
-      - 欧洲(欢迎订阅Youtube破解资源君) 3
-      - github.com/freefq - 美国CloudFlare公司CDN节点 45
-      - AU-Openit.ml 3
-      - AU-Openit.ml 2
-      - 美国(欢迎订阅Youtube破解资源君) 7
-      - AU-Openit.ml 11
-      - RO_1392
-      - AU-Openit.ml 6
-      - AU-Openit.ml 12
-      - AU-Openit.ml 8
-      - AU-Openit.ml 4
-      - AU-Openit.ml 5
-      - US-Openit.ml 3 2
-      - CYL-科技（2022_04_20）_70
-      - JP-Openit.ml
-      - AU-Openit.ml 7
-      - Relay_🇺🇸US-🇺🇸US_3668
-      - github.com/freefq - 美国CloudFlare节点 43
-      - GB-Openit.ml
+      - 美国(欢迎订阅Youtube破解资源君) 4
+      - US-208.109.190.68-053
+      - AU_53
+      - Relay_🇺🇸US-🇺🇸US_3133
+      - US-154.17.21.223-050
+      - JP-45.142.167.27-105
+      - Relay_🇨🇳CN-🇲🇾MY_389
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -180,95 +85,38 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - KR-Openit.ml 2
-      - RELAY-Openit.ml
-      - JP-Openit.ml 2
-      - US-Openit.ml
-      - JP-Openit.ml 2 2
-      - US-Openit.ml 3
-      - Relay_🇺🇸US-🇺🇸US_3493
-      - 欧洲(欢迎订阅Youtube破解资源君) 3
-      - github.com/freefq - 美国CloudFlare公司CDN节点 45
-      - AU-Openit.ml 3
-      - AU-Openit.ml 2
-      - 美国(欢迎订阅Youtube破解资源君) 7
-      - AU-Openit.ml 11
-      - RO_1392
-      - AU-Openit.ml 6
-      - AU-Openit.ml 12
-      - AU-Openit.ml 8
-      - AU-Openit.ml 4
-      - AU-Openit.ml 5
-      - US-Openit.ml 3 2
-      - CYL-科技（2022_04_20）_70
-      - JP-Openit.ml
-      - AU-Openit.ml 7
-      - Relay_🇺🇸US-🇺🇸US_3668
-      - github.com/freefq - 美国CloudFlare节点 43
-      - GB-Openit.ml
+      - 美国(欢迎订阅Youtube破解资源君) 4
+      - US-208.109.190.68-053
+      - AU_53
+      - Relay_🇺🇸US-🇺🇸US_3133
+      - US-154.17.21.223-050
+      - JP-45.142.167.27-105
+      - Relay_🇨🇳CN-🇲🇾MY_389
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - KR-Openit.ml 2
-      - RELAY-Openit.ml
-      - JP-Openit.ml 2
-      - US-Openit.ml
-      - JP-Openit.ml 2 2
-      - US-Openit.ml 3
-      - Relay_🇺🇸US-🇺🇸US_3493
-      - 欧洲(欢迎订阅Youtube破解资源君) 3
-      - github.com/freefq - 美国CloudFlare公司CDN节点 45
-      - AU-Openit.ml 3
-      - AU-Openit.ml 2
-      - 美国(欢迎订阅Youtube破解资源君) 7
-      - AU-Openit.ml 11
-      - RO_1392
-      - AU-Openit.ml 6
-      - AU-Openit.ml 12
-      - AU-Openit.ml 8
-      - AU-Openit.ml 4
-      - AU-Openit.ml 5
-      - US-Openit.ml 3 2
-      - CYL-科技（2022_04_20）_70
-      - JP-Openit.ml
-      - AU-Openit.ml 7
-      - Relay_🇺🇸US-🇺🇸US_3668
-      - github.com/freefq - 美国CloudFlare节点 43
-      - GB-Openit.ml
+      - 美国(欢迎订阅Youtube破解资源君) 4
+      - US-208.109.190.68-053
+      - AU_53
+      - Relay_🇺🇸US-🇺🇸US_3133
+      - US-154.17.21.223-050
+      - JP-45.142.167.27-105
+      - Relay_🇨🇳CN-🇲🇾MY_389
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - KR-Openit.ml 2
-      - RELAY-Openit.ml
-      - JP-Openit.ml 2
-      - US-Openit.ml
-      - JP-Openit.ml 2 2
-      - US-Openit.ml 3
-      - Relay_🇺🇸US-🇺🇸US_3493
-      - 欧洲(欢迎订阅Youtube破解资源君) 3
-      - github.com/freefq - 美国CloudFlare公司CDN节点 45
-      - AU-Openit.ml 3
-      - AU-Openit.ml 2
-      - 美国(欢迎订阅Youtube破解资源君) 7
-      - AU-Openit.ml 11
-      - RO_1392
-      - AU-Openit.ml 6
-      - AU-Openit.ml 12
-      - AU-Openit.ml 8
-      - AU-Openit.ml 4
-      - AU-Openit.ml 5
-      - US-Openit.ml 3 2
-      - CYL-科技（2022_04_20）_70
-      - JP-Openit.ml
-      - AU-Openit.ml 7
-      - Relay_🇺🇸US-🇺🇸US_3668
-      - github.com/freefq - 美国CloudFlare节点 43
-      - GB-Openit.ml
+      - 美国(欢迎订阅Youtube破解资源君) 4
+      - US-208.109.190.68-053
+      - AU_53
+      - Relay_🇺🇸US-🇺🇸US_3133
+      - US-154.17.21.223-050
+      - JP-45.142.167.27-105
+      - Relay_🇨🇳CN-🇲🇾MY_389
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -284,32 +132,13 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - KR-Openit.ml 2
-      - RELAY-Openit.ml
-      - JP-Openit.ml 2
-      - US-Openit.ml
-      - JP-Openit.ml 2 2
-      - US-Openit.ml 3
-      - Relay_🇺🇸US-🇺🇸US_3493
-      - 欧洲(欢迎订阅Youtube破解资源君) 3
-      - github.com/freefq - 美国CloudFlare公司CDN节点 45
-      - AU-Openit.ml 3
-      - AU-Openit.ml 2
-      - 美国(欢迎订阅Youtube破解资源君) 7
-      - AU-Openit.ml 11
-      - RO_1392
-      - AU-Openit.ml 6
-      - AU-Openit.ml 12
-      - AU-Openit.ml 8
-      - AU-Openit.ml 4
-      - AU-Openit.ml 5
-      - US-Openit.ml 3 2
-      - CYL-科技（2022_04_20）_70
-      - JP-Openit.ml
-      - AU-Openit.ml 7
-      - Relay_🇺🇸US-🇺🇸US_3668
-      - github.com/freefq - 美国CloudFlare节点 43
-      - GB-Openit.ml
+      - 美国(欢迎订阅Youtube破解资源君) 4
+      - US-208.109.190.68-053
+      - AU_53
+      - Relay_🇺🇸US-🇺🇸US_3133
+      - US-154.17.21.223-050
+      - JP-45.142.167.27-105
+      - Relay_🇨🇳CN-🇲🇾MY_389
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
