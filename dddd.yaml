@@ -1,55 +1,107 @@
-﻿port: 7890
+port: 7890
 socks-port: 7891
 allow-lan: true
 mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: Relay_🇨🇳CN-🇨🇳CN_418, server: s4.mine.com.cn, port: 3333, type: vmess, uuid: 5eea1f96-6e33-4409-b8b4-a8d3596ec991, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇭🇰HK-🇹🇼TW_804, server: tanz-moble.0098dns01in.work, port: 35071, type: vmess, uuid: b83d0e8b-f4e6-3988-b45e-cc96400f0bc6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_3112, server: lsj03.wangxd.life, port: 3052, type: trojan, password: ae71ffdc-3206-3b4d-3f4e-e3b63684a556, sni: lsj03.wangxd.life, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇬🇧GB-🇬🇧GB_788, server: jgwld1.gaox.ml, port: 443, type: trojan, password: 02e653c9-7c93-46a9-999d-11834bd0c577, sni: jgwld1.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_3124, server: s2.upyun.online, port: 12340, type: trojan, password: 316b40c0-0dab-4ea1-9666-ac1658b033b2, sni: s2.upyun.online, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇭🇰HK-🇨🇦CA_803, server: tanz-unicom.0098dns01in.work, port: 35021, type: vmess, uuid: b83d0e8b-f4e6-3988-b45e-cc96400f0bc6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇭🇰HK-🇹🇼TW_798, server: tanz-moble.0098dns01in.work, port: 35011, type: vmess, uuid: b83d0e8b-f4e6-3988-b45e-cc96400f0bc6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: V2->东莞联通-> Sec ->东京| ①, server: dg-node.mark84.eu.org, port: 11093, type: vmess, uuid: c76af954-9193-3219-375f-e34ec58a0dd0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: V2->东莞联通-> Sec ->新加坡| ①, server: dg-node.mark84.eu.org, port: 11095, type: vmess, uuid: c76af954-9193-3219-375f-e34ec58a0dd0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 美国爱荷华州得梅因Microsoft数据中心 9, server: 23.95.247.209, port: 80, type: vmess, uuid: bda51582-46f7-410c-b267-30b7f3681ac0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 23.95.247.209}, udp: true}
+  - {name: github.com/freefq - 澳大利亚  13, server: jgwdb1.gaox.ml, port: 443, type: trojan, password: a580d839-ee41-4df1-bf03-6789dca32e30, sni: jgwdb1.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 俄罗斯  7, server: 161.8.149.7, port: 38822, type: vmess, uuid: 1dab5094-c29c-11ec-83d0-e0db55fccaf9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /ZXfq8Vm7/, ws-headers: {Host: 161.8.149.7}, udp: true}
+  - {name: github.com/freefq - 美国3COM公司企业网 19, server: neteasy.ga, port: 28931, type: trojan, password: MnROfwtPYa, sni: neteasy.ga, skip-cert-verify: true, udp: true}
+  - {name: V2->广州多线-> Sec ->香港| ④, server: cn1.node.zeroteam.top, port: 13499, type: vmess, uuid: c76af954-9193-3219-375f-e34ec58a0dd0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 美国3COM公司企业网 16, server: 152.67.112.192, port: 8888, type: vmess, uuid: 4c8b076c-d644-4aa6-8968-65921ef989ae, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 韩国首尔Amazon数据中心 10, server: v2-5.godlight.xyz, port: 26944, type: vmess, uuid: 767e55a4-43fa-4301-a9c2-ad30eaa9f61a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /71h4b3s1f53, ws-headers: {Host: v2-5.godlight.xyz}, udp: true}
+  - {name: V2->东莞联通-> Sec ->大阪| ①, server: dg-node.mark84.eu.org, port: 11094, type: vmess, uuid: c76af954-9193-3219-375f-e34ec58a0dd0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 日本tg频道:@ripaojiedian, server: in01.dns2333.xyz, port: 63086, type: vmess, uuid: 901226b6-4659-301e-bb16-dd428542bea4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: jp-balancer.myn1des.com}, udp: true}
+  - {name: 欧洲(欢迎订阅Youtube破解资源君) 23, server: bb01.nfeng6.pp.ua, port: 26240, type: ss, cipher: aes-128-gcm, password: bzUdYJ4JzjGfIwhG, udp: true}
+  - {name: 欧洲(欢迎订阅Youtube破解资源君) 21, server: bb01.nfeng6.pp.ua, port: 26210, type: ss, cipher: aes-128-gcm, password: bzUdYJ4JzjGfIwhG, udp: true}
+  - {name: 美国(欢迎订阅Youtube破解资源君) 5, server: jgwcc2.gaox.ml, port: 443, type: trojan, password: 9c822f05-cfdc-479a-9534-60f3d4127435, sni: jgwcc2.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: 日本(欢迎订阅Youtube破解资源君) 2, server: ty2-8.nigirocloud.com, port: 443, type: trojan, password: ruWkGdbUKT4RN7kZ8t, sni: ty2-8.nigirocloud.com, skip-cert-verify: true, udp: true}
+  - {name: 欧洲(欢迎订阅Youtube破解资源君) 24, server: jgwdb1.gaox.ml, port: 443, type: trojan, password: a580d839-ee41-4df1-bf03-6789dca32e30, sni: jgwdb1.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: 欧洲(欢迎订阅Youtube破解资源君) 17, server: bb01.nfeng6.pp.ua, port: 16020, type: ss, cipher: aes-128-gcm, password: bzUdYJ4JzjGfIwhG, udp: true}
+  - {name: 欧洲(欢迎订阅Youtube破解资源君) 22, server: bb01.nfeng6.pp.ua, port: 16030, type: ss, cipher: aes-128-gcm, password: bzUdYJ4JzjGfIwhG, udp: true}
+  - {name: 欧洲(欢迎订阅Youtube破解资源君) 18, server: bb01.nfeng6.pp.ua, port: 26220, type: ss, cipher: aes-128-gcm, password: bzUdYJ4JzjGfIwhG, udp: true}
+  - {name: SG_180 |97.97Mb, server: sg1.ipv6b.my.id, port: 443, type: vmess, uuid: f4f7252a-7100-48e7-a2e5-b0334e845c06, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /fastssh/73qdrc9jprtduwhvwtkvjrrvz39gr3/627f61f24960e/, ws-headers: {Host: "%7B%22HOST%22:%22paypal.com%22,%22Host%22:%22paypal.com%22%7D"}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay_🇨🇳CN-🇨🇳CN_418
-      - Relay_🇭🇰HK-🇹🇼TW_804
-      - Relay_🇺🇸US-🇺🇸US_3112
-      - Relay_🇬🇧GB-🇬🇧GB_788
-      - Relay_🇺🇸US-🇺🇸US_3124
-      - Relay_🇭🇰HK-🇨🇦CA_803
-      - Relay_🇭🇰HK-🇹🇼TW_798
+      - V2->东莞联通-> Sec ->东京| ①
+      - V2->东莞联通-> Sec ->新加坡| ①
+      - github.com/freefq - 美国爱荷华州得梅因Microsoft数据中心 9
+      - github.com/freefq - 澳大利亚  13
+      - github.com/freefq - 俄罗斯  7
+      - github.com/freefq - 美国3COM公司企业网 19
+      - V2->广州多线-> Sec ->香港| ④
+      - github.com/freefq - 美国3COM公司企业网 16
+      - github.com/freefq - 韩国首尔Amazon数据中心 10
+      - V2->东莞联通-> Sec ->大阪| ①
+      - 日本tg频道:@ripaojiedian
+      - 欧洲(欢迎订阅Youtube破解资源君) 23
+      - 欧洲(欢迎订阅Youtube破解资源君) 21
+      - 美国(欢迎订阅Youtube破解资源君) 5
+      - 日本(欢迎订阅Youtube破解资源君) 2
+      - 欧洲(欢迎订阅Youtube破解资源君) 24
+      - 欧洲(欢迎订阅Youtube破解资源君) 17
+      - 欧洲(欢迎订阅Youtube破解资源君) 22
+      - 欧洲(欢迎订阅Youtube破解资源君) 18
+      - SG_180 |97.97Mb
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - Relay_🇨🇳CN-🇨🇳CN_418
-      - Relay_🇭🇰HK-🇹🇼TW_804
-      - Relay_🇺🇸US-🇺🇸US_3112
-      - Relay_🇬🇧GB-🇬🇧GB_788
-      - Relay_🇺🇸US-🇺🇸US_3124
-      - Relay_🇭🇰HK-🇨🇦CA_803
-      - Relay_🇭🇰HK-🇹🇼TW_798
+      - V2->东莞联通-> Sec ->东京| ①
+      - V2->东莞联通-> Sec ->新加坡| ①
+      - github.com/freefq - 美国爱荷华州得梅因Microsoft数据中心 9
+      - github.com/freefq - 澳大利亚  13
+      - github.com/freefq - 俄罗斯  7
+      - github.com/freefq - 美国3COM公司企业网 19
+      - V2->广州多线-> Sec ->香港| ④
+      - github.com/freefq - 美国3COM公司企业网 16
+      - github.com/freefq - 韩国首尔Amazon数据中心 10
+      - V2->东莞联通-> Sec ->大阪| ①
+      - 日本tg频道:@ripaojiedian
+      - 欧洲(欢迎订阅Youtube破解资源君) 23
+      - 欧洲(欢迎订阅Youtube破解资源君) 21
+      - 美国(欢迎订阅Youtube破解资源君) 5
+      - 日本(欢迎订阅Youtube破解资源君) 2
+      - 欧洲(欢迎订阅Youtube破解资源君) 24
+      - 欧洲(欢迎订阅Youtube破解资源君) 17
+      - 欧洲(欢迎订阅Youtube破解资源君) 22
+      - 欧洲(欢迎订阅Youtube破解资源君) 18
+      - SG_180 |97.97Mb
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay_🇨🇳CN-🇨🇳CN_418
-      - Relay_🇭🇰HK-🇹🇼TW_804
-      - Relay_🇺🇸US-🇺🇸US_3112
-      - Relay_🇬🇧GB-🇬🇧GB_788
-      - Relay_🇺🇸US-🇺🇸US_3124
-      - Relay_🇭🇰HK-🇨🇦CA_803
-      - Relay_🇭🇰HK-🇹🇼TW_798
+      - V2->东莞联通-> Sec ->东京| ①
+      - V2->东莞联通-> Sec ->新加坡| ①
+      - github.com/freefq - 美国爱荷华州得梅因Microsoft数据中心 9
+      - github.com/freefq - 澳大利亚  13
+      - github.com/freefq - 俄罗斯  7
+      - github.com/freefq - 美国3COM公司企业网 19
+      - V2->广州多线-> Sec ->香港| ④
+      - github.com/freefq - 美国3COM公司企业网 16
+      - github.com/freefq - 韩国首尔Amazon数据中心 10
+      - V2->东莞联通-> Sec ->大阪| ①
+      - 日本tg频道:@ripaojiedian
+      - 欧洲(欢迎订阅Youtube破解资源君) 23
+      - 欧洲(欢迎订阅Youtube破解资源君) 21
+      - 美国(欢迎订阅Youtube破解资源君) 5
+      - 日本(欢迎订阅Youtube破解资源君) 2
+      - 欧洲(欢迎订阅Youtube破解资源君) 24
+      - 欧洲(欢迎订阅Youtube破解资源君) 17
+      - 欧洲(欢迎订阅Youtube破解资源君) 22
+      - 欧洲(欢迎订阅Youtube破解资源君) 18
+      - SG_180 |97.97Mb
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -68,55 +120,108 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay_🇨🇳CN-🇨🇳CN_418
-      - Relay_🇭🇰HK-🇹🇼TW_804
-      - Relay_🇺🇸US-🇺🇸US_3112
-      - Relay_🇬🇧GB-🇬🇧GB_788
-      - Relay_🇺🇸US-🇺🇸US_3124
-      - Relay_🇭🇰HK-🇨🇦CA_803
-      - Relay_🇭🇰HK-🇹🇼TW_798
+      - V2->东莞联通-> Sec ->东京| ①
+      - V2->东莞联通-> Sec ->新加坡| ①
+      - github.com/freefq - 美国爱荷华州得梅因Microsoft数据中心 9
+      - github.com/freefq - 澳大利亚  13
+      - github.com/freefq - 俄罗斯  7
+      - github.com/freefq - 美国3COM公司企业网 19
+      - V2->广州多线-> Sec ->香港| ④
+      - github.com/freefq - 美国3COM公司企业网 16
+      - github.com/freefq - 韩国首尔Amazon数据中心 10
+      - V2->东莞联通-> Sec ->大阪| ①
+      - 日本tg频道:@ripaojiedian
+      - 欧洲(欢迎订阅Youtube破解资源君) 23
+      - 欧洲(欢迎订阅Youtube破解资源君) 21
+      - 美国(欢迎订阅Youtube破解资源君) 5
+      - 日本(欢迎订阅Youtube破解资源君) 2
+      - 欧洲(欢迎订阅Youtube破解资源君) 24
+      - 欧洲(欢迎订阅Youtube破解资源君) 17
+      - 欧洲(欢迎订阅Youtube破解资源君) 22
+      - 欧洲(欢迎订阅Youtube破解资源君) 18
+      - SG_180 |97.97Mb
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - V2->广州多线-> Sec ->香港| ④
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - Relay_🇨🇳CN-🇨🇳CN_418
-      - Relay_🇭🇰HK-🇹🇼TW_804
-      - Relay_🇺🇸US-🇺🇸US_3112
-      - Relay_🇬🇧GB-🇬🇧GB_788
-      - Relay_🇺🇸US-🇺🇸US_3124
-      - Relay_🇭🇰HK-🇨🇦CA_803
-      - Relay_🇭🇰HK-🇹🇼TW_798
+      - V2->东莞联通-> Sec ->东京| ①
+      - V2->东莞联通-> Sec ->新加坡| ①
+      - github.com/freefq - 美国爱荷华州得梅因Microsoft数据中心 9
+      - github.com/freefq - 澳大利亚  13
+      - github.com/freefq - 俄罗斯  7
+      - github.com/freefq - 美国3COM公司企业网 19
+      - V2->广州多线-> Sec ->香港| ④
+      - github.com/freefq - 美国3COM公司企业网 16
+      - github.com/freefq - 韩国首尔Amazon数据中心 10
+      - V2->东莞联通-> Sec ->大阪| ①
+      - 日本tg频道:@ripaojiedian
+      - 欧洲(欢迎订阅Youtube破解资源君) 23
+      - 欧洲(欢迎订阅Youtube破解资源君) 21
+      - 美国(欢迎订阅Youtube破解资源君) 5
+      - 日本(欢迎订阅Youtube破解资源君) 2
+      - 欧洲(欢迎订阅Youtube破解资源君) 24
+      - 欧洲(欢迎订阅Youtube破解资源君) 17
+      - 欧洲(欢迎订阅Youtube破解资源君) 22
+      - 欧洲(欢迎订阅Youtube破解资源君) 18
+      - SG_180 |97.97Mb
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - Relay_🇨🇳CN-🇨🇳CN_418
-      - Relay_🇭🇰HK-🇹🇼TW_804
-      - Relay_🇺🇸US-🇺🇸US_3112
-      - Relay_🇬🇧GB-🇬🇧GB_788
-      - Relay_🇺🇸US-🇺🇸US_3124
-      - Relay_🇭🇰HK-🇨🇦CA_803
-      - Relay_🇭🇰HK-🇹🇼TW_798
+      - V2->东莞联通-> Sec ->东京| ①
+      - V2->东莞联通-> Sec ->新加坡| ①
+      - github.com/freefq - 美国爱荷华州得梅因Microsoft数据中心 9
+      - github.com/freefq - 澳大利亚  13
+      - github.com/freefq - 俄罗斯  7
+      - github.com/freefq - 美国3COM公司企业网 19
+      - V2->广州多线-> Sec ->香港| ④
+      - github.com/freefq - 美国3COM公司企业网 16
+      - github.com/freefq - 韩国首尔Amazon数据中心 10
+      - V2->东莞联通-> Sec ->大阪| ①
+      - 日本tg频道:@ripaojiedian
+      - 欧洲(欢迎订阅Youtube破解资源君) 23
+      - 欧洲(欢迎订阅Youtube破解资源君) 21
+      - 美国(欢迎订阅Youtube破解资源君) 5
+      - 日本(欢迎订阅Youtube破解资源君) 2
+      - 欧洲(欢迎订阅Youtube破解资源君) 24
+      - 欧洲(欢迎订阅Youtube破解资源君) 17
+      - 欧洲(欢迎订阅Youtube破解资源君) 22
+      - 欧洲(欢迎订阅Youtube破解资源君) 18
+      - SG_180 |97.97Mb
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Relay_🇨🇳CN-🇨🇳CN_418
-      - Relay_🇭🇰HK-🇹🇼TW_804
-      - Relay_🇺🇸US-🇺🇸US_3112
-      - Relay_🇬🇧GB-🇬🇧GB_788
-      - Relay_🇺🇸US-🇺🇸US_3124
-      - Relay_🇭🇰HK-🇨🇦CA_803
-      - Relay_🇭🇰HK-🇹🇼TW_798
+      - V2->东莞联通-> Sec ->东京| ①
+      - V2->东莞联通-> Sec ->新加坡| ①
+      - github.com/freefq - 美国爱荷华州得梅因Microsoft数据中心 9
+      - github.com/freefq - 澳大利亚  13
+      - github.com/freefq - 俄罗斯  7
+      - github.com/freefq - 美国3COM公司企业网 19
+      - V2->广州多线-> Sec ->香港| ④
+      - github.com/freefq - 美国3COM公司企业网 16
+      - github.com/freefq - 韩国首尔Amazon数据中心 10
+      - V2->东莞联通-> Sec ->大阪| ①
+      - 日本tg频道:@ripaojiedian
+      - 欧洲(欢迎订阅Youtube破解资源君) 23
+      - 欧洲(欢迎订阅Youtube破解资源君) 21
+      - 美国(欢迎订阅Youtube破解资源君) 5
+      - 日本(欢迎订阅Youtube破解资源君) 2
+      - 欧洲(欢迎订阅Youtube破解资源君) 24
+      - 欧洲(欢迎订阅Youtube破解资源君) 17
+      - 欧洲(欢迎订阅Youtube破解资源君) 22
+      - 欧洲(欢迎订阅Youtube破解资源君) 18
+      - SG_180 |97.97Mb
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -132,13 +237,26 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Relay_🇨🇳CN-🇨🇳CN_418
-      - Relay_🇭🇰HK-🇹🇼TW_804
-      - Relay_🇺🇸US-🇺🇸US_3112
-      - Relay_🇬🇧GB-🇬🇧GB_788
-      - Relay_🇺🇸US-🇺🇸US_3124
-      - Relay_🇭🇰HK-🇨🇦CA_803
-      - Relay_🇭🇰HK-🇹🇼TW_798
+      - V2->东莞联通-> Sec ->东京| ①
+      - V2->东莞联通-> Sec ->新加坡| ①
+      - github.com/freefq - 美国爱荷华州得梅因Microsoft数据中心 9
+      - github.com/freefq - 澳大利亚  13
+      - github.com/freefq - 俄罗斯  7
+      - github.com/freefq - 美国3COM公司企业网 19
+      - V2->广州多线-> Sec ->香港| ④
+      - github.com/freefq - 美国3COM公司企业网 16
+      - github.com/freefq - 韩国首尔Amazon数据中心 10
+      - V2->东莞联通-> Sec ->大阪| ①
+      - 日本tg频道:@ripaojiedian
+      - 欧洲(欢迎订阅Youtube破解资源君) 23
+      - 欧洲(欢迎订阅Youtube破解资源君) 21
+      - 美国(欢迎订阅Youtube破解资源君) 5
+      - 日本(欢迎订阅Youtube破解资源君) 2
+      - 欧洲(欢迎订阅Youtube破解资源君) 24
+      - 欧洲(欢迎订阅Youtube破解资源君) 17
+      - 欧洲(欢迎订阅Youtube破解资源君) 22
+      - 欧洲(欢迎订阅Youtube破解资源君) 18
+      - SG_180 |97.97Mb
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
