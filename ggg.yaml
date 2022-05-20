@@ -1,59 +1,95 @@
-port: 7890
+﻿port: 7890
 socks-port: 7891
 allow-lan: true
 mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: TG频道@iosfulishare韩国1, server: 13.209.16.28, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 免费-法国, server: fr1t.moonfree.top, port: 8443, type: vmess, uuid: 6e9eeae6-c3d1-439e-9f7a-213fe09b2dbe, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: fr1t.moonfree.top}, udp: true}
-  - {name: TG频道@iosfulishare美国3, server: 13.125.80.46, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: TG频道@iosfulishare新加坡3, server: 13.228.78.158, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: TG频道@iosfulishare美国4, server: 13.125.173.191, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: TG频道@iosfulishare韩国1 2, server: 13.209.16.28, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: V316-1.5x-Tokyo, server: o16.trojan.tel, port: 38443, type: trojan, password: 468ec104-2752-4d63-a4d1-2ac6a2ccabad, sni: o16.trojan.tel, skip-cert-verify: true, udp: true}
-  - {name: 免费-法国 2, server: fr1t.moonfree.top, port: 8443, type: vmess, uuid: 6e9eeae6-c3d1-439e-9f7a-213fe09b2dbe, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: fr1t.moonfree.top}, udp: true}
+  - {name: SG_1236, server: 13.228.78.158, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: Relay_🇸🇬SG-🇸🇬SG_1375, server: v2-3.godlight.xyz, port: 26944, type: vmess, uuid: 6a52f259-4367-468c-a828-7b8283c2f059, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /f45361465j175, ws-headers: {Host: v2-3.godlight.xyz}, udp: true}
+  - {name: Relay_🇰🇷KR-🇰🇷KR_874, server: v2-4.godlight.xyz, port: 26944, type: vmess, uuid: 07ea283e-bbe8-466f-a268-c5819763a9bf, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /g1641hvx, ws-headers: {Host: v2-4.godlight.xyz}, udp: true}
+  - {name: _SG_新加坡, server: v2-3.godlight.xyz, port: 26944, type: vmess, uuid: 6a52f259-4367-468c-a828-7b8283c2f059, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /f45361465j175, ws-headers: {Host: "%7B%22host%22:%22v2-3.godlight.xyz%22%7D"}, udp: true}
+  - {name: KR_725, server: 13.209.16.28, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: Relay_🇯🇵JP-🇯🇵JP_919, server: v2-1.godlight.xyz, port: 26944, type: vmess, uuid: 719d4cec-82a8-4a65-ad01-32cf08f2c988, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /j75g1461x, ws-headers: {Host: v2-1.godlight.xyz}, udp: true}
+  - {name: Relay_🇨🇳 CN-🇯🇵JP_186, server: smart.19900101.xyz, port: 11001, type: vmess, uuid: 1cfaa36d-9912-3433-b9bc-fd5b5085613d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US_1631, server: 164.92.99.126, port: 52441, type: ss, cipher: chacha20-ietf-poly1305, password: 1c0e4a18-4d7a-4231-a55d-1dee0fe6732a, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_3034, server: rn.102498.eu.org, port: 2053, type: vmess, uuid: a1c43fac-d637-3da4-8081-5757854ffc48, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: rn.102498.eu.org}, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_3215, server: jgwdb2.gaox.ml, port: 443, type: trojan, password: c19d1432-8b3e-4818-8837-3d160cf65908, sni: jgwdb2.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: US_2672, server: 164.92.99.126, port: 52441, type: ss, cipher: chacha20-ietf-poly1305, password: 5e04bdc6-6f09-4f5e-a3c7-edf4d3220ad3, udp: true}
+  - {name: github.com/freefq - 俄罗斯  7, server: 161.8.149.7, port: 38822, type: vmess, uuid: 1dab5094-c29c-11ec-83d0-e0db55fccaf9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /ZXfq8Vm7/, ws-headers: {Host: 161.8.149.7}, udp: true}
+  - {name: GB_812, server: 167.172.56.225, port: 54141, type: ss, cipher: chacha20-ietf-poly1305, password: 54df1ad5-1323-4dd7-b7a1-a53202347526, udp: true}
+  - {name: 欧洲(欢迎订阅Youtube破解资源君) 20, server: jgwld4.gaox.ml, port: 443, type: trojan, password: 58d32c66-43b1-4561-9951-d87c9123774e, sni: jgwld4.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇬🇧GB-🇬🇧GB_788, server: jgwld1.gaox.ml, port: 443, type: trojan, password: 02e653c9-7c93-46a9-999d-11834bd0c577, sni: jgwld1.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: 欧洲(欢迎订阅Youtube破解资源君) 11, server: jgwxn4.gaox.ml, port: 443, type: trojan, password: e8c1ab3c-89b3-4933-92df-682e6dce7819, sni: jgwxn4.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: IN_685, server: 206.189.136.113, port: 46786, type: ss, cipher: chacha20-ietf-poly1305, password: 5e04bdc6-6f09-4f5e-a3c7-edf4d3220ad3, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - TG频道@iosfulishare韩国1
-      - 免费-法国
-      - TG频道@iosfulishare美国3
-      - TG频道@iosfulishare新加坡3
-      - TG频道@iosfulishare美国4
-      - TG频道@iosfulishare韩国1 2
-      - V316-1.5x-Tokyo
-      - 免费-法国 2
+      - SG_1236
+      - Relay_🇸🇬SG-🇸🇬SG_1375
+      - Relay_🇰🇷KR-🇰🇷KR_874
+      - _SG_新加坡
+      - KR_725
+      - Relay_🇯🇵JP-🇯🇵JP_919
+      - Relay_🇨🇳 CN-🇯🇵JP_186
+      - US_1631
+      - Relay_🇺🇸US-🇺🇸US_3034
+      - Relay_🇺🇸US-🇺🇸US_3215
+      - US_2672
+      - github.com/freefq - 俄罗斯  7
+      - GB_812
+      - 欧洲(欢迎订阅Youtube破解资源君) 20
+      - Relay_🇬🇧GB-🇬🇧GB_788
+      - 欧洲(欢迎订阅Youtube破解资源君) 11
+      - IN_685
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - TG频道@iosfulishare韩国1
-      - 免费-法国
-      - TG频道@iosfulishare美国3
-      - TG频道@iosfulishare新加坡3
-      - TG频道@iosfulishare美国4
-      - TG频道@iosfulishare韩国1 2
-      - V316-1.5x-Tokyo
-      - 免费-法国 2
+      - SG_1236
+      - Relay_🇸🇬SG-🇸🇬SG_1375
+      - Relay_🇰🇷KR-🇰🇷KR_874
+      - _SG_新加坡
+      - KR_725
+      - Relay_🇯🇵JP-🇯🇵JP_919
+      - Relay_🇨🇳 CN-🇯🇵JP_186
+      - US_1631
+      - Relay_🇺🇸US-🇺🇸US_3034
+      - Relay_🇺🇸US-🇺🇸US_3215
+      - US_2672
+      - github.com/freefq - 俄罗斯  7
+      - GB_812
+      - 欧洲(欢迎订阅Youtube破解资源君) 20
+      - Relay_🇬🇧GB-🇬🇧GB_788
+      - 欧洲(欢迎订阅Youtube破解资源君) 11
+      - IN_685
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - TG频道@iosfulishare韩国1
-      - 免费-法国
-      - TG频道@iosfulishare美国3
-      - TG频道@iosfulishare新加坡3
-      - TG频道@iosfulishare美国4
-      - TG频道@iosfulishare韩国1 2
-      - V316-1.5x-Tokyo
-      - 免费-法国 2
+      - SG_1236
+      - Relay_🇸🇬SG-🇸🇬SG_1375
+      - Relay_🇰🇷KR-🇰🇷KR_874
+      - _SG_新加坡
+      - KR_725
+      - Relay_🇯🇵JP-🇯🇵JP_919
+      - Relay_🇨🇳 CN-🇯🇵JP_186
+      - US_1631
+      - Relay_🇺🇸US-🇺🇸US_3034
+      - Relay_🇺🇸US-🇺🇸US_3215
+      - US_2672
+      - github.com/freefq - 俄罗斯  7
+      - GB_812
+      - 欧洲(欢迎订阅Youtube破解资源君) 20
+      - Relay_🇬🇧GB-🇬🇧GB_788
+      - 欧洲(欢迎订阅Youtube破解资源君) 11
+      - IN_685
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -72,14 +108,23 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - TG频道@iosfulishare韩国1
-      - 免费-法国
-      - TG频道@iosfulishare美国3
-      - TG频道@iosfulishare新加坡3
-      - TG频道@iosfulishare美国4
-      - TG频道@iosfulishare韩国1 2
-      - V316-1.5x-Tokyo
-      - 免费-法国 2
+      - SG_1236
+      - Relay_🇸🇬SG-🇸🇬SG_1375
+      - Relay_🇰🇷KR-🇰🇷KR_874
+      - _SG_新加坡
+      - KR_725
+      - Relay_🇯🇵JP-🇯🇵JP_919
+      - Relay_🇨🇳 CN-🇯🇵JP_186
+      - US_1631
+      - Relay_🇺🇸US-🇺🇸US_3034
+      - Relay_🇺🇸US-🇺🇸US_3215
+      - US_2672
+      - github.com/freefq - 俄罗斯  7
+      - GB_812
+      - 欧洲(欢迎订阅Youtube破解资源君) 20
+      - Relay_🇬🇧GB-🇬🇧GB_788
+      - 欧洲(欢迎订阅Youtube破解资源君) 11
+      - IN_685
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -90,41 +135,68 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - TG频道@iosfulishare韩国1
-      - 免费-法国
-      - TG频道@iosfulishare美国3
-      - TG频道@iosfulishare新加坡3
-      - TG频道@iosfulishare美国4
-      - TG频道@iosfulishare韩国1 2
-      - V316-1.5x-Tokyo
-      - 免费-法国 2
+      - SG_1236
+      - Relay_🇸🇬SG-🇸🇬SG_1375
+      - Relay_🇰🇷KR-🇰🇷KR_874
+      - _SG_新加坡
+      - KR_725
+      - Relay_🇯🇵JP-🇯🇵JP_919
+      - Relay_🇨🇳 CN-🇯🇵JP_186
+      - US_1631
+      - Relay_🇺🇸US-🇺🇸US_3034
+      - Relay_🇺🇸US-🇺🇸US_3215
+      - US_2672
+      - github.com/freefq - 俄罗斯  7
+      - GB_812
+      - 欧洲(欢迎订阅Youtube破解资源君) 20
+      - Relay_🇬🇧GB-🇬🇧GB_788
+      - 欧洲(欢迎订阅Youtube破解资源君) 11
+      - IN_685
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - TG频道@iosfulishare韩国1
-      - 免费-法国
-      - TG频道@iosfulishare美国3
-      - TG频道@iosfulishare新加坡3
-      - TG频道@iosfulishare美国4
-      - TG频道@iosfulishare韩国1 2
-      - V316-1.5x-Tokyo
-      - 免费-法国 2
+      - SG_1236
+      - Relay_🇸🇬SG-🇸🇬SG_1375
+      - Relay_🇰🇷KR-🇰🇷KR_874
+      - _SG_新加坡
+      - KR_725
+      - Relay_🇯🇵JP-🇯🇵JP_919
+      - Relay_🇨🇳 CN-🇯🇵JP_186
+      - US_1631
+      - Relay_🇺🇸US-🇺🇸US_3034
+      - Relay_🇺🇸US-🇺🇸US_3215
+      - US_2672
+      - github.com/freefq - 俄罗斯  7
+      - GB_812
+      - 欧洲(欢迎订阅Youtube破解资源君) 20
+      - Relay_🇬🇧GB-🇬🇧GB_788
+      - 欧洲(欢迎订阅Youtube破解资源君) 11
+      - IN_685
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - TG频道@iosfulishare韩国1
-      - 免费-法国
-      - TG频道@iosfulishare美国3
-      - TG频道@iosfulishare新加坡3
-      - TG频道@iosfulishare美国4
-      - TG频道@iosfulishare韩国1 2
-      - V316-1.5x-Tokyo
-      - 免费-法国 2
+      - SG_1236
+      - Relay_🇸🇬SG-🇸🇬SG_1375
+      - Relay_🇰🇷KR-🇰🇷KR_874
+      - _SG_新加坡
+      - KR_725
+      - Relay_🇯🇵JP-🇯🇵JP_919
+      - Relay_🇨🇳 CN-🇯🇵JP_186
+      - US_1631
+      - Relay_🇺🇸US-🇺🇸US_3034
+      - Relay_🇺🇸US-🇺🇸US_3215
+      - US_2672
+      - github.com/freefq - 俄罗斯  7
+      - GB_812
+      - 欧洲(欢迎订阅Youtube破解资源君) 20
+      - Relay_🇬🇧GB-🇬🇧GB_788
+      - 欧洲(欢迎订阅Youtube破解资源君) 11
+      - IN_685
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -140,14 +212,23 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - TG频道@iosfulishare韩国1
-      - 免费-法国
-      - TG频道@iosfulishare美国3
-      - TG频道@iosfulishare新加坡3
-      - TG频道@iosfulishare美国4
-      - TG频道@iosfulishare韩国1 2
-      - V316-1.5x-Tokyo
-      - 免费-法国 2
+      - SG_1236
+      - Relay_🇸🇬SG-🇸🇬SG_1375
+      - Relay_🇰🇷KR-🇰🇷KR_874
+      - _SG_新加坡
+      - KR_725
+      - Relay_🇯🇵JP-🇯🇵JP_919
+      - Relay_🇨🇳 CN-🇯🇵JP_186
+      - US_1631
+      - Relay_🇺🇸US-🇺🇸US_3034
+      - Relay_🇺🇸US-🇺🇸US_3215
+      - US_2672
+      - github.com/freefq - 俄罗斯  7
+      - GB_812
+      - 欧洲(欢迎订阅Youtube破解资源君) 20
+      - Relay_🇬🇧GB-🇬🇧GB_788
+      - 欧洲(欢迎订阅Youtube破解资源君) 11
+      - IN_685
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
