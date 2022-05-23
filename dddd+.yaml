@@ -5,199 +5,75 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: SG_1289, server: 13.228.28.195, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_2808, server: jgwcc2.gaox.ml, port: 443, type: trojan, password: 9c822f05-cfdc-479a-9534-60f3d4127435, sni: jgwcc2.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇳CN-🇲🇾MY_271, server: cm-jm.okvpn.xyz, port: 20005, type: trojan, password: e5cf7069-e269-4926-bdb0-fbb39cde6a3a, sni: cm-jm.okvpn.xyz, skip-cert-verify: true, udp: true}
-  - {name: SG_1288, server: 13.228.78.158, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: Relay_🇯🇵JP-🇯🇵JP_737, server: v2.godlight.xyz, port: 26944, type: vmess, uuid: 1a059eff-ad8a-42ad-921c-465c5b31f183, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /dajdklw231f, ws-headers: {Host: v2.godlight.xyz}, udp: true}
-  - {name: Relay_🇸🇬SG-🇸🇬SG_1310, server: sgp.sharecentre.xyz, port: 443, type: trojan, password: sharecentre, sni: sgp.sharecentre.xyz, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_2780, server: v2-2.godlight.xyz, port: 26944, type: vmess, uuid: 43308d27-94ec-408e-a8f6-d682cfb99ca9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /54f634fs, ws-headers: {Host: v2-2.godlight.xyz}, udp: true}
-  - {name: Relay_🇸🇬SG-🇸🇬SG_1303, server: v2-3.godlight.xyz, port: 26944, type: vmess, uuid: 6a52f259-4367-468c-a828-7b8283c2f059, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /f45361465j175, ws-headers: {Host: v2-3.godlight.xyz}, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_2755, server: v2-5.godlight.xyz, port: 26944, type: vmess, uuid: 767e55a4-43fa-4301-a9c2-ad30eaa9f61a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /71h4b3s1f53, ws-headers: {Host: v2-5.godlight.xyz}, udp: true}
-  - {name: US_2629, server: 164.92.99.126, port: 52441, type: ss, cipher: chacha20-ietf-poly1305, password: 1c0e4a18-4d7a-4231-a55d-1dee0fe6732a, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_2792, server: us03.gogogoo.cyou, port: 443, type: vmess, uuid: db5d1aa3-908b-44d1-be0a-4e6a8d4e4cda, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /go, ws-headers: {Host: us03.gogogoo.cyou}, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_2820, server: jp2.trojan.tel, port: 443, type: trojan, password: f736834f-1fc8-4738-9884-9afe0eb0d818, sni: jp2.trojan.tel, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇳CN-🇸🇬SG_266, server: nas5.travelerv2.xyz, port: 21871, type: vmess, uuid: b69f3735-a1a1-3dbf-889b-4594d140752f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: nas5.travelerv2.xyz}, udp: true}
-  - {name: US_2261, server: 164.92.99.126, port: 52441, type: ss, cipher: chacha20-ietf-poly1305, password: 5e04bdc6-6f09-4f5e-a3c7-edf4d3220ad3, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_2781, server: v2fly.sab.quest, port: 443, type: vmess, uuid: 9e6ceeff-2546-3690-ac00-6fcdf31dec94, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /chcar, ws-headers: {Host: v2fly.sab.quest}, udp: true}
-  - {name: US_1348, server: 54.213.84.59, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: LT_931, server: 213.183.53.179, port: 9038, type: ss, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ, udp: true}
-  - {name: ZZ_3031, server: 169.197.142.99, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: ZZ_3295, server: 169.197.142.99, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: _US_美国_2_5@15, server: fhcarm2.gaox.ml, port: 443, type: trojan, password: f39bd244-f5fe-415c-8b98-a1e5250bf178, sni: fhcarm2.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇬🇧GB-🇬🇧GB_686, server: jgwcc1.gaox.ml, port: 443, type: trojan, password: 7118b5f4-0ea4-4c11-be7f-11471cb91e4a, sni: jgwcc1.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: ZZ_2973, server: 169.197.142.99, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: ZZ_3018, server: 169.197.142.99, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: ZZ_3341, server: 169.197.142.99, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: ZZ_3021, server: 169.197.142.99, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: ZZ_3015, server: 169.197.142.99, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: ZZ_3370, server: 169.197.142.99, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: GB_621, server: 167.172.56.225, port: 54141, type: ss, cipher: chacha20-ietf-poly1305, password: 5e04bdc6-6f09-4f5e-a3c7-edf4d3220ad3, udp: true}
-  - {name: GB_632, server: 167.172.56.225, port: 54141, type: ss, cipher: chacha20-ietf-poly1305, password: 54df1ad5-1323-4dd7-b7a1-a53202347526, udp: true}
-  - {name: ZZ_3210, server: 169.197.142.99, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: Relay_🇷🇺RU-🇷🇺RU_1226, server: 185.4.65.6, port: 21247, type: ss, cipher: aes-256-cfb, password: vDS9G2p, udp: true}
-  - {name: Relay_🇸🇬SG-🇸🇬SG_1306, server: node.gkddd.buzz, port: 23312, type: vmess, uuid: a6f34df0-6e9e-4522-80ff-a41517803f17, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /sometimesnaive, ws-headers: {Host: node.gkddd.buzz}, udp: true}
-  - {name: Relay_🇦🇺AU-🇦🇺AU_63, server: jgwxn3.gaox.ml, port: 443, type: trojan, password: cb43b7c2-b744-41c5-bcc2-fd7467b332cf, sni: jgwxn3.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_2806, server: jgwdj4.gaox.ml, port: 443, type: trojan, password: c09eb137-bf68-4658-84e0-102d94b74168, sni: jgwdj4.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_2805, server: jgwdb2.gaox.ml, port: 443, type: trojan, password: c19d1432-8b3e-4818-8837-3d160cf65908, sni: jgwdb2.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: ZZ_2839, server: 169.197.142.99, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: Relay_🇨🇳CN-🇹🇼TW_269, server: cm-jm.okvpn.xyz, port: 20003, type: trojan, password: e5cf7069-e269-4926-bdb0-fbb39cde6a3a, sni: cm-jm.okvpn.xyz, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇯🇵JP-🇯🇵JP_738, server: v2-1.godlight.xyz, port: 26944, type: vmess, uuid: 719d4cec-82a8-4a65-ad01-32cf08f2c988, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /j75g1461x, ws-headers: {Host: v2-1.godlight.xyz}, udp: true}
-  - {name: CA_145, server: 139.99.123.156, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: RU_1252, server: 194.34.239.105, port: 18760, type: ss, cipher: chacha20-ietf-poly1305, password: hg49$WH8943g3, udp: true}
-  - {name: Relay_🇦🇺AU-🇦🇺AU_65, server: jgwxn2.gaox.ml, port: 443, type: trojan, password: c2b60d6a-a2f5-40ff-b7f9-f7658abcbf26, sni: jgwxn2.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: ZZ_3249, server: 103.172.116.9, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga, udp: true}
-  - {name: _US_美国->🇷🇺_RU_俄罗斯联邦_1@31, server: v3.ssrsub.com, port: 443, type: vmess, uuid: 620d82a8-22ba-4945-90ba-a2bed1cde1d2, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /api/v3/download.getFile, ws-headers: {Host: v3.ssrsub.com}, udp: true}
-  - {name: ZZ_3188, server: 169.197.142.99, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: 欧洲(欢迎订阅Youtube破解资源君) 29, server: v2-2.godlight.xyz, port: 27000, type: vmess, uuid: 43308d27-94ec-408e-a8f6-d682cfb99ca9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /54f634fs, ws-headers: {Host: v2-2.godlight.xyz}, udp: true}
+  - {name: 欧洲(欢迎订阅Youtube破解资源君) 21, server: jgwdb4.gaox.ml, port: 443, type: trojan, password: d06a3f01-1ff0-4792-9b8e-a5a604bc74a2, sni: jgwdb4.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: 美国(欢迎订阅Youtube破解资源君) 22, server: jgwdb2.gaox.ml, port: 443, type: trojan, password: c19d1432-8b3e-4818-8837-3d160cf65908, sni: jgwdb2.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: 美国-4.57MB/s(Youtube:不良林), server: fhcarm1.gaox.ml, port: 443, type: trojan, password: 05742120-ce23-4cc8-88f5-6d221ce45bf4, sni: fhcarm1.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: 欧洲(欢迎订阅Youtube破解资源君) 27, server: ru1.lolvps.xyz, port: 40040, type: vmess, uuid: 2b8e4fc6-0112-4b26-8c17-1bfef9a3ff99, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /6129CFHR, ws-headers: {Host: ru1.lolvps.xyz}, udp: true}
+  - {name: 美国-4.38MB/s(Youtube:不良林), server: lsj02.wangxd.life, port: 3052, type: trojan, password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e, sni: lsj02.wangxd.life, skip-cert-verify: true, udp: true}
+  - {name: 欧洲(欢迎订阅Youtube破解资源君) 6, server: 207.246.108.107, port: 29303, type: vmess, uuid: e69a7cb6-ee04-40ed-99da-55f5ba8b0034, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /cB35d8gV/, ws-headers: {Host: 207.246.108.107}, udp: true}
+  - {name: 欧洲(欢迎订阅Youtube破解资源君) 25, server: jgwxn3.gaox.ml, port: 443, type: trojan, password: cb43b7c2-b744-41c5-bcc2-fd7467b332cf, sni: jgwxn3.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: 欧洲(欢迎订阅Youtube破解资源君) 24, server: jgwxn2.gaox.ml, port: 443, type: trojan, password: c2b60d6a-a2f5-40ff-b7f9-f7658abcbf26, sni: jgwxn2.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: 印度-394.9KB/s(Youtube:不良林), server: jgwhdlb1.gaox.ml, port: 443, type: trojan, password: e05c749b-7c6b-41b8-9c71-9dcf685edf4a, sni: jgwhdlb1.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: 日本-18.38MB/s(Youtube:不良林), server: jgwdj3.gaox.ml, port: 443, type: trojan, password: da777aae-defb-41d0-a183-2c27da2b4677, sni: jgwdj3.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: 美国(欢迎订阅Youtube破解资源君) 23, server: jgwhdlb3.gaox.ml, port: 443, type: trojan, password: 006baa3f-4bc3-4915-b60d-c8c5dae11a11, sni: jgwhdlb3.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: 欧洲(欢迎订阅Youtube破解资源君) 26, server: mci.myandroidplus1.ir, port: 80, type: vmess, uuid: c1214c26-f0fc-2f0a-81b0-84d10f8d14dc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /api, ws-headers: {Host: mci.myandroidplus1.ir}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - SG_1289
-      - Relay_🇺🇸US-🇺🇸US_2808
-      - Relay_🇨🇳CN-🇲🇾MY_271
-      - SG_1288
-      - Relay_🇯🇵JP-🇯🇵JP_737
-      - Relay_🇸🇬SG-🇸🇬SG_1310
-      - Relay_🇺🇸US-🇺🇸US_2780
-      - Relay_🇸🇬SG-🇸🇬SG_1303
-      - Relay_🇺🇸US-🇺🇸US_2755
-      - US_2629
-      - Relay_🇺🇸US-🇺🇸US_2792
-      - Relay_🇺🇸US-🇺🇸US_2820
-      - Relay_🇨🇳CN-🇸🇬SG_266
-      - US_2261
-      - Relay_🇺🇸US-🇺🇸US_2781
-      - US_1348
-      - LT_931
-      - ZZ_3031
-      - ZZ_3295
-      - _US_美国_2_5@15
-      - Relay_🇬🇧GB-🇬🇧GB_686
-      - ZZ_2973
-      - ZZ_3018
-      - ZZ_3341
-      - ZZ_3021
-      - ZZ_3015
-      - ZZ_3370
-      - GB_621
-      - GB_632
-      - ZZ_3210
-      - Relay_🇷🇺RU-🇷🇺RU_1226
-      - Relay_🇸🇬SG-🇸🇬SG_1306
-      - Relay_🇦🇺AU-🇦🇺AU_63
-      - Relay_🇺🇸US-🇺🇸US_2806
-      - Relay_🇺🇸US-🇺🇸US_2805
-      - ZZ_2839
-      - Relay_🇨🇳CN-🇹🇼TW_269
-      - Relay_🇯🇵JP-🇯🇵JP_738
-      - CA_145
-      - RU_1252
-      - Relay_🇦🇺AU-🇦🇺AU_65
-      - ZZ_3249
-      - _US_美国->🇷🇺_RU_俄罗斯联邦_1@31
-      - ZZ_3188
+      - 欧洲(欢迎订阅Youtube破解资源君) 29
+      - 欧洲(欢迎订阅Youtube破解资源君) 21
+      - 美国(欢迎订阅Youtube破解资源君) 22
+      - 美国-4.57MB/s(Youtube:不良林)
+      - 欧洲(欢迎订阅Youtube破解资源君) 27
+      - 美国-4.38MB/s(Youtube:不良林)
+      - 欧洲(欢迎订阅Youtube破解资源君) 6
+      - 欧洲(欢迎订阅Youtube破解资源君) 25
+      - 欧洲(欢迎订阅Youtube破解资源君) 24
+      - 印度-394.9KB/s(Youtube:不良林)
+      - 日本-18.38MB/s(Youtube:不良林)
+      - 美国(欢迎订阅Youtube破解资源君) 23
+      - 欧洲(欢迎订阅Youtube破解资源君) 26
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - SG_1289
-      - Relay_🇺🇸US-🇺🇸US_2808
-      - Relay_🇨🇳CN-🇲🇾MY_271
-      - SG_1288
-      - Relay_🇯🇵JP-🇯🇵JP_737
-      - Relay_🇸🇬SG-🇸🇬SG_1310
-      - Relay_🇺🇸US-🇺🇸US_2780
-      - Relay_🇸🇬SG-🇸🇬SG_1303
-      - Relay_🇺🇸US-🇺🇸US_2755
-      - US_2629
-      - Relay_🇺🇸US-🇺🇸US_2792
-      - Relay_🇺🇸US-🇺🇸US_2820
-      - Relay_🇨🇳CN-🇸🇬SG_266
-      - US_2261
-      - Relay_🇺🇸US-🇺🇸US_2781
-      - US_1348
-      - LT_931
-      - ZZ_3031
-      - ZZ_3295
-      - _US_美国_2_5@15
-      - Relay_🇬🇧GB-🇬🇧GB_686
-      - ZZ_2973
-      - ZZ_3018
-      - ZZ_3341
-      - ZZ_3021
-      - ZZ_3015
-      - ZZ_3370
-      - GB_621
-      - GB_632
-      - ZZ_3210
-      - Relay_🇷🇺RU-🇷🇺RU_1226
-      - Relay_🇸🇬SG-🇸🇬SG_1306
-      - Relay_🇦🇺AU-🇦🇺AU_63
-      - Relay_🇺🇸US-🇺🇸US_2806
-      - Relay_🇺🇸US-🇺🇸US_2805
-      - ZZ_2839
-      - Relay_🇨🇳CN-🇹🇼TW_269
-      - Relay_🇯🇵JP-🇯🇵JP_738
-      - CA_145
-      - RU_1252
-      - Relay_🇦🇺AU-🇦🇺AU_65
-      - ZZ_3249
-      - _US_美国->🇷🇺_RU_俄罗斯联邦_1@31
-      - ZZ_3188
+      - 欧洲(欢迎订阅Youtube破解资源君) 29
+      - 欧洲(欢迎订阅Youtube破解资源君) 21
+      - 美国(欢迎订阅Youtube破解资源君) 22
+      - 美国-4.57MB/s(Youtube:不良林)
+      - 欧洲(欢迎订阅Youtube破解资源君) 27
+      - 美国-4.38MB/s(Youtube:不良林)
+      - 欧洲(欢迎订阅Youtube破解资源君) 6
+      - 欧洲(欢迎订阅Youtube破解资源君) 25
+      - 欧洲(欢迎订阅Youtube破解资源君) 24
+      - 印度-394.9KB/s(Youtube:不良林)
+      - 日本-18.38MB/s(Youtube:不良林)
+      - 美国(欢迎订阅Youtube破解资源君) 23
+      - 欧洲(欢迎订阅Youtube破解资源君) 26
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - SG_1289
-      - Relay_🇺🇸US-🇺🇸US_2808
-      - Relay_🇨🇳CN-🇲🇾MY_271
-      - SG_1288
-      - Relay_🇯🇵JP-🇯🇵JP_737
-      - Relay_🇸🇬SG-🇸🇬SG_1310
-      - Relay_🇺🇸US-🇺🇸US_2780
-      - Relay_🇸🇬SG-🇸🇬SG_1303
-      - Relay_🇺🇸US-🇺🇸US_2755
-      - US_2629
-      - Relay_🇺🇸US-🇺🇸US_2792
-      - Relay_🇺🇸US-🇺🇸US_2820
-      - Relay_🇨🇳CN-🇸🇬SG_266
-      - US_2261
-      - Relay_🇺🇸US-🇺🇸US_2781
-      - US_1348
-      - LT_931
-      - ZZ_3031
-      - ZZ_3295
-      - _US_美国_2_5@15
-      - Relay_🇬🇧GB-🇬🇧GB_686
-      - ZZ_2973
-      - ZZ_3018
-      - ZZ_3341
-      - ZZ_3021
-      - ZZ_3015
-      - ZZ_3370
-      - GB_621
-      - GB_632
-      - ZZ_3210
-      - Relay_🇷🇺RU-🇷🇺RU_1226
-      - Relay_🇸🇬SG-🇸🇬SG_1306
-      - Relay_🇦🇺AU-🇦🇺AU_63
-      - Relay_🇺🇸US-🇺🇸US_2806
-      - Relay_🇺🇸US-🇺🇸US_2805
-      - ZZ_2839
-      - Relay_🇨🇳CN-🇹🇼TW_269
-      - Relay_🇯🇵JP-🇯🇵JP_738
-      - CA_145
-      - RU_1252
-      - Relay_🇦🇺AU-🇦🇺AU_65
-      - ZZ_3249
-      - _US_美国->🇷🇺_RU_俄罗斯联邦_1@31
-      - ZZ_3188
+      - 欧洲(欢迎订阅Youtube破解资源君) 29
+      - 欧洲(欢迎订阅Youtube破解资源君) 21
+      - 美国(欢迎订阅Youtube破解资源君) 22
+      - 美国-4.57MB/s(Youtube:不良林)
+      - 欧洲(欢迎订阅Youtube破解资源君) 27
+      - 美国-4.38MB/s(Youtube:不良林)
+      - 欧洲(欢迎订阅Youtube破解资源君) 6
+      - 欧洲(欢迎订阅Youtube破解资源君) 25
+      - 欧洲(欢迎订阅Youtube破解资源君) 24
+      - 印度-394.9KB/s(Youtube:不良林)
+      - 日本-18.38MB/s(Youtube:不良林)
+      - 美国(欢迎订阅Youtube破解资源君) 23
+      - 欧洲(欢迎订阅Youtube破解资源君) 26
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -216,50 +92,19 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - SG_1289
-      - Relay_🇺🇸US-🇺🇸US_2808
-      - Relay_🇨🇳CN-🇲🇾MY_271
-      - SG_1288
-      - Relay_🇯🇵JP-🇯🇵JP_737
-      - Relay_🇸🇬SG-🇸🇬SG_1310
-      - Relay_🇺🇸US-🇺🇸US_2780
-      - Relay_🇸🇬SG-🇸🇬SG_1303
-      - Relay_🇺🇸US-🇺🇸US_2755
-      - US_2629
-      - Relay_🇺🇸US-🇺🇸US_2792
-      - Relay_🇺🇸US-🇺🇸US_2820
-      - Relay_🇨🇳CN-🇸🇬SG_266
-      - US_2261
-      - Relay_🇺🇸US-🇺🇸US_2781
-      - US_1348
-      - LT_931
-      - ZZ_3031
-      - ZZ_3295
-      - _US_美国_2_5@15
-      - Relay_🇬🇧GB-🇬🇧GB_686
-      - ZZ_2973
-      - ZZ_3018
-      - ZZ_3341
-      - ZZ_3021
-      - ZZ_3015
-      - ZZ_3370
-      - GB_621
-      - GB_632
-      - ZZ_3210
-      - Relay_🇷🇺RU-🇷🇺RU_1226
-      - Relay_🇸🇬SG-🇸🇬SG_1306
-      - Relay_🇦🇺AU-🇦🇺AU_63
-      - Relay_🇺🇸US-🇺🇸US_2806
-      - Relay_🇺🇸US-🇺🇸US_2805
-      - ZZ_2839
-      - Relay_🇨🇳CN-🇹🇼TW_269
-      - Relay_🇯🇵JP-🇯🇵JP_738
-      - CA_145
-      - RU_1252
-      - Relay_🇦🇺AU-🇦🇺AU_65
-      - ZZ_3249
-      - _US_美国->🇷🇺_RU_俄罗斯联邦_1@31
-      - ZZ_3188
+      - 欧洲(欢迎订阅Youtube破解资源君) 29
+      - 欧洲(欢迎订阅Youtube破解资源君) 21
+      - 美国(欢迎订阅Youtube破解资源君) 22
+      - 美国-4.57MB/s(Youtube:不良林)
+      - 欧洲(欢迎订阅Youtube破解资源君) 27
+      - 美国-4.38MB/s(Youtube:不良林)
+      - 欧洲(欢迎订阅Youtube破解资源君) 6
+      - 欧洲(欢迎订阅Youtube破解资源君) 25
+      - 欧洲(欢迎订阅Youtube破解资源君) 24
+      - 印度-394.9KB/s(Youtube:不良林)
+      - 日本-18.38MB/s(Youtube:不良林)
+      - 美国(欢迎订阅Youtube破解资源君) 23
+      - 欧洲(欢迎订阅Youtube破解资源君) 26
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -270,149 +115,56 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - SG_1289
-      - Relay_🇺🇸US-🇺🇸US_2808
-      - Relay_🇨🇳CN-🇲🇾MY_271
-      - SG_1288
-      - Relay_🇯🇵JP-🇯🇵JP_737
-      - Relay_🇸🇬SG-🇸🇬SG_1310
-      - Relay_🇺🇸US-🇺🇸US_2780
-      - Relay_🇸🇬SG-🇸🇬SG_1303
-      - Relay_🇺🇸US-🇺🇸US_2755
-      - US_2629
-      - Relay_🇺🇸US-🇺🇸US_2792
-      - Relay_🇺🇸US-🇺🇸US_2820
-      - Relay_🇨🇳CN-🇸🇬SG_266
-      - US_2261
-      - Relay_🇺🇸US-🇺🇸US_2781
-      - US_1348
-      - LT_931
-      - ZZ_3031
-      - ZZ_3295
-      - _US_美国_2_5@15
-      - Relay_🇬🇧GB-🇬🇧GB_686
-      - ZZ_2973
-      - ZZ_3018
-      - ZZ_3341
-      - ZZ_3021
-      - ZZ_3015
-      - ZZ_3370
-      - GB_621
-      - GB_632
-      - ZZ_3210
-      - Relay_🇷🇺RU-🇷🇺RU_1226
-      - Relay_🇸🇬SG-🇸🇬SG_1306
-      - Relay_🇦🇺AU-🇦🇺AU_63
-      - Relay_🇺🇸US-🇺🇸US_2806
-      - Relay_🇺🇸US-🇺🇸US_2805
-      - ZZ_2839
-      - Relay_🇨🇳CN-🇹🇼TW_269
-      - Relay_🇯🇵JP-🇯🇵JP_738
-      - CA_145
-      - RU_1252
-      - Relay_🇦🇺AU-🇦🇺AU_65
-      - ZZ_3249
-      - _US_美国->🇷🇺_RU_俄罗斯联邦_1@31
-      - ZZ_3188
+      - 欧洲(欢迎订阅Youtube破解资源君) 29
+      - 欧洲(欢迎订阅Youtube破解资源君) 21
+      - 美国(欢迎订阅Youtube破解资源君) 22
+      - 美国-4.57MB/s(Youtube:不良林)
+      - 欧洲(欢迎订阅Youtube破解资源君) 27
+      - 美国-4.38MB/s(Youtube:不良林)
+      - 欧洲(欢迎订阅Youtube破解资源君) 6
+      - 欧洲(欢迎订阅Youtube破解资源君) 25
+      - 欧洲(欢迎订阅Youtube破解资源君) 24
+      - 印度-394.9KB/s(Youtube:不良林)
+      - 日本-18.38MB/s(Youtube:不良林)
+      - 美国(欢迎订阅Youtube破解资源君) 23
+      - 欧洲(欢迎订阅Youtube破解资源君) 26
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - SG_1289
-      - Relay_🇺🇸US-🇺🇸US_2808
-      - Relay_🇨🇳CN-🇲🇾MY_271
-      - SG_1288
-      - Relay_🇯🇵JP-🇯🇵JP_737
-      - Relay_🇸🇬SG-🇸🇬SG_1310
-      - Relay_🇺🇸US-🇺🇸US_2780
-      - Relay_🇸🇬SG-🇸🇬SG_1303
-      - Relay_🇺🇸US-🇺🇸US_2755
-      - US_2629
-      - Relay_🇺🇸US-🇺🇸US_2792
-      - Relay_🇺🇸US-🇺🇸US_2820
-      - Relay_🇨🇳CN-🇸🇬SG_266
-      - US_2261
-      - Relay_🇺🇸US-🇺🇸US_2781
-      - US_1348
-      - LT_931
-      - ZZ_3031
-      - ZZ_3295
-      - _US_美国_2_5@15
-      - Relay_🇬🇧GB-🇬🇧GB_686
-      - ZZ_2973
-      - ZZ_3018
-      - ZZ_3341
-      - ZZ_3021
-      - ZZ_3015
-      - ZZ_3370
-      - GB_621
-      - GB_632
-      - ZZ_3210
-      - Relay_🇷🇺RU-🇷🇺RU_1226
-      - Relay_🇸🇬SG-🇸🇬SG_1306
-      - Relay_🇦🇺AU-🇦🇺AU_63
-      - Relay_🇺🇸US-🇺🇸US_2806
-      - Relay_🇺🇸US-🇺🇸US_2805
-      - ZZ_2839
-      - Relay_🇨🇳CN-🇹🇼TW_269
-      - Relay_🇯🇵JP-🇯🇵JP_738
-      - CA_145
-      - RU_1252
-      - Relay_🇦🇺AU-🇦🇺AU_65
-      - ZZ_3249
-      - _US_美国->🇷🇺_RU_俄罗斯联邦_1@31
-      - ZZ_3188
+      - 欧洲(欢迎订阅Youtube破解资源君) 29
+      - 欧洲(欢迎订阅Youtube破解资源君) 21
+      - 美国(欢迎订阅Youtube破解资源君) 22
+      - 美国-4.57MB/s(Youtube:不良林)
+      - 欧洲(欢迎订阅Youtube破解资源君) 27
+      - 美国-4.38MB/s(Youtube:不良林)
+      - 欧洲(欢迎订阅Youtube破解资源君) 6
+      - 欧洲(欢迎订阅Youtube破解资源君) 25
+      - 欧洲(欢迎订阅Youtube破解资源君) 24
+      - 印度-394.9KB/s(Youtube:不良林)
+      - 日本-18.38MB/s(Youtube:不良林)
+      - 美国(欢迎订阅Youtube破解资源君) 23
+      - 欧洲(欢迎订阅Youtube破解资源君) 26
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - SG_1289
-      - Relay_🇺🇸US-🇺🇸US_2808
-      - Relay_🇨🇳CN-🇲🇾MY_271
-      - SG_1288
-      - Relay_🇯🇵JP-🇯🇵JP_737
-      - Relay_🇸🇬SG-🇸🇬SG_1310
-      - Relay_🇺🇸US-🇺🇸US_2780
-      - Relay_🇸🇬SG-🇸🇬SG_1303
-      - Relay_🇺🇸US-🇺🇸US_2755
-      - US_2629
-      - Relay_🇺🇸US-🇺🇸US_2792
-      - Relay_🇺🇸US-🇺🇸US_2820
-      - Relay_🇨🇳CN-🇸🇬SG_266
-      - US_2261
-      - Relay_🇺🇸US-🇺🇸US_2781
-      - US_1348
-      - LT_931
-      - ZZ_3031
-      - ZZ_3295
-      - _US_美国_2_5@15
-      - Relay_🇬🇧GB-🇬🇧GB_686
-      - ZZ_2973
-      - ZZ_3018
-      - ZZ_3341
-      - ZZ_3021
-      - ZZ_3015
-      - ZZ_3370
-      - GB_621
-      - GB_632
-      - ZZ_3210
-      - Relay_🇷🇺RU-🇷🇺RU_1226
-      - Relay_🇸🇬SG-🇸🇬SG_1306
-      - Relay_🇦🇺AU-🇦🇺AU_63
-      - Relay_🇺🇸US-🇺🇸US_2806
-      - Relay_🇺🇸US-🇺🇸US_2805
-      - ZZ_2839
-      - Relay_🇨🇳CN-🇹🇼TW_269
-      - Relay_🇯🇵JP-🇯🇵JP_738
-      - CA_145
-      - RU_1252
-      - Relay_🇦🇺AU-🇦🇺AU_65
-      - ZZ_3249
-      - _US_美国->🇷🇺_RU_俄罗斯联邦_1@31
-      - ZZ_3188
+      - 欧洲(欢迎订阅Youtube破解资源君) 29
+      - 欧洲(欢迎订阅Youtube破解资源君) 21
+      - 美国(欢迎订阅Youtube破解资源君) 22
+      - 美国-4.57MB/s(Youtube:不良林)
+      - 欧洲(欢迎订阅Youtube破解资源君) 27
+      - 美国-4.38MB/s(Youtube:不良林)
+      - 欧洲(欢迎订阅Youtube破解资源君) 6
+      - 欧洲(欢迎订阅Youtube破解资源君) 25
+      - 欧洲(欢迎订阅Youtube破解资源君) 24
+      - 印度-394.9KB/s(Youtube:不良林)
+      - 日本-18.38MB/s(Youtube:不良林)
+      - 美国(欢迎订阅Youtube破解资源君) 23
+      - 欧洲(欢迎订阅Youtube破解资源君) 26
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -428,50 +180,19 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - SG_1289
-      - Relay_🇺🇸US-🇺🇸US_2808
-      - Relay_🇨🇳CN-🇲🇾MY_271
-      - SG_1288
-      - Relay_🇯🇵JP-🇯🇵JP_737
-      - Relay_🇸🇬SG-🇸🇬SG_1310
-      - Relay_🇺🇸US-🇺🇸US_2780
-      - Relay_🇸🇬SG-🇸🇬SG_1303
-      - Relay_🇺🇸US-🇺🇸US_2755
-      - US_2629
-      - Relay_🇺🇸US-🇺🇸US_2792
-      - Relay_🇺🇸US-🇺🇸US_2820
-      - Relay_🇨🇳CN-🇸🇬SG_266
-      - US_2261
-      - Relay_🇺🇸US-🇺🇸US_2781
-      - US_1348
-      - LT_931
-      - ZZ_3031
-      - ZZ_3295
-      - _US_美国_2_5@15
-      - Relay_🇬🇧GB-🇬🇧GB_686
-      - ZZ_2973
-      - ZZ_3018
-      - ZZ_3341
-      - ZZ_3021
-      - ZZ_3015
-      - ZZ_3370
-      - GB_621
-      - GB_632
-      - ZZ_3210
-      - Relay_🇷🇺RU-🇷🇺RU_1226
-      - Relay_🇸🇬SG-🇸🇬SG_1306
-      - Relay_🇦🇺AU-🇦🇺AU_63
-      - Relay_🇺🇸US-🇺🇸US_2806
-      - Relay_🇺🇸US-🇺🇸US_2805
-      - ZZ_2839
-      - Relay_🇨🇳CN-🇹🇼TW_269
-      - Relay_🇯🇵JP-🇯🇵JP_738
-      - CA_145
-      - RU_1252
-      - Relay_🇦🇺AU-🇦🇺AU_65
-      - ZZ_3249
-      - _US_美国->🇷🇺_RU_俄罗斯联邦_1@31
-      - ZZ_3188
+      - 欧洲(欢迎订阅Youtube破解资源君) 29
+      - 欧洲(欢迎订阅Youtube破解资源君) 21
+      - 美国(欢迎订阅Youtube破解资源君) 22
+      - 美国-4.57MB/s(Youtube:不良林)
+      - 欧洲(欢迎订阅Youtube破解资源君) 27
+      - 美国-4.38MB/s(Youtube:不良林)
+      - 欧洲(欢迎订阅Youtube破解资源君) 6
+      - 欧洲(欢迎订阅Youtube破解资源君) 25
+      - 欧洲(欢迎订阅Youtube破解资源君) 24
+      - 印度-394.9KB/s(Youtube:不良林)
+      - 日本-18.38MB/s(Youtube:不良林)
+      - 美国(欢迎订阅Youtube破解资源君) 23
+      - 欧洲(欢迎订阅Youtube破解资源君) 26
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
