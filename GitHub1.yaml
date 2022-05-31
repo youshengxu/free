@@ -5,111 +5,599 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: _CN_中国->🇸🇬_SG_新加坡_1_7@11, server: 116.129.254.47, port: 3389, type: trojan, password: e37c6d7efa845d60, skip-cert-verify: true, udp: true}
-  - {name: _CN_中国->🇸🇬_SG_新加坡_2_7@12, server: 116.129.254.29, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
-  - {name: _CN_中国->🇸🇬_SG_新加坡_3_7@13, server: 116.129.253.130, port: 3389, type: trojan, password: f6f2072a2e4cfc91, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇳CN-🇹🇼TW_265, server: 116.129.254.29, port: 3389, type: trojan, password: e37c6d7efa845d60, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇳CN-🇹🇼TW_274, server: 116.129.254.47, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇳CN-🇹🇼TW_264, server: 116.129.253.130, port: 3389, type: trojan, password: e37c6d7efa845d60, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇳CN-🇹🇼TW_272, server: 116.129.254.47, port: 3389, type: trojan, password: c3c448da2363a6f7, skip-cert-verify: true, udp: true}
-  - {name: github.com/freefq - 瑞典  11, server: au2-1.nigirocloud.com, port: 443, type: trojan, password: 3yFq7NCP53mVfpXJz3, sni: au2-1.nigirocloud.com, skip-cert-verify: true, udp: true}
-  - {name: CN_206, server: 14.29.124.168, port: 25279, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: github.com/freefq - 瑞典  46, server: au2-3.nigirocloud.com, port: 443, type: trojan, password: 3yFq7NCP53mVfpXJz3, sni: au2-3.nigirocloud.com, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_1312, server: us-am32-5.eqnode.net, port: 8081, type: ssr, cipher: aes-256-cfb, password: YFVrXZgRo, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
-  - {name: CN_228, server: 14.29.124.168, port: 25256, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_250, server: 14.29.124.168, port: 25217, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_1343, server: fhcamd2.gaox.ml, port: 443, type: trojan, password: dbf9bf9c-2c3f-474a-8031-d4c00666a989, sni: fhcamd2.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: SG_1001, server: 129.226.94.145, port: 51848, type: vmess, uuid: ad4757f1-e28c-47b8-970c-51b232c653d8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇳CN-🇹🇼TW_270, server: 116.129.254.29, port: 3389, type: trojan, password: f6f2072a2e4cfc91, skip-cert-verify: true, udp: true}
-  - {name: CN_3_12@2, server: 14.29.124.168, port: 25241, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_4_12@3, server: 14.29.124.168, port: 25283, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_203, server: 14.29.124.168, port: 25259, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: Relay_🏁ZZ-🇹🇼TW_1560, server: 5.44.249.43, port: 3389, type: trojan, password: cd39f62aed7b90f6, skip-cert-verify: true, udp: true}
-  - {name: Istanbul - Turkey | Media | 1.5x, server: azhk.102498.eu.org, port: 23941, type: vmess, uuid: 427bcba3-b7d4-3d6d-b334-8b684fa57d72, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /helloworld, ws-headers: {Host: ist-tur.jinxnet.xyz}, udp: true}
-  - {name: CN_2_12@1, server: 14.29.124.168, port: 25235, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _JP_日本_1_0@0, server: v2-1.godlight.xyz, port: 250, type: vmess, uuid: 719d4cec-82a8-4a65-ad01-32cf08f2c988, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /j75g1461x, ws-headers: {Host: v2-1.godlight.xyz}, udp: true}
+  - {name: "", server: 20.222.106.239, port: 80, type: vmess, uuid: 5f405152-88b2-4e5e-9091-b730e65e8983, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 20.222.106.239}, udp: true}
+  - {name: taiwan13-1g.4cloud.click:443, server: taiwan13-1g.4cloud.click, port: 443, type: trojan, password: P9azqCxQMAaZcT7F, sni: taiwan13-1g.4cloud.click, skip-cert-verify: true, udp: true}
+  - {name: _JP_日本_2_0@1, server: ocrb1.moonfree.top, port: 443, type: vmess, uuid: 6e9eeae6-c3d1-439e-9f7a-213fe09b2dbe, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: ocrb1.moonfree.top}, udp: true}
+  - {name: Relay_🇨🇳CN-🇹🇼TW_262, server: 116.129.254.47, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇨🇳CN-🇹🇼TW_266, server: 116.129.254.47, port: 3389, type: trojan, password: c3c448da2363a6f7, skip-cert-verify: true, udp: true}
+  - {name: _CN_中国->🇸🇬_SG_新加坡_1_16@11, server: 116.129.254.47, port: 3389, type: trojan, password: e37c6d7efa845d60, skip-cert-verify: true, udp: true}
+  - {name: 116.129.253.130:3389, server: 116.129.253.130, port: 3389, type: trojan, password: f6f2072a2e4cfc91, skip-cert-verify: true, udp: true}
+  - {name: _KR_韩国_0@7, server: v2-5.godlight.xyz, port: 250, type: vmess, uuid: 767e55a4-43fa-4301-a9c2-ad30eaa9f61a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /71h4b3s1f53, ws-headers: {Host: v2-5.godlight.xyz}, udp: true}
+  - {name: _RU_俄罗斯联邦_1_3@8, server: 213.183.53.177, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH, udp: true}
+  - {name: " 2", server: 20.243.71.225, port: 80, type: vmess, uuid: 5f405152-88b2-4e5e-9091-b730e65e8983, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 20.243.71.225}, udp: true}
+  - {name: jgw2.gaox.ml:443, server: jgw2.gaox.ml, port: 443, type: trojan, password: f2117e99-9b6e-47fd-b0a9-634a0b15b998, sni: jgw2.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇦🇺AU-🇦🇺AU_98, server: tx49sg.fans8.xyz, port: 443, type: trojan, password: c6799a1d-4a74-4683-919f-98b0a5046591, sni: tx49sg.fans8.xyz, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_1298, server: u4.anmu.one, port: 16199, type: vmess, uuid: 07ec59da-18ad-4224-8ad9-c5a66b1447a9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: default_name_6_2@8, server: u4.anmu.one, port: 16199, type: vmess, uuid: 07ec59da-18ad-4224-8ad9-c5a66b1447a9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: _RU_俄罗斯联邦_5_3@12, server: 213.183.53.177, port: 9010, type: ss, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4, udp: true}
+  - {name: LT_625, server: 213.183.53.200, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
+  - {name: LT_577, server: 213.183.53.179, port: 9005, type: ss, cipher: aes-256-cfb, password: ZET59LF6DvCC8KVt, udp: true}
+  - {name: default_name_7_2@9, server: u4.anmu.one, port: 16166, type: vmess, uuid: 8228550e-7f53-4809-8cb1-5f9420380d13, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: LT_637, server: 213.183.53.200, port: 9084, type: ss, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj, udp: true}
+  - {name: 213.183.53.179:9019, server: 213.183.53.179, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
+  - {name: LT_639, server: 213.183.53.200, port: 9026, type: ss, cipher: aes-256-cfb, password: QWDDvVE9npNurQfA, udp: true}
+  - {name: LT_635, server: 213.183.53.200, port: 9059, type: ss, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY, udp: true}
+  - {name: 213.183.53.179:9045, server: 213.183.53.179, port: 9045, type: ss, cipher: aes-256-cfb, password: Lp27rqyJq72bZsqX, udp: true}
+  - {name: 169.197.142.39:8091, server: 169.197.142.39, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: LT_656, server: 213.183.53.200, port: 9027, type: ss, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8, udp: true}
+  - {name: 169.197.142.39:3306, server: 169.197.142.39, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: LT_587, server: 213.183.53.200, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
+  - {name: 169.197.142.39:6679, server: 169.197.142.39, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: _RU_俄罗斯联邦_2_16@32, server: 213.183.53.177, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
+  - {name: LT_650, server: 213.183.53.200, port: 9005, type: ss, cipher: aes-256-cfb, password: ZET59LF6DvCC8KVt, udp: true}
+  - {name: LT_651, server: 213.183.53.200, port: 9098, type: ss, cipher: aes-256-cfb, password: aLpQtfEZe445QyHk, udp: true}
+  - {name: LT_657, server: 213.183.53.200, port: 9050, type: ss, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE, udp: true}
+  - {name: 169.197.142.39:5003, server: 169.197.142.39, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: 169.197.142.39:8888, server: 169.197.142.39, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 169.197.142.39:7002, server: 169.197.142.39, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: 169.197.142.39:8118, server: 169.197.142.39, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: 169.197.142.39:5004, server: 169.197.142.39, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: 169.197.142.39:6697, server: 169.197.142.39, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: 169.197.142.39:443, server: 169.197.142.39, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: LT_671, server: 213.183.53.200, port: 9053, type: ss, cipher: aes-256-cfb, password: SBM7R883jBmnqe6C, udp: true}
+  - {name: LT_665, server: 213.183.53.200, port: 9041, type: ss, cipher: aes-256-cfb, password: U6qnYRhfyDmn8sgn, udp: true}
+  - {name: 169.197.142.39:9102, server: 169.197.142.39, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: LT_658, server: 213.183.53.200, port: 9003, type: ss, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP, udp: true}
+  - {name: 169.197.142.39:8119, server: 169.197.142.39, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: LT_624, server: 213.183.53.200, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
+  - {name: 169.197.142.39:5500, server: 169.197.142.39, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: 169.197.142.39:8882, server: 169.197.142.39, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: 169.197.142.39:8881, server: 169.197.142.39, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: 213.183.53.200:9025, server: 213.183.53.200, port: 9025, type: ss, cipher: aes-256-cfb, password: XPtzA9sCug3SPR4c, udp: true}
+  - {name: NL_741, server: 213.183.59.185, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU, udp: true}
+  - {name: _US_美国_65_0@68, server: 38.68.134.71, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: NL_707, server: 213.183.59.185, port: 9025, type: ss, cipher: aes-256-cfb, password: XPtzA9sCug3SPR4c, udp: true}
+  - {name: LT_678, server: 213.183.53.200, port: 9010, type: ss, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4, udp: true}
+  - {name: LT_533, server: 213.183.53.179, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
+  - {name: LT_677, server: 213.183.53.200, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
+  - {name: 38.68.134.71:8009, server: 38.68.134.71, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: _US_美国_41_0@44, server: 38.68.134.71, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 38.68.135.19:7306, server: 38.68.135.19, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: 38.68.134.71:8881, server: 38.68.134.71, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: LT_646, server: 213.183.53.200, port: 9008, type: ss, cipher: aes-256-cfb, password: y9VURyNzJWNRYEGQ, udp: true}
+  - {name: 38.68.134.71:8119, server: 38.68.134.71, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: _US_美国_62_0@65, server: 38.68.134.71, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: 38.68.135.19:7002, server: 38.68.135.19, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: LT_674, server: 213.183.53.200, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa, udp: true}
+  - {name: 38.68.134.71:2376, server: 38.68.134.71, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: _US_美国_55_0@58, server: 38.68.135.19, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: LT_628, server: 213.183.53.200, port: 9006, type: ss, cipher: aes-256-cfb, password: FAdUvMJUq5vDgKEq, udp: true}
+  - {name: _US_美国_26_0@29, server: 38.68.135.19, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: LT_626, server: 213.183.53.200, port: 9045, type: ss, cipher: aes-256-cfb, password: Lp27rqyJq72bZsqX, udp: true}
+  - {name: 213.183.53.179:9038, server: 213.183.53.179, port: 9038, type: ss, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ, udp: true}
+  - {name: 38.68.135.19:3389, server: 38.68.135.19, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 38.68.135.19:5004, server: 38.68.135.19, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: LT_664, server: 213.183.53.200, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
+  - {name: 38.68.135.19:8118, server: 38.68.135.19, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: Relay_🇨🇳CN-🇺🇸US_251, server: gzzv.v2ssyhub.xyz, port: 62106, type: vmess, uuid: a74bb667-e0f9-427b-8145-e42da3ec4be7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 38.68.135.19:6379, server: 38.68.135.19, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: 38.68.135.19:9102, server: 38.68.135.19, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: 38.68.135.19:5003, server: 38.68.135.19, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: 38.68.135.19:5500, server: 38.68.135.19, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: _RU_俄罗斯联邦_2_3@9, server: 213.183.53.177, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga, udp: true}
+  - {name: LT_659, server: 213.183.53.200, port: 9033, type: ss, cipher: aes-256-cfb, password: UTJA57ypk2XKQpnm, udp: true}
+  - {name: ZZ_1510, server: 134.195.196.128, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: NL_747, server: 213.183.59.218, port: 9073, type: ss, cipher: aes-256-cfb, password: daFYagqDdBdA6VTX, udp: true}
+  - {name: LT_672, server: 213.183.53.200, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH, udp: true}
+  - {name: NL_689, server: 213.183.59.218, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH, udp: true}
+  - {name: NL_693, server: 213.183.59.218, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
+  - {name: NL_697, server: 213.183.59.218, port: 9006, type: ss, cipher: aes-256-cfb, password: FAdUvMJUq5vDgKEq, udp: true}
+  - {name: NL_727, server: 213.183.59.185, port: 9024, type: ss, cipher: aes-256-cfb, password: BejrQvtu9sqUeNuZ, udp: true}
+  - {name: LT_667, server: 213.183.53.200, port: 9097, type: ss, cipher: aes-256-cfb, password: Sn5B7jTqr76aCJT8, udp: true}
+  - {name: SG_929, server: 129.226.215.211, port: 49981, type: vmess, uuid: 876631b4-3f5c-4289-f266-3c7afa5b9e70, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: NL_754, server: 213.183.59.218, port: 9043, type: ss, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF, udp: true}
+  - {name: LT_683, server: 213.183.53.200, port: 9015, type: ss, cipher: aes-256-cfb, password: ZpNDDKRu9MagNvaf, udp: true}
+  - {name: LT_641, server: 213.183.53.177, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH, udp: true}
+  - {name: LT_682, server: 213.183.53.200, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX, udp: true}
+  - {name: US_1097, server: 172.99.188.71, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: 213.183.51.172:9026, server: 213.183.51.172, port: 9026, type: ss, cipher: aes-256-cfb, password: QWDDvVE9npNurQfA, udp: true}
+  - {name: NL_712, server: 213.183.59.185, port: 9046, type: ss, cipher: aes-256-cfb, password: NvS8N4Vf8qAGPSCL, udp: true}
+  - {name: NL_688, server: 213.183.59.218, port: 9053, type: ss, cipher: aes-256-cfb, password: SBM7R883jBmnqe6C, udp: true}
+  - {name: US_1098, server: 172.99.188.71, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: NL_720, server: 213.183.51.172, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH, udp: true}
+  - {name: 213.183.53.200:9010, server: 213.183.53.200, port: 9010, type: ss, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4, udp: true}
+  - {name: NL_700, server: 213.183.59.185, port: 9098, type: ss, cipher: aes-256-cfb, password: aLpQtfEZe445QyHk, udp: true}
+  - {name: LT_681, server: 213.183.53.200, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH, udp: true}
+  - {name: _AU_澳大利亚_14@12, server: jgwxn3.gaox.ml, port: 443, type: trojan, password: cb43b7c2-b744-41c5-bcc2-fd7467b332cf, sni: jgwxn3.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: 213.183.53.200:9038, server: 213.183.53.200, port: 9038, type: ss, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ, udp: true}
+  - {name: NL_699, server: 213.183.59.185, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH, udp: true}
+  - {name: SG_963, server: 129.226.94.247, port: 15301, type: vmess, uuid: 16844453-6154-4808-bdda-a26741ebe677, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: SG_1005, server: 129.226.94.247, port: 15301, type: vmess, uuid: 16844453-6154-4808-bdda-a26741ebe677, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: SG_940, server: 129.226.216.121, port: 49381, type: vmess, uuid: 2f6d0f82-80c4-42ed-fd46-c76e7cc81de0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US_1054, server: 5.181.234.254, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: NL_718, server: 213.183.51.172, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
+  - {name: AU_83, server: 185.167.116.24, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
+  - {name: 0319tw05.fans8.xyz:443, server: 0319tw05.fans8.xyz, port: 443, type: trojan, password: c6799a1d-4a74-4683-919f-98b0a5046591, sni: 0319tw05.fans8.xyz, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇭🇰HK-🇺🇸US_467, server: hk01.bosaidong.buzz, port: 80, type: vmess, uuid: 2adef817-ff89-4d0c-8782-694ba4e8d899, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hk01.bosaidong.buzz}, udp: true}
+  - {name: default_name_5_2@6, server: v2ray3.bonds.id, port: 443, type: vmess, uuid: 014291fb-3808-4ae8-9303-e1f40d58bb4f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /howdy, ws-headers: {Host: v2ray3.bonds.id}, udp: true}
+  - {name: US_44_22@43, server: 34.215.130.186, port: 10089, type: vmess, uuid: 3608c9dc-1eeb-48b0-b570-43074b4a0c9e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 34.215.130.186}, udp: true}
+  - {name: AU_72, server: 185.167.116.38, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
+  - {name: LT_531, server: 213.183.53.207, port: 9007, type: ss, cipher: aes-256-cfb, password: kSPmvwdFzGMMW5pY, udp: true}
+  - {name: LT_679, server: 213.183.53.202, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH, udp: true}
+  - {name: SG_973, server: 129.226.95.143, port: 45381, type: vmess, uuid: cd2a260c-f244-4e12-83c3-8a259cf29fc6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: LT_675, server: 213.183.53.200, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU, udp: true}
+  - {name: NL_725, server: 213.183.51.172, port: 9027, type: ss, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8, udp: true}
+  - {name: 85.208.108.58:8080, server: 85.208.108.58, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: LT_557, server: 213.183.53.202, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga, udp: true}
+  - {name: LT_558, server: 213.183.53.207, port: 9001, type: ss, cipher: aes-256-cfb, password: UkXRsXvR6buDMG2Y, udp: true}
+  - {name: 213.183.51.172:9000, server: 213.183.51.172, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
+  - {name: 213.183.53.200:9084, server: 213.183.53.200, port: 9084, type: ss, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj, udp: true}
+  - {name: LT_559, server: 213.183.53.207, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
+  - {name: NL_708, server: 213.183.51.172, port: 9073, type: ss, cipher: aes-256-cfb, password: daFYagqDdBdA6VTX, udp: true}
+  - {name: Relay_🇦🇺AU-🇦🇺AU_101, server: neteasy.ga, port: 28931, type: trojan, password: MnROfwtPYa, sni: neteasy.ga, skip-cert-verify: true, udp: true}
+  - {name: " 3", server: 20.243.69.62, port: 80, type: vmess, uuid: 5f405152-88b2-4e5e-9091-b730e65e8983, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 20.243.69.62}, udp: true}
+  - {name: SG_1007, server: 129.226.215.95, port: 43613, type: vmess, uuid: 9e1be3ad-911d-4dcc-822f-f8f8e79f62e2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: LT_538, server: 213.183.53.207, port: 9008, type: ss, cipher: aes-256-cfb, password: y9VURyNzJWNRYEGQ, udp: true}
+  - {name: 217.138.193.6:809, server: 217.138.193.6, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: 217.138.193.6:812, server: 217.138.193.6, port: 812, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: 213.183.53.200:9098, server: 213.183.53.200, port: 9098, type: ss, cipher: aes-256-cfb, password: aLpQtfEZe445QyHk, udp: true}
+  - {name: Relay_🇦🇺AU-🇦🇺AU_100, server: jgwxn2.gaox.ml, port: 443, type: trojan, password: c2b60d6a-a2f5-40ff-b7f9-f7658abcbf26, sni: jgwxn2.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: LT_580, server: 213.183.53.202, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
+  - {name: LT_670, server: 213.183.53.200, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
+  - {name: 217.138.193.6:803, server: 217.138.193.6, port: 803, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: SG_1017, server: 129.226.216.124, port: 14728, type: vmess, uuid: eea3d090-e068-4b74-8039-91fd79218d1a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: LT_566, server: 213.183.53.202, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa, udp: true}
+  - {name: LT_689, server: 213.183.53.202, port: 9033, type: ss, cipher: aes-256-cfb, password: UTJA57ypk2XKQpnm, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _CN_中国->🇸🇬_SG_新加坡_1_7@11
-      - _CN_中国->🇸🇬_SG_新加坡_2_7@12
-      - _CN_中国->🇸🇬_SG_新加坡_3_7@13
-      - Relay_🇨🇳CN-🇹🇼TW_265
-      - Relay_🇨🇳CN-🇹🇼TW_274
-      - Relay_🇨🇳CN-🇹🇼TW_264
-      - Relay_🇨🇳CN-🇹🇼TW_272
-      - github.com/freefq - 瑞典  11
-      - CN_206
-      - github.com/freefq - 瑞典  46
-      - Relay_🇺🇸US-🇺🇸US_1312
-      - CN_228
-      - CN_250
-      - Relay_🇺🇸US-🇺🇸US_1343
-      - SG_1001
-      - Relay_🇨🇳CN-🇹🇼TW_270
-      - CN_3_12@2
-      - CN_4_12@3
-      - CN_203
-      - Relay_🏁ZZ-🇹🇼TW_1560
-      - Istanbul - Turkey | Media | 1.5x
-      - CN_2_12@1
+      - _JP_日本_1_0@0
+      - ""
+      - taiwan13-1g.4cloud.click:443
+      - _JP_日本_2_0@1
+      - Relay_🇨🇳CN-🇹🇼TW_262
+      - Relay_🇨🇳CN-🇹🇼TW_266
+      - _CN_中国->🇸🇬_SG_新加坡_1_16@11
+      - 116.129.253.130:3389
+      - _KR_韩国_0@7
+      - _RU_俄罗斯联邦_1_3@8
+      - " 2"
+      - jgw2.gaox.ml:443
+      - Relay_🇦🇺AU-🇦🇺AU_98
+      - Relay_🇺🇸US-🇺🇸US_1298
+      - default_name_6_2@8
+      - _RU_俄罗斯联邦_5_3@12
+      - LT_625
+      - LT_577
+      - default_name_7_2@9
+      - LT_637
+      - 213.183.53.179:9019
+      - LT_639
+      - LT_635
+      - 213.183.53.179:9045
+      - 169.197.142.39:8091
+      - LT_656
+      - 169.197.142.39:3306
+      - LT_587
+      - 169.197.142.39:6679
+      - _RU_俄罗斯联邦_2_16@32
+      - LT_650
+      - LT_651
+      - LT_657
+      - 169.197.142.39:5003
+      - 169.197.142.39:8888
+      - 169.197.142.39:7002
+      - 169.197.142.39:8118
+      - 169.197.142.39:5004
+      - 169.197.142.39:6697
+      - 169.197.142.39:443
+      - LT_671
+      - LT_665
+      - 169.197.142.39:9102
+      - LT_658
+      - 169.197.142.39:8119
+      - LT_624
+      - 169.197.142.39:5500
+      - 169.197.142.39:8882
+      - 169.197.142.39:8881
+      - 213.183.53.200:9025
+      - NL_741
+      - _US_美国_65_0@68
+      - NL_707
+      - LT_678
+      - LT_533
+      - LT_677
+      - 38.68.134.71:8009
+      - _US_美国_41_0@44
+      - 38.68.135.19:7306
+      - 38.68.134.71:8881
+      - LT_646
+      - 38.68.134.71:8119
+      - _US_美国_62_0@65
+      - 38.68.135.19:7002
+      - LT_674
+      - 38.68.134.71:2376
+      - _US_美国_55_0@58
+      - LT_628
+      - _US_美国_26_0@29
+      - LT_626
+      - 213.183.53.179:9038
+      - 38.68.135.19:3389
+      - 38.68.135.19:5004
+      - LT_664
+      - 38.68.135.19:8118
+      - Relay_🇨🇳CN-🇺🇸US_251
+      - 38.68.135.19:6379
+      - 38.68.135.19:9102
+      - 38.68.135.19:5003
+      - 38.68.135.19:5500
+      - _RU_俄罗斯联邦_2_3@9
+      - LT_659
+      - ZZ_1510
+      - NL_747
+      - LT_672
+      - NL_689
+      - NL_693
+      - NL_697
+      - NL_727
+      - LT_667
+      - SG_929
+      - NL_754
+      - LT_683
+      - LT_641
+      - LT_682
+      - US_1097
+      - 213.183.51.172:9026
+      - NL_712
+      - NL_688
+      - US_1098
+      - NL_720
+      - 213.183.53.200:9010
+      - NL_700
+      - LT_681
+      - _AU_澳大利亚_14@12
+      - 213.183.53.200:9038
+      - NL_699
+      - SG_963
+      - SG_1005
+      - SG_940
+      - US_1054
+      - NL_718
+      - AU_83
+      - 0319tw05.fans8.xyz:443
+      - Relay_🇭🇰HK-🇺🇸US_467
+      - default_name_5_2@6
+      - US_44_22@43
+      - AU_72
+      - LT_531
+      - LT_679
+      - SG_973
+      - LT_675
+      - NL_725
+      - 85.208.108.58:8080
+      - LT_557
+      - LT_558
+      - 213.183.51.172:9000
+      - 213.183.53.200:9084
+      - LT_559
+      - NL_708
+      - Relay_🇦🇺AU-🇦🇺AU_101
+      - " 3"
+      - SG_1007
+      - LT_538
+      - 217.138.193.6:809
+      - 217.138.193.6:812
+      - 213.183.53.200:9098
+      - Relay_🇦🇺AU-🇦🇺AU_100
+      - LT_580
+      - LT_670
+      - 217.138.193.6:803
+      - SG_1017
+      - LT_566
+      - LT_689
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - _CN_中国->🇸🇬_SG_新加坡_1_7@11
-      - _CN_中国->🇸🇬_SG_新加坡_2_7@12
-      - _CN_中国->🇸🇬_SG_新加坡_3_7@13
-      - Relay_🇨🇳CN-🇹🇼TW_265
-      - Relay_🇨🇳CN-🇹🇼TW_274
-      - Relay_🇨🇳CN-🇹🇼TW_264
-      - Relay_🇨🇳CN-🇹🇼TW_272
-      - github.com/freefq - 瑞典  11
-      - CN_206
-      - github.com/freefq - 瑞典  46
-      - Relay_🇺🇸US-🇺🇸US_1312
-      - CN_228
-      - CN_250
-      - Relay_🇺🇸US-🇺🇸US_1343
-      - SG_1001
-      - Relay_🇨🇳CN-🇹🇼TW_270
-      - CN_3_12@2
-      - CN_4_12@3
-      - CN_203
-      - Relay_🏁ZZ-🇹🇼TW_1560
-      - Istanbul - Turkey | Media | 1.5x
-      - CN_2_12@1
+      - _JP_日本_1_0@0
+      - ""
+      - taiwan13-1g.4cloud.click:443
+      - _JP_日本_2_0@1
+      - Relay_🇨🇳CN-🇹🇼TW_262
+      - Relay_🇨🇳CN-🇹🇼TW_266
+      - _CN_中国->🇸🇬_SG_新加坡_1_16@11
+      - 116.129.253.130:3389
+      - _KR_韩国_0@7
+      - _RU_俄罗斯联邦_1_3@8
+      - " 2"
+      - jgw2.gaox.ml:443
+      - Relay_🇦🇺AU-🇦🇺AU_98
+      - Relay_🇺🇸US-🇺🇸US_1298
+      - default_name_6_2@8
+      - _RU_俄罗斯联邦_5_3@12
+      - LT_625
+      - LT_577
+      - default_name_7_2@9
+      - LT_637
+      - 213.183.53.179:9019
+      - LT_639
+      - LT_635
+      - 213.183.53.179:9045
+      - 169.197.142.39:8091
+      - LT_656
+      - 169.197.142.39:3306
+      - LT_587
+      - 169.197.142.39:6679
+      - _RU_俄罗斯联邦_2_16@32
+      - LT_650
+      - LT_651
+      - LT_657
+      - 169.197.142.39:5003
+      - 169.197.142.39:8888
+      - 169.197.142.39:7002
+      - 169.197.142.39:8118
+      - 169.197.142.39:5004
+      - 169.197.142.39:6697
+      - 169.197.142.39:443
+      - LT_671
+      - LT_665
+      - 169.197.142.39:9102
+      - LT_658
+      - 169.197.142.39:8119
+      - LT_624
+      - 169.197.142.39:5500
+      - 169.197.142.39:8882
+      - 169.197.142.39:8881
+      - 213.183.53.200:9025
+      - NL_741
+      - _US_美国_65_0@68
+      - NL_707
+      - LT_678
+      - LT_533
+      - LT_677
+      - 38.68.134.71:8009
+      - _US_美国_41_0@44
+      - 38.68.135.19:7306
+      - 38.68.134.71:8881
+      - LT_646
+      - 38.68.134.71:8119
+      - _US_美国_62_0@65
+      - 38.68.135.19:7002
+      - LT_674
+      - 38.68.134.71:2376
+      - _US_美国_55_0@58
+      - LT_628
+      - _US_美国_26_0@29
+      - LT_626
+      - 213.183.53.179:9038
+      - 38.68.135.19:3389
+      - 38.68.135.19:5004
+      - LT_664
+      - 38.68.135.19:8118
+      - Relay_🇨🇳CN-🇺🇸US_251
+      - 38.68.135.19:6379
+      - 38.68.135.19:9102
+      - 38.68.135.19:5003
+      - 38.68.135.19:5500
+      - _RU_俄罗斯联邦_2_3@9
+      - LT_659
+      - ZZ_1510
+      - NL_747
+      - LT_672
+      - NL_689
+      - NL_693
+      - NL_697
+      - NL_727
+      - LT_667
+      - SG_929
+      - NL_754
+      - LT_683
+      - LT_641
+      - LT_682
+      - US_1097
+      - 213.183.51.172:9026
+      - NL_712
+      - NL_688
+      - US_1098
+      - NL_720
+      - 213.183.53.200:9010
+      - NL_700
+      - LT_681
+      - _AU_澳大利亚_14@12
+      - 213.183.53.200:9038
+      - NL_699
+      - SG_963
+      - SG_1005
+      - SG_940
+      - US_1054
+      - NL_718
+      - AU_83
+      - 0319tw05.fans8.xyz:443
+      - Relay_🇭🇰HK-🇺🇸US_467
+      - default_name_5_2@6
+      - US_44_22@43
+      - AU_72
+      - LT_531
+      - LT_679
+      - SG_973
+      - LT_675
+      - NL_725
+      - 85.208.108.58:8080
+      - LT_557
+      - LT_558
+      - 213.183.51.172:9000
+      - 213.183.53.200:9084
+      - LT_559
+      - NL_708
+      - Relay_🇦🇺AU-🇦🇺AU_101
+      - " 3"
+      - SG_1007
+      - LT_538
+      - 217.138.193.6:809
+      - 217.138.193.6:812
+      - 213.183.53.200:9098
+      - Relay_🇦🇺AU-🇦🇺AU_100
+      - LT_580
+      - LT_670
+      - 217.138.193.6:803
+      - SG_1017
+      - LT_566
+      - LT_689
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _CN_中国->🇸🇬_SG_新加坡_1_7@11
-      - _CN_中国->🇸🇬_SG_新加坡_2_7@12
-      - _CN_中国->🇸🇬_SG_新加坡_3_7@13
-      - Relay_🇨🇳CN-🇹🇼TW_265
-      - Relay_🇨🇳CN-🇹🇼TW_274
-      - Relay_🇨🇳CN-🇹🇼TW_264
-      - Relay_🇨🇳CN-🇹🇼TW_272
-      - github.com/freefq - 瑞典  11
-      - CN_206
-      - github.com/freefq - 瑞典  46
-      - Relay_🇺🇸US-🇺🇸US_1312
-      - CN_228
-      - CN_250
-      - Relay_🇺🇸US-🇺🇸US_1343
-      - SG_1001
-      - Relay_🇨🇳CN-🇹🇼TW_270
-      - CN_3_12@2
-      - CN_4_12@3
-      - CN_203
-      - Relay_🏁ZZ-🇹🇼TW_1560
-      - Istanbul - Turkey | Media | 1.5x
-      - CN_2_12@1
+      - _JP_日本_1_0@0
+      - ""
+      - taiwan13-1g.4cloud.click:443
+      - _JP_日本_2_0@1
+      - Relay_🇨🇳CN-🇹🇼TW_262
+      - Relay_🇨🇳CN-🇹🇼TW_266
+      - _CN_中国->🇸🇬_SG_新加坡_1_16@11
+      - 116.129.253.130:3389
+      - _KR_韩国_0@7
+      - _RU_俄罗斯联邦_1_3@8
+      - " 2"
+      - jgw2.gaox.ml:443
+      - Relay_🇦🇺AU-🇦🇺AU_98
+      - Relay_🇺🇸US-🇺🇸US_1298
+      - default_name_6_2@8
+      - _RU_俄罗斯联邦_5_3@12
+      - LT_625
+      - LT_577
+      - default_name_7_2@9
+      - LT_637
+      - 213.183.53.179:9019
+      - LT_639
+      - LT_635
+      - 213.183.53.179:9045
+      - 169.197.142.39:8091
+      - LT_656
+      - 169.197.142.39:3306
+      - LT_587
+      - 169.197.142.39:6679
+      - _RU_俄罗斯联邦_2_16@32
+      - LT_650
+      - LT_651
+      - LT_657
+      - 169.197.142.39:5003
+      - 169.197.142.39:8888
+      - 169.197.142.39:7002
+      - 169.197.142.39:8118
+      - 169.197.142.39:5004
+      - 169.197.142.39:6697
+      - 169.197.142.39:443
+      - LT_671
+      - LT_665
+      - 169.197.142.39:9102
+      - LT_658
+      - 169.197.142.39:8119
+      - LT_624
+      - 169.197.142.39:5500
+      - 169.197.142.39:8882
+      - 169.197.142.39:8881
+      - 213.183.53.200:9025
+      - NL_741
+      - _US_美国_65_0@68
+      - NL_707
+      - LT_678
+      - LT_533
+      - LT_677
+      - 38.68.134.71:8009
+      - _US_美国_41_0@44
+      - 38.68.135.19:7306
+      - 38.68.134.71:8881
+      - LT_646
+      - 38.68.134.71:8119
+      - _US_美国_62_0@65
+      - 38.68.135.19:7002
+      - LT_674
+      - 38.68.134.71:2376
+      - _US_美国_55_0@58
+      - LT_628
+      - _US_美国_26_0@29
+      - LT_626
+      - 213.183.53.179:9038
+      - 38.68.135.19:3389
+      - 38.68.135.19:5004
+      - LT_664
+      - 38.68.135.19:8118
+      - Relay_🇨🇳CN-🇺🇸US_251
+      - 38.68.135.19:6379
+      - 38.68.135.19:9102
+      - 38.68.135.19:5003
+      - 38.68.135.19:5500
+      - _RU_俄罗斯联邦_2_3@9
+      - LT_659
+      - ZZ_1510
+      - NL_747
+      - LT_672
+      - NL_689
+      - NL_693
+      - NL_697
+      - NL_727
+      - LT_667
+      - SG_929
+      - NL_754
+      - LT_683
+      - LT_641
+      - LT_682
+      - US_1097
+      - 213.183.51.172:9026
+      - NL_712
+      - NL_688
+      - US_1098
+      - NL_720
+      - 213.183.53.200:9010
+      - NL_700
+      - LT_681
+      - _AU_澳大利亚_14@12
+      - 213.183.53.200:9038
+      - NL_699
+      - SG_963
+      - SG_1005
+      - SG_940
+      - US_1054
+      - NL_718
+      - AU_83
+      - 0319tw05.fans8.xyz:443
+      - Relay_🇭🇰HK-🇺🇸US_467
+      - default_name_5_2@6
+      - US_44_22@43
+      - AU_72
+      - LT_531
+      - LT_679
+      - SG_973
+      - LT_675
+      - NL_725
+      - 85.208.108.58:8080
+      - LT_557
+      - LT_558
+      - 213.183.51.172:9000
+      - 213.183.53.200:9084
+      - LT_559
+      - NL_708
+      - Relay_🇦🇺AU-🇦🇺AU_101
+      - " 3"
+      - SG_1007
+      - LT_538
+      - 217.138.193.6:809
+      - 217.138.193.6:812
+      - 213.183.53.200:9098
+      - Relay_🇦🇺AU-🇦🇺AU_100
+      - LT_580
+      - LT_670
+      - 217.138.193.6:803
+      - SG_1017
+      - LT_566
+      - LT_689
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -128,115 +616,604 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _CN_中国->🇸🇬_SG_新加坡_1_7@11
-      - _CN_中国->🇸🇬_SG_新加坡_2_7@12
-      - _CN_中国->🇸🇬_SG_新加坡_3_7@13
-      - Relay_🇨🇳CN-🇹🇼TW_265
-      - Relay_🇨🇳CN-🇹🇼TW_274
-      - Relay_🇨🇳CN-🇹🇼TW_264
-      - Relay_🇨🇳CN-🇹🇼TW_272
-      - github.com/freefq - 瑞典  11
-      - CN_206
-      - github.com/freefq - 瑞典  46
-      - Relay_🇺🇸US-🇺🇸US_1312
-      - CN_228
-      - CN_250
-      - Relay_🇺🇸US-🇺🇸US_1343
-      - SG_1001
-      - Relay_🇨🇳CN-🇹🇼TW_270
-      - CN_3_12@2
-      - CN_4_12@3
-      - CN_203
-      - Relay_🏁ZZ-🇹🇼TW_1560
-      - Istanbul - Turkey | Media | 1.5x
-      - CN_2_12@1
+      - _JP_日本_1_0@0
+      - ""
+      - taiwan13-1g.4cloud.click:443
+      - _JP_日本_2_0@1
+      - Relay_🇨🇳CN-🇹🇼TW_262
+      - Relay_🇨🇳CN-🇹🇼TW_266
+      - _CN_中国->🇸🇬_SG_新加坡_1_16@11
+      - 116.129.253.130:3389
+      - _KR_韩国_0@7
+      - _RU_俄罗斯联邦_1_3@8
+      - " 2"
+      - jgw2.gaox.ml:443
+      - Relay_🇦🇺AU-🇦🇺AU_98
+      - Relay_🇺🇸US-🇺🇸US_1298
+      - default_name_6_2@8
+      - _RU_俄罗斯联邦_5_3@12
+      - LT_625
+      - LT_577
+      - default_name_7_2@9
+      - LT_637
+      - 213.183.53.179:9019
+      - LT_639
+      - LT_635
+      - 213.183.53.179:9045
+      - 169.197.142.39:8091
+      - LT_656
+      - 169.197.142.39:3306
+      - LT_587
+      - 169.197.142.39:6679
+      - _RU_俄罗斯联邦_2_16@32
+      - LT_650
+      - LT_651
+      - LT_657
+      - 169.197.142.39:5003
+      - 169.197.142.39:8888
+      - 169.197.142.39:7002
+      - 169.197.142.39:8118
+      - 169.197.142.39:5004
+      - 169.197.142.39:6697
+      - 169.197.142.39:443
+      - LT_671
+      - LT_665
+      - 169.197.142.39:9102
+      - LT_658
+      - 169.197.142.39:8119
+      - LT_624
+      - 169.197.142.39:5500
+      - 169.197.142.39:8882
+      - 169.197.142.39:8881
+      - 213.183.53.200:9025
+      - NL_741
+      - _US_美国_65_0@68
+      - NL_707
+      - LT_678
+      - LT_533
+      - LT_677
+      - 38.68.134.71:8009
+      - _US_美国_41_0@44
+      - 38.68.135.19:7306
+      - 38.68.134.71:8881
+      - LT_646
+      - 38.68.134.71:8119
+      - _US_美国_62_0@65
+      - 38.68.135.19:7002
+      - LT_674
+      - 38.68.134.71:2376
+      - _US_美国_55_0@58
+      - LT_628
+      - _US_美国_26_0@29
+      - LT_626
+      - 213.183.53.179:9038
+      - 38.68.135.19:3389
+      - 38.68.135.19:5004
+      - LT_664
+      - 38.68.135.19:8118
+      - Relay_🇨🇳CN-🇺🇸US_251
+      - 38.68.135.19:6379
+      - 38.68.135.19:9102
+      - 38.68.135.19:5003
+      - 38.68.135.19:5500
+      - _RU_俄罗斯联邦_2_3@9
+      - LT_659
+      - ZZ_1510
+      - NL_747
+      - LT_672
+      - NL_689
+      - NL_693
+      - NL_697
+      - NL_727
+      - LT_667
+      - SG_929
+      - NL_754
+      - LT_683
+      - LT_641
+      - LT_682
+      - US_1097
+      - 213.183.51.172:9026
+      - NL_712
+      - NL_688
+      - US_1098
+      - NL_720
+      - 213.183.53.200:9010
+      - NL_700
+      - LT_681
+      - _AU_澳大利亚_14@12
+      - 213.183.53.200:9038
+      - NL_699
+      - SG_963
+      - SG_1005
+      - SG_940
+      - US_1054
+      - NL_718
+      - AU_83
+      - 0319tw05.fans8.xyz:443
+      - Relay_🇭🇰HK-🇺🇸US_467
+      - default_name_5_2@6
+      - US_44_22@43
+      - AU_72
+      - LT_531
+      - LT_679
+      - SG_973
+      - LT_675
+      - NL_725
+      - 85.208.108.58:8080
+      - LT_557
+      - LT_558
+      - 213.183.51.172:9000
+      - 213.183.53.200:9084
+      - LT_559
+      - NL_708
+      - Relay_🇦🇺AU-🇦🇺AU_101
+      - " 3"
+      - SG_1007
+      - LT_538
+      - 217.138.193.6:809
+      - 217.138.193.6:812
+      - 213.183.53.200:9098
+      - Relay_🇦🇺AU-🇦🇺AU_100
+      - LT_580
+      - LT_670
+      - 217.138.193.6:803
+      - SG_1017
+      - LT_566
+      - LT_689
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 0319tw05.fans8.xyz:443
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - _CN_中国->🇸🇬_SG_新加坡_1_7@11
-      - _CN_中国->🇸🇬_SG_新加坡_2_7@12
-      - _CN_中国->🇸🇬_SG_新加坡_3_7@13
-      - Relay_🇨🇳CN-🇹🇼TW_265
-      - Relay_🇨🇳CN-🇹🇼TW_274
-      - Relay_🇨🇳CN-🇹🇼TW_264
-      - Relay_🇨🇳CN-🇹🇼TW_272
-      - github.com/freefq - 瑞典  11
-      - CN_206
-      - github.com/freefq - 瑞典  46
-      - Relay_🇺🇸US-🇺🇸US_1312
-      - CN_228
-      - CN_250
-      - Relay_🇺🇸US-🇺🇸US_1343
-      - SG_1001
-      - Relay_🇨🇳CN-🇹🇼TW_270
-      - CN_3_12@2
-      - CN_4_12@3
-      - CN_203
-      - Relay_🏁ZZ-🇹🇼TW_1560
-      - Istanbul - Turkey | Media | 1.5x
-      - CN_2_12@1
+      - _JP_日本_1_0@0
+      - ""
+      - taiwan13-1g.4cloud.click:443
+      - _JP_日本_2_0@1
+      - Relay_🇨🇳CN-🇹🇼TW_262
+      - Relay_🇨🇳CN-🇹🇼TW_266
+      - _CN_中国->🇸🇬_SG_新加坡_1_16@11
+      - 116.129.253.130:3389
+      - _KR_韩国_0@7
+      - _RU_俄罗斯联邦_1_3@8
+      - " 2"
+      - jgw2.gaox.ml:443
+      - Relay_🇦🇺AU-🇦🇺AU_98
+      - Relay_🇺🇸US-🇺🇸US_1298
+      - default_name_6_2@8
+      - _RU_俄罗斯联邦_5_3@12
+      - LT_625
+      - LT_577
+      - default_name_7_2@9
+      - LT_637
+      - 213.183.53.179:9019
+      - LT_639
+      - LT_635
+      - 213.183.53.179:9045
+      - 169.197.142.39:8091
+      - LT_656
+      - 169.197.142.39:3306
+      - LT_587
+      - 169.197.142.39:6679
+      - _RU_俄罗斯联邦_2_16@32
+      - LT_650
+      - LT_651
+      - LT_657
+      - 169.197.142.39:5003
+      - 169.197.142.39:8888
+      - 169.197.142.39:7002
+      - 169.197.142.39:8118
+      - 169.197.142.39:5004
+      - 169.197.142.39:6697
+      - 169.197.142.39:443
+      - LT_671
+      - LT_665
+      - 169.197.142.39:9102
+      - LT_658
+      - 169.197.142.39:8119
+      - LT_624
+      - 169.197.142.39:5500
+      - 169.197.142.39:8882
+      - 169.197.142.39:8881
+      - 213.183.53.200:9025
+      - NL_741
+      - _US_美国_65_0@68
+      - NL_707
+      - LT_678
+      - LT_533
+      - LT_677
+      - 38.68.134.71:8009
+      - _US_美国_41_0@44
+      - 38.68.135.19:7306
+      - 38.68.134.71:8881
+      - LT_646
+      - 38.68.134.71:8119
+      - _US_美国_62_0@65
+      - 38.68.135.19:7002
+      - LT_674
+      - 38.68.134.71:2376
+      - _US_美国_55_0@58
+      - LT_628
+      - _US_美国_26_0@29
+      - LT_626
+      - 213.183.53.179:9038
+      - 38.68.135.19:3389
+      - 38.68.135.19:5004
+      - LT_664
+      - 38.68.135.19:8118
+      - Relay_🇨🇳CN-🇺🇸US_251
+      - 38.68.135.19:6379
+      - 38.68.135.19:9102
+      - 38.68.135.19:5003
+      - 38.68.135.19:5500
+      - _RU_俄罗斯联邦_2_3@9
+      - LT_659
+      - ZZ_1510
+      - NL_747
+      - LT_672
+      - NL_689
+      - NL_693
+      - NL_697
+      - NL_727
+      - LT_667
+      - SG_929
+      - NL_754
+      - LT_683
+      - LT_641
+      - LT_682
+      - US_1097
+      - 213.183.51.172:9026
+      - NL_712
+      - NL_688
+      - US_1098
+      - NL_720
+      - 213.183.53.200:9010
+      - NL_700
+      - LT_681
+      - _AU_澳大利亚_14@12
+      - 213.183.53.200:9038
+      - NL_699
+      - SG_963
+      - SG_1005
+      - SG_940
+      - US_1054
+      - NL_718
+      - AU_83
+      - 0319tw05.fans8.xyz:443
+      - Relay_🇭🇰HK-🇺🇸US_467
+      - default_name_5_2@6
+      - US_44_22@43
+      - AU_72
+      - LT_531
+      - LT_679
+      - SG_973
+      - LT_675
+      - NL_725
+      - 85.208.108.58:8080
+      - LT_557
+      - LT_558
+      - 213.183.51.172:9000
+      - 213.183.53.200:9084
+      - LT_559
+      - NL_708
+      - Relay_🇦🇺AU-🇦🇺AU_101
+      - " 3"
+      - SG_1007
+      - LT_538
+      - 217.138.193.6:809
+      - 217.138.193.6:812
+      - 213.183.53.200:9098
+      - Relay_🇦🇺AU-🇦🇺AU_100
+      - LT_580
+      - LT_670
+      - 217.138.193.6:803
+      - SG_1017
+      - LT_566
+      - LT_689
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - _CN_中国->🇸🇬_SG_新加坡_1_7@11
-      - _CN_中国->🇸🇬_SG_新加坡_2_7@12
-      - _CN_中国->🇸🇬_SG_新加坡_3_7@13
-      - Relay_🇨🇳CN-🇹🇼TW_265
-      - Relay_🇨🇳CN-🇹🇼TW_274
-      - Relay_🇨🇳CN-🇹🇼TW_264
-      - Relay_🇨🇳CN-🇹🇼TW_272
-      - github.com/freefq - 瑞典  11
-      - CN_206
-      - github.com/freefq - 瑞典  46
-      - Relay_🇺🇸US-🇺🇸US_1312
-      - CN_228
-      - CN_250
-      - Relay_🇺🇸US-🇺🇸US_1343
-      - SG_1001
-      - Relay_🇨🇳CN-🇹🇼TW_270
-      - CN_3_12@2
-      - CN_4_12@3
-      - CN_203
-      - Relay_🏁ZZ-🇹🇼TW_1560
-      - Istanbul - Turkey | Media | 1.5x
-      - CN_2_12@1
+      - _JP_日本_1_0@0
+      - ""
+      - taiwan13-1g.4cloud.click:443
+      - _JP_日本_2_0@1
+      - Relay_🇨🇳CN-🇹🇼TW_262
+      - Relay_🇨🇳CN-🇹🇼TW_266
+      - _CN_中国->🇸🇬_SG_新加坡_1_16@11
+      - 116.129.253.130:3389
+      - _KR_韩国_0@7
+      - _RU_俄罗斯联邦_1_3@8
+      - " 2"
+      - jgw2.gaox.ml:443
+      - Relay_🇦🇺AU-🇦🇺AU_98
+      - Relay_🇺🇸US-🇺🇸US_1298
+      - default_name_6_2@8
+      - _RU_俄罗斯联邦_5_3@12
+      - LT_625
+      - LT_577
+      - default_name_7_2@9
+      - LT_637
+      - 213.183.53.179:9019
+      - LT_639
+      - LT_635
+      - 213.183.53.179:9045
+      - 169.197.142.39:8091
+      - LT_656
+      - 169.197.142.39:3306
+      - LT_587
+      - 169.197.142.39:6679
+      - _RU_俄罗斯联邦_2_16@32
+      - LT_650
+      - LT_651
+      - LT_657
+      - 169.197.142.39:5003
+      - 169.197.142.39:8888
+      - 169.197.142.39:7002
+      - 169.197.142.39:8118
+      - 169.197.142.39:5004
+      - 169.197.142.39:6697
+      - 169.197.142.39:443
+      - LT_671
+      - LT_665
+      - 169.197.142.39:9102
+      - LT_658
+      - 169.197.142.39:8119
+      - LT_624
+      - 169.197.142.39:5500
+      - 169.197.142.39:8882
+      - 169.197.142.39:8881
+      - 213.183.53.200:9025
+      - NL_741
+      - _US_美国_65_0@68
+      - NL_707
+      - LT_678
+      - LT_533
+      - LT_677
+      - 38.68.134.71:8009
+      - _US_美国_41_0@44
+      - 38.68.135.19:7306
+      - 38.68.134.71:8881
+      - LT_646
+      - 38.68.134.71:8119
+      - _US_美国_62_0@65
+      - 38.68.135.19:7002
+      - LT_674
+      - 38.68.134.71:2376
+      - _US_美国_55_0@58
+      - LT_628
+      - _US_美国_26_0@29
+      - LT_626
+      - 213.183.53.179:9038
+      - 38.68.135.19:3389
+      - 38.68.135.19:5004
+      - LT_664
+      - 38.68.135.19:8118
+      - Relay_🇨🇳CN-🇺🇸US_251
+      - 38.68.135.19:6379
+      - 38.68.135.19:9102
+      - 38.68.135.19:5003
+      - 38.68.135.19:5500
+      - _RU_俄罗斯联邦_2_3@9
+      - LT_659
+      - ZZ_1510
+      - NL_747
+      - LT_672
+      - NL_689
+      - NL_693
+      - NL_697
+      - NL_727
+      - LT_667
+      - SG_929
+      - NL_754
+      - LT_683
+      - LT_641
+      - LT_682
+      - US_1097
+      - 213.183.51.172:9026
+      - NL_712
+      - NL_688
+      - US_1098
+      - NL_720
+      - 213.183.53.200:9010
+      - NL_700
+      - LT_681
+      - _AU_澳大利亚_14@12
+      - 213.183.53.200:9038
+      - NL_699
+      - SG_963
+      - SG_1005
+      - SG_940
+      - US_1054
+      - NL_718
+      - AU_83
+      - 0319tw05.fans8.xyz:443
+      - Relay_🇭🇰HK-🇺🇸US_467
+      - default_name_5_2@6
+      - US_44_22@43
+      - AU_72
+      - LT_531
+      - LT_679
+      - SG_973
+      - LT_675
+      - NL_725
+      - 85.208.108.58:8080
+      - LT_557
+      - LT_558
+      - 213.183.51.172:9000
+      - 213.183.53.200:9084
+      - LT_559
+      - NL_708
+      - Relay_🇦🇺AU-🇦🇺AU_101
+      - " 3"
+      - SG_1007
+      - LT_538
+      - 217.138.193.6:809
+      - 217.138.193.6:812
+      - 213.183.53.200:9098
+      - Relay_🇦🇺AU-🇦🇺AU_100
+      - LT_580
+      - LT_670
+      - 217.138.193.6:803
+      - SG_1017
+      - LT_566
+      - LT_689
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _CN_中国->🇸🇬_SG_新加坡_1_7@11
-      - _CN_中国->🇸🇬_SG_新加坡_2_7@12
-      - _CN_中国->🇸🇬_SG_新加坡_3_7@13
-      - Relay_🇨🇳CN-🇹🇼TW_265
-      - Relay_🇨🇳CN-🇹🇼TW_274
-      - Relay_🇨🇳CN-🇹🇼TW_264
-      - Relay_🇨🇳CN-🇹🇼TW_272
-      - github.com/freefq - 瑞典  11
-      - CN_206
-      - github.com/freefq - 瑞典  46
-      - Relay_🇺🇸US-🇺🇸US_1312
-      - CN_228
-      - CN_250
-      - Relay_🇺🇸US-🇺🇸US_1343
-      - SG_1001
-      - Relay_🇨🇳CN-🇹🇼TW_270
-      - CN_3_12@2
-      - CN_4_12@3
-      - CN_203
-      - Relay_🏁ZZ-🇹🇼TW_1560
-      - Istanbul - Turkey | Media | 1.5x
-      - CN_2_12@1
+      - _JP_日本_1_0@0
+      - ""
+      - taiwan13-1g.4cloud.click:443
+      - _JP_日本_2_0@1
+      - Relay_🇨🇳CN-🇹🇼TW_262
+      - Relay_🇨🇳CN-🇹🇼TW_266
+      - _CN_中国->🇸🇬_SG_新加坡_1_16@11
+      - 116.129.253.130:3389
+      - _KR_韩国_0@7
+      - _RU_俄罗斯联邦_1_3@8
+      - " 2"
+      - jgw2.gaox.ml:443
+      - Relay_🇦🇺AU-🇦🇺AU_98
+      - Relay_🇺🇸US-🇺🇸US_1298
+      - default_name_6_2@8
+      - _RU_俄罗斯联邦_5_3@12
+      - LT_625
+      - LT_577
+      - default_name_7_2@9
+      - LT_637
+      - 213.183.53.179:9019
+      - LT_639
+      - LT_635
+      - 213.183.53.179:9045
+      - 169.197.142.39:8091
+      - LT_656
+      - 169.197.142.39:3306
+      - LT_587
+      - 169.197.142.39:6679
+      - _RU_俄罗斯联邦_2_16@32
+      - LT_650
+      - LT_651
+      - LT_657
+      - 169.197.142.39:5003
+      - 169.197.142.39:8888
+      - 169.197.142.39:7002
+      - 169.197.142.39:8118
+      - 169.197.142.39:5004
+      - 169.197.142.39:6697
+      - 169.197.142.39:443
+      - LT_671
+      - LT_665
+      - 169.197.142.39:9102
+      - LT_658
+      - 169.197.142.39:8119
+      - LT_624
+      - 169.197.142.39:5500
+      - 169.197.142.39:8882
+      - 169.197.142.39:8881
+      - 213.183.53.200:9025
+      - NL_741
+      - _US_美国_65_0@68
+      - NL_707
+      - LT_678
+      - LT_533
+      - LT_677
+      - 38.68.134.71:8009
+      - _US_美国_41_0@44
+      - 38.68.135.19:7306
+      - 38.68.134.71:8881
+      - LT_646
+      - 38.68.134.71:8119
+      - _US_美国_62_0@65
+      - 38.68.135.19:7002
+      - LT_674
+      - 38.68.134.71:2376
+      - _US_美国_55_0@58
+      - LT_628
+      - _US_美国_26_0@29
+      - LT_626
+      - 213.183.53.179:9038
+      - 38.68.135.19:3389
+      - 38.68.135.19:5004
+      - LT_664
+      - 38.68.135.19:8118
+      - Relay_🇨🇳CN-🇺🇸US_251
+      - 38.68.135.19:6379
+      - 38.68.135.19:9102
+      - 38.68.135.19:5003
+      - 38.68.135.19:5500
+      - _RU_俄罗斯联邦_2_3@9
+      - LT_659
+      - ZZ_1510
+      - NL_747
+      - LT_672
+      - NL_689
+      - NL_693
+      - NL_697
+      - NL_727
+      - LT_667
+      - SG_929
+      - NL_754
+      - LT_683
+      - LT_641
+      - LT_682
+      - US_1097
+      - 213.183.51.172:9026
+      - NL_712
+      - NL_688
+      - US_1098
+      - NL_720
+      - 213.183.53.200:9010
+      - NL_700
+      - LT_681
+      - _AU_澳大利亚_14@12
+      - 213.183.53.200:9038
+      - NL_699
+      - SG_963
+      - SG_1005
+      - SG_940
+      - US_1054
+      - NL_718
+      - AU_83
+      - 0319tw05.fans8.xyz:443
+      - Relay_🇭🇰HK-🇺🇸US_467
+      - default_name_5_2@6
+      - US_44_22@43
+      - AU_72
+      - LT_531
+      - LT_679
+      - SG_973
+      - LT_675
+      - NL_725
+      - 85.208.108.58:8080
+      - LT_557
+      - LT_558
+      - 213.183.51.172:9000
+      - 213.183.53.200:9084
+      - LT_559
+      - NL_708
+      - Relay_🇦🇺AU-🇦🇺AU_101
+      - " 3"
+      - SG_1007
+      - LT_538
+      - 217.138.193.6:809
+      - 217.138.193.6:812
+      - 213.183.53.200:9098
+      - Relay_🇦🇺AU-🇦🇺AU_100
+      - LT_580
+      - LT_670
+      - 217.138.193.6:803
+      - SG_1017
+      - LT_566
+      - LT_689
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -252,28 +1229,150 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _CN_中国->🇸🇬_SG_新加坡_1_7@11
-      - _CN_中国->🇸🇬_SG_新加坡_2_7@12
-      - _CN_中国->🇸🇬_SG_新加坡_3_7@13
-      - Relay_🇨🇳CN-🇹🇼TW_265
-      - Relay_🇨🇳CN-🇹🇼TW_274
-      - Relay_🇨🇳CN-🇹🇼TW_264
-      - Relay_🇨🇳CN-🇹🇼TW_272
-      - github.com/freefq - 瑞典  11
-      - CN_206
-      - github.com/freefq - 瑞典  46
-      - Relay_🇺🇸US-🇺🇸US_1312
-      - CN_228
-      - CN_250
-      - Relay_🇺🇸US-🇺🇸US_1343
-      - SG_1001
-      - Relay_🇨🇳CN-🇹🇼TW_270
-      - CN_3_12@2
-      - CN_4_12@3
-      - CN_203
-      - Relay_🏁ZZ-🇹🇼TW_1560
-      - Istanbul - Turkey | Media | 1.5x
-      - CN_2_12@1
+      - _JP_日本_1_0@0
+      - ""
+      - taiwan13-1g.4cloud.click:443
+      - _JP_日本_2_0@1
+      - Relay_🇨🇳CN-🇹🇼TW_262
+      - Relay_🇨🇳CN-🇹🇼TW_266
+      - _CN_中国->🇸🇬_SG_新加坡_1_16@11
+      - 116.129.253.130:3389
+      - _KR_韩国_0@7
+      - _RU_俄罗斯联邦_1_3@8
+      - " 2"
+      - jgw2.gaox.ml:443
+      - Relay_🇦🇺AU-🇦🇺AU_98
+      - Relay_🇺🇸US-🇺🇸US_1298
+      - default_name_6_2@8
+      - _RU_俄罗斯联邦_5_3@12
+      - LT_625
+      - LT_577
+      - default_name_7_2@9
+      - LT_637
+      - 213.183.53.179:9019
+      - LT_639
+      - LT_635
+      - 213.183.53.179:9045
+      - 169.197.142.39:8091
+      - LT_656
+      - 169.197.142.39:3306
+      - LT_587
+      - 169.197.142.39:6679
+      - _RU_俄罗斯联邦_2_16@32
+      - LT_650
+      - LT_651
+      - LT_657
+      - 169.197.142.39:5003
+      - 169.197.142.39:8888
+      - 169.197.142.39:7002
+      - 169.197.142.39:8118
+      - 169.197.142.39:5004
+      - 169.197.142.39:6697
+      - 169.197.142.39:443
+      - LT_671
+      - LT_665
+      - 169.197.142.39:9102
+      - LT_658
+      - 169.197.142.39:8119
+      - LT_624
+      - 169.197.142.39:5500
+      - 169.197.142.39:8882
+      - 169.197.142.39:8881
+      - 213.183.53.200:9025
+      - NL_741
+      - _US_美国_65_0@68
+      - NL_707
+      - LT_678
+      - LT_533
+      - LT_677
+      - 38.68.134.71:8009
+      - _US_美国_41_0@44
+      - 38.68.135.19:7306
+      - 38.68.134.71:8881
+      - LT_646
+      - 38.68.134.71:8119
+      - _US_美国_62_0@65
+      - 38.68.135.19:7002
+      - LT_674
+      - 38.68.134.71:2376
+      - _US_美国_55_0@58
+      - LT_628
+      - _US_美国_26_0@29
+      - LT_626
+      - 213.183.53.179:9038
+      - 38.68.135.19:3389
+      - 38.68.135.19:5004
+      - LT_664
+      - 38.68.135.19:8118
+      - Relay_🇨🇳CN-🇺🇸US_251
+      - 38.68.135.19:6379
+      - 38.68.135.19:9102
+      - 38.68.135.19:5003
+      - 38.68.135.19:5500
+      - _RU_俄罗斯联邦_2_3@9
+      - LT_659
+      - ZZ_1510
+      - NL_747
+      - LT_672
+      - NL_689
+      - NL_693
+      - NL_697
+      - NL_727
+      - LT_667
+      - SG_929
+      - NL_754
+      - LT_683
+      - LT_641
+      - LT_682
+      - US_1097
+      - 213.183.51.172:9026
+      - NL_712
+      - NL_688
+      - US_1098
+      - NL_720
+      - 213.183.53.200:9010
+      - NL_700
+      - LT_681
+      - _AU_澳大利亚_14@12
+      - 213.183.53.200:9038
+      - NL_699
+      - SG_963
+      - SG_1005
+      - SG_940
+      - US_1054
+      - NL_718
+      - AU_83
+      - 0319tw05.fans8.xyz:443
+      - Relay_🇭🇰HK-🇺🇸US_467
+      - default_name_5_2@6
+      - US_44_22@43
+      - AU_72
+      - LT_531
+      - LT_679
+      - SG_973
+      - LT_675
+      - NL_725
+      - 85.208.108.58:8080
+      - LT_557
+      - LT_558
+      - 213.183.51.172:9000
+      - 213.183.53.200:9084
+      - LT_559
+      - NL_708
+      - Relay_🇦🇺AU-🇦🇺AU_101
+      - " 3"
+      - SG_1007
+      - LT_538
+      - 217.138.193.6:809
+      - 217.138.193.6:812
+      - 213.183.53.200:9098
+      - Relay_🇦🇺AU-🇦🇺AU_100
+      - LT_580
+      - LT_670
+      - 217.138.193.6:803
+      - SG_1017
+      - LT_566
+      - LT_689
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
