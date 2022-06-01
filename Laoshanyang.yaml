@@ -5,527 +5,239 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 新加坡-tg频道：@bpjzx2 9, server: 120.233.185.189, port: 11846, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: "", udp: true}
-  - {name: _JP_日本_2_0@1, server: ocrb1.moonfree.top, port: 443, type: vmess, uuid: 6e9eeae6-c3d1-439e-9f7a-213fe09b2dbe, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: ocrb1.moonfree.top}, udp: true}
-  - {name: _KR_韩国_0@7, server: v2-5.godlight.xyz, port: 250, type: vmess, uuid: 767e55a4-43fa-4301-a9c2-ad30eaa9f61a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /71h4b3s1f53, ws-headers: {Host: v2-5.godlight.xyz}, udp: true}
-  - {name: _JP_日本_1_0@0, server: v2-1.godlight.xyz, port: 250, type: vmess, uuid: 719d4cec-82a8-4a65-ad01-32cf08f2c988, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /j75g1461x, ws-headers: {Host: v2-1.godlight.xyz}, udp: true}
-  - {name: 新加坡-tg频道：@bpjzx2 8, server: 120.233.185.189, port: 11851, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: "", udp: true}
-  - {name: Relay_🇦🇺AU-🇦🇺AU_90, server: kr04.wangxd.life, port: 3052, type: trojan, password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e, sni: kr04.wangxd.life, skip-cert-verify: true, udp: true}
-  - {name: CN_272, server: 14.29.124.168, port: 25297, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
   - {name: Relay_🇩🇪DE-🇬🇧GB_390, server: au2-4.nigirocloud.com, port: 443, type: trojan, password: 3yFq7NCP53mVfpXJz3, sni: au2-4.nigirocloud.com, skip-cert-verify: true, udp: true}
-  - {name: 7, server: 150.230.4.136, port: 11151, type: vmess, uuid: 18ef8b86-5dfe-48a9-b4e4-b5f595f7e555, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: github.com/freefq - 瑞典  11, server: au2-1.nigirocloud.com, port: 443, type: trojan, password: 3yFq7NCP53mVfpXJz3, sni: au2-1.nigirocloud.com, skip-cert-verify: true, udp: true}
-  - {name: 日本-5.49MB/s(Youtube:不良林), server: jgwdb4.gaox.ml, port: 443, type: trojan, password: d06a3f01-1ff0-4792-9b8e-a5a604bc74a2, sni: jgwdb4.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇩🇪DE-🇬🇧GB_385, server: au2-3.nigirocloud.com, port: 443, type: trojan, password: 3yFq7NCP53mVfpXJz3, sni: au2-3.nigirocloud.com, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_1356, server: u2.anmu.one, port: 16499, type: vmess, uuid: 32b306e1-d5b1-4913-d8d3-56ac23637de7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: ZZ_3196, server: 169.197.142.39, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: 169.197.142.39:5500, server: 169.197.142.39, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: US_1841, server: 38.68.134.71, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: ZZ_2841, server: 169.197.142.39, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: US_1929, server: 38.68.134.71, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: US_2509, server: 38.68.134.71, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: US_44_22@43, server: 34.215.130.186, port: 10089, type: vmess, uuid: 3608c9dc-1eeb-48b0-b570-43074b4a0c9e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 34.215.130.186}, udp: true}
-  - {name: US_2658, server: 38.68.134.71, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: SG_940, server: 129.226.216.121, port: 49381, type: vmess, uuid: 2f6d0f82-80c4-42ed-fd46-c76e7cc81de0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: ZZ_2937, server: 169.197.142.39, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: US_2105, server: 38.68.134.71, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 38.68.134.71:8881, server: 38.68.134.71, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: US_2654, server: 38.68.134.71, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: ZZ_2830, server: 169.197.142.39, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: ZZ_3061, server: 169.197.142.39, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: ZZ_2912, server: 169.197.142.39, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
   - {name: ZZ_3195, server: 169.197.142.39, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_2763, server: 38.68.134.71, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: ZZ_1550, server: 169.197.142.39, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: 新加坡-tg频道：@bpjzx2 14, server: 120.232.190.86, port: 11806, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: "", udp: true}
-  - {name: 新加坡-tg频道：@bpjzx2 15, server: 120.233.185.189, port: 11806, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: "", udp: true}
-  - {name: ZZ_3157, server: 169.197.142.39, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: _GB_英国_3_12@22, server: jgwld2.gaox.ml, port: 443, type: trojan, password: d7fd8aaa-4581-4281-80aa-4b63e5e1f157, sni: jgwld2.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: ZZ_2830, server: 169.197.142.39, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
   - {name: ZZ_3178, server: 169.197.142.39, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: ZZ_2932, server: 169.197.142.39, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: SG_1006, server: 129.226.95.108, port: 58681, type: vmess, uuid: 758c6c64-e7bc-4bbf-dd58-cbd21c09c75a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: ZZ_3196, server: 169.197.142.39, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: US_1841, server: 38.68.134.71, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: ZZ_3063, server: 169.197.142.39, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: Relay_🇩🇪DE-🇬🇧GB_385, server: au2-3.nigirocloud.com, port: 443, type: trojan, password: 3yFq7NCP53mVfpXJz3, sni: au2-3.nigirocloud.com, skip-cert-verify: true, udp: true}
+  - {name: NL_1302, server: 213.183.59.214, port: 9098, type: ss, cipher: aes-256-cfb, password: aLpQtfEZe445QyHk, udp: true}
+  - {name: ZZ_3061, server: 169.197.142.39, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: US_2509, server: 38.68.134.71, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: ZZ_3157, server: 169.197.142.39, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: NL_1215, server: 213.183.59.214, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
   - {name: NL_1200, server: 213.183.59.214, port: 9001, type: ss, cipher: aes-256-cfb, password: UkXRsXvR6buDMG2Y, udp: true}
-  - {name: NL_1174, server: 213.183.59.214, port: 9057, type: ss, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z, udp: true}
-  - {name: ZZ_3186, server: 169.197.142.39, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: US_2497, server: 38.68.134.71, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: _AU_澳大利亚_10@12, server: jgwxn3.gaox.ml, port: 443, type: trojan, password: cb43b7c2-b744-41c5-bcc2-fd7467b332cf, sni: jgwxn3.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: US_2659, server: 38.68.134.71, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: LT_959, server: 213.183.53.207, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX, udp: true}
-  - {name: AU_54, server: 185.167.116.24, port: 9093, type: ss, cipher: aes-256-cfb, password: wfLC2y7rzZyCmuyt, udp: true}
-  - {name: AU_61, server: 185.167.116.24, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
-  - {name: AU_39, server: 185.167.116.24, port: 9024, type: ss, cipher: aes-256-cfb, password: BejrQvtu9sqUeNuZ, udp: true}
-  - {name: Relay_🇦🇺AU-🇦🇺AU_101, server: neteasy.ga, port: 28931, type: trojan, password: MnROfwtPYa, sni: neteasy.ga, skip-cert-verify: true, udp: true}
-  - {name: US_2238, server: 38.68.134.71, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: NL_1268, server: 213.183.59.214, port: 9015, type: ss, cipher: aes-256-cfb, password: ZpNDDKRu9MagNvaf, udp: true}
+  - {name: US_2654, server: 38.68.134.71, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: NL_1257, server: 213.183.59.214, port: 9088, type: ss, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn, udp: true}
+  - {name: NL_1285, server: 213.183.59.214, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa, udp: true}
+  - {name: ZZ_2932, server: 169.197.142.39, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: US_2105, server: 38.68.134.71, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: NL_1255, server: 213.183.59.214, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
+  - {name: NL_1237, server: 213.183.59.214, port: 9058, type: ss, cipher: aes-256-cfb, password: dML2sfhbVwvtfNPe, udp: true}
+  - {name: NL_1197, server: 213.183.59.214, port: 9026, type: ss, cipher: aes-256-cfb, password: QWDDvVE9npNurQfA, udp: true}
+  - {name: Relay_🇦🇺AU-🇦🇺AU_72, server: jgwxn2.gaox.ml, port: 443, type: trojan, password: c2b60d6a-a2f5-40ff-b7f9-f7658abcbf26, sni: jgwxn2.gaox.ml, skip-cert-verify: true, udp: true}
   - {name: AU_45, server: 185.167.116.24, port: 9058, type: ss, cipher: aes-256-cfb, password: dML2sfhbVwvtfNPe, udp: true}
   - {name: AU_49, server: 185.167.116.24, port: 9059, type: ss, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY, udp: true}
-  - {name: AU_25, server: 185.167.116.24, port: 9033, type: ss, cipher: aes-256-cfb, password: UTJA57ypk2XKQpnm, udp: true}
-  - {name: Relay_🇦🇺AU-🇦🇺AU_72, server: jgwxn2.gaox.ml, port: 443, type: trojan, password: c2b60d6a-a2f5-40ff-b7f9-f7658abcbf26, sni: jgwxn2.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: AU_41, server: 185.167.116.24, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX, udp: true}
   - {name: AU_56, server: 185.167.116.24, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
-  - {name: LT_862, server: 213.183.53.207, port: 9057, type: ss, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z, udp: true}
-  - {name: CN_206, server: 14.29.124.168, port: 25279, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_231, server: 14.29.124.168, port: 25296, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_228, server: 14.29.124.168, port: 25235, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_212, server: 14.29.124.168, port: 25222, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 14.29.124.168:25231, server: 14.29.124.168, port: 25231, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_240, server: 14.29.124.168, port: 25247, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_249, server: 14.29.124.168, port: 25270, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 14.29.124.168:25295, server: 14.29.124.168, port: 25295, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_228 2, server: 14.29.124.168, port: 25256, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_193, server: 14.29.124.168, port: 25252, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 14.29.124.168:25210, server: 14.29.124.168, port: 25210, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 14.29.124.168:25220, server: 14.29.124.168, port: 25220, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_2_16@1, server: 14.29.124.168, port: 25283, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 14.29.124.168:25287, server: 14.29.124.168, port: 25287, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_259, server: 14.29.124.168, port: 25245, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_6_16@5, server: 14.29.124.168, port: 25271, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_273, server: 14.29.124.168, port: 25294, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_262, server: 14.29.124.168, port: 25259, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_205, server: 14.29.124.168, port: 25293, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 14.29.124.168:25218, server: 14.29.124.168, port: 25218, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_274, server: 14.29.124.168, port: 25238, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 香港-tg频道：@bpjzx2 10, server: 120.232.190.86, port: 11802, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: "", udp: true}
-  - {name: CN_217, server: 14.29.124.168, port: 25266, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_3_16@2, server: 14.29.124.168, port: 25241, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_224, server: 14.29.124.168, port: 25267, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_219, server: 14.29.124.168, port: 25233, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: NL_1350, server: 213.183.59.214, port: 9003, type: ss, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP, udp: true}
-  - {name: ZZ_2912, server: 169.197.142.39, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: LT_928, server: 213.183.53.207, port: 9053, type: ss, cipher: aes-256-cfb, password: SBM7R883jBmnqe6C, udp: true}
-  - {name: SG_929, server: 129.226.215.211, port: 49981, type: vmess, uuid: 876631b4-3f5c-4289-f266-3c7afa5b9e70, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: LT_951, server: 213.183.53.207, port: 9073, type: ss, cipher: aes-256-cfb, password: daFYagqDdBdA6VTX, udp: true}
-  - {name: NL_1215, server: 213.183.59.214, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
-  - {name: LT_913, server: 213.183.53.207, port: 9006, type: ss, cipher: aes-256-cfb, password: FAdUvMJUq5vDgKEq, udp: true}
-  - {name: LT_832, server: 213.183.53.207, port: 9061, type: ss, cipher: aes-256-cfb, password: 4R3hUfZ2FHhDmNcP, udp: true}
-  - {name: ZZ_3128, server: 169.197.142.39, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: LT_989, server: 213.183.53.207, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH, udp: true}
-  - {name: LT_915, server: 213.183.53.207, port: 9030, type: ss, cipher: aes-256-cfb, password: GeregetR8cvQHzYr, udp: true}
-  - {name: LT_927, server: 213.183.53.207, port: 9027, type: ss, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8, udp: true}
-  - {name: LT_807, server: 213.183.53.207, port: 9008, type: ss, cipher: aes-256-cfb, password: y9VURyNzJWNRYEGQ, udp: true}
-  - {name: LT_930, server: 213.183.53.207, port: 9043, type: ss, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF, udp: true}
-  - {name: LT_889, server: 213.183.53.207, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
-  - {name: ZZ_3063, server: 169.197.142.39, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: LT_780, server: 213.183.53.207, port: 9097, type: ss, cipher: aes-256-cfb, password: Sn5B7jTqr76aCJT8, udp: true}
-  - {name: NL_1204, server: 213.183.59.214, port: 9041, type: ss, cipher: aes-256-cfb, password: U6qnYRhfyDmn8sgn, udp: true}
-  - {name: NL_1280, server: 213.183.59.214, port: 9059, type: ss, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY, udp: true}
-  - {name: LT_991, server: 213.183.53.207, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU, udp: true}
-  - {name: LT_908, server: 213.183.53.207, port: 9033, type: ss, cipher: aes-256-cfb, password: UTJA57ypk2XKQpnm, udp: true}
-  - {name: Relay_🇷🇺RU-🇷🇺RU_1472, server: 185.4.65.6, port: 21247, type: ss, cipher: aes-256-cfb, password: vDS9G2p, udp: true}
-  - {name: NL_1257, server: 213.183.59.214, port: 9088, type: ss, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn, udp: true}
-  - {name: LT_941, server: 213.183.53.207, port: 9058, type: ss, cipher: aes-256-cfb, password: dML2sfhbVwvtfNPe, udp: true}
-  - {name: LT_811, server: 213.183.53.207, port: 9026, type: ss, cipher: aes-256-cfb, password: QWDDvVE9npNurQfA, udp: true}
-  - {name: LT_770, server: 213.183.53.207, port: 9080, type: ss, cipher: aes-256-cfb, password: VP8ZPxQpJtZRCjfZ, udp: true}
-  - {name: LT_984, server: 213.183.53.207, port: 9088, type: ss, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn, udp: true}
-  - {name: SG_963, server: 129.226.94.247, port: 15301, type: vmess, uuid: 16844453-6154-4808-bdda-a26741ebe677, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: NL_1306, server: 213.183.59.214, port: 9050, type: ss, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE, udp: true}
-  - {name: NL_1197, server: 213.183.59.214, port: 9026, type: ss, cipher: aes-256-cfb, password: QWDDvVE9npNurQfA, udp: true}
-  - {name: LT_753, server: 213.183.53.207, port: 9010, type: ss, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4, udp: true}
-  - {name: LT_779, server: 213.183.53.207, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH, udp: true}
-  - {name: LT_759, server: 213.183.53.207, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
-  - {name: NL_1255, server: 213.183.59.214, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
-  - {name: NL_1285, server: 213.183.59.214, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa, udp: true}
-  - {name: NL_1237, server: 213.183.59.214, port: 9058, type: ss, cipher: aes-256-cfb, password: dML2sfhbVwvtfNPe, udp: true}
-  - {name: LT_1046, server: 213.183.53.207, port: 9060, type: ss, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ, udp: true}
-  - {name: NL_1302, server: 213.183.59.214, port: 9098, type: ss, cipher: aes-256-cfb, password: aLpQtfEZe445QyHk, udp: true}
-  - {name: NL_1268, server: 213.183.59.214, port: 9015, type: ss, cipher: aes-256-cfb, password: ZpNDDKRu9MagNvaf, udp: true}
+  - {name: CN_219, server: 14.29.124.168, port: 25233, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: AU_41, server: 185.167.116.24, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX, udp: true}
   - {name: NL_1261, server: 213.183.59.214, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
-  - {name: LT_783, server: 213.183.53.207, port: 9007, type: ss, cipher: aes-256-cfb, password: kSPmvwdFzGMMW5pY, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_2848, server: jp04.vproxy.us, port: 56565, type: trojan, password: acf34fb3-6fed-40c6-b6ab-b5bedf5827a2, sni: jp04.vproxy.us, skip-cert-verify: true, udp: true}
-  - {name: LT_804, server: 213.183.53.207, port: 9059, type: ss, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY, udp: true}
+  - {name: AU_54, server: 185.167.116.24, port: 9093, type: ss, cipher: aes-256-cfb, password: wfLC2y7rzZyCmuyt, udp: true}
+  - {name: AU_37, server: 185.167.116.24, port: 9046, type: ss, cipher: aes-256-cfb, password: NvS8N4Vf8qAGPSCL, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_2766, server: wireless.starspace.link, port: 443, type: trojan, password: 5LN8SGTqxk336nFg, sni: wireless.starspace.link, skip-cert-verify: true, udp: true}
+  - {name: US_2658, server: 38.68.134.71, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: ZZ_3128, server: 169.197.142.39, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: AU_39, server: 185.167.116.24, port: 9024, type: ss, cipher: aes-256-cfb, password: BejrQvtu9sqUeNuZ, udp: true}
+  - {name: ZZ_3186, server: 169.197.142.39, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: NL_1174, server: 213.183.59.214, port: 9057, type: ss, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z, udp: true}
+  - {name: NL_1251, server: 213.183.59.214, port: 9043, type: ss, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF, udp: true}
+  - {name: NL_1307, server: 213.183.59.214, port: 9046, type: ss, cipher: aes-256-cfb, password: NvS8N4Vf8qAGPSCL, udp: true}
+  - {name: LT_984, server: 213.183.53.207, port: 9088, type: ss, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn, udp: true}
+  - {name: ZZ_2841, server: 169.197.142.39, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: LT_941, server: 213.183.53.207, port: 9058, type: ss, cipher: aes-256-cfb, password: dML2sfhbVwvtfNPe, udp: true}
+  - {name: LT_928, server: 213.183.53.207, port: 9053, type: ss, cipher: aes-256-cfb, password: SBM7R883jBmnqe6C, udp: true}
+  - {name: LT_862, server: 213.183.53.207, port: 9057, type: ss, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z, udp: true}
+  - {name: NL_1204, server: 213.183.59.214, port: 9041, type: ss, cipher: aes-256-cfb, password: U6qnYRhfyDmn8sgn, udp: true}
+  - {name: LT_909, server: 213.183.53.207, port: 9015, type: ss, cipher: aes-256-cfb, password: ZpNDDKRu9MagNvaf, udp: true}
+  - {name: AU_61, server: 185.167.116.24, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
+  - {name: NL_1163, server: 213.183.59.214, port: 9060, type: ss, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ, udp: true}
+  - {name: LT_989, server: 213.183.53.207, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH, udp: true}
+  - {name: LT_951, server: 213.183.53.207, port: 9073, type: ss, cipher: aes-256-cfb, password: daFYagqDdBdA6VTX, udp: true}
+  - {name: LT_832, server: 213.183.53.207, port: 9061, type: ss, cipher: aes-256-cfb, password: 4R3hUfZ2FHhDmNcP, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 新加坡-tg频道：@bpjzx2 9
-      - _JP_日本_2_0@1
-      - _KR_韩国_0@7
-      - _JP_日本_1_0@0
-      - 新加坡-tg频道：@bpjzx2 8
-      - Relay_🇦🇺AU-🇦🇺AU_90
-      - CN_272
       - Relay_🇩🇪DE-🇬🇧GB_390
-      - 7
-      - github.com/freefq - 瑞典  11
-      - 日本-5.49MB/s(Youtube:不良林)
-      - Relay_🇩🇪DE-🇬🇧GB_385
-      - Relay_🇺🇸US-🇺🇸US_1356
-      - ZZ_3196
-      - 169.197.142.39:5500
-      - US_1841
-      - ZZ_2841
-      - US_1929
-      - US_2509
-      - US_44_22@43
-      - US_2658
-      - SG_940
-      - ZZ_2937
-      - US_2105
-      - 38.68.134.71:8881
-      - US_2654
-      - ZZ_2830
-      - ZZ_3061
+      - ZZ_2912
       - ZZ_3195
-      - US_2763
-      - ZZ_1550
-      - 新加坡-tg频道：@bpjzx2 14
-      - 新加坡-tg频道：@bpjzx2 15
-      - ZZ_3157
-      - _GB_英国_3_12@22
+      - ZZ_2830
       - ZZ_3178
-      - ZZ_2932
-      - SG_1006
+      - ZZ_3196
+      - US_1841
+      - ZZ_3063
+      - Relay_🇩🇪DE-🇬🇧GB_385
+      - NL_1302
+      - ZZ_3061
+      - US_2509
+      - ZZ_3157
+      - NL_1215
       - NL_1200
-      - NL_1174
-      - ZZ_3186
-      - US_2497
-      - _AU_澳大利亚_10@12
-      - US_2659
-      - LT_959
-      - AU_54
-      - AU_61
-      - AU_39
-      - Relay_🇦🇺AU-🇦🇺AU_101
-      - US_2238
+      - NL_1268
+      - US_2654
+      - NL_1257
+      - NL_1285
+      - ZZ_2932
+      - US_2105
+      - NL_1255
+      - NL_1237
+      - NL_1197
+      - Relay_🇦🇺AU-🇦🇺AU_72
       - AU_45
       - AU_49
-      - AU_25
-      - Relay_🇦🇺AU-🇦🇺AU_72
-      - AU_41
       - AU_56
-      - LT_862
-      - CN_206
-      - CN_231
-      - CN_228
-      - CN_212
-      - 14.29.124.168:25231
-      - CN_240
-      - CN_249
-      - 14.29.124.168:25295
-      - CN_228 2
-      - CN_193
-      - 14.29.124.168:25210
-      - 14.29.124.168:25220
-      - CN_2_16@1
-      - 14.29.124.168:25287
-      - CN_259
-      - CN_6_16@5
-      - CN_273
-      - CN_262
-      - CN_205
-      - 14.29.124.168:25218
-      - CN_274
-      - 香港-tg频道：@bpjzx2 10
-      - CN_217
-      - CN_3_16@2
-      - CN_224
-      - CN_219
-      - NL_1350
-      - ZZ_2912
-      - LT_928
-      - SG_929
-      - LT_951
-      - NL_1215
-      - LT_913
-      - LT_832
-      - ZZ_3128
-      - LT_989
-      - LT_915
-      - LT_927
-      - LT_807
-      - LT_930
-      - LT_889
-      - ZZ_3063
-      - LT_780
-      - NL_1204
-      - NL_1280
-      - LT_991
-      - LT_908
-      - Relay_🇷🇺RU-🇷🇺RU_1472
-      - NL_1257
-      - LT_941
-      - LT_811
-      - LT_770
-      - LT_984
-      - SG_963
       - NL_1306
-      - NL_1197
-      - LT_753
-      - LT_779
-      - LT_759
-      - NL_1255
-      - NL_1285
-      - NL_1237
-      - LT_1046
-      - NL_1302
-      - NL_1268
+      - CN_219
+      - AU_41
       - NL_1261
-      - LT_783
-      - Relay_🇺🇸US-🇺🇸US_2848
-      - LT_804
+      - AU_54
+      - AU_37
+      - Relay_🇺🇸US-🇺🇸US_2766
+      - US_2658
+      - ZZ_3128
+      - AU_39
+      - ZZ_3186
+      - NL_1174
+      - NL_1251
+      - NL_1307
+      - LT_984
+      - ZZ_2841
+      - LT_941
+      - LT_928
+      - LT_862
+      - NL_1204
+      - LT_909
+      - AU_61
+      - NL_1163
+      - LT_989
+      - LT_951
+      - LT_832
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 新加坡-tg频道：@bpjzx2 9
-      - _JP_日本_2_0@1
-      - _KR_韩国_0@7
-      - _JP_日本_1_0@0
-      - 新加坡-tg频道：@bpjzx2 8
-      - Relay_🇦🇺AU-🇦🇺AU_90
-      - CN_272
       - Relay_🇩🇪DE-🇬🇧GB_390
-      - 7
-      - github.com/freefq - 瑞典  11
-      - 日本-5.49MB/s(Youtube:不良林)
-      - Relay_🇩🇪DE-🇬🇧GB_385
-      - Relay_🇺🇸US-🇺🇸US_1356
-      - ZZ_3196
-      - 169.197.142.39:5500
-      - US_1841
-      - ZZ_2841
-      - US_1929
-      - US_2509
-      - US_44_22@43
-      - US_2658
-      - SG_940
-      - ZZ_2937
-      - US_2105
-      - 38.68.134.71:8881
-      - US_2654
-      - ZZ_2830
-      - ZZ_3061
+      - ZZ_2912
       - ZZ_3195
-      - US_2763
-      - ZZ_1550
-      - 新加坡-tg频道：@bpjzx2 14
-      - 新加坡-tg频道：@bpjzx2 15
-      - ZZ_3157
-      - _GB_英国_3_12@22
+      - ZZ_2830
       - ZZ_3178
-      - ZZ_2932
-      - SG_1006
+      - ZZ_3196
+      - US_1841
+      - ZZ_3063
+      - Relay_🇩🇪DE-🇬🇧GB_385
+      - NL_1302
+      - ZZ_3061
+      - US_2509
+      - ZZ_3157
+      - NL_1215
       - NL_1200
-      - NL_1174
-      - ZZ_3186
-      - US_2497
-      - _AU_澳大利亚_10@12
-      - US_2659
-      - LT_959
-      - AU_54
-      - AU_61
-      - AU_39
-      - Relay_🇦🇺AU-🇦🇺AU_101
-      - US_2238
+      - NL_1268
+      - US_2654
+      - NL_1257
+      - NL_1285
+      - ZZ_2932
+      - US_2105
+      - NL_1255
+      - NL_1237
+      - NL_1197
+      - Relay_🇦🇺AU-🇦🇺AU_72
       - AU_45
       - AU_49
-      - AU_25
-      - Relay_🇦🇺AU-🇦🇺AU_72
-      - AU_41
       - AU_56
-      - LT_862
-      - CN_206
-      - CN_231
-      - CN_228
-      - CN_212
-      - 14.29.124.168:25231
-      - CN_240
-      - CN_249
-      - 14.29.124.168:25295
-      - CN_228 2
-      - CN_193
-      - 14.29.124.168:25210
-      - 14.29.124.168:25220
-      - CN_2_16@1
-      - 14.29.124.168:25287
-      - CN_259
-      - CN_6_16@5
-      - CN_273
-      - CN_262
-      - CN_205
-      - 14.29.124.168:25218
-      - CN_274
-      - 香港-tg频道：@bpjzx2 10
-      - CN_217
-      - CN_3_16@2
-      - CN_224
-      - CN_219
-      - NL_1350
-      - ZZ_2912
-      - LT_928
-      - SG_929
-      - LT_951
-      - NL_1215
-      - LT_913
-      - LT_832
-      - ZZ_3128
-      - LT_989
-      - LT_915
-      - LT_927
-      - LT_807
-      - LT_930
-      - LT_889
-      - ZZ_3063
-      - LT_780
-      - NL_1204
-      - NL_1280
-      - LT_991
-      - LT_908
-      - Relay_🇷🇺RU-🇷🇺RU_1472
-      - NL_1257
-      - LT_941
-      - LT_811
-      - LT_770
-      - LT_984
-      - SG_963
       - NL_1306
-      - NL_1197
-      - LT_753
-      - LT_779
-      - LT_759
-      - NL_1255
-      - NL_1285
-      - NL_1237
-      - LT_1046
-      - NL_1302
-      - NL_1268
+      - CN_219
+      - AU_41
       - NL_1261
-      - LT_783
-      - Relay_🇺🇸US-🇺🇸US_2848
-      - LT_804
+      - AU_54
+      - AU_37
+      - Relay_🇺🇸US-🇺🇸US_2766
+      - US_2658
+      - ZZ_3128
+      - AU_39
+      - ZZ_3186
+      - NL_1174
+      - NL_1251
+      - NL_1307
+      - LT_984
+      - ZZ_2841
+      - LT_941
+      - LT_928
+      - LT_862
+      - NL_1204
+      - LT_909
+      - AU_61
+      - NL_1163
+      - LT_989
+      - LT_951
+      - LT_832
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 新加坡-tg频道：@bpjzx2 9
-      - _JP_日本_2_0@1
-      - _KR_韩国_0@7
-      - _JP_日本_1_0@0
-      - 新加坡-tg频道：@bpjzx2 8
-      - Relay_🇦🇺AU-🇦🇺AU_90
-      - CN_272
       - Relay_🇩🇪DE-🇬🇧GB_390
-      - 7
-      - github.com/freefq - 瑞典  11
-      - 日本-5.49MB/s(Youtube:不良林)
-      - Relay_🇩🇪DE-🇬🇧GB_385
-      - Relay_🇺🇸US-🇺🇸US_1356
-      - ZZ_3196
-      - 169.197.142.39:5500
-      - US_1841
-      - ZZ_2841
-      - US_1929
-      - US_2509
-      - US_44_22@43
-      - US_2658
-      - SG_940
-      - ZZ_2937
-      - US_2105
-      - 38.68.134.71:8881
-      - US_2654
-      - ZZ_2830
-      - ZZ_3061
+      - ZZ_2912
       - ZZ_3195
-      - US_2763
-      - ZZ_1550
-      - 新加坡-tg频道：@bpjzx2 14
-      - 新加坡-tg频道：@bpjzx2 15
-      - ZZ_3157
-      - _GB_英国_3_12@22
+      - ZZ_2830
       - ZZ_3178
-      - ZZ_2932
-      - SG_1006
+      - ZZ_3196
+      - US_1841
+      - ZZ_3063
+      - Relay_🇩🇪DE-🇬🇧GB_385
+      - NL_1302
+      - ZZ_3061
+      - US_2509
+      - ZZ_3157
+      - NL_1215
       - NL_1200
-      - NL_1174
-      - ZZ_3186
-      - US_2497
-      - _AU_澳大利亚_10@12
-      - US_2659
-      - LT_959
-      - AU_54
-      - AU_61
-      - AU_39
-      - Relay_🇦🇺AU-🇦🇺AU_101
-      - US_2238
+      - NL_1268
+      - US_2654
+      - NL_1257
+      - NL_1285
+      - ZZ_2932
+      - US_2105
+      - NL_1255
+      - NL_1237
+      - NL_1197
+      - Relay_🇦🇺AU-🇦🇺AU_72
       - AU_45
       - AU_49
-      - AU_25
-      - Relay_🇦🇺AU-🇦🇺AU_72
-      - AU_41
       - AU_56
-      - LT_862
-      - CN_206
-      - CN_231
-      - CN_228
-      - CN_212
-      - 14.29.124.168:25231
-      - CN_240
-      - CN_249
-      - 14.29.124.168:25295
-      - CN_228 2
-      - CN_193
-      - 14.29.124.168:25210
-      - 14.29.124.168:25220
-      - CN_2_16@1
-      - 14.29.124.168:25287
-      - CN_259
-      - CN_6_16@5
-      - CN_273
-      - CN_262
-      - CN_205
-      - 14.29.124.168:25218
-      - CN_274
-      - 香港-tg频道：@bpjzx2 10
-      - CN_217
-      - CN_3_16@2
-      - CN_224
-      - CN_219
-      - NL_1350
-      - ZZ_2912
-      - LT_928
-      - SG_929
-      - LT_951
-      - NL_1215
-      - LT_913
-      - LT_832
-      - ZZ_3128
-      - LT_989
-      - LT_915
-      - LT_927
-      - LT_807
-      - LT_930
-      - LT_889
-      - ZZ_3063
-      - LT_780
-      - NL_1204
-      - NL_1280
-      - LT_991
-      - LT_908
-      - Relay_🇷🇺RU-🇷🇺RU_1472
-      - NL_1257
-      - LT_941
-      - LT_811
-      - LT_770
-      - LT_984
-      - SG_963
       - NL_1306
-      - NL_1197
-      - LT_753
-      - LT_779
-      - LT_759
-      - NL_1255
-      - NL_1285
-      - NL_1237
-      - LT_1046
-      - NL_1302
-      - NL_1268
+      - CN_219
+      - AU_41
       - NL_1261
-      - LT_783
-      - Relay_🇺🇸US-🇺🇸US_2848
-      - LT_804
+      - AU_54
+      - AU_37
+      - Relay_🇺🇸US-🇺🇸US_2766
+      - US_2658
+      - ZZ_3128
+      - AU_39
+      - ZZ_3186
+      - NL_1174
+      - NL_1251
+      - NL_1307
+      - LT_984
+      - ZZ_2841
+      - LT_941
+      - LT_928
+      - LT_862
+      - NL_1204
+      - LT_909
+      - AU_61
+      - NL_1163
+      - LT_989
+      - LT_951
+      - LT_832
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -544,532 +256,243 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 新加坡-tg频道：@bpjzx2 9
-      - _JP_日本_2_0@1
-      - _KR_韩国_0@7
-      - _JP_日本_1_0@0
-      - 新加坡-tg频道：@bpjzx2 8
-      - Relay_🇦🇺AU-🇦🇺AU_90
-      - CN_272
       - Relay_🇩🇪DE-🇬🇧GB_390
-      - 7
-      - github.com/freefq - 瑞典  11
-      - 日本-5.49MB/s(Youtube:不良林)
-      - Relay_🇩🇪DE-🇬🇧GB_385
-      - Relay_🇺🇸US-🇺🇸US_1356
-      - ZZ_3196
-      - 169.197.142.39:5500
-      - US_1841
-      - ZZ_2841
-      - US_1929
-      - US_2509
-      - US_44_22@43
-      - US_2658
-      - SG_940
-      - ZZ_2937
-      - US_2105
-      - 38.68.134.71:8881
-      - US_2654
-      - ZZ_2830
-      - ZZ_3061
+      - ZZ_2912
       - ZZ_3195
-      - US_2763
-      - ZZ_1550
-      - 新加坡-tg频道：@bpjzx2 14
-      - 新加坡-tg频道：@bpjzx2 15
-      - ZZ_3157
-      - _GB_英国_3_12@22
+      - ZZ_2830
       - ZZ_3178
-      - ZZ_2932
-      - SG_1006
+      - ZZ_3196
+      - US_1841
+      - ZZ_3063
+      - Relay_🇩🇪DE-🇬🇧GB_385
+      - NL_1302
+      - ZZ_3061
+      - US_2509
+      - ZZ_3157
+      - NL_1215
       - NL_1200
-      - NL_1174
-      - ZZ_3186
-      - US_2497
-      - _AU_澳大利亚_10@12
-      - US_2659
-      - LT_959
-      - AU_54
-      - AU_61
-      - AU_39
-      - Relay_🇦🇺AU-🇦🇺AU_101
-      - US_2238
+      - NL_1268
+      - US_2654
+      - NL_1257
+      - NL_1285
+      - ZZ_2932
+      - US_2105
+      - NL_1255
+      - NL_1237
+      - NL_1197
+      - Relay_🇦🇺AU-🇦🇺AU_72
       - AU_45
       - AU_49
-      - AU_25
-      - Relay_🇦🇺AU-🇦🇺AU_72
-      - AU_41
       - AU_56
-      - LT_862
-      - CN_206
-      - CN_231
-      - CN_228
-      - CN_212
-      - 14.29.124.168:25231
-      - CN_240
-      - CN_249
-      - 14.29.124.168:25295
-      - CN_228 2
-      - CN_193
-      - 14.29.124.168:25210
-      - 14.29.124.168:25220
-      - CN_2_16@1
-      - 14.29.124.168:25287
-      - CN_259
-      - CN_6_16@5
-      - CN_273
-      - CN_262
-      - CN_205
-      - 14.29.124.168:25218
-      - CN_274
-      - 香港-tg频道：@bpjzx2 10
-      - CN_217
-      - CN_3_16@2
-      - CN_224
-      - CN_219
-      - NL_1350
-      - ZZ_2912
-      - LT_928
-      - SG_929
-      - LT_951
-      - NL_1215
-      - LT_913
-      - LT_832
-      - ZZ_3128
-      - LT_989
-      - LT_915
-      - LT_927
-      - LT_807
-      - LT_930
-      - LT_889
-      - ZZ_3063
-      - LT_780
-      - NL_1204
-      - NL_1280
-      - LT_991
-      - LT_908
-      - Relay_🇷🇺RU-🇷🇺RU_1472
-      - NL_1257
-      - LT_941
-      - LT_811
-      - LT_770
-      - LT_984
-      - SG_963
       - NL_1306
-      - NL_1197
-      - LT_753
-      - LT_779
-      - LT_759
-      - NL_1255
-      - NL_1285
-      - NL_1237
-      - LT_1046
-      - NL_1302
-      - NL_1268
+      - CN_219
+      - AU_41
       - NL_1261
-      - LT_783
-      - Relay_🇺🇸US-🇺🇸US_2848
-      - LT_804
+      - AU_54
+      - AU_37
+      - Relay_🇺🇸US-🇺🇸US_2766
+      - US_2658
+      - ZZ_3128
+      - AU_39
+      - ZZ_3186
+      - NL_1174
+      - NL_1251
+      - NL_1307
+      - LT_984
+      - ZZ_2841
+      - LT_941
+      - LT_928
+      - LT_862
+      - NL_1204
+      - LT_909
+      - AU_61
+      - NL_1163
+      - LT_989
+      - LT_951
+      - LT_832
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港-tg频道：@bpjzx2 10
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 新加坡-tg频道：@bpjzx2 9
-      - _JP_日本_2_0@1
-      - _KR_韩国_0@7
-      - _JP_日本_1_0@0
-      - 新加坡-tg频道：@bpjzx2 8
-      - Relay_🇦🇺AU-🇦🇺AU_90
-      - CN_272
       - Relay_🇩🇪DE-🇬🇧GB_390
-      - 7
-      - github.com/freefq - 瑞典  11
-      - 日本-5.49MB/s(Youtube:不良林)
-      - Relay_🇩🇪DE-🇬🇧GB_385
-      - Relay_🇺🇸US-🇺🇸US_1356
-      - ZZ_3196
-      - 169.197.142.39:5500
-      - US_1841
-      - ZZ_2841
-      - US_1929
-      - US_2509
-      - US_44_22@43
-      - US_2658
-      - SG_940
-      - ZZ_2937
-      - US_2105
-      - 38.68.134.71:8881
-      - US_2654
-      - ZZ_2830
-      - ZZ_3061
+      - ZZ_2912
       - ZZ_3195
-      - US_2763
-      - ZZ_1550
-      - 新加坡-tg频道：@bpjzx2 14
-      - 新加坡-tg频道：@bpjzx2 15
-      - ZZ_3157
-      - _GB_英国_3_12@22
+      - ZZ_2830
       - ZZ_3178
-      - ZZ_2932
-      - SG_1006
+      - ZZ_3196
+      - US_1841
+      - ZZ_3063
+      - Relay_🇩🇪DE-🇬🇧GB_385
+      - NL_1302
+      - ZZ_3061
+      - US_2509
+      - ZZ_3157
+      - NL_1215
       - NL_1200
-      - NL_1174
-      - ZZ_3186
-      - US_2497
-      - _AU_澳大利亚_10@12
-      - US_2659
-      - LT_959
-      - AU_54
-      - AU_61
-      - AU_39
-      - Relay_🇦🇺AU-🇦🇺AU_101
-      - US_2238
+      - NL_1268
+      - US_2654
+      - NL_1257
+      - NL_1285
+      - ZZ_2932
+      - US_2105
+      - NL_1255
+      - NL_1237
+      - NL_1197
+      - Relay_🇦🇺AU-🇦🇺AU_72
       - AU_45
       - AU_49
-      - AU_25
-      - Relay_🇦🇺AU-🇦🇺AU_72
-      - AU_41
       - AU_56
-      - LT_862
-      - CN_206
-      - CN_231
-      - CN_228
-      - CN_212
-      - 14.29.124.168:25231
-      - CN_240
-      - CN_249
-      - 14.29.124.168:25295
-      - CN_228 2
-      - CN_193
-      - 14.29.124.168:25210
-      - 14.29.124.168:25220
-      - CN_2_16@1
-      - 14.29.124.168:25287
-      - CN_259
-      - CN_6_16@5
-      - CN_273
-      - CN_262
-      - CN_205
-      - 14.29.124.168:25218
-      - CN_274
-      - 香港-tg频道：@bpjzx2 10
-      - CN_217
-      - CN_3_16@2
-      - CN_224
-      - CN_219
-      - NL_1350
-      - ZZ_2912
-      - LT_928
-      - SG_929
-      - LT_951
-      - NL_1215
-      - LT_913
-      - LT_832
-      - ZZ_3128
-      - LT_989
-      - LT_915
-      - LT_927
-      - LT_807
-      - LT_930
-      - LT_889
-      - ZZ_3063
-      - LT_780
-      - NL_1204
-      - NL_1280
-      - LT_991
-      - LT_908
-      - Relay_🇷🇺RU-🇷🇺RU_1472
-      - NL_1257
-      - LT_941
-      - LT_811
-      - LT_770
-      - LT_984
-      - SG_963
       - NL_1306
-      - NL_1197
-      - LT_753
-      - LT_779
-      - LT_759
-      - NL_1255
-      - NL_1285
-      - NL_1237
-      - LT_1046
-      - NL_1302
-      - NL_1268
+      - CN_219
+      - AU_41
       - NL_1261
-      - LT_783
-      - Relay_🇺🇸US-🇺🇸US_2848
-      - LT_804
+      - AU_54
+      - AU_37
+      - Relay_🇺🇸US-🇺🇸US_2766
+      - US_2658
+      - ZZ_3128
+      - AU_39
+      - ZZ_3186
+      - NL_1174
+      - NL_1251
+      - NL_1307
+      - LT_984
+      - ZZ_2841
+      - LT_941
+      - LT_928
+      - LT_862
+      - NL_1204
+      - LT_909
+      - AU_61
+      - NL_1163
+      - LT_989
+      - LT_951
+      - LT_832
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 新加坡-tg频道：@bpjzx2 9
-      - _JP_日本_2_0@1
-      - _KR_韩国_0@7
-      - _JP_日本_1_0@0
-      - 新加坡-tg频道：@bpjzx2 8
-      - Relay_🇦🇺AU-🇦🇺AU_90
-      - CN_272
       - Relay_🇩🇪DE-🇬🇧GB_390
-      - 7
-      - github.com/freefq - 瑞典  11
-      - 日本-5.49MB/s(Youtube:不良林)
-      - Relay_🇩🇪DE-🇬🇧GB_385
-      - Relay_🇺🇸US-🇺🇸US_1356
-      - ZZ_3196
-      - 169.197.142.39:5500
-      - US_1841
-      - ZZ_2841
-      - US_1929
-      - US_2509
-      - US_44_22@43
-      - US_2658
-      - SG_940
-      - ZZ_2937
-      - US_2105
-      - 38.68.134.71:8881
-      - US_2654
-      - ZZ_2830
-      - ZZ_3061
+      - ZZ_2912
       - ZZ_3195
-      - US_2763
-      - ZZ_1550
-      - 新加坡-tg频道：@bpjzx2 14
-      - 新加坡-tg频道：@bpjzx2 15
-      - ZZ_3157
-      - _GB_英国_3_12@22
+      - ZZ_2830
       - ZZ_3178
-      - ZZ_2932
-      - SG_1006
+      - ZZ_3196
+      - US_1841
+      - ZZ_3063
+      - Relay_🇩🇪DE-🇬🇧GB_385
+      - NL_1302
+      - ZZ_3061
+      - US_2509
+      - ZZ_3157
+      - NL_1215
       - NL_1200
-      - NL_1174
-      - ZZ_3186
-      - US_2497
-      - _AU_澳大利亚_10@12
-      - US_2659
-      - LT_959
-      - AU_54
-      - AU_61
-      - AU_39
-      - Relay_🇦🇺AU-🇦🇺AU_101
-      - US_2238
+      - NL_1268
+      - US_2654
+      - NL_1257
+      - NL_1285
+      - ZZ_2932
+      - US_2105
+      - NL_1255
+      - NL_1237
+      - NL_1197
+      - Relay_🇦🇺AU-🇦🇺AU_72
       - AU_45
       - AU_49
-      - AU_25
-      - Relay_🇦🇺AU-🇦🇺AU_72
-      - AU_41
       - AU_56
-      - LT_862
-      - CN_206
-      - CN_231
-      - CN_228
-      - CN_212
-      - 14.29.124.168:25231
-      - CN_240
-      - CN_249
-      - 14.29.124.168:25295
-      - CN_228 2
-      - CN_193
-      - 14.29.124.168:25210
-      - 14.29.124.168:25220
-      - CN_2_16@1
-      - 14.29.124.168:25287
-      - CN_259
-      - CN_6_16@5
-      - CN_273
-      - CN_262
-      - CN_205
-      - 14.29.124.168:25218
-      - CN_274
-      - 香港-tg频道：@bpjzx2 10
-      - CN_217
-      - CN_3_16@2
-      - CN_224
-      - CN_219
-      - NL_1350
-      - ZZ_2912
-      - LT_928
-      - SG_929
-      - LT_951
-      - NL_1215
-      - LT_913
-      - LT_832
-      - ZZ_3128
-      - LT_989
-      - LT_915
-      - LT_927
-      - LT_807
-      - LT_930
-      - LT_889
-      - ZZ_3063
-      - LT_780
-      - NL_1204
-      - NL_1280
-      - LT_991
-      - LT_908
-      - Relay_🇷🇺RU-🇷🇺RU_1472
-      - NL_1257
-      - LT_941
-      - LT_811
-      - LT_770
-      - LT_984
-      - SG_963
       - NL_1306
-      - NL_1197
-      - LT_753
-      - LT_779
-      - LT_759
-      - NL_1255
-      - NL_1285
-      - NL_1237
-      - LT_1046
-      - NL_1302
-      - NL_1268
+      - CN_219
+      - AU_41
       - NL_1261
-      - LT_783
-      - Relay_🇺🇸US-🇺🇸US_2848
-      - LT_804
+      - AU_54
+      - AU_37
+      - Relay_🇺🇸US-🇺🇸US_2766
+      - US_2658
+      - ZZ_3128
+      - AU_39
+      - ZZ_3186
+      - NL_1174
+      - NL_1251
+      - NL_1307
+      - LT_984
+      - ZZ_2841
+      - LT_941
+      - LT_928
+      - LT_862
+      - NL_1204
+      - LT_909
+      - AU_61
+      - NL_1163
+      - LT_989
+      - LT_951
+      - LT_832
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 新加坡-tg频道：@bpjzx2 9
-      - _JP_日本_2_0@1
-      - _KR_韩国_0@7
-      - _JP_日本_1_0@0
-      - 新加坡-tg频道：@bpjzx2 8
-      - Relay_🇦🇺AU-🇦🇺AU_90
-      - CN_272
       - Relay_🇩🇪DE-🇬🇧GB_390
-      - 7
-      - github.com/freefq - 瑞典  11
-      - 日本-5.49MB/s(Youtube:不良林)
-      - Relay_🇩🇪DE-🇬🇧GB_385
-      - Relay_🇺🇸US-🇺🇸US_1356
-      - ZZ_3196
-      - 169.197.142.39:5500
-      - US_1841
-      - ZZ_2841
-      - US_1929
-      - US_2509
-      - US_44_22@43
-      - US_2658
-      - SG_940
-      - ZZ_2937
-      - US_2105
-      - 38.68.134.71:8881
-      - US_2654
-      - ZZ_2830
-      - ZZ_3061
+      - ZZ_2912
       - ZZ_3195
-      - US_2763
-      - ZZ_1550
-      - 新加坡-tg频道：@bpjzx2 14
-      - 新加坡-tg频道：@bpjzx2 15
-      - ZZ_3157
-      - _GB_英国_3_12@22
+      - ZZ_2830
       - ZZ_3178
-      - ZZ_2932
-      - SG_1006
+      - ZZ_3196
+      - US_1841
+      - ZZ_3063
+      - Relay_🇩🇪DE-🇬🇧GB_385
+      - NL_1302
+      - ZZ_3061
+      - US_2509
+      - ZZ_3157
+      - NL_1215
       - NL_1200
-      - NL_1174
-      - ZZ_3186
-      - US_2497
-      - _AU_澳大利亚_10@12
-      - US_2659
-      - LT_959
-      - AU_54
-      - AU_61
-      - AU_39
-      - Relay_🇦🇺AU-🇦🇺AU_101
-      - US_2238
+      - NL_1268
+      - US_2654
+      - NL_1257
+      - NL_1285
+      - ZZ_2932
+      - US_2105
+      - NL_1255
+      - NL_1237
+      - NL_1197
+      - Relay_🇦🇺AU-🇦🇺AU_72
       - AU_45
       - AU_49
-      - AU_25
-      - Relay_🇦🇺AU-🇦🇺AU_72
-      - AU_41
       - AU_56
-      - LT_862
-      - CN_206
-      - CN_231
-      - CN_228
-      - CN_212
-      - 14.29.124.168:25231
-      - CN_240
-      - CN_249
-      - 14.29.124.168:25295
-      - CN_228 2
-      - CN_193
-      - 14.29.124.168:25210
-      - 14.29.124.168:25220
-      - CN_2_16@1
-      - 14.29.124.168:25287
-      - CN_259
-      - CN_6_16@5
-      - CN_273
-      - CN_262
-      - CN_205
-      - 14.29.124.168:25218
-      - CN_274
-      - 香港-tg频道：@bpjzx2 10
-      - CN_217
-      - CN_3_16@2
-      - CN_224
-      - CN_219
-      - NL_1350
-      - ZZ_2912
-      - LT_928
-      - SG_929
-      - LT_951
-      - NL_1215
-      - LT_913
-      - LT_832
-      - ZZ_3128
-      - LT_989
-      - LT_915
-      - LT_927
-      - LT_807
-      - LT_930
-      - LT_889
-      - ZZ_3063
-      - LT_780
-      - NL_1204
-      - NL_1280
-      - LT_991
-      - LT_908
-      - Relay_🇷🇺RU-🇷🇺RU_1472
-      - NL_1257
-      - LT_941
-      - LT_811
-      - LT_770
-      - LT_984
-      - SG_963
       - NL_1306
-      - NL_1197
-      - LT_753
-      - LT_779
-      - LT_759
-      - NL_1255
-      - NL_1285
-      - NL_1237
-      - LT_1046
-      - NL_1302
-      - NL_1268
+      - CN_219
+      - AU_41
       - NL_1261
-      - LT_783
-      - Relay_🇺🇸US-🇺🇸US_2848
-      - LT_804
+      - AU_54
+      - AU_37
+      - Relay_🇺🇸US-🇺🇸US_2766
+      - US_2658
+      - ZZ_3128
+      - AU_39
+      - ZZ_3186
+      - NL_1174
+      - NL_1251
+      - NL_1307
+      - LT_984
+      - ZZ_2841
+      - LT_941
+      - LT_928
+      - LT_862
+      - NL_1204
+      - LT_909
+      - AU_61
+      - NL_1163
+      - LT_989
+      - LT_951
+      - LT_832
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1085,132 +508,60 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 新加坡-tg频道：@bpjzx2 9
-      - _JP_日本_2_0@1
-      - _KR_韩国_0@7
-      - _JP_日本_1_0@0
-      - 新加坡-tg频道：@bpjzx2 8
-      - Relay_🇦🇺AU-🇦🇺AU_90
-      - CN_272
       - Relay_🇩🇪DE-🇬🇧GB_390
-      - 7
-      - github.com/freefq - 瑞典  11
-      - 日本-5.49MB/s(Youtube:不良林)
-      - Relay_🇩🇪DE-🇬🇧GB_385
-      - Relay_🇺🇸US-🇺🇸US_1356
-      - ZZ_3196
-      - 169.197.142.39:5500
-      - US_1841
-      - ZZ_2841
-      - US_1929
-      - US_2509
-      - US_44_22@43
-      - US_2658
-      - SG_940
-      - ZZ_2937
-      - US_2105
-      - 38.68.134.71:8881
-      - US_2654
-      - ZZ_2830
-      - ZZ_3061
+      - ZZ_2912
       - ZZ_3195
-      - US_2763
-      - ZZ_1550
-      - 新加坡-tg频道：@bpjzx2 14
-      - 新加坡-tg频道：@bpjzx2 15
-      - ZZ_3157
-      - _GB_英国_3_12@22
+      - ZZ_2830
       - ZZ_3178
-      - ZZ_2932
-      - SG_1006
+      - ZZ_3196
+      - US_1841
+      - ZZ_3063
+      - Relay_🇩🇪DE-🇬🇧GB_385
+      - NL_1302
+      - ZZ_3061
+      - US_2509
+      - ZZ_3157
+      - NL_1215
       - NL_1200
-      - NL_1174
-      - ZZ_3186
-      - US_2497
-      - _AU_澳大利亚_10@12
-      - US_2659
-      - LT_959
-      - AU_54
-      - AU_61
-      - AU_39
-      - Relay_🇦🇺AU-🇦🇺AU_101
-      - US_2238
+      - NL_1268
+      - US_2654
+      - NL_1257
+      - NL_1285
+      - ZZ_2932
+      - US_2105
+      - NL_1255
+      - NL_1237
+      - NL_1197
+      - Relay_🇦🇺AU-🇦🇺AU_72
       - AU_45
       - AU_49
-      - AU_25
-      - Relay_🇦🇺AU-🇦🇺AU_72
-      - AU_41
       - AU_56
-      - LT_862
-      - CN_206
-      - CN_231
-      - CN_228
-      - CN_212
-      - 14.29.124.168:25231
-      - CN_240
-      - CN_249
-      - 14.29.124.168:25295
-      - CN_228 2
-      - CN_193
-      - 14.29.124.168:25210
-      - 14.29.124.168:25220
-      - CN_2_16@1
-      - 14.29.124.168:25287
-      - CN_259
-      - CN_6_16@5
-      - CN_273
-      - CN_262
-      - CN_205
-      - 14.29.124.168:25218
-      - CN_274
-      - 香港-tg频道：@bpjzx2 10
-      - CN_217
-      - CN_3_16@2
-      - CN_224
-      - CN_219
-      - NL_1350
-      - ZZ_2912
-      - LT_928
-      - SG_929
-      - LT_951
-      - NL_1215
-      - LT_913
-      - LT_832
-      - ZZ_3128
-      - LT_989
-      - LT_915
-      - LT_927
-      - LT_807
-      - LT_930
-      - LT_889
-      - ZZ_3063
-      - LT_780
-      - NL_1204
-      - NL_1280
-      - LT_991
-      - LT_908
-      - Relay_🇷🇺RU-🇷🇺RU_1472
-      - NL_1257
-      - LT_941
-      - LT_811
-      - LT_770
-      - LT_984
-      - SG_963
       - NL_1306
-      - NL_1197
-      - LT_753
-      - LT_779
-      - LT_759
-      - NL_1255
-      - NL_1285
-      - NL_1237
-      - LT_1046
-      - NL_1302
-      - NL_1268
+      - CN_219
+      - AU_41
       - NL_1261
-      - LT_783
-      - Relay_🇺🇸US-🇺🇸US_2848
-      - LT_804
+      - AU_54
+      - AU_37
+      - Relay_🇺🇸US-🇺🇸US_2766
+      - US_2658
+      - ZZ_3128
+      - AU_39
+      - ZZ_3186
+      - NL_1174
+      - NL_1251
+      - NL_1307
+      - LT_984
+      - ZZ_2841
+      - LT_941
+      - LT_928
+      - LT_862
+      - NL_1204
+      - LT_909
+      - AU_61
+      - NL_1163
+      - LT_989
+      - LT_951
+      - LT_832
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
