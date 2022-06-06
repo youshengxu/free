@@ -5,163 +5,211 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: NONE, server: 116.129.253.130, port: 3389, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
-  - {name: NONE 2, server: 116.129.254.47, port: 3389, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
-  - {name: NONE 3, server: 116.129.254.47, port: 3389, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
-  - {name: NONE 4, server: 116.129.254.47, port: 3389, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
-  - {name: _CN_中国->🇸🇬_SG_新加坡_1_20@11, server: 116.129.254.47, port: 3389, type: trojan, password: e37c6d7efa845d60, skip-cert-verify: true, udp: true}
-  - {name: _CN_中国->🇸🇬_SG_新加坡_2_20@12, server: 116.129.254.29, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
-  - {name: NONE 5, server: 116.129.254.29, port: 3389, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
-  - {name: NONE 6, server: 116.129.254.29, port: 3389, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
-  - {name: NONE 7, server: 116.129.254.47, port: 3389, type: trojan, password: c3c448da2363a6f7, skip-cert-verify: true, udp: true}
-  - {name: NONE 8, server: 116.129.254.47, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
-  - {name: NONE 9, server: 116.129.254.29, port: 3389, type: trojan, password: e37c6d7efa845d60, skip-cert-verify: true, udp: true}
-  - {name: NONE 10, server: 116.129.254.29, port: 3389, type: trojan, password: f6f2072a2e4cfc91, skip-cert-verify: true, udp: true}
-  - {name: NONE 11, server: 116.129.253.130, port: 3389, type: trojan, password: e37c6d7efa845d60, skip-cert-verify: true, udp: true}
-  - {name: NONE 12, server: 116.129.254.29, port: 3389, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
-  - {name: _CN_中国->🇸🇬_SG_新加坡_3_20@13, server: 116.129.253.130, port: 3389, type: trojan, password: f6f2072a2e4cfc91, skip-cert-verify: true, udp: true}
-  - {name: US_545, server: au2-1.nigirocloud.com, port: 443, type: trojan, password: 3yFq7NCP53mVfpXJz3, sni: au2-1.nigirocloud.com, skip-cert-verify: true, udp: true}
-  - {name: 172.96.194.114:252, server: 172.96.194.114, port: 252, type: ss, cipher: aes-256-cfb, password: bwhskrskr06, udp: true}
-  - {name: _144, server: shcm.pdjc.cc, port: 42000, type: trojan, password: 8d0db1d1-62a2-4d8b-b272-e4f364e064c6, sni: shcm.pdjc.cc, skip-cert-verify: true, udp: true}
-  - {name: _95, server: xjp.ziqiyun.xyz, port: 443, type: trojan, password: 7b561e94-42f3-4f92-979c-4cf97c328025, sni: xjp.ziqiyun.xyz, skip-cert-verify: true, udp: true}
-  - {name: github.com/freefq - 加拿大  8, server: 527hk1.fans8.xyz, port: 80, type: vmess, uuid: 7f4ff2e1-c08f-35bd-afe7-4a6a386907aa, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: 527hk1.fans8.xyz}, udp: true}
-  - {name: _03, server: 185.4.65.6, port: 21247, type: ss, cipher: aes-256-cfb, password: vDS9G2p, udp: true}
-  - {name: _129, server: jgwhdlb4.gaox.ml, port: 443, type: trojan, password: 081a4198-d664-4bc5-a7c6-e35982da964b, sni: jgwhdlb4.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: NONE 13, server: 116.129.253.130, port: 3389, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
-  - {name: _US_美国_5_1@9, server: 212.81.47.11, port: 443, type: trojan, password: 3yFq7NCP53mVfpXJz3, skip-cert-verify: true, udp: true}
-  - {name: NONE 14, server: 5.44.249.43, port: 3389, type: trojan, password: 711aabc21e45ae31, skip-cert-verify: true, udp: true}
-  - {name: NONE 15, server: 5.44.249.43, port: 3389, type: trojan, password: ffec9f6ea19e1dd1, skip-cert-verify: true, udp: true}
-  - {name: NONE 16, server: 5.44.249.43, port: 3389, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
-  - {name: NONE 17, server: 5.44.249.43, port: 3389, type: trojan, password: cd39f62aed7b90f6, skip-cert-verify: true, udp: true}
-  - {name: GB_39_22@38, server: 152.89.210.105, port: 9060, type: ss, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ, udp: true}
-  - {name: NONE 18, server: 5.44.249.43, port: 3389, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
-  - {name: NONE 19, server: jgwxn3.gaox.ml, port: 443, type: trojan, password: cb43b7c2-b744-41c5-bcc2-fd7467b332cf, sni: jgwxn3.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: NONE 20, server: 116.129.253.130, port: 3389, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
-  - {name: NONE 21, server: 5.44.249.43, port: 3389, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
-  - {name: _145, server: 198.200.51.219, port: 26969, type: trojan, password: 8d0db1d1-62a2-4d8b-b272-e4f364e064c6, skip-cert-verify: true, udp: true}
-  - {name: _GB_英国_6_1@40, server: 152.89.210.105, port: 9007, type: ss, cipher: aes-256-cfb, password: kSPmvwdFzGMMW5pY, udp: true}
+  - {name: 14.29.124.168:25295, server: 14.29.124.168, port: 25295, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _1393_ 6.75Mb |13.67Mb, server: 14.29.124.168, port: 25280, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_37_22@36, server: 14.29.124.168, port: 25283, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_34_22@33, server: 14.29.124.168, port: 25267, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 14.29.124.168:25231, server: 14.29.124.168, port: 25231, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _1389_ 2.70Mb |13.86Mb, server: 14.29.124.168, port: 25229, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 14.29.124.168:25266, server: 14.29.124.168, port: 25266, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_67 TG@peekfun |12.62Mb, server: 14.29.124.168, port: 25294, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _1395_ 5.85Mb | 8.83Mb, server: 14.29.124.168, port: 25284, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _1394_ 4.45Mb | 5.63Mb, server: 14.29.124.168, port: 25207, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_29_22@28, server: 14.29.124.168, port: 25256, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 14.29.124.168:25296, server: 14.29.124.168, port: 25296, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: US_82_22@81, server: 20.210.229.72, port: 3389, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
+  - {name: CN_26_22@25, server: 14.29.124.168, port: 25219, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _1526_11.88Mb | 5.15Mb, server: 14.29.124.168, port: 25293, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_2018_ 8.32Mb | 1.98Mb, server: 14.29.124.168, port: 25259, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 14.29.124.168:25252, server: 14.29.124.168, port: 25252, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _1387_ 6.03Mb |22.48Mb, server: 14.29.124.168, port: 25251, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 14.29.124.168:25218, server: 14.29.124.168, port: 25218, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _1398_ 3.90Mb |13.41Mb, server: 14.29.124.168, port: 25272, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 14.29.124.168:25235, server: 14.29.124.168, port: 25235, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_35_22@34, server: 14.29.124.168, port: 25287, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_25_22@24, server: 14.29.124.168, port: 25233, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_32_22@31, server: 14.29.124.168, port: 25268, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 14.29.124.168:25210, server: 14.29.124.168, port: 25210, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_30_22@29, server: 14.29.124.168, port: 25245, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 14.29.124.168:25230, server: 14.29.124.168, port: 25230, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _1524_ 7.65Mb |10.40Mb, server: 14.29.124.168, port: 25222, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _1390_ 6.14Mb |20.75Mb, server: 14.29.124.168, port: 25226, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_2015_12.77Mb | 1.70Mb, server: 14.29.124.168, port: 25247, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 14.29.124.168:25289, server: 14.29.124.168, port: 25289, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _1392_ 6.98Mb |23.71Mb, server: 14.29.124.168, port: 25215, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _1386_ 7.81Mb | 8.97Mb, server: 14.29.124.168, port: 25254, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _US_美国_2_0@17, server: 143.198.130.21, port: 42382, type: vmess, uuid: 03b452a7-907b-4f77-8ca4-60250cc835bc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_1201_16.56Mb | 1.63Mb, server: bai-piao-wang-zhe10.98848.xyz, port: 50858, type: trojan, password: f0de3134-aef4-45b5-a135-3a82321bbac6, sni: bai-piao-wang-zhe10.98848.xyz, skip-cert-verify: true, udp: true}
+  - {name: CN_28_22@27, server: 14.29.124.168, port: 25220, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 14.29.124.168:25286, server: 14.29.124.168, port: 25286, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_36_22@35, server: 14.29.124.168, port: 25241, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _103, server: jgwdb3.gaox.ml, port: 443, type: trojan, password: 8d2d5953-d649-4034-94f2-72f2df2623da, sni: jgwdb3.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: 亚洲(欢迎订阅Youtube破解资源君) 13, server: 5.183.32.187, port: 22610, type: vmess, uuid: 46a2f46a-c56f-487b-b2c9-b4204bf8021e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _US_美国_1_1@1, server: vus3.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /chat, ws-headers: {Host: vus3.0bad.com}, udp: true}
+  - {name: 美国(欢迎订阅Youtube破解资源君) 9, server: 5.183.32.187, port: 22610, type: vmess, uuid: 46a2f46a-c56f-487b-b2c9-b4204bf8021e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: univstar-香港Azure_1, server: 159.27.115.21, port: 63078, type: vmess, uuid: d9ac2f26-cc36-3faf-80c4-e2345cb25680, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 159.27.115.21}, udp: true}
+  - {name: _1388_ 8.39Mb | 1.96Mb, server: 14.29.124.168, port: 25261, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: "", server: vjp1.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /chat, ws-headers: {Host: vjp1.0bad.com}, udp: true}
+  - {name: Relay_🇸🇬SG-🇭🇰HK_846, server: 159.27.115.21, port: 63078, type: vmess, uuid: c4630fde-3be4-32a5-87bb-01a0dfe5f9a1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 159.27.115.21}, udp: true}
+  - {name: 14.29.124.168:25238, server: 14.29.124.168, port: 25238, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - NONE
-      - NONE 2
-      - NONE 3
-      - NONE 4
-      - _CN_中国->🇸🇬_SG_新加坡_1_20@11
-      - _CN_中国->🇸🇬_SG_新加坡_2_20@12
-      - NONE 5
-      - NONE 6
-      - NONE 7
-      - NONE 8
-      - NONE 9
-      - NONE 10
-      - NONE 11
-      - NONE 12
-      - _CN_中国->🇸🇬_SG_新加坡_3_20@13
-      - US_545
-      - 172.96.194.114:252
-      - _144
-      - _95
-      - github.com/freefq - 加拿大  8
-      - _03
-      - _129
-      - NONE 13
-      - _US_美国_5_1@9
-      - NONE 14
-      - NONE 15
-      - NONE 16
-      - NONE 17
-      - GB_39_22@38
-      - NONE 18
-      - NONE 19
-      - NONE 20
-      - NONE 21
-      - _145
-      - _GB_英国_6_1@40
+      - 14.29.124.168:25295
+      - _1393_ 6.75Mb |13.67Mb
+      - CN_37_22@36
+      - CN_34_22@33
+      - 14.29.124.168:25231
+      - _1389_ 2.70Mb |13.86Mb
+      - 14.29.124.168:25266
+      - CN_67 TG@peekfun |12.62Mb
+      - _1395_ 5.85Mb | 8.83Mb
+      - _1394_ 4.45Mb | 5.63Mb
+      - CN_29_22@28
+      - 14.29.124.168:25296
+      - US_82_22@81
+      - CN_26_22@25
+      - _1526_11.88Mb | 5.15Mb
+      - CN_2018_ 8.32Mb | 1.98Mb
+      - 14.29.124.168:25252
+      - _1387_ 6.03Mb |22.48Mb
+      - 14.29.124.168:25218
+      - _1398_ 3.90Mb |13.41Mb
+      - 14.29.124.168:25235
+      - CN_35_22@34
+      - CN_25_22@24
+      - CN_32_22@31
+      - 14.29.124.168:25210
+      - CN_30_22@29
+      - 14.29.124.168:25230
+      - _1524_ 7.65Mb |10.40Mb
+      - _1390_ 6.14Mb |20.75Mb
+      - CN_2015_12.77Mb | 1.70Mb
+      - 14.29.124.168:25289
+      - _1392_ 6.98Mb |23.71Mb
+      - _1386_ 7.81Mb | 8.97Mb
+      - _US_美国_2_0@17
+      - Relay_🇺🇸US-🇺🇸US_1201_16.56Mb | 1.63Mb
+      - CN_28_22@27
+      - 14.29.124.168:25286
+      - CN_36_22@35
+      - _103
+      - 亚洲(欢迎订阅Youtube破解资源君) 13
+      - _US_美国_1_1@1
+      - 美国(欢迎订阅Youtube破解资源君) 9
+      - univstar-香港Azure_1
+      - _1388_ 8.39Mb | 1.96Mb
+      - ""
+      - Relay_🇸🇬SG-🇭🇰HK_846
+      - 14.29.124.168:25238
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - NONE
-      - NONE 2
-      - NONE 3
-      - NONE 4
-      - _CN_中国->🇸🇬_SG_新加坡_1_20@11
-      - _CN_中国->🇸🇬_SG_新加坡_2_20@12
-      - NONE 5
-      - NONE 6
-      - NONE 7
-      - NONE 8
-      - NONE 9
-      - NONE 10
-      - NONE 11
-      - NONE 12
-      - _CN_中国->🇸🇬_SG_新加坡_3_20@13
-      - US_545
-      - 172.96.194.114:252
-      - _144
-      - _95
-      - github.com/freefq - 加拿大  8
-      - _03
-      - _129
-      - NONE 13
-      - _US_美国_5_1@9
-      - NONE 14
-      - NONE 15
-      - NONE 16
-      - NONE 17
-      - GB_39_22@38
-      - NONE 18
-      - NONE 19
-      - NONE 20
-      - NONE 21
-      - _145
-      - _GB_英国_6_1@40
+      - 14.29.124.168:25295
+      - _1393_ 6.75Mb |13.67Mb
+      - CN_37_22@36
+      - CN_34_22@33
+      - 14.29.124.168:25231
+      - _1389_ 2.70Mb |13.86Mb
+      - 14.29.124.168:25266
+      - CN_67 TG@peekfun |12.62Mb
+      - _1395_ 5.85Mb | 8.83Mb
+      - _1394_ 4.45Mb | 5.63Mb
+      - CN_29_22@28
+      - 14.29.124.168:25296
+      - US_82_22@81
+      - CN_26_22@25
+      - _1526_11.88Mb | 5.15Mb
+      - CN_2018_ 8.32Mb | 1.98Mb
+      - 14.29.124.168:25252
+      - _1387_ 6.03Mb |22.48Mb
+      - 14.29.124.168:25218
+      - _1398_ 3.90Mb |13.41Mb
+      - 14.29.124.168:25235
+      - CN_35_22@34
+      - CN_25_22@24
+      - CN_32_22@31
+      - 14.29.124.168:25210
+      - CN_30_22@29
+      - 14.29.124.168:25230
+      - _1524_ 7.65Mb |10.40Mb
+      - _1390_ 6.14Mb |20.75Mb
+      - CN_2015_12.77Mb | 1.70Mb
+      - 14.29.124.168:25289
+      - _1392_ 6.98Mb |23.71Mb
+      - _1386_ 7.81Mb | 8.97Mb
+      - _US_美国_2_0@17
+      - Relay_🇺🇸US-🇺🇸US_1201_16.56Mb | 1.63Mb
+      - CN_28_22@27
+      - 14.29.124.168:25286
+      - CN_36_22@35
+      - _103
+      - 亚洲(欢迎订阅Youtube破解资源君) 13
+      - _US_美国_1_1@1
+      - 美国(欢迎订阅Youtube破解资源君) 9
+      - univstar-香港Azure_1
+      - _1388_ 8.39Mb | 1.96Mb
+      - ""
+      - Relay_🇸🇬SG-🇭🇰HK_846
+      - 14.29.124.168:25238
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - NONE
-      - NONE 2
-      - NONE 3
-      - NONE 4
-      - _CN_中国->🇸🇬_SG_新加坡_1_20@11
-      - _CN_中国->🇸🇬_SG_新加坡_2_20@12
-      - NONE 5
-      - NONE 6
-      - NONE 7
-      - NONE 8
-      - NONE 9
-      - NONE 10
-      - NONE 11
-      - NONE 12
-      - _CN_中国->🇸🇬_SG_新加坡_3_20@13
-      - US_545
-      - 172.96.194.114:252
-      - _144
-      - _95
-      - github.com/freefq - 加拿大  8
-      - _03
-      - _129
-      - NONE 13
-      - _US_美国_5_1@9
-      - NONE 14
-      - NONE 15
-      - NONE 16
-      - NONE 17
-      - GB_39_22@38
-      - NONE 18
-      - NONE 19
-      - NONE 20
-      - NONE 21
-      - _145
-      - _GB_英国_6_1@40
+      - 14.29.124.168:25295
+      - _1393_ 6.75Mb |13.67Mb
+      - CN_37_22@36
+      - CN_34_22@33
+      - 14.29.124.168:25231
+      - _1389_ 2.70Mb |13.86Mb
+      - 14.29.124.168:25266
+      - CN_67 TG@peekfun |12.62Mb
+      - _1395_ 5.85Mb | 8.83Mb
+      - _1394_ 4.45Mb | 5.63Mb
+      - CN_29_22@28
+      - 14.29.124.168:25296
+      - US_82_22@81
+      - CN_26_22@25
+      - _1526_11.88Mb | 5.15Mb
+      - CN_2018_ 8.32Mb | 1.98Mb
+      - 14.29.124.168:25252
+      - _1387_ 6.03Mb |22.48Mb
+      - 14.29.124.168:25218
+      - _1398_ 3.90Mb |13.41Mb
+      - 14.29.124.168:25235
+      - CN_35_22@34
+      - CN_25_22@24
+      - CN_32_22@31
+      - 14.29.124.168:25210
+      - CN_30_22@29
+      - 14.29.124.168:25230
+      - _1524_ 7.65Mb |10.40Mb
+      - _1390_ 6.14Mb |20.75Mb
+      - CN_2015_12.77Mb | 1.70Mb
+      - 14.29.124.168:25289
+      - _1392_ 6.98Mb |23.71Mb
+      - _1386_ 7.81Mb | 8.97Mb
+      - _US_美国_2_0@17
+      - Relay_🇺🇸US-🇺🇸US_1201_16.56Mb | 1.63Mb
+      - CN_28_22@27
+      - 14.29.124.168:25286
+      - CN_36_22@35
+      - _103
+      - 亚洲(欢迎订阅Youtube破解资源君) 13
+      - _US_美国_1_1@1
+      - 美国(欢迎订阅Youtube破解资源君) 9
+      - univstar-香港Azure_1
+      - _1388_ 8.39Mb | 1.96Mb
+      - ""
+      - Relay_🇸🇬SG-🇭🇰HK_846
+      - 14.29.124.168:25238
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -180,167 +228,216 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - NONE
-      - NONE 2
-      - NONE 3
-      - NONE 4
-      - _CN_中国->🇸🇬_SG_新加坡_1_20@11
-      - _CN_中国->🇸🇬_SG_新加坡_2_20@12
-      - NONE 5
-      - NONE 6
-      - NONE 7
-      - NONE 8
-      - NONE 9
-      - NONE 10
-      - NONE 11
-      - NONE 12
-      - _CN_中国->🇸🇬_SG_新加坡_3_20@13
-      - US_545
-      - 172.96.194.114:252
-      - _144
-      - _95
-      - github.com/freefq - 加拿大  8
-      - _03
-      - _129
-      - NONE 13
-      - _US_美国_5_1@9
-      - NONE 14
-      - NONE 15
-      - NONE 16
-      - NONE 17
-      - GB_39_22@38
-      - NONE 18
-      - NONE 19
-      - NONE 20
-      - NONE 21
-      - _145
-      - _GB_英国_6_1@40
+      - 14.29.124.168:25295
+      - _1393_ 6.75Mb |13.67Mb
+      - CN_37_22@36
+      - CN_34_22@33
+      - 14.29.124.168:25231
+      - _1389_ 2.70Mb |13.86Mb
+      - 14.29.124.168:25266
+      - CN_67 TG@peekfun |12.62Mb
+      - _1395_ 5.85Mb | 8.83Mb
+      - _1394_ 4.45Mb | 5.63Mb
+      - CN_29_22@28
+      - 14.29.124.168:25296
+      - US_82_22@81
+      - CN_26_22@25
+      - _1526_11.88Mb | 5.15Mb
+      - CN_2018_ 8.32Mb | 1.98Mb
+      - 14.29.124.168:25252
+      - _1387_ 6.03Mb |22.48Mb
+      - 14.29.124.168:25218
+      - _1398_ 3.90Mb |13.41Mb
+      - 14.29.124.168:25235
+      - CN_35_22@34
+      - CN_25_22@24
+      - CN_32_22@31
+      - 14.29.124.168:25210
+      - CN_30_22@29
+      - 14.29.124.168:25230
+      - _1524_ 7.65Mb |10.40Mb
+      - _1390_ 6.14Mb |20.75Mb
+      - CN_2015_12.77Mb | 1.70Mb
+      - 14.29.124.168:25289
+      - _1392_ 6.98Mb |23.71Mb
+      - _1386_ 7.81Mb | 8.97Mb
+      - _US_美国_2_0@17
+      - Relay_🇺🇸US-🇺🇸US_1201_16.56Mb | 1.63Mb
+      - CN_28_22@27
+      - 14.29.124.168:25286
+      - CN_36_22@35
+      - _103
+      - 亚洲(欢迎订阅Youtube破解资源君) 13
+      - _US_美国_1_1@1
+      - 美国(欢迎订阅Youtube破解资源君) 9
+      - univstar-香港Azure_1
+      - _1388_ 8.39Mb | 1.96Mb
+      - ""
+      - Relay_🇸🇬SG-🇭🇰HK_846
+      - 14.29.124.168:25238
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - univstar-香港Azure_1
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - NONE
-      - NONE 2
-      - NONE 3
-      - NONE 4
-      - _CN_中国->🇸🇬_SG_新加坡_1_20@11
-      - _CN_中国->🇸🇬_SG_新加坡_2_20@12
-      - NONE 5
-      - NONE 6
-      - NONE 7
-      - NONE 8
-      - NONE 9
-      - NONE 10
-      - NONE 11
-      - NONE 12
-      - _CN_中国->🇸🇬_SG_新加坡_3_20@13
-      - US_545
-      - 172.96.194.114:252
-      - _144
-      - _95
-      - github.com/freefq - 加拿大  8
-      - _03
-      - _129
-      - NONE 13
-      - _US_美国_5_1@9
-      - NONE 14
-      - NONE 15
-      - NONE 16
-      - NONE 17
-      - GB_39_22@38
-      - NONE 18
-      - NONE 19
-      - NONE 20
-      - NONE 21
-      - _145
-      - _GB_英国_6_1@40
+      - 14.29.124.168:25295
+      - _1393_ 6.75Mb |13.67Mb
+      - CN_37_22@36
+      - CN_34_22@33
+      - 14.29.124.168:25231
+      - _1389_ 2.70Mb |13.86Mb
+      - 14.29.124.168:25266
+      - CN_67 TG@peekfun |12.62Mb
+      - _1395_ 5.85Mb | 8.83Mb
+      - _1394_ 4.45Mb | 5.63Mb
+      - CN_29_22@28
+      - 14.29.124.168:25296
+      - US_82_22@81
+      - CN_26_22@25
+      - _1526_11.88Mb | 5.15Mb
+      - CN_2018_ 8.32Mb | 1.98Mb
+      - 14.29.124.168:25252
+      - _1387_ 6.03Mb |22.48Mb
+      - 14.29.124.168:25218
+      - _1398_ 3.90Mb |13.41Mb
+      - 14.29.124.168:25235
+      - CN_35_22@34
+      - CN_25_22@24
+      - CN_32_22@31
+      - 14.29.124.168:25210
+      - CN_30_22@29
+      - 14.29.124.168:25230
+      - _1524_ 7.65Mb |10.40Mb
+      - _1390_ 6.14Mb |20.75Mb
+      - CN_2015_12.77Mb | 1.70Mb
+      - 14.29.124.168:25289
+      - _1392_ 6.98Mb |23.71Mb
+      - _1386_ 7.81Mb | 8.97Mb
+      - _US_美国_2_0@17
+      - Relay_🇺🇸US-🇺🇸US_1201_16.56Mb | 1.63Mb
+      - CN_28_22@27
+      - 14.29.124.168:25286
+      - CN_36_22@35
+      - _103
+      - 亚洲(欢迎订阅Youtube破解资源君) 13
+      - _US_美国_1_1@1
+      - 美国(欢迎订阅Youtube破解资源君) 9
+      - univstar-香港Azure_1
+      - _1388_ 8.39Mb | 1.96Mb
+      - ""
+      - Relay_🇸🇬SG-🇭🇰HK_846
+      - 14.29.124.168:25238
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - NONE
-      - NONE 2
-      - NONE 3
-      - NONE 4
-      - _CN_中国->🇸🇬_SG_新加坡_1_20@11
-      - _CN_中国->🇸🇬_SG_新加坡_2_20@12
-      - NONE 5
-      - NONE 6
-      - NONE 7
-      - NONE 8
-      - NONE 9
-      - NONE 10
-      - NONE 11
-      - NONE 12
-      - _CN_中国->🇸🇬_SG_新加坡_3_20@13
-      - US_545
-      - 172.96.194.114:252
-      - _144
-      - _95
-      - github.com/freefq - 加拿大  8
-      - _03
-      - _129
-      - NONE 13
-      - _US_美国_5_1@9
-      - NONE 14
-      - NONE 15
-      - NONE 16
-      - NONE 17
-      - GB_39_22@38
-      - NONE 18
-      - NONE 19
-      - NONE 20
-      - NONE 21
-      - _145
-      - _GB_英国_6_1@40
+      - 14.29.124.168:25295
+      - _1393_ 6.75Mb |13.67Mb
+      - CN_37_22@36
+      - CN_34_22@33
+      - 14.29.124.168:25231
+      - _1389_ 2.70Mb |13.86Mb
+      - 14.29.124.168:25266
+      - CN_67 TG@peekfun |12.62Mb
+      - _1395_ 5.85Mb | 8.83Mb
+      - _1394_ 4.45Mb | 5.63Mb
+      - CN_29_22@28
+      - 14.29.124.168:25296
+      - US_82_22@81
+      - CN_26_22@25
+      - _1526_11.88Mb | 5.15Mb
+      - CN_2018_ 8.32Mb | 1.98Mb
+      - 14.29.124.168:25252
+      - _1387_ 6.03Mb |22.48Mb
+      - 14.29.124.168:25218
+      - _1398_ 3.90Mb |13.41Mb
+      - 14.29.124.168:25235
+      - CN_35_22@34
+      - CN_25_22@24
+      - CN_32_22@31
+      - 14.29.124.168:25210
+      - CN_30_22@29
+      - 14.29.124.168:25230
+      - _1524_ 7.65Mb |10.40Mb
+      - _1390_ 6.14Mb |20.75Mb
+      - CN_2015_12.77Mb | 1.70Mb
+      - 14.29.124.168:25289
+      - _1392_ 6.98Mb |23.71Mb
+      - _1386_ 7.81Mb | 8.97Mb
+      - _US_美国_2_0@17
+      - Relay_🇺🇸US-🇺🇸US_1201_16.56Mb | 1.63Mb
+      - CN_28_22@27
+      - 14.29.124.168:25286
+      - CN_36_22@35
+      - _103
+      - 亚洲(欢迎订阅Youtube破解资源君) 13
+      - _US_美国_1_1@1
+      - 美国(欢迎订阅Youtube破解资源君) 9
+      - univstar-香港Azure_1
+      - _1388_ 8.39Mb | 1.96Mb
+      - ""
+      - Relay_🇸🇬SG-🇭🇰HK_846
+      - 14.29.124.168:25238
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - NONE
-      - NONE 2
-      - NONE 3
-      - NONE 4
-      - _CN_中国->🇸🇬_SG_新加坡_1_20@11
-      - _CN_中国->🇸🇬_SG_新加坡_2_20@12
-      - NONE 5
-      - NONE 6
-      - NONE 7
-      - NONE 8
-      - NONE 9
-      - NONE 10
-      - NONE 11
-      - NONE 12
-      - _CN_中国->🇸🇬_SG_新加坡_3_20@13
-      - US_545
-      - 172.96.194.114:252
-      - _144
-      - _95
-      - github.com/freefq - 加拿大  8
-      - _03
-      - _129
-      - NONE 13
-      - _US_美国_5_1@9
-      - NONE 14
-      - NONE 15
-      - NONE 16
-      - NONE 17
-      - GB_39_22@38
-      - NONE 18
-      - NONE 19
-      - NONE 20
-      - NONE 21
-      - _145
-      - _GB_英国_6_1@40
+      - 14.29.124.168:25295
+      - _1393_ 6.75Mb |13.67Mb
+      - CN_37_22@36
+      - CN_34_22@33
+      - 14.29.124.168:25231
+      - _1389_ 2.70Mb |13.86Mb
+      - 14.29.124.168:25266
+      - CN_67 TG@peekfun |12.62Mb
+      - _1395_ 5.85Mb | 8.83Mb
+      - _1394_ 4.45Mb | 5.63Mb
+      - CN_29_22@28
+      - 14.29.124.168:25296
+      - US_82_22@81
+      - CN_26_22@25
+      - _1526_11.88Mb | 5.15Mb
+      - CN_2018_ 8.32Mb | 1.98Mb
+      - 14.29.124.168:25252
+      - _1387_ 6.03Mb |22.48Mb
+      - 14.29.124.168:25218
+      - _1398_ 3.90Mb |13.41Mb
+      - 14.29.124.168:25235
+      - CN_35_22@34
+      - CN_25_22@24
+      - CN_32_22@31
+      - 14.29.124.168:25210
+      - CN_30_22@29
+      - 14.29.124.168:25230
+      - _1524_ 7.65Mb |10.40Mb
+      - _1390_ 6.14Mb |20.75Mb
+      - CN_2015_12.77Mb | 1.70Mb
+      - 14.29.124.168:25289
+      - _1392_ 6.98Mb |23.71Mb
+      - _1386_ 7.81Mb | 8.97Mb
+      - _US_美国_2_0@17
+      - Relay_🇺🇸US-🇺🇸US_1201_16.56Mb | 1.63Mb
+      - CN_28_22@27
+      - 14.29.124.168:25286
+      - CN_36_22@35
+      - _103
+      - 亚洲(欢迎订阅Youtube破解资源君) 13
+      - _US_美国_1_1@1
+      - 美国(欢迎订阅Youtube破解资源君) 9
+      - univstar-香港Azure_1
+      - _1388_ 8.39Mb | 1.96Mb
+      - ""
+      - Relay_🇸🇬SG-🇭🇰HK_846
+      - 14.29.124.168:25238
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -356,41 +453,53 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - NONE
-      - NONE 2
-      - NONE 3
-      - NONE 4
-      - _CN_中国->🇸🇬_SG_新加坡_1_20@11
-      - _CN_中国->🇸🇬_SG_新加坡_2_20@12
-      - NONE 5
-      - NONE 6
-      - NONE 7
-      - NONE 8
-      - NONE 9
-      - NONE 10
-      - NONE 11
-      - NONE 12
-      - _CN_中国->🇸🇬_SG_新加坡_3_20@13
-      - US_545
-      - 172.96.194.114:252
-      - _144
-      - _95
-      - github.com/freefq - 加拿大  8
-      - _03
-      - _129
-      - NONE 13
-      - _US_美国_5_1@9
-      - NONE 14
-      - NONE 15
-      - NONE 16
-      - NONE 17
-      - GB_39_22@38
-      - NONE 18
-      - NONE 19
-      - NONE 20
-      - NONE 21
-      - _145
-      - _GB_英国_6_1@40
+      - 14.29.124.168:25295
+      - _1393_ 6.75Mb |13.67Mb
+      - CN_37_22@36
+      - CN_34_22@33
+      - 14.29.124.168:25231
+      - _1389_ 2.70Mb |13.86Mb
+      - 14.29.124.168:25266
+      - CN_67 TG@peekfun |12.62Mb
+      - _1395_ 5.85Mb | 8.83Mb
+      - _1394_ 4.45Mb | 5.63Mb
+      - CN_29_22@28
+      - 14.29.124.168:25296
+      - US_82_22@81
+      - CN_26_22@25
+      - _1526_11.88Mb | 5.15Mb
+      - CN_2018_ 8.32Mb | 1.98Mb
+      - 14.29.124.168:25252
+      - _1387_ 6.03Mb |22.48Mb
+      - 14.29.124.168:25218
+      - _1398_ 3.90Mb |13.41Mb
+      - 14.29.124.168:25235
+      - CN_35_22@34
+      - CN_25_22@24
+      - CN_32_22@31
+      - 14.29.124.168:25210
+      - CN_30_22@29
+      - 14.29.124.168:25230
+      - _1524_ 7.65Mb |10.40Mb
+      - _1390_ 6.14Mb |20.75Mb
+      - CN_2015_12.77Mb | 1.70Mb
+      - 14.29.124.168:25289
+      - _1392_ 6.98Mb |23.71Mb
+      - _1386_ 7.81Mb | 8.97Mb
+      - _US_美国_2_0@17
+      - Relay_🇺🇸US-🇺🇸US_1201_16.56Mb | 1.63Mb
+      - CN_28_22@27
+      - 14.29.124.168:25286
+      - CN_36_22@35
+      - _103
+      - 亚洲(欢迎订阅Youtube破解资源君) 13
+      - _US_美国_1_1@1
+      - 美国(欢迎订阅Youtube破解资源君) 9
+      - univstar-香港Azure_1
+      - _1388_ 8.39Mb | 1.96Mb
+      - ""
+      - Relay_🇸🇬SG-🇭🇰HK_846
+      - 14.29.124.168:25238
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
