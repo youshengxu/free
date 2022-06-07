@@ -5,191 +5,123 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 14.29.124.168:25238, server: 14.29.124.168, port: 25238, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 14.29.124.168:25210, server: 14.29.124.168, port: 25210, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 14.29.124.168:25286, server: 14.29.124.168, port: 25286, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 14.29.124.168:25230, server: 14.29.124.168, port: 25230, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 14.29.124.168:25218, server: 14.29.124.168, port: 25218, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 14.29.124.168:25231, server: 14.29.124.168, port: 25231, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 14.29.124.168:25295, server: 14.29.124.168, port: 25295, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 14.29.124.168:25220, server: 14.29.124.168, port: 25220, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 14.29.124.168:25296, server: 14.29.124.168, port: 25296, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 14.29.124.168:25256, server: 14.29.124.168, port: 25256, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 14.29.124.168:25287, server: 14.29.124.168, port: 25287, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 14.29.124.168:25267, server: 14.29.124.168, port: 25267, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 14.29.124.168:25289, server: 14.29.124.168, port: 25289, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 14.29.124.168:25266, server: 14.29.124.168, port: 25266, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 14.29.124.168:25252, server: 14.29.124.168, port: 25252, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 14.29.124.168:25233, server: 14.29.124.168, port: 25233, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 14.29.124.168:25270, server: 14.29.124.168, port: 25270, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: US_82_22@81, server: 20.210.229.72, port: 3389, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
-  - {name: CN_30_22@29, server: 14.29.124.168, port: 25245, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: Relay_🇩🇪DE-🇬🇧GB_498, server: 212.81.47.15, port: 443, type: trojan, password: 3yFq7NCP53mVfpXJz3, skip-cert-verify: true, udp: true}
-  - {name: 14.29.124.168:25241, server: 14.29.124.168, port: 25241, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _US_美国_17_1@34, server: 212.81.47.18, port: 443, type: trojan, password: 3yFq7NCP53mVfpXJz3, skip-cert-verify: true, udp: true}
-  - {name: _US_美国_12_1@23, server: au2-3.nigirocloud.com, port: 443, type: trojan, password: 3yFq7NCP53mVfpXJz3, sni: au2-3.nigirocloud.com, skip-cert-verify: true, udp: true}
-  - {name: 14.29.124.168:25268, server: 14.29.124.168, port: 25268, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _US_美国_6_1@14, server: 212.81.47.14, port: 443, type: trojan, password: 3yFq7NCP53mVfpXJz3, skip-cert-verify: true, udp: true}
-  - {name: CN_26_22@25, server: 14.29.124.168, port: 25219, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 韩国-3.35MB/s(Youtube:不良林), server: kr04.wangxd.life, port: 3052, type: trojan, password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e, sni: kr04.wangxd.life, skip-cert-verify: true, udp: true}
-  - {name: 13, server: vjp1.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /chat, ws-headers: {Host: vjp1.0bad.com}, udp: true}
-  - {name: CN_37_22@36, server: 14.29.124.168, port: 25283, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _US_美国_3_1@6, server: 107.167.24.6, port: 17001, type: trojan, password: d4e9e6bb-daa4-44ed-aa29-d1b8d00ba7d6, skip-cert-verify: true, udp: true}
-  - {name: _US_美国_8_1@17, server: 212.81.47.12, port: 443, type: trojan, password: 3yFq7NCP53mVfpXJz3, skip-cert-verify: true, udp: true}
-  - {name: 5.183.179.170:9059, server: 5.183.179.170, port: 9059, type: ss, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY, udp: true}
-  - {name: 美国-5.45MB/s(Youtube:不良林), server: 212.81.47.16, port: 443, type: trojan, password: 3yFq7NCP53mVfpXJz3, skip-cert-verify: true, udp: true}
-  - {name: 美国-3.83MB/s(Youtube:不良林), server: fhcarm2.gaox.ml, port: 443, type: trojan, password: f39bd244-f5fe-415c-8b98-a1e5250bf178, sni: fhcarm2.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: US_545, server: au2-1.nigirocloud.com, port: 443, type: trojan, password: 3yFq7NCP53mVfpXJz3, sni: au2-1.nigirocloud.com, skip-cert-verify: true, udp: true}
-  - {name: _US_美国->🇫🇷_FR_法国_4@41, server: rackedgeuk510.moonfree.top, port: 443, type: vmess, uuid: 6e9eeae6-c3d1-439e-9f7a-213fe09b2dbe, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: rackedgeuk510.moonfree.top}, udp: true}
-  - {name: 185.167.116.252:9001, server: 185.167.116.252, port: 9001, type: ss, cipher: aes-256-cfb, password: UkXRsXvR6buDMG2Y, udp: true}
-  - {name: 美国(欢迎订阅Youtube破解资源君) 31, server: bai-piao-wang-zhe10.98848.xyz, port: 50858, type: trojan, password: f0de3134-aef4-45b5-a135-3a82321bbac6, sni: bai-piao-wang-zhe10.98848.xyz, skip-cert-verify: true, udp: true}
-  - {name: 30, server: vus3.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /chat, ws-headers: {Host: vus3.0bad.com}, udp: true}
-  - {name: _RO_罗马尼亚_21@38, server: 62.216.91.229, port: 9080, type: ss, cipher: aes-256-cfb, password: VP8ZPxQpJtZRCjfZ, udp: true}
-  - {name: _US_美国_2_0@17, server: 143.198.130.21, port: 42382, type: vmess, uuid: 03b452a7-907b-4f77-8ca4-60250cc835bc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 14.29.124.168:25235, server: 14.29.124.168, port: 25235, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: ｜CN｜openit｜352, server: 14.29.124.168, port: 25235, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_33_22@32, server: 14.29.124.168, port: 25233, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: ｜CN｜openit｜349, server: 14.29.124.168, port: 25270, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: ｜CN｜openit｜323, server: 14.29.124.168, port: 25254, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: ｜CN｜openit｜329, server: 14.29.124.168, port: 25266, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: ｜CN｜openit｜316, server: 14.29.124.168, port: 25261, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_24_22@23, server: 14.29.124.168, port: 25219, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: ｜CN｜openit｜328, server: 14.29.124.168, port: 25284, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: ｜CN｜openit｜319, server: 14.29.124.168, port: 25293, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: ｜CN｜openit｜355, server: 14.29.124.168, port: 25238, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: ｜CN｜openit｜314, server: 14.29.124.168, port: 25207, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: ｜CN｜openit｜313, server: 14.29.124.168, port: 25222, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: ｜CN｜openit｜13, server: 14.29.124.168, port: 25297, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: ｜CN｜openit｜312, server: 14.29.124.168, port: 25226, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: ｜CN｜openit｜327, server: 14.29.124.168, port: 25280, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: ｜US｜openit｜378, server: 20.210.229.72, port: 3389, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
+  - {name: ｜CN｜openit｜315, server: 14.29.124.168, port: 25215, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: ｜CN｜openit｜332, server: 14.29.124.168, port: 25252, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: ｜CN｜openit｜320, server: 14.29.124.168, port: 25286, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: ｜US｜openit｜375, server: 20.210.229.72, port: 3389, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
+  - {name: ｜CN｜openit｜356, server: 14.29.124.168, port: 25296, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: ｜US｜openit｜377, server: 20.210.229.72, port: 3389, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
+  - {name: ｜CN｜openit｜321, server: 14.29.124.168, port: 25272, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: ｜CN｜openit｜326, server: 14.29.124.168, port: 25245, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: ｜CN｜openit｜350, server: 14.29.124.168, port: 25218, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 14.29.124.168:25238
-      - 14.29.124.168:25210
-      - 14.29.124.168:25286
-      - 14.29.124.168:25230
-      - 14.29.124.168:25218
-      - 14.29.124.168:25231
-      - 14.29.124.168:25295
-      - 14.29.124.168:25220
-      - 14.29.124.168:25296
-      - 14.29.124.168:25256
-      - 14.29.124.168:25287
-      - 14.29.124.168:25267
-      - 14.29.124.168:25289
-      - 14.29.124.168:25266
-      - 14.29.124.168:25252
-      - 14.29.124.168:25233
-      - 14.29.124.168:25270
-      - US_82_22@81
-      - CN_30_22@29
-      - Relay_🇩🇪DE-🇬🇧GB_498
-      - 14.29.124.168:25241
-      - _US_美国_17_1@34
-      - _US_美国_12_1@23
-      - 14.29.124.168:25268
-      - _US_美国_6_1@14
-      - CN_26_22@25
-      - 韩国-3.35MB/s(Youtube:不良林)
-      - 13
-      - CN_37_22@36
-      - _US_美国_3_1@6
-      - _US_美国_8_1@17
-      - 5.183.179.170:9059
-      - 美国-5.45MB/s(Youtube:不良林)
-      - 美国-3.83MB/s(Youtube:不良林)
-      - US_545
-      - _US_美国->🇫🇷_FR_法国_4@41
-      - 185.167.116.252:9001
-      - 美国(欢迎订阅Youtube破解资源君) 31
-      - 30
-      - _RO_罗马尼亚_21@38
-      - _US_美国_2_0@17
-      - 14.29.124.168:25235
+      - ｜CN｜openit｜352
+      - CN_33_22@32
+      - ｜CN｜openit｜349
+      - ｜CN｜openit｜323
+      - ｜CN｜openit｜329
+      - ｜CN｜openit｜316
+      - CN_24_22@23
+      - ｜CN｜openit｜328
+      - ｜CN｜openit｜319
+      - ｜CN｜openit｜355
+      - ｜CN｜openit｜314
+      - ｜CN｜openit｜313
+      - ｜CN｜openit｜13
+      - ｜CN｜openit｜312
+      - ｜CN｜openit｜327
+      - ｜US｜openit｜378
+      - ｜CN｜openit｜315
+      - ｜CN｜openit｜332
+      - ｜CN｜openit｜320
+      - ｜US｜openit｜375
+      - ｜CN｜openit｜356
+      - ｜US｜openit｜377
+      - ｜CN｜openit｜321
+      - ｜CN｜openit｜326
+      - ｜CN｜openit｜350
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 14.29.124.168:25238
-      - 14.29.124.168:25210
-      - 14.29.124.168:25286
-      - 14.29.124.168:25230
-      - 14.29.124.168:25218
-      - 14.29.124.168:25231
-      - 14.29.124.168:25295
-      - 14.29.124.168:25220
-      - 14.29.124.168:25296
-      - 14.29.124.168:25256
-      - 14.29.124.168:25287
-      - 14.29.124.168:25267
-      - 14.29.124.168:25289
-      - 14.29.124.168:25266
-      - 14.29.124.168:25252
-      - 14.29.124.168:25233
-      - 14.29.124.168:25270
-      - US_82_22@81
-      - CN_30_22@29
-      - Relay_🇩🇪DE-🇬🇧GB_498
-      - 14.29.124.168:25241
-      - _US_美国_17_1@34
-      - _US_美国_12_1@23
-      - 14.29.124.168:25268
-      - _US_美国_6_1@14
-      - CN_26_22@25
-      - 韩国-3.35MB/s(Youtube:不良林)
-      - 13
-      - CN_37_22@36
-      - _US_美国_3_1@6
-      - _US_美国_8_1@17
-      - 5.183.179.170:9059
-      - 美国-5.45MB/s(Youtube:不良林)
-      - 美国-3.83MB/s(Youtube:不良林)
-      - US_545
-      - _US_美国->🇫🇷_FR_法国_4@41
-      - 185.167.116.252:9001
-      - 美国(欢迎订阅Youtube破解资源君) 31
-      - 30
-      - _RO_罗马尼亚_21@38
-      - _US_美国_2_0@17
-      - 14.29.124.168:25235
+      - ｜CN｜openit｜352
+      - CN_33_22@32
+      - ｜CN｜openit｜349
+      - ｜CN｜openit｜323
+      - ｜CN｜openit｜329
+      - ｜CN｜openit｜316
+      - CN_24_22@23
+      - ｜CN｜openit｜328
+      - ｜CN｜openit｜319
+      - ｜CN｜openit｜355
+      - ｜CN｜openit｜314
+      - ｜CN｜openit｜313
+      - ｜CN｜openit｜13
+      - ｜CN｜openit｜312
+      - ｜CN｜openit｜327
+      - ｜US｜openit｜378
+      - ｜CN｜openit｜315
+      - ｜CN｜openit｜332
+      - ｜CN｜openit｜320
+      - ｜US｜openit｜375
+      - ｜CN｜openit｜356
+      - ｜US｜openit｜377
+      - ｜CN｜openit｜321
+      - ｜CN｜openit｜326
+      - ｜CN｜openit｜350
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 14.29.124.168:25238
-      - 14.29.124.168:25210
-      - 14.29.124.168:25286
-      - 14.29.124.168:25230
-      - 14.29.124.168:25218
-      - 14.29.124.168:25231
-      - 14.29.124.168:25295
-      - 14.29.124.168:25220
-      - 14.29.124.168:25296
-      - 14.29.124.168:25256
-      - 14.29.124.168:25287
-      - 14.29.124.168:25267
-      - 14.29.124.168:25289
-      - 14.29.124.168:25266
-      - 14.29.124.168:25252
-      - 14.29.124.168:25233
-      - 14.29.124.168:25270
-      - US_82_22@81
-      - CN_30_22@29
-      - Relay_🇩🇪DE-🇬🇧GB_498
-      - 14.29.124.168:25241
-      - _US_美国_17_1@34
-      - _US_美国_12_1@23
-      - 14.29.124.168:25268
-      - _US_美国_6_1@14
-      - CN_26_22@25
-      - 韩国-3.35MB/s(Youtube:不良林)
-      - 13
-      - CN_37_22@36
-      - _US_美国_3_1@6
-      - _US_美国_8_1@17
-      - 5.183.179.170:9059
-      - 美国-5.45MB/s(Youtube:不良林)
-      - 美国-3.83MB/s(Youtube:不良林)
-      - US_545
-      - _US_美国->🇫🇷_FR_法国_4@41
-      - 185.167.116.252:9001
-      - 美国(欢迎订阅Youtube破解资源君) 31
-      - 30
-      - _RO_罗马尼亚_21@38
-      - _US_美国_2_0@17
-      - 14.29.124.168:25235
+      - ｜CN｜openit｜352
+      - CN_33_22@32
+      - ｜CN｜openit｜349
+      - ｜CN｜openit｜323
+      - ｜CN｜openit｜329
+      - ｜CN｜openit｜316
+      - CN_24_22@23
+      - ｜CN｜openit｜328
+      - ｜CN｜openit｜319
+      - ｜CN｜openit｜355
+      - ｜CN｜openit｜314
+      - ｜CN｜openit｜313
+      - ｜CN｜openit｜13
+      - ｜CN｜openit｜312
+      - ｜CN｜openit｜327
+      - ｜US｜openit｜378
+      - ｜CN｜openit｜315
+      - ｜CN｜openit｜332
+      - ｜CN｜openit｜320
+      - ｜US｜openit｜375
+      - ｜CN｜openit｜356
+      - ｜US｜openit｜377
+      - ｜CN｜openit｜321
+      - ｜CN｜openit｜326
+      - ｜CN｜openit｜350
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -208,48 +140,31 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 14.29.124.168:25238
-      - 14.29.124.168:25210
-      - 14.29.124.168:25286
-      - 14.29.124.168:25230
-      - 14.29.124.168:25218
-      - 14.29.124.168:25231
-      - 14.29.124.168:25295
-      - 14.29.124.168:25220
-      - 14.29.124.168:25296
-      - 14.29.124.168:25256
-      - 14.29.124.168:25287
-      - 14.29.124.168:25267
-      - 14.29.124.168:25289
-      - 14.29.124.168:25266
-      - 14.29.124.168:25252
-      - 14.29.124.168:25233
-      - 14.29.124.168:25270
-      - US_82_22@81
-      - CN_30_22@29
-      - Relay_🇩🇪DE-🇬🇧GB_498
-      - 14.29.124.168:25241
-      - _US_美国_17_1@34
-      - _US_美国_12_1@23
-      - 14.29.124.168:25268
-      - _US_美国_6_1@14
-      - CN_26_22@25
-      - 韩国-3.35MB/s(Youtube:不良林)
-      - 13
-      - CN_37_22@36
-      - _US_美国_3_1@6
-      - _US_美国_8_1@17
-      - 5.183.179.170:9059
-      - 美国-5.45MB/s(Youtube:不良林)
-      - 美国-3.83MB/s(Youtube:不良林)
-      - US_545
-      - _US_美国->🇫🇷_FR_法国_4@41
-      - 185.167.116.252:9001
-      - 美国(欢迎订阅Youtube破解资源君) 31
-      - 30
-      - _RO_罗马尼亚_21@38
-      - _US_美国_2_0@17
-      - 14.29.124.168:25235
+      - ｜CN｜openit｜352
+      - CN_33_22@32
+      - ｜CN｜openit｜349
+      - ｜CN｜openit｜323
+      - ｜CN｜openit｜329
+      - ｜CN｜openit｜316
+      - CN_24_22@23
+      - ｜CN｜openit｜328
+      - ｜CN｜openit｜319
+      - ｜CN｜openit｜355
+      - ｜CN｜openit｜314
+      - ｜CN｜openit｜313
+      - ｜CN｜openit｜13
+      - ｜CN｜openit｜312
+      - ｜CN｜openit｜327
+      - ｜US｜openit｜378
+      - ｜CN｜openit｜315
+      - ｜CN｜openit｜332
+      - ｜CN｜openit｜320
+      - ｜US｜openit｜375
+      - ｜CN｜openit｜356
+      - ｜US｜openit｜377
+      - ｜CN｜openit｜321
+      - ｜CN｜openit｜326
+      - ｜CN｜openit｜350
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -260,143 +175,92 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 14.29.124.168:25238
-      - 14.29.124.168:25210
-      - 14.29.124.168:25286
-      - 14.29.124.168:25230
-      - 14.29.124.168:25218
-      - 14.29.124.168:25231
-      - 14.29.124.168:25295
-      - 14.29.124.168:25220
-      - 14.29.124.168:25296
-      - 14.29.124.168:25256
-      - 14.29.124.168:25287
-      - 14.29.124.168:25267
-      - 14.29.124.168:25289
-      - 14.29.124.168:25266
-      - 14.29.124.168:25252
-      - 14.29.124.168:25233
-      - 14.29.124.168:25270
-      - US_82_22@81
-      - CN_30_22@29
-      - Relay_🇩🇪DE-🇬🇧GB_498
-      - 14.29.124.168:25241
-      - _US_美国_17_1@34
-      - _US_美国_12_1@23
-      - 14.29.124.168:25268
-      - _US_美国_6_1@14
-      - CN_26_22@25
-      - 韩国-3.35MB/s(Youtube:不良林)
-      - 13
-      - CN_37_22@36
-      - _US_美国_3_1@6
-      - _US_美国_8_1@17
-      - 5.183.179.170:9059
-      - 美国-5.45MB/s(Youtube:不良林)
-      - 美国-3.83MB/s(Youtube:不良林)
-      - US_545
-      - _US_美国->🇫🇷_FR_法国_4@41
-      - 185.167.116.252:9001
-      - 美国(欢迎订阅Youtube破解资源君) 31
-      - 30
-      - _RO_罗马尼亚_21@38
-      - _US_美国_2_0@17
-      - 14.29.124.168:25235
+      - ｜CN｜openit｜352
+      - CN_33_22@32
+      - ｜CN｜openit｜349
+      - ｜CN｜openit｜323
+      - ｜CN｜openit｜329
+      - ｜CN｜openit｜316
+      - CN_24_22@23
+      - ｜CN｜openit｜328
+      - ｜CN｜openit｜319
+      - ｜CN｜openit｜355
+      - ｜CN｜openit｜314
+      - ｜CN｜openit｜313
+      - ｜CN｜openit｜13
+      - ｜CN｜openit｜312
+      - ｜CN｜openit｜327
+      - ｜US｜openit｜378
+      - ｜CN｜openit｜315
+      - ｜CN｜openit｜332
+      - ｜CN｜openit｜320
+      - ｜US｜openit｜375
+      - ｜CN｜openit｜356
+      - ｜US｜openit｜377
+      - ｜CN｜openit｜321
+      - ｜CN｜openit｜326
+      - ｜CN｜openit｜350
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 14.29.124.168:25238
-      - 14.29.124.168:25210
-      - 14.29.124.168:25286
-      - 14.29.124.168:25230
-      - 14.29.124.168:25218
-      - 14.29.124.168:25231
-      - 14.29.124.168:25295
-      - 14.29.124.168:25220
-      - 14.29.124.168:25296
-      - 14.29.124.168:25256
-      - 14.29.124.168:25287
-      - 14.29.124.168:25267
-      - 14.29.124.168:25289
-      - 14.29.124.168:25266
-      - 14.29.124.168:25252
-      - 14.29.124.168:25233
-      - 14.29.124.168:25270
-      - US_82_22@81
-      - CN_30_22@29
-      - Relay_🇩🇪DE-🇬🇧GB_498
-      - 14.29.124.168:25241
-      - _US_美国_17_1@34
-      - _US_美国_12_1@23
-      - 14.29.124.168:25268
-      - _US_美国_6_1@14
-      - CN_26_22@25
-      - 韩国-3.35MB/s(Youtube:不良林)
-      - 13
-      - CN_37_22@36
-      - _US_美国_3_1@6
-      - _US_美国_8_1@17
-      - 5.183.179.170:9059
-      - 美国-5.45MB/s(Youtube:不良林)
-      - 美国-3.83MB/s(Youtube:不良林)
-      - US_545
-      - _US_美国->🇫🇷_FR_法国_4@41
-      - 185.167.116.252:9001
-      - 美国(欢迎订阅Youtube破解资源君) 31
-      - 30
-      - _RO_罗马尼亚_21@38
-      - _US_美国_2_0@17
-      - 14.29.124.168:25235
+      - ｜CN｜openit｜352
+      - CN_33_22@32
+      - ｜CN｜openit｜349
+      - ｜CN｜openit｜323
+      - ｜CN｜openit｜329
+      - ｜CN｜openit｜316
+      - CN_24_22@23
+      - ｜CN｜openit｜328
+      - ｜CN｜openit｜319
+      - ｜CN｜openit｜355
+      - ｜CN｜openit｜314
+      - ｜CN｜openit｜313
+      - ｜CN｜openit｜13
+      - ｜CN｜openit｜312
+      - ｜CN｜openit｜327
+      - ｜US｜openit｜378
+      - ｜CN｜openit｜315
+      - ｜CN｜openit｜332
+      - ｜CN｜openit｜320
+      - ｜US｜openit｜375
+      - ｜CN｜openit｜356
+      - ｜US｜openit｜377
+      - ｜CN｜openit｜321
+      - ｜CN｜openit｜326
+      - ｜CN｜openit｜350
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 14.29.124.168:25238
-      - 14.29.124.168:25210
-      - 14.29.124.168:25286
-      - 14.29.124.168:25230
-      - 14.29.124.168:25218
-      - 14.29.124.168:25231
-      - 14.29.124.168:25295
-      - 14.29.124.168:25220
-      - 14.29.124.168:25296
-      - 14.29.124.168:25256
-      - 14.29.124.168:25287
-      - 14.29.124.168:25267
-      - 14.29.124.168:25289
-      - 14.29.124.168:25266
-      - 14.29.124.168:25252
-      - 14.29.124.168:25233
-      - 14.29.124.168:25270
-      - US_82_22@81
-      - CN_30_22@29
-      - Relay_🇩🇪DE-🇬🇧GB_498
-      - 14.29.124.168:25241
-      - _US_美国_17_1@34
-      - _US_美国_12_1@23
-      - 14.29.124.168:25268
-      - _US_美国_6_1@14
-      - CN_26_22@25
-      - 韩国-3.35MB/s(Youtube:不良林)
-      - 13
-      - CN_37_22@36
-      - _US_美国_3_1@6
-      - _US_美国_8_1@17
-      - 5.183.179.170:9059
-      - 美国-5.45MB/s(Youtube:不良林)
-      - 美国-3.83MB/s(Youtube:不良林)
-      - US_545
-      - _US_美国->🇫🇷_FR_法国_4@41
-      - 185.167.116.252:9001
-      - 美国(欢迎订阅Youtube破解资源君) 31
-      - 30
-      - _RO_罗马尼亚_21@38
-      - _US_美国_2_0@17
-      - 14.29.124.168:25235
+      - ｜CN｜openit｜352
+      - CN_33_22@32
+      - ｜CN｜openit｜349
+      - ｜CN｜openit｜323
+      - ｜CN｜openit｜329
+      - ｜CN｜openit｜316
+      - CN_24_22@23
+      - ｜CN｜openit｜328
+      - ｜CN｜openit｜319
+      - ｜CN｜openit｜355
+      - ｜CN｜openit｜314
+      - ｜CN｜openit｜313
+      - ｜CN｜openit｜13
+      - ｜CN｜openit｜312
+      - ｜CN｜openit｜327
+      - ｜US｜openit｜378
+      - ｜CN｜openit｜315
+      - ｜CN｜openit｜332
+      - ｜CN｜openit｜320
+      - ｜US｜openit｜375
+      - ｜CN｜openit｜356
+      - ｜US｜openit｜377
+      - ｜CN｜openit｜321
+      - ｜CN｜openit｜326
+      - ｜CN｜openit｜350
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -412,48 +276,31 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 14.29.124.168:25238
-      - 14.29.124.168:25210
-      - 14.29.124.168:25286
-      - 14.29.124.168:25230
-      - 14.29.124.168:25218
-      - 14.29.124.168:25231
-      - 14.29.124.168:25295
-      - 14.29.124.168:25220
-      - 14.29.124.168:25296
-      - 14.29.124.168:25256
-      - 14.29.124.168:25287
-      - 14.29.124.168:25267
-      - 14.29.124.168:25289
-      - 14.29.124.168:25266
-      - 14.29.124.168:25252
-      - 14.29.124.168:25233
-      - 14.29.124.168:25270
-      - US_82_22@81
-      - CN_30_22@29
-      - Relay_🇩🇪DE-🇬🇧GB_498
-      - 14.29.124.168:25241
-      - _US_美国_17_1@34
-      - _US_美国_12_1@23
-      - 14.29.124.168:25268
-      - _US_美国_6_1@14
-      - CN_26_22@25
-      - 韩国-3.35MB/s(Youtube:不良林)
-      - 13
-      - CN_37_22@36
-      - _US_美国_3_1@6
-      - _US_美国_8_1@17
-      - 5.183.179.170:9059
-      - 美国-5.45MB/s(Youtube:不良林)
-      - 美国-3.83MB/s(Youtube:不良林)
-      - US_545
-      - _US_美国->🇫🇷_FR_法国_4@41
-      - 185.167.116.252:9001
-      - 美国(欢迎订阅Youtube破解资源君) 31
-      - 30
-      - _RO_罗马尼亚_21@38
-      - _US_美国_2_0@17
-      - 14.29.124.168:25235
+      - ｜CN｜openit｜352
+      - CN_33_22@32
+      - ｜CN｜openit｜349
+      - ｜CN｜openit｜323
+      - ｜CN｜openit｜329
+      - ｜CN｜openit｜316
+      - CN_24_22@23
+      - ｜CN｜openit｜328
+      - ｜CN｜openit｜319
+      - ｜CN｜openit｜355
+      - ｜CN｜openit｜314
+      - ｜CN｜openit｜313
+      - ｜CN｜openit｜13
+      - ｜CN｜openit｜312
+      - ｜CN｜openit｜327
+      - ｜US｜openit｜378
+      - ｜CN｜openit｜315
+      - ｜CN｜openit｜332
+      - ｜CN｜openit｜320
+      - ｜US｜openit｜375
+      - ｜CN｜openit｜356
+      - ｜US｜openit｜377
+      - ｜CN｜openit｜321
+      - ｜CN｜openit｜326
+      - ｜CN｜openit｜350
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
