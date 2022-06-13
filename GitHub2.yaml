@@ -5,223 +5,571 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 14.29.124.168:25272, server: 14.29.124.168, port: 25272, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 14.29.124.168:25217, server: 14.29.124.168, port: 25217, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_39_3@38, server: 14.29.124.168, port: 25251, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 14.29.124.168:25231, server: 14.29.124.168, port: 25231, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 14.29.124.168:25226, server: 14.29.124.168, port: 25226, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 14.29.124.168:25245, server: 14.29.124.168, port: 25245, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 14.29.124.168:25297, server: 14.29.124.168, port: 25297, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 14.29.124.168:25296, server: 14.29.124.168, port: 25296, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 14.29.124.168:25256, server: 14.29.124.168, port: 25256, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 14.29.124.168:25279, server: 14.29.124.168, port: 25279, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: HK 79, server: transit1.fanqiang.eu, port: 15004, type: trojan, password: 7259391b-9f01-4ede-90dc-3955cf1c4998, sni: transit1.fanqiang.eu, skip-cert-verify: true, udp: true}
+  - {name: HK 236, server: azhk.n.optage.moe, port: 62500, type: trojan, password: d3c34184-e1b5-42d0-8f52-d89c8a095301, sni: azhk.n.optage.moe, skip-cert-verify: true, udp: true}
+  - {name: HK 80, server: transit1.fanqiang.eu, port: 15045, type: trojan, password: 7259391b-9f01-4ede-90dc-3955cf1c4998, sni: transit1.fanqiang.eu, skip-cert-verify: true, udp: true}
+  - {name: HK 468, server: azhk.n.optage.moe, port: 62500, type: trojan, password: 56bc02da-d09c-42aa-ae72-8e58fd226f38, sni: azhk.n.optage.moe, skip-cert-verify: true, udp: true}
+  - {name: CN 87, server: cdn2.myuuusss.com, port: 20021, type: ss, cipher: aes-128-gcm, password: dbdc16e3-1f61-41bb-99a6-5f29d8b86f82, udp: true}
+  - {name: NONE, server: s1.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s1.hazz.win, skip-cert-verify: true, udp: true}
+  - {name: _JP_日本_3_1@2, server: mixv4-27.194610.xyz, port: 443, type: vmess, uuid: e9bb0c5c-01c7-7907-c454-3b8b6d472b19, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /a185d5dc-c726-466c-98f2-ba494e63695f, ws-headers: {Host: mixv4-27.194610.xyz}, udp: true}
+  - {name: _JP_日本_2_1@1, server: vjp3.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /chat, ws-headers: {Host: vjp3.0bad.com}, udp: true}
+  - {name: CN 134, server: relaybgp_pro.flyxxl.xyz, port: 45431, type: ss, cipher: chacha20-ietf-poly1305, password: fff34c21-0a19-41f5-ae83-27b115066a92, udp: true}
+  - {name: NONE 2, server: au2-4.nigirocloud.com, port: 443, type: trojan, password: 3yFq7NCP53mVfpXJz3, sni: au2-4.nigirocloud.com, skip-cert-verify: true, udp: true}
+  - {name: NONE 3, server: 212.81.47.11, port: 443, type: trojan, password: 3yFq7NCP53mVfpXJz3, skip-cert-verify: true, udp: true}
+  - {name: CN 7, server: sg-cn.teacher2050.com, port: 43508, type: trojan, password: E44523FE-B9E4-BD49-AEAF-DBABE701D016, sni: sg-cn.teacher2050.com, skip-cert-verify: true, udp: true}
+  - {name: NONE 4, server: 212.81.47.14, port: 443, type: trojan, password: 3yFq7NCP53mVfpXJz3, skip-cert-verify: true, udp: true}
+  - {name: NONE 5, server: 212.81.47.16, port: 443, type: trojan, password: 3yFq7NCP53mVfpXJz3, skip-cert-verify: true, udp: true}
+  - {name: NONE 6, server: au2-2.nigirocloud.com, port: 443, type: trojan, password: 3yFq7NCP53mVfpXJz3, sni: au2-2.nigirocloud.com, skip-cert-verify: true, udp: true}
+  - {name: NONE 7, server: 212.81.47.17, port: 443, type: trojan, password: 3yFq7NCP53mVfpXJz3, skip-cert-verify: true, udp: true}
+  - {name: NONE 8, server: kr01.wangxd.life, port: 3052, type: trojan, password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e, sni: kr01.wangxd.life, skip-cert-verify: true, udp: true}
+  - {name: NONE 9, server: 212.81.47.13, port: 443, type: trojan, password: 3yFq7NCP53mVfpXJz3, skip-cert-verify: true, udp: true}
+  - {name: NONE 10, server: au2-3.nigirocloud.com, port: 443, type: trojan, password: 3yFq7NCP53mVfpXJz3, sni: au2-3.nigirocloud.com, skip-cert-verify: true, udp: true}
+  - {name: NONE 11, server: s3.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s3.hazz.win, skip-cert-verify: true, udp: true}
+  - {name: NONE 12, server: au2-1.nigirocloud.com, port: 443, type: trojan, password: 3yFq7NCP53mVfpXJz3, sni: au2-1.nigirocloud.com, skip-cert-verify: true, udp: true}
+  - {name: HK 176, server: transit1.fanqiang.eu, port: 15009, type: trojan, password: 7259391b-9f01-4ede-90dc-3955cf1c4998, sni: transit1.fanqiang.eu, skip-cert-verify: true, udp: true}
+  - {name: NONE 13, server: 212.81.47.15, port: 443, type: trojan, password: 3yFq7NCP53mVfpXJz3, skip-cert-verify: true, udp: true}
+  - {name: HK 336, server: transit1.fanqiang.eu, port: 15008, type: trojan, password: 7259391b-9f01-4ede-90dc-3955cf1c4998, sni: transit1.fanqiang.eu, skip-cert-verify: true, udp: true}
+  - {name: NONE 14, server: kr04.wangxd.life, port: 3052, type: trojan, password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e, sni: kr04.wangxd.life, skip-cert-verify: true, udp: true}
+  - {name: HK 337, server: transit1.fanqiang.eu, port: 15007, type: trojan, password: 7259391b-9f01-4ede-90dc-3955cf1c4998, sni: transit1.fanqiang.eu, skip-cert-verify: true, udp: true}
+  - {name: HK 335, server: transit1.fanqiang.eu, port: 15006, type: trojan, password: 7259391b-9f01-4ede-90dc-3955cf1c4998, sni: transit1.fanqiang.eu, skip-cert-verify: true, udp: true}
+  - {name: NONE 15, server: fhcamd1.gaox.ml, port: 443, type: trojan, password: e23f408a-012e-4030-8b31-02022031cb50, sni: fhcamd1.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: HK 59, server: transit1.fanqiang.eu, port: 15021, type: trojan, password: 7259391b-9f01-4ede-90dc-3955cf1c4998, sni: transit1.fanqiang.eu, skip-cert-verify: true, udp: true}
+  - {name: NONE 16, server: bai-piao-wang-zhe10.98848.xyz, port: 48240, type: trojan, password: c8bae3de-16ed-4247-8a99-f38ef79a4b51, sni: bai-piao-wang-zhe10.98848.xyz, skip-cert-verify: true, udp: true}
+  - {name: NONE 17, server: jgwdb3.gaox.ml, port: 443, type: trojan, password: 8d2d5953-d649-4034-94f2-72f2df2623da, sni: jgwdb3.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: US 186, server: us8.fanqiang.eu, port: 19999, type: trojan, password: 7259391b-9f01-4ede-90dc-3955cf1c4998, sni: us8.fanqiang.eu, skip-cert-verify: true, udp: true}
+  - {name: NONE 18, server: jgwdb4.gaox.ml, port: 443, type: trojan, password: d06a3f01-1ff0-4792-9b8e-a5a604bc74a2, sni: jgwdb4.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: HK 100, server: transit1.fanqiang.eu, port: 15017, type: trojan, password: 7259391b-9f01-4ede-90dc-3955cf1c4998, sni: transit1.fanqiang.eu, skip-cert-verify: true, udp: true}
+  - {name: 213.183.53.177:9005, server: 213.183.53.177, port: 9005, type: ss, cipher: aes-256-cfb, password: ZET59LF6DvCC8KVt, udp: true}
+  - {name: 213.183.53.177:9000, server: 213.183.53.177, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
+  - {name: 213.183.53.177:9041, server: 213.183.53.177, port: 9041, type: ss, cipher: aes-256-cfb, password: U6qnYRhfyDmn8sgn, udp: true}
+  - {name: 213.183.53.177:9003, server: 213.183.53.177, port: 9003, type: ss, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP, udp: true}
+  - {name: 213.183.53.177:9018, server: 213.183.53.177, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
+  - {name: 213.183.53.177:9070, server: 213.183.53.177, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH, udp: true}
+  - {name: 213.183.53.177:9059, server: 213.183.53.177, port: 9059, type: ss, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY, udp: true}
+  - {name: 213.183.53.177:9064, server: 213.183.53.177, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH, udp: true}
+  - {name: 213.183.53.177:9094, server: 213.183.53.177, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
+  - {name: 213.183.53.177:9098, server: 213.183.53.177, port: 9098, type: ss, cipher: aes-256-cfb, password: aLpQtfEZe445QyHk, udp: true}
+  - {name: CN 130, server: 120.232.132.71, port: 25680, type: trojan, password: 3b4a79d, skip-cert-verify: true, udp: true}
+  - {name: 213.183.53.177:9056, server: 213.183.53.177, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
+  - {name: 213.183.53.177:9008, server: 213.183.53.177, port: 9008, type: ss, cipher: aes-256-cfb, password: y9VURyNzJWNRYEGQ, udp: true}
+  - {name: 213.183.53.177:9057, server: 213.183.53.177, port: 9057, type: ss, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z, udp: true}
+  - {name: 213.183.53.177:9033, server: 213.183.53.177, port: 9033, type: ss, cipher: aes-256-cfb, password: UTJA57ypk2XKQpnm, udp: true}
+  - {name: NONE 19, server: 212.81.47.12, port: 443, type: trojan, password: 3yFq7NCP53mVfpXJz3, skip-cert-verify: true, udp: true}
+  - {name: HK 103, server: transit1.fanqiang.eu, port: 15019, type: trojan, password: 7259391b-9f01-4ede-90dc-3955cf1c4998, sni: transit1.fanqiang.eu, skip-cert-verify: true, udp: true}
+  - {name: 213.183.53.177:9043, server: 213.183.53.177, port: 9043, type: ss, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF, udp: true}
+  - {name: 213.183.53.177:9060, server: 213.183.53.177, port: 9060, type: ss, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ, udp: true}
+  - {name: 14.29.124.168:25266, server: 14.29.124.168, port: 25266, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 213.183.53.177:9027, server: 213.183.53.177, port: 9027, type: ss, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8, udp: true}
+  - {name: 213.183.53.177:9084, server: 213.183.53.177, port: 9084, type: ss, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj, udp: true}
+  - {name: 213.183.53.177:9093, server: 213.183.53.177, port: 9093, type: ss, cipher: aes-256-cfb, password: wfLC2y7rzZyCmuyt, udp: true}
+  - {name: 213.183.53.177:9010, server: 213.183.53.177, port: 9010, type: ss, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4, udp: true}
+  - {name: 14.29.124.168:25286, server: 14.29.124.168, port: 25286, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
   - {name: 14.29.124.168:25283, server: 14.29.124.168, port: 25283, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 14.29.124.168:25261, server: 14.29.124.168, port: 25261, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_56_3@55, server: 14.29.124.168, port: 25207, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 14.29.124.168:25280, server: 14.29.124.168, port: 25280, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_59_3@58, server: 14.29.124.168, port: 25230, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 14.29.124.168:25210, server: 14.29.124.168, port: 25210, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 14.29.124.168:25231, server: 14.29.124.168, port: 25231, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: NONE 20, server: s4.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s4.hazz.win, skip-cert-verify: true, udp: true}
+  - {name: CN 3, server: hn.zfnode.org, port: 30217, type: trojan, password: 63ec756d-1f6a-36c8-a9fd-025f4acfc74f, sni: hn.zfnode.org, skip-cert-verify: true, udp: true}
+  - {name: "", server: vus2.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /chat, ws-headers: {Host: vus2.0bad.com}, udp: true}
+  - {name: 144.91.109.75:443, server: 144.91.109.75, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: revC4XzAemkX, udp: true}
+  - {name: 194.71.130.194:50003, server: 194.71.130.194, port: 50003, type: ss, cipher: aes-256-cfb, password: !<str> 8460400130, udp: true}
+  - {name: " 2", server: vus4.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /chat, ws-headers: {Host: vus4.0bad.com}, udp: true}
+  - {name: CN_45_6@44, server: 14.29.124.168, port: 25251, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 213.183.59.214:9084, server: 213.183.59.214, port: 9084, type: ss, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj, udp: true}
+  - {name: 180.163.62.91:10064, server: 180.163.62.91, port: 10064, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: SG 551, server: s2.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s2.hazz.win, skip-cert-verify: true, udp: true}
+  - {name: 213.183.59.214:9020, server: 213.183.59.214, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
+  - {name: _AU_澳大利亚_3@1, server: jgwxn3.gaox.ml, port: 443, type: trojan, password: cb43b7c2-b744-41c5-bcc2-fd7467b332cf, sni: jgwxn3.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: 14.29.124.168:25207, server: 14.29.124.168, port: 25207, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
   - {name: 14.29.124.168:25235, server: 14.29.124.168, port: 25235, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 14.29.124.168:25220, server: 14.29.124.168, port: 25220, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: HK 49, server: pmah.wokuaitule.xyz, port: 40007, type: vmess, uuid: 6bfc3f5a-c070-348a-9660-1429d7cb76c1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: 7.wokuaitule.xyz}, udp: true}
-  - {name: HK 45, server: fc.ggbgp.wokuaitule.xyz, port: 40010, type: vmess, uuid: 6bfc3f5a-c070-348a-9660-1429d7cb76c1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: 10.wokuaitule.xyz}, udp: true}
-  - {name: CN 14, server: cn.speedabc.xyz, port: 42003, type: trojan, password: 804d36c2-0585-4568-b277-eaabf4bc8e48, sni: cn.speedabc.xyz, skip-cert-verify: true, udp: true}
-  - {name: CN 16, server: cn.speedabc.xyz, port: 32002, type: trojan, password: 804d36c2-0585-4568-b277-eaabf4bc8e48, sni: cn.speedabc.xyz, skip-cert-verify: true, udp: true}
-  - {name: CN 62, server: dz.wokuaitule.xyz, port: 17723, type: vmess, uuid: 6bfc3f5a-c070-348a-9660-1429d7cb76c1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: 23.wokuaitule.xyz}, udp: true}
-  - {name: _US_美国_3_1@6, server: 212.81.47.11, port: 443, type: trojan, password: 3yFq7NCP53mVfpXJz3, skip-cert-verify: true, udp: true}
-  - {name: 14.29.124.168:25271, server: 14.29.124.168, port: 25271, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: DE_63_3@62, server: au2-2.nigirocloud.com, port: 443, type: trojan, password: 3yFq7NCP53mVfpXJz3, sni: au2-2.nigirocloud.com, skip-cert-verify: true, udp: true}
-  - {name: US_187_3@186, server: jgwdj3.gaox.ml, port: 443, type: trojan, password: da777aae-defb-41d0-a183-2c27da2b4677, sni: jgwdj3.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: 14.29.124.168:25289, server: 14.29.124.168, port: 25289, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: AU 71, server: au2-4.nigirocloud.com, port: 443, type: trojan, password: 3yFq7NCP53mVfpXJz3, sni: au2-4.nigirocloud.com, skip-cert-verify: true, udp: true}
-  - {name: US 60, server: azhk.r.optage.moe, port: 44612, type: trojan, password: e9561799-2eee-47c5-a384-fc369f0eb792, sni: azhk.r.optage.moe, skip-cert-verify: true, udp: true}
-  - {name: DE_66_3@65, server: 212.81.47.12, port: 443, type: trojan, password: 3yFq7NCP53mVfpXJz3, skip-cert-verify: true, udp: true}
-  - {name: NONE, server: s3.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s3.hazz.win, skip-cert-verify: true, udp: true}
-  - {name: TW 69, server: 165.154.253.68, port: 80, type: vmess, uuid: 1764e589-7fa9-43f6-9e7e-25733729f61f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 165.154.253.68}, udp: true}
-  - {name: CN 67, server: shcm.pdjc.cc, port: 42000, type: trojan, password: b7dcc148-c8a3-4173-931f-8ecf9413eb58, sni: shcm.pdjc.cc, skip-cert-verify: true, udp: true}
-  - {name: NONE 2, server: s4.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s4.hazz.win, skip-cert-verify: true, udp: true}
-  - {name: CN 12, server: ah.b.speedabc.xyz, port: 42002, type: trojan, password: 804d36c2-0585-4568-b277-eaabf4bc8e48, sni: ah.b.speedabc.xyz, skip-cert-verify: true, udp: true}
-  - {name: CN 15, server: cn.speedabc.xyz, port: 42004, type: trojan, password: 804d36c2-0585-4568-b277-eaabf4bc8e48, sni: cn.speedabc.xyz, skip-cert-verify: true, udp: true}
-  - {name: CN_46_3@45, server: 14.29.124.168, port: 25254, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 14.29.124.168:25272, server: 14.29.124.168, port: 25272, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 14.29.124.168:25270, server: 14.29.124.168, port: 25270, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
   - {name: 14.29.124.168:25287, server: 14.29.124.168, port: 25287, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN 98, server: cm.spacez.cloud, port: 30002, type: trojan, password: c9a3a61d-5d49-4158-9e60-6fa32684b122, sni: cm.spacez.cloud, skip-cert-verify: true, udp: true}
-  - {name: 14.29.124.168:25295, server: 14.29.124.168, port: 25295, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 14.29.124.168:25247, server: 14.29.124.168, port: 25247, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: US 31, server: azhk.r.optage.moe, port: 44605, type: trojan, password: e9561799-2eee-47c5-a384-fc369f0eb792, sni: azhk.r.optage.moe, skip-cert-verify: true, udp: true}
   - {name: 14.29.124.168:25238, server: 14.29.124.168, port: 25238, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 14.29.124.168:25271, server: 14.29.124.168, port: 25271, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 14.29.124.168:25226, server: 14.29.124.168, port: 25226, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 14.29.124.168:25254, server: 14.29.124.168, port: 25254, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
   - {name: 14.29.124.168:25218, server: 14.29.124.168, port: 25218, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: NONE 3, server: s1.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s1.hazz.win, skip-cert-verify: true, udp: true}
-  - {name: CN 37, server: gy.ziqiyun.xyz, port: 44041, type: ss, cipher: chacha20-ietf-poly1305, password: 297545c2-a59d-4610-9580-a7baa3657a57, udp: true}
-  - {name: US 72, server: v1.ssrsub.com, port: 8443, type: vmess, uuid: f736834f-1fc8-4738-9884-9afe0eb0d818, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /api/v3/download.getFile, ws-headers: {Host: v1.ssrsub.com}, udp: true}
-  - {name: CN 42, server: zh01lv5sgp03.feiguayun.xyz, port: 34087, type: ss, cipher: aes-256-gcm, password: 4b5d7ed5-e1a3-4947-b955-58a39a29cc29, udp: true}
-  - {name: DE 74, server: 165.22.73.126, port: 23335, type: ss, cipher: aes-256-cfb, password: 7d99ae502227454ea998d71e4b62a388, udp: true}
+  - {name: 14.29.124.168:25247, server: 14.29.124.168, port: 25247, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 14.29.124.168:25268, server: 14.29.124.168, port: 25268, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 14.29.124.168:25267, server: 14.29.124.168, port: 25267, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 14.29.124.168:25241, server: 14.29.124.168, port: 25241, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 14.29.124.168:25252, server: 14.29.124.168, port: 25252, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 14.29.124.168:25230, server: 14.29.124.168, port: 25230, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 14.29.124.168:25296, server: 14.29.124.168, port: 25296, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 14.29.124.168:25219, server: 14.29.124.168, port: 25219, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 14.29.124.168:25245, server: 14.29.124.168, port: 25245, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 14.29.124.168:25279, server: 14.29.124.168, port: 25279, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 14.29.124.168:25233, server: 14.29.124.168, port: 25233, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: HK 52, server: transit1.fanqiang.eu, port: 15020, type: trojan, password: 7259391b-9f01-4ede-90dc-3955cf1c4998, sni: transit1.fanqiang.eu, skip-cert-verify: true, udp: true}
+  - {name: HK 113, server: transit1.fanqiang.eu, port: 15039, type: trojan, password: 7259391b-9f01-4ede-90dc-3955cf1c4998, sni: transit1.fanqiang.eu, skip-cert-verify: true, udp: true}
+  - {name: CN 193, server: cm.3sx.xyz, port: 21003, type: ss, cipher: chacha20-ietf-poly1305, password: d80412a5-1757-48a5-b493-e2de1265cc11, udp: true}
+  - {name: CN 83, server: cm.3sx.xyz, port: 21005, type: ss, cipher: chacha20-ietf-poly1305, password: d80412a5-1757-48a5-b493-e2de1265cc11, udp: true}
+  - {name: NONE 21, server: jgwdj4.gaox.ml, port: 443, type: trojan, password: c09eb137-bf68-4658-84e0-102d94b74168, sni: jgwdj4.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: CN 94, server: cmb.3sx.xyz, port: 21003, type: ss, cipher: chacha20-ietf-poly1305, password: d80412a5-1757-48a5-b493-e2de1265cc11, udp: true}
+  - {name: CN 341, server: 58.247.140.151, port: 11424, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 13370:DqGDfE, obfs-param: VmpKMFYxUnJNVmhWYTJScVVteEtVVlpyVm5kalZsWjFZMFprYTJKSFVsaFpWVnBLVUZFOVBRPT0=, udp: true}
+  - {name: " 3", server: 155.248.162.21, port: 443, type: vmess, uuid: 7454097f-15fb-44bb-9e59-e1fdd1ac03a5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: HK 147, server: transit1.fanqiang.eu, port: 15022, type: trojan, password: 7259391b-9f01-4ede-90dc-3955cf1c4998, sni: transit1.fanqiang.eu, skip-cert-verify: true, udp: true}
+  - {name: JP 487, server: ocijp.n.optage.moe, port: 62500, type: trojan, password: d3c34184-e1b5-42d0-8f52-d89c8a095301, sni: ocijp.n.optage.moe, skip-cert-verify: true, udp: true}
+  - {name: _US_美国_5_1@9, server: sg01.czsx1624.tk, port: 443, type: vmess, uuid: d002b422-eace-4e01-bf58-e4bb0bcfe7af, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /3a8545177/, ws-headers: {Host: sg01.czsx1624.tk}, udp: true}
+  - {name: " 4", server: 172.104.48.151, port: 8080, type: vmess, uuid: c8bab0e9-fad7-46ef-e74a-9cb2022ed9c9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 172.104.48.151}, udp: true}
+  - {name: 213.183.59.214:9008, server: 213.183.59.214, port: 9008, type: ss, cipher: aes-256-cfb, password: y9VURyNzJWNRYEGQ, udp: true}
+  - {name: 213.183.59.214:9000, server: 213.183.59.214, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
+  - {name: HK 63, server: azhj001.xiba1.xyz, port: 20722, type: trojan, password: 93768960-75fc-34e5-8025-7ff0cc5a0aa6, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: HK 64, server: azhj001.xiba1.xyz, port: 20721, type: trojan, password: 93768960-75fc-34e5-8025-7ff0cc5a0aa6, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: HK 139, server: azqt001.xiba1.xyz, port: 20729, type: trojan, password: 93768960-75fc-34e5-8025-7ff0cc5a0aa6, sni: azqt001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: HK 54, server: azqt001.xiba1.xyz, port: 20735, type: trojan, password: 93768960-75fc-34e5-8025-7ff0cc5a0aa6, sni: azqt001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: HK 57, server: azhj001.xiba1.xyz, port: 20725, type: trojan, password: 93768960-75fc-34e5-8025-7ff0cc5a0aa6, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: HK 62, server: azqt001.xiba1.xyz, port: 20740, type: trojan, password: 93768960-75fc-34e5-8025-7ff0cc5a0aa6, sni: azqt001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: HK 65, server: azhj001.xiba1.xyz, port: 20724, type: trojan, password: 93768960-75fc-34e5-8025-7ff0cc5a0aa6, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: HK 71, server: azqt001.xiba1.xyz, port: 20728, type: trojan, password: 93768960-75fc-34e5-8025-7ff0cc5a0aa6, sni: azqt001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: HK 74, server: azqt001.xiba1.xyz, port: 20733, type: trojan, password: 93768960-75fc-34e5-8025-7ff0cc5a0aa6, sni: azqt001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: HK 110, server: azqt001.xiba1.xyz, port: 20739, type: trojan, password: 93768960-75fc-34e5-8025-7ff0cc5a0aa6, sni: azqt001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: HK 50, server: azqt001.xiba1.xyz, port: 20732, type: trojan, password: 93768960-75fc-34e5-8025-7ff0cc5a0aa6, sni: azqt001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: HK 53, server: azqt001.xiba1.xyz, port: 20731, type: trojan, password: 93768960-75fc-34e5-8025-7ff0cc5a0aa6, sni: azqt001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: HK 72, server: azhj001.xiba1.xyz, port: 20723, type: trojan, password: 93768960-75fc-34e5-8025-7ff0cc5a0aa6, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: HK 66, server: azhj001.xiba1.xyz, port: 20720, type: trojan, password: 93768960-75fc-34e5-8025-7ff0cc5a0aa6, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: HK 56, server: azqt001.xiba1.xyz, port: 20730, type: trojan, password: 93768960-75fc-34e5-8025-7ff0cc5a0aa6, sni: azqt001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: HK 49, server: azqt001.xiba1.xyz, port: 20741, type: trojan, password: 93768960-75fc-34e5-8025-7ff0cc5a0aa6, sni: azqt001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: HK 60, server: azhj001.xiba1.xyz, port: 20727, type: trojan, password: 93768960-75fc-34e5-8025-7ff0cc5a0aa6, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: HK 164, server: hj001.xiba1.xyz, port: 20762, type: trojan, password: 93768960-75fc-34e5-8025-7ff0cc5a0aa6, sni: hj001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: default_name_0@20, server: v1.ssrsub.com, port: 8443, type: vmess, uuid: 2256dea6-b952-43f7-b8a2-983f766d5836, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /api/v3/download.getFile, ws-headers: {Host: v1.ssrsub.com}, udp: true}
+  - {name: HK 153, server: azqt001.xiba1.xyz, port: 20747, type: trojan, password: 93768960-75fc-34e5-8025-7ff0cc5a0aa6, sni: azqt001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: HK 156, server: azqt001.xiba1.xyz, port: 20743, type: trojan, password: 93768960-75fc-34e5-8025-7ff0cc5a0aa6, sni: azqt001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: HK 159, server: azqt001.xiba1.xyz, port: 20748, type: trojan, password: 93768960-75fc-34e5-8025-7ff0cc5a0aa6, sni: azqt001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: HK 214, server: azgy001.xiba1.xyz, port: 20710, type: trojan, password: 93768960-75fc-34e5-8025-7ff0cc5a0aa6, sni: azgy001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: 97.64.31.80:247, server: 97.64.31.80, port: 247, type: ss, cipher: aes-256-cfb, password: bwhskrskr03, udp: true}
+  - {name: HK 200, server: azgy001.xiba1.xyz, port: 20712, type: trojan, password: 93768960-75fc-34e5-8025-7ff0cc5a0aa6, sni: azgy001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: HK 212, server: azgy001.xiba1.xyz, port: 20714, type: trojan, password: 93768960-75fc-34e5-8025-7ff0cc5a0aa6, sni: azgy001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: HK 51, server: azqt001.xiba1.xyz, port: 20734, type: trojan, password: 93768960-75fc-34e5-8025-7ff0cc5a0aa6, sni: azqt001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: HK 70, server: azhj001.xiba1.xyz, port: 20726, type: trojan, password: 93768960-75fc-34e5-8025-7ff0cc5a0aa6, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: HK 118, server: azgy001.xiba1.xyz, port: 6004, type: trojan, password: 93768960-75fc-34e5-8025-7ff0cc5a0aa6, sni: azgy001.xiba1.xyz, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 14.29.124.168:25272
-      - 14.29.124.168:25217
-      - CN_39_3@38
-      - 14.29.124.168:25231
-      - 14.29.124.168:25226
-      - 14.29.124.168:25245
-      - 14.29.124.168:25297
-      - 14.29.124.168:25296
-      - 14.29.124.168:25256
-      - 14.29.124.168:25279
-      - 14.29.124.168:25283
-      - 14.29.124.168:25261
-      - CN_56_3@55
-      - 14.29.124.168:25280
-      - CN_59_3@58
-      - 14.29.124.168:25210
-      - 14.29.124.168:25235
-      - 14.29.124.168:25220
-      - HK 49
-      - HK 45
-      - CN 14
-      - CN 16
-      - CN 62
-      - _US_美国_3_1@6
-      - 14.29.124.168:25271
-      - DE_63_3@62
-      - US_187_3@186
-      - 14.29.124.168:25289
-      - AU 71
-      - US 60
-      - DE_66_3@65
+      - HK 79
+      - HK 236
+      - HK 80
+      - HK 468
+      - CN 87
       - NONE
-      - TW 69
-      - CN 67
+      - _JP_日本_3_1@2
+      - _JP_日本_2_1@1
+      - CN 134
       - NONE 2
-      - CN 12
-      - CN 15
-      - CN_46_3@45
-      - 14.29.124.168:25287
-      - CN 98
-      - 14.29.124.168:25295
-      - 14.29.124.168:25247
-      - US 31
-      - 14.29.124.168:25238
-      - 14.29.124.168:25218
       - NONE 3
-      - CN 37
-      - US 72
-      - CN 42
-      - DE 74
+      - CN 7
+      - NONE 4
+      - NONE 5
+      - NONE 6
+      - NONE 7
+      - NONE 8
+      - NONE 9
+      - NONE 10
+      - NONE 11
+      - NONE 12
+      - HK 176
+      - NONE 13
+      - HK 336
+      - NONE 14
+      - HK 337
+      - HK 335
+      - NONE 15
+      - HK 59
+      - NONE 16
+      - NONE 17
+      - US 186
+      - NONE 18
+      - HK 100
+      - 213.183.53.177:9005
+      - 213.183.53.177:9000
+      - 213.183.53.177:9041
+      - 213.183.53.177:9003
+      - 213.183.53.177:9018
+      - 213.183.53.177:9070
+      - 213.183.53.177:9059
+      - 213.183.53.177:9064
+      - 213.183.53.177:9094
+      - 213.183.53.177:9098
+      - CN 130
+      - 213.183.53.177:9056
+      - 213.183.53.177:9008
+      - 213.183.53.177:9057
+      - 213.183.53.177:9033
+      - NONE 19
+      - HK 103
+      - 213.183.53.177:9043
+      - 213.183.53.177:9060
+      - 14.29.124.168:25266
+      - 213.183.53.177:9027
+      - 213.183.53.177:9084
+      - 213.183.53.177:9093
+      - 213.183.53.177:9010
+      - 14.29.124.168:25286
+      - 14.29.124.168:25283
+      - 14.29.124.168:25231
+      - NONE 20
+      - CN 3
+      - ""
+      - 144.91.109.75:443
+      - 194.71.130.194:50003
+      - " 2"
+      - CN_45_6@44
+      - 213.183.59.214:9084
+      - 180.163.62.91:10064
+      - SG 551
+      - 213.183.59.214:9020
+      - _AU_澳大利亚_3@1
+      - 14.29.124.168:25207
+      - 14.29.124.168:25235
+      - 14.29.124.168:25272
+      - 14.29.124.168:25270
+      - 14.29.124.168:25287
+      - 14.29.124.168:25238
+      - 14.29.124.168:25271
+      - 14.29.124.168:25226
+      - 14.29.124.168:25254
+      - 14.29.124.168:25218
+      - 14.29.124.168:25247
+      - 14.29.124.168:25268
+      - 14.29.124.168:25267
+      - 14.29.124.168:25241
+      - 14.29.124.168:25252
+      - 14.29.124.168:25230
+      - 14.29.124.168:25296
+      - 14.29.124.168:25219
+      - 14.29.124.168:25245
+      - 14.29.124.168:25279
+      - 14.29.124.168:25233
+      - HK 52
+      - HK 113
+      - CN 193
+      - CN 83
+      - NONE 21
+      - CN 94
+      - CN 341
+      - " 3"
+      - HK 147
+      - JP 487
+      - _US_美国_5_1@9
+      - " 4"
+      - 213.183.59.214:9008
+      - 213.183.59.214:9000
+      - HK 63
+      - HK 64
+      - HK 139
+      - HK 54
+      - HK 57
+      - HK 62
+      - HK 65
+      - HK 71
+      - HK 74
+      - HK 110
+      - HK 50
+      - HK 53
+      - HK 72
+      - HK 66
+      - HK 56
+      - HK 49
+      - HK 60
+      - HK 164
+      - default_name_0@20
+      - HK 153
+      - HK 156
+      - HK 159
+      - HK 214
+      - 97.64.31.80:247
+      - HK 200
+      - HK 212
+      - HK 51
+      - HK 70
+      - HK 118
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 14.29.124.168:25272
-      - 14.29.124.168:25217
-      - CN_39_3@38
-      - 14.29.124.168:25231
-      - 14.29.124.168:25226
-      - 14.29.124.168:25245
-      - 14.29.124.168:25297
-      - 14.29.124.168:25296
-      - 14.29.124.168:25256
-      - 14.29.124.168:25279
-      - 14.29.124.168:25283
-      - 14.29.124.168:25261
-      - CN_56_3@55
-      - 14.29.124.168:25280
-      - CN_59_3@58
-      - 14.29.124.168:25210
-      - 14.29.124.168:25235
-      - 14.29.124.168:25220
-      - HK 49
-      - HK 45
-      - CN 14
-      - CN 16
-      - CN 62
-      - _US_美国_3_1@6
-      - 14.29.124.168:25271
-      - DE_63_3@62
-      - US_187_3@186
-      - 14.29.124.168:25289
-      - AU 71
-      - US 60
-      - DE_66_3@65
+      - HK 79
+      - HK 236
+      - HK 80
+      - HK 468
+      - CN 87
       - NONE
-      - TW 69
-      - CN 67
+      - _JP_日本_3_1@2
+      - _JP_日本_2_1@1
+      - CN 134
       - NONE 2
-      - CN 12
-      - CN 15
-      - CN_46_3@45
-      - 14.29.124.168:25287
-      - CN 98
-      - 14.29.124.168:25295
-      - 14.29.124.168:25247
-      - US 31
-      - 14.29.124.168:25238
-      - 14.29.124.168:25218
       - NONE 3
-      - CN 37
-      - US 72
-      - CN 42
-      - DE 74
+      - CN 7
+      - NONE 4
+      - NONE 5
+      - NONE 6
+      - NONE 7
+      - NONE 8
+      - NONE 9
+      - NONE 10
+      - NONE 11
+      - NONE 12
+      - HK 176
+      - NONE 13
+      - HK 336
+      - NONE 14
+      - HK 337
+      - HK 335
+      - NONE 15
+      - HK 59
+      - NONE 16
+      - NONE 17
+      - US 186
+      - NONE 18
+      - HK 100
+      - 213.183.53.177:9005
+      - 213.183.53.177:9000
+      - 213.183.53.177:9041
+      - 213.183.53.177:9003
+      - 213.183.53.177:9018
+      - 213.183.53.177:9070
+      - 213.183.53.177:9059
+      - 213.183.53.177:9064
+      - 213.183.53.177:9094
+      - 213.183.53.177:9098
+      - CN 130
+      - 213.183.53.177:9056
+      - 213.183.53.177:9008
+      - 213.183.53.177:9057
+      - 213.183.53.177:9033
+      - NONE 19
+      - HK 103
+      - 213.183.53.177:9043
+      - 213.183.53.177:9060
+      - 14.29.124.168:25266
+      - 213.183.53.177:9027
+      - 213.183.53.177:9084
+      - 213.183.53.177:9093
+      - 213.183.53.177:9010
+      - 14.29.124.168:25286
+      - 14.29.124.168:25283
+      - 14.29.124.168:25231
+      - NONE 20
+      - CN 3
+      - ""
+      - 144.91.109.75:443
+      - 194.71.130.194:50003
+      - " 2"
+      - CN_45_6@44
+      - 213.183.59.214:9084
+      - 180.163.62.91:10064
+      - SG 551
+      - 213.183.59.214:9020
+      - _AU_澳大利亚_3@1
+      - 14.29.124.168:25207
+      - 14.29.124.168:25235
+      - 14.29.124.168:25272
+      - 14.29.124.168:25270
+      - 14.29.124.168:25287
+      - 14.29.124.168:25238
+      - 14.29.124.168:25271
+      - 14.29.124.168:25226
+      - 14.29.124.168:25254
+      - 14.29.124.168:25218
+      - 14.29.124.168:25247
+      - 14.29.124.168:25268
+      - 14.29.124.168:25267
+      - 14.29.124.168:25241
+      - 14.29.124.168:25252
+      - 14.29.124.168:25230
+      - 14.29.124.168:25296
+      - 14.29.124.168:25219
+      - 14.29.124.168:25245
+      - 14.29.124.168:25279
+      - 14.29.124.168:25233
+      - HK 52
+      - HK 113
+      - CN 193
+      - CN 83
+      - NONE 21
+      - CN 94
+      - CN 341
+      - " 3"
+      - HK 147
+      - JP 487
+      - _US_美国_5_1@9
+      - " 4"
+      - 213.183.59.214:9008
+      - 213.183.59.214:9000
+      - HK 63
+      - HK 64
+      - HK 139
+      - HK 54
+      - HK 57
+      - HK 62
+      - HK 65
+      - HK 71
+      - HK 74
+      - HK 110
+      - HK 50
+      - HK 53
+      - HK 72
+      - HK 66
+      - HK 56
+      - HK 49
+      - HK 60
+      - HK 164
+      - default_name_0@20
+      - HK 153
+      - HK 156
+      - HK 159
+      - HK 214
+      - 97.64.31.80:247
+      - HK 200
+      - HK 212
+      - HK 51
+      - HK 70
+      - HK 118
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 14.29.124.168:25272
-      - 14.29.124.168:25217
-      - CN_39_3@38
-      - 14.29.124.168:25231
-      - 14.29.124.168:25226
-      - 14.29.124.168:25245
-      - 14.29.124.168:25297
-      - 14.29.124.168:25296
-      - 14.29.124.168:25256
-      - 14.29.124.168:25279
-      - 14.29.124.168:25283
-      - 14.29.124.168:25261
-      - CN_56_3@55
-      - 14.29.124.168:25280
-      - CN_59_3@58
-      - 14.29.124.168:25210
-      - 14.29.124.168:25235
-      - 14.29.124.168:25220
-      - HK 49
-      - HK 45
-      - CN 14
-      - CN 16
-      - CN 62
-      - _US_美国_3_1@6
-      - 14.29.124.168:25271
-      - DE_63_3@62
-      - US_187_3@186
-      - 14.29.124.168:25289
-      - AU 71
-      - US 60
-      - DE_66_3@65
+      - HK 79
+      - HK 236
+      - HK 80
+      - HK 468
+      - CN 87
       - NONE
-      - TW 69
-      - CN 67
+      - _JP_日本_3_1@2
+      - _JP_日本_2_1@1
+      - CN 134
       - NONE 2
-      - CN 12
-      - CN 15
-      - CN_46_3@45
-      - 14.29.124.168:25287
-      - CN 98
-      - 14.29.124.168:25295
-      - 14.29.124.168:25247
-      - US 31
-      - 14.29.124.168:25238
-      - 14.29.124.168:25218
       - NONE 3
-      - CN 37
-      - US 72
-      - CN 42
-      - DE 74
+      - CN 7
+      - NONE 4
+      - NONE 5
+      - NONE 6
+      - NONE 7
+      - NONE 8
+      - NONE 9
+      - NONE 10
+      - NONE 11
+      - NONE 12
+      - HK 176
+      - NONE 13
+      - HK 336
+      - NONE 14
+      - HK 337
+      - HK 335
+      - NONE 15
+      - HK 59
+      - NONE 16
+      - NONE 17
+      - US 186
+      - NONE 18
+      - HK 100
+      - 213.183.53.177:9005
+      - 213.183.53.177:9000
+      - 213.183.53.177:9041
+      - 213.183.53.177:9003
+      - 213.183.53.177:9018
+      - 213.183.53.177:9070
+      - 213.183.53.177:9059
+      - 213.183.53.177:9064
+      - 213.183.53.177:9094
+      - 213.183.53.177:9098
+      - CN 130
+      - 213.183.53.177:9056
+      - 213.183.53.177:9008
+      - 213.183.53.177:9057
+      - 213.183.53.177:9033
+      - NONE 19
+      - HK 103
+      - 213.183.53.177:9043
+      - 213.183.53.177:9060
+      - 14.29.124.168:25266
+      - 213.183.53.177:9027
+      - 213.183.53.177:9084
+      - 213.183.53.177:9093
+      - 213.183.53.177:9010
+      - 14.29.124.168:25286
+      - 14.29.124.168:25283
+      - 14.29.124.168:25231
+      - NONE 20
+      - CN 3
+      - ""
+      - 144.91.109.75:443
+      - 194.71.130.194:50003
+      - " 2"
+      - CN_45_6@44
+      - 213.183.59.214:9084
+      - 180.163.62.91:10064
+      - SG 551
+      - 213.183.59.214:9020
+      - _AU_澳大利亚_3@1
+      - 14.29.124.168:25207
+      - 14.29.124.168:25235
+      - 14.29.124.168:25272
+      - 14.29.124.168:25270
+      - 14.29.124.168:25287
+      - 14.29.124.168:25238
+      - 14.29.124.168:25271
+      - 14.29.124.168:25226
+      - 14.29.124.168:25254
+      - 14.29.124.168:25218
+      - 14.29.124.168:25247
+      - 14.29.124.168:25268
+      - 14.29.124.168:25267
+      - 14.29.124.168:25241
+      - 14.29.124.168:25252
+      - 14.29.124.168:25230
+      - 14.29.124.168:25296
+      - 14.29.124.168:25219
+      - 14.29.124.168:25245
+      - 14.29.124.168:25279
+      - 14.29.124.168:25233
+      - HK 52
+      - HK 113
+      - CN 193
+      - CN 83
+      - NONE 21
+      - CN 94
+      - CN 341
+      - " 3"
+      - HK 147
+      - JP 487
+      - _US_美国_5_1@9
+      - " 4"
+      - 213.183.59.214:9008
+      - 213.183.59.214:9000
+      - HK 63
+      - HK 64
+      - HK 139
+      - HK 54
+      - HK 57
+      - HK 62
+      - HK 65
+      - HK 71
+      - HK 74
+      - HK 110
+      - HK 50
+      - HK 53
+      - HK 72
+      - HK 66
+      - HK 56
+      - HK 49
+      - HK 60
+      - HK 164
+      - default_name_0@20
+      - HK 153
+      - HK 156
+      - HK 159
+      - HK 214
+      - 97.64.31.80:247
+      - HK 200
+      - HK 212
+      - HK 51
+      - HK 70
+      - HK 118
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -240,56 +588,143 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 14.29.124.168:25272
-      - 14.29.124.168:25217
-      - CN_39_3@38
-      - 14.29.124.168:25231
-      - 14.29.124.168:25226
-      - 14.29.124.168:25245
-      - 14.29.124.168:25297
-      - 14.29.124.168:25296
-      - 14.29.124.168:25256
-      - 14.29.124.168:25279
-      - 14.29.124.168:25283
-      - 14.29.124.168:25261
-      - CN_56_3@55
-      - 14.29.124.168:25280
-      - CN_59_3@58
-      - 14.29.124.168:25210
-      - 14.29.124.168:25235
-      - 14.29.124.168:25220
-      - HK 49
-      - HK 45
-      - CN 14
-      - CN 16
-      - CN 62
-      - _US_美国_3_1@6
-      - 14.29.124.168:25271
-      - DE_63_3@62
-      - US_187_3@186
-      - 14.29.124.168:25289
-      - AU 71
-      - US 60
-      - DE_66_3@65
+      - HK 79
+      - HK 236
+      - HK 80
+      - HK 468
+      - CN 87
       - NONE
-      - TW 69
-      - CN 67
+      - _JP_日本_3_1@2
+      - _JP_日本_2_1@1
+      - CN 134
       - NONE 2
-      - CN 12
-      - CN 15
-      - CN_46_3@45
-      - 14.29.124.168:25287
-      - CN 98
-      - 14.29.124.168:25295
-      - 14.29.124.168:25247
-      - US 31
-      - 14.29.124.168:25238
-      - 14.29.124.168:25218
       - NONE 3
-      - CN 37
-      - US 72
-      - CN 42
-      - DE 74
+      - CN 7
+      - NONE 4
+      - NONE 5
+      - NONE 6
+      - NONE 7
+      - NONE 8
+      - NONE 9
+      - NONE 10
+      - NONE 11
+      - NONE 12
+      - HK 176
+      - NONE 13
+      - HK 336
+      - NONE 14
+      - HK 337
+      - HK 335
+      - NONE 15
+      - HK 59
+      - NONE 16
+      - NONE 17
+      - US 186
+      - NONE 18
+      - HK 100
+      - 213.183.53.177:9005
+      - 213.183.53.177:9000
+      - 213.183.53.177:9041
+      - 213.183.53.177:9003
+      - 213.183.53.177:9018
+      - 213.183.53.177:9070
+      - 213.183.53.177:9059
+      - 213.183.53.177:9064
+      - 213.183.53.177:9094
+      - 213.183.53.177:9098
+      - CN 130
+      - 213.183.53.177:9056
+      - 213.183.53.177:9008
+      - 213.183.53.177:9057
+      - 213.183.53.177:9033
+      - NONE 19
+      - HK 103
+      - 213.183.53.177:9043
+      - 213.183.53.177:9060
+      - 14.29.124.168:25266
+      - 213.183.53.177:9027
+      - 213.183.53.177:9084
+      - 213.183.53.177:9093
+      - 213.183.53.177:9010
+      - 14.29.124.168:25286
+      - 14.29.124.168:25283
+      - 14.29.124.168:25231
+      - NONE 20
+      - CN 3
+      - ""
+      - 144.91.109.75:443
+      - 194.71.130.194:50003
+      - " 2"
+      - CN_45_6@44
+      - 213.183.59.214:9084
+      - 180.163.62.91:10064
+      - SG 551
+      - 213.183.59.214:9020
+      - _AU_澳大利亚_3@1
+      - 14.29.124.168:25207
+      - 14.29.124.168:25235
+      - 14.29.124.168:25272
+      - 14.29.124.168:25270
+      - 14.29.124.168:25287
+      - 14.29.124.168:25238
+      - 14.29.124.168:25271
+      - 14.29.124.168:25226
+      - 14.29.124.168:25254
+      - 14.29.124.168:25218
+      - 14.29.124.168:25247
+      - 14.29.124.168:25268
+      - 14.29.124.168:25267
+      - 14.29.124.168:25241
+      - 14.29.124.168:25252
+      - 14.29.124.168:25230
+      - 14.29.124.168:25296
+      - 14.29.124.168:25219
+      - 14.29.124.168:25245
+      - 14.29.124.168:25279
+      - 14.29.124.168:25233
+      - HK 52
+      - HK 113
+      - CN 193
+      - CN 83
+      - NONE 21
+      - CN 94
+      - CN 341
+      - " 3"
+      - HK 147
+      - JP 487
+      - _US_美国_5_1@9
+      - " 4"
+      - 213.183.59.214:9008
+      - 213.183.59.214:9000
+      - HK 63
+      - HK 64
+      - HK 139
+      - HK 54
+      - HK 57
+      - HK 62
+      - HK 65
+      - HK 71
+      - HK 74
+      - HK 110
+      - HK 50
+      - HK 53
+      - HK 72
+      - HK 66
+      - HK 56
+      - HK 49
+      - HK 60
+      - HK 164
+      - default_name_0@20
+      - HK 153
+      - HK 156
+      - HK 159
+      - HK 214
+      - 97.64.31.80:247
+      - HK 200
+      - HK 212
+      - HK 51
+      - HK 70
+      - HK 118
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -300,167 +735,428 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 14.29.124.168:25272
-      - 14.29.124.168:25217
-      - CN_39_3@38
-      - 14.29.124.168:25231
-      - 14.29.124.168:25226
-      - 14.29.124.168:25245
-      - 14.29.124.168:25297
-      - 14.29.124.168:25296
-      - 14.29.124.168:25256
-      - 14.29.124.168:25279
-      - 14.29.124.168:25283
-      - 14.29.124.168:25261
-      - CN_56_3@55
-      - 14.29.124.168:25280
-      - CN_59_3@58
-      - 14.29.124.168:25210
-      - 14.29.124.168:25235
-      - 14.29.124.168:25220
-      - HK 49
-      - HK 45
-      - CN 14
-      - CN 16
-      - CN 62
-      - _US_美国_3_1@6
-      - 14.29.124.168:25271
-      - DE_63_3@62
-      - US_187_3@186
-      - 14.29.124.168:25289
-      - AU 71
-      - US 60
-      - DE_66_3@65
+      - HK 79
+      - HK 236
+      - HK 80
+      - HK 468
+      - CN 87
       - NONE
-      - TW 69
-      - CN 67
+      - _JP_日本_3_1@2
+      - _JP_日本_2_1@1
+      - CN 134
       - NONE 2
-      - CN 12
-      - CN 15
-      - CN_46_3@45
-      - 14.29.124.168:25287
-      - CN 98
-      - 14.29.124.168:25295
-      - 14.29.124.168:25247
-      - US 31
-      - 14.29.124.168:25238
-      - 14.29.124.168:25218
       - NONE 3
-      - CN 37
-      - US 72
-      - CN 42
-      - DE 74
+      - CN 7
+      - NONE 4
+      - NONE 5
+      - NONE 6
+      - NONE 7
+      - NONE 8
+      - NONE 9
+      - NONE 10
+      - NONE 11
+      - NONE 12
+      - HK 176
+      - NONE 13
+      - HK 336
+      - NONE 14
+      - HK 337
+      - HK 335
+      - NONE 15
+      - HK 59
+      - NONE 16
+      - NONE 17
+      - US 186
+      - NONE 18
+      - HK 100
+      - 213.183.53.177:9005
+      - 213.183.53.177:9000
+      - 213.183.53.177:9041
+      - 213.183.53.177:9003
+      - 213.183.53.177:9018
+      - 213.183.53.177:9070
+      - 213.183.53.177:9059
+      - 213.183.53.177:9064
+      - 213.183.53.177:9094
+      - 213.183.53.177:9098
+      - CN 130
+      - 213.183.53.177:9056
+      - 213.183.53.177:9008
+      - 213.183.53.177:9057
+      - 213.183.53.177:9033
+      - NONE 19
+      - HK 103
+      - 213.183.53.177:9043
+      - 213.183.53.177:9060
+      - 14.29.124.168:25266
+      - 213.183.53.177:9027
+      - 213.183.53.177:9084
+      - 213.183.53.177:9093
+      - 213.183.53.177:9010
+      - 14.29.124.168:25286
+      - 14.29.124.168:25283
+      - 14.29.124.168:25231
+      - NONE 20
+      - CN 3
+      - ""
+      - 144.91.109.75:443
+      - 194.71.130.194:50003
+      - " 2"
+      - CN_45_6@44
+      - 213.183.59.214:9084
+      - 180.163.62.91:10064
+      - SG 551
+      - 213.183.59.214:9020
+      - _AU_澳大利亚_3@1
+      - 14.29.124.168:25207
+      - 14.29.124.168:25235
+      - 14.29.124.168:25272
+      - 14.29.124.168:25270
+      - 14.29.124.168:25287
+      - 14.29.124.168:25238
+      - 14.29.124.168:25271
+      - 14.29.124.168:25226
+      - 14.29.124.168:25254
+      - 14.29.124.168:25218
+      - 14.29.124.168:25247
+      - 14.29.124.168:25268
+      - 14.29.124.168:25267
+      - 14.29.124.168:25241
+      - 14.29.124.168:25252
+      - 14.29.124.168:25230
+      - 14.29.124.168:25296
+      - 14.29.124.168:25219
+      - 14.29.124.168:25245
+      - 14.29.124.168:25279
+      - 14.29.124.168:25233
+      - HK 52
+      - HK 113
+      - CN 193
+      - CN 83
+      - NONE 21
+      - CN 94
+      - CN 341
+      - " 3"
+      - HK 147
+      - JP 487
+      - _US_美国_5_1@9
+      - " 4"
+      - 213.183.59.214:9008
+      - 213.183.59.214:9000
+      - HK 63
+      - HK 64
+      - HK 139
+      - HK 54
+      - HK 57
+      - HK 62
+      - HK 65
+      - HK 71
+      - HK 74
+      - HK 110
+      - HK 50
+      - HK 53
+      - HK 72
+      - HK 66
+      - HK 56
+      - HK 49
+      - HK 60
+      - HK 164
+      - default_name_0@20
+      - HK 153
+      - HK 156
+      - HK 159
+      - HK 214
+      - 97.64.31.80:247
+      - HK 200
+      - HK 212
+      - HK 51
+      - HK 70
+      - HK 118
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 14.29.124.168:25272
-      - 14.29.124.168:25217
-      - CN_39_3@38
-      - 14.29.124.168:25231
-      - 14.29.124.168:25226
-      - 14.29.124.168:25245
-      - 14.29.124.168:25297
-      - 14.29.124.168:25296
-      - 14.29.124.168:25256
-      - 14.29.124.168:25279
-      - 14.29.124.168:25283
-      - 14.29.124.168:25261
-      - CN_56_3@55
-      - 14.29.124.168:25280
-      - CN_59_3@58
-      - 14.29.124.168:25210
-      - 14.29.124.168:25235
-      - 14.29.124.168:25220
-      - HK 49
-      - HK 45
-      - CN 14
-      - CN 16
-      - CN 62
-      - _US_美国_3_1@6
-      - 14.29.124.168:25271
-      - DE_63_3@62
-      - US_187_3@186
-      - 14.29.124.168:25289
-      - AU 71
-      - US 60
-      - DE_66_3@65
+      - HK 79
+      - HK 236
+      - HK 80
+      - HK 468
+      - CN 87
       - NONE
-      - TW 69
-      - CN 67
+      - _JP_日本_3_1@2
+      - _JP_日本_2_1@1
+      - CN 134
       - NONE 2
-      - CN 12
-      - CN 15
-      - CN_46_3@45
-      - 14.29.124.168:25287
-      - CN 98
-      - 14.29.124.168:25295
-      - 14.29.124.168:25247
-      - US 31
-      - 14.29.124.168:25238
-      - 14.29.124.168:25218
       - NONE 3
-      - CN 37
-      - US 72
-      - CN 42
-      - DE 74
+      - CN 7
+      - NONE 4
+      - NONE 5
+      - NONE 6
+      - NONE 7
+      - NONE 8
+      - NONE 9
+      - NONE 10
+      - NONE 11
+      - NONE 12
+      - HK 176
+      - NONE 13
+      - HK 336
+      - NONE 14
+      - HK 337
+      - HK 335
+      - NONE 15
+      - HK 59
+      - NONE 16
+      - NONE 17
+      - US 186
+      - NONE 18
+      - HK 100
+      - 213.183.53.177:9005
+      - 213.183.53.177:9000
+      - 213.183.53.177:9041
+      - 213.183.53.177:9003
+      - 213.183.53.177:9018
+      - 213.183.53.177:9070
+      - 213.183.53.177:9059
+      - 213.183.53.177:9064
+      - 213.183.53.177:9094
+      - 213.183.53.177:9098
+      - CN 130
+      - 213.183.53.177:9056
+      - 213.183.53.177:9008
+      - 213.183.53.177:9057
+      - 213.183.53.177:9033
+      - NONE 19
+      - HK 103
+      - 213.183.53.177:9043
+      - 213.183.53.177:9060
+      - 14.29.124.168:25266
+      - 213.183.53.177:9027
+      - 213.183.53.177:9084
+      - 213.183.53.177:9093
+      - 213.183.53.177:9010
+      - 14.29.124.168:25286
+      - 14.29.124.168:25283
+      - 14.29.124.168:25231
+      - NONE 20
+      - CN 3
+      - ""
+      - 144.91.109.75:443
+      - 194.71.130.194:50003
+      - " 2"
+      - CN_45_6@44
+      - 213.183.59.214:9084
+      - 180.163.62.91:10064
+      - SG 551
+      - 213.183.59.214:9020
+      - _AU_澳大利亚_3@1
+      - 14.29.124.168:25207
+      - 14.29.124.168:25235
+      - 14.29.124.168:25272
+      - 14.29.124.168:25270
+      - 14.29.124.168:25287
+      - 14.29.124.168:25238
+      - 14.29.124.168:25271
+      - 14.29.124.168:25226
+      - 14.29.124.168:25254
+      - 14.29.124.168:25218
+      - 14.29.124.168:25247
+      - 14.29.124.168:25268
+      - 14.29.124.168:25267
+      - 14.29.124.168:25241
+      - 14.29.124.168:25252
+      - 14.29.124.168:25230
+      - 14.29.124.168:25296
+      - 14.29.124.168:25219
+      - 14.29.124.168:25245
+      - 14.29.124.168:25279
+      - 14.29.124.168:25233
+      - HK 52
+      - HK 113
+      - CN 193
+      - CN 83
+      - NONE 21
+      - CN 94
+      - CN 341
+      - " 3"
+      - HK 147
+      - JP 487
+      - _US_美国_5_1@9
+      - " 4"
+      - 213.183.59.214:9008
+      - 213.183.59.214:9000
+      - HK 63
+      - HK 64
+      - HK 139
+      - HK 54
+      - HK 57
+      - HK 62
+      - HK 65
+      - HK 71
+      - HK 74
+      - HK 110
+      - HK 50
+      - HK 53
+      - HK 72
+      - HK 66
+      - HK 56
+      - HK 49
+      - HK 60
+      - HK 164
+      - default_name_0@20
+      - HK 153
+      - HK 156
+      - HK 159
+      - HK 214
+      - 97.64.31.80:247
+      - HK 200
+      - HK 212
+      - HK 51
+      - HK 70
+      - HK 118
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 14.29.124.168:25272
-      - 14.29.124.168:25217
-      - CN_39_3@38
-      - 14.29.124.168:25231
-      - 14.29.124.168:25226
-      - 14.29.124.168:25245
-      - 14.29.124.168:25297
-      - 14.29.124.168:25296
-      - 14.29.124.168:25256
-      - 14.29.124.168:25279
-      - 14.29.124.168:25283
-      - 14.29.124.168:25261
-      - CN_56_3@55
-      - 14.29.124.168:25280
-      - CN_59_3@58
-      - 14.29.124.168:25210
-      - 14.29.124.168:25235
-      - 14.29.124.168:25220
-      - HK 49
-      - HK 45
-      - CN 14
-      - CN 16
-      - CN 62
-      - _US_美国_3_1@6
-      - 14.29.124.168:25271
-      - DE_63_3@62
-      - US_187_3@186
-      - 14.29.124.168:25289
-      - AU 71
-      - US 60
-      - DE_66_3@65
+      - HK 79
+      - HK 236
+      - HK 80
+      - HK 468
+      - CN 87
       - NONE
-      - TW 69
-      - CN 67
+      - _JP_日本_3_1@2
+      - _JP_日本_2_1@1
+      - CN 134
       - NONE 2
-      - CN 12
-      - CN 15
-      - CN_46_3@45
-      - 14.29.124.168:25287
-      - CN 98
-      - 14.29.124.168:25295
-      - 14.29.124.168:25247
-      - US 31
-      - 14.29.124.168:25238
-      - 14.29.124.168:25218
       - NONE 3
-      - CN 37
-      - US 72
-      - CN 42
-      - DE 74
+      - CN 7
+      - NONE 4
+      - NONE 5
+      - NONE 6
+      - NONE 7
+      - NONE 8
+      - NONE 9
+      - NONE 10
+      - NONE 11
+      - NONE 12
+      - HK 176
+      - NONE 13
+      - HK 336
+      - NONE 14
+      - HK 337
+      - HK 335
+      - NONE 15
+      - HK 59
+      - NONE 16
+      - NONE 17
+      - US 186
+      - NONE 18
+      - HK 100
+      - 213.183.53.177:9005
+      - 213.183.53.177:9000
+      - 213.183.53.177:9041
+      - 213.183.53.177:9003
+      - 213.183.53.177:9018
+      - 213.183.53.177:9070
+      - 213.183.53.177:9059
+      - 213.183.53.177:9064
+      - 213.183.53.177:9094
+      - 213.183.53.177:9098
+      - CN 130
+      - 213.183.53.177:9056
+      - 213.183.53.177:9008
+      - 213.183.53.177:9057
+      - 213.183.53.177:9033
+      - NONE 19
+      - HK 103
+      - 213.183.53.177:9043
+      - 213.183.53.177:9060
+      - 14.29.124.168:25266
+      - 213.183.53.177:9027
+      - 213.183.53.177:9084
+      - 213.183.53.177:9093
+      - 213.183.53.177:9010
+      - 14.29.124.168:25286
+      - 14.29.124.168:25283
+      - 14.29.124.168:25231
+      - NONE 20
+      - CN 3
+      - ""
+      - 144.91.109.75:443
+      - 194.71.130.194:50003
+      - " 2"
+      - CN_45_6@44
+      - 213.183.59.214:9084
+      - 180.163.62.91:10064
+      - SG 551
+      - 213.183.59.214:9020
+      - _AU_澳大利亚_3@1
+      - 14.29.124.168:25207
+      - 14.29.124.168:25235
+      - 14.29.124.168:25272
+      - 14.29.124.168:25270
+      - 14.29.124.168:25287
+      - 14.29.124.168:25238
+      - 14.29.124.168:25271
+      - 14.29.124.168:25226
+      - 14.29.124.168:25254
+      - 14.29.124.168:25218
+      - 14.29.124.168:25247
+      - 14.29.124.168:25268
+      - 14.29.124.168:25267
+      - 14.29.124.168:25241
+      - 14.29.124.168:25252
+      - 14.29.124.168:25230
+      - 14.29.124.168:25296
+      - 14.29.124.168:25219
+      - 14.29.124.168:25245
+      - 14.29.124.168:25279
+      - 14.29.124.168:25233
+      - HK 52
+      - HK 113
+      - CN 193
+      - CN 83
+      - NONE 21
+      - CN 94
+      - CN 341
+      - " 3"
+      - HK 147
+      - JP 487
+      - _US_美国_5_1@9
+      - " 4"
+      - 213.183.59.214:9008
+      - 213.183.59.214:9000
+      - HK 63
+      - HK 64
+      - HK 139
+      - HK 54
+      - HK 57
+      - HK 62
+      - HK 65
+      - HK 71
+      - HK 74
+      - HK 110
+      - HK 50
+      - HK 53
+      - HK 72
+      - HK 66
+      - HK 56
+      - HK 49
+      - HK 60
+      - HK 164
+      - default_name_0@20
+      - HK 153
+      - HK 156
+      - HK 159
+      - HK 214
+      - 97.64.31.80:247
+      - HK 200
+      - HK 212
+      - HK 51
+      - HK 70
+      - HK 118
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -476,56 +1172,143 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 14.29.124.168:25272
-      - 14.29.124.168:25217
-      - CN_39_3@38
-      - 14.29.124.168:25231
-      - 14.29.124.168:25226
-      - 14.29.124.168:25245
-      - 14.29.124.168:25297
-      - 14.29.124.168:25296
-      - 14.29.124.168:25256
-      - 14.29.124.168:25279
-      - 14.29.124.168:25283
-      - 14.29.124.168:25261
-      - CN_56_3@55
-      - 14.29.124.168:25280
-      - CN_59_3@58
-      - 14.29.124.168:25210
-      - 14.29.124.168:25235
-      - 14.29.124.168:25220
-      - HK 49
-      - HK 45
-      - CN 14
-      - CN 16
-      - CN 62
-      - _US_美国_3_1@6
-      - 14.29.124.168:25271
-      - DE_63_3@62
-      - US_187_3@186
-      - 14.29.124.168:25289
-      - AU 71
-      - US 60
-      - DE_66_3@65
+      - HK 79
+      - HK 236
+      - HK 80
+      - HK 468
+      - CN 87
       - NONE
-      - TW 69
-      - CN 67
+      - _JP_日本_3_1@2
+      - _JP_日本_2_1@1
+      - CN 134
       - NONE 2
-      - CN 12
-      - CN 15
-      - CN_46_3@45
-      - 14.29.124.168:25287
-      - CN 98
-      - 14.29.124.168:25295
-      - 14.29.124.168:25247
-      - US 31
-      - 14.29.124.168:25238
-      - 14.29.124.168:25218
       - NONE 3
-      - CN 37
-      - US 72
-      - CN 42
-      - DE 74
+      - CN 7
+      - NONE 4
+      - NONE 5
+      - NONE 6
+      - NONE 7
+      - NONE 8
+      - NONE 9
+      - NONE 10
+      - NONE 11
+      - NONE 12
+      - HK 176
+      - NONE 13
+      - HK 336
+      - NONE 14
+      - HK 337
+      - HK 335
+      - NONE 15
+      - HK 59
+      - NONE 16
+      - NONE 17
+      - US 186
+      - NONE 18
+      - HK 100
+      - 213.183.53.177:9005
+      - 213.183.53.177:9000
+      - 213.183.53.177:9041
+      - 213.183.53.177:9003
+      - 213.183.53.177:9018
+      - 213.183.53.177:9070
+      - 213.183.53.177:9059
+      - 213.183.53.177:9064
+      - 213.183.53.177:9094
+      - 213.183.53.177:9098
+      - CN 130
+      - 213.183.53.177:9056
+      - 213.183.53.177:9008
+      - 213.183.53.177:9057
+      - 213.183.53.177:9033
+      - NONE 19
+      - HK 103
+      - 213.183.53.177:9043
+      - 213.183.53.177:9060
+      - 14.29.124.168:25266
+      - 213.183.53.177:9027
+      - 213.183.53.177:9084
+      - 213.183.53.177:9093
+      - 213.183.53.177:9010
+      - 14.29.124.168:25286
+      - 14.29.124.168:25283
+      - 14.29.124.168:25231
+      - NONE 20
+      - CN 3
+      - ""
+      - 144.91.109.75:443
+      - 194.71.130.194:50003
+      - " 2"
+      - CN_45_6@44
+      - 213.183.59.214:9084
+      - 180.163.62.91:10064
+      - SG 551
+      - 213.183.59.214:9020
+      - _AU_澳大利亚_3@1
+      - 14.29.124.168:25207
+      - 14.29.124.168:25235
+      - 14.29.124.168:25272
+      - 14.29.124.168:25270
+      - 14.29.124.168:25287
+      - 14.29.124.168:25238
+      - 14.29.124.168:25271
+      - 14.29.124.168:25226
+      - 14.29.124.168:25254
+      - 14.29.124.168:25218
+      - 14.29.124.168:25247
+      - 14.29.124.168:25268
+      - 14.29.124.168:25267
+      - 14.29.124.168:25241
+      - 14.29.124.168:25252
+      - 14.29.124.168:25230
+      - 14.29.124.168:25296
+      - 14.29.124.168:25219
+      - 14.29.124.168:25245
+      - 14.29.124.168:25279
+      - 14.29.124.168:25233
+      - HK 52
+      - HK 113
+      - CN 193
+      - CN 83
+      - NONE 21
+      - CN 94
+      - CN 341
+      - " 3"
+      - HK 147
+      - JP 487
+      - _US_美国_5_1@9
+      - " 4"
+      - 213.183.59.214:9008
+      - 213.183.59.214:9000
+      - HK 63
+      - HK 64
+      - HK 139
+      - HK 54
+      - HK 57
+      - HK 62
+      - HK 65
+      - HK 71
+      - HK 74
+      - HK 110
+      - HK 50
+      - HK 53
+      - HK 72
+      - HK 66
+      - HK 56
+      - HK 49
+      - HK 60
+      - HK 164
+      - default_name_0@20
+      - HK 153
+      - HK 156
+      - HK 159
+      - HK 214
+      - 97.64.31.80:247
+      - HK 200
+      - HK 212
+      - HK 51
+      - HK 70
+      - HK 118
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
