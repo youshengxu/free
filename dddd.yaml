@@ -5,379 +5,175 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: CN_162, server: 14.29.124.168, port: 25220, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_167, server: 14.29.124.168, port: 25293, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_185, server: 14.29.124.168, port: 25254, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_188, server: 14.29.124.168, port: 25289, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_211, server: 14.29.124.168, port: 25271, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_186, server: 14.29.124.168, port: 25261, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_224, server: 14.29.124.168, port: 25272, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_234, server: 14.29.124.168, port: 25219, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_181, server: 14.29.124.168, port: 25252, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_195, server: 14.29.124.168, port: 25286, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_230, server: 14.29.124.168, port: 25297, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_163, server: 14.29.124.168, port: 25247, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_210, server: 14.29.124.168, port: 25296, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_190, server: 14.29.124.168, port: 25218, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_220, server: 14.29.124.168, port: 25241, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_207, server: 14.29.124.168, port: 25279, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: Relay_🇨🇳 CN-🇨🇦CA_150, server: azz1.500ml.top, port: 61015, type: trojan, password: e87bbb7f-2601-3097-a667-9bd8efc5a0f7, sni: azz1.500ml.top, skip-cert-verify: true, udp: true}
-  - {name: CN_213, server: 14.29.124.168, port: 25230, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_152, server: 14.29.124.168, port: 25287, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_198, server: 14.29.124.168, port: 25226, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_178, server: 14.29.124.168, port: 25270, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_157, server: 14.29.124.168, port: 25256, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_215, server: 14.29.124.168, port: 25238, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_228, server: 14.29.124.168, port: 25295, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_159, server: 14.29.124.168, port: 25235, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_169, server: 14.29.124.168, port: 25294, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_204, server: 14.29.124.168, port: 25280, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_193, server: 14.29.124.168, port: 25210, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_238, server: 14.29.124.168, port: 25284, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_218, server: 14.29.124.168, port: 25207, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_233, server: 14.29.124.168, port: 25268, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_200, server: 14.29.124.168, port: 25222, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_2161, server: s1.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s1.hazz.win, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇦🇺AU-🇦🇺AU_56, server: ocikr.n.optage.moe, port: 62500, type: trojan, password: f84ba53b-70bd-480c-8f86-f3c4af26fb24, sni: ocikr.n.optage.moe, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_2173, server: s3.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s3.hazz.win, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇳CN-🇺🇸US_245, server: 116.129.254.212, port: 48616, type: ssr, cipher: aes-256-cfb, password: GjRQkK, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 1062:tLkKEk, obfs-param: "", udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_2171, server: usfree1.jiantian.xyz, port: 23425, type: trojan, password: 7cb64c49-2ce5-4fa6-9b79-9c02eb54735c, sni: usfree1.jiantian.xyz, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇳CN-🇮🇳IN_237, server: zh01lv5in04.feiguayun.xyz, port: 38087, type: ss, cipher: aes-256-gcm, password: 4b5d7ed5-e1a3-4947-b955-58a39a29cc29, udp: true}
-  - {name: Relay_🇨🇳CN-🇨🇦CA_249, server: t1tw.500ml.top, port: 504, type: trojan, password: e87bbb7f-2601-3097-a667-9bd8efc5a0f7, sni: t1tw.500ml.top, skip-cert-verify: true, udp: true}
-  - {name: ZZ_2250, server: 134.195.196.128, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: ZZ_2254, server: 134.195.196.128, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: ZZ_2317, server: 134.195.196.128, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: ZZ_2456, server: 134.195.196.128, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: ZZ_2272, server: 134.195.196.128, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: ZZ_2385, server: 134.195.196.128, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: ZZ_2440, server: 134.195.196.128, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: ZZ_2231, server: 134.195.196.128, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: ZZ_2319, server: 134.195.196.128, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: ZZ_2323, server: 134.195.196.128, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: ZZ_2333, server: 134.195.196.128, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: ZZ_2252, server: 134.195.196.128, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: ZZ_2421, server: 134.195.196.128, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: ZZ_2332, server: 134.195.196.128, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: ZZ_2374, server: 134.195.196.128, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: ZZ_2234, server: 134.195.196.128, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: Relay_🇨🇳CN-🇬🇧GB_161, server: zh01lv3uk01.feiguayun.xyz, port: 50011, type: ss, cipher: aes-256-gcm, password: efafd384-706a-4539-a169-5726c3d51516, udp: true}
-  - {name: Relay_🇩🇪DE-🇺🇸US_312, server: s4.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s4.hazz.win, skip-cert-verify: true, udp: true}
-  - {name: ZZ_2391, server: 134.195.196.128, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: ZZ_2399, server: 134.195.196.128, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: ZZ_2444, server: 134.195.196.128, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: ZZ_2191, server: 134.195.196.128, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: ZZ_2342, server: 134.195.196.128, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: ZZ_2368, server: 134.195.196.128, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: ZZ_2383, server: 134.195.196.128, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_2116, server: vus2.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /chat, ws-headers: {Host: vus2.0bad.com}, udp: true}
-  - {name: ZZ_2236, server: 134.195.196.128, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: ZZ_2259, server: 134.195.196.128, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_2159, server: tj-us02.yiyodns.xyz, port: 443, type: trojan, password: 7dafe71e-2be6-302f-bdfc-e6319a3299bc, sni: tj-us02.yiyodns.xyz, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_2156, server: usfree2.jiantian.xyz, port: 32453, type: trojan, password: 7cb64c49-2ce5-4fa6-9b79-9c02eb54735c, sni: usfree2.jiantian.xyz, skip-cert-verify: true, udp: true}
-  - {name: ZZ_2377, server: 134.195.196.128, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: FR_385, server: 51.210.51.88, port: 443, type: ssr, cipher: aes-192-ctr, password: sEscPBiAD9K$&@79, protocol: auth_chain_a, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
-  - {name: HK_457, server: 103.195.4.36, port: 443, type: trojan, password: 563b47e2-1773-40fd-8d93-7d1b22cd20fd, skip-cert-verify: true, udp: true}
-  - {name: CN_155, server: 14.29.124.168, port: 25251, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: ZZ_2438, server: 134.195.196.128, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_2174, server: usfree2.jiantian.xyz, port: 32453, type: trojan, password: e4dbceb0-14f9-4a62-9df2-a2d9b76af043, sni: usfree2.jiantian.xyz, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇦🇺AU-🇦🇺AU_59, server: kr04.wangxd.life, port: 3052, type: trojan, password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e, sni: kr04.wangxd.life, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_2157, server: azhk.n.optage.moe, port: 62500, type: trojan, password: f84ba53b-70bd-480c-8f86-f3c4af26fb24, sni: azhk.n.optage.moe, skip-cert-verify: true, udp: true}
-  - {name: CN_182, server: 14.29.124.168, port: 25217, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_164, server: 14.29.124.168, port: 25267, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_205, server: 14.29.124.168, port: 25233, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_184, server: 14.29.124.168, port: 25229, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_176, server: 14.29.124.168, port: 25245, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: US_1547, server: 5.181.234.254, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: Relay_🇸🇬SG-🇸🇬SG_1242, server: sghe.tjvpn.org, port: 443, type: trojan, password: 363b95c0-e9ec-11ec-b631-225401db9d57, sni: sghe.tjvpn.org, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇳CN-🇩🇪DE_194, server: zh01lv5ge04.feiguayun.xyz, port: 36087, type: ss, cipher: aes-256-gcm, password: 4b5d7ed5-e1a3-4947-b955-58a39a29cc29, udp: true}
-  - {name: Relay_🇨🇳CN-🇺🇸US_235, server: zh01lv5hk06.feiguayun.xyz, port: 31087, type: ss, cipher: aes-256-gcm, password: efafd384-706a-4539-a169-5726c3d51516, udp: true}
-  - {name: Relay_🇨🇳CN-🇨🇦CA_221, server: zh01lv5ca03.feiguayun.xyz, port: 37087, type: ss, cipher: aes-256-gcm, password: 4b5d7ed5-e1a3-4947-b955-58a39a29cc29, udp: true}
-  - {name: CN_151, server: 14.29.124.168, port: 25266, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: Relay_🇨🇳CN-🇭🇰HK_226, server: 14.29.124.174, port: 11035, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN 19 | openit.ml, server: cm.spacez.cloud, port: 30003, type: trojan, password: c9a3a61d-5d49-4158-9e60-6fa32684b122, sni: cm.spacez.cloud, skip-cert-verify: true, udp: true}
+  - {name: CN_277, server: 14.29.124.168, port: 25294, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN 1 | openit.ml, server: cdn1.myuuusss.com, port: 20007, type: ss, cipher: aes-128-gcm, password: dbdc16e3-1f61-41bb-99a6-5f29d8b86f82, udp: true}
+  - {name: CN_274, server: 14.29.124.168, port: 25271, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_217, server: 14.29.124.168, port: 25284, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_205, server: 14.29.124.168, port: 25286, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_222, server: 14.29.124.168, port: 25230, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_219, server: 14.29.124.168, port: 25241, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_235, server: 14.29.124.168, port: 25297, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_214, server: 14.29.124.168, port: 25238, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_266, server: 14.29.124.168, port: 25222, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_254, server: 14.29.124.168, port: 25296, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_226, server: 14.29.124.168, port: 25245, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_203, server: 14.29.124.168, port: 25261, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_245, server: 14.29.124.168, port: 25279, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_221, server: 14.29.124.168, port: 25226, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_272, server: 14.29.124.168, port: 25256, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_256, server: 14.29.124.168, port: 25233, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_212, server: 14.29.124.168, port: 25272, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_211, server: 14.29.124.168, port: 25207, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_230, server: 14.29.124.168, port: 25287, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN 23 | openit.ml, server: 116.129.254.212, port: 48607, type: ssr, cipher: aes-256-cfb, password: GjRQkK, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 1062:tLkKEk, obfs-param: "", udp: true}
+  - {name: CN_232, server: 14.29.124.168, port: 25220, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN 6 | openit.ml, server: zh01lv3us03.feiguayun.xyz, port: 50001, type: ss, cipher: aes-256-gcm, password: c583edbc-f416-4964-9c37-02f5c066f8e8, udp: true}
+  - {name: CN_228, server: 14.29.124.168, port: 25270, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN 2 | openit.ml, server: zh01lv5hk01.feiguayun.xyz, port: 11087, type: ss, cipher: aes-256-gcm, password: c583edbc-f416-4964-9c37-02f5c066f8e8, udp: true}
+  - {name: CN 4 | openit.ml, server: zh01lv5ge02.feiguayun.xyz, port: 36087, type: ss, cipher: aes-256-gcm, password: c583edbc-f416-4964-9c37-02f5c066f8e8, udp: true}
+  - {name: CN_237, server: 14.29.124.168, port: 25215, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_238, server: 14.29.124.168, port: 25235, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN 3 | openit.ml, server: zh01lv5hk02.feiguayun.xyz, port: 11087, type: ss, cipher: aes-256-gcm, password: c583edbc-f416-4964-9c37-02f5c066f8e8, udp: true}
+  - {name: CN 7 | openit.ml, server: zh01lv5us01.feiguayun.xyz, port: 33087, type: ss, cipher: aes-256-gcm, password: c583edbc-f416-4964-9c37-02f5c066f8e8, udp: true}
+  - {name: CN_255, server: 14.29.124.168, port: 25267, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN 5 | openit.ml, server: zh01lv5ge01.feiguayun.xyz, port: 36087, type: ss, cipher: aes-256-gcm, password: c583edbc-f416-4964-9c37-02f5c066f8e8, udp: true}
+  - {name: CN_264, server: 14.29.124.168, port: 25268, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_223, server: 14.29.124.168, port: 25229, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN 10 | openit.ml, server: zh01lv5us02.feiguayun.xyz, port: 33087, type: ss, cipher: aes-256-gcm, password: c583edbc-f416-4964-9c37-02f5c066f8e8, udp: true}
+  - {name: CN_210, server: 14.29.124.168, port: 25293, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_271, server: 14.29.124.168, port: 25217, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN_162
-      - CN_167
-      - CN_185
-      - CN_188
-      - CN_211
-      - CN_186
-      - CN_224
-      - CN_234
-      - CN_181
-      - CN_195
-      - CN_230
-      - CN_163
-      - CN_210
-      - CN_190
-      - CN_220
-      - CN_207
-      - Relay_🇨🇳 CN-🇨🇦CA_150
-      - CN_213
-      - CN_152
-      - CN_198
-      - CN_178
-      - CN_157
-      - CN_215
-      - CN_228
-      - CN_159
-      - CN_169
-      - CN_204
-      - CN_193
-      - CN_238
-      - CN_218
-      - CN_233
-      - CN_200
-      - Relay_🇺🇸US-🇺🇸US_2161
-      - Relay_🇦🇺AU-🇦🇺AU_56
-      - Relay_🇺🇸US-🇺🇸US_2173
-      - Relay_🇨🇳CN-🇺🇸US_245
-      - Relay_🇺🇸US-🇺🇸US_2171
-      - Relay_🇨🇳CN-🇮🇳IN_237
-      - Relay_🇨🇳CN-🇨🇦CA_249
-      - ZZ_2250
-      - ZZ_2254
-      - ZZ_2317
-      - ZZ_2456
-      - ZZ_2272
-      - ZZ_2385
-      - ZZ_2440
-      - ZZ_2231
-      - ZZ_2319
-      - ZZ_2323
-      - ZZ_2333
-      - ZZ_2252
-      - ZZ_2421
-      - ZZ_2332
-      - ZZ_2374
-      - ZZ_2234
-      - Relay_🇨🇳CN-🇬🇧GB_161
-      - Relay_🇩🇪DE-🇺🇸US_312
-      - ZZ_2391
-      - ZZ_2399
-      - ZZ_2444
-      - ZZ_2191
-      - ZZ_2342
-      - ZZ_2368
-      - ZZ_2383
-      - Relay_🇺🇸US-🇺🇸US_2116
-      - ZZ_2236
-      - ZZ_2259
-      - Relay_🇺🇸US-🇺🇸US_2159
-      - Relay_🇺🇸US-🇺🇸US_2156
-      - ZZ_2377
-      - FR_385
-      - HK_457
-      - CN_155
-      - ZZ_2438
-      - Relay_🇺🇸US-🇺🇸US_2174
-      - Relay_🇦🇺AU-🇦🇺AU_59
-      - Relay_🇺🇸US-🇺🇸US_2157
-      - CN_182
-      - CN_164
+      - CN 19 | openit.ml
+      - CN_277
+      - CN 1 | openit.ml
+      - CN_274
+      - CN_217
       - CN_205
-      - CN_184
-      - CN_176
-      - US_1547
-      - Relay_🇸🇬SG-🇸🇬SG_1242
-      - Relay_🇨🇳CN-🇩🇪DE_194
-      - Relay_🇨🇳CN-🇺🇸US_235
-      - Relay_🇨🇳CN-🇨🇦CA_221
-      - CN_151
-      - Relay_🇨🇳CN-🇭🇰HK_226
+      - CN_222
+      - CN_219
+      - CN_235
+      - CN_214
+      - CN_266
+      - CN_254
+      - CN_226
+      - CN_203
+      - CN_245
+      - CN_221
+      - CN_272
+      - CN_256
+      - CN_212
+      - CN_211
+      - CN_230
+      - CN 23 | openit.ml
+      - CN_232
+      - CN 6 | openit.ml
+      - CN_228
+      - CN 2 | openit.ml
+      - CN 4 | openit.ml
+      - CN_237
+      - CN_238
+      - CN 3 | openit.ml
+      - CN 7 | openit.ml
+      - CN_255
+      - CN 5 | openit.ml
+      - CN_264
+      - CN_223
+      - CN 10 | openit.ml
+      - CN_210
+      - CN_271
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - CN_162
-      - CN_167
-      - CN_185
-      - CN_188
-      - CN_211
-      - CN_186
-      - CN_224
-      - CN_234
-      - CN_181
-      - CN_195
-      - CN_230
-      - CN_163
-      - CN_210
-      - CN_190
-      - CN_220
-      - CN_207
-      - Relay_🇨🇳 CN-🇨🇦CA_150
-      - CN_213
-      - CN_152
-      - CN_198
-      - CN_178
-      - CN_157
-      - CN_215
-      - CN_228
-      - CN_159
-      - CN_169
-      - CN_204
-      - CN_193
-      - CN_238
-      - CN_218
-      - CN_233
-      - CN_200
-      - Relay_🇺🇸US-🇺🇸US_2161
-      - Relay_🇦🇺AU-🇦🇺AU_56
-      - Relay_🇺🇸US-🇺🇸US_2173
-      - Relay_🇨🇳CN-🇺🇸US_245
-      - Relay_🇺🇸US-🇺🇸US_2171
-      - Relay_🇨🇳CN-🇮🇳IN_237
-      - Relay_🇨🇳CN-🇨🇦CA_249
-      - ZZ_2250
-      - ZZ_2254
-      - ZZ_2317
-      - ZZ_2456
-      - ZZ_2272
-      - ZZ_2385
-      - ZZ_2440
-      - ZZ_2231
-      - ZZ_2319
-      - ZZ_2323
-      - ZZ_2333
-      - ZZ_2252
-      - ZZ_2421
-      - ZZ_2332
-      - ZZ_2374
-      - ZZ_2234
-      - Relay_🇨🇳CN-🇬🇧GB_161
-      - Relay_🇩🇪DE-🇺🇸US_312
-      - ZZ_2391
-      - ZZ_2399
-      - ZZ_2444
-      - ZZ_2191
-      - ZZ_2342
-      - ZZ_2368
-      - ZZ_2383
-      - Relay_🇺🇸US-🇺🇸US_2116
-      - ZZ_2236
-      - ZZ_2259
-      - Relay_🇺🇸US-🇺🇸US_2159
-      - Relay_🇺🇸US-🇺🇸US_2156
-      - ZZ_2377
-      - FR_385
-      - HK_457
-      - CN_155
-      - ZZ_2438
-      - Relay_🇺🇸US-🇺🇸US_2174
-      - Relay_🇦🇺AU-🇦🇺AU_59
-      - Relay_🇺🇸US-🇺🇸US_2157
-      - CN_182
-      - CN_164
+      - CN 19 | openit.ml
+      - CN_277
+      - CN 1 | openit.ml
+      - CN_274
+      - CN_217
       - CN_205
-      - CN_184
-      - CN_176
-      - US_1547
-      - Relay_🇸🇬SG-🇸🇬SG_1242
-      - Relay_🇨🇳CN-🇩🇪DE_194
-      - Relay_🇨🇳CN-🇺🇸US_235
-      - Relay_🇨🇳CN-🇨🇦CA_221
-      - CN_151
-      - Relay_🇨🇳CN-🇭🇰HK_226
+      - CN_222
+      - CN_219
+      - CN_235
+      - CN_214
+      - CN_266
+      - CN_254
+      - CN_226
+      - CN_203
+      - CN_245
+      - CN_221
+      - CN_272
+      - CN_256
+      - CN_212
+      - CN_211
+      - CN_230
+      - CN 23 | openit.ml
+      - CN_232
+      - CN 6 | openit.ml
+      - CN_228
+      - CN 2 | openit.ml
+      - CN 4 | openit.ml
+      - CN_237
+      - CN_238
+      - CN 3 | openit.ml
+      - CN 7 | openit.ml
+      - CN_255
+      - CN 5 | openit.ml
+      - CN_264
+      - CN_223
+      - CN 10 | openit.ml
+      - CN_210
+      - CN_271
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN_162
-      - CN_167
-      - CN_185
-      - CN_188
-      - CN_211
-      - CN_186
-      - CN_224
-      - CN_234
-      - CN_181
-      - CN_195
-      - CN_230
-      - CN_163
-      - CN_210
-      - CN_190
-      - CN_220
-      - CN_207
-      - Relay_🇨🇳 CN-🇨🇦CA_150
-      - CN_213
-      - CN_152
-      - CN_198
-      - CN_178
-      - CN_157
-      - CN_215
-      - CN_228
-      - CN_159
-      - CN_169
-      - CN_204
-      - CN_193
-      - CN_238
-      - CN_218
-      - CN_233
-      - CN_200
-      - Relay_🇺🇸US-🇺🇸US_2161
-      - Relay_🇦🇺AU-🇦🇺AU_56
-      - Relay_🇺🇸US-🇺🇸US_2173
-      - Relay_🇨🇳CN-🇺🇸US_245
-      - Relay_🇺🇸US-🇺🇸US_2171
-      - Relay_🇨🇳CN-🇮🇳IN_237
-      - Relay_🇨🇳CN-🇨🇦CA_249
-      - ZZ_2250
-      - ZZ_2254
-      - ZZ_2317
-      - ZZ_2456
-      - ZZ_2272
-      - ZZ_2385
-      - ZZ_2440
-      - ZZ_2231
-      - ZZ_2319
-      - ZZ_2323
-      - ZZ_2333
-      - ZZ_2252
-      - ZZ_2421
-      - ZZ_2332
-      - ZZ_2374
-      - ZZ_2234
-      - Relay_🇨🇳CN-🇬🇧GB_161
-      - Relay_🇩🇪DE-🇺🇸US_312
-      - ZZ_2391
-      - ZZ_2399
-      - ZZ_2444
-      - ZZ_2191
-      - ZZ_2342
-      - ZZ_2368
-      - ZZ_2383
-      - Relay_🇺🇸US-🇺🇸US_2116
-      - ZZ_2236
-      - ZZ_2259
-      - Relay_🇺🇸US-🇺🇸US_2159
-      - Relay_🇺🇸US-🇺🇸US_2156
-      - ZZ_2377
-      - FR_385
-      - HK_457
-      - CN_155
-      - ZZ_2438
-      - Relay_🇺🇸US-🇺🇸US_2174
-      - Relay_🇦🇺AU-🇦🇺AU_59
-      - Relay_🇺🇸US-🇺🇸US_2157
-      - CN_182
-      - CN_164
+      - CN 19 | openit.ml
+      - CN_277
+      - CN 1 | openit.ml
+      - CN_274
+      - CN_217
       - CN_205
-      - CN_184
-      - CN_176
-      - US_1547
-      - Relay_🇸🇬SG-🇸🇬SG_1242
-      - Relay_🇨🇳CN-🇩🇪DE_194
-      - Relay_🇨🇳CN-🇺🇸US_235
-      - Relay_🇨🇳CN-🇨🇦CA_221
-      - CN_151
-      - Relay_🇨🇳CN-🇭🇰HK_226
+      - CN_222
+      - CN_219
+      - CN_235
+      - CN_214
+      - CN_266
+      - CN_254
+      - CN_226
+      - CN_203
+      - CN_245
+      - CN_221
+      - CN_272
+      - CN_256
+      - CN_212
+      - CN_211
+      - CN_230
+      - CN 23 | openit.ml
+      - CN_232
+      - CN 6 | openit.ml
+      - CN_228
+      - CN 2 | openit.ml
+      - CN 4 | openit.ml
+      - CN_237
+      - CN_238
+      - CN 3 | openit.ml
+      - CN 7 | openit.ml
+      - CN_255
+      - CN 5 | openit.ml
+      - CN_264
+      - CN_223
+      - CN 10 | openit.ml
+      - CN_210
+      - CN_271
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -396,95 +192,44 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN_162
-      - CN_167
-      - CN_185
-      - CN_188
-      - CN_211
-      - CN_186
-      - CN_224
-      - CN_234
-      - CN_181
-      - CN_195
-      - CN_230
-      - CN_163
-      - CN_210
-      - CN_190
-      - CN_220
-      - CN_207
-      - Relay_🇨🇳 CN-🇨🇦CA_150
-      - CN_213
-      - CN_152
-      - CN_198
-      - CN_178
-      - CN_157
-      - CN_215
-      - CN_228
-      - CN_159
-      - CN_169
-      - CN_204
-      - CN_193
-      - CN_238
-      - CN_218
-      - CN_233
-      - CN_200
-      - Relay_🇺🇸US-🇺🇸US_2161
-      - Relay_🇦🇺AU-🇦🇺AU_56
-      - Relay_🇺🇸US-🇺🇸US_2173
-      - Relay_🇨🇳CN-🇺🇸US_245
-      - Relay_🇺🇸US-🇺🇸US_2171
-      - Relay_🇨🇳CN-🇮🇳IN_237
-      - Relay_🇨🇳CN-🇨🇦CA_249
-      - ZZ_2250
-      - ZZ_2254
-      - ZZ_2317
-      - ZZ_2456
-      - ZZ_2272
-      - ZZ_2385
-      - ZZ_2440
-      - ZZ_2231
-      - ZZ_2319
-      - ZZ_2323
-      - ZZ_2333
-      - ZZ_2252
-      - ZZ_2421
-      - ZZ_2332
-      - ZZ_2374
-      - ZZ_2234
-      - Relay_🇨🇳CN-🇬🇧GB_161
-      - Relay_🇩🇪DE-🇺🇸US_312
-      - ZZ_2391
-      - ZZ_2399
-      - ZZ_2444
-      - ZZ_2191
-      - ZZ_2342
-      - ZZ_2368
-      - ZZ_2383
-      - Relay_🇺🇸US-🇺🇸US_2116
-      - ZZ_2236
-      - ZZ_2259
-      - Relay_🇺🇸US-🇺🇸US_2159
-      - Relay_🇺🇸US-🇺🇸US_2156
-      - ZZ_2377
-      - FR_385
-      - HK_457
-      - CN_155
-      - ZZ_2438
-      - Relay_🇺🇸US-🇺🇸US_2174
-      - Relay_🇦🇺AU-🇦🇺AU_59
-      - Relay_🇺🇸US-🇺🇸US_2157
-      - CN_182
-      - CN_164
+      - CN 19 | openit.ml
+      - CN_277
+      - CN 1 | openit.ml
+      - CN_274
+      - CN_217
       - CN_205
-      - CN_184
-      - CN_176
-      - US_1547
-      - Relay_🇸🇬SG-🇸🇬SG_1242
-      - Relay_🇨🇳CN-🇩🇪DE_194
-      - Relay_🇨🇳CN-🇺🇸US_235
-      - Relay_🇨🇳CN-🇨🇦CA_221
-      - CN_151
-      - Relay_🇨🇳CN-🇭🇰HK_226
+      - CN_222
+      - CN_219
+      - CN_235
+      - CN_214
+      - CN_266
+      - CN_254
+      - CN_226
+      - CN_203
+      - CN_245
+      - CN_221
+      - CN_272
+      - CN_256
+      - CN_212
+      - CN_211
+      - CN_230
+      - CN 23 | openit.ml
+      - CN_232
+      - CN 6 | openit.ml
+      - CN_228
+      - CN 2 | openit.ml
+      - CN 4 | openit.ml
+      - CN_237
+      - CN_238
+      - CN 3 | openit.ml
+      - CN 7 | openit.ml
+      - CN_255
+      - CN 5 | openit.ml
+      - CN_264
+      - CN_223
+      - CN 10 | openit.ml
+      - CN_210
+      - CN_271
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -495,284 +240,131 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - CN_162
-      - CN_167
-      - CN_185
-      - CN_188
-      - CN_211
-      - CN_186
-      - CN_224
-      - CN_234
-      - CN_181
-      - CN_195
-      - CN_230
-      - CN_163
-      - CN_210
-      - CN_190
-      - CN_220
-      - CN_207
-      - Relay_🇨🇳 CN-🇨🇦CA_150
-      - CN_213
-      - CN_152
-      - CN_198
-      - CN_178
-      - CN_157
-      - CN_215
-      - CN_228
-      - CN_159
-      - CN_169
-      - CN_204
-      - CN_193
-      - CN_238
-      - CN_218
-      - CN_233
-      - CN_200
-      - Relay_🇺🇸US-🇺🇸US_2161
-      - Relay_🇦🇺AU-🇦🇺AU_56
-      - Relay_🇺🇸US-🇺🇸US_2173
-      - Relay_🇨🇳CN-🇺🇸US_245
-      - Relay_🇺🇸US-🇺🇸US_2171
-      - Relay_🇨🇳CN-🇮🇳IN_237
-      - Relay_🇨🇳CN-🇨🇦CA_249
-      - ZZ_2250
-      - ZZ_2254
-      - ZZ_2317
-      - ZZ_2456
-      - ZZ_2272
-      - ZZ_2385
-      - ZZ_2440
-      - ZZ_2231
-      - ZZ_2319
-      - ZZ_2323
-      - ZZ_2333
-      - ZZ_2252
-      - ZZ_2421
-      - ZZ_2332
-      - ZZ_2374
-      - ZZ_2234
-      - Relay_🇨🇳CN-🇬🇧GB_161
-      - Relay_🇩🇪DE-🇺🇸US_312
-      - ZZ_2391
-      - ZZ_2399
-      - ZZ_2444
-      - ZZ_2191
-      - ZZ_2342
-      - ZZ_2368
-      - ZZ_2383
-      - Relay_🇺🇸US-🇺🇸US_2116
-      - ZZ_2236
-      - ZZ_2259
-      - Relay_🇺🇸US-🇺🇸US_2159
-      - Relay_🇺🇸US-🇺🇸US_2156
-      - ZZ_2377
-      - FR_385
-      - HK_457
-      - CN_155
-      - ZZ_2438
-      - Relay_🇺🇸US-🇺🇸US_2174
-      - Relay_🇦🇺AU-🇦🇺AU_59
-      - Relay_🇺🇸US-🇺🇸US_2157
-      - CN_182
-      - CN_164
+      - CN 19 | openit.ml
+      - CN_277
+      - CN 1 | openit.ml
+      - CN_274
+      - CN_217
       - CN_205
-      - CN_184
-      - CN_176
-      - US_1547
-      - Relay_🇸🇬SG-🇸🇬SG_1242
-      - Relay_🇨🇳CN-🇩🇪DE_194
-      - Relay_🇨🇳CN-🇺🇸US_235
-      - Relay_🇨🇳CN-🇨🇦CA_221
-      - CN_151
-      - Relay_🇨🇳CN-🇭🇰HK_226
+      - CN_222
+      - CN_219
+      - CN_235
+      - CN_214
+      - CN_266
+      - CN_254
+      - CN_226
+      - CN_203
+      - CN_245
+      - CN_221
+      - CN_272
+      - CN_256
+      - CN_212
+      - CN_211
+      - CN_230
+      - CN 23 | openit.ml
+      - CN_232
+      - CN 6 | openit.ml
+      - CN_228
+      - CN 2 | openit.ml
+      - CN 4 | openit.ml
+      - CN_237
+      - CN_238
+      - CN 3 | openit.ml
+      - CN 7 | openit.ml
+      - CN_255
+      - CN 5 | openit.ml
+      - CN_264
+      - CN_223
+      - CN 10 | openit.ml
+      - CN_210
+      - CN_271
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - CN_162
-      - CN_167
-      - CN_185
-      - CN_188
-      - CN_211
-      - CN_186
-      - CN_224
-      - CN_234
-      - CN_181
-      - CN_195
-      - CN_230
-      - CN_163
-      - CN_210
-      - CN_190
-      - CN_220
-      - CN_207
-      - Relay_🇨🇳 CN-🇨🇦CA_150
-      - CN_213
-      - CN_152
-      - CN_198
-      - CN_178
-      - CN_157
-      - CN_215
-      - CN_228
-      - CN_159
-      - CN_169
-      - CN_204
-      - CN_193
-      - CN_238
-      - CN_218
-      - CN_233
-      - CN_200
-      - Relay_🇺🇸US-🇺🇸US_2161
-      - Relay_🇦🇺AU-🇦🇺AU_56
-      - Relay_🇺🇸US-🇺🇸US_2173
-      - Relay_🇨🇳CN-🇺🇸US_245
-      - Relay_🇺🇸US-🇺🇸US_2171
-      - Relay_🇨🇳CN-🇮🇳IN_237
-      - Relay_🇨🇳CN-🇨🇦CA_249
-      - ZZ_2250
-      - ZZ_2254
-      - ZZ_2317
-      - ZZ_2456
-      - ZZ_2272
-      - ZZ_2385
-      - ZZ_2440
-      - ZZ_2231
-      - ZZ_2319
-      - ZZ_2323
-      - ZZ_2333
-      - ZZ_2252
-      - ZZ_2421
-      - ZZ_2332
-      - ZZ_2374
-      - ZZ_2234
-      - Relay_🇨🇳CN-🇬🇧GB_161
-      - Relay_🇩🇪DE-🇺🇸US_312
-      - ZZ_2391
-      - ZZ_2399
-      - ZZ_2444
-      - ZZ_2191
-      - ZZ_2342
-      - ZZ_2368
-      - ZZ_2383
-      - Relay_🇺🇸US-🇺🇸US_2116
-      - ZZ_2236
-      - ZZ_2259
-      - Relay_🇺🇸US-🇺🇸US_2159
-      - Relay_🇺🇸US-🇺🇸US_2156
-      - ZZ_2377
-      - FR_385
-      - HK_457
-      - CN_155
-      - ZZ_2438
-      - Relay_🇺🇸US-🇺🇸US_2174
-      - Relay_🇦🇺AU-🇦🇺AU_59
-      - Relay_🇺🇸US-🇺🇸US_2157
-      - CN_182
-      - CN_164
+      - CN 19 | openit.ml
+      - CN_277
+      - CN 1 | openit.ml
+      - CN_274
+      - CN_217
       - CN_205
-      - CN_184
-      - CN_176
-      - US_1547
-      - Relay_🇸🇬SG-🇸🇬SG_1242
-      - Relay_🇨🇳CN-🇩🇪DE_194
-      - Relay_🇨🇳CN-🇺🇸US_235
-      - Relay_🇨🇳CN-🇨🇦CA_221
-      - CN_151
-      - Relay_🇨🇳CN-🇭🇰HK_226
+      - CN_222
+      - CN_219
+      - CN_235
+      - CN_214
+      - CN_266
+      - CN_254
+      - CN_226
+      - CN_203
+      - CN_245
+      - CN_221
+      - CN_272
+      - CN_256
+      - CN_212
+      - CN_211
+      - CN_230
+      - CN 23 | openit.ml
+      - CN_232
+      - CN 6 | openit.ml
+      - CN_228
+      - CN 2 | openit.ml
+      - CN 4 | openit.ml
+      - CN_237
+      - CN_238
+      - CN 3 | openit.ml
+      - CN 7 | openit.ml
+      - CN_255
+      - CN 5 | openit.ml
+      - CN_264
+      - CN_223
+      - CN 10 | openit.ml
+      - CN_210
+      - CN_271
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CN_162
-      - CN_167
-      - CN_185
-      - CN_188
-      - CN_211
-      - CN_186
-      - CN_224
-      - CN_234
-      - CN_181
-      - CN_195
-      - CN_230
-      - CN_163
-      - CN_210
-      - CN_190
-      - CN_220
-      - CN_207
-      - Relay_🇨🇳 CN-🇨🇦CA_150
-      - CN_213
-      - CN_152
-      - CN_198
-      - CN_178
-      - CN_157
-      - CN_215
-      - CN_228
-      - CN_159
-      - CN_169
-      - CN_204
-      - CN_193
-      - CN_238
-      - CN_218
-      - CN_233
-      - CN_200
-      - Relay_🇺🇸US-🇺🇸US_2161
-      - Relay_🇦🇺AU-🇦🇺AU_56
-      - Relay_🇺🇸US-🇺🇸US_2173
-      - Relay_🇨🇳CN-🇺🇸US_245
-      - Relay_🇺🇸US-🇺🇸US_2171
-      - Relay_🇨🇳CN-🇮🇳IN_237
-      - Relay_🇨🇳CN-🇨🇦CA_249
-      - ZZ_2250
-      - ZZ_2254
-      - ZZ_2317
-      - ZZ_2456
-      - ZZ_2272
-      - ZZ_2385
-      - ZZ_2440
-      - ZZ_2231
-      - ZZ_2319
-      - ZZ_2323
-      - ZZ_2333
-      - ZZ_2252
-      - ZZ_2421
-      - ZZ_2332
-      - ZZ_2374
-      - ZZ_2234
-      - Relay_🇨🇳CN-🇬🇧GB_161
-      - Relay_🇩🇪DE-🇺🇸US_312
-      - ZZ_2391
-      - ZZ_2399
-      - ZZ_2444
-      - ZZ_2191
-      - ZZ_2342
-      - ZZ_2368
-      - ZZ_2383
-      - Relay_🇺🇸US-🇺🇸US_2116
-      - ZZ_2236
-      - ZZ_2259
-      - Relay_🇺🇸US-🇺🇸US_2159
-      - Relay_🇺🇸US-🇺🇸US_2156
-      - ZZ_2377
-      - FR_385
-      - HK_457
-      - CN_155
-      - ZZ_2438
-      - Relay_🇺🇸US-🇺🇸US_2174
-      - Relay_🇦🇺AU-🇦🇺AU_59
-      - Relay_🇺🇸US-🇺🇸US_2157
-      - CN_182
-      - CN_164
+      - CN 19 | openit.ml
+      - CN_277
+      - CN 1 | openit.ml
+      - CN_274
+      - CN_217
       - CN_205
-      - CN_184
-      - CN_176
-      - US_1547
-      - Relay_🇸🇬SG-🇸🇬SG_1242
-      - Relay_🇨🇳CN-🇩🇪DE_194
-      - Relay_🇨🇳CN-🇺🇸US_235
-      - Relay_🇨🇳CN-🇨🇦CA_221
-      - CN_151
-      - Relay_🇨🇳CN-🇭🇰HK_226
+      - CN_222
+      - CN_219
+      - CN_235
+      - CN_214
+      - CN_266
+      - CN_254
+      - CN_226
+      - CN_203
+      - CN_245
+      - CN_221
+      - CN_272
+      - CN_256
+      - CN_212
+      - CN_211
+      - CN_230
+      - CN 23 | openit.ml
+      - CN_232
+      - CN 6 | openit.ml
+      - CN_228
+      - CN 2 | openit.ml
+      - CN 4 | openit.ml
+      - CN_237
+      - CN_238
+      - CN 3 | openit.ml
+      - CN 7 | openit.ml
+      - CN_255
+      - CN 5 | openit.ml
+      - CN_264
+      - CN_223
+      - CN 10 | openit.ml
+      - CN_210
+      - CN_271
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -788,95 +380,44 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CN_162
-      - CN_167
-      - CN_185
-      - CN_188
-      - CN_211
-      - CN_186
-      - CN_224
-      - CN_234
-      - CN_181
-      - CN_195
-      - CN_230
-      - CN_163
-      - CN_210
-      - CN_190
-      - CN_220
-      - CN_207
-      - Relay_🇨🇳 CN-🇨🇦CA_150
-      - CN_213
-      - CN_152
-      - CN_198
-      - CN_178
-      - CN_157
-      - CN_215
-      - CN_228
-      - CN_159
-      - CN_169
-      - CN_204
-      - CN_193
-      - CN_238
-      - CN_218
-      - CN_233
-      - CN_200
-      - Relay_🇺🇸US-🇺🇸US_2161
-      - Relay_🇦🇺AU-🇦🇺AU_56
-      - Relay_🇺🇸US-🇺🇸US_2173
-      - Relay_🇨🇳CN-🇺🇸US_245
-      - Relay_🇺🇸US-🇺🇸US_2171
-      - Relay_🇨🇳CN-🇮🇳IN_237
-      - Relay_🇨🇳CN-🇨🇦CA_249
-      - ZZ_2250
-      - ZZ_2254
-      - ZZ_2317
-      - ZZ_2456
-      - ZZ_2272
-      - ZZ_2385
-      - ZZ_2440
-      - ZZ_2231
-      - ZZ_2319
-      - ZZ_2323
-      - ZZ_2333
-      - ZZ_2252
-      - ZZ_2421
-      - ZZ_2332
-      - ZZ_2374
-      - ZZ_2234
-      - Relay_🇨🇳CN-🇬🇧GB_161
-      - Relay_🇩🇪DE-🇺🇸US_312
-      - ZZ_2391
-      - ZZ_2399
-      - ZZ_2444
-      - ZZ_2191
-      - ZZ_2342
-      - ZZ_2368
-      - ZZ_2383
-      - Relay_🇺🇸US-🇺🇸US_2116
-      - ZZ_2236
-      - ZZ_2259
-      - Relay_🇺🇸US-🇺🇸US_2159
-      - Relay_🇺🇸US-🇺🇸US_2156
-      - ZZ_2377
-      - FR_385
-      - HK_457
-      - CN_155
-      - ZZ_2438
-      - Relay_🇺🇸US-🇺🇸US_2174
-      - Relay_🇦🇺AU-🇦🇺AU_59
-      - Relay_🇺🇸US-🇺🇸US_2157
-      - CN_182
-      - CN_164
+      - CN 19 | openit.ml
+      - CN_277
+      - CN 1 | openit.ml
+      - CN_274
+      - CN_217
       - CN_205
-      - CN_184
-      - CN_176
-      - US_1547
-      - Relay_🇸🇬SG-🇸🇬SG_1242
-      - Relay_🇨🇳CN-🇩🇪DE_194
-      - Relay_🇨🇳CN-🇺🇸US_235
-      - Relay_🇨🇳CN-🇨🇦CA_221
-      - CN_151
-      - Relay_🇨🇳CN-🇭🇰HK_226
+      - CN_222
+      - CN_219
+      - CN_235
+      - CN_214
+      - CN_266
+      - CN_254
+      - CN_226
+      - CN_203
+      - CN_245
+      - CN_221
+      - CN_272
+      - CN_256
+      - CN_212
+      - CN_211
+      - CN_230
+      - CN 23 | openit.ml
+      - CN_232
+      - CN 6 | openit.ml
+      - CN_228
+      - CN 2 | openit.ml
+      - CN 4 | openit.ml
+      - CN_237
+      - CN_238
+      - CN 3 | openit.ml
+      - CN 7 | openit.ml
+      - CN_255
+      - CN 5 | openit.ml
+      - CN_264
+      - CN_223
+      - CN 10 | openit.ml
+      - CN_210
+      - CN_271
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
