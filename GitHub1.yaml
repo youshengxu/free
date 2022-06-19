@@ -5,163 +5,127 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: CN 34｜openit.ml, server: cngzcm.duraker.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 21322:12345678, obfs-param: "", udp: true}
-  - {name: CN 35｜openit.ml, server: hnyd.xxcv.cc, port: 30010, type: trojan, password: 51da3d49-5fee-4ae6-bf1b-2c16ac41c764, sni: hnyd.xxcv.cc, skip-cert-verify: true, udp: true}
-  - {name: CN 39｜openit.ml, server: zh01lv3sgp01.feiguayun.xyz, port: 50031, type: ss, cipher: aes-256-gcm, password: 6f8ebe83-8910-4106-9dc4-18a41cc20ed4, udp: true}
-  - {name: CN 12｜openit.ml, server: 36.139.153.200, port: 30070, type: trojan, password: 7b453cb8-9582-4e47-80ba-7809f6908d7f, skip-cert-verify: true, udp: true}
-  - {name: CN 27｜openit.ml, server: hnyd.xxcv.cc, port: 30070, type: trojan, password: 51da3d49-5fee-4ae6-bf1b-2c16ac41c764, sni: hnyd.xxcv.cc, skip-cert-verify: true, udp: true}
+  - {name: CN 1｜openit.ml, server: cngzcm.duraker.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 21322:12345678, obfs-param: "", udp: true}
+  - {name: NONE, server: 116.129.254.29, port: 3389, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
+  - {name: NONE 2, server: 116.129.254.29, port: 3389, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
+  - {name: NONE 3, server: 116.129.254.29, port: 3389, type: trojan, password: e37c6d7efa845d60, skip-cert-verify: true, udp: true}
+  - {name: NONE 4, server: 116.129.254.29, port: 3389, type: trojan, password: f6f2072a2e4cfc91, skip-cert-verify: true, udp: true}
+  - {name: NONE 5, server: 116.129.253.187, port: 3389, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
+  - {name: US 21｜openit.ml, server: tx-vip-02.top, port: 443, type: trojan, password: s6rIg1Mkke73fwZU, sni: tx-vip-02.top, skip-cert-verify: true, udp: true}
+  - {name: NONE 6, server: 116.129.253.187, port: 3389, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
+  - {name: NONE 7, server: jgw2.gaox.ml, port: 443, type: trojan, password: f2117e99-9b6e-47fd-b0a9-634a0b15b998, sni: jgw2.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: NONE 8, server: 116.129.253.187, port: 3389, type: trojan, password: f6f2072a2e4cfc91, skip-cert-verify: true, udp: true}
+  - {name: CN 4｜openit.ml, server: gy.ziqiyun.xyz, port: 47795, type: ss, cipher: chacha20-ietf-poly1305, password: 59836db8-6e5f-4b8b-aa1e-3963f9d9c923, udp: true}
+  - {name: NONE 9, server: 116.129.254.29, port: 3389, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
+  - {name: NONE 10, server: 116.129.253.187, port: 3389, type: trojan, password: e37c6d7efa845d60, skip-cert-verify: true, udp: true}
+  - {name: HK 10｜openit.ml, server: azgy001.xiba1.xyz, port: 20711, type: trojan, password: 7497242f-3044-3c77-bf48-14bb26c92a83, sni: azgy001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: US 17｜openit.ml, server: ocijp.n.optage.moe, port: 44616, type: trojan, password: 80114348-eea5-43b3-8705-2da4430d3074, sni: ocijp.n.optage.moe, skip-cert-verify: true, udp: true}
+  - {name: HK 9｜openit.ml, server: azgy001.xiba1.xyz, port: 20710, type: trojan, password: 7497242f-3044-3c77-bf48-14bb26c92a83, sni: azgy001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: NONE 11, server: 116.129.254.29, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
+  - {name: HK 6｜openit.ml, server: azgy001.xiba1.xyz, port: 20712, type: trojan, password: 7497242f-3044-3c77-bf48-14bb26c92a83, sni: azgy001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: NONE 12, server: tx-vip-10.top, port: 443, type: trojan, password: s6rIg1Mkke73fwZU, sni: tx-vip-10.top, skip-cert-verify: true, udp: true}
+  - {name: NONE 13, server: upp-26d.top, port: 443, type: trojan, password: s6rIg1Mkke73fwZU, sni: upp-26d.top, skip-cert-verify: true, udp: true}
+  - {name: 美国(油管:破解资源君2.0), server: usfree2.jiantian.xyz, port: 32453, type: trojan, password: 7cb64c49-2ce5-4fa6-9b79-9c02eb54735c, sni: usfree2.jiantian.xyz, skip-cert-verify: true, udp: true}
+  - {name: CA 2｜openit.ml, server: flb.alinkrelay.com, port: 12000, type: trojan, password: 80114348-eea5-43b3-8705-2da4430d3074, sni: flb.alinkrelay.com, skip-cert-verify: true, udp: true}
   - {name: KR 1｜openit.ml, server: 0001.kr.genzpn.com, port: 443, type: trojan, password: 4f4418cd-385c-4203-a323-1b4d2be8e495, sni: 0001.kr.genzpn.com, skip-cert-verify: true, udp: true}
-  - {name: CN 20｜openit.ml, server: hnyd.xxcv.cc, port: 20050, type: trojan, password: 71b785a5-2809-4d4c-ba85-4879f96e5c06, sni: hnyd.xxcv.cc, skip-cert-verify: true, udp: true}
-  - {name: CN 36｜openit.ml, server: gzyd2.xxcv.cc, port: 20110, type: trojan, password: 71b785a5-2809-4d4c-ba85-4879f96e5c06, sni: gzyd2.xxcv.cc, skip-cert-verify: true, udp: true}
-  - {name: CN 24｜openit.ml, server: 36.139.153.200, port: 30120, type: trojan, password: 7b453cb8-9582-4e47-80ba-7809f6908d7f, skip-cert-verify: true, udp: true}
-  - {name: CN 30｜openit.ml, server: hnyd.xxcv.cc, port: 30080, type: trojan, password: 51da3d49-5fee-4ae6-bf1b-2c16ac41c764, sni: hnyd.xxcv.cc, skip-cert-verify: true, udp: true}
-  - {name: CN 29｜openit.ml, server: hnyd.xxcv.cc, port: 20040, type: trojan, password: 71b785a5-2809-4d4c-ba85-4879f96e5c06, sni: hnyd.xxcv.cc, skip-cert-verify: true, udp: true}
-  - {name: CN 38｜openit.ml, server: 36.137.102.237, port: 30060, type: trojan, password: 7b453cb8-9582-4e47-80ba-7809f6908d7f, skip-cert-verify: true, udp: true}
-  - {name: CN 11｜openit.ml, server: 36.137.102.237, port: 30110, type: trojan, password: 7b453cb8-9582-4e47-80ba-7809f6908d7f, skip-cert-verify: true, udp: true}
-  - {name: CN 25｜openit.ml, server: hnyd.xxcv.cc, port: 20110, type: trojan, password: 71b785a5-2809-4d4c-ba85-4879f96e5c06, sni: hnyd.xxcv.cc, skip-cert-verify: true, udp: true}
-  - {name: JP 3｜openit.ml, server: 54.199.133.35, port: 28000, type: trojan, password: 7b453cb8-9582-4e47-80ba-7809f6908d7f, skip-cert-verify: true, udp: true}
-  - {name: TZ 1｜openit.ml, server: tx-vip-10.top, port: 443, type: trojan, password: s6rIg1Mkke73fwZU, sni: tx-vip-10.top, skip-cert-verify: true, udp: true}
-  - {name: CN 3｜openit.ml, server: 36.137.102.237, port: 30020, type: trojan, password: 7b453cb8-9582-4e47-80ba-7809f6908d7f, skip-cert-verify: true, udp: true}
-  - {name: HK 3｜openit.ml, server: pu-hk-ys-01.uk, port: 443, type: trojan, password: s6rIg1Mkke73fwZU, sni: pu-hk-ys-01.uk, skip-cert-verify: true, udp: true}
-  - {name: CN 37｜openit.ml, server: gy.ziqiyun.xyz, port: 47795, type: ss, cipher: chacha20-ietf-poly1305, password: 59836db8-6e5f-4b8b-aa1e-3963f9d9c923, udp: true}
-  - {name: CN 32｜openit.ml, server: gzyd2.xxcv.cc, port: 30080, type: trojan, password: 51da3d49-5fee-4ae6-bf1b-2c16ac41c764, sni: gzyd2.xxcv.cc, skip-cert-verify: true, udp: true}
-  - {name: unknown 7｜openit.ml, server: 103.173.255.127, port: 28000, type: trojan, password: 7b453cb8-9582-4e47-80ba-7809f6908d7f, skip-cert-verify: true, udp: true}
-  - {name: CN 19｜openit.ml, server: gzyd1.xxcv.cc, port: 30120, type: trojan, password: 51da3d49-5fee-4ae6-bf1b-2c16ac41c764, sni: gzyd1.xxcv.cc, skip-cert-verify: true, udp: true}
-  - {name: US 26｜openit.ml, server: 23.225.77.226, port: 28443, type: trojan, password: 71b785a5-2809-4d4c-ba85-4879f96e5c06, skip-cert-verify: true, udp: true}
-  - {name: CN 23｜openit.ml, server: 36.137.102.237, port: 30150, type: trojan, password: 7b453cb8-9582-4e47-80ba-7809f6908d7f, skip-cert-verify: true, udp: true}
-  - {name: CN 13｜openit.ml, server: 36.137.102.237, port: 30090, type: trojan, password: 7b453cb8-9582-4e47-80ba-7809f6908d7f, skip-cert-verify: true, udp: true}
-  - {name: CN 1｜openit.ml, server: gy.ziqiyun.xyz, port: 45436, type: ss, cipher: chacha20-ietf-poly1305, password: d975d166-f2b7-4072-a31a-edbe5c097011, udp: true}
-  - {name: CN 22｜openit.ml, server: 36.139.153.200, port: 30150, type: trojan, password: 7b453cb8-9582-4e47-80ba-7809f6908d7f, skip-cert-verify: true, udp: true}
-  - {name: CN 10｜openit.ml, server: gzyd2.xxcv.cc, port: 20090, type: trojan, password: 71b785a5-2809-4d4c-ba85-4879f96e5c06, sni: gzyd2.xxcv.cc, skip-cert-verify: true, udp: true}
-  - {name: CN 15｜openit.ml, server: 36.137.102.237, port: 30050, type: trojan, password: 7b453cb8-9582-4e47-80ba-7809f6908d7f, skip-cert-verify: true, udp: true}
-  - {name: CN 2｜openit.ml, server: 36.137.102.237, port: 30040, type: trojan, password: 7b453cb8-9582-4e47-80ba-7809f6908d7f, skip-cert-verify: true, udp: true}
-  - {name: CN 5｜openit.ml, server: hnyd.xxcv.cc, port: 20030, type: trojan, password: 71b785a5-2809-4d4c-ba85-4879f96e5c06, sni: hnyd.xxcv.cc, skip-cert-verify: true, udp: true}
-  - {name: NONE, server: bai-piao-wang-zhe10.98848.xyz, port: 50858, type: trojan, password: f0de3134-aef4-45b5-a135-3a82321bbac6, sni: bai-piao-wang-zhe10.98848.xyz, skip-cert-verify: true, udp: true}
-  - {name: JP 1｜openit.ml, server: 203.138.98.199, port: 28000, type: trojan, password: 51da3d49-5fee-4ae6-bf1b-2c16ac41c764, skip-cert-verify: true, udp: true}
-  - {name: unknown 12｜openit.ml, server: tgchannel.kxswa.tk, port: 19021, type: trojan, password: UsW3MPZ8HF, sni: tgchannel.kxswa.tk, skip-cert-verify: true, udp: true}
-  - {name: US 49｜openit.ml, server: cdn013.youxi.gay, port: 443, type: trojan, password: a9f14424-7572-4fe2-bfa8-8864590ff295, sni: cdn013.youxi.gay, skip-cert-verify: true, udp: true}
+  - {name: US 27｜openit.ml, server: blr.alinkrelay.com, port: 12000, type: trojan, password: 80114348-eea5-43b3-8705-2da4430d3074, sni: blr.alinkrelay.com, skip-cert-verify: true, udp: true}
+  - {name: NONE 14, server: s3.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s3.hazz.win, skip-cert-verify: true, udp: true}
+  - {name: US 23｜openit.ml, server: azhk.n.optage.moe, port: 44602, type: trojan, password: 6c38efa1-395a-4dad-846e-e7bcad9ea569, sni: azhk.n.optage.moe, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN 34｜openit.ml
-      - CN 35｜openit.ml
-      - CN 39｜openit.ml
-      - CN 12｜openit.ml
-      - CN 27｜openit.ml
-      - KR 1｜openit.ml
-      - CN 20｜openit.ml
-      - CN 36｜openit.ml
-      - CN 24｜openit.ml
-      - CN 30｜openit.ml
-      - CN 29｜openit.ml
-      - CN 38｜openit.ml
-      - CN 11｜openit.ml
-      - CN 25｜openit.ml
-      - JP 3｜openit.ml
-      - TZ 1｜openit.ml
-      - CN 3｜openit.ml
-      - HK 3｜openit.ml
-      - CN 37｜openit.ml
-      - CN 32｜openit.ml
-      - unknown 7｜openit.ml
-      - CN 19｜openit.ml
-      - US 26｜openit.ml
-      - CN 23｜openit.ml
-      - CN 13｜openit.ml
       - CN 1｜openit.ml
-      - CN 22｜openit.ml
-      - CN 10｜openit.ml
-      - CN 15｜openit.ml
-      - CN 2｜openit.ml
-      - CN 5｜openit.ml
       - NONE
-      - JP 1｜openit.ml
-      - unknown 12｜openit.ml
-      - US 49｜openit.ml
+      - NONE 2
+      - NONE 3
+      - NONE 4
+      - NONE 5
+      - US 21｜openit.ml
+      - NONE 6
+      - NONE 7
+      - NONE 8
+      - CN 4｜openit.ml
+      - NONE 9
+      - NONE 10
+      - HK 10｜openit.ml
+      - US 17｜openit.ml
+      - HK 9｜openit.ml
+      - NONE 11
+      - HK 6｜openit.ml
+      - NONE 12
+      - NONE 13
+      - 美国(油管:破解资源君2.0)
+      - CA 2｜openit.ml
+      - KR 1｜openit.ml
+      - US 27｜openit.ml
+      - NONE 14
+      - US 23｜openit.ml
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - CN 34｜openit.ml
-      - CN 35｜openit.ml
-      - CN 39｜openit.ml
-      - CN 12｜openit.ml
-      - CN 27｜openit.ml
-      - KR 1｜openit.ml
-      - CN 20｜openit.ml
-      - CN 36｜openit.ml
-      - CN 24｜openit.ml
-      - CN 30｜openit.ml
-      - CN 29｜openit.ml
-      - CN 38｜openit.ml
-      - CN 11｜openit.ml
-      - CN 25｜openit.ml
-      - JP 3｜openit.ml
-      - TZ 1｜openit.ml
-      - CN 3｜openit.ml
-      - HK 3｜openit.ml
-      - CN 37｜openit.ml
-      - CN 32｜openit.ml
-      - unknown 7｜openit.ml
-      - CN 19｜openit.ml
-      - US 26｜openit.ml
-      - CN 23｜openit.ml
-      - CN 13｜openit.ml
       - CN 1｜openit.ml
-      - CN 22｜openit.ml
-      - CN 10｜openit.ml
-      - CN 15｜openit.ml
-      - CN 2｜openit.ml
-      - CN 5｜openit.ml
       - NONE
-      - JP 1｜openit.ml
-      - unknown 12｜openit.ml
-      - US 49｜openit.ml
+      - NONE 2
+      - NONE 3
+      - NONE 4
+      - NONE 5
+      - US 21｜openit.ml
+      - NONE 6
+      - NONE 7
+      - NONE 8
+      - CN 4｜openit.ml
+      - NONE 9
+      - NONE 10
+      - HK 10｜openit.ml
+      - US 17｜openit.ml
+      - HK 9｜openit.ml
+      - NONE 11
+      - HK 6｜openit.ml
+      - NONE 12
+      - NONE 13
+      - 美国(油管:破解资源君2.0)
+      - CA 2｜openit.ml
+      - KR 1｜openit.ml
+      - US 27｜openit.ml
+      - NONE 14
+      - US 23｜openit.ml
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN 34｜openit.ml
-      - CN 35｜openit.ml
-      - CN 39｜openit.ml
-      - CN 12｜openit.ml
-      - CN 27｜openit.ml
-      - KR 1｜openit.ml
-      - CN 20｜openit.ml
-      - CN 36｜openit.ml
-      - CN 24｜openit.ml
-      - CN 30｜openit.ml
-      - CN 29｜openit.ml
-      - CN 38｜openit.ml
-      - CN 11｜openit.ml
-      - CN 25｜openit.ml
-      - JP 3｜openit.ml
-      - TZ 1｜openit.ml
-      - CN 3｜openit.ml
-      - HK 3｜openit.ml
-      - CN 37｜openit.ml
-      - CN 32｜openit.ml
-      - unknown 7｜openit.ml
-      - CN 19｜openit.ml
-      - US 26｜openit.ml
-      - CN 23｜openit.ml
-      - CN 13｜openit.ml
       - CN 1｜openit.ml
-      - CN 22｜openit.ml
-      - CN 10｜openit.ml
-      - CN 15｜openit.ml
-      - CN 2｜openit.ml
-      - CN 5｜openit.ml
       - NONE
-      - JP 1｜openit.ml
-      - unknown 12｜openit.ml
-      - US 49｜openit.ml
+      - NONE 2
+      - NONE 3
+      - NONE 4
+      - NONE 5
+      - US 21｜openit.ml
+      - NONE 6
+      - NONE 7
+      - NONE 8
+      - CN 4｜openit.ml
+      - NONE 9
+      - NONE 10
+      - HK 10｜openit.ml
+      - US 17｜openit.ml
+      - HK 9｜openit.ml
+      - NONE 11
+      - HK 6｜openit.ml
+      - NONE 12
+      - NONE 13
+      - 美国(油管:破解资源君2.0)
+      - CA 2｜openit.ml
+      - KR 1｜openit.ml
+      - US 27｜openit.ml
+      - NONE 14
+      - US 23｜openit.ml
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -180,41 +144,32 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN 34｜openit.ml
-      - CN 35｜openit.ml
-      - CN 39｜openit.ml
-      - CN 12｜openit.ml
-      - CN 27｜openit.ml
-      - KR 1｜openit.ml
-      - CN 20｜openit.ml
-      - CN 36｜openit.ml
-      - CN 24｜openit.ml
-      - CN 30｜openit.ml
-      - CN 29｜openit.ml
-      - CN 38｜openit.ml
-      - CN 11｜openit.ml
-      - CN 25｜openit.ml
-      - JP 3｜openit.ml
-      - TZ 1｜openit.ml
-      - CN 3｜openit.ml
-      - HK 3｜openit.ml
-      - CN 37｜openit.ml
-      - CN 32｜openit.ml
-      - unknown 7｜openit.ml
-      - CN 19｜openit.ml
-      - US 26｜openit.ml
-      - CN 23｜openit.ml
-      - CN 13｜openit.ml
       - CN 1｜openit.ml
-      - CN 22｜openit.ml
-      - CN 10｜openit.ml
-      - CN 15｜openit.ml
-      - CN 2｜openit.ml
-      - CN 5｜openit.ml
       - NONE
-      - JP 1｜openit.ml
-      - unknown 12｜openit.ml
-      - US 49｜openit.ml
+      - NONE 2
+      - NONE 3
+      - NONE 4
+      - NONE 5
+      - US 21｜openit.ml
+      - NONE 6
+      - NONE 7
+      - NONE 8
+      - CN 4｜openit.ml
+      - NONE 9
+      - NONE 10
+      - HK 10｜openit.ml
+      - US 17｜openit.ml
+      - HK 9｜openit.ml
+      - NONE 11
+      - HK 6｜openit.ml
+      - NONE 12
+      - NONE 13
+      - 美国(油管:破解资源君2.0)
+      - CA 2｜openit.ml
+      - KR 1｜openit.ml
+      - US 27｜openit.ml
+      - NONE 14
+      - US 23｜openit.ml
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -225,122 +180,95 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - CN 34｜openit.ml
-      - CN 35｜openit.ml
-      - CN 39｜openit.ml
-      - CN 12｜openit.ml
-      - CN 27｜openit.ml
-      - KR 1｜openit.ml
-      - CN 20｜openit.ml
-      - CN 36｜openit.ml
-      - CN 24｜openit.ml
-      - CN 30｜openit.ml
-      - CN 29｜openit.ml
-      - CN 38｜openit.ml
-      - CN 11｜openit.ml
-      - CN 25｜openit.ml
-      - JP 3｜openit.ml
-      - TZ 1｜openit.ml
-      - CN 3｜openit.ml
-      - HK 3｜openit.ml
-      - CN 37｜openit.ml
-      - CN 32｜openit.ml
-      - unknown 7｜openit.ml
-      - CN 19｜openit.ml
-      - US 26｜openit.ml
-      - CN 23｜openit.ml
-      - CN 13｜openit.ml
       - CN 1｜openit.ml
-      - CN 22｜openit.ml
-      - CN 10｜openit.ml
-      - CN 15｜openit.ml
-      - CN 2｜openit.ml
-      - CN 5｜openit.ml
       - NONE
-      - JP 1｜openit.ml
-      - unknown 12｜openit.ml
-      - US 49｜openit.ml
+      - NONE 2
+      - NONE 3
+      - NONE 4
+      - NONE 5
+      - US 21｜openit.ml
+      - NONE 6
+      - NONE 7
+      - NONE 8
+      - CN 4｜openit.ml
+      - NONE 9
+      - NONE 10
+      - HK 10｜openit.ml
+      - US 17｜openit.ml
+      - HK 9｜openit.ml
+      - NONE 11
+      - HK 6｜openit.ml
+      - NONE 12
+      - NONE 13
+      - 美国(油管:破解资源君2.0)
+      - CA 2｜openit.ml
+      - KR 1｜openit.ml
+      - US 27｜openit.ml
+      - NONE 14
+      - US 23｜openit.ml
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - CN 34｜openit.ml
-      - CN 35｜openit.ml
-      - CN 39｜openit.ml
-      - CN 12｜openit.ml
-      - CN 27｜openit.ml
-      - KR 1｜openit.ml
-      - CN 20｜openit.ml
-      - CN 36｜openit.ml
-      - CN 24｜openit.ml
-      - CN 30｜openit.ml
-      - CN 29｜openit.ml
-      - CN 38｜openit.ml
-      - CN 11｜openit.ml
-      - CN 25｜openit.ml
-      - JP 3｜openit.ml
-      - TZ 1｜openit.ml
-      - CN 3｜openit.ml
-      - HK 3｜openit.ml
-      - CN 37｜openit.ml
-      - CN 32｜openit.ml
-      - unknown 7｜openit.ml
-      - CN 19｜openit.ml
-      - US 26｜openit.ml
-      - CN 23｜openit.ml
-      - CN 13｜openit.ml
       - CN 1｜openit.ml
-      - CN 22｜openit.ml
-      - CN 10｜openit.ml
-      - CN 15｜openit.ml
-      - CN 2｜openit.ml
-      - CN 5｜openit.ml
       - NONE
-      - JP 1｜openit.ml
-      - unknown 12｜openit.ml
-      - US 49｜openit.ml
+      - NONE 2
+      - NONE 3
+      - NONE 4
+      - NONE 5
+      - US 21｜openit.ml
+      - NONE 6
+      - NONE 7
+      - NONE 8
+      - CN 4｜openit.ml
+      - NONE 9
+      - NONE 10
+      - HK 10｜openit.ml
+      - US 17｜openit.ml
+      - HK 9｜openit.ml
+      - NONE 11
+      - HK 6｜openit.ml
+      - NONE 12
+      - NONE 13
+      - 美国(油管:破解资源君2.0)
+      - CA 2｜openit.ml
+      - KR 1｜openit.ml
+      - US 27｜openit.ml
+      - NONE 14
+      - US 23｜openit.ml
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CN 34｜openit.ml
-      - CN 35｜openit.ml
-      - CN 39｜openit.ml
-      - CN 12｜openit.ml
-      - CN 27｜openit.ml
-      - KR 1｜openit.ml
-      - CN 20｜openit.ml
-      - CN 36｜openit.ml
-      - CN 24｜openit.ml
-      - CN 30｜openit.ml
-      - CN 29｜openit.ml
-      - CN 38｜openit.ml
-      - CN 11｜openit.ml
-      - CN 25｜openit.ml
-      - JP 3｜openit.ml
-      - TZ 1｜openit.ml
-      - CN 3｜openit.ml
-      - HK 3｜openit.ml
-      - CN 37｜openit.ml
-      - CN 32｜openit.ml
-      - unknown 7｜openit.ml
-      - CN 19｜openit.ml
-      - US 26｜openit.ml
-      - CN 23｜openit.ml
-      - CN 13｜openit.ml
       - CN 1｜openit.ml
-      - CN 22｜openit.ml
-      - CN 10｜openit.ml
-      - CN 15｜openit.ml
-      - CN 2｜openit.ml
-      - CN 5｜openit.ml
       - NONE
-      - JP 1｜openit.ml
-      - unknown 12｜openit.ml
-      - US 49｜openit.ml
+      - NONE 2
+      - NONE 3
+      - NONE 4
+      - NONE 5
+      - US 21｜openit.ml
+      - NONE 6
+      - NONE 7
+      - NONE 8
+      - CN 4｜openit.ml
+      - NONE 9
+      - NONE 10
+      - HK 10｜openit.ml
+      - US 17｜openit.ml
+      - HK 9｜openit.ml
+      - NONE 11
+      - HK 6｜openit.ml
+      - NONE 12
+      - NONE 13
+      - 美国(油管:破解资源君2.0)
+      - CA 2｜openit.ml
+      - KR 1｜openit.ml
+      - US 27｜openit.ml
+      - NONE 14
+      - US 23｜openit.ml
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -356,41 +284,32 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CN 34｜openit.ml
-      - CN 35｜openit.ml
-      - CN 39｜openit.ml
-      - CN 12｜openit.ml
-      - CN 27｜openit.ml
-      - KR 1｜openit.ml
-      - CN 20｜openit.ml
-      - CN 36｜openit.ml
-      - CN 24｜openit.ml
-      - CN 30｜openit.ml
-      - CN 29｜openit.ml
-      - CN 38｜openit.ml
-      - CN 11｜openit.ml
-      - CN 25｜openit.ml
-      - JP 3｜openit.ml
-      - TZ 1｜openit.ml
-      - CN 3｜openit.ml
-      - HK 3｜openit.ml
-      - CN 37｜openit.ml
-      - CN 32｜openit.ml
-      - unknown 7｜openit.ml
-      - CN 19｜openit.ml
-      - US 26｜openit.ml
-      - CN 23｜openit.ml
-      - CN 13｜openit.ml
       - CN 1｜openit.ml
-      - CN 22｜openit.ml
-      - CN 10｜openit.ml
-      - CN 15｜openit.ml
-      - CN 2｜openit.ml
-      - CN 5｜openit.ml
       - NONE
-      - JP 1｜openit.ml
-      - unknown 12｜openit.ml
-      - US 49｜openit.ml
+      - NONE 2
+      - NONE 3
+      - NONE 4
+      - NONE 5
+      - US 21｜openit.ml
+      - NONE 6
+      - NONE 7
+      - NONE 8
+      - CN 4｜openit.ml
+      - NONE 9
+      - NONE 10
+      - HK 10｜openit.ml
+      - US 17｜openit.ml
+      - HK 9｜openit.ml
+      - NONE 11
+      - HK 6｜openit.ml
+      - NONE 12
+      - NONE 13
+      - 美国(油管:破解资源君2.0)
+      - CA 2｜openit.ml
+      - KR 1｜openit.ml
+      - US 27｜openit.ml
+      - NONE 14
+      - US 23｜openit.ml
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
