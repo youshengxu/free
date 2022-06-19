@@ -5,323 +5,175 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: US 9｜openit.ml, server: s1.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s1.hazz.win, skip-cert-verify: true, udp: true}
-  - {name: CN 37｜openit.ml, server: zh01lv5tw01.feiguayun.xyz, port: 31187, type: ss, cipher: aes-256-gcm, password: 90a7d86e-6f6a-4230-b89b-03cfd7fe70dc, udp: true}
-  - {name: CN 36｜openit.ml, server: zh01lv5tw02.feiguayun.xyz, port: 31187, type: ss, cipher: aes-256-gcm, password: 90a7d86e-6f6a-4230-b89b-03cfd7fe70dc, udp: true}
-  - {name: US 39｜openit.ml, server: wireless.starspace.link, port: 443, type: trojan, password: 5LN8SGTqxk336nFg, sni: wireless.starspace.link, skip-cert-verify: true, udp: true}
-  - {name: US 6｜openit.ml, server: s3.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s3.hazz.win, skip-cert-verify: true, udp: true}
-  - {name: US 8｜openit.ml, server: ussc.scsevers.cf, port: 443, type: trojan, password: sharecentre, sni: ussc.scsevers.cf, skip-cert-verify: true, udp: true}
-  - {name: US 2｜openit.ml, server: tj-us02.yiyodns.xyz, port: 443, type: trojan, password: 7dafe71e-2be6-302f-bdfc-e6319a3299bc, sni: tj-us02.yiyodns.xyz, skip-cert-verify: true, udp: true}
-  - {name: US 40｜openit.ml, server: storage.starspace.link, port: 443, type: trojan, password: W8gVbKNAZlFzgGPn, sni: storage.starspace.link, skip-cert-verify: true, udp: true}
-  - {name: US 41｜openit.ml, server: rooms.starspace.link, port: 443, type: trojan, password: 5HfENR8nt2PR8reH, sni: rooms.starspace.link, skip-cert-verify: true, udp: true}
-  - {name: NL 14｜openit.ml, server: nl1.nodegz.top, port: 443, type: trojan, password: 4b884f9c-aaa4-3bcb-ac6f-70a79bba4077, sni: nl1.nodegz.top, skip-cert-verify: true, udp: true}
-  - {name: github.com/freefq - 美国弗吉尼亚州阿什本Oracle云计算数据中心 29, server: usfree2.jiantian.xyz, port: 32453, type: trojan, password: 7cb64c49-2ce5-4fa6-9b79-9c02eb54735c, sni: usfree2.jiantian.xyz, skip-cert-verify: true, udp: true}
-  - {name: US 7｜openit.ml, server: lsj02.wangxd.life, port: 3052, type: trojan, password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e, sni: lsj02.wangxd.life, skip-cert-verify: true, udp: true}
-  - {name: CN 19｜openit.ml, server: zh01lv5ca02.feiguayun.xyz, port: 37087, type: ss, cipher: aes-256-gcm, password: 90a7d86e-6f6a-4230-b89b-03cfd7fe70dc, udp: true}
-  - {name: NL 5｜openit.ml, server: nl1.nodegz.top, port: 443, type: trojan, password: 62867210-7dd6-3b5c-8947-bc419d8528b9, sni: nl1.nodegz.top, skip-cert-verify: true, udp: true}
-  - {name: _US_美国_0@31, server: vus2.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /chat, ws-headers: {Host: vus2.0bad.com}, udp: true}
-  - {name: US 1｜openit.ml, server: usfree1.jiantian.xyz, port: 23425, type: trojan, password: 7cb64c49-2ce5-4fa6-9b79-9c02eb54735c, sni: usfree1.jiantian.xyz, skip-cert-verify: true, udp: true}
-  - {name: CN 44｜openit.ml, server: zh01lv5us03.feiguayun.xyz, port: 33087, type: ss, cipher: aes-256-gcm, password: 90a7d86e-6f6a-4230-b89b-03cfd7fe70dc, udp: true}
-  - {name: NL 11｜openit.ml, server: nl1.nodegz.top, port: 443, type: trojan, password: 440055a3-7c84-3cb3-9b7a-a974a66e9b98, sni: nl1.nodegz.top, skip-cert-verify: true, udp: true}
-  - {name: NL 12｜openit.ml, server: nl1.nodegz.top, port: 443, type: trojan, password: 7d2f4381-c5d5-38ae-9ee9-5dd8e37f66d7, sni: nl1.nodegz.top, skip-cert-verify: true, udp: true}
-  - {name: NL 8｜openit.ml, server: nl1.nodegz.top, port: 443, type: trojan, password: cf9be019-1f76-3ceb-a67a-247d45b4725a, sni: nl1.nodegz.top, skip-cert-verify: true, udp: true}
-  - {name: DE 1｜openit.ml, server: s4.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s4.hazz.win, skip-cert-verify: true, udp: true}
-  - {name: NL 9｜openit.ml, server: nl1.nodegz.top, port: 443, type: trojan, password: 415a81c2-8a5c-37d1-8558-200be3c9cca9, sni: nl1.nodegz.top, skip-cert-verify: true, udp: true}
-  - {name: CN 14｜openit.ml, server: zh01lv5ge02.feiguayun.xyz, port: 36087, type: ss, cipher: aes-256-gcm, password: 90a7d86e-6f6a-4230-b89b-03cfd7fe70dc, udp: true}
-  - {name: US 38｜openit.ml, server: silicon.starspace.link, port: 443, type: trojan, password: 4ZPDeqJ6g766UKDJ, sni: silicon.starspace.link, skip-cert-verify: true, udp: true}
-  - {name: US 27｜openit.ml, server: 198.200.51.219, port: 26969, type: trojan, password: 151dada5-c12e-4eb3-940e-d93f365f8a4a, skip-cert-verify: true, udp: true}
-  - {name: github.com/freefq - 广东省广州市移动 19, server: zh01lv5ge01.feiguayun.xyz, port: 36087, type: ss, cipher: aes-256-gcm, password: feeaf0cb-482a-490f-bdde-2e8f9764879f, udp: true}
-  - {name: CN 12｜openit.ml, server: zh01lv5us02.feiguayun.xyz, port: 33087, type: ss, cipher: aes-256-gcm, password: 90a7d86e-6f6a-4230-b89b-03cfd7fe70dc, udp: true}
-  - {name: _US_美国_26_1@45, server: vus4.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /chat, ws-headers: {Host: vus4.0bad.com}, udp: true}
-  - {name: CN_56_9@55, server: 14.29.124.168, port: 25235, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_61_9@60, server: 14.29.124.168, port: 25295, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_39_9@38, server: 14.29.124.168, port: 25220, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_35_9@34, server: 14.29.124.168, port: 25261, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_59_9@58, server: 14.29.124.168, port: 25283, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_28_9@27, server: 14.29.124.168, port: 25287, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_33_9@32, server: 14.29.124.168, port: 25271, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_68_9@67, server: 14.29.124.168, port: 25222, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_38_9@37, server: 14.29.124.168, port: 25207, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_63_9@62, server: 14.29.124.168, port: 25289, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_32_9@31, server: 14.29.124.168, port: 25297, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_30_9@29, server: 14.29.124.168, port: 25210, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_69_9@68, server: 14.29.124.168, port: 25251, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_31_9@30, server: 14.29.124.168, port: 25247, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_44_9@43, server: 14.29.124.168, port: 25226, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: US 12｜openit.ml, server: jgwdj4.gaox.ml, port: 443, type: trojan, password: c09eb137-bf68-4658-84e0-102d94b74168, sni: jgwdj4.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: _US_美国_0@36, server: 5.181.234.254, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: CN 15｜openit.ml, server: zh01lv5uk02.feiguayun.xyz, port: 35087, type: ss, cipher: aes-256-gcm, password: 90a7d86e-6f6a-4230-b89b-03cfd7fe70dc, udp: true}
-  - {name: github.com/freefq - 匈牙利  16, server: 185.225.69.134, port: 45081, type: vmess, uuid: 3c3bfd75-dc30-4e76-8940-47e1137e21f9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN 13｜openit.ml, server: zh01lv3uk01.feiguayun.xyz, port: 50011, type: ss, cipher: aes-256-gcm, password: 90a7d86e-6f6a-4230-b89b-03cfd7fe70dc, udp: true}
-  - {name: NL 10｜openit.ml, server: nl1.nodegz.top, port: 443, type: trojan, password: 97528522-6883-3f98-9f66-b6e134dfcd64, sni: nl1.nodegz.top, skip-cert-verify: true, udp: true}
-  - {name: default_name_0@34, server: 85.208.108.20, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: CN 20｜openit.ml, server: zh01lv3us03.feiguayun.xyz, port: 50001, type: ss, cipher: aes-256-gcm, password: 90a7d86e-6f6a-4230-b89b-03cfd7fe70dc, udp: true}
-  - {name: CN 11｜openit.ml, server: zh01lv5us01.feiguayun.xyz, port: 33087, type: ss, cipher: aes-256-gcm, password: 90a7d86e-6f6a-4230-b89b-03cfd7fe70dc, udp: true}
-  - {name: default_name_0@42, server: 85.208.108.20, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: default_name_0@41, server: 85.208.108.20, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: default_name_0@43, server: 85.208.108.20, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: default_name_0@35, server: 85.208.108.20, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: default_name_0@33, server: 85.208.108.20, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: default_name_0@37, server: 85.208.108.20, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: UA 4｜openit.ml, server: v2cross.com.03.v2ce.com, port: 443, type: trojan, password: ZD4dLSBXiMrmzdLd, sni: v2cross.com.03.v2ce.com, skip-cert-verify: true, udp: true}
-  - {name: default_name_0@38, server: 85.208.108.20, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: SG 12｜openit.ml, server: sghe.tjvpn.org, port: 443, type: trojan, password: 363b95c0-e9ec-11ec-b631-225401db9d57, sni: sghe.tjvpn.org, skip-cert-verify: true, udp: true}
-  - {name: default_name_0@40, server: 85.208.108.20, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: CN 17｜openit.ml, server: zh01lv5uk01.feiguayun.xyz, port: 35087, type: ss, cipher: aes-256-gcm, password: 90a7d86e-6f6a-4230-b89b-03cfd7fe70dc, udp: true}
-  - {name: default_name_0@44, server: 85.208.108.20, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: default_name_0@39, server: 85.208.108.20, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _US_美国_0@50, server: sg01.czsx1624.tk, port: 443, type: vmess, uuid: d002b422-eace-4e01-bf58-e4bb0bcfe7af, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /3a8545177/, ws-headers: {Host: sg01.czsx1624.tk}, udp: true}
-  - {name: default_name_0@45, server: 85.208.108.20, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: SG 6｜openit.ml, server: w12.udpgw.com, port: 443, type: trojan, password: 08964210-e7b8-11ec-95aa-1239d0255272, sni: w12.udpgw.com, skip-cert-verify: true, udp: true}
-  - {name: _AE_阿联酋_1_1@53, server: 217.138.193.6, port: 803, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: _AE_阿联酋_3_1@57, server: 217.138.193.6, port: 812, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: _AE_阿联酋_2_1@56, server: 217.138.193.6, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: default_name_2@16, server: v1.ssrsub.com, port: 8443, type: vmess, uuid: 2256dea6-b952-43f7-b8a2-983f766d5836, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /api/v3/download.getFile, ws-headers: {Host: v1.ssrsub.com}, udp: true}
-  - {name: github.com/freefq - 美国CloudFlare公司CDN节点 40, server: v1.ssrsub.com, port: 8443, type: vmess, uuid: f736834f-1fc8-4738-9884-9afe0eb0d818, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /api/v3/download.getFile, ws-headers: {Host: v1.ssrsub.com}, udp: true}
-  - {name: SG 7｜openit.ml, server: w13.udpgw.com, port: 443, type: trojan, password: 16877c70-e7b8-11ec-99f2-1239d0255272, sni: w13.udpgw.com, skip-cert-verify: true, udp: true}
-  - {name: US 5｜openit.ml, server: tj-sg02.yiyodns.xyz, port: 443, type: trojan, password: 7dafe71e-2be6-302f-bdfc-e6319a3299bc, sni: tj-sg02.yiyodns.xyz, skip-cert-verify: true, udp: true}
+  - {name: CN 3｜openit.ml, server: yqy36424.cdn-china.net, port: 36424, type: ssr, cipher: chacha20-ietf, password: http://cc.ax/, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 1705659:eqmnaP, obfs-param: data.bilibili.com/d7d7d1705659, udp: true}
+  - {name: CN 20｜openit.ml, server: hnyd.xxcv.cc, port: 20160, type: trojan, password: f788c9d5-2100-4378-b3b2-5e7ed9de9150, sni: hnyd.xxcv.cc, skip-cert-verify: true, udp: true}
+  - {name: NONE, server: 116.129.254.29, port: 3389, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
+  - {name: NONE 2, server: 116.129.254.29, port: 3389, type: trojan, password: f6f2072a2e4cfc91, skip-cert-verify: true, udp: true}
+  - {name: CN 21｜openit.ml, server: gzyd2.xxcv.cc, port: 20120, type: trojan, password: f788c9d5-2100-4378-b3b2-5e7ed9de9150, sni: gzyd2.xxcv.cc, skip-cert-verify: true, udp: true}
+  - {name: US 20｜openit.ml, server: scloud58.jafiyun.life, port: 22058, type: trojan, password: 63d7b7bb-e526-3ea5-a61f-9da6df645da0, sni: scloud58.jafiyun.life, skip-cert-verify: true, udp: true}
+  - {name: NONE 3, server: 116.129.254.29, port: 3389, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
+  - {name: CN 6｜openit.ml, server: scloud29.jafiyun.life, port: 22029, type: trojan, password: 63d7b7bb-e526-3ea5-a61f-9da6df645da0, sni: scloud29.jafiyun.life, skip-cert-verify: true, udp: true}
+  - {name: NONE 4, server: 116.129.254.29, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
+  - {name: CN 4｜openit.ml, server: yqy17122.cdn-china.net, port: 17122, type: ssr, cipher: chacha20-ietf, password: http://cc.ax/, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 1705659:eqmnaP, obfs-param: data.bilibili.com/d7d7d1705659, udp: true}
+  - {name: CN 22｜openit.ml, server: 116.129.254.29, port: 3389, type: trojan, password: e37c6d7efa845d60, skip-cert-verify: true, udp: true}
+  - {name: CN 7｜openit.ml, server: scloud51.jafiyun.life, port: 22051, type: trojan, password: 63d7b7bb-e526-3ea5-a61f-9da6df645da0, sni: scloud51.jafiyun.life, skip-cert-verify: true, udp: true}
+  - {name: CN 2｜openit.ml, server: yqy31225.cdn-china.net, port: 31225, type: ssr, cipher: chacha20-ietf, password: http://cc.ax/, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 1705659:eqmnaP, obfs-param: data.bilibili.com/d7d7d1705659, udp: true}
+  - {name: US 24｜openit.ml, server: scloud53.jafiyun.life, port: 22053, type: trojan, password: 63d7b7bb-e526-3ea5-a61f-9da6df645da0, sni: scloud53.jafiyun.life, skip-cert-verify: true, udp: true}
+  - {name: NONE 5, server: 116.129.254.29, port: 3389, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
+  - {name: CN 12｜openit.ml, server: cm-gz.okvpn.xyz, port: 20009, type: trojan, password: 604c3e18-a40a-434e-bcc1-d810845bf034, sni: cm-gz.okvpn.xyz, skip-cert-verify: true, udp: true}
+  - {name: _CN_中国->🇹🇼_TW_台湾_1_0@0, server: gy.ziqiyun.xyz, port: 47795, type: ss, cipher: chacha20-ietf-poly1305, password: 59836db8-6e5f-4b8b-aa1e-3963f9d9c923, udp: true}
+  - {name: CN 10｜openit.ml, server: yqy1116221.cdn-china.net, port: 16221, type: ssr, cipher: chacha20-ietf, password: http://cc.ax/, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 1705659:eqmnaP, obfs-param: data.bilibili.com/d7d7d1705659, udp: true}
+  - {name: TW 2｜openit.ml, server: hinet.xxcv.cc, port: 28443, type: trojan, password: f788c9d5-2100-4378-b3b2-5e7ed9de9150, sni: hinet.xxcv.cc, skip-cert-verify: true, udp: true}
+  - {name: CN_21_12@20, server: cu-cs.okvpn.xyz, port: 20009, type: trojan, password: 604c3e18-a40a-434e-bcc1-d810845bf034, sni: cu-cs.okvpn.xyz, skip-cert-verify: true, udp: true}
+  - {name: US 25｜openit.ml, server: scloud54.jafiyun.life, port: 22054, type: trojan, password: 63d7b7bb-e526-3ea5-a61f-9da6df645da0, sni: scloud54.jafiyun.life, skip-cert-verify: true, udp: true}
+  - {name: HK 4｜openit.ml, server: jp06.jafiyun.life, port: 21233, type: trojan, password: 63d7b7bb-e526-3ea5-a61f-9da6df645da0, sni: jp06.jafiyun.life, skip-cert-verify: true, udp: true}
+  - {name: US 29｜openit.ml, server: scloud56.jafiyun.life, port: 22056, type: trojan, password: 63d7b7bb-e526-3ea5-a61f-9da6df645da0, sni: scloud56.jafiyun.life, skip-cert-verify: true, udp: true}
+  - {name: CN 25｜openit.ml, server: 116.129.253.201, port: 3389, type: trojan, password: 9029864a78d29a43, skip-cert-verify: true, udp: true}
+  - {name: CN 26｜openit.ml, server: 103.56.60.185, port: 3389, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
+  - {name: CN 27｜openit.ml, server: 116.129.254.47, port: 3389, type: trojan, password: e37c6d7efa845d60, skip-cert-verify: true, udp: true}
+  - {name: CN 1｜openit.ml, server: yqy1214221.cdn-china.net, port: 14221, type: ssr, cipher: chacha20-ietf, password: http://cc.ax/, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 1705659:eqmnaP, obfs-param: data.bilibili.com/d7d7d1705659, udp: true}
+  - {name: CN 17｜openit.ml, server: yqy72028.cdn-china.net, port: 52028, type: ssr, cipher: chacha20-ietf, password: http://cc.ax/, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 1705659:eqmnaP, obfs-param: data.bilibili.com/d7d7d1705659, udp: true}
+  - {name: HK 3｜openit.ml, server: jp05.jafiyun.life, port: 21232, type: trojan, password: 63d7b7bb-e526-3ea5-a61f-9da6df645da0, sni: jp05.jafiyun.life, skip-cert-verify: true, udp: true}
+  - {name: US 16｜openit.ml, server: scloud55.jafiyun.life, port: 22055, type: trojan, password: 63d7b7bb-e526-3ea5-a61f-9da6df645da0, sni: scloud55.jafiyun.life, skip-cert-verify: true, udp: true}
+  - {name: 213.183.53.177:9027, server: 213.183.53.177, port: 9027, type: ss, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8, udp: true}
+  - {name: CN 11｜openit.ml, server: zh01lv5ca05.feiguayun.xyz, port: 37087, type: ss, cipher: aes-256-gcm, password: 6f8ebe83-8910-4106-9dc4-18a41cc20ed4, udp: true}
+  - {name: NONE 6, server: jgwdj3.gaox.ml, port: 443, type: trojan, password: da777aae-defb-41d0-a183-2c27da2b4677, sni: jgwdj3.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: 213.183.53.177:9041, server: 213.183.53.177, port: 9041, type: ss, cipher: aes-256-cfb, password: U6qnYRhfyDmn8sgn, udp: true}
+  - {name: 134.195.196.231:7001, server: 134.195.196.231, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: US_100_12@99, server: fhcamd2.gaox.ml, port: 443, type: trojan, password: dbf9bf9c-2c3f-474a-8031-d4c00666a989, sni: fhcamd2.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: NONE 7, server: jgwhdlb2.gaox.ml, port: 443, type: trojan, password: 54080134-2cba-4535-8599-95650bd9aa54, sni: jgwhdlb2.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: 134.195.196.231:8882, server: 134.195.196.231, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - US 9｜openit.ml
-      - CN 37｜openit.ml
-      - CN 36｜openit.ml
-      - US 39｜openit.ml
-      - US 6｜openit.ml
-      - US 8｜openit.ml
-      - US 2｜openit.ml
-      - US 40｜openit.ml
-      - US 41｜openit.ml
-      - NL 14｜openit.ml
-      - github.com/freefq - 美国弗吉尼亚州阿什本Oracle云计算数据中心 29
-      - US 7｜openit.ml
-      - CN 19｜openit.ml
-      - NL 5｜openit.ml
-      - _US_美国_0@31
-      - US 1｜openit.ml
-      - CN 44｜openit.ml
-      - NL 11｜openit.ml
-      - NL 12｜openit.ml
-      - NL 8｜openit.ml
-      - DE 1｜openit.ml
-      - NL 9｜openit.ml
-      - CN 14｜openit.ml
-      - US 38｜openit.ml
-      - US 27｜openit.ml
-      - github.com/freefq - 广东省广州市移动 19
-      - CN 12｜openit.ml
-      - _US_美国_26_1@45
-      - CN_56_9@55
-      - CN_61_9@60
-      - CN_39_9@38
-      - CN_35_9@34
-      - CN_59_9@58
-      - CN_28_9@27
-      - CN_33_9@32
-      - CN_68_9@67
-      - CN_38_9@37
-      - CN_63_9@62
-      - CN_32_9@31
-      - CN_30_9@29
-      - CN_69_9@68
-      - CN_31_9@30
-      - CN_44_9@43
-      - US 12｜openit.ml
-      - _US_美国_0@36
-      - CN 15｜openit.ml
-      - github.com/freefq - 匈牙利  16
-      - CN 13｜openit.ml
-      - NL 10｜openit.ml
-      - default_name_0@34
+      - CN 3｜openit.ml
       - CN 20｜openit.ml
-      - CN 11｜openit.ml
-      - default_name_0@42
-      - default_name_0@41
-      - default_name_0@43
-      - default_name_0@35
-      - default_name_0@33
-      - default_name_0@37
-      - UA 4｜openit.ml
-      - default_name_0@38
-      - SG 12｜openit.ml
-      - default_name_0@40
+      - NONE
+      - NONE 2
+      - CN 21｜openit.ml
+      - US 20｜openit.ml
+      - NONE 3
+      - CN 6｜openit.ml
+      - NONE 4
+      - CN 4｜openit.ml
+      - CN 22｜openit.ml
+      - CN 7｜openit.ml
+      - CN 2｜openit.ml
+      - US 24｜openit.ml
+      - NONE 5
+      - CN 12｜openit.ml
+      - _CN_中国->🇹🇼_TW_台湾_1_0@0
+      - CN 10｜openit.ml
+      - TW 2｜openit.ml
+      - CN_21_12@20
+      - US 25｜openit.ml
+      - HK 4｜openit.ml
+      - US 29｜openit.ml
+      - CN 25｜openit.ml
+      - CN 26｜openit.ml
+      - CN 27｜openit.ml
+      - CN 1｜openit.ml
       - CN 17｜openit.ml
-      - default_name_0@44
-      - default_name_0@39
-      - _US_美国_0@50
-      - default_name_0@45
-      - SG 6｜openit.ml
-      - _AE_阿联酋_1_1@53
-      - _AE_阿联酋_3_1@57
-      - _AE_阿联酋_2_1@56
-      - default_name_2@16
-      - github.com/freefq - 美国CloudFlare公司CDN节点 40
-      - SG 7｜openit.ml
-      - US 5｜openit.ml
+      - HK 3｜openit.ml
+      - US 16｜openit.ml
+      - 213.183.53.177:9027
+      - CN 11｜openit.ml
+      - NONE 6
+      - 213.183.53.177:9041
+      - 134.195.196.231:7001
+      - US_100_12@99
+      - NONE 7
+      - 134.195.196.231:8882
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - US 9｜openit.ml
-      - CN 37｜openit.ml
-      - CN 36｜openit.ml
-      - US 39｜openit.ml
-      - US 6｜openit.ml
-      - US 8｜openit.ml
-      - US 2｜openit.ml
-      - US 40｜openit.ml
-      - US 41｜openit.ml
-      - NL 14｜openit.ml
-      - github.com/freefq - 美国弗吉尼亚州阿什本Oracle云计算数据中心 29
-      - US 7｜openit.ml
-      - CN 19｜openit.ml
-      - NL 5｜openit.ml
-      - _US_美国_0@31
-      - US 1｜openit.ml
-      - CN 44｜openit.ml
-      - NL 11｜openit.ml
-      - NL 12｜openit.ml
-      - NL 8｜openit.ml
-      - DE 1｜openit.ml
-      - NL 9｜openit.ml
-      - CN 14｜openit.ml
-      - US 38｜openit.ml
-      - US 27｜openit.ml
-      - github.com/freefq - 广东省广州市移动 19
-      - CN 12｜openit.ml
-      - _US_美国_26_1@45
-      - CN_56_9@55
-      - CN_61_9@60
-      - CN_39_9@38
-      - CN_35_9@34
-      - CN_59_9@58
-      - CN_28_9@27
-      - CN_33_9@32
-      - CN_68_9@67
-      - CN_38_9@37
-      - CN_63_9@62
-      - CN_32_9@31
-      - CN_30_9@29
-      - CN_69_9@68
-      - CN_31_9@30
-      - CN_44_9@43
-      - US 12｜openit.ml
-      - _US_美国_0@36
-      - CN 15｜openit.ml
-      - github.com/freefq - 匈牙利  16
-      - CN 13｜openit.ml
-      - NL 10｜openit.ml
-      - default_name_0@34
+      - CN 3｜openit.ml
       - CN 20｜openit.ml
-      - CN 11｜openit.ml
-      - default_name_0@42
-      - default_name_0@41
-      - default_name_0@43
-      - default_name_0@35
-      - default_name_0@33
-      - default_name_0@37
-      - UA 4｜openit.ml
-      - default_name_0@38
-      - SG 12｜openit.ml
-      - default_name_0@40
+      - NONE
+      - NONE 2
+      - CN 21｜openit.ml
+      - US 20｜openit.ml
+      - NONE 3
+      - CN 6｜openit.ml
+      - NONE 4
+      - CN 4｜openit.ml
+      - CN 22｜openit.ml
+      - CN 7｜openit.ml
+      - CN 2｜openit.ml
+      - US 24｜openit.ml
+      - NONE 5
+      - CN 12｜openit.ml
+      - _CN_中国->🇹🇼_TW_台湾_1_0@0
+      - CN 10｜openit.ml
+      - TW 2｜openit.ml
+      - CN_21_12@20
+      - US 25｜openit.ml
+      - HK 4｜openit.ml
+      - US 29｜openit.ml
+      - CN 25｜openit.ml
+      - CN 26｜openit.ml
+      - CN 27｜openit.ml
+      - CN 1｜openit.ml
       - CN 17｜openit.ml
-      - default_name_0@44
-      - default_name_0@39
-      - _US_美国_0@50
-      - default_name_0@45
-      - SG 6｜openit.ml
-      - _AE_阿联酋_1_1@53
-      - _AE_阿联酋_3_1@57
-      - _AE_阿联酋_2_1@56
-      - default_name_2@16
-      - github.com/freefq - 美国CloudFlare公司CDN节点 40
-      - SG 7｜openit.ml
-      - US 5｜openit.ml
+      - HK 3｜openit.ml
+      - US 16｜openit.ml
+      - 213.183.53.177:9027
+      - CN 11｜openit.ml
+      - NONE 6
+      - 213.183.53.177:9041
+      - 134.195.196.231:7001
+      - US_100_12@99
+      - NONE 7
+      - 134.195.196.231:8882
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - US 9｜openit.ml
-      - CN 37｜openit.ml
-      - CN 36｜openit.ml
-      - US 39｜openit.ml
-      - US 6｜openit.ml
-      - US 8｜openit.ml
-      - US 2｜openit.ml
-      - US 40｜openit.ml
-      - US 41｜openit.ml
-      - NL 14｜openit.ml
-      - github.com/freefq - 美国弗吉尼亚州阿什本Oracle云计算数据中心 29
-      - US 7｜openit.ml
-      - CN 19｜openit.ml
-      - NL 5｜openit.ml
-      - _US_美国_0@31
-      - US 1｜openit.ml
-      - CN 44｜openit.ml
-      - NL 11｜openit.ml
-      - NL 12｜openit.ml
-      - NL 8｜openit.ml
-      - DE 1｜openit.ml
-      - NL 9｜openit.ml
-      - CN 14｜openit.ml
-      - US 38｜openit.ml
-      - US 27｜openit.ml
-      - github.com/freefq - 广东省广州市移动 19
-      - CN 12｜openit.ml
-      - _US_美国_26_1@45
-      - CN_56_9@55
-      - CN_61_9@60
-      - CN_39_9@38
-      - CN_35_9@34
-      - CN_59_9@58
-      - CN_28_9@27
-      - CN_33_9@32
-      - CN_68_9@67
-      - CN_38_9@37
-      - CN_63_9@62
-      - CN_32_9@31
-      - CN_30_9@29
-      - CN_69_9@68
-      - CN_31_9@30
-      - CN_44_9@43
-      - US 12｜openit.ml
-      - _US_美国_0@36
-      - CN 15｜openit.ml
-      - github.com/freefq - 匈牙利  16
-      - CN 13｜openit.ml
-      - NL 10｜openit.ml
-      - default_name_0@34
+      - CN 3｜openit.ml
       - CN 20｜openit.ml
-      - CN 11｜openit.ml
-      - default_name_0@42
-      - default_name_0@41
-      - default_name_0@43
-      - default_name_0@35
-      - default_name_0@33
-      - default_name_0@37
-      - UA 4｜openit.ml
-      - default_name_0@38
-      - SG 12｜openit.ml
-      - default_name_0@40
+      - NONE
+      - NONE 2
+      - CN 21｜openit.ml
+      - US 20｜openit.ml
+      - NONE 3
+      - CN 6｜openit.ml
+      - NONE 4
+      - CN 4｜openit.ml
+      - CN 22｜openit.ml
+      - CN 7｜openit.ml
+      - CN 2｜openit.ml
+      - US 24｜openit.ml
+      - NONE 5
+      - CN 12｜openit.ml
+      - _CN_中国->🇹🇼_TW_台湾_1_0@0
+      - CN 10｜openit.ml
+      - TW 2｜openit.ml
+      - CN_21_12@20
+      - US 25｜openit.ml
+      - HK 4｜openit.ml
+      - US 29｜openit.ml
+      - CN 25｜openit.ml
+      - CN 26｜openit.ml
+      - CN 27｜openit.ml
+      - CN 1｜openit.ml
       - CN 17｜openit.ml
-      - default_name_0@44
-      - default_name_0@39
-      - _US_美国_0@50
-      - default_name_0@45
-      - SG 6｜openit.ml
-      - _AE_阿联酋_1_1@53
-      - _AE_阿联酋_3_1@57
-      - _AE_阿联酋_2_1@56
-      - default_name_2@16
-      - github.com/freefq - 美国CloudFlare公司CDN节点 40
-      - SG 7｜openit.ml
-      - US 5｜openit.ml
+      - HK 3｜openit.ml
+      - US 16｜openit.ml
+      - 213.183.53.177:9027
+      - CN 11｜openit.ml
+      - NONE 6
+      - 213.183.53.177:9041
+      - 134.195.196.231:7001
+      - US_100_12@99
+      - NONE 7
+      - 134.195.196.231:8882
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -340,327 +192,180 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - US 9｜openit.ml
-      - CN 37｜openit.ml
-      - CN 36｜openit.ml
-      - US 39｜openit.ml
-      - US 6｜openit.ml
-      - US 8｜openit.ml
-      - US 2｜openit.ml
-      - US 40｜openit.ml
-      - US 41｜openit.ml
-      - NL 14｜openit.ml
-      - github.com/freefq - 美国弗吉尼亚州阿什本Oracle云计算数据中心 29
-      - US 7｜openit.ml
-      - CN 19｜openit.ml
-      - NL 5｜openit.ml
-      - _US_美国_0@31
-      - US 1｜openit.ml
-      - CN 44｜openit.ml
-      - NL 11｜openit.ml
-      - NL 12｜openit.ml
-      - NL 8｜openit.ml
-      - DE 1｜openit.ml
-      - NL 9｜openit.ml
-      - CN 14｜openit.ml
-      - US 38｜openit.ml
-      - US 27｜openit.ml
-      - github.com/freefq - 广东省广州市移动 19
-      - CN 12｜openit.ml
-      - _US_美国_26_1@45
-      - CN_56_9@55
-      - CN_61_9@60
-      - CN_39_9@38
-      - CN_35_9@34
-      - CN_59_9@58
-      - CN_28_9@27
-      - CN_33_9@32
-      - CN_68_9@67
-      - CN_38_9@37
-      - CN_63_9@62
-      - CN_32_9@31
-      - CN_30_9@29
-      - CN_69_9@68
-      - CN_31_9@30
-      - CN_44_9@43
-      - US 12｜openit.ml
-      - _US_美国_0@36
-      - CN 15｜openit.ml
-      - github.com/freefq - 匈牙利  16
-      - CN 13｜openit.ml
-      - NL 10｜openit.ml
-      - default_name_0@34
+      - CN 3｜openit.ml
       - CN 20｜openit.ml
-      - CN 11｜openit.ml
-      - default_name_0@42
-      - default_name_0@41
-      - default_name_0@43
-      - default_name_0@35
-      - default_name_0@33
-      - default_name_0@37
-      - UA 4｜openit.ml
-      - default_name_0@38
-      - SG 12｜openit.ml
-      - default_name_0@40
+      - NONE
+      - NONE 2
+      - CN 21｜openit.ml
+      - US 20｜openit.ml
+      - NONE 3
+      - CN 6｜openit.ml
+      - NONE 4
+      - CN 4｜openit.ml
+      - CN 22｜openit.ml
+      - CN 7｜openit.ml
+      - CN 2｜openit.ml
+      - US 24｜openit.ml
+      - NONE 5
+      - CN 12｜openit.ml
+      - _CN_中国->🇹🇼_TW_台湾_1_0@0
+      - CN 10｜openit.ml
+      - TW 2｜openit.ml
+      - CN_21_12@20
+      - US 25｜openit.ml
+      - HK 4｜openit.ml
+      - US 29｜openit.ml
+      - CN 25｜openit.ml
+      - CN 26｜openit.ml
+      - CN 27｜openit.ml
+      - CN 1｜openit.ml
       - CN 17｜openit.ml
-      - default_name_0@44
-      - default_name_0@39
-      - _US_美国_0@50
-      - default_name_0@45
-      - SG 6｜openit.ml
-      - _AE_阿联酋_1_1@53
-      - _AE_阿联酋_3_1@57
-      - _AE_阿联酋_2_1@56
-      - default_name_2@16
-      - github.com/freefq - 美国CloudFlare公司CDN节点 40
-      - SG 7｜openit.ml
-      - US 5｜openit.ml
+      - HK 3｜openit.ml
+      - US 16｜openit.ml
+      - 213.183.53.177:9027
+      - CN 11｜openit.ml
+      - NONE 6
+      - 213.183.53.177:9041
+      - 134.195.196.231:7001
+      - US_100_12@99
+      - NONE 7
+      - 134.195.196.231:8882
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - _CN_中国->🇹🇼_TW_台湾_1_0@0
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - US 9｜openit.ml
-      - CN 37｜openit.ml
-      - CN 36｜openit.ml
-      - US 39｜openit.ml
-      - US 6｜openit.ml
-      - US 8｜openit.ml
-      - US 2｜openit.ml
-      - US 40｜openit.ml
-      - US 41｜openit.ml
-      - NL 14｜openit.ml
-      - github.com/freefq - 美国弗吉尼亚州阿什本Oracle云计算数据中心 29
-      - US 7｜openit.ml
-      - CN 19｜openit.ml
-      - NL 5｜openit.ml
-      - _US_美国_0@31
-      - US 1｜openit.ml
-      - CN 44｜openit.ml
-      - NL 11｜openit.ml
-      - NL 12｜openit.ml
-      - NL 8｜openit.ml
-      - DE 1｜openit.ml
-      - NL 9｜openit.ml
-      - CN 14｜openit.ml
-      - US 38｜openit.ml
-      - US 27｜openit.ml
-      - github.com/freefq - 广东省广州市移动 19
-      - CN 12｜openit.ml
-      - _US_美国_26_1@45
-      - CN_56_9@55
-      - CN_61_9@60
-      - CN_39_9@38
-      - CN_35_9@34
-      - CN_59_9@58
-      - CN_28_9@27
-      - CN_33_9@32
-      - CN_68_9@67
-      - CN_38_9@37
-      - CN_63_9@62
-      - CN_32_9@31
-      - CN_30_9@29
-      - CN_69_9@68
-      - CN_31_9@30
-      - CN_44_9@43
-      - US 12｜openit.ml
-      - _US_美国_0@36
-      - CN 15｜openit.ml
-      - github.com/freefq - 匈牙利  16
-      - CN 13｜openit.ml
-      - NL 10｜openit.ml
-      - default_name_0@34
+      - CN 3｜openit.ml
       - CN 20｜openit.ml
-      - CN 11｜openit.ml
-      - default_name_0@42
-      - default_name_0@41
-      - default_name_0@43
-      - default_name_0@35
-      - default_name_0@33
-      - default_name_0@37
-      - UA 4｜openit.ml
-      - default_name_0@38
-      - SG 12｜openit.ml
-      - default_name_0@40
+      - NONE
+      - NONE 2
+      - CN 21｜openit.ml
+      - US 20｜openit.ml
+      - NONE 3
+      - CN 6｜openit.ml
+      - NONE 4
+      - CN 4｜openit.ml
+      - CN 22｜openit.ml
+      - CN 7｜openit.ml
+      - CN 2｜openit.ml
+      - US 24｜openit.ml
+      - NONE 5
+      - CN 12｜openit.ml
+      - _CN_中国->🇹🇼_TW_台湾_1_0@0
+      - CN 10｜openit.ml
+      - TW 2｜openit.ml
+      - CN_21_12@20
+      - US 25｜openit.ml
+      - HK 4｜openit.ml
+      - US 29｜openit.ml
+      - CN 25｜openit.ml
+      - CN 26｜openit.ml
+      - CN 27｜openit.ml
+      - CN 1｜openit.ml
       - CN 17｜openit.ml
-      - default_name_0@44
-      - default_name_0@39
-      - _US_美国_0@50
-      - default_name_0@45
-      - SG 6｜openit.ml
-      - _AE_阿联酋_1_1@53
-      - _AE_阿联酋_3_1@57
-      - _AE_阿联酋_2_1@56
-      - default_name_2@16
-      - github.com/freefq - 美国CloudFlare公司CDN节点 40
-      - SG 7｜openit.ml
-      - US 5｜openit.ml
+      - HK 3｜openit.ml
+      - US 16｜openit.ml
+      - 213.183.53.177:9027
+      - CN 11｜openit.ml
+      - NONE 6
+      - 213.183.53.177:9041
+      - 134.195.196.231:7001
+      - US_100_12@99
+      - NONE 7
+      - 134.195.196.231:8882
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - US 9｜openit.ml
-      - CN 37｜openit.ml
-      - CN 36｜openit.ml
-      - US 39｜openit.ml
-      - US 6｜openit.ml
-      - US 8｜openit.ml
-      - US 2｜openit.ml
-      - US 40｜openit.ml
-      - US 41｜openit.ml
-      - NL 14｜openit.ml
-      - github.com/freefq - 美国弗吉尼亚州阿什本Oracle云计算数据中心 29
-      - US 7｜openit.ml
-      - CN 19｜openit.ml
-      - NL 5｜openit.ml
-      - _US_美国_0@31
-      - US 1｜openit.ml
-      - CN 44｜openit.ml
-      - NL 11｜openit.ml
-      - NL 12｜openit.ml
-      - NL 8｜openit.ml
-      - DE 1｜openit.ml
-      - NL 9｜openit.ml
-      - CN 14｜openit.ml
-      - US 38｜openit.ml
-      - US 27｜openit.ml
-      - github.com/freefq - 广东省广州市移动 19
-      - CN 12｜openit.ml
-      - _US_美国_26_1@45
-      - CN_56_9@55
-      - CN_61_9@60
-      - CN_39_9@38
-      - CN_35_9@34
-      - CN_59_9@58
-      - CN_28_9@27
-      - CN_33_9@32
-      - CN_68_9@67
-      - CN_38_9@37
-      - CN_63_9@62
-      - CN_32_9@31
-      - CN_30_9@29
-      - CN_69_9@68
-      - CN_31_9@30
-      - CN_44_9@43
-      - US 12｜openit.ml
-      - _US_美国_0@36
-      - CN 15｜openit.ml
-      - github.com/freefq - 匈牙利  16
-      - CN 13｜openit.ml
-      - NL 10｜openit.ml
-      - default_name_0@34
+      - CN 3｜openit.ml
       - CN 20｜openit.ml
-      - CN 11｜openit.ml
-      - default_name_0@42
-      - default_name_0@41
-      - default_name_0@43
-      - default_name_0@35
-      - default_name_0@33
-      - default_name_0@37
-      - UA 4｜openit.ml
-      - default_name_0@38
-      - SG 12｜openit.ml
-      - default_name_0@40
+      - NONE
+      - NONE 2
+      - CN 21｜openit.ml
+      - US 20｜openit.ml
+      - NONE 3
+      - CN 6｜openit.ml
+      - NONE 4
+      - CN 4｜openit.ml
+      - CN 22｜openit.ml
+      - CN 7｜openit.ml
+      - CN 2｜openit.ml
+      - US 24｜openit.ml
+      - NONE 5
+      - CN 12｜openit.ml
+      - _CN_中国->🇹🇼_TW_台湾_1_0@0
+      - CN 10｜openit.ml
+      - TW 2｜openit.ml
+      - CN_21_12@20
+      - US 25｜openit.ml
+      - HK 4｜openit.ml
+      - US 29｜openit.ml
+      - CN 25｜openit.ml
+      - CN 26｜openit.ml
+      - CN 27｜openit.ml
+      - CN 1｜openit.ml
       - CN 17｜openit.ml
-      - default_name_0@44
-      - default_name_0@39
-      - _US_美国_0@50
-      - default_name_0@45
-      - SG 6｜openit.ml
-      - _AE_阿联酋_1_1@53
-      - _AE_阿联酋_3_1@57
-      - _AE_阿联酋_2_1@56
-      - default_name_2@16
-      - github.com/freefq - 美国CloudFlare公司CDN节点 40
-      - SG 7｜openit.ml
-      - US 5｜openit.ml
+      - HK 3｜openit.ml
+      - US 16｜openit.ml
+      - 213.183.53.177:9027
+      - CN 11｜openit.ml
+      - NONE 6
+      - 213.183.53.177:9041
+      - 134.195.196.231:7001
+      - US_100_12@99
+      - NONE 7
+      - 134.195.196.231:8882
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - US 9｜openit.ml
-      - CN 37｜openit.ml
-      - CN 36｜openit.ml
-      - US 39｜openit.ml
-      - US 6｜openit.ml
-      - US 8｜openit.ml
-      - US 2｜openit.ml
-      - US 40｜openit.ml
-      - US 41｜openit.ml
-      - NL 14｜openit.ml
-      - github.com/freefq - 美国弗吉尼亚州阿什本Oracle云计算数据中心 29
-      - US 7｜openit.ml
-      - CN 19｜openit.ml
-      - NL 5｜openit.ml
-      - _US_美国_0@31
-      - US 1｜openit.ml
-      - CN 44｜openit.ml
-      - NL 11｜openit.ml
-      - NL 12｜openit.ml
-      - NL 8｜openit.ml
-      - DE 1｜openit.ml
-      - NL 9｜openit.ml
-      - CN 14｜openit.ml
-      - US 38｜openit.ml
-      - US 27｜openit.ml
-      - github.com/freefq - 广东省广州市移动 19
-      - CN 12｜openit.ml
-      - _US_美国_26_1@45
-      - CN_56_9@55
-      - CN_61_9@60
-      - CN_39_9@38
-      - CN_35_9@34
-      - CN_59_9@58
-      - CN_28_9@27
-      - CN_33_9@32
-      - CN_68_9@67
-      - CN_38_9@37
-      - CN_63_9@62
-      - CN_32_9@31
-      - CN_30_9@29
-      - CN_69_9@68
-      - CN_31_9@30
-      - CN_44_9@43
-      - US 12｜openit.ml
-      - _US_美国_0@36
-      - CN 15｜openit.ml
-      - github.com/freefq - 匈牙利  16
-      - CN 13｜openit.ml
-      - NL 10｜openit.ml
-      - default_name_0@34
+      - CN 3｜openit.ml
       - CN 20｜openit.ml
-      - CN 11｜openit.ml
-      - default_name_0@42
-      - default_name_0@41
-      - default_name_0@43
-      - default_name_0@35
-      - default_name_0@33
-      - default_name_0@37
-      - UA 4｜openit.ml
-      - default_name_0@38
-      - SG 12｜openit.ml
-      - default_name_0@40
+      - NONE
+      - NONE 2
+      - CN 21｜openit.ml
+      - US 20｜openit.ml
+      - NONE 3
+      - CN 6｜openit.ml
+      - NONE 4
+      - CN 4｜openit.ml
+      - CN 22｜openit.ml
+      - CN 7｜openit.ml
+      - CN 2｜openit.ml
+      - US 24｜openit.ml
+      - NONE 5
+      - CN 12｜openit.ml
+      - _CN_中国->🇹🇼_TW_台湾_1_0@0
+      - CN 10｜openit.ml
+      - TW 2｜openit.ml
+      - CN_21_12@20
+      - US 25｜openit.ml
+      - HK 4｜openit.ml
+      - US 29｜openit.ml
+      - CN 25｜openit.ml
+      - CN 26｜openit.ml
+      - CN 27｜openit.ml
+      - CN 1｜openit.ml
       - CN 17｜openit.ml
-      - default_name_0@44
-      - default_name_0@39
-      - _US_美国_0@50
-      - default_name_0@45
-      - SG 6｜openit.ml
-      - _AE_阿联酋_1_1@53
-      - _AE_阿联酋_3_1@57
-      - _AE_阿联酋_2_1@56
-      - default_name_2@16
-      - github.com/freefq - 美国CloudFlare公司CDN节点 40
-      - SG 7｜openit.ml
-      - US 5｜openit.ml
+      - HK 3｜openit.ml
+      - US 16｜openit.ml
+      - 213.183.53.177:9027
+      - CN 11｜openit.ml
+      - NONE 6
+      - 213.183.53.177:9041
+      - 134.195.196.231:7001
+      - US_100_12@99
+      - NONE 7
+      - 134.195.196.231:8882
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -676,81 +381,44 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - US 9｜openit.ml
-      - CN 37｜openit.ml
-      - CN 36｜openit.ml
-      - US 39｜openit.ml
-      - US 6｜openit.ml
-      - US 8｜openit.ml
-      - US 2｜openit.ml
-      - US 40｜openit.ml
-      - US 41｜openit.ml
-      - NL 14｜openit.ml
-      - github.com/freefq - 美国弗吉尼亚州阿什本Oracle云计算数据中心 29
-      - US 7｜openit.ml
-      - CN 19｜openit.ml
-      - NL 5｜openit.ml
-      - _US_美国_0@31
-      - US 1｜openit.ml
-      - CN 44｜openit.ml
-      - NL 11｜openit.ml
-      - NL 12｜openit.ml
-      - NL 8｜openit.ml
-      - DE 1｜openit.ml
-      - NL 9｜openit.ml
-      - CN 14｜openit.ml
-      - US 38｜openit.ml
-      - US 27｜openit.ml
-      - github.com/freefq - 广东省广州市移动 19
-      - CN 12｜openit.ml
-      - _US_美国_26_1@45
-      - CN_56_9@55
-      - CN_61_9@60
-      - CN_39_9@38
-      - CN_35_9@34
-      - CN_59_9@58
-      - CN_28_9@27
-      - CN_33_9@32
-      - CN_68_9@67
-      - CN_38_9@37
-      - CN_63_9@62
-      - CN_32_9@31
-      - CN_30_9@29
-      - CN_69_9@68
-      - CN_31_9@30
-      - CN_44_9@43
-      - US 12｜openit.ml
-      - _US_美国_0@36
-      - CN 15｜openit.ml
-      - github.com/freefq - 匈牙利  16
-      - CN 13｜openit.ml
-      - NL 10｜openit.ml
-      - default_name_0@34
+      - CN 3｜openit.ml
       - CN 20｜openit.ml
-      - CN 11｜openit.ml
-      - default_name_0@42
-      - default_name_0@41
-      - default_name_0@43
-      - default_name_0@35
-      - default_name_0@33
-      - default_name_0@37
-      - UA 4｜openit.ml
-      - default_name_0@38
-      - SG 12｜openit.ml
-      - default_name_0@40
+      - NONE
+      - NONE 2
+      - CN 21｜openit.ml
+      - US 20｜openit.ml
+      - NONE 3
+      - CN 6｜openit.ml
+      - NONE 4
+      - CN 4｜openit.ml
+      - CN 22｜openit.ml
+      - CN 7｜openit.ml
+      - CN 2｜openit.ml
+      - US 24｜openit.ml
+      - NONE 5
+      - CN 12｜openit.ml
+      - _CN_中国->🇹🇼_TW_台湾_1_0@0
+      - CN 10｜openit.ml
+      - TW 2｜openit.ml
+      - CN_21_12@20
+      - US 25｜openit.ml
+      - HK 4｜openit.ml
+      - US 29｜openit.ml
+      - CN 25｜openit.ml
+      - CN 26｜openit.ml
+      - CN 27｜openit.ml
+      - CN 1｜openit.ml
       - CN 17｜openit.ml
-      - default_name_0@44
-      - default_name_0@39
-      - _US_美国_0@50
-      - default_name_0@45
-      - SG 6｜openit.ml
-      - _AE_阿联酋_1_1@53
-      - _AE_阿联酋_3_1@57
-      - _AE_阿联酋_2_1@56
-      - default_name_2@16
-      - github.com/freefq - 美国CloudFlare公司CDN节点 40
-      - SG 7｜openit.ml
-      - US 5｜openit.ml
+      - HK 3｜openit.ml
+      - US 16｜openit.ml
+      - 213.183.53.177:9027
+      - CN 11｜openit.ml
+      - NONE 6
+      - 213.183.53.177:9041
+      - 134.195.196.231:7001
+      - US_100_12@99
+      - NONE 7
+      - 134.195.196.231:8882
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
