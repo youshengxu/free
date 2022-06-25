@@ -5,79 +5,163 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: US, server: s1.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s1.hazz.win, skip-cert-verify: true, udp: true}
-  - {name: CN 4｜openit.ml, server: cm.spacez.cloud, port: 30002, type: trojan, password: c9a3a61d-5d49-4158-9e60-6fa32684b122, sni: cm.spacez.cloud, skip-cert-verify: true, udp: true}
-  - {name: CN_29_1@28, server: cm.spacez.cloud, port: 30003, type: trojan, password: c9a3a61d-5d49-4158-9e60-6fa32684b122, sni: cm.spacez.cloud, skip-cert-verify: true, udp: true}
-  - {name: US 2, server: 97.64.28.52, port: 254, type: ss, cipher: aes-256-cfb, password: bwhskrskr03, udp: true}
-  - {name: US 3, server: s3.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s3.hazz.win, skip-cert-verify: true, udp: true}
-  - {name: Relay_-🇺🇸US_866, server: c8s2.jamjams.net, port: 30162, type: ss, cipher: aes-256-gcm, password: eWh5br48eraTyoJS, udp: true}
-  - {name: US 26｜openit.ml, server: gb.v2yyds.com, port: 32913, type: trojan, password: 90a0dcfe-f7bc-49ba-a72d-762959a03c9f, sni: gb.v2yyds.com, skip-cert-verify: true, udp: true}
-  - {name: US 25｜openit.ml, server: gb.v2yyds.com, port: 32912, type: trojan, password: 90a0dcfe-f7bc-49ba-a72d-762959a03c9f, sni: gb.v2yyds.com, skip-cert-verify: true, udp: true}
-  - {name: US 27｜openit.ml, server: gb.v2yyds.com, port: 32911, type: trojan, password: 90a0dcfe-f7bc-49ba-a72d-762959a03c9f, sni: gb.v2yyds.com, skip-cert-verify: true, udp: true}
-  - {name: unknown 3｜openit.ml, server: sg.v2yyds.cc, port: 35212, type: trojan, password: 90a0dcfe-f7bc-49ba-a72d-762959a03c9f, sni: sg.v2yyds.cc, skip-cert-verify: true, udp: true}
-  - {name: AU 6｜openit.ml, server: jgwdb1.gaox.ml, port: 443, type: trojan, password: a580d839-ee41-4df1-bf03-6789dca32e30, sni: jgwdb1.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: CN, server: 2.game.speed.zz.001.oooooooooo.icu, port: 53945, type: vmess, uuid: 0f62bb1b-dd16-3bb2-a435-c13e068b0955, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: IR 1｜openit.ml, server: de.v2yyds.com, port: 32911, type: trojan, password: 90a0dcfe-f7bc-49ba-a72d-762959a03c9f, sni: de.v2yyds.com, skip-cert-verify: true, udp: true}
-  - {name: unknown 2｜openit.ml, server: sg.v2yyds.cc, port: 35213, type: trojan, password: 90a0dcfe-f7bc-49ba-a72d-762959a03c9f, sni: sg.v2yyds.cc, skip-cert-verify: true, udp: true}
+  - {name: CN 68｜openit.ml, server: 120.240.50.248, port: 4601, type: ss, cipher: rc4-md5, password: RenzheCloudSS, plugin: obfs, plugin-opts: {mode: http, host: 23923152006.microsoft.com}, udp: true}
+  - {name: CN 36｜openit.ml, server: 120.240.50.223, port: 3605, type: ss, cipher: rc4-md5, password: RenzheCloudSS, plugin: obfs, plugin-opts: {mode: http, host: 23923152006.microsoft.com}, udp: true}
+  - {name: CN 53｜openit.ml, server: 120.240.50.248, port: 4602, type: ss, cipher: rc4-md5, password: RenzheCloudSS, plugin: obfs, plugin-opts: {mode: http, host: 23923152006.microsoft.com}, udp: true}
+  - {name: CN 26｜openit.ml, server: bs1-1.getnjnd.com, port: 3503, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 152006:OeRRkC, obfs-param: 23923152006.microsoft.com, udp: true}
+  - {name: bs2-2.getnjnd.com:4503, server: bs2-2.getnjnd.com, port: 4503, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 152006:OeRRkC, obfs-param: TWpNNU1qTXhOVEl3TURZdWJXbGpjbTl6YjJaMExtTnZiUQ, udp: true}
+  - {name: CN 58｜openit.ml, server: 120.240.50.248, port: 4603, type: ss, cipher: rc4-md5, password: RenzheCloudSS, plugin: obfs, plugin-opts: {mode: http, host: 23923152006.microsoft.com}, udp: true}
+  - {name: bs2-2.getnjnd.com:3045, server: bs2-2.getnjnd.com, port: 3045, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 152006:OeRRkC, obfs-param: MjM5MjMxNTIwMDYubWljcm9zb2Z0LmNvbQ, udp: true}
+  - {name: CN 69｜openit.ml, server: 120.240.50.227, port: 3607, type: ss, cipher: rc4-md5, password: RenzheCloudSS, plugin: obfs, plugin-opts: {mode: http, host: 23923152006.microsoft.com}, udp: true}
+  - {name: CN 2｜openit.ml, server: bs2-1.getnjnd.com, port: 3508, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 152006:OeRRkC, obfs-param: MjM5MjMxNTIwMDYubWljcm9zb2Z0LmNvbQ, udp: true}
+  - {name: CN 35｜openit.ml, server: 120.240.50.223, port: 3601, type: ss, cipher: rc4-md5, password: RenzheCloudSS, plugin: obfs, plugin-opts: {mode: http, host: 23923152006.microsoft.com}, udp: true}
+  - {name: CN 70｜openit.ml, server: 120.240.50.248, port: 3036, type: ss, cipher: rc4-md5, password: RenzheCloudSS, plugin: obfs, plugin-opts: {mode: http, host: 23923152006.microsoft.com}, udp: true}
+  - {name: bs1-1.getnjnd.com:3508, server: bs1-1.getnjnd.com, port: 3508, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 152006:OeRRkC, obfs-param: MjM5MjMxNTIwMDYubWljcm9zb2Z0LmNvbQ, udp: true}
+  - {name: CN 66｜openit.ml, server: 120.240.50.227, port: 3605, type: ss, cipher: rc4-md5, password: RenzheCloudSS, plugin: obfs, plugin-opts: {mode: http, host: 23923152006.microsoft.com}, udp: true}
+  - {name: CN 59｜openit.ml, server: 120.240.50.227, port: 3604, type: ss, cipher: rc4-md5, password: RenzheCloudSS, plugin: obfs, plugin-opts: {mode: http, host: 23923152006.microsoft.com}, udp: true}
+  - {name: bs1-1.getnjnd.com:3507, server: bs1-1.getnjnd.com, port: 3507, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 152006:OeRRkC, obfs-param: MjM5MjMxNTIwMDYubWljcm9zb2Z0LmNvbQ, udp: true}
+  - {name: bs1-1.getnjnd.com:3502, server: bs1-1.getnjnd.com, port: 3502, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 152006:OeRRkC, obfs-param: MjM5MjMxNTIwMDYubWljcm9zb2Z0LmNvbQ, udp: true}
+  - {name: bs2-2.getnjnd.com:6501, server: bs2-2.getnjnd.com, port: 6501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 152006:OeRRkC, obfs-param: MjM5MjMxNTIwMDYubWljcm9zb2Z0LmNvbQ, udp: true}
+  - {name: CN 79｜openit.ml, server: bs2-2.getnjnd.com, port: 3035, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 152006:OeRRkC, obfs-param: MjM5MjMxNTIwMDYubWljcm9zb2Z0LmNvbQ, udp: true}
+  - {name: CN 73｜openit.ml, server: 120.240.50.223, port: 3600, type: ss, cipher: rc4-md5, password: RenzheCloudSS, plugin: obfs, plugin-opts: {mode: http, host: 23923152006.microsoft.com}, udp: true}
+  - {name: bs2-2.getnjnd.com:5501, server: bs2-2.getnjnd.com, port: 5501, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 152006:OeRRkC, obfs-param: MjM5MjMxNTIwMDYubWljcm9zb2Z0LmNvbQ, udp: true}
+  - {name: CN 48｜openit.ml, server: 120.240.50.223, port: 3602, type: ss, cipher: rc4-md5, password: RenzheCloudSS, plugin: obfs, plugin-opts: {mode: http, host: 23923152006.microsoft.com}, udp: true}
+  - {name: CN 63｜openit.ml, server: bs2-2.getnjnd.com, port: 4502, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 152006:OeRRkC, obfs-param: MjM5MjMxNTIwMDYubWljcm9zb2Z0LmNvbQ, udp: true}
+  - {name: bs2-2.getnjnd.com:5502, server: bs2-2.getnjnd.com, port: 5502, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 152006:OeRRkC, obfs-param: MjM5MjMxNTIwMDYubWljcm9zb2Z0LmNvbQ, udp: true}
+  - {name: CN 33｜openit.ml, server: bs2-2.getnjnd.com, port: 5503, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 152006:OeRRkC, obfs-param: 23923152006.microsoft.com, udp: true}
+  - {name: CN 65｜openit.ml, server: 120.240.50.227, port: 3609, type: ss, cipher: rc4-md5, password: RenzheCloudSS, plugin: obfs, plugin-opts: {mode: http, host: 23923152006.microsoft.com}, udp: true}
+  - {name: CN 49｜openit.ml, server: 120.240.50.248, port: 6603, type: ss, cipher: rc4-md5, password: RenzheCloudSS, plugin: obfs, plugin-opts: {mode: http, host: 23923152006.microsoft.com}, udp: true}
+  - {name: CN 8｜openit.ml, server: bs2-2.getnjnd.com, port: 6503, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 152006:OeRRkC, obfs-param: MjM5MjMxNTIwMDYubWljcm9zb2Z0LmNvbQ, udp: true}
+  - {name: bs2-2.getnjnd.com:6500, server: bs2-2.getnjnd.com, port: 6500, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 152006:OeRRkC, obfs-param: MjM5MjMxNTIwMDYubWljcm9zb2Z0LmNvbQ, udp: true}
+  - {name: CN 60｜openit.ml, server: 120.240.50.248, port: 6600, type: ss, cipher: rc4-md5, password: RenzheCloudSS, plugin: obfs, plugin-opts: {mode: http, host: 23923152006.microsoft.com}, udp: true}
+  - {name: CN 54｜openit.ml, server: 120.240.50.248, port: 6602, type: ss, cipher: rc4-md5, password: RenzheCloudSS, plugin: obfs, plugin-opts: {mode: http, host: 23923152006.microsoft.com}, udp: true}
+  - {name: bs1-1.getnjnd.com:3506, server: bs1-1.getnjnd.com, port: 3506, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 152006:OeRRkC, obfs-param: MjM5MjMxNTIwMDYubWljcm9zb2Z0LmNvbQ, udp: true}
+  - {name: bs1-1.getnjnd.com:3509, server: bs1-1.getnjnd.com, port: 3509, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 152006:OeRRkC, obfs-param: MjM5MjMxNTIwMDYubWljcm9zb2Z0LmNvbQ, udp: true}
+  - {name: CN_26_4@25, server: cm.spacez.cloud, port: 30002, type: trojan, password: c9a3a61d-5d49-4158-9e60-6fa32684b122, sni: cm.spacez.cloud, skip-cert-verify: true, udp: true}
+  - {name: CN 52｜openit.ml, server: 120.240.50.248, port: 3026, type: ss, cipher: rc4-md5, password: RenzheCloudSS, plugin: obfs, plugin-opts: {mode: http, host: 23923152006.microsoft.com}, udp: true}
+  - {name: CN_27_4@26, server: cm.spacez.cloud, port: 30003, type: trojan, password: c9a3a61d-5d49-4158-9e60-6fa32684b122, sni: cm.spacez.cloud, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - US
-      - CN 4｜openit.ml
-      - CN_29_1@28
-      - US 2
-      - US 3
-      - Relay_-🇺🇸US_866
-      - US 26｜openit.ml
-      - US 25｜openit.ml
-      - US 27｜openit.ml
-      - unknown 3｜openit.ml
-      - AU 6｜openit.ml
-      - CN
-      - IR 1｜openit.ml
-      - unknown 2｜openit.ml
+      - CN 68｜openit.ml
+      - CN 36｜openit.ml
+      - CN 53｜openit.ml
+      - CN 26｜openit.ml
+      - bs2-2.getnjnd.com:4503
+      - CN 58｜openit.ml
+      - bs2-2.getnjnd.com:3045
+      - CN 69｜openit.ml
+      - CN 2｜openit.ml
+      - CN 35｜openit.ml
+      - CN 70｜openit.ml
+      - bs1-1.getnjnd.com:3508
+      - CN 66｜openit.ml
+      - CN 59｜openit.ml
+      - bs1-1.getnjnd.com:3507
+      - bs1-1.getnjnd.com:3502
+      - bs2-2.getnjnd.com:6501
+      - CN 79｜openit.ml
+      - CN 73｜openit.ml
+      - bs2-2.getnjnd.com:5501
+      - CN 48｜openit.ml
+      - CN 63｜openit.ml
+      - bs2-2.getnjnd.com:5502
+      - CN 33｜openit.ml
+      - CN 65｜openit.ml
+      - CN 49｜openit.ml
+      - CN 8｜openit.ml
+      - bs2-2.getnjnd.com:6500
+      - CN 60｜openit.ml
+      - CN 54｜openit.ml
+      - bs1-1.getnjnd.com:3506
+      - bs1-1.getnjnd.com:3509
+      - CN_26_4@25
+      - CN 52｜openit.ml
+      - CN_27_4@26
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - US
-      - CN 4｜openit.ml
-      - CN_29_1@28
-      - US 2
-      - US 3
-      - Relay_-🇺🇸US_866
-      - US 26｜openit.ml
-      - US 25｜openit.ml
-      - US 27｜openit.ml
-      - unknown 3｜openit.ml
-      - AU 6｜openit.ml
-      - CN
-      - IR 1｜openit.ml
-      - unknown 2｜openit.ml
+      - CN 68｜openit.ml
+      - CN 36｜openit.ml
+      - CN 53｜openit.ml
+      - CN 26｜openit.ml
+      - bs2-2.getnjnd.com:4503
+      - CN 58｜openit.ml
+      - bs2-2.getnjnd.com:3045
+      - CN 69｜openit.ml
+      - CN 2｜openit.ml
+      - CN 35｜openit.ml
+      - CN 70｜openit.ml
+      - bs1-1.getnjnd.com:3508
+      - CN 66｜openit.ml
+      - CN 59｜openit.ml
+      - bs1-1.getnjnd.com:3507
+      - bs1-1.getnjnd.com:3502
+      - bs2-2.getnjnd.com:6501
+      - CN 79｜openit.ml
+      - CN 73｜openit.ml
+      - bs2-2.getnjnd.com:5501
+      - CN 48｜openit.ml
+      - CN 63｜openit.ml
+      - bs2-2.getnjnd.com:5502
+      - CN 33｜openit.ml
+      - CN 65｜openit.ml
+      - CN 49｜openit.ml
+      - CN 8｜openit.ml
+      - bs2-2.getnjnd.com:6500
+      - CN 60｜openit.ml
+      - CN 54｜openit.ml
+      - bs1-1.getnjnd.com:3506
+      - bs1-1.getnjnd.com:3509
+      - CN_26_4@25
+      - CN 52｜openit.ml
+      - CN_27_4@26
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - US
-      - CN 4｜openit.ml
-      - CN_29_1@28
-      - US 2
-      - US 3
-      - Relay_-🇺🇸US_866
-      - US 26｜openit.ml
-      - US 25｜openit.ml
-      - US 27｜openit.ml
-      - unknown 3｜openit.ml
-      - AU 6｜openit.ml
-      - CN
-      - IR 1｜openit.ml
-      - unknown 2｜openit.ml
+      - CN 68｜openit.ml
+      - CN 36｜openit.ml
+      - CN 53｜openit.ml
+      - CN 26｜openit.ml
+      - bs2-2.getnjnd.com:4503
+      - CN 58｜openit.ml
+      - bs2-2.getnjnd.com:3045
+      - CN 69｜openit.ml
+      - CN 2｜openit.ml
+      - CN 35｜openit.ml
+      - CN 70｜openit.ml
+      - bs1-1.getnjnd.com:3508
+      - CN 66｜openit.ml
+      - CN 59｜openit.ml
+      - bs1-1.getnjnd.com:3507
+      - bs1-1.getnjnd.com:3502
+      - bs2-2.getnjnd.com:6501
+      - CN 79｜openit.ml
+      - CN 73｜openit.ml
+      - bs2-2.getnjnd.com:5501
+      - CN 48｜openit.ml
+      - CN 63｜openit.ml
+      - bs2-2.getnjnd.com:5502
+      - CN 33｜openit.ml
+      - CN 65｜openit.ml
+      - CN 49｜openit.ml
+      - CN 8｜openit.ml
+      - bs2-2.getnjnd.com:6500
+      - CN 60｜openit.ml
+      - CN 54｜openit.ml
+      - bs1-1.getnjnd.com:3506
+      - bs1-1.getnjnd.com:3509
+      - CN_26_4@25
+      - CN 52｜openit.ml
+      - CN_27_4@26
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -96,20 +180,41 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - US
-      - CN 4｜openit.ml
-      - CN_29_1@28
-      - US 2
-      - US 3
-      - Relay_-🇺🇸US_866
-      - US 26｜openit.ml
-      - US 25｜openit.ml
-      - US 27｜openit.ml
-      - unknown 3｜openit.ml
-      - AU 6｜openit.ml
-      - CN
-      - IR 1｜openit.ml
-      - unknown 2｜openit.ml
+      - CN 68｜openit.ml
+      - CN 36｜openit.ml
+      - CN 53｜openit.ml
+      - CN 26｜openit.ml
+      - bs2-2.getnjnd.com:4503
+      - CN 58｜openit.ml
+      - bs2-2.getnjnd.com:3045
+      - CN 69｜openit.ml
+      - CN 2｜openit.ml
+      - CN 35｜openit.ml
+      - CN 70｜openit.ml
+      - bs1-1.getnjnd.com:3508
+      - CN 66｜openit.ml
+      - CN 59｜openit.ml
+      - bs1-1.getnjnd.com:3507
+      - bs1-1.getnjnd.com:3502
+      - bs2-2.getnjnd.com:6501
+      - CN 79｜openit.ml
+      - CN 73｜openit.ml
+      - bs2-2.getnjnd.com:5501
+      - CN 48｜openit.ml
+      - CN 63｜openit.ml
+      - bs2-2.getnjnd.com:5502
+      - CN 33｜openit.ml
+      - CN 65｜openit.ml
+      - CN 49｜openit.ml
+      - CN 8｜openit.ml
+      - bs2-2.getnjnd.com:6500
+      - CN 60｜openit.ml
+      - CN 54｜openit.ml
+      - bs1-1.getnjnd.com:3506
+      - bs1-1.getnjnd.com:3509
+      - CN_26_4@25
+      - CN 52｜openit.ml
+      - CN_27_4@26
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -120,59 +225,122 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - US
-      - CN 4｜openit.ml
-      - CN_29_1@28
-      - US 2
-      - US 3
-      - Relay_-🇺🇸US_866
-      - US 26｜openit.ml
-      - US 25｜openit.ml
-      - US 27｜openit.ml
-      - unknown 3｜openit.ml
-      - AU 6｜openit.ml
-      - CN
-      - IR 1｜openit.ml
-      - unknown 2｜openit.ml
+      - CN 68｜openit.ml
+      - CN 36｜openit.ml
+      - CN 53｜openit.ml
+      - CN 26｜openit.ml
+      - bs2-2.getnjnd.com:4503
+      - CN 58｜openit.ml
+      - bs2-2.getnjnd.com:3045
+      - CN 69｜openit.ml
+      - CN 2｜openit.ml
+      - CN 35｜openit.ml
+      - CN 70｜openit.ml
+      - bs1-1.getnjnd.com:3508
+      - CN 66｜openit.ml
+      - CN 59｜openit.ml
+      - bs1-1.getnjnd.com:3507
+      - bs1-1.getnjnd.com:3502
+      - bs2-2.getnjnd.com:6501
+      - CN 79｜openit.ml
+      - CN 73｜openit.ml
+      - bs2-2.getnjnd.com:5501
+      - CN 48｜openit.ml
+      - CN 63｜openit.ml
+      - bs2-2.getnjnd.com:5502
+      - CN 33｜openit.ml
+      - CN 65｜openit.ml
+      - CN 49｜openit.ml
+      - CN 8｜openit.ml
+      - bs2-2.getnjnd.com:6500
+      - CN 60｜openit.ml
+      - CN 54｜openit.ml
+      - bs1-1.getnjnd.com:3506
+      - bs1-1.getnjnd.com:3509
+      - CN_26_4@25
+      - CN 52｜openit.ml
+      - CN_27_4@26
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - US
-      - CN 4｜openit.ml
-      - CN_29_1@28
-      - US 2
-      - US 3
-      - Relay_-🇺🇸US_866
-      - US 26｜openit.ml
-      - US 25｜openit.ml
-      - US 27｜openit.ml
-      - unknown 3｜openit.ml
-      - AU 6｜openit.ml
-      - CN
-      - IR 1｜openit.ml
-      - unknown 2｜openit.ml
+      - CN 68｜openit.ml
+      - CN 36｜openit.ml
+      - CN 53｜openit.ml
+      - CN 26｜openit.ml
+      - bs2-2.getnjnd.com:4503
+      - CN 58｜openit.ml
+      - bs2-2.getnjnd.com:3045
+      - CN 69｜openit.ml
+      - CN 2｜openit.ml
+      - CN 35｜openit.ml
+      - CN 70｜openit.ml
+      - bs1-1.getnjnd.com:3508
+      - CN 66｜openit.ml
+      - CN 59｜openit.ml
+      - bs1-1.getnjnd.com:3507
+      - bs1-1.getnjnd.com:3502
+      - bs2-2.getnjnd.com:6501
+      - CN 79｜openit.ml
+      - CN 73｜openit.ml
+      - bs2-2.getnjnd.com:5501
+      - CN 48｜openit.ml
+      - CN 63｜openit.ml
+      - bs2-2.getnjnd.com:5502
+      - CN 33｜openit.ml
+      - CN 65｜openit.ml
+      - CN 49｜openit.ml
+      - CN 8｜openit.ml
+      - bs2-2.getnjnd.com:6500
+      - CN 60｜openit.ml
+      - CN 54｜openit.ml
+      - bs1-1.getnjnd.com:3506
+      - bs1-1.getnjnd.com:3509
+      - CN_26_4@25
+      - CN 52｜openit.ml
+      - CN_27_4@26
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - US
-      - CN 4｜openit.ml
-      - CN_29_1@28
-      - US 2
-      - US 3
-      - Relay_-🇺🇸US_866
-      - US 26｜openit.ml
-      - US 25｜openit.ml
-      - US 27｜openit.ml
-      - unknown 3｜openit.ml
-      - AU 6｜openit.ml
-      - CN
-      - IR 1｜openit.ml
-      - unknown 2｜openit.ml
+      - CN 68｜openit.ml
+      - CN 36｜openit.ml
+      - CN 53｜openit.ml
+      - CN 26｜openit.ml
+      - bs2-2.getnjnd.com:4503
+      - CN 58｜openit.ml
+      - bs2-2.getnjnd.com:3045
+      - CN 69｜openit.ml
+      - CN 2｜openit.ml
+      - CN 35｜openit.ml
+      - CN 70｜openit.ml
+      - bs1-1.getnjnd.com:3508
+      - CN 66｜openit.ml
+      - CN 59｜openit.ml
+      - bs1-1.getnjnd.com:3507
+      - bs1-1.getnjnd.com:3502
+      - bs2-2.getnjnd.com:6501
+      - CN 79｜openit.ml
+      - CN 73｜openit.ml
+      - bs2-2.getnjnd.com:5501
+      - CN 48｜openit.ml
+      - CN 63｜openit.ml
+      - bs2-2.getnjnd.com:5502
+      - CN 33｜openit.ml
+      - CN 65｜openit.ml
+      - CN 49｜openit.ml
+      - CN 8｜openit.ml
+      - bs2-2.getnjnd.com:6500
+      - CN 60｜openit.ml
+      - CN 54｜openit.ml
+      - bs1-1.getnjnd.com:3506
+      - bs1-1.getnjnd.com:3509
+      - CN_26_4@25
+      - CN 52｜openit.ml
+      - CN_27_4@26
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -188,20 +356,41 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - US
-      - CN 4｜openit.ml
-      - CN_29_1@28
-      - US 2
-      - US 3
-      - Relay_-🇺🇸US_866
-      - US 26｜openit.ml
-      - US 25｜openit.ml
-      - US 27｜openit.ml
-      - unknown 3｜openit.ml
-      - AU 6｜openit.ml
-      - CN
-      - IR 1｜openit.ml
-      - unknown 2｜openit.ml
+      - CN 68｜openit.ml
+      - CN 36｜openit.ml
+      - CN 53｜openit.ml
+      - CN 26｜openit.ml
+      - bs2-2.getnjnd.com:4503
+      - CN 58｜openit.ml
+      - bs2-2.getnjnd.com:3045
+      - CN 69｜openit.ml
+      - CN 2｜openit.ml
+      - CN 35｜openit.ml
+      - CN 70｜openit.ml
+      - bs1-1.getnjnd.com:3508
+      - CN 66｜openit.ml
+      - CN 59｜openit.ml
+      - bs1-1.getnjnd.com:3507
+      - bs1-1.getnjnd.com:3502
+      - bs2-2.getnjnd.com:6501
+      - CN 79｜openit.ml
+      - CN 73｜openit.ml
+      - bs2-2.getnjnd.com:5501
+      - CN 48｜openit.ml
+      - CN 63｜openit.ml
+      - bs2-2.getnjnd.com:5502
+      - CN 33｜openit.ml
+      - CN 65｜openit.ml
+      - CN 49｜openit.ml
+      - CN 8｜openit.ml
+      - bs2-2.getnjnd.com:6500
+      - CN 60｜openit.ml
+      - CN 54｜openit.ml
+      - bs1-1.getnjnd.com:3506
+      - bs1-1.getnjnd.com:3509
+      - CN_26_4@25
+      - CN 52｜openit.ml
+      - CN_27_4@26
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
