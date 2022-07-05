@@ -5,567 +5,203 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 213.183.59.229:9042, server: 213.183.59.229, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga, udp: true}
-  - {name: 161.8.184.62:29622, server: 161.8.184.62, port: 29622, type: ss, cipher: aes-256-gcm, password: !<str> 89930128, udp: true}
-  - {name: 213.183.53.177:9010, server: 213.183.53.177, port: 9010, type: ss, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4, udp: true}
-  - {name: 213.183.53.200:9014, server: 213.183.53.200, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX, udp: true}
-  - {name: 213.183.59.206:9024, server: 213.183.59.206, port: 9024, type: ss, cipher: aes-256-cfb, password: BejrQvtu9sqUeNuZ, udp: true}
-  - {name: 213.183.53.177:9060, server: 213.183.53.177, port: 9060, type: ss, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ, udp: true}
-  - {name: 213.183.53.200:9020, server: 213.183.53.200, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
-  - {name: 213.183.53.177:9033, server: 213.183.53.177, port: 9033, type: ss, cipher: aes-256-cfb, password: UTJA57ypk2XKQpnm, udp: true}
-  - {name: 213.183.53.177:9000, server: 213.183.53.177, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
-  - {name: 213.183.53.200:9018, server: 213.183.53.200, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
-  - {name: 213.183.53.208:9008, server: 213.183.53.208, port: 9008, type: ss, cipher: aes-256-cfb, password: y9VURyNzJWNRYEGQ, udp: true}
-  - {name: 213.183.53.200:9041, server: 213.183.53.200, port: 9041, type: ss, cipher: aes-256-cfb, password: U6qnYRhfyDmn8sgn, udp: true}
-  - {name: 213.183.53.200:9026, server: 213.183.53.200, port: 9026, type: ss, cipher: aes-256-cfb, password: QWDDvVE9npNurQfA, udp: true}
-  - {name: 213.183.53.200:9027, server: 213.183.53.200, port: 9027, type: ss, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8, udp: true}
-  - {name: 213.183.53.200:9024, server: 213.183.53.200, port: 9024, type: ss, cipher: aes-256-cfb, password: BejrQvtu9sqUeNuZ, udp: true}
-  - {name: 213.183.53.200:9037, server: 213.183.53.200, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU, udp: true}
-  - {name: 213.183.59.229:9019, server: 213.183.59.229, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
-  - {name: 213.183.59.229:9053, server: 213.183.59.229, port: 9053, type: ss, cipher: aes-256-cfb, password: SBM7R883jBmnqe6C, udp: true}
-  - {name: 213.183.53.177:9003, server: 213.183.53.177, port: 9003, type: ss, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP, udp: true}
-  - {name: 213.183.53.177:9018, server: 213.183.53.177, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
-  - {name: 213.183.53.177:9093, server: 213.183.53.177, port: 9093, type: ss, cipher: aes-256-cfb, password: wfLC2y7rzZyCmuyt, udp: true}
-  - {name: 213.183.53.200:9046, server: 213.183.53.200, port: 9046, type: ss, cipher: aes-256-cfb, password: NvS8N4Vf8qAGPSCL, udp: true}
-  - {name: 213.183.53.177:9008, server: 213.183.53.177, port: 9008, type: ss, cipher: aes-256-cfb, password: y9VURyNzJWNRYEGQ, udp: true}
-  - {name: 213.183.53.177:9041, server: 213.183.53.177, port: 9041, type: ss, cipher: aes-256-cfb, password: U6qnYRhfyDmn8sgn, udp: true}
-  - {name: 213.183.53.200:9073, server: 213.183.53.200, port: 9073, type: ss, cipher: aes-256-cfb, password: daFYagqDdBdA6VTX, udp: true}
-  - {name: 213.183.53.200:9005, server: 213.183.53.200, port: 9005, type: ss, cipher: aes-256-cfb, password: ZET59LF6DvCC8KVt, udp: true}
-  - {name: 213.183.53.208:9018, server: 213.183.53.208, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
-  - {name: 213.183.53.200:9031, server: 213.183.53.200, port: 9031, type: ss, cipher: aes-256-cfb, password: BwcAUZk8hUFAkDGN, udp: true}
-  - {name: 213.183.53.200:9033, server: 213.183.53.200, port: 9033, type: ss, cipher: aes-256-cfb, password: UTJA57ypk2XKQpnm, udp: true}
-  - {name: 213.183.53.177:9094, server: 213.183.53.177, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
-  - {name: 213.183.53.200:9094, server: 213.183.53.200, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
-  - {name: 213.183.53.208:9019, server: 213.183.53.208, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
-  - {name: 213.183.53.208:9031, server: 213.183.53.208, port: 9031, type: ss, cipher: aes-256-cfb, password: BwcAUZk8hUFAkDGN, udp: true}
-  - {name: 213.183.53.200:9011, server: 213.183.53.200, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa, udp: true}
-  - {name: 213.183.53.200:9015, server: 213.183.53.200, port: 9015, type: ss, cipher: aes-256-cfb, password: ZpNDDKRu9MagNvaf, udp: true}
-  - {name: 213.183.53.177:9059, server: 213.183.53.177, port: 9059, type: ss, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY, udp: true}
-  - {name: 213.183.53.200:9003, server: 213.183.53.200, port: 9003, type: ss, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP, udp: true}
-  - {name: 213.183.53.177:9084, server: 213.183.53.177, port: 9084, type: ss, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj, udp: true}
-  - {name: 213.183.53.200:9001, server: 213.183.53.200, port: 9001, type: ss, cipher: aes-256-cfb, password: UkXRsXvR6buDMG2Y, udp: true}
-  - {name: 213.183.53.208:9025, server: 213.183.53.208, port: 9025, type: ss, cipher: aes-256-cfb, password: XPtzA9sCug3SPR4c, udp: true}
-  - {name: 213.183.53.200:9006, server: 213.183.53.200, port: 9006, type: ss, cipher: aes-256-cfb, password: FAdUvMJUq5vDgKEq, udp: true}
-  - {name: 213.183.53.200:9050, server: 213.183.53.200, port: 9050, type: ss, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE, udp: true}
-  - {name: 213.183.53.214:9015, server: 213.183.53.214, port: 9015, type: ss, cipher: aes-256-cfb, password: ZpNDDKRu9MagNvaf, udp: true}
-  - {name: 213.183.59.206:9094, server: 213.183.59.206, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
-  - {name: 213.183.53.208:9040, server: 213.183.53.208, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
-  - {name: 213.183.59.206:9059, server: 213.183.59.206, port: 9059, type: ss, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY, udp: true}
-  - {name: 213.183.59.206:9031, server: 213.183.59.206, port: 9031, type: ss, cipher: aes-256-cfb, password: BwcAUZk8hUFAkDGN, udp: true}
-  - {name: 213.183.59.206:9019, server: 213.183.59.206, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
-  - {name: 213.183.59.211:9079, server: 213.183.59.211, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
-  - {name: 213.183.59.229:9056, server: 213.183.59.229, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
-  - {name: 38.68.135.18:5601, server: 38.68.135.18, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 38.68.135.18:8009, server: 38.68.135.18, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: 213.183.53.208:9070, server: 213.183.53.208, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH, udp: true}
-  - {name: 194.71.126.31:989, server: 194.71.126.31, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
-  - {name: 213.183.59.229:9084, server: 213.183.59.229, port: 9084, type: ss, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj, udp: true}
-  - {name: 213.183.59.229:9018, server: 213.183.59.229, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
-  - {name: 217.30.10.67:9041, server: 217.30.10.67, port: 9041, type: ss, cipher: aes-256-cfb, password: U6qnYRhfyDmn8sgn, udp: true}
-  - {name: 213.183.53.214:9060, server: 213.183.53.214, port: 9060, type: ss, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ, udp: true}
-  - {name: 217.30.10.67:9093, server: 217.30.10.67, port: 9093, type: ss, cipher: aes-256-cfb, password: wfLC2y7rzZyCmuyt, udp: true}
-  - {name: 217.30.10.67:9032, server: 217.30.10.67, port: 9032, type: ss, cipher: aes-256-cfb, password: UWZQeLRWnkqgkseq, udp: true}
-  - {name: 217.30.10.67:9042, server: 217.30.10.67, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga, udp: true}
-  - {name: 217.30.10.67:9043, server: 217.30.10.67, port: 9043, type: ss, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF, udp: true}
-  - {name: 213.183.59.206:9088, server: 213.183.59.206, port: 9088, type: ss, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn, udp: true}
-  - {name: 213.183.51.171:9020, server: 213.183.51.171, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
-  - {name: 217.30.10.67:9020, server: 217.30.10.67, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
-  - {name: 217.30.10.67:9000, server: 217.30.10.67, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
-  - {name: 213.183.59.229:9020, server: 213.183.59.229, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
-  - {name: 217.30.10.65:9025, server: 217.30.10.65, port: 9025, type: ss, cipher: aes-256-cfb, password: XPtzA9sCug3SPR4c, udp: true}
-  - {name: 217.30.10.65:9040, server: 217.30.10.65, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
-  - {name: 213.183.53.208:9000, server: 213.183.53.208, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
-  - {name: 213.183.59.229:9025, server: 213.183.59.229, port: 9025, type: ss, cipher: aes-256-cfb, password: XPtzA9sCug3SPR4c, udp: true}
-  - {name: 213.183.51.171:9008, server: 213.183.51.171, port: 9008, type: ss, cipher: aes-256-cfb, password: y9VURyNzJWNRYEGQ, udp: true}
-  - {name: 217.30.10.67:9025, server: 217.30.10.67, port: 9025, type: ss, cipher: aes-256-cfb, password: XPtzA9sCug3SPR4c, udp: true}
-  - {name: 217.30.10.65:9070, server: 217.30.10.65, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH, udp: true}
-  - {name: 213.183.53.214:9020, server: 213.183.53.214, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
-  - {name: 38.121.43.71:443, server: 38.121.43.71, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 217.30.10.65:9093, server: 217.30.10.65, port: 9093, type: ss, cipher: aes-256-cfb, password: wfLC2y7rzZyCmuyt, udp: true}
-  - {name: 213.183.53.200:9088, server: 213.183.53.200, port: 9088, type: ss, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn, udp: true}
-  - {name: 213.183.51.171:9070, server: 213.183.51.171, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH, udp: true}
-  - {name: 217.30.10.67:9026, server: 217.30.10.67, port: 9026, type: ss, cipher: aes-256-cfb, password: QWDDvVE9npNurQfA, udp: true}
-  - {name: 213.183.53.208:9041, server: 213.183.53.208, port: 9041, type: ss, cipher: aes-256-cfb, password: U6qnYRhfyDmn8sgn, udp: true}
-  - {name: 213.183.59.229:9050, server: 213.183.59.229, port: 9050, type: ss, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE, udp: true}
-  - {name: 217.30.10.65:9046, server: 217.30.10.65, port: 9046, type: ss, cipher: aes-256-cfb, password: NvS8N4Vf8qAGPSCL, udp: true}
-  - {name: 217.30.10.66:9014, server: 217.30.10.66, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX, udp: true}
-  - {name: 217.30.10.65:9056, server: 217.30.10.65, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
-  - {name: 217.30.10.65:9060, server: 217.30.10.65, port: 9060, type: ss, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ, udp: true}
-  - {name: 217.30.10.65:9018, server: 217.30.10.65, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
-  - {name: 217.30.10.66:9001, server: 217.30.10.66, port: 9001, type: ss, cipher: aes-256-cfb, password: UkXRsXvR6buDMG2Y, udp: true}
-  - {name: 213.183.53.214:9032, server: 213.183.53.214, port: 9032, type: ss, cipher: aes-256-cfb, password: UWZQeLRWnkqgkseq, udp: true}
-  - {name: 217.30.10.65:9015, server: 217.30.10.65, port: 9015, type: ss, cipher: aes-256-cfb, password: ZpNDDKRu9MagNvaf, udp: true}
-  - {name: 217.30.10.66:9015, server: 217.30.10.66, port: 9015, type: ss, cipher: aes-256-cfb, password: ZpNDDKRu9MagNvaf, udp: true}
-  - {name: 38.121.43.71:5500, server: 38.121.43.71, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 217.30.10.66:9093, server: 217.30.10.66, port: 9093, type: ss, cipher: aes-256-cfb, password: wfLC2y7rzZyCmuyt, udp: true}
-  - {name: 217.30.10.66:9097, server: 217.30.10.66, port: 9097, type: ss, cipher: aes-256-cfb, password: Sn5B7jTqr76aCJT8, udp: true}
-  - {name: 217.30.10.66:9027, server: 217.30.10.66, port: 9027, type: ss, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8, udp: true}
-  - {name: 217.30.10.66:9040, server: 217.30.10.66, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
-  - {name: 38.121.43.71:6679, server: 38.121.43.71, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: 194.71.130.194:50003, server: 194.71.130.194, port: 50003, type: ss, cipher: aes-256-cfb, password: !<str> 8460400130, udp: true}
-  - {name: 217.30.10.66:9008, server: 217.30.10.66, port: 9008, type: ss, cipher: aes-256-cfb, password: y9VURyNzJWNRYEGQ, udp: true}
-  - {name: 217.30.10.66:9060, server: 217.30.10.66, port: 9060, type: ss, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ, udp: true}
-  - {name: 37.120.192.158:806, server: 37.120.192.158, port: 806, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: 213.183.51.171:9042, server: 213.183.51.171, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga, udp: true}
-  - {name: 213.183.53.214:9061, server: 213.183.53.214, port: 9061, type: ss, cipher: aes-256-cfb, password: 4R3hUfZ2FHhDmNcP, udp: true}
-  - {name: 217.30.10.66:9019, server: 217.30.10.66, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
-  - {name: 37.120.192.158:800, server: 37.120.192.158, port: 800, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: 217.30.10.65:9019, server: 217.30.10.65, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
-  - {name: 37.120.192.158:802, server: 37.120.192.158, port: 802, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: 213.183.53.208:9046, server: 213.183.53.208, port: 9046, type: ss, cipher: aes-256-cfb, password: NvS8N4Vf8qAGPSCL, udp: true}
-  - {name: 217.30.10.66:9094, server: 217.30.10.66, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
-  - {name: 217.30.10.66:9050, server: 217.30.10.66, port: 9050, type: ss, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE, udp: true}
-  - {name: CN 4｜openit.ml, server: cu-cs.okvpn.xyz, port: 20000, type: trojan, password: d6c81482-2993-419c-a602-df2f912ea4ba, sni: cu-cs.okvpn.xyz, skip-cert-verify: true, udp: true}
-  - {name: 213.183.53.182:9084, server: 213.183.53.182, port: 9084, type: ss, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj, udp: true}
-  - {name: 37.120.192.158:810, server: 37.120.192.158, port: 810, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: 85.208.108.18:7001, server: 85.208.108.18, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: 213.183.51.171:9011, server: 213.183.51.171, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa, udp: true}
-  - {name: 217.30.10.66:9031, server: 217.30.10.66, port: 9031, type: ss, cipher: aes-256-cfb, password: BwcAUZk8hUFAkDGN, udp: true}
-  - {name: 213.183.59.185:9031, server: 213.183.59.185, port: 9031, type: ss, cipher: aes-256-cfb, password: BwcAUZk8hUFAkDGN, udp: true}
-  - {name: 217.30.10.66:9079, server: 217.30.10.66, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
-  - {name: 37.120.192.158:801, server: 37.120.192.158, port: 801, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: 217.30.10.66:9041, server: 217.30.10.66, port: 9041, type: ss, cipher: aes-256-cfb, password: U6qnYRhfyDmn8sgn, udp: true}
-  - {name: 37.120.192.158:804, server: 37.120.192.158, port: 804, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: _FR_法国_0@11, server: 51.38.118.42, port: 811, type: ss, cipher: chacha20-ietf-poly1305, password: Ultr@r00t_2017, udp: true}
-  - {name: 38.121.43.71:5000, server: 38.121.43.71, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 37.120.192.158:809, server: 37.120.192.158, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: 37.120.192.158:805, server: 37.120.192.158, port: 805, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: 37.120.192.158:803, server: 37.120.192.158, port: 803, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: 217.30.10.66:9059, server: 217.30.10.66, port: 9059, type: ss, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY, udp: true}
-  - {name: 213.183.51.171:9041, server: 213.183.51.171, port: 9041, type: ss, cipher: aes-256-cfb, password: U6qnYRhfyDmn8sgn, udp: true}
-  - {name: 213.183.59.185:9040, server: 213.183.59.185, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
-  - {name: 213.183.59.185:9037, server: 213.183.59.185, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU, udp: true}
-  - {name: 213.183.53.214:9011, server: 213.183.53.214, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa, udp: true}
-  - {name: 213.183.51.171:9014, server: 213.183.51.171, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX, udp: true}
-  - {name: 213.183.59.185:9042, server: 213.183.59.185, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga, udp: true}
-  - {name: 217.30.10.65:9008, server: 217.30.10.65, port: 9008, type: ss, cipher: aes-256-cfb, password: y9VURyNzJWNRYEGQ, udp: true}
-  - {name: 213.183.63.218:9098, server: 213.183.63.218, port: 9098, type: ss, cipher: aes-256-cfb, password: aLpQtfEZe445QyHk, udp: true}
-  - {name: 217.30.10.65:9045, server: 217.30.10.65, port: 9045, type: ss, cipher: aes-256-cfb, password: Lp27rqyJq72bZsqX, udp: true}
+  - {name: CN 20｜openit.ml, server: relaysgp1.vip.www.klrxyru.cn, port: 1501, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: b43e313.wns.windows.com, udp: true}
+  - {name: CN 11｜openit.ml, server: relayjp1.vip.www.klrxyru.cn, port: 1451, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: b43e313.wns.windows.com, udp: true}
+  - {name: CN 67｜openit.ml, server: aiatw2.www.klrxyru.cn, port: 1202, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: b43e313.wns.windows.com, udp: true}
+  - {name: CN 68｜openit.ml, server: aiatw1.www.klrxyru.cn, port: 1201, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: b43e313.wns.windows.com, udp: true}
+  - {name: CN 8｜openit.ml, server: sgp03.mellanox.info, port: 25104, type: ssr, cipher: rc4-md5, password: zftvha, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: CN 2｜openit.ml, server: aiaus1.game.www.klrxyru.cn, port: 1420, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: b43e313.wns.windows.com, udp: true}
+  - {name: CN 16｜openit.ml, server: kr07.mellanox.info, port: 25104, type: ssr, cipher: rc4-md5, password: zftvha, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: CN 47｜openit.ml, server: hnyd.52147.top, port: 30120, type: trojan, password: c35ff7bd-3596-48df-8cfc-41f8c576ab4e, sni: hnyd.52147.top, skip-cert-verify: true, udp: true}
+  - {name: CN 35｜openit.ml, server: relayus3.vip.www.klrxyru.cn, port: 1403, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: b43e313.wns.windows.com, udp: true}
+  - {name: CN 1｜openit.ml, server: aiajp1.game.www.klrxyru.cn, port: 1460, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: b43e313.wns.windows.com, udp: true}
+  - {name: CN 4｜openit.ml, server: hr04.mellanox.info, port: 25104, type: ssr, cipher: rc4-md5, password: zftvha, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "", udp: true}
+  - {name: CN 43｜openit.ml, server: kr10.mellanox.info, port: 25104, type: ssr, cipher: rc4-md5, password: zftvha, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: CN 42｜openit.ml, server: relayus2.vip.www.klrxyru.cn, port: 1402, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: b43e313.wns.windows.com, udp: true}
+  - {name: CN 52｜openit.ml, server: athe0ugh.nodeinfo.icu, port: 1801, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 192073:D1ZGOg, obfs-param: cb12f192073.www.gov.hk, udp: true}
+  - {name: CN 49｜openit.ml, server: relayus1.vip.www.klrxyru.cn, port: 1401, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: b43e313.wns.windows.com, udp: true}
+  - {name: CN 26｜openit.ml, server: hnyd.52147.top, port: 30130, type: trojan, password: c35ff7bd-3596-48df-8cfc-41f8c576ab4e, sni: hnyd.52147.top, skip-cert-verify: true, udp: true}
+  - {name: CN 19｜openit.ml, server: hnyd.52147.top, port: 30010, type: trojan, password: c35ff7bd-3596-48df-8cfc-41f8c576ab4e, sni: hnyd.52147.top, skip-cert-verify: true, udp: true}
+  - {name: CN 64｜openit.ml, server: cucsuk1.vip.www.klrxyru.cn, port: 1351, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: b43e313.wns.windows.com, udp: true}
+  - {name: CN 13｜openit.ml, server: relayjp2.vip.www.klrxyru.cn, port: 1452, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: b43e313.wns.windows.com, udp: true}
+  - {name: CN 33｜openit.ml, server: aiade1.vip.www.klrxyru.cn, port: 1621, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: b43e313.wns.windows.com, udp: true}
+  - {name: CN 41｜openit.ml, server: hnyd.52147.top, port: 30080, type: trojan, password: c35ff7bd-3596-48df-8cfc-41f8c576ab4e, sni: hnyd.52147.top, skip-cert-verify: true, udp: true}
+  - {name: CN 53｜openit.ml, server: bgphk1.vip.www.klrxyru.cn, port: 574, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: b43e313.wns.windows.com, udp: true}
+  - {name: CN 61｜openit.ml, server: bgphk5.vip.www.klrxyru.cn, port: 578, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: b43e313.wns.windows.com, udp: true}
+  - {name: CN 58｜openit.ml, server: bgphk2.vip.www.klrxyru.cn, port: 575, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: b43e313.wns.windows.com, udp: true}
+  - {name: CN 60｜openit.ml, server: bgphk3.vip.www.klrxyru.cn, port: 576, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: b43e313.wns.windows.com, udp: true}
+  - {name: CN 23｜openit.ml, server: kr05.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: CN 31｜openit.ml, server: qdcukr1.vip.www.klrxyru.cn, port: 1551, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: 8d83584393.wns.windows.com, udp: true}
+  - {name: CN 51｜openit.ml, server: aiaru1.www.klrxyru.cn, port: 1601, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: b43e313.wns.windows.com, udp: true}
+  - {name: CN 30｜openit.ml, server: shkr2.vip.www.klrxyru.cn, port: 1552, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: 8d83584393.wns.windows.com, udp: true}
+  - {name: CN 46｜openit.ml, server: aiashbr1.www.klrxyru.cn, port: 1631, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: b43e313.wns.windows.com, udp: true}
+  - {name: CN 77｜openit.ml, server: yd-02.paofunlink.com, port: 1082, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 79637:kSalWm, obfs-param: f81d679637.microsoft.com, udp: true}
+  - {name: CN 40｜openit.ml, server: sgp04.mellanox.info, port: 25104, type: ssr, cipher: rc4-md5, password: zftvha, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: CN 57｜openit.ml, server: relaytr1.vip.www.klrxyru.cn, port: 1561, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: b43e313.wns.windows.com, udp: true}
+  - {name: CN 48｜openit.ml, server: aiashar1.www.klrxyru.cn, port: 1651, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: b43e313.wns.windows.com, udp: true}
+  - {name: CN 15｜openit.ml, server: aic5ucu1.nodeinfo.icu, port: 6021, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 192073:D1ZGOg, obfs-param: cb12f192073.www.gov.hk, udp: true}
+  - {name: CN 29｜openit.ml, server: kr15.clashcloud.tech, port: 51050, type: ssr, cipher: rc4-md5, password: VCAAuH, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: CN 65｜openit.ml, server: aiatw3.www.klrxyru.cn, port: 1203, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: b43e313.wns.windows.com, udp: true}
+  - {name: CN 36｜openit.ml, server: hnyd.52147.top, port: 30180, type: trojan, password: c35ff7bd-3596-48df-8cfc-41f8c576ab4e, sni: hnyd.52147.top, skip-cert-verify: true, udp: true}
+  - {name: CN 21｜openit.ml, server: relayjp3.vip.www.klrxyru.cn, port: 1453, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: b43e313.wns.windows.com, udp: true}
+  - {name: CN 50｜openit.ml, server: iux7shis.nodeinfo.icu, port: 6006, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 192073:D1ZGOg, obfs-param: cb12f192073.www.gov.hk, udp: true}
+  - {name: CN 76｜openit.ml, server: yd-03.paofunlink.com, port: 1085, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 115989:JbCUPq, obfs-param: 6f9d8115989.microsoft.com, udp: true}
+  - {name: CN 70｜openit.ml, server: yd-02.paofunlink.com, port: 1072, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 79637:kSalWm, obfs-param: f81d679637.microsoft.com, udp: true}
+  - {name: 38.68.134.85:443, server: 38.68.134.85, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: CN 79｜openit.ml, server: twgame04.mellanox.info, port: 25104, type: ssr, cipher: rc4-md5, password: zftvha, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: CN 12｜openit.ml, server: relayjp4.vip.www.klrxyru.cn, port: 1454, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: b43e313.wns.windows.com, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 213.183.59.229:9042
-      - 161.8.184.62:29622
-      - 213.183.53.177:9010
-      - 213.183.53.200:9014
-      - 213.183.59.206:9024
-      - 213.183.53.177:9060
-      - 213.183.53.200:9020
-      - 213.183.53.177:9033
-      - 213.183.53.177:9000
-      - 213.183.53.200:9018
-      - 213.183.53.208:9008
-      - 213.183.53.200:9041
-      - 213.183.53.200:9026
-      - 213.183.53.200:9027
-      - 213.183.53.200:9024
-      - 213.183.53.200:9037
-      - 213.183.59.229:9019
-      - 213.183.59.229:9053
-      - 213.183.53.177:9003
-      - 213.183.53.177:9018
-      - 213.183.53.177:9093
-      - 213.183.53.200:9046
-      - 213.183.53.177:9008
-      - 213.183.53.177:9041
-      - 213.183.53.200:9073
-      - 213.183.53.200:9005
-      - 213.183.53.208:9018
-      - 213.183.53.200:9031
-      - 213.183.53.200:9033
-      - 213.183.53.177:9094
-      - 213.183.53.200:9094
-      - 213.183.53.208:9019
-      - 213.183.53.208:9031
-      - 213.183.53.200:9011
-      - 213.183.53.200:9015
-      - 213.183.53.177:9059
-      - 213.183.53.200:9003
-      - 213.183.53.177:9084
-      - 213.183.53.200:9001
-      - 213.183.53.208:9025
-      - 213.183.53.200:9006
-      - 213.183.53.200:9050
-      - 213.183.53.214:9015
-      - 213.183.59.206:9094
-      - 213.183.53.208:9040
-      - 213.183.59.206:9059
-      - 213.183.59.206:9031
-      - 213.183.59.206:9019
-      - 213.183.59.211:9079
-      - 213.183.59.229:9056
-      - 38.68.135.18:5601
-      - 38.68.135.18:8009
-      - 213.183.53.208:9070
-      - 194.71.126.31:989
-      - 213.183.59.229:9084
-      - 213.183.59.229:9018
-      - 217.30.10.67:9041
-      - 213.183.53.214:9060
-      - 217.30.10.67:9093
-      - 217.30.10.67:9032
-      - 217.30.10.67:9042
-      - 217.30.10.67:9043
-      - 213.183.59.206:9088
-      - 213.183.51.171:9020
-      - 217.30.10.67:9020
-      - 217.30.10.67:9000
-      - 213.183.59.229:9020
-      - 217.30.10.65:9025
-      - 217.30.10.65:9040
-      - 213.183.53.208:9000
-      - 213.183.59.229:9025
-      - 213.183.51.171:9008
-      - 217.30.10.67:9025
-      - 217.30.10.65:9070
-      - 213.183.53.214:9020
-      - 38.121.43.71:443
-      - 217.30.10.65:9093
-      - 213.183.53.200:9088
-      - 213.183.51.171:9070
-      - 217.30.10.67:9026
-      - 213.183.53.208:9041
-      - 213.183.59.229:9050
-      - 217.30.10.65:9046
-      - 217.30.10.66:9014
-      - 217.30.10.65:9056
-      - 217.30.10.65:9060
-      - 217.30.10.65:9018
-      - 217.30.10.66:9001
-      - 213.183.53.214:9032
-      - 217.30.10.65:9015
-      - 217.30.10.66:9015
-      - 38.121.43.71:5500
-      - 217.30.10.66:9093
-      - 217.30.10.66:9097
-      - 217.30.10.66:9027
-      - 217.30.10.66:9040
-      - 38.121.43.71:6679
-      - 194.71.130.194:50003
-      - 217.30.10.66:9008
-      - 217.30.10.66:9060
-      - 37.120.192.158:806
-      - 213.183.51.171:9042
-      - 213.183.53.214:9061
-      - 217.30.10.66:9019
-      - 37.120.192.158:800
-      - 217.30.10.65:9019
-      - 37.120.192.158:802
-      - 213.183.53.208:9046
-      - 217.30.10.66:9094
-      - 217.30.10.66:9050
+      - CN 20｜openit.ml
+      - CN 11｜openit.ml
+      - CN 67｜openit.ml
+      - CN 68｜openit.ml
+      - CN 8｜openit.ml
+      - CN 2｜openit.ml
+      - CN 16｜openit.ml
+      - CN 47｜openit.ml
+      - CN 35｜openit.ml
+      - CN 1｜openit.ml
       - CN 4｜openit.ml
-      - 213.183.53.182:9084
-      - 37.120.192.158:810
-      - 85.208.108.18:7001
-      - 213.183.51.171:9011
-      - 217.30.10.66:9031
-      - 213.183.59.185:9031
-      - 217.30.10.66:9079
-      - 37.120.192.158:801
-      - 217.30.10.66:9041
-      - 37.120.192.158:804
-      - _FR_法国_0@11
-      - 38.121.43.71:5000
-      - 37.120.192.158:809
-      - 37.120.192.158:805
-      - 37.120.192.158:803
-      - 217.30.10.66:9059
-      - 213.183.51.171:9041
-      - 213.183.59.185:9040
-      - 213.183.59.185:9037
-      - 213.183.53.214:9011
-      - 213.183.51.171:9014
-      - 213.183.59.185:9042
-      - 217.30.10.65:9008
-      - 213.183.63.218:9098
-      - 217.30.10.65:9045
+      - CN 43｜openit.ml
+      - CN 42｜openit.ml
+      - CN 52｜openit.ml
+      - CN 49｜openit.ml
+      - CN 26｜openit.ml
+      - CN 19｜openit.ml
+      - CN 64｜openit.ml
+      - CN 13｜openit.ml
+      - CN 33｜openit.ml
+      - CN 41｜openit.ml
+      - CN 53｜openit.ml
+      - CN 61｜openit.ml
+      - CN 58｜openit.ml
+      - CN 60｜openit.ml
+      - CN 23｜openit.ml
+      - CN 31｜openit.ml
+      - CN 51｜openit.ml
+      - CN 30｜openit.ml
+      - CN 46｜openit.ml
+      - CN 77｜openit.ml
+      - CN 40｜openit.ml
+      - CN 57｜openit.ml
+      - CN 48｜openit.ml
+      - CN 15｜openit.ml
+      - CN 29｜openit.ml
+      - CN 65｜openit.ml
+      - CN 36｜openit.ml
+      - CN 21｜openit.ml
+      - CN 50｜openit.ml
+      - CN 76｜openit.ml
+      - CN 70｜openit.ml
+      - 38.68.134.85:443
+      - CN 79｜openit.ml
+      - CN 12｜openit.ml
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 213.183.59.229:9042
-      - 161.8.184.62:29622
-      - 213.183.53.177:9010
-      - 213.183.53.200:9014
-      - 213.183.59.206:9024
-      - 213.183.53.177:9060
-      - 213.183.53.200:9020
-      - 213.183.53.177:9033
-      - 213.183.53.177:9000
-      - 213.183.53.200:9018
-      - 213.183.53.208:9008
-      - 213.183.53.200:9041
-      - 213.183.53.200:9026
-      - 213.183.53.200:9027
-      - 213.183.53.200:9024
-      - 213.183.53.200:9037
-      - 213.183.59.229:9019
-      - 213.183.59.229:9053
-      - 213.183.53.177:9003
-      - 213.183.53.177:9018
-      - 213.183.53.177:9093
-      - 213.183.53.200:9046
-      - 213.183.53.177:9008
-      - 213.183.53.177:9041
-      - 213.183.53.200:9073
-      - 213.183.53.200:9005
-      - 213.183.53.208:9018
-      - 213.183.53.200:9031
-      - 213.183.53.200:9033
-      - 213.183.53.177:9094
-      - 213.183.53.200:9094
-      - 213.183.53.208:9019
-      - 213.183.53.208:9031
-      - 213.183.53.200:9011
-      - 213.183.53.200:9015
-      - 213.183.53.177:9059
-      - 213.183.53.200:9003
-      - 213.183.53.177:9084
-      - 213.183.53.200:9001
-      - 213.183.53.208:9025
-      - 213.183.53.200:9006
-      - 213.183.53.200:9050
-      - 213.183.53.214:9015
-      - 213.183.59.206:9094
-      - 213.183.53.208:9040
-      - 213.183.59.206:9059
-      - 213.183.59.206:9031
-      - 213.183.59.206:9019
-      - 213.183.59.211:9079
-      - 213.183.59.229:9056
-      - 38.68.135.18:5601
-      - 38.68.135.18:8009
-      - 213.183.53.208:9070
-      - 194.71.126.31:989
-      - 213.183.59.229:9084
-      - 213.183.59.229:9018
-      - 217.30.10.67:9041
-      - 213.183.53.214:9060
-      - 217.30.10.67:9093
-      - 217.30.10.67:9032
-      - 217.30.10.67:9042
-      - 217.30.10.67:9043
-      - 213.183.59.206:9088
-      - 213.183.51.171:9020
-      - 217.30.10.67:9020
-      - 217.30.10.67:9000
-      - 213.183.59.229:9020
-      - 217.30.10.65:9025
-      - 217.30.10.65:9040
-      - 213.183.53.208:9000
-      - 213.183.59.229:9025
-      - 213.183.51.171:9008
-      - 217.30.10.67:9025
-      - 217.30.10.65:9070
-      - 213.183.53.214:9020
-      - 38.121.43.71:443
-      - 217.30.10.65:9093
-      - 213.183.53.200:9088
-      - 213.183.51.171:9070
-      - 217.30.10.67:9026
-      - 213.183.53.208:9041
-      - 213.183.59.229:9050
-      - 217.30.10.65:9046
-      - 217.30.10.66:9014
-      - 217.30.10.65:9056
-      - 217.30.10.65:9060
-      - 217.30.10.65:9018
-      - 217.30.10.66:9001
-      - 213.183.53.214:9032
-      - 217.30.10.65:9015
-      - 217.30.10.66:9015
-      - 38.121.43.71:5500
-      - 217.30.10.66:9093
-      - 217.30.10.66:9097
-      - 217.30.10.66:9027
-      - 217.30.10.66:9040
-      - 38.121.43.71:6679
-      - 194.71.130.194:50003
-      - 217.30.10.66:9008
-      - 217.30.10.66:9060
-      - 37.120.192.158:806
-      - 213.183.51.171:9042
-      - 213.183.53.214:9061
-      - 217.30.10.66:9019
-      - 37.120.192.158:800
-      - 217.30.10.65:9019
-      - 37.120.192.158:802
-      - 213.183.53.208:9046
-      - 217.30.10.66:9094
-      - 217.30.10.66:9050
+      - CN 20｜openit.ml
+      - CN 11｜openit.ml
+      - CN 67｜openit.ml
+      - CN 68｜openit.ml
+      - CN 8｜openit.ml
+      - CN 2｜openit.ml
+      - CN 16｜openit.ml
+      - CN 47｜openit.ml
+      - CN 35｜openit.ml
+      - CN 1｜openit.ml
       - CN 4｜openit.ml
-      - 213.183.53.182:9084
-      - 37.120.192.158:810
-      - 85.208.108.18:7001
-      - 213.183.51.171:9011
-      - 217.30.10.66:9031
-      - 213.183.59.185:9031
-      - 217.30.10.66:9079
-      - 37.120.192.158:801
-      - 217.30.10.66:9041
-      - 37.120.192.158:804
-      - _FR_法国_0@11
-      - 38.121.43.71:5000
-      - 37.120.192.158:809
-      - 37.120.192.158:805
-      - 37.120.192.158:803
-      - 217.30.10.66:9059
-      - 213.183.51.171:9041
-      - 213.183.59.185:9040
-      - 213.183.59.185:9037
-      - 213.183.53.214:9011
-      - 213.183.51.171:9014
-      - 213.183.59.185:9042
-      - 217.30.10.65:9008
-      - 213.183.63.218:9098
-      - 217.30.10.65:9045
+      - CN 43｜openit.ml
+      - CN 42｜openit.ml
+      - CN 52｜openit.ml
+      - CN 49｜openit.ml
+      - CN 26｜openit.ml
+      - CN 19｜openit.ml
+      - CN 64｜openit.ml
+      - CN 13｜openit.ml
+      - CN 33｜openit.ml
+      - CN 41｜openit.ml
+      - CN 53｜openit.ml
+      - CN 61｜openit.ml
+      - CN 58｜openit.ml
+      - CN 60｜openit.ml
+      - CN 23｜openit.ml
+      - CN 31｜openit.ml
+      - CN 51｜openit.ml
+      - CN 30｜openit.ml
+      - CN 46｜openit.ml
+      - CN 77｜openit.ml
+      - CN 40｜openit.ml
+      - CN 57｜openit.ml
+      - CN 48｜openit.ml
+      - CN 15｜openit.ml
+      - CN 29｜openit.ml
+      - CN 65｜openit.ml
+      - CN 36｜openit.ml
+      - CN 21｜openit.ml
+      - CN 50｜openit.ml
+      - CN 76｜openit.ml
+      - CN 70｜openit.ml
+      - 38.68.134.85:443
+      - CN 79｜openit.ml
+      - CN 12｜openit.ml
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 213.183.59.229:9042
-      - 161.8.184.62:29622
-      - 213.183.53.177:9010
-      - 213.183.53.200:9014
-      - 213.183.59.206:9024
-      - 213.183.53.177:9060
-      - 213.183.53.200:9020
-      - 213.183.53.177:9033
-      - 213.183.53.177:9000
-      - 213.183.53.200:9018
-      - 213.183.53.208:9008
-      - 213.183.53.200:9041
-      - 213.183.53.200:9026
-      - 213.183.53.200:9027
-      - 213.183.53.200:9024
-      - 213.183.53.200:9037
-      - 213.183.59.229:9019
-      - 213.183.59.229:9053
-      - 213.183.53.177:9003
-      - 213.183.53.177:9018
-      - 213.183.53.177:9093
-      - 213.183.53.200:9046
-      - 213.183.53.177:9008
-      - 213.183.53.177:9041
-      - 213.183.53.200:9073
-      - 213.183.53.200:9005
-      - 213.183.53.208:9018
-      - 213.183.53.200:9031
-      - 213.183.53.200:9033
-      - 213.183.53.177:9094
-      - 213.183.53.200:9094
-      - 213.183.53.208:9019
-      - 213.183.53.208:9031
-      - 213.183.53.200:9011
-      - 213.183.53.200:9015
-      - 213.183.53.177:9059
-      - 213.183.53.200:9003
-      - 213.183.53.177:9084
-      - 213.183.53.200:9001
-      - 213.183.53.208:9025
-      - 213.183.53.200:9006
-      - 213.183.53.200:9050
-      - 213.183.53.214:9015
-      - 213.183.59.206:9094
-      - 213.183.53.208:9040
-      - 213.183.59.206:9059
-      - 213.183.59.206:9031
-      - 213.183.59.206:9019
-      - 213.183.59.211:9079
-      - 213.183.59.229:9056
-      - 38.68.135.18:5601
-      - 38.68.135.18:8009
-      - 213.183.53.208:9070
-      - 194.71.126.31:989
-      - 213.183.59.229:9084
-      - 213.183.59.229:9018
-      - 217.30.10.67:9041
-      - 213.183.53.214:9060
-      - 217.30.10.67:9093
-      - 217.30.10.67:9032
-      - 217.30.10.67:9042
-      - 217.30.10.67:9043
-      - 213.183.59.206:9088
-      - 213.183.51.171:9020
-      - 217.30.10.67:9020
-      - 217.30.10.67:9000
-      - 213.183.59.229:9020
-      - 217.30.10.65:9025
-      - 217.30.10.65:9040
-      - 213.183.53.208:9000
-      - 213.183.59.229:9025
-      - 213.183.51.171:9008
-      - 217.30.10.67:9025
-      - 217.30.10.65:9070
-      - 213.183.53.214:9020
-      - 38.121.43.71:443
-      - 217.30.10.65:9093
-      - 213.183.53.200:9088
-      - 213.183.51.171:9070
-      - 217.30.10.67:9026
-      - 213.183.53.208:9041
-      - 213.183.59.229:9050
-      - 217.30.10.65:9046
-      - 217.30.10.66:9014
-      - 217.30.10.65:9056
-      - 217.30.10.65:9060
-      - 217.30.10.65:9018
-      - 217.30.10.66:9001
-      - 213.183.53.214:9032
-      - 217.30.10.65:9015
-      - 217.30.10.66:9015
-      - 38.121.43.71:5500
-      - 217.30.10.66:9093
-      - 217.30.10.66:9097
-      - 217.30.10.66:9027
-      - 217.30.10.66:9040
-      - 38.121.43.71:6679
-      - 194.71.130.194:50003
-      - 217.30.10.66:9008
-      - 217.30.10.66:9060
-      - 37.120.192.158:806
-      - 213.183.51.171:9042
-      - 213.183.53.214:9061
-      - 217.30.10.66:9019
-      - 37.120.192.158:800
-      - 217.30.10.65:9019
-      - 37.120.192.158:802
-      - 213.183.53.208:9046
-      - 217.30.10.66:9094
-      - 217.30.10.66:9050
+      - CN 20｜openit.ml
+      - CN 11｜openit.ml
+      - CN 67｜openit.ml
+      - CN 68｜openit.ml
+      - CN 8｜openit.ml
+      - CN 2｜openit.ml
+      - CN 16｜openit.ml
+      - CN 47｜openit.ml
+      - CN 35｜openit.ml
+      - CN 1｜openit.ml
       - CN 4｜openit.ml
-      - 213.183.53.182:9084
-      - 37.120.192.158:810
-      - 85.208.108.18:7001
-      - 213.183.51.171:9011
-      - 217.30.10.66:9031
-      - 213.183.59.185:9031
-      - 217.30.10.66:9079
-      - 37.120.192.158:801
-      - 217.30.10.66:9041
-      - 37.120.192.158:804
-      - _FR_法国_0@11
-      - 38.121.43.71:5000
-      - 37.120.192.158:809
-      - 37.120.192.158:805
-      - 37.120.192.158:803
-      - 217.30.10.66:9059
-      - 213.183.51.171:9041
-      - 213.183.59.185:9040
-      - 213.183.59.185:9037
-      - 213.183.53.214:9011
-      - 213.183.51.171:9014
-      - 213.183.59.185:9042
-      - 217.30.10.65:9008
-      - 213.183.63.218:9098
-      - 217.30.10.65:9045
+      - CN 43｜openit.ml
+      - CN 42｜openit.ml
+      - CN 52｜openit.ml
+      - CN 49｜openit.ml
+      - CN 26｜openit.ml
+      - CN 19｜openit.ml
+      - CN 64｜openit.ml
+      - CN 13｜openit.ml
+      - CN 33｜openit.ml
+      - CN 41｜openit.ml
+      - CN 53｜openit.ml
+      - CN 61｜openit.ml
+      - CN 58｜openit.ml
+      - CN 60｜openit.ml
+      - CN 23｜openit.ml
+      - CN 31｜openit.ml
+      - CN 51｜openit.ml
+      - CN 30｜openit.ml
+      - CN 46｜openit.ml
+      - CN 77｜openit.ml
+      - CN 40｜openit.ml
+      - CN 57｜openit.ml
+      - CN 48｜openit.ml
+      - CN 15｜openit.ml
+      - CN 29｜openit.ml
+      - CN 65｜openit.ml
+      - CN 36｜openit.ml
+      - CN 21｜openit.ml
+      - CN 50｜openit.ml
+      - CN 76｜openit.ml
+      - CN 70｜openit.ml
+      - 38.68.134.85:443
+      - CN 79｜openit.ml
+      - CN 12｜openit.ml
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -584,142 +220,51 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 213.183.59.229:9042
-      - 161.8.184.62:29622
-      - 213.183.53.177:9010
-      - 213.183.53.200:9014
-      - 213.183.59.206:9024
-      - 213.183.53.177:9060
-      - 213.183.53.200:9020
-      - 213.183.53.177:9033
-      - 213.183.53.177:9000
-      - 213.183.53.200:9018
-      - 213.183.53.208:9008
-      - 213.183.53.200:9041
-      - 213.183.53.200:9026
-      - 213.183.53.200:9027
-      - 213.183.53.200:9024
-      - 213.183.53.200:9037
-      - 213.183.59.229:9019
-      - 213.183.59.229:9053
-      - 213.183.53.177:9003
-      - 213.183.53.177:9018
-      - 213.183.53.177:9093
-      - 213.183.53.200:9046
-      - 213.183.53.177:9008
-      - 213.183.53.177:9041
-      - 213.183.53.200:9073
-      - 213.183.53.200:9005
-      - 213.183.53.208:9018
-      - 213.183.53.200:9031
-      - 213.183.53.200:9033
-      - 213.183.53.177:9094
-      - 213.183.53.200:9094
-      - 213.183.53.208:9019
-      - 213.183.53.208:9031
-      - 213.183.53.200:9011
-      - 213.183.53.200:9015
-      - 213.183.53.177:9059
-      - 213.183.53.200:9003
-      - 213.183.53.177:9084
-      - 213.183.53.200:9001
-      - 213.183.53.208:9025
-      - 213.183.53.200:9006
-      - 213.183.53.200:9050
-      - 213.183.53.214:9015
-      - 213.183.59.206:9094
-      - 213.183.53.208:9040
-      - 213.183.59.206:9059
-      - 213.183.59.206:9031
-      - 213.183.59.206:9019
-      - 213.183.59.211:9079
-      - 213.183.59.229:9056
-      - 38.68.135.18:5601
-      - 38.68.135.18:8009
-      - 213.183.53.208:9070
-      - 194.71.126.31:989
-      - 213.183.59.229:9084
-      - 213.183.59.229:9018
-      - 217.30.10.67:9041
-      - 213.183.53.214:9060
-      - 217.30.10.67:9093
-      - 217.30.10.67:9032
-      - 217.30.10.67:9042
-      - 217.30.10.67:9043
-      - 213.183.59.206:9088
-      - 213.183.51.171:9020
-      - 217.30.10.67:9020
-      - 217.30.10.67:9000
-      - 213.183.59.229:9020
-      - 217.30.10.65:9025
-      - 217.30.10.65:9040
-      - 213.183.53.208:9000
-      - 213.183.59.229:9025
-      - 213.183.51.171:9008
-      - 217.30.10.67:9025
-      - 217.30.10.65:9070
-      - 213.183.53.214:9020
-      - 38.121.43.71:443
-      - 217.30.10.65:9093
-      - 213.183.53.200:9088
-      - 213.183.51.171:9070
-      - 217.30.10.67:9026
-      - 213.183.53.208:9041
-      - 213.183.59.229:9050
-      - 217.30.10.65:9046
-      - 217.30.10.66:9014
-      - 217.30.10.65:9056
-      - 217.30.10.65:9060
-      - 217.30.10.65:9018
-      - 217.30.10.66:9001
-      - 213.183.53.214:9032
-      - 217.30.10.65:9015
-      - 217.30.10.66:9015
-      - 38.121.43.71:5500
-      - 217.30.10.66:9093
-      - 217.30.10.66:9097
-      - 217.30.10.66:9027
-      - 217.30.10.66:9040
-      - 38.121.43.71:6679
-      - 194.71.130.194:50003
-      - 217.30.10.66:9008
-      - 217.30.10.66:9060
-      - 37.120.192.158:806
-      - 213.183.51.171:9042
-      - 213.183.53.214:9061
-      - 217.30.10.66:9019
-      - 37.120.192.158:800
-      - 217.30.10.65:9019
-      - 37.120.192.158:802
-      - 213.183.53.208:9046
-      - 217.30.10.66:9094
-      - 217.30.10.66:9050
+      - CN 20｜openit.ml
+      - CN 11｜openit.ml
+      - CN 67｜openit.ml
+      - CN 68｜openit.ml
+      - CN 8｜openit.ml
+      - CN 2｜openit.ml
+      - CN 16｜openit.ml
+      - CN 47｜openit.ml
+      - CN 35｜openit.ml
+      - CN 1｜openit.ml
       - CN 4｜openit.ml
-      - 213.183.53.182:9084
-      - 37.120.192.158:810
-      - 85.208.108.18:7001
-      - 213.183.51.171:9011
-      - 217.30.10.66:9031
-      - 213.183.59.185:9031
-      - 217.30.10.66:9079
-      - 37.120.192.158:801
-      - 217.30.10.66:9041
-      - 37.120.192.158:804
-      - _FR_法国_0@11
-      - 38.121.43.71:5000
-      - 37.120.192.158:809
-      - 37.120.192.158:805
-      - 37.120.192.158:803
-      - 217.30.10.66:9059
-      - 213.183.51.171:9041
-      - 213.183.59.185:9040
-      - 213.183.59.185:9037
-      - 213.183.53.214:9011
-      - 213.183.51.171:9014
-      - 213.183.59.185:9042
-      - 217.30.10.65:9008
-      - 213.183.63.218:9098
-      - 217.30.10.65:9045
+      - CN 43｜openit.ml
+      - CN 42｜openit.ml
+      - CN 52｜openit.ml
+      - CN 49｜openit.ml
+      - CN 26｜openit.ml
+      - CN 19｜openit.ml
+      - CN 64｜openit.ml
+      - CN 13｜openit.ml
+      - CN 33｜openit.ml
+      - CN 41｜openit.ml
+      - CN 53｜openit.ml
+      - CN 61｜openit.ml
+      - CN 58｜openit.ml
+      - CN 60｜openit.ml
+      - CN 23｜openit.ml
+      - CN 31｜openit.ml
+      - CN 51｜openit.ml
+      - CN 30｜openit.ml
+      - CN 46｜openit.ml
+      - CN 77｜openit.ml
+      - CN 40｜openit.ml
+      - CN 57｜openit.ml
+      - CN 48｜openit.ml
+      - CN 15｜openit.ml
+      - CN 29｜openit.ml
+      - CN 65｜openit.ml
+      - CN 36｜openit.ml
+      - CN 21｜openit.ml
+      - CN 50｜openit.ml
+      - CN 76｜openit.ml
+      - CN 70｜openit.ml
+      - 38.68.134.85:443
+      - CN 79｜openit.ml
+      - CN 12｜openit.ml
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -730,425 +275,152 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 213.183.59.229:9042
-      - 161.8.184.62:29622
-      - 213.183.53.177:9010
-      - 213.183.53.200:9014
-      - 213.183.59.206:9024
-      - 213.183.53.177:9060
-      - 213.183.53.200:9020
-      - 213.183.53.177:9033
-      - 213.183.53.177:9000
-      - 213.183.53.200:9018
-      - 213.183.53.208:9008
-      - 213.183.53.200:9041
-      - 213.183.53.200:9026
-      - 213.183.53.200:9027
-      - 213.183.53.200:9024
-      - 213.183.53.200:9037
-      - 213.183.59.229:9019
-      - 213.183.59.229:9053
-      - 213.183.53.177:9003
-      - 213.183.53.177:9018
-      - 213.183.53.177:9093
-      - 213.183.53.200:9046
-      - 213.183.53.177:9008
-      - 213.183.53.177:9041
-      - 213.183.53.200:9073
-      - 213.183.53.200:9005
-      - 213.183.53.208:9018
-      - 213.183.53.200:9031
-      - 213.183.53.200:9033
-      - 213.183.53.177:9094
-      - 213.183.53.200:9094
-      - 213.183.53.208:9019
-      - 213.183.53.208:9031
-      - 213.183.53.200:9011
-      - 213.183.53.200:9015
-      - 213.183.53.177:9059
-      - 213.183.53.200:9003
-      - 213.183.53.177:9084
-      - 213.183.53.200:9001
-      - 213.183.53.208:9025
-      - 213.183.53.200:9006
-      - 213.183.53.200:9050
-      - 213.183.53.214:9015
-      - 213.183.59.206:9094
-      - 213.183.53.208:9040
-      - 213.183.59.206:9059
-      - 213.183.59.206:9031
-      - 213.183.59.206:9019
-      - 213.183.59.211:9079
-      - 213.183.59.229:9056
-      - 38.68.135.18:5601
-      - 38.68.135.18:8009
-      - 213.183.53.208:9070
-      - 194.71.126.31:989
-      - 213.183.59.229:9084
-      - 213.183.59.229:9018
-      - 217.30.10.67:9041
-      - 213.183.53.214:9060
-      - 217.30.10.67:9093
-      - 217.30.10.67:9032
-      - 217.30.10.67:9042
-      - 217.30.10.67:9043
-      - 213.183.59.206:9088
-      - 213.183.51.171:9020
-      - 217.30.10.67:9020
-      - 217.30.10.67:9000
-      - 213.183.59.229:9020
-      - 217.30.10.65:9025
-      - 217.30.10.65:9040
-      - 213.183.53.208:9000
-      - 213.183.59.229:9025
-      - 213.183.51.171:9008
-      - 217.30.10.67:9025
-      - 217.30.10.65:9070
-      - 213.183.53.214:9020
-      - 38.121.43.71:443
-      - 217.30.10.65:9093
-      - 213.183.53.200:9088
-      - 213.183.51.171:9070
-      - 217.30.10.67:9026
-      - 213.183.53.208:9041
-      - 213.183.59.229:9050
-      - 217.30.10.65:9046
-      - 217.30.10.66:9014
-      - 217.30.10.65:9056
-      - 217.30.10.65:9060
-      - 217.30.10.65:9018
-      - 217.30.10.66:9001
-      - 213.183.53.214:9032
-      - 217.30.10.65:9015
-      - 217.30.10.66:9015
-      - 38.121.43.71:5500
-      - 217.30.10.66:9093
-      - 217.30.10.66:9097
-      - 217.30.10.66:9027
-      - 217.30.10.66:9040
-      - 38.121.43.71:6679
-      - 194.71.130.194:50003
-      - 217.30.10.66:9008
-      - 217.30.10.66:9060
-      - 37.120.192.158:806
-      - 213.183.51.171:9042
-      - 213.183.53.214:9061
-      - 217.30.10.66:9019
-      - 37.120.192.158:800
-      - 217.30.10.65:9019
-      - 37.120.192.158:802
-      - 213.183.53.208:9046
-      - 217.30.10.66:9094
-      - 217.30.10.66:9050
+      - CN 20｜openit.ml
+      - CN 11｜openit.ml
+      - CN 67｜openit.ml
+      - CN 68｜openit.ml
+      - CN 8｜openit.ml
+      - CN 2｜openit.ml
+      - CN 16｜openit.ml
+      - CN 47｜openit.ml
+      - CN 35｜openit.ml
+      - CN 1｜openit.ml
       - CN 4｜openit.ml
-      - 213.183.53.182:9084
-      - 37.120.192.158:810
-      - 85.208.108.18:7001
-      - 213.183.51.171:9011
-      - 217.30.10.66:9031
-      - 213.183.59.185:9031
-      - 217.30.10.66:9079
-      - 37.120.192.158:801
-      - 217.30.10.66:9041
-      - 37.120.192.158:804
-      - _FR_法国_0@11
-      - 38.121.43.71:5000
-      - 37.120.192.158:809
-      - 37.120.192.158:805
-      - 37.120.192.158:803
-      - 217.30.10.66:9059
-      - 213.183.51.171:9041
-      - 213.183.59.185:9040
-      - 213.183.59.185:9037
-      - 213.183.53.214:9011
-      - 213.183.51.171:9014
-      - 213.183.59.185:9042
-      - 217.30.10.65:9008
-      - 213.183.63.218:9098
-      - 217.30.10.65:9045
+      - CN 43｜openit.ml
+      - CN 42｜openit.ml
+      - CN 52｜openit.ml
+      - CN 49｜openit.ml
+      - CN 26｜openit.ml
+      - CN 19｜openit.ml
+      - CN 64｜openit.ml
+      - CN 13｜openit.ml
+      - CN 33｜openit.ml
+      - CN 41｜openit.ml
+      - CN 53｜openit.ml
+      - CN 61｜openit.ml
+      - CN 58｜openit.ml
+      - CN 60｜openit.ml
+      - CN 23｜openit.ml
+      - CN 31｜openit.ml
+      - CN 51｜openit.ml
+      - CN 30｜openit.ml
+      - CN 46｜openit.ml
+      - CN 77｜openit.ml
+      - CN 40｜openit.ml
+      - CN 57｜openit.ml
+      - CN 48｜openit.ml
+      - CN 15｜openit.ml
+      - CN 29｜openit.ml
+      - CN 65｜openit.ml
+      - CN 36｜openit.ml
+      - CN 21｜openit.ml
+      - CN 50｜openit.ml
+      - CN 76｜openit.ml
+      - CN 70｜openit.ml
+      - 38.68.134.85:443
+      - CN 79｜openit.ml
+      - CN 12｜openit.ml
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 213.183.59.229:9042
-      - 161.8.184.62:29622
-      - 213.183.53.177:9010
-      - 213.183.53.200:9014
-      - 213.183.59.206:9024
-      - 213.183.53.177:9060
-      - 213.183.53.200:9020
-      - 213.183.53.177:9033
-      - 213.183.53.177:9000
-      - 213.183.53.200:9018
-      - 213.183.53.208:9008
-      - 213.183.53.200:9041
-      - 213.183.53.200:9026
-      - 213.183.53.200:9027
-      - 213.183.53.200:9024
-      - 213.183.53.200:9037
-      - 213.183.59.229:9019
-      - 213.183.59.229:9053
-      - 213.183.53.177:9003
-      - 213.183.53.177:9018
-      - 213.183.53.177:9093
-      - 213.183.53.200:9046
-      - 213.183.53.177:9008
-      - 213.183.53.177:9041
-      - 213.183.53.200:9073
-      - 213.183.53.200:9005
-      - 213.183.53.208:9018
-      - 213.183.53.200:9031
-      - 213.183.53.200:9033
-      - 213.183.53.177:9094
-      - 213.183.53.200:9094
-      - 213.183.53.208:9019
-      - 213.183.53.208:9031
-      - 213.183.53.200:9011
-      - 213.183.53.200:9015
-      - 213.183.53.177:9059
-      - 213.183.53.200:9003
-      - 213.183.53.177:9084
-      - 213.183.53.200:9001
-      - 213.183.53.208:9025
-      - 213.183.53.200:9006
-      - 213.183.53.200:9050
-      - 213.183.53.214:9015
-      - 213.183.59.206:9094
-      - 213.183.53.208:9040
-      - 213.183.59.206:9059
-      - 213.183.59.206:9031
-      - 213.183.59.206:9019
-      - 213.183.59.211:9079
-      - 213.183.59.229:9056
-      - 38.68.135.18:5601
-      - 38.68.135.18:8009
-      - 213.183.53.208:9070
-      - 194.71.126.31:989
-      - 213.183.59.229:9084
-      - 213.183.59.229:9018
-      - 217.30.10.67:9041
-      - 213.183.53.214:9060
-      - 217.30.10.67:9093
-      - 217.30.10.67:9032
-      - 217.30.10.67:9042
-      - 217.30.10.67:9043
-      - 213.183.59.206:9088
-      - 213.183.51.171:9020
-      - 217.30.10.67:9020
-      - 217.30.10.67:9000
-      - 213.183.59.229:9020
-      - 217.30.10.65:9025
-      - 217.30.10.65:9040
-      - 213.183.53.208:9000
-      - 213.183.59.229:9025
-      - 213.183.51.171:9008
-      - 217.30.10.67:9025
-      - 217.30.10.65:9070
-      - 213.183.53.214:9020
-      - 38.121.43.71:443
-      - 217.30.10.65:9093
-      - 213.183.53.200:9088
-      - 213.183.51.171:9070
-      - 217.30.10.67:9026
-      - 213.183.53.208:9041
-      - 213.183.59.229:9050
-      - 217.30.10.65:9046
-      - 217.30.10.66:9014
-      - 217.30.10.65:9056
-      - 217.30.10.65:9060
-      - 217.30.10.65:9018
-      - 217.30.10.66:9001
-      - 213.183.53.214:9032
-      - 217.30.10.65:9015
-      - 217.30.10.66:9015
-      - 38.121.43.71:5500
-      - 217.30.10.66:9093
-      - 217.30.10.66:9097
-      - 217.30.10.66:9027
-      - 217.30.10.66:9040
-      - 38.121.43.71:6679
-      - 194.71.130.194:50003
-      - 217.30.10.66:9008
-      - 217.30.10.66:9060
-      - 37.120.192.158:806
-      - 213.183.51.171:9042
-      - 213.183.53.214:9061
-      - 217.30.10.66:9019
-      - 37.120.192.158:800
-      - 217.30.10.65:9019
-      - 37.120.192.158:802
-      - 213.183.53.208:9046
-      - 217.30.10.66:9094
-      - 217.30.10.66:9050
+      - CN 20｜openit.ml
+      - CN 11｜openit.ml
+      - CN 67｜openit.ml
+      - CN 68｜openit.ml
+      - CN 8｜openit.ml
+      - CN 2｜openit.ml
+      - CN 16｜openit.ml
+      - CN 47｜openit.ml
+      - CN 35｜openit.ml
+      - CN 1｜openit.ml
       - CN 4｜openit.ml
-      - 213.183.53.182:9084
-      - 37.120.192.158:810
-      - 85.208.108.18:7001
-      - 213.183.51.171:9011
-      - 217.30.10.66:9031
-      - 213.183.59.185:9031
-      - 217.30.10.66:9079
-      - 37.120.192.158:801
-      - 217.30.10.66:9041
-      - 37.120.192.158:804
-      - _FR_法国_0@11
-      - 38.121.43.71:5000
-      - 37.120.192.158:809
-      - 37.120.192.158:805
-      - 37.120.192.158:803
-      - 217.30.10.66:9059
-      - 213.183.51.171:9041
-      - 213.183.59.185:9040
-      - 213.183.59.185:9037
-      - 213.183.53.214:9011
-      - 213.183.51.171:9014
-      - 213.183.59.185:9042
-      - 217.30.10.65:9008
-      - 213.183.63.218:9098
-      - 217.30.10.65:9045
+      - CN 43｜openit.ml
+      - CN 42｜openit.ml
+      - CN 52｜openit.ml
+      - CN 49｜openit.ml
+      - CN 26｜openit.ml
+      - CN 19｜openit.ml
+      - CN 64｜openit.ml
+      - CN 13｜openit.ml
+      - CN 33｜openit.ml
+      - CN 41｜openit.ml
+      - CN 53｜openit.ml
+      - CN 61｜openit.ml
+      - CN 58｜openit.ml
+      - CN 60｜openit.ml
+      - CN 23｜openit.ml
+      - CN 31｜openit.ml
+      - CN 51｜openit.ml
+      - CN 30｜openit.ml
+      - CN 46｜openit.ml
+      - CN 77｜openit.ml
+      - CN 40｜openit.ml
+      - CN 57｜openit.ml
+      - CN 48｜openit.ml
+      - CN 15｜openit.ml
+      - CN 29｜openit.ml
+      - CN 65｜openit.ml
+      - CN 36｜openit.ml
+      - CN 21｜openit.ml
+      - CN 50｜openit.ml
+      - CN 76｜openit.ml
+      - CN 70｜openit.ml
+      - 38.68.134.85:443
+      - CN 79｜openit.ml
+      - CN 12｜openit.ml
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 213.183.59.229:9042
-      - 161.8.184.62:29622
-      - 213.183.53.177:9010
-      - 213.183.53.200:9014
-      - 213.183.59.206:9024
-      - 213.183.53.177:9060
-      - 213.183.53.200:9020
-      - 213.183.53.177:9033
-      - 213.183.53.177:9000
-      - 213.183.53.200:9018
-      - 213.183.53.208:9008
-      - 213.183.53.200:9041
-      - 213.183.53.200:9026
-      - 213.183.53.200:9027
-      - 213.183.53.200:9024
-      - 213.183.53.200:9037
-      - 213.183.59.229:9019
-      - 213.183.59.229:9053
-      - 213.183.53.177:9003
-      - 213.183.53.177:9018
-      - 213.183.53.177:9093
-      - 213.183.53.200:9046
-      - 213.183.53.177:9008
-      - 213.183.53.177:9041
-      - 213.183.53.200:9073
-      - 213.183.53.200:9005
-      - 213.183.53.208:9018
-      - 213.183.53.200:9031
-      - 213.183.53.200:9033
-      - 213.183.53.177:9094
-      - 213.183.53.200:9094
-      - 213.183.53.208:9019
-      - 213.183.53.208:9031
-      - 213.183.53.200:9011
-      - 213.183.53.200:9015
-      - 213.183.53.177:9059
-      - 213.183.53.200:9003
-      - 213.183.53.177:9084
-      - 213.183.53.200:9001
-      - 213.183.53.208:9025
-      - 213.183.53.200:9006
-      - 213.183.53.200:9050
-      - 213.183.53.214:9015
-      - 213.183.59.206:9094
-      - 213.183.53.208:9040
-      - 213.183.59.206:9059
-      - 213.183.59.206:9031
-      - 213.183.59.206:9019
-      - 213.183.59.211:9079
-      - 213.183.59.229:9056
-      - 38.68.135.18:5601
-      - 38.68.135.18:8009
-      - 213.183.53.208:9070
-      - 194.71.126.31:989
-      - 213.183.59.229:9084
-      - 213.183.59.229:9018
-      - 217.30.10.67:9041
-      - 213.183.53.214:9060
-      - 217.30.10.67:9093
-      - 217.30.10.67:9032
-      - 217.30.10.67:9042
-      - 217.30.10.67:9043
-      - 213.183.59.206:9088
-      - 213.183.51.171:9020
-      - 217.30.10.67:9020
-      - 217.30.10.67:9000
-      - 213.183.59.229:9020
-      - 217.30.10.65:9025
-      - 217.30.10.65:9040
-      - 213.183.53.208:9000
-      - 213.183.59.229:9025
-      - 213.183.51.171:9008
-      - 217.30.10.67:9025
-      - 217.30.10.65:9070
-      - 213.183.53.214:9020
-      - 38.121.43.71:443
-      - 217.30.10.65:9093
-      - 213.183.53.200:9088
-      - 213.183.51.171:9070
-      - 217.30.10.67:9026
-      - 213.183.53.208:9041
-      - 213.183.59.229:9050
-      - 217.30.10.65:9046
-      - 217.30.10.66:9014
-      - 217.30.10.65:9056
-      - 217.30.10.65:9060
-      - 217.30.10.65:9018
-      - 217.30.10.66:9001
-      - 213.183.53.214:9032
-      - 217.30.10.65:9015
-      - 217.30.10.66:9015
-      - 38.121.43.71:5500
-      - 217.30.10.66:9093
-      - 217.30.10.66:9097
-      - 217.30.10.66:9027
-      - 217.30.10.66:9040
-      - 38.121.43.71:6679
-      - 194.71.130.194:50003
-      - 217.30.10.66:9008
-      - 217.30.10.66:9060
-      - 37.120.192.158:806
-      - 213.183.51.171:9042
-      - 213.183.53.214:9061
-      - 217.30.10.66:9019
-      - 37.120.192.158:800
-      - 217.30.10.65:9019
-      - 37.120.192.158:802
-      - 213.183.53.208:9046
-      - 217.30.10.66:9094
-      - 217.30.10.66:9050
+      - CN 20｜openit.ml
+      - CN 11｜openit.ml
+      - CN 67｜openit.ml
+      - CN 68｜openit.ml
+      - CN 8｜openit.ml
+      - CN 2｜openit.ml
+      - CN 16｜openit.ml
+      - CN 47｜openit.ml
+      - CN 35｜openit.ml
+      - CN 1｜openit.ml
       - CN 4｜openit.ml
-      - 213.183.53.182:9084
-      - 37.120.192.158:810
-      - 85.208.108.18:7001
-      - 213.183.51.171:9011
-      - 217.30.10.66:9031
-      - 213.183.59.185:9031
-      - 217.30.10.66:9079
-      - 37.120.192.158:801
-      - 217.30.10.66:9041
-      - 37.120.192.158:804
-      - _FR_法国_0@11
-      - 38.121.43.71:5000
-      - 37.120.192.158:809
-      - 37.120.192.158:805
-      - 37.120.192.158:803
-      - 217.30.10.66:9059
-      - 213.183.51.171:9041
-      - 213.183.59.185:9040
-      - 213.183.59.185:9037
-      - 213.183.53.214:9011
-      - 213.183.51.171:9014
-      - 213.183.59.185:9042
-      - 217.30.10.65:9008
-      - 213.183.63.218:9098
-      - 217.30.10.65:9045
+      - CN 43｜openit.ml
+      - CN 42｜openit.ml
+      - CN 52｜openit.ml
+      - CN 49｜openit.ml
+      - CN 26｜openit.ml
+      - CN 19｜openit.ml
+      - CN 64｜openit.ml
+      - CN 13｜openit.ml
+      - CN 33｜openit.ml
+      - CN 41｜openit.ml
+      - CN 53｜openit.ml
+      - CN 61｜openit.ml
+      - CN 58｜openit.ml
+      - CN 60｜openit.ml
+      - CN 23｜openit.ml
+      - CN 31｜openit.ml
+      - CN 51｜openit.ml
+      - CN 30｜openit.ml
+      - CN 46｜openit.ml
+      - CN 77｜openit.ml
+      - CN 40｜openit.ml
+      - CN 57｜openit.ml
+      - CN 48｜openit.ml
+      - CN 15｜openit.ml
+      - CN 29｜openit.ml
+      - CN 65｜openit.ml
+      - CN 36｜openit.ml
+      - CN 21｜openit.ml
+      - CN 50｜openit.ml
+      - CN 76｜openit.ml
+      - CN 70｜openit.ml
+      - 38.68.134.85:443
+      - CN 79｜openit.ml
+      - CN 12｜openit.ml
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1164,142 +436,51 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 213.183.59.229:9042
-      - 161.8.184.62:29622
-      - 213.183.53.177:9010
-      - 213.183.53.200:9014
-      - 213.183.59.206:9024
-      - 213.183.53.177:9060
-      - 213.183.53.200:9020
-      - 213.183.53.177:9033
-      - 213.183.53.177:9000
-      - 213.183.53.200:9018
-      - 213.183.53.208:9008
-      - 213.183.53.200:9041
-      - 213.183.53.200:9026
-      - 213.183.53.200:9027
-      - 213.183.53.200:9024
-      - 213.183.53.200:9037
-      - 213.183.59.229:9019
-      - 213.183.59.229:9053
-      - 213.183.53.177:9003
-      - 213.183.53.177:9018
-      - 213.183.53.177:9093
-      - 213.183.53.200:9046
-      - 213.183.53.177:9008
-      - 213.183.53.177:9041
-      - 213.183.53.200:9073
-      - 213.183.53.200:9005
-      - 213.183.53.208:9018
-      - 213.183.53.200:9031
-      - 213.183.53.200:9033
-      - 213.183.53.177:9094
-      - 213.183.53.200:9094
-      - 213.183.53.208:9019
-      - 213.183.53.208:9031
-      - 213.183.53.200:9011
-      - 213.183.53.200:9015
-      - 213.183.53.177:9059
-      - 213.183.53.200:9003
-      - 213.183.53.177:9084
-      - 213.183.53.200:9001
-      - 213.183.53.208:9025
-      - 213.183.53.200:9006
-      - 213.183.53.200:9050
-      - 213.183.53.214:9015
-      - 213.183.59.206:9094
-      - 213.183.53.208:9040
-      - 213.183.59.206:9059
-      - 213.183.59.206:9031
-      - 213.183.59.206:9019
-      - 213.183.59.211:9079
-      - 213.183.59.229:9056
-      - 38.68.135.18:5601
-      - 38.68.135.18:8009
-      - 213.183.53.208:9070
-      - 194.71.126.31:989
-      - 213.183.59.229:9084
-      - 213.183.59.229:9018
-      - 217.30.10.67:9041
-      - 213.183.53.214:9060
-      - 217.30.10.67:9093
-      - 217.30.10.67:9032
-      - 217.30.10.67:9042
-      - 217.30.10.67:9043
-      - 213.183.59.206:9088
-      - 213.183.51.171:9020
-      - 217.30.10.67:9020
-      - 217.30.10.67:9000
-      - 213.183.59.229:9020
-      - 217.30.10.65:9025
-      - 217.30.10.65:9040
-      - 213.183.53.208:9000
-      - 213.183.59.229:9025
-      - 213.183.51.171:9008
-      - 217.30.10.67:9025
-      - 217.30.10.65:9070
-      - 213.183.53.214:9020
-      - 38.121.43.71:443
-      - 217.30.10.65:9093
-      - 213.183.53.200:9088
-      - 213.183.51.171:9070
-      - 217.30.10.67:9026
-      - 213.183.53.208:9041
-      - 213.183.59.229:9050
-      - 217.30.10.65:9046
-      - 217.30.10.66:9014
-      - 217.30.10.65:9056
-      - 217.30.10.65:9060
-      - 217.30.10.65:9018
-      - 217.30.10.66:9001
-      - 213.183.53.214:9032
-      - 217.30.10.65:9015
-      - 217.30.10.66:9015
-      - 38.121.43.71:5500
-      - 217.30.10.66:9093
-      - 217.30.10.66:9097
-      - 217.30.10.66:9027
-      - 217.30.10.66:9040
-      - 38.121.43.71:6679
-      - 194.71.130.194:50003
-      - 217.30.10.66:9008
-      - 217.30.10.66:9060
-      - 37.120.192.158:806
-      - 213.183.51.171:9042
-      - 213.183.53.214:9061
-      - 217.30.10.66:9019
-      - 37.120.192.158:800
-      - 217.30.10.65:9019
-      - 37.120.192.158:802
-      - 213.183.53.208:9046
-      - 217.30.10.66:9094
-      - 217.30.10.66:9050
+      - CN 20｜openit.ml
+      - CN 11｜openit.ml
+      - CN 67｜openit.ml
+      - CN 68｜openit.ml
+      - CN 8｜openit.ml
+      - CN 2｜openit.ml
+      - CN 16｜openit.ml
+      - CN 47｜openit.ml
+      - CN 35｜openit.ml
+      - CN 1｜openit.ml
       - CN 4｜openit.ml
-      - 213.183.53.182:9084
-      - 37.120.192.158:810
-      - 85.208.108.18:7001
-      - 213.183.51.171:9011
-      - 217.30.10.66:9031
-      - 213.183.59.185:9031
-      - 217.30.10.66:9079
-      - 37.120.192.158:801
-      - 217.30.10.66:9041
-      - 37.120.192.158:804
-      - _FR_法国_0@11
-      - 38.121.43.71:5000
-      - 37.120.192.158:809
-      - 37.120.192.158:805
-      - 37.120.192.158:803
-      - 217.30.10.66:9059
-      - 213.183.51.171:9041
-      - 213.183.59.185:9040
-      - 213.183.59.185:9037
-      - 213.183.53.214:9011
-      - 213.183.51.171:9014
-      - 213.183.59.185:9042
-      - 217.30.10.65:9008
-      - 213.183.63.218:9098
-      - 217.30.10.65:9045
+      - CN 43｜openit.ml
+      - CN 42｜openit.ml
+      - CN 52｜openit.ml
+      - CN 49｜openit.ml
+      - CN 26｜openit.ml
+      - CN 19｜openit.ml
+      - CN 64｜openit.ml
+      - CN 13｜openit.ml
+      - CN 33｜openit.ml
+      - CN 41｜openit.ml
+      - CN 53｜openit.ml
+      - CN 61｜openit.ml
+      - CN 58｜openit.ml
+      - CN 60｜openit.ml
+      - CN 23｜openit.ml
+      - CN 31｜openit.ml
+      - CN 51｜openit.ml
+      - CN 30｜openit.ml
+      - CN 46｜openit.ml
+      - CN 77｜openit.ml
+      - CN 40｜openit.ml
+      - CN 57｜openit.ml
+      - CN 48｜openit.ml
+      - CN 15｜openit.ml
+      - CN 29｜openit.ml
+      - CN 65｜openit.ml
+      - CN 36｜openit.ml
+      - CN 21｜openit.ml
+      - CN 50｜openit.ml
+      - CN 76｜openit.ml
+      - CN 70｜openit.ml
+      - 38.68.134.85:443
+      - CN 79｜openit.ml
+      - CN 12｜openit.ml
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
