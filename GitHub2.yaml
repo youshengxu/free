@@ -5,135 +5,759 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 14.29.124.168:25280, server: 14.29.124.168, port: 25280, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN 3｜openit.ml, server: gzyd1.52147.top, port: 30010, type: trojan, password: 213d1480-23fd-44aa-9d91-b1e3502a59c5, sni: gzyd1.52147.top, skip-cert-verify: true, udp: true}
-  - {name: JP 1｜openit.ml, server: 164.70.68.67, port: 28000, type: trojan, password: 213d1480-23fd-44aa-9d91-b1e3502a59c5, skip-cert-verify: true, udp: true}
-  - {name: CN 1｜openit.ml, server: gzyd2.52147.top, port: 30120, type: trojan, password: 213d1480-23fd-44aa-9d91-b1e3502a59c5, sni: gzyd2.52147.top, skip-cert-verify: true, udp: true}
-  - {name: US 20｜openit.ml, server: bai-piao-wang-zhe10.98848.xyz, port: 22168, type: trojan, password: 685022af-2086-454c-8725-8ff6b6ab1d13, sni: bai-piao-wang-zhe10.98848.xyz, skip-cert-verify: true, udp: true}
-  - {name: US 12｜openit.ml, server: bai-piao-wang-zhe10.98848.xyz, port: 48240, type: trojan, password: 685022af-2086-454c-8725-8ff6b6ab1d13, sni: bai-piao-wang-zhe10.98848.xyz, skip-cert-verify: true, udp: true}
-  - {name: _CN_中国->🇰🇷_KR_韩国_2@12, server: 116.129.254.65, port: 63004, type: vmess, uuid: 352ba93c-fd92-3055-ad10-b3599ff2802f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 116.129.254.65}, udp: true}
-  - {name: _JP_日本_1_0@1, server: 89.31.126.225, port: 802, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: US_1421, server: 20.123.187.212, port: 27931, type: vmess, uuid: 256eae41-0b8f-4faa-bce8-6366011dc19f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US_41_12@40, server: s3.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s3.hazz.win, skip-cert-verify: true, udp: true}
-  - {name: US 21｜openit.ml, server: usfree2.jiantian.xyz, port: 32462, type: trojan, password: cb5e2135-4d64-4454-be98-5bae4f2618d1, sni: usfree2.jiantian.xyz, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇮🇷IR-🇮🇷IR_468, server: mosaic.marythunt.xyz, port: 443, type: trojan, password: !<str> 372815193, sni: mosaic.marythunt.xyz, skip-cert-verify: true, udp: true}
-  - {name: US 7｜openit.ml, server: youtube-bai-piao-wang-zhe.nl.884899.cf, port: 41196, type: trojan, password: 94afcc56-cc1c-4cd4-8c82-1215cd052795, sni: youtube-bai-piao-wang-zhe.nl.884899.cf, skip-cert-verify: true, udp: true}
-  - {name: AU 2｜openit.ml, server: jgwxn3.gaox.ml, port: 443, type: trojan, password: cb43b7c2-b744-41c5-bcc2-fd7467b332cf, sni: jgwxn3.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: US 15｜openit.ml, server: s2.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s2.hazz.win, skip-cert-verify: true, udp: true}
-  - {name: 185.4.65.6:21247, server: 185.4.65.6, port: 21247, type: ss, cipher: aes-256-cfb, password: vDS9G2p, udp: true}
-  - {name: US 1｜openit.ml, server: bai-piao-wang-zhe10.98848.xyz, port: 50858, type: trojan, password: 685022af-2086-454c-8725-8ff6b6ab1d13, sni: bai-piao-wang-zhe10.98848.xyz, skip-cert-verify: true, udp: true}
-  - {name: US 26｜openit.ml, server: jgwhdlb1.gaox.ml, port: 443, type: trojan, password: e05c749b-7c6b-41b8-9c71-9dcf685edf4a, sni: jgwhdlb1.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: HK 4｜openit.ml, server: hkt.52147.top, port: 28000, type: trojan, password: 213d1480-23fd-44aa-9d91-b1e3502a59c5, sni: hkt.52147.top, skip-cert-verify: true, udp: true}
-  - {name: CN 5｜openit.ml, server: hnyd.52147.top, port: 30180, type: trojan, password: 213d1480-23fd-44aa-9d91-b1e3502a59c5, sni: hnyd.52147.top, skip-cert-verify: true, udp: true}
-  - {name: CN 4｜openit.ml, server: gzyd2.52147.top, port: 30010, type: trojan, password: 213d1480-23fd-44aa-9d91-b1e3502a59c5, sni: gzyd2.52147.top, skip-cert-verify: true, udp: true}
-  - {name: 138.197.166.205:811, server: 138.197.166.205, port: 811, type: ss, cipher: chacha20-ietf-poly1305, password: Ultr@r00t_2017, udp: true}
-  - {name: RU_734, server: 45.144.176.135, port: 3004, type: ss, cipher: aes-256-cfb, password: 3682oiuvefwwmbc1475, udp: true}
-  - {name: _FR_法国_0@11, server: 51.38.118.42, port: 811, type: ss, cipher: chacha20-ietf-poly1305, password: Ultr@r00t_2017, udp: true}
-  - {name: _JP_日本_2_0@23, server: 89.31.126.171, port: 800, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: US 13｜openit.ml, server: tj-sg02.yiyodns.xyz, port: 443, type: trojan, password: 7dafe71e-2be6-302f-bdfc-e6319a3299bc, sni: tj-sg02.yiyodns.xyz, skip-cert-verify: true, udp: true}
-  - {name: 欧洲(油管:破解资源君2.0) 5, server: api.qiscus.com, port: 443, type: vmess, uuid: 8f9b60e6-1db3-42e4-97b9-1e311f427649, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /vmess-ws-makae, ws-headers: {Host: bn-id01.ipv2ray.xyz}, udp: true}
-  - {name: 欧洲(油管:破解资源君2.0) 18, server: usyy.884899.cf, port: 443, type: trojan, password: 2debb06b-95ce-4e9b-956a-6cf7cadac30c, sni: usyy.884899.cf, skip-cert-verify: true, udp: true}
+  - {name: CN 8｜openit.ml, server: cu-cs.okvpn.xyz, port: 20000, type: trojan, password: d6c81482-2993-419c-a602-df2f912ea4ba, sni: cu-cs.okvpn.xyz, skip-cert-verify: true, udp: true}
+  - {name: US 11｜openit.ml, server: fhcamd2.gaox.ml, port: 443, type: trojan, password: dbf9bf9c-2c3f-474a-8031-d4c00666a989, sni: fhcamd2.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: LT🇱🇹LT🇱🇹LT_394🇱🇹LT_424🇱🇹LT_535_375_359, server: 213.183.53.214, port: 9060, type: ss, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ, udp: true}
+  - {name: LT🇱🇹LT🇱🇹LT_511🇱🇹LT_488🇱🇹LT_574_389_449, server: 213.183.53.177, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
+  - {name: LT🇱🇹LT🇱🇹LT_512🇱🇹LT_486🇱🇹LT_573_390_448, server: 213.183.53.200, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU, udp: true}
+  - {name: LT🇱🇹LT🇱🇹LT_480🇱🇹LT_518🇱🇹LT_580_404_438, server: 213.183.53.177, port: 9033, type: ss, cipher: aes-256-cfb, password: UTJA57ypk2XKQpnm, udp: true}
+  - {name: LT🇱🇹LT🇱🇹LT_497🇱🇹LT_490🇱🇹LT_553_428_441, server: 213.183.53.200, port: 9026, type: ss, cipher: aes-256-cfb, password: QWDDvVE9npNurQfA, udp: true}
+  - {name: LT🇱🇹LT🇱🇹LT_484🇱🇹LT_493🇱🇹LT_555_413_431, server: 213.183.53.200, port: 9006, type: ss, cipher: aes-256-cfb, password: FAdUvMJUq5vDgKEq, udp: true}
+  - {name: LT🇱🇹LT🇱🇹LT_500🇱🇹LT_481🇱🇹LT_565_411_470, server: 213.183.53.200, port: 9050, type: ss, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE, udp: true}
+  - {name: LT🇱🇹LT🇱🇹LT_513🇱🇹LT_502🇱🇹LT_582_388_460, server: 213.183.53.177, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
+  - {name: LT🇱🇹LT🇱🇹LT_482🇱🇹LT_517🇱🇹LT_566_403_439, server: 213.183.53.177, port: 9010, type: ss, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4, udp: true}
+  - {name: LT🇱🇹LT🇱🇹LT_477🇱🇹LT_494🇱🇹LT_548_406_435, server: 213.183.53.200, port: 9005, type: ss, cipher: aes-256-cfb, password: ZET59LF6DvCC8KVt, udp: true}
+  - {name: LT🇱🇹LT🇱🇹LT_474🇱🇹LT_496🇱🇹LT_554_419_442, server: 213.183.53.200, port: 9024, type: ss, cipher: aes-256-cfb, password: BejrQvtu9sqUeNuZ, udp: true}
+  - {name: _US_美国_3_0@3, server: 38.75.136.102, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: _US_美国_20_0@26, server: 38.75.136.102, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: LT🇱🇹LT🇱🇹LT_493🇱🇹LT_487🇱🇹LT_557_422_443, server: 213.183.53.200, port: 9003, type: ss, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP, udp: true}
+  - {name: _US_美国_6_0@6, server: 38.75.136.102, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: LT🇱🇹LT🇱🇹LT_508🇱🇹LT_499🇱🇹LT_578_415_455, server: 213.183.53.200, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH, udp: true}
+  - {name: NL🇳🇱NL_582🇳🇱NL_580_545, server: 213.183.59.211, port: 9010, type: ss, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4, udp: true}
+  - {name: _US_美国_13_0@13, server: 38.75.136.102, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: LT🇱🇹LT🇱🇹LT_396🇱🇹LT_428🇱🇹LT_497_370_362, server: 213.183.53.214, port: 9061, type: ss, cipher: aes-256-cfb, password: 4R3hUfZ2FHhDmNcP, udp: true}
+  - {name: LT🇱🇹LT🇱🇹LT_490🇱🇹LT_511🇱🇹LT_560_399_459, server: 213.183.53.177, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
+  - {name: _US_美国_15_0@15, server: 38.68.135.18, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: _US_美国_10_0@10, server: 38.75.136.102, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: LT🇱🇹LT🇱🇹LT_483🇱🇹LT_516🇱🇹LT_584_402_440, server: 213.183.53.177, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
+  - {name: LT🇱🇹LT🇱🇹LT_397🇱🇹LT_454_367_363, server: 213.183.53.214, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa, udp: true}
+  - {name: LT🇱🇹LT🇱🇹LT_475🇱🇹LT_512🇱🇹LT_552_407_433, server: 213.183.53.177, port: 9093, type: ss, cipher: aes-256-cfb, password: wfLC2y7rzZyCmuyt, udp: true}
+  - {name: LT🇱🇹LT🇱🇹LT_478🇱🇹LT_519🇱🇹LT_550_408_436, server: 213.183.53.200, port: 9088, type: ss, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn, udp: true}
+  - {name: US_55_13@54, server: s3.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s3.hazz.win, skip-cert-verify: true, udp: true}
+  - {name: LT🇱🇹LT🇱🇹LT_507🇱🇹LT_500🇱🇹LT_579_417_456, server: 213.183.53.200, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX, udp: true}
+  - {name: LT🇱🇹LT🇱🇹LT_509🇱🇹LT_497🇱🇹LT_576_398_450, server: 213.183.53.200, port: 9046, type: ss, cipher: aes-256-cfb, password: NvS8N4Vf8qAGPSCL, udp: true}
+  - {name: LT🇱🇹LT🇱🇹LT_501🇱🇹LT_482🇱🇹LT_567_409_452, server: 213.183.53.177, port: 9060, type: ss, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ, udp: true}
+  - {name: LT🇱🇹LT🇱🇹LT_479🇱🇹LT_480🇱🇹LT_563_405_437, server: 213.183.53.200, port: 9001, type: ss, cipher: aes-256-cfb, password: UkXRsXvR6buDMG2Y, udp: true}
+  - {name: LT🇱🇹LT🇱🇹LT_488🇱🇹LT_498🇱🇹LT_577_414_453, server: 213.183.53.200, port: 9060, type: ss, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ, udp: true}
+  - {name: LT🇱🇹LT🇱🇹LT_491🇱🇹LT_510🇱🇹LT_551_397_461, server: 213.183.53.177, port: 9008, type: ss, cipher: aes-256-cfb, password: y9VURyNzJWNRYEGQ, udp: true}
+  - {name: NL🇳🇱NL🇳🇱NL_570🇳🇱NL_572🇳🇱NL_672_471_539, server: 213.183.59.206, port: 9088, type: ss, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn, udp: true}
+  - {name: _US_美国_12_0@12, server: 38.75.136.102, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: _US_美国_5_0@5, server: 38.75.136.102, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: LT🇱🇹LT🇱🇹LT_504🇱🇹LT_485🇱🇹LT_572_391_447, server: 213.183.53.200, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa, udp: true}
+  - {name: LT🇱🇹LT🇱🇹LT_506🇱🇹LT_483🇱🇹LT_568_394_445, server: 213.183.53.200, port: 9097, type: ss, cipher: aes-256-cfb, password: Sn5B7jTqr76aCJT8, udp: true}
+  - {name: _US_美国_7_0@7, server: 38.68.135.18, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: _US_美国_32_0@60, server: 38.75.136.102, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: _US_美国_28_0@54, server: 38.68.135.18, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: LT🇱🇹LT🇱🇹LT_510🇱🇹LT_495🇱🇹LT_575_395_451, server: 213.183.53.200, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
+  - {name: NL🇳🇱NL🇳🇱NL_561🇳🇱NL_596_438_538, server: 213.183.59.206, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
+  - {name: _US_美国_16_0@16, server: 38.75.136.102, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: RU🇷🇺RU_678🇷🇺RU_654🇷🇺RU_739_594, server: 217.30.10.65, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH, udp: true}
+  - {name: LT🇱🇹LT🇱🇹LT_485🇱🇹LT_491🇱🇹LT_586_416_430, server: 213.183.53.200, port: 9084, type: ss, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj, udp: true}
+  - {name: NL🇳🇱NL🇳🇱NL_555🇳🇱NL_567🇳🇱NL_650_445_521, server: 213.183.59.185, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
+  - {name: NL🇳🇱NL🇳🇱NL_571🇳🇱NL_573🇳🇱NL_668_442_542, server: 213.183.59.190, port: 9026, type: ss, cipher: aes-256-cfb, password: QWDDvVE9npNurQfA, udp: true}
+  - {name: RU🇷🇺RU🇷🇺RU_672🇷🇺RU_659🇷🇺RU_752_589_570, server: 217.30.10.67, port: 9059, type: ss, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY, udp: true}
+  - {name: RU🇷🇺RU🇷🇺RU_648🇷🇺RU_712🇷🇺RU_760_551_634, server: 217.30.10.67, port: 9026, type: ss, cipher: aes-256-cfb, password: QWDDvVE9npNurQfA, udp: true}
+  - {name: NL🇳🇱NL🇳🇱NL_557🇳🇱NL_597🇳🇱NL_643_432_532, server: 213.183.59.190, port: 9030, type: ss, cipher: aes-256-cfb, password: GeregetR8cvQHzYr, udp: true}
+  - {name: RU🇷🇺RU🇷🇺RU_624🇷🇺RU_634🇷🇺RU_724_545_610, server: 217.30.10.65, port: 9088, type: ss, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn, udp: true}
+  - {name: LT🇱🇹LT_406🇱🇹LT_469🇱🇹LT_534_374, server: 213.183.53.214, port: 9015, type: ss, cipher: aes-256-cfb, password: ZpNDDKRu9MagNvaf, udp: true}
+  - {name: RU🇷🇺RU🇷🇺RU_667🇷🇺RU_675_525_635, server: 217.30.10.63, port: 9088, type: ss, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn, udp: true}
+  - {name: LT🇱🇹LT🇱🇹LT_495🇱🇹LT_492🇱🇹LT_571_420_467, server: 213.183.53.200, port: 9015, type: ss, cipher: aes-256-cfb, password: ZpNDDKRu9MagNvaf, udp: true}
+  - {name: RU🇷🇺RU🇷🇺RU_684🇷🇺RU_661🇷🇺RU_743_593_590, server: 217.30.10.65, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
+  - {name: _US_美国_4_0@4, server: 38.75.136.102, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: LT🇱🇹LT🇱🇹LT_404🇱🇹LT_460🇱🇹LT_512_363_372, server: 213.183.53.214, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
+  - {name: _US_美国_22_0@33, server: 38.68.135.18, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: _US_美国_37_0@76, server: 38.75.136.102, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: NL🇳🇱NL🇳🇱NL_556🇳🇱NL_595🇳🇱NL_641_454_489, server: 213.183.59.190, port: 9006, type: ss, cipher: aes-256-cfb, password: FAdUvMJUq5vDgKEq, udp: true}
+  - {name: _US_美国_18_0@18, server: 38.75.136.102, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: _US_美国_39_0@80, server: 38.121.43.71, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: LT🇱🇹LT🇱🇹LT_498🇱🇹LT_515🇱🇹LT_559_412_444, server: 213.183.53.200, port: 9041, type: ss, cipher: aes-256-cfb, password: U6qnYRhfyDmn8sgn, udp: true}
+  - {name: LT🇱🇹LT🇱🇹LT_408🇱🇹LT_471🇱🇹LT_524_348_383, server: 213.183.53.214, port: 9032, type: ss, cipher: aes-256-cfb, password: UWZQeLRWnkqgkseq, udp: true}
+  - {name: RU🇷🇺RU🇷🇺RU_651🇷🇺RU_715🇷🇺RU_757_543_642, server: 217.30.10.65, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
+  - {name: LT🇱🇹LT🇱🇹LT_407🇱🇹LT_470🇱🇹LT_533_350_379, server: 213.183.53.208, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
+  - {name: _US_美国_26_0@48, server: 38.121.43.71, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: LT🇱🇹LT🇱🇹LT_481🇱🇹LT_503🇱🇹LT_549_410_432, server: 213.183.53.200, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
+  - {name: RU🇷🇺RU_656🇷🇺RU_717🇷🇺RU_756_643, server: 217.30.10.67, port: 9041, type: ss, cipher: aes-256-cfb, password: U6qnYRhfyDmn8sgn, udp: true}
+  - {name: LT🇱🇹LT🇱🇹LT_505🇱🇹LT_501🇱🇹LT_581_421_458, server: 213.183.53.200, port: 9027, type: ss, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8, udp: true}
+  - {name: LT🇱🇹LT🇱🇹LT_486🇱🇹LT_489🇱🇹LT_556_423_469, server: 213.183.53.177, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH, udp: true}
+  - {name: NL🇳🇱NL🇳🇱NL_592🇳🇱NL_601🇳🇱NL_676_498_546, server: 213.183.59.206, port: 9059, type: ss, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY, udp: true}
+  - {name: RU🇷🇺RU_661🇷🇺RU_646🇷🇺RU_734_599, server: 217.30.10.65, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga, udp: true}
+  - {name: NL🇳🇱NL🇳🇱NL_568🇳🇱NL_574🇳🇱NL_656_444_500, server: 213.183.59.185, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga, udp: true}
+  - {name: RU🇷🇺RU🇷🇺RU_677🇷🇺RU_699🇷🇺RU_776_541_649, server: 217.30.10.63, port: 9046, type: ss, cipher: aes-256-cfb, password: NvS8N4Vf8qAGPSCL, udp: true}
+  - {name: _US_美国_14_0@14, server: 38.121.43.71, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: LT🇱🇹LT_432🇱🇹LT_477🇱🇹LT_493_391, server: 213.183.53.208, port: 9031, type: ss, cipher: aes-256-cfb, password: BwcAUZk8hUFAkDGN, udp: true}
+  - {name: _US_美国_29_0@56, server: 38.121.43.71, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: NL🇳🇱NL🇳🇱NL_545🇳🇱NL_591🇳🇱NL_619_492_486, server: 213.183.59.185, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU, udp: true}
+  - {name: _US_美国_23_0@38, server: 38.121.43.71, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: RS🇷🇸RS🇷🇸RS_616🇷🇸RS_624🇷🇸RS_709_512_569, server: 194.71.126.31, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: _US_美国_24_0@43, server: 38.121.43.71, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: LT🇱🇹LT🇱🇹LT_473🇱🇹LT_484🇱🇹LT_569_393_446, server: 213.183.53.200, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
+  - {name: NL🇳🇱NL🇳🇱NL_536🇳🇱NL_557🇳🇱NL_632_457_505, server: 213.183.59.185, port: 9057, type: ss, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z, udp: true}
+  - {name: _US_美国_27_0@50, server: 38.121.43.71, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: LT🇱🇹LT🇱🇹LT_459🇱🇹LT_398🇱🇹LT_504_349_354, server: 213.183.53.182, port: 9032, type: ss, cipher: aes-256-cfb, password: UWZQeLRWnkqgkseq, udp: true}
+  - {name: _NL_荷兰_5_0@72, server: 37.120.192.158, port: 805, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: LT🇱🇹LT🇱🇹LT_503🇱🇹LT_504🇱🇹LT_583_427_462, server: 213.183.53.177, port: 9003, type: ss, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP, udp: true}
+  - {name: _US_美国_21_0@28, server: 38.121.43.71, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: RU🇷🇺RU🇷🇺RU_639🇷🇺RU_702🇷🇺RU_774_564_588, server: 217.30.10.67, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
+  - {name: _US_美国_11_0@11, server: 38.68.135.18, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: _US_美国_33_0@63, server: 38.75.136.102, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: RU🇷🇺RU🇷🇺RU_634🇷🇺RU_690🇷🇺RU_745_570_584, server: 217.30.10.66, port: 9050, type: ss, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE, udp: true}
+  - {name: RU🇷🇺RU🇷🇺RU_641🇷🇺RU_704🇷🇺RU_779_602_617, server: 217.30.10.67, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga, udp: true}
+  - {name: NL🇳🇱NL🇳🇱NL_583🇳🇱NL_581🇳🇱NL_621_459_509, server: 213.183.59.190, port: 9045, type: ss, cipher: aes-256-cfb, password: Lp27rqyJq72bZsqX, udp: true}
+  - {name: RU🇷🇺RU🇷🇺RU_632🇷🇺RU_688🇷🇺RU_766_572_571, server: 217.30.10.66, port: 9015, type: ss, cipher: aes-256-cfb, password: ZpNDDKRu9MagNvaf, udp: true}
+  - {name: _NL_荷兰_9_0@81, server: 37.120.192.158, port: 806, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: LT🇱🇹LT🇱🇹LT_462🇱🇹LT_404🇱🇹LT_537_361_378, server: 213.183.53.208, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH, udp: true}
+  - {name: NL🇳🇱NL🇳🇱NL_547🇳🇱NL_558🇳🇱NL_634_455_506, server: 213.183.59.185, port: 9046, type: ss, cipher: aes-256-cfb, password: NvS8N4Vf8qAGPSCL, udp: true}
+  - {name: RU🇷🇺RU_683🇷🇺RU_658🇷🇺RU_742_591, server: 217.30.10.65, port: 9060, type: ss, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ, udp: true}
+  - {name: RU🇷🇺RU🇷🇺RU_649🇷🇺RU_713🇷🇺RU_759_550_638, server: 217.30.10.66, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
+  - {name: LT🇱🇹LT🇱🇹LT_443🇱🇹LT_475🇱🇹LT_480_314_345, server: 213.183.53.208, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
+  - {name: RU🇷🇺RU🇷🇺RU_618🇷🇺RU_683🇷🇺RU_754_577_574, server: 217.30.10.66, port: 9027, type: ss, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8, udp: true}
+  - {name: RU🇷🇺RU🇷🇺RU_689🇷🇺RU_682🇷🇺RU_753_578_575, server: 217.30.10.66, port: 9093, type: ss, cipher: aes-256-cfb, password: wfLC2y7rzZyCmuyt, udp: true}
+  - {name: _NL_荷兰_3_0@70, server: 37.120.192.158, port: 803, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: _NL_荷兰_4_0@71, server: 37.120.192.158, port: 800, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: NL🇳🇱NL🇳🇱NL_521🇳🇱NL_536🇳🇱NL_627_475_501, server: 213.183.59.185, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH, udp: true}
+  - {name: RU🇷🇺RU_666🇷🇺RU_647🇷🇺RU_735_598, server: 217.30.10.65, port: 9038, type: ss, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ, udp: true}
+  - {name: _NL_荷兰_6_0@74, server: 37.120.192.158, port: 804, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: RU🇷🇺RU_629🇷🇺RU_684🇷🇺RU_762_573, server: 217.30.10.66, port: 9038, type: ss, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ, udp: true}
+  - {name: NL🇳🇱NL🇳🇱NL_543🇳🇱NL_598🇳🇱NL_604_463_515, server: 213.183.59.206, port: 9058, type: ss, cipher: aes-256-cfb, password: dML2sfhbVwvtfNPe, udp: true}
+  - {name: RU🇷🇺RU_680🇷🇺RU_656🇷🇺RU_741_592, server: 217.30.10.65, port: 9015, type: ss, cipher: aes-256-cfb, password: ZpNDDKRu9MagNvaf, udp: true}
+  - {name: RU🇷🇺RU🇷🇺RU_679🇷🇺RU_655🇷🇺RU_740_595_593, server: 217.30.10.65, port: 9025, type: ss, cipher: aes-256-cfb, password: XPtzA9sCug3SPR4c, udp: true}
+  - {name: _NL_荷兰_7_0@75, server: 37.120.192.158, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: RU🇷🇺RU🇷🇺RU_630🇷🇺RU_686🇷🇺RU_764_574_623, server: 217.30.10.66, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
+  - {name: _NL_荷兰_1_0@53, server: 37.120.192.158, port: 810, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: RU🇷🇺RU🇷🇺RU_628🇷🇺RU_629🇷🇺RU_717_534_614, server: 217.30.10.66, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
+  - {name: RU🇷🇺RU🇷🇺RU_663🇷🇺RU_625_524_644, server: 217.30.10.63, port: 9015, type: ss, cipher: aes-256-cfb, password: ZpNDDKRu9MagNvaf, udp: true}
+  - {name: RU🇷🇺RU🇷🇺RU_664🇷🇺RU_708🇷🇺RU_778_588_629, server: 217.30.10.65, port: 9008, type: ss, cipher: aes-256-cfb, password: y9VURyNzJWNRYEGQ, udp: true}
+  - {name: _CY_塞浦路斯_8@42, server: 213.169.137.221, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: RU🇷🇺RU🇷🇺RU_633🇷🇺RU_689🇷🇺RU_767_571_583, server: 217.30.10.66, port: 9008, type: ss, cipher: aes-256-cfb, password: y9VURyNzJWNRYEGQ, udp: true}
+  - {name: RU🇷🇺RU_668🇷🇺RU_648🇷🇺RU_736_597, server: 217.30.10.65, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
+  - {name: RU🇷🇺RU🇷🇺RU_687🇷🇺RU_663🇷🇺RU_744_592_589, server: 217.30.10.66, port: 9003, type: ss, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP, udp: true}
+  - {name: RU🇷🇺RU🇷🇺RU_710🇷🇺RU_685🇷🇺RU_763_576_572, server: 217.30.10.66, port: 9041, type: ss, cipher: aes-256-cfb, password: U6qnYRhfyDmn8sgn, udp: true}
+  - {name: _US_美国_19_0@25, server: 38.121.43.71, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: RU🇷🇺RU_623🇷🇺RU_635🇷🇺RU_725_609, server: 217.30.10.65, port: 9084, type: ss, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj, udp: true}
+  - {name: RU🇷🇺RU🇷🇺RU_670🇷🇺RU_716🇷🇺RU_784_530_630, server: 217.30.10.66, port: 9097, type: ss, cipher: aes-256-cfb, password: Sn5B7jTqr76aCJT8, udp: true}
+  - {name: _NL_荷兰_8_0@78, server: 37.120.192.158, port: 801, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: _GB_英国_0@64, server: 54.36.174.181, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: RU🇷🇺RU🇷🇺RU_673🇷🇺RU_660_548_647, server: 217.30.10.66, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX, udp: true}
+  - {name: RU🇷🇺RU🇷🇺RU_695🇷🇺RU_628_533_582, server: 217.30.10.63, port: 9032, type: ss, cipher: aes-256-cfb, password: UWZQeLRWnkqgkseq, udp: true}
+  - {name: RU🇷🇺RU🇷🇺RU_685🇷🇺RU_671_531_646, server: 217.30.10.63, port: 9098, type: ss, cipher: aes-256-cfb, password: aLpQtfEZe445QyHk, udp: true}
+  - {name: RU🇷🇺RU🇷🇺RU_622🇷🇺RU_636🇷🇺RU_727_546_608, server: 217.30.10.65, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa, udp: true}
+  - {name: RU🇷🇺RU🇷🇺RU_621🇷🇺RU_641🇷🇺RU_728_547_607, server: 217.30.10.66, port: 9059, type: ss, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY, udp: true}
+  - {name: NL🇳🇱NL🇳🇱NL_538🇳🇱NL_522🇳🇱NL_622_491_483, server: 213.183.59.229, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
+  - {name: RU🇷🇺RU🇷🇺RU_643🇷🇺RU_706🇷🇺RU_783_560_620, server: 217.30.10.67, port: 9025, type: ss, cipher: aes-256-cfb, password: XPtzA9sCug3SPR4c, udp: true}
+  - {name: RU🇷🇺RU🇷🇺RU_692🇷🇺RU_677🇷🇺RU_751_580_577, server: 217.30.10.66, port: 9045, type: ss, cipher: aes-256-cfb, password: Lp27rqyJq72bZsqX, udp: true}
+  - {name: US 18｜openit.ml, server: youtube-bai-piao-wang-zhe.nl.884899.cf, port: 41196, type: trojan, password: 94afcc56-cc1c-4cd4-8c82-1215cd052795, sni: youtube-bai-piao-wang-zhe.nl.884899.cf, skip-cert-verify: true, udp: true}
+  - {name: AU🇦🇺AU🇦🇺AU_68🇦🇺AU_106🇦🇺AU_48_77_81, server: 185.167.116.252, port: 9041, type: ss, cipher: aes-256-cfb, password: U6qnYRhfyDmn8sgn, udp: true}
+  - {name: HU🇭🇺HU🇭🇺HU_356🇭🇺HU_357🇭🇺HU_419_277_310, server: 194.71.130.194, port: 50003, type: ss, cipher: aes-256-cfb, password: !<str> 8460400130, udp: true}
+  - {name: LT🇱🇹LT🇱🇹LT_428🇱🇹LT_415🇱🇹LT_510_374_368, server: 213.183.53.208, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
+  - {name: RU🇷🇺RU🇷🇺RU_646🇷🇺RU_710🇷🇺RU_785_553_631, server: 217.30.10.67, port: 9097, type: ss, cipher: aes-256-cfb, password: Sn5B7jTqr76aCJT8, udp: true}
+  - {name: NL🇳🇱NL🇳🇱NL_516🇳🇱NL_564🇳🇱NL_617_472_499, server: 213.183.59.229, port: 9025, type: ss, cipher: aes-256-cfb, password: XPtzA9sCug3SPR4c, udp: true}
+  - {name: RU🇷🇺RU🇷🇺RU_631🇷🇺RU_687🇷🇺RU_765_573_637, server: 217.30.10.66, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
+  - {name: RU🇷🇺RU🇷🇺RU_702🇷🇺RU_676🇷🇺RU_750_581_578, server: 217.30.10.66, port: 9001, type: ss, cipher: aes-256-cfb, password: UkXRsXvR6buDMG2Y, udp: true}
+  - {name: _FR_法国_0@82, server: 51.38.118.42, port: 811, type: ss, cipher: chacha20-ietf-poly1305, password: Ultr@r00t_2017, udp: true}
+  - {name: RU🇷🇺RU🇷🇺RU_660🇷🇺RU_645🇷🇺RU_733_600_600, server: 217.30.10.65, port: 9093, type: ss, cipher: aes-256-cfb, password: wfLC2y7rzZyCmuyt, udp: true}
+  - {name: RU🇷🇺RU🇷🇺RU_669🇷🇺RU_649🇷🇺RU_737_599_596, server: 217.30.10.65, port: 9010, type: ss, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4, udp: true}
+  - {name: LT🇱🇹LT🇱🇹LT_487🇱🇹LT_514🇱🇹LT_564_429_454, server: 213.183.53.200, port: 9033, type: ss, cipher: aes-256-cfb, password: UTJA57ypk2XKQpnm, udp: true}
+  - {name: _NL_荷兰_2_0@59, server: 37.120.192.158, port: 802, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: _US_美国_36_0@73, server: 38.121.43.71, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: LT🇱🇹LT🇱🇹LT_496🇱🇹LT_509🇱🇹LT_585_424_466, server: 213.183.53.200, port: 9073, type: ss, cipher: aes-256-cfb, password: daFYagqDdBdA6VTX, udp: true}
+  - {name: NL🇳🇱NL🇳🇱NL_515🇳🇱NL_589🇳🇱NL_646_439_540, server: 213.183.59.206, port: 9024, type: ss, cipher: aes-256-cfb, password: BejrQvtu9sqUeNuZ, udp: true}
+  - {name: RU🇷🇺RU🇷🇺RU_691🇷🇺RU_718🇷🇺RU_777_579_576, server: 217.30.10.66, port: 9060, type: ss, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ, udp: true}
+  - {name: _US_美国_31_0@58, server: 38.121.43.71, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _US_美国_38_0@77, server: 38.121.43.71, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _US_美国_34_0@67, server: 38.68.135.18, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: NL🇳🇱NL🇳🇱NL_519🇳🇱NL_527🇳🇱NL_631_460_504, server: 213.183.59.185, port: 9025, type: ss, cipher: aes-256-cfb, password: XPtzA9sCug3SPR4c, udp: true}
+  - {name: AU🇦🇺AU🇦🇺AU_75🇦🇺AU_55🇦🇺AU_42_52_67, server: 185.167.116.252, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH, udp: true}
+  - {name: NL🇳🇱NL🇳🇱NL_517🇳🇱NL_532🇳🇱NL_629_469_502, server: 213.183.59.185, port: 9059, type: ss, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY, udp: true}
+  - {name: RU🇷🇺RU_659🇷🇺RU_644🇷🇺RU_732_601, server: 217.30.10.65, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
+  - {name: LT🇱🇹LT🇱🇹LT_388🇱🇹LT_419🇱🇹LT_545_358_351, server: 213.183.53.208, port: 9041, type: ss, cipher: aes-256-cfb, password: U6qnYRhfyDmn8sgn, udp: true}
+  - {name: LT🇱🇹LT🇱🇹LT_502🇱🇹LT_505🇱🇹LT_570_426_463, server: 213.183.53.177, port: 9041, type: ss, cipher: aes-256-cfb, password: U6qnYRhfyDmn8sgn, udp: true}
+  - {name: LT🇱🇹LT🇱🇹LT_437🇱🇹LT_392🇱🇹LT_474_323_373, server: 213.183.53.208, port: 9025, type: ss, cipher: aes-256-cfb, password: XPtzA9sCug3SPR4c, udp: true}
+  - {name: LT🇱🇹LT🇱🇹LT_389🇱🇹LT_416🇱🇹LT_515_353_350, server: 213.183.53.208, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
+  - {name: _JP_日本_1_0@0, server: 89.31.126.225, port: 802, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: RU🇷🇺RU🇷🇺RU_676🇷🇺RU_653🇷🇺RU_738_596_595, server: 217.30.10.65, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
+  - {name: LT🇱🇹LT_401🇱🇹LT_458🇱🇹LT_498_370, server: 213.183.63.218, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH, udp: true}
+  - {name: _US_美国_1_0@1, server: 38.75.136.102, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: LT🇱🇹LT🇱🇹LT_472🇱🇹LT_425🇱🇹LT_509_373_360, server: 213.183.53.208, port: 9046, type: ss, cipher: aes-256-cfb, password: NvS8N4Vf8qAGPSCL, udp: true}
+  - {name: _DE_德国_1_7@29, server: 165.22.73.126, port: 23335, type: ss, cipher: aes-256-cfb, password: 7d99ae502227454ea998d71e4b62a388, udp: true}
+  - {name: NL🇳🇱NL🇳🇱NL_527🇳🇱NL_559🇳🇱NL_616_476_498, server: 213.183.59.229, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH, udp: true}
+  - {name: RU🇷🇺RU_619🇷🇺RU_638🇷🇺RU_710_604, server: 217.30.10.65, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
+  - {name: LT🇱🇹LT🇱🇹LT_454🇱🇹LT_431🇱🇹LT_528_337_408, server: 213.183.63.218, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
+  - {name: LT🇱🇹LT🇱🇹LT_476🇱🇹LT_508🇱🇹LT_547_396_434, server: 213.183.53.200, port: 9038, type: ss, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ, udp: true}
+  - {name: RU🇷🇺RU🇷🇺RU_647🇷🇺RU_711🇷🇺RU_761_552_633, server: 217.30.10.65, port: 9045, type: ss, cipher: aes-256-cfb, password: Lp27rqyJq72bZsqX, udp: true}
+  - {name: RU🇷🇺RU🇷🇺RU_620🇷🇺RU_637🇷🇺RU_729_575_606, server: 217.30.10.65, port: 9026, type: ss, cipher: aes-256-cfb, password: QWDDvVE9npNurQfA, udp: true}
+  - {name: NL🇳🇱NL_523🇳🇱NL_528🇳🇱NL_607_531, server: 213.183.59.229, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
+  - {name: LT🇱🇹LT🇱🇹LT_390🇱🇹LT_409🇱🇹LT_491_336_348, server: 213.183.53.208, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
+  - {name: _04_34_24_09_23, server: 213.183.59.229, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
+  - {name: LT🇱🇹LT🇱🇹LT_386🇱🇹LT_408🇱🇹LT_525_339_406, server: 213.183.63.218, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 14.29.124.168:25280
-      - CN 3｜openit.ml
-      - JP 1｜openit.ml
-      - CN 1｜openit.ml
-      - US 20｜openit.ml
-      - US 12｜openit.ml
-      - _CN_中国->🇰🇷_KR_韩国_2@12
-      - _JP_日本_1_0@1
-      - US_1421
-      - US_41_12@40
-      - US 21｜openit.ml
-      - Relay_🇮🇷IR-🇮🇷IR_468
-      - US 7｜openit.ml
-      - AU 2｜openit.ml
-      - US 15｜openit.ml
-      - 185.4.65.6:21247
-      - US 1｜openit.ml
-      - US 26｜openit.ml
-      - HK 4｜openit.ml
-      - CN 5｜openit.ml
-      - CN 4｜openit.ml
-      - 138.197.166.205:811
-      - RU_734
-      - _FR_法国_0@11
-      - _JP_日本_2_0@23
-      - US 13｜openit.ml
-      - 欧洲(油管:破解资源君2.0) 5
-      - 欧洲(油管:破解资源君2.0) 18
+      - CN 8｜openit.ml
+      - US 11｜openit.ml
+      - LT🇱🇹LT🇱🇹LT_394🇱🇹LT_424🇱🇹LT_535_375_359
+      - LT🇱🇹LT🇱🇹LT_511🇱🇹LT_488🇱🇹LT_574_389_449
+      - LT🇱🇹LT🇱🇹LT_512🇱🇹LT_486🇱🇹LT_573_390_448
+      - LT🇱🇹LT🇱🇹LT_480🇱🇹LT_518🇱🇹LT_580_404_438
+      - LT🇱🇹LT🇱🇹LT_497🇱🇹LT_490🇱🇹LT_553_428_441
+      - LT🇱🇹LT🇱🇹LT_484🇱🇹LT_493🇱🇹LT_555_413_431
+      - LT🇱🇹LT🇱🇹LT_500🇱🇹LT_481🇱🇹LT_565_411_470
+      - LT🇱🇹LT🇱🇹LT_513🇱🇹LT_502🇱🇹LT_582_388_460
+      - LT🇱🇹LT🇱🇹LT_482🇱🇹LT_517🇱🇹LT_566_403_439
+      - LT🇱🇹LT🇱🇹LT_477🇱🇹LT_494🇱🇹LT_548_406_435
+      - LT🇱🇹LT🇱🇹LT_474🇱🇹LT_496🇱🇹LT_554_419_442
+      - _US_美国_3_0@3
+      - _US_美国_20_0@26
+      - LT🇱🇹LT🇱🇹LT_493🇱🇹LT_487🇱🇹LT_557_422_443
+      - _US_美国_6_0@6
+      - LT🇱🇹LT🇱🇹LT_508🇱🇹LT_499🇱🇹LT_578_415_455
+      - NL🇳🇱NL_582🇳🇱NL_580_545
+      - _US_美国_13_0@13
+      - LT🇱🇹LT🇱🇹LT_396🇱🇹LT_428🇱🇹LT_497_370_362
+      - LT🇱🇹LT🇱🇹LT_490🇱🇹LT_511🇱🇹LT_560_399_459
+      - _US_美国_15_0@15
+      - _US_美国_10_0@10
+      - LT🇱🇹LT🇱🇹LT_483🇱🇹LT_516🇱🇹LT_584_402_440
+      - LT🇱🇹LT🇱🇹LT_397🇱🇹LT_454_367_363
+      - LT🇱🇹LT🇱🇹LT_475🇱🇹LT_512🇱🇹LT_552_407_433
+      - LT🇱🇹LT🇱🇹LT_478🇱🇹LT_519🇱🇹LT_550_408_436
+      - US_55_13@54
+      - LT🇱🇹LT🇱🇹LT_507🇱🇹LT_500🇱🇹LT_579_417_456
+      - LT🇱🇹LT🇱🇹LT_509🇱🇹LT_497🇱🇹LT_576_398_450
+      - LT🇱🇹LT🇱🇹LT_501🇱🇹LT_482🇱🇹LT_567_409_452
+      - LT🇱🇹LT🇱🇹LT_479🇱🇹LT_480🇱🇹LT_563_405_437
+      - LT🇱🇹LT🇱🇹LT_488🇱🇹LT_498🇱🇹LT_577_414_453
+      - LT🇱🇹LT🇱🇹LT_491🇱🇹LT_510🇱🇹LT_551_397_461
+      - NL🇳🇱NL🇳🇱NL_570🇳🇱NL_572🇳🇱NL_672_471_539
+      - _US_美国_12_0@12
+      - _US_美国_5_0@5
+      - LT🇱🇹LT🇱🇹LT_504🇱🇹LT_485🇱🇹LT_572_391_447
+      - LT🇱🇹LT🇱🇹LT_506🇱🇹LT_483🇱🇹LT_568_394_445
+      - _US_美国_7_0@7
+      - _US_美国_32_0@60
+      - _US_美国_28_0@54
+      - LT🇱🇹LT🇱🇹LT_510🇱🇹LT_495🇱🇹LT_575_395_451
+      - NL🇳🇱NL🇳🇱NL_561🇳🇱NL_596_438_538
+      - _US_美国_16_0@16
+      - RU🇷🇺RU_678🇷🇺RU_654🇷🇺RU_739_594
+      - LT🇱🇹LT🇱🇹LT_485🇱🇹LT_491🇱🇹LT_586_416_430
+      - NL🇳🇱NL🇳🇱NL_555🇳🇱NL_567🇳🇱NL_650_445_521
+      - NL🇳🇱NL🇳🇱NL_571🇳🇱NL_573🇳🇱NL_668_442_542
+      - RU🇷🇺RU🇷🇺RU_672🇷🇺RU_659🇷🇺RU_752_589_570
+      - RU🇷🇺RU🇷🇺RU_648🇷🇺RU_712🇷🇺RU_760_551_634
+      - NL🇳🇱NL🇳🇱NL_557🇳🇱NL_597🇳🇱NL_643_432_532
+      - RU🇷🇺RU🇷🇺RU_624🇷🇺RU_634🇷🇺RU_724_545_610
+      - LT🇱🇹LT_406🇱🇹LT_469🇱🇹LT_534_374
+      - RU🇷🇺RU🇷🇺RU_667🇷🇺RU_675_525_635
+      - LT🇱🇹LT🇱🇹LT_495🇱🇹LT_492🇱🇹LT_571_420_467
+      - RU🇷🇺RU🇷🇺RU_684🇷🇺RU_661🇷🇺RU_743_593_590
+      - _US_美国_4_0@4
+      - LT🇱🇹LT🇱🇹LT_404🇱🇹LT_460🇱🇹LT_512_363_372
+      - _US_美国_22_0@33
+      - _US_美国_37_0@76
+      - NL🇳🇱NL🇳🇱NL_556🇳🇱NL_595🇳🇱NL_641_454_489
+      - _US_美国_18_0@18
+      - _US_美国_39_0@80
+      - LT🇱🇹LT🇱🇹LT_498🇱🇹LT_515🇱🇹LT_559_412_444
+      - LT🇱🇹LT🇱🇹LT_408🇱🇹LT_471🇱🇹LT_524_348_383
+      - RU🇷🇺RU🇷🇺RU_651🇷🇺RU_715🇷🇺RU_757_543_642
+      - LT🇱🇹LT🇱🇹LT_407🇱🇹LT_470🇱🇹LT_533_350_379
+      - _US_美国_26_0@48
+      - LT🇱🇹LT🇱🇹LT_481🇱🇹LT_503🇱🇹LT_549_410_432
+      - RU🇷🇺RU_656🇷🇺RU_717🇷🇺RU_756_643
+      - LT🇱🇹LT🇱🇹LT_505🇱🇹LT_501🇱🇹LT_581_421_458
+      - LT🇱🇹LT🇱🇹LT_486🇱🇹LT_489🇱🇹LT_556_423_469
+      - NL🇳🇱NL🇳🇱NL_592🇳🇱NL_601🇳🇱NL_676_498_546
+      - RU🇷🇺RU_661🇷🇺RU_646🇷🇺RU_734_599
+      - NL🇳🇱NL🇳🇱NL_568🇳🇱NL_574🇳🇱NL_656_444_500
+      - RU🇷🇺RU🇷🇺RU_677🇷🇺RU_699🇷🇺RU_776_541_649
+      - _US_美国_14_0@14
+      - LT🇱🇹LT_432🇱🇹LT_477🇱🇹LT_493_391
+      - _US_美国_29_0@56
+      - NL🇳🇱NL🇳🇱NL_545🇳🇱NL_591🇳🇱NL_619_492_486
+      - _US_美国_23_0@38
+      - RS🇷🇸RS🇷🇸RS_616🇷🇸RS_624🇷🇸RS_709_512_569
+      - _US_美国_24_0@43
+      - LT🇱🇹LT🇱🇹LT_473🇱🇹LT_484🇱🇹LT_569_393_446
+      - NL🇳🇱NL🇳🇱NL_536🇳🇱NL_557🇳🇱NL_632_457_505
+      - _US_美国_27_0@50
+      - LT🇱🇹LT🇱🇹LT_459🇱🇹LT_398🇱🇹LT_504_349_354
+      - _NL_荷兰_5_0@72
+      - LT🇱🇹LT🇱🇹LT_503🇱🇹LT_504🇱🇹LT_583_427_462
+      - _US_美国_21_0@28
+      - RU🇷🇺RU🇷🇺RU_639🇷🇺RU_702🇷🇺RU_774_564_588
+      - _US_美国_11_0@11
+      - _US_美国_33_0@63
+      - RU🇷🇺RU🇷🇺RU_634🇷🇺RU_690🇷🇺RU_745_570_584
+      - RU🇷🇺RU🇷🇺RU_641🇷🇺RU_704🇷🇺RU_779_602_617
+      - NL🇳🇱NL🇳🇱NL_583🇳🇱NL_581🇳🇱NL_621_459_509
+      - RU🇷🇺RU🇷🇺RU_632🇷🇺RU_688🇷🇺RU_766_572_571
+      - _NL_荷兰_9_0@81
+      - LT🇱🇹LT🇱🇹LT_462🇱🇹LT_404🇱🇹LT_537_361_378
+      - NL🇳🇱NL🇳🇱NL_547🇳🇱NL_558🇳🇱NL_634_455_506
+      - RU🇷🇺RU_683🇷🇺RU_658🇷🇺RU_742_591
+      - RU🇷🇺RU🇷🇺RU_649🇷🇺RU_713🇷🇺RU_759_550_638
+      - LT🇱🇹LT🇱🇹LT_443🇱🇹LT_475🇱🇹LT_480_314_345
+      - RU🇷🇺RU🇷🇺RU_618🇷🇺RU_683🇷🇺RU_754_577_574
+      - RU🇷🇺RU🇷🇺RU_689🇷🇺RU_682🇷🇺RU_753_578_575
+      - _NL_荷兰_3_0@70
+      - _NL_荷兰_4_0@71
+      - NL🇳🇱NL🇳🇱NL_521🇳🇱NL_536🇳🇱NL_627_475_501
+      - RU🇷🇺RU_666🇷🇺RU_647🇷🇺RU_735_598
+      - _NL_荷兰_6_0@74
+      - RU🇷🇺RU_629🇷🇺RU_684🇷🇺RU_762_573
+      - NL🇳🇱NL🇳🇱NL_543🇳🇱NL_598🇳🇱NL_604_463_515
+      - RU🇷🇺RU_680🇷🇺RU_656🇷🇺RU_741_592
+      - RU🇷🇺RU🇷🇺RU_679🇷🇺RU_655🇷🇺RU_740_595_593
+      - _NL_荷兰_7_0@75
+      - RU🇷🇺RU🇷🇺RU_630🇷🇺RU_686🇷🇺RU_764_574_623
+      - _NL_荷兰_1_0@53
+      - RU🇷🇺RU🇷🇺RU_628🇷🇺RU_629🇷🇺RU_717_534_614
+      - RU🇷🇺RU🇷🇺RU_663🇷🇺RU_625_524_644
+      - RU🇷🇺RU🇷🇺RU_664🇷🇺RU_708🇷🇺RU_778_588_629
+      - _CY_塞浦路斯_8@42
+      - RU🇷🇺RU🇷🇺RU_633🇷🇺RU_689🇷🇺RU_767_571_583
+      - RU🇷🇺RU_668🇷🇺RU_648🇷🇺RU_736_597
+      - RU🇷🇺RU🇷🇺RU_687🇷🇺RU_663🇷🇺RU_744_592_589
+      - RU🇷🇺RU🇷🇺RU_710🇷🇺RU_685🇷🇺RU_763_576_572
+      - _US_美国_19_0@25
+      - RU🇷🇺RU_623🇷🇺RU_635🇷🇺RU_725_609
+      - RU🇷🇺RU🇷🇺RU_670🇷🇺RU_716🇷🇺RU_784_530_630
+      - _NL_荷兰_8_0@78
+      - _GB_英国_0@64
+      - RU🇷🇺RU🇷🇺RU_673🇷🇺RU_660_548_647
+      - RU🇷🇺RU🇷🇺RU_695🇷🇺RU_628_533_582
+      - RU🇷🇺RU🇷🇺RU_685🇷🇺RU_671_531_646
+      - RU🇷🇺RU🇷🇺RU_622🇷🇺RU_636🇷🇺RU_727_546_608
+      - RU🇷🇺RU🇷🇺RU_621🇷🇺RU_641🇷🇺RU_728_547_607
+      - NL🇳🇱NL🇳🇱NL_538🇳🇱NL_522🇳🇱NL_622_491_483
+      - RU🇷🇺RU🇷🇺RU_643🇷🇺RU_706🇷🇺RU_783_560_620
+      - RU🇷🇺RU🇷🇺RU_692🇷🇺RU_677🇷🇺RU_751_580_577
+      - US 18｜openit.ml
+      - AU🇦🇺AU🇦🇺AU_68🇦🇺AU_106🇦🇺AU_48_77_81
+      - HU🇭🇺HU🇭🇺HU_356🇭🇺HU_357🇭🇺HU_419_277_310
+      - LT🇱🇹LT🇱🇹LT_428🇱🇹LT_415🇱🇹LT_510_374_368
+      - RU🇷🇺RU🇷🇺RU_646🇷🇺RU_710🇷🇺RU_785_553_631
+      - NL🇳🇱NL🇳🇱NL_516🇳🇱NL_564🇳🇱NL_617_472_499
+      - RU🇷🇺RU🇷🇺RU_631🇷🇺RU_687🇷🇺RU_765_573_637
+      - RU🇷🇺RU🇷🇺RU_702🇷🇺RU_676🇷🇺RU_750_581_578
+      - _FR_法国_0@82
+      - RU🇷🇺RU🇷🇺RU_660🇷🇺RU_645🇷🇺RU_733_600_600
+      - RU🇷🇺RU🇷🇺RU_669🇷🇺RU_649🇷🇺RU_737_599_596
+      - LT🇱🇹LT🇱🇹LT_487🇱🇹LT_514🇱🇹LT_564_429_454
+      - _NL_荷兰_2_0@59
+      - _US_美国_36_0@73
+      - LT🇱🇹LT🇱🇹LT_496🇱🇹LT_509🇱🇹LT_585_424_466
+      - NL🇳🇱NL🇳🇱NL_515🇳🇱NL_589🇳🇱NL_646_439_540
+      - RU🇷🇺RU🇷🇺RU_691🇷🇺RU_718🇷🇺RU_777_579_576
+      - _US_美国_31_0@58
+      - _US_美国_38_0@77
+      - _US_美国_34_0@67
+      - NL🇳🇱NL🇳🇱NL_519🇳🇱NL_527🇳🇱NL_631_460_504
+      - AU🇦🇺AU🇦🇺AU_75🇦🇺AU_55🇦🇺AU_42_52_67
+      - NL🇳🇱NL🇳🇱NL_517🇳🇱NL_532🇳🇱NL_629_469_502
+      - RU🇷🇺RU_659🇷🇺RU_644🇷🇺RU_732_601
+      - LT🇱🇹LT🇱🇹LT_388🇱🇹LT_419🇱🇹LT_545_358_351
+      - LT🇱🇹LT🇱🇹LT_502🇱🇹LT_505🇱🇹LT_570_426_463
+      - LT🇱🇹LT🇱🇹LT_437🇱🇹LT_392🇱🇹LT_474_323_373
+      - LT🇱🇹LT🇱🇹LT_389🇱🇹LT_416🇱🇹LT_515_353_350
+      - _JP_日本_1_0@0
+      - RU🇷🇺RU🇷🇺RU_676🇷🇺RU_653🇷🇺RU_738_596_595
+      - LT🇱🇹LT_401🇱🇹LT_458🇱🇹LT_498_370
+      - _US_美国_1_0@1
+      - LT🇱🇹LT🇱🇹LT_472🇱🇹LT_425🇱🇹LT_509_373_360
+      - _DE_德国_1_7@29
+      - NL🇳🇱NL🇳🇱NL_527🇳🇱NL_559🇳🇱NL_616_476_498
+      - RU🇷🇺RU_619🇷🇺RU_638🇷🇺RU_710_604
+      - LT🇱🇹LT🇱🇹LT_454🇱🇹LT_431🇱🇹LT_528_337_408
+      - LT🇱🇹LT🇱🇹LT_476🇱🇹LT_508🇱🇹LT_547_396_434
+      - RU🇷🇺RU🇷🇺RU_647🇷🇺RU_711🇷🇺RU_761_552_633
+      - RU🇷🇺RU🇷🇺RU_620🇷🇺RU_637🇷🇺RU_729_575_606
+      - NL🇳🇱NL_523🇳🇱NL_528🇳🇱NL_607_531
+      - LT🇱🇹LT🇱🇹LT_390🇱🇹LT_409🇱🇹LT_491_336_348
+      - _04_34_24_09_23
+      - LT🇱🇹LT🇱🇹LT_386🇱🇹LT_408🇱🇹LT_525_339_406
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 14.29.124.168:25280
-      - CN 3｜openit.ml
-      - JP 1｜openit.ml
-      - CN 1｜openit.ml
-      - US 20｜openit.ml
-      - US 12｜openit.ml
-      - _CN_中国->🇰🇷_KR_韩国_2@12
-      - _JP_日本_1_0@1
-      - US_1421
-      - US_41_12@40
-      - US 21｜openit.ml
-      - Relay_🇮🇷IR-🇮🇷IR_468
-      - US 7｜openit.ml
-      - AU 2｜openit.ml
-      - US 15｜openit.ml
-      - 185.4.65.6:21247
-      - US 1｜openit.ml
-      - US 26｜openit.ml
-      - HK 4｜openit.ml
-      - CN 5｜openit.ml
-      - CN 4｜openit.ml
-      - 138.197.166.205:811
-      - RU_734
-      - _FR_法国_0@11
-      - _JP_日本_2_0@23
-      - US 13｜openit.ml
-      - 欧洲(油管:破解资源君2.0) 5
-      - 欧洲(油管:破解资源君2.0) 18
+      - CN 8｜openit.ml
+      - US 11｜openit.ml
+      - LT🇱🇹LT🇱🇹LT_394🇱🇹LT_424🇱🇹LT_535_375_359
+      - LT🇱🇹LT🇱🇹LT_511🇱🇹LT_488🇱🇹LT_574_389_449
+      - LT🇱🇹LT🇱🇹LT_512🇱🇹LT_486🇱🇹LT_573_390_448
+      - LT🇱🇹LT🇱🇹LT_480🇱🇹LT_518🇱🇹LT_580_404_438
+      - LT🇱🇹LT🇱🇹LT_497🇱🇹LT_490🇱🇹LT_553_428_441
+      - LT🇱🇹LT🇱🇹LT_484🇱🇹LT_493🇱🇹LT_555_413_431
+      - LT🇱🇹LT🇱🇹LT_500🇱🇹LT_481🇱🇹LT_565_411_470
+      - LT🇱🇹LT🇱🇹LT_513🇱🇹LT_502🇱🇹LT_582_388_460
+      - LT🇱🇹LT🇱🇹LT_482🇱🇹LT_517🇱🇹LT_566_403_439
+      - LT🇱🇹LT🇱🇹LT_477🇱🇹LT_494🇱🇹LT_548_406_435
+      - LT🇱🇹LT🇱🇹LT_474🇱🇹LT_496🇱🇹LT_554_419_442
+      - _US_美国_3_0@3
+      - _US_美国_20_0@26
+      - LT🇱🇹LT🇱🇹LT_493🇱🇹LT_487🇱🇹LT_557_422_443
+      - _US_美国_6_0@6
+      - LT🇱🇹LT🇱🇹LT_508🇱🇹LT_499🇱🇹LT_578_415_455
+      - NL🇳🇱NL_582🇳🇱NL_580_545
+      - _US_美国_13_0@13
+      - LT🇱🇹LT🇱🇹LT_396🇱🇹LT_428🇱🇹LT_497_370_362
+      - LT🇱🇹LT🇱🇹LT_490🇱🇹LT_511🇱🇹LT_560_399_459
+      - _US_美国_15_0@15
+      - _US_美国_10_0@10
+      - LT🇱🇹LT🇱🇹LT_483🇱🇹LT_516🇱🇹LT_584_402_440
+      - LT🇱🇹LT🇱🇹LT_397🇱🇹LT_454_367_363
+      - LT🇱🇹LT🇱🇹LT_475🇱🇹LT_512🇱🇹LT_552_407_433
+      - LT🇱🇹LT🇱🇹LT_478🇱🇹LT_519🇱🇹LT_550_408_436
+      - US_55_13@54
+      - LT🇱🇹LT🇱🇹LT_507🇱🇹LT_500🇱🇹LT_579_417_456
+      - LT🇱🇹LT🇱🇹LT_509🇱🇹LT_497🇱🇹LT_576_398_450
+      - LT🇱🇹LT🇱🇹LT_501🇱🇹LT_482🇱🇹LT_567_409_452
+      - LT🇱🇹LT🇱🇹LT_479🇱🇹LT_480🇱🇹LT_563_405_437
+      - LT🇱🇹LT🇱🇹LT_488🇱🇹LT_498🇱🇹LT_577_414_453
+      - LT🇱🇹LT🇱🇹LT_491🇱🇹LT_510🇱🇹LT_551_397_461
+      - NL🇳🇱NL🇳🇱NL_570🇳🇱NL_572🇳🇱NL_672_471_539
+      - _US_美国_12_0@12
+      - _US_美国_5_0@5
+      - LT🇱🇹LT🇱🇹LT_504🇱🇹LT_485🇱🇹LT_572_391_447
+      - LT🇱🇹LT🇱🇹LT_506🇱🇹LT_483🇱🇹LT_568_394_445
+      - _US_美国_7_0@7
+      - _US_美国_32_0@60
+      - _US_美国_28_0@54
+      - LT🇱🇹LT🇱🇹LT_510🇱🇹LT_495🇱🇹LT_575_395_451
+      - NL🇳🇱NL🇳🇱NL_561🇳🇱NL_596_438_538
+      - _US_美国_16_0@16
+      - RU🇷🇺RU_678🇷🇺RU_654🇷🇺RU_739_594
+      - LT🇱🇹LT🇱🇹LT_485🇱🇹LT_491🇱🇹LT_586_416_430
+      - NL🇳🇱NL🇳🇱NL_555🇳🇱NL_567🇳🇱NL_650_445_521
+      - NL🇳🇱NL🇳🇱NL_571🇳🇱NL_573🇳🇱NL_668_442_542
+      - RU🇷🇺RU🇷🇺RU_672🇷🇺RU_659🇷🇺RU_752_589_570
+      - RU🇷🇺RU🇷🇺RU_648🇷🇺RU_712🇷🇺RU_760_551_634
+      - NL🇳🇱NL🇳🇱NL_557🇳🇱NL_597🇳🇱NL_643_432_532
+      - RU🇷🇺RU🇷🇺RU_624🇷🇺RU_634🇷🇺RU_724_545_610
+      - LT🇱🇹LT_406🇱🇹LT_469🇱🇹LT_534_374
+      - RU🇷🇺RU🇷🇺RU_667🇷🇺RU_675_525_635
+      - LT🇱🇹LT🇱🇹LT_495🇱🇹LT_492🇱🇹LT_571_420_467
+      - RU🇷🇺RU🇷🇺RU_684🇷🇺RU_661🇷🇺RU_743_593_590
+      - _US_美国_4_0@4
+      - LT🇱🇹LT🇱🇹LT_404🇱🇹LT_460🇱🇹LT_512_363_372
+      - _US_美国_22_0@33
+      - _US_美国_37_0@76
+      - NL🇳🇱NL🇳🇱NL_556🇳🇱NL_595🇳🇱NL_641_454_489
+      - _US_美国_18_0@18
+      - _US_美国_39_0@80
+      - LT🇱🇹LT🇱🇹LT_498🇱🇹LT_515🇱🇹LT_559_412_444
+      - LT🇱🇹LT🇱🇹LT_408🇱🇹LT_471🇱🇹LT_524_348_383
+      - RU🇷🇺RU🇷🇺RU_651🇷🇺RU_715🇷🇺RU_757_543_642
+      - LT🇱🇹LT🇱🇹LT_407🇱🇹LT_470🇱🇹LT_533_350_379
+      - _US_美国_26_0@48
+      - LT🇱🇹LT🇱🇹LT_481🇱🇹LT_503🇱🇹LT_549_410_432
+      - RU🇷🇺RU_656🇷🇺RU_717🇷🇺RU_756_643
+      - LT🇱🇹LT🇱🇹LT_505🇱🇹LT_501🇱🇹LT_581_421_458
+      - LT🇱🇹LT🇱🇹LT_486🇱🇹LT_489🇱🇹LT_556_423_469
+      - NL🇳🇱NL🇳🇱NL_592🇳🇱NL_601🇳🇱NL_676_498_546
+      - RU🇷🇺RU_661🇷🇺RU_646🇷🇺RU_734_599
+      - NL🇳🇱NL🇳🇱NL_568🇳🇱NL_574🇳🇱NL_656_444_500
+      - RU🇷🇺RU🇷🇺RU_677🇷🇺RU_699🇷🇺RU_776_541_649
+      - _US_美国_14_0@14
+      - LT🇱🇹LT_432🇱🇹LT_477🇱🇹LT_493_391
+      - _US_美国_29_0@56
+      - NL🇳🇱NL🇳🇱NL_545🇳🇱NL_591🇳🇱NL_619_492_486
+      - _US_美国_23_0@38
+      - RS🇷🇸RS🇷🇸RS_616🇷🇸RS_624🇷🇸RS_709_512_569
+      - _US_美国_24_0@43
+      - LT🇱🇹LT🇱🇹LT_473🇱🇹LT_484🇱🇹LT_569_393_446
+      - NL🇳🇱NL🇳🇱NL_536🇳🇱NL_557🇳🇱NL_632_457_505
+      - _US_美国_27_0@50
+      - LT🇱🇹LT🇱🇹LT_459🇱🇹LT_398🇱🇹LT_504_349_354
+      - _NL_荷兰_5_0@72
+      - LT🇱🇹LT🇱🇹LT_503🇱🇹LT_504🇱🇹LT_583_427_462
+      - _US_美国_21_0@28
+      - RU🇷🇺RU🇷🇺RU_639🇷🇺RU_702🇷🇺RU_774_564_588
+      - _US_美国_11_0@11
+      - _US_美国_33_0@63
+      - RU🇷🇺RU🇷🇺RU_634🇷🇺RU_690🇷🇺RU_745_570_584
+      - RU🇷🇺RU🇷🇺RU_641🇷🇺RU_704🇷🇺RU_779_602_617
+      - NL🇳🇱NL🇳🇱NL_583🇳🇱NL_581🇳🇱NL_621_459_509
+      - RU🇷🇺RU🇷🇺RU_632🇷🇺RU_688🇷🇺RU_766_572_571
+      - _NL_荷兰_9_0@81
+      - LT🇱🇹LT🇱🇹LT_462🇱🇹LT_404🇱🇹LT_537_361_378
+      - NL🇳🇱NL🇳🇱NL_547🇳🇱NL_558🇳🇱NL_634_455_506
+      - RU🇷🇺RU_683🇷🇺RU_658🇷🇺RU_742_591
+      - RU🇷🇺RU🇷🇺RU_649🇷🇺RU_713🇷🇺RU_759_550_638
+      - LT🇱🇹LT🇱🇹LT_443🇱🇹LT_475🇱🇹LT_480_314_345
+      - RU🇷🇺RU🇷🇺RU_618🇷🇺RU_683🇷🇺RU_754_577_574
+      - RU🇷🇺RU🇷🇺RU_689🇷🇺RU_682🇷🇺RU_753_578_575
+      - _NL_荷兰_3_0@70
+      - _NL_荷兰_4_0@71
+      - NL🇳🇱NL🇳🇱NL_521🇳🇱NL_536🇳🇱NL_627_475_501
+      - RU🇷🇺RU_666🇷🇺RU_647🇷🇺RU_735_598
+      - _NL_荷兰_6_0@74
+      - RU🇷🇺RU_629🇷🇺RU_684🇷🇺RU_762_573
+      - NL🇳🇱NL🇳🇱NL_543🇳🇱NL_598🇳🇱NL_604_463_515
+      - RU🇷🇺RU_680🇷🇺RU_656🇷🇺RU_741_592
+      - RU🇷🇺RU🇷🇺RU_679🇷🇺RU_655🇷🇺RU_740_595_593
+      - _NL_荷兰_7_0@75
+      - RU🇷🇺RU🇷🇺RU_630🇷🇺RU_686🇷🇺RU_764_574_623
+      - _NL_荷兰_1_0@53
+      - RU🇷🇺RU🇷🇺RU_628🇷🇺RU_629🇷🇺RU_717_534_614
+      - RU🇷🇺RU🇷🇺RU_663🇷🇺RU_625_524_644
+      - RU🇷🇺RU🇷🇺RU_664🇷🇺RU_708🇷🇺RU_778_588_629
+      - _CY_塞浦路斯_8@42
+      - RU🇷🇺RU🇷🇺RU_633🇷🇺RU_689🇷🇺RU_767_571_583
+      - RU🇷🇺RU_668🇷🇺RU_648🇷🇺RU_736_597
+      - RU🇷🇺RU🇷🇺RU_687🇷🇺RU_663🇷🇺RU_744_592_589
+      - RU🇷🇺RU🇷🇺RU_710🇷🇺RU_685🇷🇺RU_763_576_572
+      - _US_美国_19_0@25
+      - RU🇷🇺RU_623🇷🇺RU_635🇷🇺RU_725_609
+      - RU🇷🇺RU🇷🇺RU_670🇷🇺RU_716🇷🇺RU_784_530_630
+      - _NL_荷兰_8_0@78
+      - _GB_英国_0@64
+      - RU🇷🇺RU🇷🇺RU_673🇷🇺RU_660_548_647
+      - RU🇷🇺RU🇷🇺RU_695🇷🇺RU_628_533_582
+      - RU🇷🇺RU🇷🇺RU_685🇷🇺RU_671_531_646
+      - RU🇷🇺RU🇷🇺RU_622🇷🇺RU_636🇷🇺RU_727_546_608
+      - RU🇷🇺RU🇷🇺RU_621🇷🇺RU_641🇷🇺RU_728_547_607
+      - NL🇳🇱NL🇳🇱NL_538🇳🇱NL_522🇳🇱NL_622_491_483
+      - RU🇷🇺RU🇷🇺RU_643🇷🇺RU_706🇷🇺RU_783_560_620
+      - RU🇷🇺RU🇷🇺RU_692🇷🇺RU_677🇷🇺RU_751_580_577
+      - US 18｜openit.ml
+      - AU🇦🇺AU🇦🇺AU_68🇦🇺AU_106🇦🇺AU_48_77_81
+      - HU🇭🇺HU🇭🇺HU_356🇭🇺HU_357🇭🇺HU_419_277_310
+      - LT🇱🇹LT🇱🇹LT_428🇱🇹LT_415🇱🇹LT_510_374_368
+      - RU🇷🇺RU🇷🇺RU_646🇷🇺RU_710🇷🇺RU_785_553_631
+      - NL🇳🇱NL🇳🇱NL_516🇳🇱NL_564🇳🇱NL_617_472_499
+      - RU🇷🇺RU🇷🇺RU_631🇷🇺RU_687🇷🇺RU_765_573_637
+      - RU🇷🇺RU🇷🇺RU_702🇷🇺RU_676🇷🇺RU_750_581_578
+      - _FR_法国_0@82
+      - RU🇷🇺RU🇷🇺RU_660🇷🇺RU_645🇷🇺RU_733_600_600
+      - RU🇷🇺RU🇷🇺RU_669🇷🇺RU_649🇷🇺RU_737_599_596
+      - LT🇱🇹LT🇱🇹LT_487🇱🇹LT_514🇱🇹LT_564_429_454
+      - _NL_荷兰_2_0@59
+      - _US_美国_36_0@73
+      - LT🇱🇹LT🇱🇹LT_496🇱🇹LT_509🇱🇹LT_585_424_466
+      - NL🇳🇱NL🇳🇱NL_515🇳🇱NL_589🇳🇱NL_646_439_540
+      - RU🇷🇺RU🇷🇺RU_691🇷🇺RU_718🇷🇺RU_777_579_576
+      - _US_美国_31_0@58
+      - _US_美国_38_0@77
+      - _US_美国_34_0@67
+      - NL🇳🇱NL🇳🇱NL_519🇳🇱NL_527🇳🇱NL_631_460_504
+      - AU🇦🇺AU🇦🇺AU_75🇦🇺AU_55🇦🇺AU_42_52_67
+      - NL🇳🇱NL🇳🇱NL_517🇳🇱NL_532🇳🇱NL_629_469_502
+      - RU🇷🇺RU_659🇷🇺RU_644🇷🇺RU_732_601
+      - LT🇱🇹LT🇱🇹LT_388🇱🇹LT_419🇱🇹LT_545_358_351
+      - LT🇱🇹LT🇱🇹LT_502🇱🇹LT_505🇱🇹LT_570_426_463
+      - LT🇱🇹LT🇱🇹LT_437🇱🇹LT_392🇱🇹LT_474_323_373
+      - LT🇱🇹LT🇱🇹LT_389🇱🇹LT_416🇱🇹LT_515_353_350
+      - _JP_日本_1_0@0
+      - RU🇷🇺RU🇷🇺RU_676🇷🇺RU_653🇷🇺RU_738_596_595
+      - LT🇱🇹LT_401🇱🇹LT_458🇱🇹LT_498_370
+      - _US_美国_1_0@1
+      - LT🇱🇹LT🇱🇹LT_472🇱🇹LT_425🇱🇹LT_509_373_360
+      - _DE_德国_1_7@29
+      - NL🇳🇱NL🇳🇱NL_527🇳🇱NL_559🇳🇱NL_616_476_498
+      - RU🇷🇺RU_619🇷🇺RU_638🇷🇺RU_710_604
+      - LT🇱🇹LT🇱🇹LT_454🇱🇹LT_431🇱🇹LT_528_337_408
+      - LT🇱🇹LT🇱🇹LT_476🇱🇹LT_508🇱🇹LT_547_396_434
+      - RU🇷🇺RU🇷🇺RU_647🇷🇺RU_711🇷🇺RU_761_552_633
+      - RU🇷🇺RU🇷🇺RU_620🇷🇺RU_637🇷🇺RU_729_575_606
+      - NL🇳🇱NL_523🇳🇱NL_528🇳🇱NL_607_531
+      - LT🇱🇹LT🇱🇹LT_390🇱🇹LT_409🇱🇹LT_491_336_348
+      - _04_34_24_09_23
+      - LT🇱🇹LT🇱🇹LT_386🇱🇹LT_408🇱🇹LT_525_339_406
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 14.29.124.168:25280
-      - CN 3｜openit.ml
-      - JP 1｜openit.ml
-      - CN 1｜openit.ml
-      - US 20｜openit.ml
-      - US 12｜openit.ml
-      - _CN_中国->🇰🇷_KR_韩国_2@12
-      - _JP_日本_1_0@1
-      - US_1421
-      - US_41_12@40
-      - US 21｜openit.ml
-      - Relay_🇮🇷IR-🇮🇷IR_468
-      - US 7｜openit.ml
-      - AU 2｜openit.ml
-      - US 15｜openit.ml
-      - 185.4.65.6:21247
-      - US 1｜openit.ml
-      - US 26｜openit.ml
-      - HK 4｜openit.ml
-      - CN 5｜openit.ml
-      - CN 4｜openit.ml
-      - 138.197.166.205:811
-      - RU_734
-      - _FR_法国_0@11
-      - _JP_日本_2_0@23
-      - US 13｜openit.ml
-      - 欧洲(油管:破解资源君2.0) 5
-      - 欧洲(油管:破解资源君2.0) 18
+      - CN 8｜openit.ml
+      - US 11｜openit.ml
+      - LT🇱🇹LT🇱🇹LT_394🇱🇹LT_424🇱🇹LT_535_375_359
+      - LT🇱🇹LT🇱🇹LT_511🇱🇹LT_488🇱🇹LT_574_389_449
+      - LT🇱🇹LT🇱🇹LT_512🇱🇹LT_486🇱🇹LT_573_390_448
+      - LT🇱🇹LT🇱🇹LT_480🇱🇹LT_518🇱🇹LT_580_404_438
+      - LT🇱🇹LT🇱🇹LT_497🇱🇹LT_490🇱🇹LT_553_428_441
+      - LT🇱🇹LT🇱🇹LT_484🇱🇹LT_493🇱🇹LT_555_413_431
+      - LT🇱🇹LT🇱🇹LT_500🇱🇹LT_481🇱🇹LT_565_411_470
+      - LT🇱🇹LT🇱🇹LT_513🇱🇹LT_502🇱🇹LT_582_388_460
+      - LT🇱🇹LT🇱🇹LT_482🇱🇹LT_517🇱🇹LT_566_403_439
+      - LT🇱🇹LT🇱🇹LT_477🇱🇹LT_494🇱🇹LT_548_406_435
+      - LT🇱🇹LT🇱🇹LT_474🇱🇹LT_496🇱🇹LT_554_419_442
+      - _US_美国_3_0@3
+      - _US_美国_20_0@26
+      - LT🇱🇹LT🇱🇹LT_493🇱🇹LT_487🇱🇹LT_557_422_443
+      - _US_美国_6_0@6
+      - LT🇱🇹LT🇱🇹LT_508🇱🇹LT_499🇱🇹LT_578_415_455
+      - NL🇳🇱NL_582🇳🇱NL_580_545
+      - _US_美国_13_0@13
+      - LT🇱🇹LT🇱🇹LT_396🇱🇹LT_428🇱🇹LT_497_370_362
+      - LT🇱🇹LT🇱🇹LT_490🇱🇹LT_511🇱🇹LT_560_399_459
+      - _US_美国_15_0@15
+      - _US_美国_10_0@10
+      - LT🇱🇹LT🇱🇹LT_483🇱🇹LT_516🇱🇹LT_584_402_440
+      - LT🇱🇹LT🇱🇹LT_397🇱🇹LT_454_367_363
+      - LT🇱🇹LT🇱🇹LT_475🇱🇹LT_512🇱🇹LT_552_407_433
+      - LT🇱🇹LT🇱🇹LT_478🇱🇹LT_519🇱🇹LT_550_408_436
+      - US_55_13@54
+      - LT🇱🇹LT🇱🇹LT_507🇱🇹LT_500🇱🇹LT_579_417_456
+      - LT🇱🇹LT🇱🇹LT_509🇱🇹LT_497🇱🇹LT_576_398_450
+      - LT🇱🇹LT🇱🇹LT_501🇱🇹LT_482🇱🇹LT_567_409_452
+      - LT🇱🇹LT🇱🇹LT_479🇱🇹LT_480🇱🇹LT_563_405_437
+      - LT🇱🇹LT🇱🇹LT_488🇱🇹LT_498🇱🇹LT_577_414_453
+      - LT🇱🇹LT🇱🇹LT_491🇱🇹LT_510🇱🇹LT_551_397_461
+      - NL🇳🇱NL🇳🇱NL_570🇳🇱NL_572🇳🇱NL_672_471_539
+      - _US_美国_12_0@12
+      - _US_美国_5_0@5
+      - LT🇱🇹LT🇱🇹LT_504🇱🇹LT_485🇱🇹LT_572_391_447
+      - LT🇱🇹LT🇱🇹LT_506🇱🇹LT_483🇱🇹LT_568_394_445
+      - _US_美国_7_0@7
+      - _US_美国_32_0@60
+      - _US_美国_28_0@54
+      - LT🇱🇹LT🇱🇹LT_510🇱🇹LT_495🇱🇹LT_575_395_451
+      - NL🇳🇱NL🇳🇱NL_561🇳🇱NL_596_438_538
+      - _US_美国_16_0@16
+      - RU🇷🇺RU_678🇷🇺RU_654🇷🇺RU_739_594
+      - LT🇱🇹LT🇱🇹LT_485🇱🇹LT_491🇱🇹LT_586_416_430
+      - NL🇳🇱NL🇳🇱NL_555🇳🇱NL_567🇳🇱NL_650_445_521
+      - NL🇳🇱NL🇳🇱NL_571🇳🇱NL_573🇳🇱NL_668_442_542
+      - RU🇷🇺RU🇷🇺RU_672🇷🇺RU_659🇷🇺RU_752_589_570
+      - RU🇷🇺RU🇷🇺RU_648🇷🇺RU_712🇷🇺RU_760_551_634
+      - NL🇳🇱NL🇳🇱NL_557🇳🇱NL_597🇳🇱NL_643_432_532
+      - RU🇷🇺RU🇷🇺RU_624🇷🇺RU_634🇷🇺RU_724_545_610
+      - LT🇱🇹LT_406🇱🇹LT_469🇱🇹LT_534_374
+      - RU🇷🇺RU🇷🇺RU_667🇷🇺RU_675_525_635
+      - LT🇱🇹LT🇱🇹LT_495🇱🇹LT_492🇱🇹LT_571_420_467
+      - RU🇷🇺RU🇷🇺RU_684🇷🇺RU_661🇷🇺RU_743_593_590
+      - _US_美国_4_0@4
+      - LT🇱🇹LT🇱🇹LT_404🇱🇹LT_460🇱🇹LT_512_363_372
+      - _US_美国_22_0@33
+      - _US_美国_37_0@76
+      - NL🇳🇱NL🇳🇱NL_556🇳🇱NL_595🇳🇱NL_641_454_489
+      - _US_美国_18_0@18
+      - _US_美国_39_0@80
+      - LT🇱🇹LT🇱🇹LT_498🇱🇹LT_515🇱🇹LT_559_412_444
+      - LT🇱🇹LT🇱🇹LT_408🇱🇹LT_471🇱🇹LT_524_348_383
+      - RU🇷🇺RU🇷🇺RU_651🇷🇺RU_715🇷🇺RU_757_543_642
+      - LT🇱🇹LT🇱🇹LT_407🇱🇹LT_470🇱🇹LT_533_350_379
+      - _US_美国_26_0@48
+      - LT🇱🇹LT🇱🇹LT_481🇱🇹LT_503🇱🇹LT_549_410_432
+      - RU🇷🇺RU_656🇷🇺RU_717🇷🇺RU_756_643
+      - LT🇱🇹LT🇱🇹LT_505🇱🇹LT_501🇱🇹LT_581_421_458
+      - LT🇱🇹LT🇱🇹LT_486🇱🇹LT_489🇱🇹LT_556_423_469
+      - NL🇳🇱NL🇳🇱NL_592🇳🇱NL_601🇳🇱NL_676_498_546
+      - RU🇷🇺RU_661🇷🇺RU_646🇷🇺RU_734_599
+      - NL🇳🇱NL🇳🇱NL_568🇳🇱NL_574🇳🇱NL_656_444_500
+      - RU🇷🇺RU🇷🇺RU_677🇷🇺RU_699🇷🇺RU_776_541_649
+      - _US_美国_14_0@14
+      - LT🇱🇹LT_432🇱🇹LT_477🇱🇹LT_493_391
+      - _US_美国_29_0@56
+      - NL🇳🇱NL🇳🇱NL_545🇳🇱NL_591🇳🇱NL_619_492_486
+      - _US_美国_23_0@38
+      - RS🇷🇸RS🇷🇸RS_616🇷🇸RS_624🇷🇸RS_709_512_569
+      - _US_美国_24_0@43
+      - LT🇱🇹LT🇱🇹LT_473🇱🇹LT_484🇱🇹LT_569_393_446
+      - NL🇳🇱NL🇳🇱NL_536🇳🇱NL_557🇳🇱NL_632_457_505
+      - _US_美国_27_0@50
+      - LT🇱🇹LT🇱🇹LT_459🇱🇹LT_398🇱🇹LT_504_349_354
+      - _NL_荷兰_5_0@72
+      - LT🇱🇹LT🇱🇹LT_503🇱🇹LT_504🇱🇹LT_583_427_462
+      - _US_美国_21_0@28
+      - RU🇷🇺RU🇷🇺RU_639🇷🇺RU_702🇷🇺RU_774_564_588
+      - _US_美国_11_0@11
+      - _US_美国_33_0@63
+      - RU🇷🇺RU🇷🇺RU_634🇷🇺RU_690🇷🇺RU_745_570_584
+      - RU🇷🇺RU🇷🇺RU_641🇷🇺RU_704🇷🇺RU_779_602_617
+      - NL🇳🇱NL🇳🇱NL_583🇳🇱NL_581🇳🇱NL_621_459_509
+      - RU🇷🇺RU🇷🇺RU_632🇷🇺RU_688🇷🇺RU_766_572_571
+      - _NL_荷兰_9_0@81
+      - LT🇱🇹LT🇱🇹LT_462🇱🇹LT_404🇱🇹LT_537_361_378
+      - NL🇳🇱NL🇳🇱NL_547🇳🇱NL_558🇳🇱NL_634_455_506
+      - RU🇷🇺RU_683🇷🇺RU_658🇷🇺RU_742_591
+      - RU🇷🇺RU🇷🇺RU_649🇷🇺RU_713🇷🇺RU_759_550_638
+      - LT🇱🇹LT🇱🇹LT_443🇱🇹LT_475🇱🇹LT_480_314_345
+      - RU🇷🇺RU🇷🇺RU_618🇷🇺RU_683🇷🇺RU_754_577_574
+      - RU🇷🇺RU🇷🇺RU_689🇷🇺RU_682🇷🇺RU_753_578_575
+      - _NL_荷兰_3_0@70
+      - _NL_荷兰_4_0@71
+      - NL🇳🇱NL🇳🇱NL_521🇳🇱NL_536🇳🇱NL_627_475_501
+      - RU🇷🇺RU_666🇷🇺RU_647🇷🇺RU_735_598
+      - _NL_荷兰_6_0@74
+      - RU🇷🇺RU_629🇷🇺RU_684🇷🇺RU_762_573
+      - NL🇳🇱NL🇳🇱NL_543🇳🇱NL_598🇳🇱NL_604_463_515
+      - RU🇷🇺RU_680🇷🇺RU_656🇷🇺RU_741_592
+      - RU🇷🇺RU🇷🇺RU_679🇷🇺RU_655🇷🇺RU_740_595_593
+      - _NL_荷兰_7_0@75
+      - RU🇷🇺RU🇷🇺RU_630🇷🇺RU_686🇷🇺RU_764_574_623
+      - _NL_荷兰_1_0@53
+      - RU🇷🇺RU🇷🇺RU_628🇷🇺RU_629🇷🇺RU_717_534_614
+      - RU🇷🇺RU🇷🇺RU_663🇷🇺RU_625_524_644
+      - RU🇷🇺RU🇷🇺RU_664🇷🇺RU_708🇷🇺RU_778_588_629
+      - _CY_塞浦路斯_8@42
+      - RU🇷🇺RU🇷🇺RU_633🇷🇺RU_689🇷🇺RU_767_571_583
+      - RU🇷🇺RU_668🇷🇺RU_648🇷🇺RU_736_597
+      - RU🇷🇺RU🇷🇺RU_687🇷🇺RU_663🇷🇺RU_744_592_589
+      - RU🇷🇺RU🇷🇺RU_710🇷🇺RU_685🇷🇺RU_763_576_572
+      - _US_美国_19_0@25
+      - RU🇷🇺RU_623🇷🇺RU_635🇷🇺RU_725_609
+      - RU🇷🇺RU🇷🇺RU_670🇷🇺RU_716🇷🇺RU_784_530_630
+      - _NL_荷兰_8_0@78
+      - _GB_英国_0@64
+      - RU🇷🇺RU🇷🇺RU_673🇷🇺RU_660_548_647
+      - RU🇷🇺RU🇷🇺RU_695🇷🇺RU_628_533_582
+      - RU🇷🇺RU🇷🇺RU_685🇷🇺RU_671_531_646
+      - RU🇷🇺RU🇷🇺RU_622🇷🇺RU_636🇷🇺RU_727_546_608
+      - RU🇷🇺RU🇷🇺RU_621🇷🇺RU_641🇷🇺RU_728_547_607
+      - NL🇳🇱NL🇳🇱NL_538🇳🇱NL_522🇳🇱NL_622_491_483
+      - RU🇷🇺RU🇷🇺RU_643🇷🇺RU_706🇷🇺RU_783_560_620
+      - RU🇷🇺RU🇷🇺RU_692🇷🇺RU_677🇷🇺RU_751_580_577
+      - US 18｜openit.ml
+      - AU🇦🇺AU🇦🇺AU_68🇦🇺AU_106🇦🇺AU_48_77_81
+      - HU🇭🇺HU🇭🇺HU_356🇭🇺HU_357🇭🇺HU_419_277_310
+      - LT🇱🇹LT🇱🇹LT_428🇱🇹LT_415🇱🇹LT_510_374_368
+      - RU🇷🇺RU🇷🇺RU_646🇷🇺RU_710🇷🇺RU_785_553_631
+      - NL🇳🇱NL🇳🇱NL_516🇳🇱NL_564🇳🇱NL_617_472_499
+      - RU🇷🇺RU🇷🇺RU_631🇷🇺RU_687🇷🇺RU_765_573_637
+      - RU🇷🇺RU🇷🇺RU_702🇷🇺RU_676🇷🇺RU_750_581_578
+      - _FR_法国_0@82
+      - RU🇷🇺RU🇷🇺RU_660🇷🇺RU_645🇷🇺RU_733_600_600
+      - RU🇷🇺RU🇷🇺RU_669🇷🇺RU_649🇷🇺RU_737_599_596
+      - LT🇱🇹LT🇱🇹LT_487🇱🇹LT_514🇱🇹LT_564_429_454
+      - _NL_荷兰_2_0@59
+      - _US_美国_36_0@73
+      - LT🇱🇹LT🇱🇹LT_496🇱🇹LT_509🇱🇹LT_585_424_466
+      - NL🇳🇱NL🇳🇱NL_515🇳🇱NL_589🇳🇱NL_646_439_540
+      - RU🇷🇺RU🇷🇺RU_691🇷🇺RU_718🇷🇺RU_777_579_576
+      - _US_美国_31_0@58
+      - _US_美国_38_0@77
+      - _US_美国_34_0@67
+      - NL🇳🇱NL🇳🇱NL_519🇳🇱NL_527🇳🇱NL_631_460_504
+      - AU🇦🇺AU🇦🇺AU_75🇦🇺AU_55🇦🇺AU_42_52_67
+      - NL🇳🇱NL🇳🇱NL_517🇳🇱NL_532🇳🇱NL_629_469_502
+      - RU🇷🇺RU_659🇷🇺RU_644🇷🇺RU_732_601
+      - LT🇱🇹LT🇱🇹LT_388🇱🇹LT_419🇱🇹LT_545_358_351
+      - LT🇱🇹LT🇱🇹LT_502🇱🇹LT_505🇱🇹LT_570_426_463
+      - LT🇱🇹LT🇱🇹LT_437🇱🇹LT_392🇱🇹LT_474_323_373
+      - LT🇱🇹LT🇱🇹LT_389🇱🇹LT_416🇱🇹LT_515_353_350
+      - _JP_日本_1_0@0
+      - RU🇷🇺RU🇷🇺RU_676🇷🇺RU_653🇷🇺RU_738_596_595
+      - LT🇱🇹LT_401🇱🇹LT_458🇱🇹LT_498_370
+      - _US_美国_1_0@1
+      - LT🇱🇹LT🇱🇹LT_472🇱🇹LT_425🇱🇹LT_509_373_360
+      - _DE_德国_1_7@29
+      - NL🇳🇱NL🇳🇱NL_527🇳🇱NL_559🇳🇱NL_616_476_498
+      - RU🇷🇺RU_619🇷🇺RU_638🇷🇺RU_710_604
+      - LT🇱🇹LT🇱🇹LT_454🇱🇹LT_431🇱🇹LT_528_337_408
+      - LT🇱🇹LT🇱🇹LT_476🇱🇹LT_508🇱🇹LT_547_396_434
+      - RU🇷🇺RU🇷🇺RU_647🇷🇺RU_711🇷🇺RU_761_552_633
+      - RU🇷🇺RU🇷🇺RU_620🇷🇺RU_637🇷🇺RU_729_575_606
+      - NL🇳🇱NL_523🇳🇱NL_528🇳🇱NL_607_531
+      - LT🇱🇹LT🇱🇹LT_390🇱🇹LT_409🇱🇹LT_491_336_348
+      - _04_34_24_09_23
+      - LT🇱🇹LT🇱🇹LT_386🇱🇹LT_408🇱🇹LT_525_339_406
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -152,34 +776,190 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 14.29.124.168:25280
-      - CN 3｜openit.ml
-      - JP 1｜openit.ml
-      - CN 1｜openit.ml
-      - US 20｜openit.ml
-      - US 12｜openit.ml
-      - _CN_中国->🇰🇷_KR_韩国_2@12
-      - _JP_日本_1_0@1
-      - US_1421
-      - US_41_12@40
-      - US 21｜openit.ml
-      - Relay_🇮🇷IR-🇮🇷IR_468
-      - US 7｜openit.ml
-      - AU 2｜openit.ml
-      - US 15｜openit.ml
-      - 185.4.65.6:21247
-      - US 1｜openit.ml
-      - US 26｜openit.ml
-      - HK 4｜openit.ml
-      - CN 5｜openit.ml
-      - CN 4｜openit.ml
-      - 138.197.166.205:811
-      - RU_734
-      - _FR_法国_0@11
-      - _JP_日本_2_0@23
-      - US 13｜openit.ml
-      - 欧洲(油管:破解资源君2.0) 5
-      - 欧洲(油管:破解资源君2.0) 18
+      - CN 8｜openit.ml
+      - US 11｜openit.ml
+      - LT🇱🇹LT🇱🇹LT_394🇱🇹LT_424🇱🇹LT_535_375_359
+      - LT🇱🇹LT🇱🇹LT_511🇱🇹LT_488🇱🇹LT_574_389_449
+      - LT🇱🇹LT🇱🇹LT_512🇱🇹LT_486🇱🇹LT_573_390_448
+      - LT🇱🇹LT🇱🇹LT_480🇱🇹LT_518🇱🇹LT_580_404_438
+      - LT🇱🇹LT🇱🇹LT_497🇱🇹LT_490🇱🇹LT_553_428_441
+      - LT🇱🇹LT🇱🇹LT_484🇱🇹LT_493🇱🇹LT_555_413_431
+      - LT🇱🇹LT🇱🇹LT_500🇱🇹LT_481🇱🇹LT_565_411_470
+      - LT🇱🇹LT🇱🇹LT_513🇱🇹LT_502🇱🇹LT_582_388_460
+      - LT🇱🇹LT🇱🇹LT_482🇱🇹LT_517🇱🇹LT_566_403_439
+      - LT🇱🇹LT🇱🇹LT_477🇱🇹LT_494🇱🇹LT_548_406_435
+      - LT🇱🇹LT🇱🇹LT_474🇱🇹LT_496🇱🇹LT_554_419_442
+      - _US_美国_3_0@3
+      - _US_美国_20_0@26
+      - LT🇱🇹LT🇱🇹LT_493🇱🇹LT_487🇱🇹LT_557_422_443
+      - _US_美国_6_0@6
+      - LT🇱🇹LT🇱🇹LT_508🇱🇹LT_499🇱🇹LT_578_415_455
+      - NL🇳🇱NL_582🇳🇱NL_580_545
+      - _US_美国_13_0@13
+      - LT🇱🇹LT🇱🇹LT_396🇱🇹LT_428🇱🇹LT_497_370_362
+      - LT🇱🇹LT🇱🇹LT_490🇱🇹LT_511🇱🇹LT_560_399_459
+      - _US_美国_15_0@15
+      - _US_美国_10_0@10
+      - LT🇱🇹LT🇱🇹LT_483🇱🇹LT_516🇱🇹LT_584_402_440
+      - LT🇱🇹LT🇱🇹LT_397🇱🇹LT_454_367_363
+      - LT🇱🇹LT🇱🇹LT_475🇱🇹LT_512🇱🇹LT_552_407_433
+      - LT🇱🇹LT🇱🇹LT_478🇱🇹LT_519🇱🇹LT_550_408_436
+      - US_55_13@54
+      - LT🇱🇹LT🇱🇹LT_507🇱🇹LT_500🇱🇹LT_579_417_456
+      - LT🇱🇹LT🇱🇹LT_509🇱🇹LT_497🇱🇹LT_576_398_450
+      - LT🇱🇹LT🇱🇹LT_501🇱🇹LT_482🇱🇹LT_567_409_452
+      - LT🇱🇹LT🇱🇹LT_479🇱🇹LT_480🇱🇹LT_563_405_437
+      - LT🇱🇹LT🇱🇹LT_488🇱🇹LT_498🇱🇹LT_577_414_453
+      - LT🇱🇹LT🇱🇹LT_491🇱🇹LT_510🇱🇹LT_551_397_461
+      - NL🇳🇱NL🇳🇱NL_570🇳🇱NL_572🇳🇱NL_672_471_539
+      - _US_美国_12_0@12
+      - _US_美国_5_0@5
+      - LT🇱🇹LT🇱🇹LT_504🇱🇹LT_485🇱🇹LT_572_391_447
+      - LT🇱🇹LT🇱🇹LT_506🇱🇹LT_483🇱🇹LT_568_394_445
+      - _US_美国_7_0@7
+      - _US_美国_32_0@60
+      - _US_美国_28_0@54
+      - LT🇱🇹LT🇱🇹LT_510🇱🇹LT_495🇱🇹LT_575_395_451
+      - NL🇳🇱NL🇳🇱NL_561🇳🇱NL_596_438_538
+      - _US_美国_16_0@16
+      - RU🇷🇺RU_678🇷🇺RU_654🇷🇺RU_739_594
+      - LT🇱🇹LT🇱🇹LT_485🇱🇹LT_491🇱🇹LT_586_416_430
+      - NL🇳🇱NL🇳🇱NL_555🇳🇱NL_567🇳🇱NL_650_445_521
+      - NL🇳🇱NL🇳🇱NL_571🇳🇱NL_573🇳🇱NL_668_442_542
+      - RU🇷🇺RU🇷🇺RU_672🇷🇺RU_659🇷🇺RU_752_589_570
+      - RU🇷🇺RU🇷🇺RU_648🇷🇺RU_712🇷🇺RU_760_551_634
+      - NL🇳🇱NL🇳🇱NL_557🇳🇱NL_597🇳🇱NL_643_432_532
+      - RU🇷🇺RU🇷🇺RU_624🇷🇺RU_634🇷🇺RU_724_545_610
+      - LT🇱🇹LT_406🇱🇹LT_469🇱🇹LT_534_374
+      - RU🇷🇺RU🇷🇺RU_667🇷🇺RU_675_525_635
+      - LT🇱🇹LT🇱🇹LT_495🇱🇹LT_492🇱🇹LT_571_420_467
+      - RU🇷🇺RU🇷🇺RU_684🇷🇺RU_661🇷🇺RU_743_593_590
+      - _US_美国_4_0@4
+      - LT🇱🇹LT🇱🇹LT_404🇱🇹LT_460🇱🇹LT_512_363_372
+      - _US_美国_22_0@33
+      - _US_美国_37_0@76
+      - NL🇳🇱NL🇳🇱NL_556🇳🇱NL_595🇳🇱NL_641_454_489
+      - _US_美国_18_0@18
+      - _US_美国_39_0@80
+      - LT🇱🇹LT🇱🇹LT_498🇱🇹LT_515🇱🇹LT_559_412_444
+      - LT🇱🇹LT🇱🇹LT_408🇱🇹LT_471🇱🇹LT_524_348_383
+      - RU🇷🇺RU🇷🇺RU_651🇷🇺RU_715🇷🇺RU_757_543_642
+      - LT🇱🇹LT🇱🇹LT_407🇱🇹LT_470🇱🇹LT_533_350_379
+      - _US_美国_26_0@48
+      - LT🇱🇹LT🇱🇹LT_481🇱🇹LT_503🇱🇹LT_549_410_432
+      - RU🇷🇺RU_656🇷🇺RU_717🇷🇺RU_756_643
+      - LT🇱🇹LT🇱🇹LT_505🇱🇹LT_501🇱🇹LT_581_421_458
+      - LT🇱🇹LT🇱🇹LT_486🇱🇹LT_489🇱🇹LT_556_423_469
+      - NL🇳🇱NL🇳🇱NL_592🇳🇱NL_601🇳🇱NL_676_498_546
+      - RU🇷🇺RU_661🇷🇺RU_646🇷🇺RU_734_599
+      - NL🇳🇱NL🇳🇱NL_568🇳🇱NL_574🇳🇱NL_656_444_500
+      - RU🇷🇺RU🇷🇺RU_677🇷🇺RU_699🇷🇺RU_776_541_649
+      - _US_美国_14_0@14
+      - LT🇱🇹LT_432🇱🇹LT_477🇱🇹LT_493_391
+      - _US_美国_29_0@56
+      - NL🇳🇱NL🇳🇱NL_545🇳🇱NL_591🇳🇱NL_619_492_486
+      - _US_美国_23_0@38
+      - RS🇷🇸RS🇷🇸RS_616🇷🇸RS_624🇷🇸RS_709_512_569
+      - _US_美国_24_0@43
+      - LT🇱🇹LT🇱🇹LT_473🇱🇹LT_484🇱🇹LT_569_393_446
+      - NL🇳🇱NL🇳🇱NL_536🇳🇱NL_557🇳🇱NL_632_457_505
+      - _US_美国_27_0@50
+      - LT🇱🇹LT🇱🇹LT_459🇱🇹LT_398🇱🇹LT_504_349_354
+      - _NL_荷兰_5_0@72
+      - LT🇱🇹LT🇱🇹LT_503🇱🇹LT_504🇱🇹LT_583_427_462
+      - _US_美国_21_0@28
+      - RU🇷🇺RU🇷🇺RU_639🇷🇺RU_702🇷🇺RU_774_564_588
+      - _US_美国_11_0@11
+      - _US_美国_33_0@63
+      - RU🇷🇺RU🇷🇺RU_634🇷🇺RU_690🇷🇺RU_745_570_584
+      - RU🇷🇺RU🇷🇺RU_641🇷🇺RU_704🇷🇺RU_779_602_617
+      - NL🇳🇱NL🇳🇱NL_583🇳🇱NL_581🇳🇱NL_621_459_509
+      - RU🇷🇺RU🇷🇺RU_632🇷🇺RU_688🇷🇺RU_766_572_571
+      - _NL_荷兰_9_0@81
+      - LT🇱🇹LT🇱🇹LT_462🇱🇹LT_404🇱🇹LT_537_361_378
+      - NL🇳🇱NL🇳🇱NL_547🇳🇱NL_558🇳🇱NL_634_455_506
+      - RU🇷🇺RU_683🇷🇺RU_658🇷🇺RU_742_591
+      - RU🇷🇺RU🇷🇺RU_649🇷🇺RU_713🇷🇺RU_759_550_638
+      - LT🇱🇹LT🇱🇹LT_443🇱🇹LT_475🇱🇹LT_480_314_345
+      - RU🇷🇺RU🇷🇺RU_618🇷🇺RU_683🇷🇺RU_754_577_574
+      - RU🇷🇺RU🇷🇺RU_689🇷🇺RU_682🇷🇺RU_753_578_575
+      - _NL_荷兰_3_0@70
+      - _NL_荷兰_4_0@71
+      - NL🇳🇱NL🇳🇱NL_521🇳🇱NL_536🇳🇱NL_627_475_501
+      - RU🇷🇺RU_666🇷🇺RU_647🇷🇺RU_735_598
+      - _NL_荷兰_6_0@74
+      - RU🇷🇺RU_629🇷🇺RU_684🇷🇺RU_762_573
+      - NL🇳🇱NL🇳🇱NL_543🇳🇱NL_598🇳🇱NL_604_463_515
+      - RU🇷🇺RU_680🇷🇺RU_656🇷🇺RU_741_592
+      - RU🇷🇺RU🇷🇺RU_679🇷🇺RU_655🇷🇺RU_740_595_593
+      - _NL_荷兰_7_0@75
+      - RU🇷🇺RU🇷🇺RU_630🇷🇺RU_686🇷🇺RU_764_574_623
+      - _NL_荷兰_1_0@53
+      - RU🇷🇺RU🇷🇺RU_628🇷🇺RU_629🇷🇺RU_717_534_614
+      - RU🇷🇺RU🇷🇺RU_663🇷🇺RU_625_524_644
+      - RU🇷🇺RU🇷🇺RU_664🇷🇺RU_708🇷🇺RU_778_588_629
+      - _CY_塞浦路斯_8@42
+      - RU🇷🇺RU🇷🇺RU_633🇷🇺RU_689🇷🇺RU_767_571_583
+      - RU🇷🇺RU_668🇷🇺RU_648🇷🇺RU_736_597
+      - RU🇷🇺RU🇷🇺RU_687🇷🇺RU_663🇷🇺RU_744_592_589
+      - RU🇷🇺RU🇷🇺RU_710🇷🇺RU_685🇷🇺RU_763_576_572
+      - _US_美国_19_0@25
+      - RU🇷🇺RU_623🇷🇺RU_635🇷🇺RU_725_609
+      - RU🇷🇺RU🇷🇺RU_670🇷🇺RU_716🇷🇺RU_784_530_630
+      - _NL_荷兰_8_0@78
+      - _GB_英国_0@64
+      - RU🇷🇺RU🇷🇺RU_673🇷🇺RU_660_548_647
+      - RU🇷🇺RU🇷🇺RU_695🇷🇺RU_628_533_582
+      - RU🇷🇺RU🇷🇺RU_685🇷🇺RU_671_531_646
+      - RU🇷🇺RU🇷🇺RU_622🇷🇺RU_636🇷🇺RU_727_546_608
+      - RU🇷🇺RU🇷🇺RU_621🇷🇺RU_641🇷🇺RU_728_547_607
+      - NL🇳🇱NL🇳🇱NL_538🇳🇱NL_522🇳🇱NL_622_491_483
+      - RU🇷🇺RU🇷🇺RU_643🇷🇺RU_706🇷🇺RU_783_560_620
+      - RU🇷🇺RU🇷🇺RU_692🇷🇺RU_677🇷🇺RU_751_580_577
+      - US 18｜openit.ml
+      - AU🇦🇺AU🇦🇺AU_68🇦🇺AU_106🇦🇺AU_48_77_81
+      - HU🇭🇺HU🇭🇺HU_356🇭🇺HU_357🇭🇺HU_419_277_310
+      - LT🇱🇹LT🇱🇹LT_428🇱🇹LT_415🇱🇹LT_510_374_368
+      - RU🇷🇺RU🇷🇺RU_646🇷🇺RU_710🇷🇺RU_785_553_631
+      - NL🇳🇱NL🇳🇱NL_516🇳🇱NL_564🇳🇱NL_617_472_499
+      - RU🇷🇺RU🇷🇺RU_631🇷🇺RU_687🇷🇺RU_765_573_637
+      - RU🇷🇺RU🇷🇺RU_702🇷🇺RU_676🇷🇺RU_750_581_578
+      - _FR_法国_0@82
+      - RU🇷🇺RU🇷🇺RU_660🇷🇺RU_645🇷🇺RU_733_600_600
+      - RU🇷🇺RU🇷🇺RU_669🇷🇺RU_649🇷🇺RU_737_599_596
+      - LT🇱🇹LT🇱🇹LT_487🇱🇹LT_514🇱🇹LT_564_429_454
+      - _NL_荷兰_2_0@59
+      - _US_美国_36_0@73
+      - LT🇱🇹LT🇱🇹LT_496🇱🇹LT_509🇱🇹LT_585_424_466
+      - NL🇳🇱NL🇳🇱NL_515🇳🇱NL_589🇳🇱NL_646_439_540
+      - RU🇷🇺RU🇷🇺RU_691🇷🇺RU_718🇷🇺RU_777_579_576
+      - _US_美国_31_0@58
+      - _US_美国_38_0@77
+      - _US_美国_34_0@67
+      - NL🇳🇱NL🇳🇱NL_519🇳🇱NL_527🇳🇱NL_631_460_504
+      - AU🇦🇺AU🇦🇺AU_75🇦🇺AU_55🇦🇺AU_42_52_67
+      - NL🇳🇱NL🇳🇱NL_517🇳🇱NL_532🇳🇱NL_629_469_502
+      - RU🇷🇺RU_659🇷🇺RU_644🇷🇺RU_732_601
+      - LT🇱🇹LT🇱🇹LT_388🇱🇹LT_419🇱🇹LT_545_358_351
+      - LT🇱🇹LT🇱🇹LT_502🇱🇹LT_505🇱🇹LT_570_426_463
+      - LT🇱🇹LT🇱🇹LT_437🇱🇹LT_392🇱🇹LT_474_323_373
+      - LT🇱🇹LT🇱🇹LT_389🇱🇹LT_416🇱🇹LT_515_353_350
+      - _JP_日本_1_0@0
+      - RU🇷🇺RU🇷🇺RU_676🇷🇺RU_653🇷🇺RU_738_596_595
+      - LT🇱🇹LT_401🇱🇹LT_458🇱🇹LT_498_370
+      - _US_美国_1_0@1
+      - LT🇱🇹LT🇱🇹LT_472🇱🇹LT_425🇱🇹LT_509_373_360
+      - _DE_德国_1_7@29
+      - NL🇳🇱NL🇳🇱NL_527🇳🇱NL_559🇳🇱NL_616_476_498
+      - RU🇷🇺RU_619🇷🇺RU_638🇷🇺RU_710_604
+      - LT🇱🇹LT🇱🇹LT_454🇱🇹LT_431🇱🇹LT_528_337_408
+      - LT🇱🇹LT🇱🇹LT_476🇱🇹LT_508🇱🇹LT_547_396_434
+      - RU🇷🇺RU🇷🇺RU_647🇷🇺RU_711🇷🇺RU_761_552_633
+      - RU🇷🇺RU🇷🇺RU_620🇷🇺RU_637🇷🇺RU_729_575_606
+      - NL🇳🇱NL_523🇳🇱NL_528🇳🇱NL_607_531
+      - LT🇱🇹LT🇱🇹LT_390🇱🇹LT_409🇱🇹LT_491_336_348
+      - _04_34_24_09_23
+      - LT🇱🇹LT🇱🇹LT_386🇱🇹LT_408🇱🇹LT_525_339_406
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -190,101 +970,569 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 14.29.124.168:25280
-      - CN 3｜openit.ml
-      - JP 1｜openit.ml
-      - CN 1｜openit.ml
-      - US 20｜openit.ml
-      - US 12｜openit.ml
-      - _CN_中国->🇰🇷_KR_韩国_2@12
-      - _JP_日本_1_0@1
-      - US_1421
-      - US_41_12@40
-      - US 21｜openit.ml
-      - Relay_🇮🇷IR-🇮🇷IR_468
-      - US 7｜openit.ml
-      - AU 2｜openit.ml
-      - US 15｜openit.ml
-      - 185.4.65.6:21247
-      - US 1｜openit.ml
-      - US 26｜openit.ml
-      - HK 4｜openit.ml
-      - CN 5｜openit.ml
-      - CN 4｜openit.ml
-      - 138.197.166.205:811
-      - RU_734
-      - _FR_法国_0@11
-      - _JP_日本_2_0@23
-      - US 13｜openit.ml
-      - 欧洲(油管:破解资源君2.0) 5
-      - 欧洲(油管:破解资源君2.0) 18
+      - CN 8｜openit.ml
+      - US 11｜openit.ml
+      - LT🇱🇹LT🇱🇹LT_394🇱🇹LT_424🇱🇹LT_535_375_359
+      - LT🇱🇹LT🇱🇹LT_511🇱🇹LT_488🇱🇹LT_574_389_449
+      - LT🇱🇹LT🇱🇹LT_512🇱🇹LT_486🇱🇹LT_573_390_448
+      - LT🇱🇹LT🇱🇹LT_480🇱🇹LT_518🇱🇹LT_580_404_438
+      - LT🇱🇹LT🇱🇹LT_497🇱🇹LT_490🇱🇹LT_553_428_441
+      - LT🇱🇹LT🇱🇹LT_484🇱🇹LT_493🇱🇹LT_555_413_431
+      - LT🇱🇹LT🇱🇹LT_500🇱🇹LT_481🇱🇹LT_565_411_470
+      - LT🇱🇹LT🇱🇹LT_513🇱🇹LT_502🇱🇹LT_582_388_460
+      - LT🇱🇹LT🇱🇹LT_482🇱🇹LT_517🇱🇹LT_566_403_439
+      - LT🇱🇹LT🇱🇹LT_477🇱🇹LT_494🇱🇹LT_548_406_435
+      - LT🇱🇹LT🇱🇹LT_474🇱🇹LT_496🇱🇹LT_554_419_442
+      - _US_美国_3_0@3
+      - _US_美国_20_0@26
+      - LT🇱🇹LT🇱🇹LT_493🇱🇹LT_487🇱🇹LT_557_422_443
+      - _US_美国_6_0@6
+      - LT🇱🇹LT🇱🇹LT_508🇱🇹LT_499🇱🇹LT_578_415_455
+      - NL🇳🇱NL_582🇳🇱NL_580_545
+      - _US_美国_13_0@13
+      - LT🇱🇹LT🇱🇹LT_396🇱🇹LT_428🇱🇹LT_497_370_362
+      - LT🇱🇹LT🇱🇹LT_490🇱🇹LT_511🇱🇹LT_560_399_459
+      - _US_美国_15_0@15
+      - _US_美国_10_0@10
+      - LT🇱🇹LT🇱🇹LT_483🇱🇹LT_516🇱🇹LT_584_402_440
+      - LT🇱🇹LT🇱🇹LT_397🇱🇹LT_454_367_363
+      - LT🇱🇹LT🇱🇹LT_475🇱🇹LT_512🇱🇹LT_552_407_433
+      - LT🇱🇹LT🇱🇹LT_478🇱🇹LT_519🇱🇹LT_550_408_436
+      - US_55_13@54
+      - LT🇱🇹LT🇱🇹LT_507🇱🇹LT_500🇱🇹LT_579_417_456
+      - LT🇱🇹LT🇱🇹LT_509🇱🇹LT_497🇱🇹LT_576_398_450
+      - LT🇱🇹LT🇱🇹LT_501🇱🇹LT_482🇱🇹LT_567_409_452
+      - LT🇱🇹LT🇱🇹LT_479🇱🇹LT_480🇱🇹LT_563_405_437
+      - LT🇱🇹LT🇱🇹LT_488🇱🇹LT_498🇱🇹LT_577_414_453
+      - LT🇱🇹LT🇱🇹LT_491🇱🇹LT_510🇱🇹LT_551_397_461
+      - NL🇳🇱NL🇳🇱NL_570🇳🇱NL_572🇳🇱NL_672_471_539
+      - _US_美国_12_0@12
+      - _US_美国_5_0@5
+      - LT🇱🇹LT🇱🇹LT_504🇱🇹LT_485🇱🇹LT_572_391_447
+      - LT🇱🇹LT🇱🇹LT_506🇱🇹LT_483🇱🇹LT_568_394_445
+      - _US_美国_7_0@7
+      - _US_美国_32_0@60
+      - _US_美国_28_0@54
+      - LT🇱🇹LT🇱🇹LT_510🇱🇹LT_495🇱🇹LT_575_395_451
+      - NL🇳🇱NL🇳🇱NL_561🇳🇱NL_596_438_538
+      - _US_美国_16_0@16
+      - RU🇷🇺RU_678🇷🇺RU_654🇷🇺RU_739_594
+      - LT🇱🇹LT🇱🇹LT_485🇱🇹LT_491🇱🇹LT_586_416_430
+      - NL🇳🇱NL🇳🇱NL_555🇳🇱NL_567🇳🇱NL_650_445_521
+      - NL🇳🇱NL🇳🇱NL_571🇳🇱NL_573🇳🇱NL_668_442_542
+      - RU🇷🇺RU🇷🇺RU_672🇷🇺RU_659🇷🇺RU_752_589_570
+      - RU🇷🇺RU🇷🇺RU_648🇷🇺RU_712🇷🇺RU_760_551_634
+      - NL🇳🇱NL🇳🇱NL_557🇳🇱NL_597🇳🇱NL_643_432_532
+      - RU🇷🇺RU🇷🇺RU_624🇷🇺RU_634🇷🇺RU_724_545_610
+      - LT🇱🇹LT_406🇱🇹LT_469🇱🇹LT_534_374
+      - RU🇷🇺RU🇷🇺RU_667🇷🇺RU_675_525_635
+      - LT🇱🇹LT🇱🇹LT_495🇱🇹LT_492🇱🇹LT_571_420_467
+      - RU🇷🇺RU🇷🇺RU_684🇷🇺RU_661🇷🇺RU_743_593_590
+      - _US_美国_4_0@4
+      - LT🇱🇹LT🇱🇹LT_404🇱🇹LT_460🇱🇹LT_512_363_372
+      - _US_美国_22_0@33
+      - _US_美国_37_0@76
+      - NL🇳🇱NL🇳🇱NL_556🇳🇱NL_595🇳🇱NL_641_454_489
+      - _US_美国_18_0@18
+      - _US_美国_39_0@80
+      - LT🇱🇹LT🇱🇹LT_498🇱🇹LT_515🇱🇹LT_559_412_444
+      - LT🇱🇹LT🇱🇹LT_408🇱🇹LT_471🇱🇹LT_524_348_383
+      - RU🇷🇺RU🇷🇺RU_651🇷🇺RU_715🇷🇺RU_757_543_642
+      - LT🇱🇹LT🇱🇹LT_407🇱🇹LT_470🇱🇹LT_533_350_379
+      - _US_美国_26_0@48
+      - LT🇱🇹LT🇱🇹LT_481🇱🇹LT_503🇱🇹LT_549_410_432
+      - RU🇷🇺RU_656🇷🇺RU_717🇷🇺RU_756_643
+      - LT🇱🇹LT🇱🇹LT_505🇱🇹LT_501🇱🇹LT_581_421_458
+      - LT🇱🇹LT🇱🇹LT_486🇱🇹LT_489🇱🇹LT_556_423_469
+      - NL🇳🇱NL🇳🇱NL_592🇳🇱NL_601🇳🇱NL_676_498_546
+      - RU🇷🇺RU_661🇷🇺RU_646🇷🇺RU_734_599
+      - NL🇳🇱NL🇳🇱NL_568🇳🇱NL_574🇳🇱NL_656_444_500
+      - RU🇷🇺RU🇷🇺RU_677🇷🇺RU_699🇷🇺RU_776_541_649
+      - _US_美国_14_0@14
+      - LT🇱🇹LT_432🇱🇹LT_477🇱🇹LT_493_391
+      - _US_美国_29_0@56
+      - NL🇳🇱NL🇳🇱NL_545🇳🇱NL_591🇳🇱NL_619_492_486
+      - _US_美国_23_0@38
+      - RS🇷🇸RS🇷🇸RS_616🇷🇸RS_624🇷🇸RS_709_512_569
+      - _US_美国_24_0@43
+      - LT🇱🇹LT🇱🇹LT_473🇱🇹LT_484🇱🇹LT_569_393_446
+      - NL🇳🇱NL🇳🇱NL_536🇳🇱NL_557🇳🇱NL_632_457_505
+      - _US_美国_27_0@50
+      - LT🇱🇹LT🇱🇹LT_459🇱🇹LT_398🇱🇹LT_504_349_354
+      - _NL_荷兰_5_0@72
+      - LT🇱🇹LT🇱🇹LT_503🇱🇹LT_504🇱🇹LT_583_427_462
+      - _US_美国_21_0@28
+      - RU🇷🇺RU🇷🇺RU_639🇷🇺RU_702🇷🇺RU_774_564_588
+      - _US_美国_11_0@11
+      - _US_美国_33_0@63
+      - RU🇷🇺RU🇷🇺RU_634🇷🇺RU_690🇷🇺RU_745_570_584
+      - RU🇷🇺RU🇷🇺RU_641🇷🇺RU_704🇷🇺RU_779_602_617
+      - NL🇳🇱NL🇳🇱NL_583🇳🇱NL_581🇳🇱NL_621_459_509
+      - RU🇷🇺RU🇷🇺RU_632🇷🇺RU_688🇷🇺RU_766_572_571
+      - _NL_荷兰_9_0@81
+      - LT🇱🇹LT🇱🇹LT_462🇱🇹LT_404🇱🇹LT_537_361_378
+      - NL🇳🇱NL🇳🇱NL_547🇳🇱NL_558🇳🇱NL_634_455_506
+      - RU🇷🇺RU_683🇷🇺RU_658🇷🇺RU_742_591
+      - RU🇷🇺RU🇷🇺RU_649🇷🇺RU_713🇷🇺RU_759_550_638
+      - LT🇱🇹LT🇱🇹LT_443🇱🇹LT_475🇱🇹LT_480_314_345
+      - RU🇷🇺RU🇷🇺RU_618🇷🇺RU_683🇷🇺RU_754_577_574
+      - RU🇷🇺RU🇷🇺RU_689🇷🇺RU_682🇷🇺RU_753_578_575
+      - _NL_荷兰_3_0@70
+      - _NL_荷兰_4_0@71
+      - NL🇳🇱NL🇳🇱NL_521🇳🇱NL_536🇳🇱NL_627_475_501
+      - RU🇷🇺RU_666🇷🇺RU_647🇷🇺RU_735_598
+      - _NL_荷兰_6_0@74
+      - RU🇷🇺RU_629🇷🇺RU_684🇷🇺RU_762_573
+      - NL🇳🇱NL🇳🇱NL_543🇳🇱NL_598🇳🇱NL_604_463_515
+      - RU🇷🇺RU_680🇷🇺RU_656🇷🇺RU_741_592
+      - RU🇷🇺RU🇷🇺RU_679🇷🇺RU_655🇷🇺RU_740_595_593
+      - _NL_荷兰_7_0@75
+      - RU🇷🇺RU🇷🇺RU_630🇷🇺RU_686🇷🇺RU_764_574_623
+      - _NL_荷兰_1_0@53
+      - RU🇷🇺RU🇷🇺RU_628🇷🇺RU_629🇷🇺RU_717_534_614
+      - RU🇷🇺RU🇷🇺RU_663🇷🇺RU_625_524_644
+      - RU🇷🇺RU🇷🇺RU_664🇷🇺RU_708🇷🇺RU_778_588_629
+      - _CY_塞浦路斯_8@42
+      - RU🇷🇺RU🇷🇺RU_633🇷🇺RU_689🇷🇺RU_767_571_583
+      - RU🇷🇺RU_668🇷🇺RU_648🇷🇺RU_736_597
+      - RU🇷🇺RU🇷🇺RU_687🇷🇺RU_663🇷🇺RU_744_592_589
+      - RU🇷🇺RU🇷🇺RU_710🇷🇺RU_685🇷🇺RU_763_576_572
+      - _US_美国_19_0@25
+      - RU🇷🇺RU_623🇷🇺RU_635🇷🇺RU_725_609
+      - RU🇷🇺RU🇷🇺RU_670🇷🇺RU_716🇷🇺RU_784_530_630
+      - _NL_荷兰_8_0@78
+      - _GB_英国_0@64
+      - RU🇷🇺RU🇷🇺RU_673🇷🇺RU_660_548_647
+      - RU🇷🇺RU🇷🇺RU_695🇷🇺RU_628_533_582
+      - RU🇷🇺RU🇷🇺RU_685🇷🇺RU_671_531_646
+      - RU🇷🇺RU🇷🇺RU_622🇷🇺RU_636🇷🇺RU_727_546_608
+      - RU🇷🇺RU🇷🇺RU_621🇷🇺RU_641🇷🇺RU_728_547_607
+      - NL🇳🇱NL🇳🇱NL_538🇳🇱NL_522🇳🇱NL_622_491_483
+      - RU🇷🇺RU🇷🇺RU_643🇷🇺RU_706🇷🇺RU_783_560_620
+      - RU🇷🇺RU🇷🇺RU_692🇷🇺RU_677🇷🇺RU_751_580_577
+      - US 18｜openit.ml
+      - AU🇦🇺AU🇦🇺AU_68🇦🇺AU_106🇦🇺AU_48_77_81
+      - HU🇭🇺HU🇭🇺HU_356🇭🇺HU_357🇭🇺HU_419_277_310
+      - LT🇱🇹LT🇱🇹LT_428🇱🇹LT_415🇱🇹LT_510_374_368
+      - RU🇷🇺RU🇷🇺RU_646🇷🇺RU_710🇷🇺RU_785_553_631
+      - NL🇳🇱NL🇳🇱NL_516🇳🇱NL_564🇳🇱NL_617_472_499
+      - RU🇷🇺RU🇷🇺RU_631🇷🇺RU_687🇷🇺RU_765_573_637
+      - RU🇷🇺RU🇷🇺RU_702🇷🇺RU_676🇷🇺RU_750_581_578
+      - _FR_法国_0@82
+      - RU🇷🇺RU🇷🇺RU_660🇷🇺RU_645🇷🇺RU_733_600_600
+      - RU🇷🇺RU🇷🇺RU_669🇷🇺RU_649🇷🇺RU_737_599_596
+      - LT🇱🇹LT🇱🇹LT_487🇱🇹LT_514🇱🇹LT_564_429_454
+      - _NL_荷兰_2_0@59
+      - _US_美国_36_0@73
+      - LT🇱🇹LT🇱🇹LT_496🇱🇹LT_509🇱🇹LT_585_424_466
+      - NL🇳🇱NL🇳🇱NL_515🇳🇱NL_589🇳🇱NL_646_439_540
+      - RU🇷🇺RU🇷🇺RU_691🇷🇺RU_718🇷🇺RU_777_579_576
+      - _US_美国_31_0@58
+      - _US_美国_38_0@77
+      - _US_美国_34_0@67
+      - NL🇳🇱NL🇳🇱NL_519🇳🇱NL_527🇳🇱NL_631_460_504
+      - AU🇦🇺AU🇦🇺AU_75🇦🇺AU_55🇦🇺AU_42_52_67
+      - NL🇳🇱NL🇳🇱NL_517🇳🇱NL_532🇳🇱NL_629_469_502
+      - RU🇷🇺RU_659🇷🇺RU_644🇷🇺RU_732_601
+      - LT🇱🇹LT🇱🇹LT_388🇱🇹LT_419🇱🇹LT_545_358_351
+      - LT🇱🇹LT🇱🇹LT_502🇱🇹LT_505🇱🇹LT_570_426_463
+      - LT🇱🇹LT🇱🇹LT_437🇱🇹LT_392🇱🇹LT_474_323_373
+      - LT🇱🇹LT🇱🇹LT_389🇱🇹LT_416🇱🇹LT_515_353_350
+      - _JP_日本_1_0@0
+      - RU🇷🇺RU🇷🇺RU_676🇷🇺RU_653🇷🇺RU_738_596_595
+      - LT🇱🇹LT_401🇱🇹LT_458🇱🇹LT_498_370
+      - _US_美国_1_0@1
+      - LT🇱🇹LT🇱🇹LT_472🇱🇹LT_425🇱🇹LT_509_373_360
+      - _DE_德国_1_7@29
+      - NL🇳🇱NL🇳🇱NL_527🇳🇱NL_559🇳🇱NL_616_476_498
+      - RU🇷🇺RU_619🇷🇺RU_638🇷🇺RU_710_604
+      - LT🇱🇹LT🇱🇹LT_454🇱🇹LT_431🇱🇹LT_528_337_408
+      - LT🇱🇹LT🇱🇹LT_476🇱🇹LT_508🇱🇹LT_547_396_434
+      - RU🇷🇺RU🇷🇺RU_647🇷🇺RU_711🇷🇺RU_761_552_633
+      - RU🇷🇺RU🇷🇺RU_620🇷🇺RU_637🇷🇺RU_729_575_606
+      - NL🇳🇱NL_523🇳🇱NL_528🇳🇱NL_607_531
+      - LT🇱🇹LT🇱🇹LT_390🇱🇹LT_409🇱🇹LT_491_336_348
+      - _04_34_24_09_23
+      - LT🇱🇹LT🇱🇹LT_386🇱🇹LT_408🇱🇹LT_525_339_406
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 14.29.124.168:25280
-      - CN 3｜openit.ml
-      - JP 1｜openit.ml
-      - CN 1｜openit.ml
-      - US 20｜openit.ml
-      - US 12｜openit.ml
-      - _CN_中国->🇰🇷_KR_韩国_2@12
-      - _JP_日本_1_0@1
-      - US_1421
-      - US_41_12@40
-      - US 21｜openit.ml
-      - Relay_🇮🇷IR-🇮🇷IR_468
-      - US 7｜openit.ml
-      - AU 2｜openit.ml
-      - US 15｜openit.ml
-      - 185.4.65.6:21247
-      - US 1｜openit.ml
-      - US 26｜openit.ml
-      - HK 4｜openit.ml
-      - CN 5｜openit.ml
-      - CN 4｜openit.ml
-      - 138.197.166.205:811
-      - RU_734
-      - _FR_法国_0@11
-      - _JP_日本_2_0@23
-      - US 13｜openit.ml
-      - 欧洲(油管:破解资源君2.0) 5
-      - 欧洲(油管:破解资源君2.0) 18
+      - CN 8｜openit.ml
+      - US 11｜openit.ml
+      - LT🇱🇹LT🇱🇹LT_394🇱🇹LT_424🇱🇹LT_535_375_359
+      - LT🇱🇹LT🇱🇹LT_511🇱🇹LT_488🇱🇹LT_574_389_449
+      - LT🇱🇹LT🇱🇹LT_512🇱🇹LT_486🇱🇹LT_573_390_448
+      - LT🇱🇹LT🇱🇹LT_480🇱🇹LT_518🇱🇹LT_580_404_438
+      - LT🇱🇹LT🇱🇹LT_497🇱🇹LT_490🇱🇹LT_553_428_441
+      - LT🇱🇹LT🇱🇹LT_484🇱🇹LT_493🇱🇹LT_555_413_431
+      - LT🇱🇹LT🇱🇹LT_500🇱🇹LT_481🇱🇹LT_565_411_470
+      - LT🇱🇹LT🇱🇹LT_513🇱🇹LT_502🇱🇹LT_582_388_460
+      - LT🇱🇹LT🇱🇹LT_482🇱🇹LT_517🇱🇹LT_566_403_439
+      - LT🇱🇹LT🇱🇹LT_477🇱🇹LT_494🇱🇹LT_548_406_435
+      - LT🇱🇹LT🇱🇹LT_474🇱🇹LT_496🇱🇹LT_554_419_442
+      - _US_美国_3_0@3
+      - _US_美国_20_0@26
+      - LT🇱🇹LT🇱🇹LT_493🇱🇹LT_487🇱🇹LT_557_422_443
+      - _US_美国_6_0@6
+      - LT🇱🇹LT🇱🇹LT_508🇱🇹LT_499🇱🇹LT_578_415_455
+      - NL🇳🇱NL_582🇳🇱NL_580_545
+      - _US_美国_13_0@13
+      - LT🇱🇹LT🇱🇹LT_396🇱🇹LT_428🇱🇹LT_497_370_362
+      - LT🇱🇹LT🇱🇹LT_490🇱🇹LT_511🇱🇹LT_560_399_459
+      - _US_美国_15_0@15
+      - _US_美国_10_0@10
+      - LT🇱🇹LT🇱🇹LT_483🇱🇹LT_516🇱🇹LT_584_402_440
+      - LT🇱🇹LT🇱🇹LT_397🇱🇹LT_454_367_363
+      - LT🇱🇹LT🇱🇹LT_475🇱🇹LT_512🇱🇹LT_552_407_433
+      - LT🇱🇹LT🇱🇹LT_478🇱🇹LT_519🇱🇹LT_550_408_436
+      - US_55_13@54
+      - LT🇱🇹LT🇱🇹LT_507🇱🇹LT_500🇱🇹LT_579_417_456
+      - LT🇱🇹LT🇱🇹LT_509🇱🇹LT_497🇱🇹LT_576_398_450
+      - LT🇱🇹LT🇱🇹LT_501🇱🇹LT_482🇱🇹LT_567_409_452
+      - LT🇱🇹LT🇱🇹LT_479🇱🇹LT_480🇱🇹LT_563_405_437
+      - LT🇱🇹LT🇱🇹LT_488🇱🇹LT_498🇱🇹LT_577_414_453
+      - LT🇱🇹LT🇱🇹LT_491🇱🇹LT_510🇱🇹LT_551_397_461
+      - NL🇳🇱NL🇳🇱NL_570🇳🇱NL_572🇳🇱NL_672_471_539
+      - _US_美国_12_0@12
+      - _US_美国_5_0@5
+      - LT🇱🇹LT🇱🇹LT_504🇱🇹LT_485🇱🇹LT_572_391_447
+      - LT🇱🇹LT🇱🇹LT_506🇱🇹LT_483🇱🇹LT_568_394_445
+      - _US_美国_7_0@7
+      - _US_美国_32_0@60
+      - _US_美国_28_0@54
+      - LT🇱🇹LT🇱🇹LT_510🇱🇹LT_495🇱🇹LT_575_395_451
+      - NL🇳🇱NL🇳🇱NL_561🇳🇱NL_596_438_538
+      - _US_美国_16_0@16
+      - RU🇷🇺RU_678🇷🇺RU_654🇷🇺RU_739_594
+      - LT🇱🇹LT🇱🇹LT_485🇱🇹LT_491🇱🇹LT_586_416_430
+      - NL🇳🇱NL🇳🇱NL_555🇳🇱NL_567🇳🇱NL_650_445_521
+      - NL🇳🇱NL🇳🇱NL_571🇳🇱NL_573🇳🇱NL_668_442_542
+      - RU🇷🇺RU🇷🇺RU_672🇷🇺RU_659🇷🇺RU_752_589_570
+      - RU🇷🇺RU🇷🇺RU_648🇷🇺RU_712🇷🇺RU_760_551_634
+      - NL🇳🇱NL🇳🇱NL_557🇳🇱NL_597🇳🇱NL_643_432_532
+      - RU🇷🇺RU🇷🇺RU_624🇷🇺RU_634🇷🇺RU_724_545_610
+      - LT🇱🇹LT_406🇱🇹LT_469🇱🇹LT_534_374
+      - RU🇷🇺RU🇷🇺RU_667🇷🇺RU_675_525_635
+      - LT🇱🇹LT🇱🇹LT_495🇱🇹LT_492🇱🇹LT_571_420_467
+      - RU🇷🇺RU🇷🇺RU_684🇷🇺RU_661🇷🇺RU_743_593_590
+      - _US_美国_4_0@4
+      - LT🇱🇹LT🇱🇹LT_404🇱🇹LT_460🇱🇹LT_512_363_372
+      - _US_美国_22_0@33
+      - _US_美国_37_0@76
+      - NL🇳🇱NL🇳🇱NL_556🇳🇱NL_595🇳🇱NL_641_454_489
+      - _US_美国_18_0@18
+      - _US_美国_39_0@80
+      - LT🇱🇹LT🇱🇹LT_498🇱🇹LT_515🇱🇹LT_559_412_444
+      - LT🇱🇹LT🇱🇹LT_408🇱🇹LT_471🇱🇹LT_524_348_383
+      - RU🇷🇺RU🇷🇺RU_651🇷🇺RU_715🇷🇺RU_757_543_642
+      - LT🇱🇹LT🇱🇹LT_407🇱🇹LT_470🇱🇹LT_533_350_379
+      - _US_美国_26_0@48
+      - LT🇱🇹LT🇱🇹LT_481🇱🇹LT_503🇱🇹LT_549_410_432
+      - RU🇷🇺RU_656🇷🇺RU_717🇷🇺RU_756_643
+      - LT🇱🇹LT🇱🇹LT_505🇱🇹LT_501🇱🇹LT_581_421_458
+      - LT🇱🇹LT🇱🇹LT_486🇱🇹LT_489🇱🇹LT_556_423_469
+      - NL🇳🇱NL🇳🇱NL_592🇳🇱NL_601🇳🇱NL_676_498_546
+      - RU🇷🇺RU_661🇷🇺RU_646🇷🇺RU_734_599
+      - NL🇳🇱NL🇳🇱NL_568🇳🇱NL_574🇳🇱NL_656_444_500
+      - RU🇷🇺RU🇷🇺RU_677🇷🇺RU_699🇷🇺RU_776_541_649
+      - _US_美国_14_0@14
+      - LT🇱🇹LT_432🇱🇹LT_477🇱🇹LT_493_391
+      - _US_美国_29_0@56
+      - NL🇳🇱NL🇳🇱NL_545🇳🇱NL_591🇳🇱NL_619_492_486
+      - _US_美国_23_0@38
+      - RS🇷🇸RS🇷🇸RS_616🇷🇸RS_624🇷🇸RS_709_512_569
+      - _US_美国_24_0@43
+      - LT🇱🇹LT🇱🇹LT_473🇱🇹LT_484🇱🇹LT_569_393_446
+      - NL🇳🇱NL🇳🇱NL_536🇳🇱NL_557🇳🇱NL_632_457_505
+      - _US_美国_27_0@50
+      - LT🇱🇹LT🇱🇹LT_459🇱🇹LT_398🇱🇹LT_504_349_354
+      - _NL_荷兰_5_0@72
+      - LT🇱🇹LT🇱🇹LT_503🇱🇹LT_504🇱🇹LT_583_427_462
+      - _US_美国_21_0@28
+      - RU🇷🇺RU🇷🇺RU_639🇷🇺RU_702🇷🇺RU_774_564_588
+      - _US_美国_11_0@11
+      - _US_美国_33_0@63
+      - RU🇷🇺RU🇷🇺RU_634🇷🇺RU_690🇷🇺RU_745_570_584
+      - RU🇷🇺RU🇷🇺RU_641🇷🇺RU_704🇷🇺RU_779_602_617
+      - NL🇳🇱NL🇳🇱NL_583🇳🇱NL_581🇳🇱NL_621_459_509
+      - RU🇷🇺RU🇷🇺RU_632🇷🇺RU_688🇷🇺RU_766_572_571
+      - _NL_荷兰_9_0@81
+      - LT🇱🇹LT🇱🇹LT_462🇱🇹LT_404🇱🇹LT_537_361_378
+      - NL🇳🇱NL🇳🇱NL_547🇳🇱NL_558🇳🇱NL_634_455_506
+      - RU🇷🇺RU_683🇷🇺RU_658🇷🇺RU_742_591
+      - RU🇷🇺RU🇷🇺RU_649🇷🇺RU_713🇷🇺RU_759_550_638
+      - LT🇱🇹LT🇱🇹LT_443🇱🇹LT_475🇱🇹LT_480_314_345
+      - RU🇷🇺RU🇷🇺RU_618🇷🇺RU_683🇷🇺RU_754_577_574
+      - RU🇷🇺RU🇷🇺RU_689🇷🇺RU_682🇷🇺RU_753_578_575
+      - _NL_荷兰_3_0@70
+      - _NL_荷兰_4_0@71
+      - NL🇳🇱NL🇳🇱NL_521🇳🇱NL_536🇳🇱NL_627_475_501
+      - RU🇷🇺RU_666🇷🇺RU_647🇷🇺RU_735_598
+      - _NL_荷兰_6_0@74
+      - RU🇷🇺RU_629🇷🇺RU_684🇷🇺RU_762_573
+      - NL🇳🇱NL🇳🇱NL_543🇳🇱NL_598🇳🇱NL_604_463_515
+      - RU🇷🇺RU_680🇷🇺RU_656🇷🇺RU_741_592
+      - RU🇷🇺RU🇷🇺RU_679🇷🇺RU_655🇷🇺RU_740_595_593
+      - _NL_荷兰_7_0@75
+      - RU🇷🇺RU🇷🇺RU_630🇷🇺RU_686🇷🇺RU_764_574_623
+      - _NL_荷兰_1_0@53
+      - RU🇷🇺RU🇷🇺RU_628🇷🇺RU_629🇷🇺RU_717_534_614
+      - RU🇷🇺RU🇷🇺RU_663🇷🇺RU_625_524_644
+      - RU🇷🇺RU🇷🇺RU_664🇷🇺RU_708🇷🇺RU_778_588_629
+      - _CY_塞浦路斯_8@42
+      - RU🇷🇺RU🇷🇺RU_633🇷🇺RU_689🇷🇺RU_767_571_583
+      - RU🇷🇺RU_668🇷🇺RU_648🇷🇺RU_736_597
+      - RU🇷🇺RU🇷🇺RU_687🇷🇺RU_663🇷🇺RU_744_592_589
+      - RU🇷🇺RU🇷🇺RU_710🇷🇺RU_685🇷🇺RU_763_576_572
+      - _US_美国_19_0@25
+      - RU🇷🇺RU_623🇷🇺RU_635🇷🇺RU_725_609
+      - RU🇷🇺RU🇷🇺RU_670🇷🇺RU_716🇷🇺RU_784_530_630
+      - _NL_荷兰_8_0@78
+      - _GB_英国_0@64
+      - RU🇷🇺RU🇷🇺RU_673🇷🇺RU_660_548_647
+      - RU🇷🇺RU🇷🇺RU_695🇷🇺RU_628_533_582
+      - RU🇷🇺RU🇷🇺RU_685🇷🇺RU_671_531_646
+      - RU🇷🇺RU🇷🇺RU_622🇷🇺RU_636🇷🇺RU_727_546_608
+      - RU🇷🇺RU🇷🇺RU_621🇷🇺RU_641🇷🇺RU_728_547_607
+      - NL🇳🇱NL🇳🇱NL_538🇳🇱NL_522🇳🇱NL_622_491_483
+      - RU🇷🇺RU🇷🇺RU_643🇷🇺RU_706🇷🇺RU_783_560_620
+      - RU🇷🇺RU🇷🇺RU_692🇷🇺RU_677🇷🇺RU_751_580_577
+      - US 18｜openit.ml
+      - AU🇦🇺AU🇦🇺AU_68🇦🇺AU_106🇦🇺AU_48_77_81
+      - HU🇭🇺HU🇭🇺HU_356🇭🇺HU_357🇭🇺HU_419_277_310
+      - LT🇱🇹LT🇱🇹LT_428🇱🇹LT_415🇱🇹LT_510_374_368
+      - RU🇷🇺RU🇷🇺RU_646🇷🇺RU_710🇷🇺RU_785_553_631
+      - NL🇳🇱NL🇳🇱NL_516🇳🇱NL_564🇳🇱NL_617_472_499
+      - RU🇷🇺RU🇷🇺RU_631🇷🇺RU_687🇷🇺RU_765_573_637
+      - RU🇷🇺RU🇷🇺RU_702🇷🇺RU_676🇷🇺RU_750_581_578
+      - _FR_法国_0@82
+      - RU🇷🇺RU🇷🇺RU_660🇷🇺RU_645🇷🇺RU_733_600_600
+      - RU🇷🇺RU🇷🇺RU_669🇷🇺RU_649🇷🇺RU_737_599_596
+      - LT🇱🇹LT🇱🇹LT_487🇱🇹LT_514🇱🇹LT_564_429_454
+      - _NL_荷兰_2_0@59
+      - _US_美国_36_0@73
+      - LT🇱🇹LT🇱🇹LT_496🇱🇹LT_509🇱🇹LT_585_424_466
+      - NL🇳🇱NL🇳🇱NL_515🇳🇱NL_589🇳🇱NL_646_439_540
+      - RU🇷🇺RU🇷🇺RU_691🇷🇺RU_718🇷🇺RU_777_579_576
+      - _US_美国_31_0@58
+      - _US_美国_38_0@77
+      - _US_美国_34_0@67
+      - NL🇳🇱NL🇳🇱NL_519🇳🇱NL_527🇳🇱NL_631_460_504
+      - AU🇦🇺AU🇦🇺AU_75🇦🇺AU_55🇦🇺AU_42_52_67
+      - NL🇳🇱NL🇳🇱NL_517🇳🇱NL_532🇳🇱NL_629_469_502
+      - RU🇷🇺RU_659🇷🇺RU_644🇷🇺RU_732_601
+      - LT🇱🇹LT🇱🇹LT_388🇱🇹LT_419🇱🇹LT_545_358_351
+      - LT🇱🇹LT🇱🇹LT_502🇱🇹LT_505🇱🇹LT_570_426_463
+      - LT🇱🇹LT🇱🇹LT_437🇱🇹LT_392🇱🇹LT_474_323_373
+      - LT🇱🇹LT🇱🇹LT_389🇱🇹LT_416🇱🇹LT_515_353_350
+      - _JP_日本_1_0@0
+      - RU🇷🇺RU🇷🇺RU_676🇷🇺RU_653🇷🇺RU_738_596_595
+      - LT🇱🇹LT_401🇱🇹LT_458🇱🇹LT_498_370
+      - _US_美国_1_0@1
+      - LT🇱🇹LT🇱🇹LT_472🇱🇹LT_425🇱🇹LT_509_373_360
+      - _DE_德国_1_7@29
+      - NL🇳🇱NL🇳🇱NL_527🇳🇱NL_559🇳🇱NL_616_476_498
+      - RU🇷🇺RU_619🇷🇺RU_638🇷🇺RU_710_604
+      - LT🇱🇹LT🇱🇹LT_454🇱🇹LT_431🇱🇹LT_528_337_408
+      - LT🇱🇹LT🇱🇹LT_476🇱🇹LT_508🇱🇹LT_547_396_434
+      - RU🇷🇺RU🇷🇺RU_647🇷🇺RU_711🇷🇺RU_761_552_633
+      - RU🇷🇺RU🇷🇺RU_620🇷🇺RU_637🇷🇺RU_729_575_606
+      - NL🇳🇱NL_523🇳🇱NL_528🇳🇱NL_607_531
+      - LT🇱🇹LT🇱🇹LT_390🇱🇹LT_409🇱🇹LT_491_336_348
+      - _04_34_24_09_23
+      - LT🇱🇹LT🇱🇹LT_386🇱🇹LT_408🇱🇹LT_525_339_406
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 14.29.124.168:25280
-      - CN 3｜openit.ml
-      - JP 1｜openit.ml
-      - CN 1｜openit.ml
-      - US 20｜openit.ml
-      - US 12｜openit.ml
-      - _CN_中国->🇰🇷_KR_韩国_2@12
-      - _JP_日本_1_0@1
-      - US_1421
-      - US_41_12@40
-      - US 21｜openit.ml
-      - Relay_🇮🇷IR-🇮🇷IR_468
-      - US 7｜openit.ml
-      - AU 2｜openit.ml
-      - US 15｜openit.ml
-      - 185.4.65.6:21247
-      - US 1｜openit.ml
-      - US 26｜openit.ml
-      - HK 4｜openit.ml
-      - CN 5｜openit.ml
-      - CN 4｜openit.ml
-      - 138.197.166.205:811
-      - RU_734
-      - _FR_法国_0@11
-      - _JP_日本_2_0@23
-      - US 13｜openit.ml
-      - 欧洲(油管:破解资源君2.0) 5
-      - 欧洲(油管:破解资源君2.0) 18
+      - CN 8｜openit.ml
+      - US 11｜openit.ml
+      - LT🇱🇹LT🇱🇹LT_394🇱🇹LT_424🇱🇹LT_535_375_359
+      - LT🇱🇹LT🇱🇹LT_511🇱🇹LT_488🇱🇹LT_574_389_449
+      - LT🇱🇹LT🇱🇹LT_512🇱🇹LT_486🇱🇹LT_573_390_448
+      - LT🇱🇹LT🇱🇹LT_480🇱🇹LT_518🇱🇹LT_580_404_438
+      - LT🇱🇹LT🇱🇹LT_497🇱🇹LT_490🇱🇹LT_553_428_441
+      - LT🇱🇹LT🇱🇹LT_484🇱🇹LT_493🇱🇹LT_555_413_431
+      - LT🇱🇹LT🇱🇹LT_500🇱🇹LT_481🇱🇹LT_565_411_470
+      - LT🇱🇹LT🇱🇹LT_513🇱🇹LT_502🇱🇹LT_582_388_460
+      - LT🇱🇹LT🇱🇹LT_482🇱🇹LT_517🇱🇹LT_566_403_439
+      - LT🇱🇹LT🇱🇹LT_477🇱🇹LT_494🇱🇹LT_548_406_435
+      - LT🇱🇹LT🇱🇹LT_474🇱🇹LT_496🇱🇹LT_554_419_442
+      - _US_美国_3_0@3
+      - _US_美国_20_0@26
+      - LT🇱🇹LT🇱🇹LT_493🇱🇹LT_487🇱🇹LT_557_422_443
+      - _US_美国_6_0@6
+      - LT🇱🇹LT🇱🇹LT_508🇱🇹LT_499🇱🇹LT_578_415_455
+      - NL🇳🇱NL_582🇳🇱NL_580_545
+      - _US_美国_13_0@13
+      - LT🇱🇹LT🇱🇹LT_396🇱🇹LT_428🇱🇹LT_497_370_362
+      - LT🇱🇹LT🇱🇹LT_490🇱🇹LT_511🇱🇹LT_560_399_459
+      - _US_美国_15_0@15
+      - _US_美国_10_0@10
+      - LT🇱🇹LT🇱🇹LT_483🇱🇹LT_516🇱🇹LT_584_402_440
+      - LT🇱🇹LT🇱🇹LT_397🇱🇹LT_454_367_363
+      - LT🇱🇹LT🇱🇹LT_475🇱🇹LT_512🇱🇹LT_552_407_433
+      - LT🇱🇹LT🇱🇹LT_478🇱🇹LT_519🇱🇹LT_550_408_436
+      - US_55_13@54
+      - LT🇱🇹LT🇱🇹LT_507🇱🇹LT_500🇱🇹LT_579_417_456
+      - LT🇱🇹LT🇱🇹LT_509🇱🇹LT_497🇱🇹LT_576_398_450
+      - LT🇱🇹LT🇱🇹LT_501🇱🇹LT_482🇱🇹LT_567_409_452
+      - LT🇱🇹LT🇱🇹LT_479🇱🇹LT_480🇱🇹LT_563_405_437
+      - LT🇱🇹LT🇱🇹LT_488🇱🇹LT_498🇱🇹LT_577_414_453
+      - LT🇱🇹LT🇱🇹LT_491🇱🇹LT_510🇱🇹LT_551_397_461
+      - NL🇳🇱NL🇳🇱NL_570🇳🇱NL_572🇳🇱NL_672_471_539
+      - _US_美国_12_0@12
+      - _US_美国_5_0@5
+      - LT🇱🇹LT🇱🇹LT_504🇱🇹LT_485🇱🇹LT_572_391_447
+      - LT🇱🇹LT🇱🇹LT_506🇱🇹LT_483🇱🇹LT_568_394_445
+      - _US_美国_7_0@7
+      - _US_美国_32_0@60
+      - _US_美国_28_0@54
+      - LT🇱🇹LT🇱🇹LT_510🇱🇹LT_495🇱🇹LT_575_395_451
+      - NL🇳🇱NL🇳🇱NL_561🇳🇱NL_596_438_538
+      - _US_美国_16_0@16
+      - RU🇷🇺RU_678🇷🇺RU_654🇷🇺RU_739_594
+      - LT🇱🇹LT🇱🇹LT_485🇱🇹LT_491🇱🇹LT_586_416_430
+      - NL🇳🇱NL🇳🇱NL_555🇳🇱NL_567🇳🇱NL_650_445_521
+      - NL🇳🇱NL🇳🇱NL_571🇳🇱NL_573🇳🇱NL_668_442_542
+      - RU🇷🇺RU🇷🇺RU_672🇷🇺RU_659🇷🇺RU_752_589_570
+      - RU🇷🇺RU🇷🇺RU_648🇷🇺RU_712🇷🇺RU_760_551_634
+      - NL🇳🇱NL🇳🇱NL_557🇳🇱NL_597🇳🇱NL_643_432_532
+      - RU🇷🇺RU🇷🇺RU_624🇷🇺RU_634🇷🇺RU_724_545_610
+      - LT🇱🇹LT_406🇱🇹LT_469🇱🇹LT_534_374
+      - RU🇷🇺RU🇷🇺RU_667🇷🇺RU_675_525_635
+      - LT🇱🇹LT🇱🇹LT_495🇱🇹LT_492🇱🇹LT_571_420_467
+      - RU🇷🇺RU🇷🇺RU_684🇷🇺RU_661🇷🇺RU_743_593_590
+      - _US_美国_4_0@4
+      - LT🇱🇹LT🇱🇹LT_404🇱🇹LT_460🇱🇹LT_512_363_372
+      - _US_美国_22_0@33
+      - _US_美国_37_0@76
+      - NL🇳🇱NL🇳🇱NL_556🇳🇱NL_595🇳🇱NL_641_454_489
+      - _US_美国_18_0@18
+      - _US_美国_39_0@80
+      - LT🇱🇹LT🇱🇹LT_498🇱🇹LT_515🇱🇹LT_559_412_444
+      - LT🇱🇹LT🇱🇹LT_408🇱🇹LT_471🇱🇹LT_524_348_383
+      - RU🇷🇺RU🇷🇺RU_651🇷🇺RU_715🇷🇺RU_757_543_642
+      - LT🇱🇹LT🇱🇹LT_407🇱🇹LT_470🇱🇹LT_533_350_379
+      - _US_美国_26_0@48
+      - LT🇱🇹LT🇱🇹LT_481🇱🇹LT_503🇱🇹LT_549_410_432
+      - RU🇷🇺RU_656🇷🇺RU_717🇷🇺RU_756_643
+      - LT🇱🇹LT🇱🇹LT_505🇱🇹LT_501🇱🇹LT_581_421_458
+      - LT🇱🇹LT🇱🇹LT_486🇱🇹LT_489🇱🇹LT_556_423_469
+      - NL🇳🇱NL🇳🇱NL_592🇳🇱NL_601🇳🇱NL_676_498_546
+      - RU🇷🇺RU_661🇷🇺RU_646🇷🇺RU_734_599
+      - NL🇳🇱NL🇳🇱NL_568🇳🇱NL_574🇳🇱NL_656_444_500
+      - RU🇷🇺RU🇷🇺RU_677🇷🇺RU_699🇷🇺RU_776_541_649
+      - _US_美国_14_0@14
+      - LT🇱🇹LT_432🇱🇹LT_477🇱🇹LT_493_391
+      - _US_美国_29_0@56
+      - NL🇳🇱NL🇳🇱NL_545🇳🇱NL_591🇳🇱NL_619_492_486
+      - _US_美国_23_0@38
+      - RS🇷🇸RS🇷🇸RS_616🇷🇸RS_624🇷🇸RS_709_512_569
+      - _US_美国_24_0@43
+      - LT🇱🇹LT🇱🇹LT_473🇱🇹LT_484🇱🇹LT_569_393_446
+      - NL🇳🇱NL🇳🇱NL_536🇳🇱NL_557🇳🇱NL_632_457_505
+      - _US_美国_27_0@50
+      - LT🇱🇹LT🇱🇹LT_459🇱🇹LT_398🇱🇹LT_504_349_354
+      - _NL_荷兰_5_0@72
+      - LT🇱🇹LT🇱🇹LT_503🇱🇹LT_504🇱🇹LT_583_427_462
+      - _US_美国_21_0@28
+      - RU🇷🇺RU🇷🇺RU_639🇷🇺RU_702🇷🇺RU_774_564_588
+      - _US_美国_11_0@11
+      - _US_美国_33_0@63
+      - RU🇷🇺RU🇷🇺RU_634🇷🇺RU_690🇷🇺RU_745_570_584
+      - RU🇷🇺RU🇷🇺RU_641🇷🇺RU_704🇷🇺RU_779_602_617
+      - NL🇳🇱NL🇳🇱NL_583🇳🇱NL_581🇳🇱NL_621_459_509
+      - RU🇷🇺RU🇷🇺RU_632🇷🇺RU_688🇷🇺RU_766_572_571
+      - _NL_荷兰_9_0@81
+      - LT🇱🇹LT🇱🇹LT_462🇱🇹LT_404🇱🇹LT_537_361_378
+      - NL🇳🇱NL🇳🇱NL_547🇳🇱NL_558🇳🇱NL_634_455_506
+      - RU🇷🇺RU_683🇷🇺RU_658🇷🇺RU_742_591
+      - RU🇷🇺RU🇷🇺RU_649🇷🇺RU_713🇷🇺RU_759_550_638
+      - LT🇱🇹LT🇱🇹LT_443🇱🇹LT_475🇱🇹LT_480_314_345
+      - RU🇷🇺RU🇷🇺RU_618🇷🇺RU_683🇷🇺RU_754_577_574
+      - RU🇷🇺RU🇷🇺RU_689🇷🇺RU_682🇷🇺RU_753_578_575
+      - _NL_荷兰_3_0@70
+      - _NL_荷兰_4_0@71
+      - NL🇳🇱NL🇳🇱NL_521🇳🇱NL_536🇳🇱NL_627_475_501
+      - RU🇷🇺RU_666🇷🇺RU_647🇷🇺RU_735_598
+      - _NL_荷兰_6_0@74
+      - RU🇷🇺RU_629🇷🇺RU_684🇷🇺RU_762_573
+      - NL🇳🇱NL🇳🇱NL_543🇳🇱NL_598🇳🇱NL_604_463_515
+      - RU🇷🇺RU_680🇷🇺RU_656🇷🇺RU_741_592
+      - RU🇷🇺RU🇷🇺RU_679🇷🇺RU_655🇷🇺RU_740_595_593
+      - _NL_荷兰_7_0@75
+      - RU🇷🇺RU🇷🇺RU_630🇷🇺RU_686🇷🇺RU_764_574_623
+      - _NL_荷兰_1_0@53
+      - RU🇷🇺RU🇷🇺RU_628🇷🇺RU_629🇷🇺RU_717_534_614
+      - RU🇷🇺RU🇷🇺RU_663🇷🇺RU_625_524_644
+      - RU🇷🇺RU🇷🇺RU_664🇷🇺RU_708🇷🇺RU_778_588_629
+      - _CY_塞浦路斯_8@42
+      - RU🇷🇺RU🇷🇺RU_633🇷🇺RU_689🇷🇺RU_767_571_583
+      - RU🇷🇺RU_668🇷🇺RU_648🇷🇺RU_736_597
+      - RU🇷🇺RU🇷🇺RU_687🇷🇺RU_663🇷🇺RU_744_592_589
+      - RU🇷🇺RU🇷🇺RU_710🇷🇺RU_685🇷🇺RU_763_576_572
+      - _US_美国_19_0@25
+      - RU🇷🇺RU_623🇷🇺RU_635🇷🇺RU_725_609
+      - RU🇷🇺RU🇷🇺RU_670🇷🇺RU_716🇷🇺RU_784_530_630
+      - _NL_荷兰_8_0@78
+      - _GB_英国_0@64
+      - RU🇷🇺RU🇷🇺RU_673🇷🇺RU_660_548_647
+      - RU🇷🇺RU🇷🇺RU_695🇷🇺RU_628_533_582
+      - RU🇷🇺RU🇷🇺RU_685🇷🇺RU_671_531_646
+      - RU🇷🇺RU🇷🇺RU_622🇷🇺RU_636🇷🇺RU_727_546_608
+      - RU🇷🇺RU🇷🇺RU_621🇷🇺RU_641🇷🇺RU_728_547_607
+      - NL🇳🇱NL🇳🇱NL_538🇳🇱NL_522🇳🇱NL_622_491_483
+      - RU🇷🇺RU🇷🇺RU_643🇷🇺RU_706🇷🇺RU_783_560_620
+      - RU🇷🇺RU🇷🇺RU_692🇷🇺RU_677🇷🇺RU_751_580_577
+      - US 18｜openit.ml
+      - AU🇦🇺AU🇦🇺AU_68🇦🇺AU_106🇦🇺AU_48_77_81
+      - HU🇭🇺HU🇭🇺HU_356🇭🇺HU_357🇭🇺HU_419_277_310
+      - LT🇱🇹LT🇱🇹LT_428🇱🇹LT_415🇱🇹LT_510_374_368
+      - RU🇷🇺RU🇷🇺RU_646🇷🇺RU_710🇷🇺RU_785_553_631
+      - NL🇳🇱NL🇳🇱NL_516🇳🇱NL_564🇳🇱NL_617_472_499
+      - RU🇷🇺RU🇷🇺RU_631🇷🇺RU_687🇷🇺RU_765_573_637
+      - RU🇷🇺RU🇷🇺RU_702🇷🇺RU_676🇷🇺RU_750_581_578
+      - _FR_法国_0@82
+      - RU🇷🇺RU🇷🇺RU_660🇷🇺RU_645🇷🇺RU_733_600_600
+      - RU🇷🇺RU🇷🇺RU_669🇷🇺RU_649🇷🇺RU_737_599_596
+      - LT🇱🇹LT🇱🇹LT_487🇱🇹LT_514🇱🇹LT_564_429_454
+      - _NL_荷兰_2_0@59
+      - _US_美国_36_0@73
+      - LT🇱🇹LT🇱🇹LT_496🇱🇹LT_509🇱🇹LT_585_424_466
+      - NL🇳🇱NL🇳🇱NL_515🇳🇱NL_589🇳🇱NL_646_439_540
+      - RU🇷🇺RU🇷🇺RU_691🇷🇺RU_718🇷🇺RU_777_579_576
+      - _US_美国_31_0@58
+      - _US_美国_38_0@77
+      - _US_美国_34_0@67
+      - NL🇳🇱NL🇳🇱NL_519🇳🇱NL_527🇳🇱NL_631_460_504
+      - AU🇦🇺AU🇦🇺AU_75🇦🇺AU_55🇦🇺AU_42_52_67
+      - NL🇳🇱NL🇳🇱NL_517🇳🇱NL_532🇳🇱NL_629_469_502
+      - RU🇷🇺RU_659🇷🇺RU_644🇷🇺RU_732_601
+      - LT🇱🇹LT🇱🇹LT_388🇱🇹LT_419🇱🇹LT_545_358_351
+      - LT🇱🇹LT🇱🇹LT_502🇱🇹LT_505🇱🇹LT_570_426_463
+      - LT🇱🇹LT🇱🇹LT_437🇱🇹LT_392🇱🇹LT_474_323_373
+      - LT🇱🇹LT🇱🇹LT_389🇱🇹LT_416🇱🇹LT_515_353_350
+      - _JP_日本_1_0@0
+      - RU🇷🇺RU🇷🇺RU_676🇷🇺RU_653🇷🇺RU_738_596_595
+      - LT🇱🇹LT_401🇱🇹LT_458🇱🇹LT_498_370
+      - _US_美国_1_0@1
+      - LT🇱🇹LT🇱🇹LT_472🇱🇹LT_425🇱🇹LT_509_373_360
+      - _DE_德国_1_7@29
+      - NL🇳🇱NL🇳🇱NL_527🇳🇱NL_559🇳🇱NL_616_476_498
+      - RU🇷🇺RU_619🇷🇺RU_638🇷🇺RU_710_604
+      - LT🇱🇹LT🇱🇹LT_454🇱🇹LT_431🇱🇹LT_528_337_408
+      - LT🇱🇹LT🇱🇹LT_476🇱🇹LT_508🇱🇹LT_547_396_434
+      - RU🇷🇺RU🇷🇺RU_647🇷🇺RU_711🇷🇺RU_761_552_633
+      - RU🇷🇺RU🇷🇺RU_620🇷🇺RU_637🇷🇺RU_729_575_606
+      - NL🇳🇱NL_523🇳🇱NL_528🇳🇱NL_607_531
+      - LT🇱🇹LT🇱🇹LT_390🇱🇹LT_409🇱🇹LT_491_336_348
+      - _04_34_24_09_23
+      - LT🇱🇹LT🇱🇹LT_386🇱🇹LT_408🇱🇹LT_525_339_406
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -300,34 +1548,190 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 14.29.124.168:25280
-      - CN 3｜openit.ml
-      - JP 1｜openit.ml
-      - CN 1｜openit.ml
-      - US 20｜openit.ml
-      - US 12｜openit.ml
-      - _CN_中国->🇰🇷_KR_韩国_2@12
-      - _JP_日本_1_0@1
-      - US_1421
-      - US_41_12@40
-      - US 21｜openit.ml
-      - Relay_🇮🇷IR-🇮🇷IR_468
-      - US 7｜openit.ml
-      - AU 2｜openit.ml
-      - US 15｜openit.ml
-      - 185.4.65.6:21247
-      - US 1｜openit.ml
-      - US 26｜openit.ml
-      - HK 4｜openit.ml
-      - CN 5｜openit.ml
-      - CN 4｜openit.ml
-      - 138.197.166.205:811
-      - RU_734
-      - _FR_法国_0@11
-      - _JP_日本_2_0@23
-      - US 13｜openit.ml
-      - 欧洲(油管:破解资源君2.0) 5
-      - 欧洲(油管:破解资源君2.0) 18
+      - CN 8｜openit.ml
+      - US 11｜openit.ml
+      - LT🇱🇹LT🇱🇹LT_394🇱🇹LT_424🇱🇹LT_535_375_359
+      - LT🇱🇹LT🇱🇹LT_511🇱🇹LT_488🇱🇹LT_574_389_449
+      - LT🇱🇹LT🇱🇹LT_512🇱🇹LT_486🇱🇹LT_573_390_448
+      - LT🇱🇹LT🇱🇹LT_480🇱🇹LT_518🇱🇹LT_580_404_438
+      - LT🇱🇹LT🇱🇹LT_497🇱🇹LT_490🇱🇹LT_553_428_441
+      - LT🇱🇹LT🇱🇹LT_484🇱🇹LT_493🇱🇹LT_555_413_431
+      - LT🇱🇹LT🇱🇹LT_500🇱🇹LT_481🇱🇹LT_565_411_470
+      - LT🇱🇹LT🇱🇹LT_513🇱🇹LT_502🇱🇹LT_582_388_460
+      - LT🇱🇹LT🇱🇹LT_482🇱🇹LT_517🇱🇹LT_566_403_439
+      - LT🇱🇹LT🇱🇹LT_477🇱🇹LT_494🇱🇹LT_548_406_435
+      - LT🇱🇹LT🇱🇹LT_474🇱🇹LT_496🇱🇹LT_554_419_442
+      - _US_美国_3_0@3
+      - _US_美国_20_0@26
+      - LT🇱🇹LT🇱🇹LT_493🇱🇹LT_487🇱🇹LT_557_422_443
+      - _US_美国_6_0@6
+      - LT🇱🇹LT🇱🇹LT_508🇱🇹LT_499🇱🇹LT_578_415_455
+      - NL🇳🇱NL_582🇳🇱NL_580_545
+      - _US_美国_13_0@13
+      - LT🇱🇹LT🇱🇹LT_396🇱🇹LT_428🇱🇹LT_497_370_362
+      - LT🇱🇹LT🇱🇹LT_490🇱🇹LT_511🇱🇹LT_560_399_459
+      - _US_美国_15_0@15
+      - _US_美国_10_0@10
+      - LT🇱🇹LT🇱🇹LT_483🇱🇹LT_516🇱🇹LT_584_402_440
+      - LT🇱🇹LT🇱🇹LT_397🇱🇹LT_454_367_363
+      - LT🇱🇹LT🇱🇹LT_475🇱🇹LT_512🇱🇹LT_552_407_433
+      - LT🇱🇹LT🇱🇹LT_478🇱🇹LT_519🇱🇹LT_550_408_436
+      - US_55_13@54
+      - LT🇱🇹LT🇱🇹LT_507🇱🇹LT_500🇱🇹LT_579_417_456
+      - LT🇱🇹LT🇱🇹LT_509🇱🇹LT_497🇱🇹LT_576_398_450
+      - LT🇱🇹LT🇱🇹LT_501🇱🇹LT_482🇱🇹LT_567_409_452
+      - LT🇱🇹LT🇱🇹LT_479🇱🇹LT_480🇱🇹LT_563_405_437
+      - LT🇱🇹LT🇱🇹LT_488🇱🇹LT_498🇱🇹LT_577_414_453
+      - LT🇱🇹LT🇱🇹LT_491🇱🇹LT_510🇱🇹LT_551_397_461
+      - NL🇳🇱NL🇳🇱NL_570🇳🇱NL_572🇳🇱NL_672_471_539
+      - _US_美国_12_0@12
+      - _US_美国_5_0@5
+      - LT🇱🇹LT🇱🇹LT_504🇱🇹LT_485🇱🇹LT_572_391_447
+      - LT🇱🇹LT🇱🇹LT_506🇱🇹LT_483🇱🇹LT_568_394_445
+      - _US_美国_7_0@7
+      - _US_美国_32_0@60
+      - _US_美国_28_0@54
+      - LT🇱🇹LT🇱🇹LT_510🇱🇹LT_495🇱🇹LT_575_395_451
+      - NL🇳🇱NL🇳🇱NL_561🇳🇱NL_596_438_538
+      - _US_美国_16_0@16
+      - RU🇷🇺RU_678🇷🇺RU_654🇷🇺RU_739_594
+      - LT🇱🇹LT🇱🇹LT_485🇱🇹LT_491🇱🇹LT_586_416_430
+      - NL🇳🇱NL🇳🇱NL_555🇳🇱NL_567🇳🇱NL_650_445_521
+      - NL🇳🇱NL🇳🇱NL_571🇳🇱NL_573🇳🇱NL_668_442_542
+      - RU🇷🇺RU🇷🇺RU_672🇷🇺RU_659🇷🇺RU_752_589_570
+      - RU🇷🇺RU🇷🇺RU_648🇷🇺RU_712🇷🇺RU_760_551_634
+      - NL🇳🇱NL🇳🇱NL_557🇳🇱NL_597🇳🇱NL_643_432_532
+      - RU🇷🇺RU🇷🇺RU_624🇷🇺RU_634🇷🇺RU_724_545_610
+      - LT🇱🇹LT_406🇱🇹LT_469🇱🇹LT_534_374
+      - RU🇷🇺RU🇷🇺RU_667🇷🇺RU_675_525_635
+      - LT🇱🇹LT🇱🇹LT_495🇱🇹LT_492🇱🇹LT_571_420_467
+      - RU🇷🇺RU🇷🇺RU_684🇷🇺RU_661🇷🇺RU_743_593_590
+      - _US_美国_4_0@4
+      - LT🇱🇹LT🇱🇹LT_404🇱🇹LT_460🇱🇹LT_512_363_372
+      - _US_美国_22_0@33
+      - _US_美国_37_0@76
+      - NL🇳🇱NL🇳🇱NL_556🇳🇱NL_595🇳🇱NL_641_454_489
+      - _US_美国_18_0@18
+      - _US_美国_39_0@80
+      - LT🇱🇹LT🇱🇹LT_498🇱🇹LT_515🇱🇹LT_559_412_444
+      - LT🇱🇹LT🇱🇹LT_408🇱🇹LT_471🇱🇹LT_524_348_383
+      - RU🇷🇺RU🇷🇺RU_651🇷🇺RU_715🇷🇺RU_757_543_642
+      - LT🇱🇹LT🇱🇹LT_407🇱🇹LT_470🇱🇹LT_533_350_379
+      - _US_美国_26_0@48
+      - LT🇱🇹LT🇱🇹LT_481🇱🇹LT_503🇱🇹LT_549_410_432
+      - RU🇷🇺RU_656🇷🇺RU_717🇷🇺RU_756_643
+      - LT🇱🇹LT🇱🇹LT_505🇱🇹LT_501🇱🇹LT_581_421_458
+      - LT🇱🇹LT🇱🇹LT_486🇱🇹LT_489🇱🇹LT_556_423_469
+      - NL🇳🇱NL🇳🇱NL_592🇳🇱NL_601🇳🇱NL_676_498_546
+      - RU🇷🇺RU_661🇷🇺RU_646🇷🇺RU_734_599
+      - NL🇳🇱NL🇳🇱NL_568🇳🇱NL_574🇳🇱NL_656_444_500
+      - RU🇷🇺RU🇷🇺RU_677🇷🇺RU_699🇷🇺RU_776_541_649
+      - _US_美国_14_0@14
+      - LT🇱🇹LT_432🇱🇹LT_477🇱🇹LT_493_391
+      - _US_美国_29_0@56
+      - NL🇳🇱NL🇳🇱NL_545🇳🇱NL_591🇳🇱NL_619_492_486
+      - _US_美国_23_0@38
+      - RS🇷🇸RS🇷🇸RS_616🇷🇸RS_624🇷🇸RS_709_512_569
+      - _US_美国_24_0@43
+      - LT🇱🇹LT🇱🇹LT_473🇱🇹LT_484🇱🇹LT_569_393_446
+      - NL🇳🇱NL🇳🇱NL_536🇳🇱NL_557🇳🇱NL_632_457_505
+      - _US_美国_27_0@50
+      - LT🇱🇹LT🇱🇹LT_459🇱🇹LT_398🇱🇹LT_504_349_354
+      - _NL_荷兰_5_0@72
+      - LT🇱🇹LT🇱🇹LT_503🇱🇹LT_504🇱🇹LT_583_427_462
+      - _US_美国_21_0@28
+      - RU🇷🇺RU🇷🇺RU_639🇷🇺RU_702🇷🇺RU_774_564_588
+      - _US_美国_11_0@11
+      - _US_美国_33_0@63
+      - RU🇷🇺RU🇷🇺RU_634🇷🇺RU_690🇷🇺RU_745_570_584
+      - RU🇷🇺RU🇷🇺RU_641🇷🇺RU_704🇷🇺RU_779_602_617
+      - NL🇳🇱NL🇳🇱NL_583🇳🇱NL_581🇳🇱NL_621_459_509
+      - RU🇷🇺RU🇷🇺RU_632🇷🇺RU_688🇷🇺RU_766_572_571
+      - _NL_荷兰_9_0@81
+      - LT🇱🇹LT🇱🇹LT_462🇱🇹LT_404🇱🇹LT_537_361_378
+      - NL🇳🇱NL🇳🇱NL_547🇳🇱NL_558🇳🇱NL_634_455_506
+      - RU🇷🇺RU_683🇷🇺RU_658🇷🇺RU_742_591
+      - RU🇷🇺RU🇷🇺RU_649🇷🇺RU_713🇷🇺RU_759_550_638
+      - LT🇱🇹LT🇱🇹LT_443🇱🇹LT_475🇱🇹LT_480_314_345
+      - RU🇷🇺RU🇷🇺RU_618🇷🇺RU_683🇷🇺RU_754_577_574
+      - RU🇷🇺RU🇷🇺RU_689🇷🇺RU_682🇷🇺RU_753_578_575
+      - _NL_荷兰_3_0@70
+      - _NL_荷兰_4_0@71
+      - NL🇳🇱NL🇳🇱NL_521🇳🇱NL_536🇳🇱NL_627_475_501
+      - RU🇷🇺RU_666🇷🇺RU_647🇷🇺RU_735_598
+      - _NL_荷兰_6_0@74
+      - RU🇷🇺RU_629🇷🇺RU_684🇷🇺RU_762_573
+      - NL🇳🇱NL🇳🇱NL_543🇳🇱NL_598🇳🇱NL_604_463_515
+      - RU🇷🇺RU_680🇷🇺RU_656🇷🇺RU_741_592
+      - RU🇷🇺RU🇷🇺RU_679🇷🇺RU_655🇷🇺RU_740_595_593
+      - _NL_荷兰_7_0@75
+      - RU🇷🇺RU🇷🇺RU_630🇷🇺RU_686🇷🇺RU_764_574_623
+      - _NL_荷兰_1_0@53
+      - RU🇷🇺RU🇷🇺RU_628🇷🇺RU_629🇷🇺RU_717_534_614
+      - RU🇷🇺RU🇷🇺RU_663🇷🇺RU_625_524_644
+      - RU🇷🇺RU🇷🇺RU_664🇷🇺RU_708🇷🇺RU_778_588_629
+      - _CY_塞浦路斯_8@42
+      - RU🇷🇺RU🇷🇺RU_633🇷🇺RU_689🇷🇺RU_767_571_583
+      - RU🇷🇺RU_668🇷🇺RU_648🇷🇺RU_736_597
+      - RU🇷🇺RU🇷🇺RU_687🇷🇺RU_663🇷🇺RU_744_592_589
+      - RU🇷🇺RU🇷🇺RU_710🇷🇺RU_685🇷🇺RU_763_576_572
+      - _US_美国_19_0@25
+      - RU🇷🇺RU_623🇷🇺RU_635🇷🇺RU_725_609
+      - RU🇷🇺RU🇷🇺RU_670🇷🇺RU_716🇷🇺RU_784_530_630
+      - _NL_荷兰_8_0@78
+      - _GB_英国_0@64
+      - RU🇷🇺RU🇷🇺RU_673🇷🇺RU_660_548_647
+      - RU🇷🇺RU🇷🇺RU_695🇷🇺RU_628_533_582
+      - RU🇷🇺RU🇷🇺RU_685🇷🇺RU_671_531_646
+      - RU🇷🇺RU🇷🇺RU_622🇷🇺RU_636🇷🇺RU_727_546_608
+      - RU🇷🇺RU🇷🇺RU_621🇷🇺RU_641🇷🇺RU_728_547_607
+      - NL🇳🇱NL🇳🇱NL_538🇳🇱NL_522🇳🇱NL_622_491_483
+      - RU🇷🇺RU🇷🇺RU_643🇷🇺RU_706🇷🇺RU_783_560_620
+      - RU🇷🇺RU🇷🇺RU_692🇷🇺RU_677🇷🇺RU_751_580_577
+      - US 18｜openit.ml
+      - AU🇦🇺AU🇦🇺AU_68🇦🇺AU_106🇦🇺AU_48_77_81
+      - HU🇭🇺HU🇭🇺HU_356🇭🇺HU_357🇭🇺HU_419_277_310
+      - LT🇱🇹LT🇱🇹LT_428🇱🇹LT_415🇱🇹LT_510_374_368
+      - RU🇷🇺RU🇷🇺RU_646🇷🇺RU_710🇷🇺RU_785_553_631
+      - NL🇳🇱NL🇳🇱NL_516🇳🇱NL_564🇳🇱NL_617_472_499
+      - RU🇷🇺RU🇷🇺RU_631🇷🇺RU_687🇷🇺RU_765_573_637
+      - RU🇷🇺RU🇷🇺RU_702🇷🇺RU_676🇷🇺RU_750_581_578
+      - _FR_法国_0@82
+      - RU🇷🇺RU🇷🇺RU_660🇷🇺RU_645🇷🇺RU_733_600_600
+      - RU🇷🇺RU🇷🇺RU_669🇷🇺RU_649🇷🇺RU_737_599_596
+      - LT🇱🇹LT🇱🇹LT_487🇱🇹LT_514🇱🇹LT_564_429_454
+      - _NL_荷兰_2_0@59
+      - _US_美国_36_0@73
+      - LT🇱🇹LT🇱🇹LT_496🇱🇹LT_509🇱🇹LT_585_424_466
+      - NL🇳🇱NL🇳🇱NL_515🇳🇱NL_589🇳🇱NL_646_439_540
+      - RU🇷🇺RU🇷🇺RU_691🇷🇺RU_718🇷🇺RU_777_579_576
+      - _US_美国_31_0@58
+      - _US_美国_38_0@77
+      - _US_美国_34_0@67
+      - NL🇳🇱NL🇳🇱NL_519🇳🇱NL_527🇳🇱NL_631_460_504
+      - AU🇦🇺AU🇦🇺AU_75🇦🇺AU_55🇦🇺AU_42_52_67
+      - NL🇳🇱NL🇳🇱NL_517🇳🇱NL_532🇳🇱NL_629_469_502
+      - RU🇷🇺RU_659🇷🇺RU_644🇷🇺RU_732_601
+      - LT🇱🇹LT🇱🇹LT_388🇱🇹LT_419🇱🇹LT_545_358_351
+      - LT🇱🇹LT🇱🇹LT_502🇱🇹LT_505🇱🇹LT_570_426_463
+      - LT🇱🇹LT🇱🇹LT_437🇱🇹LT_392🇱🇹LT_474_323_373
+      - LT🇱🇹LT🇱🇹LT_389🇱🇹LT_416🇱🇹LT_515_353_350
+      - _JP_日本_1_0@0
+      - RU🇷🇺RU🇷🇺RU_676🇷🇺RU_653🇷🇺RU_738_596_595
+      - LT🇱🇹LT_401🇱🇹LT_458🇱🇹LT_498_370
+      - _US_美国_1_0@1
+      - LT🇱🇹LT🇱🇹LT_472🇱🇹LT_425🇱🇹LT_509_373_360
+      - _DE_德国_1_7@29
+      - NL🇳🇱NL🇳🇱NL_527🇳🇱NL_559🇳🇱NL_616_476_498
+      - RU🇷🇺RU_619🇷🇺RU_638🇷🇺RU_710_604
+      - LT🇱🇹LT🇱🇹LT_454🇱🇹LT_431🇱🇹LT_528_337_408
+      - LT🇱🇹LT🇱🇹LT_476🇱🇹LT_508🇱🇹LT_547_396_434
+      - RU🇷🇺RU🇷🇺RU_647🇷🇺RU_711🇷🇺RU_761_552_633
+      - RU🇷🇺RU🇷🇺RU_620🇷🇺RU_637🇷🇺RU_729_575_606
+      - NL🇳🇱NL_523🇳🇱NL_528🇳🇱NL_607_531
+      - LT🇱🇹LT🇱🇹LT_390🇱🇹LT_409🇱🇹LT_491_336_348
+      - _04_34_24_09_23
+      - LT🇱🇹LT🇱🇹LT_386🇱🇹LT_408🇱🇹LT_525_339_406
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
