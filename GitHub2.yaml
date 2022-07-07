@@ -5,427 +5,271 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: CN 8｜openit.ml, server: 111.45.32.202, port: 5989, type: ss, cipher: rc4-md5, password: Paofu, plugin: obfs, plugin-opts: {mode: http, host: f81d679637.microsoft.com}, udp: true}
-  - {name: CN 68｜openit.ml, server: 111.45.32.201, port: 5981, type: ss, cipher: rc4-md5, password: Paofu, plugin: obfs, plugin-opts: {mode: http, host: f81d679637.microsoft.com}, udp: true}
-  - {name: CN 6｜openit.ml, server: 120.240.50.212, port: 1190, type: ss, cipher: rc4-md5, password: Paofu, plugin: obfs, plugin-opts: {mode: http, host: f81d679637.microsoft.com}, udp: true}
-  - {name: CN 1｜openit.ml, server: 111.45.32.202, port: 5986, type: ss, cipher: rc4-md5, password: Paofu, plugin: obfs, plugin-opts: {mode: http, host: f81d679637.microsoft.com}, udp: true}
-  - {name: CN 64｜openit.ml, server: 120.240.50.212, port: 1193, type: ss, cipher: rc4-md5, password: Paofu, plugin: obfs, plugin-opts: {mode: http, host: f81d679637.microsoft.com}, udp: true}
-  - {name: TW 3｜openit.ml, server: ntw01.vsvideo.live, port: 25634, type: trojan, password: 7688df6f-bf65-3368-b55e-d78efea6a582, sni: ntw01.vsvideo.live, skip-cert-verify: true, udp: true}
-  - {name: CN 11｜openit.ml, server: 120.240.50.212, port: 1191, type: ss, cipher: rc4-md5, password: Paofu, plugin: obfs, plugin-opts: {mode: http, host: f81d679637.microsoft.com}, udp: true}
-  - {name: CN 5｜openit.ml, server: 111.45.32.202, port: 5983, type: ss, cipher: rc4-md5, password: Paofu, plugin: obfs, plugin-opts: {mode: http, host: f81d679637.microsoft.com}, udp: true}
-  - {name: CN 83｜openit.ml, server: yd-02.paofunlink.com, port: 1072, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 79637:kSalWm, obfs-param: f81d679637.microsoft.com, udp: true}
-  - {name: CN 23｜openit.ml, server: gzyd2.52147.top, port: 20110, type: trojan, password: 841b229a-304f-46a2-a0fe-3b4e3e0e44f6, sni: gzyd2.52147.top, skip-cert-verify: true, udp: true}
-  - {name: CN 19｜openit.ml, server: hnyd.52147.top, port: 20120, type: trojan, password: 841b229a-304f-46a2-a0fe-3b4e3e0e44f6, sni: hnyd.52147.top, skip-cert-verify: true, udp: true}
-  - {name: JP 4｜openit.ml, server: 629hk.ok365.cyou, port: 443, type: trojan, password: ef4eb420-0eee-47d5-a202-e87e743a038e, sni: 629hk.ok365.cyou, skip-cert-verify: true, udp: true}
-  - {name: CN 31｜openit.ml, server: relayjp1.vip.www.klrxyru.cn, port: 1451, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: b43e313.wns.windows.com, udp: true}
-  - {name: US_39_14@38, server: bai-piao-wang-zhe10.98848.xyz, port: 22168, type: trojan, password: 685022af-2086-454c-8725-8ff6b6ab1d13, sni: bai-piao-wang-zhe10.98848.xyz, skip-cert-verify: true, udp: true}
-  - {name: CN 24｜openit.ml, server: hnyd.52147.top, port: 20110, type: trojan, password: 841b229a-304f-46a2-a0fe-3b4e3e0e44f6, sni: hnyd.52147.top, skip-cert-verify: true, udp: true}
-  - {name: US_42_14@41, server: bai-piao-wang-zhe10.98848.xyz, port: 50858, type: trojan, password: 685022af-2086-454c-8725-8ff6b6ab1d13, sni: bai-piao-wang-zhe10.98848.xyz, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_1447, server: ss2.2046.gq, port: 4443, type: trojan, password: 554ba845-2610-4aee-86fc-d2080ff1c4a6, sni: ss2.2046.gq, skip-cert-verify: true, udp: true}
-  - {name: US_32_14@31, server: fhcamd2.gaox.ml, port: 443, type: trojan, password: dbf9bf9c-2c3f-474a-8031-d4c00666a989, sni: fhcamd2.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: US 2｜openit.ml, server: s3.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s3.hazz.win, skip-cert-verify: true, udp: true}
-  - {name: US 20｜openit.ml, server: youtube-bai-piao-wang-zhe.nl.884899.cf, port: 41196, type: trojan, password: 94afcc56-cc1c-4cd4-8c82-1215cd052795, sni: youtube-bai-piao-wang-zhe.nl.884899.cf, skip-cert-verify: true, udp: true}
-  - {name: JP 4｜openit.ml 2, server: 164.70.68.67, port: 28443, type: trojan, password: 841b229a-304f-46a2-a0fe-3b4e3e0e44f6, skip-cert-verify: true, udp: true}
-  - {name: CN 40｜openit.ml, server: qdcukr1.vip.www.klrxyru.cn, port: 1551, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: 8d83584393.wns.windows.com, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_1498, server: jgwdb2.gaox.ml, port: 443, type: trojan, password: c19d1432-8b3e-4818-8837-3d160cf65908, sni: jgwdb2.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: CN 52｜openit.ml, server: gzyd2.52147.top, port: 20120, type: trojan, password: 841b229a-304f-46a2-a0fe-3b4e3e0e44f6, sni: gzyd2.52147.top, skip-cert-verify: true, udp: true}
-  - {name: US 14｜openit.ml, server: 45.88.148.234, port: 38000, type: trojan, password: a78e7deb-2d99-4010-8f11-99b4d984c544, skip-cert-verify: true, udp: true}
-  - {name: CN 16｜openit.ml, server: 120.240.50.212, port: 1183, type: ss, cipher: rc4-md5, password: Paofu, plugin: obfs, plugin-opts: {mode: http, host: f81d679637.microsoft.com}, udp: true}
-  - {name: CN 30｜openit.ml, server: relayjp4.vip.www.klrxyru.cn, port: 1454, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: b43e313.wns.windows.com, udp: true}
-  - {name: CN 29｜openit.ml, server: relayjp2.vip.www.klrxyru.cn, port: 1452, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: b43e313.wns.windows.com, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_1483, server: bai-piao-wang-zhe10.98848.xyz, port: 48240, type: trojan, password: 685022af-2086-454c-8725-8ff6b6ab1d13, sni: bai-piao-wang-zhe10.98848.xyz, skip-cert-verify: true, udp: true}
-  - {name: CN 26｜openit.ml, server: gzyd1.52147.top, port: 20060, type: trojan, password: 841b229a-304f-46a2-a0fe-3b4e3e0e44f6, sni: gzyd1.52147.top, skip-cert-verify: true, udp: true}
-  - {name: CN 37｜openit.ml, server: relayus2.vip.www.klrxyru.cn, port: 1402, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: b43e313.wns.windows.com, udp: true}
-  - {name: CN 41｜openit.ml, server: aiade1.vip.www.klrxyru.cn, port: 1621, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: b43e313.wns.windows.com, udp: true}
-  - {name: CN 34｜openit.ml, server: shkr2.vip.www.klrxyru.cn, port: 1552, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: 8d83584393.wns.windows.com, udp: true}
-  - {name: CN 51｜openit.ml, server: cucsuk1.vip.www.klrxyru.cn, port: 1351, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: b43e313.wns.windows.com, udp: true}
-  - {name: CN 27｜openit.ml, server: aiajp1.game.www.klrxyru.cn, port: 1460, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: b43e313.wns.windows.com, udp: true}
-  - {name: CN 36｜openit.ml, server: relayus1.vip.www.klrxyru.cn, port: 1401, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: b43e313.wns.windows.com, udp: true}
-  - {name: CN 12｜openit.ml, server: 120.240.50.212, port: 1181, type: ss, cipher: rc4-md5, password: Paofu, plugin: obfs, plugin-opts: {mode: http, host: f81d679637.microsoft.com}, udp: true}
-  - {name: CN 35｜openit.ml, server: relayus3.vip.www.klrxyru.cn, port: 1403, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: b43e313.wns.windows.com, udp: true}
-  - {name: CN 14｜openit.ml, server: aiaus1.game.www.klrxyru.cn, port: 1420, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: b43e313.wns.windows.com, udp: true}
-  - {name: CN 50｜openit.ml, server: bgphk5.vip.www.klrxyru.cn, port: 578, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: b43e313.wns.windows.com, udp: true}
-  - {name: CN 52｜openit.ml 2, server: bgphk2.vip.www.klrxyru.cn, port: 575, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: b43e313.wns.windows.com, udp: true}
-  - {name: CN 54｜openit.ml, server: bgphk3.vip.www.klrxyru.cn, port: 576, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: b43e313.wns.windows.com, udp: true}
-  - {name: CN 53｜openit.ml, server: bgphk1.vip.www.klrxyru.cn, port: 574, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: b43e313.wns.windows.com, udp: true}
-  - {name: CN 45｜openit.ml, server: bgphk4.vip.www.klrxyru.cn, port: 577, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: b43e313.wns.windows.com, udp: true}
-  - {name: CN 67｜openit.ml, server: 111.45.32.201, port: 5986, type: ss, cipher: rc4-md5, password: Paofu, plugin: obfs, plugin-opts: {mode: http, host: f81d679637.microsoft.com}, udp: true}
-  - {name: CN 87｜openit.ml, server: pro-iplc-hk1-2.nigirocloud.com, port: 465, type: trojan, password: 2WPB4fEAT347zdS6pb, sni: pro-iplc-hk1-2.nigirocloud.com, skip-cert-verify: true, udp: true}
-  - {name: CN 86｜openit.ml, server: pro-iplc-hk1-6.nigirocloud.com, port: 465, type: trojan, password: 2WPB4fEAT347zdS6pb, sni: pro-iplc-hk1-6.nigirocloud.com, skip-cert-verify: true, udp: true}
-  - {name: CN 56｜openit.ml, server: hnyd.52147.top, port: 20060, type: trojan, password: 841b229a-304f-46a2-a0fe-3b4e3e0e44f6, sni: hnyd.52147.top, skip-cert-verify: true, udp: true}
-  - {name: _US_美国_30_1@57, server: 138.68.248.130, port: 811, type: ss, cipher: chacha20-ietf-poly1305, password: Ultr@r00t_2017, udp: true}
-  - {name: CN 84｜openit.ml, server: yd-02.paofunlink.com, port: 1053, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 79637:kSalWm, obfs-param: f81d679637.microsoft.com, udp: true}
-  - {name: CN 48｜openit.ml, server: 120.240.50.212, port: 1184, type: ss, cipher: rc4-md5, password: Paofu, plugin: obfs, plugin-opts: {mode: http, host: f81d679637.microsoft.com}, udp: true}
-  - {name: CN 18｜openit.ml, server: 120.240.50.212, port: 1182, type: ss, cipher: rc4-md5, password: Paofu, plugin: obfs, plugin-opts: {mode: http, host: f81d679637.microsoft.com}, udp: true}
-  - {name: CN 56｜openit.ml 2, server: cm.spacez.cloud, port: 30002, type: trojan, password: c9a3a61d-5d49-4158-9e60-6fa32684b122, sni: cm.spacez.cloud, skip-cert-verify: true, udp: true}
-  - {name: CN 51｜openit.ml 2, server: 120.240.50.212, port: 1180, type: ss, cipher: rc4-md5, password: Paofu, plugin: obfs, plugin-opts: {mode: http, host: f81d679637.microsoft.com}, udp: true}
-  - {name: CN 62｜openit.ml, server: cm.spacez.cloud, port: 30003, type: trojan, password: c9a3a61d-5d49-4158-9e60-6fa32684b122, sni: cm.spacez.cloud, skip-cert-verify: true, udp: true}
-  - {name: JP 1｜openit.ml, server: 203.138.98.199, port: 28443, type: trojan, password: 841b229a-304f-46a2-a0fe-3b4e3e0e44f6, skip-cert-verify: true, udp: true}
-  - {name: CN 42｜openit.ml, server: aiaru1.www.klrxyru.cn, port: 1601, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: b43e313.wns.windows.com, udp: true}
-  - {name: CN 88｜openit.ml, server: relaytr1.vip.www.klrxyru.cn, port: 1561, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: b43e313.wns.windows.com, udp: true}
-  - {name: CN 38｜openit.ml, server: relayus4.vip.www.klrxyru.cn, port: 1404, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: 8d83584393.wns.windows.com, udp: true}
+  - {name: CN 30｜openit.ml, server: aiavnd1.vip.www.klrxyru.cn, port: 1611, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: b43e313.wns.windows.com, udp: true}
+  - {name: "", server: jpcu.dfnode.top, port: 30004, type: vmess, uuid: a6ef37c5-1a0f-3204-8ca6-fa7a18c062c1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: jpcu.dfnode.top}, udp: true}
+  - {name: TW 1｜openit.ml, server: hinet2.52147.top, port: 38000, type: trojan, password: 48fd2b95-b27b-43ba-beef-180c1a3a6854, sni: hinet2.52147.top, skip-cert-verify: true, udp: true}
+  - {name: " 2", server: 20.189.124.150, port: 16578, type: vmess, uuid: 5f66eeaf-2a7a-4c07-ae83-c440e0da2934, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN 3｜openit.ml, server: 120.240.50.212, port: 1172, type: ss, cipher: rc4-md5, password: Paofu, plugin: obfs, plugin-opts: {mode: http, host: 6f9d8115989.microsoft.com}, udp: true}
+  - {name: US_34_14@33, server: jgwdj3.gaox.ml, port: 443, type: trojan, password: da777aae-defb-41d0-a183-2c27da2b4677, sni: jgwdj3.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: US_40_14@39, server: bai-piao-wang-zhe10.98848.xyz, port: 22168, type: trojan, password: 685022af-2086-454c-8725-8ff6b6ab1d13, sni: bai-piao-wang-zhe10.98848.xyz, skip-cert-verify: true, udp: true}
+  - {name: US_28_14@27, server: bai-piao-wang-zhe10.98848.xyz, port: 48240, type: trojan, password: 685022af-2086-454c-8725-8ff6b6ab1d13, sni: bai-piao-wang-zhe10.98848.xyz, skip-cert-verify: true, udp: true}
+  - {name: " 3", server: 144.24.88.101, port: 16833, type: vmess, uuid: f5425ccf-3946-4fb4-eb24-5393d78a392f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CA 1｜openit.ml, server: 161.129.60.17, port: 25634, type: trojan, password: 7688df6f-bf65-3368-b55e-d78efea6a582, skip-cert-verify: true, udp: true}
+  - {name: CN 15｜openit.ml, server: cm.spacez.cloud, port: 30003, type: trojan, password: c9a3a61d-5d49-4158-9e60-6fa32684b122, sni: cm.spacez.cloud, skip-cert-verify: true, udp: true}
+  - {name: JP 1｜openit.ml, server: 630hk99.ok365.cyou, port: 443, type: trojan, password: 89687f0a-bf3e-4a86-8a77-0f82d525db2d, sni: 630hk99.ok365.cyou, skip-cert-verify: true, udp: true}
+  - {name: CN 12｜openit.ml, server: cm.spacez.cloud, port: 30002, type: trojan, password: c9a3a61d-5d49-4158-9e60-6fa32684b122, sni: cm.spacez.cloud, skip-cert-verify: true, udp: true}
+  - {name: US_37_14@36, server: tj-us02.yiyodns.xyz, port: 443, type: trojan, password: 7dafe71e-2be6-302f-bdfc-e6319a3299bc, sni: tj-us02.yiyodns.xyz, skip-cert-verify: true, udp: true}
+  - {name: NONE, server: 103.56.62.145, port: 3381, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
+  - {name: CN 16｜openit.ml, server: 103.56.62.145, port: 3381, type: trojan, password: 711aabc21e45ae31, skip-cert-verify: true, udp: true}
+  - {name: CN 11｜openit.ml, server: 103.56.62.145, port: 3381, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
+  - {name: NONE 2, server: 134.195.101.32, port: 3389, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
+  - {name: RW 1｜openit.ml, server: 134.195.101.32, port: 3389, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
+  - {name: CN 56｜openit.ml, server: yd-02.paofunlink.com, port: 1082, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 115989:JbCUPq, obfs-param: 6f9d8115989.microsoft.com, udp: true}
+  - {name: NONE 3, server: 134.195.101.32, port: 3389, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
+  - {name: CN 8｜openit.ml, server: 106.75.233.91, port: 3389, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
+  - {name: CN 10｜openit.ml, server: 106.75.233.91, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
+  - {name: CN 44｜openit.ml, server: shuk2.vip.www.klrxyru.cn, port: 1352, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: b43e313.wns.windows.com, udp: true}
+  - {name: NONE 4, server: 106.75.233.91, port: 3389, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
+  - {name: CN 7｜openit.ml, server: 106.75.233.91, port: 3389, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
+  - {name: CN 13｜openit.ml, server: 103.56.62.145, port: 3381, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
+  - {name: CN 6｜openit.ml, server: 106.75.233.91, port: 3389, type: trojan, password: 1a1247ea6cb266b4, skip-cert-verify: true, udp: true}
+  - {name: CN 5｜openit.ml, server: 106.75.233.91, port: 3389, type: trojan, password: e37c6d7efa845d60, skip-cert-verify: true, udp: true}
+  - {name: CN 14｜openit.ml, server: 103.56.62.145, port: 3381, type: trojan, password: ffec9f6ea19e1dd1, skip-cert-verify: true, udp: true}
+  - {name: " 4", server: 129.150.61.170, port: 29493, type: vmess, uuid: ac0d0076-93d2-48ad-ba6e-ea5c8d7b0132, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 129.150.61.170}, udp: true}
+  - {name: _US_美国_34_1@67, server: 38.68.135.18, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: " 5", server: sg.guiqing.ml, port: 43956, type: vmess, uuid: 91df6837-896d-45bc-ec6f-0fe4b792b369, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN 55｜openit.ml, server: bgphk3.vip.www.klrxyru.cn, port: 576, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: b43e313.wns.windows.com, udp: true}
+  - {name: CN 46｜openit.ml, server: bgphk4.vip.www.klrxyru.cn, port: 577, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: b43e313.wns.windows.com, udp: true}
+  - {name: CN 53｜openit.ml, server: bgphk5.vip.www.klrxyru.cn, port: 578, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: b43e313.wns.windows.com, udp: true}
+  - {name: CN 54｜openit.ml, server: bgphk1.vip.www.klrxyru.cn, port: 574, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: b43e313.wns.windows.com, udp: true}
+  - {name: CN 40｜openit.ml, server: bgphk7.vip.www.klrxyru.cn, port: 580, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: b43e313.wns.windows.com, udp: true}
+  - {name: CN 45｜openit.ml, server: bgphk2.vip.www.klrxyru.cn, port: 575, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: b43e313.wns.windows.com, udp: true}
+  - {name: CN 48｜openit.ml, server: bgphk8.vip.www.klrxyru.cn, port: 581, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: b43e313.wns.windows.com, udp: true}
+  - {name: CN 51｜openit.ml, server: bgphk6.vip.www.klrxyru.cn, port: 579, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: b43e313.wns.windows.com, udp: true}
+  - {name: CN 49｜openit.ml, server: bgphka.vip.www.klrxyru.cn, port: 583, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: b43e313.wns.windows.com, udp: true}
+  - {name: CN 50｜openit.ml, server: bgphk9.vip.www.klrxyru.cn, port: 582, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: b43e313.wns.windows.com, udp: true}
+  - {name: CN 38｜openit.ml, server: aiabjfr1.www.klrxyru.cn, port: 1461, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: b43e313.wns.windows.com, udp: true}
+  - {name: CN 41｜openit.ml, server: aiaru1.www.klrxyru.cn, port: 1601, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: b43e313.wns.windows.com, udp: true}
+  - {name: US 26｜openit.ml, server: usfree2.jiantian.xyz, port: 32462, type: trojan, password: cb5e2135-4d64-4454-be98-5bae4f2618d1, sni: usfree2.jiantian.xyz, skip-cert-verify: true, udp: true}
+  - {name: US 23｜openit.ml, server: youtube-bai-piao-wang-zhe.nl.884899.cf, port: 41196, type: trojan, password: 94afcc56-cc1c-4cd4-8c82-1215cd052795, sni: youtube-bai-piao-wang-zhe.nl.884899.cf, skip-cert-verify: true, udp: true}
+  - {name: US 27｜openit.ml, server: jgwld4.gaox.ml, port: 443, type: trojan, password: 58d32c66-43b1-4561-9951-d87c9123774e, sni: jgwld4.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: _DE_德国_0@12, server: 161.35.69.20, port: 811, type: ss, cipher: chacha20-ietf-poly1305, password: Ultr@r00t_2017, udp: true}
+  - {name: CN 59｜openit.ml, server: relaytr1.vip.www.klrxyru.cn, port: 1561, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: b43e313.wns.windows.com, udp: true}
+  - {name: US_42_14@41, server: jgwhdlb2.gaox.ml, port: 443, type: trojan, password: 54080134-2cba-4535-8599-95650bd9aa54, sni: jgwhdlb2.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: US 28｜openit.ml, server: jgwhdlb1.gaox.ml, port: 443, type: trojan, password: e05c749b-7c6b-41b8-9c71-9dcf685edf4a, sni: jgwhdlb1.gaox.ml, skip-cert-verify: true, udp: true}
   - {name: AU 2｜openit.ml, server: jgwxn3.gaox.ml, port: 443, type: trojan, password: cb43b7c2-b744-41c5-bcc2-fd7467b332cf, sni: jgwxn3.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: CN 46｜openit.ml, server: aiashar1.www.klrxyru.cn, port: 1651, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: b43e313.wns.windows.com, udp: true}
-  - {name: CN 4｜openit.ml, server: 111.45.32.202, port: 5988, type: ss, cipher: rc4-md5, password: Paofu, plugin: obfs, plugin-opts: {mode: http, host: f81d679637.microsoft.com}, udp: true}
-  - {name: CN 59｜openit.ml, server: 111.45.32.201, port: 5987, type: ss, cipher: rc4-md5, password: Paofu, plugin: obfs, plugin-opts: {mode: http, host: f81d679637.microsoft.com}, udp: true}
-  - {name: CN 2｜openit.ml, server: 111.45.32.202, port: 5982, type: ss, cipher: rc4-md5, password: Paofu, plugin: obfs, plugin-opts: {mode: http, host: f81d679637.microsoft.com}, udp: true}
-  - {name: CN 84｜openit.ml 2, server: pro-iplc-hk2-6.nigirocloud.com, port: 465, type: trojan, password: 2WPB4fEAT347zdS6pb, sni: pro-iplc-hk2-6.nigirocloud.com, skip-cert-verify: true, udp: true}
-  - {name: CN 82｜openit.ml, server: pro-iplc-hk2-5.nigirocloud.com, port: 465, type: trojan, password: 2WPB4fEAT347zdS6pb, sni: pro-iplc-hk2-5.nigirocloud.com, skip-cert-verify: true, udp: true}
-  - {name: CN 90｜openit.ml, server: pro-iplc-hk2-2.nigirocloud.com, port: 465, type: trojan, password: 2WPB4fEAT347zdS6pb, sni: pro-iplc-hk2-2.nigirocloud.com, skip-cert-verify: true, udp: true}
-  - {name: CN 9｜openit.ml, server: 111.45.32.201, port: 5984, type: ss, cipher: rc4-md5, password: Paofu, plugin: obfs, plugin-opts: {mode: http, host: f81d679637.microsoft.com}, udp: true}
-  - {name: CN 7｜openit.ml, server: 111.45.32.202, port: 5980, type: ss, cipher: rc4-md5, password: Paofu, plugin: obfs, plugin-opts: {mode: http, host: f81d679637.microsoft.com}, udp: true}
-  - {name: CN 32｜openit.ml, server: relaysgp1.vip.www.klrxyru.cn, port: 1501, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: b43e313.wns.windows.com, udp: true}
-  - {name: CN 85｜openit.ml, server: pro-iplc-hk2-1.nigirocloud.com, port: 465, type: trojan, password: 2WPB4fEAT347zdS6pb, sni: pro-iplc-hk2-1.nigirocloud.com, skip-cert-verify: true, udp: true}
-  - {name: CN 78｜openit.ml, server: fzoakbin.nodelist.xyz, port: 1432, type: ssr, cipher: chacha20-ietf, password: MAYING, protocol: auth_aes128_md5, obfs: plain, protocol-param: 396:Susie20190807, obfs-param: "", udp: true}
-  - {name: CN 65｜openit.ml, server: kritlqyj.nodelist.xyz, port: 1406, type: ssr, cipher: chacha20-ietf, password: MAYING, protocol: auth_aes128_md5, obfs: plain, protocol-param: 396:Susie20190807, obfs-param: "", udp: true}
-  - {name: CN 72｜openit.ml, server: frgpseot.nodelist.xyz, port: 1504, type: ssr, cipher: chacha20-ietf, password: MAYING, protocol: auth_aes128_md5, obfs: plain, protocol-param: 396:Susie20190807, obfs-param: "", udp: true}
-  - {name: CN 73｜openit.ml, server: aiatw3.www.klrxyru.cn, port: 1203, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: b43e313.wns.windows.com, udp: true}
-  - {name: CN 64｜openit.ml 2, server: 111.45.32.201, port: 5982, type: ss, cipher: rc4-md5, password: Paofu, plugin: obfs, plugin-opts: {mode: http, host: f81d679637.microsoft.com}, udp: true}
-  - {name: CN 77｜openit.ml, server: fzoakbin.nodelist.xyz, port: 14340, type: ssr, cipher: chacha20-ietf, password: MAYING, protocol: auth_aes128_md5, obfs: plain, protocol-param: 396:Susie20190807, obfs-param: "", udp: true}
-  - {name: HK 2｜openit.ml, server: hkt.node.qchwnd.moe, port: 44609, type: trojan, password: 2971161c-46af-4ac3-b9c3-409b2750a751, sni: hkt.node.qchwnd.moe, skip-cert-verify: true, udp: true}
-  - {name: CN 58｜openit.ml, server: 111.45.32.202, port: 5987, type: ss, cipher: rc4-md5, password: Paofu, plugin: obfs, plugin-opts: {mode: http, host: f81d679637.microsoft.com}, udp: true}
-  - {name: CN 57｜openit.ml, server: 120.240.50.212, port: 1153, type: ss, cipher: rc4-md5, password: Paofu, plugin: obfs, plugin-opts: {mode: http, host: f81d679637.microsoft.com}, udp: true}
-  - {name: CN 80｜openit.ml, server: fzoakbin.nodelist.xyz, port: 1437, type: ssr, cipher: chacha20-ietf, password: MAYING, protocol: auth_aes128_md5, obfs: plain, protocol-param: 396:Susie20190807, obfs-param: "", udp: true}
-  - {name: CN 71｜openit.ml, server: frgpseot.nodelist.xyz, port: 1320, type: ssr, cipher: chacha20-ietf, password: MAYING, protocol: auth_aes128_md5, obfs: plain, protocol-param: 396:Susie20190807, obfs-param: "", udp: true}
-  - {name: CN 60｜openit.ml, server: 111.45.32.201, port: 5988, type: ss, cipher: rc4-md5, password: Paofu, plugin: obfs, plugin-opts: {mode: http, host: 6f9d8115989.microsoft.com}, udp: true}
-  - {name: CN 3｜openit.ml, server: 111.45.32.202, port: 5984, type: ss, cipher: rc4-md5, password: Paofu, plugin: obfs, plugin-opts: {mode: http, host: f81d679637.microsoft.com}, udp: true}
-  - {name: CN 63｜openit.ml, server: 111.45.32.201, port: 5983, type: ss, cipher: rc4-md5, password: Paofu, plugin: obfs, plugin-opts: {mode: http, host: f81d679637.microsoft.com}, udp: true}
-  - {name: CN 10｜openit.ml, server: 111.45.32.202, port: 5981, type: ss, cipher: rc4-md5, password: Paofu, plugin: obfs, plugin-opts: {mode: http, host: f81d679637.microsoft.com}, udp: true}
-  - {name: CN 23｜openit.ml 2, server: 111.45.32.201, port: 5980, type: ss, cipher: rc4-md5, password: Paofu, plugin: obfs, plugin-opts: {mode: http, host: f81d679637.microsoft.com}, udp: true}
-  - {name: CN 60｜openit.ml 2, server: 111.45.32.201, port: 5989, type: ss, cipher: rc4-md5, password: Paofu, plugin: obfs, plugin-opts: {mode: http, host: f81d679637.microsoft.com}, udp: true}
-  - {name: CN 83｜openit.ml 2, server: aiatw2.www.klrxyru.cn, port: 1202, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: b43e313.wns.windows.com, udp: true}
-  - {name: CN 74｜openit.ml, server: aiatw1.www.klrxyru.cn, port: 1201, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: b43e313.wns.windows.com, udp: true}
-  - {name: TW 2｜openit.ml, server: hinet.52147.top, port: 28443, type: trojan, password: 841b229a-304f-46a2-a0fe-3b4e3e0e44f6, sni: hinet.52147.top, skip-cert-verify: true, udp: true}
-  - {name: CN 43｜openit.ml, server: aiashbr1.www.klrxyru.cn, port: 1631, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: b43e313.wns.windows.com, udp: true}
-  - {name: _CA_加拿大_0@10, server: 138.197.166.205, port: 811, type: ss, cipher: chacha20-ietf-poly1305, password: Ultr@r00t_2017, udp: true}
-  - {name: US 25｜openit.ml, server: jgwxn4.gaox.ml, port: 443, type: trojan, password: e8c1ab3c-89b3-4933-92df-682e6dce7819, sni: jgwxn4.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: US 21｜openit.ml, server: jgwhdlb1.gaox.ml, port: 443, type: trojan, password: e05c749b-7c6b-41b8-9c71-9dcf685edf4a, sni: jgwhdlb1.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: CN 29｜openit.ml, server: relaysgp1.vip.www.klrxyru.cn, port: 1501, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: b43e313.wns.windows.com, udp: true}
+  - {name: CN 18｜openit.ml, server: aiasgp1.game.www.klrxyru.cn, port: 1520, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: b43e313.wns.windows.com, udp: true}
+  - {name: CN 28｜openit.ml, server: relaysgp2.vip.www.klrxyru.cn, port: 1502, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: b43e313.wns.windows.com, udp: true}
+  - {name: CN 2｜openit.ml, server: 111.45.32.201, port: 5988, type: ss, cipher: rc4-md5, password: Paofu, plugin: obfs, plugin-opts: {mode: http, host: 6f9d8115989.microsoft.com}, udp: true}
   - {name: _GB_英国_2@13, server: 178.62.16.161, port: 811, type: ss, cipher: chacha20-ietf-poly1305, password: Ultr@r00t_2017, udp: true}
-  - {name: LT_487, server: 213.183.53.207, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
-  - {name: CN 28｜openit.ml, server: relayjp3.vip.www.klrxyru.cn, port: 1453, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: b43e313.wns.windows.com, udp: true}
+  - {name: US_43_14@42, server: tj-sg02.yiyodns.xyz, port: 443, type: trojan, password: 7dafe71e-2be6-302f-bdfc-e6319a3299bc, sni: tj-sg02.yiyodns.xyz, skip-cert-verify: true, udp: true}
   - {name: _FR_法国_0@11, server: 51.38.118.42, port: 811, type: ss, cipher: chacha20-ietf-poly1305, password: Ultr@r00t_2017, udp: true}
-  - {name: CN 13｜openit.ml, server: aiasgp1.game.www.klrxyru.cn, port: 1520, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 84393:25lGIs, obfs-param: b43e313.wns.windows.com, udp: true}
-  - {name: GB_411, server: 88.150.137.201, port: 1021, type: ssr, cipher: aes-128-ctr, password: sEscPBiAD9K$&@79, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
+  - {name: SG 2｜openit.ml, server: trojan2.udpgw.com, port: 443, type: trojan, password: 973ef350-f6a5-11ec-9274-1239d0255272, sni: trojan2.udpgw.com, skip-cert-verify: true, udp: true}
+  - {name: US_44_14@43, server: s1.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s1.hazz.win, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN 8｜openit.ml
-      - CN 68｜openit.ml
-      - CN 6｜openit.ml
-      - CN 1｜openit.ml
-      - CN 64｜openit.ml
-      - TW 3｜openit.ml
-      - CN 11｜openit.ml
-      - CN 5｜openit.ml
-      - CN 83｜openit.ml
-      - CN 23｜openit.ml
-      - CN 19｜openit.ml
-      - JP 4｜openit.ml
-      - CN 31｜openit.ml
-      - US_39_14@38
-      - CN 24｜openit.ml
-      - US_42_14@41
-      - Relay_🇺🇸US-🇺🇸US_1447
-      - US_32_14@31
-      - US 2｜openit.ml
-      - US 20｜openit.ml
-      - JP 4｜openit.ml 2
-      - CN 40｜openit.ml
-      - Relay_🇺🇸US-🇺🇸US_1498
-      - CN 52｜openit.ml
-      - US 14｜openit.ml
-      - CN 16｜openit.ml
       - CN 30｜openit.ml
-      - CN 29｜openit.ml
-      - Relay_🇺🇸US-🇺🇸US_1483
-      - CN 26｜openit.ml
-      - CN 37｜openit.ml
-      - CN 41｜openit.ml
-      - CN 34｜openit.ml
-      - CN 51｜openit.ml
-      - CN 27｜openit.ml
-      - CN 36｜openit.ml
-      - CN 12｜openit.ml
-      - CN 35｜openit.ml
-      - CN 14｜openit.ml
-      - CN 50｜openit.ml
-      - CN 52｜openit.ml 2
-      - CN 54｜openit.ml
-      - CN 53｜openit.ml
-      - CN 45｜openit.ml
-      - CN 67｜openit.ml
-      - CN 87｜openit.ml
-      - CN 86｜openit.ml
-      - CN 56｜openit.ml
-      - _US_美国_30_1@57
-      - CN 84｜openit.ml
-      - CN 48｜openit.ml
-      - CN 18｜openit.ml
-      - CN 56｜openit.ml 2
-      - CN 51｜openit.ml 2
-      - CN 62｜openit.ml
-      - JP 1｜openit.ml
-      - CN 42｜openit.ml
-      - CN 88｜openit.ml
-      - CN 38｜openit.ml
-      - AU 2｜openit.ml
-      - CN 46｜openit.ml
-      - CN 4｜openit.ml
-      - CN 59｜openit.ml
-      - CN 2｜openit.ml
-      - CN 84｜openit.ml 2
-      - CN 82｜openit.ml
-      - CN 90｜openit.ml
-      - CN 9｜openit.ml
-      - CN 7｜openit.ml
-      - CN 32｜openit.ml
-      - CN 85｜openit.ml
-      - CN 78｜openit.ml
-      - CN 65｜openit.ml
-      - CN 72｜openit.ml
-      - CN 73｜openit.ml
-      - CN 64｜openit.ml 2
-      - CN 77｜openit.ml
-      - HK 2｜openit.ml
-      - CN 58｜openit.ml
-      - CN 57｜openit.ml
-      - CN 80｜openit.ml
-      - CN 71｜openit.ml
-      - CN 60｜openit.ml
+      - ""
+      - TW 1｜openit.ml
+      - " 2"
       - CN 3｜openit.ml
-      - CN 63｜openit.ml
+      - US_34_14@33
+      - US_40_14@39
+      - US_28_14@27
+      - " 3"
+      - CA 1｜openit.ml
+      - CN 15｜openit.ml
+      - JP 1｜openit.ml
+      - CN 12｜openit.ml
+      - US_37_14@36
+      - NONE
+      - CN 16｜openit.ml
+      - CN 11｜openit.ml
+      - NONE 2
+      - RW 1｜openit.ml
+      - CN 56｜openit.ml
+      - NONE 3
+      - CN 8｜openit.ml
       - CN 10｜openit.ml
-      - CN 23｜openit.ml 2
-      - CN 60｜openit.ml 2
-      - CN 83｜openit.ml 2
-      - CN 74｜openit.ml
-      - TW 2｜openit.ml
-      - CN 43｜openit.ml
-      - _CA_加拿大_0@10
-      - US 25｜openit.ml
-      - US 21｜openit.ml
-      - _GB_英国_2@13
-      - LT_487
-      - CN 28｜openit.ml
-      - _FR_法国_0@11
+      - CN 44｜openit.ml
+      - NONE 4
+      - CN 7｜openit.ml
       - CN 13｜openit.ml
-      - GB_411
+      - CN 6｜openit.ml
+      - CN 5｜openit.ml
+      - CN 14｜openit.ml
+      - " 4"
+      - _US_美国_34_1@67
+      - " 5"
+      - CN 55｜openit.ml
+      - CN 46｜openit.ml
+      - CN 53｜openit.ml
+      - CN 54｜openit.ml
+      - CN 40｜openit.ml
+      - CN 45｜openit.ml
+      - CN 48｜openit.ml
+      - CN 51｜openit.ml
+      - CN 49｜openit.ml
+      - CN 50｜openit.ml
+      - CN 38｜openit.ml
+      - CN 41｜openit.ml
+      - US 26｜openit.ml
+      - US 23｜openit.ml
+      - US 27｜openit.ml
+      - _DE_德国_0@12
+      - CN 59｜openit.ml
+      - US_42_14@41
+      - US 28｜openit.ml
+      - AU 2｜openit.ml
+      - CN 29｜openit.ml
+      - CN 18｜openit.ml
+      - CN 28｜openit.ml
+      - CN 2｜openit.ml
+      - _GB_英国_2@13
+      - US_43_14@42
+      - _FR_法国_0@11
+      - SG 2｜openit.ml
+      - US_44_14@43
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - CN 8｜openit.ml
-      - CN 68｜openit.ml
-      - CN 6｜openit.ml
-      - CN 1｜openit.ml
-      - CN 64｜openit.ml
-      - TW 3｜openit.ml
-      - CN 11｜openit.ml
-      - CN 5｜openit.ml
-      - CN 83｜openit.ml
-      - CN 23｜openit.ml
-      - CN 19｜openit.ml
-      - JP 4｜openit.ml
-      - CN 31｜openit.ml
-      - US_39_14@38
-      - CN 24｜openit.ml
-      - US_42_14@41
-      - Relay_🇺🇸US-🇺🇸US_1447
-      - US_32_14@31
-      - US 2｜openit.ml
-      - US 20｜openit.ml
-      - JP 4｜openit.ml 2
-      - CN 40｜openit.ml
-      - Relay_🇺🇸US-🇺🇸US_1498
-      - CN 52｜openit.ml
-      - US 14｜openit.ml
-      - CN 16｜openit.ml
       - CN 30｜openit.ml
-      - CN 29｜openit.ml
-      - Relay_🇺🇸US-🇺🇸US_1483
-      - CN 26｜openit.ml
-      - CN 37｜openit.ml
-      - CN 41｜openit.ml
-      - CN 34｜openit.ml
-      - CN 51｜openit.ml
-      - CN 27｜openit.ml
-      - CN 36｜openit.ml
-      - CN 12｜openit.ml
-      - CN 35｜openit.ml
-      - CN 14｜openit.ml
-      - CN 50｜openit.ml
-      - CN 52｜openit.ml 2
-      - CN 54｜openit.ml
-      - CN 53｜openit.ml
-      - CN 45｜openit.ml
-      - CN 67｜openit.ml
-      - CN 87｜openit.ml
-      - CN 86｜openit.ml
-      - CN 56｜openit.ml
-      - _US_美国_30_1@57
-      - CN 84｜openit.ml
-      - CN 48｜openit.ml
-      - CN 18｜openit.ml
-      - CN 56｜openit.ml 2
-      - CN 51｜openit.ml 2
-      - CN 62｜openit.ml
-      - JP 1｜openit.ml
-      - CN 42｜openit.ml
-      - CN 88｜openit.ml
-      - CN 38｜openit.ml
-      - AU 2｜openit.ml
-      - CN 46｜openit.ml
-      - CN 4｜openit.ml
-      - CN 59｜openit.ml
-      - CN 2｜openit.ml
-      - CN 84｜openit.ml 2
-      - CN 82｜openit.ml
-      - CN 90｜openit.ml
-      - CN 9｜openit.ml
-      - CN 7｜openit.ml
-      - CN 32｜openit.ml
-      - CN 85｜openit.ml
-      - CN 78｜openit.ml
-      - CN 65｜openit.ml
-      - CN 72｜openit.ml
-      - CN 73｜openit.ml
-      - CN 64｜openit.ml 2
-      - CN 77｜openit.ml
-      - HK 2｜openit.ml
-      - CN 58｜openit.ml
-      - CN 57｜openit.ml
-      - CN 80｜openit.ml
-      - CN 71｜openit.ml
-      - CN 60｜openit.ml
+      - ""
+      - TW 1｜openit.ml
+      - " 2"
       - CN 3｜openit.ml
-      - CN 63｜openit.ml
+      - US_34_14@33
+      - US_40_14@39
+      - US_28_14@27
+      - " 3"
+      - CA 1｜openit.ml
+      - CN 15｜openit.ml
+      - JP 1｜openit.ml
+      - CN 12｜openit.ml
+      - US_37_14@36
+      - NONE
+      - CN 16｜openit.ml
+      - CN 11｜openit.ml
+      - NONE 2
+      - RW 1｜openit.ml
+      - CN 56｜openit.ml
+      - NONE 3
+      - CN 8｜openit.ml
       - CN 10｜openit.ml
-      - CN 23｜openit.ml 2
-      - CN 60｜openit.ml 2
-      - CN 83｜openit.ml 2
-      - CN 74｜openit.ml
-      - TW 2｜openit.ml
-      - CN 43｜openit.ml
-      - _CA_加拿大_0@10
-      - US 25｜openit.ml
-      - US 21｜openit.ml
-      - _GB_英国_2@13
-      - LT_487
-      - CN 28｜openit.ml
-      - _FR_法国_0@11
+      - CN 44｜openit.ml
+      - NONE 4
+      - CN 7｜openit.ml
       - CN 13｜openit.ml
-      - GB_411
+      - CN 6｜openit.ml
+      - CN 5｜openit.ml
+      - CN 14｜openit.ml
+      - " 4"
+      - _US_美国_34_1@67
+      - " 5"
+      - CN 55｜openit.ml
+      - CN 46｜openit.ml
+      - CN 53｜openit.ml
+      - CN 54｜openit.ml
+      - CN 40｜openit.ml
+      - CN 45｜openit.ml
+      - CN 48｜openit.ml
+      - CN 51｜openit.ml
+      - CN 49｜openit.ml
+      - CN 50｜openit.ml
+      - CN 38｜openit.ml
+      - CN 41｜openit.ml
+      - US 26｜openit.ml
+      - US 23｜openit.ml
+      - US 27｜openit.ml
+      - _DE_德国_0@12
+      - CN 59｜openit.ml
+      - US_42_14@41
+      - US 28｜openit.ml
+      - AU 2｜openit.ml
+      - CN 29｜openit.ml
+      - CN 18｜openit.ml
+      - CN 28｜openit.ml
+      - CN 2｜openit.ml
+      - _GB_英国_2@13
+      - US_43_14@42
+      - _FR_法国_0@11
+      - SG 2｜openit.ml
+      - US_44_14@43
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN 8｜openit.ml
-      - CN 68｜openit.ml
-      - CN 6｜openit.ml
-      - CN 1｜openit.ml
-      - CN 64｜openit.ml
-      - TW 3｜openit.ml
-      - CN 11｜openit.ml
-      - CN 5｜openit.ml
-      - CN 83｜openit.ml
-      - CN 23｜openit.ml
-      - CN 19｜openit.ml
-      - JP 4｜openit.ml
-      - CN 31｜openit.ml
-      - US_39_14@38
-      - CN 24｜openit.ml
-      - US_42_14@41
-      - Relay_🇺🇸US-🇺🇸US_1447
-      - US_32_14@31
-      - US 2｜openit.ml
-      - US 20｜openit.ml
-      - JP 4｜openit.ml 2
-      - CN 40｜openit.ml
-      - Relay_🇺🇸US-🇺🇸US_1498
-      - CN 52｜openit.ml
-      - US 14｜openit.ml
-      - CN 16｜openit.ml
       - CN 30｜openit.ml
-      - CN 29｜openit.ml
-      - Relay_🇺🇸US-🇺🇸US_1483
-      - CN 26｜openit.ml
-      - CN 37｜openit.ml
-      - CN 41｜openit.ml
-      - CN 34｜openit.ml
-      - CN 51｜openit.ml
-      - CN 27｜openit.ml
-      - CN 36｜openit.ml
-      - CN 12｜openit.ml
-      - CN 35｜openit.ml
-      - CN 14｜openit.ml
-      - CN 50｜openit.ml
-      - CN 52｜openit.ml 2
-      - CN 54｜openit.ml
-      - CN 53｜openit.ml
-      - CN 45｜openit.ml
-      - CN 67｜openit.ml
-      - CN 87｜openit.ml
-      - CN 86｜openit.ml
-      - CN 56｜openit.ml
-      - _US_美国_30_1@57
-      - CN 84｜openit.ml
-      - CN 48｜openit.ml
-      - CN 18｜openit.ml
-      - CN 56｜openit.ml 2
-      - CN 51｜openit.ml 2
-      - CN 62｜openit.ml
-      - JP 1｜openit.ml
-      - CN 42｜openit.ml
-      - CN 88｜openit.ml
-      - CN 38｜openit.ml
-      - AU 2｜openit.ml
-      - CN 46｜openit.ml
-      - CN 4｜openit.ml
-      - CN 59｜openit.ml
-      - CN 2｜openit.ml
-      - CN 84｜openit.ml 2
-      - CN 82｜openit.ml
-      - CN 90｜openit.ml
-      - CN 9｜openit.ml
-      - CN 7｜openit.ml
-      - CN 32｜openit.ml
-      - CN 85｜openit.ml
-      - CN 78｜openit.ml
-      - CN 65｜openit.ml
-      - CN 72｜openit.ml
-      - CN 73｜openit.ml
-      - CN 64｜openit.ml 2
-      - CN 77｜openit.ml
-      - HK 2｜openit.ml
-      - CN 58｜openit.ml
-      - CN 57｜openit.ml
-      - CN 80｜openit.ml
-      - CN 71｜openit.ml
-      - CN 60｜openit.ml
+      - ""
+      - TW 1｜openit.ml
+      - " 2"
       - CN 3｜openit.ml
-      - CN 63｜openit.ml
+      - US_34_14@33
+      - US_40_14@39
+      - US_28_14@27
+      - " 3"
+      - CA 1｜openit.ml
+      - CN 15｜openit.ml
+      - JP 1｜openit.ml
+      - CN 12｜openit.ml
+      - US_37_14@36
+      - NONE
+      - CN 16｜openit.ml
+      - CN 11｜openit.ml
+      - NONE 2
+      - RW 1｜openit.ml
+      - CN 56｜openit.ml
+      - NONE 3
+      - CN 8｜openit.ml
       - CN 10｜openit.ml
-      - CN 23｜openit.ml 2
-      - CN 60｜openit.ml 2
-      - CN 83｜openit.ml 2
-      - CN 74｜openit.ml
-      - TW 2｜openit.ml
-      - CN 43｜openit.ml
-      - _CA_加拿大_0@10
-      - US 25｜openit.ml
-      - US 21｜openit.ml
-      - _GB_英国_2@13
-      - LT_487
-      - CN 28｜openit.ml
-      - _FR_法国_0@11
+      - CN 44｜openit.ml
+      - NONE 4
+      - CN 7｜openit.ml
       - CN 13｜openit.ml
-      - GB_411
+      - CN 6｜openit.ml
+      - CN 5｜openit.ml
+      - CN 14｜openit.ml
+      - " 4"
+      - _US_美国_34_1@67
+      - " 5"
+      - CN 55｜openit.ml
+      - CN 46｜openit.ml
+      - CN 53｜openit.ml
+      - CN 54｜openit.ml
+      - CN 40｜openit.ml
+      - CN 45｜openit.ml
+      - CN 48｜openit.ml
+      - CN 51｜openit.ml
+      - CN 49｜openit.ml
+      - CN 50｜openit.ml
+      - CN 38｜openit.ml
+      - CN 41｜openit.ml
+      - US 26｜openit.ml
+      - US 23｜openit.ml
+      - US 27｜openit.ml
+      - _DE_德国_0@12
+      - CN 59｜openit.ml
+      - US_42_14@41
+      - US 28｜openit.ml
+      - AU 2｜openit.ml
+      - CN 29｜openit.ml
+      - CN 18｜openit.ml
+      - CN 28｜openit.ml
+      - CN 2｜openit.ml
+      - _GB_英国_2@13
+      - US_43_14@42
+      - _FR_法国_0@11
+      - SG 2｜openit.ml
+      - US_44_14@43
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -444,107 +288,68 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN 8｜openit.ml
-      - CN 68｜openit.ml
-      - CN 6｜openit.ml
-      - CN 1｜openit.ml
-      - CN 64｜openit.ml
-      - TW 3｜openit.ml
-      - CN 11｜openit.ml
-      - CN 5｜openit.ml
-      - CN 83｜openit.ml
-      - CN 23｜openit.ml
-      - CN 19｜openit.ml
-      - JP 4｜openit.ml
-      - CN 31｜openit.ml
-      - US_39_14@38
-      - CN 24｜openit.ml
-      - US_42_14@41
-      - Relay_🇺🇸US-🇺🇸US_1447
-      - US_32_14@31
-      - US 2｜openit.ml
-      - US 20｜openit.ml
-      - JP 4｜openit.ml 2
-      - CN 40｜openit.ml
-      - Relay_🇺🇸US-🇺🇸US_1498
-      - CN 52｜openit.ml
-      - US 14｜openit.ml
-      - CN 16｜openit.ml
       - CN 30｜openit.ml
-      - CN 29｜openit.ml
-      - Relay_🇺🇸US-🇺🇸US_1483
-      - CN 26｜openit.ml
-      - CN 37｜openit.ml
-      - CN 41｜openit.ml
-      - CN 34｜openit.ml
-      - CN 51｜openit.ml
-      - CN 27｜openit.ml
-      - CN 36｜openit.ml
-      - CN 12｜openit.ml
-      - CN 35｜openit.ml
-      - CN 14｜openit.ml
-      - CN 50｜openit.ml
-      - CN 52｜openit.ml 2
-      - CN 54｜openit.ml
-      - CN 53｜openit.ml
-      - CN 45｜openit.ml
-      - CN 67｜openit.ml
-      - CN 87｜openit.ml
-      - CN 86｜openit.ml
-      - CN 56｜openit.ml
-      - _US_美国_30_1@57
-      - CN 84｜openit.ml
-      - CN 48｜openit.ml
-      - CN 18｜openit.ml
-      - CN 56｜openit.ml 2
-      - CN 51｜openit.ml 2
-      - CN 62｜openit.ml
-      - JP 1｜openit.ml
-      - CN 42｜openit.ml
-      - CN 88｜openit.ml
-      - CN 38｜openit.ml
-      - AU 2｜openit.ml
-      - CN 46｜openit.ml
-      - CN 4｜openit.ml
-      - CN 59｜openit.ml
-      - CN 2｜openit.ml
-      - CN 84｜openit.ml 2
-      - CN 82｜openit.ml
-      - CN 90｜openit.ml
-      - CN 9｜openit.ml
-      - CN 7｜openit.ml
-      - CN 32｜openit.ml
-      - CN 85｜openit.ml
-      - CN 78｜openit.ml
-      - CN 65｜openit.ml
-      - CN 72｜openit.ml
-      - CN 73｜openit.ml
-      - CN 64｜openit.ml 2
-      - CN 77｜openit.ml
-      - HK 2｜openit.ml
-      - CN 58｜openit.ml
-      - CN 57｜openit.ml
-      - CN 80｜openit.ml
-      - CN 71｜openit.ml
-      - CN 60｜openit.ml
+      - ""
+      - TW 1｜openit.ml
+      - " 2"
       - CN 3｜openit.ml
-      - CN 63｜openit.ml
+      - US_34_14@33
+      - US_40_14@39
+      - US_28_14@27
+      - " 3"
+      - CA 1｜openit.ml
+      - CN 15｜openit.ml
+      - JP 1｜openit.ml
+      - CN 12｜openit.ml
+      - US_37_14@36
+      - NONE
+      - CN 16｜openit.ml
+      - CN 11｜openit.ml
+      - NONE 2
+      - RW 1｜openit.ml
+      - CN 56｜openit.ml
+      - NONE 3
+      - CN 8｜openit.ml
       - CN 10｜openit.ml
-      - CN 23｜openit.ml 2
-      - CN 60｜openit.ml 2
-      - CN 83｜openit.ml 2
-      - CN 74｜openit.ml
-      - TW 2｜openit.ml
-      - CN 43｜openit.ml
-      - _CA_加拿大_0@10
-      - US 25｜openit.ml
-      - US 21｜openit.ml
-      - _GB_英国_2@13
-      - LT_487
-      - CN 28｜openit.ml
-      - _FR_法国_0@11
+      - CN 44｜openit.ml
+      - NONE 4
+      - CN 7｜openit.ml
       - CN 13｜openit.ml
-      - GB_411
+      - CN 6｜openit.ml
+      - CN 5｜openit.ml
+      - CN 14｜openit.ml
+      - " 4"
+      - _US_美国_34_1@67
+      - " 5"
+      - CN 55｜openit.ml
+      - CN 46｜openit.ml
+      - CN 53｜openit.ml
+      - CN 54｜openit.ml
+      - CN 40｜openit.ml
+      - CN 45｜openit.ml
+      - CN 48｜openit.ml
+      - CN 51｜openit.ml
+      - CN 49｜openit.ml
+      - CN 50｜openit.ml
+      - CN 38｜openit.ml
+      - CN 41｜openit.ml
+      - US 26｜openit.ml
+      - US 23｜openit.ml
+      - US 27｜openit.ml
+      - _DE_德国_0@12
+      - CN 59｜openit.ml
+      - US_42_14@41
+      - US 28｜openit.ml
+      - AU 2｜openit.ml
+      - CN 29｜openit.ml
+      - CN 18｜openit.ml
+      - CN 28｜openit.ml
+      - CN 2｜openit.ml
+      - _GB_英国_2@13
+      - US_43_14@42
+      - _FR_法国_0@11
+      - SG 2｜openit.ml
+      - US_44_14@43
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -555,320 +360,203 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - CN 8｜openit.ml
-      - CN 68｜openit.ml
-      - CN 6｜openit.ml
-      - CN 1｜openit.ml
-      - CN 64｜openit.ml
-      - TW 3｜openit.ml
-      - CN 11｜openit.ml
-      - CN 5｜openit.ml
-      - CN 83｜openit.ml
-      - CN 23｜openit.ml
-      - CN 19｜openit.ml
-      - JP 4｜openit.ml
-      - CN 31｜openit.ml
-      - US_39_14@38
-      - CN 24｜openit.ml
-      - US_42_14@41
-      - Relay_🇺🇸US-🇺🇸US_1447
-      - US_32_14@31
-      - US 2｜openit.ml
-      - US 20｜openit.ml
-      - JP 4｜openit.ml 2
-      - CN 40｜openit.ml
-      - Relay_🇺🇸US-🇺🇸US_1498
-      - CN 52｜openit.ml
-      - US 14｜openit.ml
-      - CN 16｜openit.ml
       - CN 30｜openit.ml
-      - CN 29｜openit.ml
-      - Relay_🇺🇸US-🇺🇸US_1483
-      - CN 26｜openit.ml
-      - CN 37｜openit.ml
-      - CN 41｜openit.ml
-      - CN 34｜openit.ml
-      - CN 51｜openit.ml
-      - CN 27｜openit.ml
-      - CN 36｜openit.ml
-      - CN 12｜openit.ml
-      - CN 35｜openit.ml
-      - CN 14｜openit.ml
-      - CN 50｜openit.ml
-      - CN 52｜openit.ml 2
-      - CN 54｜openit.ml
-      - CN 53｜openit.ml
-      - CN 45｜openit.ml
-      - CN 67｜openit.ml
-      - CN 87｜openit.ml
-      - CN 86｜openit.ml
-      - CN 56｜openit.ml
-      - _US_美国_30_1@57
-      - CN 84｜openit.ml
-      - CN 48｜openit.ml
-      - CN 18｜openit.ml
-      - CN 56｜openit.ml 2
-      - CN 51｜openit.ml 2
-      - CN 62｜openit.ml
-      - JP 1｜openit.ml
-      - CN 42｜openit.ml
-      - CN 88｜openit.ml
-      - CN 38｜openit.ml
-      - AU 2｜openit.ml
-      - CN 46｜openit.ml
-      - CN 4｜openit.ml
-      - CN 59｜openit.ml
-      - CN 2｜openit.ml
-      - CN 84｜openit.ml 2
-      - CN 82｜openit.ml
-      - CN 90｜openit.ml
-      - CN 9｜openit.ml
-      - CN 7｜openit.ml
-      - CN 32｜openit.ml
-      - CN 85｜openit.ml
-      - CN 78｜openit.ml
-      - CN 65｜openit.ml
-      - CN 72｜openit.ml
-      - CN 73｜openit.ml
-      - CN 64｜openit.ml 2
-      - CN 77｜openit.ml
-      - HK 2｜openit.ml
-      - CN 58｜openit.ml
-      - CN 57｜openit.ml
-      - CN 80｜openit.ml
-      - CN 71｜openit.ml
-      - CN 60｜openit.ml
+      - ""
+      - TW 1｜openit.ml
+      - " 2"
       - CN 3｜openit.ml
-      - CN 63｜openit.ml
+      - US_34_14@33
+      - US_40_14@39
+      - US_28_14@27
+      - " 3"
+      - CA 1｜openit.ml
+      - CN 15｜openit.ml
+      - JP 1｜openit.ml
+      - CN 12｜openit.ml
+      - US_37_14@36
+      - NONE
+      - CN 16｜openit.ml
+      - CN 11｜openit.ml
+      - NONE 2
+      - RW 1｜openit.ml
+      - CN 56｜openit.ml
+      - NONE 3
+      - CN 8｜openit.ml
       - CN 10｜openit.ml
-      - CN 23｜openit.ml 2
-      - CN 60｜openit.ml 2
-      - CN 83｜openit.ml 2
-      - CN 74｜openit.ml
-      - TW 2｜openit.ml
-      - CN 43｜openit.ml
-      - _CA_加拿大_0@10
-      - US 25｜openit.ml
-      - US 21｜openit.ml
-      - _GB_英国_2@13
-      - LT_487
-      - CN 28｜openit.ml
-      - _FR_法国_0@11
+      - CN 44｜openit.ml
+      - NONE 4
+      - CN 7｜openit.ml
       - CN 13｜openit.ml
-      - GB_411
+      - CN 6｜openit.ml
+      - CN 5｜openit.ml
+      - CN 14｜openit.ml
+      - " 4"
+      - _US_美国_34_1@67
+      - " 5"
+      - CN 55｜openit.ml
+      - CN 46｜openit.ml
+      - CN 53｜openit.ml
+      - CN 54｜openit.ml
+      - CN 40｜openit.ml
+      - CN 45｜openit.ml
+      - CN 48｜openit.ml
+      - CN 51｜openit.ml
+      - CN 49｜openit.ml
+      - CN 50｜openit.ml
+      - CN 38｜openit.ml
+      - CN 41｜openit.ml
+      - US 26｜openit.ml
+      - US 23｜openit.ml
+      - US 27｜openit.ml
+      - _DE_德国_0@12
+      - CN 59｜openit.ml
+      - US_42_14@41
+      - US 28｜openit.ml
+      - AU 2｜openit.ml
+      - CN 29｜openit.ml
+      - CN 18｜openit.ml
+      - CN 28｜openit.ml
+      - CN 2｜openit.ml
+      - _GB_英国_2@13
+      - US_43_14@42
+      - _FR_法国_0@11
+      - SG 2｜openit.ml
+      - US_44_14@43
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - CN 8｜openit.ml
-      - CN 68｜openit.ml
-      - CN 6｜openit.ml
-      - CN 1｜openit.ml
-      - CN 64｜openit.ml
-      - TW 3｜openit.ml
-      - CN 11｜openit.ml
-      - CN 5｜openit.ml
-      - CN 83｜openit.ml
-      - CN 23｜openit.ml
-      - CN 19｜openit.ml
-      - JP 4｜openit.ml
-      - CN 31｜openit.ml
-      - US_39_14@38
-      - CN 24｜openit.ml
-      - US_42_14@41
-      - Relay_🇺🇸US-🇺🇸US_1447
-      - US_32_14@31
-      - US 2｜openit.ml
-      - US 20｜openit.ml
-      - JP 4｜openit.ml 2
-      - CN 40｜openit.ml
-      - Relay_🇺🇸US-🇺🇸US_1498
-      - CN 52｜openit.ml
-      - US 14｜openit.ml
-      - CN 16｜openit.ml
       - CN 30｜openit.ml
-      - CN 29｜openit.ml
-      - Relay_🇺🇸US-🇺🇸US_1483
-      - CN 26｜openit.ml
-      - CN 37｜openit.ml
-      - CN 41｜openit.ml
-      - CN 34｜openit.ml
-      - CN 51｜openit.ml
-      - CN 27｜openit.ml
-      - CN 36｜openit.ml
-      - CN 12｜openit.ml
-      - CN 35｜openit.ml
-      - CN 14｜openit.ml
-      - CN 50｜openit.ml
-      - CN 52｜openit.ml 2
-      - CN 54｜openit.ml
-      - CN 53｜openit.ml
-      - CN 45｜openit.ml
-      - CN 67｜openit.ml
-      - CN 87｜openit.ml
-      - CN 86｜openit.ml
-      - CN 56｜openit.ml
-      - _US_美国_30_1@57
-      - CN 84｜openit.ml
-      - CN 48｜openit.ml
-      - CN 18｜openit.ml
-      - CN 56｜openit.ml 2
-      - CN 51｜openit.ml 2
-      - CN 62｜openit.ml
-      - JP 1｜openit.ml
-      - CN 42｜openit.ml
-      - CN 88｜openit.ml
-      - CN 38｜openit.ml
-      - AU 2｜openit.ml
-      - CN 46｜openit.ml
-      - CN 4｜openit.ml
-      - CN 59｜openit.ml
-      - CN 2｜openit.ml
-      - CN 84｜openit.ml 2
-      - CN 82｜openit.ml
-      - CN 90｜openit.ml
-      - CN 9｜openit.ml
-      - CN 7｜openit.ml
-      - CN 32｜openit.ml
-      - CN 85｜openit.ml
-      - CN 78｜openit.ml
-      - CN 65｜openit.ml
-      - CN 72｜openit.ml
-      - CN 73｜openit.ml
-      - CN 64｜openit.ml 2
-      - CN 77｜openit.ml
-      - HK 2｜openit.ml
-      - CN 58｜openit.ml
-      - CN 57｜openit.ml
-      - CN 80｜openit.ml
-      - CN 71｜openit.ml
-      - CN 60｜openit.ml
+      - ""
+      - TW 1｜openit.ml
+      - " 2"
       - CN 3｜openit.ml
-      - CN 63｜openit.ml
+      - US_34_14@33
+      - US_40_14@39
+      - US_28_14@27
+      - " 3"
+      - CA 1｜openit.ml
+      - CN 15｜openit.ml
+      - JP 1｜openit.ml
+      - CN 12｜openit.ml
+      - US_37_14@36
+      - NONE
+      - CN 16｜openit.ml
+      - CN 11｜openit.ml
+      - NONE 2
+      - RW 1｜openit.ml
+      - CN 56｜openit.ml
+      - NONE 3
+      - CN 8｜openit.ml
       - CN 10｜openit.ml
-      - CN 23｜openit.ml 2
-      - CN 60｜openit.ml 2
-      - CN 83｜openit.ml 2
-      - CN 74｜openit.ml
-      - TW 2｜openit.ml
-      - CN 43｜openit.ml
-      - _CA_加拿大_0@10
-      - US 25｜openit.ml
-      - US 21｜openit.ml
-      - _GB_英国_2@13
-      - LT_487
-      - CN 28｜openit.ml
-      - _FR_法国_0@11
+      - CN 44｜openit.ml
+      - NONE 4
+      - CN 7｜openit.ml
       - CN 13｜openit.ml
-      - GB_411
+      - CN 6｜openit.ml
+      - CN 5｜openit.ml
+      - CN 14｜openit.ml
+      - " 4"
+      - _US_美国_34_1@67
+      - " 5"
+      - CN 55｜openit.ml
+      - CN 46｜openit.ml
+      - CN 53｜openit.ml
+      - CN 54｜openit.ml
+      - CN 40｜openit.ml
+      - CN 45｜openit.ml
+      - CN 48｜openit.ml
+      - CN 51｜openit.ml
+      - CN 49｜openit.ml
+      - CN 50｜openit.ml
+      - CN 38｜openit.ml
+      - CN 41｜openit.ml
+      - US 26｜openit.ml
+      - US 23｜openit.ml
+      - US 27｜openit.ml
+      - _DE_德国_0@12
+      - CN 59｜openit.ml
+      - US_42_14@41
+      - US 28｜openit.ml
+      - AU 2｜openit.ml
+      - CN 29｜openit.ml
+      - CN 18｜openit.ml
+      - CN 28｜openit.ml
+      - CN 2｜openit.ml
+      - _GB_英国_2@13
+      - US_43_14@42
+      - _FR_法国_0@11
+      - SG 2｜openit.ml
+      - US_44_14@43
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CN 8｜openit.ml
-      - CN 68｜openit.ml
-      - CN 6｜openit.ml
-      - CN 1｜openit.ml
-      - CN 64｜openit.ml
-      - TW 3｜openit.ml
-      - CN 11｜openit.ml
-      - CN 5｜openit.ml
-      - CN 83｜openit.ml
-      - CN 23｜openit.ml
-      - CN 19｜openit.ml
-      - JP 4｜openit.ml
-      - CN 31｜openit.ml
-      - US_39_14@38
-      - CN 24｜openit.ml
-      - US_42_14@41
-      - Relay_🇺🇸US-🇺🇸US_1447
-      - US_32_14@31
-      - US 2｜openit.ml
-      - US 20｜openit.ml
-      - JP 4｜openit.ml 2
-      - CN 40｜openit.ml
-      - Relay_🇺🇸US-🇺🇸US_1498
-      - CN 52｜openit.ml
-      - US 14｜openit.ml
-      - CN 16｜openit.ml
       - CN 30｜openit.ml
-      - CN 29｜openit.ml
-      - Relay_🇺🇸US-🇺🇸US_1483
-      - CN 26｜openit.ml
-      - CN 37｜openit.ml
-      - CN 41｜openit.ml
-      - CN 34｜openit.ml
-      - CN 51｜openit.ml
-      - CN 27｜openit.ml
-      - CN 36｜openit.ml
-      - CN 12｜openit.ml
-      - CN 35｜openit.ml
-      - CN 14｜openit.ml
-      - CN 50｜openit.ml
-      - CN 52｜openit.ml 2
-      - CN 54｜openit.ml
-      - CN 53｜openit.ml
-      - CN 45｜openit.ml
-      - CN 67｜openit.ml
-      - CN 87｜openit.ml
-      - CN 86｜openit.ml
-      - CN 56｜openit.ml
-      - _US_美国_30_1@57
-      - CN 84｜openit.ml
-      - CN 48｜openit.ml
-      - CN 18｜openit.ml
-      - CN 56｜openit.ml 2
-      - CN 51｜openit.ml 2
-      - CN 62｜openit.ml
-      - JP 1｜openit.ml
-      - CN 42｜openit.ml
-      - CN 88｜openit.ml
-      - CN 38｜openit.ml
-      - AU 2｜openit.ml
-      - CN 46｜openit.ml
-      - CN 4｜openit.ml
-      - CN 59｜openit.ml
-      - CN 2｜openit.ml
-      - CN 84｜openit.ml 2
-      - CN 82｜openit.ml
-      - CN 90｜openit.ml
-      - CN 9｜openit.ml
-      - CN 7｜openit.ml
-      - CN 32｜openit.ml
-      - CN 85｜openit.ml
-      - CN 78｜openit.ml
-      - CN 65｜openit.ml
-      - CN 72｜openit.ml
-      - CN 73｜openit.ml
-      - CN 64｜openit.ml 2
-      - CN 77｜openit.ml
-      - HK 2｜openit.ml
-      - CN 58｜openit.ml
-      - CN 57｜openit.ml
-      - CN 80｜openit.ml
-      - CN 71｜openit.ml
-      - CN 60｜openit.ml
+      - ""
+      - TW 1｜openit.ml
+      - " 2"
       - CN 3｜openit.ml
-      - CN 63｜openit.ml
+      - US_34_14@33
+      - US_40_14@39
+      - US_28_14@27
+      - " 3"
+      - CA 1｜openit.ml
+      - CN 15｜openit.ml
+      - JP 1｜openit.ml
+      - CN 12｜openit.ml
+      - US_37_14@36
+      - NONE
+      - CN 16｜openit.ml
+      - CN 11｜openit.ml
+      - NONE 2
+      - RW 1｜openit.ml
+      - CN 56｜openit.ml
+      - NONE 3
+      - CN 8｜openit.ml
       - CN 10｜openit.ml
-      - CN 23｜openit.ml 2
-      - CN 60｜openit.ml 2
-      - CN 83｜openit.ml 2
-      - CN 74｜openit.ml
-      - TW 2｜openit.ml
-      - CN 43｜openit.ml
-      - _CA_加拿大_0@10
-      - US 25｜openit.ml
-      - US 21｜openit.ml
-      - _GB_英国_2@13
-      - LT_487
-      - CN 28｜openit.ml
-      - _FR_法国_0@11
+      - CN 44｜openit.ml
+      - NONE 4
+      - CN 7｜openit.ml
       - CN 13｜openit.ml
-      - GB_411
+      - CN 6｜openit.ml
+      - CN 5｜openit.ml
+      - CN 14｜openit.ml
+      - " 4"
+      - _US_美国_34_1@67
+      - " 5"
+      - CN 55｜openit.ml
+      - CN 46｜openit.ml
+      - CN 53｜openit.ml
+      - CN 54｜openit.ml
+      - CN 40｜openit.ml
+      - CN 45｜openit.ml
+      - CN 48｜openit.ml
+      - CN 51｜openit.ml
+      - CN 49｜openit.ml
+      - CN 50｜openit.ml
+      - CN 38｜openit.ml
+      - CN 41｜openit.ml
+      - US 26｜openit.ml
+      - US 23｜openit.ml
+      - US 27｜openit.ml
+      - _DE_德国_0@12
+      - CN 59｜openit.ml
+      - US_42_14@41
+      - US 28｜openit.ml
+      - AU 2｜openit.ml
+      - CN 29｜openit.ml
+      - CN 18｜openit.ml
+      - CN 28｜openit.ml
+      - CN 2｜openit.ml
+      - _GB_英国_2@13
+      - US_43_14@42
+      - _FR_法国_0@11
+      - SG 2｜openit.ml
+      - US_44_14@43
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -884,107 +572,68 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CN 8｜openit.ml
-      - CN 68｜openit.ml
-      - CN 6｜openit.ml
-      - CN 1｜openit.ml
-      - CN 64｜openit.ml
-      - TW 3｜openit.ml
-      - CN 11｜openit.ml
-      - CN 5｜openit.ml
-      - CN 83｜openit.ml
-      - CN 23｜openit.ml
-      - CN 19｜openit.ml
-      - JP 4｜openit.ml
-      - CN 31｜openit.ml
-      - US_39_14@38
-      - CN 24｜openit.ml
-      - US_42_14@41
-      - Relay_🇺🇸US-🇺🇸US_1447
-      - US_32_14@31
-      - US 2｜openit.ml
-      - US 20｜openit.ml
-      - JP 4｜openit.ml 2
-      - CN 40｜openit.ml
-      - Relay_🇺🇸US-🇺🇸US_1498
-      - CN 52｜openit.ml
-      - US 14｜openit.ml
-      - CN 16｜openit.ml
       - CN 30｜openit.ml
-      - CN 29｜openit.ml
-      - Relay_🇺🇸US-🇺🇸US_1483
-      - CN 26｜openit.ml
-      - CN 37｜openit.ml
-      - CN 41｜openit.ml
-      - CN 34｜openit.ml
-      - CN 51｜openit.ml
-      - CN 27｜openit.ml
-      - CN 36｜openit.ml
-      - CN 12｜openit.ml
-      - CN 35｜openit.ml
-      - CN 14｜openit.ml
-      - CN 50｜openit.ml
-      - CN 52｜openit.ml 2
-      - CN 54｜openit.ml
-      - CN 53｜openit.ml
-      - CN 45｜openit.ml
-      - CN 67｜openit.ml
-      - CN 87｜openit.ml
-      - CN 86｜openit.ml
-      - CN 56｜openit.ml
-      - _US_美国_30_1@57
-      - CN 84｜openit.ml
-      - CN 48｜openit.ml
-      - CN 18｜openit.ml
-      - CN 56｜openit.ml 2
-      - CN 51｜openit.ml 2
-      - CN 62｜openit.ml
-      - JP 1｜openit.ml
-      - CN 42｜openit.ml
-      - CN 88｜openit.ml
-      - CN 38｜openit.ml
-      - AU 2｜openit.ml
-      - CN 46｜openit.ml
-      - CN 4｜openit.ml
-      - CN 59｜openit.ml
-      - CN 2｜openit.ml
-      - CN 84｜openit.ml 2
-      - CN 82｜openit.ml
-      - CN 90｜openit.ml
-      - CN 9｜openit.ml
-      - CN 7｜openit.ml
-      - CN 32｜openit.ml
-      - CN 85｜openit.ml
-      - CN 78｜openit.ml
-      - CN 65｜openit.ml
-      - CN 72｜openit.ml
-      - CN 73｜openit.ml
-      - CN 64｜openit.ml 2
-      - CN 77｜openit.ml
-      - HK 2｜openit.ml
-      - CN 58｜openit.ml
-      - CN 57｜openit.ml
-      - CN 80｜openit.ml
-      - CN 71｜openit.ml
-      - CN 60｜openit.ml
+      - ""
+      - TW 1｜openit.ml
+      - " 2"
       - CN 3｜openit.ml
-      - CN 63｜openit.ml
+      - US_34_14@33
+      - US_40_14@39
+      - US_28_14@27
+      - " 3"
+      - CA 1｜openit.ml
+      - CN 15｜openit.ml
+      - JP 1｜openit.ml
+      - CN 12｜openit.ml
+      - US_37_14@36
+      - NONE
+      - CN 16｜openit.ml
+      - CN 11｜openit.ml
+      - NONE 2
+      - RW 1｜openit.ml
+      - CN 56｜openit.ml
+      - NONE 3
+      - CN 8｜openit.ml
       - CN 10｜openit.ml
-      - CN 23｜openit.ml 2
-      - CN 60｜openit.ml 2
-      - CN 83｜openit.ml 2
-      - CN 74｜openit.ml
-      - TW 2｜openit.ml
-      - CN 43｜openit.ml
-      - _CA_加拿大_0@10
-      - US 25｜openit.ml
-      - US 21｜openit.ml
-      - _GB_英国_2@13
-      - LT_487
-      - CN 28｜openit.ml
-      - _FR_法国_0@11
+      - CN 44｜openit.ml
+      - NONE 4
+      - CN 7｜openit.ml
       - CN 13｜openit.ml
-      - GB_411
+      - CN 6｜openit.ml
+      - CN 5｜openit.ml
+      - CN 14｜openit.ml
+      - " 4"
+      - _US_美国_34_1@67
+      - " 5"
+      - CN 55｜openit.ml
+      - CN 46｜openit.ml
+      - CN 53｜openit.ml
+      - CN 54｜openit.ml
+      - CN 40｜openit.ml
+      - CN 45｜openit.ml
+      - CN 48｜openit.ml
+      - CN 51｜openit.ml
+      - CN 49｜openit.ml
+      - CN 50｜openit.ml
+      - CN 38｜openit.ml
+      - CN 41｜openit.ml
+      - US 26｜openit.ml
+      - US 23｜openit.ml
+      - US 27｜openit.ml
+      - _DE_德国_0@12
+      - CN 59｜openit.ml
+      - US_42_14@41
+      - US 28｜openit.ml
+      - AU 2｜openit.ml
+      - CN 29｜openit.ml
+      - CN 18｜openit.ml
+      - CN 28｜openit.ml
+      - CN 2｜openit.ml
+      - _GB_英国_2@13
+      - US_43_14@42
+      - _FR_法国_0@11
+      - SG 2｜openit.ml
+      - US_44_14@43
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
