@@ -5,207 +5,411 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: IR_2 TG@SCINV, server: de.v2yyds.com, port: 31913, type: trojan, password: 0896373c-7cd9-4221-b50d-9634990d6751, sni: de.v2yyds.com, skip-cert-verify: true, udp: true}
-  - {name: CN_93_18@92, server: 14.29.124.168, port: 25287, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_97_18@96, server: cm.spacez.cloud, port: 30003, type: trojan, password: c9a3a61d-5d49-4158-9e60-6fa32684b122, sni: cm.spacez.cloud, skip-cert-verify: true, udp: true}
-  - {name: TW_3 TG@SCINV, server: tw.suntory.lol, port: 38511, type: trojan, password: 0896373c-7cd9-4221-b50d-9634990d6751, sni: tw.suntory.lol, skip-cert-verify: true, udp: true}
-  - {name: CN_4 TG@SCINV, server: ftp.cn.debian.cdnet.in, port: 8040, type: ss, cipher: aes-128-gcm, password: 18269676-71ae-476d-b6d3-26ca391424b9, udp: true}
-  - {name: IR_3 TG@SCINV, server: de.v2yyds.com, port: 31911, type: trojan, password: 0896373c-7cd9-4221-b50d-9634990d6751, sni: de.v2yyds.com, skip-cert-verify: true, udp: true}
-  - {name: CN_92_18@91, server: 14.29.124.168, port: 25294, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_229, server: 14.29.124.168, port: 25219, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_242, server: 14.29.124.168, port: 25210, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_288, server: 14.29.124.168, port: 25254, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: Relay_🇯🇵JP-🇯🇵JP_533, server: jp-03.licom.ml, port: 8443, type: trojan, password: ce433528-39fa-4711-bc0d-25a5b1579574, sni: jp-03.licom.ml, skip-cert-verify: true, udp: true}
+  - {name: CN_254, server: 14.29.124.168, port: 25272, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_282, server: 14.29.124.168, port: 25256, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_241, server: 14.29.124.168, port: 25231, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_231, server: 14.29.124.168, port: 25252, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_253, server: 14.29.124.168, port: 25233, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_273, server: 14.29.124.168, port: 25287, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_286, server: 14.29.124.168, port: 25270, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_233, server: 14.29.124.168, port: 25271, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_249, server: 14.29.124.168, port: 25280, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_243, server: 14.29.124.168, port: 25207, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_244, server: 14.29.124.168, port: 25283, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_289, server: 14.29.124.168, port: 25220, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_271, server: 14.29.124.168, port: 25295, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_246, server: 14.29.124.168, port: 25266, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_248, server: 14.29.124.168, port: 25261, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_274, server: 14.29.124.168, port: 25289, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_283, server: 14.29.124.168, port: 25245, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_236, server: 14.29.124.168, port: 25296, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_270, server: 14.29.124.168, port: 25230, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_278, server: 14.29.124.168, port: 25267, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_235, server: 14.29.124.168, port: 25286, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_285, server: 14.29.124.168, port: 25217, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_234, server: 14.29.124.168, port: 25247, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_269, server: 14.29.124.168, port: 25241, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _CN_中国->🇰🇷_KR_韩国_0@14, server: ftp.cn.debian.cdnet.in, port: 8040, type: ss, cipher: aes-128-gcm, password: 18269676-71ae-476d-b6d3-26ca391424b9, udp: true}
+  - {name: CN_9 TG@SCINV, server: gzyd1.52147.top, port: 20110, type: trojan, password: fade393a-2ffe-4d02-9492-e22a027dc611, sni: gzyd1.52147.top, skip-cert-verify: true, udp: true}
   - {name: IR_1 TG@SCINV, server: de.v2yyds.com, port: 31912, type: trojan, password: 0896373c-7cd9-4221-b50d-9634990d6751, sni: de.v2yyds.com, skip-cert-verify: true, udp: true}
-  - {name: CN_15 TG@SCINV, server: gzyd1.52147.top, port: 20110, type: trojan, password: fade393a-2ffe-4d02-9492-e22a027dc611, sni: gzyd1.52147.top, skip-cert-verify: true, udp: true}
-  - {name: CN_10 TG@SCINV, server: ftp.cn.debian.cdnet.in, port: 8030, type: ss, cipher: aes-128-gcm, password: 18269676-71ae-476d-b6d3-26ca391424b9, udp: true}
-  - {name: CN_13 TG@SCINV, server: hnyd.52147.top, port: 30130, type: trojan, password: 2778263c-486d-4af8-9ba4-25fc536b5bac, sni: hnyd.52147.top, skip-cert-verify: true, udp: true}
-  - {name: TW_1 TG@SCINV, server: tw.suntory.lol, port: 38513, type: trojan, password: 0896373c-7cd9-4221-b50d-9634990d6751, sni: tw.suntory.lol, skip-cert-verify: true, udp: true}
-  - {name: CN_11 TG@SCINV, server: gzyd1.52147.top, port: 20120, type: trojan, password: fade393a-2ffe-4d02-9492-e22a027dc611, sni: gzyd1.52147.top, skip-cert-verify: true, udp: true}
-  - {name: CN_14 TG@SCINV, server: gzyd1.52147.top, port: 30130, type: trojan, password: 2778263c-486d-4af8-9ba4-25fc536b5bac, sni: gzyd1.52147.top, skip-cert-verify: true, udp: true}
-  - {name: CA_1 TG@SCINV, server: 625us.ok365.cyou, port: 443, type: trojan, password: 1d2a8749-001e-4809-b767-cb04a54bdf7f, sni: 625us.ok365.cyou, skip-cert-verify: true, udp: true}
-  - {name: 美国(油管:破解资源君2.0) 4, server: 152.67.223.187, port: 13774, type: vmess, uuid: 5da35e16-0af7-47cc-ed73-269824ccb1a2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: GB_1 TG@SCINV, server: us-05.licom.ml, port: 12501, type: trojan, password: ce433528-39fa-4711-bc0d-25a5b1579574, sni: us-05.licom.ml, skip-cert-verify: true, udp: true}
-  - {name: US_964_18@963, server: s3.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s3.hazz.win, skip-cert-verify: true, udp: true}
-  - {name: 美国(油管:破解资源君2.0) 11, server: 152.69.206.209, port: 1212, type: vmess, uuid: fb908160-9697-4bfd-f5b7-f1fbc53e60fa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 152.69.206.209}, udp: true}
+  - {name: CN_245, server: 14.29.124.168, port: 25294, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: Relay_🇨🇳CN-🇳🇱NL_301, server: 116.63.103.11, port: 45758, type: vmess, uuid: 311e647a-c835-492a-b685-b159c0c78683, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 116.63.103.11}, udp: true}
+  - {name: CN_279, server: 14.29.124.168, port: 25218, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: TW_4 TG@SCINV, server: hinet.52147.top, port: 28443, type: trojan, password: fade393a-2ffe-4d02-9492-e22a027dc611, sni: hinet.52147.top, skip-cert-verify: true, udp: true}
+  - {name: _CN_中国->🇯🇵_JP_日本_0@1, server: ftp.cn.debian.cdnet.in, port: 8030, type: ss, cipher: aes-128-gcm, password: 18269676-71ae-476d-b6d3-26ca391424b9, udp: true}
+  - {name: _CN_中国->🇹🇼_TW_台湾_0@0, server: ftp.cn.debian.cdnet.in, port: 8020, type: ss, cipher: aes-128-gcm, password: 18269676-71ae-476d-b6d3-26ca391424b9, udp: true}
+  - {name: CN_6 TG@SCINV, server: 103.56.62.145, port: 3381, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_1416, server: us-am32-5.eqnode.net, port: 8081, type: ssr, cipher: aes-256-cfb, password: YFVrXZgRo, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
+  - {name: Relay_🇯🇵JP-🇯🇵JP_515, server: vjp3.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /chat, ws-headers: {Host: vjp3.0bad.com}, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_1499, server: jgwdb2.gaox.ml, port: 443, type: trojan, password: c19d1432-8b3e-4818-8837-3d160cf65908, sni: jgwdb2.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇹🇼TW-🇹🇼TW_896, server: tw.suntory.lol, port: 38513, type: trojan, password: 0896373c-7cd9-4221-b50d-9634990d6751, sni: tw.suntory.lol, skip-cert-verify: true, udp: true}
+  - {name: US_959, server: 172.96.192.58, port: 254, type: ss, cipher: aes-256-cfb, password: bwhskrskr03, udp: true}
+  - {name: CN_5 TG@SCINV, server: 103.56.62.145, port: 3381, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
+  - {name: CN_4 TG@SCINV, server: 103.56.62.145, port: 3381, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_1463, server: s3.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s3.hazz.win, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇨🇳CN-🏁ZZ_326, server: cm.spacez.cloud, port: 30002, type: trojan, password: c9a3a61d-5d49-4158-9e60-6fa32684b122, sni: cm.spacez.cloud, skip-cert-verify: true, udp: true}
+  - {name: Relay_🏁ZZ-🇹🇼TW_1703, server: 134.195.101.32, port: 3389, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
+  - {name: Relay_🏁ZZ-🇹🇼TW_1702, server: 134.195.101.32, port: 3389, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
+  - {name: _CN_中国->🇷🇺_RU_俄罗斯联邦_1_0@6, server: ftp.cn.debian.cdnet.in, port: 8070, type: ss, cipher: aes-128-gcm, password: 18269676-71ae-476d-b6d3-26ca391424b9, udp: true}
+  - {name: Relay_🏁ZZ-🇹🇼TW_1704, server: 134.195.101.32, port: 3389, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
+  - {name: CN_19 TG@SCINV, server: 106.75.233.91, port: 3389, type: trojan, password: 1a1247ea6cb266b4, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_1500, server: fhcamd2.gaox.ml, port: 443, type: trojan, password: dbf9bf9c-2c3f-474a-8031-d4c00666a989, sni: fhcamd2.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: CN_10 TG@SCINV, server: gzyd1.52147.top, port: 20060, type: trojan, password: fade393a-2ffe-4d02-9492-e22a027dc611, sni: gzyd1.52147.top, skip-cert-verify: true, udp: true}
+  - {name: CN_2 TG@SCINV, server: gzyd2.52147.top, port: 20020, type: trojan, password: fade393a-2ffe-4d02-9492-e22a027dc611, sni: gzyd2.52147.top, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇨🇳CN-🇹🇼TW_313, server: cm.spacez.cloud, port: 30003, type: trojan, password: c9a3a61d-5d49-4158-9e60-6fa32684b122, sni: cm.spacez.cloud, skip-cert-verify: true, udp: true}
+  - {name: Relay_-🇺🇸US_33, server: v5.tgfaka.com, port: 48443, type: trojan, password: ec3e47e9-8dd7-4302-aa1a-a5658d34e931, sni: v5.tgfaka.com, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇳🇱NL-🇳🇱NL_707, server: youtube-bai-piao-wang-zhe.nl.884899.cf, port: 41196, type: trojan, password: 94afcc56-cc1c-4cd4-8c82-1215cd052795, sni: youtube-bai-piao-wang-zhe.nl.884899.cf, skip-cert-verify: true, udp: true}
+  - {name: Relay_-🇺🇸US_36, server: v5.tgfaka.com, port: 48443, type: trojan, password: 6f48efb9-3817-4652-832f-fd04d93ebbc1, sni: v5.tgfaka.com, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_1453, server: vus2.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /chat, ws-headers: {Host: vus2.0bad.com}, udp: true}
+  - {name: Relay_🇬🇧GB-🇬🇧GB_468, server: jgwld3.gaox.ml, port: 443, type: trojan, password: 71b55a84-3fac-4458-abff-eaad79219c91, sni: jgwld3.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇨🇳CN-🇹🇼TW_306, server: 106.75.233.91, port: 3389, type: trojan, password: e37c6d7efa845d60, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_1460, server: vus4.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /chat, ws-headers: {Host: vus4.0bad.com}, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_1507, server: usfree1.jiantian.xyz, port: 23425, type: trojan, password: eecb88a3-d8c1-4fc3-bea0-8a4f13aa42be, sni: usfree1.jiantian.xyz, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇦🇺AU-🇦🇺AU_99, server: jgwxn4.gaox.ml, port: 443, type: trojan, password: e8c1ab3c-89b3-4933-92df-682e6dce7819, sni: jgwxn4.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_1505, server: jgwhdlb2.gaox.ml, port: 443, type: trojan, password: 54080134-2cba-4535-8599-95650bd9aa54, sni: jgwhdlb2.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇷🇺RU-🇷🇺RU_828, server: hkbgp1.jiantian.xyz, port: 43567, type: trojan, password: 3fbb3fd9-e1a2-4c91-8380-dc2998d1fa8c, sni: hkbgp1.jiantian.xyz, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_1514, server: usfree1.jiantian.xyz, port: 23425, type: trojan, password: 27e58714-2c0b-4fa4-afb6-b91ec041b1cf, sni: usfree1.jiantian.xyz, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_1502, server: usfree2.jiantian.xyz, port: 32462, type: trojan, password: cb5e2135-4d64-4454-be98-5bae4f2618d1, sni: usfree2.jiantian.xyz, skip-cert-verify: true, udp: true}
   - {name: TW_2 TG@SCINV, server: tw.suntory.lol, port: 38512, type: trojan, password: 0896373c-7cd9-4221-b50d-9634990d6751, sni: tw.suntory.lol, skip-cert-verify: true, udp: true}
-  - {name: 欧洲(油管:破解资源君2.0) 25, server: v001.v2dns.bar, port: 80, type: vmess, uuid: c97cf46e-1554-36cb-8b36-c3556b883dc4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /a11-dCeBnloadPy, ws-headers: {Host: YouTube-aweikeji}, udp: true}
-  - {name: _US_美国_6_16@33, server: vus4.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /chat, ws-headers: {Host: vus4.0bad.com}, udp: true}
-  - {name: 美国(油管:破解资源君2.0) 7, server: 129.159.33.199, port: 45328, type: vmess, uuid: 842c33ff-31b5-410c-a96e-0cb52a99a6da, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 129.159.33.199}, udp: true}
-  - {name: RU_1 TG@SCINV, server: rn.v2yyds.com, port: 31911, type: trojan, password: 0896373c-7cd9-4221-b50d-9634990d6751, sni: rn.v2yyds.com, skip-cert-verify: true, udp: true}
-  - {name: 美国(油管:破解资源君2.0) 6, server: jgwhdlb2.gaox.ml, port: 443, type: trojan, password: 54080134-2cba-4535-8599-95650bd9aa54, sni: jgwhdlb2.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: 美国(油管:破解资源君2.0) 12, server: 152.69.206.209, port: 1212, type: vmess, uuid: fb908160-9697-4bfd-f5b7-f1fbc53e60fa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: YouTube-aweikeji}, udp: true}
-  - {name: CA_2 TG@SCINV, server: 625tw.ok365.cyou, port: 443, type: trojan, password: 1d2a8749-001e-4809-b767-cb04a54bdf7f, sni: 625tw.ok365.cyou, skip-cert-verify: true, udp: true}
-  - {name: _US_美国_2_17@3, server: vus2.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /chat, ws-headers: {Host: vus2.0bad.com}, udp: true}
-  - {name: HK_221_18@220, server: tj-hk01.yiyodns.xyz, port: 443, type: trojan, password: 7dafe71e-2be6-302f-bdfc-e6319a3299bc, sni: tj-hk01.yiyodns.xyz, skip-cert-verify: true, udp: true}
-  - {name: 美国(油管:破解资源君2.0) 2, server: 152.67.218.38, port: 443, type: vmess, uuid: b5e9480a-b7aa-40a4-f9a7-5299b5e363b4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 152.67.218.38}, udp: true}
-  - {name: CN_1 TG@SCINV, server: ftp.cn.debian.cdnet.in, port: 8050, type: ss, cipher: aes-128-gcm, password: 18269676-71ae-476d-b6d3-26ca391424b9, udp: true}
-  - {name: JP_2 TG@SCINV, server: 164.70.68.67, port: 28443, type: trojan, password: fade393a-2ffe-4d02-9492-e22a027dc611, skip-cert-verify: true, udp: true}
-  - {name: US_1 TG@SCINV, server: usfree1.jiantian.xyz, port: 23425, type: trojan, password: 27e58714-2c0b-4fa4-afb6-b91ec041b1cf, sni: usfree1.jiantian.xyz, skip-cert-verify: true, udp: true}
-  - {name: US_960_18@959, server: jgwhdlb1.gaox.ml, port: 443, type: trojan, password: e05c749b-7c6b-41b8-9c71-9dcf685edf4a, sni: jgwhdlb1.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: 欧洲(油管:破解资源君2.0) 24, server: vau1.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /chat, ws-headers: {Host: vau1.0bad.com}, udp: true}
-  - {name: 欧洲(油管:破解资源君2.0) 10, server: 195.133.53.192, port: 43688, type: vmess, uuid: bd1c8b57-0a9e-4e9f-a261-48e90c871e41, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: YouTube-aweikeji}, udp: true}
-  - {name: 美国(油管:破解资源君2.0) 18, server: usfree2.jiantian.xyz, port: 32462, type: trojan, password: cb5e2135-4d64-4454-be98-5bae4f2618d1, sni: usfree2.jiantian.xyz, skip-cert-verify: true, udp: true}
-  - {name: CN_16 TG@SCINV, server: gzyd2.52147.top, port: 20140, type: trojan, password: fade393a-2ffe-4d02-9492-e22a027dc611, sni: gzyd2.52147.top, skip-cert-verify: true, udp: true}
-  - {name: 亚洲(油管:破解资源君2.0) 8, server: ingress-i1.onebox6.org, port: 38701, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: ingress-i1.onebox6.org}, udp: true}
-  - {name: github.com/freefq - 美国CloudFlare公司CDN节点 13, server: api.qiscus.com, port: 443, type: vmess, uuid: 8f9b60e6-1db3-42e4-97b9-1e311f427649, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /vmess-ws-makae, ws-headers: {Host: bn-id01.ipv2ray.xyz}, udp: true}
-  - {name: 亚洲(油管:破解资源君2.0) 6, server: ingress-i1.onebox6.org, port: 38701, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: aweikeji-YouTube}, udp: true}
-  - {name: 美国(油管:破解资源君2.0) 16, server: su4.chaoxn.top, port: 80, type: vmess, uuid: 9e4a7268-4c66-49d9-b6fb-59e33c8c7c59, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: su4.chaoxn.top}, udp: true}
-  - {name: US_968_18@967, server: s2.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s2.hazz.win, skip-cert-verify: true, udp: true}
-  - {name: US_969_18@968, server: tj-us02.yiyodns.xyz, port: 443, type: trojan, password: 7dafe71e-2be6-302f-bdfc-e6319a3299bc, sni: tj-us02.yiyodns.xyz, skip-cert-verify: true, udp: true}
-  - {name: 亚洲(油管:破解资源君2.0) 5, server: ingress-i1.onebox6.org, port: 38201, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: aweikeji-YouTube}, udp: true}
-  - {name: 欧洲(油管:破解资源君2.0) 30, server: ingress-i1.onebox6.org, port: 38201, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: www.ivpnpro.net}, udp: true}
+  - {name: Relay_🇨🇳CN-🇹🇼TW_316, server: 106.75.233.91, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇹🇼TW-🇹🇼TW_900, server: tw.suntory.lol, port: 38511, type: trojan, password: 0896373c-7cd9-4221-b50d-9634990d6751, sni: tw.suntory.lol, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇨🇳CN-🇺🇸US_303, server: 14.119.87.180, port: 45149, type: vmess, uuid: 311e647a-c835-492a-b685-b159c0c78683, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 14.119.87.180}, udp: true}
+  - {name: CN_252, server: 14.29.124.168, port: 25222, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_251, server: 14.29.124.168, port: 25226, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: Relay_🇨🇳CN-🇭🇰HK_302, server: 116.63.103.11, port: 45250, type: vmess, uuid: 311e647a-c835-492a-b685-b159c0c78683, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 116.63.103.11}, udp: true}
+  - {name: CN_230, server: 14.29.124.168, port: 25259, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_232, server: 14.29.124.168, port: 25235, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_247, server: 14.29.124.168, port: 25251, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_238, server: 14.29.124.168, port: 25279, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: Relay_🇷🇺RU-🇷🇺RU_827, server: hkbgp2.jiantian.xyz, port: 63467, type: trojan, password: 3fbb3fd9-e1a2-4c91-8380-dc2998d1fa8c, sni: hkbgp2.jiantian.xyz, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇸🇬SG-🇺🇸US_883, server: s2.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s2.hazz.win, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇩🇪DE-🇩🇪DE_386, server: trojan-ctb-sg01.globalssh.xyz, port: 443, type: trojan, password: !<str> 123456, sni: trojan-ctb-sg01.globalssh.xyz, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_1470, server: jgwhdlb1.gaox.ml, port: 443, type: trojan, password: e05c749b-7c6b-41b8-9c71-9dcf685edf4a, sni: jgwhdlb1.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: _CN_中国->🇷🇺_RU_俄罗斯联邦_2_0@7, server: ftp.cn.debian.cdnet.in, port: 8060, type: ss, cipher: aes-128-gcm, password: 18269676-71ae-476d-b6d3-26ca391424b9, udp: true}
+  - {name: Relay_🇦🇺AU-🇦🇺AU_97, server: vau1.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /chat, ws-headers: {Host: vau1.0bad.com}, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_1431, server: vpnu.loungers.cc, port: 56830, type: vmess, uuid: d2e92a19-f50c-426e-cd15-03ece7f4f3b1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws/x-ui, ws-headers: {Host: vpnu.loungers.cc}, udp: true}
+  - {name: Relay_🇨🇳CN-🇹🇼TW_318, server: 106.75.233.91, port: 3389, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇮🇷IR-🇮🇷IR_493, server: de.v2yyds.com, port: 31911, type: trojan, password: 0896373c-7cd9-4221-b50d-9634990d6751, sni: de.v2yyds.com, skip-cert-verify: true, udp: true}
+  - {name: US_11 TG@SCINV, server: gb.v2yyds.com, port: 32911, type: trojan, password: 0896373c-7cd9-4221-b50d-9634990d6751, sni: gb.v2yyds.com, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_1484, server: gb.v2yyds.com, port: 32913, type: trojan, password: 0896373c-7cd9-4221-b50d-9634990d6751, sni: gb.v2yyds.com, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇩🇪DE-🇺🇸US_380, server: s4.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s4.hazz.win, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇮🇷IR-🇮🇷IR_492, server: de.v2yyds.com, port: 31913, type: trojan, password: 0896373c-7cd9-4221-b50d-9634990d6751, sni: de.v2yyds.com, skip-cert-verify: true, udp: true}
+  - {name: US_6 TG@SCINV, server: gb.v2yyds.com, port: 32912, type: trojan, password: 0896373c-7cd9-4221-b50d-9634990d6751, sni: gb.v2yyds.com, skip-cert-verify: true, udp: true}
+  - {name: _DE_德国_1_13@29, server: 165.22.73.126, port: 23335, type: ss, cipher: aes-256-cfb, password: 7d99ae502227454ea998d71e4b62a388, udp: true}
+  - {name: CN_228, server: 14.29.124.168, port: 25297, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: Relay_🇨🇳CN-🇹🇼TW_310, server: 106.75.233.91, port: 3389, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - IR_2 TG@SCINV
-      - CN_93_18@92
-      - CN_97_18@96
-      - TW_3 TG@SCINV
-      - CN_4 TG@SCINV
-      - IR_3 TG@SCINV
-      - CN_92_18@91
+      - CN_229
+      - CN_242
+      - CN_288
+      - Relay_🇯🇵JP-🇯🇵JP_533
+      - CN_254
+      - CN_282
+      - CN_241
+      - CN_231
+      - CN_253
+      - CN_273
+      - CN_286
+      - CN_233
+      - CN_249
+      - CN_243
+      - CN_244
+      - CN_289
+      - CN_271
+      - CN_246
+      - CN_248
+      - CN_274
+      - CN_283
+      - CN_236
+      - CN_270
+      - CN_278
+      - CN_235
+      - CN_285
+      - CN_234
+      - CN_269
+      - _CN_中国->🇰🇷_KR_韩国_0@14
+      - CN_9 TG@SCINV
       - IR_1 TG@SCINV
-      - CN_15 TG@SCINV
+      - CN_245
+      - Relay_🇨🇳CN-🇳🇱NL_301
+      - CN_279
+      - TW_4 TG@SCINV
+      - _CN_中国->🇯🇵_JP_日本_0@1
+      - _CN_中国->🇹🇼_TW_台湾_0@0
+      - CN_6 TG@SCINV
+      - Relay_🇺🇸US-🇺🇸US_1416
+      - Relay_🇯🇵JP-🇯🇵JP_515
+      - Relay_🇺🇸US-🇺🇸US_1499
+      - Relay_🇹🇼TW-🇹🇼TW_896
+      - US_959
+      - CN_5 TG@SCINV
+      - CN_4 TG@SCINV
+      - Relay_🇺🇸US-🇺🇸US_1463
+      - Relay_🇨🇳CN-🏁ZZ_326
+      - Relay_🏁ZZ-🇹🇼TW_1703
+      - Relay_🏁ZZ-🇹🇼TW_1702
+      - _CN_中国->🇷🇺_RU_俄罗斯联邦_1_0@6
+      - Relay_🏁ZZ-🇹🇼TW_1704
+      - CN_19 TG@SCINV
+      - Relay_🇺🇸US-🇺🇸US_1500
       - CN_10 TG@SCINV
-      - CN_13 TG@SCINV
-      - TW_1 TG@SCINV
-      - CN_11 TG@SCINV
-      - CN_14 TG@SCINV
-      - CA_1 TG@SCINV
-      - 美国(油管:破解资源君2.0) 4
-      - GB_1 TG@SCINV
-      - US_964_18@963
-      - 美国(油管:破解资源君2.0) 11
+      - CN_2 TG@SCINV
+      - Relay_🇨🇳CN-🇹🇼TW_313
+      - Relay_-🇺🇸US_33
+      - Relay_🇳🇱NL-🇳🇱NL_707
+      - Relay_-🇺🇸US_36
+      - Relay_🇺🇸US-🇺🇸US_1453
+      - Relay_🇬🇧GB-🇬🇧GB_468
+      - Relay_🇨🇳CN-🇹🇼TW_306
+      - Relay_🇺🇸US-🇺🇸US_1460
+      - Relay_🇺🇸US-🇺🇸US_1507
+      - Relay_🇦🇺AU-🇦🇺AU_99
+      - Relay_🇺🇸US-🇺🇸US_1505
+      - Relay_🇷🇺RU-🇷🇺RU_828
+      - Relay_🇺🇸US-🇺🇸US_1514
+      - Relay_🇺🇸US-🇺🇸US_1502
       - TW_2 TG@SCINV
-      - 欧洲(油管:破解资源君2.0) 25
-      - _US_美国_6_16@33
-      - 美国(油管:破解资源君2.0) 7
-      - RU_1 TG@SCINV
-      - 美国(油管:破解资源君2.0) 6
-      - 美国(油管:破解资源君2.0) 12
-      - CA_2 TG@SCINV
-      - _US_美国_2_17@3
-      - HK_221_18@220
-      - 美国(油管:破解资源君2.0) 2
-      - CN_1 TG@SCINV
-      - JP_2 TG@SCINV
-      - US_1 TG@SCINV
-      - US_960_18@959
-      - 欧洲(油管:破解资源君2.0) 24
-      - 欧洲(油管:破解资源君2.0) 10
-      - 美国(油管:破解资源君2.0) 18
-      - CN_16 TG@SCINV
-      - 亚洲(油管:破解资源君2.0) 8
-      - github.com/freefq - 美国CloudFlare公司CDN节点 13
-      - 亚洲(油管:破解资源君2.0) 6
-      - 美国(油管:破解资源君2.0) 16
-      - US_968_18@967
-      - US_969_18@968
-      - 亚洲(油管:破解资源君2.0) 5
-      - 欧洲(油管:破解资源君2.0) 30
+      - Relay_🇨🇳CN-🇹🇼TW_316
+      - Relay_🇹🇼TW-🇹🇼TW_900
+      - Relay_🇨🇳CN-🇺🇸US_303
+      - CN_252
+      - CN_251
+      - Relay_🇨🇳CN-🇭🇰HK_302
+      - CN_230
+      - CN_232
+      - CN_247
+      - CN_238
+      - Relay_🇷🇺RU-🇷🇺RU_827
+      - Relay_🇸🇬SG-🇺🇸US_883
+      - Relay_🇩🇪DE-🇩🇪DE_386
+      - Relay_🇺🇸US-🇺🇸US_1470
+      - _CN_中国->🇷🇺_RU_俄罗斯联邦_2_0@7
+      - Relay_🇦🇺AU-🇦🇺AU_97
+      - Relay_🇺🇸US-🇺🇸US_1431
+      - Relay_🇨🇳CN-🇹🇼TW_318
+      - Relay_🇮🇷IR-🇮🇷IR_493
+      - US_11 TG@SCINV
+      - Relay_🇺🇸US-🇺🇸US_1484
+      - Relay_🇩🇪DE-🇺🇸US_380
+      - Relay_🇮🇷IR-🇮🇷IR_492
+      - US_6 TG@SCINV
+      - _DE_德国_1_13@29
+      - CN_228
+      - Relay_🇨🇳CN-🇹🇼TW_310
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - IR_2 TG@SCINV
-      - CN_93_18@92
-      - CN_97_18@96
-      - TW_3 TG@SCINV
-      - CN_4 TG@SCINV
-      - IR_3 TG@SCINV
-      - CN_92_18@91
+      - CN_229
+      - CN_242
+      - CN_288
+      - Relay_🇯🇵JP-🇯🇵JP_533
+      - CN_254
+      - CN_282
+      - CN_241
+      - CN_231
+      - CN_253
+      - CN_273
+      - CN_286
+      - CN_233
+      - CN_249
+      - CN_243
+      - CN_244
+      - CN_289
+      - CN_271
+      - CN_246
+      - CN_248
+      - CN_274
+      - CN_283
+      - CN_236
+      - CN_270
+      - CN_278
+      - CN_235
+      - CN_285
+      - CN_234
+      - CN_269
+      - _CN_中国->🇰🇷_KR_韩国_0@14
+      - CN_9 TG@SCINV
       - IR_1 TG@SCINV
-      - CN_15 TG@SCINV
+      - CN_245
+      - Relay_🇨🇳CN-🇳🇱NL_301
+      - CN_279
+      - TW_4 TG@SCINV
+      - _CN_中国->🇯🇵_JP_日本_0@1
+      - _CN_中国->🇹🇼_TW_台湾_0@0
+      - CN_6 TG@SCINV
+      - Relay_🇺🇸US-🇺🇸US_1416
+      - Relay_🇯🇵JP-🇯🇵JP_515
+      - Relay_🇺🇸US-🇺🇸US_1499
+      - Relay_🇹🇼TW-🇹🇼TW_896
+      - US_959
+      - CN_5 TG@SCINV
+      - CN_4 TG@SCINV
+      - Relay_🇺🇸US-🇺🇸US_1463
+      - Relay_🇨🇳CN-🏁ZZ_326
+      - Relay_🏁ZZ-🇹🇼TW_1703
+      - Relay_🏁ZZ-🇹🇼TW_1702
+      - _CN_中国->🇷🇺_RU_俄罗斯联邦_1_0@6
+      - Relay_🏁ZZ-🇹🇼TW_1704
+      - CN_19 TG@SCINV
+      - Relay_🇺🇸US-🇺🇸US_1500
       - CN_10 TG@SCINV
-      - CN_13 TG@SCINV
-      - TW_1 TG@SCINV
-      - CN_11 TG@SCINV
-      - CN_14 TG@SCINV
-      - CA_1 TG@SCINV
-      - 美国(油管:破解资源君2.0) 4
-      - GB_1 TG@SCINV
-      - US_964_18@963
-      - 美国(油管:破解资源君2.0) 11
+      - CN_2 TG@SCINV
+      - Relay_🇨🇳CN-🇹🇼TW_313
+      - Relay_-🇺🇸US_33
+      - Relay_🇳🇱NL-🇳🇱NL_707
+      - Relay_-🇺🇸US_36
+      - Relay_🇺🇸US-🇺🇸US_1453
+      - Relay_🇬🇧GB-🇬🇧GB_468
+      - Relay_🇨🇳CN-🇹🇼TW_306
+      - Relay_🇺🇸US-🇺🇸US_1460
+      - Relay_🇺🇸US-🇺🇸US_1507
+      - Relay_🇦🇺AU-🇦🇺AU_99
+      - Relay_🇺🇸US-🇺🇸US_1505
+      - Relay_🇷🇺RU-🇷🇺RU_828
+      - Relay_🇺🇸US-🇺🇸US_1514
+      - Relay_🇺🇸US-🇺🇸US_1502
       - TW_2 TG@SCINV
-      - 欧洲(油管:破解资源君2.0) 25
-      - _US_美国_6_16@33
-      - 美国(油管:破解资源君2.0) 7
-      - RU_1 TG@SCINV
-      - 美国(油管:破解资源君2.0) 6
-      - 美国(油管:破解资源君2.0) 12
-      - CA_2 TG@SCINV
-      - _US_美国_2_17@3
-      - HK_221_18@220
-      - 美国(油管:破解资源君2.0) 2
-      - CN_1 TG@SCINV
-      - JP_2 TG@SCINV
-      - US_1 TG@SCINV
-      - US_960_18@959
-      - 欧洲(油管:破解资源君2.0) 24
-      - 欧洲(油管:破解资源君2.0) 10
-      - 美国(油管:破解资源君2.0) 18
-      - CN_16 TG@SCINV
-      - 亚洲(油管:破解资源君2.0) 8
-      - github.com/freefq - 美国CloudFlare公司CDN节点 13
-      - 亚洲(油管:破解资源君2.0) 6
-      - 美国(油管:破解资源君2.0) 16
-      - US_968_18@967
-      - US_969_18@968
-      - 亚洲(油管:破解资源君2.0) 5
-      - 欧洲(油管:破解资源君2.0) 30
+      - Relay_🇨🇳CN-🇹🇼TW_316
+      - Relay_🇹🇼TW-🇹🇼TW_900
+      - Relay_🇨🇳CN-🇺🇸US_303
+      - CN_252
+      - CN_251
+      - Relay_🇨🇳CN-🇭🇰HK_302
+      - CN_230
+      - CN_232
+      - CN_247
+      - CN_238
+      - Relay_🇷🇺RU-🇷🇺RU_827
+      - Relay_🇸🇬SG-🇺🇸US_883
+      - Relay_🇩🇪DE-🇩🇪DE_386
+      - Relay_🇺🇸US-🇺🇸US_1470
+      - _CN_中国->🇷🇺_RU_俄罗斯联邦_2_0@7
+      - Relay_🇦🇺AU-🇦🇺AU_97
+      - Relay_🇺🇸US-🇺🇸US_1431
+      - Relay_🇨🇳CN-🇹🇼TW_318
+      - Relay_🇮🇷IR-🇮🇷IR_493
+      - US_11 TG@SCINV
+      - Relay_🇺🇸US-🇺🇸US_1484
+      - Relay_🇩🇪DE-🇺🇸US_380
+      - Relay_🇮🇷IR-🇮🇷IR_492
+      - US_6 TG@SCINV
+      - _DE_德国_1_13@29
+      - CN_228
+      - Relay_🇨🇳CN-🇹🇼TW_310
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - IR_2 TG@SCINV
-      - CN_93_18@92
-      - CN_97_18@96
-      - TW_3 TG@SCINV
-      - CN_4 TG@SCINV
-      - IR_3 TG@SCINV
-      - CN_92_18@91
+      - CN_229
+      - CN_242
+      - CN_288
+      - Relay_🇯🇵JP-🇯🇵JP_533
+      - CN_254
+      - CN_282
+      - CN_241
+      - CN_231
+      - CN_253
+      - CN_273
+      - CN_286
+      - CN_233
+      - CN_249
+      - CN_243
+      - CN_244
+      - CN_289
+      - CN_271
+      - CN_246
+      - CN_248
+      - CN_274
+      - CN_283
+      - CN_236
+      - CN_270
+      - CN_278
+      - CN_235
+      - CN_285
+      - CN_234
+      - CN_269
+      - _CN_中国->🇰🇷_KR_韩国_0@14
+      - CN_9 TG@SCINV
       - IR_1 TG@SCINV
-      - CN_15 TG@SCINV
+      - CN_245
+      - Relay_🇨🇳CN-🇳🇱NL_301
+      - CN_279
+      - TW_4 TG@SCINV
+      - _CN_中国->🇯🇵_JP_日本_0@1
+      - _CN_中国->🇹🇼_TW_台湾_0@0
+      - CN_6 TG@SCINV
+      - Relay_🇺🇸US-🇺🇸US_1416
+      - Relay_🇯🇵JP-🇯🇵JP_515
+      - Relay_🇺🇸US-🇺🇸US_1499
+      - Relay_🇹🇼TW-🇹🇼TW_896
+      - US_959
+      - CN_5 TG@SCINV
+      - CN_4 TG@SCINV
+      - Relay_🇺🇸US-🇺🇸US_1463
+      - Relay_🇨🇳CN-🏁ZZ_326
+      - Relay_🏁ZZ-🇹🇼TW_1703
+      - Relay_🏁ZZ-🇹🇼TW_1702
+      - _CN_中国->🇷🇺_RU_俄罗斯联邦_1_0@6
+      - Relay_🏁ZZ-🇹🇼TW_1704
+      - CN_19 TG@SCINV
+      - Relay_🇺🇸US-🇺🇸US_1500
       - CN_10 TG@SCINV
-      - CN_13 TG@SCINV
-      - TW_1 TG@SCINV
-      - CN_11 TG@SCINV
-      - CN_14 TG@SCINV
-      - CA_1 TG@SCINV
-      - 美国(油管:破解资源君2.0) 4
-      - GB_1 TG@SCINV
-      - US_964_18@963
-      - 美国(油管:破解资源君2.0) 11
+      - CN_2 TG@SCINV
+      - Relay_🇨🇳CN-🇹🇼TW_313
+      - Relay_-🇺🇸US_33
+      - Relay_🇳🇱NL-🇳🇱NL_707
+      - Relay_-🇺🇸US_36
+      - Relay_🇺🇸US-🇺🇸US_1453
+      - Relay_🇬🇧GB-🇬🇧GB_468
+      - Relay_🇨🇳CN-🇹🇼TW_306
+      - Relay_🇺🇸US-🇺🇸US_1460
+      - Relay_🇺🇸US-🇺🇸US_1507
+      - Relay_🇦🇺AU-🇦🇺AU_99
+      - Relay_🇺🇸US-🇺🇸US_1505
+      - Relay_🇷🇺RU-🇷🇺RU_828
+      - Relay_🇺🇸US-🇺🇸US_1514
+      - Relay_🇺🇸US-🇺🇸US_1502
       - TW_2 TG@SCINV
-      - 欧洲(油管:破解资源君2.0) 25
-      - _US_美国_6_16@33
-      - 美国(油管:破解资源君2.0) 7
-      - RU_1 TG@SCINV
-      - 美国(油管:破解资源君2.0) 6
-      - 美国(油管:破解资源君2.0) 12
-      - CA_2 TG@SCINV
-      - _US_美国_2_17@3
-      - HK_221_18@220
-      - 美国(油管:破解资源君2.0) 2
-      - CN_1 TG@SCINV
-      - JP_2 TG@SCINV
-      - US_1 TG@SCINV
-      - US_960_18@959
-      - 欧洲(油管:破解资源君2.0) 24
-      - 欧洲(油管:破解资源君2.0) 10
-      - 美国(油管:破解资源君2.0) 18
-      - CN_16 TG@SCINV
-      - 亚洲(油管:破解资源君2.0) 8
-      - github.com/freefq - 美国CloudFlare公司CDN节点 13
-      - 亚洲(油管:破解资源君2.0) 6
-      - 美国(油管:破解资源君2.0) 16
-      - US_968_18@967
-      - US_969_18@968
-      - 亚洲(油管:破解资源君2.0) 5
-      - 欧洲(油管:破解资源君2.0) 30
+      - Relay_🇨🇳CN-🇹🇼TW_316
+      - Relay_🇹🇼TW-🇹🇼TW_900
+      - Relay_🇨🇳CN-🇺🇸US_303
+      - CN_252
+      - CN_251
+      - Relay_🇨🇳CN-🇭🇰HK_302
+      - CN_230
+      - CN_232
+      - CN_247
+      - CN_238
+      - Relay_🇷🇺RU-🇷🇺RU_827
+      - Relay_🇸🇬SG-🇺🇸US_883
+      - Relay_🇩🇪DE-🇩🇪DE_386
+      - Relay_🇺🇸US-🇺🇸US_1470
+      - _CN_中国->🇷🇺_RU_俄罗斯联邦_2_0@7
+      - Relay_🇦🇺AU-🇦🇺AU_97
+      - Relay_🇺🇸US-🇺🇸US_1431
+      - Relay_🇨🇳CN-🇹🇼TW_318
+      - Relay_🇮🇷IR-🇮🇷IR_493
+      - US_11 TG@SCINV
+      - Relay_🇺🇸US-🇺🇸US_1484
+      - Relay_🇩🇪DE-🇺🇸US_380
+      - Relay_🇮🇷IR-🇮🇷IR_492
+      - US_6 TG@SCINV
+      - _DE_德国_1_13@29
+      - CN_228
+      - Relay_🇨🇳CN-🇹🇼TW_310
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -224,211 +428,416 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - IR_2 TG@SCINV
-      - CN_93_18@92
-      - CN_97_18@96
-      - TW_3 TG@SCINV
-      - CN_4 TG@SCINV
-      - IR_3 TG@SCINV
-      - CN_92_18@91
+      - CN_229
+      - CN_242
+      - CN_288
+      - Relay_🇯🇵JP-🇯🇵JP_533
+      - CN_254
+      - CN_282
+      - CN_241
+      - CN_231
+      - CN_253
+      - CN_273
+      - CN_286
+      - CN_233
+      - CN_249
+      - CN_243
+      - CN_244
+      - CN_289
+      - CN_271
+      - CN_246
+      - CN_248
+      - CN_274
+      - CN_283
+      - CN_236
+      - CN_270
+      - CN_278
+      - CN_235
+      - CN_285
+      - CN_234
+      - CN_269
+      - _CN_中国->🇰🇷_KR_韩国_0@14
+      - CN_9 TG@SCINV
       - IR_1 TG@SCINV
-      - CN_15 TG@SCINV
+      - CN_245
+      - Relay_🇨🇳CN-🇳🇱NL_301
+      - CN_279
+      - TW_4 TG@SCINV
+      - _CN_中国->🇯🇵_JP_日本_0@1
+      - _CN_中国->🇹🇼_TW_台湾_0@0
+      - CN_6 TG@SCINV
+      - Relay_🇺🇸US-🇺🇸US_1416
+      - Relay_🇯🇵JP-🇯🇵JP_515
+      - Relay_🇺🇸US-🇺🇸US_1499
+      - Relay_🇹🇼TW-🇹🇼TW_896
+      - US_959
+      - CN_5 TG@SCINV
+      - CN_4 TG@SCINV
+      - Relay_🇺🇸US-🇺🇸US_1463
+      - Relay_🇨🇳CN-🏁ZZ_326
+      - Relay_🏁ZZ-🇹🇼TW_1703
+      - Relay_🏁ZZ-🇹🇼TW_1702
+      - _CN_中国->🇷🇺_RU_俄罗斯联邦_1_0@6
+      - Relay_🏁ZZ-🇹🇼TW_1704
+      - CN_19 TG@SCINV
+      - Relay_🇺🇸US-🇺🇸US_1500
       - CN_10 TG@SCINV
-      - CN_13 TG@SCINV
-      - TW_1 TG@SCINV
-      - CN_11 TG@SCINV
-      - CN_14 TG@SCINV
-      - CA_1 TG@SCINV
-      - 美国(油管:破解资源君2.0) 4
-      - GB_1 TG@SCINV
-      - US_964_18@963
-      - 美国(油管:破解资源君2.0) 11
+      - CN_2 TG@SCINV
+      - Relay_🇨🇳CN-🇹🇼TW_313
+      - Relay_-🇺🇸US_33
+      - Relay_🇳🇱NL-🇳🇱NL_707
+      - Relay_-🇺🇸US_36
+      - Relay_🇺🇸US-🇺🇸US_1453
+      - Relay_🇬🇧GB-🇬🇧GB_468
+      - Relay_🇨🇳CN-🇹🇼TW_306
+      - Relay_🇺🇸US-🇺🇸US_1460
+      - Relay_🇺🇸US-🇺🇸US_1507
+      - Relay_🇦🇺AU-🇦🇺AU_99
+      - Relay_🇺🇸US-🇺🇸US_1505
+      - Relay_🇷🇺RU-🇷🇺RU_828
+      - Relay_🇺🇸US-🇺🇸US_1514
+      - Relay_🇺🇸US-🇺🇸US_1502
       - TW_2 TG@SCINV
-      - 欧洲(油管:破解资源君2.0) 25
-      - _US_美国_6_16@33
-      - 美国(油管:破解资源君2.0) 7
-      - RU_1 TG@SCINV
-      - 美国(油管:破解资源君2.0) 6
-      - 美国(油管:破解资源君2.0) 12
-      - CA_2 TG@SCINV
-      - _US_美国_2_17@3
-      - HK_221_18@220
-      - 美国(油管:破解资源君2.0) 2
-      - CN_1 TG@SCINV
-      - JP_2 TG@SCINV
-      - US_1 TG@SCINV
-      - US_960_18@959
-      - 欧洲(油管:破解资源君2.0) 24
-      - 欧洲(油管:破解资源君2.0) 10
-      - 美国(油管:破解资源君2.0) 18
-      - CN_16 TG@SCINV
-      - 亚洲(油管:破解资源君2.0) 8
-      - github.com/freefq - 美国CloudFlare公司CDN节点 13
-      - 亚洲(油管:破解资源君2.0) 6
-      - 美国(油管:破解资源君2.0) 16
-      - US_968_18@967
-      - US_969_18@968
-      - 亚洲(油管:破解资源君2.0) 5
-      - 欧洲(油管:破解资源君2.0) 30
+      - Relay_🇨🇳CN-🇹🇼TW_316
+      - Relay_🇹🇼TW-🇹🇼TW_900
+      - Relay_🇨🇳CN-🇺🇸US_303
+      - CN_252
+      - CN_251
+      - Relay_🇨🇳CN-🇭🇰HK_302
+      - CN_230
+      - CN_232
+      - CN_247
+      - CN_238
+      - Relay_🇷🇺RU-🇷🇺RU_827
+      - Relay_🇸🇬SG-🇺🇸US_883
+      - Relay_🇩🇪DE-🇩🇪DE_386
+      - Relay_🇺🇸US-🇺🇸US_1470
+      - _CN_中国->🇷🇺_RU_俄罗斯联邦_2_0@7
+      - Relay_🇦🇺AU-🇦🇺AU_97
+      - Relay_🇺🇸US-🇺🇸US_1431
+      - Relay_🇨🇳CN-🇹🇼TW_318
+      - Relay_🇮🇷IR-🇮🇷IR_493
+      - US_11 TG@SCINV
+      - Relay_🇺🇸US-🇺🇸US_1484
+      - Relay_🇩🇪DE-🇺🇸US_380
+      - Relay_🇮🇷IR-🇮🇷IR_492
+      - US_6 TG@SCINV
+      - _DE_德国_1_13@29
+      - CN_228
+      - Relay_🇨🇳CN-🇹🇼TW_310
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - _CN_中国->🇹🇼_TW_台湾_0@0
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - IR_2 TG@SCINV
-      - CN_93_18@92
-      - CN_97_18@96
-      - TW_3 TG@SCINV
-      - CN_4 TG@SCINV
-      - IR_3 TG@SCINV
-      - CN_92_18@91
+      - CN_229
+      - CN_242
+      - CN_288
+      - Relay_🇯🇵JP-🇯🇵JP_533
+      - CN_254
+      - CN_282
+      - CN_241
+      - CN_231
+      - CN_253
+      - CN_273
+      - CN_286
+      - CN_233
+      - CN_249
+      - CN_243
+      - CN_244
+      - CN_289
+      - CN_271
+      - CN_246
+      - CN_248
+      - CN_274
+      - CN_283
+      - CN_236
+      - CN_270
+      - CN_278
+      - CN_235
+      - CN_285
+      - CN_234
+      - CN_269
+      - _CN_中国->🇰🇷_KR_韩国_0@14
+      - CN_9 TG@SCINV
       - IR_1 TG@SCINV
-      - CN_15 TG@SCINV
+      - CN_245
+      - Relay_🇨🇳CN-🇳🇱NL_301
+      - CN_279
+      - TW_4 TG@SCINV
+      - _CN_中国->🇯🇵_JP_日本_0@1
+      - _CN_中国->🇹🇼_TW_台湾_0@0
+      - CN_6 TG@SCINV
+      - Relay_🇺🇸US-🇺🇸US_1416
+      - Relay_🇯🇵JP-🇯🇵JP_515
+      - Relay_🇺🇸US-🇺🇸US_1499
+      - Relay_🇹🇼TW-🇹🇼TW_896
+      - US_959
+      - CN_5 TG@SCINV
+      - CN_4 TG@SCINV
+      - Relay_🇺🇸US-🇺🇸US_1463
+      - Relay_🇨🇳CN-🏁ZZ_326
+      - Relay_🏁ZZ-🇹🇼TW_1703
+      - Relay_🏁ZZ-🇹🇼TW_1702
+      - _CN_中国->🇷🇺_RU_俄罗斯联邦_1_0@6
+      - Relay_🏁ZZ-🇹🇼TW_1704
+      - CN_19 TG@SCINV
+      - Relay_🇺🇸US-🇺🇸US_1500
       - CN_10 TG@SCINV
-      - CN_13 TG@SCINV
-      - TW_1 TG@SCINV
-      - CN_11 TG@SCINV
-      - CN_14 TG@SCINV
-      - CA_1 TG@SCINV
-      - 美国(油管:破解资源君2.0) 4
-      - GB_1 TG@SCINV
-      - US_964_18@963
-      - 美国(油管:破解资源君2.0) 11
+      - CN_2 TG@SCINV
+      - Relay_🇨🇳CN-🇹🇼TW_313
+      - Relay_-🇺🇸US_33
+      - Relay_🇳🇱NL-🇳🇱NL_707
+      - Relay_-🇺🇸US_36
+      - Relay_🇺🇸US-🇺🇸US_1453
+      - Relay_🇬🇧GB-🇬🇧GB_468
+      - Relay_🇨🇳CN-🇹🇼TW_306
+      - Relay_🇺🇸US-🇺🇸US_1460
+      - Relay_🇺🇸US-🇺🇸US_1507
+      - Relay_🇦🇺AU-🇦🇺AU_99
+      - Relay_🇺🇸US-🇺🇸US_1505
+      - Relay_🇷🇺RU-🇷🇺RU_828
+      - Relay_🇺🇸US-🇺🇸US_1514
+      - Relay_🇺🇸US-🇺🇸US_1502
       - TW_2 TG@SCINV
-      - 欧洲(油管:破解资源君2.0) 25
-      - _US_美国_6_16@33
-      - 美国(油管:破解资源君2.0) 7
-      - RU_1 TG@SCINV
-      - 美国(油管:破解资源君2.0) 6
-      - 美国(油管:破解资源君2.0) 12
-      - CA_2 TG@SCINV
-      - _US_美国_2_17@3
-      - HK_221_18@220
-      - 美国(油管:破解资源君2.0) 2
-      - CN_1 TG@SCINV
-      - JP_2 TG@SCINV
-      - US_1 TG@SCINV
-      - US_960_18@959
-      - 欧洲(油管:破解资源君2.0) 24
-      - 欧洲(油管:破解资源君2.0) 10
-      - 美国(油管:破解资源君2.0) 18
-      - CN_16 TG@SCINV
-      - 亚洲(油管:破解资源君2.0) 8
-      - github.com/freefq - 美国CloudFlare公司CDN节点 13
-      - 亚洲(油管:破解资源君2.0) 6
-      - 美国(油管:破解资源君2.0) 16
-      - US_968_18@967
-      - US_969_18@968
-      - 亚洲(油管:破解资源君2.0) 5
-      - 欧洲(油管:破解资源君2.0) 30
+      - Relay_🇨🇳CN-🇹🇼TW_316
+      - Relay_🇹🇼TW-🇹🇼TW_900
+      - Relay_🇨🇳CN-🇺🇸US_303
+      - CN_252
+      - CN_251
+      - Relay_🇨🇳CN-🇭🇰HK_302
+      - CN_230
+      - CN_232
+      - CN_247
+      - CN_238
+      - Relay_🇷🇺RU-🇷🇺RU_827
+      - Relay_🇸🇬SG-🇺🇸US_883
+      - Relay_🇩🇪DE-🇩🇪DE_386
+      - Relay_🇺🇸US-🇺🇸US_1470
+      - _CN_中国->🇷🇺_RU_俄罗斯联邦_2_0@7
+      - Relay_🇦🇺AU-🇦🇺AU_97
+      - Relay_🇺🇸US-🇺🇸US_1431
+      - Relay_🇨🇳CN-🇹🇼TW_318
+      - Relay_🇮🇷IR-🇮🇷IR_493
+      - US_11 TG@SCINV
+      - Relay_🇺🇸US-🇺🇸US_1484
+      - Relay_🇩🇪DE-🇺🇸US_380
+      - Relay_🇮🇷IR-🇮🇷IR_492
+      - US_6 TG@SCINV
+      - _DE_德国_1_13@29
+      - CN_228
+      - Relay_🇨🇳CN-🇹🇼TW_310
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - IR_2 TG@SCINV
-      - CN_93_18@92
-      - CN_97_18@96
-      - TW_3 TG@SCINV
-      - CN_4 TG@SCINV
-      - IR_3 TG@SCINV
-      - CN_92_18@91
+      - CN_229
+      - CN_242
+      - CN_288
+      - Relay_🇯🇵JP-🇯🇵JP_533
+      - CN_254
+      - CN_282
+      - CN_241
+      - CN_231
+      - CN_253
+      - CN_273
+      - CN_286
+      - CN_233
+      - CN_249
+      - CN_243
+      - CN_244
+      - CN_289
+      - CN_271
+      - CN_246
+      - CN_248
+      - CN_274
+      - CN_283
+      - CN_236
+      - CN_270
+      - CN_278
+      - CN_235
+      - CN_285
+      - CN_234
+      - CN_269
+      - _CN_中国->🇰🇷_KR_韩国_0@14
+      - CN_9 TG@SCINV
       - IR_1 TG@SCINV
-      - CN_15 TG@SCINV
+      - CN_245
+      - Relay_🇨🇳CN-🇳🇱NL_301
+      - CN_279
+      - TW_4 TG@SCINV
+      - _CN_中国->🇯🇵_JP_日本_0@1
+      - _CN_中国->🇹🇼_TW_台湾_0@0
+      - CN_6 TG@SCINV
+      - Relay_🇺🇸US-🇺🇸US_1416
+      - Relay_🇯🇵JP-🇯🇵JP_515
+      - Relay_🇺🇸US-🇺🇸US_1499
+      - Relay_🇹🇼TW-🇹🇼TW_896
+      - US_959
+      - CN_5 TG@SCINV
+      - CN_4 TG@SCINV
+      - Relay_🇺🇸US-🇺🇸US_1463
+      - Relay_🇨🇳CN-🏁ZZ_326
+      - Relay_🏁ZZ-🇹🇼TW_1703
+      - Relay_🏁ZZ-🇹🇼TW_1702
+      - _CN_中国->🇷🇺_RU_俄罗斯联邦_1_0@6
+      - Relay_🏁ZZ-🇹🇼TW_1704
+      - CN_19 TG@SCINV
+      - Relay_🇺🇸US-🇺🇸US_1500
       - CN_10 TG@SCINV
-      - CN_13 TG@SCINV
-      - TW_1 TG@SCINV
-      - CN_11 TG@SCINV
-      - CN_14 TG@SCINV
-      - CA_1 TG@SCINV
-      - 美国(油管:破解资源君2.0) 4
-      - GB_1 TG@SCINV
-      - US_964_18@963
-      - 美国(油管:破解资源君2.0) 11
+      - CN_2 TG@SCINV
+      - Relay_🇨🇳CN-🇹🇼TW_313
+      - Relay_-🇺🇸US_33
+      - Relay_🇳🇱NL-🇳🇱NL_707
+      - Relay_-🇺🇸US_36
+      - Relay_🇺🇸US-🇺🇸US_1453
+      - Relay_🇬🇧GB-🇬🇧GB_468
+      - Relay_🇨🇳CN-🇹🇼TW_306
+      - Relay_🇺🇸US-🇺🇸US_1460
+      - Relay_🇺🇸US-🇺🇸US_1507
+      - Relay_🇦🇺AU-🇦🇺AU_99
+      - Relay_🇺🇸US-🇺🇸US_1505
+      - Relay_🇷🇺RU-🇷🇺RU_828
+      - Relay_🇺🇸US-🇺🇸US_1514
+      - Relay_🇺🇸US-🇺🇸US_1502
       - TW_2 TG@SCINV
-      - 欧洲(油管:破解资源君2.0) 25
-      - _US_美国_6_16@33
-      - 美国(油管:破解资源君2.0) 7
-      - RU_1 TG@SCINV
-      - 美国(油管:破解资源君2.0) 6
-      - 美国(油管:破解资源君2.0) 12
-      - CA_2 TG@SCINV
-      - _US_美国_2_17@3
-      - HK_221_18@220
-      - 美国(油管:破解资源君2.0) 2
-      - CN_1 TG@SCINV
-      - JP_2 TG@SCINV
-      - US_1 TG@SCINV
-      - US_960_18@959
-      - 欧洲(油管:破解资源君2.0) 24
-      - 欧洲(油管:破解资源君2.0) 10
-      - 美国(油管:破解资源君2.0) 18
-      - CN_16 TG@SCINV
-      - 亚洲(油管:破解资源君2.0) 8
-      - github.com/freefq - 美国CloudFlare公司CDN节点 13
-      - 亚洲(油管:破解资源君2.0) 6
-      - 美国(油管:破解资源君2.0) 16
-      - US_968_18@967
-      - US_969_18@968
-      - 亚洲(油管:破解资源君2.0) 5
-      - 欧洲(油管:破解资源君2.0) 30
+      - Relay_🇨🇳CN-🇹🇼TW_316
+      - Relay_🇹🇼TW-🇹🇼TW_900
+      - Relay_🇨🇳CN-🇺🇸US_303
+      - CN_252
+      - CN_251
+      - Relay_🇨🇳CN-🇭🇰HK_302
+      - CN_230
+      - CN_232
+      - CN_247
+      - CN_238
+      - Relay_🇷🇺RU-🇷🇺RU_827
+      - Relay_🇸🇬SG-🇺🇸US_883
+      - Relay_🇩🇪DE-🇩🇪DE_386
+      - Relay_🇺🇸US-🇺🇸US_1470
+      - _CN_中国->🇷🇺_RU_俄罗斯联邦_2_0@7
+      - Relay_🇦🇺AU-🇦🇺AU_97
+      - Relay_🇺🇸US-🇺🇸US_1431
+      - Relay_🇨🇳CN-🇹🇼TW_318
+      - Relay_🇮🇷IR-🇮🇷IR_493
+      - US_11 TG@SCINV
+      - Relay_🇺🇸US-🇺🇸US_1484
+      - Relay_🇩🇪DE-🇺🇸US_380
+      - Relay_🇮🇷IR-🇮🇷IR_492
+      - US_6 TG@SCINV
+      - _DE_德国_1_13@29
+      - CN_228
+      - Relay_🇨🇳CN-🇹🇼TW_310
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - IR_2 TG@SCINV
-      - CN_93_18@92
-      - CN_97_18@96
-      - TW_3 TG@SCINV
-      - CN_4 TG@SCINV
-      - IR_3 TG@SCINV
-      - CN_92_18@91
+      - CN_229
+      - CN_242
+      - CN_288
+      - Relay_🇯🇵JP-🇯🇵JP_533
+      - CN_254
+      - CN_282
+      - CN_241
+      - CN_231
+      - CN_253
+      - CN_273
+      - CN_286
+      - CN_233
+      - CN_249
+      - CN_243
+      - CN_244
+      - CN_289
+      - CN_271
+      - CN_246
+      - CN_248
+      - CN_274
+      - CN_283
+      - CN_236
+      - CN_270
+      - CN_278
+      - CN_235
+      - CN_285
+      - CN_234
+      - CN_269
+      - _CN_中国->🇰🇷_KR_韩国_0@14
+      - CN_9 TG@SCINV
       - IR_1 TG@SCINV
-      - CN_15 TG@SCINV
+      - CN_245
+      - Relay_🇨🇳CN-🇳🇱NL_301
+      - CN_279
+      - TW_4 TG@SCINV
+      - _CN_中国->🇯🇵_JP_日本_0@1
+      - _CN_中国->🇹🇼_TW_台湾_0@0
+      - CN_6 TG@SCINV
+      - Relay_🇺🇸US-🇺🇸US_1416
+      - Relay_🇯🇵JP-🇯🇵JP_515
+      - Relay_🇺🇸US-🇺🇸US_1499
+      - Relay_🇹🇼TW-🇹🇼TW_896
+      - US_959
+      - CN_5 TG@SCINV
+      - CN_4 TG@SCINV
+      - Relay_🇺🇸US-🇺🇸US_1463
+      - Relay_🇨🇳CN-🏁ZZ_326
+      - Relay_🏁ZZ-🇹🇼TW_1703
+      - Relay_🏁ZZ-🇹🇼TW_1702
+      - _CN_中国->🇷🇺_RU_俄罗斯联邦_1_0@6
+      - Relay_🏁ZZ-🇹🇼TW_1704
+      - CN_19 TG@SCINV
+      - Relay_🇺🇸US-🇺🇸US_1500
       - CN_10 TG@SCINV
-      - CN_13 TG@SCINV
-      - TW_1 TG@SCINV
-      - CN_11 TG@SCINV
-      - CN_14 TG@SCINV
-      - CA_1 TG@SCINV
-      - 美国(油管:破解资源君2.0) 4
-      - GB_1 TG@SCINV
-      - US_964_18@963
-      - 美国(油管:破解资源君2.0) 11
+      - CN_2 TG@SCINV
+      - Relay_🇨🇳CN-🇹🇼TW_313
+      - Relay_-🇺🇸US_33
+      - Relay_🇳🇱NL-🇳🇱NL_707
+      - Relay_-🇺🇸US_36
+      - Relay_🇺🇸US-🇺🇸US_1453
+      - Relay_🇬🇧GB-🇬🇧GB_468
+      - Relay_🇨🇳CN-🇹🇼TW_306
+      - Relay_🇺🇸US-🇺🇸US_1460
+      - Relay_🇺🇸US-🇺🇸US_1507
+      - Relay_🇦🇺AU-🇦🇺AU_99
+      - Relay_🇺🇸US-🇺🇸US_1505
+      - Relay_🇷🇺RU-🇷🇺RU_828
+      - Relay_🇺🇸US-🇺🇸US_1514
+      - Relay_🇺🇸US-🇺🇸US_1502
       - TW_2 TG@SCINV
-      - 欧洲(油管:破解资源君2.0) 25
-      - _US_美国_6_16@33
-      - 美国(油管:破解资源君2.0) 7
-      - RU_1 TG@SCINV
-      - 美国(油管:破解资源君2.0) 6
-      - 美国(油管:破解资源君2.0) 12
-      - CA_2 TG@SCINV
-      - _US_美国_2_17@3
-      - HK_221_18@220
-      - 美国(油管:破解资源君2.0) 2
-      - CN_1 TG@SCINV
-      - JP_2 TG@SCINV
-      - US_1 TG@SCINV
-      - US_960_18@959
-      - 欧洲(油管:破解资源君2.0) 24
-      - 欧洲(油管:破解资源君2.0) 10
-      - 美国(油管:破解资源君2.0) 18
-      - CN_16 TG@SCINV
-      - 亚洲(油管:破解资源君2.0) 8
-      - github.com/freefq - 美国CloudFlare公司CDN节点 13
-      - 亚洲(油管:破解资源君2.0) 6
-      - 美国(油管:破解资源君2.0) 16
-      - US_968_18@967
-      - US_969_18@968
-      - 亚洲(油管:破解资源君2.0) 5
-      - 欧洲(油管:破解资源君2.0) 30
+      - Relay_🇨🇳CN-🇹🇼TW_316
+      - Relay_🇹🇼TW-🇹🇼TW_900
+      - Relay_🇨🇳CN-🇺🇸US_303
+      - CN_252
+      - CN_251
+      - Relay_🇨🇳CN-🇭🇰HK_302
+      - CN_230
+      - CN_232
+      - CN_247
+      - CN_238
+      - Relay_🇷🇺RU-🇷🇺RU_827
+      - Relay_🇸🇬SG-🇺🇸US_883
+      - Relay_🇩🇪DE-🇩🇪DE_386
+      - Relay_🇺🇸US-🇺🇸US_1470
+      - _CN_中国->🇷🇺_RU_俄罗斯联邦_2_0@7
+      - Relay_🇦🇺AU-🇦🇺AU_97
+      - Relay_🇺🇸US-🇺🇸US_1431
+      - Relay_🇨🇳CN-🇹🇼TW_318
+      - Relay_🇮🇷IR-🇮🇷IR_493
+      - US_11 TG@SCINV
+      - Relay_🇺🇸US-🇺🇸US_1484
+      - Relay_🇩🇪DE-🇺🇸US_380
+      - Relay_🇮🇷IR-🇮🇷IR_492
+      - US_6 TG@SCINV
+      - _DE_德国_1_13@29
+      - CN_228
+      - Relay_🇨🇳CN-🇹🇼TW_310
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -444,52 +853,103 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - IR_2 TG@SCINV
-      - CN_93_18@92
-      - CN_97_18@96
-      - TW_3 TG@SCINV
-      - CN_4 TG@SCINV
-      - IR_3 TG@SCINV
-      - CN_92_18@91
+      - CN_229
+      - CN_242
+      - CN_288
+      - Relay_🇯🇵JP-🇯🇵JP_533
+      - CN_254
+      - CN_282
+      - CN_241
+      - CN_231
+      - CN_253
+      - CN_273
+      - CN_286
+      - CN_233
+      - CN_249
+      - CN_243
+      - CN_244
+      - CN_289
+      - CN_271
+      - CN_246
+      - CN_248
+      - CN_274
+      - CN_283
+      - CN_236
+      - CN_270
+      - CN_278
+      - CN_235
+      - CN_285
+      - CN_234
+      - CN_269
+      - _CN_中国->🇰🇷_KR_韩国_0@14
+      - CN_9 TG@SCINV
       - IR_1 TG@SCINV
-      - CN_15 TG@SCINV
+      - CN_245
+      - Relay_🇨🇳CN-🇳🇱NL_301
+      - CN_279
+      - TW_4 TG@SCINV
+      - _CN_中国->🇯🇵_JP_日本_0@1
+      - _CN_中国->🇹🇼_TW_台湾_0@0
+      - CN_6 TG@SCINV
+      - Relay_🇺🇸US-🇺🇸US_1416
+      - Relay_🇯🇵JP-🇯🇵JP_515
+      - Relay_🇺🇸US-🇺🇸US_1499
+      - Relay_🇹🇼TW-🇹🇼TW_896
+      - US_959
+      - CN_5 TG@SCINV
+      - CN_4 TG@SCINV
+      - Relay_🇺🇸US-🇺🇸US_1463
+      - Relay_🇨🇳CN-🏁ZZ_326
+      - Relay_🏁ZZ-🇹🇼TW_1703
+      - Relay_🏁ZZ-🇹🇼TW_1702
+      - _CN_中国->🇷🇺_RU_俄罗斯联邦_1_0@6
+      - Relay_🏁ZZ-🇹🇼TW_1704
+      - CN_19 TG@SCINV
+      - Relay_🇺🇸US-🇺🇸US_1500
       - CN_10 TG@SCINV
-      - CN_13 TG@SCINV
-      - TW_1 TG@SCINV
-      - CN_11 TG@SCINV
-      - CN_14 TG@SCINV
-      - CA_1 TG@SCINV
-      - 美国(油管:破解资源君2.0) 4
-      - GB_1 TG@SCINV
-      - US_964_18@963
-      - 美国(油管:破解资源君2.0) 11
+      - CN_2 TG@SCINV
+      - Relay_🇨🇳CN-🇹🇼TW_313
+      - Relay_-🇺🇸US_33
+      - Relay_🇳🇱NL-🇳🇱NL_707
+      - Relay_-🇺🇸US_36
+      - Relay_🇺🇸US-🇺🇸US_1453
+      - Relay_🇬🇧GB-🇬🇧GB_468
+      - Relay_🇨🇳CN-🇹🇼TW_306
+      - Relay_🇺🇸US-🇺🇸US_1460
+      - Relay_🇺🇸US-🇺🇸US_1507
+      - Relay_🇦🇺AU-🇦🇺AU_99
+      - Relay_🇺🇸US-🇺🇸US_1505
+      - Relay_🇷🇺RU-🇷🇺RU_828
+      - Relay_🇺🇸US-🇺🇸US_1514
+      - Relay_🇺🇸US-🇺🇸US_1502
       - TW_2 TG@SCINV
-      - 欧洲(油管:破解资源君2.0) 25
-      - _US_美国_6_16@33
-      - 美国(油管:破解资源君2.0) 7
-      - RU_1 TG@SCINV
-      - 美国(油管:破解资源君2.0) 6
-      - 美国(油管:破解资源君2.0) 12
-      - CA_2 TG@SCINV
-      - _US_美国_2_17@3
-      - HK_221_18@220
-      - 美国(油管:破解资源君2.0) 2
-      - CN_1 TG@SCINV
-      - JP_2 TG@SCINV
-      - US_1 TG@SCINV
-      - US_960_18@959
-      - 欧洲(油管:破解资源君2.0) 24
-      - 欧洲(油管:破解资源君2.0) 10
-      - 美国(油管:破解资源君2.0) 18
-      - CN_16 TG@SCINV
-      - 亚洲(油管:破解资源君2.0) 8
-      - github.com/freefq - 美国CloudFlare公司CDN节点 13
-      - 亚洲(油管:破解资源君2.0) 6
-      - 美国(油管:破解资源君2.0) 16
-      - US_968_18@967
-      - US_969_18@968
-      - 亚洲(油管:破解资源君2.0) 5
-      - 欧洲(油管:破解资源君2.0) 30
+      - Relay_🇨🇳CN-🇹🇼TW_316
+      - Relay_🇹🇼TW-🇹🇼TW_900
+      - Relay_🇨🇳CN-🇺🇸US_303
+      - CN_252
+      - CN_251
+      - Relay_🇨🇳CN-🇭🇰HK_302
+      - CN_230
+      - CN_232
+      - CN_247
+      - CN_238
+      - Relay_🇷🇺RU-🇷🇺RU_827
+      - Relay_🇸🇬SG-🇺🇸US_883
+      - Relay_🇩🇪DE-🇩🇪DE_386
+      - Relay_🇺🇸US-🇺🇸US_1470
+      - _CN_中国->🇷🇺_RU_俄罗斯联邦_2_0@7
+      - Relay_🇦🇺AU-🇦🇺AU_97
+      - Relay_🇺🇸US-🇺🇸US_1431
+      - Relay_🇨🇳CN-🇹🇼TW_318
+      - Relay_🇮🇷IR-🇮🇷IR_493
+      - US_11 TG@SCINV
+      - Relay_🇺🇸US-🇺🇸US_1484
+      - Relay_🇩🇪DE-🇺🇸US_380
+      - Relay_🇮🇷IR-🇮🇷IR_492
+      - US_6 TG@SCINV
+      - _DE_德国_1_13@29
+      - CN_228
+      - Relay_🇨🇳CN-🇹🇼TW_310
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
