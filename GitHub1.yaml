@@ -5,159 +5,103 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: RO 1 → t.me/s/SCINV, server: supernortheast.xn--mesv7f5toqlp.club, port: 12004, type: trojan, password: dd04c158-1bac-47cd-99c1-5c4f64796dd5, sni: supernortheast.xn--mesv7f5toqlp.club, skip-cert-verify: true, udp: true}
-  - {name: RO 3 → t.me/s/SCINV, server: supernortheast.xn--mesv7f5toqlp.club, port: 12003, type: trojan, password: dd04c158-1bac-47cd-99c1-5c4f64796dd5, sni: supernortheast.xn--mesv7f5toqlp.club, skip-cert-verify: true, udp: true}
-  - {name: "", server: ingress-i2.iivvppnn.info, port: 38106, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: ingress-i2.iivvppnn.info}, udp: true}
-  - {name: RO 4 → t.me/s/SCINV, server: supernortheast.xn--mesv7f5toqlp.club, port: 12001, type: trojan, password: dd04c158-1bac-47cd-99c1-5c4f64796dd5, sni: supernortheast.xn--mesv7f5toqlp.club, skip-cert-verify: true, udp: true}
-  - {name: US 8 → t.me/s/SCINV, server: s1.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s1.hazz.win, skip-cert-verify: true, udp: true}
-  - {name: NONE, server: jgwdj4.gaox.ml, port: 443, type: trojan, password: c09eb137-bf68-4658-84e0-102d94b74168, sni: jgwdj4.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: 198.181.56.163:238, server: 198.181.56.163, port: 238, type: ss, cipher: aes-256-cfb, password: bwhskrskr05, udp: true}
-  - {name: US_131_25@130, server: s3.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s3.hazz.win, skip-cert-verify: true, udp: true}
-  - {name: US 9 → t.me/s/SCINV, server: s2.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s2.hazz.win, skip-cert-verify: true, udp: true}
-  - {name: US 19 → t.me/s/SCINV, server: us23.567568.ml, port: 443, type: trojan, password: 3df66137-a428-429c-a858-8b150721b354, sni: us23.567568.ml, skip-cert-verify: true, udp: true}
-  - {name: GB 2 → t.me/s/SCINV, server: us-05.licom.ml, port: 12501, type: trojan, password: ce433528-39fa-4711-bc0d-25a5b1579574, sni: us-05.licom.ml, skip-cert-verify: true, udp: true}
-  - {name: US 41 → t.me/s/SCINV, server: 715hk03.ok365.cyou, port: 12388, type: trojan, password: 69d0bd70-0e7c-45db-98f8-d1dc28ad73a2, sni: 715hk03.ok365.cyou, skip-cert-verify: true, udp: true}
-  - {name: US_116_25@115, server: us-am32-5.eqnode.net, port: 8081, type: ssr, cipher: aes-256-cfb, password: YFVrXZgRo, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
-  - {name: _JP_日本_4_0@57, server: 85.208.108.93, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: _US_美国_2_2@18, server: 138.68.248.130, port: 811, type: ss, cipher: chacha20-ietf-poly1305, password: Ultr@r00t_2017, udp: true}
-  - {name: US 7 → t.me/s/SCINV, server: youtube-bai-piao-wang-zhe.nl.884899.cf, port: 41196, type: trojan, password: 94afcc56-cc1c-4cd4-8c82-1215cd052795, sni: youtube-bai-piao-wang-zhe.nl.884899.cf, skip-cert-verify: true, udp: true}
-  - {name: 134.195.198.95:8080, server: 134.195.198.95, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 134.195.198.95:2375, server: 134.195.198.95, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 134.195.198.95:8090, server: 134.195.198.95, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 134.195.198.95:5004, server: 134.195.198.95, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 134.195.198.95:7306, server: 134.195.198.95, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 134.195.198.95:443, server: 134.195.198.95, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 134.195.198.95:5003, server: 134.195.198.95, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: _DE_德国_11@0, server: 49.12.203.80, port: 40960, type: ss, cipher: aes-256-gcm, password: 6kA7b3f9Aw2508erQ3W7D4, udp: true}
-  - {name: " 2", server: 43.134.229.238, port: 46043, type: vmess, uuid: b5770696-55be-4d23-a28e-8a1ab771dd7d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US 28 → t.me/s/SCINV, server: trojan-daozhu-uallen-qbit-azure-hk.kinhproxy.com, port: 443, type: trojan, password: trojan-daozhu-uallen-qbit-azure-hk, sni: trojan-daozhu-uallen-qbit-azure-hk.kinhproxy.com, skip-cert-verify: true, udp: true}
-  - {name: SG 5 → t.me/s/SCINV, server: supersouth.xn--mesv7f5toqlp.club, port: 12001, type: trojan, password: dd04c158-1bac-47cd-99c1-5c4f64796dd5, sni: supersouth.xn--mesv7f5toqlp.club, skip-cert-verify: true, udp: true}
-  - {name: SG 1 → t.me/s/SCINV, server: sg-03.licom.ml, port: 8443, type: trojan, password: ce433528-39fa-4711-bc0d-25a5b1579574, sni: sg-03.licom.ml, skip-cert-verify: true, udp: true}
-  - {name: _CA_加拿大_1_2@24, server: 138.197.166.205, port: 811, type: ss, cipher: chacha20-ietf-poly1305, password: Ultr@r00t_2017, udp: true}
-  - {name: _KR_韩国->🇺🇸_US_美国_3@46, server: chess.magicefire.com, port: 443, type: vmess, uuid: 9aa80017-3427-4165-a522-f5f9a11330d0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: US 37 → t.me/s/SCINV, server: us23.567568.ml, port: 27956, type: trojan, password: 3df66137-a428-429c-a858-8b150721b354, sni: us23.567568.ml, skip-cert-verify: true, udp: true}
-  - {name: _DE_德国_1_22@29, server: 165.22.73.126, port: 23335, type: ss, cipher: aes-256-cfb, password: 7d99ae502227454ea998d71e4b62a388, udp: true}
-  - {name: _JP_日本_21_2@43, server: 81.90.190.81, port: 808, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: _GB_英国_2_13@40, server: 178.62.16.161, port: 811, type: ss, cipher: chacha20-ietf-poly1305, password: Ultr@r00t_2017, udp: true}
+  - {name: JP 2 → TG@SCINV, server: supernortheast.xn--mesv7f5toqlp.club, port: 12002, type: trojan, password: dd04c158-1bac-47cd-99c1-5c4f64796dd5, sni: supernortheast.xn--mesv7f5toqlp.club, skip-cert-verify: true, udp: true}
+  - {name: JP 3 → TG@SCINV, server: supernortheast.xn--mesv7f5toqlp.club, port: 12004, type: trojan, password: dd04c158-1bac-47cd-99c1-5c4f64796dd5, sni: supernortheast.xn--mesv7f5toqlp.club, skip-cert-verify: true, udp: true}
+  - {name: US 10 → TG@SCINV, server: s2.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s2.hazz.win, skip-cert-verify: true, udp: true}
+  - {name: CN 1 → TG@SCINV, server: cm.spacez.cloud, port: 30003, type: trojan, password: c9a3a61d-5d49-4158-9e60-6fa32684b122, sni: cm.spacez.cloud, skip-cert-verify: true, udp: true}
+  - {name: "", server: 192.210.206.50, port: 11188, type: vmess, uuid: de0ff7f6-370e-41c9-c24a-b932c7c1ad58, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hello, ws-headers: {Host: 192.210.206.50}, udp: true}
+  - {name: US 36 → TG@SCINV, server: 104.129.63.65, port: 8443, type: trojan, password: cUDgjDkSfn, skip-cert-verify: true, udp: true}
+  - {name: " 2", server: 54.153.2.182, port: 11280, type: vmess, uuid: 6fc24a77-b832-4067-92b7-c2df867b798b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: 54.153.2.182}, udp: true}
+  - {name: 51.195.136.209:50004, server: 51.195.136.209, port: 50004, type: ss, cipher: aes-256-cfb, password: !<str> 4415934295, udp: true}
+  - {name: CA 1 → TG@SCINV, server: 625us.ok365.cyou, port: 443, type: trojan, password: 7751af91-420a-4479-bb22-415e3ed9bdc7, sni: 625us.ok365.cyou, skip-cert-verify: true, udp: true}
+  - {name: 138.68.248.130:811, server: 138.68.248.130, port: 811, type: ss, cipher: chacha20-ietf-poly1305, password: Ultr@r00t_2017, udp: true}
+  - {name: 138.197.166.205:811, server: 138.197.166.205, port: 811, type: ss, cipher: chacha20-ietf-poly1305, password: Ultr@r00t_2017, udp: true}
+  - {name: 196.247.59.154:805, server: 196.247.59.154, port: 805, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: JP 4 → TG@SCINV, server: supernortheast.xn--mesv7f5toqlp.club, port: 12001, type: trojan, password: dd04c158-1bac-47cd-99c1-5c4f64796dd5, sni: supernortheast.xn--mesv7f5toqlp.club, skip-cert-verify: true, udp: true}
+  - {name: 178.62.16.161:811, server: 178.62.16.161, port: 811, type: ss, cipher: chacha20-ietf-poly1305, password: Ultr@r00t_2017, udp: true}
+  - {name: 85.208.108.93:7306, server: 85.208.108.93, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: 196.247.59.154:806, server: 196.247.59.154, port: 806, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: 162.55.231.78:443, server: 162.55.231.78, port: 443, type: ssr, cipher: aes-128-ctr, password: sEscPBiAD9K$&@79, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
+  - {name: 196.247.59.154:800, server: 196.247.59.154, port: 800, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: 51.38.118.42:811, server: 51.38.118.42, port: 811, type: ss, cipher: chacha20-ietf-poly1305, password: Ultr@r00t_2017, udp: true}
+  - {name: 196.247.59.154:809, server: 196.247.59.154, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - RO 1 → t.me/s/SCINV
-      - RO 3 → t.me/s/SCINV
+      - JP 2 → TG@SCINV
+      - JP 3 → TG@SCINV
+      - US 10 → TG@SCINV
+      - CN 1 → TG@SCINV
       - ""
-      - RO 4 → t.me/s/SCINV
-      - US 8 → t.me/s/SCINV
-      - NONE
-      - 198.181.56.163:238
-      - US_131_25@130
-      - US 9 → t.me/s/SCINV
-      - US 19 → t.me/s/SCINV
-      - GB 2 → t.me/s/SCINV
-      - US 41 → t.me/s/SCINV
-      - US_116_25@115
-      - _JP_日本_4_0@57
-      - _US_美国_2_2@18
-      - US 7 → t.me/s/SCINV
-      - 134.195.198.95:8080
-      - 134.195.198.95:2375
-      - 134.195.198.95:8090
-      - 134.195.198.95:5004
-      - 134.195.198.95:7306
-      - 134.195.198.95:443
-      - 134.195.198.95:5003
-      - _DE_德国_11@0
+      - US 36 → TG@SCINV
       - " 2"
-      - US 28 → t.me/s/SCINV
-      - SG 5 → t.me/s/SCINV
-      - SG 1 → t.me/s/SCINV
-      - _CA_加拿大_1_2@24
-      - _KR_韩国->🇺🇸_US_美国_3@46
-      - US 37 → t.me/s/SCINV
-      - _DE_德国_1_22@29
-      - _JP_日本_21_2@43
-      - _GB_英国_2_13@40
+      - 51.195.136.209:50004
+      - CA 1 → TG@SCINV
+      - 138.68.248.130:811
+      - 138.197.166.205:811
+      - 196.247.59.154:805
+      - JP 4 → TG@SCINV
+      - 178.62.16.161:811
+      - 85.208.108.93:7306
+      - 196.247.59.154:806
+      - 162.55.231.78:443
+      - 196.247.59.154:800
+      - 51.38.118.42:811
+      - 196.247.59.154:809
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - RO 1 → t.me/s/SCINV
-      - RO 3 → t.me/s/SCINV
+      - JP 2 → TG@SCINV
+      - JP 3 → TG@SCINV
+      - US 10 → TG@SCINV
+      - CN 1 → TG@SCINV
       - ""
-      - RO 4 → t.me/s/SCINV
-      - US 8 → t.me/s/SCINV
-      - NONE
-      - 198.181.56.163:238
-      - US_131_25@130
-      - US 9 → t.me/s/SCINV
-      - US 19 → t.me/s/SCINV
-      - GB 2 → t.me/s/SCINV
-      - US 41 → t.me/s/SCINV
-      - US_116_25@115
-      - _JP_日本_4_0@57
-      - _US_美国_2_2@18
-      - US 7 → t.me/s/SCINV
-      - 134.195.198.95:8080
-      - 134.195.198.95:2375
-      - 134.195.198.95:8090
-      - 134.195.198.95:5004
-      - 134.195.198.95:7306
-      - 134.195.198.95:443
-      - 134.195.198.95:5003
-      - _DE_德国_11@0
+      - US 36 → TG@SCINV
       - " 2"
-      - US 28 → t.me/s/SCINV
-      - SG 5 → t.me/s/SCINV
-      - SG 1 → t.me/s/SCINV
-      - _CA_加拿大_1_2@24
-      - _KR_韩国->🇺🇸_US_美国_3@46
-      - US 37 → t.me/s/SCINV
-      - _DE_德国_1_22@29
-      - _JP_日本_21_2@43
-      - _GB_英国_2_13@40
+      - 51.195.136.209:50004
+      - CA 1 → TG@SCINV
+      - 138.68.248.130:811
+      - 138.197.166.205:811
+      - 196.247.59.154:805
+      - JP 4 → TG@SCINV
+      - 178.62.16.161:811
+      - 85.208.108.93:7306
+      - 196.247.59.154:806
+      - 162.55.231.78:443
+      - 196.247.59.154:800
+      - 51.38.118.42:811
+      - 196.247.59.154:809
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - RO 1 → t.me/s/SCINV
-      - RO 3 → t.me/s/SCINV
+      - JP 2 → TG@SCINV
+      - JP 3 → TG@SCINV
+      - US 10 → TG@SCINV
+      - CN 1 → TG@SCINV
       - ""
-      - RO 4 → t.me/s/SCINV
-      - US 8 → t.me/s/SCINV
-      - NONE
-      - 198.181.56.163:238
-      - US_131_25@130
-      - US 9 → t.me/s/SCINV
-      - US 19 → t.me/s/SCINV
-      - GB 2 → t.me/s/SCINV
-      - US 41 → t.me/s/SCINV
-      - US_116_25@115
-      - _JP_日本_4_0@57
-      - _US_美国_2_2@18
-      - US 7 → t.me/s/SCINV
-      - 134.195.198.95:8080
-      - 134.195.198.95:2375
-      - 134.195.198.95:8090
-      - 134.195.198.95:5004
-      - 134.195.198.95:7306
-      - 134.195.198.95:443
-      - 134.195.198.95:5003
-      - _DE_德国_11@0
+      - US 36 → TG@SCINV
       - " 2"
-      - US 28 → t.me/s/SCINV
-      - SG 5 → t.me/s/SCINV
-      - SG 1 → t.me/s/SCINV
-      - _CA_加拿大_1_2@24
-      - _KR_韩国->🇺🇸_US_美国_3@46
-      - US 37 → t.me/s/SCINV
-      - _DE_德国_1_22@29
-      - _JP_日本_21_2@43
-      - _GB_英国_2_13@40
+      - 51.195.136.209:50004
+      - CA 1 → TG@SCINV
+      - 138.68.248.130:811
+      - 138.197.166.205:811
+      - 196.247.59.154:805
+      - JP 4 → TG@SCINV
+      - 178.62.16.161:811
+      - 85.208.108.93:7306
+      - 196.247.59.154:806
+      - 162.55.231.78:443
+      - 196.247.59.154:800
+      - 51.38.118.42:811
+      - 196.247.59.154:809
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -176,40 +120,26 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - RO 1 → t.me/s/SCINV
-      - RO 3 → t.me/s/SCINV
+      - JP 2 → TG@SCINV
+      - JP 3 → TG@SCINV
+      - US 10 → TG@SCINV
+      - CN 1 → TG@SCINV
       - ""
-      - RO 4 → t.me/s/SCINV
-      - US 8 → t.me/s/SCINV
-      - NONE
-      - 198.181.56.163:238
-      - US_131_25@130
-      - US 9 → t.me/s/SCINV
-      - US 19 → t.me/s/SCINV
-      - GB 2 → t.me/s/SCINV
-      - US 41 → t.me/s/SCINV
-      - US_116_25@115
-      - _JP_日本_4_0@57
-      - _US_美国_2_2@18
-      - US 7 → t.me/s/SCINV
-      - 134.195.198.95:8080
-      - 134.195.198.95:2375
-      - 134.195.198.95:8090
-      - 134.195.198.95:5004
-      - 134.195.198.95:7306
-      - 134.195.198.95:443
-      - 134.195.198.95:5003
-      - _DE_德国_11@0
+      - US 36 → TG@SCINV
       - " 2"
-      - US 28 → t.me/s/SCINV
-      - SG 5 → t.me/s/SCINV
-      - SG 1 → t.me/s/SCINV
-      - _CA_加拿大_1_2@24
-      - _KR_韩国->🇺🇸_US_美国_3@46
-      - US 37 → t.me/s/SCINV
-      - _DE_德国_1_22@29
-      - _JP_日本_21_2@43
-      - _GB_英国_2_13@40
+      - 51.195.136.209:50004
+      - CA 1 → TG@SCINV
+      - 138.68.248.130:811
+      - 138.197.166.205:811
+      - 196.247.59.154:805
+      - JP 4 → TG@SCINV
+      - 178.62.16.161:811
+      - 85.208.108.93:7306
+      - 196.247.59.154:806
+      - 162.55.231.78:443
+      - 196.247.59.154:800
+      - 51.38.118.42:811
+      - 196.247.59.154:809
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -220,119 +150,77 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - RO 1 → t.me/s/SCINV
-      - RO 3 → t.me/s/SCINV
+      - JP 2 → TG@SCINV
+      - JP 3 → TG@SCINV
+      - US 10 → TG@SCINV
+      - CN 1 → TG@SCINV
       - ""
-      - RO 4 → t.me/s/SCINV
-      - US 8 → t.me/s/SCINV
-      - NONE
-      - 198.181.56.163:238
-      - US_131_25@130
-      - US 9 → t.me/s/SCINV
-      - US 19 → t.me/s/SCINV
-      - GB 2 → t.me/s/SCINV
-      - US 41 → t.me/s/SCINV
-      - US_116_25@115
-      - _JP_日本_4_0@57
-      - _US_美国_2_2@18
-      - US 7 → t.me/s/SCINV
-      - 134.195.198.95:8080
-      - 134.195.198.95:2375
-      - 134.195.198.95:8090
-      - 134.195.198.95:5004
-      - 134.195.198.95:7306
-      - 134.195.198.95:443
-      - 134.195.198.95:5003
-      - _DE_德国_11@0
+      - US 36 → TG@SCINV
       - " 2"
-      - US 28 → t.me/s/SCINV
-      - SG 5 → t.me/s/SCINV
-      - SG 1 → t.me/s/SCINV
-      - _CA_加拿大_1_2@24
-      - _KR_韩国->🇺🇸_US_美国_3@46
-      - US 37 → t.me/s/SCINV
-      - _DE_德国_1_22@29
-      - _JP_日本_21_2@43
-      - _GB_英国_2_13@40
+      - 51.195.136.209:50004
+      - CA 1 → TG@SCINV
+      - 138.68.248.130:811
+      - 138.197.166.205:811
+      - 196.247.59.154:805
+      - JP 4 → TG@SCINV
+      - 178.62.16.161:811
+      - 85.208.108.93:7306
+      - 196.247.59.154:806
+      - 162.55.231.78:443
+      - 196.247.59.154:800
+      - 51.38.118.42:811
+      - 196.247.59.154:809
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - RO 1 → t.me/s/SCINV
-      - RO 3 → t.me/s/SCINV
+      - JP 2 → TG@SCINV
+      - JP 3 → TG@SCINV
+      - US 10 → TG@SCINV
+      - CN 1 → TG@SCINV
       - ""
-      - RO 4 → t.me/s/SCINV
-      - US 8 → t.me/s/SCINV
-      - NONE
-      - 198.181.56.163:238
-      - US_131_25@130
-      - US 9 → t.me/s/SCINV
-      - US 19 → t.me/s/SCINV
-      - GB 2 → t.me/s/SCINV
-      - US 41 → t.me/s/SCINV
-      - US_116_25@115
-      - _JP_日本_4_0@57
-      - _US_美国_2_2@18
-      - US 7 → t.me/s/SCINV
-      - 134.195.198.95:8080
-      - 134.195.198.95:2375
-      - 134.195.198.95:8090
-      - 134.195.198.95:5004
-      - 134.195.198.95:7306
-      - 134.195.198.95:443
-      - 134.195.198.95:5003
-      - _DE_德国_11@0
+      - US 36 → TG@SCINV
       - " 2"
-      - US 28 → t.me/s/SCINV
-      - SG 5 → t.me/s/SCINV
-      - SG 1 → t.me/s/SCINV
-      - _CA_加拿大_1_2@24
-      - _KR_韩国->🇺🇸_US_美国_3@46
-      - US 37 → t.me/s/SCINV
-      - _DE_德国_1_22@29
-      - _JP_日本_21_2@43
-      - _GB_英国_2_13@40
+      - 51.195.136.209:50004
+      - CA 1 → TG@SCINV
+      - 138.68.248.130:811
+      - 138.197.166.205:811
+      - 196.247.59.154:805
+      - JP 4 → TG@SCINV
+      - 178.62.16.161:811
+      - 85.208.108.93:7306
+      - 196.247.59.154:806
+      - 162.55.231.78:443
+      - 196.247.59.154:800
+      - 51.38.118.42:811
+      - 196.247.59.154:809
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - RO 1 → t.me/s/SCINV
-      - RO 3 → t.me/s/SCINV
+      - JP 2 → TG@SCINV
+      - JP 3 → TG@SCINV
+      - US 10 → TG@SCINV
+      - CN 1 → TG@SCINV
       - ""
-      - RO 4 → t.me/s/SCINV
-      - US 8 → t.me/s/SCINV
-      - NONE
-      - 198.181.56.163:238
-      - US_131_25@130
-      - US 9 → t.me/s/SCINV
-      - US 19 → t.me/s/SCINV
-      - GB 2 → t.me/s/SCINV
-      - US 41 → t.me/s/SCINV
-      - US_116_25@115
-      - _JP_日本_4_0@57
-      - _US_美国_2_2@18
-      - US 7 → t.me/s/SCINV
-      - 134.195.198.95:8080
-      - 134.195.198.95:2375
-      - 134.195.198.95:8090
-      - 134.195.198.95:5004
-      - 134.195.198.95:7306
-      - 134.195.198.95:443
-      - 134.195.198.95:5003
-      - _DE_德国_11@0
+      - US 36 → TG@SCINV
       - " 2"
-      - US 28 → t.me/s/SCINV
-      - SG 5 → t.me/s/SCINV
-      - SG 1 → t.me/s/SCINV
-      - _CA_加拿大_1_2@24
-      - _KR_韩国->🇺🇸_US_美国_3@46
-      - US 37 → t.me/s/SCINV
-      - _DE_德国_1_22@29
-      - _JP_日本_21_2@43
-      - _GB_英国_2_13@40
+      - 51.195.136.209:50004
+      - CA 1 → TG@SCINV
+      - 138.68.248.130:811
+      - 138.197.166.205:811
+      - 196.247.59.154:805
+      - JP 4 → TG@SCINV
+      - 178.62.16.161:811
+      - 85.208.108.93:7306
+      - 196.247.59.154:806
+      - 162.55.231.78:443
+      - 196.247.59.154:800
+      - 51.38.118.42:811
+      - 196.247.59.154:809
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -348,40 +236,26 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - RO 1 → t.me/s/SCINV
-      - RO 3 → t.me/s/SCINV
+      - JP 2 → TG@SCINV
+      - JP 3 → TG@SCINV
+      - US 10 → TG@SCINV
+      - CN 1 → TG@SCINV
       - ""
-      - RO 4 → t.me/s/SCINV
-      - US 8 → t.me/s/SCINV
-      - NONE
-      - 198.181.56.163:238
-      - US_131_25@130
-      - US 9 → t.me/s/SCINV
-      - US 19 → t.me/s/SCINV
-      - GB 2 → t.me/s/SCINV
-      - US 41 → t.me/s/SCINV
-      - US_116_25@115
-      - _JP_日本_4_0@57
-      - _US_美国_2_2@18
-      - US 7 → t.me/s/SCINV
-      - 134.195.198.95:8080
-      - 134.195.198.95:2375
-      - 134.195.198.95:8090
-      - 134.195.198.95:5004
-      - 134.195.198.95:7306
-      - 134.195.198.95:443
-      - 134.195.198.95:5003
-      - _DE_德国_11@0
+      - US 36 → TG@SCINV
       - " 2"
-      - US 28 → t.me/s/SCINV
-      - SG 5 → t.me/s/SCINV
-      - SG 1 → t.me/s/SCINV
-      - _CA_加拿大_1_2@24
-      - _KR_韩国->🇺🇸_US_美国_3@46
-      - US 37 → t.me/s/SCINV
-      - _DE_德国_1_22@29
-      - _JP_日本_21_2@43
-      - _GB_英国_2_13@40
+      - 51.195.136.209:50004
+      - CA 1 → TG@SCINV
+      - 138.68.248.130:811
+      - 138.197.166.205:811
+      - 196.247.59.154:805
+      - JP 4 → TG@SCINV
+      - 178.62.16.161:811
+      - 85.208.108.93:7306
+      - 196.247.59.154:806
+      - 162.55.231.78:443
+      - 196.247.59.154:800
+      - 51.38.118.42:811
+      - 196.247.59.154:809
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
