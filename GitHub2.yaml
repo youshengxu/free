@@ -5,71 +5,103 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
+  - {name: US 31 → TG@SCINV, server: 178.157.62.49, port: 50500, type: trojan, password: c5d997fe-cde6-463c-a671-a296b47289a6, skip-cert-verify: true, udp: true}
+  - {name: "", server: 150.230.197.142, port: 44634, type: vmess, uuid: c2d05105-857a-4c94-be34-5534e7e8285f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: NONE, server: s2.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s2.hazz.win, skip-cert-verify: true, udp: true}
+  - {name: " 2", server: 20.28.209.177, port: 30002, type: vmess, uuid: 6bbf8be0-c2f8-4ecb-d70d-e9c2e261817d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US 8 → TG@SCINV, server: s3.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s3.hazz.win, skip-cert-verify: true, udp: true}
+  - {name: 85.208.108.93:7306, server: 85.208.108.93, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: " 3", server: 129.150.51.215, port: 30839, type: vmess, uuid: 19bf4866-54ce-4fc9-8903-db7e160c5b81, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: " 4", server: 23.230.146.254, port: 1258, type: vmess, uuid: edeb41cc-a76a-47f2-fa96-b9141e66a2b0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 196.247.59.154:809, server: 196.247.59.154, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: " 5", server: chess.magicefire.com, port: 443, type: vmess, uuid: 9aa80017-3427-4165-a522-f5f9a11330d0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 196.247.59.154:801, server: 196.247.59.154, port: 801, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: " 6", server: 146.56.110.129, port: 53702, type: vmess, uuid: d0ee8ec0-ef63-41aa-9087-11edf7a978b9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: CN 73, server: 183.232.141.82, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 4359:KKKKKKKKKK45334, obfs-param: dC5tZS92cG5oYXQ, udp: true}
   - {name: CN 80, server: 116.162.120.26, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 4359:KKKKKKKKKK45334, obfs-param: dC5tZS92cG5oYXQ, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_1387, server: s3.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s3.hazz.win, skip-cert-verify: true, udp: true}
-  - {name: US 7 → TG@SCINV, server: s2.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s2.hazz.win, skip-cert-verify: true, udp: true}
   - {name: ZZ_1573, server: 103.186.149.132, port: 80, type: vmess, uuid: a479fc02-07c5-4864-8564-c4f147dfa488, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /shopvpn.net, ws-headers: {Host: 103.186.149.132}, udp: true}
   - {name: US 24 → TG@SCINV, server: azgy001.xiba1.xyz, port: 20710, type: trojan, password: 7497242f-3044-3c77-bf48-14bb26c92a83, sni: azgy001.xiba1.xyz, skip-cert-verify: true, udp: true}
-  - {name: US 31 → TG@SCINV, server: 104.129.63.65, port: 8443, type: trojan, password: cUDgjDkSfn, skip-cert-verify: true, udp: true}
-  - {name: Pool_🇳🇱NL_580, server: 85.208.108.93, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: US 31 → TG@SCINV 2, server: 104.129.63.65, port: 8443, type: trojan, password: cUDgjDkSfn, skip-cert-verify: true, udp: true}
   - {name: _35, server: 107.173.250.94, port: 25318, type: vmess, uuid: ed293411-ab53-4ebc-f0ab-34d78fa1f5ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: CA_146, server: 196.247.59.154, port: 803, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
   - {name: ZZ_1487, server: 169.197.141.5, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: CA_158, server: 196.247.59.154, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
+      - US 31 → TG@SCINV
+      - ""
+      - NONE
+      - " 2"
+      - US 8 → TG@SCINV
+      - 85.208.108.93:7306
+      - " 3"
+      - " 4"
+      - 196.247.59.154:809
+      - " 5"
+      - 196.247.59.154:801
+      - " 6"
       - CN 73
       - CN 80
-      - Relay_🇺🇸US-🇺🇸US_1387
-      - US 7 → TG@SCINV
       - ZZ_1573
       - US 24 → TG@SCINV
-      - US 31 → TG@SCINV
-      - Pool_🇳🇱NL_580
+      - US 31 → TG@SCINV 2
       - _35
       - CA_146
       - ZZ_1487
-      - CA_158
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
+      - US 31 → TG@SCINV
+      - ""
+      - NONE
+      - " 2"
+      - US 8 → TG@SCINV
+      - 85.208.108.93:7306
+      - " 3"
+      - " 4"
+      - 196.247.59.154:809
+      - " 5"
+      - 196.247.59.154:801
+      - " 6"
       - CN 73
       - CN 80
-      - Relay_🇺🇸US-🇺🇸US_1387
-      - US 7 → TG@SCINV
       - ZZ_1573
       - US 24 → TG@SCINV
-      - US 31 → TG@SCINV
-      - Pool_🇳🇱NL_580
+      - US 31 → TG@SCINV 2
       - _35
       - CA_146
       - ZZ_1487
-      - CA_158
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - US 31 → TG@SCINV
+      - ""
+      - NONE
+      - " 2"
+      - US 8 → TG@SCINV
+      - 85.208.108.93:7306
+      - " 3"
+      - " 4"
+      - 196.247.59.154:809
+      - " 5"
+      - 196.247.59.154:801
+      - " 6"
       - CN 73
       - CN 80
-      - Relay_🇺🇸US-🇺🇸US_1387
-      - US 7 → TG@SCINV
       - ZZ_1573
       - US 24 → TG@SCINV
-      - US 31 → TG@SCINV
-      - Pool_🇳🇱NL_580
+      - US 31 → TG@SCINV 2
       - _35
       - CA_146
       - ZZ_1487
-      - CA_158
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -88,18 +120,26 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - US 31 → TG@SCINV
+      - ""
+      - NONE
+      - " 2"
+      - US 8 → TG@SCINV
+      - 85.208.108.93:7306
+      - " 3"
+      - " 4"
+      - 196.247.59.154:809
+      - " 5"
+      - 196.247.59.154:801
+      - " 6"
       - CN 73
       - CN 80
-      - Relay_🇺🇸US-🇺🇸US_1387
-      - US 7 → TG@SCINV
       - ZZ_1573
       - US 24 → TG@SCINV
-      - US 31 → TG@SCINV
-      - Pool_🇳🇱NL_580
+      - US 31 → TG@SCINV 2
       - _35
       - CA_146
       - ZZ_1487
-      - CA_158
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -110,53 +150,77 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
+      - US 31 → TG@SCINV
+      - ""
+      - NONE
+      - " 2"
+      - US 8 → TG@SCINV
+      - 85.208.108.93:7306
+      - " 3"
+      - " 4"
+      - 196.247.59.154:809
+      - " 5"
+      - 196.247.59.154:801
+      - " 6"
       - CN 73
       - CN 80
-      - Relay_🇺🇸US-🇺🇸US_1387
-      - US 7 → TG@SCINV
       - ZZ_1573
       - US 24 → TG@SCINV
-      - US 31 → TG@SCINV
-      - Pool_🇳🇱NL_580
+      - US 31 → TG@SCINV 2
       - _35
       - CA_146
       - ZZ_1487
-      - CA_158
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
+      - US 31 → TG@SCINV
+      - ""
+      - NONE
+      - " 2"
+      - US 8 → TG@SCINV
+      - 85.208.108.93:7306
+      - " 3"
+      - " 4"
+      - 196.247.59.154:809
+      - " 5"
+      - 196.247.59.154:801
+      - " 6"
       - CN 73
       - CN 80
-      - Relay_🇺🇸US-🇺🇸US_1387
-      - US 7 → TG@SCINV
       - ZZ_1573
       - US 24 → TG@SCINV
-      - US 31 → TG@SCINV
-      - Pool_🇳🇱NL_580
+      - US 31 → TG@SCINV 2
       - _35
       - CA_146
       - ZZ_1487
-      - CA_158
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - US 31 → TG@SCINV
+      - ""
+      - NONE
+      - " 2"
+      - US 8 → TG@SCINV
+      - 85.208.108.93:7306
+      - " 3"
+      - " 4"
+      - 196.247.59.154:809
+      - " 5"
+      - 196.247.59.154:801
+      - " 6"
       - CN 73
       - CN 80
-      - Relay_🇺🇸US-🇺🇸US_1387
-      - US 7 → TG@SCINV
       - ZZ_1573
       - US 24 → TG@SCINV
-      - US 31 → TG@SCINV
-      - Pool_🇳🇱NL_580
+      - US 31 → TG@SCINV 2
       - _35
       - CA_146
       - ZZ_1487
-      - CA_158
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -172,18 +236,26 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - US 31 → TG@SCINV
+      - ""
+      - NONE
+      - " 2"
+      - US 8 → TG@SCINV
+      - 85.208.108.93:7306
+      - " 3"
+      - " 4"
+      - 196.247.59.154:809
+      - " 5"
+      - 196.247.59.154:801
+      - " 6"
       - CN 73
       - CN 80
-      - Relay_🇺🇸US-🇺🇸US_1387
-      - US 7 → TG@SCINV
       - ZZ_1573
       - US 24 → TG@SCINV
-      - US 31 → TG@SCINV
-      - Pool_🇳🇱NL_580
+      - US 31 → TG@SCINV 2
       - _35
       - CA_146
       - ZZ_1487
-      - CA_158
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
