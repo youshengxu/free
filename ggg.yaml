@@ -5,191 +5,83 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: CN 63, server: 183.232.141.82, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 31005:LLLLiikk988iu, obfs-param: dC5tZS92cG5oYXQ, udp: true}
-  - {name: CN 64, server: 183.232.141.93, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 31005:LLLLiikk988iu, obfs-param: dC5tZS92cG5oYXQ, udp: true}
-  - {name: CN 73, server: 183.232.141.117, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 31005:LLLLiikk988iu, obfs-param: dC5tZS92cG5oYXQ, udp: true}
-  - {name: CN 66, server: 183.232.141.93, port: 563, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 31005:LLLLiikk988iu, obfs-param: dC5tZS92cG5oYXQ, udp: true}
-  - {name: CN 65, server: 183.232.141.109, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 31005:LLLLiikk988iu, obfs-param: dC5tZS92cG5oYXQ, udp: true}
-  - {name: CN 81, server: 183.232.141.117, port: 559, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 31005:LLLLiikk988iu, obfs-param: dC5tZS92cG5oYXQ, udp: true}
-  - {name: CN 76, server: 116.162.120.24, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 31005:LLLLiikk988iu, obfs-param: dC5tZS92cG5oYXQ, udp: true}
-  - {name: CN 70, server: 116.162.120.24, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 31005:LLLLiikk988iu, obfs-param: dC5tZS92cG5oYXQ, udp: true}
-  - {name: CN 80, server: 116.162.120.26, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 31005:LLLLiikk988iu, obfs-param: dC5tZS92cG5oYXQ, udp: true}
-  - {name: CN 68, server: 183.232.141.82, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 31005:LLLLiikk988iu, obfs-param: dC5tZS92cG5oYXQ, udp: true}
-  - {name: CN 91, server: 112.65.53.17, port: 568, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 31005:LLLLiikk988iu, obfs-param: dC5tZS92cG5oYXQ, udp: true}
-  - {name: CN 84, server: 112.65.53.17, port: 566, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 31005:LLLLiikk988iu, obfs-param: dC5tZS92cG5oYXQ, udp: true}
-  - {name: CN 79, server: 112.65.53.17, port: 564, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 31005:LLLLiikk988iu, obfs-param: dC5tZS92cG5oYXQ, udp: true}
-  - {name: CN 82, server: 112.65.53.17, port: 567, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 31005:LLLLiikk988iu, obfs-param: dC5tZS92cG5oYXQ, udp: true}
-  - {name: CN 77, server: 223.166.125.211, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 31005:LLLLiikk988iu, obfs-param: dC5tZS92cG5oYXQ, udp: true}
-  - {name: CN 74, server: 223.166.125.211, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 31005:LLLLiikk988iu, obfs-param: dC5tZS92cG5oYXQ, udp: true}
-  - {name: _61, server: 23.230.146.254, port: 1258, type: vmess, uuid: edeb41cc-a76a-47f2-fa96-b9141e66a2b0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN 87, server: 223.166.145.214, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 31005:LLLLiikk988iu, obfs-param: dC5tZS92cG5oYXQ, udp: true}
-  - {name: CN 88, server: 223.166.145.214, port: 563, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 31005:LLLLiikk988iu, obfs-param: dC5tZS92cG5oYXQ, udp: true}
-  - {name: CN 75, server: 183.232.141.109, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 31005:LLLLiikk988iu, obfs-param: dC5tZS92cG5oYXQ, udp: true}
-  - {name: CN 89, server: 223.166.145.214, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 31005:LLLLiikk988iu, obfs-param: dC5tZS92cG5oYXQ, udp: true}
-  - {name: CA 1 → TG@SCINV, server: 625us.ok365.cyou, port: 443, type: trojan, password: 6a582cd4-559f-4874-98e7-76f3465412ae, sni: 625us.ok365.cyou, skip-cert-verify: true, udp: true}
-  - {name: US 11 → TG@SCINV, server: s1.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s1.hazz.win, skip-cert-verify: true, udp: true}
-  - {name: Pool__34, server: 5.183.102.34, port: 37667, type: vmess, uuid: 66f93c8f-4458-41d3-e447-f0b57d893527, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇸🇬SG-🇺🇸US_823, server: s2.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s2.hazz.win, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_1403, server: s3.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s3.hazz.win, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇳CN-🇹🇼TW_270, server: cm.spacez.cloud, port: 30003, type: trojan, password: c9a3a61d-5d49-4158-9e60-6fa32684b122, sni: cm.spacez.cloud, skip-cert-verify: true, udp: true}
-  - {name: US 36 → TG@SCINV, server: 104.129.63.65, port: 8443, type: trojan, password: cUDgjDkSfn, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇭🇰HK-🇺🇸US_414, server: azgy001.xiba1.xyz, port: 20710, type: trojan, password: 7497242f-3044-3c77-bf48-14bb26c92a83, sni: azgy001.xiba1.xyz, skip-cert-verify: true, udp: true}
-  - {name: CN 71, server: 116.162.120.24, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 31005:LLLLiikk988iu, obfs-param: dC5tZS92cG5oYXQ, udp: true}
-  - {name: CN 90, server: 183.232.141.93, port: 601, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 31005:LLLLiikk988iu, obfs-param: dC5tZS92cG5oYXQ, udp: true}
-  - {name: HK 1 → TG@SCINV, server: 103.253.43.228, port: 443, type: trojan, password: 48a55ebb-54f2-4757-8899-047933695eb2, skip-cert-verify: true, udp: true}
-  - {name: us-am32-5.eqnode.net:8081, server: us-am32-5.eqnode.net, port: 8081, type: ssr, cipher: aes-256-cfb, password: YFVrXZgRo, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
-  - {name: Pool__63, server: 5.183.102.34, port: 37667, type: vmess, uuid: 66f93c8f-4458-41d3-e447-f0b57d893527, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN 67, server: 183.232.141.82, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 31005:LLLLiikk988iu, obfs-param: dC5tZS92cG5oYXQ, udp: true}
-  - {name: Relay_🇭🇰HK-🇺🇸US_418, server: azgy001.xiba1.xyz, port: 20712, type: trojan, password: 7497242f-3044-3c77-bf48-14bb26c92a83, sni: azgy001.xiba1.xyz, skip-cert-verify: true, udp: true}
-  - {name: CA 2 → TG@SCINV, server: 724tw02.ok365.cyou, port: 443, type: trojan, password: 6a582cd4-559f-4874-98e7-76f3465412ae, sni: 724tw02.ok365.cyou, skip-cert-verify: true, udp: true}
-  - {name: JP 1 → TG@SCINV, server: supernortheast.xn--mesv7f5toqlp.club, port: 12004, type: trojan, password: dd04c158-1bac-47cd-99c1-5c4f64796dd5, sni: supernortheast.xn--mesv7f5toqlp.club, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇭🇰HK-🇺🇸US_415, server: azgy001.xiba1.xyz, port: 20711, type: trojan, password: 7497242f-3044-3c77-bf48-14bb26c92a83, sni: azgy001.xiba1.xyz, skip-cert-verify: true, udp: true}
-  - {name: CA_159, server: 196.247.59.154, port: 802, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: Relay_🇷🇴RO-🇯🇵JP_696, server: supernortheast.xn--mesv7f5toqlp.club, port: 12001, type: trojan, password: dd04c158-1bac-47cd-99c1-5c4f64796dd5, sni: supernortheast.xn--mesv7f5toqlp.club, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇷🇴RO-🇯🇵JP_697, server: supernortheast.xn--mesv7f5toqlp.club, port: 12002, type: trojan, password: dd04c158-1bac-47cd-99c1-5c4f64796dd5, sni: supernortheast.xn--mesv7f5toqlp.club, skip-cert-verify: true, udp: true}
+  - {name: 台湾(油管:破解资源君2.0) 2, server: 120.241.236.215, port: 16244, type: vmess, uuid: c7cab382-c1a0-3a50-8606-280124aaad86, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国(油管:破解资源君2.0) 11, server: 116.129.254.192, port: 16103, type: vmess, uuid: c7cab382-c1a0-3a50-8606-280124aaad86, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 台湾(油管:破解资源君2.0) 9, server: 120.241.236.215, port: 16246, type: vmess, uuid: c7cab382-c1a0-3a50-8606-280124aaad86, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国(油管:破解资源君2.0) 24, server: 104.23.102.53, port: 443, type: vmess, uuid: 5c84e109-4772-4efb-a1cb-7b09d5a1791e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /Telegram@BDovo_qaq, ws-headers: {Host: bissen.114514cn.me}, udp: true}
+  - {name: 亚洲(油管:破解资源君2.0) 3, server: 116.129.254.192, port: 16245, type: vmess, uuid: c7cab382-c1a0-3a50-8606-280124aaad86, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 台湾(油管:破解资源君2.0) 24, server: 116.129.254.192, port: 16247, type: vmess, uuid: c7cab382-c1a0-3a50-8606-280124aaad86, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国(油管:破解资源君2.0) 16, server: 116.129.254.192, port: 16205, type: vmess, uuid: c7cab382-c1a0-3a50-8606-280124aaad86, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 亚洲(油管:破解资源君2.0) 2, server: 116.129.254.192, port: 16284, type: vmess, uuid: c7cab382-c1a0-3a50-8606-280124aaad86, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 台湾(油管:破解资源君2.0) 18, server: 120.241.236.215, port: 16111, type: vmess, uuid: c7cab382-c1a0-3a50-8606-280124aaad86, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 台湾(油管:破解资源君2.0) 13, server: 120.241.236.215, port: 16214, type: vmess, uuid: c7cab382-c1a0-3a50-8606-280124aaad86, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国(油管:破解资源君2.0) 17, server: 116.129.254.192, port: 16268, type: vmess, uuid: c7cab382-c1a0-3a50-8606-280124aaad86, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国(油管:破解资源君2.0) 12, server: 116.129.254.192, port: 16203, type: vmess, uuid: c7cab382-c1a0-3a50-8606-280124aaad86, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 台湾(油管:破解资源君2.0) 19, server: 120.241.236.215, port: 16215, type: vmess, uuid: c7cab382-c1a0-3a50-8606-280124aaad86, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 台湾(油管:破解资源君2.0) 16, server: 120.241.236.215, port: 16130, type: vmess, uuid: c7cab382-c1a0-3a50-8606-280124aaad86, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 台湾(油管:破解资源君2.0) 14, server: 120.241.236.215, port: 16245, type: vmess, uuid: c7cab382-c1a0-3a50-8606-280124aaad86, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN 63
-      - CN 64
-      - CN 73
-      - CN 66
-      - CN 65
-      - CN 81
-      - CN 76
-      - CN 70
-      - CN 80
-      - CN 68
-      - CN 91
-      - CN 84
-      - CN 79
-      - CN 82
-      - CN 77
-      - CN 74
-      - _61
-      - CN 87
-      - CN 88
-      - CN 75
-      - CN 89
-      - CA 1 → TG@SCINV
-      - US 11 → TG@SCINV
-      - Pool__34
-      - Relay_🇸🇬SG-🇺🇸US_823
-      - Relay_🇺🇸US-🇺🇸US_1403
-      - Relay_🇨🇳CN-🇹🇼TW_270
-      - US 36 → TG@SCINV
-      - Relay_🇭🇰HK-🇺🇸US_414
-      - CN 71
-      - CN 90
-      - HK 1 → TG@SCINV
-      - us-am32-5.eqnode.net:8081
-      - Pool__63
-      - CN 67
-      - Relay_🇭🇰HK-🇺🇸US_418
-      - CA 2 → TG@SCINV
-      - JP 1 → TG@SCINV
-      - Relay_🇭🇰HK-🇺🇸US_415
-      - CA_159
-      - Relay_🇷🇴RO-🇯🇵JP_696
-      - Relay_🇷🇴RO-🇯🇵JP_697
+      - 台湾(油管:破解资源君2.0) 2
+      - 美国(油管:破解资源君2.0) 11
+      - 台湾(油管:破解资源君2.0) 9
+      - 美国(油管:破解资源君2.0) 24
+      - 亚洲(油管:破解资源君2.0) 3
+      - 台湾(油管:破解资源君2.0) 24
+      - 美国(油管:破解资源君2.0) 16
+      - 亚洲(油管:破解资源君2.0) 2
+      - 台湾(油管:破解资源君2.0) 18
+      - 台湾(油管:破解资源君2.0) 13
+      - 美国(油管:破解资源君2.0) 17
+      - 美国(油管:破解资源君2.0) 12
+      - 台湾(油管:破解资源君2.0) 19
+      - 台湾(油管:破解资源君2.0) 16
+      - 台湾(油管:破解资源君2.0) 14
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - CN 63
-      - CN 64
-      - CN 73
-      - CN 66
-      - CN 65
-      - CN 81
-      - CN 76
-      - CN 70
-      - CN 80
-      - CN 68
-      - CN 91
-      - CN 84
-      - CN 79
-      - CN 82
-      - CN 77
-      - CN 74
-      - _61
-      - CN 87
-      - CN 88
-      - CN 75
-      - CN 89
-      - CA 1 → TG@SCINV
-      - US 11 → TG@SCINV
-      - Pool__34
-      - Relay_🇸🇬SG-🇺🇸US_823
-      - Relay_🇺🇸US-🇺🇸US_1403
-      - Relay_🇨🇳CN-🇹🇼TW_270
-      - US 36 → TG@SCINV
-      - Relay_🇭🇰HK-🇺🇸US_414
-      - CN 71
-      - CN 90
-      - HK 1 → TG@SCINV
-      - us-am32-5.eqnode.net:8081
-      - Pool__63
-      - CN 67
-      - Relay_🇭🇰HK-🇺🇸US_418
-      - CA 2 → TG@SCINV
-      - JP 1 → TG@SCINV
-      - Relay_🇭🇰HK-🇺🇸US_415
-      - CA_159
-      - Relay_🇷🇴RO-🇯🇵JP_696
-      - Relay_🇷🇴RO-🇯🇵JP_697
+      - 台湾(油管:破解资源君2.0) 2
+      - 美国(油管:破解资源君2.0) 11
+      - 台湾(油管:破解资源君2.0) 9
+      - 美国(油管:破解资源君2.0) 24
+      - 亚洲(油管:破解资源君2.0) 3
+      - 台湾(油管:破解资源君2.0) 24
+      - 美国(油管:破解资源君2.0) 16
+      - 亚洲(油管:破解资源君2.0) 2
+      - 台湾(油管:破解资源君2.0) 18
+      - 台湾(油管:破解资源君2.0) 13
+      - 美国(油管:破解资源君2.0) 17
+      - 美国(油管:破解资源君2.0) 12
+      - 台湾(油管:破解资源君2.0) 19
+      - 台湾(油管:破解资源君2.0) 16
+      - 台湾(油管:破解资源君2.0) 14
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN 63
-      - CN 64
-      - CN 73
-      - CN 66
-      - CN 65
-      - CN 81
-      - CN 76
-      - CN 70
-      - CN 80
-      - CN 68
-      - CN 91
-      - CN 84
-      - CN 79
-      - CN 82
-      - CN 77
-      - CN 74
-      - _61
-      - CN 87
-      - CN 88
-      - CN 75
-      - CN 89
-      - CA 1 → TG@SCINV
-      - US 11 → TG@SCINV
-      - Pool__34
-      - Relay_🇸🇬SG-🇺🇸US_823
-      - Relay_🇺🇸US-🇺🇸US_1403
-      - Relay_🇨🇳CN-🇹🇼TW_270
-      - US 36 → TG@SCINV
-      - Relay_🇭🇰HK-🇺🇸US_414
-      - CN 71
-      - CN 90
-      - HK 1 → TG@SCINV
-      - us-am32-5.eqnode.net:8081
-      - Pool__63
-      - CN 67
-      - Relay_🇭🇰HK-🇺🇸US_418
-      - CA 2 → TG@SCINV
-      - JP 1 → TG@SCINV
-      - Relay_🇭🇰HK-🇺🇸US_415
-      - CA_159
-      - Relay_🇷🇴RO-🇯🇵JP_696
-      - Relay_🇷🇴RO-🇯🇵JP_697
+      - 台湾(油管:破解资源君2.0) 2
+      - 美国(油管:破解资源君2.0) 11
+      - 台湾(油管:破解资源君2.0) 9
+      - 美国(油管:破解资源君2.0) 24
+      - 亚洲(油管:破解资源君2.0) 3
+      - 台湾(油管:破解资源君2.0) 24
+      - 美国(油管:破解资源君2.0) 16
+      - 亚洲(油管:破解资源君2.0) 2
+      - 台湾(油管:破解资源君2.0) 18
+      - 台湾(油管:破解资源君2.0) 13
+      - 美国(油管:破解资源君2.0) 17
+      - 美国(油管:破解资源君2.0) 12
+      - 台湾(油管:破解资源君2.0) 19
+      - 台湾(油管:破解资源君2.0) 16
+      - 台湾(油管:破解资源君2.0) 14
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -208,195 +100,95 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN 63
-      - CN 64
-      - CN 73
-      - CN 66
-      - CN 65
-      - CN 81
-      - CN 76
-      - CN 70
-      - CN 80
-      - CN 68
-      - CN 91
-      - CN 84
-      - CN 79
-      - CN 82
-      - CN 77
-      - CN 74
-      - _61
-      - CN 87
-      - CN 88
-      - CN 75
-      - CN 89
-      - CA 1 → TG@SCINV
-      - US 11 → TG@SCINV
-      - Pool__34
-      - Relay_🇸🇬SG-🇺🇸US_823
-      - Relay_🇺🇸US-🇺🇸US_1403
-      - Relay_🇨🇳CN-🇹🇼TW_270
-      - US 36 → TG@SCINV
-      - Relay_🇭🇰HK-🇺🇸US_414
-      - CN 71
-      - CN 90
-      - HK 1 → TG@SCINV
-      - us-am32-5.eqnode.net:8081
-      - Pool__63
-      - CN 67
-      - Relay_🇭🇰HK-🇺🇸US_418
-      - CA 2 → TG@SCINV
-      - JP 1 → TG@SCINV
-      - Relay_🇭🇰HK-🇺🇸US_415
-      - CA_159
-      - Relay_🇷🇴RO-🇯🇵JP_696
-      - Relay_🇷🇴RO-🇯🇵JP_697
+      - 台湾(油管:破解资源君2.0) 2
+      - 美国(油管:破解资源君2.0) 11
+      - 台湾(油管:破解资源君2.0) 9
+      - 美国(油管:破解资源君2.0) 24
+      - 亚洲(油管:破解资源君2.0) 3
+      - 台湾(油管:破解资源君2.0) 24
+      - 美国(油管:破解资源君2.0) 16
+      - 亚洲(油管:破解资源君2.0) 2
+      - 台湾(油管:破解资源君2.0) 18
+      - 台湾(油管:破解资源君2.0) 13
+      - 美国(油管:破解资源君2.0) 17
+      - 美国(油管:破解资源君2.0) 12
+      - 台湾(油管:破解资源君2.0) 19
+      - 台湾(油管:破解资源君2.0) 16
+      - 台湾(油管:破解资源君2.0) 14
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 台湾(油管:破解资源君2.0) 2
+      - 台湾(油管:破解资源君2.0) 9
+      - 台湾(油管:破解资源君2.0) 24
+      - 台湾(油管:破解资源君2.0) 18
+      - 台湾(油管:破解资源君2.0) 13
+      - 台湾(油管:破解资源君2.0) 19
+      - 台湾(油管:破解资源君2.0) 16
+      - 台湾(油管:破解资源君2.0) 14
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - CN 63
-      - CN 64
-      - CN 73
-      - CN 66
-      - CN 65
-      - CN 81
-      - CN 76
-      - CN 70
-      - CN 80
-      - CN 68
-      - CN 91
-      - CN 84
-      - CN 79
-      - CN 82
-      - CN 77
-      - CN 74
-      - _61
-      - CN 87
-      - CN 88
-      - CN 75
-      - CN 89
-      - CA 1 → TG@SCINV
-      - US 11 → TG@SCINV
-      - Pool__34
-      - Relay_🇸🇬SG-🇺🇸US_823
-      - Relay_🇺🇸US-🇺🇸US_1403
-      - Relay_🇨🇳CN-🇹🇼TW_270
-      - US 36 → TG@SCINV
-      - Relay_🇭🇰HK-🇺🇸US_414
-      - CN 71
-      - CN 90
-      - HK 1 → TG@SCINV
-      - us-am32-5.eqnode.net:8081
-      - Pool__63
-      - CN 67
-      - Relay_🇭🇰HK-🇺🇸US_418
-      - CA 2 → TG@SCINV
-      - JP 1 → TG@SCINV
-      - Relay_🇭🇰HK-🇺🇸US_415
-      - CA_159
-      - Relay_🇷🇴RO-🇯🇵JP_696
-      - Relay_🇷🇴RO-🇯🇵JP_697
+      - 台湾(油管:破解资源君2.0) 2
+      - 美国(油管:破解资源君2.0) 11
+      - 台湾(油管:破解资源君2.0) 9
+      - 美国(油管:破解资源君2.0) 24
+      - 亚洲(油管:破解资源君2.0) 3
+      - 台湾(油管:破解资源君2.0) 24
+      - 美国(油管:破解资源君2.0) 16
+      - 亚洲(油管:破解资源君2.0) 2
+      - 台湾(油管:破解资源君2.0) 18
+      - 台湾(油管:破解资源君2.0) 13
+      - 美国(油管:破解资源君2.0) 17
+      - 美国(油管:破解资源君2.0) 12
+      - 台湾(油管:破解资源君2.0) 19
+      - 台湾(油管:破解资源君2.0) 16
+      - 台湾(油管:破解资源君2.0) 14
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - CN 63
-      - CN 64
-      - CN 73
-      - CN 66
-      - CN 65
-      - CN 81
-      - CN 76
-      - CN 70
-      - CN 80
-      - CN 68
-      - CN 91
-      - CN 84
-      - CN 79
-      - CN 82
-      - CN 77
-      - CN 74
-      - _61
-      - CN 87
-      - CN 88
-      - CN 75
-      - CN 89
-      - CA 1 → TG@SCINV
-      - US 11 → TG@SCINV
-      - Pool__34
-      - Relay_🇸🇬SG-🇺🇸US_823
-      - Relay_🇺🇸US-🇺🇸US_1403
-      - Relay_🇨🇳CN-🇹🇼TW_270
-      - US 36 → TG@SCINV
-      - Relay_🇭🇰HK-🇺🇸US_414
-      - CN 71
-      - CN 90
-      - HK 1 → TG@SCINV
-      - us-am32-5.eqnode.net:8081
-      - Pool__63
-      - CN 67
-      - Relay_🇭🇰HK-🇺🇸US_418
-      - CA 2 → TG@SCINV
-      - JP 1 → TG@SCINV
-      - Relay_🇭🇰HK-🇺🇸US_415
-      - CA_159
-      - Relay_🇷🇴RO-🇯🇵JP_696
-      - Relay_🇷🇴RO-🇯🇵JP_697
+      - 台湾(油管:破解资源君2.0) 2
+      - 美国(油管:破解资源君2.0) 11
+      - 台湾(油管:破解资源君2.0) 9
+      - 美国(油管:破解资源君2.0) 24
+      - 亚洲(油管:破解资源君2.0) 3
+      - 台湾(油管:破解资源君2.0) 24
+      - 美国(油管:破解资源君2.0) 16
+      - 亚洲(油管:破解资源君2.0) 2
+      - 台湾(油管:破解资源君2.0) 18
+      - 台湾(油管:破解资源君2.0) 13
+      - 美国(油管:破解资源君2.0) 17
+      - 美国(油管:破解资源君2.0) 12
+      - 台湾(油管:破解资源君2.0) 19
+      - 台湾(油管:破解资源君2.0) 16
+      - 台湾(油管:破解资源君2.0) 14
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CN 63
-      - CN 64
-      - CN 73
-      - CN 66
-      - CN 65
-      - CN 81
-      - CN 76
-      - CN 70
-      - CN 80
-      - CN 68
-      - CN 91
-      - CN 84
-      - CN 79
-      - CN 82
-      - CN 77
-      - CN 74
-      - _61
-      - CN 87
-      - CN 88
-      - CN 75
-      - CN 89
-      - CA 1 → TG@SCINV
-      - US 11 → TG@SCINV
-      - Pool__34
-      - Relay_🇸🇬SG-🇺🇸US_823
-      - Relay_🇺🇸US-🇺🇸US_1403
-      - Relay_🇨🇳CN-🇹🇼TW_270
-      - US 36 → TG@SCINV
-      - Relay_🇭🇰HK-🇺🇸US_414
-      - CN 71
-      - CN 90
-      - HK 1 → TG@SCINV
-      - us-am32-5.eqnode.net:8081
-      - Pool__63
-      - CN 67
-      - Relay_🇭🇰HK-🇺🇸US_418
-      - CA 2 → TG@SCINV
-      - JP 1 → TG@SCINV
-      - Relay_🇭🇰HK-🇺🇸US_415
-      - CA_159
-      - Relay_🇷🇴RO-🇯🇵JP_696
-      - Relay_🇷🇴RO-🇯🇵JP_697
+      - 台湾(油管:破解资源君2.0) 2
+      - 美国(油管:破解资源君2.0) 11
+      - 台湾(油管:破解资源君2.0) 9
+      - 美国(油管:破解资源君2.0) 24
+      - 亚洲(油管:破解资源君2.0) 3
+      - 台湾(油管:破解资源君2.0) 24
+      - 美国(油管:破解资源君2.0) 16
+      - 亚洲(油管:破解资源君2.0) 2
+      - 台湾(油管:破解资源君2.0) 18
+      - 台湾(油管:破解资源君2.0) 13
+      - 美国(油管:破解资源君2.0) 17
+      - 美国(油管:破解资源君2.0) 12
+      - 台湾(油管:破解资源君2.0) 19
+      - 台湾(油管:破解资源君2.0) 16
+      - 台湾(油管:破解资源君2.0) 14
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -412,48 +204,21 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CN 63
-      - CN 64
-      - CN 73
-      - CN 66
-      - CN 65
-      - CN 81
-      - CN 76
-      - CN 70
-      - CN 80
-      - CN 68
-      - CN 91
-      - CN 84
-      - CN 79
-      - CN 82
-      - CN 77
-      - CN 74
-      - _61
-      - CN 87
-      - CN 88
-      - CN 75
-      - CN 89
-      - CA 1 → TG@SCINV
-      - US 11 → TG@SCINV
-      - Pool__34
-      - Relay_🇸🇬SG-🇺🇸US_823
-      - Relay_🇺🇸US-🇺🇸US_1403
-      - Relay_🇨🇳CN-🇹🇼TW_270
-      - US 36 → TG@SCINV
-      - Relay_🇭🇰HK-🇺🇸US_414
-      - CN 71
-      - CN 90
-      - HK 1 → TG@SCINV
-      - us-am32-5.eqnode.net:8081
-      - Pool__63
-      - CN 67
-      - Relay_🇭🇰HK-🇺🇸US_418
-      - CA 2 → TG@SCINV
-      - JP 1 → TG@SCINV
-      - Relay_🇭🇰HK-🇺🇸US_415
-      - CA_159
-      - Relay_🇷🇴RO-🇯🇵JP_696
-      - Relay_🇷🇴RO-🇯🇵JP_697
+      - 台湾(油管:破解资源君2.0) 2
+      - 美国(油管:破解资源君2.0) 11
+      - 台湾(油管:破解资源君2.0) 9
+      - 美国(油管:破解资源君2.0) 24
+      - 亚洲(油管:破解资源君2.0) 3
+      - 台湾(油管:破解资源君2.0) 24
+      - 美国(油管:破解资源君2.0) 16
+      - 亚洲(油管:破解资源君2.0) 2
+      - 台湾(油管:破解资源君2.0) 18
+      - 台湾(油管:破解资源君2.0) 13
+      - 美国(油管:破解资源君2.0) 17
+      - 美国(油管:破解资源君2.0) 12
+      - 台湾(油管:破解资源君2.0) 19
+      - 台湾(油管:破解资源君2.0) 16
+      - 台湾(油管:破解资源君2.0) 14
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
