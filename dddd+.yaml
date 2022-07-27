@@ -5,63 +5,279 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: AU_24, server: 43.134.229.238, port: 20085, type: vmess, uuid: eb35ce5a-7b4d-4fbc-d23f-a57c74872634, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_1786, server: s2.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s2.hazz.win, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_1770, server: v5.tgfaka.com, port: 48443, type: trojan, password: 00b19c02-bc00-440a-a397-faf70ac3f44e, sni: v5.tgfaka.com, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_1783, server: v5.tgfaka.com, port: 48443, type: trojan, password: 6938c10f-c1a0-43e3-8321-099055f79853, sni: v5.tgfaka.com, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇬🇧GB-🇬🇧GB_275, server: jgwld3.gaox.ml, port: 443, type: trojan, password: 71b55a84-3fac-4458-abff-eaad79219c91, sni: jgwld3.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: ZZ_1901, server: 134.195.198.95, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: ZZ_1802, server: 134.195.198.95, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: Relay_🇸🇬SG-🇸🇬SG_1017, server: supersouth.xn--mesv7f5toqlp.club, port: 12001, type: trojan, password: dd04c158-1bac-47cd-99c1-5c4f64796dd5, sni: supersouth.xn--mesv7f5toqlp.club, skip-cert-verify: true, udp: true}
-  - {name: FR_197, server: 195.154.200.150, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: US_1195, server: 5.188.0.151, port: 800, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: CN 62, server: 183.232.141.93, port: 563, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 4359:KKKKKKKKKK45334, obfs-param: dC5tZS92cG5oYXQ, udp: true}
+  - {name: CN 60, server: 183.232.141.109, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 4359:KKKKKKKKKK45334, obfs-param: dC5tZS92cG5oYXQ, udp: true}
+  - {name: CN 73, server: 116.162.120.26, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 4359:KKKKKKKKKK45334, obfs-param: dC5tZS92cG5oYXQ, udp: true}
+  - {name: CN 66, server: 116.162.120.24, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 4359:KKKKKKKKKK45334, obfs-param: dC5tZS92cG5oYXQ, udp: true}
+  - {name: CN 76, server: 112.65.53.17, port: 564, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 4359:KKKKKKKKKK45334, obfs-param: dC5tZS92cG5oYXQ, udp: true}
+  - {name: CN 56, server: 183.232.141.93, port: 601, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 4359:KKKKKKKKKK45334, obfs-param: dC5tZS92cG5oYXQ, udp: true}
+  - {name: LT_458🇱🇹LT_451, server: 213.183.53.214, port: 9032, type: ss, cipher: aes-256-cfb, password: UWZQeLRWnkqgkseq, udp: true}
+  - {name: LT_514🇱🇹LT_524, server: 213.183.53.200, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
+  - {name: LT_501🇱🇹LT_509, server: 213.183.53.177, port: 9033, type: ss, cipher: aes-256-cfb, password: UTJA57ypk2XKQpnm, udp: true}
+  - {name: LT_511🇱🇹LT_519, server: 213.183.53.200, port: 9041, type: ss, cipher: aes-256-cfb, password: U6qnYRhfyDmn8sgn, udp: true}
+  - {name: LT_508, server: 213.183.53.177, port: 9041, type: ss, cipher: aes-256-cfb, password: U6qnYRhfyDmn8sgn, udp: true}
+  - {name: LT_496🇱🇹LT_528, server: 213.183.53.200, port: 9027, type: ss, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8, udp: true}
+  - {name: LT_452🇱🇹LT_454, server: 213.183.53.214, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
+  - {name: LT_510🇱🇹LT_518, server: 213.183.53.200, port: 9003, type: ss, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP, udp: true}
+  - {name: Relay_Relay_🇺🇸US-🇺🇸US_1236🇺🇸US-🇺🇸US_1257, server: us-am32-5.eqnode.net, port: 8081, type: ssr, cipher: aes-256-cfb, password: YFVrXZgRo, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
+  - {name: LT_506🇱🇹LT_513, server: 213.183.53.200, port: 9005, type: ss, cipher: aes-256-cfb, password: ZET59LF6DvCC8KVt, udp: true}
+  - {name: US_768🇺🇸US_1016, server: 38.114.114.69, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: LT_446🇱🇹LT_459, server: 213.183.53.179, port: 9057, type: ss, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z, udp: true}
+  - {name: LT_509🇱🇹LT_516, server: 213.183.53.200, port: 9084, type: ss, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj, udp: true}
+  - {name: LT_465🇱🇹LT_497, server: 213.183.63.219, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
+  - {name: US_759🇺🇸US_826, server: 38.68.134.85, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_926🇺🇸US_790, server: 38.114.114.69, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: US_747🇺🇸US_779, server: 38.114.114.69, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: NL_534🇳🇱NL_579, server: 213.183.51.172, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH, udp: true}
+  - {name: CN 57, server: 183.232.141.109, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 4359:KKKKKKKKKK45334, obfs-param: dC5tZS92cG5oYXQ, udp: true}
+  - {name: LT_494🇱🇹LT_522, server: 213.183.53.200, port: 9015, type: ss, cipher: aes-256-cfb, password: ZpNDDKRu9MagNvaf, udp: true}
+  - {name: LT_508🇱🇹LT_514, server: 213.183.53.200, port: 9006, type: ss, cipher: aes-256-cfb, password: FAdUvMJUq5vDgKEq, udp: true}
+  - {name: LT_502🇱🇹LT_510, server: 213.183.53.200, port: 9001, type: ss, cipher: aes-256-cfb, password: UkXRsXvR6buDMG2Y, udp: true}
+  - {name: US_774🇺🇸US_969, server: 38.68.134.85, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: LT_518🇱🇹LT_530, server: 213.183.53.200, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX, udp: true}
+  - {name: LT_488, server: 213.183.63.221, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
+  - {name: US_754🇺🇸US_888, server: 38.114.114.67, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: AU_48🇦🇺AU_40, server: 185.167.116.253, port: 9088, type: ss, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn, udp: true}
+  - {name: LT_457🇱🇹LT_449, server: 213.183.53.208, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
+  - {name: LT_487🇱🇹LT_487, server: 213.183.63.221, port: 9057, type: ss, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z, udp: true}
+  - {name: NL_550🇳🇱NL_561, server: 213.183.59.218, port: 9073, type: ss, cipher: aes-256-cfb, password: daFYagqDdBdA6VTX, udp: true}
+  - {name: LT_493🇱🇹LT_523, server: 213.183.53.177, port: 9059, type: ss, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY, udp: true}
+  - {name: _08_25, server: 38.114.114.69, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: AU_46🇦🇺AU_55, server: 185.167.116.24, port: 9010, type: ss, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4, udp: true}
+  - {name: LT_499🇱🇹LT_532, server: 213.183.53.177, port: 9010, type: ss, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4, udp: true}
+  - {name: US_829🇺🇸US_802, server: 38.114.114.69, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: LT_517🇱🇹LT_526, server: 213.183.53.177, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
+  - {name: _17_03, server: 38.114.114.69, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: FR_308🇫🇷FR_306, server: 54.36.174.181, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: RU_649🇷🇺RU_632, server: 217.30.10.65, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa, udp: true}
+  - {name: US_1098🇺🇸US_1130, server: 38.64.138.145, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: LT_504🇱🇹LT_512, server: 213.183.53.200, port: 9088, type: ss, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn, udp: true}
+  - {name: Relay_Relay_🇸🇬SG-🇺🇸US_712🇸🇬SG-🇺🇸US_728, server: s2.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s2.hazz.win, skip-cert-verify: true, udp: true}
+  - {name: LT_440🇱🇹LT_477, server: 213.183.53.179, port: 9084, type: ss, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj, udp: true}
+  - {name: LT_505🇱🇹LT_500, server: 213.183.53.200, port: 9026, type: ss, cipher: aes-256-cfb, password: QWDDvVE9npNurQfA, udp: true}
+  - {name: RU_617🇷🇺RU_619, server: 217.30.10.68, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
+  - {name: US_923🇺🇸US_785, server: 38.114.114.69, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: NL_530🇳🇱NL_582, server: 213.183.51.172, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
+  - {name: US_831🇺🇸US_801, server: 38.68.134.85, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: LT_484🇱🇹LT_479, server: 213.183.63.221, port: 9024, type: ss, cipher: aes-256-cfb, password: BejrQvtu9sqUeNuZ, udp: true}
+  - {name: US_1096🇺🇸US_1128, server: 38.64.138.145, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: LT_492🇱🇹LT_506, server: 213.183.53.200, port: 9033, type: ss, cipher: aes-256-cfb, password: UTJA57ypk2XKQpnm, udp: true}
+  - {name: US_936🇺🇸US_815, server: 38.114.114.67, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: RU_636, server: 217.30.10.65, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX, udp: true}
+  - {name: LT_521🇱🇹LT_501, server: 213.183.53.177, port: 9003, type: ss, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP, udp: true}
+  - {name: NL_566🇳🇱NL_572, server: 213.183.59.177, port: 9057, type: ss, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z, udp: true}
+  - {name: RU_658🇷🇺RU_669, server: 217.30.10.65, port: 9093, type: ss, cipher: aes-256-cfb, password: wfLC2y7rzZyCmuyt, udp: true}
+  - {name: RU_650🇷🇺RU_637, server: 217.30.10.68, port: 9005, type: ss, cipher: aes-256-cfb, password: ZET59LF6DvCC8KVt, udp: true}
+  - {name: US_737🇺🇸US_760, server: 38.114.114.69, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - AU_24
-      - Relay_🇺🇸US-🇺🇸US_1786
-      - Relay_🇺🇸US-🇺🇸US_1770
-      - Relay_🇺🇸US-🇺🇸US_1783
-      - Relay_🇬🇧GB-🇬🇧GB_275
-      - ZZ_1901
-      - ZZ_1802
-      - Relay_🇸🇬SG-🇸🇬SG_1017
-      - FR_197
-      - US_1195
+      - CN 62
+      - CN 60
+      - CN 73
+      - CN 66
+      - CN 76
+      - CN 56
+      - LT_458🇱🇹LT_451
+      - LT_514🇱🇹LT_524
+      - LT_501🇱🇹LT_509
+      - LT_511🇱🇹LT_519
+      - LT_508
+      - LT_496🇱🇹LT_528
+      - LT_452🇱🇹LT_454
+      - LT_510🇱🇹LT_518
+      - Relay_Relay_🇺🇸US-🇺🇸US_1236🇺🇸US-🇺🇸US_1257
+      - LT_506🇱🇹LT_513
+      - US_768🇺🇸US_1016
+      - LT_446🇱🇹LT_459
+      - LT_509🇱🇹LT_516
+      - LT_465🇱🇹LT_497
+      - US_759🇺🇸US_826
+      - US_926🇺🇸US_790
+      - US_747🇺🇸US_779
+      - NL_534🇳🇱NL_579
+      - CN 57
+      - LT_494🇱🇹LT_522
+      - LT_508🇱🇹LT_514
+      - LT_502🇱🇹LT_510
+      - US_774🇺🇸US_969
+      - LT_518🇱🇹LT_530
+      - LT_488
+      - US_754🇺🇸US_888
+      - AU_48🇦🇺AU_40
+      - LT_457🇱🇹LT_449
+      - LT_487🇱🇹LT_487
+      - NL_550🇳🇱NL_561
+      - LT_493🇱🇹LT_523
+      - _08_25
+      - AU_46🇦🇺AU_55
+      - LT_499🇱🇹LT_532
+      - US_829🇺🇸US_802
+      - LT_517🇱🇹LT_526
+      - _17_03
+      - FR_308🇫🇷FR_306
+      - RU_649🇷🇺RU_632
+      - US_1098🇺🇸US_1130
+      - LT_504🇱🇹LT_512
+      - Relay_Relay_🇸🇬SG-🇺🇸US_712🇸🇬SG-🇺🇸US_728
+      - LT_440🇱🇹LT_477
+      - LT_505🇱🇹LT_500
+      - RU_617🇷🇺RU_619
+      - US_923🇺🇸US_785
+      - NL_530🇳🇱NL_582
+      - US_831🇺🇸US_801
+      - LT_484🇱🇹LT_479
+      - US_1096🇺🇸US_1128
+      - LT_492🇱🇹LT_506
+      - US_936🇺🇸US_815
+      - RU_636
+      - LT_521🇱🇹LT_501
+      - NL_566🇳🇱NL_572
+      - RU_658🇷🇺RU_669
+      - RU_650🇷🇺RU_637
+      - US_737🇺🇸US_760
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - AU_24
-      - Relay_🇺🇸US-🇺🇸US_1786
-      - Relay_🇺🇸US-🇺🇸US_1770
-      - Relay_🇺🇸US-🇺🇸US_1783
-      - Relay_🇬🇧GB-🇬🇧GB_275
-      - ZZ_1901
-      - ZZ_1802
-      - Relay_🇸🇬SG-🇸🇬SG_1017
-      - FR_197
-      - US_1195
+      - CN 62
+      - CN 60
+      - CN 73
+      - CN 66
+      - CN 76
+      - CN 56
+      - LT_458🇱🇹LT_451
+      - LT_514🇱🇹LT_524
+      - LT_501🇱🇹LT_509
+      - LT_511🇱🇹LT_519
+      - LT_508
+      - LT_496🇱🇹LT_528
+      - LT_452🇱🇹LT_454
+      - LT_510🇱🇹LT_518
+      - Relay_Relay_🇺🇸US-🇺🇸US_1236🇺🇸US-🇺🇸US_1257
+      - LT_506🇱🇹LT_513
+      - US_768🇺🇸US_1016
+      - LT_446🇱🇹LT_459
+      - LT_509🇱🇹LT_516
+      - LT_465🇱🇹LT_497
+      - US_759🇺🇸US_826
+      - US_926🇺🇸US_790
+      - US_747🇺🇸US_779
+      - NL_534🇳🇱NL_579
+      - CN 57
+      - LT_494🇱🇹LT_522
+      - LT_508🇱🇹LT_514
+      - LT_502🇱🇹LT_510
+      - US_774🇺🇸US_969
+      - LT_518🇱🇹LT_530
+      - LT_488
+      - US_754🇺🇸US_888
+      - AU_48🇦🇺AU_40
+      - LT_457🇱🇹LT_449
+      - LT_487🇱🇹LT_487
+      - NL_550🇳🇱NL_561
+      - LT_493🇱🇹LT_523
+      - _08_25
+      - AU_46🇦🇺AU_55
+      - LT_499🇱🇹LT_532
+      - US_829🇺🇸US_802
+      - LT_517🇱🇹LT_526
+      - _17_03
+      - FR_308🇫🇷FR_306
+      - RU_649🇷🇺RU_632
+      - US_1098🇺🇸US_1130
+      - LT_504🇱🇹LT_512
+      - Relay_Relay_🇸🇬SG-🇺🇸US_712🇸🇬SG-🇺🇸US_728
+      - LT_440🇱🇹LT_477
+      - LT_505🇱🇹LT_500
+      - RU_617🇷🇺RU_619
+      - US_923🇺🇸US_785
+      - NL_530🇳🇱NL_582
+      - US_831🇺🇸US_801
+      - LT_484🇱🇹LT_479
+      - US_1096🇺🇸US_1128
+      - LT_492🇱🇹LT_506
+      - US_936🇺🇸US_815
+      - RU_636
+      - LT_521🇱🇹LT_501
+      - NL_566🇳🇱NL_572
+      - RU_658🇷🇺RU_669
+      - RU_650🇷🇺RU_637
+      - US_737🇺🇸US_760
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - AU_24
-      - Relay_🇺🇸US-🇺🇸US_1786
-      - Relay_🇺🇸US-🇺🇸US_1770
-      - Relay_🇺🇸US-🇺🇸US_1783
-      - Relay_🇬🇧GB-🇬🇧GB_275
-      - ZZ_1901
-      - ZZ_1802
-      - Relay_🇸🇬SG-🇸🇬SG_1017
-      - FR_197
-      - US_1195
+      - CN 62
+      - CN 60
+      - CN 73
+      - CN 66
+      - CN 76
+      - CN 56
+      - LT_458🇱🇹LT_451
+      - LT_514🇱🇹LT_524
+      - LT_501🇱🇹LT_509
+      - LT_511🇱🇹LT_519
+      - LT_508
+      - LT_496🇱🇹LT_528
+      - LT_452🇱🇹LT_454
+      - LT_510🇱🇹LT_518
+      - Relay_Relay_🇺🇸US-🇺🇸US_1236🇺🇸US-🇺🇸US_1257
+      - LT_506🇱🇹LT_513
+      - US_768🇺🇸US_1016
+      - LT_446🇱🇹LT_459
+      - LT_509🇱🇹LT_516
+      - LT_465🇱🇹LT_497
+      - US_759🇺🇸US_826
+      - US_926🇺🇸US_790
+      - US_747🇺🇸US_779
+      - NL_534🇳🇱NL_579
+      - CN 57
+      - LT_494🇱🇹LT_522
+      - LT_508🇱🇹LT_514
+      - LT_502🇱🇹LT_510
+      - US_774🇺🇸US_969
+      - LT_518🇱🇹LT_530
+      - LT_488
+      - US_754🇺🇸US_888
+      - AU_48🇦🇺AU_40
+      - LT_457🇱🇹LT_449
+      - LT_487🇱🇹LT_487
+      - NL_550🇳🇱NL_561
+      - LT_493🇱🇹LT_523
+      - _08_25
+      - AU_46🇦🇺AU_55
+      - LT_499🇱🇹LT_532
+      - US_829🇺🇸US_802
+      - LT_517🇱🇹LT_526
+      - _17_03
+      - FR_308🇫🇷FR_306
+      - RU_649🇷🇺RU_632
+      - US_1098🇺🇸US_1130
+      - LT_504🇱🇹LT_512
+      - Relay_Relay_🇸🇬SG-🇺🇸US_712🇸🇬SG-🇺🇸US_728
+      - LT_440🇱🇹LT_477
+      - LT_505🇱🇹LT_500
+      - RU_617🇷🇺RU_619
+      - US_923🇺🇸US_785
+      - NL_530🇳🇱NL_582
+      - US_831🇺🇸US_801
+      - LT_484🇱🇹LT_479
+      - US_1096🇺🇸US_1128
+      - LT_492🇱🇹LT_506
+      - US_936🇺🇸US_815
+      - RU_636
+      - LT_521🇱🇹LT_501
+      - NL_566🇳🇱NL_572
+      - RU_658🇷🇺RU_669
+      - RU_650🇷🇺RU_637
+      - US_737🇺🇸US_760
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -80,16 +296,70 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - AU_24
-      - Relay_🇺🇸US-🇺🇸US_1786
-      - Relay_🇺🇸US-🇺🇸US_1770
-      - Relay_🇺🇸US-🇺🇸US_1783
-      - Relay_🇬🇧GB-🇬🇧GB_275
-      - ZZ_1901
-      - ZZ_1802
-      - Relay_🇸🇬SG-🇸🇬SG_1017
-      - FR_197
-      - US_1195
+      - CN 62
+      - CN 60
+      - CN 73
+      - CN 66
+      - CN 76
+      - CN 56
+      - LT_458🇱🇹LT_451
+      - LT_514🇱🇹LT_524
+      - LT_501🇱🇹LT_509
+      - LT_511🇱🇹LT_519
+      - LT_508
+      - LT_496🇱🇹LT_528
+      - LT_452🇱🇹LT_454
+      - LT_510🇱🇹LT_518
+      - Relay_Relay_🇺🇸US-🇺🇸US_1236🇺🇸US-🇺🇸US_1257
+      - LT_506🇱🇹LT_513
+      - US_768🇺🇸US_1016
+      - LT_446🇱🇹LT_459
+      - LT_509🇱🇹LT_516
+      - LT_465🇱🇹LT_497
+      - US_759🇺🇸US_826
+      - US_926🇺🇸US_790
+      - US_747🇺🇸US_779
+      - NL_534🇳🇱NL_579
+      - CN 57
+      - LT_494🇱🇹LT_522
+      - LT_508🇱🇹LT_514
+      - LT_502🇱🇹LT_510
+      - US_774🇺🇸US_969
+      - LT_518🇱🇹LT_530
+      - LT_488
+      - US_754🇺🇸US_888
+      - AU_48🇦🇺AU_40
+      - LT_457🇱🇹LT_449
+      - LT_487🇱🇹LT_487
+      - NL_550🇳🇱NL_561
+      - LT_493🇱🇹LT_523
+      - _08_25
+      - AU_46🇦🇺AU_55
+      - LT_499🇱🇹LT_532
+      - US_829🇺🇸US_802
+      - LT_517🇱🇹LT_526
+      - _17_03
+      - FR_308🇫🇷FR_306
+      - RU_649🇷🇺RU_632
+      - US_1098🇺🇸US_1130
+      - LT_504🇱🇹LT_512
+      - Relay_Relay_🇸🇬SG-🇺🇸US_712🇸🇬SG-🇺🇸US_728
+      - LT_440🇱🇹LT_477
+      - LT_505🇱🇹LT_500
+      - RU_617🇷🇺RU_619
+      - US_923🇺🇸US_785
+      - NL_530🇳🇱NL_582
+      - US_831🇺🇸US_801
+      - LT_484🇱🇹LT_479
+      - US_1096🇺🇸US_1128
+      - LT_492🇱🇹LT_506
+      - US_936🇺🇸US_815
+      - RU_636
+      - LT_521🇱🇹LT_501
+      - NL_566🇳🇱NL_572
+      - RU_658🇷🇺RU_669
+      - RU_650🇷🇺RU_637
+      - US_737🇺🇸US_760
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -100,47 +370,209 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - AU_24
-      - Relay_🇺🇸US-🇺🇸US_1786
-      - Relay_🇺🇸US-🇺🇸US_1770
-      - Relay_🇺🇸US-🇺🇸US_1783
-      - Relay_🇬🇧GB-🇬🇧GB_275
-      - ZZ_1901
-      - ZZ_1802
-      - Relay_🇸🇬SG-🇸🇬SG_1017
-      - FR_197
-      - US_1195
+      - CN 62
+      - CN 60
+      - CN 73
+      - CN 66
+      - CN 76
+      - CN 56
+      - LT_458🇱🇹LT_451
+      - LT_514🇱🇹LT_524
+      - LT_501🇱🇹LT_509
+      - LT_511🇱🇹LT_519
+      - LT_508
+      - LT_496🇱🇹LT_528
+      - LT_452🇱🇹LT_454
+      - LT_510🇱🇹LT_518
+      - Relay_Relay_🇺🇸US-🇺🇸US_1236🇺🇸US-🇺🇸US_1257
+      - LT_506🇱🇹LT_513
+      - US_768🇺🇸US_1016
+      - LT_446🇱🇹LT_459
+      - LT_509🇱🇹LT_516
+      - LT_465🇱🇹LT_497
+      - US_759🇺🇸US_826
+      - US_926🇺🇸US_790
+      - US_747🇺🇸US_779
+      - NL_534🇳🇱NL_579
+      - CN 57
+      - LT_494🇱🇹LT_522
+      - LT_508🇱🇹LT_514
+      - LT_502🇱🇹LT_510
+      - US_774🇺🇸US_969
+      - LT_518🇱🇹LT_530
+      - LT_488
+      - US_754🇺🇸US_888
+      - AU_48🇦🇺AU_40
+      - LT_457🇱🇹LT_449
+      - LT_487🇱🇹LT_487
+      - NL_550🇳🇱NL_561
+      - LT_493🇱🇹LT_523
+      - _08_25
+      - AU_46🇦🇺AU_55
+      - LT_499🇱🇹LT_532
+      - US_829🇺🇸US_802
+      - LT_517🇱🇹LT_526
+      - _17_03
+      - FR_308🇫🇷FR_306
+      - RU_649🇷🇺RU_632
+      - US_1098🇺🇸US_1130
+      - LT_504🇱🇹LT_512
+      - Relay_Relay_🇸🇬SG-🇺🇸US_712🇸🇬SG-🇺🇸US_728
+      - LT_440🇱🇹LT_477
+      - LT_505🇱🇹LT_500
+      - RU_617🇷🇺RU_619
+      - US_923🇺🇸US_785
+      - NL_530🇳🇱NL_582
+      - US_831🇺🇸US_801
+      - LT_484🇱🇹LT_479
+      - US_1096🇺🇸US_1128
+      - LT_492🇱🇹LT_506
+      - US_936🇺🇸US_815
+      - RU_636
+      - LT_521🇱🇹LT_501
+      - NL_566🇳🇱NL_572
+      - RU_658🇷🇺RU_669
+      - RU_650🇷🇺RU_637
+      - US_737🇺🇸US_760
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - AU_24
-      - Relay_🇺🇸US-🇺🇸US_1786
-      - Relay_🇺🇸US-🇺🇸US_1770
-      - Relay_🇺🇸US-🇺🇸US_1783
-      - Relay_🇬🇧GB-🇬🇧GB_275
-      - ZZ_1901
-      - ZZ_1802
-      - Relay_🇸🇬SG-🇸🇬SG_1017
-      - FR_197
-      - US_1195
+      - CN 62
+      - CN 60
+      - CN 73
+      - CN 66
+      - CN 76
+      - CN 56
+      - LT_458🇱🇹LT_451
+      - LT_514🇱🇹LT_524
+      - LT_501🇱🇹LT_509
+      - LT_511🇱🇹LT_519
+      - LT_508
+      - LT_496🇱🇹LT_528
+      - LT_452🇱🇹LT_454
+      - LT_510🇱🇹LT_518
+      - Relay_Relay_🇺🇸US-🇺🇸US_1236🇺🇸US-🇺🇸US_1257
+      - LT_506🇱🇹LT_513
+      - US_768🇺🇸US_1016
+      - LT_446🇱🇹LT_459
+      - LT_509🇱🇹LT_516
+      - LT_465🇱🇹LT_497
+      - US_759🇺🇸US_826
+      - US_926🇺🇸US_790
+      - US_747🇺🇸US_779
+      - NL_534🇳🇱NL_579
+      - CN 57
+      - LT_494🇱🇹LT_522
+      - LT_508🇱🇹LT_514
+      - LT_502🇱🇹LT_510
+      - US_774🇺🇸US_969
+      - LT_518🇱🇹LT_530
+      - LT_488
+      - US_754🇺🇸US_888
+      - AU_48🇦🇺AU_40
+      - LT_457🇱🇹LT_449
+      - LT_487🇱🇹LT_487
+      - NL_550🇳🇱NL_561
+      - LT_493🇱🇹LT_523
+      - _08_25
+      - AU_46🇦🇺AU_55
+      - LT_499🇱🇹LT_532
+      - US_829🇺🇸US_802
+      - LT_517🇱🇹LT_526
+      - _17_03
+      - FR_308🇫🇷FR_306
+      - RU_649🇷🇺RU_632
+      - US_1098🇺🇸US_1130
+      - LT_504🇱🇹LT_512
+      - Relay_Relay_🇸🇬SG-🇺🇸US_712🇸🇬SG-🇺🇸US_728
+      - LT_440🇱🇹LT_477
+      - LT_505🇱🇹LT_500
+      - RU_617🇷🇺RU_619
+      - US_923🇺🇸US_785
+      - NL_530🇳🇱NL_582
+      - US_831🇺🇸US_801
+      - LT_484🇱🇹LT_479
+      - US_1096🇺🇸US_1128
+      - LT_492🇱🇹LT_506
+      - US_936🇺🇸US_815
+      - RU_636
+      - LT_521🇱🇹LT_501
+      - NL_566🇳🇱NL_572
+      - RU_658🇷🇺RU_669
+      - RU_650🇷🇺RU_637
+      - US_737🇺🇸US_760
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - AU_24
-      - Relay_🇺🇸US-🇺🇸US_1786
-      - Relay_🇺🇸US-🇺🇸US_1770
-      - Relay_🇺🇸US-🇺🇸US_1783
-      - Relay_🇬🇧GB-🇬🇧GB_275
-      - ZZ_1901
-      - ZZ_1802
-      - Relay_🇸🇬SG-🇸🇬SG_1017
-      - FR_197
-      - US_1195
+      - CN 62
+      - CN 60
+      - CN 73
+      - CN 66
+      - CN 76
+      - CN 56
+      - LT_458🇱🇹LT_451
+      - LT_514🇱🇹LT_524
+      - LT_501🇱🇹LT_509
+      - LT_511🇱🇹LT_519
+      - LT_508
+      - LT_496🇱🇹LT_528
+      - LT_452🇱🇹LT_454
+      - LT_510🇱🇹LT_518
+      - Relay_Relay_🇺🇸US-🇺🇸US_1236🇺🇸US-🇺🇸US_1257
+      - LT_506🇱🇹LT_513
+      - US_768🇺🇸US_1016
+      - LT_446🇱🇹LT_459
+      - LT_509🇱🇹LT_516
+      - LT_465🇱🇹LT_497
+      - US_759🇺🇸US_826
+      - US_926🇺🇸US_790
+      - US_747🇺🇸US_779
+      - NL_534🇳🇱NL_579
+      - CN 57
+      - LT_494🇱🇹LT_522
+      - LT_508🇱🇹LT_514
+      - LT_502🇱🇹LT_510
+      - US_774🇺🇸US_969
+      - LT_518🇱🇹LT_530
+      - LT_488
+      - US_754🇺🇸US_888
+      - AU_48🇦🇺AU_40
+      - LT_457🇱🇹LT_449
+      - LT_487🇱🇹LT_487
+      - NL_550🇳🇱NL_561
+      - LT_493🇱🇹LT_523
+      - _08_25
+      - AU_46🇦🇺AU_55
+      - LT_499🇱🇹LT_532
+      - US_829🇺🇸US_802
+      - LT_517🇱🇹LT_526
+      - _17_03
+      - FR_308🇫🇷FR_306
+      - RU_649🇷🇺RU_632
+      - US_1098🇺🇸US_1130
+      - LT_504🇱🇹LT_512
+      - Relay_Relay_🇸🇬SG-🇺🇸US_712🇸🇬SG-🇺🇸US_728
+      - LT_440🇱🇹LT_477
+      - LT_505🇱🇹LT_500
+      - RU_617🇷🇺RU_619
+      - US_923🇺🇸US_785
+      - NL_530🇳🇱NL_582
+      - US_831🇺🇸US_801
+      - LT_484🇱🇹LT_479
+      - US_1096🇺🇸US_1128
+      - LT_492🇱🇹LT_506
+      - US_936🇺🇸US_815
+      - RU_636
+      - LT_521🇱🇹LT_501
+      - NL_566🇳🇱NL_572
+      - RU_658🇷🇺RU_669
+      - RU_650🇷🇺RU_637
+      - US_737🇺🇸US_760
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -156,16 +588,70 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - AU_24
-      - Relay_🇺🇸US-🇺🇸US_1786
-      - Relay_🇺🇸US-🇺🇸US_1770
-      - Relay_🇺🇸US-🇺🇸US_1783
-      - Relay_🇬🇧GB-🇬🇧GB_275
-      - ZZ_1901
-      - ZZ_1802
-      - Relay_🇸🇬SG-🇸🇬SG_1017
-      - FR_197
-      - US_1195
+      - CN 62
+      - CN 60
+      - CN 73
+      - CN 66
+      - CN 76
+      - CN 56
+      - LT_458🇱🇹LT_451
+      - LT_514🇱🇹LT_524
+      - LT_501🇱🇹LT_509
+      - LT_511🇱🇹LT_519
+      - LT_508
+      - LT_496🇱🇹LT_528
+      - LT_452🇱🇹LT_454
+      - LT_510🇱🇹LT_518
+      - Relay_Relay_🇺🇸US-🇺🇸US_1236🇺🇸US-🇺🇸US_1257
+      - LT_506🇱🇹LT_513
+      - US_768🇺🇸US_1016
+      - LT_446🇱🇹LT_459
+      - LT_509🇱🇹LT_516
+      - LT_465🇱🇹LT_497
+      - US_759🇺🇸US_826
+      - US_926🇺🇸US_790
+      - US_747🇺🇸US_779
+      - NL_534🇳🇱NL_579
+      - CN 57
+      - LT_494🇱🇹LT_522
+      - LT_508🇱🇹LT_514
+      - LT_502🇱🇹LT_510
+      - US_774🇺🇸US_969
+      - LT_518🇱🇹LT_530
+      - LT_488
+      - US_754🇺🇸US_888
+      - AU_48🇦🇺AU_40
+      - LT_457🇱🇹LT_449
+      - LT_487🇱🇹LT_487
+      - NL_550🇳🇱NL_561
+      - LT_493🇱🇹LT_523
+      - _08_25
+      - AU_46🇦🇺AU_55
+      - LT_499🇱🇹LT_532
+      - US_829🇺🇸US_802
+      - LT_517🇱🇹LT_526
+      - _17_03
+      - FR_308🇫🇷FR_306
+      - RU_649🇷🇺RU_632
+      - US_1098🇺🇸US_1130
+      - LT_504🇱🇹LT_512
+      - Relay_Relay_🇸🇬SG-🇺🇸US_712🇸🇬SG-🇺🇸US_728
+      - LT_440🇱🇹LT_477
+      - LT_505🇱🇹LT_500
+      - RU_617🇷🇺RU_619
+      - US_923🇺🇸US_785
+      - NL_530🇳🇱NL_582
+      - US_831🇺🇸US_801
+      - LT_484🇱🇹LT_479
+      - US_1096🇺🇸US_1128
+      - LT_492🇱🇹LT_506
+      - US_936🇺🇸US_815
+      - RU_636
+      - LT_521🇱🇹LT_501
+      - NL_566🇳🇱NL_572
+      - RU_658🇷🇺RU_669
+      - RU_650🇷🇺RU_637
+      - US_737🇺🇸US_760
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
