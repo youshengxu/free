@@ -5,71 +5,203 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: Relay_🇸🇬SG-🇺🇸US_715, server: s2.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s2.hazz.win, skip-cert-verify: true, udp: true}
-  - {name: CN 63, server: 223.166.145.214, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 30991:LLLLiikk988iu, obfs-param: dC5tZS92cG5oYXQ, udp: true}
-  - {name: Relay_🇨🇳CN-🇹🇼TW_230, server: 111.45.29.75, port: 30003, type: trojan, password: c9a3a61d-5d49-4158-9e60-6fa32684b122, skip-cert-verify: true, udp: true}
-  - {name: US 15 → TG@SCINV, server: s3.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s3.hazz.win, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇷🇺RU-🇷🇺RU_650, server: 185.4.65.6, port: 21247, type: ss, cipher: aes-256-cfb, password: vDS9G2p, udp: true}
-  - {name: CN 3 → TG@SCINV, server: cm.spacez.cloud, port: 30003, type: trojan, password: c9a3a61d-5d49-4158-9e60-6fa32684b122, sni: cm.spacez.cloud, skip-cert-verify: true, udp: true}
-  - {name: CN 77, server: 183.232.141.117, port: 559, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 30999:LLLLiikk988iu, obfs-param: dC5tZS92cG5oYXQ, udp: true}
-  - {name: CA_138, server: 196.247.59.154, port: 800, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: CA_144, server: 196.247.59.154, port: 806, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: CA_139, server: 196.247.59.154, port: 801, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: CN 62, server: 183.232.141.82, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 31000:LLLLiikk988iu, obfs-param: dC5tZS92cG5oYXQ, udp: true}
-  - {name: CA_127, server: 196.247.59.154, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: CN 6 → TG@SCINV, server: ftp.cn.debian.cdnet.in, port: 8050, type: ss, cipher: aes-128-gcm, password: 83cfcf0a-2b51-4080-b38e-e70a7da33f08, udp: true}
+  - {name: LT_462, server: 213.183.53.212, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX, udp: true}
+  - {name: LT_480, server: 213.183.53.212, port: 9073, type: ss, cipher: aes-256-cfb, password: daFYagqDdBdA6VTX, udp: true}
+  - {name: US_1295, server: cindy.marythunt.xyz, port: 55053, type: vmess, uuid: ba3e022a-d6f5-4873-8f06-204a1a5f4f33, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cindy.marythunt.xyz}, udp: true}
+  - {name: US 28 → TG@SCINV, server: 104.129.63.65, port: 8443, type: trojan, password: cUDgjDkSfn, skip-cert-verify: true, udp: true}
+  - {name: LT_485, server: 213.183.53.214, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
+  - {name: US 22 → TG@SCINV, server: azgy001.xiba1.xyz, port: 20711, type: trojan, password: 7497242f-3044-3c77-bf48-14bb26c92a83, sni: azgy001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: US_1024, server: 38.114.114.67, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: US_1114, server: 38.114.114.67, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_1306, server: chess.magicefire.com, port: 443, type: vmess, uuid: 9aa80017-3427-4165-a522-f5f9a11330d0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: LT_495, server: 213.183.53.214, port: 9032, type: ss, cipher: aes-256-cfb, password: UWZQeLRWnkqgkseq, udp: true}
+  - {name: US_832, server: 38.114.114.67, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: US_1057, server: 38.114.114.67, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: US_829, server: 38.114.114.67, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_1022, server: 38.114.114.67, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: US_1075, server: 38.114.114.67, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: LT_461, server: 213.183.53.212, port: 9053, type: ss, cipher: aes-256-cfb, password: SBM7R883jBmnqe6C, udp: true}
+  - {name: US_978, server: 38.86.135.36, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: US_1246🇺🇸US_1085🇺🇸US_1176, server: 38.86.135.36, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: US_1045🇺🇸US_960🇺🇸US_1283, server: 38.75.136.135, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: US_1056, server: 38.114.114.69, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: Relay_Relay_Relay_🇺🇸US-🇺🇸US_1376🇺🇸US-🇺🇸US_1218🇺🇸US-🇺🇸US_1306, server: us-am32-5.eqnode.net, port: 8081, type: ssr, cipher: aes-256-cfb, password: YFVrXZgRo, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
+  - {name: US_840, server: 38.114.114.69, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: US_1059, server: 38.114.114.69, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: CN 4 → TG@SCINV, server: cm.spacez.cloud, port: 30003, type: trojan, password: c9a3a61d-5d49-4158-9e60-6fa32684b122, sni: cm.spacez.cloud, skip-cert-verify: true, udp: true}
+  - {name: US_1199, server: 38.86.135.36, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: LT_469, server: 213.183.53.212, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
+  - {name: US_844, server: 38.114.114.69, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: US_1314, server: 23.94.120.19, port: 28554, type: vmess, uuid: 4a4c96c5-7b8b-4612-c715-6b91a9c34d07, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US_979, server: 38.86.135.36, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: US_1066🇺🇸US_913, server: 38.114.114.69, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_1064, server: 38.114.114.69, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: US_1126🇺🇸US_831🇺🇸US_1055, server: 38.114.114.69, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: US_1287, server: 38.114.114.69, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: US_835, server: 38.114.114.69, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_1032, server: 38.114.114.69, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: US_962🇺🇸US_1305, server: 38.114.114.69, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: _07, server: 38.114.114.69, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: US_1076, server: 38.114.114.69, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: US_1349🇺🇸US_961🇺🇸US_1298, server: 38.114.114.69, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: US_1002, server: 38.86.135.36, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: _06, server: 38.114.114.69, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: US_1077, server: 38.114.114.69, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: US_1131, server: 38.114.114.69, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: CN_195, server: 14.29.124.168, port: 25295, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay_🇸🇬SG-🇺🇸US_715
-      - CN 63
-      - Relay_🇨🇳CN-🇹🇼TW_230
-      - US 15 → TG@SCINV
-      - Relay_🇷🇺RU-🇷🇺RU_650
-      - CN 3 → TG@SCINV
-      - CN 77
-      - CA_138
-      - CA_144
-      - CA_139
-      - CN 62
-      - CA_127
+      - CN 6 → TG@SCINV
+      - LT_462
+      - LT_480
+      - US_1295
+      - US 28 → TG@SCINV
+      - LT_485
+      - US 22 → TG@SCINV
+      - US_1024
+      - US_1114
+      - Relay_🇺🇸US-🇺🇸US_1306
+      - LT_495
+      - US_832
+      - US_1057
+      - US_829
+      - US_1022
+      - US_1075
+      - LT_461
+      - US_978
+      - US_1246🇺🇸US_1085🇺🇸US_1176
+      - US_1045🇺🇸US_960🇺🇸US_1283
+      - US_1056
+      - Relay_Relay_Relay_🇺🇸US-🇺🇸US_1376🇺🇸US-🇺🇸US_1218🇺🇸US-🇺🇸US_1306
+      - US_840
+      - US_1059
+      - CN 4 → TG@SCINV
+      - US_1199
+      - LT_469
+      - US_844
+      - US_1314
+      - US_979
+      - US_1066🇺🇸US_913
+      - US_1064
+      - US_1126🇺🇸US_831🇺🇸US_1055
+      - US_1287
+      - US_835
+      - US_1032
+      - US_962🇺🇸US_1305
+      - _07
+      - US_1076
+      - US_1349🇺🇸US_961🇺🇸US_1298
+      - US_1002
+      - _06
+      - US_1077
+      - US_1131
+      - CN_195
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - Relay_🇸🇬SG-🇺🇸US_715
-      - CN 63
-      - Relay_🇨🇳CN-🇹🇼TW_230
-      - US 15 → TG@SCINV
-      - Relay_🇷🇺RU-🇷🇺RU_650
-      - CN 3 → TG@SCINV
-      - CN 77
-      - CA_138
-      - CA_144
-      - CA_139
-      - CN 62
-      - CA_127
+      - CN 6 → TG@SCINV
+      - LT_462
+      - LT_480
+      - US_1295
+      - US 28 → TG@SCINV
+      - LT_485
+      - US 22 → TG@SCINV
+      - US_1024
+      - US_1114
+      - Relay_🇺🇸US-🇺🇸US_1306
+      - LT_495
+      - US_832
+      - US_1057
+      - US_829
+      - US_1022
+      - US_1075
+      - LT_461
+      - US_978
+      - US_1246🇺🇸US_1085🇺🇸US_1176
+      - US_1045🇺🇸US_960🇺🇸US_1283
+      - US_1056
+      - Relay_Relay_Relay_🇺🇸US-🇺🇸US_1376🇺🇸US-🇺🇸US_1218🇺🇸US-🇺🇸US_1306
+      - US_840
+      - US_1059
+      - CN 4 → TG@SCINV
+      - US_1199
+      - LT_469
+      - US_844
+      - US_1314
+      - US_979
+      - US_1066🇺🇸US_913
+      - US_1064
+      - US_1126🇺🇸US_831🇺🇸US_1055
+      - US_1287
+      - US_835
+      - US_1032
+      - US_962🇺🇸US_1305
+      - _07
+      - US_1076
+      - US_1349🇺🇸US_961🇺🇸US_1298
+      - US_1002
+      - _06
+      - US_1077
+      - US_1131
+      - CN_195
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay_🇸🇬SG-🇺🇸US_715
-      - CN 63
-      - Relay_🇨🇳CN-🇹🇼TW_230
-      - US 15 → TG@SCINV
-      - Relay_🇷🇺RU-🇷🇺RU_650
-      - CN 3 → TG@SCINV
-      - CN 77
-      - CA_138
-      - CA_144
-      - CA_139
-      - CN 62
-      - CA_127
+      - CN 6 → TG@SCINV
+      - LT_462
+      - LT_480
+      - US_1295
+      - US 28 → TG@SCINV
+      - LT_485
+      - US 22 → TG@SCINV
+      - US_1024
+      - US_1114
+      - Relay_🇺🇸US-🇺🇸US_1306
+      - LT_495
+      - US_832
+      - US_1057
+      - US_829
+      - US_1022
+      - US_1075
+      - LT_461
+      - US_978
+      - US_1246🇺🇸US_1085🇺🇸US_1176
+      - US_1045🇺🇸US_960🇺🇸US_1283
+      - US_1056
+      - Relay_Relay_Relay_🇺🇸US-🇺🇸US_1376🇺🇸US-🇺🇸US_1218🇺🇸US-🇺🇸US_1306
+      - US_840
+      - US_1059
+      - CN 4 → TG@SCINV
+      - US_1199
+      - LT_469
+      - US_844
+      - US_1314
+      - US_979
+      - US_1066🇺🇸US_913
+      - US_1064
+      - US_1126🇺🇸US_831🇺🇸US_1055
+      - US_1287
+      - US_835
+      - US_1032
+      - US_962🇺🇸US_1305
+      - _07
+      - US_1076
+      - US_1349🇺🇸US_961🇺🇸US_1298
+      - US_1002
+      - _06
+      - US_1077
+      - US_1131
+      - CN_195
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -88,18 +220,51 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay_🇸🇬SG-🇺🇸US_715
-      - CN 63
-      - Relay_🇨🇳CN-🇹🇼TW_230
-      - US 15 → TG@SCINV
-      - Relay_🇷🇺RU-🇷🇺RU_650
-      - CN 3 → TG@SCINV
-      - CN 77
-      - CA_138
-      - CA_144
-      - CA_139
-      - CN 62
-      - CA_127
+      - CN 6 → TG@SCINV
+      - LT_462
+      - LT_480
+      - US_1295
+      - US 28 → TG@SCINV
+      - LT_485
+      - US 22 → TG@SCINV
+      - US_1024
+      - US_1114
+      - Relay_🇺🇸US-🇺🇸US_1306
+      - LT_495
+      - US_832
+      - US_1057
+      - US_829
+      - US_1022
+      - US_1075
+      - LT_461
+      - US_978
+      - US_1246🇺🇸US_1085🇺🇸US_1176
+      - US_1045🇺🇸US_960🇺🇸US_1283
+      - US_1056
+      - Relay_Relay_Relay_🇺🇸US-🇺🇸US_1376🇺🇸US-🇺🇸US_1218🇺🇸US-🇺🇸US_1306
+      - US_840
+      - US_1059
+      - CN 4 → TG@SCINV
+      - US_1199
+      - LT_469
+      - US_844
+      - US_1314
+      - US_979
+      - US_1066🇺🇸US_913
+      - US_1064
+      - US_1126🇺🇸US_831🇺🇸US_1055
+      - US_1287
+      - US_835
+      - US_1032
+      - US_962🇺🇸US_1305
+      - _07
+      - US_1076
+      - US_1349🇺🇸US_961🇺🇸US_1298
+      - US_1002
+      - _06
+      - US_1077
+      - US_1131
+      - CN_195
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -110,53 +275,152 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - Relay_🇸🇬SG-🇺🇸US_715
-      - CN 63
-      - Relay_🇨🇳CN-🇹🇼TW_230
-      - US 15 → TG@SCINV
-      - Relay_🇷🇺RU-🇷🇺RU_650
-      - CN 3 → TG@SCINV
-      - CN 77
-      - CA_138
-      - CA_144
-      - CA_139
-      - CN 62
-      - CA_127
+      - CN 6 → TG@SCINV
+      - LT_462
+      - LT_480
+      - US_1295
+      - US 28 → TG@SCINV
+      - LT_485
+      - US 22 → TG@SCINV
+      - US_1024
+      - US_1114
+      - Relay_🇺🇸US-🇺🇸US_1306
+      - LT_495
+      - US_832
+      - US_1057
+      - US_829
+      - US_1022
+      - US_1075
+      - LT_461
+      - US_978
+      - US_1246🇺🇸US_1085🇺🇸US_1176
+      - US_1045🇺🇸US_960🇺🇸US_1283
+      - US_1056
+      - Relay_Relay_Relay_🇺🇸US-🇺🇸US_1376🇺🇸US-🇺🇸US_1218🇺🇸US-🇺🇸US_1306
+      - US_840
+      - US_1059
+      - CN 4 → TG@SCINV
+      - US_1199
+      - LT_469
+      - US_844
+      - US_1314
+      - US_979
+      - US_1066🇺🇸US_913
+      - US_1064
+      - US_1126🇺🇸US_831🇺🇸US_1055
+      - US_1287
+      - US_835
+      - US_1032
+      - US_962🇺🇸US_1305
+      - _07
+      - US_1076
+      - US_1349🇺🇸US_961🇺🇸US_1298
+      - US_1002
+      - _06
+      - US_1077
+      - US_1131
+      - CN_195
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - Relay_🇸🇬SG-🇺🇸US_715
-      - CN 63
-      - Relay_🇨🇳CN-🇹🇼TW_230
-      - US 15 → TG@SCINV
-      - Relay_🇷🇺RU-🇷🇺RU_650
-      - CN 3 → TG@SCINV
-      - CN 77
-      - CA_138
-      - CA_144
-      - CA_139
-      - CN 62
-      - CA_127
+      - CN 6 → TG@SCINV
+      - LT_462
+      - LT_480
+      - US_1295
+      - US 28 → TG@SCINV
+      - LT_485
+      - US 22 → TG@SCINV
+      - US_1024
+      - US_1114
+      - Relay_🇺🇸US-🇺🇸US_1306
+      - LT_495
+      - US_832
+      - US_1057
+      - US_829
+      - US_1022
+      - US_1075
+      - LT_461
+      - US_978
+      - US_1246🇺🇸US_1085🇺🇸US_1176
+      - US_1045🇺🇸US_960🇺🇸US_1283
+      - US_1056
+      - Relay_Relay_Relay_🇺🇸US-🇺🇸US_1376🇺🇸US-🇺🇸US_1218🇺🇸US-🇺🇸US_1306
+      - US_840
+      - US_1059
+      - CN 4 → TG@SCINV
+      - US_1199
+      - LT_469
+      - US_844
+      - US_1314
+      - US_979
+      - US_1066🇺🇸US_913
+      - US_1064
+      - US_1126🇺🇸US_831🇺🇸US_1055
+      - US_1287
+      - US_835
+      - US_1032
+      - US_962🇺🇸US_1305
+      - _07
+      - US_1076
+      - US_1349🇺🇸US_961🇺🇸US_1298
+      - US_1002
+      - _06
+      - US_1077
+      - US_1131
+      - CN_195
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Relay_🇸🇬SG-🇺🇸US_715
-      - CN 63
-      - Relay_🇨🇳CN-🇹🇼TW_230
-      - US 15 → TG@SCINV
-      - Relay_🇷🇺RU-🇷🇺RU_650
-      - CN 3 → TG@SCINV
-      - CN 77
-      - CA_138
-      - CA_144
-      - CA_139
-      - CN 62
-      - CA_127
+      - CN 6 → TG@SCINV
+      - LT_462
+      - LT_480
+      - US_1295
+      - US 28 → TG@SCINV
+      - LT_485
+      - US 22 → TG@SCINV
+      - US_1024
+      - US_1114
+      - Relay_🇺🇸US-🇺🇸US_1306
+      - LT_495
+      - US_832
+      - US_1057
+      - US_829
+      - US_1022
+      - US_1075
+      - LT_461
+      - US_978
+      - US_1246🇺🇸US_1085🇺🇸US_1176
+      - US_1045🇺🇸US_960🇺🇸US_1283
+      - US_1056
+      - Relay_Relay_Relay_🇺🇸US-🇺🇸US_1376🇺🇸US-🇺🇸US_1218🇺🇸US-🇺🇸US_1306
+      - US_840
+      - US_1059
+      - CN 4 → TG@SCINV
+      - US_1199
+      - LT_469
+      - US_844
+      - US_1314
+      - US_979
+      - US_1066🇺🇸US_913
+      - US_1064
+      - US_1126🇺🇸US_831🇺🇸US_1055
+      - US_1287
+      - US_835
+      - US_1032
+      - US_962🇺🇸US_1305
+      - _07
+      - US_1076
+      - US_1349🇺🇸US_961🇺🇸US_1298
+      - US_1002
+      - _06
+      - US_1077
+      - US_1131
+      - CN_195
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -172,18 +436,51 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Relay_🇸🇬SG-🇺🇸US_715
-      - CN 63
-      - Relay_🇨🇳CN-🇹🇼TW_230
-      - US 15 → TG@SCINV
-      - Relay_🇷🇺RU-🇷🇺RU_650
-      - CN 3 → TG@SCINV
-      - CN 77
-      - CA_138
-      - CA_144
-      - CA_139
-      - CN 62
-      - CA_127
+      - CN 6 → TG@SCINV
+      - LT_462
+      - LT_480
+      - US_1295
+      - US 28 → TG@SCINV
+      - LT_485
+      - US 22 → TG@SCINV
+      - US_1024
+      - US_1114
+      - Relay_🇺🇸US-🇺🇸US_1306
+      - LT_495
+      - US_832
+      - US_1057
+      - US_829
+      - US_1022
+      - US_1075
+      - LT_461
+      - US_978
+      - US_1246🇺🇸US_1085🇺🇸US_1176
+      - US_1045🇺🇸US_960🇺🇸US_1283
+      - US_1056
+      - Relay_Relay_Relay_🇺🇸US-🇺🇸US_1376🇺🇸US-🇺🇸US_1218🇺🇸US-🇺🇸US_1306
+      - US_840
+      - US_1059
+      - CN 4 → TG@SCINV
+      - US_1199
+      - LT_469
+      - US_844
+      - US_1314
+      - US_979
+      - US_1066🇺🇸US_913
+      - US_1064
+      - US_1126🇺🇸US_831🇺🇸US_1055
+      - US_1287
+      - US_835
+      - US_1032
+      - US_962🇺🇸US_1305
+      - _07
+      - US_1076
+      - US_1349🇺🇸US_961🇺🇸US_1298
+      - US_1002
+      - _06
+      - US_1077
+      - US_1131
+      - CN_195
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
