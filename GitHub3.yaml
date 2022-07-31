@@ -5,651 +5,391 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: JP 6 → TG@SCINV, server: trs06.bolab.net, port: 443, type: trojan, password: 1b753dd99c1291e87a7b239f2928fedd, sni: trs06.bolab.net, skip-cert-verify: true, udp: true}
-  - {name: US+2+→+TG@SCINV, server: rn1107.moonfree.top, port: 443, type: trojan, password: c599e33c-e881-4cb5-87a7-a6e3711879e2, sni: rn1107.moonfree.top, skip-cert-verify: true, udp: true}
-  - {name: 199.115.228.30:253, server: 199.115.228.30, port: 253, type: ss, cipher: aes-256-cfb, password: bwhskrskr05, udp: true}
-  - {name: 2, server: 146.56.103.73, port: 14003, type: vmess, uuid: b294b95e-71cc-4cbb-cf4b-6b6ad8fb3d00, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CA 1 → TG@SCINV, server: 730us.ok365.cyou, port: 443, type: trojan, password: c828e3ed-7826-4c94-8e08-608429f3b909, sni: 730us.ok365.cyou, skip-cert-verify: true, udp: true}
-  - {name: "", server: 152.70.247.24, port: 18152, type: vmess, uuid: 8dee0987-1be4-47aa-a1dc-5f141d8d7e91, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US_887, server: 104.237.154.158, port: 864, type: ss, cipher: aes-256-gcm, password: 88gy56h9, udp: true}
-  - {name: " 2", server: 146.56.110.129, port: 26396, type: vmess, uuid: f4baed1c-ab86-4b70-caa3-df853467e1bd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: GB_298, server: 78.129.253.9, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: 169.197.142.187:8888, server: 169.197.142.187, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 169.197.142.187:6697, server: 169.197.142.187, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: GB_309, server: 78.129.253.9, port: 808, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: ZZ_1294, server: 169.197.142.187, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: 167.88.61.175:3306, server: 167.88.61.175, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: CA 2 → TG@SCINV, server: 727tw02.ok365.cyou, port: 25689, type: trojan, password: c828e3ed-7826-4c94-8e08-608429f3b909, sni: 727tw02.ok365.cyou, skip-cert-verify: true, udp: true}
-  - {name: US_999, server: 167.88.61.175, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: US_1048, server: 167.88.61.175, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: Pool_🇳🇱NL_522, server: 85.208.108.93, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: ZZ_1269, server: 169.197.142.187, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: US_1165, server: 167.88.61.175, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: US_1146, server: 167.88.61.175, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: 169.197.142.187:2376, server: 169.197.142.187, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 169.197.142.187:5601, server: 169.197.142.187, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: ZZ_1276, server: 169.197.142.187, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 169.197.142.187:8080, server: 169.197.142.187, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 169.197.142.187:7001, server: 169.197.142.187, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: US_818, server: 167.88.61.175, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: Pool_🇳🇱NL_524, server: 85.208.108.93, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: 167.88.61.175:5001, server: 167.88.61.175, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_850, server: 167.88.61.175, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: Pool_🇳🇱NL_475, server: 85.208.108.20, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: Pool_🇳🇱NL_525, server: 85.208.108.93, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: US_708, server: 167.88.61.175, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: US_801, server: 167.88.61.175, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: 169.197.142.187:5003, server: 169.197.142.187, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 169.197.142.187:8008, server: 169.197.142.187, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: Pool_🇳🇱NL_478, server: 85.208.108.20, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: US_1059, server: 167.88.61.175, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 169.197.142.187:6379, server: 169.197.142.187, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: US_858, server: 167.88.61.175, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: 169.197.142.187:7306, server: 169.197.142.187, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 169.197.142.187:8119, server: 169.197.142.187, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: 169.197.142.187:443, server: 169.197.142.187, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: Pool_🇳🇱NL_485, server: 85.208.108.20, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: Pool_🇳🇱NL_477, server: 85.208.108.20, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: Pool_🇳🇱NL_488, server: 85.208.108.20, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: US_819, server: 167.88.61.175, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: US_804, server: 167.88.61.175, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 169.197.142.187:7307, server: 169.197.142.187, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: NONE, server: azgy001.xiba1.xyz, port: 20711, type: trojan, password: 7497242f-3044-3c77-bf48-14bb26c92a83, sni: azgy001.xiba1.xyz, skip-cert-verify: true, udp: true}
-  - {name: 167.88.61.175:9102, server: 167.88.61.175, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: 169.197.142.187:5004, server: 169.197.142.187, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: Pool_🇳🇱NL_496, server: 85.208.108.93, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: US_1080, server: 167.88.61.175, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 美国-2.93MB/s(Youtube:不良林), server: 129.146.133.157, port: 51009, type: vmess, uuid: 81714cef-9bde-4a08-aa50-d6bc0172d78b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN 61 → TG@SCINV, server: z5.topman8849.cc, port: 45331, type: vmess, uuid: fbe6b485-7c09-371e-9ad0-0b41b433a0ab, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: CN 60 → TG@SCINV, server: z80.topman8849.cc, port: 44331, type: vmess, uuid: fbe6b485-7c09-371e-9ad0-0b41b433a0ab, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: TW 1 → TG@SCINV, server: tw01.henet.cyou, port: 30000, type: trojan, password: 73b6dd15-a43d-446f-9a35-081a16c6a065, sni: tw01.henet.cyou, skip-cert-verify: true, udp: true}
+  - {name: NONE, server: tw01.henet.cyou, port: 30000, type: trojan, password: 7e1b922b-f7c9-440c-82d9-abbf9680b9a4, sni: tw01.henet.cyou, skip-cert-verify: true, udp: true}
+  - {name: 122.248.226.111:443, server: 122.248.226.111, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: "", server: 146.56.118.227, port: 2052, type: vmess, uuid: 448a9087-28f3-4fe4-fa49-36c912e0f498, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /update, ws-headers: {Host: 146.56.118.227}, udp: true}
+  - {name: " 2", server: lz717.aijiasu.xyz, port: 30803, type: vmess, uuid: 5833a0df-fa04-446b-d6cf-00ab174097df, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: " 3", server: da.huala.gq, port: 56378, type: vmess, uuid: 1b58bedf-8878-41eb-e117-60c4ab17d6cf, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: CN 55 → TG@SCINV, server: z11.topman8849.cc, port: 45339, type: vmess, uuid: fbe6b485-7c09-371e-9ad0-0b41b433a0ab, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: " 4", server: 64.112.43.180, port: 13674, type: vmess, uuid: f44ce146-2d6d-4e84-dcac-3bdd8689d053, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: " 5", server: 192.161.164.156, port: 40338, type: vmess, uuid: fe20f87d-4e11-4c2a-af6e-5b8bd9927092, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US 1 → TG@SCINV, server: 104.129.63.65, port: 8443, type: trojan, password: cUDgjDkSfn, skip-cert-verify: true, udp: true}
+  - {name: " 6", server: 45.151.132.149, port: 14254, type: vmess, uuid: 826f9a5b-c63b-40fb-e549-f8fa4bc92cb5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: " 7", server: lz74.aijiasu.xyz, port: 35575, type: vmess, uuid: d5ce3788-0311-494a-eb1d-59e6c1a90ccb, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: US 41 → TG@SCINV, server: v56.topman8849.cc, port: 41332, type: vmess, uuid: fbe6b485-7c09-371e-9ad0-0b41b433a0ab, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: GB 1 → TG@SCINV, server: us-05.licom.ml, port: 12501, type: trojan, password: ce433528-39fa-4711-bc0d-25a5b1579574, sni: us-05.licom.ml, skip-cert-verify: true, udp: true}
+  - {name: USA08-美国08, server: cmrelay01.downsite.xyz, port: 7707, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 50916:0626E259zpG, obfs-param: d9e2450916.microsoft.com, udp: true}
+  - {name: USA09-美国09, server: cmrelay01.downsite.xyz, port: 7708, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 50916:0626E259zpG, obfs-param: d9e2450916.microsoft.com, udp: true}
+  - {name: USA07-美国07, server: cmrelay01.downsite.xyz, port: 7706, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 50916:0626E259zpG, obfs-param: d9e2450916.microsoft.com, udp: true}
+  - {name: USA06-美国06, server: cmrelay01.downsite.xyz, port: 7705, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 50916:0626E259zpG, obfs-param: d9e2450916.microsoft.com, udp: true}
+  - {name: 85.208.108.93:7002, server: 85.208.108.93, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: USA03-美国03, server: cmrelay01.downsite.xyz, port: 7702, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 50916:0626E259zpG, obfs-param: d9e2450916.microsoft.com, udp: true}
+  - {name: 85.208.108.20:5601, server: 85.208.108.20, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 78.129.253.9:809, server: 78.129.253.9, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: 85.208.108.20:6679, server: 85.208.108.20, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: 85.208.108.93:7306, server: 85.208.108.93, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: 85.208.108.93:8881, server: 85.208.108.93, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: USA10-美国10, server: cmrelay01.downsite.xyz, port: 7709, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 50916:0626E259zpG, obfs-param: d9e2450916.microsoft.com, udp: true}
+  - {name: 85.208.108.20:6697, server: 85.208.108.20, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: CN 54 → TG@SCINV, server: z82.topman8849.cc, port: 44332, type: vmess, uuid: fbe6b485-7c09-371e-9ad0-0b41b433a0ab, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 85.208.108.20:6379, server: 85.208.108.20, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: CA 1 → TG@SCINV, server: 730tw01.ok365.cyou, port: 443, type: trojan, password: aae33677-9f5d-475e-9382-999589534473, sni: 730tw01.ok365.cyou, skip-cert-verify: true, udp: true}
+  - {name: " 8", server: 129.146.133.157, port: 51009, type: vmess, uuid: 81714cef-9bde-4a08-aa50-d6bc0172d78b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 78.129.253.9:808, server: 78.129.253.9, port: 808, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
   - {name: 134.195.196.85:5001, server: 134.195.196.85, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: NONE 2, server: azgy001.xiba1.xyz, port: 20710, type: trojan, password: 7497242f-3044-3c77-bf48-14bb26c92a83, sni: azgy001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: " 9", server: 43.156.30.239, port: 32933, type: vmess, uuid: 05eae5d7-f61e-40c4-ec86-3fa74335bcb4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 185.4.65.6:21247, server: 185.4.65.6, port: 21247, type: ss, cipher: aes-256-cfb, password: vDS9G2p, udp: true}
+  - {name: 85.208.108.93:6379, server: 85.208.108.93, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: USA01-美国01, server: cmrelay01.downsite.xyz, port: 7700, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 50916:0626E259zpG, obfs-param: d9e2450916.microsoft.com, udp: true}
+  - {name: 38.111.114.246:8882, server: 38.111.114.246, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: " 10", server: 23.230.146.254, port: 1258, type: vmess, uuid: edeb41cc-a76a-47f2-fa96-b9141e66a2b0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: " 11", server: hk-hkg-it2-svm-v2.node.inforun.work, port: 13888, type: vmess, uuid: b536533e-6fa0-4575-a1f8-bbf81a194f44, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /je5x3pBN1vez3NQudNkB, ws-headers: {Host: hk-hkg-it2-svm-v2.node.inforun.work}, udp: true}
+  - {name: 193.108.117.75:443, server: 193.108.117.75, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 51.195.136.209:50004, server: 51.195.136.209, port: 50004, type: ss, cipher: aes-256-cfb, password: !<str> 4415934295, udp: true}
   - {name: 169.197.141.5:3306, server: 169.197.141.5, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: FR_280, server: 195.154.200.150, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: US_873, server: 167.88.61.175, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: 195.154.200.150:2376, server: 195.154.200.150, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 172.99.188.71:3389, server: 172.99.188.71, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: USA02-美国02, server: cmrelay01.downsite.xyz, port: 7701, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 50916:0626E259zpG, obfs-param: d9e2450916.microsoft.com, udp: true}
+  - {name: 172.99.188.71:8091, server: 172.99.188.71, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: 172.99.188.71:8882, server: 172.99.188.71, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: 193.108.117.75:8881, server: 193.108.117.75, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: 193.108.117.75:9102, server: 193.108.117.75, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: 104.237.154.158:864, server: 104.237.154.158, port: 864, type: ss, cipher: aes-256-gcm, password: 88gy56h9, udp: true}
   - {name: 193.108.117.75:8080, server: 193.108.117.75, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: DE_226, server: 193.108.117.75, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: NONE 3, server: azgy001.xiba1.xyz, port: 20713, type: trojan, password: 7497242f-3044-3c77-bf48-14bb26c92a83, sni: azgy001.xiba1.xyz, skip-cert-verify: true, udp: true}
-  - {name: US_731, server: 172.99.188.71, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: DE_199, server: 193.108.117.75, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: US_1094, server: 167.88.61.175, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: 193.108.117.75:6379, server: 193.108.117.75, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: 172.99.188.71:6679, server: 172.99.188.71, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: 138.68.248.130:811, server: 138.68.248.130, port: 811, type: ss, cipher: chacha20-ietf-poly1305, password: Ultr@r00t_2017, udp: true}
+  - {name: 193.108.117.75:5001, server: 193.108.117.75, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 172.99.188.71:5004, server: 172.99.188.71, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: 172.99.188.71:6379, server: 172.99.188.71, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
   - {name: 172.99.188.71:5000, server: 172.99.188.71, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 169.197.142.187:5001, server: 169.197.142.187, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_1072, server: 172.99.188.71, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: US_741, server: 172.99.188.71, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: 匈牙利-1.30MB/s(Youtube:不良林), server: 185.225.69.134, port: 45081, type: vmess, uuid: 3c3bfd75-dc30-4e76-8940-47e1137e21f9, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US_834, server: 172.99.188.71, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: DE_227, server: 193.108.117.75, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: DE_198, server: 193.108.117.75, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_1077, server: 172.99.188.71, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: DE_191, server: 193.108.117.75, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: DE_215, server: 193.108.117.75, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: DE_217, server: 193.108.117.75, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: US_713, server: 172.99.188.71, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: US_771, server: 172.99.188.71, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: US_769, server: 172.99.188.71, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: US_962, server: 167.88.61.175, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: US_970, server: 167.88.61.175, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_1065, server: 172.99.188.71, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: us01.wol1.ml:443, server: us01.wol1.ml, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 223c5c98-e1a8-49e0-8e15-07373e09e077, udp: true}
+  - {name: " 12", server: 5.183.102.34, port: 37667, type: vmess, uuid: 66f93c8f-4458-41d3-e447-f0b57d893527, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 196.247.59.154:805, server: 196.247.59.154, port: 805, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: 45.144.176.135:3005, server: 45.144.176.135, port: 3005, type: ss, cipher: aes-256-cfb, password: 987.085wrcgrwqs36.985, udp: true}
-  - {name: 45.144.176.135:3000, server: 45.144.176.135, port: 3000, type: ss, cipher: aes-256-cfb, password: qazwsxplmjbufeefvgedgrwchgtrchrdgfbrdvgedecmmdfe, udp: true}
-  - {name: 45.144.176.135:3003, server: 45.144.176.135, port: 3003, type: ss, cipher: aes-256-cfb, password: werty33588761qwfdees, udp: true}
-  - {name: HU_328, server: 185.225.69.134, port: 45081, type: vmess, uuid: 3c3bfd75-dc30-4e76-8940-47e1137e21f9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇸🇬SG-🇸🇬SG_690, server: vsg1.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /chat, ws-headers: {Host: vsg1.0bad.com}, udp: true}
-  - {name: 196.247.59.154:800, server: 196.247.59.154, port: 800, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: " 13", server: 185.167.78.44, port: 49097, type: vmess, uuid: bb7979bf-ffda-4863-adb6-a44a4344463d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: " 14", server: xmrh014.xmrth-node.xyz, port: 15885, type: vmess, uuid: fc076cb5-c7cd-3e08-881f-b55a329a9671, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: xmrh014.xmrth-node.xyz}, udp: true}
   - {name: 196.247.59.154:806, server: 196.247.59.154, port: 806, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: 196.247.59.154:809, server: 196.247.59.154, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: US_863, server: 167.88.61.175, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: " 3", server: 146.56.103.73, port: 14003, type: vmess, uuid: b294b95e-71cc-4cbb-cf4b-6b6ad8fb3d00, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US_827, server: 167.88.61.175, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 196.247.59.154:802, server: 196.247.59.154, port: 802, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: Relay_🇬🇧GB-🇺🇸US_315, server: us-05.licom.ml, port: 12501, type: trojan, password: ce433528-39fa-4711-bc0d-25a5b1579574, sni: us-05.licom.ml, skip-cert-verify: true, udp: true}
-  - {name: 196.247.59.154:801, server: 196.247.59.154, port: 801, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: 169.197.142.187:9102, server: 169.197.142.187, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: aaa 174, server: v116.v2dns.bar, port: 80, type: vmess, uuid: c97cf46e-1554-36cb-8b36-c3556b883dc4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v116-DtoEwAEX, ws-headers: {Host: v116.v2dns.bar}, udp: true}
-  - {name: US_907, server: 172.99.188.71, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: 138.197.166.205:811, server: 138.197.166.205, port: 811, type: ss, cipher: chacha20-ietf-poly1305, password: Ultr@r00t_2017, udp: true}
+  - {name: 172.99.188.71:443, server: 172.99.188.71, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: " 15", server: us-lax-ctg-01-v2.cdn.savoy.click, port: 888, type: vmess, uuid: b536533e-6fa0-4575-a1f8-bbf81a194f44, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /je5x3pBN1vez3NQudNkB, ws-headers: {Host: us-lax-ctg-01-v2.cdn.savoy.click}, udp: true}
   - {name: 196.247.59.154:803, server: 196.247.59.154, port: 803, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: CA_100, server: 72.140.224.195, port: 803, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: CA_110, server: 72.140.224.195, port: 800, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: CA_94, server: 72.140.224.195, port: 810, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: 5.188.0.151:800, server: 5.188.0.151, port: 800, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: Relay_🇫🇷FR-🇫🇷FR_287, server: 51.38.118.42, port: 811, type: ss, cipher: chacha20-ietf-poly1305, password: Ultr@r00t_2017, udp: true}
-  - {name: " 4", server: 168.138.214.114, port: 443, type: vmess, uuid: e35159d7-e8fb-479c-b490-e8e9a924e0c6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /a9S24DC8US, ws-headers: {Host: 168.138.214.114}, udp: true}
-  - {name: NONE 4, server: pp1.zhengzhongfeizhu.xyz, port: 34003, type: trojan, password: 2f606ee8-3cfa-30b2-a191-f88efe912f5c, sni: pp1.zhengzhongfeizhu.xyz, skip-cert-verify: true, udp: true}
-  - {name: JP_364, server: 146.56.110.129, port: 26396, type: vmess, uuid: f4baed1c-ab86-4b70-caa3-df853467e1bd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: AU_88, server: 43.134.229.238, port: 20085, type: vmess, uuid: eb35ce5a-7b4d-4fbc-d23f-a57c74872634, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 中国-317.0KB/s(Youtube:不良林), server: fsyd.kruwik.cn, port: 10641, type: vmess, uuid: 3faa79fc-c39b-338e-9c95-ca0b1c6f9e8c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: fsyd.kruwik.cn}, udp: true}
-  - {name: 45.144.176.135:3002, server: 45.144.176.135, port: 3002, type: ss, cipher: aes-256-cfb, password: 36rtuhZfAeUh78Sa, udp: true}
-  - {name: 新加坡(油管:破解资源君2.0) 5, server: in-sg-1.onebox6.org, port: 38701, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: www.ivpnpro.net}, udp: true}
-  - {name: SG_689, server: 8.214.33.158, port: 80, type: vmess, uuid: cb81e6ab-1d83-4ac1-f0ad-ae5c2a7c29ef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 8.214.33.158}, udp: true}
-  - {name: NONE 5, server: pp1.zhengzhongfeizhu.xyz, port: 32000, type: trojan, password: 2f606ee8-3cfa-30b2-a191-f88efe912f5c, sni: pp1.zhengzhongfeizhu.xyz, skip-cert-verify: true, udp: true}
-  - {name: 14.29.124.168:25222, server: 14.29.124.168, port: 25222, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 14.29.124.168:25280, server: 14.29.124.168, port: 25280, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 14.29.124.168:25218, server: 14.29.124.168, port: 25218, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 45.144.176.135:3001, server: 45.144.176.135, port: 3001, type: ss, cipher: aes-256-cfb, password: qazplmn1236547dr42q, udp: true}
-  - {name: 14.29.124.168:25259, server: 14.29.124.168, port: 25259, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 14.29.124.168:25226, server: 14.29.124.168, port: 25226, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 14.29.124.168:25272, server: 14.29.124.168, port: 25272, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 14.29.124.168:25297, server: 14.29.124.168, port: 25297, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 14.29.124.168:25233, server: 14.29.124.168, port: 25233, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 14.29.124.168:25261, server: 14.29.124.168, port: 25261, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 14.29.124.168:25287, server: 14.29.124.168, port: 25287, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 14.29.124.168:25267, server: 14.29.124.168, port: 25267, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 14.29.124.168:25241, server: 14.29.124.168, port: 25241, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 14.29.124.168:25230, server: 14.29.124.168, port: 25230, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 14.29.124.168:25245, server: 14.29.124.168, port: 25245, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 14.29.124.168:25231, server: 14.29.124.168, port: 25231, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 14.29.124.168:25220, server: 14.29.124.168, port: 25220, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 14.29.124.168:25251, server: 14.29.124.168, port: 25251, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 14.29.124.168:25207, server: 14.29.124.168, port: 25207, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 14.29.124.168:25247, server: 14.29.124.168, port: 25247, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 14.29.124.168:25219, server: 14.29.124.168, port: 25219, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 14.29.124.168:25268, server: 14.29.124.168, port: 25268, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 14.29.124.168:25266, server: 14.29.124.168, port: 25266, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 14.29.124.168:25289, server: 14.29.124.168, port: 25289, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 14.29.124.168:25284, server: 14.29.124.168, port: 25284, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 172.99.188.71:6697, server: 172.99.188.71, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: 196.247.59.154:809, server: 196.247.59.154, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: 196.247.59.154:800, server: 196.247.59.154, port: 800, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: 193.108.117.75:8090, server: 193.108.117.75, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: 172.99.188.71:8888, server: 172.99.188.71, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 172.99.188.71:8118, server: 172.99.188.71, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: 120.233.29.202:252, server: 120.233.29.202, port: 252, type: ss, cipher: aes-128-gcm, password: VXPipi29nxMO, plugin: obfs, plugin-opts: {mode: tls, host: 1baf570191.wns.windows.com}, udp: true}
+  - {name: CN 5 → TG@SCINV, server: 120.233.29.202, port: 252, type: ss, cipher: aes-128-gcm, password: VXPipi29nxMO, plugin: obfs, plugin-opts: {mode: tls, host: 1baf570191.wns.windows.com}, udp: true}
+  - {name: CN 4 → TG@SCINV, server: 116.63.103.11, port: 45240, type: ss, cipher: chacha20-ietf-poly1305, password: b190e256-dce9-4b0b-84e0-4f841b54a37a, udp: true}
+  - {name: 45.144.176.135:3005, server: 45.144.176.135, port: 3005, type: ss, cipher: aes-256-cfb, password: 987.085wrcgrwqs36.985, udp: true}
+  - {name: 196.247.59.154:801, server: 196.247.59.154, port: 801, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: 85.208.108.20:7002, server: 85.208.108.20, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: 45.144.176.135:3003, server: 45.144.176.135, port: 3003, type: ss, cipher: aes-256-cfb, password: werty33588761qwfdees, udp: true}
+  - {name: 196.247.59.154:802, server: 196.247.59.154, port: 802, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: 72.140.224.195:800, server: 72.140.224.195, port: 800, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: 72.140.224.195:810, server: 72.140.224.195, port: 810, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: 72.140.224.195:803, server: 72.140.224.195, port: 803, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: 45.144.176.135:3000, server: 45.144.176.135, port: 3000, type: ss, cipher: aes-256-cfb, password: qazwsxplmjbufeefvgedgrwchgtrchrdgfbrdvgedecmmdfe, udp: true}
+  - {name: 51.38.118.42:811, server: 51.38.118.42, port: 811, type: ss, cipher: chacha20-ietf-poly1305, password: Ultr@r00t_2017, udp: true}
+  - {name: 172.99.188.71:8119, server: 172.99.188.71, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
   - {name: 13.124.29.75:443, server: 13.124.29.75, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 14.29.124.168:25295, server: 14.29.124.168, port: 25295, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 14.29.124.168:25210, server: 14.29.124.168, port: 25210, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 14.29.124.168:25283, server: 14.29.124.168, port: 25283, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 14.29.124.168:25279, server: 14.29.124.168, port: 25279, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 14.29.124.168:25271, server: 14.29.124.168, port: 25271, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 14.29.124.168:25254, server: 14.29.124.168, port: 25254, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 14.29.124.168:25270, server: 14.29.124.168, port: 25270, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 14.29.124.168:25252, server: 14.29.124.168, port: 25252, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 45.144.176.135:3004, server: 45.144.176.135, port: 3004, type: ss, cipher: aes-256-cfb, password: 3682oiuvefwwmbc1475, udp: true}
-  - {name: US_774, server: 172.99.188.71, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: " 5", server: 129.146.133.157, port: 51009, type: vmess, uuid: 81714cef-9bde-4a08-aa50-d6bc0172d78b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 51.79.173.62:1443, server: 51.79.173.62, port: 1443, type: ss, cipher: aes-256-cfb, password: edGQaxoQhk, udp: true}
-  - {name: 92.38.176.81:811, server: 92.38.176.81, port: 811, type: ss, cipher: chacha20-ietf-poly1305, password: Ultr@r00t_2017, udp: true}
+  - {name: 14.29.124.168:25294, server: 14.29.124.168, port: 25294, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - JP 6 → TG@SCINV
-      - US+2+→+TG@SCINV
-      - 199.115.228.30:253
-      - 2
-      - CA 1 → TG@SCINV
-      - ""
-      - US_887
-      - " 2"
-      - GB_298
-      - 169.197.142.187:8888
-      - 169.197.142.187:6697
-      - GB_309
-      - ZZ_1294
-      - 167.88.61.175:3306
-      - CA 2 → TG@SCINV
-      - US_999
-      - US_1048
-      - Pool_🇳🇱NL_522
-      - ZZ_1269
-      - US_1165
-      - US_1146
-      - 169.197.142.187:2376
-      - 169.197.142.187:5601
-      - ZZ_1276
-      - 169.197.142.187:8080
-      - 169.197.142.187:7001
-      - US_818
-      - Pool_🇳🇱NL_524
-      - 167.88.61.175:5001
-      - US_850
-      - Pool_🇳🇱NL_475
-      - Pool_🇳🇱NL_525
-      - US_708
-      - US_801
-      - 169.197.142.187:5003
-      - 169.197.142.187:8008
-      - Pool_🇳🇱NL_478
-      - US_1059
-      - 169.197.142.187:6379
-      - US_858
-      - 169.197.142.187:7306
-      - 169.197.142.187:8119
-      - 169.197.142.187:443
-      - Pool_🇳🇱NL_485
-      - Pool_🇳🇱NL_477
-      - Pool_🇳🇱NL_488
-      - US_819
-      - US_804
-      - 169.197.142.187:7307
+      - CN 61 → TG@SCINV
+      - CN 60 → TG@SCINV
+      - TW 1 → TG@SCINV
       - NONE
-      - 167.88.61.175:9102
-      - 169.197.142.187:5004
-      - Pool_🇳🇱NL_496
-      - US_1080
-      - 美国-2.93MB/s(Youtube:不良林)
-      - 134.195.196.85:5001
-      - NONE 2
-      - 169.197.141.5:3306
-      - FR_280
-      - US_873
-      - 193.108.117.75:8080
-      - DE_226
-      - NONE 3
-      - US_731
-      - DE_199
-      - US_1094
-      - 172.99.188.71:5000
-      - 169.197.142.187:5001
-      - US_1072
-      - US_741
-      - 匈牙利-1.30MB/s(Youtube:不良林)
-      - US_834
-      - DE_227
-      - DE_198
-      - US_1077
-      - DE_191
-      - DE_215
-      - DE_217
-      - US_713
-      - US_771
-      - US_769
-      - US_962
-      - US_970
-      - US_1065
-      - 196.247.59.154:805
-      - 45.144.176.135:3005
-      - 45.144.176.135:3000
-      - 45.144.176.135:3003
-      - HU_328
-      - Relay_🇸🇬SG-🇸🇬SG_690
-      - 196.247.59.154:800
-      - 196.247.59.154:806
-      - 196.247.59.154:809
-      - US_863
+      - 122.248.226.111:443
+      - ""
+      - " 2"
       - " 3"
-      - US_827
-      - 196.247.59.154:802
-      - Relay_🇬🇧GB-🇺🇸US_315
-      - 196.247.59.154:801
-      - 169.197.142.187:9102
-      - aaa 174
-      - US_907
-      - 138.197.166.205:811
-      - 196.247.59.154:803
-      - CA_100
-      - CA_110
-      - CA_94
-      - 5.188.0.151:800
-      - Relay_🇫🇷FR-🇫🇷FR_287
+      - CN 55 → TG@SCINV
       - " 4"
-      - NONE 4
-      - JP_364
-      - AU_88
-      - 中国-317.0KB/s(Youtube:不良林)
-      - 45.144.176.135:3002
-      - 新加坡(油管:破解资源君2.0) 5
-      - SG_689
-      - NONE 5
-      - 14.29.124.168:25222
-      - 14.29.124.168:25280
-      - 14.29.124.168:25218
-      - 45.144.176.135:3001
-      - 14.29.124.168:25259
-      - 14.29.124.168:25226
-      - 14.29.124.168:25272
-      - 14.29.124.168:25297
-      - 14.29.124.168:25233
-      - 14.29.124.168:25261
-      - 14.29.124.168:25287
-      - 14.29.124.168:25267
-      - 14.29.124.168:25241
-      - 14.29.124.168:25230
-      - 14.29.124.168:25245
-      - 14.29.124.168:25231
-      - 14.29.124.168:25220
-      - 14.29.124.168:25251
-      - 14.29.124.168:25207
-      - 14.29.124.168:25247
-      - 14.29.124.168:25219
-      - 14.29.124.168:25268
-      - 14.29.124.168:25266
-      - 14.29.124.168:25289
-      - 14.29.124.168:25284
-      - 13.124.29.75:443
-      - 14.29.124.168:25295
-      - 14.29.124.168:25210
-      - 14.29.124.168:25283
-      - 14.29.124.168:25279
-      - 14.29.124.168:25271
-      - 14.29.124.168:25254
-      - 14.29.124.168:25270
-      - 14.29.124.168:25252
-      - 45.144.176.135:3004
-      - US_774
       - " 5"
-      - 51.79.173.62:1443
-      - 92.38.176.81:811
+      - US 1 → TG@SCINV
+      - " 6"
+      - " 7"
+      - US 41 → TG@SCINV
+      - GB 1 → TG@SCINV
+      - USA08-美国08
+      - USA09-美国09
+      - USA07-美国07
+      - USA06-美国06
+      - 85.208.108.93:7002
+      - USA03-美国03
+      - 85.208.108.20:5601
+      - 78.129.253.9:809
+      - 85.208.108.20:6679
+      - 85.208.108.93:7306
+      - 85.208.108.93:8881
+      - USA10-美国10
+      - 85.208.108.20:6697
+      - CN 54 → TG@SCINV
+      - 85.208.108.20:6379
+      - CA 1 → TG@SCINV
+      - " 8"
+      - 78.129.253.9:808
+      - 134.195.196.85:5001
+      - " 9"
+      - 185.4.65.6:21247
+      - 85.208.108.93:6379
+      - USA01-美国01
+      - 38.111.114.246:8882
+      - " 10"
+      - " 11"
+      - 193.108.117.75:443
+      - 51.195.136.209:50004
+      - 169.197.141.5:3306
+      - 195.154.200.150:2376
+      - 172.99.188.71:3389
+      - USA02-美国02
+      - 172.99.188.71:8091
+      - 172.99.188.71:8882
+      - 193.108.117.75:8881
+      - 193.108.117.75:9102
+      - 104.237.154.158:864
+      - 193.108.117.75:8080
+      - 193.108.117.75:6379
+      - 172.99.188.71:6679
+      - 138.68.248.130:811
+      - 193.108.117.75:5001
+      - 172.99.188.71:5004
+      - 172.99.188.71:6379
+      - 172.99.188.71:5000
+      - us01.wol1.ml:443
+      - " 12"
+      - 196.247.59.154:805
+      - " 13"
+      - " 14"
+      - 196.247.59.154:806
+      - 172.99.188.71:443
+      - " 15"
+      - 196.247.59.154:803
+      - 172.99.188.71:6697
+      - 196.247.59.154:809
+      - 196.247.59.154:800
+      - 193.108.117.75:8090
+      - 172.99.188.71:8888
+      - 172.99.188.71:8118
+      - 120.233.29.202:252
+      - CN 5 → TG@SCINV
+      - CN 4 → TG@SCINV
+      - 45.144.176.135:3005
+      - 196.247.59.154:801
+      - 85.208.108.20:7002
+      - 45.144.176.135:3003
+      - 196.247.59.154:802
+      - 72.140.224.195:800
+      - 72.140.224.195:810
+      - 72.140.224.195:803
+      - 45.144.176.135:3000
+      - 51.38.118.42:811
+      - 172.99.188.71:8119
+      - 13.124.29.75:443
+      - 14.29.124.168:25294
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - JP 6 → TG@SCINV
-      - US+2+→+TG@SCINV
-      - 199.115.228.30:253
-      - 2
-      - CA 1 → TG@SCINV
-      - ""
-      - US_887
-      - " 2"
-      - GB_298
-      - 169.197.142.187:8888
-      - 169.197.142.187:6697
-      - GB_309
-      - ZZ_1294
-      - 167.88.61.175:3306
-      - CA 2 → TG@SCINV
-      - US_999
-      - US_1048
-      - Pool_🇳🇱NL_522
-      - ZZ_1269
-      - US_1165
-      - US_1146
-      - 169.197.142.187:2376
-      - 169.197.142.187:5601
-      - ZZ_1276
-      - 169.197.142.187:8080
-      - 169.197.142.187:7001
-      - US_818
-      - Pool_🇳🇱NL_524
-      - 167.88.61.175:5001
-      - US_850
-      - Pool_🇳🇱NL_475
-      - Pool_🇳🇱NL_525
-      - US_708
-      - US_801
-      - 169.197.142.187:5003
-      - 169.197.142.187:8008
-      - Pool_🇳🇱NL_478
-      - US_1059
-      - 169.197.142.187:6379
-      - US_858
-      - 169.197.142.187:7306
-      - 169.197.142.187:8119
-      - 169.197.142.187:443
-      - Pool_🇳🇱NL_485
-      - Pool_🇳🇱NL_477
-      - Pool_🇳🇱NL_488
-      - US_819
-      - US_804
-      - 169.197.142.187:7307
+      - CN 61 → TG@SCINV
+      - CN 60 → TG@SCINV
+      - TW 1 → TG@SCINV
       - NONE
-      - 167.88.61.175:9102
-      - 169.197.142.187:5004
-      - Pool_🇳🇱NL_496
-      - US_1080
-      - 美国-2.93MB/s(Youtube:不良林)
-      - 134.195.196.85:5001
-      - NONE 2
-      - 169.197.141.5:3306
-      - FR_280
-      - US_873
-      - 193.108.117.75:8080
-      - DE_226
-      - NONE 3
-      - US_731
-      - DE_199
-      - US_1094
-      - 172.99.188.71:5000
-      - 169.197.142.187:5001
-      - US_1072
-      - US_741
-      - 匈牙利-1.30MB/s(Youtube:不良林)
-      - US_834
-      - DE_227
-      - DE_198
-      - US_1077
-      - DE_191
-      - DE_215
-      - DE_217
-      - US_713
-      - US_771
-      - US_769
-      - US_962
-      - US_970
-      - US_1065
-      - 196.247.59.154:805
-      - 45.144.176.135:3005
-      - 45.144.176.135:3000
-      - 45.144.176.135:3003
-      - HU_328
-      - Relay_🇸🇬SG-🇸🇬SG_690
-      - 196.247.59.154:800
-      - 196.247.59.154:806
-      - 196.247.59.154:809
-      - US_863
+      - 122.248.226.111:443
+      - ""
+      - " 2"
       - " 3"
-      - US_827
-      - 196.247.59.154:802
-      - Relay_🇬🇧GB-🇺🇸US_315
-      - 196.247.59.154:801
-      - 169.197.142.187:9102
-      - aaa 174
-      - US_907
-      - 138.197.166.205:811
-      - 196.247.59.154:803
-      - CA_100
-      - CA_110
-      - CA_94
-      - 5.188.0.151:800
-      - Relay_🇫🇷FR-🇫🇷FR_287
+      - CN 55 → TG@SCINV
       - " 4"
-      - NONE 4
-      - JP_364
-      - AU_88
-      - 中国-317.0KB/s(Youtube:不良林)
-      - 45.144.176.135:3002
-      - 新加坡(油管:破解资源君2.0) 5
-      - SG_689
-      - NONE 5
-      - 14.29.124.168:25222
-      - 14.29.124.168:25280
-      - 14.29.124.168:25218
-      - 45.144.176.135:3001
-      - 14.29.124.168:25259
-      - 14.29.124.168:25226
-      - 14.29.124.168:25272
-      - 14.29.124.168:25297
-      - 14.29.124.168:25233
-      - 14.29.124.168:25261
-      - 14.29.124.168:25287
-      - 14.29.124.168:25267
-      - 14.29.124.168:25241
-      - 14.29.124.168:25230
-      - 14.29.124.168:25245
-      - 14.29.124.168:25231
-      - 14.29.124.168:25220
-      - 14.29.124.168:25251
-      - 14.29.124.168:25207
-      - 14.29.124.168:25247
-      - 14.29.124.168:25219
-      - 14.29.124.168:25268
-      - 14.29.124.168:25266
-      - 14.29.124.168:25289
-      - 14.29.124.168:25284
-      - 13.124.29.75:443
-      - 14.29.124.168:25295
-      - 14.29.124.168:25210
-      - 14.29.124.168:25283
-      - 14.29.124.168:25279
-      - 14.29.124.168:25271
-      - 14.29.124.168:25254
-      - 14.29.124.168:25270
-      - 14.29.124.168:25252
-      - 45.144.176.135:3004
-      - US_774
       - " 5"
-      - 51.79.173.62:1443
-      - 92.38.176.81:811
+      - US 1 → TG@SCINV
+      - " 6"
+      - " 7"
+      - US 41 → TG@SCINV
+      - GB 1 → TG@SCINV
+      - USA08-美国08
+      - USA09-美国09
+      - USA07-美国07
+      - USA06-美国06
+      - 85.208.108.93:7002
+      - USA03-美国03
+      - 85.208.108.20:5601
+      - 78.129.253.9:809
+      - 85.208.108.20:6679
+      - 85.208.108.93:7306
+      - 85.208.108.93:8881
+      - USA10-美国10
+      - 85.208.108.20:6697
+      - CN 54 → TG@SCINV
+      - 85.208.108.20:6379
+      - CA 1 → TG@SCINV
+      - " 8"
+      - 78.129.253.9:808
+      - 134.195.196.85:5001
+      - " 9"
+      - 185.4.65.6:21247
+      - 85.208.108.93:6379
+      - USA01-美国01
+      - 38.111.114.246:8882
+      - " 10"
+      - " 11"
+      - 193.108.117.75:443
+      - 51.195.136.209:50004
+      - 169.197.141.5:3306
+      - 195.154.200.150:2376
+      - 172.99.188.71:3389
+      - USA02-美国02
+      - 172.99.188.71:8091
+      - 172.99.188.71:8882
+      - 193.108.117.75:8881
+      - 193.108.117.75:9102
+      - 104.237.154.158:864
+      - 193.108.117.75:8080
+      - 193.108.117.75:6379
+      - 172.99.188.71:6679
+      - 138.68.248.130:811
+      - 193.108.117.75:5001
+      - 172.99.188.71:5004
+      - 172.99.188.71:6379
+      - 172.99.188.71:5000
+      - us01.wol1.ml:443
+      - " 12"
+      - 196.247.59.154:805
+      - " 13"
+      - " 14"
+      - 196.247.59.154:806
+      - 172.99.188.71:443
+      - " 15"
+      - 196.247.59.154:803
+      - 172.99.188.71:6697
+      - 196.247.59.154:809
+      - 196.247.59.154:800
+      - 193.108.117.75:8090
+      - 172.99.188.71:8888
+      - 172.99.188.71:8118
+      - 120.233.29.202:252
+      - CN 5 → TG@SCINV
+      - CN 4 → TG@SCINV
+      - 45.144.176.135:3005
+      - 196.247.59.154:801
+      - 85.208.108.20:7002
+      - 45.144.176.135:3003
+      - 196.247.59.154:802
+      - 72.140.224.195:800
+      - 72.140.224.195:810
+      - 72.140.224.195:803
+      - 45.144.176.135:3000
+      - 51.38.118.42:811
+      - 172.99.188.71:8119
+      - 13.124.29.75:443
+      - 14.29.124.168:25294
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - JP 6 → TG@SCINV
-      - US+2+→+TG@SCINV
-      - 199.115.228.30:253
-      - 2
-      - CA 1 → TG@SCINV
-      - ""
-      - US_887
-      - " 2"
-      - GB_298
-      - 169.197.142.187:8888
-      - 169.197.142.187:6697
-      - GB_309
-      - ZZ_1294
-      - 167.88.61.175:3306
-      - CA 2 → TG@SCINV
-      - US_999
-      - US_1048
-      - Pool_🇳🇱NL_522
-      - ZZ_1269
-      - US_1165
-      - US_1146
-      - 169.197.142.187:2376
-      - 169.197.142.187:5601
-      - ZZ_1276
-      - 169.197.142.187:8080
-      - 169.197.142.187:7001
-      - US_818
-      - Pool_🇳🇱NL_524
-      - 167.88.61.175:5001
-      - US_850
-      - Pool_🇳🇱NL_475
-      - Pool_🇳🇱NL_525
-      - US_708
-      - US_801
-      - 169.197.142.187:5003
-      - 169.197.142.187:8008
-      - Pool_🇳🇱NL_478
-      - US_1059
-      - 169.197.142.187:6379
-      - US_858
-      - 169.197.142.187:7306
-      - 169.197.142.187:8119
-      - 169.197.142.187:443
-      - Pool_🇳🇱NL_485
-      - Pool_🇳🇱NL_477
-      - Pool_🇳🇱NL_488
-      - US_819
-      - US_804
-      - 169.197.142.187:7307
+      - CN 61 → TG@SCINV
+      - CN 60 → TG@SCINV
+      - TW 1 → TG@SCINV
       - NONE
-      - 167.88.61.175:9102
-      - 169.197.142.187:5004
-      - Pool_🇳🇱NL_496
-      - US_1080
-      - 美国-2.93MB/s(Youtube:不良林)
-      - 134.195.196.85:5001
-      - NONE 2
-      - 169.197.141.5:3306
-      - FR_280
-      - US_873
-      - 193.108.117.75:8080
-      - DE_226
-      - NONE 3
-      - US_731
-      - DE_199
-      - US_1094
-      - 172.99.188.71:5000
-      - 169.197.142.187:5001
-      - US_1072
-      - US_741
-      - 匈牙利-1.30MB/s(Youtube:不良林)
-      - US_834
-      - DE_227
-      - DE_198
-      - US_1077
-      - DE_191
-      - DE_215
-      - DE_217
-      - US_713
-      - US_771
-      - US_769
-      - US_962
-      - US_970
-      - US_1065
-      - 196.247.59.154:805
-      - 45.144.176.135:3005
-      - 45.144.176.135:3000
-      - 45.144.176.135:3003
-      - HU_328
-      - Relay_🇸🇬SG-🇸🇬SG_690
-      - 196.247.59.154:800
-      - 196.247.59.154:806
-      - 196.247.59.154:809
-      - US_863
+      - 122.248.226.111:443
+      - ""
+      - " 2"
       - " 3"
-      - US_827
-      - 196.247.59.154:802
-      - Relay_🇬🇧GB-🇺🇸US_315
-      - 196.247.59.154:801
-      - 169.197.142.187:9102
-      - aaa 174
-      - US_907
-      - 138.197.166.205:811
-      - 196.247.59.154:803
-      - CA_100
-      - CA_110
-      - CA_94
-      - 5.188.0.151:800
-      - Relay_🇫🇷FR-🇫🇷FR_287
+      - CN 55 → TG@SCINV
       - " 4"
-      - NONE 4
-      - JP_364
-      - AU_88
-      - 中国-317.0KB/s(Youtube:不良林)
-      - 45.144.176.135:3002
-      - 新加坡(油管:破解资源君2.0) 5
-      - SG_689
-      - NONE 5
-      - 14.29.124.168:25222
-      - 14.29.124.168:25280
-      - 14.29.124.168:25218
-      - 45.144.176.135:3001
-      - 14.29.124.168:25259
-      - 14.29.124.168:25226
-      - 14.29.124.168:25272
-      - 14.29.124.168:25297
-      - 14.29.124.168:25233
-      - 14.29.124.168:25261
-      - 14.29.124.168:25287
-      - 14.29.124.168:25267
-      - 14.29.124.168:25241
-      - 14.29.124.168:25230
-      - 14.29.124.168:25245
-      - 14.29.124.168:25231
-      - 14.29.124.168:25220
-      - 14.29.124.168:25251
-      - 14.29.124.168:25207
-      - 14.29.124.168:25247
-      - 14.29.124.168:25219
-      - 14.29.124.168:25268
-      - 14.29.124.168:25266
-      - 14.29.124.168:25289
-      - 14.29.124.168:25284
-      - 13.124.29.75:443
-      - 14.29.124.168:25295
-      - 14.29.124.168:25210
-      - 14.29.124.168:25283
-      - 14.29.124.168:25279
-      - 14.29.124.168:25271
-      - 14.29.124.168:25254
-      - 14.29.124.168:25270
-      - 14.29.124.168:25252
-      - 45.144.176.135:3004
-      - US_774
       - " 5"
-      - 51.79.173.62:1443
-      - 92.38.176.81:811
+      - US 1 → TG@SCINV
+      - " 6"
+      - " 7"
+      - US 41 → TG@SCINV
+      - GB 1 → TG@SCINV
+      - USA08-美国08
+      - USA09-美国09
+      - USA07-美国07
+      - USA06-美国06
+      - 85.208.108.93:7002
+      - USA03-美国03
+      - 85.208.108.20:5601
+      - 78.129.253.9:809
+      - 85.208.108.20:6679
+      - 85.208.108.93:7306
+      - 85.208.108.93:8881
+      - USA10-美国10
+      - 85.208.108.20:6697
+      - CN 54 → TG@SCINV
+      - 85.208.108.20:6379
+      - CA 1 → TG@SCINV
+      - " 8"
+      - 78.129.253.9:808
+      - 134.195.196.85:5001
+      - " 9"
+      - 185.4.65.6:21247
+      - 85.208.108.93:6379
+      - USA01-美国01
+      - 38.111.114.246:8882
+      - " 10"
+      - " 11"
+      - 193.108.117.75:443
+      - 51.195.136.209:50004
+      - 169.197.141.5:3306
+      - 195.154.200.150:2376
+      - 172.99.188.71:3389
+      - USA02-美国02
+      - 172.99.188.71:8091
+      - 172.99.188.71:8882
+      - 193.108.117.75:8881
+      - 193.108.117.75:9102
+      - 104.237.154.158:864
+      - 193.108.117.75:8080
+      - 193.108.117.75:6379
+      - 172.99.188.71:6679
+      - 138.68.248.130:811
+      - 193.108.117.75:5001
+      - 172.99.188.71:5004
+      - 172.99.188.71:6379
+      - 172.99.188.71:5000
+      - us01.wol1.ml:443
+      - " 12"
+      - 196.247.59.154:805
+      - " 13"
+      - " 14"
+      - 196.247.59.154:806
+      - 172.99.188.71:443
+      - " 15"
+      - 196.247.59.154:803
+      - 172.99.188.71:6697
+      - 196.247.59.154:809
+      - 196.247.59.154:800
+      - 193.108.117.75:8090
+      - 172.99.188.71:8888
+      - 172.99.188.71:8118
+      - 120.233.29.202:252
+      - CN 5 → TG@SCINV
+      - CN 4 → TG@SCINV
+      - 45.144.176.135:3005
+      - 196.247.59.154:801
+      - 85.208.108.20:7002
+      - 45.144.176.135:3003
+      - 196.247.59.154:802
+      - 72.140.224.195:800
+      - 72.140.224.195:810
+      - 72.140.224.195:803
+      - 45.144.176.135:3000
+      - 51.38.118.42:811
+      - 172.99.188.71:8119
+      - 13.124.29.75:443
+      - 14.29.124.168:25294
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -668,163 +408,98 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - JP 6 → TG@SCINV
-      - US+2+→+TG@SCINV
-      - 199.115.228.30:253
-      - 2
-      - CA 1 → TG@SCINV
-      - ""
-      - US_887
-      - " 2"
-      - GB_298
-      - 169.197.142.187:8888
-      - 169.197.142.187:6697
-      - GB_309
-      - ZZ_1294
-      - 167.88.61.175:3306
-      - CA 2 → TG@SCINV
-      - US_999
-      - US_1048
-      - Pool_🇳🇱NL_522
-      - ZZ_1269
-      - US_1165
-      - US_1146
-      - 169.197.142.187:2376
-      - 169.197.142.187:5601
-      - ZZ_1276
-      - 169.197.142.187:8080
-      - 169.197.142.187:7001
-      - US_818
-      - Pool_🇳🇱NL_524
-      - 167.88.61.175:5001
-      - US_850
-      - Pool_🇳🇱NL_475
-      - Pool_🇳🇱NL_525
-      - US_708
-      - US_801
-      - 169.197.142.187:5003
-      - 169.197.142.187:8008
-      - Pool_🇳🇱NL_478
-      - US_1059
-      - 169.197.142.187:6379
-      - US_858
-      - 169.197.142.187:7306
-      - 169.197.142.187:8119
-      - 169.197.142.187:443
-      - Pool_🇳🇱NL_485
-      - Pool_🇳🇱NL_477
-      - Pool_🇳🇱NL_488
-      - US_819
-      - US_804
-      - 169.197.142.187:7307
+      - CN 61 → TG@SCINV
+      - CN 60 → TG@SCINV
+      - TW 1 → TG@SCINV
       - NONE
-      - 167.88.61.175:9102
-      - 169.197.142.187:5004
-      - Pool_🇳🇱NL_496
-      - US_1080
-      - 美国-2.93MB/s(Youtube:不良林)
-      - 134.195.196.85:5001
-      - NONE 2
-      - 169.197.141.5:3306
-      - FR_280
-      - US_873
-      - 193.108.117.75:8080
-      - DE_226
-      - NONE 3
-      - US_731
-      - DE_199
-      - US_1094
-      - 172.99.188.71:5000
-      - 169.197.142.187:5001
-      - US_1072
-      - US_741
-      - 匈牙利-1.30MB/s(Youtube:不良林)
-      - US_834
-      - DE_227
-      - DE_198
-      - US_1077
-      - DE_191
-      - DE_215
-      - DE_217
-      - US_713
-      - US_771
-      - US_769
-      - US_962
-      - US_970
-      - US_1065
-      - 196.247.59.154:805
-      - 45.144.176.135:3005
-      - 45.144.176.135:3000
-      - 45.144.176.135:3003
-      - HU_328
-      - Relay_🇸🇬SG-🇸🇬SG_690
-      - 196.247.59.154:800
-      - 196.247.59.154:806
-      - 196.247.59.154:809
-      - US_863
+      - 122.248.226.111:443
+      - ""
+      - " 2"
       - " 3"
-      - US_827
-      - 196.247.59.154:802
-      - Relay_🇬🇧GB-🇺🇸US_315
-      - 196.247.59.154:801
-      - 169.197.142.187:9102
-      - aaa 174
-      - US_907
-      - 138.197.166.205:811
-      - 196.247.59.154:803
-      - CA_100
-      - CA_110
-      - CA_94
-      - 5.188.0.151:800
-      - Relay_🇫🇷FR-🇫🇷FR_287
+      - CN 55 → TG@SCINV
       - " 4"
-      - NONE 4
-      - JP_364
-      - AU_88
-      - 中国-317.0KB/s(Youtube:不良林)
-      - 45.144.176.135:3002
-      - 新加坡(油管:破解资源君2.0) 5
-      - SG_689
-      - NONE 5
-      - 14.29.124.168:25222
-      - 14.29.124.168:25280
-      - 14.29.124.168:25218
-      - 45.144.176.135:3001
-      - 14.29.124.168:25259
-      - 14.29.124.168:25226
-      - 14.29.124.168:25272
-      - 14.29.124.168:25297
-      - 14.29.124.168:25233
-      - 14.29.124.168:25261
-      - 14.29.124.168:25287
-      - 14.29.124.168:25267
-      - 14.29.124.168:25241
-      - 14.29.124.168:25230
-      - 14.29.124.168:25245
-      - 14.29.124.168:25231
-      - 14.29.124.168:25220
-      - 14.29.124.168:25251
-      - 14.29.124.168:25207
-      - 14.29.124.168:25247
-      - 14.29.124.168:25219
-      - 14.29.124.168:25268
-      - 14.29.124.168:25266
-      - 14.29.124.168:25289
-      - 14.29.124.168:25284
-      - 13.124.29.75:443
-      - 14.29.124.168:25295
-      - 14.29.124.168:25210
-      - 14.29.124.168:25283
-      - 14.29.124.168:25279
-      - 14.29.124.168:25271
-      - 14.29.124.168:25254
-      - 14.29.124.168:25270
-      - 14.29.124.168:25252
-      - 45.144.176.135:3004
-      - US_774
       - " 5"
-      - 51.79.173.62:1443
-      - 92.38.176.81:811
+      - US 1 → TG@SCINV
+      - " 6"
+      - " 7"
+      - US 41 → TG@SCINV
+      - GB 1 → TG@SCINV
+      - USA08-美国08
+      - USA09-美国09
+      - USA07-美国07
+      - USA06-美国06
+      - 85.208.108.93:7002
+      - USA03-美国03
+      - 85.208.108.20:5601
+      - 78.129.253.9:809
+      - 85.208.108.20:6679
+      - 85.208.108.93:7306
+      - 85.208.108.93:8881
+      - USA10-美国10
+      - 85.208.108.20:6697
+      - CN 54 → TG@SCINV
+      - 85.208.108.20:6379
+      - CA 1 → TG@SCINV
+      - " 8"
+      - 78.129.253.9:808
+      - 134.195.196.85:5001
+      - " 9"
+      - 185.4.65.6:21247
+      - 85.208.108.93:6379
+      - USA01-美国01
+      - 38.111.114.246:8882
+      - " 10"
+      - " 11"
+      - 193.108.117.75:443
+      - 51.195.136.209:50004
+      - 169.197.141.5:3306
+      - 195.154.200.150:2376
+      - 172.99.188.71:3389
+      - USA02-美国02
+      - 172.99.188.71:8091
+      - 172.99.188.71:8882
+      - 193.108.117.75:8881
+      - 193.108.117.75:9102
+      - 104.237.154.158:864
+      - 193.108.117.75:8080
+      - 193.108.117.75:6379
+      - 172.99.188.71:6679
+      - 138.68.248.130:811
+      - 193.108.117.75:5001
+      - 172.99.188.71:5004
+      - 172.99.188.71:6379
+      - 172.99.188.71:5000
+      - us01.wol1.ml:443
+      - " 12"
+      - 196.247.59.154:805
+      - " 13"
+      - " 14"
+      - 196.247.59.154:806
+      - 172.99.188.71:443
+      - " 15"
+      - 196.247.59.154:803
+      - 172.99.188.71:6697
+      - 196.247.59.154:809
+      - 196.247.59.154:800
+      - 193.108.117.75:8090
+      - 172.99.188.71:8888
+      - 172.99.188.71:8118
+      - 120.233.29.202:252
+      - CN 5 → TG@SCINV
+      - CN 4 → TG@SCINV
+      - 45.144.176.135:3005
+      - 196.247.59.154:801
+      - 85.208.108.20:7002
+      - 45.144.176.135:3003
+      - 196.247.59.154:802
+      - 72.140.224.195:800
+      - 72.140.224.195:810
+      - 72.140.224.195:803
+      - 45.144.176.135:3000
+      - 51.38.118.42:811
+      - 172.99.188.71:8119
+      - 13.124.29.75:443
+      - 14.29.124.168:25294
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -835,488 +510,293 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - JP 6 → TG@SCINV
-      - US+2+→+TG@SCINV
-      - 199.115.228.30:253
-      - 2
-      - CA 1 → TG@SCINV
-      - ""
-      - US_887
-      - " 2"
-      - GB_298
-      - 169.197.142.187:8888
-      - 169.197.142.187:6697
-      - GB_309
-      - ZZ_1294
-      - 167.88.61.175:3306
-      - CA 2 → TG@SCINV
-      - US_999
-      - US_1048
-      - Pool_🇳🇱NL_522
-      - ZZ_1269
-      - US_1165
-      - US_1146
-      - 169.197.142.187:2376
-      - 169.197.142.187:5601
-      - ZZ_1276
-      - 169.197.142.187:8080
-      - 169.197.142.187:7001
-      - US_818
-      - Pool_🇳🇱NL_524
-      - 167.88.61.175:5001
-      - US_850
-      - Pool_🇳🇱NL_475
-      - Pool_🇳🇱NL_525
-      - US_708
-      - US_801
-      - 169.197.142.187:5003
-      - 169.197.142.187:8008
-      - Pool_🇳🇱NL_478
-      - US_1059
-      - 169.197.142.187:6379
-      - US_858
-      - 169.197.142.187:7306
-      - 169.197.142.187:8119
-      - 169.197.142.187:443
-      - Pool_🇳🇱NL_485
-      - Pool_🇳🇱NL_477
-      - Pool_🇳🇱NL_488
-      - US_819
-      - US_804
-      - 169.197.142.187:7307
+      - CN 61 → TG@SCINV
+      - CN 60 → TG@SCINV
+      - TW 1 → TG@SCINV
       - NONE
-      - 167.88.61.175:9102
-      - 169.197.142.187:5004
-      - Pool_🇳🇱NL_496
-      - US_1080
-      - 美国-2.93MB/s(Youtube:不良林)
-      - 134.195.196.85:5001
-      - NONE 2
-      - 169.197.141.5:3306
-      - FR_280
-      - US_873
-      - 193.108.117.75:8080
-      - DE_226
-      - NONE 3
-      - US_731
-      - DE_199
-      - US_1094
-      - 172.99.188.71:5000
-      - 169.197.142.187:5001
-      - US_1072
-      - US_741
-      - 匈牙利-1.30MB/s(Youtube:不良林)
-      - US_834
-      - DE_227
-      - DE_198
-      - US_1077
-      - DE_191
-      - DE_215
-      - DE_217
-      - US_713
-      - US_771
-      - US_769
-      - US_962
-      - US_970
-      - US_1065
-      - 196.247.59.154:805
-      - 45.144.176.135:3005
-      - 45.144.176.135:3000
-      - 45.144.176.135:3003
-      - HU_328
-      - Relay_🇸🇬SG-🇸🇬SG_690
-      - 196.247.59.154:800
-      - 196.247.59.154:806
-      - 196.247.59.154:809
-      - US_863
+      - 122.248.226.111:443
+      - ""
+      - " 2"
       - " 3"
-      - US_827
-      - 196.247.59.154:802
-      - Relay_🇬🇧GB-🇺🇸US_315
-      - 196.247.59.154:801
-      - 169.197.142.187:9102
-      - aaa 174
-      - US_907
-      - 138.197.166.205:811
-      - 196.247.59.154:803
-      - CA_100
-      - CA_110
-      - CA_94
-      - 5.188.0.151:800
-      - Relay_🇫🇷FR-🇫🇷FR_287
+      - CN 55 → TG@SCINV
       - " 4"
-      - NONE 4
-      - JP_364
-      - AU_88
-      - 中国-317.0KB/s(Youtube:不良林)
-      - 45.144.176.135:3002
-      - 新加坡(油管:破解资源君2.0) 5
-      - SG_689
-      - NONE 5
-      - 14.29.124.168:25222
-      - 14.29.124.168:25280
-      - 14.29.124.168:25218
-      - 45.144.176.135:3001
-      - 14.29.124.168:25259
-      - 14.29.124.168:25226
-      - 14.29.124.168:25272
-      - 14.29.124.168:25297
-      - 14.29.124.168:25233
-      - 14.29.124.168:25261
-      - 14.29.124.168:25287
-      - 14.29.124.168:25267
-      - 14.29.124.168:25241
-      - 14.29.124.168:25230
-      - 14.29.124.168:25245
-      - 14.29.124.168:25231
-      - 14.29.124.168:25220
-      - 14.29.124.168:25251
-      - 14.29.124.168:25207
-      - 14.29.124.168:25247
-      - 14.29.124.168:25219
-      - 14.29.124.168:25268
-      - 14.29.124.168:25266
-      - 14.29.124.168:25289
-      - 14.29.124.168:25284
-      - 13.124.29.75:443
-      - 14.29.124.168:25295
-      - 14.29.124.168:25210
-      - 14.29.124.168:25283
-      - 14.29.124.168:25279
-      - 14.29.124.168:25271
-      - 14.29.124.168:25254
-      - 14.29.124.168:25270
-      - 14.29.124.168:25252
-      - 45.144.176.135:3004
-      - US_774
       - " 5"
-      - 51.79.173.62:1443
-      - 92.38.176.81:811
+      - US 1 → TG@SCINV
+      - " 6"
+      - " 7"
+      - US 41 → TG@SCINV
+      - GB 1 → TG@SCINV
+      - USA08-美国08
+      - USA09-美国09
+      - USA07-美国07
+      - USA06-美国06
+      - 85.208.108.93:7002
+      - USA03-美国03
+      - 85.208.108.20:5601
+      - 78.129.253.9:809
+      - 85.208.108.20:6679
+      - 85.208.108.93:7306
+      - 85.208.108.93:8881
+      - USA10-美国10
+      - 85.208.108.20:6697
+      - CN 54 → TG@SCINV
+      - 85.208.108.20:6379
+      - CA 1 → TG@SCINV
+      - " 8"
+      - 78.129.253.9:808
+      - 134.195.196.85:5001
+      - " 9"
+      - 185.4.65.6:21247
+      - 85.208.108.93:6379
+      - USA01-美国01
+      - 38.111.114.246:8882
+      - " 10"
+      - " 11"
+      - 193.108.117.75:443
+      - 51.195.136.209:50004
+      - 169.197.141.5:3306
+      - 195.154.200.150:2376
+      - 172.99.188.71:3389
+      - USA02-美国02
+      - 172.99.188.71:8091
+      - 172.99.188.71:8882
+      - 193.108.117.75:8881
+      - 193.108.117.75:9102
+      - 104.237.154.158:864
+      - 193.108.117.75:8080
+      - 193.108.117.75:6379
+      - 172.99.188.71:6679
+      - 138.68.248.130:811
+      - 193.108.117.75:5001
+      - 172.99.188.71:5004
+      - 172.99.188.71:6379
+      - 172.99.188.71:5000
+      - us01.wol1.ml:443
+      - " 12"
+      - 196.247.59.154:805
+      - " 13"
+      - " 14"
+      - 196.247.59.154:806
+      - 172.99.188.71:443
+      - " 15"
+      - 196.247.59.154:803
+      - 172.99.188.71:6697
+      - 196.247.59.154:809
+      - 196.247.59.154:800
+      - 193.108.117.75:8090
+      - 172.99.188.71:8888
+      - 172.99.188.71:8118
+      - 120.233.29.202:252
+      - CN 5 → TG@SCINV
+      - CN 4 → TG@SCINV
+      - 45.144.176.135:3005
+      - 196.247.59.154:801
+      - 85.208.108.20:7002
+      - 45.144.176.135:3003
+      - 196.247.59.154:802
+      - 72.140.224.195:800
+      - 72.140.224.195:810
+      - 72.140.224.195:803
+      - 45.144.176.135:3000
+      - 51.38.118.42:811
+      - 172.99.188.71:8119
+      - 13.124.29.75:443
+      - 14.29.124.168:25294
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - JP 6 → TG@SCINV
-      - US+2+→+TG@SCINV
-      - 199.115.228.30:253
-      - 2
-      - CA 1 → TG@SCINV
-      - ""
-      - US_887
-      - " 2"
-      - GB_298
-      - 169.197.142.187:8888
-      - 169.197.142.187:6697
-      - GB_309
-      - ZZ_1294
-      - 167.88.61.175:3306
-      - CA 2 → TG@SCINV
-      - US_999
-      - US_1048
-      - Pool_🇳🇱NL_522
-      - ZZ_1269
-      - US_1165
-      - US_1146
-      - 169.197.142.187:2376
-      - 169.197.142.187:5601
-      - ZZ_1276
-      - 169.197.142.187:8080
-      - 169.197.142.187:7001
-      - US_818
-      - Pool_🇳🇱NL_524
-      - 167.88.61.175:5001
-      - US_850
-      - Pool_🇳🇱NL_475
-      - Pool_🇳🇱NL_525
-      - US_708
-      - US_801
-      - 169.197.142.187:5003
-      - 169.197.142.187:8008
-      - Pool_🇳🇱NL_478
-      - US_1059
-      - 169.197.142.187:6379
-      - US_858
-      - 169.197.142.187:7306
-      - 169.197.142.187:8119
-      - 169.197.142.187:443
-      - Pool_🇳🇱NL_485
-      - Pool_🇳🇱NL_477
-      - Pool_🇳🇱NL_488
-      - US_819
-      - US_804
-      - 169.197.142.187:7307
+      - CN 61 → TG@SCINV
+      - CN 60 → TG@SCINV
+      - TW 1 → TG@SCINV
       - NONE
-      - 167.88.61.175:9102
-      - 169.197.142.187:5004
-      - Pool_🇳🇱NL_496
-      - US_1080
-      - 美国-2.93MB/s(Youtube:不良林)
-      - 134.195.196.85:5001
-      - NONE 2
-      - 169.197.141.5:3306
-      - FR_280
-      - US_873
-      - 193.108.117.75:8080
-      - DE_226
-      - NONE 3
-      - US_731
-      - DE_199
-      - US_1094
-      - 172.99.188.71:5000
-      - 169.197.142.187:5001
-      - US_1072
-      - US_741
-      - 匈牙利-1.30MB/s(Youtube:不良林)
-      - US_834
-      - DE_227
-      - DE_198
-      - US_1077
-      - DE_191
-      - DE_215
-      - DE_217
-      - US_713
-      - US_771
-      - US_769
-      - US_962
-      - US_970
-      - US_1065
-      - 196.247.59.154:805
-      - 45.144.176.135:3005
-      - 45.144.176.135:3000
-      - 45.144.176.135:3003
-      - HU_328
-      - Relay_🇸🇬SG-🇸🇬SG_690
-      - 196.247.59.154:800
-      - 196.247.59.154:806
-      - 196.247.59.154:809
-      - US_863
+      - 122.248.226.111:443
+      - ""
+      - " 2"
       - " 3"
-      - US_827
-      - 196.247.59.154:802
-      - Relay_🇬🇧GB-🇺🇸US_315
-      - 196.247.59.154:801
-      - 169.197.142.187:9102
-      - aaa 174
-      - US_907
-      - 138.197.166.205:811
-      - 196.247.59.154:803
-      - CA_100
-      - CA_110
-      - CA_94
-      - 5.188.0.151:800
-      - Relay_🇫🇷FR-🇫🇷FR_287
+      - CN 55 → TG@SCINV
       - " 4"
-      - NONE 4
-      - JP_364
-      - AU_88
-      - 中国-317.0KB/s(Youtube:不良林)
-      - 45.144.176.135:3002
-      - 新加坡(油管:破解资源君2.0) 5
-      - SG_689
-      - NONE 5
-      - 14.29.124.168:25222
-      - 14.29.124.168:25280
-      - 14.29.124.168:25218
-      - 45.144.176.135:3001
-      - 14.29.124.168:25259
-      - 14.29.124.168:25226
-      - 14.29.124.168:25272
-      - 14.29.124.168:25297
-      - 14.29.124.168:25233
-      - 14.29.124.168:25261
-      - 14.29.124.168:25287
-      - 14.29.124.168:25267
-      - 14.29.124.168:25241
-      - 14.29.124.168:25230
-      - 14.29.124.168:25245
-      - 14.29.124.168:25231
-      - 14.29.124.168:25220
-      - 14.29.124.168:25251
-      - 14.29.124.168:25207
-      - 14.29.124.168:25247
-      - 14.29.124.168:25219
-      - 14.29.124.168:25268
-      - 14.29.124.168:25266
-      - 14.29.124.168:25289
-      - 14.29.124.168:25284
-      - 13.124.29.75:443
-      - 14.29.124.168:25295
-      - 14.29.124.168:25210
-      - 14.29.124.168:25283
-      - 14.29.124.168:25279
-      - 14.29.124.168:25271
-      - 14.29.124.168:25254
-      - 14.29.124.168:25270
-      - 14.29.124.168:25252
-      - 45.144.176.135:3004
-      - US_774
       - " 5"
-      - 51.79.173.62:1443
-      - 92.38.176.81:811
+      - US 1 → TG@SCINV
+      - " 6"
+      - " 7"
+      - US 41 → TG@SCINV
+      - GB 1 → TG@SCINV
+      - USA08-美国08
+      - USA09-美国09
+      - USA07-美国07
+      - USA06-美国06
+      - 85.208.108.93:7002
+      - USA03-美国03
+      - 85.208.108.20:5601
+      - 78.129.253.9:809
+      - 85.208.108.20:6679
+      - 85.208.108.93:7306
+      - 85.208.108.93:8881
+      - USA10-美国10
+      - 85.208.108.20:6697
+      - CN 54 → TG@SCINV
+      - 85.208.108.20:6379
+      - CA 1 → TG@SCINV
+      - " 8"
+      - 78.129.253.9:808
+      - 134.195.196.85:5001
+      - " 9"
+      - 185.4.65.6:21247
+      - 85.208.108.93:6379
+      - USA01-美国01
+      - 38.111.114.246:8882
+      - " 10"
+      - " 11"
+      - 193.108.117.75:443
+      - 51.195.136.209:50004
+      - 169.197.141.5:3306
+      - 195.154.200.150:2376
+      - 172.99.188.71:3389
+      - USA02-美国02
+      - 172.99.188.71:8091
+      - 172.99.188.71:8882
+      - 193.108.117.75:8881
+      - 193.108.117.75:9102
+      - 104.237.154.158:864
+      - 193.108.117.75:8080
+      - 193.108.117.75:6379
+      - 172.99.188.71:6679
+      - 138.68.248.130:811
+      - 193.108.117.75:5001
+      - 172.99.188.71:5004
+      - 172.99.188.71:6379
+      - 172.99.188.71:5000
+      - us01.wol1.ml:443
+      - " 12"
+      - 196.247.59.154:805
+      - " 13"
+      - " 14"
+      - 196.247.59.154:806
+      - 172.99.188.71:443
+      - " 15"
+      - 196.247.59.154:803
+      - 172.99.188.71:6697
+      - 196.247.59.154:809
+      - 196.247.59.154:800
+      - 193.108.117.75:8090
+      - 172.99.188.71:8888
+      - 172.99.188.71:8118
+      - 120.233.29.202:252
+      - CN 5 → TG@SCINV
+      - CN 4 → TG@SCINV
+      - 45.144.176.135:3005
+      - 196.247.59.154:801
+      - 85.208.108.20:7002
+      - 45.144.176.135:3003
+      - 196.247.59.154:802
+      - 72.140.224.195:800
+      - 72.140.224.195:810
+      - 72.140.224.195:803
+      - 45.144.176.135:3000
+      - 51.38.118.42:811
+      - 172.99.188.71:8119
+      - 13.124.29.75:443
+      - 14.29.124.168:25294
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - JP 6 → TG@SCINV
-      - US+2+→+TG@SCINV
-      - 199.115.228.30:253
-      - 2
-      - CA 1 → TG@SCINV
-      - ""
-      - US_887
-      - " 2"
-      - GB_298
-      - 169.197.142.187:8888
-      - 169.197.142.187:6697
-      - GB_309
-      - ZZ_1294
-      - 167.88.61.175:3306
-      - CA 2 → TG@SCINV
-      - US_999
-      - US_1048
-      - Pool_🇳🇱NL_522
-      - ZZ_1269
-      - US_1165
-      - US_1146
-      - 169.197.142.187:2376
-      - 169.197.142.187:5601
-      - ZZ_1276
-      - 169.197.142.187:8080
-      - 169.197.142.187:7001
-      - US_818
-      - Pool_🇳🇱NL_524
-      - 167.88.61.175:5001
-      - US_850
-      - Pool_🇳🇱NL_475
-      - Pool_🇳🇱NL_525
-      - US_708
-      - US_801
-      - 169.197.142.187:5003
-      - 169.197.142.187:8008
-      - Pool_🇳🇱NL_478
-      - US_1059
-      - 169.197.142.187:6379
-      - US_858
-      - 169.197.142.187:7306
-      - 169.197.142.187:8119
-      - 169.197.142.187:443
-      - Pool_🇳🇱NL_485
-      - Pool_🇳🇱NL_477
-      - Pool_🇳🇱NL_488
-      - US_819
-      - US_804
-      - 169.197.142.187:7307
+      - CN 61 → TG@SCINV
+      - CN 60 → TG@SCINV
+      - TW 1 → TG@SCINV
       - NONE
-      - 167.88.61.175:9102
-      - 169.197.142.187:5004
-      - Pool_🇳🇱NL_496
-      - US_1080
-      - 美国-2.93MB/s(Youtube:不良林)
-      - 134.195.196.85:5001
-      - NONE 2
-      - 169.197.141.5:3306
-      - FR_280
-      - US_873
-      - 193.108.117.75:8080
-      - DE_226
-      - NONE 3
-      - US_731
-      - DE_199
-      - US_1094
-      - 172.99.188.71:5000
-      - 169.197.142.187:5001
-      - US_1072
-      - US_741
-      - 匈牙利-1.30MB/s(Youtube:不良林)
-      - US_834
-      - DE_227
-      - DE_198
-      - US_1077
-      - DE_191
-      - DE_215
-      - DE_217
-      - US_713
-      - US_771
-      - US_769
-      - US_962
-      - US_970
-      - US_1065
-      - 196.247.59.154:805
-      - 45.144.176.135:3005
-      - 45.144.176.135:3000
-      - 45.144.176.135:3003
-      - HU_328
-      - Relay_🇸🇬SG-🇸🇬SG_690
-      - 196.247.59.154:800
-      - 196.247.59.154:806
-      - 196.247.59.154:809
-      - US_863
+      - 122.248.226.111:443
+      - ""
+      - " 2"
       - " 3"
-      - US_827
-      - 196.247.59.154:802
-      - Relay_🇬🇧GB-🇺🇸US_315
-      - 196.247.59.154:801
-      - 169.197.142.187:9102
-      - aaa 174
-      - US_907
-      - 138.197.166.205:811
-      - 196.247.59.154:803
-      - CA_100
-      - CA_110
-      - CA_94
-      - 5.188.0.151:800
-      - Relay_🇫🇷FR-🇫🇷FR_287
+      - CN 55 → TG@SCINV
       - " 4"
-      - NONE 4
-      - JP_364
-      - AU_88
-      - 中国-317.0KB/s(Youtube:不良林)
-      - 45.144.176.135:3002
-      - 新加坡(油管:破解资源君2.0) 5
-      - SG_689
-      - NONE 5
-      - 14.29.124.168:25222
-      - 14.29.124.168:25280
-      - 14.29.124.168:25218
-      - 45.144.176.135:3001
-      - 14.29.124.168:25259
-      - 14.29.124.168:25226
-      - 14.29.124.168:25272
-      - 14.29.124.168:25297
-      - 14.29.124.168:25233
-      - 14.29.124.168:25261
-      - 14.29.124.168:25287
-      - 14.29.124.168:25267
-      - 14.29.124.168:25241
-      - 14.29.124.168:25230
-      - 14.29.124.168:25245
-      - 14.29.124.168:25231
-      - 14.29.124.168:25220
-      - 14.29.124.168:25251
-      - 14.29.124.168:25207
-      - 14.29.124.168:25247
-      - 14.29.124.168:25219
-      - 14.29.124.168:25268
-      - 14.29.124.168:25266
-      - 14.29.124.168:25289
-      - 14.29.124.168:25284
-      - 13.124.29.75:443
-      - 14.29.124.168:25295
-      - 14.29.124.168:25210
-      - 14.29.124.168:25283
-      - 14.29.124.168:25279
-      - 14.29.124.168:25271
-      - 14.29.124.168:25254
-      - 14.29.124.168:25270
-      - 14.29.124.168:25252
-      - 45.144.176.135:3004
-      - US_774
       - " 5"
-      - 51.79.173.62:1443
-      - 92.38.176.81:811
+      - US 1 → TG@SCINV
+      - " 6"
+      - " 7"
+      - US 41 → TG@SCINV
+      - GB 1 → TG@SCINV
+      - USA08-美国08
+      - USA09-美国09
+      - USA07-美国07
+      - USA06-美国06
+      - 85.208.108.93:7002
+      - USA03-美国03
+      - 85.208.108.20:5601
+      - 78.129.253.9:809
+      - 85.208.108.20:6679
+      - 85.208.108.93:7306
+      - 85.208.108.93:8881
+      - USA10-美国10
+      - 85.208.108.20:6697
+      - CN 54 → TG@SCINV
+      - 85.208.108.20:6379
+      - CA 1 → TG@SCINV
+      - " 8"
+      - 78.129.253.9:808
+      - 134.195.196.85:5001
+      - " 9"
+      - 185.4.65.6:21247
+      - 85.208.108.93:6379
+      - USA01-美国01
+      - 38.111.114.246:8882
+      - " 10"
+      - " 11"
+      - 193.108.117.75:443
+      - 51.195.136.209:50004
+      - 169.197.141.5:3306
+      - 195.154.200.150:2376
+      - 172.99.188.71:3389
+      - USA02-美国02
+      - 172.99.188.71:8091
+      - 172.99.188.71:8882
+      - 193.108.117.75:8881
+      - 193.108.117.75:9102
+      - 104.237.154.158:864
+      - 193.108.117.75:8080
+      - 193.108.117.75:6379
+      - 172.99.188.71:6679
+      - 138.68.248.130:811
+      - 193.108.117.75:5001
+      - 172.99.188.71:5004
+      - 172.99.188.71:6379
+      - 172.99.188.71:5000
+      - us01.wol1.ml:443
+      - " 12"
+      - 196.247.59.154:805
+      - " 13"
+      - " 14"
+      - 196.247.59.154:806
+      - 172.99.188.71:443
+      - " 15"
+      - 196.247.59.154:803
+      - 172.99.188.71:6697
+      - 196.247.59.154:809
+      - 196.247.59.154:800
+      - 193.108.117.75:8090
+      - 172.99.188.71:8888
+      - 172.99.188.71:8118
+      - 120.233.29.202:252
+      - CN 5 → TG@SCINV
+      - CN 4 → TG@SCINV
+      - 45.144.176.135:3005
+      - 196.247.59.154:801
+      - 85.208.108.20:7002
+      - 45.144.176.135:3003
+      - 196.247.59.154:802
+      - 72.140.224.195:800
+      - 72.140.224.195:810
+      - 72.140.224.195:803
+      - 45.144.176.135:3000
+      - 51.38.118.42:811
+      - 172.99.188.71:8119
+      - 13.124.29.75:443
+      - 14.29.124.168:25294
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1332,163 +812,98 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - JP 6 → TG@SCINV
-      - US+2+→+TG@SCINV
-      - 199.115.228.30:253
-      - 2
-      - CA 1 → TG@SCINV
-      - ""
-      - US_887
-      - " 2"
-      - GB_298
-      - 169.197.142.187:8888
-      - 169.197.142.187:6697
-      - GB_309
-      - ZZ_1294
-      - 167.88.61.175:3306
-      - CA 2 → TG@SCINV
-      - US_999
-      - US_1048
-      - Pool_🇳🇱NL_522
-      - ZZ_1269
-      - US_1165
-      - US_1146
-      - 169.197.142.187:2376
-      - 169.197.142.187:5601
-      - ZZ_1276
-      - 169.197.142.187:8080
-      - 169.197.142.187:7001
-      - US_818
-      - Pool_🇳🇱NL_524
-      - 167.88.61.175:5001
-      - US_850
-      - Pool_🇳🇱NL_475
-      - Pool_🇳🇱NL_525
-      - US_708
-      - US_801
-      - 169.197.142.187:5003
-      - 169.197.142.187:8008
-      - Pool_🇳🇱NL_478
-      - US_1059
-      - 169.197.142.187:6379
-      - US_858
-      - 169.197.142.187:7306
-      - 169.197.142.187:8119
-      - 169.197.142.187:443
-      - Pool_🇳🇱NL_485
-      - Pool_🇳🇱NL_477
-      - Pool_🇳🇱NL_488
-      - US_819
-      - US_804
-      - 169.197.142.187:7307
+      - CN 61 → TG@SCINV
+      - CN 60 → TG@SCINV
+      - TW 1 → TG@SCINV
       - NONE
-      - 167.88.61.175:9102
-      - 169.197.142.187:5004
-      - Pool_🇳🇱NL_496
-      - US_1080
-      - 美国-2.93MB/s(Youtube:不良林)
-      - 134.195.196.85:5001
-      - NONE 2
-      - 169.197.141.5:3306
-      - FR_280
-      - US_873
-      - 193.108.117.75:8080
-      - DE_226
-      - NONE 3
-      - US_731
-      - DE_199
-      - US_1094
-      - 172.99.188.71:5000
-      - 169.197.142.187:5001
-      - US_1072
-      - US_741
-      - 匈牙利-1.30MB/s(Youtube:不良林)
-      - US_834
-      - DE_227
-      - DE_198
-      - US_1077
-      - DE_191
-      - DE_215
-      - DE_217
-      - US_713
-      - US_771
-      - US_769
-      - US_962
-      - US_970
-      - US_1065
-      - 196.247.59.154:805
-      - 45.144.176.135:3005
-      - 45.144.176.135:3000
-      - 45.144.176.135:3003
-      - HU_328
-      - Relay_🇸🇬SG-🇸🇬SG_690
-      - 196.247.59.154:800
-      - 196.247.59.154:806
-      - 196.247.59.154:809
-      - US_863
+      - 122.248.226.111:443
+      - ""
+      - " 2"
       - " 3"
-      - US_827
-      - 196.247.59.154:802
-      - Relay_🇬🇧GB-🇺🇸US_315
-      - 196.247.59.154:801
-      - 169.197.142.187:9102
-      - aaa 174
-      - US_907
-      - 138.197.166.205:811
-      - 196.247.59.154:803
-      - CA_100
-      - CA_110
-      - CA_94
-      - 5.188.0.151:800
-      - Relay_🇫🇷FR-🇫🇷FR_287
+      - CN 55 → TG@SCINV
       - " 4"
-      - NONE 4
-      - JP_364
-      - AU_88
-      - 中国-317.0KB/s(Youtube:不良林)
-      - 45.144.176.135:3002
-      - 新加坡(油管:破解资源君2.0) 5
-      - SG_689
-      - NONE 5
-      - 14.29.124.168:25222
-      - 14.29.124.168:25280
-      - 14.29.124.168:25218
-      - 45.144.176.135:3001
-      - 14.29.124.168:25259
-      - 14.29.124.168:25226
-      - 14.29.124.168:25272
-      - 14.29.124.168:25297
-      - 14.29.124.168:25233
-      - 14.29.124.168:25261
-      - 14.29.124.168:25287
-      - 14.29.124.168:25267
-      - 14.29.124.168:25241
-      - 14.29.124.168:25230
-      - 14.29.124.168:25245
-      - 14.29.124.168:25231
-      - 14.29.124.168:25220
-      - 14.29.124.168:25251
-      - 14.29.124.168:25207
-      - 14.29.124.168:25247
-      - 14.29.124.168:25219
-      - 14.29.124.168:25268
-      - 14.29.124.168:25266
-      - 14.29.124.168:25289
-      - 14.29.124.168:25284
-      - 13.124.29.75:443
-      - 14.29.124.168:25295
-      - 14.29.124.168:25210
-      - 14.29.124.168:25283
-      - 14.29.124.168:25279
-      - 14.29.124.168:25271
-      - 14.29.124.168:25254
-      - 14.29.124.168:25270
-      - 14.29.124.168:25252
-      - 45.144.176.135:3004
-      - US_774
       - " 5"
-      - 51.79.173.62:1443
-      - 92.38.176.81:811
+      - US 1 → TG@SCINV
+      - " 6"
+      - " 7"
+      - US 41 → TG@SCINV
+      - GB 1 → TG@SCINV
+      - USA08-美国08
+      - USA09-美国09
+      - USA07-美国07
+      - USA06-美国06
+      - 85.208.108.93:7002
+      - USA03-美国03
+      - 85.208.108.20:5601
+      - 78.129.253.9:809
+      - 85.208.108.20:6679
+      - 85.208.108.93:7306
+      - 85.208.108.93:8881
+      - USA10-美国10
+      - 85.208.108.20:6697
+      - CN 54 → TG@SCINV
+      - 85.208.108.20:6379
+      - CA 1 → TG@SCINV
+      - " 8"
+      - 78.129.253.9:808
+      - 134.195.196.85:5001
+      - " 9"
+      - 185.4.65.6:21247
+      - 85.208.108.93:6379
+      - USA01-美国01
+      - 38.111.114.246:8882
+      - " 10"
+      - " 11"
+      - 193.108.117.75:443
+      - 51.195.136.209:50004
+      - 169.197.141.5:3306
+      - 195.154.200.150:2376
+      - 172.99.188.71:3389
+      - USA02-美国02
+      - 172.99.188.71:8091
+      - 172.99.188.71:8882
+      - 193.108.117.75:8881
+      - 193.108.117.75:9102
+      - 104.237.154.158:864
+      - 193.108.117.75:8080
+      - 193.108.117.75:6379
+      - 172.99.188.71:6679
+      - 138.68.248.130:811
+      - 193.108.117.75:5001
+      - 172.99.188.71:5004
+      - 172.99.188.71:6379
+      - 172.99.188.71:5000
+      - us01.wol1.ml:443
+      - " 12"
+      - 196.247.59.154:805
+      - " 13"
+      - " 14"
+      - 196.247.59.154:806
+      - 172.99.188.71:443
+      - " 15"
+      - 196.247.59.154:803
+      - 172.99.188.71:6697
+      - 196.247.59.154:809
+      - 196.247.59.154:800
+      - 193.108.117.75:8090
+      - 172.99.188.71:8888
+      - 172.99.188.71:8118
+      - 120.233.29.202:252
+      - CN 5 → TG@SCINV
+      - CN 4 → TG@SCINV
+      - 45.144.176.135:3005
+      - 196.247.59.154:801
+      - 85.208.108.20:7002
+      - 45.144.176.135:3003
+      - 196.247.59.154:802
+      - 72.140.224.195:800
+      - 72.140.224.195:810
+      - 72.140.224.195:803
+      - 45.144.176.135:3000
+      - 51.38.118.42:811
+      - 172.99.188.71:8119
+      - 13.124.29.75:443
+      - 14.29.124.168:25294
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
