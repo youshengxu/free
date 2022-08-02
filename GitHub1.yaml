@@ -1,135 +1,223 @@
-port: 7890
+﻿port: 7890
 socks-port: 7891
 allow-lan: true
 mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
+  - {name: yd-03.paofunlink.com:1096, server: yd-03.paofunlink.com, port: 1096, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 107841:5muojeb8nsd, obfs-param: ce568107841.microsoft.com, udp: true}
+  - {name: yd-03.paofunlink.com:1098, server: yd-03.paofunlink.com, port: 1098, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 107841:5muojeb8nsd, obfs-param: ce568107841.microsoft.com, udp: true}
   - {name: NONE 2, server: cm.spacez.cloud, port: 30003, type: trojan, password: c9a3a61d-5d49-4158-9e60-6fa32684b122, sni: cm.spacez.cloud, skip-cert-verify: true, udp: true}
-  - {name: HK 2 → TG@SCINV, server: 43.229.153.169, port: 58939, type: trojan, password: ea5321bc-ec83-483b-8e13-ae7962e20b0e, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_1250, server: s1.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s1.hazz.win, skip-cert-verify: true, udp: true}
-  - {name: JP_448, server: 146.56.167.119, port: 6666, type: vmess, uuid: 64779fce-63a5-4faa-b59b-e4af40f4e419, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_1234, server: vfly9.win, port: 443, type: vmess, uuid: 838be9ed-d7a8-4da1-b067-b95d2a8782f5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /myblog, ws-headers: {Host: vfly9.win}, udp: true}
-  - {name: US_1222, server: 107.173.250.129, port: 42713, type: vmess, uuid: 4012d932-93fe-4828-dcc9-331c871490c6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 美国(油管:破解资源君2.0) 19, server: 104.16.199.1, port: 443, type: vmess, uuid: 45202b35-eae3-4e34-84af-b42060fb9187, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /fqlovws, ws-headers: {Host: ioi.xxioixx.tk}, udp: true}
-  - {name: _32, server: 192.161.164.156, port: 40338, type: vmess, uuid: fe20f87d-4e11-4c2a-af6e-5b8bd9927092, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 199.115.228.30:253, server: 199.115.228.30, port: 253, type: ss, cipher: aes-256-cfb, password: bwhskrskr05, udp: true}
   - {name: RO_603, server: 109.166.39.205, port: 39205, type: vmess, uuid: 548cfd27-e18f-406b-84f6-74de849e27b8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /tiktok, ws-headers: {Host: 109.166.39.205}, udp: true}
   - {name: Relay_🇺🇸US-🇺🇸US_1226, server: zzydnfw-v.bp365.cf, port: 443, type: vmess, uuid: 6a522c05-7182-4540-8c1a-6b15965f64b0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /MDVMDGJUZI, ws-headers: {Host: zzydnfw-v.bp365.cf}, udp: true}
+  - {name: US_1222, server: 107.173.250.129, port: 42713, type: vmess, uuid: 4012d932-93fe-4828-dcc9-331c871490c6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _32, server: 192.161.164.156, port: 40338, type: vmess, uuid: fe20f87d-4e11-4c2a-af6e-5b8bd9927092, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: Relay_🇨🇳CN-🇺🇸US_239, server: yd-03.paofunlink.com, port: 1088, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 107841:5muojeb8nsd, obfs-param: ce568107841.microsoft.com, udp: true}
+  - {name: NONE, server: s4.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s4.hazz.win, skip-cert-verify: true, udp: true}
   - {name: US_1207, server: 107.173.250.129, port: 25881, type: vmess, uuid: 68f8ed9c-9ac3-427a-b16c-6f1d7fb7f12d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: ZZ_1337, server: 134.195.198.95, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: ZZ_1405, server: 134.195.198.95, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 134.195.198.95:5004, server: 134.195.198.95, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: Relay_🇺🇸US-🇩🇪DE_1196, server: vfly1.win, port: 443, type: vmess, uuid: e45b5aac-b852-4055-cbbf-d366499e53e8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /myblog, ws-headers: {Host: vfly1.win}, udp: true}
+  - {name: 193.108.117.75:5001, server: 193.108.117.75, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
   - {name: ZZ_1309, server: 134.195.198.95, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
   - {name: ZZ_1382, server: 134.195.198.95, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: ZZ_1395, server: 134.195.198.95, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: ZZ_1337, server: 134.195.198.95, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: ZZ_1405, server: 134.195.198.95, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 193.108.117.75:9102, server: 193.108.117.75, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
   - {name: ZZ_1380, server: 134.195.198.95, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: ZZ_1399, server: 134.195.198.95, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 美国(油管:破解资源君2.0) 4, server: lms.uin-antasari.ac.id, port: 80, type: vmess, uuid: 46bfdb59-83c6-4710-877e-c809b5a90dff, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /vpnneo, ws-headers: {Host: biznet-s.nextvpn.cc}, udp: true}
-  - {name: 11, server: namer-us-sea-01-edgecast.qdns.live, port: 2053, type: vmess, uuid: 94898122-6f57-3272-8ccf-87ab366b29ed, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: namer-us-sea-01-edgecast.qdns.live}, udp: true}
-  - {name: Relay_🇺🇸US-🇩🇪DE_1196, server: vfly1.win, port: 443, type: vmess, uuid: e45b5aac-b852-4055-cbbf-d366499e53e8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /myblog, ws-headers: {Host: vfly1.win}, udp: true}
-  - {name: DE_308, server: 193.108.117.75, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: CA_138, server: 196.247.59.154, port: 801, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: NONE 3, server: 104.129.63.65, port: 8443, type: trojan, password: cUDgjDkSfn, skip-cert-verify: true, udp: true}
+  - {name: ZZ_1395, server: 134.195.198.95, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
   - {name: Relay_🇺🇸US-🇸🇬SG_1195, server: vfly8.win, port: 443, type: vmess, uuid: 8fc94fe3-cfb1-4bc7-e43b-26d4d1e5f4cd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /myblog, ws-headers: {Host: vfly8.win}, udp: true}
-  - {name: JP_449, server: 146.56.118.227, port: 2052, type: vmess, uuid: 448a9087-28f3-4fe4-fa49-36c912e0f498, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /update, ws-headers: {Host: 146.56.118.227}, udp: true}
-  - {name: US_1188, server: 168.138.194.241, port: 54421, type: vmess, uuid: b3f4d3da-059a-43cd-90e6-023a49757ec6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "", server: 129.146.133.157, port: 51009, type: vmess, uuid: 81714cef-9bde-4a08-aa50-d6bc0172d78b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 196.247.59.154:803, server: 196.247.59.154, port: 803, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: 196.247.59.154:805, server: 196.247.59.154, port: 805, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: yd-04.paofunlink.com:5956, server: yd-04.paofunlink.com, port: 5956, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 107841:5muojeb8nsd, obfs-param: ce568107841.microsoft.com, udp: true}
+  - {name: yd-03.paofunlink.com:1095, server: yd-03.paofunlink.com, port: 1095, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 107841:5muojeb8nsd, obfs-param: ce568107841.microsoft.com, udp: true}
+  - {name: HK 2 → TG@SCINV, server: 43.229.153.169, port: 58939, type: trojan, password: ea5321bc-ec83-483b-8e13-ae7962e20b0e, skip-cert-verify: true, udp: true}
+  - {name: NONE 4, server: 178.157.58.135, port: 50500, type: trojan, password: 48ae859d-455b-4908-b8e7-10b4d7a65a28, skip-cert-verify: true, udp: true}
+  - {name: ZZ_1399, server: 134.195.198.95, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 196.247.59.154:806, server: 196.247.59.154, port: 806, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: 196.247.59.154:809, server: 196.247.59.154, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: CA_138, server: 196.247.59.154, port: 801, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: NONE 5, server: 80.251.216.13, port: 50500, type: trojan, password: e4abe563-0f1b-4262-9535-bef102f25f8c, skip-cert-verify: true, udp: true}
+  - {name: " 2", server: 129.150.51.215, port: 30839, type: vmess, uuid: 19bf4866-54ce-4fc9-8903-db7e160c5b81, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: NONE 6, server: cm.spacez.cloud, port: 30002, type: trojan, password: c9a3a61d-5d49-4158-9e60-6fa32684b122, sni: cm.spacez.cloud, skip-cert-verify: true, udp: true}
+  - {name: 196.247.59.154:802, server: 196.247.59.154, port: 802, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: 62.210.113.98:6679, server: 62.210.113.98, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: 美国(油管:破解资源君2.0) 4, server: lms.uin-antasari.ac.id, port: 80, type: vmess, uuid: 46bfdb59-83c6-4710-877e-c809b5a90dff, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /vpnneo, ws-headers: {Host: biznet-s.nextvpn.cc}, udp: true}
+  - {name: 104.237.154.158:864, server: 104.237.154.158, port: 864, type: ss, cipher: aes-256-gcm, password: 88gy56h9, udp: true}
+  - {name: 193.108.117.75:8881, server: 193.108.117.75, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: " 3", server: vfly4.win, port: 443, type: vmess, uuid: 424afb77-4724-4ddc-f4c0-35de9c2239f5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /myblog, ws-headers: {Host: vfly4.win}, udp: true}
+  - {name: " 4", server: 144.24.92.192, port: 80, type: vmess, uuid: 29d057f9-1600-4a18-b595-62a14073a230, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 193.108.117.75:2376, server: 193.108.117.75, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 193.108.117.75:8080, server: 193.108.117.75, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: 193.108.117.75:8090, server: 193.108.117.75, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: JP_448, server: 146.56.167.119, port: 6666, type: vmess, uuid: 64779fce-63a5-4faa-b59b-e4af40f4e419, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
+      - yd-03.paofunlink.com:1096
+      - yd-03.paofunlink.com:1098
       - NONE 2
-      - HK 2 → TG@SCINV
-      - Relay_🇺🇸US-🇺🇸US_1250
-      - JP_448
-      - Relay_🇺🇸US-🇺🇸US_1234
-      - US_1222
       - 美国(油管:破解资源君2.0) 19
-      - _32
+      - 199.115.228.30:253
       - RO_603
       - Relay_🇺🇸US-🇺🇸US_1226
+      - US_1222
+      - _32
       - Relay_🇨🇳CN-🇺🇸US_239
+      - NONE
       - US_1207
-      - ZZ_1337
-      - ZZ_1405
+      - 134.195.198.95:5004
+      - Relay_🇺🇸US-🇩🇪DE_1196
+      - 193.108.117.75:5001
       - ZZ_1309
       - ZZ_1382
-      - ZZ_1395
+      - ZZ_1337
+      - ZZ_1405
+      - 193.108.117.75:9102
       - ZZ_1380
-      - ZZ_1399
-      - 美国(油管:破解资源君2.0) 4
-      - 11
-      - Relay_🇺🇸US-🇩🇪DE_1196
-      - DE_308
-      - CA_138
+      - NONE 3
+      - ZZ_1395
       - Relay_🇺🇸US-🇸🇬SG_1195
-      - JP_449
-      - US_1188
+      - ""
+      - 196.247.59.154:803
+      - 196.247.59.154:805
+      - yd-04.paofunlink.com:5956
+      - yd-03.paofunlink.com:1095
+      - HK 2 → TG@SCINV
+      - NONE 4
+      - ZZ_1399
+      - 196.247.59.154:806
+      - 196.247.59.154:809
+      - CA_138
+      - NONE 5
+      - " 2"
+      - NONE 6
+      - 196.247.59.154:802
+      - 62.210.113.98:6679
+      - 美国(油管:破解资源君2.0) 4
+      - 104.237.154.158:864
+      - 193.108.117.75:8881
+      - " 3"
+      - " 4"
+      - 193.108.117.75:2376
+      - 193.108.117.75:8080
+      - 193.108.117.75:8090
+      - JP_448
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
+      - yd-03.paofunlink.com:1096
+      - yd-03.paofunlink.com:1098
       - NONE 2
-      - HK 2 → TG@SCINV
-      - Relay_🇺🇸US-🇺🇸US_1250
-      - JP_448
-      - Relay_🇺🇸US-🇺🇸US_1234
-      - US_1222
       - 美国(油管:破解资源君2.0) 19
-      - _32
+      - 199.115.228.30:253
       - RO_603
       - Relay_🇺🇸US-🇺🇸US_1226
+      - US_1222
+      - _32
       - Relay_🇨🇳CN-🇺🇸US_239
+      - NONE
       - US_1207
-      - ZZ_1337
-      - ZZ_1405
+      - 134.195.198.95:5004
+      - Relay_🇺🇸US-🇩🇪DE_1196
+      - 193.108.117.75:5001
       - ZZ_1309
       - ZZ_1382
-      - ZZ_1395
+      - ZZ_1337
+      - ZZ_1405
+      - 193.108.117.75:9102
       - ZZ_1380
-      - ZZ_1399
-      - 美国(油管:破解资源君2.0) 4
-      - 11
-      - Relay_🇺🇸US-🇩🇪DE_1196
-      - DE_308
-      - CA_138
+      - NONE 3
+      - ZZ_1395
       - Relay_🇺🇸US-🇸🇬SG_1195
-      - JP_449
-      - US_1188
+      - ""
+      - 196.247.59.154:803
+      - 196.247.59.154:805
+      - yd-04.paofunlink.com:5956
+      - yd-03.paofunlink.com:1095
+      - HK 2 → TG@SCINV
+      - NONE 4
+      - ZZ_1399
+      - 196.247.59.154:806
+      - 196.247.59.154:809
+      - CA_138
+      - NONE 5
+      - " 2"
+      - NONE 6
+      - 196.247.59.154:802
+      - 62.210.113.98:6679
+      - 美国(油管:破解资源君2.0) 4
+      - 104.237.154.158:864
+      - 193.108.117.75:8881
+      - " 3"
+      - " 4"
+      - 193.108.117.75:2376
+      - 193.108.117.75:8080
+      - 193.108.117.75:8090
+      - JP_448
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - yd-03.paofunlink.com:1096
+      - yd-03.paofunlink.com:1098
       - NONE 2
-      - HK 2 → TG@SCINV
-      - Relay_🇺🇸US-🇺🇸US_1250
-      - JP_448
-      - Relay_🇺🇸US-🇺🇸US_1234
-      - US_1222
       - 美国(油管:破解资源君2.0) 19
-      - _32
+      - 199.115.228.30:253
       - RO_603
       - Relay_🇺🇸US-🇺🇸US_1226
+      - US_1222
+      - _32
       - Relay_🇨🇳CN-🇺🇸US_239
+      - NONE
       - US_1207
-      - ZZ_1337
-      - ZZ_1405
+      - 134.195.198.95:5004
+      - Relay_🇺🇸US-🇩🇪DE_1196
+      - 193.108.117.75:5001
       - ZZ_1309
       - ZZ_1382
-      - ZZ_1395
+      - ZZ_1337
+      - ZZ_1405
+      - 193.108.117.75:9102
       - ZZ_1380
-      - ZZ_1399
-      - 美国(油管:破解资源君2.0) 4
-      - 11
-      - Relay_🇺🇸US-🇩🇪DE_1196
-      - DE_308
-      - CA_138
+      - NONE 3
+      - ZZ_1395
       - Relay_🇺🇸US-🇸🇬SG_1195
-      - JP_449
-      - US_1188
+      - ""
+      - 196.247.59.154:803
+      - 196.247.59.154:805
+      - yd-04.paofunlink.com:5956
+      - yd-03.paofunlink.com:1095
+      - HK 2 → TG@SCINV
+      - NONE 4
+      - ZZ_1399
+      - 196.247.59.154:806
+      - 196.247.59.154:809
+      - CA_138
+      - NONE 5
+      - " 2"
+      - NONE 6
+      - 196.247.59.154:802
+      - 62.210.113.98:6679
+      - 美国(油管:破解资源君2.0) 4
+      - 104.237.154.158:864
+      - 193.108.117.75:8881
+      - " 3"
+      - " 4"
+      - 193.108.117.75:2376
+      - 193.108.117.75:8080
+      - 193.108.117.75:8090
+      - JP_448
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -148,33 +236,55 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - yd-03.paofunlink.com:1096
+      - yd-03.paofunlink.com:1098
       - NONE 2
-      - HK 2 → TG@SCINV
-      - Relay_🇺🇸US-🇺🇸US_1250
-      - JP_448
-      - Relay_🇺🇸US-🇺🇸US_1234
-      - US_1222
       - 美国(油管:破解资源君2.0) 19
-      - _32
+      - 199.115.228.30:253
       - RO_603
       - Relay_🇺🇸US-🇺🇸US_1226
+      - US_1222
+      - _32
       - Relay_🇨🇳CN-🇺🇸US_239
+      - NONE
       - US_1207
-      - ZZ_1337
-      - ZZ_1405
+      - 134.195.198.95:5004
+      - Relay_🇺🇸US-🇩🇪DE_1196
+      - 193.108.117.75:5001
       - ZZ_1309
       - ZZ_1382
-      - ZZ_1395
+      - ZZ_1337
+      - ZZ_1405
+      - 193.108.117.75:9102
       - ZZ_1380
-      - ZZ_1399
-      - 美国(油管:破解资源君2.0) 4
-      - 11
-      - Relay_🇺🇸US-🇩🇪DE_1196
-      - DE_308
-      - CA_138
+      - NONE 3
+      - ZZ_1395
       - Relay_🇺🇸US-🇸🇬SG_1195
-      - JP_449
-      - US_1188
+      - ""
+      - 196.247.59.154:803
+      - 196.247.59.154:805
+      - yd-04.paofunlink.com:5956
+      - yd-03.paofunlink.com:1095
+      - HK 2 → TG@SCINV
+      - NONE 4
+      - ZZ_1399
+      - 196.247.59.154:806
+      - 196.247.59.154:809
+      - CA_138
+      - NONE 5
+      - " 2"
+      - NONE 6
+      - 196.247.59.154:802
+      - 62.210.113.98:6679
+      - 美国(油管:破解资源君2.0) 4
+      - 104.237.154.158:864
+      - 193.108.117.75:8881
+      - " 3"
+      - " 4"
+      - 193.108.117.75:2376
+      - 193.108.117.75:8080
+      - 193.108.117.75:8090
+      - JP_448
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -185,98 +295,164 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
+      - yd-03.paofunlink.com:1096
+      - yd-03.paofunlink.com:1098
       - NONE 2
-      - HK 2 → TG@SCINV
-      - Relay_🇺🇸US-🇺🇸US_1250
-      - JP_448
-      - Relay_🇺🇸US-🇺🇸US_1234
-      - US_1222
       - 美国(油管:破解资源君2.0) 19
-      - _32
+      - 199.115.228.30:253
       - RO_603
       - Relay_🇺🇸US-🇺🇸US_1226
+      - US_1222
+      - _32
       - Relay_🇨🇳CN-🇺🇸US_239
+      - NONE
       - US_1207
-      - ZZ_1337
-      - ZZ_1405
+      - 134.195.198.95:5004
+      - Relay_🇺🇸US-🇩🇪DE_1196
+      - 193.108.117.75:5001
       - ZZ_1309
       - ZZ_1382
-      - ZZ_1395
+      - ZZ_1337
+      - ZZ_1405
+      - 193.108.117.75:9102
       - ZZ_1380
-      - ZZ_1399
-      - 美国(油管:破解资源君2.0) 4
-      - 11
-      - Relay_🇺🇸US-🇩🇪DE_1196
-      - DE_308
-      - CA_138
+      - NONE 3
+      - ZZ_1395
       - Relay_🇺🇸US-🇸🇬SG_1195
-      - JP_449
-      - US_1188
+      - ""
+      - 196.247.59.154:803
+      - 196.247.59.154:805
+      - yd-04.paofunlink.com:5956
+      - yd-03.paofunlink.com:1095
+      - HK 2 → TG@SCINV
+      - NONE 4
+      - ZZ_1399
+      - 196.247.59.154:806
+      - 196.247.59.154:809
+      - CA_138
+      - NONE 5
+      - " 2"
+      - NONE 6
+      - 196.247.59.154:802
+      - 62.210.113.98:6679
+      - 美国(油管:破解资源君2.0) 4
+      - 104.237.154.158:864
+      - 193.108.117.75:8881
+      - " 3"
+      - " 4"
+      - 193.108.117.75:2376
+      - 193.108.117.75:8080
+      - 193.108.117.75:8090
+      - JP_448
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
+      - yd-03.paofunlink.com:1096
+      - yd-03.paofunlink.com:1098
       - NONE 2
-      - HK 2 → TG@SCINV
-      - Relay_🇺🇸US-🇺🇸US_1250
-      - JP_448
-      - Relay_🇺🇸US-🇺🇸US_1234
-      - US_1222
       - 美国(油管:破解资源君2.0) 19
-      - _32
+      - 199.115.228.30:253
       - RO_603
       - Relay_🇺🇸US-🇺🇸US_1226
+      - US_1222
+      - _32
       - Relay_🇨🇳CN-🇺🇸US_239
+      - NONE
       - US_1207
-      - ZZ_1337
-      - ZZ_1405
+      - 134.195.198.95:5004
+      - Relay_🇺🇸US-🇩🇪DE_1196
+      - 193.108.117.75:5001
       - ZZ_1309
       - ZZ_1382
-      - ZZ_1395
+      - ZZ_1337
+      - ZZ_1405
+      - 193.108.117.75:9102
       - ZZ_1380
-      - ZZ_1399
-      - 美国(油管:破解资源君2.0) 4
-      - 11
-      - Relay_🇺🇸US-🇩🇪DE_1196
-      - DE_308
-      - CA_138
+      - NONE 3
+      - ZZ_1395
       - Relay_🇺🇸US-🇸🇬SG_1195
-      - JP_449
-      - US_1188
+      - ""
+      - 196.247.59.154:803
+      - 196.247.59.154:805
+      - yd-04.paofunlink.com:5956
+      - yd-03.paofunlink.com:1095
+      - HK 2 → TG@SCINV
+      - NONE 4
+      - ZZ_1399
+      - 196.247.59.154:806
+      - 196.247.59.154:809
+      - CA_138
+      - NONE 5
+      - " 2"
+      - NONE 6
+      - 196.247.59.154:802
+      - 62.210.113.98:6679
+      - 美国(油管:破解资源君2.0) 4
+      - 104.237.154.158:864
+      - 193.108.117.75:8881
+      - " 3"
+      - " 4"
+      - 193.108.117.75:2376
+      - 193.108.117.75:8080
+      - 193.108.117.75:8090
+      - JP_448
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - yd-03.paofunlink.com:1096
+      - yd-03.paofunlink.com:1098
       - NONE 2
-      - HK 2 → TG@SCINV
-      - Relay_🇺🇸US-🇺🇸US_1250
-      - JP_448
-      - Relay_🇺🇸US-🇺🇸US_1234
-      - US_1222
       - 美国(油管:破解资源君2.0) 19
-      - _32
+      - 199.115.228.30:253
       - RO_603
       - Relay_🇺🇸US-🇺🇸US_1226
+      - US_1222
+      - _32
       - Relay_🇨🇳CN-🇺🇸US_239
+      - NONE
       - US_1207
-      - ZZ_1337
-      - ZZ_1405
+      - 134.195.198.95:5004
+      - Relay_🇺🇸US-🇩🇪DE_1196
+      - 193.108.117.75:5001
       - ZZ_1309
       - ZZ_1382
-      - ZZ_1395
+      - ZZ_1337
+      - ZZ_1405
+      - 193.108.117.75:9102
       - ZZ_1380
-      - ZZ_1399
-      - 美国(油管:破解资源君2.0) 4
-      - 11
-      - Relay_🇺🇸US-🇩🇪DE_1196
-      - DE_308
-      - CA_138
+      - NONE 3
+      - ZZ_1395
       - Relay_🇺🇸US-🇸🇬SG_1195
-      - JP_449
-      - US_1188
+      - ""
+      - 196.247.59.154:803
+      - 196.247.59.154:805
+      - yd-04.paofunlink.com:5956
+      - yd-03.paofunlink.com:1095
+      - HK 2 → TG@SCINV
+      - NONE 4
+      - ZZ_1399
+      - 196.247.59.154:806
+      - 196.247.59.154:809
+      - CA_138
+      - NONE 5
+      - " 2"
+      - NONE 6
+      - 196.247.59.154:802
+      - 62.210.113.98:6679
+      - 美国(油管:破解资源君2.0) 4
+      - 104.237.154.158:864
+      - 193.108.117.75:8881
+      - " 3"
+      - " 4"
+      - 193.108.117.75:2376
+      - 193.108.117.75:8080
+      - 193.108.117.75:8090
+      - JP_448
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -292,33 +468,55 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - yd-03.paofunlink.com:1096
+      - yd-03.paofunlink.com:1098
       - NONE 2
-      - HK 2 → TG@SCINV
-      - Relay_🇺🇸US-🇺🇸US_1250
-      - JP_448
-      - Relay_🇺🇸US-🇺🇸US_1234
-      - US_1222
       - 美国(油管:破解资源君2.0) 19
-      - _32
+      - 199.115.228.30:253
       - RO_603
       - Relay_🇺🇸US-🇺🇸US_1226
+      - US_1222
+      - _32
       - Relay_🇨🇳CN-🇺🇸US_239
+      - NONE
       - US_1207
-      - ZZ_1337
-      - ZZ_1405
+      - 134.195.198.95:5004
+      - Relay_🇺🇸US-🇩🇪DE_1196
+      - 193.108.117.75:5001
       - ZZ_1309
       - ZZ_1382
-      - ZZ_1395
+      - ZZ_1337
+      - ZZ_1405
+      - 193.108.117.75:9102
       - ZZ_1380
-      - ZZ_1399
-      - 美国(油管:破解资源君2.0) 4
-      - 11
-      - Relay_🇺🇸US-🇩🇪DE_1196
-      - DE_308
-      - CA_138
+      - NONE 3
+      - ZZ_1395
       - Relay_🇺🇸US-🇸🇬SG_1195
-      - JP_449
-      - US_1188
+      - ""
+      - 196.247.59.154:803
+      - 196.247.59.154:805
+      - yd-04.paofunlink.com:5956
+      - yd-03.paofunlink.com:1095
+      - HK 2 → TG@SCINV
+      - NONE 4
+      - ZZ_1399
+      - 196.247.59.154:806
+      - 196.247.59.154:809
+      - CA_138
+      - NONE 5
+      - " 2"
+      - NONE 6
+      - 196.247.59.154:802
+      - 62.210.113.98:6679
+      - 美国(油管:破解资源君2.0) 4
+      - 104.237.154.158:864
+      - 193.108.117.75:8881
+      - " 3"
+      - " 4"
+      - 193.108.117.75:2376
+      - 193.108.117.75:8080
+      - 193.108.117.75:8090
+      - JP_448
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
