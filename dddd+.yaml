@@ -5,223 +5,503 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: Relay_🇨🇳CN-🇨🇦CA_170, server: yd-03.paofunlink.com, port: 1097, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 107841:5muojeb8nsd, obfs-param: ce568107841.microsoft.com, udp: true}
-  - {name: yd-03.paofunlink.com:1096, server: yd-03.paofunlink.com, port: 1096, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 107841:5muojeb8nsd, obfs-param: ce568107841.microsoft.com, udp: true}
-  - {name: yd-03.paofunlink.com:1095, server: yd-03.paofunlink.com, port: 1095, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 107841:5muojeb8nsd, obfs-param: ce568107841.microsoft.com, udp: true}
-  - {name: NONE, server: s4.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s4.hazz.win, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇯🇵 JP-🇯🇵JP_327, server: yokohama.freetrade.link, port: 443, type: trojan, password: C3YS0KAq8x5jgpNnCeC3aa3DFXw9Aczu8DaeBpy6Fy34xSZEYORDTIZRlSl72O, sni: yokohama.freetrade.link, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇳CN-🏁ZZ_174, server: 103.56.62.145, port: 3381, type: trojan, password: ab29af390ff9f4a7, skip-cert-verify: true, udp: true}
-  - {name: 美国(油管:破解资源君2.0), server: www.digitalocean.com, port: 443, type: vmess, uuid: 3df66137-a428-429c-a858-8b150721b354, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /youtbue@bai-piao-wang-zhe_vws, ws-headers: {Host: us23.567568.ml}, udp: true}
-  - {name: Relay_🇨🇳 CN-🏁ZZ_111, server: 103.56.60.185, port: 3381, type: trojan, password: ab29af390ff9f4a7, skip-cert-verify: true, udp: true}
-  - {name: US_1267, server: 74.211.98.51, port: 15904, type: vmess, uuid: 15fac1d1-ab26-43c0-aa3e-cb73d660e734, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: RO_603, server: 109.166.39.205, port: 39205, type: vmess, uuid: 548cfd27-e18f-406b-84f6-74de849e27b8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /tiktok, ws-headers: {Host: 109.166.39.205}, udp: true}
-  - {name: Relay_🇯🇵JP-🇯🇵JP_361, server: m4.40010010.xyz, port: 37121, type: vmess, uuid: 575e4d92-1056-44c2-8cac-75ef1c859ad5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 104.237.154.158:864, server: 104.237.154.158, port: 864, type: ss, cipher: aes-256-gcm, password: 88gy56h9, udp: true}
-  - {name: Relay_🇨🇦 CA-🇨🇦CA_87, server: 730tw01.ok365.cyou, port: 443, type: trojan, password: 440a2fa0-0a75-4961-be73-c4c6897d7e34, sni: 730tw01.ok365.cyou, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇯🇵JP-🇯🇵JP_375, server: m4.40010010.xyz, port: 37121, type: vmess, uuid: 575e4d92-1056-44c2-8cac-75ef1c859ad5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 美国-1.93MB/s(Youtube:不良林), server: emby.metalink.cf, port: 8096, type: vmess, uuid: b8f9b514-4835-493b-e9a0-c135bbeb764b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇦CA-🇨🇦CA_105, server: 727tw02.ok365.cyou, port: 25689, type: trojan, password: 440a2fa0-0a75-4961-be73-c4c6897d7e34, sni: 727tw02.ok365.cyou, skip-cert-verify: true, udp: true}
-  - {name: US_1287, server: 23.94.120.19, port: 28554, type: vmess, uuid: 4a4c96c5-7b8b-4612-c715-6b91a9c34d07, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 欧洲(油管:破解资源君2.0) 47, server: 129.150.51.215, port: 30839, type: vmess, uuid: 19bf4866-54ce-4fc9-8903-db7e160c5b81, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇳CN-🇹🇼TW_174, server: ingress-i1.onebox6.org, port: 38201, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: ingress-i1.onebox6.org}, udp: true}
-  - {name: Relay_🇺🇸 US-🇺🇸US_749, server: wr.kxking.top, port: 443, type: trojan, password: sysadmin&123456, sni: wr.kxking.top, skip-cert-verify: true, udp: true}
-  - {name: 2, server: 129.150.51.215, port: 30839, type: vmess, uuid: 19bf4866-54ce-4fc9-8903-db7e160c5b81, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US_1325, server: 192.3.124.36, port: 29585, type: vmess, uuid: d7f58c5e-e9cc-487f-c721-52cb79b96ac7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: ZZ_1471, server: 103.186.148.94, port: 80, type: vmess, uuid: a479fc02-07c5-4864-8564-c4f147dfa488, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /shopvpn.net, ws-headers: {Host: 103.186.148.94}, udp: true}
-  - {name: yd-03.paofunlink.com:1087, server: yd-03.paofunlink.com, port: 1087, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 107841:5muojeb8nsd, obfs-param: ce568107841.microsoft.com, udp: true}
-  - {name: 10, server: 152.69.209.58, port: 35113, type: vmess, uuid: caafe513-13a1-4357-adcc-f81ad07e54f0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US_1321, server: 192.3.124.36, port: 29774, type: vmess, uuid: c7f8e9ff-82a6-49af-c772-ccf5b9092825, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US_1273, server: 152.69.209.58, port: 35113, type: vmess, uuid: caafe513-13a1-4357-adcc-f81ad07e54f0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US_1276, server: 192.3.124.36, port: 40001, type: vmess, uuid: 247b1165-4ae2-45b1-926a-5186c061b0e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US_1290, server: 152.69.222.253, port: 11188, type: vmess, uuid: 19f2bc05-4012-4528-ba51-9a59f55ec123, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hello, ws-headers: {Host: 152.69.222.253}, udp: true}
-  - {name: yd-03.paofunlink.com:1085, server: yd-03.paofunlink.com, port: 1085, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 107841:5muojeb8nsd, obfs-param: ce568107841.microsoft.com, udp: true}
-  - {name: 欧洲(油管:破解资源君2.0) 46, server: 51.13.38.115, port: 51611, type: vmess, uuid: 297f4b35-a321-44b9-8a90-2d486d1153c1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /fed, ws-headers: {Host: 51.13.38.115}, udp: true}
-  - {name: 欧洲(油管:破解资源君2.0) 66, server: 146.56.167.119, port: 6666, type: vmess, uuid: 64779fce-63a5-4faa-b59b-e4af40f4e419, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: ZZ_1399, server: 134.195.198.95, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: ZZ_1309, server: 134.195.198.95, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: ZZ_1395, server: 134.195.198.95, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: Relay_🇨🇦CA-🇨🇦CA_115, server: 727tw01.ok365.cyou, port: 443, type: trojan, password: 440a2fa0-0a75-4961-be73-c4c6897d7e34, sni: 727tw01.ok365.cyou, skip-cert-verify: true, udp: true}
-  - {name: 美国(油管:破解资源君2.0) 2, server: 216.24.248.122, port: 13643, type: vmess, uuid: 28b3048b-fb4e-4bee-c8f6-6c3310126c2e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: ZZ_1405, server: 134.195.198.95, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 134.195.198.95:5004, server: 134.195.198.95, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: ZZ_1382, server: 134.195.198.95, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: ZZ_1380, server: 134.195.198.95, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: NONE 6, server: cm.spacez.cloud, port: 30002, type: trojan, password: c9a3a61d-5d49-4158-9e60-6fa32684b122, sni: cm.spacez.cloud, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇳 CN-🏁ZZ_122, server: sg-cn-relay-6-689145.dk-3a4e.com, port: 9306, type: trojan, password: f2a28b26-3462-11e9-96d3-020b85e0a428, sni: sg-cn-relay-6-689145.dk-3a4e.com, skip-cert-verify: true, udp: true}
-  - {name: NONE 2, server: cm.spacez.cloud, port: 30003, type: trojan, password: c9a3a61d-5d49-4158-9e60-6fa32684b122, sni: cm.spacez.cloud, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇳 CN-🏁ZZ_112, server: sg-cn-hk-relay-3-dd4440.dk-3a4e.com, port: 9303, type: trojan, password: f2a28b26-3462-11e9-96d3-020b85e0a428, sni: sg-cn-hk-relay-3-dd4440.dk-3a4e.com, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇦🇺AU-🇦🇺AU_79, server: vau1.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /chat, ws-headers: {Host: vau1.0bad.com}, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_1287, server: vde1.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /chat, ws-headers: {Host: vde1.0bad.com}, udp: true}
-  - {name: 美国(油管:破解资源君2.0) 6, server: 23.94.120.19, port: 28554, type: vmess, uuid: 4a4c96c5-7b8b-4612-c715-6b91a9c34d07, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: ZZ_1337, server: 134.195.198.95, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 英国(油管:破解资源君2.0), server: 185.167.78.44, port: 53430, type: vmess, uuid: 1f106fea-10c7-4988-feee-3736ec6701ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇺🇸US-🇯🇵JP_1267, server: s4.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s4.hazz.win, skip-cert-verify: true, udp: true}
+  - {name: KR_338, server: 13.124.29.75, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: Relay_🇨🇳CN-🇹🇼TW_130, server: cm.spacez.cloud, port: 30003, type: trojan, password: c9a3a61d-5d49-4158-9e60-6fa32684b122, sni: cm.spacez.cloud, skip-cert-verify: true, udp: true}
+  - {name: JP_327, server: 146.56.118.227, port: 2052, type: vmess, uuid: 448a9087-28f3-4fe4-fa49-36c912e0f498, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /update, ws-headers: {Host: 146.56.118.227}, udp: true}
+  - {name: Relay_🇯🇵 JP-🇯🇵JP_294, server: 730jp.ok365.cyou, port: 443, type: trojan, password: 5912ef78-e8f9-4511-823b-bd0f416b5f02, sni: 730jp.ok365.cyou, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇨🇳CN-🏁ZZ_131, server: 103.56.62.145, port: 3381, type: trojan, password: ab29af390ff9f4a7, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇨🇳 CN-🏁ZZ_79, server: 103.56.60.185, port: 3381, type: trojan, password: ab29af390ff9f4a7, skip-cert-verify: true, udp: true}
+  - {name: GB_268, server: 144.24.92.192, port: 443, type: vmess, uuid: 1743c2d9-bad1-4485-95a8-897145f09812, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US_815, server: 97.64.122.63, port: 253, type: ss, cipher: aes-256-cfb, password: bwhskrskr05, udp: true}
+  - {name: US_1246, server: 23.105.199.160, port: 27317, type: vmess, uuid: 01832c71-50ac-4891-ae37-1dea8f42ae2d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US_1209, server: 23.105.199.160, port: 23903, type: vmess, uuid: 60b6c1a6-6306-4e28-91d9-8d2be2449ae8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: GB_248, server: 78.129.253.9, port: 808, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: ZZ_1389, server: 103.182.17.179, port: 80, type: vmess, uuid: a479fc02-07c5-4864-8564-c4f147dfa488, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /shopvpn.net, ws-headers: {Host: 103.182.17.179}, udp: true}
+  - {name: GB_249, server: 78.129.253.9, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: US_730, server: 93.179.112.70, port: 253, type: ss, cipher: aes-256-cfb, password: bwhskrskr06, udp: true}
+  - {name: RU_641, server: 195.133.53.192, port: 14369, type: vmess, uuid: 2331affa-1194-45ae-9457-3746120c4751, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 195.133.53.192}, udp: true}
+  - {name: GB_263, server: 144.24.92.192, port: 80, type: vmess, uuid: 29d057f9-1600-4a18-b595-62a14073a230, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇯🇵JP-🇯🇵JP_334, server: trs03.bolab.net, port: 443, type: trojan, password: 6990ca1bdccb0de3d9a0c5640634e29c, sni: trs03.bolab.net, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_1199, server: us-am32-5.eqnode.net, port: 8081, type: ssr, cipher: aes-256-cfb, password: YFVrXZgRo, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
+  - {name: Relay_🇨🇳CN-🇹🇼TW_129, server: 120.240.55.137, port: 38201, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: 120.240.55.137}, udp: true}
+  - {name: Relay_🇨🇦 CA-🇨🇦CA_43, server: 727tw02.ok365.cyou, port: 25689, type: trojan, password: 5912ef78-e8f9-4511-823b-bd0f416b5f02, sni: 727tw02.ok365.cyou, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇬🇧GB-🇬🇧GB_272, server: us-05.licom.ml, port: 12501, type: trojan, password: ce433528-39fa-4711-bc0d-25a5b1579574, sni: us-05.licom.ml, skip-cert-verify: true, udp: true}
+  - {name: US_738, server: 38.143.66.55, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: Relay_🇨🇳CN-🏁ZZ_127, server: in-us-1.onebox6.org, port: 38401, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: in-us-1.onebox6.org}, udp: true}
+  - {name: Pool_🇳🇱NL_453, server: 85.208.108.93, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: Pool_🇳🇱NL_461, server: 85.208.108.93, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: Pool_🇳🇱NL_511, server: 85.208.108.20, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: Pool_🇳🇱NL_464, server: 85.208.108.93, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: Pool_🇳🇱NL_455, server: 85.208.108.93, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: Pool_🇳🇱NL_505, server: 85.208.108.20, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: Pool_🇳🇱NL_497, server: 85.208.108.93, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: Pool_🇳🇱NL_456, server: 85.208.108.20, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: Pool_🇳🇱NL_507, server: 85.208.108.20, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: Pool_🇳🇱NL_503, server: 85.208.108.20, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: ZZ_1388, server: 103.186.149.242, port: 80, type: vmess, uuid: a479fc02-07c5-4864-8564-c4f147dfa488, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /shopvpn.net, ws-headers: {Host: 103.186.149.242}, udp: true}
+  - {name: SG_670, server: 8.214.33.158, port: 80, type: vmess, uuid: cb81e6ab-1d83-4ac1-f0ad-ae5c2a7c29ef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 8.214.33.158}, udp: true}
+  - {name: US_1053, server: 167.88.61.14, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: ZZ_1303, server: 134.195.196.149, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: US_1049, server: 167.88.61.14, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: ZZ_1324, server: 134.195.196.149, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: US_1206, server: 23.94.120.19, port: 28554, type: vmess, uuid: 4a4c96c5-7b8b-4612-c715-6b91a9c34d07, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: ZZ_1390, server: 103.186.148.94, port: 80, type: vmess, uuid: a479fc02-07c5-4864-8564-c4f147dfa488, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /shopvpn.net, ws-headers: {Host: 103.186.148.94}, udp: true}
+  - {name: ZZ_1278, server: 134.195.196.149, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: ZZ_1293, server: 134.195.196.149, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: US_1109, server: 167.88.61.14, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: ZZ_1287, server: 134.195.196.149, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: ZZ_1319, server: 134.195.196.149, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: ZZ_1378, server: 134.195.196.85, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: ZZ_1316, server: 134.195.196.149, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: ZZ_1322, server: 134.195.196.149, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: ZZ_1279, server: 134.195.196.149, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: US_1201, server: 23.105.199.160, port: 25078, type: vmess, uuid: 964f9b2b-7ff1-4026-d4a9-41b824f4b3bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US_808, server: 167.88.63.59, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: FR_215, server: 195.154.200.150, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: US_796, server: 167.88.61.14, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: ZZ_1290, server: 134.195.198.95, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: ZZ_1334, server: 134.195.198.95, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: ZZ_1285, server: 134.195.198.95, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_688, server: 150.230.23.0, port: 44616, type: trojan, password: dbdd4673-06e7-4a53-adb7-aa4232df529e, skip-cert-verify: true, udp: true}
+  - {name: DE_142, server: 193.108.117.75, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: DE_168, server: 193.108.117.75, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: ZZ_1289, server: 134.195.198.95, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: LT_416, server: 213.183.63.221, port: 9057, type: ss, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z, udp: true}
+  - {name: DE_166, server: 193.108.117.75, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: LT_352, server: 213.183.63.221, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga, udp: true}
+  - {name: US_1040, server: 172.99.188.71, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: ZZ_1330, server: 134.195.196.149, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: LT_411, server: 213.183.63.221, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
+  - {name: DE_138, server: 193.108.117.75, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: US_693, server: 172.99.188.71, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_743, server: 172.99.188.71, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: DE_171, server: 193.108.117.75, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: DE_144, server: 193.108.117.75, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: US_1190, server: 172.99.188.71, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: ZZ_1308, server: 134.195.198.95, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: US_753, server: 167.88.61.14, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: US_1173, server: 172.99.188.71, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: US_695, server: 172.99.188.71, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: US_1122, server: 172.99.188.71, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: ZZ_1305, server: 134.195.198.95, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: ZZ_1346, server: 134.195.198.95, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: US_719, server: 172.99.188.71, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: ZZ_1283, server: 134.195.198.95, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: CA_56, server: 196.247.59.154, port: 800, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: Relay_🇯🇵 JP-🇯🇵JP_292, server: musashino.freetrade.link, port: 443, type: trojan, password: ZDqCRlxB8uFj9pxNEeanya3DIpDlOYR7K0wOYX3eScA36gTAazCyZ5SC3FS428, sni: musashino.freetrade.link, skip-cert-verify: true, udp: true}
+  - {name: JP_328, server: 146.56.167.249, port: 41954, type: vmess, uuid: 0a1d4a77-7cd3-488a-cb62-ddda2d8dea3a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: RU_627, server: 45.144.176.135, port: 3005, type: ss, cipher: aes-256-cfb, password: 987.085wrcgrwqs36.985, udp: true}
+  - {name: DE_151, server: 193.108.117.75, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: RU_626, server: 45.144.176.135, port: 3002, type: ss, cipher: aes-256-cfb, password: 36rtuhZfAeUh78Sa, udp: true}
+  - {name: RU_625, server: 45.144.176.135, port: 3001, type: ss, cipher: aes-256-cfb, password: qazplmn1236547dr42q, udp: true}
+  - {name: RU_631, server: 45.144.176.135, port: 3000, type: ss, cipher: aes-256-cfb, password: qazwsxplmjbufeefvgedgrwchgtrchrdgfbrdvgedecmmdfe, udp: true}
+  - {name: RU_640, server: 45.144.176.135, port: 3003, type: ss, cipher: aes-256-cfb, password: werty33588761qwfdees, udp: true}
+  - {name: CA_53, server: 196.247.59.154, port: 801, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: US_1143, server: 167.88.63.59, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: RU_639, server: 45.144.176.135, port: 3004, type: ss, cipher: aes-256-cfb, password: 3682oiuvefwwmbc1475, udp: true}
+  - {name: CA_73, server: 196.247.59.154, port: 806, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: US_745, server: 172.99.188.71, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: CA_52, server: 196.247.59.154, port: 805, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: US_1125, server: 167.88.61.14, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: CA_50, server: 72.140.224.195, port: 800, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: CA_69, server: 196.247.59.154, port: 802, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: CA_60, server: 72.140.224.195, port: 803, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: DE_172, server: 193.108.117.75, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: CA_65, server: 196.247.59.154, port: 803, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: US_812, server: 161.35.69.20, port: 811, type: ss, cipher: chacha20-ietf-poly1305, password: Ultr@r00t_2017, udp: true}
+  - {name: Relay_🇫🇷FR-🇫🇷FR_231, server: 51.38.118.42, port: 811, type: ss, cipher: chacha20-ietf-poly1305, password: Ultr@r00t_2017, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_1239, server: vde1.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /chat, ws-headers: {Host: vde1.0bad.com}, udp: true}
+  - {name: CA_67, server: 196.247.59.154, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: Pool_🇯🇵JP_316, server: 185.172.113.102, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: Pool_🇯🇵JP_320, server: 185.172.113.101, port: 812, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: Relay_🇯🇵JP-🇯🇵JP_323, server: m4.40010010.xyz, port: 37121, type: vmess, uuid: 575e4d92-1056-44c2-8cac-75ef1c859ad5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: Pool_🇯🇵JP_312, server: 185.172.113.102, port: 804, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: Pool_🇯🇵JP_298, server: 185.172.113.101, port: 800, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: Pool_🇯🇵JP_301, server: 185.172.113.102, port: 807, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: US_1138, server: 172.99.188.71, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: AU_33, server: 43.156.30.239, port: 32933, type: vmess, uuid: 05eae5d7-f61e-40c4-ec86-3fa74335bcb4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: BG_40, server: 83.150.217.62, port: 44612, type: trojan, password: dbdd4673-06e7-4a53-adb7-aa4232df529e, skip-cert-verify: true, udp: true}
+  - {name: Pool_🇯🇵JP_309, server: 185.172.113.101, port: 810, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: Pool_🇯🇵JP_304, server: 185.172.113.102, port: 803, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: DE_169, server: 165.22.73.126, port: 23335, type: ss, cipher: aes-256-cfb, password: 7d99ae502227454ea998d71e4b62a388, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay_🇨🇳CN-🇨🇦CA_170
-      - yd-03.paofunlink.com:1096
-      - yd-03.paofunlink.com:1095
-      - NONE
-      - Relay_🇯🇵 JP-🇯🇵JP_327
-      - Relay_🇨🇳CN-🏁ZZ_174
-      - 美国(油管:破解资源君2.0)
-      - Relay_🇨🇳 CN-🏁ZZ_111
-      - US_1267
-      - RO_603
-      - Relay_🇯🇵JP-🇯🇵JP_361
-      - 104.237.154.158:864
-      - Relay_🇨🇦 CA-🇨🇦CA_87
-      - Relay_🇯🇵JP-🇯🇵JP_375
-      - 美国-1.93MB/s(Youtube:不良林)
-      - Relay_🇨🇦CA-🇨🇦CA_105
-      - US_1287
-      - 欧洲(油管:破解资源君2.0) 47
-      - Relay_🇨🇳CN-🇹🇼TW_174
-      - Relay_🇺🇸 US-🇺🇸US_749
-      - 2
-      - US_1325
-      - ZZ_1471
-      - yd-03.paofunlink.com:1087
-      - 10
-      - US_1321
-      - US_1273
-      - US_1276
-      - US_1290
-      - yd-03.paofunlink.com:1085
-      - 欧洲(油管:破解资源君2.0) 46
-      - 欧洲(油管:破解资源君2.0) 66
-      - ZZ_1399
-      - ZZ_1309
-      - ZZ_1395
-      - Relay_🇨🇦CA-🇨🇦CA_115
-      - 美国(油管:破解资源君2.0) 2
-      - ZZ_1405
-      - 134.195.198.95:5004
-      - ZZ_1382
-      - ZZ_1380
-      - NONE 6
-      - Relay_🇨🇳 CN-🏁ZZ_122
-      - NONE 2
-      - Relay_🇨🇳 CN-🏁ZZ_112
-      - Relay_🇦🇺AU-🇦🇺AU_79
-      - Relay_🇺🇸US-🇺🇸US_1287
-      - 美国(油管:破解资源君2.0) 6
-      - ZZ_1337
-      - 英国(油管:破解资源君2.0)
+      - Relay_🇺🇸US-🇯🇵JP_1267
+      - KR_338
+      - Relay_🇨🇳CN-🇹🇼TW_130
+      - JP_327
+      - Relay_🇯🇵 JP-🇯🇵JP_294
+      - Relay_🇨🇳CN-🏁ZZ_131
+      - Relay_🇨🇳 CN-🏁ZZ_79
+      - GB_268
+      - US_815
+      - US_1246
+      - US_1209
+      - GB_248
+      - ZZ_1389
+      - GB_249
+      - US_730
+      - RU_641
+      - GB_263
+      - Relay_🇯🇵JP-🇯🇵JP_334
+      - Relay_🇺🇸US-🇺🇸US_1199
+      - Relay_🇨🇳CN-🇹🇼TW_129
+      - Relay_🇨🇦 CA-🇨🇦CA_43
+      - Relay_🇬🇧GB-🇬🇧GB_272
+      - US_738
+      - Relay_🇨🇳CN-🏁ZZ_127
+      - Pool_🇳🇱NL_453
+      - Pool_🇳🇱NL_461
+      - Pool_🇳🇱NL_511
+      - Pool_🇳🇱NL_464
+      - Pool_🇳🇱NL_455
+      - Pool_🇳🇱NL_505
+      - Pool_🇳🇱NL_497
+      - Pool_🇳🇱NL_456
+      - Pool_🇳🇱NL_507
+      - Pool_🇳🇱NL_503
+      - ZZ_1388
+      - SG_670
+      - US_1053
+      - ZZ_1303
+      - US_1049
+      - ZZ_1324
+      - US_1206
+      - ZZ_1390
+      - ZZ_1278
+      - ZZ_1293
+      - US_1109
+      - ZZ_1287
+      - ZZ_1319
+      - ZZ_1378
+      - ZZ_1316
+      - ZZ_1322
+      - ZZ_1279
+      - US_1201
+      - US_808
+      - FR_215
+      - US_796
+      - ZZ_1290
+      - ZZ_1334
+      - ZZ_1285
+      - US_688
+      - DE_142
+      - DE_168
+      - ZZ_1289
+      - LT_416
+      - DE_166
+      - LT_352
+      - US_1040
+      - ZZ_1330
+      - LT_411
+      - DE_138
+      - US_693
+      - US_743
+      - DE_171
+      - DE_144
+      - US_1190
+      - ZZ_1308
+      - US_753
+      - US_1173
+      - US_695
+      - US_1122
+      - ZZ_1305
+      - ZZ_1346
+      - US_719
+      - ZZ_1283
+      - CA_56
+      - Relay_🇯🇵 JP-🇯🇵JP_292
+      - JP_328
+      - RU_627
+      - DE_151
+      - RU_626
+      - RU_625
+      - RU_631
+      - RU_640
+      - CA_53
+      - US_1143
+      - RU_639
+      - CA_73
+      - US_745
+      - CA_52
+      - US_1125
+      - CA_50
+      - CA_69
+      - CA_60
+      - DE_172
+      - CA_65
+      - US_812
+      - Relay_🇫🇷FR-🇫🇷FR_231
+      - Relay_🇺🇸US-🇺🇸US_1239
+      - CA_67
+      - Pool_🇯🇵JP_316
+      - Pool_🇯🇵JP_320
+      - Relay_🇯🇵JP-🇯🇵JP_323
+      - Pool_🇯🇵JP_312
+      - Pool_🇯🇵JP_298
+      - Pool_🇯🇵JP_301
+      - US_1138
+      - AU_33
+      - BG_40
+      - Pool_🇯🇵JP_309
+      - Pool_🇯🇵JP_304
+      - DE_169
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - Relay_🇨🇳CN-🇨🇦CA_170
-      - yd-03.paofunlink.com:1096
-      - yd-03.paofunlink.com:1095
-      - NONE
-      - Relay_🇯🇵 JP-🇯🇵JP_327
-      - Relay_🇨🇳CN-🏁ZZ_174
-      - 美国(油管:破解资源君2.0)
-      - Relay_🇨🇳 CN-🏁ZZ_111
-      - US_1267
-      - RO_603
-      - Relay_🇯🇵JP-🇯🇵JP_361
-      - 104.237.154.158:864
-      - Relay_🇨🇦 CA-🇨🇦CA_87
-      - Relay_🇯🇵JP-🇯🇵JP_375
-      - 美国-1.93MB/s(Youtube:不良林)
-      - Relay_🇨🇦CA-🇨🇦CA_105
-      - US_1287
-      - 欧洲(油管:破解资源君2.0) 47
-      - Relay_🇨🇳CN-🇹🇼TW_174
-      - Relay_🇺🇸 US-🇺🇸US_749
-      - 2
-      - US_1325
-      - ZZ_1471
-      - yd-03.paofunlink.com:1087
-      - 10
-      - US_1321
-      - US_1273
-      - US_1276
-      - US_1290
-      - yd-03.paofunlink.com:1085
-      - 欧洲(油管:破解资源君2.0) 46
-      - 欧洲(油管:破解资源君2.0) 66
-      - ZZ_1399
-      - ZZ_1309
-      - ZZ_1395
-      - Relay_🇨🇦CA-🇨🇦CA_115
-      - 美国(油管:破解资源君2.0) 2
-      - ZZ_1405
-      - 134.195.198.95:5004
-      - ZZ_1382
-      - ZZ_1380
-      - NONE 6
-      - Relay_🇨🇳 CN-🏁ZZ_122
-      - NONE 2
-      - Relay_🇨🇳 CN-🏁ZZ_112
-      - Relay_🇦🇺AU-🇦🇺AU_79
-      - Relay_🇺🇸US-🇺🇸US_1287
-      - 美国(油管:破解资源君2.0) 6
-      - ZZ_1337
-      - 英国(油管:破解资源君2.0)
+      - Relay_🇺🇸US-🇯🇵JP_1267
+      - KR_338
+      - Relay_🇨🇳CN-🇹🇼TW_130
+      - JP_327
+      - Relay_🇯🇵 JP-🇯🇵JP_294
+      - Relay_🇨🇳CN-🏁ZZ_131
+      - Relay_🇨🇳 CN-🏁ZZ_79
+      - GB_268
+      - US_815
+      - US_1246
+      - US_1209
+      - GB_248
+      - ZZ_1389
+      - GB_249
+      - US_730
+      - RU_641
+      - GB_263
+      - Relay_🇯🇵JP-🇯🇵JP_334
+      - Relay_🇺🇸US-🇺🇸US_1199
+      - Relay_🇨🇳CN-🇹🇼TW_129
+      - Relay_🇨🇦 CA-🇨🇦CA_43
+      - Relay_🇬🇧GB-🇬🇧GB_272
+      - US_738
+      - Relay_🇨🇳CN-🏁ZZ_127
+      - Pool_🇳🇱NL_453
+      - Pool_🇳🇱NL_461
+      - Pool_🇳🇱NL_511
+      - Pool_🇳🇱NL_464
+      - Pool_🇳🇱NL_455
+      - Pool_🇳🇱NL_505
+      - Pool_🇳🇱NL_497
+      - Pool_🇳🇱NL_456
+      - Pool_🇳🇱NL_507
+      - Pool_🇳🇱NL_503
+      - ZZ_1388
+      - SG_670
+      - US_1053
+      - ZZ_1303
+      - US_1049
+      - ZZ_1324
+      - US_1206
+      - ZZ_1390
+      - ZZ_1278
+      - ZZ_1293
+      - US_1109
+      - ZZ_1287
+      - ZZ_1319
+      - ZZ_1378
+      - ZZ_1316
+      - ZZ_1322
+      - ZZ_1279
+      - US_1201
+      - US_808
+      - FR_215
+      - US_796
+      - ZZ_1290
+      - ZZ_1334
+      - ZZ_1285
+      - US_688
+      - DE_142
+      - DE_168
+      - ZZ_1289
+      - LT_416
+      - DE_166
+      - LT_352
+      - US_1040
+      - ZZ_1330
+      - LT_411
+      - DE_138
+      - US_693
+      - US_743
+      - DE_171
+      - DE_144
+      - US_1190
+      - ZZ_1308
+      - US_753
+      - US_1173
+      - US_695
+      - US_1122
+      - ZZ_1305
+      - ZZ_1346
+      - US_719
+      - ZZ_1283
+      - CA_56
+      - Relay_🇯🇵 JP-🇯🇵JP_292
+      - JP_328
+      - RU_627
+      - DE_151
+      - RU_626
+      - RU_625
+      - RU_631
+      - RU_640
+      - CA_53
+      - US_1143
+      - RU_639
+      - CA_73
+      - US_745
+      - CA_52
+      - US_1125
+      - CA_50
+      - CA_69
+      - CA_60
+      - DE_172
+      - CA_65
+      - US_812
+      - Relay_🇫🇷FR-🇫🇷FR_231
+      - Relay_🇺🇸US-🇺🇸US_1239
+      - CA_67
+      - Pool_🇯🇵JP_316
+      - Pool_🇯🇵JP_320
+      - Relay_🇯🇵JP-🇯🇵JP_323
+      - Pool_🇯🇵JP_312
+      - Pool_🇯🇵JP_298
+      - Pool_🇯🇵JP_301
+      - US_1138
+      - AU_33
+      - BG_40
+      - Pool_🇯🇵JP_309
+      - Pool_🇯🇵JP_304
+      - DE_169
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay_🇨🇳CN-🇨🇦CA_170
-      - yd-03.paofunlink.com:1096
-      - yd-03.paofunlink.com:1095
-      - NONE
-      - Relay_🇯🇵 JP-🇯🇵JP_327
-      - Relay_🇨🇳CN-🏁ZZ_174
-      - 美国(油管:破解资源君2.0)
-      - Relay_🇨🇳 CN-🏁ZZ_111
-      - US_1267
-      - RO_603
-      - Relay_🇯🇵JP-🇯🇵JP_361
-      - 104.237.154.158:864
-      - Relay_🇨🇦 CA-🇨🇦CA_87
-      - Relay_🇯🇵JP-🇯🇵JP_375
-      - 美国-1.93MB/s(Youtube:不良林)
-      - Relay_🇨🇦CA-🇨🇦CA_105
-      - US_1287
-      - 欧洲(油管:破解资源君2.0) 47
-      - Relay_🇨🇳CN-🇹🇼TW_174
-      - Relay_🇺🇸 US-🇺🇸US_749
-      - 2
-      - US_1325
-      - ZZ_1471
-      - yd-03.paofunlink.com:1087
-      - 10
-      - US_1321
-      - US_1273
-      - US_1276
-      - US_1290
-      - yd-03.paofunlink.com:1085
-      - 欧洲(油管:破解资源君2.0) 46
-      - 欧洲(油管:破解资源君2.0) 66
-      - ZZ_1399
-      - ZZ_1309
-      - ZZ_1395
-      - Relay_🇨🇦CA-🇨🇦CA_115
-      - 美国(油管:破解资源君2.0) 2
-      - ZZ_1405
-      - 134.195.198.95:5004
-      - ZZ_1382
-      - ZZ_1380
-      - NONE 6
-      - Relay_🇨🇳 CN-🏁ZZ_122
-      - NONE 2
-      - Relay_🇨🇳 CN-🏁ZZ_112
-      - Relay_🇦🇺AU-🇦🇺AU_79
-      - Relay_🇺🇸US-🇺🇸US_1287
-      - 美国(油管:破解资源君2.0) 6
-      - ZZ_1337
-      - 英国(油管:破解资源君2.0)
+      - Relay_🇺🇸US-🇯🇵JP_1267
+      - KR_338
+      - Relay_🇨🇳CN-🇹🇼TW_130
+      - JP_327
+      - Relay_🇯🇵 JP-🇯🇵JP_294
+      - Relay_🇨🇳CN-🏁ZZ_131
+      - Relay_🇨🇳 CN-🏁ZZ_79
+      - GB_268
+      - US_815
+      - US_1246
+      - US_1209
+      - GB_248
+      - ZZ_1389
+      - GB_249
+      - US_730
+      - RU_641
+      - GB_263
+      - Relay_🇯🇵JP-🇯🇵JP_334
+      - Relay_🇺🇸US-🇺🇸US_1199
+      - Relay_🇨🇳CN-🇹🇼TW_129
+      - Relay_🇨🇦 CA-🇨🇦CA_43
+      - Relay_🇬🇧GB-🇬🇧GB_272
+      - US_738
+      - Relay_🇨🇳CN-🏁ZZ_127
+      - Pool_🇳🇱NL_453
+      - Pool_🇳🇱NL_461
+      - Pool_🇳🇱NL_511
+      - Pool_🇳🇱NL_464
+      - Pool_🇳🇱NL_455
+      - Pool_🇳🇱NL_505
+      - Pool_🇳🇱NL_497
+      - Pool_🇳🇱NL_456
+      - Pool_🇳🇱NL_507
+      - Pool_🇳🇱NL_503
+      - ZZ_1388
+      - SG_670
+      - US_1053
+      - ZZ_1303
+      - US_1049
+      - ZZ_1324
+      - US_1206
+      - ZZ_1390
+      - ZZ_1278
+      - ZZ_1293
+      - US_1109
+      - ZZ_1287
+      - ZZ_1319
+      - ZZ_1378
+      - ZZ_1316
+      - ZZ_1322
+      - ZZ_1279
+      - US_1201
+      - US_808
+      - FR_215
+      - US_796
+      - ZZ_1290
+      - ZZ_1334
+      - ZZ_1285
+      - US_688
+      - DE_142
+      - DE_168
+      - ZZ_1289
+      - LT_416
+      - DE_166
+      - LT_352
+      - US_1040
+      - ZZ_1330
+      - LT_411
+      - DE_138
+      - US_693
+      - US_743
+      - DE_171
+      - DE_144
+      - US_1190
+      - ZZ_1308
+      - US_753
+      - US_1173
+      - US_695
+      - US_1122
+      - ZZ_1305
+      - ZZ_1346
+      - US_719
+      - ZZ_1283
+      - CA_56
+      - Relay_🇯🇵 JP-🇯🇵JP_292
+      - JP_328
+      - RU_627
+      - DE_151
+      - RU_626
+      - RU_625
+      - RU_631
+      - RU_640
+      - CA_53
+      - US_1143
+      - RU_639
+      - CA_73
+      - US_745
+      - CA_52
+      - US_1125
+      - CA_50
+      - CA_69
+      - CA_60
+      - DE_172
+      - CA_65
+      - US_812
+      - Relay_🇫🇷FR-🇫🇷FR_231
+      - Relay_🇺🇸US-🇺🇸US_1239
+      - CA_67
+      - Pool_🇯🇵JP_316
+      - Pool_🇯🇵JP_320
+      - Relay_🇯🇵JP-🇯🇵JP_323
+      - Pool_🇯🇵JP_312
+      - Pool_🇯🇵JP_298
+      - Pool_🇯🇵JP_301
+      - US_1138
+      - AU_33
+      - BG_40
+      - Pool_🇯🇵JP_309
+      - Pool_🇯🇵JP_304
+      - DE_169
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -240,56 +520,126 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay_🇨🇳CN-🇨🇦CA_170
-      - yd-03.paofunlink.com:1096
-      - yd-03.paofunlink.com:1095
-      - NONE
-      - Relay_🇯🇵 JP-🇯🇵JP_327
-      - Relay_🇨🇳CN-🏁ZZ_174
-      - 美国(油管:破解资源君2.0)
-      - Relay_🇨🇳 CN-🏁ZZ_111
-      - US_1267
-      - RO_603
-      - Relay_🇯🇵JP-🇯🇵JP_361
-      - 104.237.154.158:864
-      - Relay_🇨🇦 CA-🇨🇦CA_87
-      - Relay_🇯🇵JP-🇯🇵JP_375
-      - 美国-1.93MB/s(Youtube:不良林)
-      - Relay_🇨🇦CA-🇨🇦CA_105
-      - US_1287
-      - 欧洲(油管:破解资源君2.0) 47
-      - Relay_🇨🇳CN-🇹🇼TW_174
-      - Relay_🇺🇸 US-🇺🇸US_749
-      - 2
-      - US_1325
-      - ZZ_1471
-      - yd-03.paofunlink.com:1087
-      - 10
-      - US_1321
-      - US_1273
-      - US_1276
-      - US_1290
-      - yd-03.paofunlink.com:1085
-      - 欧洲(油管:破解资源君2.0) 46
-      - 欧洲(油管:破解资源君2.0) 66
-      - ZZ_1399
-      - ZZ_1309
-      - ZZ_1395
-      - Relay_🇨🇦CA-🇨🇦CA_115
-      - 美国(油管:破解资源君2.0) 2
-      - ZZ_1405
-      - 134.195.198.95:5004
-      - ZZ_1382
-      - ZZ_1380
-      - NONE 6
-      - Relay_🇨🇳 CN-🏁ZZ_122
-      - NONE 2
-      - Relay_🇨🇳 CN-🏁ZZ_112
-      - Relay_🇦🇺AU-🇦🇺AU_79
-      - Relay_🇺🇸US-🇺🇸US_1287
-      - 美国(油管:破解资源君2.0) 6
-      - ZZ_1337
-      - 英国(油管:破解资源君2.0)
+      - Relay_🇺🇸US-🇯🇵JP_1267
+      - KR_338
+      - Relay_🇨🇳CN-🇹🇼TW_130
+      - JP_327
+      - Relay_🇯🇵 JP-🇯🇵JP_294
+      - Relay_🇨🇳CN-🏁ZZ_131
+      - Relay_🇨🇳 CN-🏁ZZ_79
+      - GB_268
+      - US_815
+      - US_1246
+      - US_1209
+      - GB_248
+      - ZZ_1389
+      - GB_249
+      - US_730
+      - RU_641
+      - GB_263
+      - Relay_🇯🇵JP-🇯🇵JP_334
+      - Relay_🇺🇸US-🇺🇸US_1199
+      - Relay_🇨🇳CN-🇹🇼TW_129
+      - Relay_🇨🇦 CA-🇨🇦CA_43
+      - Relay_🇬🇧GB-🇬🇧GB_272
+      - US_738
+      - Relay_🇨🇳CN-🏁ZZ_127
+      - Pool_🇳🇱NL_453
+      - Pool_🇳🇱NL_461
+      - Pool_🇳🇱NL_511
+      - Pool_🇳🇱NL_464
+      - Pool_🇳🇱NL_455
+      - Pool_🇳🇱NL_505
+      - Pool_🇳🇱NL_497
+      - Pool_🇳🇱NL_456
+      - Pool_🇳🇱NL_507
+      - Pool_🇳🇱NL_503
+      - ZZ_1388
+      - SG_670
+      - US_1053
+      - ZZ_1303
+      - US_1049
+      - ZZ_1324
+      - US_1206
+      - ZZ_1390
+      - ZZ_1278
+      - ZZ_1293
+      - US_1109
+      - ZZ_1287
+      - ZZ_1319
+      - ZZ_1378
+      - ZZ_1316
+      - ZZ_1322
+      - ZZ_1279
+      - US_1201
+      - US_808
+      - FR_215
+      - US_796
+      - ZZ_1290
+      - ZZ_1334
+      - ZZ_1285
+      - US_688
+      - DE_142
+      - DE_168
+      - ZZ_1289
+      - LT_416
+      - DE_166
+      - LT_352
+      - US_1040
+      - ZZ_1330
+      - LT_411
+      - DE_138
+      - US_693
+      - US_743
+      - DE_171
+      - DE_144
+      - US_1190
+      - ZZ_1308
+      - US_753
+      - US_1173
+      - US_695
+      - US_1122
+      - ZZ_1305
+      - ZZ_1346
+      - US_719
+      - ZZ_1283
+      - CA_56
+      - Relay_🇯🇵 JP-🇯🇵JP_292
+      - JP_328
+      - RU_627
+      - DE_151
+      - RU_626
+      - RU_625
+      - RU_631
+      - RU_640
+      - CA_53
+      - US_1143
+      - RU_639
+      - CA_73
+      - US_745
+      - CA_52
+      - US_1125
+      - CA_50
+      - CA_69
+      - CA_60
+      - DE_172
+      - CA_65
+      - US_812
+      - Relay_🇫🇷FR-🇫🇷FR_231
+      - Relay_🇺🇸US-🇺🇸US_1239
+      - CA_67
+      - Pool_🇯🇵JP_316
+      - Pool_🇯🇵JP_320
+      - Relay_🇯🇵JP-🇯🇵JP_323
+      - Pool_🇯🇵JP_312
+      - Pool_🇯🇵JP_298
+      - Pool_🇯🇵JP_301
+      - US_1138
+      - AU_33
+      - BG_40
+      - Pool_🇯🇵JP_309
+      - Pool_🇯🇵JP_304
+      - DE_169
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -300,167 +650,377 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - Relay_🇨🇳CN-🇨🇦CA_170
-      - yd-03.paofunlink.com:1096
-      - yd-03.paofunlink.com:1095
-      - NONE
-      - Relay_🇯🇵 JP-🇯🇵JP_327
-      - Relay_🇨🇳CN-🏁ZZ_174
-      - 美国(油管:破解资源君2.0)
-      - Relay_🇨🇳 CN-🏁ZZ_111
-      - US_1267
-      - RO_603
-      - Relay_🇯🇵JP-🇯🇵JP_361
-      - 104.237.154.158:864
-      - Relay_🇨🇦 CA-🇨🇦CA_87
-      - Relay_🇯🇵JP-🇯🇵JP_375
-      - 美国-1.93MB/s(Youtube:不良林)
-      - Relay_🇨🇦CA-🇨🇦CA_105
-      - US_1287
-      - 欧洲(油管:破解资源君2.0) 47
-      - Relay_🇨🇳CN-🇹🇼TW_174
-      - Relay_🇺🇸 US-🇺🇸US_749
-      - 2
-      - US_1325
-      - ZZ_1471
-      - yd-03.paofunlink.com:1087
-      - 10
-      - US_1321
-      - US_1273
-      - US_1276
-      - US_1290
-      - yd-03.paofunlink.com:1085
-      - 欧洲(油管:破解资源君2.0) 46
-      - 欧洲(油管:破解资源君2.0) 66
-      - ZZ_1399
-      - ZZ_1309
-      - ZZ_1395
-      - Relay_🇨🇦CA-🇨🇦CA_115
-      - 美国(油管:破解资源君2.0) 2
-      - ZZ_1405
-      - 134.195.198.95:5004
-      - ZZ_1382
-      - ZZ_1380
-      - NONE 6
-      - Relay_🇨🇳 CN-🏁ZZ_122
-      - NONE 2
-      - Relay_🇨🇳 CN-🏁ZZ_112
-      - Relay_🇦🇺AU-🇦🇺AU_79
-      - Relay_🇺🇸US-🇺🇸US_1287
-      - 美国(油管:破解资源君2.0) 6
-      - ZZ_1337
-      - 英国(油管:破解资源君2.0)
+      - Relay_🇺🇸US-🇯🇵JP_1267
+      - KR_338
+      - Relay_🇨🇳CN-🇹🇼TW_130
+      - JP_327
+      - Relay_🇯🇵 JP-🇯🇵JP_294
+      - Relay_🇨🇳CN-🏁ZZ_131
+      - Relay_🇨🇳 CN-🏁ZZ_79
+      - GB_268
+      - US_815
+      - US_1246
+      - US_1209
+      - GB_248
+      - ZZ_1389
+      - GB_249
+      - US_730
+      - RU_641
+      - GB_263
+      - Relay_🇯🇵JP-🇯🇵JP_334
+      - Relay_🇺🇸US-🇺🇸US_1199
+      - Relay_🇨🇳CN-🇹🇼TW_129
+      - Relay_🇨🇦 CA-🇨🇦CA_43
+      - Relay_🇬🇧GB-🇬🇧GB_272
+      - US_738
+      - Relay_🇨🇳CN-🏁ZZ_127
+      - Pool_🇳🇱NL_453
+      - Pool_🇳🇱NL_461
+      - Pool_🇳🇱NL_511
+      - Pool_🇳🇱NL_464
+      - Pool_🇳🇱NL_455
+      - Pool_🇳🇱NL_505
+      - Pool_🇳🇱NL_497
+      - Pool_🇳🇱NL_456
+      - Pool_🇳🇱NL_507
+      - Pool_🇳🇱NL_503
+      - ZZ_1388
+      - SG_670
+      - US_1053
+      - ZZ_1303
+      - US_1049
+      - ZZ_1324
+      - US_1206
+      - ZZ_1390
+      - ZZ_1278
+      - ZZ_1293
+      - US_1109
+      - ZZ_1287
+      - ZZ_1319
+      - ZZ_1378
+      - ZZ_1316
+      - ZZ_1322
+      - ZZ_1279
+      - US_1201
+      - US_808
+      - FR_215
+      - US_796
+      - ZZ_1290
+      - ZZ_1334
+      - ZZ_1285
+      - US_688
+      - DE_142
+      - DE_168
+      - ZZ_1289
+      - LT_416
+      - DE_166
+      - LT_352
+      - US_1040
+      - ZZ_1330
+      - LT_411
+      - DE_138
+      - US_693
+      - US_743
+      - DE_171
+      - DE_144
+      - US_1190
+      - ZZ_1308
+      - US_753
+      - US_1173
+      - US_695
+      - US_1122
+      - ZZ_1305
+      - ZZ_1346
+      - US_719
+      - ZZ_1283
+      - CA_56
+      - Relay_🇯🇵 JP-🇯🇵JP_292
+      - JP_328
+      - RU_627
+      - DE_151
+      - RU_626
+      - RU_625
+      - RU_631
+      - RU_640
+      - CA_53
+      - US_1143
+      - RU_639
+      - CA_73
+      - US_745
+      - CA_52
+      - US_1125
+      - CA_50
+      - CA_69
+      - CA_60
+      - DE_172
+      - CA_65
+      - US_812
+      - Relay_🇫🇷FR-🇫🇷FR_231
+      - Relay_🇺🇸US-🇺🇸US_1239
+      - CA_67
+      - Pool_🇯🇵JP_316
+      - Pool_🇯🇵JP_320
+      - Relay_🇯🇵JP-🇯🇵JP_323
+      - Pool_🇯🇵JP_312
+      - Pool_🇯🇵JP_298
+      - Pool_🇯🇵JP_301
+      - US_1138
+      - AU_33
+      - BG_40
+      - Pool_🇯🇵JP_309
+      - Pool_🇯🇵JP_304
+      - DE_169
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - Relay_🇨🇳CN-🇨🇦CA_170
-      - yd-03.paofunlink.com:1096
-      - yd-03.paofunlink.com:1095
-      - NONE
-      - Relay_🇯🇵 JP-🇯🇵JP_327
-      - Relay_🇨🇳CN-🏁ZZ_174
-      - 美国(油管:破解资源君2.0)
-      - Relay_🇨🇳 CN-🏁ZZ_111
-      - US_1267
-      - RO_603
-      - Relay_🇯🇵JP-🇯🇵JP_361
-      - 104.237.154.158:864
-      - Relay_🇨🇦 CA-🇨🇦CA_87
-      - Relay_🇯🇵JP-🇯🇵JP_375
-      - 美国-1.93MB/s(Youtube:不良林)
-      - Relay_🇨🇦CA-🇨🇦CA_105
-      - US_1287
-      - 欧洲(油管:破解资源君2.0) 47
-      - Relay_🇨🇳CN-🇹🇼TW_174
-      - Relay_🇺🇸 US-🇺🇸US_749
-      - 2
-      - US_1325
-      - ZZ_1471
-      - yd-03.paofunlink.com:1087
-      - 10
-      - US_1321
-      - US_1273
-      - US_1276
-      - US_1290
-      - yd-03.paofunlink.com:1085
-      - 欧洲(油管:破解资源君2.0) 46
-      - 欧洲(油管:破解资源君2.0) 66
-      - ZZ_1399
-      - ZZ_1309
-      - ZZ_1395
-      - Relay_🇨🇦CA-🇨🇦CA_115
-      - 美国(油管:破解资源君2.0) 2
-      - ZZ_1405
-      - 134.195.198.95:5004
-      - ZZ_1382
-      - ZZ_1380
-      - NONE 6
-      - Relay_🇨🇳 CN-🏁ZZ_122
-      - NONE 2
-      - Relay_🇨🇳 CN-🏁ZZ_112
-      - Relay_🇦🇺AU-🇦🇺AU_79
-      - Relay_🇺🇸US-🇺🇸US_1287
-      - 美国(油管:破解资源君2.0) 6
-      - ZZ_1337
-      - 英国(油管:破解资源君2.0)
+      - Relay_🇺🇸US-🇯🇵JP_1267
+      - KR_338
+      - Relay_🇨🇳CN-🇹🇼TW_130
+      - JP_327
+      - Relay_🇯🇵 JP-🇯🇵JP_294
+      - Relay_🇨🇳CN-🏁ZZ_131
+      - Relay_🇨🇳 CN-🏁ZZ_79
+      - GB_268
+      - US_815
+      - US_1246
+      - US_1209
+      - GB_248
+      - ZZ_1389
+      - GB_249
+      - US_730
+      - RU_641
+      - GB_263
+      - Relay_🇯🇵JP-🇯🇵JP_334
+      - Relay_🇺🇸US-🇺🇸US_1199
+      - Relay_🇨🇳CN-🇹🇼TW_129
+      - Relay_🇨🇦 CA-🇨🇦CA_43
+      - Relay_🇬🇧GB-🇬🇧GB_272
+      - US_738
+      - Relay_🇨🇳CN-🏁ZZ_127
+      - Pool_🇳🇱NL_453
+      - Pool_🇳🇱NL_461
+      - Pool_🇳🇱NL_511
+      - Pool_🇳🇱NL_464
+      - Pool_🇳🇱NL_455
+      - Pool_🇳🇱NL_505
+      - Pool_🇳🇱NL_497
+      - Pool_🇳🇱NL_456
+      - Pool_🇳🇱NL_507
+      - Pool_🇳🇱NL_503
+      - ZZ_1388
+      - SG_670
+      - US_1053
+      - ZZ_1303
+      - US_1049
+      - ZZ_1324
+      - US_1206
+      - ZZ_1390
+      - ZZ_1278
+      - ZZ_1293
+      - US_1109
+      - ZZ_1287
+      - ZZ_1319
+      - ZZ_1378
+      - ZZ_1316
+      - ZZ_1322
+      - ZZ_1279
+      - US_1201
+      - US_808
+      - FR_215
+      - US_796
+      - ZZ_1290
+      - ZZ_1334
+      - ZZ_1285
+      - US_688
+      - DE_142
+      - DE_168
+      - ZZ_1289
+      - LT_416
+      - DE_166
+      - LT_352
+      - US_1040
+      - ZZ_1330
+      - LT_411
+      - DE_138
+      - US_693
+      - US_743
+      - DE_171
+      - DE_144
+      - US_1190
+      - ZZ_1308
+      - US_753
+      - US_1173
+      - US_695
+      - US_1122
+      - ZZ_1305
+      - ZZ_1346
+      - US_719
+      - ZZ_1283
+      - CA_56
+      - Relay_🇯🇵 JP-🇯🇵JP_292
+      - JP_328
+      - RU_627
+      - DE_151
+      - RU_626
+      - RU_625
+      - RU_631
+      - RU_640
+      - CA_53
+      - US_1143
+      - RU_639
+      - CA_73
+      - US_745
+      - CA_52
+      - US_1125
+      - CA_50
+      - CA_69
+      - CA_60
+      - DE_172
+      - CA_65
+      - US_812
+      - Relay_🇫🇷FR-🇫🇷FR_231
+      - Relay_🇺🇸US-🇺🇸US_1239
+      - CA_67
+      - Pool_🇯🇵JP_316
+      - Pool_🇯🇵JP_320
+      - Relay_🇯🇵JP-🇯🇵JP_323
+      - Pool_🇯🇵JP_312
+      - Pool_🇯🇵JP_298
+      - Pool_🇯🇵JP_301
+      - US_1138
+      - AU_33
+      - BG_40
+      - Pool_🇯🇵JP_309
+      - Pool_🇯🇵JP_304
+      - DE_169
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Relay_🇨🇳CN-🇨🇦CA_170
-      - yd-03.paofunlink.com:1096
-      - yd-03.paofunlink.com:1095
-      - NONE
-      - Relay_🇯🇵 JP-🇯🇵JP_327
-      - Relay_🇨🇳CN-🏁ZZ_174
-      - 美国(油管:破解资源君2.0)
-      - Relay_🇨🇳 CN-🏁ZZ_111
-      - US_1267
-      - RO_603
-      - Relay_🇯🇵JP-🇯🇵JP_361
-      - 104.237.154.158:864
-      - Relay_🇨🇦 CA-🇨🇦CA_87
-      - Relay_🇯🇵JP-🇯🇵JP_375
-      - 美国-1.93MB/s(Youtube:不良林)
-      - Relay_🇨🇦CA-🇨🇦CA_105
-      - US_1287
-      - 欧洲(油管:破解资源君2.0) 47
-      - Relay_🇨🇳CN-🇹🇼TW_174
-      - Relay_🇺🇸 US-🇺🇸US_749
-      - 2
-      - US_1325
-      - ZZ_1471
-      - yd-03.paofunlink.com:1087
-      - 10
-      - US_1321
-      - US_1273
-      - US_1276
-      - US_1290
-      - yd-03.paofunlink.com:1085
-      - 欧洲(油管:破解资源君2.0) 46
-      - 欧洲(油管:破解资源君2.0) 66
-      - ZZ_1399
-      - ZZ_1309
-      - ZZ_1395
-      - Relay_🇨🇦CA-🇨🇦CA_115
-      - 美国(油管:破解资源君2.0) 2
-      - ZZ_1405
-      - 134.195.198.95:5004
-      - ZZ_1382
-      - ZZ_1380
-      - NONE 6
-      - Relay_🇨🇳 CN-🏁ZZ_122
-      - NONE 2
-      - Relay_🇨🇳 CN-🏁ZZ_112
-      - Relay_🇦🇺AU-🇦🇺AU_79
-      - Relay_🇺🇸US-🇺🇸US_1287
-      - 美国(油管:破解资源君2.0) 6
-      - ZZ_1337
-      - 英国(油管:破解资源君2.0)
+      - Relay_🇺🇸US-🇯🇵JP_1267
+      - KR_338
+      - Relay_🇨🇳CN-🇹🇼TW_130
+      - JP_327
+      - Relay_🇯🇵 JP-🇯🇵JP_294
+      - Relay_🇨🇳CN-🏁ZZ_131
+      - Relay_🇨🇳 CN-🏁ZZ_79
+      - GB_268
+      - US_815
+      - US_1246
+      - US_1209
+      - GB_248
+      - ZZ_1389
+      - GB_249
+      - US_730
+      - RU_641
+      - GB_263
+      - Relay_🇯🇵JP-🇯🇵JP_334
+      - Relay_🇺🇸US-🇺🇸US_1199
+      - Relay_🇨🇳CN-🇹🇼TW_129
+      - Relay_🇨🇦 CA-🇨🇦CA_43
+      - Relay_🇬🇧GB-🇬🇧GB_272
+      - US_738
+      - Relay_🇨🇳CN-🏁ZZ_127
+      - Pool_🇳🇱NL_453
+      - Pool_🇳🇱NL_461
+      - Pool_🇳🇱NL_511
+      - Pool_🇳🇱NL_464
+      - Pool_🇳🇱NL_455
+      - Pool_🇳🇱NL_505
+      - Pool_🇳🇱NL_497
+      - Pool_🇳🇱NL_456
+      - Pool_🇳🇱NL_507
+      - Pool_🇳🇱NL_503
+      - ZZ_1388
+      - SG_670
+      - US_1053
+      - ZZ_1303
+      - US_1049
+      - ZZ_1324
+      - US_1206
+      - ZZ_1390
+      - ZZ_1278
+      - ZZ_1293
+      - US_1109
+      - ZZ_1287
+      - ZZ_1319
+      - ZZ_1378
+      - ZZ_1316
+      - ZZ_1322
+      - ZZ_1279
+      - US_1201
+      - US_808
+      - FR_215
+      - US_796
+      - ZZ_1290
+      - ZZ_1334
+      - ZZ_1285
+      - US_688
+      - DE_142
+      - DE_168
+      - ZZ_1289
+      - LT_416
+      - DE_166
+      - LT_352
+      - US_1040
+      - ZZ_1330
+      - LT_411
+      - DE_138
+      - US_693
+      - US_743
+      - DE_171
+      - DE_144
+      - US_1190
+      - ZZ_1308
+      - US_753
+      - US_1173
+      - US_695
+      - US_1122
+      - ZZ_1305
+      - ZZ_1346
+      - US_719
+      - ZZ_1283
+      - CA_56
+      - Relay_🇯🇵 JP-🇯🇵JP_292
+      - JP_328
+      - RU_627
+      - DE_151
+      - RU_626
+      - RU_625
+      - RU_631
+      - RU_640
+      - CA_53
+      - US_1143
+      - RU_639
+      - CA_73
+      - US_745
+      - CA_52
+      - US_1125
+      - CA_50
+      - CA_69
+      - CA_60
+      - DE_172
+      - CA_65
+      - US_812
+      - Relay_🇫🇷FR-🇫🇷FR_231
+      - Relay_🇺🇸US-🇺🇸US_1239
+      - CA_67
+      - Pool_🇯🇵JP_316
+      - Pool_🇯🇵JP_320
+      - Relay_🇯🇵JP-🇯🇵JP_323
+      - Pool_🇯🇵JP_312
+      - Pool_🇯🇵JP_298
+      - Pool_🇯🇵JP_301
+      - US_1138
+      - AU_33
+      - BG_40
+      - Pool_🇯🇵JP_309
+      - Pool_🇯🇵JP_304
+      - DE_169
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -476,56 +1036,126 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Relay_🇨🇳CN-🇨🇦CA_170
-      - yd-03.paofunlink.com:1096
-      - yd-03.paofunlink.com:1095
-      - NONE
-      - Relay_🇯🇵 JP-🇯🇵JP_327
-      - Relay_🇨🇳CN-🏁ZZ_174
-      - 美国(油管:破解资源君2.0)
-      - Relay_🇨🇳 CN-🏁ZZ_111
-      - US_1267
-      - RO_603
-      - Relay_🇯🇵JP-🇯🇵JP_361
-      - 104.237.154.158:864
-      - Relay_🇨🇦 CA-🇨🇦CA_87
-      - Relay_🇯🇵JP-🇯🇵JP_375
-      - 美国-1.93MB/s(Youtube:不良林)
-      - Relay_🇨🇦CA-🇨🇦CA_105
-      - US_1287
-      - 欧洲(油管:破解资源君2.0) 47
-      - Relay_🇨🇳CN-🇹🇼TW_174
-      - Relay_🇺🇸 US-🇺🇸US_749
-      - 2
-      - US_1325
-      - ZZ_1471
-      - yd-03.paofunlink.com:1087
-      - 10
-      - US_1321
-      - US_1273
-      - US_1276
-      - US_1290
-      - yd-03.paofunlink.com:1085
-      - 欧洲(油管:破解资源君2.0) 46
-      - 欧洲(油管:破解资源君2.0) 66
-      - ZZ_1399
-      - ZZ_1309
-      - ZZ_1395
-      - Relay_🇨🇦CA-🇨🇦CA_115
-      - 美国(油管:破解资源君2.0) 2
-      - ZZ_1405
-      - 134.195.198.95:5004
-      - ZZ_1382
-      - ZZ_1380
-      - NONE 6
-      - Relay_🇨🇳 CN-🏁ZZ_122
-      - NONE 2
-      - Relay_🇨🇳 CN-🏁ZZ_112
-      - Relay_🇦🇺AU-🇦🇺AU_79
-      - Relay_🇺🇸US-🇺🇸US_1287
-      - 美国(油管:破解资源君2.0) 6
-      - ZZ_1337
-      - 英国(油管:破解资源君2.0)
+      - Relay_🇺🇸US-🇯🇵JP_1267
+      - KR_338
+      - Relay_🇨🇳CN-🇹🇼TW_130
+      - JP_327
+      - Relay_🇯🇵 JP-🇯🇵JP_294
+      - Relay_🇨🇳CN-🏁ZZ_131
+      - Relay_🇨🇳 CN-🏁ZZ_79
+      - GB_268
+      - US_815
+      - US_1246
+      - US_1209
+      - GB_248
+      - ZZ_1389
+      - GB_249
+      - US_730
+      - RU_641
+      - GB_263
+      - Relay_🇯🇵JP-🇯🇵JP_334
+      - Relay_🇺🇸US-🇺🇸US_1199
+      - Relay_🇨🇳CN-🇹🇼TW_129
+      - Relay_🇨🇦 CA-🇨🇦CA_43
+      - Relay_🇬🇧GB-🇬🇧GB_272
+      - US_738
+      - Relay_🇨🇳CN-🏁ZZ_127
+      - Pool_🇳🇱NL_453
+      - Pool_🇳🇱NL_461
+      - Pool_🇳🇱NL_511
+      - Pool_🇳🇱NL_464
+      - Pool_🇳🇱NL_455
+      - Pool_🇳🇱NL_505
+      - Pool_🇳🇱NL_497
+      - Pool_🇳🇱NL_456
+      - Pool_🇳🇱NL_507
+      - Pool_🇳🇱NL_503
+      - ZZ_1388
+      - SG_670
+      - US_1053
+      - ZZ_1303
+      - US_1049
+      - ZZ_1324
+      - US_1206
+      - ZZ_1390
+      - ZZ_1278
+      - ZZ_1293
+      - US_1109
+      - ZZ_1287
+      - ZZ_1319
+      - ZZ_1378
+      - ZZ_1316
+      - ZZ_1322
+      - ZZ_1279
+      - US_1201
+      - US_808
+      - FR_215
+      - US_796
+      - ZZ_1290
+      - ZZ_1334
+      - ZZ_1285
+      - US_688
+      - DE_142
+      - DE_168
+      - ZZ_1289
+      - LT_416
+      - DE_166
+      - LT_352
+      - US_1040
+      - ZZ_1330
+      - LT_411
+      - DE_138
+      - US_693
+      - US_743
+      - DE_171
+      - DE_144
+      - US_1190
+      - ZZ_1308
+      - US_753
+      - US_1173
+      - US_695
+      - US_1122
+      - ZZ_1305
+      - ZZ_1346
+      - US_719
+      - ZZ_1283
+      - CA_56
+      - Relay_🇯🇵 JP-🇯🇵JP_292
+      - JP_328
+      - RU_627
+      - DE_151
+      - RU_626
+      - RU_625
+      - RU_631
+      - RU_640
+      - CA_53
+      - US_1143
+      - RU_639
+      - CA_73
+      - US_745
+      - CA_52
+      - US_1125
+      - CA_50
+      - CA_69
+      - CA_60
+      - DE_172
+      - CA_65
+      - US_812
+      - Relay_🇫🇷FR-🇫🇷FR_231
+      - Relay_🇺🇸US-🇺🇸US_1239
+      - CA_67
+      - Pool_🇯🇵JP_316
+      - Pool_🇯🇵JP_320
+      - Relay_🇯🇵JP-🇯🇵JP_323
+      - Pool_🇯🇵JP_312
+      - Pool_🇯🇵JP_298
+      - Pool_🇯🇵JP_301
+      - US_1138
+      - AU_33
+      - BG_40
+      - Pool_🇯🇵JP_309
+      - Pool_🇯🇵JP_304
+      - DE_169
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
