@@ -5,547 +5,171 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: JP_535, server: 146.56.167.119, port: 6666, type: vmess, uuid: 64779fce-63a5-4faa-b59b-e4af40f4e419, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US_1563, server: 80.251.216.13, port: 50500, type: trojan, password: e4abe563-0f1b-4262-9535-bef102f25f8c, skip-cert-verify: true, udp: true}
-  - {name: GB_458, server: 78.129.253.9, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: Relay_🇸🇬SG-🇸🇬SG_947, server: simpang.freetrade.link, port: 443, type: trojan, password: XEyN0OZ28xxCDO7C83DeAa3YcSjYKTgFA5n9IRpFwuB3qSz4aZClSapy3eRl6D, sni: simpang.freetrade.link, skip-cert-verify: true, udp: true}
-  - {name: US_1284, server: 167.88.61.14, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: US_1287, server: 38.75.136.21, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: Pool_🇳🇱NL_743, server: 85.208.108.60, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: US_1462, server: 38.75.136.102, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: Pool_🇳🇱NL_706, server: 85.208.108.93, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: US_1402, server: 167.88.61.14, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: NL_693, server: 85.208.108.18, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: Pool_🇳🇱NL_700, server: 85.208.108.93, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: Pool_🇳🇱NL_709, server: 85.208.108.93, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: US_1135, server: 38.75.136.102, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: US_1165, server: 38.75.136.102, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: GB_460, server: 78.129.253.9, port: 808, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: US_1127, server: 38.75.136.102, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: US_1025, server: 167.88.61.14, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: US_1319, server: 38.75.136.21, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_1131, server: 38.75.136.102, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_1180, server: 38.75.136.21, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: US_1003, server: 38.75.136.21, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: Pool_🇳🇱NL_748, server: 85.208.108.93, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: US_1006, server: 38.114.114.67, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_1102, server: 38.114.114.19, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: US_1022, server: 167.88.61.14, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: US_1053, server: 38.68.135.19, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: US_1421, server: 167.88.61.14, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: US_1150, server: 38.75.136.21, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: US_1433, server: 38.75.136.21, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_1475, server: us-am32-5.eqnode.net, port: 8081, type: ssr, cipher: aes-256-cfb, password: YFVrXZgRo, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
-  - {name: US_1000, server: 38.68.135.19, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: US_1217, server: 38.114.114.49, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: US_1380, server: 38.68.135.19, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: Pool_🇳🇱NL_696, server: 85.208.108.93, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: US_1037, server: 38.114.114.19, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_1377, server: 38.68.135.19, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: US_1137, server: 38.75.136.102, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: US_1160, server: 38.114.114.49, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: US_1276, server: 38.114.114.19, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: US_1374, server: 38.68.135.19, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: US_1080, server: 38.68.135.19, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_1383, server: 38.68.135.19, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: US_1429, server: 38.68.134.85, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: US_1456, server: 38.68.134.85, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: NL_695, server: 85.208.108.18, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_1457, server: 38.68.134.85, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: US_1255, server: 38.75.136.21, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: US_1342, server: 38.64.138.145, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: US_1249, server: 38.64.138.145, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: US_1335, server: 38.68.134.85, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_1340, server: 38.64.138.145, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: US_1461, server: 38.68.134.85, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: US_1021, server: 38.68.135.19, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: US_999, server: 38.68.134.85, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: US_992, server: 38.143.66.99, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: US_1035, server: 38.68.135.19, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: US_1186, server: 38.68.134.85, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: US_1250, server: 38.64.138.145, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: US_1343, server: 38.86.135.27, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: US_1348, server: 38.86.135.27, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: US_1196, server: 38.68.134.85, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: US_1288, server: 38.86.135.27, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: Relay_🇨🇳CN-🇺🇸US_320, server: yd-03.paofunlink.com, port: 1086, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 107841:5muojeb8nsd, obfs-param: ce568107841.microsoft.com, udp: true}
-  - {name: US_1013, server: 38.143.66.99, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_1244, server: 38.64.138.145, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_1017, server: 38.86.135.36, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: US_1083, server: 38.121.43.71, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: US_1236, server: 38.64.138.145, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: US_1015, server: 38.68.134.85, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_1156, server: 38.121.43.71, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: ZZ_1657, server: 169.197.141.5, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_1064, server: 172.99.188.71, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: US_1308, server: 38.121.43.71, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: US_1344, server: 38.64.138.145, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: US_1375, server: 38.68.135.19, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: US_1248, server: 38.64.138.145, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: US_1466, server: 38.75.136.102, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: US_973, server: 167.88.61.14, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: US_1066, server: 172.99.188.71, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: US_1020, server: 38.121.43.71, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_1239, server: 38.64.138.145, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: US_1450, server: 38.107.226.49, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: US_1470, server: 38.121.43.71, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: ZZ_1615, server: 134.195.196.85, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_1004, server: 38.75.136.21, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: US_1008, server: 172.99.188.71, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_1023, server: 172.99.188.71, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: US_1057, server: 172.99.188.71, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_1058, server: 172.99.188.71, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: US_1062, server: 172.99.188.71, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_1010, server: 172.99.188.71, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: US_1074, server: 172.99.188.71, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: US_1240, server: 38.64.138.145, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: US_1026, server: 172.99.188.71, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: US_1260, server: 38.64.138.145, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: US_989, server: 38.121.43.71, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: US_1259, server: 38.121.43.71, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: US_1007, server: 172.99.188.71, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: US_1241, server: 38.64.138.145, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: US_1361, server: 38.121.43.71, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: Relay_🇨🇳CN-🇹🇼TW_284, server: ss.tw3.se.sx.cn, port: 1203, type: ss, cipher: chacha20-ietf-poly1305, password: CgL7TyrJyvI2eMDR, udp: true}
-  - {name: US_1144, server: 38.114.114.67, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: CA_201, server: 72.140.224.195, port: 803, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: US_1307, server: 38.121.43.71, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: US_1129, server: 38.114.114.69, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: US_1382, server: 161.35.69.20, port: 811, type: ss, cipher: chacha20-ietf-poly1305, password: Ultr@r00t_2017, udp: true}
-  - {name: US_1376, server: 38.68.135.19, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_1019, server: 38.121.43.71, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_1411, server: 38.121.43.71, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_1018, server: 38.86.135.36, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: CA_204, server: 72.140.224.195, port: 810, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: US_1034, server: 38.68.135.18, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: US_1448, server: 38.121.43.71, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_1378, server: 38.68.135.18, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: US_1379, server: 38.68.135.18, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: Relay_🇫🇷FR-🇫🇷FR_454, server: 51.38.118.42, port: 811, type: ss, cipher: chacha20-ietf-poly1305, password: Ultr@r00t_2017, udp: true}
-  - {name: US_1036, server: 38.68.135.18, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: IT_503, server: 92.223.93.233, port: 1035, type: ss, cipher: chacha20-ietf-poly1305, password: )1N1E6v0SU_rGTpg, udp: true}
-  - {name: US_1444, server: 38.68.135.18, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: US_1024, server: 172.99.188.71, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: US_1460, server: 38.68.135.18, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: Pool_🇯🇵JP_522, server: 185.172.113.102, port: 804, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: Pool_🇯🇵JP_510, server: 185.172.113.101, port: 800, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: CA_207, server: 72.140.224.195, port: 800, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: US_1030, server: 38.114.114.49, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: Relay_🇨🇳CN-🇩🇪DE_328, server: ingress-i1.onebox6.org, port: 38701, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: ingress-i1.onebox6.org}, udp: true}
-  - {name: Pool_🇯🇵JP_506, server: 185.172.113.101, port: 810, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: US_975, server: 38.75.136.21, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: Pool_🇯🇵JP_507, server: 185.172.113.102, port: 803, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: Relay_🇨🇳CN-🇹🇼TW_323, server: 120.240.55.137, port: 38201, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: 120.240.55.137}, udp: true}
+  - {name: "", server: 23.105.199.160, port: 25078, type: vmess, uuid: 964f9b2b-7ff1-4026-d4a9-41b824f4b3bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: " 2", server: 23.105.199.160, port: 23903, type: vmess, uuid: 60b6c1a6-6306-4e28-91d9-8d2be2449ae8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: " 3", server: 23.105.199.160, port: 27317, type: vmess, uuid: 01832c71-50ac-4891-ae37-1dea8f42ae2d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 104.237.154.158:864, server: 104.237.154.158, port: 864, type: ss, cipher: aes-256-gcm, password: 88gy56h9, udp: true}
+  - {name: 85.208.108.58:9101, server: 85.208.108.58, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: 85.208.108.58:8888, server: 85.208.108.58, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: " 4", server: 120.240.55.137, port: 38201, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: 120.240.55.137}, udp: true}
+  - {name: 85.208.108.58:8080, server: 85.208.108.58, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: 美国-2.13MB/s(Youtube:不良林), server: 167.88.63.59, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: " 5", server: 23.230.146.254, port: 1258, type: vmess, uuid: edeb41cc-a76a-47f2-fa96-b9141e66a2b0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 荷兰-3.32MB/s(Youtube:不良林), server: 23.94.120.19, port: 28554, type: vmess, uuid: 4a4c96c5-7b8b-4612-c715-6b91a9c34d07, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 加拿大-2.69MB/s(Youtube:不良林), server: 134.195.198.95, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 加拿大-1.79MB/s(Youtube:不良林), server: 134.195.198.95, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 85.208.108.18:7001, server: 85.208.108.18, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: 85.208.108.18:5001, server: 85.208.108.18, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 172.99.188.71:6679, server: 172.99.188.71, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: 172.99.188.71:8119, server: 172.99.188.71, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: 保加利亚-2.50MB/s(Youtube:不良林), server: 213.183.63.221, port: 9006, type: ss, cipher: aes-256-cfb, password: FAdUvMJUq5vDgKEq, udp: true}
+  - {name: 172.99.188.71:8118, server: 172.99.188.71, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: 172.99.188.71:5000, server: 172.99.188.71, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 185.167.116.250:9006, server: 185.167.116.250, port: 9006, type: ss, cipher: aes-256-cfb, password: FAdUvMJUq5vDgKEq, udp: true}
+  - {name: " 6", server: 103.186.149.132, port: 80, type: vmess, uuid: a479fc02-07c5-4864-8564-c4f147dfa488, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /shopvpn.net, ws-headers: {Host: 103.186.149.132}, udp: true}
+  - {name: 保加利亚-2.52MB/s(Youtube:不良林), server: 213.183.63.221, port: 9007, type: ss, cipher: aes-256-cfb, password: kSPmvwdFzGMMW5pY, udp: true}
+  - {name: 167.88.63.59:6697, server: 167.88.63.59, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: 美国-2.38MB/s(Youtube:不良林), server: 172.99.188.71, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 172.99.188.71:6379, server: 172.99.188.71, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: " 7", server: chess.magicefire.com, port: 443, type: vmess, uuid: 9aa80017-3427-4165-a522-f5f9a11330d0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 加拿大-2.04MB/s(Youtube:不良林), server: 196.247.59.154, port: 803, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: " 8", server: 144.24.92.192, port: 443, type: vmess, uuid: 1743c2d9-bad1-4485-95a8-897145f09812, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: NONE, server: ru.beecloud.space, port: 20861, type: trojan, password: b2d36a54-28ca-49b0-b475-8c81750b152f, sni: ru.beecloud.space, skip-cert-verify: true, udp: true}
+  - {name: 172.99.188.71:8888, server: 172.99.188.71, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 85.208.108.20:6679, server: 85.208.108.20, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: 172.99.188.71:5004, server: 172.99.188.71, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: " 9", server: ingress-i1.onebox6.org, port: 38701, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: ingress-i1.onebox6.org}, udp: true}
+  - {name: 185.172.113.102:803, server: 185.172.113.102, port: 803, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: 165.22.73.126:23335, server: 165.22.73.126, port: 23335, type: ss, cipher: aes-256-cfb, password: 7d99ae502227454ea998d71e4b62a388, udp: true}
+  - {name: " 10", server: in-sg-1.onebox6.org, port: 38701, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: in-sg-1.onebox6.org}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - JP_535
-      - US_1563
-      - GB_458
-      - Relay_🇸🇬SG-🇸🇬SG_947
-      - US_1284
-      - US_1287
-      - Pool_🇳🇱NL_743
-      - US_1462
-      - Pool_🇳🇱NL_706
-      - US_1402
-      - NL_693
-      - Pool_🇳🇱NL_700
-      - Pool_🇳🇱NL_709
-      - US_1135
-      - US_1165
-      - GB_460
-      - US_1127
-      - US_1025
-      - US_1319
-      - US_1131
-      - US_1180
-      - US_1003
-      - Pool_🇳🇱NL_748
-      - US_1006
-      - US_1102
-      - US_1022
-      - US_1053
-      - US_1421
-      - US_1150
-      - US_1433
-      - Relay_🇺🇸US-🇺🇸US_1475
-      - US_1000
-      - US_1217
-      - US_1380
-      - Pool_🇳🇱NL_696
-      - US_1037
-      - US_1377
-      - US_1137
-      - US_1160
-      - US_1276
-      - US_1374
-      - US_1080
-      - US_1383
-      - US_1429
-      - US_1456
-      - NL_695
-      - US_1457
-      - US_1255
-      - US_1342
-      - US_1249
-      - US_1335
-      - US_1340
-      - US_1461
-      - US_1021
-      - US_999
-      - US_992
-      - US_1035
-      - US_1186
-      - US_1250
-      - US_1343
-      - US_1348
-      - US_1196
-      - US_1288
-      - Relay_🇨🇳CN-🇺🇸US_320
-      - US_1013
-      - US_1244
-      - US_1017
-      - US_1083
-      - US_1236
-      - US_1015
-      - US_1156
-      - ZZ_1657
-      - US_1064
-      - US_1308
-      - US_1344
-      - US_1375
-      - US_1248
-      - US_1466
-      - US_973
-      - US_1066
-      - US_1020
-      - US_1239
-      - US_1450
-      - US_1470
-      - ZZ_1615
-      - US_1004
-      - US_1008
-      - US_1023
-      - US_1057
-      - US_1058
-      - US_1062
-      - US_1010
-      - US_1074
-      - US_1240
-      - US_1026
-      - US_1260
-      - US_989
-      - US_1259
-      - US_1007
-      - US_1241
-      - US_1361
-      - Relay_🇨🇳CN-🇹🇼TW_284
-      - US_1144
-      - CA_201
-      - US_1307
-      - US_1129
-      - US_1382
-      - US_1376
-      - US_1019
-      - US_1411
-      - US_1018
-      - CA_204
-      - US_1034
-      - US_1448
-      - US_1378
-      - US_1379
-      - Relay_🇫🇷FR-🇫🇷FR_454
-      - US_1036
-      - IT_503
-      - US_1444
-      - US_1024
-      - US_1460
-      - Pool_🇯🇵JP_522
-      - Pool_🇯🇵JP_510
-      - CA_207
-      - US_1030
-      - Relay_🇨🇳CN-🇩🇪DE_328
-      - Pool_🇯🇵JP_506
-      - US_975
-      - Pool_🇯🇵JP_507
-      - Relay_🇨🇳CN-🇹🇼TW_323
+      - ""
+      - " 2"
+      - " 3"
+      - 104.237.154.158:864
+      - 85.208.108.58:9101
+      - 85.208.108.58:8888
+      - " 4"
+      - 85.208.108.58:8080
+      - 美国-2.13MB/s(Youtube:不良林)
+      - " 5"
+      - 荷兰-3.32MB/s(Youtube:不良林)
+      - 加拿大-2.69MB/s(Youtube:不良林)
+      - 加拿大-1.79MB/s(Youtube:不良林)
+      - 85.208.108.18:7001
+      - 85.208.108.18:5001
+      - 172.99.188.71:6679
+      - 172.99.188.71:8119
+      - 保加利亚-2.50MB/s(Youtube:不良林)
+      - 172.99.188.71:8118
+      - 172.99.188.71:5000
+      - 185.167.116.250:9006
+      - " 6"
+      - 保加利亚-2.52MB/s(Youtube:不良林)
+      - 167.88.63.59:6697
+      - 美国-2.38MB/s(Youtube:不良林)
+      - 172.99.188.71:6379
+      - " 7"
+      - 加拿大-2.04MB/s(Youtube:不良林)
+      - " 8"
+      - NONE
+      - 172.99.188.71:8888
+      - 85.208.108.20:6679
+      - 172.99.188.71:5004
+      - " 9"
+      - 185.172.113.102:803
+      - 165.22.73.126:23335
+      - " 10"
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - JP_535
-      - US_1563
-      - GB_458
-      - Relay_🇸🇬SG-🇸🇬SG_947
-      - US_1284
-      - US_1287
-      - Pool_🇳🇱NL_743
-      - US_1462
-      - Pool_🇳🇱NL_706
-      - US_1402
-      - NL_693
-      - Pool_🇳🇱NL_700
-      - Pool_🇳🇱NL_709
-      - US_1135
-      - US_1165
-      - GB_460
-      - US_1127
-      - US_1025
-      - US_1319
-      - US_1131
-      - US_1180
-      - US_1003
-      - Pool_🇳🇱NL_748
-      - US_1006
-      - US_1102
-      - US_1022
-      - US_1053
-      - US_1421
-      - US_1150
-      - US_1433
-      - Relay_🇺🇸US-🇺🇸US_1475
-      - US_1000
-      - US_1217
-      - US_1380
-      - Pool_🇳🇱NL_696
-      - US_1037
-      - US_1377
-      - US_1137
-      - US_1160
-      - US_1276
-      - US_1374
-      - US_1080
-      - US_1383
-      - US_1429
-      - US_1456
-      - NL_695
-      - US_1457
-      - US_1255
-      - US_1342
-      - US_1249
-      - US_1335
-      - US_1340
-      - US_1461
-      - US_1021
-      - US_999
-      - US_992
-      - US_1035
-      - US_1186
-      - US_1250
-      - US_1343
-      - US_1348
-      - US_1196
-      - US_1288
-      - Relay_🇨🇳CN-🇺🇸US_320
-      - US_1013
-      - US_1244
-      - US_1017
-      - US_1083
-      - US_1236
-      - US_1015
-      - US_1156
-      - ZZ_1657
-      - US_1064
-      - US_1308
-      - US_1344
-      - US_1375
-      - US_1248
-      - US_1466
-      - US_973
-      - US_1066
-      - US_1020
-      - US_1239
-      - US_1450
-      - US_1470
-      - ZZ_1615
-      - US_1004
-      - US_1008
-      - US_1023
-      - US_1057
-      - US_1058
-      - US_1062
-      - US_1010
-      - US_1074
-      - US_1240
-      - US_1026
-      - US_1260
-      - US_989
-      - US_1259
-      - US_1007
-      - US_1241
-      - US_1361
-      - Relay_🇨🇳CN-🇹🇼TW_284
-      - US_1144
-      - CA_201
-      - US_1307
-      - US_1129
-      - US_1382
-      - US_1376
-      - US_1019
-      - US_1411
-      - US_1018
-      - CA_204
-      - US_1034
-      - US_1448
-      - US_1378
-      - US_1379
-      - Relay_🇫🇷FR-🇫🇷FR_454
-      - US_1036
-      - IT_503
-      - US_1444
-      - US_1024
-      - US_1460
-      - Pool_🇯🇵JP_522
-      - Pool_🇯🇵JP_510
-      - CA_207
-      - US_1030
-      - Relay_🇨🇳CN-🇩🇪DE_328
-      - Pool_🇯🇵JP_506
-      - US_975
-      - Pool_🇯🇵JP_507
-      - Relay_🇨🇳CN-🇹🇼TW_323
+      - ""
+      - " 2"
+      - " 3"
+      - 104.237.154.158:864
+      - 85.208.108.58:9101
+      - 85.208.108.58:8888
+      - " 4"
+      - 85.208.108.58:8080
+      - 美国-2.13MB/s(Youtube:不良林)
+      - " 5"
+      - 荷兰-3.32MB/s(Youtube:不良林)
+      - 加拿大-2.69MB/s(Youtube:不良林)
+      - 加拿大-1.79MB/s(Youtube:不良林)
+      - 85.208.108.18:7001
+      - 85.208.108.18:5001
+      - 172.99.188.71:6679
+      - 172.99.188.71:8119
+      - 保加利亚-2.50MB/s(Youtube:不良林)
+      - 172.99.188.71:8118
+      - 172.99.188.71:5000
+      - 185.167.116.250:9006
+      - " 6"
+      - 保加利亚-2.52MB/s(Youtube:不良林)
+      - 167.88.63.59:6697
+      - 美国-2.38MB/s(Youtube:不良林)
+      - 172.99.188.71:6379
+      - " 7"
+      - 加拿大-2.04MB/s(Youtube:不良林)
+      - " 8"
+      - NONE
+      - 172.99.188.71:8888
+      - 85.208.108.20:6679
+      - 172.99.188.71:5004
+      - " 9"
+      - 185.172.113.102:803
+      - 165.22.73.126:23335
+      - " 10"
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - JP_535
-      - US_1563
-      - GB_458
-      - Relay_🇸🇬SG-🇸🇬SG_947
-      - US_1284
-      - US_1287
-      - Pool_🇳🇱NL_743
-      - US_1462
-      - Pool_🇳🇱NL_706
-      - US_1402
-      - NL_693
-      - Pool_🇳🇱NL_700
-      - Pool_🇳🇱NL_709
-      - US_1135
-      - US_1165
-      - GB_460
-      - US_1127
-      - US_1025
-      - US_1319
-      - US_1131
-      - US_1180
-      - US_1003
-      - Pool_🇳🇱NL_748
-      - US_1006
-      - US_1102
-      - US_1022
-      - US_1053
-      - US_1421
-      - US_1150
-      - US_1433
-      - Relay_🇺🇸US-🇺🇸US_1475
-      - US_1000
-      - US_1217
-      - US_1380
-      - Pool_🇳🇱NL_696
-      - US_1037
-      - US_1377
-      - US_1137
-      - US_1160
-      - US_1276
-      - US_1374
-      - US_1080
-      - US_1383
-      - US_1429
-      - US_1456
-      - NL_695
-      - US_1457
-      - US_1255
-      - US_1342
-      - US_1249
-      - US_1335
-      - US_1340
-      - US_1461
-      - US_1021
-      - US_999
-      - US_992
-      - US_1035
-      - US_1186
-      - US_1250
-      - US_1343
-      - US_1348
-      - US_1196
-      - US_1288
-      - Relay_🇨🇳CN-🇺🇸US_320
-      - US_1013
-      - US_1244
-      - US_1017
-      - US_1083
-      - US_1236
-      - US_1015
-      - US_1156
-      - ZZ_1657
-      - US_1064
-      - US_1308
-      - US_1344
-      - US_1375
-      - US_1248
-      - US_1466
-      - US_973
-      - US_1066
-      - US_1020
-      - US_1239
-      - US_1450
-      - US_1470
-      - ZZ_1615
-      - US_1004
-      - US_1008
-      - US_1023
-      - US_1057
-      - US_1058
-      - US_1062
-      - US_1010
-      - US_1074
-      - US_1240
-      - US_1026
-      - US_1260
-      - US_989
-      - US_1259
-      - US_1007
-      - US_1241
-      - US_1361
-      - Relay_🇨🇳CN-🇹🇼TW_284
-      - US_1144
-      - CA_201
-      - US_1307
-      - US_1129
-      - US_1382
-      - US_1376
-      - US_1019
-      - US_1411
-      - US_1018
-      - CA_204
-      - US_1034
-      - US_1448
-      - US_1378
-      - US_1379
-      - Relay_🇫🇷FR-🇫🇷FR_454
-      - US_1036
-      - IT_503
-      - US_1444
-      - US_1024
-      - US_1460
-      - Pool_🇯🇵JP_522
-      - Pool_🇯🇵JP_510
-      - CA_207
-      - US_1030
-      - Relay_🇨🇳CN-🇩🇪DE_328
-      - Pool_🇯🇵JP_506
-      - US_975
-      - Pool_🇯🇵JP_507
-      - Relay_🇨🇳CN-🇹🇼TW_323
+      - ""
+      - " 2"
+      - " 3"
+      - 104.237.154.158:864
+      - 85.208.108.58:9101
+      - 85.208.108.58:8888
+      - " 4"
+      - 85.208.108.58:8080
+      - 美国-2.13MB/s(Youtube:不良林)
+      - " 5"
+      - 荷兰-3.32MB/s(Youtube:不良林)
+      - 加拿大-2.69MB/s(Youtube:不良林)
+      - 加拿大-1.79MB/s(Youtube:不良林)
+      - 85.208.108.18:7001
+      - 85.208.108.18:5001
+      - 172.99.188.71:6679
+      - 172.99.188.71:8119
+      - 保加利亚-2.50MB/s(Youtube:不良林)
+      - 172.99.188.71:8118
+      - 172.99.188.71:5000
+      - 185.167.116.250:9006
+      - " 6"
+      - 保加利亚-2.52MB/s(Youtube:不良林)
+      - 167.88.63.59:6697
+      - 美国-2.38MB/s(Youtube:不良林)
+      - 172.99.188.71:6379
+      - " 7"
+      - 加拿大-2.04MB/s(Youtube:不良林)
+      - " 8"
+      - NONE
+      - 172.99.188.71:8888
+      - 85.208.108.20:6679
+      - 172.99.188.71:5004
+      - " 9"
+      - 185.172.113.102:803
+      - 165.22.73.126:23335
+      - " 10"
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -564,137 +188,43 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - JP_535
-      - US_1563
-      - GB_458
-      - Relay_🇸🇬SG-🇸🇬SG_947
-      - US_1284
-      - US_1287
-      - Pool_🇳🇱NL_743
-      - US_1462
-      - Pool_🇳🇱NL_706
-      - US_1402
-      - NL_693
-      - Pool_🇳🇱NL_700
-      - Pool_🇳🇱NL_709
-      - US_1135
-      - US_1165
-      - GB_460
-      - US_1127
-      - US_1025
-      - US_1319
-      - US_1131
-      - US_1180
-      - US_1003
-      - Pool_🇳🇱NL_748
-      - US_1006
-      - US_1102
-      - US_1022
-      - US_1053
-      - US_1421
-      - US_1150
-      - US_1433
-      - Relay_🇺🇸US-🇺🇸US_1475
-      - US_1000
-      - US_1217
-      - US_1380
-      - Pool_🇳🇱NL_696
-      - US_1037
-      - US_1377
-      - US_1137
-      - US_1160
-      - US_1276
-      - US_1374
-      - US_1080
-      - US_1383
-      - US_1429
-      - US_1456
-      - NL_695
-      - US_1457
-      - US_1255
-      - US_1342
-      - US_1249
-      - US_1335
-      - US_1340
-      - US_1461
-      - US_1021
-      - US_999
-      - US_992
-      - US_1035
-      - US_1186
-      - US_1250
-      - US_1343
-      - US_1348
-      - US_1196
-      - US_1288
-      - Relay_🇨🇳CN-🇺🇸US_320
-      - US_1013
-      - US_1244
-      - US_1017
-      - US_1083
-      - US_1236
-      - US_1015
-      - US_1156
-      - ZZ_1657
-      - US_1064
-      - US_1308
-      - US_1344
-      - US_1375
-      - US_1248
-      - US_1466
-      - US_973
-      - US_1066
-      - US_1020
-      - US_1239
-      - US_1450
-      - US_1470
-      - ZZ_1615
-      - US_1004
-      - US_1008
-      - US_1023
-      - US_1057
-      - US_1058
-      - US_1062
-      - US_1010
-      - US_1074
-      - US_1240
-      - US_1026
-      - US_1260
-      - US_989
-      - US_1259
-      - US_1007
-      - US_1241
-      - US_1361
-      - Relay_🇨🇳CN-🇹🇼TW_284
-      - US_1144
-      - CA_201
-      - US_1307
-      - US_1129
-      - US_1382
-      - US_1376
-      - US_1019
-      - US_1411
-      - US_1018
-      - CA_204
-      - US_1034
-      - US_1448
-      - US_1378
-      - US_1379
-      - Relay_🇫🇷FR-🇫🇷FR_454
-      - US_1036
-      - IT_503
-      - US_1444
-      - US_1024
-      - US_1460
-      - Pool_🇯🇵JP_522
-      - Pool_🇯🇵JP_510
-      - CA_207
-      - US_1030
-      - Relay_🇨🇳CN-🇩🇪DE_328
-      - Pool_🇯🇵JP_506
-      - US_975
-      - Pool_🇯🇵JP_507
-      - Relay_🇨🇳CN-🇹🇼TW_323
+      - ""
+      - " 2"
+      - " 3"
+      - 104.237.154.158:864
+      - 85.208.108.58:9101
+      - 85.208.108.58:8888
+      - " 4"
+      - 85.208.108.58:8080
+      - 美国-2.13MB/s(Youtube:不良林)
+      - " 5"
+      - 荷兰-3.32MB/s(Youtube:不良林)
+      - 加拿大-2.69MB/s(Youtube:不良林)
+      - 加拿大-1.79MB/s(Youtube:不良林)
+      - 85.208.108.18:7001
+      - 85.208.108.18:5001
+      - 172.99.188.71:6679
+      - 172.99.188.71:8119
+      - 保加利亚-2.50MB/s(Youtube:不良林)
+      - 172.99.188.71:8118
+      - 172.99.188.71:5000
+      - 185.167.116.250:9006
+      - " 6"
+      - 保加利亚-2.52MB/s(Youtube:不良林)
+      - 167.88.63.59:6697
+      - 美国-2.38MB/s(Youtube:不良林)
+      - 172.99.188.71:6379
+      - " 7"
+      - 加拿大-2.04MB/s(Youtube:不良林)
+      - " 8"
+      - NONE
+      - 172.99.188.71:8888
+      - 85.208.108.20:6679
+      - 172.99.188.71:5004
+      - " 9"
+      - 185.172.113.102:803
+      - 165.22.73.126:23335
+      - " 10"
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -705,410 +235,128 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - JP_535
-      - US_1563
-      - GB_458
-      - Relay_🇸🇬SG-🇸🇬SG_947
-      - US_1284
-      - US_1287
-      - Pool_🇳🇱NL_743
-      - US_1462
-      - Pool_🇳🇱NL_706
-      - US_1402
-      - NL_693
-      - Pool_🇳🇱NL_700
-      - Pool_🇳🇱NL_709
-      - US_1135
-      - US_1165
-      - GB_460
-      - US_1127
-      - US_1025
-      - US_1319
-      - US_1131
-      - US_1180
-      - US_1003
-      - Pool_🇳🇱NL_748
-      - US_1006
-      - US_1102
-      - US_1022
-      - US_1053
-      - US_1421
-      - US_1150
-      - US_1433
-      - Relay_🇺🇸US-🇺🇸US_1475
-      - US_1000
-      - US_1217
-      - US_1380
-      - Pool_🇳🇱NL_696
-      - US_1037
-      - US_1377
-      - US_1137
-      - US_1160
-      - US_1276
-      - US_1374
-      - US_1080
-      - US_1383
-      - US_1429
-      - US_1456
-      - NL_695
-      - US_1457
-      - US_1255
-      - US_1342
-      - US_1249
-      - US_1335
-      - US_1340
-      - US_1461
-      - US_1021
-      - US_999
-      - US_992
-      - US_1035
-      - US_1186
-      - US_1250
-      - US_1343
-      - US_1348
-      - US_1196
-      - US_1288
-      - Relay_🇨🇳CN-🇺🇸US_320
-      - US_1013
-      - US_1244
-      - US_1017
-      - US_1083
-      - US_1236
-      - US_1015
-      - US_1156
-      - ZZ_1657
-      - US_1064
-      - US_1308
-      - US_1344
-      - US_1375
-      - US_1248
-      - US_1466
-      - US_973
-      - US_1066
-      - US_1020
-      - US_1239
-      - US_1450
-      - US_1470
-      - ZZ_1615
-      - US_1004
-      - US_1008
-      - US_1023
-      - US_1057
-      - US_1058
-      - US_1062
-      - US_1010
-      - US_1074
-      - US_1240
-      - US_1026
-      - US_1260
-      - US_989
-      - US_1259
-      - US_1007
-      - US_1241
-      - US_1361
-      - Relay_🇨🇳CN-🇹🇼TW_284
-      - US_1144
-      - CA_201
-      - US_1307
-      - US_1129
-      - US_1382
-      - US_1376
-      - US_1019
-      - US_1411
-      - US_1018
-      - CA_204
-      - US_1034
-      - US_1448
-      - US_1378
-      - US_1379
-      - Relay_🇫🇷FR-🇫🇷FR_454
-      - US_1036
-      - IT_503
-      - US_1444
-      - US_1024
-      - US_1460
-      - Pool_🇯🇵JP_522
-      - Pool_🇯🇵JP_510
-      - CA_207
-      - US_1030
-      - Relay_🇨🇳CN-🇩🇪DE_328
-      - Pool_🇯🇵JP_506
-      - US_975
-      - Pool_🇯🇵JP_507
-      - Relay_🇨🇳CN-🇹🇼TW_323
+      - ""
+      - " 2"
+      - " 3"
+      - 104.237.154.158:864
+      - 85.208.108.58:9101
+      - 85.208.108.58:8888
+      - " 4"
+      - 85.208.108.58:8080
+      - 美国-2.13MB/s(Youtube:不良林)
+      - " 5"
+      - 荷兰-3.32MB/s(Youtube:不良林)
+      - 加拿大-2.69MB/s(Youtube:不良林)
+      - 加拿大-1.79MB/s(Youtube:不良林)
+      - 85.208.108.18:7001
+      - 85.208.108.18:5001
+      - 172.99.188.71:6679
+      - 172.99.188.71:8119
+      - 保加利亚-2.50MB/s(Youtube:不良林)
+      - 172.99.188.71:8118
+      - 172.99.188.71:5000
+      - 185.167.116.250:9006
+      - " 6"
+      - 保加利亚-2.52MB/s(Youtube:不良林)
+      - 167.88.63.59:6697
+      - 美国-2.38MB/s(Youtube:不良林)
+      - 172.99.188.71:6379
+      - " 7"
+      - 加拿大-2.04MB/s(Youtube:不良林)
+      - " 8"
+      - NONE
+      - 172.99.188.71:8888
+      - 85.208.108.20:6679
+      - 172.99.188.71:5004
+      - " 9"
+      - 185.172.113.102:803
+      - 165.22.73.126:23335
+      - " 10"
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - JP_535
-      - US_1563
-      - GB_458
-      - Relay_🇸🇬SG-🇸🇬SG_947
-      - US_1284
-      - US_1287
-      - Pool_🇳🇱NL_743
-      - US_1462
-      - Pool_🇳🇱NL_706
-      - US_1402
-      - NL_693
-      - Pool_🇳🇱NL_700
-      - Pool_🇳🇱NL_709
-      - US_1135
-      - US_1165
-      - GB_460
-      - US_1127
-      - US_1025
-      - US_1319
-      - US_1131
-      - US_1180
-      - US_1003
-      - Pool_🇳🇱NL_748
-      - US_1006
-      - US_1102
-      - US_1022
-      - US_1053
-      - US_1421
-      - US_1150
-      - US_1433
-      - Relay_🇺🇸US-🇺🇸US_1475
-      - US_1000
-      - US_1217
-      - US_1380
-      - Pool_🇳🇱NL_696
-      - US_1037
-      - US_1377
-      - US_1137
-      - US_1160
-      - US_1276
-      - US_1374
-      - US_1080
-      - US_1383
-      - US_1429
-      - US_1456
-      - NL_695
-      - US_1457
-      - US_1255
-      - US_1342
-      - US_1249
-      - US_1335
-      - US_1340
-      - US_1461
-      - US_1021
-      - US_999
-      - US_992
-      - US_1035
-      - US_1186
-      - US_1250
-      - US_1343
-      - US_1348
-      - US_1196
-      - US_1288
-      - Relay_🇨🇳CN-🇺🇸US_320
-      - US_1013
-      - US_1244
-      - US_1017
-      - US_1083
-      - US_1236
-      - US_1015
-      - US_1156
-      - ZZ_1657
-      - US_1064
-      - US_1308
-      - US_1344
-      - US_1375
-      - US_1248
-      - US_1466
-      - US_973
-      - US_1066
-      - US_1020
-      - US_1239
-      - US_1450
-      - US_1470
-      - ZZ_1615
-      - US_1004
-      - US_1008
-      - US_1023
-      - US_1057
-      - US_1058
-      - US_1062
-      - US_1010
-      - US_1074
-      - US_1240
-      - US_1026
-      - US_1260
-      - US_989
-      - US_1259
-      - US_1007
-      - US_1241
-      - US_1361
-      - Relay_🇨🇳CN-🇹🇼TW_284
-      - US_1144
-      - CA_201
-      - US_1307
-      - US_1129
-      - US_1382
-      - US_1376
-      - US_1019
-      - US_1411
-      - US_1018
-      - CA_204
-      - US_1034
-      - US_1448
-      - US_1378
-      - US_1379
-      - Relay_🇫🇷FR-🇫🇷FR_454
-      - US_1036
-      - IT_503
-      - US_1444
-      - US_1024
-      - US_1460
-      - Pool_🇯🇵JP_522
-      - Pool_🇯🇵JP_510
-      - CA_207
-      - US_1030
-      - Relay_🇨🇳CN-🇩🇪DE_328
-      - Pool_🇯🇵JP_506
-      - US_975
-      - Pool_🇯🇵JP_507
-      - Relay_🇨🇳CN-🇹🇼TW_323
+      - ""
+      - " 2"
+      - " 3"
+      - 104.237.154.158:864
+      - 85.208.108.58:9101
+      - 85.208.108.58:8888
+      - " 4"
+      - 85.208.108.58:8080
+      - 美国-2.13MB/s(Youtube:不良林)
+      - " 5"
+      - 荷兰-3.32MB/s(Youtube:不良林)
+      - 加拿大-2.69MB/s(Youtube:不良林)
+      - 加拿大-1.79MB/s(Youtube:不良林)
+      - 85.208.108.18:7001
+      - 85.208.108.18:5001
+      - 172.99.188.71:6679
+      - 172.99.188.71:8119
+      - 保加利亚-2.50MB/s(Youtube:不良林)
+      - 172.99.188.71:8118
+      - 172.99.188.71:5000
+      - 185.167.116.250:9006
+      - " 6"
+      - 保加利亚-2.52MB/s(Youtube:不良林)
+      - 167.88.63.59:6697
+      - 美国-2.38MB/s(Youtube:不良林)
+      - 172.99.188.71:6379
+      - " 7"
+      - 加拿大-2.04MB/s(Youtube:不良林)
+      - " 8"
+      - NONE
+      - 172.99.188.71:8888
+      - 85.208.108.20:6679
+      - 172.99.188.71:5004
+      - " 9"
+      - 185.172.113.102:803
+      - 165.22.73.126:23335
+      - " 10"
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - JP_535
-      - US_1563
-      - GB_458
-      - Relay_🇸🇬SG-🇸🇬SG_947
-      - US_1284
-      - US_1287
-      - Pool_🇳🇱NL_743
-      - US_1462
-      - Pool_🇳🇱NL_706
-      - US_1402
-      - NL_693
-      - Pool_🇳🇱NL_700
-      - Pool_🇳🇱NL_709
-      - US_1135
-      - US_1165
-      - GB_460
-      - US_1127
-      - US_1025
-      - US_1319
-      - US_1131
-      - US_1180
-      - US_1003
-      - Pool_🇳🇱NL_748
-      - US_1006
-      - US_1102
-      - US_1022
-      - US_1053
-      - US_1421
-      - US_1150
-      - US_1433
-      - Relay_🇺🇸US-🇺🇸US_1475
-      - US_1000
-      - US_1217
-      - US_1380
-      - Pool_🇳🇱NL_696
-      - US_1037
-      - US_1377
-      - US_1137
-      - US_1160
-      - US_1276
-      - US_1374
-      - US_1080
-      - US_1383
-      - US_1429
-      - US_1456
-      - NL_695
-      - US_1457
-      - US_1255
-      - US_1342
-      - US_1249
-      - US_1335
-      - US_1340
-      - US_1461
-      - US_1021
-      - US_999
-      - US_992
-      - US_1035
-      - US_1186
-      - US_1250
-      - US_1343
-      - US_1348
-      - US_1196
-      - US_1288
-      - Relay_🇨🇳CN-🇺🇸US_320
-      - US_1013
-      - US_1244
-      - US_1017
-      - US_1083
-      - US_1236
-      - US_1015
-      - US_1156
-      - ZZ_1657
-      - US_1064
-      - US_1308
-      - US_1344
-      - US_1375
-      - US_1248
-      - US_1466
-      - US_973
-      - US_1066
-      - US_1020
-      - US_1239
-      - US_1450
-      - US_1470
-      - ZZ_1615
-      - US_1004
-      - US_1008
-      - US_1023
-      - US_1057
-      - US_1058
-      - US_1062
-      - US_1010
-      - US_1074
-      - US_1240
-      - US_1026
-      - US_1260
-      - US_989
-      - US_1259
-      - US_1007
-      - US_1241
-      - US_1361
-      - Relay_🇨🇳CN-🇹🇼TW_284
-      - US_1144
-      - CA_201
-      - US_1307
-      - US_1129
-      - US_1382
-      - US_1376
-      - US_1019
-      - US_1411
-      - US_1018
-      - CA_204
-      - US_1034
-      - US_1448
-      - US_1378
-      - US_1379
-      - Relay_🇫🇷FR-🇫🇷FR_454
-      - US_1036
-      - IT_503
-      - US_1444
-      - US_1024
-      - US_1460
-      - Pool_🇯🇵JP_522
-      - Pool_🇯🇵JP_510
-      - CA_207
-      - US_1030
-      - Relay_🇨🇳CN-🇩🇪DE_328
-      - Pool_🇯🇵JP_506
-      - US_975
-      - Pool_🇯🇵JP_507
-      - Relay_🇨🇳CN-🇹🇼TW_323
+      - ""
+      - " 2"
+      - " 3"
+      - 104.237.154.158:864
+      - 85.208.108.58:9101
+      - 85.208.108.58:8888
+      - " 4"
+      - 85.208.108.58:8080
+      - 美国-2.13MB/s(Youtube:不良林)
+      - " 5"
+      - 荷兰-3.32MB/s(Youtube:不良林)
+      - 加拿大-2.69MB/s(Youtube:不良林)
+      - 加拿大-1.79MB/s(Youtube:不良林)
+      - 85.208.108.18:7001
+      - 85.208.108.18:5001
+      - 172.99.188.71:6679
+      - 172.99.188.71:8119
+      - 保加利亚-2.50MB/s(Youtube:不良林)
+      - 172.99.188.71:8118
+      - 172.99.188.71:5000
+      - 185.167.116.250:9006
+      - " 6"
+      - 保加利亚-2.52MB/s(Youtube:不良林)
+      - 167.88.63.59:6697
+      - 美国-2.38MB/s(Youtube:不良林)
+      - 172.99.188.71:6379
+      - " 7"
+      - 加拿大-2.04MB/s(Youtube:不良林)
+      - " 8"
+      - NONE
+      - 172.99.188.71:8888
+      - 85.208.108.20:6679
+      - 172.99.188.71:5004
+      - " 9"
+      - 185.172.113.102:803
+      - 165.22.73.126:23335
+      - " 10"
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1124,137 +372,43 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - JP_535
-      - US_1563
-      - GB_458
-      - Relay_🇸🇬SG-🇸🇬SG_947
-      - US_1284
-      - US_1287
-      - Pool_🇳🇱NL_743
-      - US_1462
-      - Pool_🇳🇱NL_706
-      - US_1402
-      - NL_693
-      - Pool_🇳🇱NL_700
-      - Pool_🇳🇱NL_709
-      - US_1135
-      - US_1165
-      - GB_460
-      - US_1127
-      - US_1025
-      - US_1319
-      - US_1131
-      - US_1180
-      - US_1003
-      - Pool_🇳🇱NL_748
-      - US_1006
-      - US_1102
-      - US_1022
-      - US_1053
-      - US_1421
-      - US_1150
-      - US_1433
-      - Relay_🇺🇸US-🇺🇸US_1475
-      - US_1000
-      - US_1217
-      - US_1380
-      - Pool_🇳🇱NL_696
-      - US_1037
-      - US_1377
-      - US_1137
-      - US_1160
-      - US_1276
-      - US_1374
-      - US_1080
-      - US_1383
-      - US_1429
-      - US_1456
-      - NL_695
-      - US_1457
-      - US_1255
-      - US_1342
-      - US_1249
-      - US_1335
-      - US_1340
-      - US_1461
-      - US_1021
-      - US_999
-      - US_992
-      - US_1035
-      - US_1186
-      - US_1250
-      - US_1343
-      - US_1348
-      - US_1196
-      - US_1288
-      - Relay_🇨🇳CN-🇺🇸US_320
-      - US_1013
-      - US_1244
-      - US_1017
-      - US_1083
-      - US_1236
-      - US_1015
-      - US_1156
-      - ZZ_1657
-      - US_1064
-      - US_1308
-      - US_1344
-      - US_1375
-      - US_1248
-      - US_1466
-      - US_973
-      - US_1066
-      - US_1020
-      - US_1239
-      - US_1450
-      - US_1470
-      - ZZ_1615
-      - US_1004
-      - US_1008
-      - US_1023
-      - US_1057
-      - US_1058
-      - US_1062
-      - US_1010
-      - US_1074
-      - US_1240
-      - US_1026
-      - US_1260
-      - US_989
-      - US_1259
-      - US_1007
-      - US_1241
-      - US_1361
-      - Relay_🇨🇳CN-🇹🇼TW_284
-      - US_1144
-      - CA_201
-      - US_1307
-      - US_1129
-      - US_1382
-      - US_1376
-      - US_1019
-      - US_1411
-      - US_1018
-      - CA_204
-      - US_1034
-      - US_1448
-      - US_1378
-      - US_1379
-      - Relay_🇫🇷FR-🇫🇷FR_454
-      - US_1036
-      - IT_503
-      - US_1444
-      - US_1024
-      - US_1460
-      - Pool_🇯🇵JP_522
-      - Pool_🇯🇵JP_510
-      - CA_207
-      - US_1030
-      - Relay_🇨🇳CN-🇩🇪DE_328
-      - Pool_🇯🇵JP_506
-      - US_975
-      - Pool_🇯🇵JP_507
-      - Relay_🇨🇳CN-🇹🇼TW_323
+      - ""
+      - " 2"
+      - " 3"
+      - 104.237.154.158:864
+      - 85.208.108.58:9101
+      - 85.208.108.58:8888
+      - " 4"
+      - 85.208.108.58:8080
+      - 美国-2.13MB/s(Youtube:不良林)
+      - " 5"
+      - 荷兰-3.32MB/s(Youtube:不良林)
+      - 加拿大-2.69MB/s(Youtube:不良林)
+      - 加拿大-1.79MB/s(Youtube:不良林)
+      - 85.208.108.18:7001
+      - 85.208.108.18:5001
+      - 172.99.188.71:6679
+      - 172.99.188.71:8119
+      - 保加利亚-2.50MB/s(Youtube:不良林)
+      - 172.99.188.71:8118
+      - 172.99.188.71:5000
+      - 185.167.116.250:9006
+      - " 6"
+      - 保加利亚-2.52MB/s(Youtube:不良林)
+      - 167.88.63.59:6697
+      - 美国-2.38MB/s(Youtube:不良林)
+      - 172.99.188.71:6379
+      - " 7"
+      - 加拿大-2.04MB/s(Youtube:不良林)
+      - " 8"
+      - NONE
+      - 172.99.188.71:8888
+      - 85.208.108.20:6679
+      - 172.99.188.71:5004
+      - " 9"
+      - 185.172.113.102:803
+      - 165.22.73.126:23335
+      - " 10"
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
