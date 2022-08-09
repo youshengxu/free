@@ -5,231 +5,147 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: "", server: c71s4.jamjams3.net, port: 10922, type: vmess, uuid: 633aa237-6edc-4f81-861c-e0667d97f45d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 104.243.30.252:246, server: 104.243.30.252, port: 246, type: ss, cipher: aes-256-cfb, password: bwhskrskr03, udp: true}
-  - {name: SG_937, server: 18.141.146.58, port: 43950, type: vmess, uuid: 2f1dce9c-c5c8-4007-bade-bac837db928d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 18.141.146.58}, udp: true}
-  - {name: NONE, server: 103.56.60.185, port: 3381, type: trojan, password: ab29af390ff9f4a7, skip-cert-verify: true, udp: true}
-  - {name: 172.96.192.100:246, server: 172.96.192.100, port: 246, type: ss, cipher: aes-256-cfb, password: bwhskrskr05, udp: true}
-  - {name: " 2", server: erqi.live, port: 443, type: vmess, uuid: 7caa244f-37f1-4b0c-cc12-0c2d392d4f6a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: erqi.live}, udp: true}
-  - {name: 中国-8.76MB/s(Youtube:不良林), server: az.az-bgp.chuangshi999.xyz, port: 30484, type: trojan, password: 64df808e-9fd3-4eb0-afe8-7a800984d321, sni: az.az-bgp.chuangshi999.xyz, skip-cert-verify: true, udp: true}
-  - {name: RU_900, server: 45.11.92.36, port: 30408, type: vmess, uuid: f397c771-9adf-4880-8611-8ac8b9ce24f5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: " 3", server: c71s5.jamjams3.net, port: 10922, type: vmess, uuid: 633aa237-6edc-4f81-861c-e0667d97f45d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: " 4", server: c71s3.jamjams3.net, port: 10922, type: vmess, uuid: 633aa237-6edc-4f81-861c-e0667d97f45d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: NONE 2, server: cm.spacez.cloud, port: 30003, type: trojan, password: c9a3a61d-5d49-4158-9e60-6fa32684b122, sni: cm.spacez.cloud, skip-cert-verify: true, udp: true}
-  - {name: " 5", server: aus01.xiaohouzi.club, port: 10058, type: vmess, uuid: 6dc17fdb-9bcd-3231-ad6a-6af308aef4cc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US_1538, server: 20.205.111.107, port: 53, type: vmess, uuid: bf5fe104-ebaa-4369-bb81-4aa62a386523, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 20.205.111.107}, udp: true}
-  - {name: " 6", server: 20.25.141.210, port: 30158, type: vmess, uuid: 79e846d5-acc0-49af-d8a7-ca8816842896, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 51.195.136.209:50004, server: 51.195.136.209, port: 50004, type: ss, cipher: aes-256-cfb, password: !<str> 4415934295, udp: true}
-  - {name: " 7", server: lli.poohuuc66.tk, port: 58936, type: vmess, uuid: 923fb377-d3c1-4773-e07b-c677575b5c41, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 德国-1.08MB/s(Youtube:不良林), server: 193.108.117.75, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: NONE 3, server: 150.230.23.0, port: 44616, type: trojan, password: dbdd4673-06e7-4a53-adb7-aa4232df529e, skip-cert-verify: true, udp: true}
-  - {name: 78.129.253.9:809, server: 78.129.253.9, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: 美国-4.06MB/s(Youtube:不良林), server: 45.11.92.36, port: 30408, type: vmess, uuid: f397c771-9adf-4880-8611-8ac8b9ce24f5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 澳大利亚-1.24MB/s(Youtube:不良林), server: 185.167.116.252, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH, udp: true}
-  - {name: RO_786, server: 185.126.116.119, port: 9058, type: ss, cipher: aes-256-cfb, password: dML2sfhbVwvtfNPe, udp: true}
-  - {name: 193.108.117.75:2376, server: 193.108.117.75, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 185.126.116.119:9070, server: 185.126.116.119, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH, udp: true}
-  - {name: US_1512, server: 198.200.51.237, port: 51144, type: vmess, uuid: 5a3e68d5-9ee0-4eea-b4c2-436692179924, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: AU_57, server: 185.167.116.252, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_1519, server: jm.yd02.paopaocloud.cyou, port: 10002, type: vmess, uuid: c36987a5-593a-3cf3-9813-edb290baf2f4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: jm.yd02.paopaocloud.cyou}, udp: true}
-  - {name: 193.108.117.75:8080, server: 193.108.117.75, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: NONE 4, server: 223.17.43.52, port: 44601, type: trojan, password: dbdd4673-06e7-4a53-adb7-aa4232df529e, skip-cert-verify: true, udp: true}
-  - {name: NONE 5, server: 104.168.144.215, port: 443, type: trojan, password: srGSKqR5Fv, skip-cert-verify: true, udp: true}
-  - {name: 澳大利亚-1.44MB/s(Youtube:不良林), server: 185.167.116.252, port: 9080, type: ss, cipher: aes-256-cfb, password: VP8ZPxQpJtZRCjfZ, udp: true}
-  - {name: 213.183.53.198:9003, server: 213.183.53.198, port: 9003, type: ss, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP, udp: true}
-  - {name: 172.99.190.61:8881, server: 172.99.190.61, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: US_1042, server: 172.99.190.61, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 172.99.190.61:3306, server: 172.99.190.61, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_1329, server: 172.99.190.61, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 172.99.190.61:5601, server: 172.99.190.61, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 英国-1.17MB/s(Youtube:不良林), server: 172.99.190.61, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 193.108.117.75:443, server: 193.108.117.75, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: LT_556, server: 213.183.63.221, port: 9057, type: ss, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z, udp: true}
-  - {name: 172.99.190.61:8090, server: 172.99.190.61, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: LT_591, server: 213.183.53.198, port: 9059, type: ss, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY, udp: true}
-  - {name: 澳大利亚-1.54MB/s(Youtube:不良林), server: 185.167.116.252, port: 9008, type: ss, cipher: aes-256-cfb, password: y9VURyNzJWNRYEGQ, udp: true}
-  - {name: 78.129.253.9:808, server: 78.129.253.9, port: 808, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: 193.108.117.75:8881, server: 193.108.117.75, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: JP_498, server: 146.56.118.227, port: 2052, type: vmess, uuid: 448a9087-28f3-4fe4-fa49-36c912e0f498, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /update, ws-headers: {Host: 146.56.118.227}, udp: true}
-  - {name: 213.183.53.198:9032, server: 213.183.53.198, port: 9032, type: ss, cipher: aes-256-cfb, password: UWZQeLRWnkqgkseq, udp: true}
-  - {name: AU_83, server: 43.128.45.251, port: 20010, type: vmess, uuid: 741a4372-d46b-42a6-b67f-3f8f28a43b63, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 185.167.116.252:9027, server: 185.167.116.252, port: 9027, type: ss, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8, udp: true}
-  - {name: LT_576, server: 213.183.63.221, port: 9033, type: ss, cipher: aes-256-cfb, password: UTJA57ypk2XKQpnm, udp: true}
-  - {name: 167.88.63.59:443, server: 167.88.63.59, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: LT_602, server: 213.183.53.198, port: 9093, type: ss, cipher: aes-256-cfb, password: wfLC2y7rzZyCmuyt, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_1499, server: 107.173.83.214, port: 37541, type: vmess, uuid: ef59a586-0532-4763-f353-948eb413f00d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US_1332, server: 93.179.112.70, port: 253, type: ss, cipher: aes-256-cfb, password: bwhskrskr06, udp: true}
+  - {name: HK_475, server: 20.187.95.117, port: 8443, type: trojan, password: 190e2a95-63f0-4a9c-9aef-9f2ec6e542de, skip-cert-verify: true, udp: true}
+  - {name: US_1405, server: 172.96.192.58, port: 254, type: ss, cipher: aes-256-cfb, password: bwhskrskr03, udp: true}
+  - {name: US_1498, server: 23.227.194.145, port: 36195, type: vmess, uuid: fae6eae5-a5b5-41ba-b660-dc067340048f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_1598, server: azgy001.xiba1.xyz, port: 20711, type: trojan, password: b2100b79-d571-354a-b706-6b0f7b55d343, sni: azgy001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: LT_599, server: 213.183.53.198, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_1580, server: azgy001.xiba1.xyz, port: 20788, type: trojan, password: b2100b79-d571-354a-b706-6b0f7b55d343, sni: azgy001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_1548, server: azgy001.xiba1.xyz, port: 20783, type: trojan, password: b2100b79-d571-354a-b706-6b0f7b55d343, sni: azgy001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_1576, server: azgy001.xiba1.xyz, port: 20785, type: trojan, password: b2100b79-d571-354a-b706-6b0f7b55d343, sni: azgy001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_1563, server: azgy001.xiba1.xyz, port: 20787, type: trojan, password: b2100b79-d571-354a-b706-6b0f7b55d343, sni: azgy001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_1593, server: azgy001.xiba1.xyz, port: 20790, type: trojan, password: b2100b79-d571-354a-b706-6b0f7b55d343, sni: azgy001.xiba1.xyz, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇯🇵JP-🇯🇵JP_534, server: 730jp.ok365.cyou, port: 443, type: trojan, password: 43a3a833-c2cb-426c-bf0d-51e8e7f172f1, sni: 730jp.ok365.cyou, skip-cert-verify: true, udp: true}
+  - {name: AU_49, server: 185.167.116.252, port: 9001, type: ss, cipher: aes-256-cfb, password: UkXRsXvR6buDMG2Y, udp: true}
+  - {name: LT_539, server: 213.183.53.198, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
+  - {name: AU_52, server: 185.167.116.252, port: 9006, type: ss, cipher: aes-256-cfb, password: FAdUvMJUq5vDgKEq, udp: true}
+  - {name: Relay_🇨🇦CA-🇨🇦CA_232, server: 727tw01.ok365.cyou, port: 443, type: trojan, password: 43a3a833-c2cb-426c-bf0d-51e8e7f172f1, sni: 727tw01.ok365.cyou, skip-cert-verify: true, udp: true}
+  - {name: ZZ_1728, server: 103.153.141.202, port: 8848, type: trojan, password: 190e2a95-63f0-4a9c-9aef-9f2ec6e542de, skip-cert-verify: true, udp: true}
+  - {name: LT_565, server: 213.183.53.198, port: 9003, type: ss, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP, udp: true}
+  - {name: ZZ_1721, server: 103.168.56.67, port: 8848, type: trojan, password: 190e2a95-63f0-4a9c-9aef-9f2ec6e542de, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇨🇦CA-🇨🇦CA_234, server: 730tw01.ok365.cyou, port: 443, type: trojan, password: 43a3a833-c2cb-426c-bf0d-51e8e7f172f1, sni: 730tw01.ok365.cyou, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇨🇦CA-🇨🇦CA_233, server: 727tw02.ok365.cyou, port: 25689, type: trojan, password: 43a3a833-c2cb-426c-bf0d-51e8e7f172f1, sni: 727tw02.ok365.cyou, skip-cert-verify: true, udp: true}
+  - {name: DE_334, server: 193.108.117.75, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: RU_915, server: 195.133.53.192, port: 14369, type: vmess, uuid: 2331affa-1194-45ae-9457-3746120c4751, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 195.133.53.192}, udp: true}
+  - {name: Relay_🇨🇳CN-🇹🇼TW_292, server: 120.240.55.137, port: 38201, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: 120.240.55.137}, udp: true}
+  - {name: RU_918, server: 45.11.92.100, port: 80, type: vmess, uuid: e026af69-5e36-4cd5-d40e-347f2955a3f6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 45.11.92.100}, udp: true}
+  - {name: DE_338, server: 193.108.117.75, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: AU_92, server: 43.128.45.251, port: 15292, type: vmess, uuid: 7b3fe31b-98e8-4c14-acfd-c19c863c9dd1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: HK 3 → TG@SCINV, server: 223.17.43.52, port: 44601, type: trojan, password: dbdd4673-06e7-4a53-adb7-aa4232df529e, skip-cert-verify: true, udp: true}
+  - {name: NL 1 → TG@SCINV, server: 41.216.177.41, port: 443, type: trojan, password: 274c1b23-2bfe-40ac-943c-ebc1aa044b22, skip-cert-verify: true, udp: true}
+  - {name: DE_328, server: 193.108.117.75, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - ""
-      - 104.243.30.252:246
-      - SG_937
-      - NONE
-      - 172.96.192.100:246
-      - " 2"
-      - 中国-8.76MB/s(Youtube:不良林)
-      - RU_900
-      - " 3"
-      - " 4"
-      - NONE 2
-      - " 5"
-      - US_1538
-      - " 6"
-      - 51.195.136.209:50004
-      - " 7"
-      - 德国-1.08MB/s(Youtube:不良林)
-      - NONE 3
-      - 78.129.253.9:809
-      - 美国-4.06MB/s(Youtube:不良林)
-      - 澳大利亚-1.24MB/s(Youtube:不良林)
-      - RO_786
-      - 193.108.117.75:2376
-      - 185.126.116.119:9070
-      - US_1512
-      - AU_57
-      - Relay_🇺🇸US-🇺🇸US_1519
-      - 193.108.117.75:8080
-      - NONE 4
-      - NONE 5
-      - 澳大利亚-1.44MB/s(Youtube:不良林)
-      - 213.183.53.198:9003
-      - 172.99.190.61:8881
-      - US_1042
-      - 172.99.190.61:3306
-      - US_1329
-      - 172.99.190.61:5601
-      - 英国-1.17MB/s(Youtube:不良林)
-      - 193.108.117.75:443
-      - LT_556
-      - 172.99.190.61:8090
-      - LT_591
-      - 澳大利亚-1.54MB/s(Youtube:不良林)
-      - 78.129.253.9:808
-      - 193.108.117.75:8881
-      - JP_498
-      - 213.183.53.198:9032
-      - AU_83
-      - 185.167.116.252:9027
-      - LT_576
-      - 167.88.63.59:443
-      - LT_602
+      - Relay_🇺🇸US-🇺🇸US_1499
+      - US_1332
+      - HK_475
+      - US_1405
+      - US_1498
+      - Relay_🇺🇸US-🇺🇸US_1598
+      - LT_599
+      - Relay_🇺🇸US-🇺🇸US_1580
+      - Relay_🇺🇸US-🇺🇸US_1548
+      - Relay_🇺🇸US-🇺🇸US_1576
+      - Relay_🇺🇸US-🇺🇸US_1563
+      - Relay_🇺🇸US-🇺🇸US_1593
+      - Relay_🇯🇵JP-🇯🇵JP_534
+      - AU_49
+      - LT_539
+      - AU_52
+      - Relay_🇨🇦CA-🇨🇦CA_232
+      - ZZ_1728
+      - LT_565
+      - ZZ_1721
+      - Relay_🇨🇦CA-🇨🇦CA_234
+      - Relay_🇨🇦CA-🇨🇦CA_233
+      - DE_334
+      - RU_915
+      - Relay_🇨🇳CN-🇹🇼TW_292
+      - RU_918
+      - DE_338
+      - AU_92
+      - HK 3 → TG@SCINV
+      - NL 1 → TG@SCINV
+      - DE_328
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - ""
-      - 104.243.30.252:246
-      - SG_937
-      - NONE
-      - 172.96.192.100:246
-      - " 2"
-      - 中国-8.76MB/s(Youtube:不良林)
-      - RU_900
-      - " 3"
-      - " 4"
-      - NONE 2
-      - " 5"
-      - US_1538
-      - " 6"
-      - 51.195.136.209:50004
-      - " 7"
-      - 德国-1.08MB/s(Youtube:不良林)
-      - NONE 3
-      - 78.129.253.9:809
-      - 美国-4.06MB/s(Youtube:不良林)
-      - 澳大利亚-1.24MB/s(Youtube:不良林)
-      - RO_786
-      - 193.108.117.75:2376
-      - 185.126.116.119:9070
-      - US_1512
-      - AU_57
-      - Relay_🇺🇸US-🇺🇸US_1519
-      - 193.108.117.75:8080
-      - NONE 4
-      - NONE 5
-      - 澳大利亚-1.44MB/s(Youtube:不良林)
-      - 213.183.53.198:9003
-      - 172.99.190.61:8881
-      - US_1042
-      - 172.99.190.61:3306
-      - US_1329
-      - 172.99.190.61:5601
-      - 英国-1.17MB/s(Youtube:不良林)
-      - 193.108.117.75:443
-      - LT_556
-      - 172.99.190.61:8090
-      - LT_591
-      - 澳大利亚-1.54MB/s(Youtube:不良林)
-      - 78.129.253.9:808
-      - 193.108.117.75:8881
-      - JP_498
-      - 213.183.53.198:9032
-      - AU_83
-      - 185.167.116.252:9027
-      - LT_576
-      - 167.88.63.59:443
-      - LT_602
+      - Relay_🇺🇸US-🇺🇸US_1499
+      - US_1332
+      - HK_475
+      - US_1405
+      - US_1498
+      - Relay_🇺🇸US-🇺🇸US_1598
+      - LT_599
+      - Relay_🇺🇸US-🇺🇸US_1580
+      - Relay_🇺🇸US-🇺🇸US_1548
+      - Relay_🇺🇸US-🇺🇸US_1576
+      - Relay_🇺🇸US-🇺🇸US_1563
+      - Relay_🇺🇸US-🇺🇸US_1593
+      - Relay_🇯🇵JP-🇯🇵JP_534
+      - AU_49
+      - LT_539
+      - AU_52
+      - Relay_🇨🇦CA-🇨🇦CA_232
+      - ZZ_1728
+      - LT_565
+      - ZZ_1721
+      - Relay_🇨🇦CA-🇨🇦CA_234
+      - Relay_🇨🇦CA-🇨🇦CA_233
+      - DE_334
+      - RU_915
+      - Relay_🇨🇳CN-🇹🇼TW_292
+      - RU_918
+      - DE_338
+      - AU_92
+      - HK 3 → TG@SCINV
+      - NL 1 → TG@SCINV
+      - DE_328
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - ""
-      - 104.243.30.252:246
-      - SG_937
-      - NONE
-      - 172.96.192.100:246
-      - " 2"
-      - 中国-8.76MB/s(Youtube:不良林)
-      - RU_900
-      - " 3"
-      - " 4"
-      - NONE 2
-      - " 5"
-      - US_1538
-      - " 6"
-      - 51.195.136.209:50004
-      - " 7"
-      - 德国-1.08MB/s(Youtube:不良林)
-      - NONE 3
-      - 78.129.253.9:809
-      - 美国-4.06MB/s(Youtube:不良林)
-      - 澳大利亚-1.24MB/s(Youtube:不良林)
-      - RO_786
-      - 193.108.117.75:2376
-      - 185.126.116.119:9070
-      - US_1512
-      - AU_57
-      - Relay_🇺🇸US-🇺🇸US_1519
-      - 193.108.117.75:8080
-      - NONE 4
-      - NONE 5
-      - 澳大利亚-1.44MB/s(Youtube:不良林)
-      - 213.183.53.198:9003
-      - 172.99.190.61:8881
-      - US_1042
-      - 172.99.190.61:3306
-      - US_1329
-      - 172.99.190.61:5601
-      - 英国-1.17MB/s(Youtube:不良林)
-      - 193.108.117.75:443
-      - LT_556
-      - 172.99.190.61:8090
-      - LT_591
-      - 澳大利亚-1.54MB/s(Youtube:不良林)
-      - 78.129.253.9:808
-      - 193.108.117.75:8881
-      - JP_498
-      - 213.183.53.198:9032
-      - AU_83
-      - 185.167.116.252:9027
-      - LT_576
-      - 167.88.63.59:443
-      - LT_602
+      - Relay_🇺🇸US-🇺🇸US_1499
+      - US_1332
+      - HK_475
+      - US_1405
+      - US_1498
+      - Relay_🇺🇸US-🇺🇸US_1598
+      - LT_599
+      - Relay_🇺🇸US-🇺🇸US_1580
+      - Relay_🇺🇸US-🇺🇸US_1548
+      - Relay_🇺🇸US-🇺🇸US_1576
+      - Relay_🇺🇸US-🇺🇸US_1563
+      - Relay_🇺🇸US-🇺🇸US_1593
+      - Relay_🇯🇵JP-🇯🇵JP_534
+      - AU_49
+      - LT_539
+      - AU_52
+      - Relay_🇨🇦CA-🇨🇦CA_232
+      - ZZ_1728
+      - LT_565
+      - ZZ_1721
+      - Relay_🇨🇦CA-🇨🇦CA_234
+      - Relay_🇨🇦CA-🇨🇦CA_233
+      - DE_334
+      - RU_915
+      - Relay_🇨🇳CN-🇹🇼TW_292
+      - RU_918
+      - DE_338
+      - AU_92
+      - HK 3 → TG@SCINV
+      - NL 1 → TG@SCINV
+      - DE_328
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -248,58 +164,37 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - ""
-      - 104.243.30.252:246
-      - SG_937
-      - NONE
-      - 172.96.192.100:246
-      - " 2"
-      - 中国-8.76MB/s(Youtube:不良林)
-      - RU_900
-      - " 3"
-      - " 4"
-      - NONE 2
-      - " 5"
-      - US_1538
-      - " 6"
-      - 51.195.136.209:50004
-      - " 7"
-      - 德国-1.08MB/s(Youtube:不良林)
-      - NONE 3
-      - 78.129.253.9:809
-      - 美国-4.06MB/s(Youtube:不良林)
-      - 澳大利亚-1.24MB/s(Youtube:不良林)
-      - RO_786
-      - 193.108.117.75:2376
-      - 185.126.116.119:9070
-      - US_1512
-      - AU_57
-      - Relay_🇺🇸US-🇺🇸US_1519
-      - 193.108.117.75:8080
-      - NONE 4
-      - NONE 5
-      - 澳大利亚-1.44MB/s(Youtube:不良林)
-      - 213.183.53.198:9003
-      - 172.99.190.61:8881
-      - US_1042
-      - 172.99.190.61:3306
-      - US_1329
-      - 172.99.190.61:5601
-      - 英国-1.17MB/s(Youtube:不良林)
-      - 193.108.117.75:443
-      - LT_556
-      - 172.99.190.61:8090
-      - LT_591
-      - 澳大利亚-1.54MB/s(Youtube:不良林)
-      - 78.129.253.9:808
-      - 193.108.117.75:8881
-      - JP_498
-      - 213.183.53.198:9032
-      - AU_83
-      - 185.167.116.252:9027
-      - LT_576
-      - 167.88.63.59:443
-      - LT_602
+      - Relay_🇺🇸US-🇺🇸US_1499
+      - US_1332
+      - HK_475
+      - US_1405
+      - US_1498
+      - Relay_🇺🇸US-🇺🇸US_1598
+      - LT_599
+      - Relay_🇺🇸US-🇺🇸US_1580
+      - Relay_🇺🇸US-🇺🇸US_1548
+      - Relay_🇺🇸US-🇺🇸US_1576
+      - Relay_🇺🇸US-🇺🇸US_1563
+      - Relay_🇺🇸US-🇺🇸US_1593
+      - Relay_🇯🇵JP-🇯🇵JP_534
+      - AU_49
+      - LT_539
+      - AU_52
+      - Relay_🇨🇦CA-🇨🇦CA_232
+      - ZZ_1728
+      - LT_565
+      - ZZ_1721
+      - Relay_🇨🇦CA-🇨🇦CA_234
+      - Relay_🇨🇦CA-🇨🇦CA_233
+      - DE_334
+      - RU_915
+      - Relay_🇨🇳CN-🇹🇼TW_292
+      - RU_918
+      - DE_338
+      - AU_92
+      - HK 3 → TG@SCINV
+      - NL 1 → TG@SCINV
+      - DE_328
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -310,173 +205,110 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - ""
-      - 104.243.30.252:246
-      - SG_937
-      - NONE
-      - 172.96.192.100:246
-      - " 2"
-      - 中国-8.76MB/s(Youtube:不良林)
-      - RU_900
-      - " 3"
-      - " 4"
-      - NONE 2
-      - " 5"
-      - US_1538
-      - " 6"
-      - 51.195.136.209:50004
-      - " 7"
-      - 德国-1.08MB/s(Youtube:不良林)
-      - NONE 3
-      - 78.129.253.9:809
-      - 美国-4.06MB/s(Youtube:不良林)
-      - 澳大利亚-1.24MB/s(Youtube:不良林)
-      - RO_786
-      - 193.108.117.75:2376
-      - 185.126.116.119:9070
-      - US_1512
-      - AU_57
-      - Relay_🇺🇸US-🇺🇸US_1519
-      - 193.108.117.75:8080
-      - NONE 4
-      - NONE 5
-      - 澳大利亚-1.44MB/s(Youtube:不良林)
-      - 213.183.53.198:9003
-      - 172.99.190.61:8881
-      - US_1042
-      - 172.99.190.61:3306
-      - US_1329
-      - 172.99.190.61:5601
-      - 英国-1.17MB/s(Youtube:不良林)
-      - 193.108.117.75:443
-      - LT_556
-      - 172.99.190.61:8090
-      - LT_591
-      - 澳大利亚-1.54MB/s(Youtube:不良林)
-      - 78.129.253.9:808
-      - 193.108.117.75:8881
-      - JP_498
-      - 213.183.53.198:9032
-      - AU_83
-      - 185.167.116.252:9027
-      - LT_576
-      - 167.88.63.59:443
-      - LT_602
+      - Relay_🇺🇸US-🇺🇸US_1499
+      - US_1332
+      - HK_475
+      - US_1405
+      - US_1498
+      - Relay_🇺🇸US-🇺🇸US_1598
+      - LT_599
+      - Relay_🇺🇸US-🇺🇸US_1580
+      - Relay_🇺🇸US-🇺🇸US_1548
+      - Relay_🇺🇸US-🇺🇸US_1576
+      - Relay_🇺🇸US-🇺🇸US_1563
+      - Relay_🇺🇸US-🇺🇸US_1593
+      - Relay_🇯🇵JP-🇯🇵JP_534
+      - AU_49
+      - LT_539
+      - AU_52
+      - Relay_🇨🇦CA-🇨🇦CA_232
+      - ZZ_1728
+      - LT_565
+      - ZZ_1721
+      - Relay_🇨🇦CA-🇨🇦CA_234
+      - Relay_🇨🇦CA-🇨🇦CA_233
+      - DE_334
+      - RU_915
+      - Relay_🇨🇳CN-🇹🇼TW_292
+      - RU_918
+      - DE_338
+      - AU_92
+      - HK 3 → TG@SCINV
+      - NL 1 → TG@SCINV
+      - DE_328
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - ""
-      - 104.243.30.252:246
-      - SG_937
-      - NONE
-      - 172.96.192.100:246
-      - " 2"
-      - 中国-8.76MB/s(Youtube:不良林)
-      - RU_900
-      - " 3"
-      - " 4"
-      - NONE 2
-      - " 5"
-      - US_1538
-      - " 6"
-      - 51.195.136.209:50004
-      - " 7"
-      - 德国-1.08MB/s(Youtube:不良林)
-      - NONE 3
-      - 78.129.253.9:809
-      - 美国-4.06MB/s(Youtube:不良林)
-      - 澳大利亚-1.24MB/s(Youtube:不良林)
-      - RO_786
-      - 193.108.117.75:2376
-      - 185.126.116.119:9070
-      - US_1512
-      - AU_57
-      - Relay_🇺🇸US-🇺🇸US_1519
-      - 193.108.117.75:8080
-      - NONE 4
-      - NONE 5
-      - 澳大利亚-1.44MB/s(Youtube:不良林)
-      - 213.183.53.198:9003
-      - 172.99.190.61:8881
-      - US_1042
-      - 172.99.190.61:3306
-      - US_1329
-      - 172.99.190.61:5601
-      - 英国-1.17MB/s(Youtube:不良林)
-      - 193.108.117.75:443
-      - LT_556
-      - 172.99.190.61:8090
-      - LT_591
-      - 澳大利亚-1.54MB/s(Youtube:不良林)
-      - 78.129.253.9:808
-      - 193.108.117.75:8881
-      - JP_498
-      - 213.183.53.198:9032
-      - AU_83
-      - 185.167.116.252:9027
-      - LT_576
-      - 167.88.63.59:443
-      - LT_602
+      - Relay_🇺🇸US-🇺🇸US_1499
+      - US_1332
+      - HK_475
+      - US_1405
+      - US_1498
+      - Relay_🇺🇸US-🇺🇸US_1598
+      - LT_599
+      - Relay_🇺🇸US-🇺🇸US_1580
+      - Relay_🇺🇸US-🇺🇸US_1548
+      - Relay_🇺🇸US-🇺🇸US_1576
+      - Relay_🇺🇸US-🇺🇸US_1563
+      - Relay_🇺🇸US-🇺🇸US_1593
+      - Relay_🇯🇵JP-🇯🇵JP_534
+      - AU_49
+      - LT_539
+      - AU_52
+      - Relay_🇨🇦CA-🇨🇦CA_232
+      - ZZ_1728
+      - LT_565
+      - ZZ_1721
+      - Relay_🇨🇦CA-🇨🇦CA_234
+      - Relay_🇨🇦CA-🇨🇦CA_233
+      - DE_334
+      - RU_915
+      - Relay_🇨🇳CN-🇹🇼TW_292
+      - RU_918
+      - DE_338
+      - AU_92
+      - HK 3 → TG@SCINV
+      - NL 1 → TG@SCINV
+      - DE_328
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - ""
-      - 104.243.30.252:246
-      - SG_937
-      - NONE
-      - 172.96.192.100:246
-      - " 2"
-      - 中国-8.76MB/s(Youtube:不良林)
-      - RU_900
-      - " 3"
-      - " 4"
-      - NONE 2
-      - " 5"
-      - US_1538
-      - " 6"
-      - 51.195.136.209:50004
-      - " 7"
-      - 德国-1.08MB/s(Youtube:不良林)
-      - NONE 3
-      - 78.129.253.9:809
-      - 美国-4.06MB/s(Youtube:不良林)
-      - 澳大利亚-1.24MB/s(Youtube:不良林)
-      - RO_786
-      - 193.108.117.75:2376
-      - 185.126.116.119:9070
-      - US_1512
-      - AU_57
-      - Relay_🇺🇸US-🇺🇸US_1519
-      - 193.108.117.75:8080
-      - NONE 4
-      - NONE 5
-      - 澳大利亚-1.44MB/s(Youtube:不良林)
-      - 213.183.53.198:9003
-      - 172.99.190.61:8881
-      - US_1042
-      - 172.99.190.61:3306
-      - US_1329
-      - 172.99.190.61:5601
-      - 英国-1.17MB/s(Youtube:不良林)
-      - 193.108.117.75:443
-      - LT_556
-      - 172.99.190.61:8090
-      - LT_591
-      - 澳大利亚-1.54MB/s(Youtube:不良林)
-      - 78.129.253.9:808
-      - 193.108.117.75:8881
-      - JP_498
-      - 213.183.53.198:9032
-      - AU_83
-      - 185.167.116.252:9027
-      - LT_576
-      - 167.88.63.59:443
-      - LT_602
+      - Relay_🇺🇸US-🇺🇸US_1499
+      - US_1332
+      - HK_475
+      - US_1405
+      - US_1498
+      - Relay_🇺🇸US-🇺🇸US_1598
+      - LT_599
+      - Relay_🇺🇸US-🇺🇸US_1580
+      - Relay_🇺🇸US-🇺🇸US_1548
+      - Relay_🇺🇸US-🇺🇸US_1576
+      - Relay_🇺🇸US-🇺🇸US_1563
+      - Relay_🇺🇸US-🇺🇸US_1593
+      - Relay_🇯🇵JP-🇯🇵JP_534
+      - AU_49
+      - LT_539
+      - AU_52
+      - Relay_🇨🇦CA-🇨🇦CA_232
+      - ZZ_1728
+      - LT_565
+      - ZZ_1721
+      - Relay_🇨🇦CA-🇨🇦CA_234
+      - Relay_🇨🇦CA-🇨🇦CA_233
+      - DE_334
+      - RU_915
+      - Relay_🇨🇳CN-🇹🇼TW_292
+      - RU_918
+      - DE_338
+      - AU_92
+      - HK 3 → TG@SCINV
+      - NL 1 → TG@SCINV
+      - DE_328
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -492,58 +324,37 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - ""
-      - 104.243.30.252:246
-      - SG_937
-      - NONE
-      - 172.96.192.100:246
-      - " 2"
-      - 中国-8.76MB/s(Youtube:不良林)
-      - RU_900
-      - " 3"
-      - " 4"
-      - NONE 2
-      - " 5"
-      - US_1538
-      - " 6"
-      - 51.195.136.209:50004
-      - " 7"
-      - 德国-1.08MB/s(Youtube:不良林)
-      - NONE 3
-      - 78.129.253.9:809
-      - 美国-4.06MB/s(Youtube:不良林)
-      - 澳大利亚-1.24MB/s(Youtube:不良林)
-      - RO_786
-      - 193.108.117.75:2376
-      - 185.126.116.119:9070
-      - US_1512
-      - AU_57
-      - Relay_🇺🇸US-🇺🇸US_1519
-      - 193.108.117.75:8080
-      - NONE 4
-      - NONE 5
-      - 澳大利亚-1.44MB/s(Youtube:不良林)
-      - 213.183.53.198:9003
-      - 172.99.190.61:8881
-      - US_1042
-      - 172.99.190.61:3306
-      - US_1329
-      - 172.99.190.61:5601
-      - 英国-1.17MB/s(Youtube:不良林)
-      - 193.108.117.75:443
-      - LT_556
-      - 172.99.190.61:8090
-      - LT_591
-      - 澳大利亚-1.54MB/s(Youtube:不良林)
-      - 78.129.253.9:808
-      - 193.108.117.75:8881
-      - JP_498
-      - 213.183.53.198:9032
-      - AU_83
-      - 185.167.116.252:9027
-      - LT_576
-      - 167.88.63.59:443
-      - LT_602
+      - Relay_🇺🇸US-🇺🇸US_1499
+      - US_1332
+      - HK_475
+      - US_1405
+      - US_1498
+      - Relay_🇺🇸US-🇺🇸US_1598
+      - LT_599
+      - Relay_🇺🇸US-🇺🇸US_1580
+      - Relay_🇺🇸US-🇺🇸US_1548
+      - Relay_🇺🇸US-🇺🇸US_1576
+      - Relay_🇺🇸US-🇺🇸US_1563
+      - Relay_🇺🇸US-🇺🇸US_1593
+      - Relay_🇯🇵JP-🇯🇵JP_534
+      - AU_49
+      - LT_539
+      - AU_52
+      - Relay_🇨🇦CA-🇨🇦CA_232
+      - ZZ_1728
+      - LT_565
+      - ZZ_1721
+      - Relay_🇨🇦CA-🇨🇦CA_234
+      - Relay_🇨🇦CA-🇨🇦CA_233
+      - DE_334
+      - RU_915
+      - Relay_🇨🇳CN-🇹🇼TW_292
+      - RU_918
+      - DE_338
+      - AU_92
+      - HK 3 → TG@SCINV
+      - NL 1 → TG@SCINV
+      - DE_328
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
