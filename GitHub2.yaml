@@ -5,431 +5,203 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: Relay_-🇯🇵JP_514🇯🇵JP, server: m4.40010010.xyz, port: 37121, type: vmess, uuid: 575e4d92-1056-44c2-8cac-75ef1c859ad5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: JP_514, server: 146.56.103.73, port: 55561, type: vmess, uuid: 94b0d978-913d-4e4e-988c-56e0bbd7defa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: SE_929, server: 138.3.208.203, port: 43298, type: vmess, uuid: 42104b60-1988-4063-96ce-5c4b20b53130, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: US_1408, server: 144.168.60.70, port: 252, type: ss, cipher: aes-256-cfb, password: bwhskrskr03, udp: true}
-  - {name: US_1012, server: 104.243.30.252, port: 246, type: ss, cipher: aes-256-cfb, password: bwhskrskr03, udp: true}
-  - {name: US_1385, server: 93.179.112.70, port: 253, type: ss, cipher: aes-256-cfb, password: bwhskrskr06, udp: true}
-  - {name: US_1430, server: 104.243.25.95, port: 253, type: ss, cipher: aes-256-cfb, password: bwhskrskr03, udp: true}
-  - {name: CN 11 → TG@SCINV, server: 116.129.254.134, port: 33732, type: ss, cipher: rc4-md5, password: KvznTE, udp: true}
-  - {name: Relay_🇨🇳CN-🇹🇷TR_281, server: 116.129.254.132, port: 33732, type: ss, cipher: rc4-md5, password: KvznTE, udp: true}
-  - {name: RO_820, server: 109.166.39.216, port: 39216, type: vmess, uuid: 5022b474-6ba7-4f66-b7a1-04cc4814d2ed, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /tiktok, ws-headers: {Host: 109.166.39.216}, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_1507, server: us-am32-5.eqnode.net, port: 8081, type: ssr, cipher: aes-256-cfb, password: YFVrXZgRo, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
-  - {name: CN 10 → TG@SCINV, server: 116.129.254.133, port: 33732, type: ss, cipher: rc4-md5, password: KvznTE, udp: true}
-  - {name: RO_819, server: 109.166.39.205, port: 39205, type: vmess, uuid: 548cfd27-e18f-406b-84f6-74de849e27b8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /tiktok, ws-headers: {Host: 109.166.39.205}, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_1550, server: zzydnfw-v.bp365.cf, port: 443, type: vmess, uuid: 6a522c05-7182-4540-8c1a-6b15965f64b0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /MDVMDGJUZI, ws-headers: {Host: zzydnfw-v.bp365.cf}, udp: true}
-  - {name: US_1539, server: 199.19.226.174, port: 443, type: vmess, uuid: 4858f70a-b37c-4bdf-ad41-3f9b8a6346c9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2, ws-headers: {Host: 199.19.226.174}, udp: true}
-  - {name: CN 9 → TG@SCINV, server: 116.129.254.131, port: 33732, type: ss, cipher: rc4-md5, password: KvznTE, udp: true}
-  - {name: Relay_🇨🇳CN-🏁ZZ_295, server: in-us-1.onebox6.org, port: 38401, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: in-us-1.onebox6.org}, udp: true}
-  - {name: US 20 → TG@SCINV, server: 104.168.144.215, port: 443, type: trojan, password: srGSKqR5Fv, skip-cert-verify: true, udp: true}
-  - {name: _1526, server: 23.227.194.145, port: 36195, type: vmess, uuid: fae6eae5-a5b5-41ba-b660-dc067340048f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CA 3 → TG@SCINV, server: 730tw01.ok365.cyou, port: 443, type: trojan, password: 2390acf1-56cb-4f44-812c-9e89c288e80f, sni: 730tw01.ok365.cyou, skip-cert-verify: true, udp: true}
-  - {name: Pool_🇳🇱NL_721, server: 85.208.108.93, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: Pool_🇳🇱NL_784, server: 85.208.108.93, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: Pool_🇳🇱NL_769, server: 85.208.108.93, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: US 27 → TG@SCINV, server: azgy001.xiba1.xyz, port: 20712, type: trojan, password: b2100b79-d571-354a-b706-6b0f7b55d343, sni: azgy001.xiba1.xyz, skip-cert-verify: true, udp: true}
-  - {name: Pool_🇳🇱NL_754, server: 85.208.108.93, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: Pool_🇳🇱NL_755, server: 85.208.108.93, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: 中国-627.7KB/s(Youtube:不良林), server: in-tw-2.onebox6.org, port: 38201, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: in-tw-2.onebox6.org}, udp: true}
-  - {name: 美国-3.41MB/s(Youtube:不良林), server: azgy001.xiba1.xyz, port: 20711, type: trojan, password: b2100b79-d571-354a-b706-6b0f7b55d343, sni: azgy001.xiba1.xyz, skip-cert-verify: true, udp: true}
-  - {name: US 29 → TG@SCINV, server: azgy001.xiba1.xyz, port: 20713, type: trojan, password: b2100b79-d571-354a-b706-6b0f7b55d343, sni: azgy001.xiba1.xyz, skip-cert-verify: true, udp: true}
-  - {name: 美国-2.34MB/s(Youtube:不良林), server: azgy001.xiba1.xyz, port: 20785, type: trojan, password: b2100b79-d571-354a-b706-6b0f7b55d343, sni: azgy001.xiba1.xyz, skip-cert-verify: true, udp: true}
-  - {name: CA 2 → TG@SCINV, server: 727tw02.ok365.cyou, port: 25689, type: trojan, password: 2390acf1-56cb-4f44-812c-9e89c288e80f, sni: 727tw02.ok365.cyou, skip-cert-verify: true, udp: true}
-  - {name: ZZ_1721, server: 169.197.141.5, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_1517, server: 20.205.111.107, port: 53, type: vmess, uuid: bf5fe104-ebaa-4369-bb81-4aa62a386523, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 20.205.111.107}, udp: true}
-  - {name: 美国-4.11MB/s(Youtube:不良林), server: azgy001.xiba1.xyz, port: 20710, type: trojan, password: b2100b79-d571-354a-b706-6b0f7b55d343, sni: azgy001.xiba1.xyz, skip-cert-verify: true, udp: true}
-  - {name: US 31 → TG@SCINV, server: azgy001.xiba1.xyz, port: 20787, type: trojan, password: b2100b79-d571-354a-b706-6b0f7b55d343, sni: azgy001.xiba1.xyz, skip-cert-verify: true, udp: true}
-  - {name: US_1557, server: 168.138.214.114, port: 443, type: vmess, uuid: e35159d7-e8fb-479c-b490-e8e9a924e0c6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /a9S24DC8US, ws-headers: {Host: 168.138.214.114}, udp: true}
-  - {name: US 2 → TG@SCINV, server: 150.230.23.0, port: 44616, type: trojan, password: dbdd4673-06e7-4a53-adb7-aa4232df529e, skip-cert-verify: true, udp: true}
-  - {name: BG_170, server: 83.150.217.62, port: 44612, type: trojan, password: dbdd4673-06e7-4a53-adb7-aa4232df529e, skip-cert-verify: true, udp: true}
-  - {name: FR_421, server: 195.154.200.150, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: US_1545, server: 23.227.194.145, port: 36195, type: vmess, uuid: fae6eae5-a5b5-41ba-b660-dc067340048f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Relay_-🇺🇸US_1532🇺🇸US, server: chess.magicefire.com, port: 443, type: vmess, uuid: 9aa80017-3427-4165-a522-f5f9a11330d0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: US 32 → TG@SCINV, server: azgy001.xiba1.xyz, port: 20789, type: trojan, password: b2100b79-d571-354a-b706-6b0f7b55d343, sni: azgy001.xiba1.xyz, skip-cert-verify: true, udp: true}
-  - {name: DE_327, server: 193.108.117.75, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: AU_49, server: 185.167.116.252, port: 9003, type: ss, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP, udp: true}
-  - {name: DE_355, server: 193.108.117.75, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 澳大利亚-590.2KB/s(Youtube:不良林), server: 185.167.116.252, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
-  - {name: DE_343, server: 193.108.117.75, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: _85🇦🇺AU, server: 43.153.7.61, port: 58263, type: vmess, uuid: e274e9de-e2ae-4c10-8afa-507a6bb89500, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: DE_335, server: 193.108.117.75, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: FR_412, server: 195.154.200.150, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 澳大利亚-878.9KB/s(Youtube:不良林), server: 185.167.116.252, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH, udp: true}
-  - {name: 澳大利亚-2.07MB/s(Youtube:不良林), server: 185.167.116.252, port: 9026, type: ss, cipher: aes-256-cfb, password: QWDDvVE9npNurQfA, udp: true}
-  - {name: CA 4 → TG@SCINV, server: 727tw01.ok365.cyou, port: 443, type: trojan, password: 2390acf1-56cb-4f44-812c-9e89c288e80f, sni: 727tw01.ok365.cyou, skip-cert-verify: true, udp: true}
-  - {name: DE_339, server: 193.108.117.75, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: DE_344, server: 193.108.117.75, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: DE_336, server: 193.108.117.75, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _43🇦🇺AU, server: 185.167.116.252, port: 9027, type: ss, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8, udp: true}
-  - {name: 澳大利亚-2.22MB/s(Youtube:不良林), server: 185.167.116.252, port: 9045, type: ss, cipher: aes-256-cfb, password: Lp27rqyJq72bZsqX, udp: true}
-  - {name: _1547🇺🇸US, server: 20.205.111.107, port: 59619, type: vmess, uuid: a8804a03-be3f-43b9-ef7f-8acbdf39cbe3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 20.205.111.107}, udp: true}
-  - {name: 澳大利亚-590.8KB/s(Youtube:不良林), server: 185.167.116.252, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
-  - {name: DE_347, server: 193.108.117.75, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: FR_375, server: 51.38.112.84, port: 44, type: ss, cipher: aes-256-cfb, password: instgram.com/openvpnssh, udp: true}
-  - {name: LT_602, server: 213.183.53.198, port: 9010, type: ss, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4, udp: true}
-  - {name: 澳大利亚-2.57MB/s(Youtube:不良林), server: 185.167.116.252, port: 9038, type: ss, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ, udp: true}
-  - {name: 澳大利亚-545.6KB/s(Youtube:不良林), server: 185.167.116.252, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
+  - {name: Relay_🇯🇵JP-🇯🇵JP_511, server: m4.40010010.xyz, port: 37121, type: vmess, uuid: 575e4d92-1056-44c2-8cac-75ef1c859ad5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: JP_507, server: 146.56.167.119, port: 6666, type: vmess, uuid: 64779fce-63a5-4faa-b59b-e4af40f4e419, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: ZZ_1752, server: 103.186.148.106, port: 80, type: vmess, uuid: a479fc02-07c5-4864-8564-c4f147dfa488, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /shopvpn.net, ws-headers: {Host: 103.186.148.106}, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_1576, server: 107.173.83.214, port: 37541, type: vmess, uuid: ef59a586-0532-4763-f353-948eb413f00d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: SE_938, server: 138.3.208.203, port: 43298, type: vmess, uuid: 42104b60-1988-4063-96ce-5c4b20b53130, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: US_1476, server: 198.181.56.163, port: 238, type: ss, cipher: aes-256-cfb, password: bwhskrskr05, udp: true}
+  - {name: US 19｜openit.pw, server: 104.168.144.215, port: 443, type: trojan, password: srGSKqR5Fv, skip-cert-verify: true, udp: true}
+  - {name: US_1475, server: 104.243.25.95, port: 253, type: ss, cipher: aes-256-cfb, password: bwhskrskr03, udp: true}
+  - {name: RO_812, server: 185.126.116.119, port: 9033, type: ss, cipher: aes-256-cfb, password: UTJA57ypk2XKQpnm, udp: true}
+  - {name: US 2｜openit.pw, server: 150.230.23.0, port: 44616, type: trojan, password: dbdd4673-06e7-4a53-adb7-aa4232df529e, skip-cert-verify: true, udp: true}
+  - {name: RO_814, server: 185.126.116.119, port: 9093, type: ss, cipher: aes-256-cfb, password: wfLC2y7rzZyCmuyt, udp: true}
+  - {name: CA 2｜openit.pw, server: 727tw01.ok365.cyou, port: 443, type: trojan, password: e7e5b769-2632-40f4-afb0-3b92bcfebd2b, sni: 727tw01.ok365.cyou, skip-cert-verify: true, udp: true}
+  - {name: AU_84, server: 185.167.116.252, port: 9008, type: ss, cipher: aes-256-cfb, password: y9VURyNzJWNRYEGQ, udp: true}
+  - {name: AU_53, server: 185.167.116.250, port: 9006, type: ss, cipher: aes-256-cfb, password: FAdUvMJUq5vDgKEq, udp: true}
+  - {name: CA 4｜openit.pw, server: 161.129.60.17, port: 25634, type: trojan, password: 177501cc-f0c2-3cc3-b9a7-8c1e8e27655f, skip-cert-verify: true, udp: true}
+  - {name: AU_51, server: 185.167.116.252, port: 9027, type: ss, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8, udp: true}
+  - {name: US_1586, server: 107.182.187.5, port: 35159, type: vmess, uuid: c6ce7985-eb44-4a91-f5b2-f36eca2a4208, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: AU_82, server: 185.167.116.252, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH, udp: true}
+  - {name: CN 5｜openit.pw, server: cm.spacez.cloud, port: 30002, type: trojan, password: c9a3a61d-5d49-4158-9e60-6fa32684b122, sni: cm.spacez.cloud, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇨🇳CN-🇩🇪DE_284, server: in-sg-1.onebox6.org, port: 38701, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: in-sg-1.onebox6.org}, udp: true}
+  - {name: FR_394, server: 51.38.112.84, port: 44, type: ss, cipher: aes-256-cfb, password: instgram.com/openvpnssh, udp: true}
+  - {name: AU_47, server: 185.167.116.252, port: 9006, type: ss, cipher: aes-256-cfb, password: FAdUvMJUq5vDgKEq, udp: true}
+  - {name: CA 1｜openit.pw, server: 730tw01.ok365.cyou, port: 443, type: trojan, password: e7e5b769-2632-40f4-afb0-3b92bcfebd2b, sni: 730tw01.ok365.cyou, skip-cert-verify: true, udp: true}
+  - {name: RO_810, server: 185.126.116.119, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
+  - {name: CA_175, server: 196.247.59.154, port: 805, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
   - {name: CA_182, server: 196.247.59.154, port: 800, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: 中国-498.3KB/s(Youtube:不良林), server: pp1.zhengzhongfeizhu.xyz, port: 32003, type: trojan, password: eb2f8154-ff58-3b99-b393-28c8eecdbe64, sni: pp1.zhengzhongfeizhu.xyz, skip-cert-verify: true, udp: true}
-  - {name: RU_860, server: 45.144.176.135, port: 3000, type: ss, cipher: aes-256-cfb, password: qazwsxplmjbufeefvgedgrwchgtrchrdgfbrdvgedecmmdfe, udp: true}
-  - {name: CA_183, server: 196.247.59.154, port: 801, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: RU_870, server: 45.144.176.135, port: 3005, type: ss, cipher: aes-256-cfb, password: 987.085wrcgrwqs36.985, udp: true}
-  - {name: CA_181, server: 196.247.59.154, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: RU_879, server: 45.144.176.135, port: 3003, type: ss, cipher: aes-256-cfb, password: werty33588761qwfdees, udp: true}
-  - {name: CA_180, server: 196.247.59.154, port: 802, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: RU_880, server: 45.144.176.135, port: 3004, type: ss, cipher: aes-256-cfb, password: 3682oiuvefwwmbc1475, udp: true}
-  - {name: 加拿大-1.94MB/s(Youtube:不良林), server: 196.247.59.154, port: 806, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: CA_175, server: 196.247.59.154, port: 803, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: _26, server: 185.167.116.252, port: 9007, type: ss, cipher: aes-256-cfb, password: kSPmvwdFzGMMW5pY, udp: true}
-  - {name: DE_350, server: 193.108.117.75, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: CN 7 → TG@SCINV, server: 42.157.196.185, port: 56731, type: ss, cipher: rc4-md5, password: v6a7Sx, udp: true}
-  - {name: CN 6 → TG@SCINV, server: 42.157.196.185, port: 33732, type: ss, cipher: rc4-md5, password: KvznTE, udp: true}
-  - {name: CN 5 → TG@SCINV, server: 42.157.196.184, port: 33732, type: ss, cipher: rc4-md5, password: KvznTE, udp: true}
-  - {name: _508🇯🇵JP, server: 146.56.167.119, port: 6666, type: vmess, uuid: 64779fce-63a5-4faa-b59b-e4af40f4e419, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: LT_617, server: 213.183.53.198, port: 9032, type: ss, cipher: aes-256-cfb, password: UWZQeLRWnkqgkseq, udp: true}
-  - {name: RU_835, server: 45.144.176.135, port: 3001, type: ss, cipher: aes-256-cfb, password: qazplmn1236547dr42q, udp: true}
-  - {name: Relay_-🇹🇼TW_282, server: 120.240.55.137, port: 38201, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: 120.240.55.137}, udp: true}
-  - {name: CA_191, server: 196.247.59.154, port: 805, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: LT_549, server: 213.183.53.198, port: 9058, type: ss, cipher: aes-256-cfb, password: dML2sfhbVwvtfNPe, udp: true}
-  - {name: LT_548, server: 213.183.53.198, port: 9093, type: ss, cipher: aes-256-cfb, password: wfLC2y7rzZyCmuyt, udp: true}
-  - {name: _560🇱🇹LT, server: 213.183.53.198, port: 9097, type: ss, cipher: aes-256-cfb, password: Sn5B7jTqr76aCJT8, udp: true}
-  - {name: US 34 → TG@SCINV, server: azgy001.xiba1.xyz, port: 20788, type: trojan, password: b2100b79-d571-354a-b706-6b0f7b55d343, sni: azgy001.xiba1.xyz, skip-cert-verify: true, udp: true}
-  - {name: 保加利亚-762.6KB/s(Youtube:不良林), server: 213.183.63.221, port: 9053, type: ss, cipher: aes-256-cfb, password: SBM7R883jBmnqe6C, udp: true}
-  - {name: 美国-1.31MB/s(Youtube:不良林), server: azgy001.xiba1.xyz, port: 20790, type: trojan, password: b2100b79-d571-354a-b706-6b0f7b55d343, sni: azgy001.xiba1.xyz, skip-cert-verify: true, udp: true}
-  - {name: US_1547, server: 45.10.153.188, port: 37558, type: vmess, uuid: 9d0f86ad-eec3-424f-f69a-fcb37e783d06, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: LT_587, server: 213.183.63.221, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
-  - {name: 美国-2.26MB/s(Youtube:不良林), server: azgy001.xiba1.xyz, port: 20783, type: trojan, password: b2100b79-d571-354a-b706-6b0f7b55d343, sni: azgy001.xiba1.xyz, skip-cert-verify: true, udp: true}
-  - {name: LT_633, server: 213.183.53.198, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
-  - {name: Relay_🇷🇺RU-🇷🇺RU_855, server: 185.4.65.6, port: 21247, type: ss, cipher: aes-256-cfb, password: vDS9G2p, udp: true}
-  - {name: LT_591, server: 213.183.63.221, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH, udp: true}
-  - {name: LT_595, server: 213.183.63.221, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX, udp: true}
-  - {name: _811🇷🇴RO, server: 185.126.116.119, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_1543, server: chess.magicefire.com, port: 443, type: vmess, uuid: 9aa80017-3427-4165-a522-f5f9a11330d0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: LT_597, server: 213.183.63.221, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU, udp: true}
+  - {name: CA_174, server: 196.247.59.154, port: 806, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: US_1591, server: 152.70.235.207, port: 35412, type: vmess, uuid: 70d95308-2a61-4f93-f139-9103d0587fd9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: LT_598, server: 213.183.53.198, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
+  - {name: CA_184, server: 196.247.59.154, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: Relay_🇨🇳CN-🇩🇪DE_282, server: ingress-i1.onebox6.org, port: 38701, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: ingress-i1.onebox6.org}, udp: true}
+  - {name: CA_173, server: 196.247.59.154, port: 803, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: LT_591, server: 213.183.53.198, port: 9059, type: ss, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY, udp: true}
+  - {name: LT_596, server: 213.183.53.198, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX, udp: true}
+  - {name: CA_181, server: 196.247.59.154, port: 801, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: Relay_🇨🇳CN-🇭🇰HK_264, server: ftp.cn.debian.cdnet.in, port: 8010, type: ss, cipher: aes-128-gcm, password: 599bf7cd-cd43-4c1d-b6c6-1c732bece35d, udp: true}
+  - {name: SG_948, server: 217.197.160.117, port: 805, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: CA 3｜openit.pw, server: 727tw02.ok365.cyou, port: 25689, type: trojan, password: e7e5b769-2632-40f4-afb0-3b92bcfebd2b, sni: 727tw02.ok365.cyou, skip-cert-verify: true, udp: true}
+  - {name: DE_345, server: 193.108.117.75, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: LT_600, server: 213.183.53.198, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
+  - {name: RU_935, server: 195.133.53.192, port: 43688, type: vmess, uuid: bd1c8b57-0a9e-4e9f-a261-48e90c871e41, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 195.133.53.192}, udp: true}
+  - {name: US_1568, server: 168.138.214.114, port: 443, type: vmess, uuid: e35159d7-e8fb-479c-b490-e8e9a924e0c6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /a9S24DC8US, ws-headers: {Host: 168.138.214.114}, udp: true}
+  - {name: LT_581, server: 213.183.63.221, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa, udp: true}
+  - {name: LT_555, server: 213.183.53.198, port: 9057, type: ss, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z, udp: true}
+  - {name: CN 9｜openit.pw, server: iiiieeepppplll.zhengzhongfeizhu.xyz, port: 34004, type: trojan, password: 177501cc-f0c2-3cc3-b9a7-8c1e8e27655f, sni: iiiieeepppplll.zhengzhongfeizhu.xyz, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay_-🇯🇵JP_514🇯🇵JP
-      - JP_514
-      - SE_929
-      - US_1408
-      - US_1012
-      - US_1385
-      - US_1430
-      - CN 11 → TG@SCINV
-      - Relay_🇨🇳CN-🇹🇷TR_281
-      - RO_820
-      - Relay_🇺🇸US-🇺🇸US_1507
-      - CN 10 → TG@SCINV
-      - RO_819
-      - Relay_🇺🇸US-🇺🇸US_1550
-      - US_1539
-      - CN 9 → TG@SCINV
-      - Relay_🇨🇳CN-🏁ZZ_295
-      - US 20 → TG@SCINV
-      - _1526
-      - CA 3 → TG@SCINV
-      - Pool_🇳🇱NL_721
-      - Pool_🇳🇱NL_784
-      - Pool_🇳🇱NL_769
-      - US 27 → TG@SCINV
-      - Pool_🇳🇱NL_754
-      - Pool_🇳🇱NL_755
-      - 中国-627.7KB/s(Youtube:不良林)
-      - 美国-3.41MB/s(Youtube:不良林)
-      - US 29 → TG@SCINV
-      - 美国-2.34MB/s(Youtube:不良林)
-      - CA 2 → TG@SCINV
-      - ZZ_1721
-      - US_1517
-      - 美国-4.11MB/s(Youtube:不良林)
-      - US 31 → TG@SCINV
-      - US_1557
-      - US 2 → TG@SCINV
-      - BG_170
-      - FR_421
-      - US_1545
-      - Relay_-🇺🇸US_1532🇺🇸US
-      - US 32 → TG@SCINV
-      - DE_327
-      - AU_49
-      - DE_355
-      - 澳大利亚-590.2KB/s(Youtube:不良林)
-      - DE_343
-      - _85🇦🇺AU
-      - DE_335
-      - FR_412
-      - 澳大利亚-878.9KB/s(Youtube:不良林)
-      - 澳大利亚-2.07MB/s(Youtube:不良林)
-      - CA 4 → TG@SCINV
-      - DE_339
-      - DE_344
-      - DE_336
-      - _43🇦🇺AU
-      - 澳大利亚-2.22MB/s(Youtube:不良林)
-      - _1547🇺🇸US
-      - 澳大利亚-590.8KB/s(Youtube:不良林)
-      - DE_347
-      - FR_375
-      - LT_602
-      - 澳大利亚-2.57MB/s(Youtube:不良林)
-      - 澳大利亚-545.6KB/s(Youtube:不良林)
-      - CA_182
-      - 中国-498.3KB/s(Youtube:不良林)
-      - RU_860
-      - CA_183
-      - RU_870
-      - CA_181
-      - RU_879
-      - CA_180
-      - RU_880
-      - 加拿大-1.94MB/s(Youtube:不良林)
+      - Relay_🇯🇵JP-🇯🇵JP_511
+      - JP_507
+      - ZZ_1752
+      - Relay_🇺🇸US-🇺🇸US_1576
+      - SE_938
+      - US_1476
+      - US 19｜openit.pw
+      - US_1475
+      - RO_812
+      - US 2｜openit.pw
+      - RO_814
+      - CA 2｜openit.pw
+      - AU_84
+      - AU_53
+      - CA 4｜openit.pw
+      - AU_51
+      - US_1586
+      - AU_82
+      - CN 5｜openit.pw
+      - Relay_🇨🇳CN-🇩🇪DE_284
+      - FR_394
+      - AU_47
+      - CA 1｜openit.pw
+      - RO_810
       - CA_175
-      - _26
-      - DE_350
-      - CN 7 → TG@SCINV
-      - CN 6 → TG@SCINV
-      - CN 5 → TG@SCINV
-      - _508🇯🇵JP
-      - LT_617
-      - RU_835
-      - Relay_-🇹🇼TW_282
-      - CA_191
-      - LT_549
-      - LT_548
-      - _560🇱🇹LT
-      - US 34 → TG@SCINV
-      - 保加利亚-762.6KB/s(Youtube:不良林)
-      - 美国-1.31MB/s(Youtube:不良林)
-      - US_1547
-      - LT_587
-      - 美国-2.26MB/s(Youtube:不良林)
-      - LT_633
-      - Relay_🇷🇺RU-🇷🇺RU_855
+      - CA_182
+      - CA_174
+      - US_1591
+      - LT_598
+      - CA_184
+      - Relay_🇨🇳CN-🇩🇪DE_282
+      - CA_173
       - LT_591
-      - LT_595
-      - _811🇷🇴RO
-      - Relay_🇺🇸US-🇺🇸US_1543
-      - LT_597
+      - LT_596
+      - CA_181
+      - Relay_🇨🇳CN-🇭🇰HK_264
+      - SG_948
+      - CA 3｜openit.pw
+      - DE_345
+      - LT_600
+      - RU_935
+      - US_1568
+      - LT_581
+      - LT_555
+      - CN 9｜openit.pw
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - Relay_-🇯🇵JP_514🇯🇵JP
-      - JP_514
-      - SE_929
-      - US_1408
-      - US_1012
-      - US_1385
-      - US_1430
-      - CN 11 → TG@SCINV
-      - Relay_🇨🇳CN-🇹🇷TR_281
-      - RO_820
-      - Relay_🇺🇸US-🇺🇸US_1507
-      - CN 10 → TG@SCINV
-      - RO_819
-      - Relay_🇺🇸US-🇺🇸US_1550
-      - US_1539
-      - CN 9 → TG@SCINV
-      - Relay_🇨🇳CN-🏁ZZ_295
-      - US 20 → TG@SCINV
-      - _1526
-      - CA 3 → TG@SCINV
-      - Pool_🇳🇱NL_721
-      - Pool_🇳🇱NL_784
-      - Pool_🇳🇱NL_769
-      - US 27 → TG@SCINV
-      - Pool_🇳🇱NL_754
-      - Pool_🇳🇱NL_755
-      - 中国-627.7KB/s(Youtube:不良林)
-      - 美国-3.41MB/s(Youtube:不良林)
-      - US 29 → TG@SCINV
-      - 美国-2.34MB/s(Youtube:不良林)
-      - CA 2 → TG@SCINV
-      - ZZ_1721
-      - US_1517
-      - 美国-4.11MB/s(Youtube:不良林)
-      - US 31 → TG@SCINV
-      - US_1557
-      - US 2 → TG@SCINV
-      - BG_170
-      - FR_421
-      - US_1545
-      - Relay_-🇺🇸US_1532🇺🇸US
-      - US 32 → TG@SCINV
-      - DE_327
-      - AU_49
-      - DE_355
-      - 澳大利亚-590.2KB/s(Youtube:不良林)
-      - DE_343
-      - _85🇦🇺AU
-      - DE_335
-      - FR_412
-      - 澳大利亚-878.9KB/s(Youtube:不良林)
-      - 澳大利亚-2.07MB/s(Youtube:不良林)
-      - CA 4 → TG@SCINV
-      - DE_339
-      - DE_344
-      - DE_336
-      - _43🇦🇺AU
-      - 澳大利亚-2.22MB/s(Youtube:不良林)
-      - _1547🇺🇸US
-      - 澳大利亚-590.8KB/s(Youtube:不良林)
-      - DE_347
-      - FR_375
-      - LT_602
-      - 澳大利亚-2.57MB/s(Youtube:不良林)
-      - 澳大利亚-545.6KB/s(Youtube:不良林)
-      - CA_182
-      - 中国-498.3KB/s(Youtube:不良林)
-      - RU_860
-      - CA_183
-      - RU_870
-      - CA_181
-      - RU_879
-      - CA_180
-      - RU_880
-      - 加拿大-1.94MB/s(Youtube:不良林)
+      - Relay_🇯🇵JP-🇯🇵JP_511
+      - JP_507
+      - ZZ_1752
+      - Relay_🇺🇸US-🇺🇸US_1576
+      - SE_938
+      - US_1476
+      - US 19｜openit.pw
+      - US_1475
+      - RO_812
+      - US 2｜openit.pw
+      - RO_814
+      - CA 2｜openit.pw
+      - AU_84
+      - AU_53
+      - CA 4｜openit.pw
+      - AU_51
+      - US_1586
+      - AU_82
+      - CN 5｜openit.pw
+      - Relay_🇨🇳CN-🇩🇪DE_284
+      - FR_394
+      - AU_47
+      - CA 1｜openit.pw
+      - RO_810
       - CA_175
-      - _26
-      - DE_350
-      - CN 7 → TG@SCINV
-      - CN 6 → TG@SCINV
-      - CN 5 → TG@SCINV
-      - _508🇯🇵JP
-      - LT_617
-      - RU_835
-      - Relay_-🇹🇼TW_282
-      - CA_191
-      - LT_549
-      - LT_548
-      - _560🇱🇹LT
-      - US 34 → TG@SCINV
-      - 保加利亚-762.6KB/s(Youtube:不良林)
-      - 美国-1.31MB/s(Youtube:不良林)
-      - US_1547
-      - LT_587
-      - 美国-2.26MB/s(Youtube:不良林)
-      - LT_633
-      - Relay_🇷🇺RU-🇷🇺RU_855
+      - CA_182
+      - CA_174
+      - US_1591
+      - LT_598
+      - CA_184
+      - Relay_🇨🇳CN-🇩🇪DE_282
+      - CA_173
       - LT_591
-      - LT_595
-      - _811🇷🇴RO
-      - Relay_🇺🇸US-🇺🇸US_1543
-      - LT_597
+      - LT_596
+      - CA_181
+      - Relay_🇨🇳CN-🇭🇰HK_264
+      - SG_948
+      - CA 3｜openit.pw
+      - DE_345
+      - LT_600
+      - RU_935
+      - US_1568
+      - LT_581
+      - LT_555
+      - CN 9｜openit.pw
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay_-🇯🇵JP_514🇯🇵JP
-      - JP_514
-      - SE_929
-      - US_1408
-      - US_1012
-      - US_1385
-      - US_1430
-      - CN 11 → TG@SCINV
-      - Relay_🇨🇳CN-🇹🇷TR_281
-      - RO_820
-      - Relay_🇺🇸US-🇺🇸US_1507
-      - CN 10 → TG@SCINV
-      - RO_819
-      - Relay_🇺🇸US-🇺🇸US_1550
-      - US_1539
-      - CN 9 → TG@SCINV
-      - Relay_🇨🇳CN-🏁ZZ_295
-      - US 20 → TG@SCINV
-      - _1526
-      - CA 3 → TG@SCINV
-      - Pool_🇳🇱NL_721
-      - Pool_🇳🇱NL_784
-      - Pool_🇳🇱NL_769
-      - US 27 → TG@SCINV
-      - Pool_🇳🇱NL_754
-      - Pool_🇳🇱NL_755
-      - 中国-627.7KB/s(Youtube:不良林)
-      - 美国-3.41MB/s(Youtube:不良林)
-      - US 29 → TG@SCINV
-      - 美国-2.34MB/s(Youtube:不良林)
-      - CA 2 → TG@SCINV
-      - ZZ_1721
-      - US_1517
-      - 美国-4.11MB/s(Youtube:不良林)
-      - US 31 → TG@SCINV
-      - US_1557
-      - US 2 → TG@SCINV
-      - BG_170
-      - FR_421
-      - US_1545
-      - Relay_-🇺🇸US_1532🇺🇸US
-      - US 32 → TG@SCINV
-      - DE_327
-      - AU_49
-      - DE_355
-      - 澳大利亚-590.2KB/s(Youtube:不良林)
-      - DE_343
-      - _85🇦🇺AU
-      - DE_335
-      - FR_412
-      - 澳大利亚-878.9KB/s(Youtube:不良林)
-      - 澳大利亚-2.07MB/s(Youtube:不良林)
-      - CA 4 → TG@SCINV
-      - DE_339
-      - DE_344
-      - DE_336
-      - _43🇦🇺AU
-      - 澳大利亚-2.22MB/s(Youtube:不良林)
-      - _1547🇺🇸US
-      - 澳大利亚-590.8KB/s(Youtube:不良林)
-      - DE_347
-      - FR_375
-      - LT_602
-      - 澳大利亚-2.57MB/s(Youtube:不良林)
-      - 澳大利亚-545.6KB/s(Youtube:不良林)
-      - CA_182
-      - 中国-498.3KB/s(Youtube:不良林)
-      - RU_860
-      - CA_183
-      - RU_870
-      - CA_181
-      - RU_879
-      - CA_180
-      - RU_880
-      - 加拿大-1.94MB/s(Youtube:不良林)
+      - Relay_🇯🇵JP-🇯🇵JP_511
+      - JP_507
+      - ZZ_1752
+      - Relay_🇺🇸US-🇺🇸US_1576
+      - SE_938
+      - US_1476
+      - US 19｜openit.pw
+      - US_1475
+      - RO_812
+      - US 2｜openit.pw
+      - RO_814
+      - CA 2｜openit.pw
+      - AU_84
+      - AU_53
+      - CA 4｜openit.pw
+      - AU_51
+      - US_1586
+      - AU_82
+      - CN 5｜openit.pw
+      - Relay_🇨🇳CN-🇩🇪DE_284
+      - FR_394
+      - AU_47
+      - CA 1｜openit.pw
+      - RO_810
       - CA_175
-      - _26
-      - DE_350
-      - CN 7 → TG@SCINV
-      - CN 6 → TG@SCINV
-      - CN 5 → TG@SCINV
-      - _508🇯🇵JP
-      - LT_617
-      - RU_835
-      - Relay_-🇹🇼TW_282
-      - CA_191
-      - LT_549
-      - LT_548
-      - _560🇱🇹LT
-      - US 34 → TG@SCINV
-      - 保加利亚-762.6KB/s(Youtube:不良林)
-      - 美国-1.31MB/s(Youtube:不良林)
-      - US_1547
-      - LT_587
-      - 美国-2.26MB/s(Youtube:不良林)
-      - LT_633
-      - Relay_🇷🇺RU-🇷🇺RU_855
+      - CA_182
+      - CA_174
+      - US_1591
+      - LT_598
+      - CA_184
+      - Relay_🇨🇳CN-🇩🇪DE_282
+      - CA_173
       - LT_591
-      - LT_595
-      - _811🇷🇴RO
-      - Relay_🇺🇸US-🇺🇸US_1543
-      - LT_597
+      - LT_596
+      - CA_181
+      - Relay_🇨🇳CN-🇭🇰HK_264
+      - SG_948
+      - CA 3｜openit.pw
+      - DE_345
+      - LT_600
+      - RU_935
+      - US_1568
+      - LT_581
+      - LT_555
+      - CN 9｜openit.pw
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -448,108 +220,51 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay_-🇯🇵JP_514🇯🇵JP
-      - JP_514
-      - SE_929
-      - US_1408
-      - US_1012
-      - US_1385
-      - US_1430
-      - CN 11 → TG@SCINV
-      - Relay_🇨🇳CN-🇹🇷TR_281
-      - RO_820
-      - Relay_🇺🇸US-🇺🇸US_1507
-      - CN 10 → TG@SCINV
-      - RO_819
-      - Relay_🇺🇸US-🇺🇸US_1550
-      - US_1539
-      - CN 9 → TG@SCINV
-      - Relay_🇨🇳CN-🏁ZZ_295
-      - US 20 → TG@SCINV
-      - _1526
-      - CA 3 → TG@SCINV
-      - Pool_🇳🇱NL_721
-      - Pool_🇳🇱NL_784
-      - Pool_🇳🇱NL_769
-      - US 27 → TG@SCINV
-      - Pool_🇳🇱NL_754
-      - Pool_🇳🇱NL_755
-      - 中国-627.7KB/s(Youtube:不良林)
-      - 美国-3.41MB/s(Youtube:不良林)
-      - US 29 → TG@SCINV
-      - 美国-2.34MB/s(Youtube:不良林)
-      - CA 2 → TG@SCINV
-      - ZZ_1721
-      - US_1517
-      - 美国-4.11MB/s(Youtube:不良林)
-      - US 31 → TG@SCINV
-      - US_1557
-      - US 2 → TG@SCINV
-      - BG_170
-      - FR_421
-      - US_1545
-      - Relay_-🇺🇸US_1532🇺🇸US
-      - US 32 → TG@SCINV
-      - DE_327
-      - AU_49
-      - DE_355
-      - 澳大利亚-590.2KB/s(Youtube:不良林)
-      - DE_343
-      - _85🇦🇺AU
-      - DE_335
-      - FR_412
-      - 澳大利亚-878.9KB/s(Youtube:不良林)
-      - 澳大利亚-2.07MB/s(Youtube:不良林)
-      - CA 4 → TG@SCINV
-      - DE_339
-      - DE_344
-      - DE_336
-      - _43🇦🇺AU
-      - 澳大利亚-2.22MB/s(Youtube:不良林)
-      - _1547🇺🇸US
-      - 澳大利亚-590.8KB/s(Youtube:不良林)
-      - DE_347
-      - FR_375
-      - LT_602
-      - 澳大利亚-2.57MB/s(Youtube:不良林)
-      - 澳大利亚-545.6KB/s(Youtube:不良林)
-      - CA_182
-      - 中国-498.3KB/s(Youtube:不良林)
-      - RU_860
-      - CA_183
-      - RU_870
-      - CA_181
-      - RU_879
-      - CA_180
-      - RU_880
-      - 加拿大-1.94MB/s(Youtube:不良林)
+      - Relay_🇯🇵JP-🇯🇵JP_511
+      - JP_507
+      - ZZ_1752
+      - Relay_🇺🇸US-🇺🇸US_1576
+      - SE_938
+      - US_1476
+      - US 19｜openit.pw
+      - US_1475
+      - RO_812
+      - US 2｜openit.pw
+      - RO_814
+      - CA 2｜openit.pw
+      - AU_84
+      - AU_53
+      - CA 4｜openit.pw
+      - AU_51
+      - US_1586
+      - AU_82
+      - CN 5｜openit.pw
+      - Relay_🇨🇳CN-🇩🇪DE_284
+      - FR_394
+      - AU_47
+      - CA 1｜openit.pw
+      - RO_810
       - CA_175
-      - _26
-      - DE_350
-      - CN 7 → TG@SCINV
-      - CN 6 → TG@SCINV
-      - CN 5 → TG@SCINV
-      - _508🇯🇵JP
-      - LT_617
-      - RU_835
-      - Relay_-🇹🇼TW_282
-      - CA_191
-      - LT_549
-      - LT_548
-      - _560🇱🇹LT
-      - US 34 → TG@SCINV
-      - 保加利亚-762.6KB/s(Youtube:不良林)
-      - 美国-1.31MB/s(Youtube:不良林)
-      - US_1547
-      - LT_587
-      - 美国-2.26MB/s(Youtube:不良林)
-      - LT_633
-      - Relay_🇷🇺RU-🇷🇺RU_855
+      - CA_182
+      - CA_174
+      - US_1591
+      - LT_598
+      - CA_184
+      - Relay_🇨🇳CN-🇩🇪DE_282
+      - CA_173
       - LT_591
-      - LT_595
-      - _811🇷🇴RO
-      - Relay_🇺🇸US-🇺🇸US_1543
-      - LT_597
+      - LT_596
+      - CA_181
+      - Relay_🇨🇳CN-🇭🇰HK_264
+      - SG_948
+      - CA 3｜openit.pw
+      - DE_345
+      - LT_600
+      - RU_935
+      - US_1568
+      - LT_581
+      - LT_555
+      - CN 9｜openit.pw
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -560,323 +275,152 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - Relay_-🇯🇵JP_514🇯🇵JP
-      - JP_514
-      - SE_929
-      - US_1408
-      - US_1012
-      - US_1385
-      - US_1430
-      - CN 11 → TG@SCINV
-      - Relay_🇨🇳CN-🇹🇷TR_281
-      - RO_820
-      - Relay_🇺🇸US-🇺🇸US_1507
-      - CN 10 → TG@SCINV
-      - RO_819
-      - Relay_🇺🇸US-🇺🇸US_1550
-      - US_1539
-      - CN 9 → TG@SCINV
-      - Relay_🇨🇳CN-🏁ZZ_295
-      - US 20 → TG@SCINV
-      - _1526
-      - CA 3 → TG@SCINV
-      - Pool_🇳🇱NL_721
-      - Pool_🇳🇱NL_784
-      - Pool_🇳🇱NL_769
-      - US 27 → TG@SCINV
-      - Pool_🇳🇱NL_754
-      - Pool_🇳🇱NL_755
-      - 中国-627.7KB/s(Youtube:不良林)
-      - 美国-3.41MB/s(Youtube:不良林)
-      - US 29 → TG@SCINV
-      - 美国-2.34MB/s(Youtube:不良林)
-      - CA 2 → TG@SCINV
-      - ZZ_1721
-      - US_1517
-      - 美国-4.11MB/s(Youtube:不良林)
-      - US 31 → TG@SCINV
-      - US_1557
-      - US 2 → TG@SCINV
-      - BG_170
-      - FR_421
-      - US_1545
-      - Relay_-🇺🇸US_1532🇺🇸US
-      - US 32 → TG@SCINV
-      - DE_327
-      - AU_49
-      - DE_355
-      - 澳大利亚-590.2KB/s(Youtube:不良林)
-      - DE_343
-      - _85🇦🇺AU
-      - DE_335
-      - FR_412
-      - 澳大利亚-878.9KB/s(Youtube:不良林)
-      - 澳大利亚-2.07MB/s(Youtube:不良林)
-      - CA 4 → TG@SCINV
-      - DE_339
-      - DE_344
-      - DE_336
-      - _43🇦🇺AU
-      - 澳大利亚-2.22MB/s(Youtube:不良林)
-      - _1547🇺🇸US
-      - 澳大利亚-590.8KB/s(Youtube:不良林)
-      - DE_347
-      - FR_375
-      - LT_602
-      - 澳大利亚-2.57MB/s(Youtube:不良林)
-      - 澳大利亚-545.6KB/s(Youtube:不良林)
-      - CA_182
-      - 中国-498.3KB/s(Youtube:不良林)
-      - RU_860
-      - CA_183
-      - RU_870
-      - CA_181
-      - RU_879
-      - CA_180
-      - RU_880
-      - 加拿大-1.94MB/s(Youtube:不良林)
+      - Relay_🇯🇵JP-🇯🇵JP_511
+      - JP_507
+      - ZZ_1752
+      - Relay_🇺🇸US-🇺🇸US_1576
+      - SE_938
+      - US_1476
+      - US 19｜openit.pw
+      - US_1475
+      - RO_812
+      - US 2｜openit.pw
+      - RO_814
+      - CA 2｜openit.pw
+      - AU_84
+      - AU_53
+      - CA 4｜openit.pw
+      - AU_51
+      - US_1586
+      - AU_82
+      - CN 5｜openit.pw
+      - Relay_🇨🇳CN-🇩🇪DE_284
+      - FR_394
+      - AU_47
+      - CA 1｜openit.pw
+      - RO_810
       - CA_175
-      - _26
-      - DE_350
-      - CN 7 → TG@SCINV
-      - CN 6 → TG@SCINV
-      - CN 5 → TG@SCINV
-      - _508🇯🇵JP
-      - LT_617
-      - RU_835
-      - Relay_-🇹🇼TW_282
-      - CA_191
-      - LT_549
-      - LT_548
-      - _560🇱🇹LT
-      - US 34 → TG@SCINV
-      - 保加利亚-762.6KB/s(Youtube:不良林)
-      - 美国-1.31MB/s(Youtube:不良林)
-      - US_1547
-      - LT_587
-      - 美国-2.26MB/s(Youtube:不良林)
-      - LT_633
-      - Relay_🇷🇺RU-🇷🇺RU_855
+      - CA_182
+      - CA_174
+      - US_1591
+      - LT_598
+      - CA_184
+      - Relay_🇨🇳CN-🇩🇪DE_282
+      - CA_173
       - LT_591
-      - LT_595
-      - _811🇷🇴RO
-      - Relay_🇺🇸US-🇺🇸US_1543
-      - LT_597
+      - LT_596
+      - CA_181
+      - Relay_🇨🇳CN-🇭🇰HK_264
+      - SG_948
+      - CA 3｜openit.pw
+      - DE_345
+      - LT_600
+      - RU_935
+      - US_1568
+      - LT_581
+      - LT_555
+      - CN 9｜openit.pw
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - Relay_-🇯🇵JP_514🇯🇵JP
-      - JP_514
-      - SE_929
-      - US_1408
-      - US_1012
-      - US_1385
-      - US_1430
-      - CN 11 → TG@SCINV
-      - Relay_🇨🇳CN-🇹🇷TR_281
-      - RO_820
-      - Relay_🇺🇸US-🇺🇸US_1507
-      - CN 10 → TG@SCINV
-      - RO_819
-      - Relay_🇺🇸US-🇺🇸US_1550
-      - US_1539
-      - CN 9 → TG@SCINV
-      - Relay_🇨🇳CN-🏁ZZ_295
-      - US 20 → TG@SCINV
-      - _1526
-      - CA 3 → TG@SCINV
-      - Pool_🇳🇱NL_721
-      - Pool_🇳🇱NL_784
-      - Pool_🇳🇱NL_769
-      - US 27 → TG@SCINV
-      - Pool_🇳🇱NL_754
-      - Pool_🇳🇱NL_755
-      - 中国-627.7KB/s(Youtube:不良林)
-      - 美国-3.41MB/s(Youtube:不良林)
-      - US 29 → TG@SCINV
-      - 美国-2.34MB/s(Youtube:不良林)
-      - CA 2 → TG@SCINV
-      - ZZ_1721
-      - US_1517
-      - 美国-4.11MB/s(Youtube:不良林)
-      - US 31 → TG@SCINV
-      - US_1557
-      - US 2 → TG@SCINV
-      - BG_170
-      - FR_421
-      - US_1545
-      - Relay_-🇺🇸US_1532🇺🇸US
-      - US 32 → TG@SCINV
-      - DE_327
-      - AU_49
-      - DE_355
-      - 澳大利亚-590.2KB/s(Youtube:不良林)
-      - DE_343
-      - _85🇦🇺AU
-      - DE_335
-      - FR_412
-      - 澳大利亚-878.9KB/s(Youtube:不良林)
-      - 澳大利亚-2.07MB/s(Youtube:不良林)
-      - CA 4 → TG@SCINV
-      - DE_339
-      - DE_344
-      - DE_336
-      - _43🇦🇺AU
-      - 澳大利亚-2.22MB/s(Youtube:不良林)
-      - _1547🇺🇸US
-      - 澳大利亚-590.8KB/s(Youtube:不良林)
-      - DE_347
-      - FR_375
-      - LT_602
-      - 澳大利亚-2.57MB/s(Youtube:不良林)
-      - 澳大利亚-545.6KB/s(Youtube:不良林)
-      - CA_182
-      - 中国-498.3KB/s(Youtube:不良林)
-      - RU_860
-      - CA_183
-      - RU_870
-      - CA_181
-      - RU_879
-      - CA_180
-      - RU_880
-      - 加拿大-1.94MB/s(Youtube:不良林)
+      - Relay_🇯🇵JP-🇯🇵JP_511
+      - JP_507
+      - ZZ_1752
+      - Relay_🇺🇸US-🇺🇸US_1576
+      - SE_938
+      - US_1476
+      - US 19｜openit.pw
+      - US_1475
+      - RO_812
+      - US 2｜openit.pw
+      - RO_814
+      - CA 2｜openit.pw
+      - AU_84
+      - AU_53
+      - CA 4｜openit.pw
+      - AU_51
+      - US_1586
+      - AU_82
+      - CN 5｜openit.pw
+      - Relay_🇨🇳CN-🇩🇪DE_284
+      - FR_394
+      - AU_47
+      - CA 1｜openit.pw
+      - RO_810
       - CA_175
-      - _26
-      - DE_350
-      - CN 7 → TG@SCINV
-      - CN 6 → TG@SCINV
-      - CN 5 → TG@SCINV
-      - _508🇯🇵JP
-      - LT_617
-      - RU_835
-      - Relay_-🇹🇼TW_282
-      - CA_191
-      - LT_549
-      - LT_548
-      - _560🇱🇹LT
-      - US 34 → TG@SCINV
-      - 保加利亚-762.6KB/s(Youtube:不良林)
-      - 美国-1.31MB/s(Youtube:不良林)
-      - US_1547
-      - LT_587
-      - 美国-2.26MB/s(Youtube:不良林)
-      - LT_633
-      - Relay_🇷🇺RU-🇷🇺RU_855
+      - CA_182
+      - CA_174
+      - US_1591
+      - LT_598
+      - CA_184
+      - Relay_🇨🇳CN-🇩🇪DE_282
+      - CA_173
       - LT_591
-      - LT_595
-      - _811🇷🇴RO
-      - Relay_🇺🇸US-🇺🇸US_1543
-      - LT_597
+      - LT_596
+      - CA_181
+      - Relay_🇨🇳CN-🇭🇰HK_264
+      - SG_948
+      - CA 3｜openit.pw
+      - DE_345
+      - LT_600
+      - RU_935
+      - US_1568
+      - LT_581
+      - LT_555
+      - CN 9｜openit.pw
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Relay_-🇯🇵JP_514🇯🇵JP
-      - JP_514
-      - SE_929
-      - US_1408
-      - US_1012
-      - US_1385
-      - US_1430
-      - CN 11 → TG@SCINV
-      - Relay_🇨🇳CN-🇹🇷TR_281
-      - RO_820
-      - Relay_🇺🇸US-🇺🇸US_1507
-      - CN 10 → TG@SCINV
-      - RO_819
-      - Relay_🇺🇸US-🇺🇸US_1550
-      - US_1539
-      - CN 9 → TG@SCINV
-      - Relay_🇨🇳CN-🏁ZZ_295
-      - US 20 → TG@SCINV
-      - _1526
-      - CA 3 → TG@SCINV
-      - Pool_🇳🇱NL_721
-      - Pool_🇳🇱NL_784
-      - Pool_🇳🇱NL_769
-      - US 27 → TG@SCINV
-      - Pool_🇳🇱NL_754
-      - Pool_🇳🇱NL_755
-      - 中国-627.7KB/s(Youtube:不良林)
-      - 美国-3.41MB/s(Youtube:不良林)
-      - US 29 → TG@SCINV
-      - 美国-2.34MB/s(Youtube:不良林)
-      - CA 2 → TG@SCINV
-      - ZZ_1721
-      - US_1517
-      - 美国-4.11MB/s(Youtube:不良林)
-      - US 31 → TG@SCINV
-      - US_1557
-      - US 2 → TG@SCINV
-      - BG_170
-      - FR_421
-      - US_1545
-      - Relay_-🇺🇸US_1532🇺🇸US
-      - US 32 → TG@SCINV
-      - DE_327
-      - AU_49
-      - DE_355
-      - 澳大利亚-590.2KB/s(Youtube:不良林)
-      - DE_343
-      - _85🇦🇺AU
-      - DE_335
-      - FR_412
-      - 澳大利亚-878.9KB/s(Youtube:不良林)
-      - 澳大利亚-2.07MB/s(Youtube:不良林)
-      - CA 4 → TG@SCINV
-      - DE_339
-      - DE_344
-      - DE_336
-      - _43🇦🇺AU
-      - 澳大利亚-2.22MB/s(Youtube:不良林)
-      - _1547🇺🇸US
-      - 澳大利亚-590.8KB/s(Youtube:不良林)
-      - DE_347
-      - FR_375
-      - LT_602
-      - 澳大利亚-2.57MB/s(Youtube:不良林)
-      - 澳大利亚-545.6KB/s(Youtube:不良林)
-      - CA_182
-      - 中国-498.3KB/s(Youtube:不良林)
-      - RU_860
-      - CA_183
-      - RU_870
-      - CA_181
-      - RU_879
-      - CA_180
-      - RU_880
-      - 加拿大-1.94MB/s(Youtube:不良林)
+      - Relay_🇯🇵JP-🇯🇵JP_511
+      - JP_507
+      - ZZ_1752
+      - Relay_🇺🇸US-🇺🇸US_1576
+      - SE_938
+      - US_1476
+      - US 19｜openit.pw
+      - US_1475
+      - RO_812
+      - US 2｜openit.pw
+      - RO_814
+      - CA 2｜openit.pw
+      - AU_84
+      - AU_53
+      - CA 4｜openit.pw
+      - AU_51
+      - US_1586
+      - AU_82
+      - CN 5｜openit.pw
+      - Relay_🇨🇳CN-🇩🇪DE_284
+      - FR_394
+      - AU_47
+      - CA 1｜openit.pw
+      - RO_810
       - CA_175
-      - _26
-      - DE_350
-      - CN 7 → TG@SCINV
-      - CN 6 → TG@SCINV
-      - CN 5 → TG@SCINV
-      - _508🇯🇵JP
-      - LT_617
-      - RU_835
-      - Relay_-🇹🇼TW_282
-      - CA_191
-      - LT_549
-      - LT_548
-      - _560🇱🇹LT
-      - US 34 → TG@SCINV
-      - 保加利亚-762.6KB/s(Youtube:不良林)
-      - 美国-1.31MB/s(Youtube:不良林)
-      - US_1547
-      - LT_587
-      - 美国-2.26MB/s(Youtube:不良林)
-      - LT_633
-      - Relay_🇷🇺RU-🇷🇺RU_855
+      - CA_182
+      - CA_174
+      - US_1591
+      - LT_598
+      - CA_184
+      - Relay_🇨🇳CN-🇩🇪DE_282
+      - CA_173
       - LT_591
-      - LT_595
-      - _811🇷🇴RO
-      - Relay_🇺🇸US-🇺🇸US_1543
-      - LT_597
+      - LT_596
+      - CA_181
+      - Relay_🇨🇳CN-🇭🇰HK_264
+      - SG_948
+      - CA 3｜openit.pw
+      - DE_345
+      - LT_600
+      - RU_935
+      - US_1568
+      - LT_581
+      - LT_555
+      - CN 9｜openit.pw
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -892,108 +436,51 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Relay_-🇯🇵JP_514🇯🇵JP
-      - JP_514
-      - SE_929
-      - US_1408
-      - US_1012
-      - US_1385
-      - US_1430
-      - CN 11 → TG@SCINV
-      - Relay_🇨🇳CN-🇹🇷TR_281
-      - RO_820
-      - Relay_🇺🇸US-🇺🇸US_1507
-      - CN 10 → TG@SCINV
-      - RO_819
-      - Relay_🇺🇸US-🇺🇸US_1550
-      - US_1539
-      - CN 9 → TG@SCINV
-      - Relay_🇨🇳CN-🏁ZZ_295
-      - US 20 → TG@SCINV
-      - _1526
-      - CA 3 → TG@SCINV
-      - Pool_🇳🇱NL_721
-      - Pool_🇳🇱NL_784
-      - Pool_🇳🇱NL_769
-      - US 27 → TG@SCINV
-      - Pool_🇳🇱NL_754
-      - Pool_🇳🇱NL_755
-      - 中国-627.7KB/s(Youtube:不良林)
-      - 美国-3.41MB/s(Youtube:不良林)
-      - US 29 → TG@SCINV
-      - 美国-2.34MB/s(Youtube:不良林)
-      - CA 2 → TG@SCINV
-      - ZZ_1721
-      - US_1517
-      - 美国-4.11MB/s(Youtube:不良林)
-      - US 31 → TG@SCINV
-      - US_1557
-      - US 2 → TG@SCINV
-      - BG_170
-      - FR_421
-      - US_1545
-      - Relay_-🇺🇸US_1532🇺🇸US
-      - US 32 → TG@SCINV
-      - DE_327
-      - AU_49
-      - DE_355
-      - 澳大利亚-590.2KB/s(Youtube:不良林)
-      - DE_343
-      - _85🇦🇺AU
-      - DE_335
-      - FR_412
-      - 澳大利亚-878.9KB/s(Youtube:不良林)
-      - 澳大利亚-2.07MB/s(Youtube:不良林)
-      - CA 4 → TG@SCINV
-      - DE_339
-      - DE_344
-      - DE_336
-      - _43🇦🇺AU
-      - 澳大利亚-2.22MB/s(Youtube:不良林)
-      - _1547🇺🇸US
-      - 澳大利亚-590.8KB/s(Youtube:不良林)
-      - DE_347
-      - FR_375
-      - LT_602
-      - 澳大利亚-2.57MB/s(Youtube:不良林)
-      - 澳大利亚-545.6KB/s(Youtube:不良林)
-      - CA_182
-      - 中国-498.3KB/s(Youtube:不良林)
-      - RU_860
-      - CA_183
-      - RU_870
-      - CA_181
-      - RU_879
-      - CA_180
-      - RU_880
-      - 加拿大-1.94MB/s(Youtube:不良林)
+      - Relay_🇯🇵JP-🇯🇵JP_511
+      - JP_507
+      - ZZ_1752
+      - Relay_🇺🇸US-🇺🇸US_1576
+      - SE_938
+      - US_1476
+      - US 19｜openit.pw
+      - US_1475
+      - RO_812
+      - US 2｜openit.pw
+      - RO_814
+      - CA 2｜openit.pw
+      - AU_84
+      - AU_53
+      - CA 4｜openit.pw
+      - AU_51
+      - US_1586
+      - AU_82
+      - CN 5｜openit.pw
+      - Relay_🇨🇳CN-🇩🇪DE_284
+      - FR_394
+      - AU_47
+      - CA 1｜openit.pw
+      - RO_810
       - CA_175
-      - _26
-      - DE_350
-      - CN 7 → TG@SCINV
-      - CN 6 → TG@SCINV
-      - CN 5 → TG@SCINV
-      - _508🇯🇵JP
-      - LT_617
-      - RU_835
-      - Relay_-🇹🇼TW_282
-      - CA_191
-      - LT_549
-      - LT_548
-      - _560🇱🇹LT
-      - US 34 → TG@SCINV
-      - 保加利亚-762.6KB/s(Youtube:不良林)
-      - 美国-1.31MB/s(Youtube:不良林)
-      - US_1547
-      - LT_587
-      - 美国-2.26MB/s(Youtube:不良林)
-      - LT_633
-      - Relay_🇷🇺RU-🇷🇺RU_855
+      - CA_182
+      - CA_174
+      - US_1591
+      - LT_598
+      - CA_184
+      - Relay_🇨🇳CN-🇩🇪DE_282
+      - CA_173
       - LT_591
-      - LT_595
-      - _811🇷🇴RO
-      - Relay_🇺🇸US-🇺🇸US_1543
-      - LT_597
+      - LT_596
+      - CA_181
+      - Relay_🇨🇳CN-🇭🇰HK_264
+      - SG_948
+      - CA 3｜openit.pw
+      - DE_345
+      - LT_600
+      - RU_935
+      - US_1568
+      - LT_581
+      - LT_555
+      - CN 9｜openit.pw
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
