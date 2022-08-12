@@ -5,203 +5,783 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: Relay_🇯🇵JP-🇯🇵JP_511, server: m4.40010010.xyz, port: 37121, type: vmess, uuid: 575e4d92-1056-44c2-8cac-75ef1c859ad5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: JP_507, server: 146.56.167.119, port: 6666, type: vmess, uuid: 64779fce-63a5-4faa-b59b-e4af40f4e419, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: ZZ_1752, server: 103.186.148.106, port: 80, type: vmess, uuid: a479fc02-07c5-4864-8564-c4f147dfa488, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /shopvpn.net, ws-headers: {Host: 103.186.148.106}, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_1576, server: 107.173.83.214, port: 37541, type: vmess, uuid: ef59a586-0532-4763-f353-948eb413f00d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: SE_938, server: 138.3.208.203, port: 43298, type: vmess, uuid: 42104b60-1988-4063-96ce-5c4b20b53130, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: US_1476, server: 198.181.56.163, port: 238, type: ss, cipher: aes-256-cfb, password: bwhskrskr05, udp: true}
-  - {name: US 19｜openit.pw, server: 104.168.144.215, port: 443, type: trojan, password: srGSKqR5Fv, skip-cert-verify: true, udp: true}
-  - {name: US_1475, server: 104.243.25.95, port: 253, type: ss, cipher: aes-256-cfb, password: bwhskrskr03, udp: true}
-  - {name: RO_812, server: 185.126.116.119, port: 9033, type: ss, cipher: aes-256-cfb, password: UTJA57ypk2XKQpnm, udp: true}
-  - {name: US 2｜openit.pw, server: 150.230.23.0, port: 44616, type: trojan, password: dbdd4673-06e7-4a53-adb7-aa4232df529e, skip-cert-verify: true, udp: true}
-  - {name: RO_814, server: 185.126.116.119, port: 9093, type: ss, cipher: aes-256-cfb, password: wfLC2y7rzZyCmuyt, udp: true}
-  - {name: CA 2｜openit.pw, server: 727tw01.ok365.cyou, port: 443, type: trojan, password: e7e5b769-2632-40f4-afb0-3b92bcfebd2b, sni: 727tw01.ok365.cyou, skip-cert-verify: true, udp: true}
-  - {name: AU_84, server: 185.167.116.252, port: 9008, type: ss, cipher: aes-256-cfb, password: y9VURyNzJWNRYEGQ, udp: true}
-  - {name: AU_53, server: 185.167.116.250, port: 9006, type: ss, cipher: aes-256-cfb, password: FAdUvMJUq5vDgKEq, udp: true}
-  - {name: CA 4｜openit.pw, server: 161.129.60.17, port: 25634, type: trojan, password: 177501cc-f0c2-3cc3-b9a7-8c1e8e27655f, skip-cert-verify: true, udp: true}
-  - {name: AU_51, server: 185.167.116.252, port: 9027, type: ss, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8, udp: true}
-  - {name: US_1586, server: 107.182.187.5, port: 35159, type: vmess, uuid: c6ce7985-eb44-4a91-f5b2-f36eca2a4208, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: AU_82, server: 185.167.116.252, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH, udp: true}
-  - {name: CN 5｜openit.pw, server: cm.spacez.cloud, port: 30002, type: trojan, password: c9a3a61d-5d49-4158-9e60-6fa32684b122, sni: cm.spacez.cloud, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇳CN-🇩🇪DE_284, server: in-sg-1.onebox6.org, port: 38701, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: in-sg-1.onebox6.org}, udp: true}
-  - {name: FR_394, server: 51.38.112.84, port: 44, type: ss, cipher: aes-256-cfb, password: instgram.com/openvpnssh, udp: true}
-  - {name: AU_47, server: 185.167.116.252, port: 9006, type: ss, cipher: aes-256-cfb, password: FAdUvMJUq5vDgKEq, udp: true}
-  - {name: CA 1｜openit.pw, server: 730tw01.ok365.cyou, port: 443, type: trojan, password: e7e5b769-2632-40f4-afb0-3b92bcfebd2b, sni: 730tw01.ok365.cyou, skip-cert-verify: true, udp: true}
-  - {name: RO_810, server: 185.126.116.119, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
-  - {name: CA_175, server: 196.247.59.154, port: 805, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: CA_182, server: 196.247.59.154, port: 800, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: CA_174, server: 196.247.59.154, port: 806, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: US_1591, server: 152.70.235.207, port: 35412, type: vmess, uuid: 70d95308-2a61-4f93-f139-9103d0587fd9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: LT_598, server: 213.183.53.198, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
-  - {name: CA_184, server: 196.247.59.154, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: Relay_🇨🇳CN-🇩🇪DE_282, server: ingress-i1.onebox6.org, port: 38701, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: ingress-i1.onebox6.org}, udp: true}
-  - {name: CA_173, server: 196.247.59.154, port: 803, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: LT_591, server: 213.183.53.198, port: 9059, type: ss, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY, udp: true}
-  - {name: LT_596, server: 213.183.53.198, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX, udp: true}
-  - {name: CA_181, server: 196.247.59.154, port: 801, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: Relay_🇨🇳CN-🇭🇰HK_264, server: ftp.cn.debian.cdnet.in, port: 8010, type: ss, cipher: aes-128-gcm, password: 599bf7cd-cd43-4c1d-b6c6-1c732bece35d, udp: true}
-  - {name: SG_948, server: 217.197.160.117, port: 805, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: CA 3｜openit.pw, server: 727tw02.ok365.cyou, port: 25689, type: trojan, password: e7e5b769-2632-40f4-afb0-3b92bcfebd2b, sni: 727tw02.ok365.cyou, skip-cert-verify: true, udp: true}
-  - {name: DE_345, server: 193.108.117.75, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: LT_600, server: 213.183.53.198, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
-  - {name: RU_935, server: 195.133.53.192, port: 43688, type: vmess, uuid: bd1c8b57-0a9e-4e9f-a261-48e90c871e41, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 195.133.53.192}, udp: true}
-  - {name: US_1568, server: 168.138.214.114, port: 443, type: vmess, uuid: e35159d7-e8fb-479c-b490-e8e9a924e0c6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /a9S24DC8US, ws-headers: {Host: 168.138.214.114}, udp: true}
-  - {name: LT_581, server: 213.183.63.221, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa, udp: true}
-  - {name: LT_555, server: 213.183.53.198, port: 9057, type: ss, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z, udp: true}
-  - {name: CN 9｜openit.pw, server: iiiieeepppplll.zhengzhongfeizhu.xyz, port: 34004, type: trojan, password: 177501cc-f0c2-3cc3-b9a7-8c1e8e27655f, sni: iiiieeepppplll.zhengzhongfeizhu.xyz, skip-cert-verify: true, udp: true}
+  - {name: CN 5｜openit.pw｜推广t.me/xingchen0829/6310, server: cm.spacez.cloud, port: 30003, type: trojan, password: c9a3a61d-5d49-4158-9e60-6fa32684b122, sni: cm.spacez.cloud, skip-cert-verify: true, udp: true}
+  - {name: "", server: v2node6.hkss.online, port: 443, type: vmess, uuid: 6ebeed01-2767-334c-ab37-33b5dfe53cb4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US 27｜openit.pw｜推广t.me/xingchen0829/6310, server: 20.247.123.5, port: 20710, type: trojan, password: e84a6030-8b82-388a-b5da-c3189eeb02d3, skip-cert-verify: true, udp: true}
+  - {name: HK 1｜openit.pw｜推广t.me/xingchen0829/6310, server: 20.187.95.117, port: 8443, type: trojan, password: 190e2a95-63f0-4a9c-9aef-9f2ec6e542de, skip-cert-verify: true, udp: true}
+  - {name: 213.183.53.200:9020, server: 213.183.53.200, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
+  - {name: 213.183.53.200:9031, server: 213.183.53.200, port: 9031, type: ss, cipher: aes-256-cfb, password: BwcAUZk8hUFAkDGN, udp: true}
+  - {name: 213.183.53.200:9046, server: 213.183.53.200, port: 9046, type: ss, cipher: aes-256-cfb, password: NvS8N4Vf8qAGPSCL, udp: true}
+  - {name: 213.183.53.200:9033, server: 213.183.53.200, port: 9033, type: ss, cipher: aes-256-cfb, password: UTJA57ypk2XKQpnm, udp: true}
+  - {name: 213.183.53.200:9094, server: 213.183.53.200, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
+  - {name: 213.183.53.177:9008, server: 213.183.53.177, port: 9008, type: ss, cipher: aes-256-cfb, password: y9VURyNzJWNRYEGQ, udp: true}
+  - {name: 213.183.53.200:9073, server: 213.183.53.200, port: 9073, type: ss, cipher: aes-256-cfb, password: daFYagqDdBdA6VTX, udp: true}
+  - {name: 167.88.61.50:8119, server: 167.88.61.50, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: 213.183.53.177:9059, server: 213.183.53.177, port: 9059, type: ss, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY, udp: true}
+  - {name: 213.183.53.177:9064, server: 213.183.53.177, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH, udp: true}
+  - {name: 167.88.61.175:3306, server: 167.88.61.175, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 167.88.61.175:5004, server: 167.88.61.175, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: 167.88.61.50:5600, server: 167.88.61.50, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 167.88.61.50:2375, server: 167.88.61.50, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 167.88.61.175:8090, server: 167.88.61.175, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: 167.88.61.175:5000, server: 167.88.61.175, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 213.183.53.200:9015, server: 213.183.53.200, port: 9015, type: ss, cipher: aes-256-cfb, password: ZpNDDKRu9MagNvaf, udp: true}
+  - {name: 167.88.61.14:8881, server: 167.88.61.14, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: 167.88.61.175:5003, server: 167.88.61.175, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: US 21｜openit.pw｜推广t.me/xingchen0829/6310, server: 104.168.144.215, port: 443, type: trojan, password: srGSKqR5Fv, skip-cert-verify: true, udp: true}
+  - {name: 167.88.61.175:8881, server: 167.88.61.175, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: 167.88.61.175:9102, server: 167.88.61.175, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: 167.88.61.175:8118, server: 167.88.61.175, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: 167.88.61.175:443, server: 167.88.61.175, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 167.88.61.175:8119, server: 167.88.61.175, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: 167.88.61.175:7002, server: 167.88.61.175, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: 167.88.61.175:2375, server: 167.88.61.175, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 213.183.53.200:9041, server: 213.183.53.200, port: 9041, type: ss, cipher: aes-256-cfb, password: U6qnYRhfyDmn8sgn, udp: true}
+  - {name: 213.183.53.200:9005, server: 213.183.53.200, port: 9005, type: ss, cipher: aes-256-cfb, password: ZET59LF6DvCC8KVt, udp: true}
+  - {name: 167.88.61.175:7307, server: 167.88.61.175, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: 213.183.53.200:9088, server: 213.183.53.200, port: 9088, type: ss, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn, udp: true}
+  - {name: 213.183.53.200:9037, server: 213.183.53.200, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU, udp: true}
+  - {name: 167.88.61.213:8888, server: 167.88.61.213, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 38.114.114.69:8080, server: 38.114.114.69, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: 167.88.61.14:8882, server: 167.88.61.14, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: 167.88.61.14:9102, server: 167.88.61.14, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: 213.183.53.200:9024, server: 213.183.53.200, port: 9024, type: ss, cipher: aes-256-cfb, password: BejrQvtu9sqUeNuZ, udp: true}
+  - {name: 85.208.108.93:6379, server: 85.208.108.93, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: 167.88.61.213:8119, server: 167.88.61.213, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: 167.88.61.175:7306, server: 167.88.61.175, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: 213.183.53.177:9060, server: 213.183.53.177, port: 9060, type: ss, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ, udp: true}
+  - {name: 38.114.114.67:6379, server: 38.114.114.67, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: 167.88.61.14:8080, server: 167.88.61.14, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: 167.88.61.50:7307, server: 167.88.61.50, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: 167.88.61.213:8881, server: 167.88.61.213, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: 167.88.61.175:5600, server: 167.88.61.175, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 213.183.53.212:9019, server: 213.183.53.212, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
+  - {name: 167.88.61.2:812, server: 167.88.61.2, port: 812, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: 38.114.114.69:8881, server: 38.114.114.69, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: 167.88.61.213:7307, server: 167.88.61.213, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: 38.75.136.21:5001, server: 38.75.136.21, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 38.114.114.67:5001, server: 38.114.114.67, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 38.114.114.69:8009, server: 38.114.114.69, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: TR 8｜openit.pw｜推广t.me/xingchen0829/6310, server: 85.208.108.20, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: 167.88.61.50:2376, server: 167.88.61.50, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 85.208.108.94:6697, server: 85.208.108.94, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: 38.143.66.20:9101, server: 38.143.66.20, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: 167.88.61.213:8118, server: 167.88.61.213, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: 38.75.136.21:8882, server: 38.75.136.21, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: 167.88.61.14:5601, server: 167.88.61.14, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 38.143.66.20:5000, server: 38.143.66.20, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 38.114.114.69:8090, server: 38.114.114.69, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: 167.88.61.14:6379, server: 167.88.61.14, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: 38.143.66.99:8118, server: 38.143.66.99, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: 85.208.108.21:5003, server: 85.208.108.21, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: 167.88.61.14:8090, server: 167.88.61.14, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: 167.88.61.213:3389, server: 167.88.61.213, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 38.143.66.20:5500, server: 38.143.66.20, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: 85.208.108.21:2375, server: 85.208.108.21, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 167.88.61.14:8119, server: 167.88.61.14, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: 167.88.61.14:5500, server: 167.88.61.14, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: 85.208.108.21:5000, server: 85.208.108.21, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 213.183.53.221:9008, server: 213.183.53.221, port: 9008, type: ss, cipher: aes-256-cfb, password: y9VURyNzJWNRYEGQ, udp: true}
+  - {name: 85.208.108.20:6679, server: 85.208.108.20, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: 167.88.61.14:7306, server: 167.88.61.14, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: 167.88.61.213:5003, server: 167.88.61.213, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: 167.88.61.14:5001, server: 167.88.61.14, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 167.88.61.14:6697, server: 167.88.61.14, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: 85.208.108.21:3306, server: 85.208.108.21, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 85.208.108.21:7307, server: 85.208.108.21, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: 167.88.61.175:8888, server: 167.88.61.175, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 167.88.61.14:8888, server: 167.88.61.14, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 85.208.108.21:8008, server: 85.208.108.21, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: 85.208.108.94:7001, server: 85.208.108.94, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: 167.88.61.2:803, server: 167.88.61.2, port: 803, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: 167.88.61.175:5500, server: 167.88.61.175, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: 38.68.135.19:2376, server: 38.68.135.19, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 38.68.135.19:5004, server: 38.68.135.19, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: 38.114.114.19:7002, server: 38.114.114.19, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: 38.114.114.19:3389, server: 38.114.114.19, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 167.88.61.2:802, server: 167.88.61.2, port: 802, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: 85.208.108.93:8881, server: 85.208.108.93, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: 85.208.108.20:7002, server: 85.208.108.20, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: 38.143.66.20:9102, server: 38.143.66.20, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: 38.68.134.85:8090, server: 38.68.134.85, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: CN 28｜openit.pw｜推广t.me/xingchen0829/6310, server: iiiieeepppplll.zhengzhongfeizhu.xyz, port: 34001, type: trojan, password: 177501cc-f0c2-3cc3-b9a7-8c1e8e27655f, sni: iiiieeepppplll.zhengzhongfeizhu.xyz, skip-cert-verify: true, udp: true}
+  - {name: TR 2｜openit.pw｜推广t.me/xingchen0829/6310, server: 85.208.108.20, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 38.68.134.85:8119, server: 38.68.134.85, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: 167.88.61.175:8008, server: 167.88.61.175, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: 85.208.108.21:8009, server: 85.208.108.21, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: 38.68.134.85:3306, server: 38.68.134.85, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 213.183.53.208:9000, server: 213.183.53.208, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
+  - {name: 85.208.108.21:3389, server: 85.208.108.21, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 38.68.134.85:5004, server: 38.68.134.85, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: 38.68.134.85:8008, server: 38.68.134.85, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: 167.88.61.2:807, server: 167.88.61.2, port: 807, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: 185.246.155.35:9045, server: 185.246.155.35, port: 9045, type: ss, cipher: aes-256-cfb, password: Lp27rqyJq72bZsqX, udp: true}
+  - {name: 85.208.108.21:6697, server: 85.208.108.21, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: 38.91.101.159:7307, server: 38.91.101.159, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: 38.68.134.85:2375, server: 38.68.134.85, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: TR 5｜openit.pw｜推广t.me/xingchen0829/6310, server: 85.208.108.94, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 167.88.61.50:5004, server: 167.88.61.50, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: 85.208.108.21:8882, server: 85.208.108.21, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: 38.68.134.85:8118, server: 38.68.134.85, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: 38.114.114.19:2376, server: 38.114.114.19, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 167.88.61.14:5003, server: 167.88.61.14, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: 38.91.101.159:8091, server: 38.91.101.159, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: 38.91.101.159:3306, server: 38.91.101.159, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 38.91.101.159:5003, server: 38.91.101.159, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: 38.86.135.27:5003, server: 38.86.135.27, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: 38.68.134.85:443, server: 38.68.134.85, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 85.208.108.93:8119, server: 85.208.108.93, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: 38.114.114.19:6679, server: 38.114.114.19, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: 85.208.108.20:5601, server: 85.208.108.20, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 38.91.107.37:5003, server: 38.91.107.37, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: 169.197.141.5:3306, server: 169.197.141.5, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 38.91.101.159:5601, server: 38.91.101.159, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 172.99.188.71:6379, server: 172.99.188.71, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: " 2", server: in-us-1.onebox6.org, port: 38401, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: in-us-1.onebox6.org}, udp: true}
+  - {name: 172.99.188.71:8091, server: 172.99.188.71, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: 217.30.10.65:9038, server: 217.30.10.65, port: 9038, type: ss, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ, udp: true}
+  - {name: 172.99.188.71:8888, server: 172.99.188.71, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 217.30.10.67:9093, server: 217.30.10.67, port: 9093, type: ss, cipher: aes-256-cfb, password: wfLC2y7rzZyCmuyt, udp: true}
+  - {name: 217.30.10.67:9015, server: 217.30.10.67, port: 9015, type: ss, cipher: aes-256-cfb, password: ZpNDDKRu9MagNvaf, udp: true}
+  - {name: 85.208.108.21:6379, server: 85.208.108.21, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: 172.99.188.71:8118, server: 172.99.188.71, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: 85.208.108.90:2375, server: 85.208.108.90, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 172.99.188.71:5004, server: 172.99.188.71, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: 172.99.188.71:443, server: 172.99.188.71, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 167.88.61.14:443, server: 167.88.61.14, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 172.99.188.71:6697, server: 172.99.188.71, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: 85.208.108.94:8000, server: 85.208.108.94, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: 172.99.188.71:2376, server: 172.99.188.71, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 213.183.53.221:9005, server: 213.183.53.221, port: 9005, type: ss, cipher: aes-256-cfb, password: ZET59LF6DvCC8KVt, udp: true}
+  - {name: 85.208.108.21:5001, server: 85.208.108.21, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 217.30.10.67:9043, server: 217.30.10.67, port: 9043, type: ss, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF, udp: true}
+  - {name: 172.99.188.71:3389, server: 172.99.188.71, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 172.99.188.71:6679, server: 172.99.188.71, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: 167.88.63.79:2376, server: 167.88.63.79, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 172.99.188.71:5000, server: 172.99.188.71, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 172.99.190.149:2376, server: 172.99.190.149, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 38.75.136.21:2375, server: 38.75.136.21, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 217.30.10.67:9056, server: 217.30.10.67, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
+  - {name: 167.88.63.79:8080, server: 167.88.63.79, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: 185.167.116.250:9006, server: 185.167.116.250, port: 9006, type: ss, cipher: aes-256-cfb, password: FAdUvMJUq5vDgKEq, udp: true}
+  - {name: 85.208.108.21:5004, server: 85.208.108.21, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: FR 2｜openit.pw｜推广t.me/xingchen0829/6310, server: 62.210.113.98, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: 85.208.108.21:7306, server: 85.208.108.21, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: 213.183.53.198:9040, server: 213.183.53.198, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
+  - {name: 85.208.108.21:443, server: 85.208.108.21, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 38.121.43.71:8009, server: 38.121.43.71, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: 85.208.108.21:8881, server: 85.208.108.21, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: 85.208.108.21:8091, server: 85.208.108.21, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: 167.88.63.79:443, server: 167.88.63.79, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: FR 3｜openit.pw｜推广t.me/xingchen0829/6310, server: 62.210.113.98, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 217.30.10.65:9008, server: 217.30.10.65, port: 9008, type: ss, cipher: aes-256-cfb, password: y9VURyNzJWNRYEGQ, udp: true}
+  - {name: 217.30.10.65:9037, server: 217.30.10.65, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU, udp: true}
+  - {name: 38.121.43.71:8882, server: 38.121.43.71, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: 172.99.188.71:8882, server: 172.99.188.71, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: 167.88.63.79:8118, server: 167.88.63.79, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: 217.30.10.67:9000, server: 217.30.10.67, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
+  - {name: 38.121.43.71:6679, server: 38.121.43.71, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: 38.114.114.69:8882, server: 38.114.114.69, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: DE 1｜openit.pw｜推广t.me/xingchen0829/6310, server: 193.108.118.30, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: 167.88.63.79:8881, server: 167.88.63.79, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: 38.121.43.71:8091, server: 38.121.43.71, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: 85.208.108.21:2376, server: 85.208.108.21, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 213.183.51.172:9033, server: 213.183.51.172, port: 9033, type: ss, cipher: aes-256-cfb, password: UTJA57ypk2XKQpnm, udp: true}
+  - {name: 38.121.43.71:7001, server: 38.121.43.71, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: 38.121.43.71:5004, server: 38.121.43.71, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: 38.68.135.19:5003, server: 38.68.135.19, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: RU 7｜openit.pw｜推广t.me/xingchen0829/6310, server: 185.4.65.6, port: 21247, type: ss, cipher: aes-256-cfb, password: vDS9G2p, udp: true}
+  - {name: 38.121.43.71:8000, server: 38.121.43.71, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: 217.30.10.68:9025, server: 217.30.10.68, port: 9025, type: ss, cipher: aes-256-cfb, password: XPtzA9sCug3SPR4c, udp: true}
+  - {name: CN 33｜openit.pw｜推广t.me/xingchen0829/6310, server: kqs-moble.gatknqh.cn, port: 60043, type: ss, cipher: aes-256-gcm, password: 29426116-ddb9-439d-9fac-462600a2c434, udp: true}
+  - {name: CN 16｜openit.pw｜推广t.me/xingchen0829/6310, server: kqs-moble.gatknqh.cn, port: 45001, type: ss, cipher: aes-256-gcm, password: 29426116-ddb9-439d-9fac-462600a2c434, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay_🇯🇵JP-🇯🇵JP_511
-      - JP_507
-      - ZZ_1752
-      - Relay_🇺🇸US-🇺🇸US_1576
-      - SE_938
-      - US_1476
-      - US 19｜openit.pw
-      - US_1475
-      - RO_812
-      - US 2｜openit.pw
-      - RO_814
-      - CA 2｜openit.pw
-      - AU_84
-      - AU_53
-      - CA 4｜openit.pw
-      - AU_51
-      - US_1586
-      - AU_82
-      - CN 5｜openit.pw
-      - Relay_🇨🇳CN-🇩🇪DE_284
-      - FR_394
-      - AU_47
-      - CA 1｜openit.pw
-      - RO_810
-      - CA_175
-      - CA_182
-      - CA_174
-      - US_1591
-      - LT_598
-      - CA_184
-      - Relay_🇨🇳CN-🇩🇪DE_282
-      - CA_173
-      - LT_591
-      - LT_596
-      - CA_181
-      - Relay_🇨🇳CN-🇭🇰HK_264
-      - SG_948
-      - CA 3｜openit.pw
-      - DE_345
-      - LT_600
-      - RU_935
-      - US_1568
-      - LT_581
-      - LT_555
-      - CN 9｜openit.pw
+      - CN 5｜openit.pw｜推广t.me/xingchen0829/6310
+      - ""
+      - US 27｜openit.pw｜推广t.me/xingchen0829/6310
+      - HK 1｜openit.pw｜推广t.me/xingchen0829/6310
+      - 213.183.53.200:9020
+      - 213.183.53.200:9031
+      - 213.183.53.200:9046
+      - 213.183.53.200:9033
+      - 213.183.53.200:9094
+      - 213.183.53.177:9008
+      - 213.183.53.200:9073
+      - 167.88.61.50:8119
+      - 213.183.53.177:9059
+      - 213.183.53.177:9064
+      - 167.88.61.175:3306
+      - 167.88.61.175:5004
+      - 167.88.61.50:5600
+      - 167.88.61.50:2375
+      - 167.88.61.175:8090
+      - 167.88.61.175:5000
+      - 213.183.53.200:9015
+      - 167.88.61.14:8881
+      - 167.88.61.175:5003
+      - US 21｜openit.pw｜推广t.me/xingchen0829/6310
+      - 167.88.61.175:8881
+      - 167.88.61.175:9102
+      - 167.88.61.175:8118
+      - 167.88.61.175:443
+      - 167.88.61.175:8119
+      - 167.88.61.175:7002
+      - 167.88.61.175:2375
+      - 213.183.53.200:9041
+      - 213.183.53.200:9005
+      - 167.88.61.175:7307
+      - 213.183.53.200:9088
+      - 213.183.53.200:9037
+      - 167.88.61.213:8888
+      - 38.114.114.69:8080
+      - 167.88.61.14:8882
+      - 167.88.61.14:9102
+      - 213.183.53.200:9024
+      - 85.208.108.93:6379
+      - 167.88.61.213:8119
+      - 167.88.61.175:7306
+      - 213.183.53.177:9060
+      - 38.114.114.67:6379
+      - 167.88.61.14:8080
+      - 167.88.61.50:7307
+      - 167.88.61.213:8881
+      - 167.88.61.175:5600
+      - 213.183.53.212:9019
+      - 167.88.61.2:812
+      - 38.114.114.69:8881
+      - 167.88.61.213:7307
+      - 38.75.136.21:5001
+      - 38.114.114.67:5001
+      - 38.114.114.69:8009
+      - TR 8｜openit.pw｜推广t.me/xingchen0829/6310
+      - 167.88.61.50:2376
+      - 85.208.108.94:6697
+      - 38.143.66.20:9101
+      - 167.88.61.213:8118
+      - 38.75.136.21:8882
+      - 167.88.61.14:5601
+      - 38.143.66.20:5000
+      - 38.114.114.69:8090
+      - 167.88.61.14:6379
+      - 38.143.66.99:8118
+      - 85.208.108.21:5003
+      - 167.88.61.14:8090
+      - 167.88.61.213:3389
+      - 38.143.66.20:5500
+      - 85.208.108.21:2375
+      - 167.88.61.14:8119
+      - 167.88.61.14:5500
+      - 85.208.108.21:5000
+      - 213.183.53.221:9008
+      - 85.208.108.20:6679
+      - 167.88.61.14:7306
+      - 167.88.61.213:5003
+      - 167.88.61.14:5001
+      - 167.88.61.14:6697
+      - 85.208.108.21:3306
+      - 85.208.108.21:7307
+      - 167.88.61.175:8888
+      - 167.88.61.14:8888
+      - 85.208.108.21:8008
+      - 85.208.108.94:7001
+      - 167.88.61.2:803
+      - 167.88.61.175:5500
+      - 38.68.135.19:2376
+      - 38.68.135.19:5004
+      - 38.114.114.19:7002
+      - 38.114.114.19:3389
+      - 167.88.61.2:802
+      - 85.208.108.93:8881
+      - 85.208.108.20:7002
+      - 38.143.66.20:9102
+      - 38.68.134.85:8090
+      - CN 28｜openit.pw｜推广t.me/xingchen0829/6310
+      - TR 2｜openit.pw｜推广t.me/xingchen0829/6310
+      - 38.68.134.85:8119
+      - 167.88.61.175:8008
+      - 85.208.108.21:8009
+      - 38.68.134.85:3306
+      - 213.183.53.208:9000
+      - 85.208.108.21:3389
+      - 38.68.134.85:5004
+      - 38.68.134.85:8008
+      - 167.88.61.2:807
+      - 185.246.155.35:9045
+      - 85.208.108.21:6697
+      - 38.91.101.159:7307
+      - 38.68.134.85:2375
+      - TR 5｜openit.pw｜推广t.me/xingchen0829/6310
+      - 167.88.61.50:5004
+      - 85.208.108.21:8882
+      - 38.68.134.85:8118
+      - 38.114.114.19:2376
+      - 167.88.61.14:5003
+      - 38.91.101.159:8091
+      - 38.91.101.159:3306
+      - 38.91.101.159:5003
+      - 38.86.135.27:5003
+      - 38.68.134.85:443
+      - 85.208.108.93:8119
+      - 38.114.114.19:6679
+      - 85.208.108.20:5601
+      - 38.91.107.37:5003
+      - 169.197.141.5:3306
+      - 38.91.101.159:5601
+      - 172.99.188.71:6379
+      - " 2"
+      - 172.99.188.71:8091
+      - 217.30.10.65:9038
+      - 172.99.188.71:8888
+      - 217.30.10.67:9093
+      - 217.30.10.67:9015
+      - 85.208.108.21:6379
+      - 172.99.188.71:8118
+      - 85.208.108.90:2375
+      - 172.99.188.71:5004
+      - 172.99.188.71:443
+      - 167.88.61.14:443
+      - 172.99.188.71:6697
+      - 85.208.108.94:8000
+      - 172.99.188.71:2376
+      - 213.183.53.221:9005
+      - 85.208.108.21:5001
+      - 217.30.10.67:9043
+      - 172.99.188.71:3389
+      - 172.99.188.71:6679
+      - 167.88.63.79:2376
+      - 172.99.188.71:5000
+      - 172.99.190.149:2376
+      - 38.75.136.21:2375
+      - 217.30.10.67:9056
+      - 167.88.63.79:8080
+      - 185.167.116.250:9006
+      - 85.208.108.21:5004
+      - FR 2｜openit.pw｜推广t.me/xingchen0829/6310
+      - 85.208.108.21:7306
+      - 213.183.53.198:9040
+      - 85.208.108.21:443
+      - 38.121.43.71:8009
+      - 85.208.108.21:8881
+      - 85.208.108.21:8091
+      - 167.88.63.79:443
+      - FR 3｜openit.pw｜推广t.me/xingchen0829/6310
+      - 217.30.10.65:9008
+      - 217.30.10.65:9037
+      - 38.121.43.71:8882
+      - 172.99.188.71:8882
+      - 167.88.63.79:8118
+      - 217.30.10.67:9000
+      - 38.121.43.71:6679
+      - 38.114.114.69:8882
+      - DE 1｜openit.pw｜推广t.me/xingchen0829/6310
+      - 167.88.63.79:8881
+      - 38.121.43.71:8091
+      - 85.208.108.21:2376
+      - 213.183.51.172:9033
+      - 38.121.43.71:7001
+      - 38.121.43.71:5004
+      - 38.68.135.19:5003
+      - RU 7｜openit.pw｜推广t.me/xingchen0829/6310
+      - 38.121.43.71:8000
+      - 217.30.10.68:9025
+      - CN 33｜openit.pw｜推广t.me/xingchen0829/6310
+      - CN 16｜openit.pw｜推广t.me/xingchen0829/6310
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - Relay_🇯🇵JP-🇯🇵JP_511
-      - JP_507
-      - ZZ_1752
-      - Relay_🇺🇸US-🇺🇸US_1576
-      - SE_938
-      - US_1476
-      - US 19｜openit.pw
-      - US_1475
-      - RO_812
-      - US 2｜openit.pw
-      - RO_814
-      - CA 2｜openit.pw
-      - AU_84
-      - AU_53
-      - CA 4｜openit.pw
-      - AU_51
-      - US_1586
-      - AU_82
-      - CN 5｜openit.pw
-      - Relay_🇨🇳CN-🇩🇪DE_284
-      - FR_394
-      - AU_47
-      - CA 1｜openit.pw
-      - RO_810
-      - CA_175
-      - CA_182
-      - CA_174
-      - US_1591
-      - LT_598
-      - CA_184
-      - Relay_🇨🇳CN-🇩🇪DE_282
-      - CA_173
-      - LT_591
-      - LT_596
-      - CA_181
-      - Relay_🇨🇳CN-🇭🇰HK_264
-      - SG_948
-      - CA 3｜openit.pw
-      - DE_345
-      - LT_600
-      - RU_935
-      - US_1568
-      - LT_581
-      - LT_555
-      - CN 9｜openit.pw
+      - CN 5｜openit.pw｜推广t.me/xingchen0829/6310
+      - ""
+      - US 27｜openit.pw｜推广t.me/xingchen0829/6310
+      - HK 1｜openit.pw｜推广t.me/xingchen0829/6310
+      - 213.183.53.200:9020
+      - 213.183.53.200:9031
+      - 213.183.53.200:9046
+      - 213.183.53.200:9033
+      - 213.183.53.200:9094
+      - 213.183.53.177:9008
+      - 213.183.53.200:9073
+      - 167.88.61.50:8119
+      - 213.183.53.177:9059
+      - 213.183.53.177:9064
+      - 167.88.61.175:3306
+      - 167.88.61.175:5004
+      - 167.88.61.50:5600
+      - 167.88.61.50:2375
+      - 167.88.61.175:8090
+      - 167.88.61.175:5000
+      - 213.183.53.200:9015
+      - 167.88.61.14:8881
+      - 167.88.61.175:5003
+      - US 21｜openit.pw｜推广t.me/xingchen0829/6310
+      - 167.88.61.175:8881
+      - 167.88.61.175:9102
+      - 167.88.61.175:8118
+      - 167.88.61.175:443
+      - 167.88.61.175:8119
+      - 167.88.61.175:7002
+      - 167.88.61.175:2375
+      - 213.183.53.200:9041
+      - 213.183.53.200:9005
+      - 167.88.61.175:7307
+      - 213.183.53.200:9088
+      - 213.183.53.200:9037
+      - 167.88.61.213:8888
+      - 38.114.114.69:8080
+      - 167.88.61.14:8882
+      - 167.88.61.14:9102
+      - 213.183.53.200:9024
+      - 85.208.108.93:6379
+      - 167.88.61.213:8119
+      - 167.88.61.175:7306
+      - 213.183.53.177:9060
+      - 38.114.114.67:6379
+      - 167.88.61.14:8080
+      - 167.88.61.50:7307
+      - 167.88.61.213:8881
+      - 167.88.61.175:5600
+      - 213.183.53.212:9019
+      - 167.88.61.2:812
+      - 38.114.114.69:8881
+      - 167.88.61.213:7307
+      - 38.75.136.21:5001
+      - 38.114.114.67:5001
+      - 38.114.114.69:8009
+      - TR 8｜openit.pw｜推广t.me/xingchen0829/6310
+      - 167.88.61.50:2376
+      - 85.208.108.94:6697
+      - 38.143.66.20:9101
+      - 167.88.61.213:8118
+      - 38.75.136.21:8882
+      - 167.88.61.14:5601
+      - 38.143.66.20:5000
+      - 38.114.114.69:8090
+      - 167.88.61.14:6379
+      - 38.143.66.99:8118
+      - 85.208.108.21:5003
+      - 167.88.61.14:8090
+      - 167.88.61.213:3389
+      - 38.143.66.20:5500
+      - 85.208.108.21:2375
+      - 167.88.61.14:8119
+      - 167.88.61.14:5500
+      - 85.208.108.21:5000
+      - 213.183.53.221:9008
+      - 85.208.108.20:6679
+      - 167.88.61.14:7306
+      - 167.88.61.213:5003
+      - 167.88.61.14:5001
+      - 167.88.61.14:6697
+      - 85.208.108.21:3306
+      - 85.208.108.21:7307
+      - 167.88.61.175:8888
+      - 167.88.61.14:8888
+      - 85.208.108.21:8008
+      - 85.208.108.94:7001
+      - 167.88.61.2:803
+      - 167.88.61.175:5500
+      - 38.68.135.19:2376
+      - 38.68.135.19:5004
+      - 38.114.114.19:7002
+      - 38.114.114.19:3389
+      - 167.88.61.2:802
+      - 85.208.108.93:8881
+      - 85.208.108.20:7002
+      - 38.143.66.20:9102
+      - 38.68.134.85:8090
+      - CN 28｜openit.pw｜推广t.me/xingchen0829/6310
+      - TR 2｜openit.pw｜推广t.me/xingchen0829/6310
+      - 38.68.134.85:8119
+      - 167.88.61.175:8008
+      - 85.208.108.21:8009
+      - 38.68.134.85:3306
+      - 213.183.53.208:9000
+      - 85.208.108.21:3389
+      - 38.68.134.85:5004
+      - 38.68.134.85:8008
+      - 167.88.61.2:807
+      - 185.246.155.35:9045
+      - 85.208.108.21:6697
+      - 38.91.101.159:7307
+      - 38.68.134.85:2375
+      - TR 5｜openit.pw｜推广t.me/xingchen0829/6310
+      - 167.88.61.50:5004
+      - 85.208.108.21:8882
+      - 38.68.134.85:8118
+      - 38.114.114.19:2376
+      - 167.88.61.14:5003
+      - 38.91.101.159:8091
+      - 38.91.101.159:3306
+      - 38.91.101.159:5003
+      - 38.86.135.27:5003
+      - 38.68.134.85:443
+      - 85.208.108.93:8119
+      - 38.114.114.19:6679
+      - 85.208.108.20:5601
+      - 38.91.107.37:5003
+      - 169.197.141.5:3306
+      - 38.91.101.159:5601
+      - 172.99.188.71:6379
+      - " 2"
+      - 172.99.188.71:8091
+      - 217.30.10.65:9038
+      - 172.99.188.71:8888
+      - 217.30.10.67:9093
+      - 217.30.10.67:9015
+      - 85.208.108.21:6379
+      - 172.99.188.71:8118
+      - 85.208.108.90:2375
+      - 172.99.188.71:5004
+      - 172.99.188.71:443
+      - 167.88.61.14:443
+      - 172.99.188.71:6697
+      - 85.208.108.94:8000
+      - 172.99.188.71:2376
+      - 213.183.53.221:9005
+      - 85.208.108.21:5001
+      - 217.30.10.67:9043
+      - 172.99.188.71:3389
+      - 172.99.188.71:6679
+      - 167.88.63.79:2376
+      - 172.99.188.71:5000
+      - 172.99.190.149:2376
+      - 38.75.136.21:2375
+      - 217.30.10.67:9056
+      - 167.88.63.79:8080
+      - 185.167.116.250:9006
+      - 85.208.108.21:5004
+      - FR 2｜openit.pw｜推广t.me/xingchen0829/6310
+      - 85.208.108.21:7306
+      - 213.183.53.198:9040
+      - 85.208.108.21:443
+      - 38.121.43.71:8009
+      - 85.208.108.21:8881
+      - 85.208.108.21:8091
+      - 167.88.63.79:443
+      - FR 3｜openit.pw｜推广t.me/xingchen0829/6310
+      - 217.30.10.65:9008
+      - 217.30.10.65:9037
+      - 38.121.43.71:8882
+      - 172.99.188.71:8882
+      - 167.88.63.79:8118
+      - 217.30.10.67:9000
+      - 38.121.43.71:6679
+      - 38.114.114.69:8882
+      - DE 1｜openit.pw｜推广t.me/xingchen0829/6310
+      - 167.88.63.79:8881
+      - 38.121.43.71:8091
+      - 85.208.108.21:2376
+      - 213.183.51.172:9033
+      - 38.121.43.71:7001
+      - 38.121.43.71:5004
+      - 38.68.135.19:5003
+      - RU 7｜openit.pw｜推广t.me/xingchen0829/6310
+      - 38.121.43.71:8000
+      - 217.30.10.68:9025
+      - CN 33｜openit.pw｜推广t.me/xingchen0829/6310
+      - CN 16｜openit.pw｜推广t.me/xingchen0829/6310
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay_🇯🇵JP-🇯🇵JP_511
-      - JP_507
-      - ZZ_1752
-      - Relay_🇺🇸US-🇺🇸US_1576
-      - SE_938
-      - US_1476
-      - US 19｜openit.pw
-      - US_1475
-      - RO_812
-      - US 2｜openit.pw
-      - RO_814
-      - CA 2｜openit.pw
-      - AU_84
-      - AU_53
-      - CA 4｜openit.pw
-      - AU_51
-      - US_1586
-      - AU_82
-      - CN 5｜openit.pw
-      - Relay_🇨🇳CN-🇩🇪DE_284
-      - FR_394
-      - AU_47
-      - CA 1｜openit.pw
-      - RO_810
-      - CA_175
-      - CA_182
-      - CA_174
-      - US_1591
-      - LT_598
-      - CA_184
-      - Relay_🇨🇳CN-🇩🇪DE_282
-      - CA_173
-      - LT_591
-      - LT_596
-      - CA_181
-      - Relay_🇨🇳CN-🇭🇰HK_264
-      - SG_948
-      - CA 3｜openit.pw
-      - DE_345
-      - LT_600
-      - RU_935
-      - US_1568
-      - LT_581
-      - LT_555
-      - CN 9｜openit.pw
+      - CN 5｜openit.pw｜推广t.me/xingchen0829/6310
+      - ""
+      - US 27｜openit.pw｜推广t.me/xingchen0829/6310
+      - HK 1｜openit.pw｜推广t.me/xingchen0829/6310
+      - 213.183.53.200:9020
+      - 213.183.53.200:9031
+      - 213.183.53.200:9046
+      - 213.183.53.200:9033
+      - 213.183.53.200:9094
+      - 213.183.53.177:9008
+      - 213.183.53.200:9073
+      - 167.88.61.50:8119
+      - 213.183.53.177:9059
+      - 213.183.53.177:9064
+      - 167.88.61.175:3306
+      - 167.88.61.175:5004
+      - 167.88.61.50:5600
+      - 167.88.61.50:2375
+      - 167.88.61.175:8090
+      - 167.88.61.175:5000
+      - 213.183.53.200:9015
+      - 167.88.61.14:8881
+      - 167.88.61.175:5003
+      - US 21｜openit.pw｜推广t.me/xingchen0829/6310
+      - 167.88.61.175:8881
+      - 167.88.61.175:9102
+      - 167.88.61.175:8118
+      - 167.88.61.175:443
+      - 167.88.61.175:8119
+      - 167.88.61.175:7002
+      - 167.88.61.175:2375
+      - 213.183.53.200:9041
+      - 213.183.53.200:9005
+      - 167.88.61.175:7307
+      - 213.183.53.200:9088
+      - 213.183.53.200:9037
+      - 167.88.61.213:8888
+      - 38.114.114.69:8080
+      - 167.88.61.14:8882
+      - 167.88.61.14:9102
+      - 213.183.53.200:9024
+      - 85.208.108.93:6379
+      - 167.88.61.213:8119
+      - 167.88.61.175:7306
+      - 213.183.53.177:9060
+      - 38.114.114.67:6379
+      - 167.88.61.14:8080
+      - 167.88.61.50:7307
+      - 167.88.61.213:8881
+      - 167.88.61.175:5600
+      - 213.183.53.212:9019
+      - 167.88.61.2:812
+      - 38.114.114.69:8881
+      - 167.88.61.213:7307
+      - 38.75.136.21:5001
+      - 38.114.114.67:5001
+      - 38.114.114.69:8009
+      - TR 8｜openit.pw｜推广t.me/xingchen0829/6310
+      - 167.88.61.50:2376
+      - 85.208.108.94:6697
+      - 38.143.66.20:9101
+      - 167.88.61.213:8118
+      - 38.75.136.21:8882
+      - 167.88.61.14:5601
+      - 38.143.66.20:5000
+      - 38.114.114.69:8090
+      - 167.88.61.14:6379
+      - 38.143.66.99:8118
+      - 85.208.108.21:5003
+      - 167.88.61.14:8090
+      - 167.88.61.213:3389
+      - 38.143.66.20:5500
+      - 85.208.108.21:2375
+      - 167.88.61.14:8119
+      - 167.88.61.14:5500
+      - 85.208.108.21:5000
+      - 213.183.53.221:9008
+      - 85.208.108.20:6679
+      - 167.88.61.14:7306
+      - 167.88.61.213:5003
+      - 167.88.61.14:5001
+      - 167.88.61.14:6697
+      - 85.208.108.21:3306
+      - 85.208.108.21:7307
+      - 167.88.61.175:8888
+      - 167.88.61.14:8888
+      - 85.208.108.21:8008
+      - 85.208.108.94:7001
+      - 167.88.61.2:803
+      - 167.88.61.175:5500
+      - 38.68.135.19:2376
+      - 38.68.135.19:5004
+      - 38.114.114.19:7002
+      - 38.114.114.19:3389
+      - 167.88.61.2:802
+      - 85.208.108.93:8881
+      - 85.208.108.20:7002
+      - 38.143.66.20:9102
+      - 38.68.134.85:8090
+      - CN 28｜openit.pw｜推广t.me/xingchen0829/6310
+      - TR 2｜openit.pw｜推广t.me/xingchen0829/6310
+      - 38.68.134.85:8119
+      - 167.88.61.175:8008
+      - 85.208.108.21:8009
+      - 38.68.134.85:3306
+      - 213.183.53.208:9000
+      - 85.208.108.21:3389
+      - 38.68.134.85:5004
+      - 38.68.134.85:8008
+      - 167.88.61.2:807
+      - 185.246.155.35:9045
+      - 85.208.108.21:6697
+      - 38.91.101.159:7307
+      - 38.68.134.85:2375
+      - TR 5｜openit.pw｜推广t.me/xingchen0829/6310
+      - 167.88.61.50:5004
+      - 85.208.108.21:8882
+      - 38.68.134.85:8118
+      - 38.114.114.19:2376
+      - 167.88.61.14:5003
+      - 38.91.101.159:8091
+      - 38.91.101.159:3306
+      - 38.91.101.159:5003
+      - 38.86.135.27:5003
+      - 38.68.134.85:443
+      - 85.208.108.93:8119
+      - 38.114.114.19:6679
+      - 85.208.108.20:5601
+      - 38.91.107.37:5003
+      - 169.197.141.5:3306
+      - 38.91.101.159:5601
+      - 172.99.188.71:6379
+      - " 2"
+      - 172.99.188.71:8091
+      - 217.30.10.65:9038
+      - 172.99.188.71:8888
+      - 217.30.10.67:9093
+      - 217.30.10.67:9015
+      - 85.208.108.21:6379
+      - 172.99.188.71:8118
+      - 85.208.108.90:2375
+      - 172.99.188.71:5004
+      - 172.99.188.71:443
+      - 167.88.61.14:443
+      - 172.99.188.71:6697
+      - 85.208.108.94:8000
+      - 172.99.188.71:2376
+      - 213.183.53.221:9005
+      - 85.208.108.21:5001
+      - 217.30.10.67:9043
+      - 172.99.188.71:3389
+      - 172.99.188.71:6679
+      - 167.88.63.79:2376
+      - 172.99.188.71:5000
+      - 172.99.190.149:2376
+      - 38.75.136.21:2375
+      - 217.30.10.67:9056
+      - 167.88.63.79:8080
+      - 185.167.116.250:9006
+      - 85.208.108.21:5004
+      - FR 2｜openit.pw｜推广t.me/xingchen0829/6310
+      - 85.208.108.21:7306
+      - 213.183.53.198:9040
+      - 85.208.108.21:443
+      - 38.121.43.71:8009
+      - 85.208.108.21:8881
+      - 85.208.108.21:8091
+      - 167.88.63.79:443
+      - FR 3｜openit.pw｜推广t.me/xingchen0829/6310
+      - 217.30.10.65:9008
+      - 217.30.10.65:9037
+      - 38.121.43.71:8882
+      - 172.99.188.71:8882
+      - 167.88.63.79:8118
+      - 217.30.10.67:9000
+      - 38.121.43.71:6679
+      - 38.114.114.69:8882
+      - DE 1｜openit.pw｜推广t.me/xingchen0829/6310
+      - 167.88.63.79:8881
+      - 38.121.43.71:8091
+      - 85.208.108.21:2376
+      - 213.183.51.172:9033
+      - 38.121.43.71:7001
+      - 38.121.43.71:5004
+      - 38.68.135.19:5003
+      - RU 7｜openit.pw｜推广t.me/xingchen0829/6310
+      - 38.121.43.71:8000
+      - 217.30.10.68:9025
+      - CN 33｜openit.pw｜推广t.me/xingchen0829/6310
+      - CN 16｜openit.pw｜推广t.me/xingchen0829/6310
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -220,51 +800,196 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay_🇯🇵JP-🇯🇵JP_511
-      - JP_507
-      - ZZ_1752
-      - Relay_🇺🇸US-🇺🇸US_1576
-      - SE_938
-      - US_1476
-      - US 19｜openit.pw
-      - US_1475
-      - RO_812
-      - US 2｜openit.pw
-      - RO_814
-      - CA 2｜openit.pw
-      - AU_84
-      - AU_53
-      - CA 4｜openit.pw
-      - AU_51
-      - US_1586
-      - AU_82
-      - CN 5｜openit.pw
-      - Relay_🇨🇳CN-🇩🇪DE_284
-      - FR_394
-      - AU_47
-      - CA 1｜openit.pw
-      - RO_810
-      - CA_175
-      - CA_182
-      - CA_174
-      - US_1591
-      - LT_598
-      - CA_184
-      - Relay_🇨🇳CN-🇩🇪DE_282
-      - CA_173
-      - LT_591
-      - LT_596
-      - CA_181
-      - Relay_🇨🇳CN-🇭🇰HK_264
-      - SG_948
-      - CA 3｜openit.pw
-      - DE_345
-      - LT_600
-      - RU_935
-      - US_1568
-      - LT_581
-      - LT_555
-      - CN 9｜openit.pw
+      - CN 5｜openit.pw｜推广t.me/xingchen0829/6310
+      - ""
+      - US 27｜openit.pw｜推广t.me/xingchen0829/6310
+      - HK 1｜openit.pw｜推广t.me/xingchen0829/6310
+      - 213.183.53.200:9020
+      - 213.183.53.200:9031
+      - 213.183.53.200:9046
+      - 213.183.53.200:9033
+      - 213.183.53.200:9094
+      - 213.183.53.177:9008
+      - 213.183.53.200:9073
+      - 167.88.61.50:8119
+      - 213.183.53.177:9059
+      - 213.183.53.177:9064
+      - 167.88.61.175:3306
+      - 167.88.61.175:5004
+      - 167.88.61.50:5600
+      - 167.88.61.50:2375
+      - 167.88.61.175:8090
+      - 167.88.61.175:5000
+      - 213.183.53.200:9015
+      - 167.88.61.14:8881
+      - 167.88.61.175:5003
+      - US 21｜openit.pw｜推广t.me/xingchen0829/6310
+      - 167.88.61.175:8881
+      - 167.88.61.175:9102
+      - 167.88.61.175:8118
+      - 167.88.61.175:443
+      - 167.88.61.175:8119
+      - 167.88.61.175:7002
+      - 167.88.61.175:2375
+      - 213.183.53.200:9041
+      - 213.183.53.200:9005
+      - 167.88.61.175:7307
+      - 213.183.53.200:9088
+      - 213.183.53.200:9037
+      - 167.88.61.213:8888
+      - 38.114.114.69:8080
+      - 167.88.61.14:8882
+      - 167.88.61.14:9102
+      - 213.183.53.200:9024
+      - 85.208.108.93:6379
+      - 167.88.61.213:8119
+      - 167.88.61.175:7306
+      - 213.183.53.177:9060
+      - 38.114.114.67:6379
+      - 167.88.61.14:8080
+      - 167.88.61.50:7307
+      - 167.88.61.213:8881
+      - 167.88.61.175:5600
+      - 213.183.53.212:9019
+      - 167.88.61.2:812
+      - 38.114.114.69:8881
+      - 167.88.61.213:7307
+      - 38.75.136.21:5001
+      - 38.114.114.67:5001
+      - 38.114.114.69:8009
+      - TR 8｜openit.pw｜推广t.me/xingchen0829/6310
+      - 167.88.61.50:2376
+      - 85.208.108.94:6697
+      - 38.143.66.20:9101
+      - 167.88.61.213:8118
+      - 38.75.136.21:8882
+      - 167.88.61.14:5601
+      - 38.143.66.20:5000
+      - 38.114.114.69:8090
+      - 167.88.61.14:6379
+      - 38.143.66.99:8118
+      - 85.208.108.21:5003
+      - 167.88.61.14:8090
+      - 167.88.61.213:3389
+      - 38.143.66.20:5500
+      - 85.208.108.21:2375
+      - 167.88.61.14:8119
+      - 167.88.61.14:5500
+      - 85.208.108.21:5000
+      - 213.183.53.221:9008
+      - 85.208.108.20:6679
+      - 167.88.61.14:7306
+      - 167.88.61.213:5003
+      - 167.88.61.14:5001
+      - 167.88.61.14:6697
+      - 85.208.108.21:3306
+      - 85.208.108.21:7307
+      - 167.88.61.175:8888
+      - 167.88.61.14:8888
+      - 85.208.108.21:8008
+      - 85.208.108.94:7001
+      - 167.88.61.2:803
+      - 167.88.61.175:5500
+      - 38.68.135.19:2376
+      - 38.68.135.19:5004
+      - 38.114.114.19:7002
+      - 38.114.114.19:3389
+      - 167.88.61.2:802
+      - 85.208.108.93:8881
+      - 85.208.108.20:7002
+      - 38.143.66.20:9102
+      - 38.68.134.85:8090
+      - CN 28｜openit.pw｜推广t.me/xingchen0829/6310
+      - TR 2｜openit.pw｜推广t.me/xingchen0829/6310
+      - 38.68.134.85:8119
+      - 167.88.61.175:8008
+      - 85.208.108.21:8009
+      - 38.68.134.85:3306
+      - 213.183.53.208:9000
+      - 85.208.108.21:3389
+      - 38.68.134.85:5004
+      - 38.68.134.85:8008
+      - 167.88.61.2:807
+      - 185.246.155.35:9045
+      - 85.208.108.21:6697
+      - 38.91.101.159:7307
+      - 38.68.134.85:2375
+      - TR 5｜openit.pw｜推广t.me/xingchen0829/6310
+      - 167.88.61.50:5004
+      - 85.208.108.21:8882
+      - 38.68.134.85:8118
+      - 38.114.114.19:2376
+      - 167.88.61.14:5003
+      - 38.91.101.159:8091
+      - 38.91.101.159:3306
+      - 38.91.101.159:5003
+      - 38.86.135.27:5003
+      - 38.68.134.85:443
+      - 85.208.108.93:8119
+      - 38.114.114.19:6679
+      - 85.208.108.20:5601
+      - 38.91.107.37:5003
+      - 169.197.141.5:3306
+      - 38.91.101.159:5601
+      - 172.99.188.71:6379
+      - " 2"
+      - 172.99.188.71:8091
+      - 217.30.10.65:9038
+      - 172.99.188.71:8888
+      - 217.30.10.67:9093
+      - 217.30.10.67:9015
+      - 85.208.108.21:6379
+      - 172.99.188.71:8118
+      - 85.208.108.90:2375
+      - 172.99.188.71:5004
+      - 172.99.188.71:443
+      - 167.88.61.14:443
+      - 172.99.188.71:6697
+      - 85.208.108.94:8000
+      - 172.99.188.71:2376
+      - 213.183.53.221:9005
+      - 85.208.108.21:5001
+      - 217.30.10.67:9043
+      - 172.99.188.71:3389
+      - 172.99.188.71:6679
+      - 167.88.63.79:2376
+      - 172.99.188.71:5000
+      - 172.99.190.149:2376
+      - 38.75.136.21:2375
+      - 217.30.10.67:9056
+      - 167.88.63.79:8080
+      - 185.167.116.250:9006
+      - 85.208.108.21:5004
+      - FR 2｜openit.pw｜推广t.me/xingchen0829/6310
+      - 85.208.108.21:7306
+      - 213.183.53.198:9040
+      - 85.208.108.21:443
+      - 38.121.43.71:8009
+      - 85.208.108.21:8881
+      - 85.208.108.21:8091
+      - 167.88.63.79:443
+      - FR 3｜openit.pw｜推广t.me/xingchen0829/6310
+      - 217.30.10.65:9008
+      - 217.30.10.65:9037
+      - 38.121.43.71:8882
+      - 172.99.188.71:8882
+      - 167.88.63.79:8118
+      - 217.30.10.67:9000
+      - 38.121.43.71:6679
+      - 38.114.114.69:8882
+      - DE 1｜openit.pw｜推广t.me/xingchen0829/6310
+      - 167.88.63.79:8881
+      - 38.121.43.71:8091
+      - 85.208.108.21:2376
+      - 213.183.51.172:9033
+      - 38.121.43.71:7001
+      - 38.121.43.71:5004
+      - 38.68.135.19:5003
+      - RU 7｜openit.pw｜推广t.me/xingchen0829/6310
+      - 38.121.43.71:8000
+      - 217.30.10.68:9025
+      - CN 33｜openit.pw｜推广t.me/xingchen0829/6310
+      - CN 16｜openit.pw｜推广t.me/xingchen0829/6310
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -275,152 +1000,587 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - Relay_🇯🇵JP-🇯🇵JP_511
-      - JP_507
-      - ZZ_1752
-      - Relay_🇺🇸US-🇺🇸US_1576
-      - SE_938
-      - US_1476
-      - US 19｜openit.pw
-      - US_1475
-      - RO_812
-      - US 2｜openit.pw
-      - RO_814
-      - CA 2｜openit.pw
-      - AU_84
-      - AU_53
-      - CA 4｜openit.pw
-      - AU_51
-      - US_1586
-      - AU_82
-      - CN 5｜openit.pw
-      - Relay_🇨🇳CN-🇩🇪DE_284
-      - FR_394
-      - AU_47
-      - CA 1｜openit.pw
-      - RO_810
-      - CA_175
-      - CA_182
-      - CA_174
-      - US_1591
-      - LT_598
-      - CA_184
-      - Relay_🇨🇳CN-🇩🇪DE_282
-      - CA_173
-      - LT_591
-      - LT_596
-      - CA_181
-      - Relay_🇨🇳CN-🇭🇰HK_264
-      - SG_948
-      - CA 3｜openit.pw
-      - DE_345
-      - LT_600
-      - RU_935
-      - US_1568
-      - LT_581
-      - LT_555
-      - CN 9｜openit.pw
+      - CN 5｜openit.pw｜推广t.me/xingchen0829/6310
+      - ""
+      - US 27｜openit.pw｜推广t.me/xingchen0829/6310
+      - HK 1｜openit.pw｜推广t.me/xingchen0829/6310
+      - 213.183.53.200:9020
+      - 213.183.53.200:9031
+      - 213.183.53.200:9046
+      - 213.183.53.200:9033
+      - 213.183.53.200:9094
+      - 213.183.53.177:9008
+      - 213.183.53.200:9073
+      - 167.88.61.50:8119
+      - 213.183.53.177:9059
+      - 213.183.53.177:9064
+      - 167.88.61.175:3306
+      - 167.88.61.175:5004
+      - 167.88.61.50:5600
+      - 167.88.61.50:2375
+      - 167.88.61.175:8090
+      - 167.88.61.175:5000
+      - 213.183.53.200:9015
+      - 167.88.61.14:8881
+      - 167.88.61.175:5003
+      - US 21｜openit.pw｜推广t.me/xingchen0829/6310
+      - 167.88.61.175:8881
+      - 167.88.61.175:9102
+      - 167.88.61.175:8118
+      - 167.88.61.175:443
+      - 167.88.61.175:8119
+      - 167.88.61.175:7002
+      - 167.88.61.175:2375
+      - 213.183.53.200:9041
+      - 213.183.53.200:9005
+      - 167.88.61.175:7307
+      - 213.183.53.200:9088
+      - 213.183.53.200:9037
+      - 167.88.61.213:8888
+      - 38.114.114.69:8080
+      - 167.88.61.14:8882
+      - 167.88.61.14:9102
+      - 213.183.53.200:9024
+      - 85.208.108.93:6379
+      - 167.88.61.213:8119
+      - 167.88.61.175:7306
+      - 213.183.53.177:9060
+      - 38.114.114.67:6379
+      - 167.88.61.14:8080
+      - 167.88.61.50:7307
+      - 167.88.61.213:8881
+      - 167.88.61.175:5600
+      - 213.183.53.212:9019
+      - 167.88.61.2:812
+      - 38.114.114.69:8881
+      - 167.88.61.213:7307
+      - 38.75.136.21:5001
+      - 38.114.114.67:5001
+      - 38.114.114.69:8009
+      - TR 8｜openit.pw｜推广t.me/xingchen0829/6310
+      - 167.88.61.50:2376
+      - 85.208.108.94:6697
+      - 38.143.66.20:9101
+      - 167.88.61.213:8118
+      - 38.75.136.21:8882
+      - 167.88.61.14:5601
+      - 38.143.66.20:5000
+      - 38.114.114.69:8090
+      - 167.88.61.14:6379
+      - 38.143.66.99:8118
+      - 85.208.108.21:5003
+      - 167.88.61.14:8090
+      - 167.88.61.213:3389
+      - 38.143.66.20:5500
+      - 85.208.108.21:2375
+      - 167.88.61.14:8119
+      - 167.88.61.14:5500
+      - 85.208.108.21:5000
+      - 213.183.53.221:9008
+      - 85.208.108.20:6679
+      - 167.88.61.14:7306
+      - 167.88.61.213:5003
+      - 167.88.61.14:5001
+      - 167.88.61.14:6697
+      - 85.208.108.21:3306
+      - 85.208.108.21:7307
+      - 167.88.61.175:8888
+      - 167.88.61.14:8888
+      - 85.208.108.21:8008
+      - 85.208.108.94:7001
+      - 167.88.61.2:803
+      - 167.88.61.175:5500
+      - 38.68.135.19:2376
+      - 38.68.135.19:5004
+      - 38.114.114.19:7002
+      - 38.114.114.19:3389
+      - 167.88.61.2:802
+      - 85.208.108.93:8881
+      - 85.208.108.20:7002
+      - 38.143.66.20:9102
+      - 38.68.134.85:8090
+      - CN 28｜openit.pw｜推广t.me/xingchen0829/6310
+      - TR 2｜openit.pw｜推广t.me/xingchen0829/6310
+      - 38.68.134.85:8119
+      - 167.88.61.175:8008
+      - 85.208.108.21:8009
+      - 38.68.134.85:3306
+      - 213.183.53.208:9000
+      - 85.208.108.21:3389
+      - 38.68.134.85:5004
+      - 38.68.134.85:8008
+      - 167.88.61.2:807
+      - 185.246.155.35:9045
+      - 85.208.108.21:6697
+      - 38.91.101.159:7307
+      - 38.68.134.85:2375
+      - TR 5｜openit.pw｜推广t.me/xingchen0829/6310
+      - 167.88.61.50:5004
+      - 85.208.108.21:8882
+      - 38.68.134.85:8118
+      - 38.114.114.19:2376
+      - 167.88.61.14:5003
+      - 38.91.101.159:8091
+      - 38.91.101.159:3306
+      - 38.91.101.159:5003
+      - 38.86.135.27:5003
+      - 38.68.134.85:443
+      - 85.208.108.93:8119
+      - 38.114.114.19:6679
+      - 85.208.108.20:5601
+      - 38.91.107.37:5003
+      - 169.197.141.5:3306
+      - 38.91.101.159:5601
+      - 172.99.188.71:6379
+      - " 2"
+      - 172.99.188.71:8091
+      - 217.30.10.65:9038
+      - 172.99.188.71:8888
+      - 217.30.10.67:9093
+      - 217.30.10.67:9015
+      - 85.208.108.21:6379
+      - 172.99.188.71:8118
+      - 85.208.108.90:2375
+      - 172.99.188.71:5004
+      - 172.99.188.71:443
+      - 167.88.61.14:443
+      - 172.99.188.71:6697
+      - 85.208.108.94:8000
+      - 172.99.188.71:2376
+      - 213.183.53.221:9005
+      - 85.208.108.21:5001
+      - 217.30.10.67:9043
+      - 172.99.188.71:3389
+      - 172.99.188.71:6679
+      - 167.88.63.79:2376
+      - 172.99.188.71:5000
+      - 172.99.190.149:2376
+      - 38.75.136.21:2375
+      - 217.30.10.67:9056
+      - 167.88.63.79:8080
+      - 185.167.116.250:9006
+      - 85.208.108.21:5004
+      - FR 2｜openit.pw｜推广t.me/xingchen0829/6310
+      - 85.208.108.21:7306
+      - 213.183.53.198:9040
+      - 85.208.108.21:443
+      - 38.121.43.71:8009
+      - 85.208.108.21:8881
+      - 85.208.108.21:8091
+      - 167.88.63.79:443
+      - FR 3｜openit.pw｜推广t.me/xingchen0829/6310
+      - 217.30.10.65:9008
+      - 217.30.10.65:9037
+      - 38.121.43.71:8882
+      - 172.99.188.71:8882
+      - 167.88.63.79:8118
+      - 217.30.10.67:9000
+      - 38.121.43.71:6679
+      - 38.114.114.69:8882
+      - DE 1｜openit.pw｜推广t.me/xingchen0829/6310
+      - 167.88.63.79:8881
+      - 38.121.43.71:8091
+      - 85.208.108.21:2376
+      - 213.183.51.172:9033
+      - 38.121.43.71:7001
+      - 38.121.43.71:5004
+      - 38.68.135.19:5003
+      - RU 7｜openit.pw｜推广t.me/xingchen0829/6310
+      - 38.121.43.71:8000
+      - 217.30.10.68:9025
+      - CN 33｜openit.pw｜推广t.me/xingchen0829/6310
+      - CN 16｜openit.pw｜推广t.me/xingchen0829/6310
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - Relay_🇯🇵JP-🇯🇵JP_511
-      - JP_507
-      - ZZ_1752
-      - Relay_🇺🇸US-🇺🇸US_1576
-      - SE_938
-      - US_1476
-      - US 19｜openit.pw
-      - US_1475
-      - RO_812
-      - US 2｜openit.pw
-      - RO_814
-      - CA 2｜openit.pw
-      - AU_84
-      - AU_53
-      - CA 4｜openit.pw
-      - AU_51
-      - US_1586
-      - AU_82
-      - CN 5｜openit.pw
-      - Relay_🇨🇳CN-🇩🇪DE_284
-      - FR_394
-      - AU_47
-      - CA 1｜openit.pw
-      - RO_810
-      - CA_175
-      - CA_182
-      - CA_174
-      - US_1591
-      - LT_598
-      - CA_184
-      - Relay_🇨🇳CN-🇩🇪DE_282
-      - CA_173
-      - LT_591
-      - LT_596
-      - CA_181
-      - Relay_🇨🇳CN-🇭🇰HK_264
-      - SG_948
-      - CA 3｜openit.pw
-      - DE_345
-      - LT_600
-      - RU_935
-      - US_1568
-      - LT_581
-      - LT_555
-      - CN 9｜openit.pw
+      - CN 5｜openit.pw｜推广t.me/xingchen0829/6310
+      - ""
+      - US 27｜openit.pw｜推广t.me/xingchen0829/6310
+      - HK 1｜openit.pw｜推广t.me/xingchen0829/6310
+      - 213.183.53.200:9020
+      - 213.183.53.200:9031
+      - 213.183.53.200:9046
+      - 213.183.53.200:9033
+      - 213.183.53.200:9094
+      - 213.183.53.177:9008
+      - 213.183.53.200:9073
+      - 167.88.61.50:8119
+      - 213.183.53.177:9059
+      - 213.183.53.177:9064
+      - 167.88.61.175:3306
+      - 167.88.61.175:5004
+      - 167.88.61.50:5600
+      - 167.88.61.50:2375
+      - 167.88.61.175:8090
+      - 167.88.61.175:5000
+      - 213.183.53.200:9015
+      - 167.88.61.14:8881
+      - 167.88.61.175:5003
+      - US 21｜openit.pw｜推广t.me/xingchen0829/6310
+      - 167.88.61.175:8881
+      - 167.88.61.175:9102
+      - 167.88.61.175:8118
+      - 167.88.61.175:443
+      - 167.88.61.175:8119
+      - 167.88.61.175:7002
+      - 167.88.61.175:2375
+      - 213.183.53.200:9041
+      - 213.183.53.200:9005
+      - 167.88.61.175:7307
+      - 213.183.53.200:9088
+      - 213.183.53.200:9037
+      - 167.88.61.213:8888
+      - 38.114.114.69:8080
+      - 167.88.61.14:8882
+      - 167.88.61.14:9102
+      - 213.183.53.200:9024
+      - 85.208.108.93:6379
+      - 167.88.61.213:8119
+      - 167.88.61.175:7306
+      - 213.183.53.177:9060
+      - 38.114.114.67:6379
+      - 167.88.61.14:8080
+      - 167.88.61.50:7307
+      - 167.88.61.213:8881
+      - 167.88.61.175:5600
+      - 213.183.53.212:9019
+      - 167.88.61.2:812
+      - 38.114.114.69:8881
+      - 167.88.61.213:7307
+      - 38.75.136.21:5001
+      - 38.114.114.67:5001
+      - 38.114.114.69:8009
+      - TR 8｜openit.pw｜推广t.me/xingchen0829/6310
+      - 167.88.61.50:2376
+      - 85.208.108.94:6697
+      - 38.143.66.20:9101
+      - 167.88.61.213:8118
+      - 38.75.136.21:8882
+      - 167.88.61.14:5601
+      - 38.143.66.20:5000
+      - 38.114.114.69:8090
+      - 167.88.61.14:6379
+      - 38.143.66.99:8118
+      - 85.208.108.21:5003
+      - 167.88.61.14:8090
+      - 167.88.61.213:3389
+      - 38.143.66.20:5500
+      - 85.208.108.21:2375
+      - 167.88.61.14:8119
+      - 167.88.61.14:5500
+      - 85.208.108.21:5000
+      - 213.183.53.221:9008
+      - 85.208.108.20:6679
+      - 167.88.61.14:7306
+      - 167.88.61.213:5003
+      - 167.88.61.14:5001
+      - 167.88.61.14:6697
+      - 85.208.108.21:3306
+      - 85.208.108.21:7307
+      - 167.88.61.175:8888
+      - 167.88.61.14:8888
+      - 85.208.108.21:8008
+      - 85.208.108.94:7001
+      - 167.88.61.2:803
+      - 167.88.61.175:5500
+      - 38.68.135.19:2376
+      - 38.68.135.19:5004
+      - 38.114.114.19:7002
+      - 38.114.114.19:3389
+      - 167.88.61.2:802
+      - 85.208.108.93:8881
+      - 85.208.108.20:7002
+      - 38.143.66.20:9102
+      - 38.68.134.85:8090
+      - CN 28｜openit.pw｜推广t.me/xingchen0829/6310
+      - TR 2｜openit.pw｜推广t.me/xingchen0829/6310
+      - 38.68.134.85:8119
+      - 167.88.61.175:8008
+      - 85.208.108.21:8009
+      - 38.68.134.85:3306
+      - 213.183.53.208:9000
+      - 85.208.108.21:3389
+      - 38.68.134.85:5004
+      - 38.68.134.85:8008
+      - 167.88.61.2:807
+      - 185.246.155.35:9045
+      - 85.208.108.21:6697
+      - 38.91.101.159:7307
+      - 38.68.134.85:2375
+      - TR 5｜openit.pw｜推广t.me/xingchen0829/6310
+      - 167.88.61.50:5004
+      - 85.208.108.21:8882
+      - 38.68.134.85:8118
+      - 38.114.114.19:2376
+      - 167.88.61.14:5003
+      - 38.91.101.159:8091
+      - 38.91.101.159:3306
+      - 38.91.101.159:5003
+      - 38.86.135.27:5003
+      - 38.68.134.85:443
+      - 85.208.108.93:8119
+      - 38.114.114.19:6679
+      - 85.208.108.20:5601
+      - 38.91.107.37:5003
+      - 169.197.141.5:3306
+      - 38.91.101.159:5601
+      - 172.99.188.71:6379
+      - " 2"
+      - 172.99.188.71:8091
+      - 217.30.10.65:9038
+      - 172.99.188.71:8888
+      - 217.30.10.67:9093
+      - 217.30.10.67:9015
+      - 85.208.108.21:6379
+      - 172.99.188.71:8118
+      - 85.208.108.90:2375
+      - 172.99.188.71:5004
+      - 172.99.188.71:443
+      - 167.88.61.14:443
+      - 172.99.188.71:6697
+      - 85.208.108.94:8000
+      - 172.99.188.71:2376
+      - 213.183.53.221:9005
+      - 85.208.108.21:5001
+      - 217.30.10.67:9043
+      - 172.99.188.71:3389
+      - 172.99.188.71:6679
+      - 167.88.63.79:2376
+      - 172.99.188.71:5000
+      - 172.99.190.149:2376
+      - 38.75.136.21:2375
+      - 217.30.10.67:9056
+      - 167.88.63.79:8080
+      - 185.167.116.250:9006
+      - 85.208.108.21:5004
+      - FR 2｜openit.pw｜推广t.me/xingchen0829/6310
+      - 85.208.108.21:7306
+      - 213.183.53.198:9040
+      - 85.208.108.21:443
+      - 38.121.43.71:8009
+      - 85.208.108.21:8881
+      - 85.208.108.21:8091
+      - 167.88.63.79:443
+      - FR 3｜openit.pw｜推广t.me/xingchen0829/6310
+      - 217.30.10.65:9008
+      - 217.30.10.65:9037
+      - 38.121.43.71:8882
+      - 172.99.188.71:8882
+      - 167.88.63.79:8118
+      - 217.30.10.67:9000
+      - 38.121.43.71:6679
+      - 38.114.114.69:8882
+      - DE 1｜openit.pw｜推广t.me/xingchen0829/6310
+      - 167.88.63.79:8881
+      - 38.121.43.71:8091
+      - 85.208.108.21:2376
+      - 213.183.51.172:9033
+      - 38.121.43.71:7001
+      - 38.121.43.71:5004
+      - 38.68.135.19:5003
+      - RU 7｜openit.pw｜推广t.me/xingchen0829/6310
+      - 38.121.43.71:8000
+      - 217.30.10.68:9025
+      - CN 33｜openit.pw｜推广t.me/xingchen0829/6310
+      - CN 16｜openit.pw｜推广t.me/xingchen0829/6310
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Relay_🇯🇵JP-🇯🇵JP_511
-      - JP_507
-      - ZZ_1752
-      - Relay_🇺🇸US-🇺🇸US_1576
-      - SE_938
-      - US_1476
-      - US 19｜openit.pw
-      - US_1475
-      - RO_812
-      - US 2｜openit.pw
-      - RO_814
-      - CA 2｜openit.pw
-      - AU_84
-      - AU_53
-      - CA 4｜openit.pw
-      - AU_51
-      - US_1586
-      - AU_82
-      - CN 5｜openit.pw
-      - Relay_🇨🇳CN-🇩🇪DE_284
-      - FR_394
-      - AU_47
-      - CA 1｜openit.pw
-      - RO_810
-      - CA_175
-      - CA_182
-      - CA_174
-      - US_1591
-      - LT_598
-      - CA_184
-      - Relay_🇨🇳CN-🇩🇪DE_282
-      - CA_173
-      - LT_591
-      - LT_596
-      - CA_181
-      - Relay_🇨🇳CN-🇭🇰HK_264
-      - SG_948
-      - CA 3｜openit.pw
-      - DE_345
-      - LT_600
-      - RU_935
-      - US_1568
-      - LT_581
-      - LT_555
-      - CN 9｜openit.pw
+      - CN 5｜openit.pw｜推广t.me/xingchen0829/6310
+      - ""
+      - US 27｜openit.pw｜推广t.me/xingchen0829/6310
+      - HK 1｜openit.pw｜推广t.me/xingchen0829/6310
+      - 213.183.53.200:9020
+      - 213.183.53.200:9031
+      - 213.183.53.200:9046
+      - 213.183.53.200:9033
+      - 213.183.53.200:9094
+      - 213.183.53.177:9008
+      - 213.183.53.200:9073
+      - 167.88.61.50:8119
+      - 213.183.53.177:9059
+      - 213.183.53.177:9064
+      - 167.88.61.175:3306
+      - 167.88.61.175:5004
+      - 167.88.61.50:5600
+      - 167.88.61.50:2375
+      - 167.88.61.175:8090
+      - 167.88.61.175:5000
+      - 213.183.53.200:9015
+      - 167.88.61.14:8881
+      - 167.88.61.175:5003
+      - US 21｜openit.pw｜推广t.me/xingchen0829/6310
+      - 167.88.61.175:8881
+      - 167.88.61.175:9102
+      - 167.88.61.175:8118
+      - 167.88.61.175:443
+      - 167.88.61.175:8119
+      - 167.88.61.175:7002
+      - 167.88.61.175:2375
+      - 213.183.53.200:9041
+      - 213.183.53.200:9005
+      - 167.88.61.175:7307
+      - 213.183.53.200:9088
+      - 213.183.53.200:9037
+      - 167.88.61.213:8888
+      - 38.114.114.69:8080
+      - 167.88.61.14:8882
+      - 167.88.61.14:9102
+      - 213.183.53.200:9024
+      - 85.208.108.93:6379
+      - 167.88.61.213:8119
+      - 167.88.61.175:7306
+      - 213.183.53.177:9060
+      - 38.114.114.67:6379
+      - 167.88.61.14:8080
+      - 167.88.61.50:7307
+      - 167.88.61.213:8881
+      - 167.88.61.175:5600
+      - 213.183.53.212:9019
+      - 167.88.61.2:812
+      - 38.114.114.69:8881
+      - 167.88.61.213:7307
+      - 38.75.136.21:5001
+      - 38.114.114.67:5001
+      - 38.114.114.69:8009
+      - TR 8｜openit.pw｜推广t.me/xingchen0829/6310
+      - 167.88.61.50:2376
+      - 85.208.108.94:6697
+      - 38.143.66.20:9101
+      - 167.88.61.213:8118
+      - 38.75.136.21:8882
+      - 167.88.61.14:5601
+      - 38.143.66.20:5000
+      - 38.114.114.69:8090
+      - 167.88.61.14:6379
+      - 38.143.66.99:8118
+      - 85.208.108.21:5003
+      - 167.88.61.14:8090
+      - 167.88.61.213:3389
+      - 38.143.66.20:5500
+      - 85.208.108.21:2375
+      - 167.88.61.14:8119
+      - 167.88.61.14:5500
+      - 85.208.108.21:5000
+      - 213.183.53.221:9008
+      - 85.208.108.20:6679
+      - 167.88.61.14:7306
+      - 167.88.61.213:5003
+      - 167.88.61.14:5001
+      - 167.88.61.14:6697
+      - 85.208.108.21:3306
+      - 85.208.108.21:7307
+      - 167.88.61.175:8888
+      - 167.88.61.14:8888
+      - 85.208.108.21:8008
+      - 85.208.108.94:7001
+      - 167.88.61.2:803
+      - 167.88.61.175:5500
+      - 38.68.135.19:2376
+      - 38.68.135.19:5004
+      - 38.114.114.19:7002
+      - 38.114.114.19:3389
+      - 167.88.61.2:802
+      - 85.208.108.93:8881
+      - 85.208.108.20:7002
+      - 38.143.66.20:9102
+      - 38.68.134.85:8090
+      - CN 28｜openit.pw｜推广t.me/xingchen0829/6310
+      - TR 2｜openit.pw｜推广t.me/xingchen0829/6310
+      - 38.68.134.85:8119
+      - 167.88.61.175:8008
+      - 85.208.108.21:8009
+      - 38.68.134.85:3306
+      - 213.183.53.208:9000
+      - 85.208.108.21:3389
+      - 38.68.134.85:5004
+      - 38.68.134.85:8008
+      - 167.88.61.2:807
+      - 185.246.155.35:9045
+      - 85.208.108.21:6697
+      - 38.91.101.159:7307
+      - 38.68.134.85:2375
+      - TR 5｜openit.pw｜推广t.me/xingchen0829/6310
+      - 167.88.61.50:5004
+      - 85.208.108.21:8882
+      - 38.68.134.85:8118
+      - 38.114.114.19:2376
+      - 167.88.61.14:5003
+      - 38.91.101.159:8091
+      - 38.91.101.159:3306
+      - 38.91.101.159:5003
+      - 38.86.135.27:5003
+      - 38.68.134.85:443
+      - 85.208.108.93:8119
+      - 38.114.114.19:6679
+      - 85.208.108.20:5601
+      - 38.91.107.37:5003
+      - 169.197.141.5:3306
+      - 38.91.101.159:5601
+      - 172.99.188.71:6379
+      - " 2"
+      - 172.99.188.71:8091
+      - 217.30.10.65:9038
+      - 172.99.188.71:8888
+      - 217.30.10.67:9093
+      - 217.30.10.67:9015
+      - 85.208.108.21:6379
+      - 172.99.188.71:8118
+      - 85.208.108.90:2375
+      - 172.99.188.71:5004
+      - 172.99.188.71:443
+      - 167.88.61.14:443
+      - 172.99.188.71:6697
+      - 85.208.108.94:8000
+      - 172.99.188.71:2376
+      - 213.183.53.221:9005
+      - 85.208.108.21:5001
+      - 217.30.10.67:9043
+      - 172.99.188.71:3389
+      - 172.99.188.71:6679
+      - 167.88.63.79:2376
+      - 172.99.188.71:5000
+      - 172.99.190.149:2376
+      - 38.75.136.21:2375
+      - 217.30.10.67:9056
+      - 167.88.63.79:8080
+      - 185.167.116.250:9006
+      - 85.208.108.21:5004
+      - FR 2｜openit.pw｜推广t.me/xingchen0829/6310
+      - 85.208.108.21:7306
+      - 213.183.53.198:9040
+      - 85.208.108.21:443
+      - 38.121.43.71:8009
+      - 85.208.108.21:8881
+      - 85.208.108.21:8091
+      - 167.88.63.79:443
+      - FR 3｜openit.pw｜推广t.me/xingchen0829/6310
+      - 217.30.10.65:9008
+      - 217.30.10.65:9037
+      - 38.121.43.71:8882
+      - 172.99.188.71:8882
+      - 167.88.63.79:8118
+      - 217.30.10.67:9000
+      - 38.121.43.71:6679
+      - 38.114.114.69:8882
+      - DE 1｜openit.pw｜推广t.me/xingchen0829/6310
+      - 167.88.63.79:8881
+      - 38.121.43.71:8091
+      - 85.208.108.21:2376
+      - 213.183.51.172:9033
+      - 38.121.43.71:7001
+      - 38.121.43.71:5004
+      - 38.68.135.19:5003
+      - RU 7｜openit.pw｜推广t.me/xingchen0829/6310
+      - 38.121.43.71:8000
+      - 217.30.10.68:9025
+      - CN 33｜openit.pw｜推广t.me/xingchen0829/6310
+      - CN 16｜openit.pw｜推广t.me/xingchen0829/6310
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -436,51 +1596,196 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Relay_🇯🇵JP-🇯🇵JP_511
-      - JP_507
-      - ZZ_1752
-      - Relay_🇺🇸US-🇺🇸US_1576
-      - SE_938
-      - US_1476
-      - US 19｜openit.pw
-      - US_1475
-      - RO_812
-      - US 2｜openit.pw
-      - RO_814
-      - CA 2｜openit.pw
-      - AU_84
-      - AU_53
-      - CA 4｜openit.pw
-      - AU_51
-      - US_1586
-      - AU_82
-      - CN 5｜openit.pw
-      - Relay_🇨🇳CN-🇩🇪DE_284
-      - FR_394
-      - AU_47
-      - CA 1｜openit.pw
-      - RO_810
-      - CA_175
-      - CA_182
-      - CA_174
-      - US_1591
-      - LT_598
-      - CA_184
-      - Relay_🇨🇳CN-🇩🇪DE_282
-      - CA_173
-      - LT_591
-      - LT_596
-      - CA_181
-      - Relay_🇨🇳CN-🇭🇰HK_264
-      - SG_948
-      - CA 3｜openit.pw
-      - DE_345
-      - LT_600
-      - RU_935
-      - US_1568
-      - LT_581
-      - LT_555
-      - CN 9｜openit.pw
+      - CN 5｜openit.pw｜推广t.me/xingchen0829/6310
+      - ""
+      - US 27｜openit.pw｜推广t.me/xingchen0829/6310
+      - HK 1｜openit.pw｜推广t.me/xingchen0829/6310
+      - 213.183.53.200:9020
+      - 213.183.53.200:9031
+      - 213.183.53.200:9046
+      - 213.183.53.200:9033
+      - 213.183.53.200:9094
+      - 213.183.53.177:9008
+      - 213.183.53.200:9073
+      - 167.88.61.50:8119
+      - 213.183.53.177:9059
+      - 213.183.53.177:9064
+      - 167.88.61.175:3306
+      - 167.88.61.175:5004
+      - 167.88.61.50:5600
+      - 167.88.61.50:2375
+      - 167.88.61.175:8090
+      - 167.88.61.175:5000
+      - 213.183.53.200:9015
+      - 167.88.61.14:8881
+      - 167.88.61.175:5003
+      - US 21｜openit.pw｜推广t.me/xingchen0829/6310
+      - 167.88.61.175:8881
+      - 167.88.61.175:9102
+      - 167.88.61.175:8118
+      - 167.88.61.175:443
+      - 167.88.61.175:8119
+      - 167.88.61.175:7002
+      - 167.88.61.175:2375
+      - 213.183.53.200:9041
+      - 213.183.53.200:9005
+      - 167.88.61.175:7307
+      - 213.183.53.200:9088
+      - 213.183.53.200:9037
+      - 167.88.61.213:8888
+      - 38.114.114.69:8080
+      - 167.88.61.14:8882
+      - 167.88.61.14:9102
+      - 213.183.53.200:9024
+      - 85.208.108.93:6379
+      - 167.88.61.213:8119
+      - 167.88.61.175:7306
+      - 213.183.53.177:9060
+      - 38.114.114.67:6379
+      - 167.88.61.14:8080
+      - 167.88.61.50:7307
+      - 167.88.61.213:8881
+      - 167.88.61.175:5600
+      - 213.183.53.212:9019
+      - 167.88.61.2:812
+      - 38.114.114.69:8881
+      - 167.88.61.213:7307
+      - 38.75.136.21:5001
+      - 38.114.114.67:5001
+      - 38.114.114.69:8009
+      - TR 8｜openit.pw｜推广t.me/xingchen0829/6310
+      - 167.88.61.50:2376
+      - 85.208.108.94:6697
+      - 38.143.66.20:9101
+      - 167.88.61.213:8118
+      - 38.75.136.21:8882
+      - 167.88.61.14:5601
+      - 38.143.66.20:5000
+      - 38.114.114.69:8090
+      - 167.88.61.14:6379
+      - 38.143.66.99:8118
+      - 85.208.108.21:5003
+      - 167.88.61.14:8090
+      - 167.88.61.213:3389
+      - 38.143.66.20:5500
+      - 85.208.108.21:2375
+      - 167.88.61.14:8119
+      - 167.88.61.14:5500
+      - 85.208.108.21:5000
+      - 213.183.53.221:9008
+      - 85.208.108.20:6679
+      - 167.88.61.14:7306
+      - 167.88.61.213:5003
+      - 167.88.61.14:5001
+      - 167.88.61.14:6697
+      - 85.208.108.21:3306
+      - 85.208.108.21:7307
+      - 167.88.61.175:8888
+      - 167.88.61.14:8888
+      - 85.208.108.21:8008
+      - 85.208.108.94:7001
+      - 167.88.61.2:803
+      - 167.88.61.175:5500
+      - 38.68.135.19:2376
+      - 38.68.135.19:5004
+      - 38.114.114.19:7002
+      - 38.114.114.19:3389
+      - 167.88.61.2:802
+      - 85.208.108.93:8881
+      - 85.208.108.20:7002
+      - 38.143.66.20:9102
+      - 38.68.134.85:8090
+      - CN 28｜openit.pw｜推广t.me/xingchen0829/6310
+      - TR 2｜openit.pw｜推广t.me/xingchen0829/6310
+      - 38.68.134.85:8119
+      - 167.88.61.175:8008
+      - 85.208.108.21:8009
+      - 38.68.134.85:3306
+      - 213.183.53.208:9000
+      - 85.208.108.21:3389
+      - 38.68.134.85:5004
+      - 38.68.134.85:8008
+      - 167.88.61.2:807
+      - 185.246.155.35:9045
+      - 85.208.108.21:6697
+      - 38.91.101.159:7307
+      - 38.68.134.85:2375
+      - TR 5｜openit.pw｜推广t.me/xingchen0829/6310
+      - 167.88.61.50:5004
+      - 85.208.108.21:8882
+      - 38.68.134.85:8118
+      - 38.114.114.19:2376
+      - 167.88.61.14:5003
+      - 38.91.101.159:8091
+      - 38.91.101.159:3306
+      - 38.91.101.159:5003
+      - 38.86.135.27:5003
+      - 38.68.134.85:443
+      - 85.208.108.93:8119
+      - 38.114.114.19:6679
+      - 85.208.108.20:5601
+      - 38.91.107.37:5003
+      - 169.197.141.5:3306
+      - 38.91.101.159:5601
+      - 172.99.188.71:6379
+      - " 2"
+      - 172.99.188.71:8091
+      - 217.30.10.65:9038
+      - 172.99.188.71:8888
+      - 217.30.10.67:9093
+      - 217.30.10.67:9015
+      - 85.208.108.21:6379
+      - 172.99.188.71:8118
+      - 85.208.108.90:2375
+      - 172.99.188.71:5004
+      - 172.99.188.71:443
+      - 167.88.61.14:443
+      - 172.99.188.71:6697
+      - 85.208.108.94:8000
+      - 172.99.188.71:2376
+      - 213.183.53.221:9005
+      - 85.208.108.21:5001
+      - 217.30.10.67:9043
+      - 172.99.188.71:3389
+      - 172.99.188.71:6679
+      - 167.88.63.79:2376
+      - 172.99.188.71:5000
+      - 172.99.190.149:2376
+      - 38.75.136.21:2375
+      - 217.30.10.67:9056
+      - 167.88.63.79:8080
+      - 185.167.116.250:9006
+      - 85.208.108.21:5004
+      - FR 2｜openit.pw｜推广t.me/xingchen0829/6310
+      - 85.208.108.21:7306
+      - 213.183.53.198:9040
+      - 85.208.108.21:443
+      - 38.121.43.71:8009
+      - 85.208.108.21:8881
+      - 85.208.108.21:8091
+      - 167.88.63.79:443
+      - FR 3｜openit.pw｜推广t.me/xingchen0829/6310
+      - 217.30.10.65:9008
+      - 217.30.10.65:9037
+      - 38.121.43.71:8882
+      - 172.99.188.71:8882
+      - 167.88.63.79:8118
+      - 217.30.10.67:9000
+      - 38.121.43.71:6679
+      - 38.114.114.69:8882
+      - DE 1｜openit.pw｜推广t.me/xingchen0829/6310
+      - 167.88.63.79:8881
+      - 38.121.43.71:8091
+      - 85.208.108.21:2376
+      - 213.183.51.172:9033
+      - 38.121.43.71:7001
+      - 38.121.43.71:5004
+      - 38.68.135.19:5003
+      - RU 7｜openit.pw｜推广t.me/xingchen0829/6310
+      - 38.121.43.71:8000
+      - 217.30.10.68:9025
+      - CN 33｜openit.pw｜推广t.me/xingchen0829/6310
+      - CN 16｜openit.pw｜推广t.me/xingchen0829/6310
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
