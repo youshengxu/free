@@ -5,643 +5,483 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: Relay_🇯🇵JP-🇯🇵JP_377, server: japanosaka.bpnet.club, port: 12004, type: trojan, password: 6df6964f-f669-45fa-a871-5b1768c1f885, sni: japanosaka.bpnet.club, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇳 CN-🇭🇰HK_109, server: iiiieeepppplll.zhengzhongfeizhu.xyz, port: 34002, type: trojan, password: 177501cc-f0c2-3cc3-b9a7-8c1e8e27655f, sni: iiiieeepppplll.zhengzhongfeizhu.xyz, skip-cert-verify: true, udp: true}
-  - {name: US_1397, server: 152.70.247.24, port: 43947, type: vmess, uuid: 01cd3246-1506-4932-cd03-c303127cda65, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: JP_369, server: 132.145.112.128, port: 40746, type: vmess, uuid: d3cd3663-52b4-43e9-d1c0-3904034ac627, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: SE_782, server: 138.3.208.203, port: 43298, type: vmess, uuid: 42104b60-1988-4063-96ce-5c4b20b53130, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: JP_371, server: 132.145.112.128, port: 10562, type: vmess, uuid: 02140cf3-8470-4b3d-e4a8-8d40fc2f7867, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 132.145.112.128}, udp: true}
-  - {name: Relay_🇹🇼TW-🇹🇼TW_828, server: gbo02.vsvideo.shop, port: 25634, type: trojan, password: 177501cc-f0c2-3cc3-b9a7-8c1e8e27655f, sni: gbo02.vsvideo.shop, skip-cert-verify: true, udp: true}
-  - {name: AU_63, server: 140.83.34.234, port: 27384, type: vmess, uuid: da463c52-34e4-4ace-f08e-c7cdfdf68d86, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: JP_366, server: 146.56.103.73, port: 55561, type: vmess, uuid: 94b0d978-913d-4e4e-988c-56e0bbd7defa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: JP_367, server: 146.56.103.73, port: 36945, type: vmess, uuid: 2a51bbe1-f4e3-4bab-84b8-784e3d45a159, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _09, server: 23.230.146.254, port: 1258, type: vmess, uuid: edeb41cc-a76a-47f2-fa96-b9141e66a2b0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US_1401, server: 107.182.187.5, port: 35159, type: vmess, uuid: c6ce7985-eb44-4a91-f5b2-f36eca2a4208, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US_999, server: 172.96.192.58, port: 254, type: ss, cipher: aes-256-cfb, password: bwhskrskr03, udp: true}
-  - {name: US_1060, server: 172.96.192.100, port: 246, type: ss, cipher: aes-256-cfb, password: bwhskrskr05, udp: true}
-  - {name: US_1321, server: 167.88.61.14, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: Pool_🇳🇱 NL_523, server: 85.208.108.21, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: Pool_🇳🇱 NL_530, server: 85.208.108.21, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: US_1316, server: 167.88.61.14, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: Pool_🇳🇱 NL_529, server: 85.208.108.21, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: US_834, server: 167.88.61.14, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: Pool_🇳🇱 NL_502, server: 85.208.108.21, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: Pool_🇳🇱 NL_525, server: 85.208.108.94, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: Pool_🇳🇱 NL_515, server: 85.208.108.21, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: Pool_🇳🇱 NL_516, server: 85.208.108.94, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: Pool_🇳🇱 NL_533, server: 85.208.108.94, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: Pool_🇳🇱 NL_552, server: 85.208.108.21, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: Pool_🇳🇱 NL_532, server: 85.208.108.94, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: Pool_🇳🇱 NL_538, server: 85.208.108.21, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: Pool_🇳🇱 NL_518, server: 85.208.108.21, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: Pool_🇳🇱 NL_546, server: 85.208.108.94, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: US_860, server: 167.88.61.14, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: Pool_🇳🇱 NL_535, server: 85.208.108.94, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: Pool_🇳🇱NL_586, server: 85.208.108.93, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: US_832, server: 167.88.61.14, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: US_857, server: 167.88.61.14, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: US_1317, server: 167.88.61.14, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: Pool_🇳🇱 NL_520, server: 85.208.108.94, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: Pool_🇳🇱NL_557, server: 85.208.108.93, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: Pool_🇳🇱NL_602, server: 85.208.108.20, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_848, server: 167.88.61.14, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_858, server: 167.88.61.14, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: Pool_🇳🇱 NL_512, server: 85.208.108.94, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: Pool_🇳🇱 NL_522, server: 85.208.108.94, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: Pool_🇳🇱 NL_526, server: 85.208.108.21, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: Pool_🇳🇱 NL_528, server: 85.208.108.21, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: Pool_🇳🇱 NL_536, server: 85.208.108.21, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: Pool_🇳🇱 NL_540, server: 85.208.108.94, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: Pool_🇳🇱 NL_541, server: 85.208.108.94, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: Pool_🇳🇱 NL_542, server: 85.208.108.94, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_840, server: 167.88.61.14, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: Pool_🇳🇱 NL_521, server: 85.208.108.94, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: Pool_🇳🇱 NL_551, server: 85.208.108.21, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: Pool_🇳🇱 NL_506, server: 85.208.108.94, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: Pool_🇳🇱 NL_531, server: 85.208.108.21, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: Pool_🇳🇱 NL_543, server: 85.208.108.94, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: US_835, server: 167.88.61.14, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: Pool_🇳🇱 NL_508, server: 85.208.108.94, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: Pool_🇳🇱 NL_548, server: 85.208.108.21, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: US_1410, server: 23.227.194.145, port: 36195, type: vmess, uuid: fae6eae5-a5b5-41ba-b660-dc067340048f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Pool_🇳🇱 NL_534, server: 85.208.108.21, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: US_851, server: 167.88.61.14, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: US_1422, server: 168.138.214.114, port: 443, type: vmess, uuid: e35159d7-e8fb-479c-b490-e8e9a924e0c6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /a9S24DC8US, ws-headers: {Host: 168.138.214.114}, udp: true}
-  - {name: Pool_🇳🇱NL_585, server: 85.208.108.93, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: Pool_🇳🇱 NL_510, server: 85.208.108.21, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: Pool_🇳🇱 NL_511, server: 85.208.108.94, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: Pool_🇳🇱 NL_527, server: 85.208.108.21, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: Pool_🇳🇱 NL_505, server: 85.208.108.21, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: RO_645, server: 185.126.116.119, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX, udp: true}
-  - {name: Pool_🇳🇱 NL_550, server: 85.208.108.21, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: Pool_🇳🇱 NL_504, server: 85.208.108.21, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: Pool_🇳🇱 NL_545, server: 85.208.108.94, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: US_1320, server: 167.88.61.14, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: Pool_🇳🇱 NL_503, server: 85.208.108.94, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: Pool_🇳🇱NL_608, server: 85.208.108.93, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: Pool_🇳🇱 NL_524, server: 85.208.108.94, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: Pool_🇳🇱 NL_547, server: 85.208.108.94, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: RO_630, server: 185.126.116.119, port: 9026, type: ss, cipher: aes-256-cfb, password: QWDDvVE9npNurQfA, udp: true}
-  - {name: US_1352, server: 167.88.61.14, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: Pool_🇳🇱 NL_507, server: 85.208.108.21, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: US_865, server: 38.121.43.65, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: Pool_🇳🇱NL_592, server: 85.208.108.20, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: Pool_🇳🇱 NL_539, server: 85.208.108.21, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_1055, server: 172.99.188.71, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: RO_631, server: 185.126.116.119, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
-  - {name: RO_633, server: 185.126.116.119, port: 9024, type: ss, cipher: aes-256-cfb, password: BejrQvtu9sqUeNuZ, udp: true}
-  - {name: US_1020, server: 172.99.188.71, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_1108, server: 172.99.188.71, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_1058, server: 172.99.188.71, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: Pool_🇳🇱 NL_549, server: 85.208.108.94, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: Pool_🇳🇱 NL_544, server: 85.208.108.21, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: US_993, server: 172.99.188.71, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: US_1111, server: 172.99.188.71, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: US_836, server: 167.88.61.14, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_866, server: 167.88.61.14, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: US_1079, server: 172.99.188.71, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: LT_385, server: 213.183.53.198, port: 9059, type: ss, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY, udp: true}
-  - {name: FR_260, server: 195.154.200.150, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: FR_224, server: 195.154.200.150, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_1259, server: 172.99.188.71, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: US_1383, server: 152.70.235.207, port: 35412, type: vmess, uuid: 70d95308-2a61-4f93-f139-9103d0587fd9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: FR_256, server: 51.195.136.209, port: 50004, type: ss, cipher: aes-256-cfb, password: !<str> 4415934295, udp: true}
-  - {name: Pool_🇳🇱 NL_553, server: 85.208.108.94, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: US_994, server: 172.99.188.71, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: US_1318, server: 167.88.61.14, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: US_991, server: 172.99.188.71, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: US_1028, server: 172.99.188.71, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: US_853, server: 167.88.61.14, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: ZZ_1537, server: 169.197.141.5, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: DE_194, server: 193.108.117.75, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: SG_814, server: 8.214.33.158, port: 80, type: vmess, uuid: cb81e6ab-1d83-4ac1-f0ad-ae5c2a7c29ef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 8.214.33.158}, udp: true}
-  - {name: US_1031, server: 172.99.188.71, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: FR_221, server: 195.154.200.150, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: Pool_🇳🇱 NL_514, server: 85.208.108.21, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: Pool_🇳🇱 NL_509, server: 85.208.108.21, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: FR_225, server: 195.154.200.150, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: LT_386, server: 213.183.53.198, port: 9003, type: ss, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP, udp: true}
-  - {name: RU_685, server: 45.144.176.135, port: 3003, type: ss, cipher: aes-256-cfb, password: werty33588761qwfdees, udp: true}
-  - {name: RU_692, server: 45.144.176.135, port: 3004, type: ss, cipher: aes-256-cfb, password: 3682oiuvefwwmbc1475, udp: true}
-  - {name: JP_364, server: 146.56.167.119, port: 6666, type: vmess, uuid: 64779fce-63a5-4faa-b59b-e4af40f4e419, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: AU_43, server: 185.167.116.252, port: 9008, type: ss, cipher: aes-256-cfb, password: y9VURyNzJWNRYEGQ, udp: true}
-  - {name: US_838, server: 167.88.61.14, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: AU_49, server: 185.167.116.252, port: 9005, type: ss, cipher: aes-256-cfb, password: ZET59LF6DvCC8KVt, udp: true}
-  - {name: LT_390, server: 213.183.53.198, port: 9058, type: ss, cipher: aes-256-cfb, password: dML2sfhbVwvtfNPe, udp: true}
-  - {name: US_841, server: 167.88.61.14, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: Pool_🇳🇱 NL_513, server: 85.208.108.21, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: AU_50, server: 185.167.116.252, port: 9003, type: ss, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP, udp: true}
-  - {name: US_833, server: 167.88.61.14, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: CA_75, server: 138.197.166.205, port: 811, type: ss, cipher: chacha20-ietf-poly1305, password: Ultr@r00t_2017, udp: true}
-  - {name: HK_320, server: 148.66.56.99, port: 802, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: CN 3｜openit.pw, server: cm.spacez.cloud, port: 30003, type: trojan, password: c9a3a61d-5d49-4158-9e60-6fa32684b122, sni: cm.spacez.cloud, skip-cert-verify: true, udp: true}
+  - {name: _09, server: 168.138.207.66, port: 21365, type: vmess, uuid: 905f99b1-e7ba-45e0-ae4d-b0ffdf0ad245, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US_1443, server: 20.219.51.125, port: 80, type: vmess, uuid: 20ed74f7-18d9-41ac-af82-1266e209ad3d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 20.219.51.125}, udp: true}
+  - {name: "", server: 137.184.118.47, port: 51649, type: vmess, uuid: 5d0b1709-5c3c-4073-fb3f-67251426571e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 欧洲(油管:破解资源君2.0) 57, server: 168.138.201.208, port: 10328, type: vmess, uuid: bf847bf7-0ba5-4885-bd2b-da4d77afbda8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 欧洲(油管:破解资源君2.0) 43, server: 103.114.163.79, port: 37246, type: vmess, uuid: 4825df76-b209-4c6a-a284-e1cc26e900e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 欧洲(油管:破解资源君2.0) 52, server: 103.135.103.153, port: 41446, type: vmess, uuid: d6559d1e-36fe-46ba-f312-604724b3f03b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 欧洲(油管:破解资源君2.0) 29, server: 45.154.3.100, port: 18572, type: vmess, uuid: 1f578daf-b6c5-465b-f3b7-cf90b95d92e8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 欧洲(油管:破解资源君2.0) 61, server: 20.219.185.167, port: 44444, type: vmess, uuid: c82c12f2-eaaf-4648-9496-04c370275e1f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /44444, ws-headers: {Host: 20.219.185.167}, udp: true}
+  - {name: US_1330, server: 172.96.192.100, port: 246, type: ss, cipher: aes-256-cfb, password: bwhskrskr05, udp: true}
+  - {name: ZA 3｜openit.pw, server: v2.4.doubledou.win, port: 4586, type: trojan, password: 7484d7c8-b010-373e-9c2a-2b9d20f8c963, sni: v2.4.doubledou.win, skip-cert-verify: true, udp: true}
+  - {name: " 2", server: 173.82.107.40, port: 56746, type: vmess, uuid: 4223fb27-fb21-41ea-9e11-b51f8e9f7f81, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 欧洲(油管:破解资源君2.0) 59, server: 173.82.107.40, port: 25131, type: vmess, uuid: 26b83a42-2138-452a-dd2b-42d40849bc5e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: " 3", server: 198.211.4.61, port: 80, type: vmess, uuid: 20ed74f7-18d9-41ac-af82-1266e209ad3d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 198.211.4.61}, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_1418, server: us.dreamlin.xyz, port: 12000, type: vmess, uuid: 55805bea-a238-4011-97cc-43a5126ecc49, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: US_1423, server: 199.19.226.174, port: 443, type: vmess, uuid: 4858f70a-b37c-4bdf-ad41-3f9b8a6346c9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2, ws-headers: {Host: 199.19.226.174}, udp: true}
+  - {name: DE_229, server: 109.71.254.40, port: 49631, type: vmess, uuid: 814bda23-ae40-4308-b537-98e0ad8bfebf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 欧洲(油管:破解资源君2.0) 25, server: 43.133.193.153, port: 80, type: vmess, uuid: e53aa403-aecd-44fb-9202-014b72344a53, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 欧洲(油管:破解资源君2.0) 58, server: 173.82.107.40, port: 56746, type: vmess, uuid: 4223fb27-fb21-41ea-9e11-b51f8e9f7f81, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 欧洲(油管:破解资源君2.0) 20, server: 198.148.127.62, port: 29571, type: vmess, uuid: ed170bc7-864a-4dc4-9dc5-ccb9123c3e8e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 欧洲(油管:破解资源君2.0) 30, server: studynew.cn, port: 33951, type: vmess, uuid: a04c31f7-46fd-475c-eef5-aaa407bb083a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /iuwoca, ws-headers: {Host: studynew.cn}, udp: true}
+  - {name: US 17｜openit.pw, server: 104.168.144.215, port: 443, type: trojan, password: srGSKqR5Fv, skip-cert-verify: true, udp: true}
+  - {name: 欧洲(油管:破解资源君2.0) 38, server: studynew.cn, port: 51340, type: vmess, uuid: bb84725a-f726-4bcb-8131-44df12094005, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /dengqingbo, ws-headers: {Host: studynew.cn}, udp: true}
+  - {name: 欧洲(油管:破解资源君2.0) 46, server: 109.71.254.40, port: 49631, type: vmess, uuid: 814bda23-ae40-4308-b537-98e0ad8bfebf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US_894, server: 167.88.61.14, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: RU_804, server: 45.154.3.100, port: 18572, type: vmess, uuid: 1f578daf-b6c5-465b-f3b7-cf90b95d92e8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: LT_489, server: 213.183.53.200, port: 9005, type: ss, cipher: aes-256-cfb, password: ZET59LF6DvCC8KVt, udp: true}
+  - {name: LT_488, server: 213.183.53.200, port: 9024, type: ss, cipher: aes-256-cfb, password: BejrQvtu9sqUeNuZ, udp: true}
+  - {name: ZZ_1599, server: 103.186.148.106, port: 80, type: vmess, uuid: a479fc02-07c5-4864-8564-c4f147dfa488, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /shopvpn.net, ws-headers: {Host: 103.186.148.106}, udp: true}
+  - {name: LT_493, server: 213.183.53.200, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU, udp: true}
+  - {name: HK 2｜openit.pw, server: 20.187.95.117, port: 8443, type: trojan, password: 190e2a95-63f0-4a9c-9aef-9f2ec6e542de, skip-cert-verify: true, udp: true}
+  - {name: 欧洲(油管:破解资源君2.0) 16, server: 85.208.108.21, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: 欧洲(油管:破解资源君2.0) 14, server: 85.208.108.94, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: LT_386, server: 213.183.53.198, port: 9010, type: ss, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4, udp: true}
+  - {name: US_1137, server: 38.143.66.20, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 欧洲(油管:破解资源君2.0) 15, server: 85.208.108.94, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: LT_486, server: 213.183.53.200, port: 9088, type: ss, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn, udp: true}
+  - {name: LT_397, server: 213.183.53.198, port: 9045, type: ss, cipher: aes-256-cfb, password: Lp27rqyJq72bZsqX, udp: true}
+  - {name: 美国(油管:破解资源君2.0) 4, server: chess.magicefire.com, port: 443, type: vmess, uuid: 9aa80017-3427-4165-a522-f5f9a11330d0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: LT_474, server: 213.183.53.207, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
+  - {name: 台湾(油管:破解资源君2.0) 2, server: ingress-i1.onebox6.org, port: 38201, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: ingress-i1.onebox6.org}, udp: true}
+  - {name: " 4", server: 20.124.251.86, port: 50833, type: vmess, uuid: b5fef489-7c35-43a1-b4af-2d9036350dfa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 欧洲(油管:破解资源君2.0) 32, server: www.fuckdbuy.xyz, port: 57170, type: vmess, uuid: 0fcee849-28e7-4251-87f3-e7cb9d95c00f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: LT_457, server: 213.183.53.214, port: 9032, type: ss, cipher: aes-256-cfb, password: UWZQeLRWnkqgkseq, udp: true}
+  - {name: US_1435, server: 20.124.251.86, port: 50833, type: vmess, uuid: b5fef489-7c35-43a1-b4af-2d9036350dfa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US_1273, server: 38.121.43.71, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: US_1266, server: 38.121.43.71, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: 213.183.53.200:9026, server: 213.183.53.200, port: 9026, type: ss, cipher: aes-256-cfb, password: QWDDvVE9npNurQfA, udp: true}
+  - {name: 欧洲(油管:破解资源君2.0) 19, server: 169.197.141.5, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: LT_497, server: 213.183.53.200, port: 9003, type: ss, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP, udp: true}
+  - {name: US_1340, server: 38.121.43.71, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: 欧洲(油管:破解资源君2.0) 53, server: 104.23.102.53, port: 443, type: vmess, uuid: 5c84e109-4772-4efb-a1cb-7b09d5a1791e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /Telegram@BDovo_qaq, ws-headers: {Host: bissen.114514cn.me}, udp: true}
+  - {name: 美国(油管:破解资源君2.0) 23, server: 20.124.251.86, port: 50833, type: vmess, uuid: b5fef489-7c35-43a1-b4af-2d9036350dfa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: LT_435, server: 213.183.53.207, port: 9045, type: ss, cipher: aes-256-cfb, password: Lp27rqyJq72bZsqX, udp: true}
+  - {name: 欧洲(油管:破解资源君2.0) 44, server: 137.184.118.47, port: 51649, type: vmess, uuid: 5d0b1709-5c3c-4073-fb3f-67251426571e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US_1284, server: 38.121.43.71, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: FR_234, server: 62.210.113.98, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 欧洲(油管:破解资源君2.0) 10, server: 62.210.113.98, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: LT_487, server: 213.183.53.200, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX, udp: true}
+  - {name: DE_216, server: 193.108.117.75, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: 欧洲(油管:破解资源君2.0) 49, server: emby.metalink.cf, port: 8096, type: vmess, uuid: b8f9b514-4835-493b-e9a0-c135bbeb764b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 美国(油管:破解资源君2.0) 14, server: 172.99.188.71, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: DE_183, server: 193.108.117.75, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: DE_210, server: 193.108.117.75, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: DE_189, server: 193.108.117.75, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: DE_208, server: 193.108.117.75, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_888, server: 167.88.61.14, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: US_1254, server: 38.121.43.71, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 美国(油管:破解资源君2.0) 26, server: api.qiscus.com, port: 443, type: vmess, uuid: 8f9b60e6-1db3-42e4-97b9-1e311f427649, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /vmess-ws-makae, ws-headers: {Host: bn-id01.ipv2ray.xyz}, udp: true}
+  - {name: US_1249, server: 38.121.43.71, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: US_1324, server: 38.121.43.71, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: US_885, server: 167.88.61.14, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: US_1299, server: 38.121.43.71, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: LT_399, server: 213.183.53.198, port: 9032, type: ss, cipher: aes-256-cfb, password: UWZQeLRWnkqgkseq, udp: true}
+  - {name: SG_840, server: 8.214.33.158, port: 80, type: vmess, uuid: cb81e6ab-1d83-4ac1-f0ad-ae5c2a7c29ef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 8.214.33.158}, udp: true}
+  - {name: 美国(油管:破解资源君2.0) 27, server: emby.metalink.cf, port: 8096, type: vmess, uuid: b8f9b514-4835-493b-e9a0-c135bbeb764b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: DE_218, server: 193.108.117.75, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: Relay_🇷🇺RU-🇷🇺RU_698, server: 185.4.65.6, port: 21247, type: ss, cipher: aes-256-cfb, password: vDS9G2p, udp: true}
+  - {name: 欧洲(油管:破解资源君2.0) 18, server: cdn.linil.ml, port: 443, type: vmess, uuid: 2c7da08b-b0a0-4544-a4d9-fd75515cc373, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ukqzvws, ws-headers: {Host: eu.ratx.tech}, udp: true}
+  - {name: Relay_🇷🇺RU-🇷🇺RU_801, server: www.olaola.top, port: 48493, type: vmess, uuid: bd8f6efe-b3ce-4bdb-ddf3-957148f25377, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: LT_503, server: 213.183.53.200, port: 9073, type: ss, cipher: aes-256-cfb, password: daFYagqDdBdA6VTX, udp: true}
+  - {name: 欧洲(油管:破解资源君2.0) 37, server: 107.173.250.94, port: 46547, type: vmess, uuid: 03d88809-cedd-41ce-e107-7b1c0bf36420, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CA_85, server: 196.247.59.154, port: 806, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: US_893, server: 167.88.61.14, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_1296, server: 167.88.61.14, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: CA_82, server: 196.247.59.154, port: 802, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: US_898, server: 167.88.61.14, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 美国(油管:破解资源君2.0) 25, server: 38.91.102.74, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: CA_65, server: 196.247.59.154, port: 801, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: CA_71, server: 196.247.59.154, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: CA_87, server: 196.247.59.154, port: 800, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: RO_647, server: 185.126.116.119, port: 9043, type: ss, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF, udp: true}
+  - {name: CA_75, server: 196.247.59.154, port: 805, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: 213.183.53.198:9024, server: 213.183.53.198, port: 9024, type: ss, cipher: aes-256-cfb, password: BejrQvtu9sqUeNuZ, udp: true}
+  - {name: US_947, server: 38.121.43.71, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: JP_375, server: 146.56.118.227, port: 2052, type: vmess, uuid: 448a9087-28f3-4fe4-fa49-36c912e0f498, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /update, ws-headers: {Host: 146.56.118.227}, udp: true}
+  - {name: US_1392, server: 38.121.43.71, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: RO_652, server: 185.126.116.119, port: 9026, type: ss, cipher: aes-256-cfb, password: QWDDvVE9npNurQfA, udp: true}
+  - {name: US_901, server: 38.121.43.65, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: DE 1｜openit.pw, server: gerv2.doubledou.win, port: 8080, type: trojan, password: 7484d7c8-b010-373e-9c2a-2b9d20f8c963, sni: gerv2.doubledou.win, skip-cert-verify: true, udp: true}
+  - {name: US_1071, server: 38.121.43.71, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_1283, server: 38.121.43.71, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_1004, server: 38.121.43.71, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: Relay_🇷🇺RU-🇷🇺RU_803, server: www.olaola.top, port: 8090, type: vmess, uuid: 76218523-5eae-49ae-a53a-2f043d5460b9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: SG 5｜openit.pw, server: cmi.doubledou.win, port: 40025, type: trojan, password: 7484d7c8-b010-373e-9c2a-2b9d20f8c963, sni: cmi.doubledou.win, skip-cert-verify: true, udp: true}
+  - {name: 美国(油管:破解资源君2.0) 5, server: sgp.jcnf.app, port: 443, type: vmess, uuid: c753e8a8-e180-4e76-a486-c917273d718b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /zcjd, ws-headers: {Host: sgp.jcnf.app}, udp: true}
+  - {name: " 5", server: 43.156.35.124, port: 21953, type: vmess, uuid: 4ef2b7d6-3f58-42c2-95ad-061001b712d3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: RO_657, server: 185.126.116.119, port: 9058, type: ss, cipher: aes-256-cfb, password: dML2sfhbVwvtfNPe, udp: true}
+  - {name: Relay_🇨🇳 CN-🇩🇪DE_94, server: ingress-i1.onebox6.org, port: 38701, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: ingress-i1.onebox6.org}, udp: true}
+  - {name: SG 1｜openit.pw, server: do-sg-02.vvsoga.net, port: 1234, type: trojan, password: f7e5983c-46d1-3d21-97e1-b26519927e45, sni: do-sg-02.vvsoga.net, skip-cert-verify: true, udp: true}
+  - {name: LT_385, server: 213.183.63.221, port: 9045, type: ss, cipher: aes-256-cfb, password: Lp27rqyJq72bZsqX, udp: true}
+  - {name: IT_343, server: 92.223.93.233, port: 1035, type: ss, cipher: chacha20-ietf-poly1305, password: )1N1E6v0SU_rGTpg, udp: true}
+  - {name: LT_441, server: 213.183.63.221, port: 9006, type: ss, cipher: aes-256-cfb, password: FAdUvMJUq5vDgKEq, udp: true}
   - {name: US_969, server: 161.35.69.20, port: 811, type: ss, cipher: chacha20-ietf-poly1305, password: Ultr@r00t_2017, udp: true}
-  - {name: GB_310, server: 144.24.92.192, port: 443, type: vmess, uuid: 1743c2d9-bad1-4485-95a8-897145f09812, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: LT_382, server: 213.183.63.221, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
-  - {name: AU_47, server: 185.167.116.252, port: 9097, type: ss, cipher: aes-256-cfb, password: Sn5B7jTqr76aCJT8, udp: true}
-  - {name: GB_287, server: 178.62.16.161, port: 811, type: ss, cipher: chacha20-ietf-poly1305, password: Ultr@r00t_2017, udp: true}
-  - {name: LT_381, server: 213.183.63.221, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX, udp: true}
-  - {name: US_847, server: 167.88.61.14, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: AU_55, server: 185.167.116.252, port: 9006, type: ss, cipher: aes-256-cfb, password: FAdUvMJUq5vDgKEq, udp: true}
-  - {name: HK_321, server: 148.66.56.99, port: 804, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: RU_734, server: 45.144.176.135, port: 3005, type: ss, cipher: aes-256-cfb, password: 987.085wrcgrwqs36.985, udp: true}
-  - {name: LT_387, server: 213.183.63.221, port: 9093, type: ss, cipher: aes-256-cfb, password: wfLC2y7rzZyCmuyt, udp: true}
-  - {name: RU_738, server: 45.144.176.135, port: 3002, type: ss, cipher: aes-256-cfb, password: 36rtuhZfAeUh78Sa, udp: true}
-  - {name: SG_785, server: 217.197.160.117, port: 801, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: SG_783, server: 217.197.160.117, port: 811, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: IT_333, server: 92.223.93.233, port: 1035, type: ss, cipher: chacha20-ietf-poly1305, password: )1N1E6v0SU_rGTpg, udp: true}
-  - {name: SG_784, server: 217.197.160.117, port: 810, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: Pool_🇯🇵JP_337, server: 185.172.113.102, port: 803, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: Pool_🇯🇵JP_360, server: 185.172.113.101, port: 812, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: SG_786, server: 217.197.160.117, port: 805, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: Pool_🇯🇵JP_354, server: 185.172.113.102, port: 804, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: LT_391, server: 213.183.63.221, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa, udp: true}
-  - {name: Pool_🇯🇵JP_342, server: 185.172.113.102, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: LT_432, server: 213.183.63.221, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
-  - {name: Pool_🇯🇵JP_338, server: 185.172.113.106, port: 803, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: Pool_🇯🇵JP_341, server: 185.172.113.106, port: 812, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: Pool_🇯🇵JP_349, server: 185.172.113.101, port: 805, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: 欧洲(油管:破解资源君2.0) 31, server: emby.metalink.cf, port: 36369, type: vmess, uuid: 859fd7c6-c76d-4e9b-fa4e-b3b057e4520e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: emby.metalink.cf}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay_🇯🇵JP-🇯🇵JP_377
-      - Relay_🇨🇳 CN-🇭🇰HK_109
-      - US_1397
-      - JP_369
-      - SE_782
-      - JP_371
-      - Relay_🇹🇼TW-🇹🇼TW_828
-      - AU_63
-      - JP_366
-      - JP_367
+      - CN 3｜openit.pw
       - _09
-      - US_1401
-      - US_999
-      - US_1060
-      - US_1321
-      - Pool_🇳🇱 NL_523
-      - Pool_🇳🇱 NL_530
-      - US_1316
-      - Pool_🇳🇱 NL_529
-      - US_834
-      - Pool_🇳🇱 NL_502
-      - Pool_🇳🇱 NL_525
-      - Pool_🇳🇱 NL_515
-      - Pool_🇳🇱 NL_516
-      - Pool_🇳🇱 NL_533
-      - Pool_🇳🇱 NL_552
-      - Pool_🇳🇱 NL_532
-      - Pool_🇳🇱 NL_538
-      - Pool_🇳🇱 NL_518
-      - Pool_🇳🇱 NL_546
-      - US_860
-      - Pool_🇳🇱 NL_535
-      - Pool_🇳🇱NL_586
-      - US_832
-      - US_857
-      - US_1317
-      - Pool_🇳🇱 NL_520
-      - Pool_🇳🇱NL_557
-      - Pool_🇳🇱NL_602
-      - US_848
-      - US_858
-      - Pool_🇳🇱 NL_512
-      - Pool_🇳🇱 NL_522
-      - Pool_🇳🇱 NL_526
-      - Pool_🇳🇱 NL_528
-      - Pool_🇳🇱 NL_536
-      - Pool_🇳🇱 NL_540
-      - Pool_🇳🇱 NL_541
-      - Pool_🇳🇱 NL_542
-      - US_840
-      - Pool_🇳🇱 NL_521
-      - Pool_🇳🇱 NL_551
-      - Pool_🇳🇱 NL_506
-      - Pool_🇳🇱 NL_531
-      - Pool_🇳🇱 NL_543
-      - US_835
-      - Pool_🇳🇱 NL_508
-      - Pool_🇳🇱 NL_548
-      - US_1410
-      - Pool_🇳🇱 NL_534
-      - US_851
-      - US_1422
-      - Pool_🇳🇱NL_585
-      - Pool_🇳🇱 NL_510
-      - Pool_🇳🇱 NL_511
-      - Pool_🇳🇱 NL_527
-      - Pool_🇳🇱 NL_505
-      - RO_645
-      - Pool_🇳🇱 NL_550
-      - Pool_🇳🇱 NL_504
-      - Pool_🇳🇱 NL_545
-      - US_1320
-      - Pool_🇳🇱 NL_503
-      - Pool_🇳🇱NL_608
-      - Pool_🇳🇱 NL_524
-      - Pool_🇳🇱 NL_547
-      - RO_630
-      - US_1352
-      - Pool_🇳🇱 NL_507
-      - US_865
-      - Pool_🇳🇱NL_592
-      - Pool_🇳🇱 NL_539
-      - US_1055
-      - RO_631
-      - RO_633
-      - US_1020
-      - US_1108
-      - US_1058
-      - Pool_🇳🇱 NL_549
-      - Pool_🇳🇱 NL_544
-      - US_993
-      - US_1111
-      - US_836
-      - US_866
-      - US_1079
-      - LT_385
-      - FR_260
-      - FR_224
-      - US_1259
-      - US_1383
-      - FR_256
-      - Pool_🇳🇱 NL_553
-      - US_994
-      - US_1318
-      - US_991
-      - US_1028
-      - US_853
-      - ZZ_1537
-      - DE_194
-      - SG_814
-      - US_1031
-      - FR_221
-      - Pool_🇳🇱 NL_514
-      - Pool_🇳🇱 NL_509
-      - FR_225
+      - US_1443
+      - ""
+      - 欧洲(油管:破解资源君2.0) 57
+      - 欧洲(油管:破解资源君2.0) 43
+      - 欧洲(油管:破解资源君2.0) 52
+      - 欧洲(油管:破解资源君2.0) 29
+      - 欧洲(油管:破解资源君2.0) 61
+      - US_1330
+      - ZA 3｜openit.pw
+      - " 2"
+      - 欧洲(油管:破解资源君2.0) 59
+      - " 3"
+      - Relay_🇺🇸US-🇺🇸US_1418
+      - US_1423
+      - DE_229
+      - 欧洲(油管:破解资源君2.0) 25
+      - 欧洲(油管:破解资源君2.0) 58
+      - 欧洲(油管:破解资源君2.0) 20
+      - 欧洲(油管:破解资源君2.0) 30
+      - US 17｜openit.pw
+      - 欧洲(油管:破解资源君2.0) 38
+      - 欧洲(油管:破解资源君2.0) 46
+      - US_894
+      - RU_804
+      - LT_489
+      - LT_488
+      - ZZ_1599
+      - LT_493
+      - HK 2｜openit.pw
+      - 欧洲(油管:破解资源君2.0) 16
+      - 欧洲(油管:破解资源君2.0) 14
       - LT_386
-      - RU_685
-      - RU_692
-      - JP_364
-      - AU_43
-      - US_838
-      - AU_49
-      - LT_390
-      - US_841
-      - Pool_🇳🇱 NL_513
-      - AU_50
-      - US_833
+      - US_1137
+      - 欧洲(油管:破解资源君2.0) 15
+      - LT_486
+      - LT_397
+      - 美国(油管:破解资源君2.0) 4
+      - LT_474
+      - 台湾(油管:破解资源君2.0) 2
+      - " 4"
+      - 欧洲(油管:破解资源君2.0) 32
+      - LT_457
+      - US_1435
+      - US_1273
+      - US_1266
+      - 213.183.53.200:9026
+      - 欧洲(油管:破解资源君2.0) 19
+      - LT_497
+      - US_1340
+      - 欧洲(油管:破解资源君2.0) 53
+      - 美国(油管:破解资源君2.0) 23
+      - LT_435
+      - 欧洲(油管:破解资源君2.0) 44
+      - US_1284
+      - FR_234
+      - 欧洲(油管:破解资源君2.0) 10
+      - LT_487
+      - DE_216
+      - 欧洲(油管:破解资源君2.0) 49
+      - 美国(油管:破解资源君2.0) 14
+      - DE_183
+      - DE_210
+      - DE_189
+      - DE_208
+      - US_888
+      - US_1254
+      - 美国(油管:破解资源君2.0) 26
+      - US_1249
+      - US_1324
+      - US_885
+      - US_1299
+      - LT_399
+      - SG_840
+      - 美国(油管:破解资源君2.0) 27
+      - DE_218
+      - Relay_🇷🇺RU-🇷🇺RU_698
+      - 欧洲(油管:破解资源君2.0) 18
+      - Relay_🇷🇺RU-🇷🇺RU_801
+      - LT_503
+      - 欧洲(油管:破解资源君2.0) 37
+      - CA_85
+      - US_893
+      - US_1296
+      - CA_82
+      - US_898
+      - 美国(油管:破解资源君2.0) 25
+      - CA_65
+      - CA_71
+      - CA_87
+      - RO_647
       - CA_75
-      - HK_320
+      - 213.183.53.198:9024
+      - US_947
+      - JP_375
+      - US_1392
+      - RO_652
+      - US_901
+      - DE 1｜openit.pw
+      - US_1071
+      - US_1283
+      - US_1004
+      - Relay_🇷🇺RU-🇷🇺RU_803
+      - SG 5｜openit.pw
+      - 美国(油管:破解资源君2.0) 5
+      - " 5"
+      - RO_657
+      - Relay_🇨🇳 CN-🇩🇪DE_94
+      - SG 1｜openit.pw
+      - LT_385
+      - IT_343
+      - LT_441
       - US_969
-      - GB_310
-      - LT_382
-      - AU_47
-      - GB_287
-      - LT_381
-      - US_847
-      - AU_55
-      - HK_321
-      - RU_734
-      - LT_387
-      - RU_738
-      - SG_785
-      - SG_783
-      - IT_333
-      - SG_784
-      - Pool_🇯🇵JP_337
-      - Pool_🇯🇵JP_360
-      - SG_786
-      - Pool_🇯🇵JP_354
-      - LT_391
-      - Pool_🇯🇵JP_342
-      - LT_432
-      - Pool_🇯🇵JP_338
-      - Pool_🇯🇵JP_341
-      - Pool_🇯🇵JP_349
+      - 欧洲(油管:破解资源君2.0) 31
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - Relay_🇯🇵JP-🇯🇵JP_377
-      - Relay_🇨🇳 CN-🇭🇰HK_109
-      - US_1397
-      - JP_369
-      - SE_782
-      - JP_371
-      - Relay_🇹🇼TW-🇹🇼TW_828
-      - AU_63
-      - JP_366
-      - JP_367
+      - CN 3｜openit.pw
       - _09
-      - US_1401
-      - US_999
-      - US_1060
-      - US_1321
-      - Pool_🇳🇱 NL_523
-      - Pool_🇳🇱 NL_530
-      - US_1316
-      - Pool_🇳🇱 NL_529
-      - US_834
-      - Pool_🇳🇱 NL_502
-      - Pool_🇳🇱 NL_525
-      - Pool_🇳🇱 NL_515
-      - Pool_🇳🇱 NL_516
-      - Pool_🇳🇱 NL_533
-      - Pool_🇳🇱 NL_552
-      - Pool_🇳🇱 NL_532
-      - Pool_🇳🇱 NL_538
-      - Pool_🇳🇱 NL_518
-      - Pool_🇳🇱 NL_546
-      - US_860
-      - Pool_🇳🇱 NL_535
-      - Pool_🇳🇱NL_586
-      - US_832
-      - US_857
-      - US_1317
-      - Pool_🇳🇱 NL_520
-      - Pool_🇳🇱NL_557
-      - Pool_🇳🇱NL_602
-      - US_848
-      - US_858
-      - Pool_🇳🇱 NL_512
-      - Pool_🇳🇱 NL_522
-      - Pool_🇳🇱 NL_526
-      - Pool_🇳🇱 NL_528
-      - Pool_🇳🇱 NL_536
-      - Pool_🇳🇱 NL_540
-      - Pool_🇳🇱 NL_541
-      - Pool_🇳🇱 NL_542
-      - US_840
-      - Pool_🇳🇱 NL_521
-      - Pool_🇳🇱 NL_551
-      - Pool_🇳🇱 NL_506
-      - Pool_🇳🇱 NL_531
-      - Pool_🇳🇱 NL_543
-      - US_835
-      - Pool_🇳🇱 NL_508
-      - Pool_🇳🇱 NL_548
-      - US_1410
-      - Pool_🇳🇱 NL_534
-      - US_851
-      - US_1422
-      - Pool_🇳🇱NL_585
-      - Pool_🇳🇱 NL_510
-      - Pool_🇳🇱 NL_511
-      - Pool_🇳🇱 NL_527
-      - Pool_🇳🇱 NL_505
-      - RO_645
-      - Pool_🇳🇱 NL_550
-      - Pool_🇳🇱 NL_504
-      - Pool_🇳🇱 NL_545
-      - US_1320
-      - Pool_🇳🇱 NL_503
-      - Pool_🇳🇱NL_608
-      - Pool_🇳🇱 NL_524
-      - Pool_🇳🇱 NL_547
-      - RO_630
-      - US_1352
-      - Pool_🇳🇱 NL_507
-      - US_865
-      - Pool_🇳🇱NL_592
-      - Pool_🇳🇱 NL_539
-      - US_1055
-      - RO_631
-      - RO_633
-      - US_1020
-      - US_1108
-      - US_1058
-      - Pool_🇳🇱 NL_549
-      - Pool_🇳🇱 NL_544
-      - US_993
-      - US_1111
-      - US_836
-      - US_866
-      - US_1079
-      - LT_385
-      - FR_260
-      - FR_224
-      - US_1259
-      - US_1383
-      - FR_256
-      - Pool_🇳🇱 NL_553
-      - US_994
-      - US_1318
-      - US_991
-      - US_1028
-      - US_853
-      - ZZ_1537
-      - DE_194
-      - SG_814
-      - US_1031
-      - FR_221
-      - Pool_🇳🇱 NL_514
-      - Pool_🇳🇱 NL_509
-      - FR_225
+      - US_1443
+      - ""
+      - 欧洲(油管:破解资源君2.0) 57
+      - 欧洲(油管:破解资源君2.0) 43
+      - 欧洲(油管:破解资源君2.0) 52
+      - 欧洲(油管:破解资源君2.0) 29
+      - 欧洲(油管:破解资源君2.0) 61
+      - US_1330
+      - ZA 3｜openit.pw
+      - " 2"
+      - 欧洲(油管:破解资源君2.0) 59
+      - " 3"
+      - Relay_🇺🇸US-🇺🇸US_1418
+      - US_1423
+      - DE_229
+      - 欧洲(油管:破解资源君2.0) 25
+      - 欧洲(油管:破解资源君2.0) 58
+      - 欧洲(油管:破解资源君2.0) 20
+      - 欧洲(油管:破解资源君2.0) 30
+      - US 17｜openit.pw
+      - 欧洲(油管:破解资源君2.0) 38
+      - 欧洲(油管:破解资源君2.0) 46
+      - US_894
+      - RU_804
+      - LT_489
+      - LT_488
+      - ZZ_1599
+      - LT_493
+      - HK 2｜openit.pw
+      - 欧洲(油管:破解资源君2.0) 16
+      - 欧洲(油管:破解资源君2.0) 14
       - LT_386
-      - RU_685
-      - RU_692
-      - JP_364
-      - AU_43
-      - US_838
-      - AU_49
-      - LT_390
-      - US_841
-      - Pool_🇳🇱 NL_513
-      - AU_50
-      - US_833
+      - US_1137
+      - 欧洲(油管:破解资源君2.0) 15
+      - LT_486
+      - LT_397
+      - 美国(油管:破解资源君2.0) 4
+      - LT_474
+      - 台湾(油管:破解资源君2.0) 2
+      - " 4"
+      - 欧洲(油管:破解资源君2.0) 32
+      - LT_457
+      - US_1435
+      - US_1273
+      - US_1266
+      - 213.183.53.200:9026
+      - 欧洲(油管:破解资源君2.0) 19
+      - LT_497
+      - US_1340
+      - 欧洲(油管:破解资源君2.0) 53
+      - 美国(油管:破解资源君2.0) 23
+      - LT_435
+      - 欧洲(油管:破解资源君2.0) 44
+      - US_1284
+      - FR_234
+      - 欧洲(油管:破解资源君2.0) 10
+      - LT_487
+      - DE_216
+      - 欧洲(油管:破解资源君2.0) 49
+      - 美国(油管:破解资源君2.0) 14
+      - DE_183
+      - DE_210
+      - DE_189
+      - DE_208
+      - US_888
+      - US_1254
+      - 美国(油管:破解资源君2.0) 26
+      - US_1249
+      - US_1324
+      - US_885
+      - US_1299
+      - LT_399
+      - SG_840
+      - 美国(油管:破解资源君2.0) 27
+      - DE_218
+      - Relay_🇷🇺RU-🇷🇺RU_698
+      - 欧洲(油管:破解资源君2.0) 18
+      - Relay_🇷🇺RU-🇷🇺RU_801
+      - LT_503
+      - 欧洲(油管:破解资源君2.0) 37
+      - CA_85
+      - US_893
+      - US_1296
+      - CA_82
+      - US_898
+      - 美国(油管:破解资源君2.0) 25
+      - CA_65
+      - CA_71
+      - CA_87
+      - RO_647
       - CA_75
-      - HK_320
+      - 213.183.53.198:9024
+      - US_947
+      - JP_375
+      - US_1392
+      - RO_652
+      - US_901
+      - DE 1｜openit.pw
+      - US_1071
+      - US_1283
+      - US_1004
+      - Relay_🇷🇺RU-🇷🇺RU_803
+      - SG 5｜openit.pw
+      - 美国(油管:破解资源君2.0) 5
+      - " 5"
+      - RO_657
+      - Relay_🇨🇳 CN-🇩🇪DE_94
+      - SG 1｜openit.pw
+      - LT_385
+      - IT_343
+      - LT_441
       - US_969
-      - GB_310
-      - LT_382
-      - AU_47
-      - GB_287
-      - LT_381
-      - US_847
-      - AU_55
-      - HK_321
-      - RU_734
-      - LT_387
-      - RU_738
-      - SG_785
-      - SG_783
-      - IT_333
-      - SG_784
-      - Pool_🇯🇵JP_337
-      - Pool_🇯🇵JP_360
-      - SG_786
-      - Pool_🇯🇵JP_354
-      - LT_391
-      - Pool_🇯🇵JP_342
-      - LT_432
-      - Pool_🇯🇵JP_338
-      - Pool_🇯🇵JP_341
-      - Pool_🇯🇵JP_349
+      - 欧洲(油管:破解资源君2.0) 31
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay_🇯🇵JP-🇯🇵JP_377
-      - Relay_🇨🇳 CN-🇭🇰HK_109
-      - US_1397
-      - JP_369
-      - SE_782
-      - JP_371
-      - Relay_🇹🇼TW-🇹🇼TW_828
-      - AU_63
-      - JP_366
-      - JP_367
+      - CN 3｜openit.pw
       - _09
-      - US_1401
-      - US_999
-      - US_1060
-      - US_1321
-      - Pool_🇳🇱 NL_523
-      - Pool_🇳🇱 NL_530
-      - US_1316
-      - Pool_🇳🇱 NL_529
-      - US_834
-      - Pool_🇳🇱 NL_502
-      - Pool_🇳🇱 NL_525
-      - Pool_🇳🇱 NL_515
-      - Pool_🇳🇱 NL_516
-      - Pool_🇳🇱 NL_533
-      - Pool_🇳🇱 NL_552
-      - Pool_🇳🇱 NL_532
-      - Pool_🇳🇱 NL_538
-      - Pool_🇳🇱 NL_518
-      - Pool_🇳🇱 NL_546
-      - US_860
-      - Pool_🇳🇱 NL_535
-      - Pool_🇳🇱NL_586
-      - US_832
-      - US_857
-      - US_1317
-      - Pool_🇳🇱 NL_520
-      - Pool_🇳🇱NL_557
-      - Pool_🇳🇱NL_602
-      - US_848
-      - US_858
-      - Pool_🇳🇱 NL_512
-      - Pool_🇳🇱 NL_522
-      - Pool_🇳🇱 NL_526
-      - Pool_🇳🇱 NL_528
-      - Pool_🇳🇱 NL_536
-      - Pool_🇳🇱 NL_540
-      - Pool_🇳🇱 NL_541
-      - Pool_🇳🇱 NL_542
-      - US_840
-      - Pool_🇳🇱 NL_521
-      - Pool_🇳🇱 NL_551
-      - Pool_🇳🇱 NL_506
-      - Pool_🇳🇱 NL_531
-      - Pool_🇳🇱 NL_543
-      - US_835
-      - Pool_🇳🇱 NL_508
-      - Pool_🇳🇱 NL_548
-      - US_1410
-      - Pool_🇳🇱 NL_534
-      - US_851
-      - US_1422
-      - Pool_🇳🇱NL_585
-      - Pool_🇳🇱 NL_510
-      - Pool_🇳🇱 NL_511
-      - Pool_🇳🇱 NL_527
-      - Pool_🇳🇱 NL_505
-      - RO_645
-      - Pool_🇳🇱 NL_550
-      - Pool_🇳🇱 NL_504
-      - Pool_🇳🇱 NL_545
-      - US_1320
-      - Pool_🇳🇱 NL_503
-      - Pool_🇳🇱NL_608
-      - Pool_🇳🇱 NL_524
-      - Pool_🇳🇱 NL_547
-      - RO_630
-      - US_1352
-      - Pool_🇳🇱 NL_507
-      - US_865
-      - Pool_🇳🇱NL_592
-      - Pool_🇳🇱 NL_539
-      - US_1055
-      - RO_631
-      - RO_633
-      - US_1020
-      - US_1108
-      - US_1058
-      - Pool_🇳🇱 NL_549
-      - Pool_🇳🇱 NL_544
-      - US_993
-      - US_1111
-      - US_836
-      - US_866
-      - US_1079
-      - LT_385
-      - FR_260
-      - FR_224
-      - US_1259
-      - US_1383
-      - FR_256
-      - Pool_🇳🇱 NL_553
-      - US_994
-      - US_1318
-      - US_991
-      - US_1028
-      - US_853
-      - ZZ_1537
-      - DE_194
-      - SG_814
-      - US_1031
-      - FR_221
-      - Pool_🇳🇱 NL_514
-      - Pool_🇳🇱 NL_509
-      - FR_225
+      - US_1443
+      - ""
+      - 欧洲(油管:破解资源君2.0) 57
+      - 欧洲(油管:破解资源君2.0) 43
+      - 欧洲(油管:破解资源君2.0) 52
+      - 欧洲(油管:破解资源君2.0) 29
+      - 欧洲(油管:破解资源君2.0) 61
+      - US_1330
+      - ZA 3｜openit.pw
+      - " 2"
+      - 欧洲(油管:破解资源君2.0) 59
+      - " 3"
+      - Relay_🇺🇸US-🇺🇸US_1418
+      - US_1423
+      - DE_229
+      - 欧洲(油管:破解资源君2.0) 25
+      - 欧洲(油管:破解资源君2.0) 58
+      - 欧洲(油管:破解资源君2.0) 20
+      - 欧洲(油管:破解资源君2.0) 30
+      - US 17｜openit.pw
+      - 欧洲(油管:破解资源君2.0) 38
+      - 欧洲(油管:破解资源君2.0) 46
+      - US_894
+      - RU_804
+      - LT_489
+      - LT_488
+      - ZZ_1599
+      - LT_493
+      - HK 2｜openit.pw
+      - 欧洲(油管:破解资源君2.0) 16
+      - 欧洲(油管:破解资源君2.0) 14
       - LT_386
-      - RU_685
-      - RU_692
-      - JP_364
-      - AU_43
-      - US_838
-      - AU_49
-      - LT_390
-      - US_841
-      - Pool_🇳🇱 NL_513
-      - AU_50
-      - US_833
+      - US_1137
+      - 欧洲(油管:破解资源君2.0) 15
+      - LT_486
+      - LT_397
+      - 美国(油管:破解资源君2.0) 4
+      - LT_474
+      - 台湾(油管:破解资源君2.0) 2
+      - " 4"
+      - 欧洲(油管:破解资源君2.0) 32
+      - LT_457
+      - US_1435
+      - US_1273
+      - US_1266
+      - 213.183.53.200:9026
+      - 欧洲(油管:破解资源君2.0) 19
+      - LT_497
+      - US_1340
+      - 欧洲(油管:破解资源君2.0) 53
+      - 美国(油管:破解资源君2.0) 23
+      - LT_435
+      - 欧洲(油管:破解资源君2.0) 44
+      - US_1284
+      - FR_234
+      - 欧洲(油管:破解资源君2.0) 10
+      - LT_487
+      - DE_216
+      - 欧洲(油管:破解资源君2.0) 49
+      - 美国(油管:破解资源君2.0) 14
+      - DE_183
+      - DE_210
+      - DE_189
+      - DE_208
+      - US_888
+      - US_1254
+      - 美国(油管:破解资源君2.0) 26
+      - US_1249
+      - US_1324
+      - US_885
+      - US_1299
+      - LT_399
+      - SG_840
+      - 美国(油管:破解资源君2.0) 27
+      - DE_218
+      - Relay_🇷🇺RU-🇷🇺RU_698
+      - 欧洲(油管:破解资源君2.0) 18
+      - Relay_🇷🇺RU-🇷🇺RU_801
+      - LT_503
+      - 欧洲(油管:破解资源君2.0) 37
+      - CA_85
+      - US_893
+      - US_1296
+      - CA_82
+      - US_898
+      - 美国(油管:破解资源君2.0) 25
+      - CA_65
+      - CA_71
+      - CA_87
+      - RO_647
       - CA_75
-      - HK_320
+      - 213.183.53.198:9024
+      - US_947
+      - JP_375
+      - US_1392
+      - RO_652
+      - US_901
+      - DE 1｜openit.pw
+      - US_1071
+      - US_1283
+      - US_1004
+      - Relay_🇷🇺RU-🇷🇺RU_803
+      - SG 5｜openit.pw
+      - 美国(油管:破解资源君2.0) 5
+      - " 5"
+      - RO_657
+      - Relay_🇨🇳 CN-🇩🇪DE_94
+      - SG 1｜openit.pw
+      - LT_385
+      - IT_343
+      - LT_441
       - US_969
-      - GB_310
-      - LT_382
-      - AU_47
-      - GB_287
-      - LT_381
-      - US_847
-      - AU_55
-      - HK_321
-      - RU_734
-      - LT_387
-      - RU_738
-      - SG_785
-      - SG_783
-      - IT_333
-      - SG_784
-      - Pool_🇯🇵JP_337
-      - Pool_🇯🇵JP_360
-      - SG_786
-      - Pool_🇯🇵JP_354
-      - LT_391
-      - Pool_🇯🇵JP_342
-      - LT_432
-      - Pool_🇯🇵JP_338
-      - Pool_🇯🇵JP_341
-      - Pool_🇯🇵JP_349
+      - 欧洲(油管:破解资源君2.0) 31
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -660,647 +500,488 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay_🇯🇵JP-🇯🇵JP_377
-      - Relay_🇨🇳 CN-🇭🇰HK_109
-      - US_1397
-      - JP_369
-      - SE_782
-      - JP_371
-      - Relay_🇹🇼TW-🇹🇼TW_828
-      - AU_63
-      - JP_366
-      - JP_367
+      - CN 3｜openit.pw
       - _09
-      - US_1401
-      - US_999
-      - US_1060
-      - US_1321
-      - Pool_🇳🇱 NL_523
-      - Pool_🇳🇱 NL_530
-      - US_1316
-      - Pool_🇳🇱 NL_529
-      - US_834
-      - Pool_🇳🇱 NL_502
-      - Pool_🇳🇱 NL_525
-      - Pool_🇳🇱 NL_515
-      - Pool_🇳🇱 NL_516
-      - Pool_🇳🇱 NL_533
-      - Pool_🇳🇱 NL_552
-      - Pool_🇳🇱 NL_532
-      - Pool_🇳🇱 NL_538
-      - Pool_🇳🇱 NL_518
-      - Pool_🇳🇱 NL_546
-      - US_860
-      - Pool_🇳🇱 NL_535
-      - Pool_🇳🇱NL_586
-      - US_832
-      - US_857
-      - US_1317
-      - Pool_🇳🇱 NL_520
-      - Pool_🇳🇱NL_557
-      - Pool_🇳🇱NL_602
-      - US_848
-      - US_858
-      - Pool_🇳🇱 NL_512
-      - Pool_🇳🇱 NL_522
-      - Pool_🇳🇱 NL_526
-      - Pool_🇳🇱 NL_528
-      - Pool_🇳🇱 NL_536
-      - Pool_🇳🇱 NL_540
-      - Pool_🇳🇱 NL_541
-      - Pool_🇳🇱 NL_542
-      - US_840
-      - Pool_🇳🇱 NL_521
-      - Pool_🇳🇱 NL_551
-      - Pool_🇳🇱 NL_506
-      - Pool_🇳🇱 NL_531
-      - Pool_🇳🇱 NL_543
-      - US_835
-      - Pool_🇳🇱 NL_508
-      - Pool_🇳🇱 NL_548
-      - US_1410
-      - Pool_🇳🇱 NL_534
-      - US_851
-      - US_1422
-      - Pool_🇳🇱NL_585
-      - Pool_🇳🇱 NL_510
-      - Pool_🇳🇱 NL_511
-      - Pool_🇳🇱 NL_527
-      - Pool_🇳🇱 NL_505
-      - RO_645
-      - Pool_🇳🇱 NL_550
-      - Pool_🇳🇱 NL_504
-      - Pool_🇳🇱 NL_545
-      - US_1320
-      - Pool_🇳🇱 NL_503
-      - Pool_🇳🇱NL_608
-      - Pool_🇳🇱 NL_524
-      - Pool_🇳🇱 NL_547
-      - RO_630
-      - US_1352
-      - Pool_🇳🇱 NL_507
-      - US_865
-      - Pool_🇳🇱NL_592
-      - Pool_🇳🇱 NL_539
-      - US_1055
-      - RO_631
-      - RO_633
-      - US_1020
-      - US_1108
-      - US_1058
-      - Pool_🇳🇱 NL_549
-      - Pool_🇳🇱 NL_544
-      - US_993
-      - US_1111
-      - US_836
-      - US_866
-      - US_1079
-      - LT_385
-      - FR_260
-      - FR_224
-      - US_1259
-      - US_1383
-      - FR_256
-      - Pool_🇳🇱 NL_553
-      - US_994
-      - US_1318
-      - US_991
-      - US_1028
-      - US_853
-      - ZZ_1537
-      - DE_194
-      - SG_814
-      - US_1031
-      - FR_221
-      - Pool_🇳🇱 NL_514
-      - Pool_🇳🇱 NL_509
-      - FR_225
+      - US_1443
+      - ""
+      - 欧洲(油管:破解资源君2.0) 57
+      - 欧洲(油管:破解资源君2.0) 43
+      - 欧洲(油管:破解资源君2.0) 52
+      - 欧洲(油管:破解资源君2.0) 29
+      - 欧洲(油管:破解资源君2.0) 61
+      - US_1330
+      - ZA 3｜openit.pw
+      - " 2"
+      - 欧洲(油管:破解资源君2.0) 59
+      - " 3"
+      - Relay_🇺🇸US-🇺🇸US_1418
+      - US_1423
+      - DE_229
+      - 欧洲(油管:破解资源君2.0) 25
+      - 欧洲(油管:破解资源君2.0) 58
+      - 欧洲(油管:破解资源君2.0) 20
+      - 欧洲(油管:破解资源君2.0) 30
+      - US 17｜openit.pw
+      - 欧洲(油管:破解资源君2.0) 38
+      - 欧洲(油管:破解资源君2.0) 46
+      - US_894
+      - RU_804
+      - LT_489
+      - LT_488
+      - ZZ_1599
+      - LT_493
+      - HK 2｜openit.pw
+      - 欧洲(油管:破解资源君2.0) 16
+      - 欧洲(油管:破解资源君2.0) 14
       - LT_386
-      - RU_685
-      - RU_692
-      - JP_364
-      - AU_43
-      - US_838
-      - AU_49
-      - LT_390
-      - US_841
-      - Pool_🇳🇱 NL_513
-      - AU_50
-      - US_833
+      - US_1137
+      - 欧洲(油管:破解资源君2.0) 15
+      - LT_486
+      - LT_397
+      - 美国(油管:破解资源君2.0) 4
+      - LT_474
+      - 台湾(油管:破解资源君2.0) 2
+      - " 4"
+      - 欧洲(油管:破解资源君2.0) 32
+      - LT_457
+      - US_1435
+      - US_1273
+      - US_1266
+      - 213.183.53.200:9026
+      - 欧洲(油管:破解资源君2.0) 19
+      - LT_497
+      - US_1340
+      - 欧洲(油管:破解资源君2.0) 53
+      - 美国(油管:破解资源君2.0) 23
+      - LT_435
+      - 欧洲(油管:破解资源君2.0) 44
+      - US_1284
+      - FR_234
+      - 欧洲(油管:破解资源君2.0) 10
+      - LT_487
+      - DE_216
+      - 欧洲(油管:破解资源君2.0) 49
+      - 美国(油管:破解资源君2.0) 14
+      - DE_183
+      - DE_210
+      - DE_189
+      - DE_208
+      - US_888
+      - US_1254
+      - 美国(油管:破解资源君2.0) 26
+      - US_1249
+      - US_1324
+      - US_885
+      - US_1299
+      - LT_399
+      - SG_840
+      - 美国(油管:破解资源君2.0) 27
+      - DE_218
+      - Relay_🇷🇺RU-🇷🇺RU_698
+      - 欧洲(油管:破解资源君2.0) 18
+      - Relay_🇷🇺RU-🇷🇺RU_801
+      - LT_503
+      - 欧洲(油管:破解资源君2.0) 37
+      - CA_85
+      - US_893
+      - US_1296
+      - CA_82
+      - US_898
+      - 美国(油管:破解资源君2.0) 25
+      - CA_65
+      - CA_71
+      - CA_87
+      - RO_647
       - CA_75
-      - HK_320
+      - 213.183.53.198:9024
+      - US_947
+      - JP_375
+      - US_1392
+      - RO_652
+      - US_901
+      - DE 1｜openit.pw
+      - US_1071
+      - US_1283
+      - US_1004
+      - Relay_🇷🇺RU-🇷🇺RU_803
+      - SG 5｜openit.pw
+      - 美国(油管:破解资源君2.0) 5
+      - " 5"
+      - RO_657
+      - Relay_🇨🇳 CN-🇩🇪DE_94
+      - SG 1｜openit.pw
+      - LT_385
+      - IT_343
+      - LT_441
       - US_969
-      - GB_310
-      - LT_382
-      - AU_47
-      - GB_287
-      - LT_381
-      - US_847
-      - AU_55
-      - HK_321
-      - RU_734
-      - LT_387
-      - RU_738
-      - SG_785
-      - SG_783
-      - IT_333
-      - SG_784
-      - Pool_🇯🇵JP_337
-      - Pool_🇯🇵JP_360
-      - SG_786
-      - Pool_🇯🇵JP_354
-      - LT_391
-      - Pool_🇯🇵JP_342
-      - LT_432
-      - Pool_🇯🇵JP_338
-      - Pool_🇯🇵JP_341
-      - Pool_🇯🇵JP_349
+      - 欧洲(油管:破解资源君2.0) 31
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 台湾(油管:破解资源君2.0) 2
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - Relay_🇯🇵JP-🇯🇵JP_377
-      - Relay_🇨🇳 CN-🇭🇰HK_109
-      - US_1397
-      - JP_369
-      - SE_782
-      - JP_371
-      - Relay_🇹🇼TW-🇹🇼TW_828
-      - AU_63
-      - JP_366
-      - JP_367
+      - CN 3｜openit.pw
       - _09
-      - US_1401
-      - US_999
-      - US_1060
-      - US_1321
-      - Pool_🇳🇱 NL_523
-      - Pool_🇳🇱 NL_530
-      - US_1316
-      - Pool_🇳🇱 NL_529
-      - US_834
-      - Pool_🇳🇱 NL_502
-      - Pool_🇳🇱 NL_525
-      - Pool_🇳🇱 NL_515
-      - Pool_🇳🇱 NL_516
-      - Pool_🇳🇱 NL_533
-      - Pool_🇳🇱 NL_552
-      - Pool_🇳🇱 NL_532
-      - Pool_🇳🇱 NL_538
-      - Pool_🇳🇱 NL_518
-      - Pool_🇳🇱 NL_546
-      - US_860
-      - Pool_🇳🇱 NL_535
-      - Pool_🇳🇱NL_586
-      - US_832
-      - US_857
-      - US_1317
-      - Pool_🇳🇱 NL_520
-      - Pool_🇳🇱NL_557
-      - Pool_🇳🇱NL_602
-      - US_848
-      - US_858
-      - Pool_🇳🇱 NL_512
-      - Pool_🇳🇱 NL_522
-      - Pool_🇳🇱 NL_526
-      - Pool_🇳🇱 NL_528
-      - Pool_🇳🇱 NL_536
-      - Pool_🇳🇱 NL_540
-      - Pool_🇳🇱 NL_541
-      - Pool_🇳🇱 NL_542
-      - US_840
-      - Pool_🇳🇱 NL_521
-      - Pool_🇳🇱 NL_551
-      - Pool_🇳🇱 NL_506
-      - Pool_🇳🇱 NL_531
-      - Pool_🇳🇱 NL_543
-      - US_835
-      - Pool_🇳🇱 NL_508
-      - Pool_🇳🇱 NL_548
-      - US_1410
-      - Pool_🇳🇱 NL_534
-      - US_851
-      - US_1422
-      - Pool_🇳🇱NL_585
-      - Pool_🇳🇱 NL_510
-      - Pool_🇳🇱 NL_511
-      - Pool_🇳🇱 NL_527
-      - Pool_🇳🇱 NL_505
-      - RO_645
-      - Pool_🇳🇱 NL_550
-      - Pool_🇳🇱 NL_504
-      - Pool_🇳🇱 NL_545
-      - US_1320
-      - Pool_🇳🇱 NL_503
-      - Pool_🇳🇱NL_608
-      - Pool_🇳🇱 NL_524
-      - Pool_🇳🇱 NL_547
-      - RO_630
-      - US_1352
-      - Pool_🇳🇱 NL_507
-      - US_865
-      - Pool_🇳🇱NL_592
-      - Pool_🇳🇱 NL_539
-      - US_1055
-      - RO_631
-      - RO_633
-      - US_1020
-      - US_1108
-      - US_1058
-      - Pool_🇳🇱 NL_549
-      - Pool_🇳🇱 NL_544
-      - US_993
-      - US_1111
-      - US_836
-      - US_866
-      - US_1079
-      - LT_385
-      - FR_260
-      - FR_224
-      - US_1259
-      - US_1383
-      - FR_256
-      - Pool_🇳🇱 NL_553
-      - US_994
-      - US_1318
-      - US_991
-      - US_1028
-      - US_853
-      - ZZ_1537
-      - DE_194
-      - SG_814
-      - US_1031
-      - FR_221
-      - Pool_🇳🇱 NL_514
-      - Pool_🇳🇱 NL_509
-      - FR_225
+      - US_1443
+      - ""
+      - 欧洲(油管:破解资源君2.0) 57
+      - 欧洲(油管:破解资源君2.0) 43
+      - 欧洲(油管:破解资源君2.0) 52
+      - 欧洲(油管:破解资源君2.0) 29
+      - 欧洲(油管:破解资源君2.0) 61
+      - US_1330
+      - ZA 3｜openit.pw
+      - " 2"
+      - 欧洲(油管:破解资源君2.0) 59
+      - " 3"
+      - Relay_🇺🇸US-🇺🇸US_1418
+      - US_1423
+      - DE_229
+      - 欧洲(油管:破解资源君2.0) 25
+      - 欧洲(油管:破解资源君2.0) 58
+      - 欧洲(油管:破解资源君2.0) 20
+      - 欧洲(油管:破解资源君2.0) 30
+      - US 17｜openit.pw
+      - 欧洲(油管:破解资源君2.0) 38
+      - 欧洲(油管:破解资源君2.0) 46
+      - US_894
+      - RU_804
+      - LT_489
+      - LT_488
+      - ZZ_1599
+      - LT_493
+      - HK 2｜openit.pw
+      - 欧洲(油管:破解资源君2.0) 16
+      - 欧洲(油管:破解资源君2.0) 14
       - LT_386
-      - RU_685
-      - RU_692
-      - JP_364
-      - AU_43
-      - US_838
-      - AU_49
-      - LT_390
-      - US_841
-      - Pool_🇳🇱 NL_513
-      - AU_50
-      - US_833
+      - US_1137
+      - 欧洲(油管:破解资源君2.0) 15
+      - LT_486
+      - LT_397
+      - 美国(油管:破解资源君2.0) 4
+      - LT_474
+      - 台湾(油管:破解资源君2.0) 2
+      - " 4"
+      - 欧洲(油管:破解资源君2.0) 32
+      - LT_457
+      - US_1435
+      - US_1273
+      - US_1266
+      - 213.183.53.200:9026
+      - 欧洲(油管:破解资源君2.0) 19
+      - LT_497
+      - US_1340
+      - 欧洲(油管:破解资源君2.0) 53
+      - 美国(油管:破解资源君2.0) 23
+      - LT_435
+      - 欧洲(油管:破解资源君2.0) 44
+      - US_1284
+      - FR_234
+      - 欧洲(油管:破解资源君2.0) 10
+      - LT_487
+      - DE_216
+      - 欧洲(油管:破解资源君2.0) 49
+      - 美国(油管:破解资源君2.0) 14
+      - DE_183
+      - DE_210
+      - DE_189
+      - DE_208
+      - US_888
+      - US_1254
+      - 美国(油管:破解资源君2.0) 26
+      - US_1249
+      - US_1324
+      - US_885
+      - US_1299
+      - LT_399
+      - SG_840
+      - 美国(油管:破解资源君2.0) 27
+      - DE_218
+      - Relay_🇷🇺RU-🇷🇺RU_698
+      - 欧洲(油管:破解资源君2.0) 18
+      - Relay_🇷🇺RU-🇷🇺RU_801
+      - LT_503
+      - 欧洲(油管:破解资源君2.0) 37
+      - CA_85
+      - US_893
+      - US_1296
+      - CA_82
+      - US_898
+      - 美国(油管:破解资源君2.0) 25
+      - CA_65
+      - CA_71
+      - CA_87
+      - RO_647
       - CA_75
-      - HK_320
+      - 213.183.53.198:9024
+      - US_947
+      - JP_375
+      - US_1392
+      - RO_652
+      - US_901
+      - DE 1｜openit.pw
+      - US_1071
+      - US_1283
+      - US_1004
+      - Relay_🇷🇺RU-🇷🇺RU_803
+      - SG 5｜openit.pw
+      - 美国(油管:破解资源君2.0) 5
+      - " 5"
+      - RO_657
+      - Relay_🇨🇳 CN-🇩🇪DE_94
+      - SG 1｜openit.pw
+      - LT_385
+      - IT_343
+      - LT_441
       - US_969
-      - GB_310
-      - LT_382
-      - AU_47
-      - GB_287
-      - LT_381
-      - US_847
-      - AU_55
-      - HK_321
-      - RU_734
-      - LT_387
-      - RU_738
-      - SG_785
-      - SG_783
-      - IT_333
-      - SG_784
-      - Pool_🇯🇵JP_337
-      - Pool_🇯🇵JP_360
-      - SG_786
-      - Pool_🇯🇵JP_354
-      - LT_391
-      - Pool_🇯🇵JP_342
-      - LT_432
-      - Pool_🇯🇵JP_338
-      - Pool_🇯🇵JP_341
-      - Pool_🇯🇵JP_349
+      - 欧洲(油管:破解资源君2.0) 31
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - Relay_🇯🇵JP-🇯🇵JP_377
-      - Relay_🇨🇳 CN-🇭🇰HK_109
-      - US_1397
-      - JP_369
-      - SE_782
-      - JP_371
-      - Relay_🇹🇼TW-🇹🇼TW_828
-      - AU_63
-      - JP_366
-      - JP_367
+      - CN 3｜openit.pw
       - _09
-      - US_1401
-      - US_999
-      - US_1060
-      - US_1321
-      - Pool_🇳🇱 NL_523
-      - Pool_🇳🇱 NL_530
-      - US_1316
-      - Pool_🇳🇱 NL_529
-      - US_834
-      - Pool_🇳🇱 NL_502
-      - Pool_🇳🇱 NL_525
-      - Pool_🇳🇱 NL_515
-      - Pool_🇳🇱 NL_516
-      - Pool_🇳🇱 NL_533
-      - Pool_🇳🇱 NL_552
-      - Pool_🇳🇱 NL_532
-      - Pool_🇳🇱 NL_538
-      - Pool_🇳🇱 NL_518
-      - Pool_🇳🇱 NL_546
-      - US_860
-      - Pool_🇳🇱 NL_535
-      - Pool_🇳🇱NL_586
-      - US_832
-      - US_857
-      - US_1317
-      - Pool_🇳🇱 NL_520
-      - Pool_🇳🇱NL_557
-      - Pool_🇳🇱NL_602
-      - US_848
-      - US_858
-      - Pool_🇳🇱 NL_512
-      - Pool_🇳🇱 NL_522
-      - Pool_🇳🇱 NL_526
-      - Pool_🇳🇱 NL_528
-      - Pool_🇳🇱 NL_536
-      - Pool_🇳🇱 NL_540
-      - Pool_🇳🇱 NL_541
-      - Pool_🇳🇱 NL_542
-      - US_840
-      - Pool_🇳🇱 NL_521
-      - Pool_🇳🇱 NL_551
-      - Pool_🇳🇱 NL_506
-      - Pool_🇳🇱 NL_531
-      - Pool_🇳🇱 NL_543
-      - US_835
-      - Pool_🇳🇱 NL_508
-      - Pool_🇳🇱 NL_548
-      - US_1410
-      - Pool_🇳🇱 NL_534
-      - US_851
-      - US_1422
-      - Pool_🇳🇱NL_585
-      - Pool_🇳🇱 NL_510
-      - Pool_🇳🇱 NL_511
-      - Pool_🇳🇱 NL_527
-      - Pool_🇳🇱 NL_505
-      - RO_645
-      - Pool_🇳🇱 NL_550
-      - Pool_🇳🇱 NL_504
-      - Pool_🇳🇱 NL_545
-      - US_1320
-      - Pool_🇳🇱 NL_503
-      - Pool_🇳🇱NL_608
-      - Pool_🇳🇱 NL_524
-      - Pool_🇳🇱 NL_547
-      - RO_630
-      - US_1352
-      - Pool_🇳🇱 NL_507
-      - US_865
-      - Pool_🇳🇱NL_592
-      - Pool_🇳🇱 NL_539
-      - US_1055
-      - RO_631
-      - RO_633
-      - US_1020
-      - US_1108
-      - US_1058
-      - Pool_🇳🇱 NL_549
-      - Pool_🇳🇱 NL_544
-      - US_993
-      - US_1111
-      - US_836
-      - US_866
-      - US_1079
-      - LT_385
-      - FR_260
-      - FR_224
-      - US_1259
-      - US_1383
-      - FR_256
-      - Pool_🇳🇱 NL_553
-      - US_994
-      - US_1318
-      - US_991
-      - US_1028
-      - US_853
-      - ZZ_1537
-      - DE_194
-      - SG_814
-      - US_1031
-      - FR_221
-      - Pool_🇳🇱 NL_514
-      - Pool_🇳🇱 NL_509
-      - FR_225
+      - US_1443
+      - ""
+      - 欧洲(油管:破解资源君2.0) 57
+      - 欧洲(油管:破解资源君2.0) 43
+      - 欧洲(油管:破解资源君2.0) 52
+      - 欧洲(油管:破解资源君2.0) 29
+      - 欧洲(油管:破解资源君2.0) 61
+      - US_1330
+      - ZA 3｜openit.pw
+      - " 2"
+      - 欧洲(油管:破解资源君2.0) 59
+      - " 3"
+      - Relay_🇺🇸US-🇺🇸US_1418
+      - US_1423
+      - DE_229
+      - 欧洲(油管:破解资源君2.0) 25
+      - 欧洲(油管:破解资源君2.0) 58
+      - 欧洲(油管:破解资源君2.0) 20
+      - 欧洲(油管:破解资源君2.0) 30
+      - US 17｜openit.pw
+      - 欧洲(油管:破解资源君2.0) 38
+      - 欧洲(油管:破解资源君2.0) 46
+      - US_894
+      - RU_804
+      - LT_489
+      - LT_488
+      - ZZ_1599
+      - LT_493
+      - HK 2｜openit.pw
+      - 欧洲(油管:破解资源君2.0) 16
+      - 欧洲(油管:破解资源君2.0) 14
       - LT_386
-      - RU_685
-      - RU_692
-      - JP_364
-      - AU_43
-      - US_838
-      - AU_49
-      - LT_390
-      - US_841
-      - Pool_🇳🇱 NL_513
-      - AU_50
-      - US_833
+      - US_1137
+      - 欧洲(油管:破解资源君2.0) 15
+      - LT_486
+      - LT_397
+      - 美国(油管:破解资源君2.0) 4
+      - LT_474
+      - 台湾(油管:破解资源君2.0) 2
+      - " 4"
+      - 欧洲(油管:破解资源君2.0) 32
+      - LT_457
+      - US_1435
+      - US_1273
+      - US_1266
+      - 213.183.53.200:9026
+      - 欧洲(油管:破解资源君2.0) 19
+      - LT_497
+      - US_1340
+      - 欧洲(油管:破解资源君2.0) 53
+      - 美国(油管:破解资源君2.0) 23
+      - LT_435
+      - 欧洲(油管:破解资源君2.0) 44
+      - US_1284
+      - FR_234
+      - 欧洲(油管:破解资源君2.0) 10
+      - LT_487
+      - DE_216
+      - 欧洲(油管:破解资源君2.0) 49
+      - 美国(油管:破解资源君2.0) 14
+      - DE_183
+      - DE_210
+      - DE_189
+      - DE_208
+      - US_888
+      - US_1254
+      - 美国(油管:破解资源君2.0) 26
+      - US_1249
+      - US_1324
+      - US_885
+      - US_1299
+      - LT_399
+      - SG_840
+      - 美国(油管:破解资源君2.0) 27
+      - DE_218
+      - Relay_🇷🇺RU-🇷🇺RU_698
+      - 欧洲(油管:破解资源君2.0) 18
+      - Relay_🇷🇺RU-🇷🇺RU_801
+      - LT_503
+      - 欧洲(油管:破解资源君2.0) 37
+      - CA_85
+      - US_893
+      - US_1296
+      - CA_82
+      - US_898
+      - 美国(油管:破解资源君2.0) 25
+      - CA_65
+      - CA_71
+      - CA_87
+      - RO_647
       - CA_75
-      - HK_320
+      - 213.183.53.198:9024
+      - US_947
+      - JP_375
+      - US_1392
+      - RO_652
+      - US_901
+      - DE 1｜openit.pw
+      - US_1071
+      - US_1283
+      - US_1004
+      - Relay_🇷🇺RU-🇷🇺RU_803
+      - SG 5｜openit.pw
+      - 美国(油管:破解资源君2.0) 5
+      - " 5"
+      - RO_657
+      - Relay_🇨🇳 CN-🇩🇪DE_94
+      - SG 1｜openit.pw
+      - LT_385
+      - IT_343
+      - LT_441
       - US_969
-      - GB_310
-      - LT_382
-      - AU_47
-      - GB_287
-      - LT_381
-      - US_847
-      - AU_55
-      - HK_321
-      - RU_734
-      - LT_387
-      - RU_738
-      - SG_785
-      - SG_783
-      - IT_333
-      - SG_784
-      - Pool_🇯🇵JP_337
-      - Pool_🇯🇵JP_360
-      - SG_786
-      - Pool_🇯🇵JP_354
-      - LT_391
-      - Pool_🇯🇵JP_342
-      - LT_432
-      - Pool_🇯🇵JP_338
-      - Pool_🇯🇵JP_341
-      - Pool_🇯🇵JP_349
+      - 欧洲(油管:破解资源君2.0) 31
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Relay_🇯🇵JP-🇯🇵JP_377
-      - Relay_🇨🇳 CN-🇭🇰HK_109
-      - US_1397
-      - JP_369
-      - SE_782
-      - JP_371
-      - Relay_🇹🇼TW-🇹🇼TW_828
-      - AU_63
-      - JP_366
-      - JP_367
+      - CN 3｜openit.pw
       - _09
-      - US_1401
-      - US_999
-      - US_1060
-      - US_1321
-      - Pool_🇳🇱 NL_523
-      - Pool_🇳🇱 NL_530
-      - US_1316
-      - Pool_🇳🇱 NL_529
-      - US_834
-      - Pool_🇳🇱 NL_502
-      - Pool_🇳🇱 NL_525
-      - Pool_🇳🇱 NL_515
-      - Pool_🇳🇱 NL_516
-      - Pool_🇳🇱 NL_533
-      - Pool_🇳🇱 NL_552
-      - Pool_🇳🇱 NL_532
-      - Pool_🇳🇱 NL_538
-      - Pool_🇳🇱 NL_518
-      - Pool_🇳🇱 NL_546
-      - US_860
-      - Pool_🇳🇱 NL_535
-      - Pool_🇳🇱NL_586
-      - US_832
-      - US_857
-      - US_1317
-      - Pool_🇳🇱 NL_520
-      - Pool_🇳🇱NL_557
-      - Pool_🇳🇱NL_602
-      - US_848
-      - US_858
-      - Pool_🇳🇱 NL_512
-      - Pool_🇳🇱 NL_522
-      - Pool_🇳🇱 NL_526
-      - Pool_🇳🇱 NL_528
-      - Pool_🇳🇱 NL_536
-      - Pool_🇳🇱 NL_540
-      - Pool_🇳🇱 NL_541
-      - Pool_🇳🇱 NL_542
-      - US_840
-      - Pool_🇳🇱 NL_521
-      - Pool_🇳🇱 NL_551
-      - Pool_🇳🇱 NL_506
-      - Pool_🇳🇱 NL_531
-      - Pool_🇳🇱 NL_543
-      - US_835
-      - Pool_🇳🇱 NL_508
-      - Pool_🇳🇱 NL_548
-      - US_1410
-      - Pool_🇳🇱 NL_534
-      - US_851
-      - US_1422
-      - Pool_🇳🇱NL_585
-      - Pool_🇳🇱 NL_510
-      - Pool_🇳🇱 NL_511
-      - Pool_🇳🇱 NL_527
-      - Pool_🇳🇱 NL_505
-      - RO_645
-      - Pool_🇳🇱 NL_550
-      - Pool_🇳🇱 NL_504
-      - Pool_🇳🇱 NL_545
-      - US_1320
-      - Pool_🇳🇱 NL_503
-      - Pool_🇳🇱NL_608
-      - Pool_🇳🇱 NL_524
-      - Pool_🇳🇱 NL_547
-      - RO_630
-      - US_1352
-      - Pool_🇳🇱 NL_507
-      - US_865
-      - Pool_🇳🇱NL_592
-      - Pool_🇳🇱 NL_539
-      - US_1055
-      - RO_631
-      - RO_633
-      - US_1020
-      - US_1108
-      - US_1058
-      - Pool_🇳🇱 NL_549
-      - Pool_🇳🇱 NL_544
-      - US_993
-      - US_1111
-      - US_836
-      - US_866
-      - US_1079
-      - LT_385
-      - FR_260
-      - FR_224
-      - US_1259
-      - US_1383
-      - FR_256
-      - Pool_🇳🇱 NL_553
-      - US_994
-      - US_1318
-      - US_991
-      - US_1028
-      - US_853
-      - ZZ_1537
-      - DE_194
-      - SG_814
-      - US_1031
-      - FR_221
-      - Pool_🇳🇱 NL_514
-      - Pool_🇳🇱 NL_509
-      - FR_225
+      - US_1443
+      - ""
+      - 欧洲(油管:破解资源君2.0) 57
+      - 欧洲(油管:破解资源君2.0) 43
+      - 欧洲(油管:破解资源君2.0) 52
+      - 欧洲(油管:破解资源君2.0) 29
+      - 欧洲(油管:破解资源君2.0) 61
+      - US_1330
+      - ZA 3｜openit.pw
+      - " 2"
+      - 欧洲(油管:破解资源君2.0) 59
+      - " 3"
+      - Relay_🇺🇸US-🇺🇸US_1418
+      - US_1423
+      - DE_229
+      - 欧洲(油管:破解资源君2.0) 25
+      - 欧洲(油管:破解资源君2.0) 58
+      - 欧洲(油管:破解资源君2.0) 20
+      - 欧洲(油管:破解资源君2.0) 30
+      - US 17｜openit.pw
+      - 欧洲(油管:破解资源君2.0) 38
+      - 欧洲(油管:破解资源君2.0) 46
+      - US_894
+      - RU_804
+      - LT_489
+      - LT_488
+      - ZZ_1599
+      - LT_493
+      - HK 2｜openit.pw
+      - 欧洲(油管:破解资源君2.0) 16
+      - 欧洲(油管:破解资源君2.0) 14
       - LT_386
-      - RU_685
-      - RU_692
-      - JP_364
-      - AU_43
-      - US_838
-      - AU_49
-      - LT_390
-      - US_841
-      - Pool_🇳🇱 NL_513
-      - AU_50
-      - US_833
+      - US_1137
+      - 欧洲(油管:破解资源君2.0) 15
+      - LT_486
+      - LT_397
+      - 美国(油管:破解资源君2.0) 4
+      - LT_474
+      - 台湾(油管:破解资源君2.0) 2
+      - " 4"
+      - 欧洲(油管:破解资源君2.0) 32
+      - LT_457
+      - US_1435
+      - US_1273
+      - US_1266
+      - 213.183.53.200:9026
+      - 欧洲(油管:破解资源君2.0) 19
+      - LT_497
+      - US_1340
+      - 欧洲(油管:破解资源君2.0) 53
+      - 美国(油管:破解资源君2.0) 23
+      - LT_435
+      - 欧洲(油管:破解资源君2.0) 44
+      - US_1284
+      - FR_234
+      - 欧洲(油管:破解资源君2.0) 10
+      - LT_487
+      - DE_216
+      - 欧洲(油管:破解资源君2.0) 49
+      - 美国(油管:破解资源君2.0) 14
+      - DE_183
+      - DE_210
+      - DE_189
+      - DE_208
+      - US_888
+      - US_1254
+      - 美国(油管:破解资源君2.0) 26
+      - US_1249
+      - US_1324
+      - US_885
+      - US_1299
+      - LT_399
+      - SG_840
+      - 美国(油管:破解资源君2.0) 27
+      - DE_218
+      - Relay_🇷🇺RU-🇷🇺RU_698
+      - 欧洲(油管:破解资源君2.0) 18
+      - Relay_🇷🇺RU-🇷🇺RU_801
+      - LT_503
+      - 欧洲(油管:破解资源君2.0) 37
+      - CA_85
+      - US_893
+      - US_1296
+      - CA_82
+      - US_898
+      - 美国(油管:破解资源君2.0) 25
+      - CA_65
+      - CA_71
+      - CA_87
+      - RO_647
       - CA_75
-      - HK_320
+      - 213.183.53.198:9024
+      - US_947
+      - JP_375
+      - US_1392
+      - RO_652
+      - US_901
+      - DE 1｜openit.pw
+      - US_1071
+      - US_1283
+      - US_1004
+      - Relay_🇷🇺RU-🇷🇺RU_803
+      - SG 5｜openit.pw
+      - 美国(油管:破解资源君2.0) 5
+      - " 5"
+      - RO_657
+      - Relay_🇨🇳 CN-🇩🇪DE_94
+      - SG 1｜openit.pw
+      - LT_385
+      - IT_343
+      - LT_441
       - US_969
-      - GB_310
-      - LT_382
-      - AU_47
-      - GB_287
-      - LT_381
-      - US_847
-      - AU_55
-      - HK_321
-      - RU_734
-      - LT_387
-      - RU_738
-      - SG_785
-      - SG_783
-      - IT_333
-      - SG_784
-      - Pool_🇯🇵JP_337
-      - Pool_🇯🇵JP_360
-      - SG_786
-      - Pool_🇯🇵JP_354
-      - LT_391
-      - Pool_🇯🇵JP_342
-      - LT_432
-      - Pool_🇯🇵JP_338
-      - Pool_🇯🇵JP_341
-      - Pool_🇯🇵JP_349
+      - 欧洲(油管:破解资源君2.0) 31
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1316,161 +997,121 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Relay_🇯🇵JP-🇯🇵JP_377
-      - Relay_🇨🇳 CN-🇭🇰HK_109
-      - US_1397
-      - JP_369
-      - SE_782
-      - JP_371
-      - Relay_🇹🇼TW-🇹🇼TW_828
-      - AU_63
-      - JP_366
-      - JP_367
+      - CN 3｜openit.pw
       - _09
-      - US_1401
-      - US_999
-      - US_1060
-      - US_1321
-      - Pool_🇳🇱 NL_523
-      - Pool_🇳🇱 NL_530
-      - US_1316
-      - Pool_🇳🇱 NL_529
-      - US_834
-      - Pool_🇳🇱 NL_502
-      - Pool_🇳🇱 NL_525
-      - Pool_🇳🇱 NL_515
-      - Pool_🇳🇱 NL_516
-      - Pool_🇳🇱 NL_533
-      - Pool_🇳🇱 NL_552
-      - Pool_🇳🇱 NL_532
-      - Pool_🇳🇱 NL_538
-      - Pool_🇳🇱 NL_518
-      - Pool_🇳🇱 NL_546
-      - US_860
-      - Pool_🇳🇱 NL_535
-      - Pool_🇳🇱NL_586
-      - US_832
-      - US_857
-      - US_1317
-      - Pool_🇳🇱 NL_520
-      - Pool_🇳🇱NL_557
-      - Pool_🇳🇱NL_602
-      - US_848
-      - US_858
-      - Pool_🇳🇱 NL_512
-      - Pool_🇳🇱 NL_522
-      - Pool_🇳🇱 NL_526
-      - Pool_🇳🇱 NL_528
-      - Pool_🇳🇱 NL_536
-      - Pool_🇳🇱 NL_540
-      - Pool_🇳🇱 NL_541
-      - Pool_🇳🇱 NL_542
-      - US_840
-      - Pool_🇳🇱 NL_521
-      - Pool_🇳🇱 NL_551
-      - Pool_🇳🇱 NL_506
-      - Pool_🇳🇱 NL_531
-      - Pool_🇳🇱 NL_543
-      - US_835
-      - Pool_🇳🇱 NL_508
-      - Pool_🇳🇱 NL_548
-      - US_1410
-      - Pool_🇳🇱 NL_534
-      - US_851
-      - US_1422
-      - Pool_🇳🇱NL_585
-      - Pool_🇳🇱 NL_510
-      - Pool_🇳🇱 NL_511
-      - Pool_🇳🇱 NL_527
-      - Pool_🇳🇱 NL_505
-      - RO_645
-      - Pool_🇳🇱 NL_550
-      - Pool_🇳🇱 NL_504
-      - Pool_🇳🇱 NL_545
-      - US_1320
-      - Pool_🇳🇱 NL_503
-      - Pool_🇳🇱NL_608
-      - Pool_🇳🇱 NL_524
-      - Pool_🇳🇱 NL_547
-      - RO_630
-      - US_1352
-      - Pool_🇳🇱 NL_507
-      - US_865
-      - Pool_🇳🇱NL_592
-      - Pool_🇳🇱 NL_539
-      - US_1055
-      - RO_631
-      - RO_633
-      - US_1020
-      - US_1108
-      - US_1058
-      - Pool_🇳🇱 NL_549
-      - Pool_🇳🇱 NL_544
-      - US_993
-      - US_1111
-      - US_836
-      - US_866
-      - US_1079
-      - LT_385
-      - FR_260
-      - FR_224
-      - US_1259
-      - US_1383
-      - FR_256
-      - Pool_🇳🇱 NL_553
-      - US_994
-      - US_1318
-      - US_991
-      - US_1028
-      - US_853
-      - ZZ_1537
-      - DE_194
-      - SG_814
-      - US_1031
-      - FR_221
-      - Pool_🇳🇱 NL_514
-      - Pool_🇳🇱 NL_509
-      - FR_225
+      - US_1443
+      - ""
+      - 欧洲(油管:破解资源君2.0) 57
+      - 欧洲(油管:破解资源君2.0) 43
+      - 欧洲(油管:破解资源君2.0) 52
+      - 欧洲(油管:破解资源君2.0) 29
+      - 欧洲(油管:破解资源君2.0) 61
+      - US_1330
+      - ZA 3｜openit.pw
+      - " 2"
+      - 欧洲(油管:破解资源君2.0) 59
+      - " 3"
+      - Relay_🇺🇸US-🇺🇸US_1418
+      - US_1423
+      - DE_229
+      - 欧洲(油管:破解资源君2.0) 25
+      - 欧洲(油管:破解资源君2.0) 58
+      - 欧洲(油管:破解资源君2.0) 20
+      - 欧洲(油管:破解资源君2.0) 30
+      - US 17｜openit.pw
+      - 欧洲(油管:破解资源君2.0) 38
+      - 欧洲(油管:破解资源君2.0) 46
+      - US_894
+      - RU_804
+      - LT_489
+      - LT_488
+      - ZZ_1599
+      - LT_493
+      - HK 2｜openit.pw
+      - 欧洲(油管:破解资源君2.0) 16
+      - 欧洲(油管:破解资源君2.0) 14
       - LT_386
-      - RU_685
-      - RU_692
-      - JP_364
-      - AU_43
-      - US_838
-      - AU_49
-      - LT_390
-      - US_841
-      - Pool_🇳🇱 NL_513
-      - AU_50
-      - US_833
+      - US_1137
+      - 欧洲(油管:破解资源君2.0) 15
+      - LT_486
+      - LT_397
+      - 美国(油管:破解资源君2.0) 4
+      - LT_474
+      - 台湾(油管:破解资源君2.0) 2
+      - " 4"
+      - 欧洲(油管:破解资源君2.0) 32
+      - LT_457
+      - US_1435
+      - US_1273
+      - US_1266
+      - 213.183.53.200:9026
+      - 欧洲(油管:破解资源君2.0) 19
+      - LT_497
+      - US_1340
+      - 欧洲(油管:破解资源君2.0) 53
+      - 美国(油管:破解资源君2.0) 23
+      - LT_435
+      - 欧洲(油管:破解资源君2.0) 44
+      - US_1284
+      - FR_234
+      - 欧洲(油管:破解资源君2.0) 10
+      - LT_487
+      - DE_216
+      - 欧洲(油管:破解资源君2.0) 49
+      - 美国(油管:破解资源君2.0) 14
+      - DE_183
+      - DE_210
+      - DE_189
+      - DE_208
+      - US_888
+      - US_1254
+      - 美国(油管:破解资源君2.0) 26
+      - US_1249
+      - US_1324
+      - US_885
+      - US_1299
+      - LT_399
+      - SG_840
+      - 美国(油管:破解资源君2.0) 27
+      - DE_218
+      - Relay_🇷🇺RU-🇷🇺RU_698
+      - 欧洲(油管:破解资源君2.0) 18
+      - Relay_🇷🇺RU-🇷🇺RU_801
+      - LT_503
+      - 欧洲(油管:破解资源君2.0) 37
+      - CA_85
+      - US_893
+      - US_1296
+      - CA_82
+      - US_898
+      - 美国(油管:破解资源君2.0) 25
+      - CA_65
+      - CA_71
+      - CA_87
+      - RO_647
       - CA_75
-      - HK_320
+      - 213.183.53.198:9024
+      - US_947
+      - JP_375
+      - US_1392
+      - RO_652
+      - US_901
+      - DE 1｜openit.pw
+      - US_1071
+      - US_1283
+      - US_1004
+      - Relay_🇷🇺RU-🇷🇺RU_803
+      - SG 5｜openit.pw
+      - 美国(油管:破解资源君2.0) 5
+      - " 5"
+      - RO_657
+      - Relay_🇨🇳 CN-🇩🇪DE_94
+      - SG 1｜openit.pw
+      - LT_385
+      - IT_343
+      - LT_441
       - US_969
-      - GB_310
-      - LT_382
-      - AU_47
-      - GB_287
-      - LT_381
-      - US_847
-      - AU_55
-      - HK_321
-      - RU_734
-      - LT_387
-      - RU_738
-      - SG_785
-      - SG_783
-      - IT_333
-      - SG_784
-      - Pool_🇯🇵JP_337
-      - Pool_🇯🇵JP_360
-      - SG_786
-      - Pool_🇯🇵JP_354
-      - LT_391
-      - Pool_🇯🇵JP_342
-      - LT_432
-      - Pool_🇯🇵JP_338
-      - Pool_🇯🇵JP_341
-      - Pool_🇯🇵JP_349
+      - 欧洲(油管:破解资源君2.0) 31
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
