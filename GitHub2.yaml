@@ -5,255 +5,119 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: NONE, server: cm.spacez.cloud, port: 30003, type: trojan, password: c9a3a61d-5d49-4158-9e60-6fa32684b122, sni: cm.spacez.cloud, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇯🇵JP-🇯🇵JP_351, server: m4.40010010.xyz, port: 37121, type: vmess, uuid: 575e4d92-1056-44c2-8cac-75ef1c859ad5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: "", server: 23.230.146.254, port: 1258, type: vmess, uuid: edeb41cc-a76a-47f2-fa96-b9141e66a2b0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: NONE 2, server: azhj001.xiba1.xyz, port: 20714, type: trojan, password: 3d6e81e4-c6df-32ad-a808-e83d4fd1ca1a, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
-  - {name: us-am32-5.eqnode.net:8081, server: us-am32-5.eqnode.net, port: 8081, type: ssr, cipher: aes-256-cfb, password: YFVrXZgRo, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
-  - {name: HK 1｜openit.pw, server: hkt.403w.club, port: 11301, type: trojan, password: fbda7e99-943d-4c81-811a-019acb08c1af, sni: hkt.403w.club, skip-cert-verify: true, udp: true}
-  - {name: " 2", server: 103.186.149.132, port: 80, type: vmess, uuid: 67468d89-cf87-443c-baca-49f1e73b5991, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /shopvpn.net, ws-headers: {Host: 103.186.149.132}, udp: true}
-  - {name: 38.143.66.20:9102, server: 38.143.66.20, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: 38.143.66.20:5000, server: 38.143.66.20, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 38.143.66.20:5500, server: 38.143.66.20, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: US_1389, server: 198.148.127.62, port: 29571, type: vmess, uuid: ed170bc7-864a-4dc4-9dc5-ccb9123c3e8e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 134.195.196.149:8119, server: 134.195.196.149, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: 134.195.196.149:8882, server: 134.195.196.149, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: 134.195.196.149:6679, server: 134.195.196.149, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: 134.195.196.149:8080, server: 134.195.196.149, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 134.195.196.149:8090, server: 134.195.196.149, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 134.195.196.149:8881, server: 134.195.196.149, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: 134.195.196.149:5003, server: 134.195.196.149, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 38.143.66.20:9101, server: 38.143.66.20, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: 134.195.196.149:3306, server: 134.195.196.149, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 134.195.196.149:8009, server: 134.195.196.149, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: 134.195.196.149:7307, server: 134.195.196.149, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: JP_349, server: 146.56.167.119, port: 6666, type: vmess, uuid: 64779fce-63a5-4faa-b59b-e4af40f4e419, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 185.4.65.6:21247, server: 185.4.65.6, port: 21247, type: ss, cipher: aes-256-cfb, password: vDS9G2p, udp: true}
-  - {name: " 3", server: ingress-i1.onebox6.org, port: 38201, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: ingress-i1.onebox6.org}, udp: true}
-  - {name: NONE 3, server: jp1.nodegz.top, port: 443, type: trojan, password: 0f02ea17-8b19-345a-93f3-c6e6da06764b, sni: jp1.nodegz.top, skip-cert-verify: true, udp: true}
-  - {name: 185.126.116.119:9058, server: 185.126.116.119, port: 9058, type: ss, cipher: aes-256-cfb, password: dML2sfhbVwvtfNPe, udp: true}
-  - {name: 213.183.53.198:9014, server: 213.183.53.198, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX, udp: true}
-  - {name: 185.126.116.119:9046, server: 185.126.116.119, port: 9046, type: ss, cipher: aes-256-cfb, password: NvS8N4Vf8qAGPSCL, udp: true}
-  - {name: 185.126.116.119:9018, server: 185.126.116.119, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
-  - {name: " 4", server: 195.133.53.192, port: 14369, type: vmess, uuid: 2331affa-1194-45ae-9457-3746120c4751, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 195.133.53.192}, udp: true}
-  - {name: NONE 4, server: azhj001.xiba1.xyz, port: 20719, type: trojan, password: 3d6e81e4-c6df-32ad-a808-e83d4fd1ca1a, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
-  - {name: NONE 5, server: azhj001.xiba1.xyz, port: 20726, type: trojan, password: 3d6e81e4-c6df-32ad-a808-e83d4fd1ca1a, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
-  - {name: NONE 6, server: azhj001.xiba1.xyz, port: 20727, type: trojan, password: 3d6e81e4-c6df-32ad-a808-e83d4fd1ca1a, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
-  - {name: NONE 7, server: azhj001.xiba1.xyz, port: 20718, type: trojan, password: 3d6e81e4-c6df-32ad-a808-e83d4fd1ca1a, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
-  - {name: NONE 8, server: azhj001.xiba1.xyz, port: 20721, type: trojan, password: 3d6e81e4-c6df-32ad-a808-e83d4fd1ca1a, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
-  - {name: CN 5｜openit.pw, server: linux.nameserversv3.com, port: 9203, type: ss, cipher: aes-256-gcm, password: 269f71b9-c45b-43f3-8c48-eb5f986aa707, udp: true}
-  - {name: NONE 9, server: azhj001.xiba1.xyz, port: 20803, type: trojan, password: 3d6e81e4-c6df-32ad-a808-e83d4fd1ca1a, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
-  - {name: NONE 10, server: azhj001.xiba1.xyz, port: 20802, type: trojan, password: 3d6e81e4-c6df-32ad-a808-e83d4fd1ca1a, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
-  - {name: NONE 11, server: azhj001.xiba1.xyz, port: 20804, type: trojan, password: 3d6e81e4-c6df-32ad-a808-e83d4fd1ca1a, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
-  - {name: NONE 12, server: azhj001.xiba1.xyz, port: 20801, type: trojan, password: 3d6e81e4-c6df-32ad-a808-e83d4fd1ca1a, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
-  - {name: " 5", server: 103.186.149.132, port: 80, type: vmess, uuid: a479fc02-07c5-4864-8564-c4f147dfa488, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /shopvpn.net, ws-headers: {Host: 103.186.149.132}, udp: true}
-  - {name: 178.62.16.161:811, server: 178.62.16.161, port: 811, type: ss, cipher: chacha20-ietf-poly1305, password: Ultr@r00t_2017, udp: true}
-  - {name: " 6", server: vsg1.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /chat, ws-headers: {Host: vsg1.0bad.com}, udp: true}
-  - {name: 38.121.43.65:2375, server: 38.121.43.65, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 213.183.53.198:9080, server: 213.183.53.198, port: 9080, type: ss, cipher: aes-256-cfb, password: VP8ZPxQpJtZRCjfZ, udp: true}
-  - {name: " 7", server: in-us-1.onebox6.org, port: 38401, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: in-us-1.onebox6.org}, udp: true}
-  - {name: 51.38.118.42:811, server: 51.38.118.42, port: 811, type: ss, cipher: chacha20-ietf-poly1305, password: Ultr@r00t_2017, udp: true}
-  - {name: 92.223.93.233:1035, server: 92.223.93.233, port: 1035, type: ss, cipher: chacha20-ietf-poly1305, password: )1N1E6v0SU_rGTpg, udp: true}
-  - {name: 5.183.176.81:806, server: 5.183.176.81, port: 806, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: 217.30.10.68:9031, server: 217.30.10.68, port: 9031, type: ss, cipher: aes-256-cfb, password: BwcAUZk8hUFAkDGN, udp: true}
-  - {name: 5.183.176.83:801, server: 5.183.176.83, port: 801, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: 217.30.10.68:9018, server: 217.30.10.68, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
-  - {name: Relay_🇨🇳CN-🇬🇧GB_137, server: zj9.fdhsujj.xyz, port: 23557, type: ssr, cipher: aes-256-cfb, password: J3ITPq, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 286652:Ky6KOw, obfs-param: ZGJlOTYyODY2NTIubWljcm9zb2Z0LmNvbQ, udp: true}
-  - {name: 165.22.73.126:23335, server: 165.22.73.126, port: 23335, type: ss, cipher: aes-256-cfb, password: 7d99ae502227454ea998d71e4b62a388, udp: true}
-  - {name: CN 15｜openit.pw, server: in-us-1.onebox6.org, port: 38401, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: "%7B%22Host%22:%22in-us-1.onebox6.org%22%7D"}, udp: true}
-  - {name: 5.183.176.84:808, server: 5.183.176.84, port: 808, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: US_1385, server: 168.138.201.208, port: 10328, type: vmess, uuid: bf847bf7-0ba5-4885-bd2b-da4d77afbda8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "", server: 137.184.118.47, port: 51649, type: vmess, uuid: 5d0b1709-5c3c-4073-fb3f-67251426571e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: NONE, server: s3.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s3.hazz.win, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_1344, server: us-am32-5.eqnode.net, port: 8081, type: ssr, cipher: aes-256-cfb, password: YFVrXZgRo, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
+  - {name: US_1332, server: 137.184.118.47, port: 51649, type: vmess, uuid: 5d0b1709-5c3c-4073-fb3f-67251426571e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 85.208.108.93:6679, server: 85.208.108.93, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: 85.208.108.93:8119, server: 85.208.108.93, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: 85.208.108.93:7306, server: 85.208.108.93, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: 85.208.108.93:8118, server: 85.208.108.93, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: 85.208.108.93:6379, server: 85.208.108.93, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: 85.208.108.93:8881, server: 85.208.108.93, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: 85.208.108.93:7002, server: 85.208.108.93, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: 38.68.134.191:2375, server: 38.68.134.191, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 185.246.155.35:9070, server: 185.246.155.35, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH, udp: true}
+  - {name: 38.68.134.191:7307, server: 38.68.134.191, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: " 2", server: chess.magicefire.com, port: 443, type: vmess, uuid: 9aa80017-3427-4165-a522-f5f9a11330d0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 138.68.248.130:811, server: 138.68.248.130, port: 811, type: ss, cipher: chacha20-ietf-poly1305, password: Ultr@r00t_2017, udp: true}
+  - {name: 51.195.136.209:50004, server: 51.195.136.209, port: 50004, type: ss, cipher: aes-256-cfb, password: !<str> 4415934295, udp: true}
+  - {name: 195.154.200.150:3306, server: 195.154.200.150, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 195.154.200.150:9101, server: 195.154.200.150, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: 195.154.200.150:443, server: 195.154.200.150, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: NONE 2, server: s2.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s2.hazz.win, skip-cert-verify: true, udp: true}
+  - {name: RU 3｜openit.pw, server: ru.hootfun.top, port: 45112, type: trojan, password: 935f34c1-1713-402c-bfe1-f051cf49d370, sni: ru.hootfun.top, skip-cert-verify: true, udp: true}
+  - {name: US_1376, server: 137.184.118.47, port: 51649, type: vmess, uuid: 5d0b1709-5c3c-4073-fb3f-67251426571e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇨🇳 CN-🇩🇪DE_89, server: ingress-i1.onebox6.org, port: 38701, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: ingress-i1.onebox6.org}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - NONE
-      - Relay_🇯🇵JP-🇯🇵JP_351
       - ""
-      - NONE 2
-      - us-am32-5.eqnode.net:8081
-      - HK 1｜openit.pw
+      - NONE
+      - Relay_🇺🇸US-🇺🇸US_1344
+      - US_1332
+      - 85.208.108.93:6679
+      - 85.208.108.93:8119
+      - 85.208.108.93:7306
+      - 85.208.108.93:8118
+      - 85.208.108.93:6379
+      - 85.208.108.93:8881
+      - 85.208.108.93:7002
+      - 38.68.134.191:2375
+      - 185.246.155.35:9070
+      - 38.68.134.191:7307
       - " 2"
-      - 38.143.66.20:9102
-      - 38.143.66.20:5000
-      - 38.143.66.20:5500
-      - US_1389
-      - 134.195.196.149:8119
-      - 134.195.196.149:8882
-      - 134.195.196.149:6679
-      - 134.195.196.149:8080
-      - 134.195.196.149:8090
-      - 134.195.196.149:8881
-      - 134.195.196.149:5003
-      - 38.143.66.20:9101
-      - 134.195.196.149:3306
-      - 134.195.196.149:8009
-      - 134.195.196.149:7307
-      - JP_349
-      - 185.4.65.6:21247
-      - " 3"
-      - NONE 3
-      - 185.126.116.119:9058
-      - 213.183.53.198:9014
-      - 185.126.116.119:9046
-      - 185.126.116.119:9018
-      - " 4"
-      - NONE 4
-      - NONE 5
-      - NONE 6
-      - NONE 7
-      - NONE 8
-      - CN 5｜openit.pw
-      - NONE 9
-      - NONE 10
-      - NONE 11
-      - NONE 12
-      - " 5"
-      - 178.62.16.161:811
-      - " 6"
-      - 38.121.43.65:2375
-      - 213.183.53.198:9080
-      - " 7"
-      - 51.38.118.42:811
-      - 92.223.93.233:1035
-      - 5.183.176.81:806
-      - 217.30.10.68:9031
-      - 5.183.176.83:801
-      - 217.30.10.68:9018
-      - Relay_🇨🇳CN-🇬🇧GB_137
-      - 165.22.73.126:23335
-      - CN 15｜openit.pw
-      - 5.183.176.84:808
-      - US_1385
+      - 138.68.248.130:811
+      - 51.195.136.209:50004
+      - 195.154.200.150:3306
+      - 195.154.200.150:9101
+      - 195.154.200.150:443
+      - NONE 2
+      - RU 3｜openit.pw
+      - US_1376
+      - Relay_🇨🇳 CN-🇩🇪DE_89
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - NONE
-      - Relay_🇯🇵JP-🇯🇵JP_351
       - ""
-      - NONE 2
-      - us-am32-5.eqnode.net:8081
-      - HK 1｜openit.pw
+      - NONE
+      - Relay_🇺🇸US-🇺🇸US_1344
+      - US_1332
+      - 85.208.108.93:6679
+      - 85.208.108.93:8119
+      - 85.208.108.93:7306
+      - 85.208.108.93:8118
+      - 85.208.108.93:6379
+      - 85.208.108.93:8881
+      - 85.208.108.93:7002
+      - 38.68.134.191:2375
+      - 185.246.155.35:9070
+      - 38.68.134.191:7307
       - " 2"
-      - 38.143.66.20:9102
-      - 38.143.66.20:5000
-      - 38.143.66.20:5500
-      - US_1389
-      - 134.195.196.149:8119
-      - 134.195.196.149:8882
-      - 134.195.196.149:6679
-      - 134.195.196.149:8080
-      - 134.195.196.149:8090
-      - 134.195.196.149:8881
-      - 134.195.196.149:5003
-      - 38.143.66.20:9101
-      - 134.195.196.149:3306
-      - 134.195.196.149:8009
-      - 134.195.196.149:7307
-      - JP_349
-      - 185.4.65.6:21247
-      - " 3"
-      - NONE 3
-      - 185.126.116.119:9058
-      - 213.183.53.198:9014
-      - 185.126.116.119:9046
-      - 185.126.116.119:9018
-      - " 4"
-      - NONE 4
-      - NONE 5
-      - NONE 6
-      - NONE 7
-      - NONE 8
-      - CN 5｜openit.pw
-      - NONE 9
-      - NONE 10
-      - NONE 11
-      - NONE 12
-      - " 5"
-      - 178.62.16.161:811
-      - " 6"
-      - 38.121.43.65:2375
-      - 213.183.53.198:9080
-      - " 7"
-      - 51.38.118.42:811
-      - 92.223.93.233:1035
-      - 5.183.176.81:806
-      - 217.30.10.68:9031
-      - 5.183.176.83:801
-      - 217.30.10.68:9018
-      - Relay_🇨🇳CN-🇬🇧GB_137
-      - 165.22.73.126:23335
-      - CN 15｜openit.pw
-      - 5.183.176.84:808
-      - US_1385
+      - 138.68.248.130:811
+      - 51.195.136.209:50004
+      - 195.154.200.150:3306
+      - 195.154.200.150:9101
+      - 195.154.200.150:443
+      - NONE 2
+      - RU 3｜openit.pw
+      - US_1376
+      - Relay_🇨🇳 CN-🇩🇪DE_89
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - NONE
-      - Relay_🇯🇵JP-🇯🇵JP_351
       - ""
-      - NONE 2
-      - us-am32-5.eqnode.net:8081
-      - HK 1｜openit.pw
+      - NONE
+      - Relay_🇺🇸US-🇺🇸US_1344
+      - US_1332
+      - 85.208.108.93:6679
+      - 85.208.108.93:8119
+      - 85.208.108.93:7306
+      - 85.208.108.93:8118
+      - 85.208.108.93:6379
+      - 85.208.108.93:8881
+      - 85.208.108.93:7002
+      - 38.68.134.191:2375
+      - 185.246.155.35:9070
+      - 38.68.134.191:7307
       - " 2"
-      - 38.143.66.20:9102
-      - 38.143.66.20:5000
-      - 38.143.66.20:5500
-      - US_1389
-      - 134.195.196.149:8119
-      - 134.195.196.149:8882
-      - 134.195.196.149:6679
-      - 134.195.196.149:8080
-      - 134.195.196.149:8090
-      - 134.195.196.149:8881
-      - 134.195.196.149:5003
-      - 38.143.66.20:9101
-      - 134.195.196.149:3306
-      - 134.195.196.149:8009
-      - 134.195.196.149:7307
-      - JP_349
-      - 185.4.65.6:21247
-      - " 3"
-      - NONE 3
-      - 185.126.116.119:9058
-      - 213.183.53.198:9014
-      - 185.126.116.119:9046
-      - 185.126.116.119:9018
-      - " 4"
-      - NONE 4
-      - NONE 5
-      - NONE 6
-      - NONE 7
-      - NONE 8
-      - CN 5｜openit.pw
-      - NONE 9
-      - NONE 10
-      - NONE 11
-      - NONE 12
-      - " 5"
-      - 178.62.16.161:811
-      - " 6"
-      - 38.121.43.65:2375
-      - 213.183.53.198:9080
-      - " 7"
-      - 51.38.118.42:811
-      - 92.223.93.233:1035
-      - 5.183.176.81:806
-      - 217.30.10.68:9031
-      - 5.183.176.83:801
-      - 217.30.10.68:9018
-      - Relay_🇨🇳CN-🇬🇧GB_137
-      - 165.22.73.126:23335
-      - CN 15｜openit.pw
-      - 5.183.176.84:808
-      - US_1385
+      - 138.68.248.130:811
+      - 51.195.136.209:50004
+      - 195.154.200.150:3306
+      - 195.154.200.150:9101
+      - 195.154.200.150:443
+      - NONE 2
+      - RU 3｜openit.pw
+      - US_1376
+      - Relay_🇨🇳 CN-🇩🇪DE_89
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -272,64 +136,30 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - NONE
-      - Relay_🇯🇵JP-🇯🇵JP_351
       - ""
-      - NONE 2
-      - us-am32-5.eqnode.net:8081
-      - HK 1｜openit.pw
+      - NONE
+      - Relay_🇺🇸US-🇺🇸US_1344
+      - US_1332
+      - 85.208.108.93:6679
+      - 85.208.108.93:8119
+      - 85.208.108.93:7306
+      - 85.208.108.93:8118
+      - 85.208.108.93:6379
+      - 85.208.108.93:8881
+      - 85.208.108.93:7002
+      - 38.68.134.191:2375
+      - 185.246.155.35:9070
+      - 38.68.134.191:7307
       - " 2"
-      - 38.143.66.20:9102
-      - 38.143.66.20:5000
-      - 38.143.66.20:5500
-      - US_1389
-      - 134.195.196.149:8119
-      - 134.195.196.149:8882
-      - 134.195.196.149:6679
-      - 134.195.196.149:8080
-      - 134.195.196.149:8090
-      - 134.195.196.149:8881
-      - 134.195.196.149:5003
-      - 38.143.66.20:9101
-      - 134.195.196.149:3306
-      - 134.195.196.149:8009
-      - 134.195.196.149:7307
-      - JP_349
-      - 185.4.65.6:21247
-      - " 3"
-      - NONE 3
-      - 185.126.116.119:9058
-      - 213.183.53.198:9014
-      - 185.126.116.119:9046
-      - 185.126.116.119:9018
-      - " 4"
-      - NONE 4
-      - NONE 5
-      - NONE 6
-      - NONE 7
-      - NONE 8
-      - CN 5｜openit.pw
-      - NONE 9
-      - NONE 10
-      - NONE 11
-      - NONE 12
-      - " 5"
-      - 178.62.16.161:811
-      - " 6"
-      - 38.121.43.65:2375
-      - 213.183.53.198:9080
-      - " 7"
-      - 51.38.118.42:811
-      - 92.223.93.233:1035
-      - 5.183.176.81:806
-      - 217.30.10.68:9031
-      - 5.183.176.83:801
-      - 217.30.10.68:9018
-      - Relay_🇨🇳CN-🇬🇧GB_137
-      - 165.22.73.126:23335
-      - CN 15｜openit.pw
-      - 5.183.176.84:808
-      - US_1385
+      - 138.68.248.130:811
+      - 51.195.136.209:50004
+      - 195.154.200.150:3306
+      - 195.154.200.150:9101
+      - 195.154.200.150:443
+      - NONE 2
+      - RU 3｜openit.pw
+      - US_1376
+      - Relay_🇨🇳 CN-🇩🇪DE_89
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -340,191 +170,89 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - NONE
-      - Relay_🇯🇵JP-🇯🇵JP_351
       - ""
-      - NONE 2
-      - us-am32-5.eqnode.net:8081
-      - HK 1｜openit.pw
+      - NONE
+      - Relay_🇺🇸US-🇺🇸US_1344
+      - US_1332
+      - 85.208.108.93:6679
+      - 85.208.108.93:8119
+      - 85.208.108.93:7306
+      - 85.208.108.93:8118
+      - 85.208.108.93:6379
+      - 85.208.108.93:8881
+      - 85.208.108.93:7002
+      - 38.68.134.191:2375
+      - 185.246.155.35:9070
+      - 38.68.134.191:7307
       - " 2"
-      - 38.143.66.20:9102
-      - 38.143.66.20:5000
-      - 38.143.66.20:5500
-      - US_1389
-      - 134.195.196.149:8119
-      - 134.195.196.149:8882
-      - 134.195.196.149:6679
-      - 134.195.196.149:8080
-      - 134.195.196.149:8090
-      - 134.195.196.149:8881
-      - 134.195.196.149:5003
-      - 38.143.66.20:9101
-      - 134.195.196.149:3306
-      - 134.195.196.149:8009
-      - 134.195.196.149:7307
-      - JP_349
-      - 185.4.65.6:21247
-      - " 3"
-      - NONE 3
-      - 185.126.116.119:9058
-      - 213.183.53.198:9014
-      - 185.126.116.119:9046
-      - 185.126.116.119:9018
-      - " 4"
-      - NONE 4
-      - NONE 5
-      - NONE 6
-      - NONE 7
-      - NONE 8
-      - CN 5｜openit.pw
-      - NONE 9
-      - NONE 10
-      - NONE 11
-      - NONE 12
-      - " 5"
-      - 178.62.16.161:811
-      - " 6"
-      - 38.121.43.65:2375
-      - 213.183.53.198:9080
-      - " 7"
-      - 51.38.118.42:811
-      - 92.223.93.233:1035
-      - 5.183.176.81:806
-      - 217.30.10.68:9031
-      - 5.183.176.83:801
-      - 217.30.10.68:9018
-      - Relay_🇨🇳CN-🇬🇧GB_137
-      - 165.22.73.126:23335
-      - CN 15｜openit.pw
-      - 5.183.176.84:808
-      - US_1385
+      - 138.68.248.130:811
+      - 51.195.136.209:50004
+      - 195.154.200.150:3306
+      - 195.154.200.150:9101
+      - 195.154.200.150:443
+      - NONE 2
+      - RU 3｜openit.pw
+      - US_1376
+      - Relay_🇨🇳 CN-🇩🇪DE_89
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - NONE
-      - Relay_🇯🇵JP-🇯🇵JP_351
       - ""
-      - NONE 2
-      - us-am32-5.eqnode.net:8081
-      - HK 1｜openit.pw
+      - NONE
+      - Relay_🇺🇸US-🇺🇸US_1344
+      - US_1332
+      - 85.208.108.93:6679
+      - 85.208.108.93:8119
+      - 85.208.108.93:7306
+      - 85.208.108.93:8118
+      - 85.208.108.93:6379
+      - 85.208.108.93:8881
+      - 85.208.108.93:7002
+      - 38.68.134.191:2375
+      - 185.246.155.35:9070
+      - 38.68.134.191:7307
       - " 2"
-      - 38.143.66.20:9102
-      - 38.143.66.20:5000
-      - 38.143.66.20:5500
-      - US_1389
-      - 134.195.196.149:8119
-      - 134.195.196.149:8882
-      - 134.195.196.149:6679
-      - 134.195.196.149:8080
-      - 134.195.196.149:8090
-      - 134.195.196.149:8881
-      - 134.195.196.149:5003
-      - 38.143.66.20:9101
-      - 134.195.196.149:3306
-      - 134.195.196.149:8009
-      - 134.195.196.149:7307
-      - JP_349
-      - 185.4.65.6:21247
-      - " 3"
-      - NONE 3
-      - 185.126.116.119:9058
-      - 213.183.53.198:9014
-      - 185.126.116.119:9046
-      - 185.126.116.119:9018
-      - " 4"
-      - NONE 4
-      - NONE 5
-      - NONE 6
-      - NONE 7
-      - NONE 8
-      - CN 5｜openit.pw
-      - NONE 9
-      - NONE 10
-      - NONE 11
-      - NONE 12
-      - " 5"
-      - 178.62.16.161:811
-      - " 6"
-      - 38.121.43.65:2375
-      - 213.183.53.198:9080
-      - " 7"
-      - 51.38.118.42:811
-      - 92.223.93.233:1035
-      - 5.183.176.81:806
-      - 217.30.10.68:9031
-      - 5.183.176.83:801
-      - 217.30.10.68:9018
-      - Relay_🇨🇳CN-🇬🇧GB_137
-      - 165.22.73.126:23335
-      - CN 15｜openit.pw
-      - 5.183.176.84:808
-      - US_1385
+      - 138.68.248.130:811
+      - 51.195.136.209:50004
+      - 195.154.200.150:3306
+      - 195.154.200.150:9101
+      - 195.154.200.150:443
+      - NONE 2
+      - RU 3｜openit.pw
+      - US_1376
+      - Relay_🇨🇳 CN-🇩🇪DE_89
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - NONE
-      - Relay_🇯🇵JP-🇯🇵JP_351
       - ""
-      - NONE 2
-      - us-am32-5.eqnode.net:8081
-      - HK 1｜openit.pw
+      - NONE
+      - Relay_🇺🇸US-🇺🇸US_1344
+      - US_1332
+      - 85.208.108.93:6679
+      - 85.208.108.93:8119
+      - 85.208.108.93:7306
+      - 85.208.108.93:8118
+      - 85.208.108.93:6379
+      - 85.208.108.93:8881
+      - 85.208.108.93:7002
+      - 38.68.134.191:2375
+      - 185.246.155.35:9070
+      - 38.68.134.191:7307
       - " 2"
-      - 38.143.66.20:9102
-      - 38.143.66.20:5000
-      - 38.143.66.20:5500
-      - US_1389
-      - 134.195.196.149:8119
-      - 134.195.196.149:8882
-      - 134.195.196.149:6679
-      - 134.195.196.149:8080
-      - 134.195.196.149:8090
-      - 134.195.196.149:8881
-      - 134.195.196.149:5003
-      - 38.143.66.20:9101
-      - 134.195.196.149:3306
-      - 134.195.196.149:8009
-      - 134.195.196.149:7307
-      - JP_349
-      - 185.4.65.6:21247
-      - " 3"
-      - NONE 3
-      - 185.126.116.119:9058
-      - 213.183.53.198:9014
-      - 185.126.116.119:9046
-      - 185.126.116.119:9018
-      - " 4"
-      - NONE 4
-      - NONE 5
-      - NONE 6
-      - NONE 7
-      - NONE 8
-      - CN 5｜openit.pw
-      - NONE 9
-      - NONE 10
-      - NONE 11
-      - NONE 12
-      - " 5"
-      - 178.62.16.161:811
-      - " 6"
-      - 38.121.43.65:2375
-      - 213.183.53.198:9080
-      - " 7"
-      - 51.38.118.42:811
-      - 92.223.93.233:1035
-      - 5.183.176.81:806
-      - 217.30.10.68:9031
-      - 5.183.176.83:801
-      - 217.30.10.68:9018
-      - Relay_🇨🇳CN-🇬🇧GB_137
-      - 165.22.73.126:23335
-      - CN 15｜openit.pw
-      - 5.183.176.84:808
-      - US_1385
+      - 138.68.248.130:811
+      - 51.195.136.209:50004
+      - 195.154.200.150:3306
+      - 195.154.200.150:9101
+      - 195.154.200.150:443
+      - NONE 2
+      - RU 3｜openit.pw
+      - US_1376
+      - Relay_🇨🇳 CN-🇩🇪DE_89
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -540,64 +268,30 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - NONE
-      - Relay_🇯🇵JP-🇯🇵JP_351
       - ""
-      - NONE 2
-      - us-am32-5.eqnode.net:8081
-      - HK 1｜openit.pw
+      - NONE
+      - Relay_🇺🇸US-🇺🇸US_1344
+      - US_1332
+      - 85.208.108.93:6679
+      - 85.208.108.93:8119
+      - 85.208.108.93:7306
+      - 85.208.108.93:8118
+      - 85.208.108.93:6379
+      - 85.208.108.93:8881
+      - 85.208.108.93:7002
+      - 38.68.134.191:2375
+      - 185.246.155.35:9070
+      - 38.68.134.191:7307
       - " 2"
-      - 38.143.66.20:9102
-      - 38.143.66.20:5000
-      - 38.143.66.20:5500
-      - US_1389
-      - 134.195.196.149:8119
-      - 134.195.196.149:8882
-      - 134.195.196.149:6679
-      - 134.195.196.149:8080
-      - 134.195.196.149:8090
-      - 134.195.196.149:8881
-      - 134.195.196.149:5003
-      - 38.143.66.20:9101
-      - 134.195.196.149:3306
-      - 134.195.196.149:8009
-      - 134.195.196.149:7307
-      - JP_349
-      - 185.4.65.6:21247
-      - " 3"
-      - NONE 3
-      - 185.126.116.119:9058
-      - 213.183.53.198:9014
-      - 185.126.116.119:9046
-      - 185.126.116.119:9018
-      - " 4"
-      - NONE 4
-      - NONE 5
-      - NONE 6
-      - NONE 7
-      - NONE 8
-      - CN 5｜openit.pw
-      - NONE 9
-      - NONE 10
-      - NONE 11
-      - NONE 12
-      - " 5"
-      - 178.62.16.161:811
-      - " 6"
-      - 38.121.43.65:2375
-      - 213.183.53.198:9080
-      - " 7"
-      - 51.38.118.42:811
-      - 92.223.93.233:1035
-      - 5.183.176.81:806
-      - 217.30.10.68:9031
-      - 5.183.176.83:801
-      - 217.30.10.68:9018
-      - Relay_🇨🇳CN-🇬🇧GB_137
-      - 165.22.73.126:23335
-      - CN 15｜openit.pw
-      - 5.183.176.84:808
-      - US_1385
+      - 138.68.248.130:811
+      - 51.195.136.209:50004
+      - 195.154.200.150:3306
+      - 195.154.200.150:9101
+      - 195.154.200.150:443
+      - NONE 2
+      - RU 3｜openit.pw
+      - US_1376
+      - Relay_🇨🇳 CN-🇩🇪DE_89
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
