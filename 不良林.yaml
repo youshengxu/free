@@ -1,603 +1,275 @@
-﻿port: 7890
+port: 7890
 socks-port: 7891
 allow-lan: true
 mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 中国-11.26MB/s(Youtube:不良林), server: cm.spacez.cloud, port: 30003, type: trojan, password: c9a3a61d-5d49-4158-9e60-6fa32684b122, sni: cm.spacez.cloud, skip-cert-verify: true, udp: true}
-  - {name: CN 9｜openit.pw, server: pp1.zhengzhongfeizhu.xyz, port: 34004, type: trojan, password: 177501cc-f0c2-3cc3-b9a7-8c1e8e27655f, sni: pp1.zhengzhongfeizhu.xyz, skip-cert-verify: true, udp: true}
-  - {name: US_1326, server: 137.184.118.47, port: 51649, type: vmess, uuid: 5d0b1709-5c3c-4073-fb3f-67251426571e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US 2, server: v2losdmit1.doubledou.win, port: 6675, type: trojan, password: 7484d7c8-b010-373e-9c2a-2b9d20f8c963, sni: v2losdmit1.doubledou.win, skip-cert-verify: true, udp: true}
-  - {name: CN 2｜openit.pw, server: iiiieeepppplll.zhengzhongfeizhu.xyz, port: 34002, type: trojan, password: 177501cc-f0c2-3cc3-b9a7-8c1e8e27655f, sni: iiiieeepppplll.zhengzhongfeizhu.xyz, skip-cert-verify: true, udp: true}
-  - {name: 欧洲(油管:破解资源君2.0) 19, server: 103.135.103.153, port: 41446, type: vmess, uuid: d6559d1e-36fe-46ba-f312-604724b3f03b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国-4.27MB/s(Youtube:不良林), server: 199.19.226.174, port: 54065, type: trojan, password: snf6qHs1ym, skip-cert-verify: true, udp: true}
-  - {name: HK 1｜openit.pw, server: 20.187.95.117, port: 8443, type: trojan, password: 190e2a95-63f0-4a9c-9aef-9f2ec6e542de, skip-cert-verify: true, udp: true}
-  - {name: 中国-6.30MB/s(Youtube:不良林), server: iiiieeepppplll.zhengzhongfeizhu.xyz, port: 34003, type: trojan, password: 177501cc-f0c2-3cc3-b9a7-8c1e8e27655f, sni: iiiieeepppplll.zhengzhongfeizhu.xyz, skip-cert-verify: true, udp: true}
-  - {name: 中国-213.8KB/s(Youtube:不良林), server: iiiieeepppplll.zhengzhongfeizhu.xyz, port: 34001, type: trojan, password: 177501cc-f0c2-3cc3-b9a7-8c1e8e27655f, sni: iiiieeepppplll.zhengzhongfeizhu.xyz, skip-cert-verify: true, udp: true}
-  - {name: US_1487🇺🇸US_1545, server: 137.184.118.47, port: 51649, type: vmess, uuid: 5d0b1709-5c3c-4073-fb3f-67251426571e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US 38, server: 172.99.188.71, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 美国(油管:破解资源君2.0) 13, server: 137.184.118.47, port: 51649, type: vmess, uuid: 5d0b1709-5c3c-4073-fb3f-67251426571e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国-1.57MB/s(Youtube:不良林), server: 167.88.61.14, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 美国-3.49MB/s(Youtube:不良林), server: 167.88.61.14, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: 美国-2.25MB/s(Youtube:不良林), server: 167.88.61.14, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 美国-3.42MB/s(Youtube:不良林), server: 167.88.61.14, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: US 16, server: 167.88.61.14, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: 美国-2.46MB/s(Youtube:不良林), server: 167.88.61.14, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: 美国-3.18MB/s(Youtube:不良林), server: 167.88.61.14, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: NL 5, server: 85.208.108.93, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: NL 22, server: 85.208.108.94, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: NL 8, server: 85.208.108.94, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: US 5, server: 167.88.61.14, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: NL 10, server: 85.208.108.93, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: NL 17, server: 85.208.108.94, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: NL 19, server: 85.208.108.94, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: NL 21, server: 85.208.108.94, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: US 15｜openit.pw, server: 104.168.144.215, port: 443, type: trojan, password: srGSKqR5Fv, skip-cert-verify: true, udp: true}
-  - {name: NL 20, server: 85.208.108.94, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: NL 28, server: 85.208.108.94, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: 俄罗斯联邦-3.92MB/s(Youtube:不良林), server: 213.183.53.207, port: 9059, type: ss, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY, udp: true}
-  - {name: NL 27, server: 85.208.108.94, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 荷兰-3.18MB/s(Youtube:不良林), server: 213.183.59.190, port: 9033, type: ss, cipher: aes-256-cfb, password: UTJA57ypk2XKQpnm, udp: true}
-  - {name: 美国(油管:破解资源君2.0) 19, server: 38.143.66.20, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: (已存活1天)俄罗斯联邦-4.38MB/s(Youtube:不良林), server: 213.183.53.207, port: 9050, type: ss, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE, udp: true}
-  - {name: NL 3, server: 85.208.108.94, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: NL 14, server: 85.208.108.94, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 日本-3.86MB/s(Youtube:不良林), server: 85.208.108.19, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: 俄罗斯联邦-3.17MB/s(Youtube:不良林), server: 213.183.53.214, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
-  - {name: NL 2, server: 85.208.108.93, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: NL 11, server: 85.208.108.93, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: NL 12, server: 85.208.108.94, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: NL 15, server: 85.208.108.94, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: NL 25, server: 85.208.108.94, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: US 15, server: 167.88.61.14, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: NL 6, server: 85.208.108.93, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: NL 24, server: 85.208.108.94, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: 日本-3.53MB/s(Youtube:不良林), server: 85.208.108.19, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: NL, server: 85.208.108.93, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: NL 13, server: 85.208.108.94, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: NL 18, server: 85.208.108.94, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: NL 16, server: 85.208.108.94, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: NL 23, server: 85.208.108.94, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 俄罗斯联邦-4.49MB/s(Youtube:不良林), server: 213.183.53.207, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
-  - {name: NL 9, server: 85.208.108.94, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: NL 26, server: 85.208.108.94, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: NL 4, server: 85.208.108.94, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: US 9, server: 167.88.61.14, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: (已存活1天)俄罗斯联邦-4.51MB/s(Youtube:不良林), server: 213.183.53.214, port: 9059, type: ss, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY, udp: true}
-  - {name: 俄罗斯联邦-3.41MB/s(Youtube:不良林), server: 213.183.53.182, port: 9080, type: ss, cipher: aes-256-cfb, password: VP8ZPxQpJtZRCjfZ, udp: true}
-  - {name: US 13, server: 167.88.61.14, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: US 17, server: 167.88.61.14, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US 3, server: 167.88.61.14, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: (已存活1天)俄罗斯联邦-3.49MB/s(Youtube:不良林), server: 213.183.53.214, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
-  - {name: NL 7, server: 85.208.108.94, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 俄罗斯联邦-1.57MB/s(Youtube:不良林), server: 213.183.53.182, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
-  - {name: 美国-1.55MB/s(Youtube:不良林), server: 167.88.61.14, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 荷兰-3.22MB/s(Youtube:不良林), server: 213.183.59.190, port: 9038, type: ss, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ, udp: true}
-  - {name: ZZ 2, server: 134.195.196.107, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: 欧洲(油管:破解资源君2.0) 9, server: www.fuckdbuy.xyz, port: 57170, type: vmess, uuid: 0fcee849-28e7-4251-87f3-e7cb9d95c00f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: ZZ, server: 134.195.196.107, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 荷兰-1.76MB/s(Youtube:不良林), server: 213.183.59.190, port: 9043, type: ss, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF, udp: true}
-  - {name: LT, server: 213.183.53.214, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
-  - {name: US_1411🇺🇸US_1468, server: 38.143.66.20, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: US 37, server: 172.99.188.71, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: US 20, server: 172.99.188.71, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: FR 5, server: 62.210.113.98, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: US 6, server: 167.88.61.14, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 美国(油管:破解资源君2.0) 27, server: 38.143.66.20, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: GB 2｜openit.pw, server: v2london.doubledou.win, port: 14436, type: trojan, password: 7484d7c8-b010-373e-9c2a-2b9d20f8c963, sni: v2london.doubledou.win, skip-cert-verify: true, udp: true}
-  - {name: US 42, server: 172.99.188.71, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: US 49, server: 172.99.188.71, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: US 29, server: 38.121.43.65, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: US 28, server: 167.88.61.14, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: US 41, server: 172.99.188.71, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US 18, server: 172.99.188.71, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 法国-257.6KB/s(Youtube:不良林), server: 62.210.113.98, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US 26, server: 172.99.188.71, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US 22, server: 172.99.188.71, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: US 31, server: 172.99.188.71, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 新加坡-3.69MB/s(Youtube:不良林), server: s4.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s4.hazz.win, skip-cert-verify: true, udp: true}
-  - {name: US 32, server: 38.121.43.71, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: DE 2, server: 193.108.117.75, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: US 23, server: 172.99.188.71, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: US 25, server: 172.99.188.71, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: US 27, server: 172.99.188.71, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: US 7, server: 167.88.61.14, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: US 43, server: 172.99.188.71, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: US 47, server: 172.99.188.71, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: RU, server: 185.4.65.6, port: 21247, type: ss, cipher: aes-256-cfb, password: vDS9G2p, udp: true}
-  - {name: US 10, server: 167.88.61.14, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US 45, server: 172.99.188.71, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: 荷兰-1.44MB/s(Youtube:不良林), server: 185.246.155.35, port: 9057, type: ss, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z, udp: true}
-  - {name: DE 4, server: 193.108.117.75, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: 荷兰-1.98MB/s(Youtube:不良林), server: 185.246.155.35, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
-  - {name: 荷兰-1.34MB/s(Youtube:不良林), server: 185.246.155.35, port: 9010, type: ss, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4, udp: true}
-  - {name: 新加坡(油管:破解资源君2.0) 2, server: in-sg-1.onebox6.org, port: 38701, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: www.ivpnpro.net}, udp: true}
-  - {name: 荷兰-1.09MB/s(Youtube:不良林), server: 185.246.155.35, port: 9041, type: ss, cipher: aes-256-cfb, password: U6qnYRhfyDmn8sgn, udp: true}
-  - {name: GB_305, server: 144.24.92.192, port: 80, type: vmess, uuid: 29d057f9-1600-4a18-b595-62a14073a230, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: RU 5, server: 45.144.176.135, port: 3006, type: ss, cipher: aes-256-cfb, password: 639.939.9554.368254., udp: true}
-  - {name: DE 3, server: 193.108.117.75, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: US 40, server: 172.99.188.71, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: RU 7, server: 45.144.176.135, port: 3005, type: ss, cipher: aes-256-cfb, password: 987.085wrcgrwqs36.985, udp: true}
-  - {name: RU 4, server: 45.144.176.135, port: 3002, type: ss, cipher: aes-256-cfb, password: 36rtuhZfAeUh78Sa, udp: true}
-  - {name: RU 6, server: 45.144.176.135, port: 3004, type: ss, cipher: aes-256-cfb, password: 3682oiuvefwwmbc1475, udp: true}
-  - {name: RU 2, server: 45.144.176.135, port: 3003, type: ss, cipher: aes-256-cfb, password: werty33588761qwfdees, udp: true}
-  - {name: RU 8, server: 45.144.176.135, port: 3001, type: ss, cipher: aes-256-cfb, password: qazplmn1236547dr42q, udp: true}
-  - {name: US 24, server: 38.121.43.71, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: DE 5, server: 193.108.117.75, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 美国-1.60MB/s(Youtube:不良林), server: 167.88.61.14, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: ZA 1｜openit.pw, server: cera.doubledou.win, port: 4590, type: trojan, password: 7484d7c8-b010-373e-9c2a-2b9d20f8c963, sni: cera.doubledou.win, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇳 CN-🇩🇪DE_90, server: in-sg-1.onebox6.org, port: 38701, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: in-sg-1.onebox6.org}, udp: true}
-  - {name: US 19, server: 38.121.43.71, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: US 51, server: 167.88.61.14, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 荷兰-180.6KB/s(Youtube:不良林), server: 185.246.155.35, port: 9008, type: ss, cipher: aes-256-cfb, password: y9VURyNzJWNRYEGQ, udp: true}
-  - {name: US 48, server: 172.99.188.71, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: US 33, server: 172.99.188.71, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: US 21, server: 38.121.43.71, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: US 46, server: 172.99.188.71, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: US 39, server: 172.99.188.71, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: LT_388, server: 213.183.63.221, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
-  - {name: 欧洲(油管:破解资源君2.0) 33, server: 92.223.93.233, port: 1035, type: ss, cipher: chacha20-ietf-poly1305, password: )1N1E6v0SU_rGTpg, udp: true}
-  - {name: US 50, server: 167.88.61.14, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: RU 3, server: 45.144.176.135, port: 3000, type: ss, cipher: aes-256-cfb, password: qazwsxplmjbufeefvgedgrwchgtrchrdgfbrdvgedecmmdfe, udp: true}
-  - {name: FR 6, server: 51.38.118.42, port: 811, type: ss, cipher: chacha20-ietf-poly1305, password: Ultr@r00t_2017, udp: true}
-  - {name: HK 2, server: 148.66.56.99, port: 802, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: US 30, server: 38.121.43.71, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: HK, server: 148.66.56.99, port: 801, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: US 26｜openit.pw, server: 38.143.66.20, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: US 53, server: 167.88.61.14, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US 14, server: 167.88.61.14, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 欧洲(油管:破解资源君2.0) 37, server: 144.24.92.192, port: 80, type: vmess, uuid: 29d057f9-1600-4a18-b595-62a14073a230, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: NL 29, server: 185.246.155.35, port: 9045, type: ss, cipher: aes-256-cfb, password: Lp27rqyJq72bZsqX, udp: true}
+  - {name: Japan 02, server: jp2.infininode.cf, port: 62501, type: trojan, password: 8fbc1abe-7a07-462d-8381-001c308b9d54, sni: jp2.infininode.cf, skip-cert-verify: true, udp: true}
+  - {name: Hong Kong 02, server: hk02.wol1.ml, port: 10001, type: ss, cipher: aes-128-gcm, password: 6ace9a90-3bc9-4b2d-b960-e7116558af01, udp: true}
+  - {name: Singapore 01, server: sg1.infininode.cf, port: 62003, type: trojan, password: 8fbc1abe-7a07-462d-8381-001c308b9d54, sni: sg1.infininode.cf, skip-cert-verify: true, udp: true}
+  - {name: Taiwan 02, server: tw2.infininode.cf, port: 62002, type: trojan, password: 8fbc1abe-7a07-462d-8381-001c308b9d54, sni: tw2.infininode.cf, skip-cert-verify: true, udp: true}
+  - {name: Taiwan 01, server: tw1.infininode.cf, port: 62001, type: trojan, password: 8fbc1abe-7a07-462d-8381-001c308b9d54, sni: tw1.infininode.cf, skip-cert-verify: true, udp: true}
+  - {name: Japan 01 2, server: jp01.wol1.ml, port: 10001, type: ss, cipher: aes-128-gcm, password: 6ace9a90-3bc9-4b2d-b960-e7116558af01, udp: true}
+  - {name: United States 01, server: us1.infininode.cf, port: 62503, type: trojan, password: 8fbc1abe-7a07-462d-8381-001c308b9d54, sni: us1.infininode.cf, skip-cert-verify: true, udp: true}
+  - {name: Canada 01, server: ca1.infininode.cf, port: 62505, type: trojan, password: 8fbc1abe-7a07-462d-8381-001c308b9d54, sni: ca1.infininode.cf, skip-cert-verify: true, udp: true}
+  - {name: Hong Kong 02 D, server: hk2-d.infininode.cf, port: 45132, type: trojan, password: 8fbc1abe-7a07-462d-8381-001c308b9d54, sni: hk2-d.infininode.cf, skip-cert-verify: true, udp: true}
+  - {name: "Hong Kong 01 | 限速 [Lv-1]", server: hk01.wol1.ml, port: 10001, type: ss, cipher: aes-128-gcm, password: 6ace9a90-3bc9-4b2d-b960-e7116558af01, udp: true}
+  - {name: US_5000 @资源分享师, server: 38.114.114.104, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_8090 @资源分享师, server: 38.114.114.104, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: Relay_🇸🇬 SG-🇸🇬SG_713, server: simpang.freetrade.link, port: 443, type: trojan, password: XEyN0OZ28xxCDO7C83DeAa3YcSjYKTgFA5n9IRpFwuB3qSz4aZClSapy3eRl6D, sni: simpang.freetrade.link, skip-cert-verify: true, udp: true}
+  - {name: US_5003 @资源分享师 2, server: 38.114.114.104, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: US_5004 @资源分享师, server: 38.114.114.104, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: US_6379 @资源分享师, server: 38.114.114.104, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: US_8882 @资源分享师 2, server: 38.114.114.104, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: US_3306 @资源分享师, server: 38.114.114.104, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_1290, server: 138.68.248.130, port: 811, type: ss, cipher: chacha20-ietf-poly1305, password: Ultr@r00t_2017, udp: true}
+  - {name: US_8888 @资源分享师 2, server: 38.114.114.104, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: "", server: us1.grpc.stream, port: 80, type: vmess, uuid: 6031b5c3-d8ba-5756-b708-f61084a2b678, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /us1, ws-headers: {Host: us1.grpc.stream}, udp: true}
+  - {name: United States 02, server: us2.infininode.cf, port: 62504, type: trojan, password: 8fbc1abe-7a07-462d-8381-001c308b9d54, sni: us2.infininode.cf, skip-cert-verify: true, udp: true}
+  - {name: US_6697 @资源分享师 2, server: 38.114.114.104, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: US_5500 @资源分享师, server: 38.114.114.104, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: US_8882 @资源分享师, server: 38.121.43.97, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: US_8888 @资源分享师, server: 38.121.43.97, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_5001 @资源分享师, server: 38.121.43.97, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_5600 @资源分享师, server: 38.121.43.97, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_2376 @资源分享师 2, server: 38.121.43.97, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: US_0443 @资源分享师, server: 38.114.114.104, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: US_5000 @资源分享师 2, server: 38.121.43.97, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_8091 @资源分享师, server: 38.114.114.104, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: US_3389 @资源分享师, server: 38.114.114.104, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_8119 @资源分享师 2, server: 38.121.43.97, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: US_6697 @资源分享师, server: 38.121.43.97, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: US_5004 @资源分享师 2, server: 38.121.43.97, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: Hong Kong 03, server: hk3.infininode.cf, port: 62009, type: trojan, password: 8fbc1abe-7a07-462d-8381-001c308b9d54, sni: hk3.infininode.cf, skip-cert-verify: true, udp: true}
+  - {name: US_0443 @资源分享师 2, server: 38.121.43.97, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: US_9101 @资源分享师 2, server: 38.121.43.97, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: US_3389 @资源分享师 2, server: 38.121.43.97, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_5001 @资源分享师 2, server: 38.114.114.104, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_7307 @资源分享师, server: 38.114.114.104, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: ‌🇨🇦CA_02 @资源分享师, server: 134.195.196.143, port: 802, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: Hong Kong 02 3, server: hk2.infininode.cf, port: 62008, type: trojan, password: 8fbc1abe-7a07-462d-8381-001c308b9d54, sni: hk2.infininode.cf, skip-cert-verify: true, udp: true}
+  - {name: US_7001 @资源分享师, server: 38.121.43.97, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: US_5601 @资源分享师, server: 38.114.114.104, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_7306 @资源分享师, server: 38.114.114.104, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: US_3306 @资源分享师 2, server: 38.121.43.97, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_2375 @资源分享师, server: 38.121.43.97, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: ‌🇨🇦CA_10 @资源分享师 2, server: 134.195.196.143, port: 810, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: US_8881 @资源分享师, server: 38.114.114.104, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: US_9101 @资源分享师, server: 38.114.114.104, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: US_8009 @资源分享师, server: 38.121.43.97, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: US_6679 @资源分享师, server: 38.121.43.97, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: US_6679 @资源分享师 2, server: 38.114.114.104, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: US_8000 @资源分享师, server: 38.114.114.104, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: US_7002 @资源分享师, server: 38.114.114.104, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: US_8080 @资源分享师, server: 38.121.43.97, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: ‌🇨🇦CA_07 @资源分享师 2, server: 134.195.196.143, port: 807, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: US_6379 @资源分享师 2, server: 38.121.43.97, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: CN 1｜openit.pw, server: cm.spacez.cloud, port: 30003, type: trojan, password: c9a3a61d-5d49-4158-9e60-6fa32684b122, sni: cm.spacez.cloud, skip-cert-verify: true, udp: true}
+  - {name: US_8119 @资源分享师, server: 38.114.114.104, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 中国-11.26MB/s(Youtube:不良林)
-      - CN 9｜openit.pw
-      - US_1326
-      - US 2
-      - CN 2｜openit.pw
-      - 欧洲(油管:破解资源君2.0) 19
-      - 美国-4.27MB/s(Youtube:不良林)
-      - HK 1｜openit.pw
-      - 中国-6.30MB/s(Youtube:不良林)
-      - 中国-213.8KB/s(Youtube:不良林)
-      - US_1487🇺🇸US_1545
-      - US 38
-      - 美国(油管:破解资源君2.0) 13
-      - 美国-1.57MB/s(Youtube:不良林)
-      - 美国-3.49MB/s(Youtube:不良林)
-      - 美国-2.25MB/s(Youtube:不良林)
-      - 美国-3.42MB/s(Youtube:不良林)
-      - US 16
-      - 美国-2.46MB/s(Youtube:不良林)
-      - 美国-3.18MB/s(Youtube:不良林)
-      - NL 5
-      - NL 22
-      - NL 8
-      - US 5
-      - NL 10
-      - NL 17
-      - NL 19
-      - NL 21
-      - US 15｜openit.pw
-      - NL 20
-      - NL 28
-      - 俄罗斯联邦-3.92MB/s(Youtube:不良林)
-      - NL 27
-      - 荷兰-3.18MB/s(Youtube:不良林)
-      - 美国(油管:破解资源君2.0) 19
-      - (已存活1天)俄罗斯联邦-4.38MB/s(Youtube:不良林)
-      - NL 3
-      - NL 14
-      - 日本-3.86MB/s(Youtube:不良林)
-      - 俄罗斯联邦-3.17MB/s(Youtube:不良林)
-      - NL 2
-      - NL 11
-      - NL 12
-      - NL 15
-      - NL 25
-      - US 15
-      - NL 6
-      - NL 24
-      - 日本-3.53MB/s(Youtube:不良林)
-      - NL
-      - NL 13
-      - NL 18
-      - NL 16
-      - NL 23
-      - 俄罗斯联邦-4.49MB/s(Youtube:不良林)
-      - NL 9
-      - NL 26
-      - NL 4
-      - US 9
-      - (已存活1天)俄罗斯联邦-4.51MB/s(Youtube:不良林)
-      - 俄罗斯联邦-3.41MB/s(Youtube:不良林)
-      - US 13
-      - US 17
-      - US 3
-      - (已存活1天)俄罗斯联邦-3.49MB/s(Youtube:不良林)
-      - NL 7
-      - 俄罗斯联邦-1.57MB/s(Youtube:不良林)
-      - 美国-1.55MB/s(Youtube:不良林)
-      - 荷兰-3.22MB/s(Youtube:不良林)
-      - ZZ 2
-      - 欧洲(油管:破解资源君2.0) 9
-      - ZZ
-      - 荷兰-1.76MB/s(Youtube:不良林)
-      - LT
-      - US_1411🇺🇸US_1468
-      - US 37
-      - US 20
-      - FR 5
-      - US 6
-      - 美国(油管:破解资源君2.0) 27
-      - GB 2｜openit.pw
-      - US 42
-      - US 49
-      - US 29
-      - US 28
-      - US 41
-      - US 18
-      - 法国-257.6KB/s(Youtube:不良林)
-      - US 26
-      - US 22
-      - US 31
-      - 新加坡-3.69MB/s(Youtube:不良林)
-      - US 32
-      - DE 2
-      - US 23
-      - US 25
-      - US 27
-      - US 7
-      - US 43
-      - US 47
-      - RU
-      - US 10
-      - US 45
-      - 荷兰-1.44MB/s(Youtube:不良林)
-      - DE 4
-      - 荷兰-1.98MB/s(Youtube:不良林)
-      - 荷兰-1.34MB/s(Youtube:不良林)
-      - 新加坡(油管:破解资源君2.0) 2
-      - 荷兰-1.09MB/s(Youtube:不良林)
-      - GB_305
-      - RU 5
-      - DE 3
-      - US 40
-      - RU 7
-      - RU 4
-      - RU 6
-      - RU 2
-      - RU 8
-      - US 24
-      - DE 5
-      - 美国-1.60MB/s(Youtube:不良林)
-      - ZA 1｜openit.pw
-      - Relay_🇨🇳 CN-🇩🇪DE_90
-      - US 19
-      - US 51
-      - 荷兰-180.6KB/s(Youtube:不良林)
-      - US 48
-      - US 33
-      - US 21
-      - US 46
-      - US 39
-      - LT_388
-      - 欧洲(油管:破解资源君2.0) 33
-      - US 50
-      - RU 3
-      - FR 6
-      - HK 2
-      - US 30
-      - HK
-      - US 26｜openit.pw
-      - US 53
-      - US 14
-      - 欧洲(油管:破解资源君2.0) 37
-      - NL 29
+      - Japan 02
+      - Hong Kong 02
+      - Singapore 01
+      - Taiwan 02
+      - Taiwan 01
+      - Japan 01 2
+      - United States 01
+      - Canada 01
+      - Hong Kong 02 D
+      - Hong Kong 01 | 限速 [Lv-1]
+      - US_5000 @资源分享师
+      - US_8090 @资源分享师
+      - Relay_🇸🇬 SG-🇸🇬SG_713
+      - US_5003 @资源分享师 2
+      - US_5004 @资源分享师
+      - US_6379 @资源分享师
+      - US_8882 @资源分享师 2
+      - US_3306 @资源分享师
+      - US_1290
+      - US_8888 @资源分享师 2
+      - ""
+      - United States 02
+      - US_6697 @资源分享师 2
+      - US_5500 @资源分享师
+      - US_8882 @资源分享师
+      - US_8888 @资源分享师
+      - US_5001 @资源分享师
+      - US_5600 @资源分享师
+      - US_2376 @资源分享师 2
+      - US_0443 @资源分享师
+      - US_5000 @资源分享师 2
+      - US_8091 @资源分享师
+      - US_3389 @资源分享师
+      - US_8119 @资源分享师 2
+      - US_6697 @资源分享师
+      - US_5004 @资源分享师 2
+      - Hong Kong 03
+      - US_0443 @资源分享师 2
+      - US_9101 @资源分享师 2
+      - US_3389 @资源分享师 2
+      - US_5001 @资源分享师 2
+      - US_7307 @资源分享师
+      - ‌🇨🇦CA_02 @资源分享师
+      - Hong Kong 02 3
+      - US_7001 @资源分享师
+      - US_5601 @资源分享师
+      - US_7306 @资源分享师
+      - US_3306 @资源分享师 2
+      - US_2375 @资源分享师
+      - ‌🇨🇦CA_10 @资源分享师 2
+      - US_8881 @资源分享师
+      - US_9101 @资源分享师
+      - US_8009 @资源分享师
+      - US_6679 @资源分享师
+      - US_6679 @资源分享师 2
+      - US_8000 @资源分享师
+      - US_7002 @资源分享师
+      - US_8080 @资源分享师
+      - ‌🇨🇦CA_07 @资源分享师 2
+      - US_6379 @资源分享师 2
+      - CN 1｜openit.pw
+      - US_8119 @资源分享师
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 中国-11.26MB/s(Youtube:不良林)
-      - CN 9｜openit.pw
-      - US_1326
-      - US 2
-      - CN 2｜openit.pw
-      - 欧洲(油管:破解资源君2.0) 19
-      - 美国-4.27MB/s(Youtube:不良林)
-      - HK 1｜openit.pw
-      - 中国-6.30MB/s(Youtube:不良林)
-      - 中国-213.8KB/s(Youtube:不良林)
-      - US_1487🇺🇸US_1545
-      - US 38
-      - 美国(油管:破解资源君2.0) 13
-      - 美国-1.57MB/s(Youtube:不良林)
-      - 美国-3.49MB/s(Youtube:不良林)
-      - 美国-2.25MB/s(Youtube:不良林)
-      - 美国-3.42MB/s(Youtube:不良林)
-      - US 16
-      - 美国-2.46MB/s(Youtube:不良林)
-      - 美国-3.18MB/s(Youtube:不良林)
-      - NL 5
-      - NL 22
-      - NL 8
-      - US 5
-      - NL 10
-      - NL 17
-      - NL 19
-      - NL 21
-      - US 15｜openit.pw
-      - NL 20
-      - NL 28
-      - 俄罗斯联邦-3.92MB/s(Youtube:不良林)
-      - NL 27
-      - 荷兰-3.18MB/s(Youtube:不良林)
-      - 美国(油管:破解资源君2.0) 19
-      - (已存活1天)俄罗斯联邦-4.38MB/s(Youtube:不良林)
-      - NL 3
-      - NL 14
-      - 日本-3.86MB/s(Youtube:不良林)
-      - 俄罗斯联邦-3.17MB/s(Youtube:不良林)
-      - NL 2
-      - NL 11
-      - NL 12
-      - NL 15
-      - NL 25
-      - US 15
-      - NL 6
-      - NL 24
-      - 日本-3.53MB/s(Youtube:不良林)
-      - NL
-      - NL 13
-      - NL 18
-      - NL 16
-      - NL 23
-      - 俄罗斯联邦-4.49MB/s(Youtube:不良林)
-      - NL 9
-      - NL 26
-      - NL 4
-      - US 9
-      - (已存活1天)俄罗斯联邦-4.51MB/s(Youtube:不良林)
-      - 俄罗斯联邦-3.41MB/s(Youtube:不良林)
-      - US 13
-      - US 17
-      - US 3
-      - (已存活1天)俄罗斯联邦-3.49MB/s(Youtube:不良林)
-      - NL 7
-      - 俄罗斯联邦-1.57MB/s(Youtube:不良林)
-      - 美国-1.55MB/s(Youtube:不良林)
-      - 荷兰-3.22MB/s(Youtube:不良林)
-      - ZZ 2
-      - 欧洲(油管:破解资源君2.0) 9
-      - ZZ
-      - 荷兰-1.76MB/s(Youtube:不良林)
-      - LT
-      - US_1411🇺🇸US_1468
-      - US 37
-      - US 20
-      - FR 5
-      - US 6
-      - 美国(油管:破解资源君2.0) 27
-      - GB 2｜openit.pw
-      - US 42
-      - US 49
-      - US 29
-      - US 28
-      - US 41
-      - US 18
-      - 法国-257.6KB/s(Youtube:不良林)
-      - US 26
-      - US 22
-      - US 31
-      - 新加坡-3.69MB/s(Youtube:不良林)
-      - US 32
-      - DE 2
-      - US 23
-      - US 25
-      - US 27
-      - US 7
-      - US 43
-      - US 47
-      - RU
-      - US 10
-      - US 45
-      - 荷兰-1.44MB/s(Youtube:不良林)
-      - DE 4
-      - 荷兰-1.98MB/s(Youtube:不良林)
-      - 荷兰-1.34MB/s(Youtube:不良林)
-      - 新加坡(油管:破解资源君2.0) 2
-      - 荷兰-1.09MB/s(Youtube:不良林)
-      - GB_305
-      - RU 5
-      - DE 3
-      - US 40
-      - RU 7
-      - RU 4
-      - RU 6
-      - RU 2
-      - RU 8
-      - US 24
-      - DE 5
-      - 美国-1.60MB/s(Youtube:不良林)
-      - ZA 1｜openit.pw
-      - Relay_🇨🇳 CN-🇩🇪DE_90
-      - US 19
-      - US 51
-      - 荷兰-180.6KB/s(Youtube:不良林)
-      - US 48
-      - US 33
-      - US 21
-      - US 46
-      - US 39
-      - LT_388
-      - 欧洲(油管:破解资源君2.0) 33
-      - US 50
-      - RU 3
-      - FR 6
-      - HK 2
-      - US 30
-      - HK
-      - US 26｜openit.pw
-      - US 53
-      - US 14
-      - 欧洲(油管:破解资源君2.0) 37
-      - NL 29
+      - Japan 02
+      - Hong Kong 02
+      - Singapore 01
+      - Taiwan 02
+      - Taiwan 01
+      - Japan 01 2
+      - United States 01
+      - Canada 01
+      - Hong Kong 02 D
+      - Hong Kong 01 | 限速 [Lv-1]
+      - US_5000 @资源分享师
+      - US_8090 @资源分享师
+      - Relay_🇸🇬 SG-🇸🇬SG_713
+      - US_5003 @资源分享师 2
+      - US_5004 @资源分享师
+      - US_6379 @资源分享师
+      - US_8882 @资源分享师 2
+      - US_3306 @资源分享师
+      - US_1290
+      - US_8888 @资源分享师 2
+      - ""
+      - United States 02
+      - US_6697 @资源分享师 2
+      - US_5500 @资源分享师
+      - US_8882 @资源分享师
+      - US_8888 @资源分享师
+      - US_5001 @资源分享师
+      - US_5600 @资源分享师
+      - US_2376 @资源分享师 2
+      - US_0443 @资源分享师
+      - US_5000 @资源分享师 2
+      - US_8091 @资源分享师
+      - US_3389 @资源分享师
+      - US_8119 @资源分享师 2
+      - US_6697 @资源分享师
+      - US_5004 @资源分享师 2
+      - Hong Kong 03
+      - US_0443 @资源分享师 2
+      - US_9101 @资源分享师 2
+      - US_3389 @资源分享师 2
+      - US_5001 @资源分享师 2
+      - US_7307 @资源分享师
+      - ‌🇨🇦CA_02 @资源分享师
+      - Hong Kong 02 3
+      - US_7001 @资源分享师
+      - US_5601 @资源分享师
+      - US_7306 @资源分享师
+      - US_3306 @资源分享师 2
+      - US_2375 @资源分享师
+      - ‌🇨🇦CA_10 @资源分享师 2
+      - US_8881 @资源分享师
+      - US_9101 @资源分享师
+      - US_8009 @资源分享师
+      - US_6679 @资源分享师
+      - US_6679 @资源分享师 2
+      - US_8000 @资源分享师
+      - US_7002 @资源分享师
+      - US_8080 @资源分享师
+      - ‌🇨🇦CA_07 @资源分享师 2
+      - US_6379 @资源分享师 2
+      - CN 1｜openit.pw
+      - US_8119 @资源分享师
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 中国-11.26MB/s(Youtube:不良林)
-      - CN 9｜openit.pw
-      - US_1326
-      - US 2
-      - CN 2｜openit.pw
-      - 欧洲(油管:破解资源君2.0) 19
-      - 美国-4.27MB/s(Youtube:不良林)
-      - HK 1｜openit.pw
-      - 中国-6.30MB/s(Youtube:不良林)
-      - 中国-213.8KB/s(Youtube:不良林)
-      - US_1487🇺🇸US_1545
-      - US 38
-      - 美国(油管:破解资源君2.0) 13
-      - 美国-1.57MB/s(Youtube:不良林)
-      - 美国-3.49MB/s(Youtube:不良林)
-      - 美国-2.25MB/s(Youtube:不良林)
-      - 美国-3.42MB/s(Youtube:不良林)
-      - US 16
-      - 美国-2.46MB/s(Youtube:不良林)
-      - 美国-3.18MB/s(Youtube:不良林)
-      - NL 5
-      - NL 22
-      - NL 8
-      - US 5
-      - NL 10
-      - NL 17
-      - NL 19
-      - NL 21
-      - US 15｜openit.pw
-      - NL 20
-      - NL 28
-      - 俄罗斯联邦-3.92MB/s(Youtube:不良林)
-      - NL 27
-      - 荷兰-3.18MB/s(Youtube:不良林)
-      - 美国(油管:破解资源君2.0) 19
-      - (已存活1天)俄罗斯联邦-4.38MB/s(Youtube:不良林)
-      - NL 3
-      - NL 14
-      - 日本-3.86MB/s(Youtube:不良林)
-      - 俄罗斯联邦-3.17MB/s(Youtube:不良林)
-      - NL 2
-      - NL 11
-      - NL 12
-      - NL 15
-      - NL 25
-      - US 15
-      - NL 6
-      - NL 24
-      - 日本-3.53MB/s(Youtube:不良林)
-      - NL
-      - NL 13
-      - NL 18
-      - NL 16
-      - NL 23
-      - 俄罗斯联邦-4.49MB/s(Youtube:不良林)
-      - NL 9
-      - NL 26
-      - NL 4
-      - US 9
-      - (已存活1天)俄罗斯联邦-4.51MB/s(Youtube:不良林)
-      - 俄罗斯联邦-3.41MB/s(Youtube:不良林)
-      - US 13
-      - US 17
-      - US 3
-      - (已存活1天)俄罗斯联邦-3.49MB/s(Youtube:不良林)
-      - NL 7
-      - 俄罗斯联邦-1.57MB/s(Youtube:不良林)
-      - 美国-1.55MB/s(Youtube:不良林)
-      - 荷兰-3.22MB/s(Youtube:不良林)
-      - ZZ 2
-      - 欧洲(油管:破解资源君2.0) 9
-      - ZZ
-      - 荷兰-1.76MB/s(Youtube:不良林)
-      - LT
-      - US_1411🇺🇸US_1468
-      - US 37
-      - US 20
-      - FR 5
-      - US 6
-      - 美国(油管:破解资源君2.0) 27
-      - GB 2｜openit.pw
-      - US 42
-      - US 49
-      - US 29
-      - US 28
-      - US 41
-      - US 18
-      - 法国-257.6KB/s(Youtube:不良林)
-      - US 26
-      - US 22
-      - US 31
-      - 新加坡-3.69MB/s(Youtube:不良林)
-      - US 32
-      - DE 2
-      - US 23
-      - US 25
-      - US 27
-      - US 7
-      - US 43
-      - US 47
-      - RU
-      - US 10
-      - US 45
-      - 荷兰-1.44MB/s(Youtube:不良林)
-      - DE 4
-      - 荷兰-1.98MB/s(Youtube:不良林)
-      - 荷兰-1.34MB/s(Youtube:不良林)
-      - 新加坡(油管:破解资源君2.0) 2
-      - 荷兰-1.09MB/s(Youtube:不良林)
-      - GB_305
-      - RU 5
-      - DE 3
-      - US 40
-      - RU 7
-      - RU 4
-      - RU 6
-      - RU 2
-      - RU 8
-      - US 24
-      - DE 5
-      - 美国-1.60MB/s(Youtube:不良林)
-      - ZA 1｜openit.pw
-      - Relay_🇨🇳 CN-🇩🇪DE_90
-      - US 19
-      - US 51
-      - 荷兰-180.6KB/s(Youtube:不良林)
-      - US 48
-      - US 33
-      - US 21
-      - US 46
-      - US 39
-      - LT_388
-      - 欧洲(油管:破解资源君2.0) 33
-      - US 50
-      - RU 3
-      - FR 6
-      - HK 2
-      - US 30
-      - HK
-      - US 26｜openit.pw
-      - US 53
-      - US 14
-      - 欧洲(油管:破解资源君2.0) 37
-      - NL 29
+      - Japan 02
+      - Hong Kong 02
+      - Singapore 01
+      - Taiwan 02
+      - Taiwan 01
+      - Japan 01 2
+      - United States 01
+      - Canada 01
+      - Hong Kong 02 D
+      - Hong Kong 01 | 限速 [Lv-1]
+      - US_5000 @资源分享师
+      - US_8090 @资源分享师
+      - Relay_🇸🇬 SG-🇸🇬SG_713
+      - US_5003 @资源分享师 2
+      - US_5004 @资源分享师
+      - US_6379 @资源分享师
+      - US_8882 @资源分享师 2
+      - US_3306 @资源分享师
+      - US_1290
+      - US_8888 @资源分享师 2
+      - ""
+      - United States 02
+      - US_6697 @资源分享师 2
+      - US_5500 @资源分享师
+      - US_8882 @资源分享师
+      - US_8888 @资源分享师
+      - US_5001 @资源分享师
+      - US_5600 @资源分享师
+      - US_2376 @资源分享师 2
+      - US_0443 @资源分享师
+      - US_5000 @资源分享师 2
+      - US_8091 @资源分享师
+      - US_3389 @资源分享师
+      - US_8119 @资源分享师 2
+      - US_6697 @资源分享师
+      - US_5004 @资源分享师 2
+      - Hong Kong 03
+      - US_0443 @资源分享师 2
+      - US_9101 @资源分享师 2
+      - US_3389 @资源分享师 2
+      - US_5001 @资源分享师 2
+      - US_7307 @资源分享师
+      - ‌🇨🇦CA_02 @资源分享师
+      - Hong Kong 02 3
+      - US_7001 @资源分享师
+      - US_5601 @资源分享师
+      - US_7306 @资源分享师
+      - US_3306 @资源分享师 2
+      - US_2375 @资源分享师
+      - ‌🇨🇦CA_10 @资源分享师 2
+      - US_8881 @资源分享师
+      - US_9101 @资源分享师
+      - US_8009 @资源分享师
+      - US_6679 @资源分享师
+      - US_6679 @资源分享师 2
+      - US_8000 @资源分享师
+      - US_7002 @资源分享师
+      - US_8080 @资源分享师
+      - ‌🇨🇦CA_07 @资源分享师 2
+      - US_6379 @资源分享师 2
+      - CN 1｜openit.pw
+      - US_8119 @资源分享师
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -616,150 +288,68 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 中国-11.26MB/s(Youtube:不良林)
-      - CN 9｜openit.pw
-      - US_1326
-      - US 2
-      - CN 2｜openit.pw
-      - 欧洲(油管:破解资源君2.0) 19
-      - 美国-4.27MB/s(Youtube:不良林)
-      - HK 1｜openit.pw
-      - 中国-6.30MB/s(Youtube:不良林)
-      - 中国-213.8KB/s(Youtube:不良林)
-      - US_1487🇺🇸US_1545
-      - US 38
-      - 美国(油管:破解资源君2.0) 13
-      - 美国-1.57MB/s(Youtube:不良林)
-      - 美国-3.49MB/s(Youtube:不良林)
-      - 美国-2.25MB/s(Youtube:不良林)
-      - 美国-3.42MB/s(Youtube:不良林)
-      - US 16
-      - 美国-2.46MB/s(Youtube:不良林)
-      - 美国-3.18MB/s(Youtube:不良林)
-      - NL 5
-      - NL 22
-      - NL 8
-      - US 5
-      - NL 10
-      - NL 17
-      - NL 19
-      - NL 21
-      - US 15｜openit.pw
-      - NL 20
-      - NL 28
-      - 俄罗斯联邦-3.92MB/s(Youtube:不良林)
-      - NL 27
-      - 荷兰-3.18MB/s(Youtube:不良林)
-      - 美国(油管:破解资源君2.0) 19
-      - (已存活1天)俄罗斯联邦-4.38MB/s(Youtube:不良林)
-      - NL 3
-      - NL 14
-      - 日本-3.86MB/s(Youtube:不良林)
-      - 俄罗斯联邦-3.17MB/s(Youtube:不良林)
-      - NL 2
-      - NL 11
-      - NL 12
-      - NL 15
-      - NL 25
-      - US 15
-      - NL 6
-      - NL 24
-      - 日本-3.53MB/s(Youtube:不良林)
-      - NL
-      - NL 13
-      - NL 18
-      - NL 16
-      - NL 23
-      - 俄罗斯联邦-4.49MB/s(Youtube:不良林)
-      - NL 9
-      - NL 26
-      - NL 4
-      - US 9
-      - (已存活1天)俄罗斯联邦-4.51MB/s(Youtube:不良林)
-      - 俄罗斯联邦-3.41MB/s(Youtube:不良林)
-      - US 13
-      - US 17
-      - US 3
-      - (已存活1天)俄罗斯联邦-3.49MB/s(Youtube:不良林)
-      - NL 7
-      - 俄罗斯联邦-1.57MB/s(Youtube:不良林)
-      - 美国-1.55MB/s(Youtube:不良林)
-      - 荷兰-3.22MB/s(Youtube:不良林)
-      - ZZ 2
-      - 欧洲(油管:破解资源君2.0) 9
-      - ZZ
-      - 荷兰-1.76MB/s(Youtube:不良林)
-      - LT
-      - US_1411🇺🇸US_1468
-      - US 37
-      - US 20
-      - FR 5
-      - US 6
-      - 美国(油管:破解资源君2.0) 27
-      - GB 2｜openit.pw
-      - US 42
-      - US 49
-      - US 29
-      - US 28
-      - US 41
-      - US 18
-      - 法国-257.6KB/s(Youtube:不良林)
-      - US 26
-      - US 22
-      - US 31
-      - 新加坡-3.69MB/s(Youtube:不良林)
-      - US 32
-      - DE 2
-      - US 23
-      - US 25
-      - US 27
-      - US 7
-      - US 43
-      - US 47
-      - RU
-      - US 10
-      - US 45
-      - 荷兰-1.44MB/s(Youtube:不良林)
-      - DE 4
-      - 荷兰-1.98MB/s(Youtube:不良林)
-      - 荷兰-1.34MB/s(Youtube:不良林)
-      - 新加坡(油管:破解资源君2.0) 2
-      - 荷兰-1.09MB/s(Youtube:不良林)
-      - GB_305
-      - RU 5
-      - DE 3
-      - US 40
-      - RU 7
-      - RU 4
-      - RU 6
-      - RU 2
-      - RU 8
-      - US 24
-      - DE 5
-      - 美国-1.60MB/s(Youtube:不良林)
-      - ZA 1｜openit.pw
-      - Relay_🇨🇳 CN-🇩🇪DE_90
-      - US 19
-      - US 51
-      - 荷兰-180.6KB/s(Youtube:不良林)
-      - US 48
-      - US 33
-      - US 21
-      - US 46
-      - US 39
-      - LT_388
-      - 欧洲(油管:破解资源君2.0) 33
-      - US 50
-      - RU 3
-      - FR 6
-      - HK 2
-      - US 30
-      - HK
-      - US 26｜openit.pw
-      - US 53
-      - US 14
-      - 欧洲(油管:破解资源君2.0) 37
-      - NL 29
+      - Japan 02
+      - Hong Kong 02
+      - Singapore 01
+      - Taiwan 02
+      - Taiwan 01
+      - Japan 01 2
+      - United States 01
+      - Canada 01
+      - Hong Kong 02 D
+      - Hong Kong 01 | 限速 [Lv-1]
+      - US_5000 @资源分享师
+      - US_8090 @资源分享师
+      - Relay_🇸🇬 SG-🇸🇬SG_713
+      - US_5003 @资源分享师 2
+      - US_5004 @资源分享师
+      - US_6379 @资源分享师
+      - US_8882 @资源分享师 2
+      - US_3306 @资源分享师
+      - US_1290
+      - US_8888 @资源分享师 2
+      - ""
+      - United States 02
+      - US_6697 @资源分享师 2
+      - US_5500 @资源分享师
+      - US_8882 @资源分享师
+      - US_8888 @资源分享师
+      - US_5001 @资源分享师
+      - US_5600 @资源分享师
+      - US_2376 @资源分享师 2
+      - US_0443 @资源分享师
+      - US_5000 @资源分享师 2
+      - US_8091 @资源分享师
+      - US_3389 @资源分享师
+      - US_8119 @资源分享师 2
+      - US_6697 @资源分享师
+      - US_5004 @资源分享师 2
+      - Hong Kong 03
+      - US_0443 @资源分享师 2
+      - US_9101 @资源分享师 2
+      - US_3389 @资源分享师 2
+      - US_5001 @资源分享师 2
+      - US_7307 @资源分享师
+      - ‌🇨🇦CA_02 @资源分享师
+      - Hong Kong 02 3
+      - US_7001 @资源分享师
+      - US_5601 @资源分享师
+      - US_7306 @资源分享师
+      - US_3306 @资源分享师 2
+      - US_2375 @资源分享师
+      - ‌🇨🇦CA_10 @资源分享师 2
+      - US_8881 @资源分享师
+      - US_9101 @资源分享师
+      - US_8009 @资源分享师
+      - US_6679 @资源分享师
+      - US_6679 @资源分享师 2
+      - US_8000 @资源分享师
+      - US_7002 @资源分享师
+      - US_8080 @资源分享师
+      - ‌🇨🇦CA_07 @资源分享师 2
+      - US_6379 @资源分享师 2
+      - CN 1｜openit.pw
+      - US_8119 @资源分享师
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -770,449 +360,203 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 中国-11.26MB/s(Youtube:不良林)
-      - CN 9｜openit.pw
-      - US_1326
-      - US 2
-      - CN 2｜openit.pw
-      - 欧洲(油管:破解资源君2.0) 19
-      - 美国-4.27MB/s(Youtube:不良林)
-      - HK 1｜openit.pw
-      - 中国-6.30MB/s(Youtube:不良林)
-      - 中国-213.8KB/s(Youtube:不良林)
-      - US_1487🇺🇸US_1545
-      - US 38
-      - 美国(油管:破解资源君2.0) 13
-      - 美国-1.57MB/s(Youtube:不良林)
-      - 美国-3.49MB/s(Youtube:不良林)
-      - 美国-2.25MB/s(Youtube:不良林)
-      - 美国-3.42MB/s(Youtube:不良林)
-      - US 16
-      - 美国-2.46MB/s(Youtube:不良林)
-      - 美国-3.18MB/s(Youtube:不良林)
-      - NL 5
-      - NL 22
-      - NL 8
-      - US 5
-      - NL 10
-      - NL 17
-      - NL 19
-      - NL 21
-      - US 15｜openit.pw
-      - NL 20
-      - NL 28
-      - 俄罗斯联邦-3.92MB/s(Youtube:不良林)
-      - NL 27
-      - 荷兰-3.18MB/s(Youtube:不良林)
-      - 美国(油管:破解资源君2.0) 19
-      - (已存活1天)俄罗斯联邦-4.38MB/s(Youtube:不良林)
-      - NL 3
-      - NL 14
-      - 日本-3.86MB/s(Youtube:不良林)
-      - 俄罗斯联邦-3.17MB/s(Youtube:不良林)
-      - NL 2
-      - NL 11
-      - NL 12
-      - NL 15
-      - NL 25
-      - US 15
-      - NL 6
-      - NL 24
-      - 日本-3.53MB/s(Youtube:不良林)
-      - NL
-      - NL 13
-      - NL 18
-      - NL 16
-      - NL 23
-      - 俄罗斯联邦-4.49MB/s(Youtube:不良林)
-      - NL 9
-      - NL 26
-      - NL 4
-      - US 9
-      - (已存活1天)俄罗斯联邦-4.51MB/s(Youtube:不良林)
-      - 俄罗斯联邦-3.41MB/s(Youtube:不良林)
-      - US 13
-      - US 17
-      - US 3
-      - (已存活1天)俄罗斯联邦-3.49MB/s(Youtube:不良林)
-      - NL 7
-      - 俄罗斯联邦-1.57MB/s(Youtube:不良林)
-      - 美国-1.55MB/s(Youtube:不良林)
-      - 荷兰-3.22MB/s(Youtube:不良林)
-      - ZZ 2
-      - 欧洲(油管:破解资源君2.0) 9
-      - ZZ
-      - 荷兰-1.76MB/s(Youtube:不良林)
-      - LT
-      - US_1411🇺🇸US_1468
-      - US 37
-      - US 20
-      - FR 5
-      - US 6
-      - 美国(油管:破解资源君2.0) 27
-      - GB 2｜openit.pw
-      - US 42
-      - US 49
-      - US 29
-      - US 28
-      - US 41
-      - US 18
-      - 法国-257.6KB/s(Youtube:不良林)
-      - US 26
-      - US 22
-      - US 31
-      - 新加坡-3.69MB/s(Youtube:不良林)
-      - US 32
-      - DE 2
-      - US 23
-      - US 25
-      - US 27
-      - US 7
-      - US 43
-      - US 47
-      - RU
-      - US 10
-      - US 45
-      - 荷兰-1.44MB/s(Youtube:不良林)
-      - DE 4
-      - 荷兰-1.98MB/s(Youtube:不良林)
-      - 荷兰-1.34MB/s(Youtube:不良林)
-      - 新加坡(油管:破解资源君2.0) 2
-      - 荷兰-1.09MB/s(Youtube:不良林)
-      - GB_305
-      - RU 5
-      - DE 3
-      - US 40
-      - RU 7
-      - RU 4
-      - RU 6
-      - RU 2
-      - RU 8
-      - US 24
-      - DE 5
-      - 美国-1.60MB/s(Youtube:不良林)
-      - ZA 1｜openit.pw
-      - Relay_🇨🇳 CN-🇩🇪DE_90
-      - US 19
-      - US 51
-      - 荷兰-180.6KB/s(Youtube:不良林)
-      - US 48
-      - US 33
-      - US 21
-      - US 46
-      - US 39
-      - LT_388
-      - 欧洲(油管:破解资源君2.0) 33
-      - US 50
-      - RU 3
-      - FR 6
-      - HK 2
-      - US 30
-      - HK
-      - US 26｜openit.pw
-      - US 53
-      - US 14
-      - 欧洲(油管:破解资源君2.0) 37
-      - NL 29
+      - Japan 02
+      - Hong Kong 02
+      - Singapore 01
+      - Taiwan 02
+      - Taiwan 01
+      - Japan 01 2
+      - United States 01
+      - Canada 01
+      - Hong Kong 02 D
+      - Hong Kong 01 | 限速 [Lv-1]
+      - US_5000 @资源分享师
+      - US_8090 @资源分享师
+      - Relay_🇸🇬 SG-🇸🇬SG_713
+      - US_5003 @资源分享师 2
+      - US_5004 @资源分享师
+      - US_6379 @资源分享师
+      - US_8882 @资源分享师 2
+      - US_3306 @资源分享师
+      - US_1290
+      - US_8888 @资源分享师 2
+      - ""
+      - United States 02
+      - US_6697 @资源分享师 2
+      - US_5500 @资源分享师
+      - US_8882 @资源分享师
+      - US_8888 @资源分享师
+      - US_5001 @资源分享师
+      - US_5600 @资源分享师
+      - US_2376 @资源分享师 2
+      - US_0443 @资源分享师
+      - US_5000 @资源分享师 2
+      - US_8091 @资源分享师
+      - US_3389 @资源分享师
+      - US_8119 @资源分享师 2
+      - US_6697 @资源分享师
+      - US_5004 @资源分享师 2
+      - Hong Kong 03
+      - US_0443 @资源分享师 2
+      - US_9101 @资源分享师 2
+      - US_3389 @资源分享师 2
+      - US_5001 @资源分享师 2
+      - US_7307 @资源分享师
+      - ‌🇨🇦CA_02 @资源分享师
+      - Hong Kong 02 3
+      - US_7001 @资源分享师
+      - US_5601 @资源分享师
+      - US_7306 @资源分享师
+      - US_3306 @资源分享师 2
+      - US_2375 @资源分享师
+      - ‌🇨🇦CA_10 @资源分享师 2
+      - US_8881 @资源分享师
+      - US_9101 @资源分享师
+      - US_8009 @资源分享师
+      - US_6679 @资源分享师
+      - US_6679 @资源分享师 2
+      - US_8000 @资源分享师
+      - US_7002 @资源分享师
+      - US_8080 @资源分享师
+      - ‌🇨🇦CA_07 @资源分享师 2
+      - US_6379 @资源分享师 2
+      - CN 1｜openit.pw
+      - US_8119 @资源分享师
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 中国-11.26MB/s(Youtube:不良林)
-      - CN 9｜openit.pw
-      - US_1326
-      - US 2
-      - CN 2｜openit.pw
-      - 欧洲(油管:破解资源君2.0) 19
-      - 美国-4.27MB/s(Youtube:不良林)
-      - HK 1｜openit.pw
-      - 中国-6.30MB/s(Youtube:不良林)
-      - 中国-213.8KB/s(Youtube:不良林)
-      - US_1487🇺🇸US_1545
-      - US 38
-      - 美国(油管:破解资源君2.0) 13
-      - 美国-1.57MB/s(Youtube:不良林)
-      - 美国-3.49MB/s(Youtube:不良林)
-      - 美国-2.25MB/s(Youtube:不良林)
-      - 美国-3.42MB/s(Youtube:不良林)
-      - US 16
-      - 美国-2.46MB/s(Youtube:不良林)
-      - 美国-3.18MB/s(Youtube:不良林)
-      - NL 5
-      - NL 22
-      - NL 8
-      - US 5
-      - NL 10
-      - NL 17
-      - NL 19
-      - NL 21
-      - US 15｜openit.pw
-      - NL 20
-      - NL 28
-      - 俄罗斯联邦-3.92MB/s(Youtube:不良林)
-      - NL 27
-      - 荷兰-3.18MB/s(Youtube:不良林)
-      - 美国(油管:破解资源君2.0) 19
-      - (已存活1天)俄罗斯联邦-4.38MB/s(Youtube:不良林)
-      - NL 3
-      - NL 14
-      - 日本-3.86MB/s(Youtube:不良林)
-      - 俄罗斯联邦-3.17MB/s(Youtube:不良林)
-      - NL 2
-      - NL 11
-      - NL 12
-      - NL 15
-      - NL 25
-      - US 15
-      - NL 6
-      - NL 24
-      - 日本-3.53MB/s(Youtube:不良林)
-      - NL
-      - NL 13
-      - NL 18
-      - NL 16
-      - NL 23
-      - 俄罗斯联邦-4.49MB/s(Youtube:不良林)
-      - NL 9
-      - NL 26
-      - NL 4
-      - US 9
-      - (已存活1天)俄罗斯联邦-4.51MB/s(Youtube:不良林)
-      - 俄罗斯联邦-3.41MB/s(Youtube:不良林)
-      - US 13
-      - US 17
-      - US 3
-      - (已存活1天)俄罗斯联邦-3.49MB/s(Youtube:不良林)
-      - NL 7
-      - 俄罗斯联邦-1.57MB/s(Youtube:不良林)
-      - 美国-1.55MB/s(Youtube:不良林)
-      - 荷兰-3.22MB/s(Youtube:不良林)
-      - ZZ 2
-      - 欧洲(油管:破解资源君2.0) 9
-      - ZZ
-      - 荷兰-1.76MB/s(Youtube:不良林)
-      - LT
-      - US_1411🇺🇸US_1468
-      - US 37
-      - US 20
-      - FR 5
-      - US 6
-      - 美国(油管:破解资源君2.0) 27
-      - GB 2｜openit.pw
-      - US 42
-      - US 49
-      - US 29
-      - US 28
-      - US 41
-      - US 18
-      - 法国-257.6KB/s(Youtube:不良林)
-      - US 26
-      - US 22
-      - US 31
-      - 新加坡-3.69MB/s(Youtube:不良林)
-      - US 32
-      - DE 2
-      - US 23
-      - US 25
-      - US 27
-      - US 7
-      - US 43
-      - US 47
-      - RU
-      - US 10
-      - US 45
-      - 荷兰-1.44MB/s(Youtube:不良林)
-      - DE 4
-      - 荷兰-1.98MB/s(Youtube:不良林)
-      - 荷兰-1.34MB/s(Youtube:不良林)
-      - 新加坡(油管:破解资源君2.0) 2
-      - 荷兰-1.09MB/s(Youtube:不良林)
-      - GB_305
-      - RU 5
-      - DE 3
-      - US 40
-      - RU 7
-      - RU 4
-      - RU 6
-      - RU 2
-      - RU 8
-      - US 24
-      - DE 5
-      - 美国-1.60MB/s(Youtube:不良林)
-      - ZA 1｜openit.pw
-      - Relay_🇨🇳 CN-🇩🇪DE_90
-      - US 19
-      - US 51
-      - 荷兰-180.6KB/s(Youtube:不良林)
-      - US 48
-      - US 33
-      - US 21
-      - US 46
-      - US 39
-      - LT_388
-      - 欧洲(油管:破解资源君2.0) 33
-      - US 50
-      - RU 3
-      - FR 6
-      - HK 2
-      - US 30
-      - HK
-      - US 26｜openit.pw
-      - US 53
-      - US 14
-      - 欧洲(油管:破解资源君2.0) 37
-      - NL 29
+      - Japan 02
+      - Hong Kong 02
+      - Singapore 01
+      - Taiwan 02
+      - Taiwan 01
+      - Japan 01 2
+      - United States 01
+      - Canada 01
+      - Hong Kong 02 D
+      - Hong Kong 01 | 限速 [Lv-1]
+      - US_5000 @资源分享师
+      - US_8090 @资源分享师
+      - Relay_🇸🇬 SG-🇸🇬SG_713
+      - US_5003 @资源分享师 2
+      - US_5004 @资源分享师
+      - US_6379 @资源分享师
+      - US_8882 @资源分享师 2
+      - US_3306 @资源分享师
+      - US_1290
+      - US_8888 @资源分享师 2
+      - ""
+      - United States 02
+      - US_6697 @资源分享师 2
+      - US_5500 @资源分享师
+      - US_8882 @资源分享师
+      - US_8888 @资源分享师
+      - US_5001 @资源分享师
+      - US_5600 @资源分享师
+      - US_2376 @资源分享师 2
+      - US_0443 @资源分享师
+      - US_5000 @资源分享师 2
+      - US_8091 @资源分享师
+      - US_3389 @资源分享师
+      - US_8119 @资源分享师 2
+      - US_6697 @资源分享师
+      - US_5004 @资源分享师 2
+      - Hong Kong 03
+      - US_0443 @资源分享师 2
+      - US_9101 @资源分享师 2
+      - US_3389 @资源分享师 2
+      - US_5001 @资源分享师 2
+      - US_7307 @资源分享师
+      - ‌🇨🇦CA_02 @资源分享师
+      - Hong Kong 02 3
+      - US_7001 @资源分享师
+      - US_5601 @资源分享师
+      - US_7306 @资源分享师
+      - US_3306 @资源分享师 2
+      - US_2375 @资源分享师
+      - ‌🇨🇦CA_10 @资源分享师 2
+      - US_8881 @资源分享师
+      - US_9101 @资源分享师
+      - US_8009 @资源分享师
+      - US_6679 @资源分享师
+      - US_6679 @资源分享师 2
+      - US_8000 @资源分享师
+      - US_7002 @资源分享师
+      - US_8080 @资源分享师
+      - ‌🇨🇦CA_07 @资源分享师 2
+      - US_6379 @资源分享师 2
+      - CN 1｜openit.pw
+      - US_8119 @资源分享师
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 中国-11.26MB/s(Youtube:不良林)
-      - CN 9｜openit.pw
-      - US_1326
-      - US 2
-      - CN 2｜openit.pw
-      - 欧洲(油管:破解资源君2.0) 19
-      - 美国-4.27MB/s(Youtube:不良林)
-      - HK 1｜openit.pw
-      - 中国-6.30MB/s(Youtube:不良林)
-      - 中国-213.8KB/s(Youtube:不良林)
-      - US_1487🇺🇸US_1545
-      - US 38
-      - 美国(油管:破解资源君2.0) 13
-      - 美国-1.57MB/s(Youtube:不良林)
-      - 美国-3.49MB/s(Youtube:不良林)
-      - 美国-2.25MB/s(Youtube:不良林)
-      - 美国-3.42MB/s(Youtube:不良林)
-      - US 16
-      - 美国-2.46MB/s(Youtube:不良林)
-      - 美国-3.18MB/s(Youtube:不良林)
-      - NL 5
-      - NL 22
-      - NL 8
-      - US 5
-      - NL 10
-      - NL 17
-      - NL 19
-      - NL 21
-      - US 15｜openit.pw
-      - NL 20
-      - NL 28
-      - 俄罗斯联邦-3.92MB/s(Youtube:不良林)
-      - NL 27
-      - 荷兰-3.18MB/s(Youtube:不良林)
-      - 美国(油管:破解资源君2.0) 19
-      - (已存活1天)俄罗斯联邦-4.38MB/s(Youtube:不良林)
-      - NL 3
-      - NL 14
-      - 日本-3.86MB/s(Youtube:不良林)
-      - 俄罗斯联邦-3.17MB/s(Youtube:不良林)
-      - NL 2
-      - NL 11
-      - NL 12
-      - NL 15
-      - NL 25
-      - US 15
-      - NL 6
-      - NL 24
-      - 日本-3.53MB/s(Youtube:不良林)
-      - NL
-      - NL 13
-      - NL 18
-      - NL 16
-      - NL 23
-      - 俄罗斯联邦-4.49MB/s(Youtube:不良林)
-      - NL 9
-      - NL 26
-      - NL 4
-      - US 9
-      - (已存活1天)俄罗斯联邦-4.51MB/s(Youtube:不良林)
-      - 俄罗斯联邦-3.41MB/s(Youtube:不良林)
-      - US 13
-      - US 17
-      - US 3
-      - (已存活1天)俄罗斯联邦-3.49MB/s(Youtube:不良林)
-      - NL 7
-      - 俄罗斯联邦-1.57MB/s(Youtube:不良林)
-      - 美国-1.55MB/s(Youtube:不良林)
-      - 荷兰-3.22MB/s(Youtube:不良林)
-      - ZZ 2
-      - 欧洲(油管:破解资源君2.0) 9
-      - ZZ
-      - 荷兰-1.76MB/s(Youtube:不良林)
-      - LT
-      - US_1411🇺🇸US_1468
-      - US 37
-      - US 20
-      - FR 5
-      - US 6
-      - 美国(油管:破解资源君2.0) 27
-      - GB 2｜openit.pw
-      - US 42
-      - US 49
-      - US 29
-      - US 28
-      - US 41
-      - US 18
-      - 法国-257.6KB/s(Youtube:不良林)
-      - US 26
-      - US 22
-      - US 31
-      - 新加坡-3.69MB/s(Youtube:不良林)
-      - US 32
-      - DE 2
-      - US 23
-      - US 25
-      - US 27
-      - US 7
-      - US 43
-      - US 47
-      - RU
-      - US 10
-      - US 45
-      - 荷兰-1.44MB/s(Youtube:不良林)
-      - DE 4
-      - 荷兰-1.98MB/s(Youtube:不良林)
-      - 荷兰-1.34MB/s(Youtube:不良林)
-      - 新加坡(油管:破解资源君2.0) 2
-      - 荷兰-1.09MB/s(Youtube:不良林)
-      - GB_305
-      - RU 5
-      - DE 3
-      - US 40
-      - RU 7
-      - RU 4
-      - RU 6
-      - RU 2
-      - RU 8
-      - US 24
-      - DE 5
-      - 美国-1.60MB/s(Youtube:不良林)
-      - ZA 1｜openit.pw
-      - Relay_🇨🇳 CN-🇩🇪DE_90
-      - US 19
-      - US 51
-      - 荷兰-180.6KB/s(Youtube:不良林)
-      - US 48
-      - US 33
-      - US 21
-      - US 46
-      - US 39
-      - LT_388
-      - 欧洲(油管:破解资源君2.0) 33
-      - US 50
-      - RU 3
-      - FR 6
-      - HK 2
-      - US 30
-      - HK
-      - US 26｜openit.pw
-      - US 53
-      - US 14
-      - 欧洲(油管:破解资源君2.0) 37
-      - NL 29
+      - Japan 02
+      - Hong Kong 02
+      - Singapore 01
+      - Taiwan 02
+      - Taiwan 01
+      - Japan 01 2
+      - United States 01
+      - Canada 01
+      - Hong Kong 02 D
+      - Hong Kong 01 | 限速 [Lv-1]
+      - US_5000 @资源分享师
+      - US_8090 @资源分享师
+      - Relay_🇸🇬 SG-🇸🇬SG_713
+      - US_5003 @资源分享师 2
+      - US_5004 @资源分享师
+      - US_6379 @资源分享师
+      - US_8882 @资源分享师 2
+      - US_3306 @资源分享师
+      - US_1290
+      - US_8888 @资源分享师 2
+      - ""
+      - United States 02
+      - US_6697 @资源分享师 2
+      - US_5500 @资源分享师
+      - US_8882 @资源分享师
+      - US_8888 @资源分享师
+      - US_5001 @资源分享师
+      - US_5600 @资源分享师
+      - US_2376 @资源分享师 2
+      - US_0443 @资源分享师
+      - US_5000 @资源分享师 2
+      - US_8091 @资源分享师
+      - US_3389 @资源分享师
+      - US_8119 @资源分享师 2
+      - US_6697 @资源分享师
+      - US_5004 @资源分享师 2
+      - Hong Kong 03
+      - US_0443 @资源分享师 2
+      - US_9101 @资源分享师 2
+      - US_3389 @资源分享师 2
+      - US_5001 @资源分享师 2
+      - US_7307 @资源分享师
+      - ‌🇨🇦CA_02 @资源分享师
+      - Hong Kong 02 3
+      - US_7001 @资源分享师
+      - US_5601 @资源分享师
+      - US_7306 @资源分享师
+      - US_3306 @资源分享师 2
+      - US_2375 @资源分享师
+      - ‌🇨🇦CA_10 @资源分享师 2
+      - US_8881 @资源分享师
+      - US_9101 @资源分享师
+      - US_8009 @资源分享师
+      - US_6679 @资源分享师
+      - US_6679 @资源分享师 2
+      - US_8000 @资源分享师
+      - US_7002 @资源分享师
+      - US_8080 @资源分享师
+      - ‌🇨🇦CA_07 @资源分享师 2
+      - US_6379 @资源分享师 2
+      - CN 1｜openit.pw
+      - US_8119 @资源分享师
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1228,150 +572,68 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 中国-11.26MB/s(Youtube:不良林)
-      - CN 9｜openit.pw
-      - US_1326
-      - US 2
-      - CN 2｜openit.pw
-      - 欧洲(油管:破解资源君2.0) 19
-      - 美国-4.27MB/s(Youtube:不良林)
-      - HK 1｜openit.pw
-      - 中国-6.30MB/s(Youtube:不良林)
-      - 中国-213.8KB/s(Youtube:不良林)
-      - US_1487🇺🇸US_1545
-      - US 38
-      - 美国(油管:破解资源君2.0) 13
-      - 美国-1.57MB/s(Youtube:不良林)
-      - 美国-3.49MB/s(Youtube:不良林)
-      - 美国-2.25MB/s(Youtube:不良林)
-      - 美国-3.42MB/s(Youtube:不良林)
-      - US 16
-      - 美国-2.46MB/s(Youtube:不良林)
-      - 美国-3.18MB/s(Youtube:不良林)
-      - NL 5
-      - NL 22
-      - NL 8
-      - US 5
-      - NL 10
-      - NL 17
-      - NL 19
-      - NL 21
-      - US 15｜openit.pw
-      - NL 20
-      - NL 28
-      - 俄罗斯联邦-3.92MB/s(Youtube:不良林)
-      - NL 27
-      - 荷兰-3.18MB/s(Youtube:不良林)
-      - 美国(油管:破解资源君2.0) 19
-      - (已存活1天)俄罗斯联邦-4.38MB/s(Youtube:不良林)
-      - NL 3
-      - NL 14
-      - 日本-3.86MB/s(Youtube:不良林)
-      - 俄罗斯联邦-3.17MB/s(Youtube:不良林)
-      - NL 2
-      - NL 11
-      - NL 12
-      - NL 15
-      - NL 25
-      - US 15
-      - NL 6
-      - NL 24
-      - 日本-3.53MB/s(Youtube:不良林)
-      - NL
-      - NL 13
-      - NL 18
-      - NL 16
-      - NL 23
-      - 俄罗斯联邦-4.49MB/s(Youtube:不良林)
-      - NL 9
-      - NL 26
-      - NL 4
-      - US 9
-      - (已存活1天)俄罗斯联邦-4.51MB/s(Youtube:不良林)
-      - 俄罗斯联邦-3.41MB/s(Youtube:不良林)
-      - US 13
-      - US 17
-      - US 3
-      - (已存活1天)俄罗斯联邦-3.49MB/s(Youtube:不良林)
-      - NL 7
-      - 俄罗斯联邦-1.57MB/s(Youtube:不良林)
-      - 美国-1.55MB/s(Youtube:不良林)
-      - 荷兰-3.22MB/s(Youtube:不良林)
-      - ZZ 2
-      - 欧洲(油管:破解资源君2.0) 9
-      - ZZ
-      - 荷兰-1.76MB/s(Youtube:不良林)
-      - LT
-      - US_1411🇺🇸US_1468
-      - US 37
-      - US 20
-      - FR 5
-      - US 6
-      - 美国(油管:破解资源君2.0) 27
-      - GB 2｜openit.pw
-      - US 42
-      - US 49
-      - US 29
-      - US 28
-      - US 41
-      - US 18
-      - 法国-257.6KB/s(Youtube:不良林)
-      - US 26
-      - US 22
-      - US 31
-      - 新加坡-3.69MB/s(Youtube:不良林)
-      - US 32
-      - DE 2
-      - US 23
-      - US 25
-      - US 27
-      - US 7
-      - US 43
-      - US 47
-      - RU
-      - US 10
-      - US 45
-      - 荷兰-1.44MB/s(Youtube:不良林)
-      - DE 4
-      - 荷兰-1.98MB/s(Youtube:不良林)
-      - 荷兰-1.34MB/s(Youtube:不良林)
-      - 新加坡(油管:破解资源君2.0) 2
-      - 荷兰-1.09MB/s(Youtube:不良林)
-      - GB_305
-      - RU 5
-      - DE 3
-      - US 40
-      - RU 7
-      - RU 4
-      - RU 6
-      - RU 2
-      - RU 8
-      - US 24
-      - DE 5
-      - 美国-1.60MB/s(Youtube:不良林)
-      - ZA 1｜openit.pw
-      - Relay_🇨🇳 CN-🇩🇪DE_90
-      - US 19
-      - US 51
-      - 荷兰-180.6KB/s(Youtube:不良林)
-      - US 48
-      - US 33
-      - US 21
-      - US 46
-      - US 39
-      - LT_388
-      - 欧洲(油管:破解资源君2.0) 33
-      - US 50
-      - RU 3
-      - FR 6
-      - HK 2
-      - US 30
-      - HK
-      - US 26｜openit.pw
-      - US 53
-      - US 14
-      - 欧洲(油管:破解资源君2.0) 37
-      - NL 29
+      - Japan 02
+      - Hong Kong 02
+      - Singapore 01
+      - Taiwan 02
+      - Taiwan 01
+      - Japan 01 2
+      - United States 01
+      - Canada 01
+      - Hong Kong 02 D
+      - Hong Kong 01 | 限速 [Lv-1]
+      - US_5000 @资源分享师
+      - US_8090 @资源分享师
+      - Relay_🇸🇬 SG-🇸🇬SG_713
+      - US_5003 @资源分享师 2
+      - US_5004 @资源分享师
+      - US_6379 @资源分享师
+      - US_8882 @资源分享师 2
+      - US_3306 @资源分享师
+      - US_1290
+      - US_8888 @资源分享师 2
+      - ""
+      - United States 02
+      - US_6697 @资源分享师 2
+      - US_5500 @资源分享师
+      - US_8882 @资源分享师
+      - US_8888 @资源分享师
+      - US_5001 @资源分享师
+      - US_5600 @资源分享师
+      - US_2376 @资源分享师 2
+      - US_0443 @资源分享师
+      - US_5000 @资源分享师 2
+      - US_8091 @资源分享师
+      - US_3389 @资源分享师
+      - US_8119 @资源分享师 2
+      - US_6697 @资源分享师
+      - US_5004 @资源分享师 2
+      - Hong Kong 03
+      - US_0443 @资源分享师 2
+      - US_9101 @资源分享师 2
+      - US_3389 @资源分享师 2
+      - US_5001 @资源分享师 2
+      - US_7307 @资源分享师
+      - ‌🇨🇦CA_02 @资源分享师
+      - Hong Kong 02 3
+      - US_7001 @资源分享师
+      - US_5601 @资源分享师
+      - US_7306 @资源分享师
+      - US_3306 @资源分享师 2
+      - US_2375 @资源分享师
+      - ‌🇨🇦CA_10 @资源分享师 2
+      - US_8881 @资源分享师
+      - US_9101 @资源分享师
+      - US_8009 @资源分享师
+      - US_6679 @资源分享师
+      - US_6679 @资源分享师 2
+      - US_8000 @资源分享师
+      - US_7002 @资源分享师
+      - US_8080 @资源分享师
+      - ‌🇨🇦CA_07 @资源分享师 2
+      - US_6379 @资源分享师 2
+      - CN 1｜openit.pw
+      - US_8119 @资源分享师
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
