@@ -5,203 +5,87 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: HK 7｜openit.pw, server: 43.229.153.148, port: 50418, type: trojan, password: 5d1b3b0a-de2a-4731-938d-4c7e15f034c1, skip-cert-verify: true, udp: true}
-  - {name: CN 3｜openit.pw, server: linux.nameserversv3.com, port: 9205, type: ss, cipher: aes-256-gcm, password: 269f71b9-c45b-43f3-8c48-eb5f986aa707, udp: true}
-  - {name: US 7｜openit.pw, server: azhj001.xiba1.xyz, port: 20800, type: trojan, password: 3d6e81e4-c6df-32ad-a808-e83d4fd1ca1a, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
-  - {name: CN 4｜openit.pw, server: iiiieeepppplll.zhengzhongfeizhu.xyz, port: 34002, type: trojan, password: 177501cc-f0c2-3cc3-b9a7-8c1e8e27655f, sni: iiiieeepppplll.zhengzhongfeizhu.xyz, skip-cert-verify: true, udp: true}
-  - {name: "", server: m4.40010010.xyz, port: 37121, type: vmess, uuid: 575e4d92-1056-44c2-8cac-75ef1c859ad5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: CN 5｜openit.pw, server: uiug.expirationv3.com, port: 9405, type: ss, cipher: aes-256-gcm, password: 269f71b9-c45b-43f3-8c48-eb5f986aa707, udp: true}
-  - {name: NONE, server: hk-hkg-sh-hk-02-tr.cdn.savoy.click, port: 21089, type: trojan, password: kFyvvCcvMXQKFcJZWuxcdTZOFummlVbf, sni: hk-hkg-sh-hk-02-tr.cdn.savoy.click, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇳 CN-🇭🇰HK_82, server: iiiieeepppplll.zhengzhongfeizhu.xyz, port: 34003, type: trojan, password: 177501cc-f0c2-3cc3-b9a7-8c1e8e27655f, sni: iiiieeepppplll.zhengzhongfeizhu.xyz, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_1341, server: lz717.aijiasu.xyz, port: 30803, type: vmess, uuid: 5833a0df-fa04-446b-d6cf-00ab174097df, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: CN 6｜openit.pw, server: sadfsn.domainsv3.com, port: 9403, type: ss, cipher: aes-256-gcm, password: 269f71b9-c45b-43f3-8c48-eb5f986aa707, udp: true}
-  - {name: SG_757, server: 161.117.229.166, port: 8888, type: vmess, uuid: 081f8acf-742b-4af5-ca99-6186c80e635b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US 13｜openit.pw, server: azhj001.xiba1.xyz, port: 20715, type: trojan, password: 3d6e81e4-c6df-32ad-a808-e83d4fd1ca1a, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
-  - {name: CA_47, server: 161.129.60.17, port: 25634, type: trojan, password: 177501cc-f0c2-3cc3-b9a7-8c1e8e27655f, skip-cert-verify: true, udp: true}
-  - {name: CA_48, server: 161.129.60.17, port: 25634, type: trojan, password: 7688df6f-bf65-3368-b55e-d78efea6a582, skip-cert-verify: true, udp: true}
-  - {name: HK 6｜openit.pw, server: 20.187.95.117, port: 8443, type: trojan, password: 190e2a95-63f0-4a9c-9aef-9f2ec6e542de, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇳 CN-🇭🇰HK_84, server: iiiieeepppplll.zhengzhongfeizhu.xyz, port: 34001, type: trojan, password: 177501cc-f0c2-3cc3-b9a7-8c1e8e27655f, sni: iiiieeepppplll.zhengzhongfeizhu.xyz, skip-cert-verify: true, udp: true}
-  - {name: US 9｜openit.pw, server: 104.168.144.215, port: 443, type: trojan, password: srGSKqR5Fv, skip-cert-verify: true, udp: true}
-  - {name: US 10｜openit.pw, server: azhj001.xiba1.xyz, port: 20716, type: trojan, password: 3d6e81e4-c6df-32ad-a808-e83d4fd1ca1a, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
-  - {name: " 2", server: 195.133.53.192, port: 43688, type: vmess, uuid: bd1c8b57-0a9e-4e9f-a261-48e90c871e41, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 195.133.53.192}, udp: true}
-  - {name: RO_623, server: 185.126.116.119, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX, udp: true}
-  - {name: RO_614, server: 185.126.116.119, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
-  - {name: DE_183, server: 49.12.203.80, port: 40960, type: ss, cipher: aes-256-gcm, password: 6kA7b3f9Aw2508erQ3W7D4, udp: true}
-  - {name: LT_364, server: 213.183.53.198, port: 9093, type: ss, cipher: aes-256-cfb, password: wfLC2y7rzZyCmuyt, udp: true}
-  - {name: 185.126.116.119:9043, server: 185.126.116.119, port: 9043, type: ss, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF, udp: true}
-  - {name: " 3", server: 199.19.226.174, port: 443, type: vmess, uuid: 4858f70a-b37c-4bdf-ad41-3f9b8a6346c9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2, ws-headers: {Host: 199.19.226.174}, udp: true}
-  - {name: US_1027, server: 138.68.248.130, port: 811, type: ss, cipher: chacha20-ietf-poly1305, password: Ultr@r00t_2017, udp: true}
-  - {name: US_1327, server: 152.70.235.207, port: 35412, type: vmess, uuid: 70d95308-2a61-4f93-f139-9103d0587fd9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: LT_367, server: 213.183.53.198, port: 9003, type: ss, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_1370, server: fhcamd2.gaox.ml, port: 443, type: trojan, password: dbf9bf9c-2c3f-474a-8031-d4c00666a989, sni: fhcamd2.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: LT_350, server: 213.183.53.198, port: 9059, type: ss, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY, udp: true}
-  - {name: Relay_🇨🇳 CN-🇩🇪DE_80, server: ingress-i1.onebox6.org, port: 38701, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: ingress-i1.onebox6.org}, udp: true}
-  - {name: 13.235.159.212:56296, server: 13.235.159.212, port: 56296, type: ss, cipher: chacha20-ietf-poly1305, password: lawIkadBid, udp: true}
-  - {name: HK 5｜openit.pw, server: azhj001.xiba1.xyz, port: 20720, type: trojan, password: 3d6e81e4-c6df-32ad-a808-e83d4fd1ca1a, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
-  - {name: HK 3｜openit.pw, server: azhj001.xiba1.xyz, port: 20725, type: trojan, password: 3d6e81e4-c6df-32ad-a808-e83d4fd1ca1a, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
-  - {name: US 4｜openit.pw, server: azhj001.xiba1.xyz, port: 20722, type: trojan, password: 3d6e81e4-c6df-32ad-a808-e83d4fd1ca1a, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
-  - {name: CN 5｜openit.pw 2, server: linux.nameserversv3.com, port: 9206, type: ss, cipher: aes-256-gcm, password: 269f71b9-c45b-43f3-8c48-eb5f986aa707, udp: true}
-  - {name: Relay_🇨🇳 CN-🇭🇰HK_85, server: iiiieeepppplll.zhengzhongfeizhu.xyz, port: 34004, type: trojan, password: 177501cc-f0c2-3cc3-b9a7-8c1e8e27655f, sni: iiiieeepppplll.zhengzhongfeizhu.xyz, skip-cert-verify: true, udp: true}
-  - {name: SG 1｜openit.pw, server: s4.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s4.hazz.win, skip-cert-verify: true, udp: true}
-  - {name: CA_68, server: 138.197.166.205, port: 811, type: ss, cipher: chacha20-ietf-poly1305, password: Ultr@r00t_2017, udp: true}
-  - {name: US 14｜openit.pw, server: hj001.xiba1.xyz, port: 20762, type: trojan, password: 3d6e81e4-c6df-32ad-a808-e83d4fd1ca1a, sni: hj001.xiba1.xyz, skip-cert-verify: true, udp: true}
-  - {name: LT_361, server: 213.183.53.198, port: 9024, type: ss, cipher: aes-256-cfb, password: BejrQvtu9sqUeNuZ, udp: true}
-  - {name: 217.30.10.68:9064, server: 217.30.10.68, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH, udp: true}
-  - {name: GB 4｜openit.pw, server: 138.3.208.203, port: 43298, type: vmess, uuid: 42104b60-1988-4063-96ce-5c4b20b53130, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: " 4", server: 120.240.55.137, port: 38201, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: 120.240.55.137}, udp: true}
-  - {name: RU_717, server: 217.30.10.68, port: 9005, type: ss, cipher: aes-256-cfb, password: ZET59LF6DvCC8KVt, udp: true}
+  - {name: NONE, server: s3.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s3.hazz.win, skip-cert-verify: true, udp: true}
+  - {name: 85.208.108.93:8881, server: 85.208.108.93, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: NONE 2, server: us218.hootfun.top, port: 32444, type: trojan, password: 935f34c1-1713-402c-bfe1-f051cf49d370, sni: us218.hootfun.top, skip-cert-verify: true, udp: true}
+  - {name: 138.68.248.130:811, server: 138.68.248.130, port: 811, type: ss, cipher: chacha20-ietf-poly1305, password: Ultr@r00t_2017, udp: true}
+  - {name: 51.195.136.209:50004, server: 51.195.136.209, port: 50004, type: ss, cipher: aes-256-cfb, password: !<str> 4415934295, udp: true}
+  - {name: 195.154.200.150:443, server: 195.154.200.150, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 85.208.108.93:6379, server: 85.208.108.93, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: 195.154.200.150:9101, server: 195.154.200.150, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: 195.154.200.150:3306, server: 195.154.200.150, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 85.208.108.93:6679, server: 85.208.108.93, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: 85.208.108.93:7306, server: 85.208.108.93, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: Relay_🇷🇺 RU-🇷🇺RU_626, server: ru.hootfun.top, port: 45112, type: trojan, password: 935f34c1-1713-402c-bfe1-f051cf49d370, sni: ru.hootfun.top, skip-cert-verify: true, udp: true}
+  - {name: 138.197.166.205:811, server: 138.197.166.205, port: 811, type: ss, cipher: chacha20-ietf-poly1305, password: Ultr@r00t_2017, udp: true}
+  - {name: 85.208.108.93:8118, server: 85.208.108.93, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: 85.208.108.93:8119, server: 85.208.108.93, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: 85.208.108.93:7002, server: 85.208.108.93, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - HK 7｜openit.pw
-      - CN 3｜openit.pw
-      - US 7｜openit.pw
-      - CN 4｜openit.pw
-      - ""
-      - CN 5｜openit.pw
       - NONE
-      - Relay_🇨🇳 CN-🇭🇰HK_82
-      - Relay_🇺🇸US-🇺🇸US_1341
-      - CN 6｜openit.pw
-      - SG_757
-      - US 13｜openit.pw
-      - CA_47
-      - CA_48
-      - HK 6｜openit.pw
-      - Relay_🇨🇳 CN-🇭🇰HK_84
-      - US 9｜openit.pw
-      - US 10｜openit.pw
-      - " 2"
-      - RO_623
-      - RO_614
-      - DE_183
-      - LT_364
-      - 185.126.116.119:9043
-      - " 3"
-      - US_1027
-      - US_1327
-      - LT_367
-      - Relay_🇺🇸US-🇺🇸US_1370
-      - LT_350
-      - Relay_🇨🇳 CN-🇩🇪DE_80
-      - 13.235.159.212:56296
-      - HK 5｜openit.pw
-      - HK 3｜openit.pw
-      - US 4｜openit.pw
-      - CN 5｜openit.pw 2
-      - Relay_🇨🇳 CN-🇭🇰HK_85
-      - SG 1｜openit.pw
-      - CA_68
-      - US 14｜openit.pw
-      - LT_361
-      - 217.30.10.68:9064
-      - GB 4｜openit.pw
-      - " 4"
-      - RU_717
+      - 85.208.108.93:8881
+      - NONE 2
+      - 138.68.248.130:811
+      - 51.195.136.209:50004
+      - 195.154.200.150:443
+      - 85.208.108.93:6379
+      - 195.154.200.150:9101
+      - 195.154.200.150:3306
+      - 85.208.108.93:6679
+      - 85.208.108.93:7306
+      - Relay_🇷🇺 RU-🇷🇺RU_626
+      - 138.197.166.205:811
+      - 85.208.108.93:8118
+      - 85.208.108.93:8119
+      - 85.208.108.93:7002
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - HK 7｜openit.pw
-      - CN 3｜openit.pw
-      - US 7｜openit.pw
-      - CN 4｜openit.pw
-      - ""
-      - CN 5｜openit.pw
       - NONE
-      - Relay_🇨🇳 CN-🇭🇰HK_82
-      - Relay_🇺🇸US-🇺🇸US_1341
-      - CN 6｜openit.pw
-      - SG_757
-      - US 13｜openit.pw
-      - CA_47
-      - CA_48
-      - HK 6｜openit.pw
-      - Relay_🇨🇳 CN-🇭🇰HK_84
-      - US 9｜openit.pw
-      - US 10｜openit.pw
-      - " 2"
-      - RO_623
-      - RO_614
-      - DE_183
-      - LT_364
-      - 185.126.116.119:9043
-      - " 3"
-      - US_1027
-      - US_1327
-      - LT_367
-      - Relay_🇺🇸US-🇺🇸US_1370
-      - LT_350
-      - Relay_🇨🇳 CN-🇩🇪DE_80
-      - 13.235.159.212:56296
-      - HK 5｜openit.pw
-      - HK 3｜openit.pw
-      - US 4｜openit.pw
-      - CN 5｜openit.pw 2
-      - Relay_🇨🇳 CN-🇭🇰HK_85
-      - SG 1｜openit.pw
-      - CA_68
-      - US 14｜openit.pw
-      - LT_361
-      - 217.30.10.68:9064
-      - GB 4｜openit.pw
-      - " 4"
-      - RU_717
+      - 85.208.108.93:8881
+      - NONE 2
+      - 138.68.248.130:811
+      - 51.195.136.209:50004
+      - 195.154.200.150:443
+      - 85.208.108.93:6379
+      - 195.154.200.150:9101
+      - 195.154.200.150:3306
+      - 85.208.108.93:6679
+      - 85.208.108.93:7306
+      - Relay_🇷🇺 RU-🇷🇺RU_626
+      - 138.197.166.205:811
+      - 85.208.108.93:8118
+      - 85.208.108.93:8119
+      - 85.208.108.93:7002
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - HK 7｜openit.pw
-      - CN 3｜openit.pw
-      - US 7｜openit.pw
-      - CN 4｜openit.pw
-      - ""
-      - CN 5｜openit.pw
       - NONE
-      - Relay_🇨🇳 CN-🇭🇰HK_82
-      - Relay_🇺🇸US-🇺🇸US_1341
-      - CN 6｜openit.pw
-      - SG_757
-      - US 13｜openit.pw
-      - CA_47
-      - CA_48
-      - HK 6｜openit.pw
-      - Relay_🇨🇳 CN-🇭🇰HK_84
-      - US 9｜openit.pw
-      - US 10｜openit.pw
-      - " 2"
-      - RO_623
-      - RO_614
-      - DE_183
-      - LT_364
-      - 185.126.116.119:9043
-      - " 3"
-      - US_1027
-      - US_1327
-      - LT_367
-      - Relay_🇺🇸US-🇺🇸US_1370
-      - LT_350
-      - Relay_🇨🇳 CN-🇩🇪DE_80
-      - 13.235.159.212:56296
-      - HK 5｜openit.pw
-      - HK 3｜openit.pw
-      - US 4｜openit.pw
-      - CN 5｜openit.pw 2
-      - Relay_🇨🇳 CN-🇭🇰HK_85
-      - SG 1｜openit.pw
-      - CA_68
-      - US 14｜openit.pw
-      - LT_361
-      - 217.30.10.68:9064
-      - GB 4｜openit.pw
-      - " 4"
-      - RU_717
+      - 85.208.108.93:8881
+      - NONE 2
+      - 138.68.248.130:811
+      - 51.195.136.209:50004
+      - 195.154.200.150:443
+      - 85.208.108.93:6379
+      - 195.154.200.150:9101
+      - 195.154.200.150:3306
+      - 85.208.108.93:6679
+      - 85.208.108.93:7306
+      - Relay_🇷🇺 RU-🇷🇺RU_626
+      - 138.197.166.205:811
+      - 85.208.108.93:8118
+      - 85.208.108.93:8119
+      - 85.208.108.93:7002
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -220,51 +104,22 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - HK 7｜openit.pw
-      - CN 3｜openit.pw
-      - US 7｜openit.pw
-      - CN 4｜openit.pw
-      - ""
-      - CN 5｜openit.pw
       - NONE
-      - Relay_🇨🇳 CN-🇭🇰HK_82
-      - Relay_🇺🇸US-🇺🇸US_1341
-      - CN 6｜openit.pw
-      - SG_757
-      - US 13｜openit.pw
-      - CA_47
-      - CA_48
-      - HK 6｜openit.pw
-      - Relay_🇨🇳 CN-🇭🇰HK_84
-      - US 9｜openit.pw
-      - US 10｜openit.pw
-      - " 2"
-      - RO_623
-      - RO_614
-      - DE_183
-      - LT_364
-      - 185.126.116.119:9043
-      - " 3"
-      - US_1027
-      - US_1327
-      - LT_367
-      - Relay_🇺🇸US-🇺🇸US_1370
-      - LT_350
-      - Relay_🇨🇳 CN-🇩🇪DE_80
-      - 13.235.159.212:56296
-      - HK 5｜openit.pw
-      - HK 3｜openit.pw
-      - US 4｜openit.pw
-      - CN 5｜openit.pw 2
-      - Relay_🇨🇳 CN-🇭🇰HK_85
-      - SG 1｜openit.pw
-      - CA_68
-      - US 14｜openit.pw
-      - LT_361
-      - 217.30.10.68:9064
-      - GB 4｜openit.pw
-      - " 4"
-      - RU_717
+      - 85.208.108.93:8881
+      - NONE 2
+      - 138.68.248.130:811
+      - 51.195.136.209:50004
+      - 195.154.200.150:443
+      - 85.208.108.93:6379
+      - 195.154.200.150:9101
+      - 195.154.200.150:3306
+      - 85.208.108.93:6679
+      - 85.208.108.93:7306
+      - Relay_🇷🇺 RU-🇷🇺RU_626
+      - 138.197.166.205:811
+      - 85.208.108.93:8118
+      - 85.208.108.93:8119
+      - 85.208.108.93:7002
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -275,152 +130,65 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - HK 7｜openit.pw
-      - CN 3｜openit.pw
-      - US 7｜openit.pw
-      - CN 4｜openit.pw
-      - ""
-      - CN 5｜openit.pw
       - NONE
-      - Relay_🇨🇳 CN-🇭🇰HK_82
-      - Relay_🇺🇸US-🇺🇸US_1341
-      - CN 6｜openit.pw
-      - SG_757
-      - US 13｜openit.pw
-      - CA_47
-      - CA_48
-      - HK 6｜openit.pw
-      - Relay_🇨🇳 CN-🇭🇰HK_84
-      - US 9｜openit.pw
-      - US 10｜openit.pw
-      - " 2"
-      - RO_623
-      - RO_614
-      - DE_183
-      - LT_364
-      - 185.126.116.119:9043
-      - " 3"
-      - US_1027
-      - US_1327
-      - LT_367
-      - Relay_🇺🇸US-🇺🇸US_1370
-      - LT_350
-      - Relay_🇨🇳 CN-🇩🇪DE_80
-      - 13.235.159.212:56296
-      - HK 5｜openit.pw
-      - HK 3｜openit.pw
-      - US 4｜openit.pw
-      - CN 5｜openit.pw 2
-      - Relay_🇨🇳 CN-🇭🇰HK_85
-      - SG 1｜openit.pw
-      - CA_68
-      - US 14｜openit.pw
-      - LT_361
-      - 217.30.10.68:9064
-      - GB 4｜openit.pw
-      - " 4"
-      - RU_717
+      - 85.208.108.93:8881
+      - NONE 2
+      - 138.68.248.130:811
+      - 51.195.136.209:50004
+      - 195.154.200.150:443
+      - 85.208.108.93:6379
+      - 195.154.200.150:9101
+      - 195.154.200.150:3306
+      - 85.208.108.93:6679
+      - 85.208.108.93:7306
+      - Relay_🇷🇺 RU-🇷🇺RU_626
+      - 138.197.166.205:811
+      - 85.208.108.93:8118
+      - 85.208.108.93:8119
+      - 85.208.108.93:7002
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - HK 7｜openit.pw
-      - CN 3｜openit.pw
-      - US 7｜openit.pw
-      - CN 4｜openit.pw
-      - ""
-      - CN 5｜openit.pw
       - NONE
-      - Relay_🇨🇳 CN-🇭🇰HK_82
-      - Relay_🇺🇸US-🇺🇸US_1341
-      - CN 6｜openit.pw
-      - SG_757
-      - US 13｜openit.pw
-      - CA_47
-      - CA_48
-      - HK 6｜openit.pw
-      - Relay_🇨🇳 CN-🇭🇰HK_84
-      - US 9｜openit.pw
-      - US 10｜openit.pw
-      - " 2"
-      - RO_623
-      - RO_614
-      - DE_183
-      - LT_364
-      - 185.126.116.119:9043
-      - " 3"
-      - US_1027
-      - US_1327
-      - LT_367
-      - Relay_🇺🇸US-🇺🇸US_1370
-      - LT_350
-      - Relay_🇨🇳 CN-🇩🇪DE_80
-      - 13.235.159.212:56296
-      - HK 5｜openit.pw
-      - HK 3｜openit.pw
-      - US 4｜openit.pw
-      - CN 5｜openit.pw 2
-      - Relay_🇨🇳 CN-🇭🇰HK_85
-      - SG 1｜openit.pw
-      - CA_68
-      - US 14｜openit.pw
-      - LT_361
-      - 217.30.10.68:9064
-      - GB 4｜openit.pw
-      - " 4"
-      - RU_717
+      - 85.208.108.93:8881
+      - NONE 2
+      - 138.68.248.130:811
+      - 51.195.136.209:50004
+      - 195.154.200.150:443
+      - 85.208.108.93:6379
+      - 195.154.200.150:9101
+      - 195.154.200.150:3306
+      - 85.208.108.93:6679
+      - 85.208.108.93:7306
+      - Relay_🇷🇺 RU-🇷🇺RU_626
+      - 138.197.166.205:811
+      - 85.208.108.93:8118
+      - 85.208.108.93:8119
+      - 85.208.108.93:7002
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - HK 7｜openit.pw
-      - CN 3｜openit.pw
-      - US 7｜openit.pw
-      - CN 4｜openit.pw
-      - ""
-      - CN 5｜openit.pw
       - NONE
-      - Relay_🇨🇳 CN-🇭🇰HK_82
-      - Relay_🇺🇸US-🇺🇸US_1341
-      - CN 6｜openit.pw
-      - SG_757
-      - US 13｜openit.pw
-      - CA_47
-      - CA_48
-      - HK 6｜openit.pw
-      - Relay_🇨🇳 CN-🇭🇰HK_84
-      - US 9｜openit.pw
-      - US 10｜openit.pw
-      - " 2"
-      - RO_623
-      - RO_614
-      - DE_183
-      - LT_364
-      - 185.126.116.119:9043
-      - " 3"
-      - US_1027
-      - US_1327
-      - LT_367
-      - Relay_🇺🇸US-🇺🇸US_1370
-      - LT_350
-      - Relay_🇨🇳 CN-🇩🇪DE_80
-      - 13.235.159.212:56296
-      - HK 5｜openit.pw
-      - HK 3｜openit.pw
-      - US 4｜openit.pw
-      - CN 5｜openit.pw 2
-      - Relay_🇨🇳 CN-🇭🇰HK_85
-      - SG 1｜openit.pw
-      - CA_68
-      - US 14｜openit.pw
-      - LT_361
-      - 217.30.10.68:9064
-      - GB 4｜openit.pw
-      - " 4"
-      - RU_717
+      - 85.208.108.93:8881
+      - NONE 2
+      - 138.68.248.130:811
+      - 51.195.136.209:50004
+      - 195.154.200.150:443
+      - 85.208.108.93:6379
+      - 195.154.200.150:9101
+      - 195.154.200.150:3306
+      - 85.208.108.93:6679
+      - 85.208.108.93:7306
+      - Relay_🇷🇺 RU-🇷🇺RU_626
+      - 138.197.166.205:811
+      - 85.208.108.93:8118
+      - 85.208.108.93:8119
+      - 85.208.108.93:7002
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -436,51 +204,22 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - HK 7｜openit.pw
-      - CN 3｜openit.pw
-      - US 7｜openit.pw
-      - CN 4｜openit.pw
-      - ""
-      - CN 5｜openit.pw
       - NONE
-      - Relay_🇨🇳 CN-🇭🇰HK_82
-      - Relay_🇺🇸US-🇺🇸US_1341
-      - CN 6｜openit.pw
-      - SG_757
-      - US 13｜openit.pw
-      - CA_47
-      - CA_48
-      - HK 6｜openit.pw
-      - Relay_🇨🇳 CN-🇭🇰HK_84
-      - US 9｜openit.pw
-      - US 10｜openit.pw
-      - " 2"
-      - RO_623
-      - RO_614
-      - DE_183
-      - LT_364
-      - 185.126.116.119:9043
-      - " 3"
-      - US_1027
-      - US_1327
-      - LT_367
-      - Relay_🇺🇸US-🇺🇸US_1370
-      - LT_350
-      - Relay_🇨🇳 CN-🇩🇪DE_80
-      - 13.235.159.212:56296
-      - HK 5｜openit.pw
-      - HK 3｜openit.pw
-      - US 4｜openit.pw
-      - CN 5｜openit.pw 2
-      - Relay_🇨🇳 CN-🇭🇰HK_85
-      - SG 1｜openit.pw
-      - CA_68
-      - US 14｜openit.pw
-      - LT_361
-      - 217.30.10.68:9064
-      - GB 4｜openit.pw
-      - " 4"
-      - RU_717
+      - 85.208.108.93:8881
+      - NONE 2
+      - 138.68.248.130:811
+      - 51.195.136.209:50004
+      - 195.154.200.150:443
+      - 85.208.108.93:6379
+      - 195.154.200.150:9101
+      - 195.154.200.150:3306
+      - 85.208.108.93:6679
+      - 85.208.108.93:7306
+      - Relay_🇷🇺 RU-🇷🇺RU_626
+      - 138.197.166.205:811
+      - 85.208.108.93:8118
+      - 85.208.108.93:8119
+      - 85.208.108.93:7002
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
