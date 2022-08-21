@@ -5,183 +5,99 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: US_1363, server: 152.70.235.207, port: 35412, type: vmess, uuid: 70d95308-2a61-4f93-f139-9103d0587fd9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇷🇺RU-🇷🇺RU_841, server: 185.4.65.6, port: 21247, type: ss, cipher: aes-256-cfb, password: vDS9G2p, udp: true}
-  - {name: Relay_🇯🇵JP-🇯🇵JP_351, server: m4.40010010.xyz, port: 37121, type: vmess, uuid: 575e4d92-1056-44c2-8cac-75ef1c859ad5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: US_1557, server: 152.70.235.207, port: 35412, type: vmess, uuid: 70d95308-2a61-4f93-f139-9103d0587fd9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US 21｜openit.pw, server: lvfz2.hootfun.top, port: 51221, type: trojan, password: 935f34c1-1713-402c-bfe1-f051cf49d370, sni: lvfz2.hootfun.top, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇳CN-🇹🇼TW_135, server: cm.spacez.cloud, port: 30003, type: trojan, password: c9a3a61d-5d49-4158-9e60-6fa32684b122, sni: cm.spacez.cloud, skip-cert-verify: true, udp: true}
-  - {name: US 19｜openit.pw, server: lswjs.hootfun.top, port: 23313, type: trojan, password: 935f34c1-1713-402c-bfe1-f051cf49d370, sni: lswjs.hootfun.top, skip-cert-verify: true, udp: true}
-  - {name: US 2｜openit.pw, server: fhcamd2.gaox.ml, port: 443, type: trojan, password: dbf9bf9c-2c3f-474a-8031-d4c00666a989, sni: fhcamd2.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: 5, server: 103.186.149.132, port: 80, type: vmess, uuid: a479fc02-07c5-4864-8564-c4f147dfa488, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /shopvpn.net, ws-headers: {Host: 103.186.149.132}, udp: true}
-  - {name: 美国-4.27MB/s(Youtube:不良林), server: 199.19.226.174, port: 54065, type: trojan, password: snf6qHs1ym, skip-cert-verify: true, udp: true}
-  - {name: "", server: 146.56.184.242, port: 19570, type: vmess, uuid: 70a998e0-ba0b-4994-af50-8deed58cdbd9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 欧洲(油管:破解资源君2.0) 52, server: www.fuckdbuy.xyz, port: 57170, type: vmess, uuid: 0fcee849-28e7-4251-87f3-e7cb9d95c00f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: GB 5｜openit.pw, server: 138.3.208.203, port: 43298, type: vmess, uuid: 42104b60-1988-4063-96ce-5c4b20b53130, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 欧洲(油管:破解资源君2.0) 52 2, server: www.fuckdbuy.xyz, port: 57170, type: vmess, uuid: 0fcee849-28e7-4251-87f3-e7cb9d95c00f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇳CN-🇹🇼TW_160, server: 120.240.55.137, port: 38201, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: 120.240.55.137}, udp: true}
-  - {name: 欧洲(油管:破解资源君2.0) 9 2, server: www.fuckdbuy.xyz, port: 57170, type: vmess, uuid: 0fcee849-28e7-4251-87f3-e7cb9d95c00f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: GB 5｜openit.pw 2, server: 138.3.208.203, port: 43298, type: vmess, uuid: 42104b60-1988-4063-96ce-5c4b20b53130, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 欧洲(油管:破解资源君2.0) 9, server: www.fuckdbuy.xyz, port: 57170, type: vmess, uuid: 0fcee849-28e7-4251-87f3-e7cb9d95c00f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: JP 2｜openit.pw, server: kr1.api-aws.com, port: 443, type: trojan, password: ca3a57c6-9bb5-4d19-876d-4552de4bb959, sni: kr1.api-aws.com, skip-cert-verify: true, udp: true}
-  - {name: US_1515🇺🇸US_1533, server: 152.70.235.207, port: 35412, type: vmess, uuid: 70d95308-2a61-4f93-f139-9103d0587fd9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 欧洲(油管:破解资源君2.0) 2, server: online.uc.edu, port: 80, type: vmess, uuid: e5d7063b-afbc-47bb-a913-e459a7714830, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /vpnneo, ws-headers: {Host: hurricane3.nextvpn.cc}, udp: true}
-  - {name: SE_741, server: 138.3.208.203, port: 43298, type: vmess, uuid: 42104b60-1988-4063-96ce-5c4b20b53130, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: US 20｜openit.pw, server: us218.hootfun.top, port: 32444, type: trojan, password: 935f34c1-1713-402c-bfe1-f051cf49d370, sni: us218.hootfun.top, skip-cert-verify: true, udp: true}
-  - {name: 美国(油管:破解资源君2.0) 3, server: 141.193.213.20, port: 80, type: vmess, uuid: a55b7d77-d251-4e31-a76e-22d09ac69eb0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /vpnneo, ws-headers: {Host: sanggoro6.nextvpn.cc}, udp: true}
-  - {name: Relay_🇯🇵JP-🇯🇵JP_315, server: kr1.api-aws.com, port: 443, type: trojan, password: 84773125-8f79-481c-a80b-e1f4aad86850, sni: kr1.api-aws.com, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇯🇵JP-🇯🇵JP_345, server: m4.40010010.xyz, port: 37121, type: vmess, uuid: 575e4d92-1056-44c2-8cac-75ef1c859ad5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: AU 1｜openit.pw, server: jgwxn3.gaox.ml, port: 443, type: trojan, password: cb43b7c2-b744-41c5-bcc2-fd7467b332cf, sni: jgwxn3.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: SE_784🇸🇪SE_760, server: 138.3.208.203, port: 43298, type: vmess, uuid: 42104b60-1988-4063-96ce-5c4b20b53130, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: " 2", server: vjp1.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /chat, ws-headers: {Host: vjp1.0bad.com}, udp: true}
-  - {name: SE_741 2, server: 138.3.208.203, port: 43298, type: vmess, uuid: 42104b60-1988-4063-96ce-5c4b20b53130, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: GB 4｜openit.pw, server: 138.3.208.203, port: 43298, type: vmess, uuid: 42104b60-1988-4063-96ce-5c4b20b53130, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 英国(油管:破解资源君2.0), server: vuk2.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /chat, ws-headers: {Host: vuk2.0bad.com}, udp: true}
-  - {name: Relay_🇯🇵JP-🇯🇵JP_471, server: m4.40010010.xyz, port: 37121, type: vmess, uuid: 575e4d92-1056-44c2-8cac-75ef1c859ad5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇯🇵JP-🇯🇵JP_344, server: m4.40010010.xyz, port: 37121, type: vmess, uuid: 575e4d92-1056-44c2-8cac-75ef1c859ad5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: SE_715, server: 138.3.208.203, port: 43298, type: vmess, uuid: 42104b60-1988-4063-96ce-5c4b20b53130, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: CN 61, server: zj9.fdhsujj.xyz, port: 23557, type: ssr, cipher: aes-256-cfb, password: J3ITPq, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 286652:Ky6KOw, obfs-param: ZGJlOTYyODY2NTIubWljcm9zb2Z0LmNvbQ, udp: true}
-  - {name: 美国(油管:破解资源君2.0) 5, server: guibi.ml, port: 443, type: vmess, uuid: 9d090c5f-56b9-4408-fc6b-b9316cc377c1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: guibi.ml}, udp: true}
-  - {name: US 1｜openit.pw, server: 199.19.226.174, port: 433, type: trojan, password: passwd1, skip-cert-verify: true, udp: true}
-  - {name: SE_715 2, server: 138.3.208.203, port: 43298, type: vmess, uuid: 42104b60-1988-4063-96ce-5c4b20b53130, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: SE_715 3, server: 138.3.208.203, port: 43298, type: vmess, uuid: 42104b60-1988-4063-96ce-5c4b20b53130, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: CN 7｜openit.pw, server: cm.spacez.cloud, port: 30000, type: trojan, password: c9a3a61d-5d49-4158-9e60-6fa32684b122, sni: cm.spacez.cloud, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇨🇳 CN-🇭🇰HK_80, server: 183.232.158.67, port: 8003, type: ss, cipher: chacha20-ietf-poly1305, password: 0a00fe526e3592521559427839020652, plugin: obfs, plugin-opts: {mode: http, host: eb19780f3835.microsoft.com}, udp: true}
+  - {name: US_1367, server: 152.70.235.207, port: 35412, type: vmess, uuid: 70d95308-2a61-4f93-f139-9103d0587fd9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN 1｜openit.pw, server: 183.232.158.67, port: 8003, type: ss, cipher: chacha20-ietf-poly1305, password: 0a00fe526e3592521559427839020652, plugin: obfs, plugin-opts: {mode: http, host: eb19780f3835.microsoft.com}, udp: true}
+  - {name: CN 16｜openit.pw, server: oadht.guaranteev2.com, port: 7414, type: ss, cipher: aes-128-gcm, password: 9d7dbacfbd2d308e4ded7c6434770bc3, plugin: obfs, plugin-opts: {mode: http, host: a68f742ca034.microsoft.com}, udp: true}
+  - {name: Relay_🇷🇺RU-🇷🇺RU_743, server: ru1.nodegz.top, port: 1200, type: trojan, password: 2e260cd3-53a7-36d2-b2f4-7046ff428ff9, sni: ru1.nodegz.top, skip-cert-verify: true, udp: true}
+  - {name: ZZ_1510, server: 134.195.196.107, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: ZZ_1507, server: 134.195.196.107, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: US_1387, server: 47.241.220.160, port: 46622, type: vmess, uuid: 4a8610cd-ec1f-471b-f3cf-51241f1de4ff, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: ZZ_1495, server: 134.195.196.107, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: Relay_🇨🇳CN-🇭🇰HK_166, server: us-sjc-ap-v2.node.inforun.work, port: 788, type: vmess, uuid: 4d578f9e-6af4-4d29-966f-88c061d075b7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /je5x3pBN1vez3NQudNkB, ws-headers: {Host: us-sjc-ap-v2.node.inforun.work}, udp: true}
+  - {name: CN 23｜openit.pw, server: pp1.zhengzhongfeizhu.xyz, port: 32000, type: trojan, password: eb2f8154-ff58-3b99-b393-28c8eecdbe64, sni: pp1.zhengzhongfeizhu.xyz, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇨🇳 CN-🇭🇰HK_78, server: 183.232.158.66, port: 8003, type: ss, cipher: chacha20-ietf-poly1305, password: 0a00fe526e3592521559427839020652, plugin: obfs, plugin-opts: {mode: http, host: eb19780f3835.microsoft.com}, udp: true}
+  - {name: Relay_🇨🇳 CN-🇭🇰HK_84, server: debian10.updatensv3.com, port: 8015, type: ss, cipher: chacha20-ietf-poly1305, password: d6fa3a869c3a4a3edb8416e36a59e4aa, plugin: obfs, plugin-opts: {mode: http, host: eb19780f3835.microsoft.com}, udp: true}
+  - {name: Relay_🇷🇺RU-🇷🇺RU_735, server: 185.4.65.6, port: 21247, type: ss, cipher: aes-256-cfb, password: vDS9G2p, udp: true}
+  - {name: Relay_🇨🇳CN-🇭🇰HK_147, server: 3.sg.zz.xxxxx.x-t-fuckword.network, port: 36679, type: vmess, uuid: 244effd9-0204-3c4a-8537-0dca4e5fd9b5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN 26｜openit.pw, server: pp1.zhengzhongfeizhu.xyz, port: 32003, type: trojan, password: eb2f8154-ff58-3b99-b393-28c8eecdbe64, sni: pp1.zhengzhongfeizhu.xyz, skip-cert-verify: true, udp: true}
+  - {name: CN 12｜openit.pw, server: debian10.updatensv3.com, port: 8015, type: ss, cipher: chacha20-ietf-poly1305, password: d6fa3a869c3a4a3edb8416e36a59e4aa, plugin: obfs, plugin-opts: {mode: http, host: eb19780f3835.microsoft.com}, udp: true}
+  - {name: CN 17｜openit.pw, server: pp1.zhengzhongfeizhu.xyz, port: 34004, type: trojan, password: 177501cc-f0c2-3cc3-b9a7-8c1e8e27655f, sni: pp1.zhengzhongfeizhu.xyz, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - US_1363
-      - Relay_🇷🇺RU-🇷🇺RU_841
-      - Relay_🇯🇵JP-🇯🇵JP_351
-      - US_1557
-      - US 21｜openit.pw
-      - Relay_🇨🇳CN-🇹🇼TW_135
-      - US 19｜openit.pw
-      - US 2｜openit.pw
-      - 5
-      - 美国-4.27MB/s(Youtube:不良林)
-      - ""
-      - 欧洲(油管:破解资源君2.0) 52
-      - GB 5｜openit.pw
-      - 欧洲(油管:破解资源君2.0) 52 2
-      - Relay_🇨🇳CN-🇹🇼TW_160
-      - 欧洲(油管:破解资源君2.0) 9 2
-      - GB 5｜openit.pw 2
-      - 欧洲(油管:破解资源君2.0) 9
-      - JP 2｜openit.pw
-      - US_1515🇺🇸US_1533
-      - 欧洲(油管:破解资源君2.0) 2
-      - SE_741
-      - US 20｜openit.pw
-      - 美国(油管:破解资源君2.0) 3
-      - Relay_🇯🇵JP-🇯🇵JP_315
-      - Relay_🇯🇵JP-🇯🇵JP_345
-      - AU 1｜openit.pw
-      - SE_784🇸🇪SE_760
-      - " 2"
-      - SE_741 2
-      - GB 4｜openit.pw
-      - 英国(油管:破解资源君2.0)
-      - Relay_🇯🇵JP-🇯🇵JP_471
-      - Relay_🇯🇵JP-🇯🇵JP_344
-      - SE_715
-      - CN 61
-      - 美国(油管:破解资源君2.0) 5
-      - US 1｜openit.pw
-      - SE_715 2
-      - SE_715 3
+      - CN 7｜openit.pw
+      - Relay_🇨🇳 CN-🇭🇰HK_80
+      - US_1367
+      - CN 1｜openit.pw
+      - CN 16｜openit.pw
+      - Relay_🇷🇺RU-🇷🇺RU_743
+      - ZZ_1510
+      - ZZ_1507
+      - US_1387
+      - ZZ_1495
+      - Relay_🇨🇳CN-🇭🇰HK_166
+      - CN 23｜openit.pw
+      - Relay_🇨🇳 CN-🇭🇰HK_78
+      - Relay_🇨🇳 CN-🇭🇰HK_84
+      - Relay_🇷🇺RU-🇷🇺RU_735
+      - Relay_🇨🇳CN-🇭🇰HK_147
+      - CN 26｜openit.pw
+      - CN 12｜openit.pw
+      - CN 17｜openit.pw
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - US_1363
-      - Relay_🇷🇺RU-🇷🇺RU_841
-      - Relay_🇯🇵JP-🇯🇵JP_351
-      - US_1557
-      - US 21｜openit.pw
-      - Relay_🇨🇳CN-🇹🇼TW_135
-      - US 19｜openit.pw
-      - US 2｜openit.pw
-      - 5
-      - 美国-4.27MB/s(Youtube:不良林)
-      - ""
-      - 欧洲(油管:破解资源君2.0) 52
-      - GB 5｜openit.pw
-      - 欧洲(油管:破解资源君2.0) 52 2
-      - Relay_🇨🇳CN-🇹🇼TW_160
-      - 欧洲(油管:破解资源君2.0) 9 2
-      - GB 5｜openit.pw 2
-      - 欧洲(油管:破解资源君2.0) 9
-      - JP 2｜openit.pw
-      - US_1515🇺🇸US_1533
-      - 欧洲(油管:破解资源君2.0) 2
-      - SE_741
-      - US 20｜openit.pw
-      - 美国(油管:破解资源君2.0) 3
-      - Relay_🇯🇵JP-🇯🇵JP_315
-      - Relay_🇯🇵JP-🇯🇵JP_345
-      - AU 1｜openit.pw
-      - SE_784🇸🇪SE_760
-      - " 2"
-      - SE_741 2
-      - GB 4｜openit.pw
-      - 英国(油管:破解资源君2.0)
-      - Relay_🇯🇵JP-🇯🇵JP_471
-      - Relay_🇯🇵JP-🇯🇵JP_344
-      - SE_715
-      - CN 61
-      - 美国(油管:破解资源君2.0) 5
-      - US 1｜openit.pw
-      - SE_715 2
-      - SE_715 3
+      - CN 7｜openit.pw
+      - Relay_🇨🇳 CN-🇭🇰HK_80
+      - US_1367
+      - CN 1｜openit.pw
+      - CN 16｜openit.pw
+      - Relay_🇷🇺RU-🇷🇺RU_743
+      - ZZ_1510
+      - ZZ_1507
+      - US_1387
+      - ZZ_1495
+      - Relay_🇨🇳CN-🇭🇰HK_166
+      - CN 23｜openit.pw
+      - Relay_🇨🇳 CN-🇭🇰HK_78
+      - Relay_🇨🇳 CN-🇭🇰HK_84
+      - Relay_🇷🇺RU-🇷🇺RU_735
+      - Relay_🇨🇳CN-🇭🇰HK_147
+      - CN 26｜openit.pw
+      - CN 12｜openit.pw
+      - CN 17｜openit.pw
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - US_1363
-      - Relay_🇷🇺RU-🇷🇺RU_841
-      - Relay_🇯🇵JP-🇯🇵JP_351
-      - US_1557
-      - US 21｜openit.pw
-      - Relay_🇨🇳CN-🇹🇼TW_135
-      - US 19｜openit.pw
-      - US 2｜openit.pw
-      - 5
-      - 美国-4.27MB/s(Youtube:不良林)
-      - ""
-      - 欧洲(油管:破解资源君2.0) 52
-      - GB 5｜openit.pw
-      - 欧洲(油管:破解资源君2.0) 52 2
-      - Relay_🇨🇳CN-🇹🇼TW_160
-      - 欧洲(油管:破解资源君2.0) 9 2
-      - GB 5｜openit.pw 2
-      - 欧洲(油管:破解资源君2.0) 9
-      - JP 2｜openit.pw
-      - US_1515🇺🇸US_1533
-      - 欧洲(油管:破解资源君2.0) 2
-      - SE_741
-      - US 20｜openit.pw
-      - 美国(油管:破解资源君2.0) 3
-      - Relay_🇯🇵JP-🇯🇵JP_315
-      - Relay_🇯🇵JP-🇯🇵JP_345
-      - AU 1｜openit.pw
-      - SE_784🇸🇪SE_760
-      - " 2"
-      - SE_741 2
-      - GB 4｜openit.pw
-      - 英国(油管:破解资源君2.0)
-      - Relay_🇯🇵JP-🇯🇵JP_471
-      - Relay_🇯🇵JP-🇯🇵JP_344
-      - SE_715
-      - CN 61
-      - 美国(油管:破解资源君2.0) 5
-      - US 1｜openit.pw
-      - SE_715 2
-      - SE_715 3
+      - CN 7｜openit.pw
+      - Relay_🇨🇳 CN-🇭🇰HK_80
+      - US_1367
+      - CN 1｜openit.pw
+      - CN 16｜openit.pw
+      - Relay_🇷🇺RU-🇷🇺RU_743
+      - ZZ_1510
+      - ZZ_1507
+      - US_1387
+      - ZZ_1495
+      - Relay_🇨🇳CN-🇭🇰HK_166
+      - CN 23｜openit.pw
+      - Relay_🇨🇳 CN-🇭🇰HK_78
+      - Relay_🇨🇳 CN-🇭🇰HK_84
+      - Relay_🇷🇺RU-🇷🇺RU_735
+      - Relay_🇨🇳CN-🇭🇰HK_147
+      - CN 26｜openit.pw
+      - CN 12｜openit.pw
+      - CN 17｜openit.pw
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -200,46 +116,25 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - US_1363
-      - Relay_🇷🇺RU-🇷🇺RU_841
-      - Relay_🇯🇵JP-🇯🇵JP_351
-      - US_1557
-      - US 21｜openit.pw
-      - Relay_🇨🇳CN-🇹🇼TW_135
-      - US 19｜openit.pw
-      - US 2｜openit.pw
-      - 5
-      - 美国-4.27MB/s(Youtube:不良林)
-      - ""
-      - 欧洲(油管:破解资源君2.0) 52
-      - GB 5｜openit.pw
-      - 欧洲(油管:破解资源君2.0) 52 2
-      - Relay_🇨🇳CN-🇹🇼TW_160
-      - 欧洲(油管:破解资源君2.0) 9 2
-      - GB 5｜openit.pw 2
-      - 欧洲(油管:破解资源君2.0) 9
-      - JP 2｜openit.pw
-      - US_1515🇺🇸US_1533
-      - 欧洲(油管:破解资源君2.0) 2
-      - SE_741
-      - US 20｜openit.pw
-      - 美国(油管:破解资源君2.0) 3
-      - Relay_🇯🇵JP-🇯🇵JP_315
-      - Relay_🇯🇵JP-🇯🇵JP_345
-      - AU 1｜openit.pw
-      - SE_784🇸🇪SE_760
-      - " 2"
-      - SE_741 2
-      - GB 4｜openit.pw
-      - 英国(油管:破解资源君2.0)
-      - Relay_🇯🇵JP-🇯🇵JP_471
-      - Relay_🇯🇵JP-🇯🇵JP_344
-      - SE_715
-      - CN 61
-      - 美国(油管:破解资源君2.0) 5
-      - US 1｜openit.pw
-      - SE_715 2
-      - SE_715 3
+      - CN 7｜openit.pw
+      - Relay_🇨🇳 CN-🇭🇰HK_80
+      - US_1367
+      - CN 1｜openit.pw
+      - CN 16｜openit.pw
+      - Relay_🇷🇺RU-🇷🇺RU_743
+      - ZZ_1510
+      - ZZ_1507
+      - US_1387
+      - ZZ_1495
+      - Relay_🇨🇳CN-🇭🇰HK_166
+      - CN 23｜openit.pw
+      - Relay_🇨🇳 CN-🇭🇰HK_78
+      - Relay_🇨🇳 CN-🇭🇰HK_84
+      - Relay_🇷🇺RU-🇷🇺RU_735
+      - Relay_🇨🇳CN-🇭🇰HK_147
+      - CN 26｜openit.pw
+      - CN 12｜openit.pw
+      - CN 17｜openit.pw
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -250,137 +145,74 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - US_1363
-      - Relay_🇷🇺RU-🇷🇺RU_841
-      - Relay_🇯🇵JP-🇯🇵JP_351
-      - US_1557
-      - US 21｜openit.pw
-      - Relay_🇨🇳CN-🇹🇼TW_135
-      - US 19｜openit.pw
-      - US 2｜openit.pw
-      - 5
-      - 美国-4.27MB/s(Youtube:不良林)
-      - ""
-      - 欧洲(油管:破解资源君2.0) 52
-      - GB 5｜openit.pw
-      - 欧洲(油管:破解资源君2.0) 52 2
-      - Relay_🇨🇳CN-🇹🇼TW_160
-      - 欧洲(油管:破解资源君2.0) 9 2
-      - GB 5｜openit.pw 2
-      - 欧洲(油管:破解资源君2.0) 9
-      - JP 2｜openit.pw
-      - US_1515🇺🇸US_1533
-      - 欧洲(油管:破解资源君2.0) 2
-      - SE_741
-      - US 20｜openit.pw
-      - 美国(油管:破解资源君2.0) 3
-      - Relay_🇯🇵JP-🇯🇵JP_315
-      - Relay_🇯🇵JP-🇯🇵JP_345
-      - AU 1｜openit.pw
-      - SE_784🇸🇪SE_760
-      - " 2"
-      - SE_741 2
-      - GB 4｜openit.pw
-      - 英国(油管:破解资源君2.0)
-      - Relay_🇯🇵JP-🇯🇵JP_471
-      - Relay_🇯🇵JP-🇯🇵JP_344
-      - SE_715
-      - CN 61
-      - 美国(油管:破解资源君2.0) 5
-      - US 1｜openit.pw
-      - SE_715 2
-      - SE_715 3
+      - CN 7｜openit.pw
+      - Relay_🇨🇳 CN-🇭🇰HK_80
+      - US_1367
+      - CN 1｜openit.pw
+      - CN 16｜openit.pw
+      - Relay_🇷🇺RU-🇷🇺RU_743
+      - ZZ_1510
+      - ZZ_1507
+      - US_1387
+      - ZZ_1495
+      - Relay_🇨🇳CN-🇭🇰HK_166
+      - CN 23｜openit.pw
+      - Relay_🇨🇳 CN-🇭🇰HK_78
+      - Relay_🇨🇳 CN-🇭🇰HK_84
+      - Relay_🇷🇺RU-🇷🇺RU_735
+      - Relay_🇨🇳CN-🇭🇰HK_147
+      - CN 26｜openit.pw
+      - CN 12｜openit.pw
+      - CN 17｜openit.pw
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - US_1363
-      - Relay_🇷🇺RU-🇷🇺RU_841
-      - Relay_🇯🇵JP-🇯🇵JP_351
-      - US_1557
-      - US 21｜openit.pw
-      - Relay_🇨🇳CN-🇹🇼TW_135
-      - US 19｜openit.pw
-      - US 2｜openit.pw
-      - 5
-      - 美国-4.27MB/s(Youtube:不良林)
-      - ""
-      - 欧洲(油管:破解资源君2.0) 52
-      - GB 5｜openit.pw
-      - 欧洲(油管:破解资源君2.0) 52 2
-      - Relay_🇨🇳CN-🇹🇼TW_160
-      - 欧洲(油管:破解资源君2.0) 9 2
-      - GB 5｜openit.pw 2
-      - 欧洲(油管:破解资源君2.0) 9
-      - JP 2｜openit.pw
-      - US_1515🇺🇸US_1533
-      - 欧洲(油管:破解资源君2.0) 2
-      - SE_741
-      - US 20｜openit.pw
-      - 美国(油管:破解资源君2.0) 3
-      - Relay_🇯🇵JP-🇯🇵JP_315
-      - Relay_🇯🇵JP-🇯🇵JP_345
-      - AU 1｜openit.pw
-      - SE_784🇸🇪SE_760
-      - " 2"
-      - SE_741 2
-      - GB 4｜openit.pw
-      - 英国(油管:破解资源君2.0)
-      - Relay_🇯🇵JP-🇯🇵JP_471
-      - Relay_🇯🇵JP-🇯🇵JP_344
-      - SE_715
-      - CN 61
-      - 美国(油管:破解资源君2.0) 5
-      - US 1｜openit.pw
-      - SE_715 2
-      - SE_715 3
+      - CN 7｜openit.pw
+      - Relay_🇨🇳 CN-🇭🇰HK_80
+      - US_1367
+      - CN 1｜openit.pw
+      - CN 16｜openit.pw
+      - Relay_🇷🇺RU-🇷🇺RU_743
+      - ZZ_1510
+      - ZZ_1507
+      - US_1387
+      - ZZ_1495
+      - Relay_🇨🇳CN-🇭🇰HK_166
+      - CN 23｜openit.pw
+      - Relay_🇨🇳 CN-🇭🇰HK_78
+      - Relay_🇨🇳 CN-🇭🇰HK_84
+      - Relay_🇷🇺RU-🇷🇺RU_735
+      - Relay_🇨🇳CN-🇭🇰HK_147
+      - CN 26｜openit.pw
+      - CN 12｜openit.pw
+      - CN 17｜openit.pw
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - US_1363
-      - Relay_🇷🇺RU-🇷🇺RU_841
-      - Relay_🇯🇵JP-🇯🇵JP_351
-      - US_1557
-      - US 21｜openit.pw
-      - Relay_🇨🇳CN-🇹🇼TW_135
-      - US 19｜openit.pw
-      - US 2｜openit.pw
-      - 5
-      - 美国-4.27MB/s(Youtube:不良林)
-      - ""
-      - 欧洲(油管:破解资源君2.0) 52
-      - GB 5｜openit.pw
-      - 欧洲(油管:破解资源君2.0) 52 2
-      - Relay_🇨🇳CN-🇹🇼TW_160
-      - 欧洲(油管:破解资源君2.0) 9 2
-      - GB 5｜openit.pw 2
-      - 欧洲(油管:破解资源君2.0) 9
-      - JP 2｜openit.pw
-      - US_1515🇺🇸US_1533
-      - 欧洲(油管:破解资源君2.0) 2
-      - SE_741
-      - US 20｜openit.pw
-      - 美国(油管:破解资源君2.0) 3
-      - Relay_🇯🇵JP-🇯🇵JP_315
-      - Relay_🇯🇵JP-🇯🇵JP_345
-      - AU 1｜openit.pw
-      - SE_784🇸🇪SE_760
-      - " 2"
-      - SE_741 2
-      - GB 4｜openit.pw
-      - 英国(油管:破解资源君2.0)
-      - Relay_🇯🇵JP-🇯🇵JP_471
-      - Relay_🇯🇵JP-🇯🇵JP_344
-      - SE_715
-      - CN 61
-      - 美国(油管:破解资源君2.0) 5
-      - US 1｜openit.pw
-      - SE_715 2
-      - SE_715 3
+      - CN 7｜openit.pw
+      - Relay_🇨🇳 CN-🇭🇰HK_80
+      - US_1367
+      - CN 1｜openit.pw
+      - CN 16｜openit.pw
+      - Relay_🇷🇺RU-🇷🇺RU_743
+      - ZZ_1510
+      - ZZ_1507
+      - US_1387
+      - ZZ_1495
+      - Relay_🇨🇳CN-🇭🇰HK_166
+      - CN 23｜openit.pw
+      - Relay_🇨🇳 CN-🇭🇰HK_78
+      - Relay_🇨🇳 CN-🇭🇰HK_84
+      - Relay_🇷🇺RU-🇷🇺RU_735
+      - Relay_🇨🇳CN-🇭🇰HK_147
+      - CN 26｜openit.pw
+      - CN 12｜openit.pw
+      - CN 17｜openit.pw
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -396,46 +228,25 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - US_1363
-      - Relay_🇷🇺RU-🇷🇺RU_841
-      - Relay_🇯🇵JP-🇯🇵JP_351
-      - US_1557
-      - US 21｜openit.pw
-      - Relay_🇨🇳CN-🇹🇼TW_135
-      - US 19｜openit.pw
-      - US 2｜openit.pw
-      - 5
-      - 美国-4.27MB/s(Youtube:不良林)
-      - ""
-      - 欧洲(油管:破解资源君2.0) 52
-      - GB 5｜openit.pw
-      - 欧洲(油管:破解资源君2.0) 52 2
-      - Relay_🇨🇳CN-🇹🇼TW_160
-      - 欧洲(油管:破解资源君2.0) 9 2
-      - GB 5｜openit.pw 2
-      - 欧洲(油管:破解资源君2.0) 9
-      - JP 2｜openit.pw
-      - US_1515🇺🇸US_1533
-      - 欧洲(油管:破解资源君2.0) 2
-      - SE_741
-      - US 20｜openit.pw
-      - 美国(油管:破解资源君2.0) 3
-      - Relay_🇯🇵JP-🇯🇵JP_315
-      - Relay_🇯🇵JP-🇯🇵JP_345
-      - AU 1｜openit.pw
-      - SE_784🇸🇪SE_760
-      - " 2"
-      - SE_741 2
-      - GB 4｜openit.pw
-      - 英国(油管:破解资源君2.0)
-      - Relay_🇯🇵JP-🇯🇵JP_471
-      - Relay_🇯🇵JP-🇯🇵JP_344
-      - SE_715
-      - CN 61
-      - 美国(油管:破解资源君2.0) 5
-      - US 1｜openit.pw
-      - SE_715 2
-      - SE_715 3
+      - CN 7｜openit.pw
+      - Relay_🇨🇳 CN-🇭🇰HK_80
+      - US_1367
+      - CN 1｜openit.pw
+      - CN 16｜openit.pw
+      - Relay_🇷🇺RU-🇷🇺RU_743
+      - ZZ_1510
+      - ZZ_1507
+      - US_1387
+      - ZZ_1495
+      - Relay_🇨🇳CN-🇭🇰HK_166
+      - CN 23｜openit.pw
+      - Relay_🇨🇳 CN-🇭🇰HK_78
+      - Relay_🇨🇳 CN-🇭🇰HK_84
+      - Relay_🇷🇺RU-🇷🇺RU_735
+      - Relay_🇨🇳CN-🇭🇰HK_147
+      - CN 26｜openit.pw
+      - CN 12｜openit.pw
+      - CN 17｜openit.pw
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
