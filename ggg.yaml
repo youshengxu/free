@@ -5,6 +5,20 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
+  - {name: Relay_🇯🇵JP-🇯🇵JP_338, server: kr1.api-aws.com, port: 443, type: trojan, password: d30afdba-ca55-463a-b26e-27080698a2a6, sni: kr1.api-aws.com, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇯🇵 JP-🇯🇵JP_318, server: kr1.api-aws.com, port: 443, type: trojan, password: ca3a57c6-9bb5-4d19-876d-4552de4bb959, sni: kr1.api-aws.com, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇯🇵JP-🇯🇵JP_335, server: kr1.api-aws.com, port: 443, type: trojan, password: 7e92d33f-6917-4c69-8eca-7fe80be58199, sni: kr1.api-aws.com, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇯🇵JP-🇯🇵JP_336, server: kr1.api-aws.com, port: 443, type: trojan, password: 84773125-8f79-481c-a80b-e1f4aad86850, sni: kr1.api-aws.com, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇯🇵 JP-🇯🇵JP_319, server: kr1.api-aws.com, port: 443, type: trojan, password: 3753719b-eb37-4f34-ab60-ae3a70486b27, sni: kr1.api-aws.com, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇯🇵 JP-🇯🇵JP_315, server: kr1.api-aws.com, port: 443, type: trojan, password: edeb6377-0d40-483b-869a-8b3be9d74850, sni: kr1.api-aws.com, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇯🇵 JP-🇯🇵JP_316, server: kr1.api-aws.com, port: 443, type: trojan, password: a153fb4e-6d1b-4db0-b03d-acb4012b7198, sni: kr1.api-aws.com, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_1391, server: s3.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s3.hazz.win, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇨🇳 CN-🇭🇰HK_99, server: iiiieeepppplll.zhengzhongfeizhu.xyz, port: 34004, type: trojan, password: 177501cc-f0c2-3cc3-b9a7-8c1e8e27655f, sni: iiiieeepppplll.zhengzhongfeizhu.xyz, skip-cert-verify: true, udp: true}
+  - {name: CA_75, server: 38.111.114.246, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: GB_290, server: 185.167.77.195, port: 29650, type: vmess, uuid: 660dbb02-2297-466b-c7b2-1bb8a6e680e5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇯🇵 JP-🇯🇵JP_313, server: kr1.api-aws.com, port: 443, type: trojan, password: c3211bc6-6cde-492a-a86a-310b0c19a44b, sni: kr1.api-aws.com, skip-cert-verify: true, udp: true}
+  - {name: DE_194, server: 165.22.73.126, port: 23335, type: ss, cipher: aes-256-cfb, password: 7d99ae502227454ea998d71e4b62a388, udp: true}
+  - {name: CN 5｜openit.pw, server: in-sg-1.onebox6.org, port: 38701, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: www.ivpnpro.net}, udp: true}
   - {name: NONE 3, server: iiiieeepppplll.zhengzhongfeizhu.xyz, port: 34001, type: trojan, password: 177501cc-f0c2-3cc3-b9a7-8c1e8e27655f, sni: iiiieeepppplll.zhengzhongfeizhu.xyz, skip-cert-verify: true, udp: true}
   - {name: CN 6｜openit.pw, server: debian10.updatensv3.com, port: 8765, type: ss, cipher: aes-128-gcm, password: 24ffe5a4c321e0b926dc335a91c2d78a, plugin: obfs, plugin-opts: {mode: http, host: eb19780f3835.microsoft.com}, udp: true}
   - {name: 欧洲(油管:破解资源君2.0) 6, server: 4.3.1.fuckppppp.today, port: 58418, type: vmess, uuid: 244effd9-0204-3c4a-8537-0dca4e5fd9b5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
@@ -95,6 +109,20 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
+      - Relay_🇯🇵JP-🇯🇵JP_338
+      - Relay_🇯🇵 JP-🇯🇵JP_318
+      - Relay_🇯🇵JP-🇯🇵JP_335
+      - Relay_🇯🇵JP-🇯🇵JP_336
+      - Relay_🇯🇵 JP-🇯🇵JP_319
+      - Relay_🇯🇵 JP-🇯🇵JP_315
+      - Relay_🇯🇵 JP-🇯🇵JP_316
+      - Relay_🇺🇸US-🇺🇸US_1391
+      - Relay_🇨🇳 CN-🇭🇰HK_99
+      - CA_75
+      - GB_290
+      - Relay_🇯🇵 JP-🇯🇵JP_313
+      - DE_194
+      - CN 5｜openit.pw
       - NONE 3
       - CN 6｜openit.pw
       - 欧洲(油管:破解资源君2.0) 6
@@ -184,6 +212,20 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
+      - Relay_🇯🇵JP-🇯🇵JP_338
+      - Relay_🇯🇵 JP-🇯🇵JP_318
+      - Relay_🇯🇵JP-🇯🇵JP_335
+      - Relay_🇯🇵JP-🇯🇵JP_336
+      - Relay_🇯🇵 JP-🇯🇵JP_319
+      - Relay_🇯🇵 JP-🇯🇵JP_315
+      - Relay_🇯🇵 JP-🇯🇵JP_316
+      - Relay_🇺🇸US-🇺🇸US_1391
+      - Relay_🇨🇳 CN-🇭🇰HK_99
+      - CA_75
+      - GB_290
+      - Relay_🇯🇵 JP-🇯🇵JP_313
+      - DE_194
+      - CN 5｜openit.pw
       - NONE 3
       - CN 6｜openit.pw
       - 欧洲(油管:破解资源君2.0) 6
@@ -274,6 +316,20 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - Relay_🇯🇵JP-🇯🇵JP_338
+      - Relay_🇯🇵 JP-🇯🇵JP_318
+      - Relay_🇯🇵JP-🇯🇵JP_335
+      - Relay_🇯🇵JP-🇯🇵JP_336
+      - Relay_🇯🇵 JP-🇯🇵JP_319
+      - Relay_🇯🇵 JP-🇯🇵JP_315
+      - Relay_🇯🇵 JP-🇯🇵JP_316
+      - Relay_🇺🇸US-🇺🇸US_1391
+      - Relay_🇨🇳 CN-🇭🇰HK_99
+      - CA_75
+      - GB_290
+      - Relay_🇯🇵 JP-🇯🇵JP_313
+      - DE_194
+      - CN 5｜openit.pw
       - NONE 3
       - CN 6｜openit.pw
       - 欧洲(油管:破解资源君2.0) 6
@@ -376,6 +432,20 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - Relay_🇯🇵JP-🇯🇵JP_338
+      - Relay_🇯🇵 JP-🇯🇵JP_318
+      - Relay_🇯🇵JP-🇯🇵JP_335
+      - Relay_🇯🇵JP-🇯🇵JP_336
+      - Relay_🇯🇵 JP-🇯🇵JP_319
+      - Relay_🇯🇵 JP-🇯🇵JP_315
+      - Relay_🇯🇵 JP-🇯🇵JP_316
+      - Relay_🇺🇸US-🇺🇸US_1391
+      - Relay_🇨🇳 CN-🇭🇰HK_99
+      - CA_75
+      - GB_290
+      - Relay_🇯🇵 JP-🇯🇵JP_313
+      - DE_194
+      - CN 5｜openit.pw
       - NONE 3
       - CN 6｜openit.pw
       - 欧洲(油管:破解资源君2.0) 6
@@ -473,6 +543,20 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
+      - Relay_🇯🇵JP-🇯🇵JP_338
+      - Relay_🇯🇵 JP-🇯🇵JP_318
+      - Relay_🇯🇵JP-🇯🇵JP_335
+      - Relay_🇯🇵JP-🇯🇵JP_336
+      - Relay_🇯🇵 JP-🇯🇵JP_319
+      - Relay_🇯🇵 JP-🇯🇵JP_315
+      - Relay_🇯🇵 JP-🇯🇵JP_316
+      - Relay_🇺🇸US-🇺🇸US_1391
+      - Relay_🇨🇳 CN-🇭🇰HK_99
+      - CA_75
+      - GB_290
+      - Relay_🇯🇵 JP-🇯🇵JP_313
+      - DE_194
+      - CN 5｜openit.pw
       - NONE 3
       - CN 6｜openit.pw
       - 欧洲(油管:破解资源君2.0) 6
@@ -562,6 +646,20 @@ proxy-groups:
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
+      - Relay_🇯🇵JP-🇯🇵JP_338
+      - Relay_🇯🇵 JP-🇯🇵JP_318
+      - Relay_🇯🇵JP-🇯🇵JP_335
+      - Relay_🇯🇵JP-🇯🇵JP_336
+      - Relay_🇯🇵 JP-🇯🇵JP_319
+      - Relay_🇯🇵 JP-🇯🇵JP_315
+      - Relay_🇯🇵 JP-🇯🇵JP_316
+      - Relay_🇺🇸US-🇺🇸US_1391
+      - Relay_🇨🇳 CN-🇭🇰HK_99
+      - CA_75
+      - GB_290
+      - Relay_🇯🇵 JP-🇯🇵JP_313
+      - DE_194
+      - CN 5｜openit.pw
       - NONE 3
       - CN 6｜openit.pw
       - 欧洲(油管:破解资源君2.0) 6
@@ -652,6 +750,20 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - Relay_🇯🇵JP-🇯🇵JP_338
+      - Relay_🇯🇵 JP-🇯🇵JP_318
+      - Relay_🇯🇵JP-🇯🇵JP_335
+      - Relay_🇯🇵JP-🇯🇵JP_336
+      - Relay_🇯🇵 JP-🇯🇵JP_319
+      - Relay_🇯🇵 JP-🇯🇵JP_315
+      - Relay_🇯🇵 JP-🇯🇵JP_316
+      - Relay_🇺🇸US-🇺🇸US_1391
+      - Relay_🇨🇳 CN-🇭🇰HK_99
+      - CA_75
+      - GB_290
+      - Relay_🇯🇵 JP-🇯🇵JP_313
+      - DE_194
+      - CN 5｜openit.pw
       - NONE 3
       - CN 6｜openit.pw
       - 欧洲(油管:破解资源君2.0) 6
@@ -751,6 +863,20 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - Relay_🇯🇵JP-🇯🇵JP_338
+      - Relay_🇯🇵 JP-🇯🇵JP_318
+      - Relay_🇯🇵JP-🇯🇵JP_335
+      - Relay_🇯🇵JP-🇯🇵JP_336
+      - Relay_🇯🇵 JP-🇯🇵JP_319
+      - Relay_🇯🇵 JP-🇯🇵JP_315
+      - Relay_🇯🇵 JP-🇯🇵JP_316
+      - Relay_🇺🇸US-🇺🇸US_1391
+      - Relay_🇨🇳 CN-🇭🇰HK_99
+      - CA_75
+      - GB_290
+      - Relay_🇯🇵 JP-🇯🇵JP_313
+      - DE_194
+      - CN 5｜openit.pw
       - NONE 3
       - CN 6｜openit.pw
       - 欧洲(油管:破解资源君2.0) 6
