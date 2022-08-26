@@ -5,219 +5,119 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: CN 11 → openit.pw, server: pp1.zhengzhongfeizhu.xyz, port: 32002, type: trojan, password: 2f606ee8-3cfa-30b2-a191-f88efe912f5c, sni: pp1.zhengzhongfeizhu.xyz, skip-cert-verify: true, udp: true}
-  - {name: _10, server: 23.230.146.254, port: 1258, type: vmess, uuid: edeb41cc-a76a-47f2-fa96-b9141e66a2b0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇳 CN-🇺🇸US_69, server: uiug.expirationv3.com, port: 9405, type: ss, cipher: aes-256-gcm, password: 269f71b9-c45b-43f3-8c48-eb5f986aa707, udp: true}
-  - {name: Relay_🇨🇳 CN-🏁ZZ_78, server: jp-tyo-04-tr.cdn.savoy.click, port: 889, type: trojan, password: LTKPTMbjBDYisdMxKEBDzcduXacOvIVY, sni: jp-tyo-04-tr.cdn.savoy.click, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇺🇸 US-🇺🇸US_838, server: qoslsjws.hootfun.top, port: 25333, type: trojan, password: 935f34c1-1713-402c-bfe1-f051cf49d370, sni: qoslsjws.hootfun.top, skip-cert-verify: true, udp: true}
-  - {name: US 6 → openit.pw, server: s3.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s3.hazz.win, skip-cert-verify: true, udp: true}
-  - {name: US 22 → openit.pw, server: us.tcpbbr.net, port: 443, type: trojan, password: 80bcf4f2-12f7-11ed-bb74-f23c9164ca5d, sni: us.tcpbbr.net, skip-cert-verify: true, udp: true}
-  - {name: US 23 → openit.pw, server: lswjs.hootfun.top, port: 23561, type: trojan, password: 935f34c1-1713-402c-bfe1-f051cf49d370, sni: lswjs.hootfun.top, skip-cert-verify: true, udp: true}
-  - {name: RU 1 → openit.pw, server: ru.hootfun.top, port: 42332, type: trojan, password: 935f34c1-1713-402c-bfe1-f051cf49d370, sni: ru.hootfun.top, skip-cert-verify: true, udp: true}
-  - {name: 荷兰-3.40MB/s(Youtube:不良林), server: 213.183.59.218, port: 9059, type: ss, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY, udp: true}
-  - {name: RO_611, server: 185.126.116.119, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX, udp: true}
-  - {name: CN 3 → openit.pw, server: cm.spacez.cloud, port: 30003, type: trojan, password: c9a3a61d-5d49-4158-9e60-6fa32684b122, sni: cm.spacez.cloud, skip-cert-verify: true, udp: true}
-  - {name: NONE, server: iiiieeepppplll.zhengzhongfeizhu.xyz, port: 34002, type: trojan, password: 177501cc-f0c2-3cc3-b9a7-8c1e8e27655f, sni: iiiieeepppplll.zhengzhongfeizhu.xyz, skip-cert-verify: true, udp: true}
-  - {name: 荷兰-3.60MB/s(Youtube:不良林), server: 213.183.59.211, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU, udp: true}
-  - {name: RO_619, server: 185.126.116.119, port: 9024, type: ss, cipher: aes-256-cfb, password: BejrQvtu9sqUeNuZ, udp: true}
-  - {name: 荷兰-3.57MB/s(Youtube:不良林), server: 213.183.59.218, port: 9008, type: ss, cipher: aes-256-cfb, password: y9VURyNzJWNRYEGQ, udp: true}
-  - {name: 荷兰-561.0KB/s(Youtube:不良林), server: 213.183.59.211, port: 9024, type: ss, cipher: aes-256-cfb, password: BejrQvtu9sqUeNuZ, udp: true}
-  - {name: RO_608, server: 185.126.116.119, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
-  - {name: (已存活1天)荷兰-1.70MB/s(Youtube:不良林), server: 213.183.59.206, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga, udp: true}
-  - {name: RO_613, server: 185.126.116.119, port: 9043, type: ss, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF, udp: true}
-  - {name: 荷兰-460.0KB/s(Youtube:不良林), server: 213.183.59.206, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH, udp: true}
-  - {name: 荷兰-855.3KB/s(Youtube:不良林), server: 213.183.59.214, port: 9061, type: ss, cipher: aes-256-cfb, password: 4R3hUfZ2FHhDmNcP, udp: true}
-  - {name: 荷兰-1.01MB/s(Youtube:不良林), server: 213.183.59.190, port: 9025, type: ss, cipher: aes-256-cfb, password: XPtzA9sCug3SPR4c, udp: true}
-  - {name: 荷兰-3.60MB/s(Youtube:不良林) 2, server: 213.183.59.211, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
-  - {name: RO_610, server: 185.126.116.119, port: 9080, type: ss, cipher: aes-256-cfb, password: VP8ZPxQpJtZRCjfZ, udp: true}
-  - {name: 荷兰-632.6KB/s(Youtube:不良林), server: 213.183.59.190, port: 9050, type: ss, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE, udp: true}
-  - {name: RO_615, server: 185.126.116.119, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
-  - {name: 荷兰-1.04MB/s(Youtube:不良林), server: 213.183.59.190, port: 9043, type: ss, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF, udp: true}
-  - {name: CN 8 → openit.pw, server: sadfsn.domainsv3.com, port: 9403, type: ss, cipher: aes-256-gcm, password: 269f71b9-c45b-43f3-8c48-eb5f986aa707, udp: true}
-  - {name: 荷兰-648.5KB/s(Youtube:不良林), server: 213.183.59.190, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa, udp: true}
-  - {name: FR_193, server: 51.195.136.209, port: 50004, type: ss, cipher: aes-256-cfb, password: !<str> 4415934295, udp: true}
-  - {name: 荷兰-991.5KB/s(Youtube:不良林), server: 213.183.59.214, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
-  - {name: LU 1 → openit.pw, server: lsb.jcnf.app, port: 443, type: vmess, uuid: c753e8a8-e180-4e76-a486-c917273d718b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /zcjd, ws-headers: {Host: lsb.jcnf.app}, udp: true}
-  - {name: CN 13 → openit.pw, server: in-us-1.onebox6.org, port: 38401, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: "%7B%22Host%22:%22in-us-1.onebox6.org%22%7D"}, udp: true}
-  - {name: 荷兰-3.52MB/s(Youtube:不良林), server: 213.183.59.206, port: 9057, type: ss, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z, udp: true}
-  - {name: CN 5 → openit.pw, server: cm.spacez.cloud, port: 30002, type: trojan, password: c9a3a61d-5d49-4158-9e60-6fa32684b122, sni: cm.spacez.cloud, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇬🇧GB-🇬🇧GB_257, server: vuk2.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /chat, ws-headers: {Host: vuk2.0bad.com}, udp: true}
-  - {name: NONE 2, server: iiiieeepppplll.zhengzhongfeizhu.xyz, port: 34001, type: trojan, password: 177501cc-f0c2-3cc3-b9a7-8c1e8e27655f, sni: iiiieeepppplll.zhengzhongfeizhu.xyz, skip-cert-verify: true, udp: true}
-  - {name: US 24 → openit.pw, server: nusa.kencang.my.id, port: 443, type: trojan, password: 45bf0328-871b-462e-b07b-c5e2b9ce2e2c, sni: nusa.kencang.my.id, skip-cert-verify: true, udp: true}
-  - {name: US 18 → openit.pw, server: us218.hootfun.top, port: 42513, type: trojan, password: 935f34c1-1713-402c-bfe1-f051cf49d370, sni: us218.hootfun.top, skip-cert-verify: true, udp: true}
-  - {name: US_1373, server: 147.139.7.71, port: 888, type: vmess, uuid: 08d6729d-830e-4341-df76-62d3d12e75e8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 147.139.7.71}, udp: true}
-  - {name: LT_347, server: 213.183.53.198, port: 9057, type: ss, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z, udp: true}
-  - {name: LT_354, server: 213.183.53.198, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
-  - {name: 荷兰-189.5KB/s(Youtube:不良林), server: 213.183.59.206, port: 9098, type: ss, cipher: aes-256-cfb, password: aLpQtfEZe445QyHk, udp: true}
-  - {name: GB_258, server: 185.167.78.193, port: 48986, type: vmess, uuid: 51e663d5-bd0b-447c-d483-d7a8e27d157a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US_1370, server: 47.241.220.160, port: 46622, type: vmess, uuid: 4a8610cd-ec1f-471b-f3cf-51241f1de4ff, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN 7 → openit.pw, server: linux.nameserversv3.com, port: 9206, type: ss, cipher: aes-256-gcm, password: 269f71b9-c45b-43f3-8c48-eb5f986aa707, udp: true}
-  - {name: NL 1 → openit.pw, server: 41.216.177.41, port: 443, type: trojan, password: 274c1b23-2bfe-40ac-943c-ebc1aa044b22, skip-cert-verify: true, udp: true}
-  - {name: GB_261, server: 185.167.77.195, port: 29650, type: vmess, uuid: 660dbb02-2297-466b-c7b2-1bb8a6e680e5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN 19 → openitsub.com, server: debian10.updatensv3.com, port: 8015, type: ss, cipher: chacha20-ietf-poly1305, password: d6fa3a869c3a4a3edb8416e36a59e4aa, plugin: obfs, plugin-opts: {mode: http, host: 924af1d4735e.microsoft.com}, udp: true}
+  - {name: CN 32 → openitsub.com, server: qkhxc.websitesv3.com, port: 9521, type: ss, cipher: aes-256-gcm, password: 6071345b7a58134cc962c96f7a502ae6, plugin: obfs, plugin-opts: {mode: http, host: 924af1d4735e.microsoft.com}, udp: true}
+  - {name: CN 17 → openitsub.com, server: debian10.updatensv3.com, port: 8010, type: ss, cipher: chacha20-ietf-poly1305, password: 68ece1cafb98b06aa7a3edfefdf91de4, plugin: obfs, plugin-opts: {mode: http, host: 924af1d4735e.microsoft.com}, udp: true}
+  - {name: CN 26 → openitsub.com, server: centos8.expirationv3.com, port: 8753, type: ss, cipher: aes-128-gcm, password: aa740e1ee906513a782b1838aa88c88d, plugin: obfs, plugin-opts: {mode: http, host: 924af1d4735e.microsoft.com}, udp: true}
+  - {name: Relay_🇨🇳 CN-🇭🇰HK_74, server: dsdfg.updatensv3.com, port: 8736, type: ss, cipher: aes-256-gcm, password: d5b5c8e566d63ce4d91092a16d65ef5f, plugin: obfs, plugin-opts: {mode: http, host: 924af1d4735e.microsoft.com}, udp: true}
+  - {name: US 26 → openitsub.com, server: singapore.anthoncloud.com, port: 3306, type: trojan, password: 6589ce99-9ff7-3c1b-a744-ca3f4abfe386, sni: singapore.anthoncloud.com, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇨🇳 CN-🇺🇸US_75, server: sadfsn.domainsv3.com, port: 8743, type: ss, cipher: aes-256-gcm, password: 890471c1b0e5e3ab2d32d77d564820ae, plugin: obfs, plugin-opts: {mode: http, host: 924af1d4735e.microsoft.com}, udp: true}
+  - {name: US 1 → openitsub.com, server: 74.211.97.81, port: 50500, type: trojan, password: bd52a53f-b02c-4bcb-be6a-ac4fd85e5f14, skip-cert-verify: true, udp: true}
+  - {name: CN 5 → openitsub.com, server: jp-tyo-04-tr.cdn.savoy.click, port: 889, type: trojan, password: LTKPTMbjBDYisdMxKEBDzcduXacOvIVY, sni: jp-tyo-04-tr.cdn.savoy.click, skip-cert-verify: true, udp: true}
+  - {name: _08, server: 129.159.41.233, port: 32586, type: vmess, uuid: 341a9182-c423-499c-c46e-d17838b29037, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN 8 → openitsub.com, server: debian10.updatensv3.com, port: 8010, type: ss, cipher: chacha20-ietf-poly1305, password: 68ece1cafb98b06aa7a3edfefdf91de4, plugin: obfs, plugin-opts: {mode: http, host: 924af1d4735e.microsoft.com}, udp: true}
+  - {name: LT_335, server: 213.183.53.198, port: 9080, type: ss, cipher: aes-256-cfb, password: VP8ZPxQpJtZRCjfZ, udp: true}
+  - {name: CN 5 → openitsub.com 2, server: cm.spacez.cloud, port: 30000, type: trojan, password: c9a3a61d-5d49-4158-9e60-6fa32684b122, sni: cm.spacez.cloud, skip-cert-verify: true, udp: true}
+  - {name: LT_331, server: 213.183.53.198, port: 9024, type: ss, cipher: aes-256-cfb, password: BejrQvtu9sqUeNuZ, udp: true}
+  - {name: CN 1 → openitsub.com, server: iiiieeepppplll.zhengzhongfeizhu.xyz, port: 34001, type: trojan, password: 177501cc-f0c2-3cc3-b9a7-8c1e8e27655f, sni: iiiieeepppplll.zhengzhongfeizhu.xyz, skip-cert-verify: true, udp: true}
+  - {name: CN 14 → openitsub.com, server: centos8.expirationv3.com, port: 8748, type: ss, cipher: aes-128-gcm, password: 7158933f8a144bd3c8b777983428ed44, plugin: obfs, plugin-opts: {mode: http, host: 924af1d4735e.microsoft.com}, udp: true}
+  - {name: CN 25 → openitsub.com, server: centos8.expirationv3.com, port: 8745, type: ss, cipher: aes-128-gcm, password: 9c072decffd326dfe7976480e8792404, plugin: obfs, plugin-opts: {mode: http, host: 924af1d4735e.microsoft.com}, udp: true}
+  - {name: CN 18 → openitsub.com, server: debian10.domainsv3.com, port: 8002, type: ss, cipher: chacha20-ietf-poly1305, password: b725df014956e837936b4fa5dbf88f04, plugin: obfs, plugin-opts: {mode: http, host: 924af1d4735e.microsoft.com}, udp: true}
+  - {name: CN 10 → openitsub.com, server: debian10.updatensv3.com, port: 8004, type: ss, cipher: chacha20-ietf-poly1305, password: 4e2c7e7b0d175c08edc96e7b946415c6, plugin: obfs, plugin-opts: {mode: http, host: 924af1d4735e.microsoft.com}, udp: true}
+  - {name: CN 12 → openitsub.com, server: debian10.updatensv3.com, port: 8015, type: ss, cipher: chacha20-ietf-poly1305, password: d6fa3a869c3a4a3edb8416e36a59e4aa, plugin: obfs, plugin-opts: {mode: http, host: 924af1d4735e.microsoft.com}, udp: true}
+  - {name: CN 13 → openitsub.com, server: centos8.expirationv3.com, port: 8753, type: ss, cipher: aes-128-gcm, password: aa740e1ee906513a782b1838aa88c88d, plugin: obfs, plugin-opts: {mode: http, host: 924af1d4735e.microsoft.com}, udp: true}
+  - {name: US 29 → openitsub.com, server: 38.91.107.37, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: US_1025, server: 38.68.135.18, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: Relay_🏁 ZZ-🏁ZZ_1401, server: us-sjc-ctg-02-v2.node.inforun.work, port: 888, type: vmess, uuid: d0aec6f9-a2d0-4238-893d-73571c4e9cee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /je5x3pBN1vez3NQudNkB, ws-headers: {Host: us-sjc-ctg-02-v2.node.inforun.work}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN 11 → openit.pw
-      - _10
-      - Relay_🇨🇳 CN-🇺🇸US_69
-      - Relay_🇨🇳 CN-🏁ZZ_78
-      - Relay_🇺🇸 US-🇺🇸US_838
-      - US 6 → openit.pw
-      - US 22 → openit.pw
-      - US 23 → openit.pw
-      - RU 1 → openit.pw
-      - 荷兰-3.40MB/s(Youtube:不良林)
-      - RO_611
-      - CN 3 → openit.pw
-      - NONE
-      - 荷兰-3.60MB/s(Youtube:不良林)
-      - RO_619
-      - 荷兰-3.57MB/s(Youtube:不良林)
-      - 荷兰-561.0KB/s(Youtube:不良林)
-      - RO_608
-      - (已存活1天)荷兰-1.70MB/s(Youtube:不良林)
-      - RO_613
-      - 荷兰-460.0KB/s(Youtube:不良林)
-      - 荷兰-855.3KB/s(Youtube:不良林)
-      - 荷兰-1.01MB/s(Youtube:不良林)
-      - 荷兰-3.60MB/s(Youtube:不良林) 2
-      - RO_610
-      - 荷兰-632.6KB/s(Youtube:不良林)
-      - RO_615
-      - 荷兰-1.04MB/s(Youtube:不良林)
-      - CN 8 → openit.pw
-      - 荷兰-648.5KB/s(Youtube:不良林)
-      - FR_193
-      - 荷兰-991.5KB/s(Youtube:不良林)
-      - LU 1 → openit.pw
-      - CN 13 → openit.pw
-      - 荷兰-3.52MB/s(Youtube:不良林)
-      - CN 5 → openit.pw
-      - Relay_🇬🇧GB-🇬🇧GB_257
-      - NONE 2
-      - US 24 → openit.pw
-      - US 18 → openit.pw
-      - US_1373
-      - LT_347
-      - LT_354
-      - 荷兰-189.5KB/s(Youtube:不良林)
-      - GB_258
-      - US_1370
-      - CN 7 → openit.pw
-      - NL 1 → openit.pw
-      - GB_261
+      - CN 19 → openitsub.com
+      - CN 32 → openitsub.com
+      - CN 17 → openitsub.com
+      - CN 26 → openitsub.com
+      - Relay_🇨🇳 CN-🇭🇰HK_74
+      - US 26 → openitsub.com
+      - Relay_🇨🇳 CN-🇺🇸US_75
+      - US 1 → openitsub.com
+      - CN 5 → openitsub.com
+      - _08
+      - CN 8 → openitsub.com
+      - LT_335
+      - CN 5 → openitsub.com 2
+      - LT_331
+      - CN 1 → openitsub.com
+      - CN 14 → openitsub.com
+      - CN 25 → openitsub.com
+      - CN 18 → openitsub.com
+      - CN 10 → openitsub.com
+      - CN 12 → openitsub.com
+      - CN 13 → openitsub.com
+      - US 29 → openitsub.com
+      - US_1025
+      - Relay_🏁 ZZ-🏁ZZ_1401
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - CN 11 → openit.pw
-      - _10
-      - Relay_🇨🇳 CN-🇺🇸US_69
-      - Relay_🇨🇳 CN-🏁ZZ_78
-      - Relay_🇺🇸 US-🇺🇸US_838
-      - US 6 → openit.pw
-      - US 22 → openit.pw
-      - US 23 → openit.pw
-      - RU 1 → openit.pw
-      - 荷兰-3.40MB/s(Youtube:不良林)
-      - RO_611
-      - CN 3 → openit.pw
-      - NONE
-      - 荷兰-3.60MB/s(Youtube:不良林)
-      - RO_619
-      - 荷兰-3.57MB/s(Youtube:不良林)
-      - 荷兰-561.0KB/s(Youtube:不良林)
-      - RO_608
-      - (已存活1天)荷兰-1.70MB/s(Youtube:不良林)
-      - RO_613
-      - 荷兰-460.0KB/s(Youtube:不良林)
-      - 荷兰-855.3KB/s(Youtube:不良林)
-      - 荷兰-1.01MB/s(Youtube:不良林)
-      - 荷兰-3.60MB/s(Youtube:不良林) 2
-      - RO_610
-      - 荷兰-632.6KB/s(Youtube:不良林)
-      - RO_615
-      - 荷兰-1.04MB/s(Youtube:不良林)
-      - CN 8 → openit.pw
-      - 荷兰-648.5KB/s(Youtube:不良林)
-      - FR_193
-      - 荷兰-991.5KB/s(Youtube:不良林)
-      - LU 1 → openit.pw
-      - CN 13 → openit.pw
-      - 荷兰-3.52MB/s(Youtube:不良林)
-      - CN 5 → openit.pw
-      - Relay_🇬🇧GB-🇬🇧GB_257
-      - NONE 2
-      - US 24 → openit.pw
-      - US 18 → openit.pw
-      - US_1373
-      - LT_347
-      - LT_354
-      - 荷兰-189.5KB/s(Youtube:不良林)
-      - GB_258
-      - US_1370
-      - CN 7 → openit.pw
-      - NL 1 → openit.pw
-      - GB_261
+      - CN 19 → openitsub.com
+      - CN 32 → openitsub.com
+      - CN 17 → openitsub.com
+      - CN 26 → openitsub.com
+      - Relay_🇨🇳 CN-🇭🇰HK_74
+      - US 26 → openitsub.com
+      - Relay_🇨🇳 CN-🇺🇸US_75
+      - US 1 → openitsub.com
+      - CN 5 → openitsub.com
+      - _08
+      - CN 8 → openitsub.com
+      - LT_335
+      - CN 5 → openitsub.com 2
+      - LT_331
+      - CN 1 → openitsub.com
+      - CN 14 → openitsub.com
+      - CN 25 → openitsub.com
+      - CN 18 → openitsub.com
+      - CN 10 → openitsub.com
+      - CN 12 → openitsub.com
+      - CN 13 → openitsub.com
+      - US 29 → openitsub.com
+      - US_1025
+      - Relay_🏁 ZZ-🏁ZZ_1401
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN 11 → openit.pw
-      - _10
-      - Relay_🇨🇳 CN-🇺🇸US_69
-      - Relay_🇨🇳 CN-🏁ZZ_78
-      - Relay_🇺🇸 US-🇺🇸US_838
-      - US 6 → openit.pw
-      - US 22 → openit.pw
-      - US 23 → openit.pw
-      - RU 1 → openit.pw
-      - 荷兰-3.40MB/s(Youtube:不良林)
-      - RO_611
-      - CN 3 → openit.pw
-      - NONE
-      - 荷兰-3.60MB/s(Youtube:不良林)
-      - RO_619
-      - 荷兰-3.57MB/s(Youtube:不良林)
-      - 荷兰-561.0KB/s(Youtube:不良林)
-      - RO_608
-      - (已存活1天)荷兰-1.70MB/s(Youtube:不良林)
-      - RO_613
-      - 荷兰-460.0KB/s(Youtube:不良林)
-      - 荷兰-855.3KB/s(Youtube:不良林)
-      - 荷兰-1.01MB/s(Youtube:不良林)
-      - 荷兰-3.60MB/s(Youtube:不良林) 2
-      - RO_610
-      - 荷兰-632.6KB/s(Youtube:不良林)
-      - RO_615
-      - 荷兰-1.04MB/s(Youtube:不良林)
-      - CN 8 → openit.pw
-      - 荷兰-648.5KB/s(Youtube:不良林)
-      - FR_193
-      - 荷兰-991.5KB/s(Youtube:不良林)
-      - LU 1 → openit.pw
-      - CN 13 → openit.pw
-      - 荷兰-3.52MB/s(Youtube:不良林)
-      - CN 5 → openit.pw
-      - Relay_🇬🇧GB-🇬🇧GB_257
-      - NONE 2
-      - US 24 → openit.pw
-      - US 18 → openit.pw
-      - US_1373
-      - LT_347
-      - LT_354
-      - 荷兰-189.5KB/s(Youtube:不良林)
-      - GB_258
-      - US_1370
-      - CN 7 → openit.pw
-      - NL 1 → openit.pw
-      - GB_261
+      - CN 19 → openitsub.com
+      - CN 32 → openitsub.com
+      - CN 17 → openitsub.com
+      - CN 26 → openitsub.com
+      - Relay_🇨🇳 CN-🇭🇰HK_74
+      - US 26 → openitsub.com
+      - Relay_🇨🇳 CN-🇺🇸US_75
+      - US 1 → openitsub.com
+      - CN 5 → openitsub.com
+      - _08
+      - CN 8 → openitsub.com
+      - LT_335
+      - CN 5 → openitsub.com 2
+      - LT_331
+      - CN 1 → openitsub.com
+      - CN 14 → openitsub.com
+      - CN 25 → openitsub.com
+      - CN 18 → openitsub.com
+      - CN 10 → openitsub.com
+      - CN 12 → openitsub.com
+      - CN 13 → openitsub.com
+      - US 29 → openitsub.com
+      - US_1025
+      - Relay_🏁 ZZ-🏁ZZ_1401
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -236,55 +136,30 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN 11 → openit.pw
-      - _10
-      - Relay_🇨🇳 CN-🇺🇸US_69
-      - Relay_🇨🇳 CN-🏁ZZ_78
-      - Relay_🇺🇸 US-🇺🇸US_838
-      - US 6 → openit.pw
-      - US 22 → openit.pw
-      - US 23 → openit.pw
-      - RU 1 → openit.pw
-      - 荷兰-3.40MB/s(Youtube:不良林)
-      - RO_611
-      - CN 3 → openit.pw
-      - NONE
-      - 荷兰-3.60MB/s(Youtube:不良林)
-      - RO_619
-      - 荷兰-3.57MB/s(Youtube:不良林)
-      - 荷兰-561.0KB/s(Youtube:不良林)
-      - RO_608
-      - (已存活1天)荷兰-1.70MB/s(Youtube:不良林)
-      - RO_613
-      - 荷兰-460.0KB/s(Youtube:不良林)
-      - 荷兰-855.3KB/s(Youtube:不良林)
-      - 荷兰-1.01MB/s(Youtube:不良林)
-      - 荷兰-3.60MB/s(Youtube:不良林) 2
-      - RO_610
-      - 荷兰-632.6KB/s(Youtube:不良林)
-      - RO_615
-      - 荷兰-1.04MB/s(Youtube:不良林)
-      - CN 8 → openit.pw
-      - 荷兰-648.5KB/s(Youtube:不良林)
-      - FR_193
-      - 荷兰-991.5KB/s(Youtube:不良林)
-      - LU 1 → openit.pw
-      - CN 13 → openit.pw
-      - 荷兰-3.52MB/s(Youtube:不良林)
-      - CN 5 → openit.pw
-      - Relay_🇬🇧GB-🇬🇧GB_257
-      - NONE 2
-      - US 24 → openit.pw
-      - US 18 → openit.pw
-      - US_1373
-      - LT_347
-      - LT_354
-      - 荷兰-189.5KB/s(Youtube:不良林)
-      - GB_258
-      - US_1370
-      - CN 7 → openit.pw
-      - NL 1 → openit.pw
-      - GB_261
+      - CN 19 → openitsub.com
+      - CN 32 → openitsub.com
+      - CN 17 → openitsub.com
+      - CN 26 → openitsub.com
+      - Relay_🇨🇳 CN-🇭🇰HK_74
+      - US 26 → openitsub.com
+      - Relay_🇨🇳 CN-🇺🇸US_75
+      - US 1 → openitsub.com
+      - CN 5 → openitsub.com
+      - _08
+      - CN 8 → openitsub.com
+      - LT_335
+      - CN 5 → openitsub.com 2
+      - LT_331
+      - CN 1 → openitsub.com
+      - CN 14 → openitsub.com
+      - CN 25 → openitsub.com
+      - CN 18 → openitsub.com
+      - CN 10 → openitsub.com
+      - CN 12 → openitsub.com
+      - CN 13 → openitsub.com
+      - US 29 → openitsub.com
+      - US_1025
+      - Relay_🏁 ZZ-🏁ZZ_1401
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -295,164 +170,89 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - CN 11 → openit.pw
-      - _10
-      - Relay_🇨🇳 CN-🇺🇸US_69
-      - Relay_🇨🇳 CN-🏁ZZ_78
-      - Relay_🇺🇸 US-🇺🇸US_838
-      - US 6 → openit.pw
-      - US 22 → openit.pw
-      - US 23 → openit.pw
-      - RU 1 → openit.pw
-      - 荷兰-3.40MB/s(Youtube:不良林)
-      - RO_611
-      - CN 3 → openit.pw
-      - NONE
-      - 荷兰-3.60MB/s(Youtube:不良林)
-      - RO_619
-      - 荷兰-3.57MB/s(Youtube:不良林)
-      - 荷兰-561.0KB/s(Youtube:不良林)
-      - RO_608
-      - (已存活1天)荷兰-1.70MB/s(Youtube:不良林)
-      - RO_613
-      - 荷兰-460.0KB/s(Youtube:不良林)
-      - 荷兰-855.3KB/s(Youtube:不良林)
-      - 荷兰-1.01MB/s(Youtube:不良林)
-      - 荷兰-3.60MB/s(Youtube:不良林) 2
-      - RO_610
-      - 荷兰-632.6KB/s(Youtube:不良林)
-      - RO_615
-      - 荷兰-1.04MB/s(Youtube:不良林)
-      - CN 8 → openit.pw
-      - 荷兰-648.5KB/s(Youtube:不良林)
-      - FR_193
-      - 荷兰-991.5KB/s(Youtube:不良林)
-      - LU 1 → openit.pw
-      - CN 13 → openit.pw
-      - 荷兰-3.52MB/s(Youtube:不良林)
-      - CN 5 → openit.pw
-      - Relay_🇬🇧GB-🇬🇧GB_257
-      - NONE 2
-      - US 24 → openit.pw
-      - US 18 → openit.pw
-      - US_1373
-      - LT_347
-      - LT_354
-      - 荷兰-189.5KB/s(Youtube:不良林)
-      - GB_258
-      - US_1370
-      - CN 7 → openit.pw
-      - NL 1 → openit.pw
-      - GB_261
+      - CN 19 → openitsub.com
+      - CN 32 → openitsub.com
+      - CN 17 → openitsub.com
+      - CN 26 → openitsub.com
+      - Relay_🇨🇳 CN-🇭🇰HK_74
+      - US 26 → openitsub.com
+      - Relay_🇨🇳 CN-🇺🇸US_75
+      - US 1 → openitsub.com
+      - CN 5 → openitsub.com
+      - _08
+      - CN 8 → openitsub.com
+      - LT_335
+      - CN 5 → openitsub.com 2
+      - LT_331
+      - CN 1 → openitsub.com
+      - CN 14 → openitsub.com
+      - CN 25 → openitsub.com
+      - CN 18 → openitsub.com
+      - CN 10 → openitsub.com
+      - CN 12 → openitsub.com
+      - CN 13 → openitsub.com
+      - US 29 → openitsub.com
+      - US_1025
+      - Relay_🏁 ZZ-🏁ZZ_1401
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - CN 11 → openit.pw
-      - _10
-      - Relay_🇨🇳 CN-🇺🇸US_69
-      - Relay_🇨🇳 CN-🏁ZZ_78
-      - Relay_🇺🇸 US-🇺🇸US_838
-      - US 6 → openit.pw
-      - US 22 → openit.pw
-      - US 23 → openit.pw
-      - RU 1 → openit.pw
-      - 荷兰-3.40MB/s(Youtube:不良林)
-      - RO_611
-      - CN 3 → openit.pw
-      - NONE
-      - 荷兰-3.60MB/s(Youtube:不良林)
-      - RO_619
-      - 荷兰-3.57MB/s(Youtube:不良林)
-      - 荷兰-561.0KB/s(Youtube:不良林)
-      - RO_608
-      - (已存活1天)荷兰-1.70MB/s(Youtube:不良林)
-      - RO_613
-      - 荷兰-460.0KB/s(Youtube:不良林)
-      - 荷兰-855.3KB/s(Youtube:不良林)
-      - 荷兰-1.01MB/s(Youtube:不良林)
-      - 荷兰-3.60MB/s(Youtube:不良林) 2
-      - RO_610
-      - 荷兰-632.6KB/s(Youtube:不良林)
-      - RO_615
-      - 荷兰-1.04MB/s(Youtube:不良林)
-      - CN 8 → openit.pw
-      - 荷兰-648.5KB/s(Youtube:不良林)
-      - FR_193
-      - 荷兰-991.5KB/s(Youtube:不良林)
-      - LU 1 → openit.pw
-      - CN 13 → openit.pw
-      - 荷兰-3.52MB/s(Youtube:不良林)
-      - CN 5 → openit.pw
-      - Relay_🇬🇧GB-🇬🇧GB_257
-      - NONE 2
-      - US 24 → openit.pw
-      - US 18 → openit.pw
-      - US_1373
-      - LT_347
-      - LT_354
-      - 荷兰-189.5KB/s(Youtube:不良林)
-      - GB_258
-      - US_1370
-      - CN 7 → openit.pw
-      - NL 1 → openit.pw
-      - GB_261
+      - CN 19 → openitsub.com
+      - CN 32 → openitsub.com
+      - CN 17 → openitsub.com
+      - CN 26 → openitsub.com
+      - Relay_🇨🇳 CN-🇭🇰HK_74
+      - US 26 → openitsub.com
+      - Relay_🇨🇳 CN-🇺🇸US_75
+      - US 1 → openitsub.com
+      - CN 5 → openitsub.com
+      - _08
+      - CN 8 → openitsub.com
+      - LT_335
+      - CN 5 → openitsub.com 2
+      - LT_331
+      - CN 1 → openitsub.com
+      - CN 14 → openitsub.com
+      - CN 25 → openitsub.com
+      - CN 18 → openitsub.com
+      - CN 10 → openitsub.com
+      - CN 12 → openitsub.com
+      - CN 13 → openitsub.com
+      - US 29 → openitsub.com
+      - US_1025
+      - Relay_🏁 ZZ-🏁ZZ_1401
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CN 11 → openit.pw
-      - _10
-      - Relay_🇨🇳 CN-🇺🇸US_69
-      - Relay_🇨🇳 CN-🏁ZZ_78
-      - Relay_🇺🇸 US-🇺🇸US_838
-      - US 6 → openit.pw
-      - US 22 → openit.pw
-      - US 23 → openit.pw
-      - RU 1 → openit.pw
-      - 荷兰-3.40MB/s(Youtube:不良林)
-      - RO_611
-      - CN 3 → openit.pw
-      - NONE
-      - 荷兰-3.60MB/s(Youtube:不良林)
-      - RO_619
-      - 荷兰-3.57MB/s(Youtube:不良林)
-      - 荷兰-561.0KB/s(Youtube:不良林)
-      - RO_608
-      - (已存活1天)荷兰-1.70MB/s(Youtube:不良林)
-      - RO_613
-      - 荷兰-460.0KB/s(Youtube:不良林)
-      - 荷兰-855.3KB/s(Youtube:不良林)
-      - 荷兰-1.01MB/s(Youtube:不良林)
-      - 荷兰-3.60MB/s(Youtube:不良林) 2
-      - RO_610
-      - 荷兰-632.6KB/s(Youtube:不良林)
-      - RO_615
-      - 荷兰-1.04MB/s(Youtube:不良林)
-      - CN 8 → openit.pw
-      - 荷兰-648.5KB/s(Youtube:不良林)
-      - FR_193
-      - 荷兰-991.5KB/s(Youtube:不良林)
-      - LU 1 → openit.pw
-      - CN 13 → openit.pw
-      - 荷兰-3.52MB/s(Youtube:不良林)
-      - CN 5 → openit.pw
-      - Relay_🇬🇧GB-🇬🇧GB_257
-      - NONE 2
-      - US 24 → openit.pw
-      - US 18 → openit.pw
-      - US_1373
-      - LT_347
-      - LT_354
-      - 荷兰-189.5KB/s(Youtube:不良林)
-      - GB_258
-      - US_1370
-      - CN 7 → openit.pw
-      - NL 1 → openit.pw
-      - GB_261
+      - CN 19 → openitsub.com
+      - CN 32 → openitsub.com
+      - CN 17 → openitsub.com
+      - CN 26 → openitsub.com
+      - Relay_🇨🇳 CN-🇭🇰HK_74
+      - US 26 → openitsub.com
+      - Relay_🇨🇳 CN-🇺🇸US_75
+      - US 1 → openitsub.com
+      - CN 5 → openitsub.com
+      - _08
+      - CN 8 → openitsub.com
+      - LT_335
+      - CN 5 → openitsub.com 2
+      - LT_331
+      - CN 1 → openitsub.com
+      - CN 14 → openitsub.com
+      - CN 25 → openitsub.com
+      - CN 18 → openitsub.com
+      - CN 10 → openitsub.com
+      - CN 12 → openitsub.com
+      - CN 13 → openitsub.com
+      - US 29 → openitsub.com
+      - US_1025
+      - Relay_🏁 ZZ-🏁ZZ_1401
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -468,55 +268,30 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CN 11 → openit.pw
-      - _10
-      - Relay_🇨🇳 CN-🇺🇸US_69
-      - Relay_🇨🇳 CN-🏁ZZ_78
-      - Relay_🇺🇸 US-🇺🇸US_838
-      - US 6 → openit.pw
-      - US 22 → openit.pw
-      - US 23 → openit.pw
-      - RU 1 → openit.pw
-      - 荷兰-3.40MB/s(Youtube:不良林)
-      - RO_611
-      - CN 3 → openit.pw
-      - NONE
-      - 荷兰-3.60MB/s(Youtube:不良林)
-      - RO_619
-      - 荷兰-3.57MB/s(Youtube:不良林)
-      - 荷兰-561.0KB/s(Youtube:不良林)
-      - RO_608
-      - (已存活1天)荷兰-1.70MB/s(Youtube:不良林)
-      - RO_613
-      - 荷兰-460.0KB/s(Youtube:不良林)
-      - 荷兰-855.3KB/s(Youtube:不良林)
-      - 荷兰-1.01MB/s(Youtube:不良林)
-      - 荷兰-3.60MB/s(Youtube:不良林) 2
-      - RO_610
-      - 荷兰-632.6KB/s(Youtube:不良林)
-      - RO_615
-      - 荷兰-1.04MB/s(Youtube:不良林)
-      - CN 8 → openit.pw
-      - 荷兰-648.5KB/s(Youtube:不良林)
-      - FR_193
-      - 荷兰-991.5KB/s(Youtube:不良林)
-      - LU 1 → openit.pw
-      - CN 13 → openit.pw
-      - 荷兰-3.52MB/s(Youtube:不良林)
-      - CN 5 → openit.pw
-      - Relay_🇬🇧GB-🇬🇧GB_257
-      - NONE 2
-      - US 24 → openit.pw
-      - US 18 → openit.pw
-      - US_1373
-      - LT_347
-      - LT_354
-      - 荷兰-189.5KB/s(Youtube:不良林)
-      - GB_258
-      - US_1370
-      - CN 7 → openit.pw
-      - NL 1 → openit.pw
-      - GB_261
+      - CN 19 → openitsub.com
+      - CN 32 → openitsub.com
+      - CN 17 → openitsub.com
+      - CN 26 → openitsub.com
+      - Relay_🇨🇳 CN-🇭🇰HK_74
+      - US 26 → openitsub.com
+      - Relay_🇨🇳 CN-🇺🇸US_75
+      - US 1 → openitsub.com
+      - CN 5 → openitsub.com
+      - _08
+      - CN 8 → openitsub.com
+      - LT_335
+      - CN 5 → openitsub.com 2
+      - LT_331
+      - CN 1 → openitsub.com
+      - CN 14 → openitsub.com
+      - CN 25 → openitsub.com
+      - CN 18 → openitsub.com
+      - CN 10 → openitsub.com
+      - CN 12 → openitsub.com
+      - CN 13 → openitsub.com
+      - US 29 → openitsub.com
+      - US_1025
+      - Relay_🏁 ZZ-🏁ZZ_1401
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
