@@ -5,219 +5,83 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: RU 2 → openitsub.com, server: transfer02.kaochangonline.online, port: 443, type: trojan, password: 62b78c9b-16cb-4ee6-824b-a4f856cf18f3, sni: transfer02.kaochangonline.online, skip-cert-verify: true, udp: true}
-  - {name: CN 25 → openitsub.com, server: centos8.expirationv3.com, port: 8745, type: ss, cipher: aes-128-gcm, password: 9c072decffd326dfe7976480e8792404, plugin: obfs, plugin-opts: {mode: http, host: 924af1d4735e.microsoft.com}, udp: true}
-  - {name: US_1415, server: 103.209.101.179, port: 443, type: vmess, uuid: a7f881d0-5767-4b46-c1a8-5f65dab50eda, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 103.209.101.179}, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_1438, server: ozawa-chen.xyz, port: 443, type: vmess, uuid: a7f881d0-5767-4b46-c1a8-5f65dab50eda, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: ozawa-chen.xyz}, udp: true}
-  - {name: Relay_🇯🇵JP-🇯🇵JP_349, server: m4.40010010.xyz, port: 37121, type: vmess, uuid: 575e4d92-1056-44c2-8cac-75ef1c859ad5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: _09, server: 23.230.146.254, port: 1258, type: vmess, uuid: edeb41cc-a76a-47f2-fa96-b9141e66a2b0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇹🇼TW-🇹🇼TW_768, server: gbo02.vsvideo.shop, port: 25634, type: trojan, password: 2f606ee8-3cfa-30b2-a191-f88efe912f5c, sni: gbo02.vsvideo.shop, skip-cert-verify: true, udp: true}
-  - {name: US_1426, server: 47.241.220.160, port: 46622, type: vmess, uuid: 4a8610cd-ec1f-471b-f3cf-51241f1de4ff, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_1417, server: s3.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s3.hazz.win, skip-cert-verify: true, udp: true}
-  - {name: US_1414, server: 154.214.4.155, port: 57952, type: vmess, uuid: c48e8e02-15c6-4061-c4cc-8cfe625572d7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US_1407, server: 137.184.118.47, port: 51649, type: vmess, uuid: 5d0b1709-5c3c-4073-fb3f-67251426571e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US 18 → openitsub.com, server: jgwdb2.gaox.ml, port: 443, type: trojan, password: c19d1432-8b3e-4818-8837-3d160cf65908, sni: jgwdb2.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: LT_317, server: 213.183.53.198, port: 9010, type: ss, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_1404, server: us1.grpc.stream, port: 80, type: vmess, uuid: 6031b5c3-d8ba-5756-b708-f61084a2b678, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /us1, ws-headers: {Host: us1.grpc.stream}, udp: true}
-  - {name: Pool_🇳🇱 NL_481, server: 85.208.108.93, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: US_1413, server: 45.10.153.188, port: 37558, type: vmess, uuid: 9d0f86ad-eec3-424f-f69a-fcb37e783d06, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Pool_🇳🇱NL_584, server: 85.208.108.93, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: 荷兰-2.27MB/s(Youtube:不良林), server: 213.183.59.218, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX, udp: true}
-  - {name: NL_526, server: 213.183.59.218, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH, udp: true}
-  - {name: RO_599, server: 185.126.116.123, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
-  - {name: JP 1 → openitsub.com, server: 823jp.tfzhc.top, port: 443, type: trojan, password: 2e66a51c-d393-4c9a-800a-93e58de44c4d, sni: 823jp.tfzhc.top, skip-cert-verify: true, udp: true}
-  - {name: 荷兰-1.69MB/s(Youtube:不良林), server: 213.183.59.211, port: 9058, type: ss, cipher: aes-256-cfb, password: dML2sfhbVwvtfNPe, udp: true}
-  - {name: Relay_🇷🇺RU-🇷🇺RU_714, server: 185.4.65.6, port: 21247, type: ss, cipher: aes-256-cfb, password: vDS9G2p, udp: true}
-  - {name: LT_377, server: 213.183.53.198, port: 9025, type: ss, cipher: aes-256-cfb, password: XPtzA9sCug3SPR4c, udp: true}
-  - {name: LT_321, server: 213.183.53.198, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
-  - {name: Relay_🇺🇸 US-🇺🇸US_829, server: rbobosz.tk, port: 23868, type: trojan, password: gMVN7PbEX2, sni: rbobosz.tk, skip-cert-verify: true, udp: true}
-  - {name: 荷兰-2.46MB/s(Youtube:不良林), server: 213.183.59.211, port: 9032, type: ss, cipher: aes-256-cfb, password: UWZQeLRWnkqgkseq, udp: true}
-  - {name: 荷兰-1.93MB/s(Youtube:不良林), server: 213.183.59.214, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa, udp: true}
-  - {name: NONE 5, server: cm.spacez.cloud, port: 30002, type: trojan, password: c9a3a61d-5d49-4158-9e60-6fa32684b122, sni: cm.spacez.cloud, skip-cert-verify: true, udp: true}
-  - {name: RU_741, server: 195.133.197.254, port: 443, type: vmess, uuid: ba4b9133-5a39-4015-808b-bcfaaa8962a8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 亚洲(油管:破解资源君), server: 42.186.175.8, port: 443, type: vmess, uuid: 2962b6dc-8de5-40c2-f5fb-5039f72d9a95, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: sgarm.ptuu.ml}, udp: true}
-  - {name: RU_725, server: 195.133.197.254, port: 443, type: vmess, uuid: ba4b9133-5a39-4015-808b-bcfaaa8962a8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: NONE 3, server: iiiieeepppplll.zhengzhongfeizhu.xyz, port: 34003, type: trojan, password: 177501cc-f0c2-3cc3-b9a7-8c1e8e27655f, sni: iiiieeepppplll.zhengzhongfeizhu.xyz, skip-cert-verify: true, udp: true}
-  - {name: CN 14 → openitsub.com, server: centos8.expirationv3.com, port: 8748, type: ss, cipher: aes-128-gcm, password: 7158933f8a144bd3c8b777983428ed44, plugin: obfs, plugin-opts: {mode: http, host: 924af1d4735e.microsoft.com}, udp: true}
-  - {name: CN 10 → openitsub.com, server: debian10.updatensv3.com, port: 8004, type: ss, cipher: chacha20-ietf-poly1305, password: 4e2c7e7b0d175c08edc96e7b946415c6, plugin: obfs, plugin-opts: {mode: http, host: 924af1d4735e.microsoft.com}, udp: true}
-  - {name: CN 1 → openitsub.com, server: iiiieeepppplll.zhengzhongfeizhu.xyz, port: 34001, type: trojan, password: 177501cc-f0c2-3cc3-b9a7-8c1e8e27655f, sni: iiiieeepppplll.zhengzhongfeizhu.xyz, skip-cert-verify: true, udp: true}
-  - {name: CN 26 → openitsub.com, server: centos8.expirationv3.com, port: 8753, type: ss, cipher: aes-128-gcm, password: aa740e1ee906513a782b1838aa88c88d, plugin: obfs, plugin-opts: {mode: http, host: 924af1d4735e.microsoft.com}, udp: true}
-  - {name: unknown 2 → openitsub.com, server: debian10.updatensv3.com, port: 8765, type: ss, cipher: aes-128-gcm, password: 24ffe5a4c321e0b926dc335a91c2d78a, plugin: obfs, plugin-opts: {mode: http, host: 924af1d4735e.microsoft.com}, udp: true}
-  - {name: NONE 4, server: iiiieeepppplll.zhengzhongfeizhu.xyz, port: 34003, type: trojan, password: eb2f8154-ff58-3b99-b393-28c8eecdbe64, sni: iiiieeepppplll.zhengzhongfeizhu.xyz, skip-cert-verify: true, udp: true}
-  - {name: CN 53 → openit.pw, server: centos8.expirationv3.com, port: 8755, type: ss, cipher: aes-128-gcm, password: 58f4886b76f38daeb78986eeb63bc406, plugin: obfs, plugin-opts: {mode: http, host: 924af1d4735e.microsoft.com}, udp: true}
-  - {name: US_1405, server: 168.138.201.208, port: 10328, type: vmess, uuid: bf847bf7-0ba5-4885-bd2b-da4d77afbda8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: RO_599 2, server: 185.126.116.123, port: 9060, type: ss, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ, udp: true}
-  - {name: 荷兰-1.92MB/s(Youtube:不良林), server: 213.183.59.211, port: 9098, type: ss, cipher: aes-256-cfb, password: aLpQtfEZe445QyHk, udp: true}
-  - {name: LT_316, server: 213.183.53.198, port: 9059, type: ss, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY, udp: true}
-  - {name: 荷兰-3.60MB/s(Youtube:不良林)+2, server: 213.183.59.211, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
-  - {name: AU_36, server: 185.167.116.250, port: 9007, type: ss, cipher: aes-256-cfb, password: kSPmvwdFzGMMW5pY, udp: true}
-  - {name: JP_303, server: 146.56.167.119, port: 6666, type: vmess, uuid: 64779fce-63a5-4faa-b59b-e4af40f4e419, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: NL_563, server: 213.183.59.191, port: 9073, type: ss, cipher: aes-256-cfb, password: daFYagqDdBdA6VTX, udp: true}
-  - {name: ZZ_1373, server: 103.186.148.113, port: 80, type: vmess, uuid: 67468d89-cf87-443c-baca-49f1e73b5991, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /shopvpn.net, ws-headers: {Host: 103.186.148.113}, udp: true}
+  - {name: AU 3 → openitsub.com, server: ttt1.swiftfalcon.app, port: 8443, type: trojan, password: coldwar2, sni: ttt1.swiftfalcon.app, skip-cert-verify: true, udp: true}
+  - {name: US_1327, server: 103.209.101.179, port: 443, type: vmess, uuid: a7f881d0-5767-4b46-c1a8-5f65dab50eda, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 103.209.101.179}, udp: true}
+  - {name: Relay_🇯🇵JP-🇯🇵JP_308, server: m4.40010010.xyz, port: 37121, type: vmess, uuid: 575e4d92-1056-44c2-8cac-75ef1c859ad5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: HK 7 → openitsub.com, server: ssl.tcpbbr.net, port: 12163, type: trojan, password: 80bcf4f2-12f7-11ed-bb74-f23c9164ca5d, sni: ssl.tcpbbr.net, skip-cert-verify: true, udp: true}
+  - {name: US 18 → openitsub.com, server: 173.82.248.109, port: 11687, type: trojan, password: gkjpxNwC7x, skip-cert-verify: true, udp: true}
+  - {name: US 36 → openitsub.com, server: zhenye.zhenyejd.net, port: 10004, type: vmess, uuid: fcef0e02-e0f2-4f1d-a44d-b2737f8916bc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: unknown 4 → openitsub.com, server: api.hostyunjp.frydipxian.top, port: 9018, type: trojan, password: 97ea5c08e262acf366b3b973b91960cb, sni: api.hostyunjp.frydipxian.top, skip-cert-verify: true, udp: true}
+  - {name: US 13 → openitsub.com, server: uk1.fastconnect.ml, port: 50001, type: trojan, password: 8fed74d8-b90a-4ef5-a3aa-c92bf40882c3, sni: uk1.fastconnect.ml, skip-cert-verify: true, udp: true}
+  - {name: _07, server: 192.161.164.156, port: 40338, type: vmess, uuid: fe20f87d-4e11-4c2a-af6e-5b8bd9927092, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN 18 → openitsub.com, server: cm.spacez.cloud, port: 30000, type: trojan, password: c9a3a61d-5d49-4158-9e60-6fa32684b122, sni: cm.spacez.cloud, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_1335, server: vde1.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /chat, ws-headers: {Host: vde1.0bad.com}, udp: true}
+  - {name: SG_731, server: 139.180.140.20, port: 42424, type: vmess, uuid: a3d12a2a-d6b3-4248-bb5d-0c5759f9606d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: LT_328, server: 213.183.53.198, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
+  - {name: US_1350, server: 152.70.235.207, port: 35412, type: vmess, uuid: 70d95308-2a61-4f93-f139-9103d0587fd9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: SG 1 → openitsub.com, server: 825hk01.tfzhc.top, port: 443, type: trojan, password: 594f3c57-d2aa-43a8-98c0-73e672a52b8a, sni: 825hk01.tfzhc.top, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - RU 2 → openitsub.com
-      - CN 25 → openitsub.com
-      - US_1415
-      - Relay_🇺🇸US-🇺🇸US_1438
-      - Relay_🇯🇵JP-🇯🇵JP_349
-      - _09
-      - Relay_🇹🇼TW-🇹🇼TW_768
-      - US_1426
-      - Relay_🇺🇸US-🇺🇸US_1417
-      - US_1414
-      - US_1407
+      - AU 3 → openitsub.com
+      - US_1327
+      - Relay_🇯🇵JP-🇯🇵JP_308
+      - HK 7 → openitsub.com
       - US 18 → openitsub.com
-      - LT_317
-      - Relay_🇺🇸US-🇺🇸US_1404
-      - Pool_🇳🇱 NL_481
-      - US_1413
-      - Pool_🇳🇱NL_584
-      - 荷兰-2.27MB/s(Youtube:不良林)
-      - NL_526
-      - RO_599
-      - JP 1 → openitsub.com
-      - 荷兰-1.69MB/s(Youtube:不良林)
-      - Relay_🇷🇺RU-🇷🇺RU_714
-      - LT_377
-      - LT_321
-      - Relay_🇺🇸 US-🇺🇸US_829
-      - 荷兰-2.46MB/s(Youtube:不良林)
-      - 荷兰-1.93MB/s(Youtube:不良林)
-      - NONE 5
-      - RU_741
-      - 亚洲(油管:破解资源君)
-      - RU_725
-      - NONE 3
-      - CN 14 → openitsub.com
-      - CN 10 → openitsub.com
-      - CN 1 → openitsub.com
-      - CN 26 → openitsub.com
-      - unknown 2 → openitsub.com
-      - NONE 4
-      - CN 53 → openit.pw
-      - US_1405
-      - RO_599 2
-      - 荷兰-1.92MB/s(Youtube:不良林)
-      - LT_316
-      - 荷兰-3.60MB/s(Youtube:不良林)+2
-      - AU_36
-      - JP_303
-      - NL_563
-      - ZZ_1373
+      - US 36 → openitsub.com
+      - unknown 4 → openitsub.com
+      - US 13 → openitsub.com
+      - _07
+      - CN 18 → openitsub.com
+      - Relay_🇺🇸US-🇺🇸US_1335
+      - SG_731
+      - LT_328
+      - US_1350
+      - SG 1 → openitsub.com
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - RU 2 → openitsub.com
-      - CN 25 → openitsub.com
-      - US_1415
-      - Relay_🇺🇸US-🇺🇸US_1438
-      - Relay_🇯🇵JP-🇯🇵JP_349
-      - _09
-      - Relay_🇹🇼TW-🇹🇼TW_768
-      - US_1426
-      - Relay_🇺🇸US-🇺🇸US_1417
-      - US_1414
-      - US_1407
+      - AU 3 → openitsub.com
+      - US_1327
+      - Relay_🇯🇵JP-🇯🇵JP_308
+      - HK 7 → openitsub.com
       - US 18 → openitsub.com
-      - LT_317
-      - Relay_🇺🇸US-🇺🇸US_1404
-      - Pool_🇳🇱 NL_481
-      - US_1413
-      - Pool_🇳🇱NL_584
-      - 荷兰-2.27MB/s(Youtube:不良林)
-      - NL_526
-      - RO_599
-      - JP 1 → openitsub.com
-      - 荷兰-1.69MB/s(Youtube:不良林)
-      - Relay_🇷🇺RU-🇷🇺RU_714
-      - LT_377
-      - LT_321
-      - Relay_🇺🇸 US-🇺🇸US_829
-      - 荷兰-2.46MB/s(Youtube:不良林)
-      - 荷兰-1.93MB/s(Youtube:不良林)
-      - NONE 5
-      - RU_741
-      - 亚洲(油管:破解资源君)
-      - RU_725
-      - NONE 3
-      - CN 14 → openitsub.com
-      - CN 10 → openitsub.com
-      - CN 1 → openitsub.com
-      - CN 26 → openitsub.com
-      - unknown 2 → openitsub.com
-      - NONE 4
-      - CN 53 → openit.pw
-      - US_1405
-      - RO_599 2
-      - 荷兰-1.92MB/s(Youtube:不良林)
-      - LT_316
-      - 荷兰-3.60MB/s(Youtube:不良林)+2
-      - AU_36
-      - JP_303
-      - NL_563
-      - ZZ_1373
+      - US 36 → openitsub.com
+      - unknown 4 → openitsub.com
+      - US 13 → openitsub.com
+      - _07
+      - CN 18 → openitsub.com
+      - Relay_🇺🇸US-🇺🇸US_1335
+      - SG_731
+      - LT_328
+      - US_1350
+      - SG 1 → openitsub.com
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - RU 2 → openitsub.com
-      - CN 25 → openitsub.com
-      - US_1415
-      - Relay_🇺🇸US-🇺🇸US_1438
-      - Relay_🇯🇵JP-🇯🇵JP_349
-      - _09
-      - Relay_🇹🇼TW-🇹🇼TW_768
-      - US_1426
-      - Relay_🇺🇸US-🇺🇸US_1417
-      - US_1414
-      - US_1407
+      - AU 3 → openitsub.com
+      - US_1327
+      - Relay_🇯🇵JP-🇯🇵JP_308
+      - HK 7 → openitsub.com
       - US 18 → openitsub.com
-      - LT_317
-      - Relay_🇺🇸US-🇺🇸US_1404
-      - Pool_🇳🇱 NL_481
-      - US_1413
-      - Pool_🇳🇱NL_584
-      - 荷兰-2.27MB/s(Youtube:不良林)
-      - NL_526
-      - RO_599
-      - JP 1 → openitsub.com
-      - 荷兰-1.69MB/s(Youtube:不良林)
-      - Relay_🇷🇺RU-🇷🇺RU_714
-      - LT_377
-      - LT_321
-      - Relay_🇺🇸 US-🇺🇸US_829
-      - 荷兰-2.46MB/s(Youtube:不良林)
-      - 荷兰-1.93MB/s(Youtube:不良林)
-      - NONE 5
-      - RU_741
-      - 亚洲(油管:破解资源君)
-      - RU_725
-      - NONE 3
-      - CN 14 → openitsub.com
-      - CN 10 → openitsub.com
-      - CN 1 → openitsub.com
-      - CN 26 → openitsub.com
-      - unknown 2 → openitsub.com
-      - NONE 4
-      - CN 53 → openit.pw
-      - US_1405
-      - RO_599 2
-      - 荷兰-1.92MB/s(Youtube:不良林)
-      - LT_316
-      - 荷兰-3.60MB/s(Youtube:不良林)+2
-      - AU_36
-      - JP_303
-      - NL_563
-      - ZZ_1373
+      - US 36 → openitsub.com
+      - unknown 4 → openitsub.com
+      - US 13 → openitsub.com
+      - _07
+      - CN 18 → openitsub.com
+      - Relay_🇺🇸US-🇺🇸US_1335
+      - SG_731
+      - LT_328
+      - US_1350
+      - SG 1 → openitsub.com
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -236,55 +100,21 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - RU 2 → openitsub.com
-      - CN 25 → openitsub.com
-      - US_1415
-      - Relay_🇺🇸US-🇺🇸US_1438
-      - Relay_🇯🇵JP-🇯🇵JP_349
-      - _09
-      - Relay_🇹🇼TW-🇹🇼TW_768
-      - US_1426
-      - Relay_🇺🇸US-🇺🇸US_1417
-      - US_1414
-      - US_1407
+      - AU 3 → openitsub.com
+      - US_1327
+      - Relay_🇯🇵JP-🇯🇵JP_308
+      - HK 7 → openitsub.com
       - US 18 → openitsub.com
-      - LT_317
-      - Relay_🇺🇸US-🇺🇸US_1404
-      - Pool_🇳🇱 NL_481
-      - US_1413
-      - Pool_🇳🇱NL_584
-      - 荷兰-2.27MB/s(Youtube:不良林)
-      - NL_526
-      - RO_599
-      - JP 1 → openitsub.com
-      - 荷兰-1.69MB/s(Youtube:不良林)
-      - Relay_🇷🇺RU-🇷🇺RU_714
-      - LT_377
-      - LT_321
-      - Relay_🇺🇸 US-🇺🇸US_829
-      - 荷兰-2.46MB/s(Youtube:不良林)
-      - 荷兰-1.93MB/s(Youtube:不良林)
-      - NONE 5
-      - RU_741
-      - 亚洲(油管:破解资源君)
-      - RU_725
-      - NONE 3
-      - CN 14 → openitsub.com
-      - CN 10 → openitsub.com
-      - CN 1 → openitsub.com
-      - CN 26 → openitsub.com
-      - unknown 2 → openitsub.com
-      - NONE 4
-      - CN 53 → openit.pw
-      - US_1405
-      - RO_599 2
-      - 荷兰-1.92MB/s(Youtube:不良林)
-      - LT_316
-      - 荷兰-3.60MB/s(Youtube:不良林)+2
-      - AU_36
-      - JP_303
-      - NL_563
-      - ZZ_1373
+      - US 36 → openitsub.com
+      - unknown 4 → openitsub.com
+      - US 13 → openitsub.com
+      - _07
+      - CN 18 → openitsub.com
+      - Relay_🇺🇸US-🇺🇸US_1335
+      - SG_731
+      - LT_328
+      - US_1350
+      - SG 1 → openitsub.com
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -295,164 +125,62 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - RU 2 → openitsub.com
-      - CN 25 → openitsub.com
-      - US_1415
-      - Relay_🇺🇸US-🇺🇸US_1438
-      - Relay_🇯🇵JP-🇯🇵JP_349
-      - _09
-      - Relay_🇹🇼TW-🇹🇼TW_768
-      - US_1426
-      - Relay_🇺🇸US-🇺🇸US_1417
-      - US_1414
-      - US_1407
+      - AU 3 → openitsub.com
+      - US_1327
+      - Relay_🇯🇵JP-🇯🇵JP_308
+      - HK 7 → openitsub.com
       - US 18 → openitsub.com
-      - LT_317
-      - Relay_🇺🇸US-🇺🇸US_1404
-      - Pool_🇳🇱 NL_481
-      - US_1413
-      - Pool_🇳🇱NL_584
-      - 荷兰-2.27MB/s(Youtube:不良林)
-      - NL_526
-      - RO_599
-      - JP 1 → openitsub.com
-      - 荷兰-1.69MB/s(Youtube:不良林)
-      - Relay_🇷🇺RU-🇷🇺RU_714
-      - LT_377
-      - LT_321
-      - Relay_🇺🇸 US-🇺🇸US_829
-      - 荷兰-2.46MB/s(Youtube:不良林)
-      - 荷兰-1.93MB/s(Youtube:不良林)
-      - NONE 5
-      - RU_741
-      - 亚洲(油管:破解资源君)
-      - RU_725
-      - NONE 3
-      - CN 14 → openitsub.com
-      - CN 10 → openitsub.com
-      - CN 1 → openitsub.com
-      - CN 26 → openitsub.com
-      - unknown 2 → openitsub.com
-      - NONE 4
-      - CN 53 → openit.pw
-      - US_1405
-      - RO_599 2
-      - 荷兰-1.92MB/s(Youtube:不良林)
-      - LT_316
-      - 荷兰-3.60MB/s(Youtube:不良林)+2
-      - AU_36
-      - JP_303
-      - NL_563
-      - ZZ_1373
+      - US 36 → openitsub.com
+      - unknown 4 → openitsub.com
+      - US 13 → openitsub.com
+      - _07
+      - CN 18 → openitsub.com
+      - Relay_🇺🇸US-🇺🇸US_1335
+      - SG_731
+      - LT_328
+      - US_1350
+      - SG 1 → openitsub.com
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - RU 2 → openitsub.com
-      - CN 25 → openitsub.com
-      - US_1415
-      - Relay_🇺🇸US-🇺🇸US_1438
-      - Relay_🇯🇵JP-🇯🇵JP_349
-      - _09
-      - Relay_🇹🇼TW-🇹🇼TW_768
-      - US_1426
-      - Relay_🇺🇸US-🇺🇸US_1417
-      - US_1414
-      - US_1407
+      - AU 3 → openitsub.com
+      - US_1327
+      - Relay_🇯🇵JP-🇯🇵JP_308
+      - HK 7 → openitsub.com
       - US 18 → openitsub.com
-      - LT_317
-      - Relay_🇺🇸US-🇺🇸US_1404
-      - Pool_🇳🇱 NL_481
-      - US_1413
-      - Pool_🇳🇱NL_584
-      - 荷兰-2.27MB/s(Youtube:不良林)
-      - NL_526
-      - RO_599
-      - JP 1 → openitsub.com
-      - 荷兰-1.69MB/s(Youtube:不良林)
-      - Relay_🇷🇺RU-🇷🇺RU_714
-      - LT_377
-      - LT_321
-      - Relay_🇺🇸 US-🇺🇸US_829
-      - 荷兰-2.46MB/s(Youtube:不良林)
-      - 荷兰-1.93MB/s(Youtube:不良林)
-      - NONE 5
-      - RU_741
-      - 亚洲(油管:破解资源君)
-      - RU_725
-      - NONE 3
-      - CN 14 → openitsub.com
-      - CN 10 → openitsub.com
-      - CN 1 → openitsub.com
-      - CN 26 → openitsub.com
-      - unknown 2 → openitsub.com
-      - NONE 4
-      - CN 53 → openit.pw
-      - US_1405
-      - RO_599 2
-      - 荷兰-1.92MB/s(Youtube:不良林)
-      - LT_316
-      - 荷兰-3.60MB/s(Youtube:不良林)+2
-      - AU_36
-      - JP_303
-      - NL_563
-      - ZZ_1373
+      - US 36 → openitsub.com
+      - unknown 4 → openitsub.com
+      - US 13 → openitsub.com
+      - _07
+      - CN 18 → openitsub.com
+      - Relay_🇺🇸US-🇺🇸US_1335
+      - SG_731
+      - LT_328
+      - US_1350
+      - SG 1 → openitsub.com
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - RU 2 → openitsub.com
-      - CN 25 → openitsub.com
-      - US_1415
-      - Relay_🇺🇸US-🇺🇸US_1438
-      - Relay_🇯🇵JP-🇯🇵JP_349
-      - _09
-      - Relay_🇹🇼TW-🇹🇼TW_768
-      - US_1426
-      - Relay_🇺🇸US-🇺🇸US_1417
-      - US_1414
-      - US_1407
+      - AU 3 → openitsub.com
+      - US_1327
+      - Relay_🇯🇵JP-🇯🇵JP_308
+      - HK 7 → openitsub.com
       - US 18 → openitsub.com
-      - LT_317
-      - Relay_🇺🇸US-🇺🇸US_1404
-      - Pool_🇳🇱 NL_481
-      - US_1413
-      - Pool_🇳🇱NL_584
-      - 荷兰-2.27MB/s(Youtube:不良林)
-      - NL_526
-      - RO_599
-      - JP 1 → openitsub.com
-      - 荷兰-1.69MB/s(Youtube:不良林)
-      - Relay_🇷🇺RU-🇷🇺RU_714
-      - LT_377
-      - LT_321
-      - Relay_🇺🇸 US-🇺🇸US_829
-      - 荷兰-2.46MB/s(Youtube:不良林)
-      - 荷兰-1.93MB/s(Youtube:不良林)
-      - NONE 5
-      - RU_741
-      - 亚洲(油管:破解资源君)
-      - RU_725
-      - NONE 3
-      - CN 14 → openitsub.com
-      - CN 10 → openitsub.com
-      - CN 1 → openitsub.com
-      - CN 26 → openitsub.com
-      - unknown 2 → openitsub.com
-      - NONE 4
-      - CN 53 → openit.pw
-      - US_1405
-      - RO_599 2
-      - 荷兰-1.92MB/s(Youtube:不良林)
-      - LT_316
-      - 荷兰-3.60MB/s(Youtube:不良林)+2
-      - AU_36
-      - JP_303
-      - NL_563
-      - ZZ_1373
+      - US 36 → openitsub.com
+      - unknown 4 → openitsub.com
+      - US 13 → openitsub.com
+      - _07
+      - CN 18 → openitsub.com
+      - Relay_🇺🇸US-🇺🇸US_1335
+      - SG_731
+      - LT_328
+      - US_1350
+      - SG 1 → openitsub.com
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -468,55 +196,21 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - RU 2 → openitsub.com
-      - CN 25 → openitsub.com
-      - US_1415
-      - Relay_🇺🇸US-🇺🇸US_1438
-      - Relay_🇯🇵JP-🇯🇵JP_349
-      - _09
-      - Relay_🇹🇼TW-🇹🇼TW_768
-      - US_1426
-      - Relay_🇺🇸US-🇺🇸US_1417
-      - US_1414
-      - US_1407
+      - AU 3 → openitsub.com
+      - US_1327
+      - Relay_🇯🇵JP-🇯🇵JP_308
+      - HK 7 → openitsub.com
       - US 18 → openitsub.com
-      - LT_317
-      - Relay_🇺🇸US-🇺🇸US_1404
-      - Pool_🇳🇱 NL_481
-      - US_1413
-      - Pool_🇳🇱NL_584
-      - 荷兰-2.27MB/s(Youtube:不良林)
-      - NL_526
-      - RO_599
-      - JP 1 → openitsub.com
-      - 荷兰-1.69MB/s(Youtube:不良林)
-      - Relay_🇷🇺RU-🇷🇺RU_714
-      - LT_377
-      - LT_321
-      - Relay_🇺🇸 US-🇺🇸US_829
-      - 荷兰-2.46MB/s(Youtube:不良林)
-      - 荷兰-1.93MB/s(Youtube:不良林)
-      - NONE 5
-      - RU_741
-      - 亚洲(油管:破解资源君)
-      - RU_725
-      - NONE 3
-      - CN 14 → openitsub.com
-      - CN 10 → openitsub.com
-      - CN 1 → openitsub.com
-      - CN 26 → openitsub.com
-      - unknown 2 → openitsub.com
-      - NONE 4
-      - CN 53 → openit.pw
-      - US_1405
-      - RO_599 2
-      - 荷兰-1.92MB/s(Youtube:不良林)
-      - LT_316
-      - 荷兰-3.60MB/s(Youtube:不良林)+2
-      - AU_36
-      - JP_303
-      - NL_563
-      - ZZ_1373
+      - US 36 → openitsub.com
+      - unknown 4 → openitsub.com
+      - US 13 → openitsub.com
+      - _07
+      - CN 18 → openitsub.com
+      - Relay_🇺🇸US-🇺🇸US_1335
+      - SG_731
+      - LT_328
+      - US_1350
+      - SG 1 → openitsub.com
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
