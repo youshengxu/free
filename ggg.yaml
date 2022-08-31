@@ -5,6 +5,17 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
+  - {name: Relay_🇨🇳CN-🇭🇰HK_96, server: 183.232.141.93, port: 563, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 2860:KKKKKKKKKK45334, obfs-param: "", udp: true}
+  - {name: US 6 → openitsub.com, server: s4.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s4.hazz.win, skip-cert-verify: true, udp: true}
+  - {name: JP 4 → openitsub.com, server: 821hk03.tfzhc.top, port: 443, type: trojan, password: 594f3c57-d2aa-43a8-98c0-73e672a52b8a, sni: 821hk03.tfzhc.top, skip-cert-verify: true, udp: true}
+  - {name: CN 34 → openitsub.com, server: aliyun.moble.vnupgcn.cn, port: 9018, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN 27 → openitsub.com, server: aliyun.moble.vnupgcn.cn, port: 9017, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: HK_236, server: 103.103.245.125, port: 50350, type: trojan, password: 006bca8c-4e1f-44e0-9399-1cd4ff480a40, skip-cert-verify: true, udp: true}
+  - {name: HK_238, server: 103.103.245.125, port: 50418, type: trojan, password: a70b39d1-62ea-4d9e-b681-9c5408352234, skip-cert-verify: true, udp: true}
+  - {name: CA 3 → openitsub.com, server: 730tw01.ok365.cyou, port: 443, type: trojan, password: 594f3c57-d2aa-43a8-98c0-73e672a52b8a, sni: 730tw01.ok365.cyou, skip-cert-verify: true, udp: true}
+  - {name: NL_563, server: 213.183.59.218, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
+  - {name: US_819, server: 38.91.107.37, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: US_743, server: 38.91.107.37, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
   - {name: Relay_🇨🇳CN-🇭🇰HK_92, server: 183.232.141.117, port: 559, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 2860:KKKKKKKKKK45334, obfs-param: "", udp: true}
   - {name: US 39 → openitsub.com, server: 20.239.180.183, port: 33010, type: vmess, uuid: bf140def-cb10-4ba5-a7cc-562ca387c22b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: Relay_🇨🇳CN-🇭🇰HK_97, server: 183.232.141.82, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 2860:KKKKKKKKKK45334, obfs-param: "", udp: true}
@@ -35,6 +46,17 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
+      - Relay_🇨🇳CN-🇭🇰HK_96
+      - US 6 → openitsub.com
+      - JP 4 → openitsub.com
+      - CN 34 → openitsub.com
+      - CN 27 → openitsub.com
+      - HK_236
+      - HK_238
+      - CA 3 → openitsub.com
+      - NL_563
+      - US_819
+      - US_743
       - Relay_🇨🇳CN-🇭🇰HK_92
       - US 39 → openitsub.com
       - Relay_🇨🇳CN-🇭🇰HK_97
@@ -64,6 +86,17 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
+      - Relay_🇨🇳CN-🇭🇰HK_96
+      - US 6 → openitsub.com
+      - JP 4 → openitsub.com
+      - CN 34 → openitsub.com
+      - CN 27 → openitsub.com
+      - HK_236
+      - HK_238
+      - CA 3 → openitsub.com
+      - NL_563
+      - US_819
+      - US_743
       - Relay_🇨🇳CN-🇭🇰HK_92
       - US 39 → openitsub.com
       - Relay_🇨🇳CN-🇭🇰HK_97
@@ -94,6 +127,17 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - Relay_🇨🇳CN-🇭🇰HK_96
+      - US 6 → openitsub.com
+      - JP 4 → openitsub.com
+      - CN 34 → openitsub.com
+      - CN 27 → openitsub.com
+      - HK_236
+      - HK_238
+      - CA 3 → openitsub.com
+      - NL_563
+      - US_819
+      - US_743
       - Relay_🇨🇳CN-🇭🇰HK_92
       - US 39 → openitsub.com
       - Relay_🇨🇳CN-🇭🇰HK_97
@@ -136,6 +180,17 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - Relay_🇨🇳CN-🇭🇰HK_96
+      - US 6 → openitsub.com
+      - JP 4 → openitsub.com
+      - CN 34 → openitsub.com
+      - CN 27 → openitsub.com
+      - HK_236
+      - HK_238
+      - CA 3 → openitsub.com
+      - NL_563
+      - US_819
+      - US_743
       - Relay_🇨🇳CN-🇭🇰HK_92
       - US 39 → openitsub.com
       - Relay_🇨🇳CN-🇭🇰HK_97
@@ -170,6 +225,17 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
+      - Relay_🇨🇳CN-🇭🇰HK_96
+      - US 6 → openitsub.com
+      - JP 4 → openitsub.com
+      - CN 34 → openitsub.com
+      - CN 27 → openitsub.com
+      - HK_236
+      - HK_238
+      - CA 3 → openitsub.com
+      - NL_563
+      - US_819
+      - US_743
       - Relay_🇨🇳CN-🇭🇰HK_92
       - US 39 → openitsub.com
       - Relay_🇨🇳CN-🇭🇰HK_97
@@ -199,6 +265,17 @@ proxy-groups:
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
+      - Relay_🇨🇳CN-🇭🇰HK_96
+      - US 6 → openitsub.com
+      - JP 4 → openitsub.com
+      - CN 34 → openitsub.com
+      - CN 27 → openitsub.com
+      - HK_236
+      - HK_238
+      - CA 3 → openitsub.com
+      - NL_563
+      - US_819
+      - US_743
       - Relay_🇨🇳CN-🇭🇰HK_92
       - US 39 → openitsub.com
       - Relay_🇨🇳CN-🇭🇰HK_97
@@ -229,6 +306,17 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - Relay_🇨🇳CN-🇭🇰HK_96
+      - US 6 → openitsub.com
+      - JP 4 → openitsub.com
+      - CN 34 → openitsub.com
+      - CN 27 → openitsub.com
+      - HK_236
+      - HK_238
+      - CA 3 → openitsub.com
+      - NL_563
+      - US_819
+      - US_743
       - Relay_🇨🇳CN-🇭🇰HK_92
       - US 39 → openitsub.com
       - Relay_🇨🇳CN-🇭🇰HK_97
@@ -268,6 +356,17 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - Relay_🇨🇳CN-🇭🇰HK_96
+      - US 6 → openitsub.com
+      - JP 4 → openitsub.com
+      - CN 34 → openitsub.com
+      - CN 27 → openitsub.com
+      - HK_236
+      - HK_238
+      - CA 3 → openitsub.com
+      - NL_563
+      - US_819
+      - US_743
       - Relay_🇨🇳CN-🇭🇰HK_92
       - US 39 → openitsub.com
       - Relay_🇨🇳CN-🇭🇰HK_97
