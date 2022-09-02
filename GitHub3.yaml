@@ -5,47 +5,51 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: US_1349, server: 199.115.228.30, port: 253, type: ss, cipher: aes-256-cfb, password: bwhskrskr05, udp: true}
-  - {name: CA 1 → openitsub.com, server: 730tw01.ok365.cyou, port: 443, type: trojan, password: cca88b23-9ff8-430b-a0fa-368653dce4f8, sni: 730tw01.ok365.cyou, skip-cert-verify: true, udp: true}
-  - {name: CN 4 → openitsub.com, server: s1.j20xs1.xyz, port: 32001, type: trojan, password: 4e3d2c35-906d-36ae-b796-9f852cc6de4d, sni: s1.j20xs1.xyz, skip-cert-verify: true, udp: true}
-  - {name: 荷兰-435.8KB/s(Youtube:不良林), server: 213.183.59.191, port: 9058, type: ss, cipher: aes-256-cfb, password: dML2sfhbVwvtfNPe, udp: true}
-  - {name: 荷兰-1.05MB/s(Youtube:不良林), server: 213.183.59.191, port: 9031, type: ss, cipher: aes-256-cfb, password: BwcAUZk8hUFAkDGN, udp: true}
-  - {name: US 28 → openitsub.com, server: 38.121.43.65, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: CN 14 → openitsub.com, server: apt.v2-install.mipglxi.cn, port: 5418, type: ss, cipher: aes-128-gcm, password: 0a228809-a1d7-4143-944a-071b105ab9c7, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_1476, server: s3.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s3.hazz.win, skip-cert-verify: true, udp: true}
+  - {name: CN_99, server: yum-y.update.mipglxi.cn, port: 6407, type: ss, cipher: aes-128-gcm, password: 3ee653cf-3f43-43e5-b4d0-7bb1cabe9845, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_1418, server: us-am32-5.eqnode.net, port: 8081, type: ssr, cipher: aes-256-cfb, password: YFVrXZgRo, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
+  - {name: US 10 → openitsub.com, server: 64.27.30.211, port: 14815, type: trojan, password: JDpCGXNLHq, skip-cert-verify: true, udp: true}
+  - {name: JP 6 → openitsub.com, server: 172.105.242.17, port: 20020, type: ss, cipher: aes-128-gcm, password: !<str> 200000000000000000000020, plugin: obfs, plugin-opts: {mode: http, host: "TIB2ehlN1U.download.windowsupdate.com,449bff3663.douyincdn.com"}, udp: true}
+  - {name: MD 1 → openitsub.com, server: transfer01.kaochangonline.online, port: 443, type: trojan, password: 62b78c9b-16cb-4ee6-824b-a4f856cf18f3, sni: transfer01.kaochangonline.online, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - US_1349
-      - CA 1 → openitsub.com
-      - CN 4 → openitsub.com
-      - 荷兰-435.8KB/s(Youtube:不良林)
-      - 荷兰-1.05MB/s(Youtube:不良林)
-      - US 28 → openitsub.com
+      - CN 14 → openitsub.com
+      - Relay_🇺🇸US-🇺🇸US_1476
+      - CN_99
+      - Relay_🇺🇸US-🇺🇸US_1418
+      - US 10 → openitsub.com
+      - JP 6 → openitsub.com
+      - MD 1 → openitsub.com
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - US_1349
-      - CA 1 → openitsub.com
-      - CN 4 → openitsub.com
-      - 荷兰-435.8KB/s(Youtube:不良林)
-      - 荷兰-1.05MB/s(Youtube:不良林)
-      - US 28 → openitsub.com
+      - CN 14 → openitsub.com
+      - Relay_🇺🇸US-🇺🇸US_1476
+      - CN_99
+      - Relay_🇺🇸US-🇺🇸US_1418
+      - US 10 → openitsub.com
+      - JP 6 → openitsub.com
+      - MD 1 → openitsub.com
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - US_1349
-      - CA 1 → openitsub.com
-      - CN 4 → openitsub.com
-      - 荷兰-435.8KB/s(Youtube:不良林)
-      - 荷兰-1.05MB/s(Youtube:不良林)
-      - US 28 → openitsub.com
+      - CN 14 → openitsub.com
+      - Relay_🇺🇸US-🇺🇸US_1476
+      - CN_99
+      - Relay_🇺🇸US-🇺🇸US_1418
+      - US 10 → openitsub.com
+      - JP 6 → openitsub.com
+      - MD 1 → openitsub.com
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -64,12 +68,13 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - US_1349
-      - CA 1 → openitsub.com
-      - CN 4 → openitsub.com
-      - 荷兰-435.8KB/s(Youtube:不良林)
-      - 荷兰-1.05MB/s(Youtube:不良林)
-      - US 28 → openitsub.com
+      - CN 14 → openitsub.com
+      - Relay_🇺🇸US-🇺🇸US_1476
+      - CN_99
+      - Relay_🇺🇸US-🇺🇸US_1418
+      - US 10 → openitsub.com
+      - JP 6 → openitsub.com
+      - MD 1 → openitsub.com
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -80,35 +85,38 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - US_1349
-      - CA 1 → openitsub.com
-      - CN 4 → openitsub.com
-      - 荷兰-435.8KB/s(Youtube:不良林)
-      - 荷兰-1.05MB/s(Youtube:不良林)
-      - US 28 → openitsub.com
+      - CN 14 → openitsub.com
+      - Relay_🇺🇸US-🇺🇸US_1476
+      - CN_99
+      - Relay_🇺🇸US-🇺🇸US_1418
+      - US 10 → openitsub.com
+      - JP 6 → openitsub.com
+      - MD 1 → openitsub.com
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - US_1349
-      - CA 1 → openitsub.com
-      - CN 4 → openitsub.com
-      - 荷兰-435.8KB/s(Youtube:不良林)
-      - 荷兰-1.05MB/s(Youtube:不良林)
-      - US 28 → openitsub.com
+      - CN 14 → openitsub.com
+      - Relay_🇺🇸US-🇺🇸US_1476
+      - CN_99
+      - Relay_🇺🇸US-🇺🇸US_1418
+      - US 10 → openitsub.com
+      - JP 6 → openitsub.com
+      - MD 1 → openitsub.com
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - US_1349
-      - CA 1 → openitsub.com
-      - CN 4 → openitsub.com
-      - 荷兰-435.8KB/s(Youtube:不良林)
-      - 荷兰-1.05MB/s(Youtube:不良林)
-      - US 28 → openitsub.com
+      - CN 14 → openitsub.com
+      - Relay_🇺🇸US-🇺🇸US_1476
+      - CN_99
+      - Relay_🇺🇸US-🇺🇸US_1418
+      - US 10 → openitsub.com
+      - JP 6 → openitsub.com
+      - MD 1 → openitsub.com
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -124,12 +132,13 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - US_1349
-      - CA 1 → openitsub.com
-      - CN 4 → openitsub.com
-      - 荷兰-435.8KB/s(Youtube:不良林)
-      - 荷兰-1.05MB/s(Youtube:不良林)
-      - US 28 → openitsub.com
+      - CN 14 → openitsub.com
+      - Relay_🇺🇸US-🇺🇸US_1476
+      - CN_99
+      - Relay_🇺🇸US-🇺🇸US_1418
+      - US 10 → openitsub.com
+      - JP 6 → openitsub.com
+      - MD 1 → openitsub.com
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
