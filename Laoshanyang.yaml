@@ -5,55 +5,71 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: CN 3 → openitsub.com, server: 116.129.253.245, port: 3389, type: trojan, password: d4e41ff772c7fd45, skip-cert-verify: true, udp: true}
-  - {name: CN 8 → openitsub.com, server: 116.129.253.134, port: 3385, type: trojan, password: 6222266fcd4ed224, skip-cert-verify: true, udp: true}
-  - {name: CN 6 → openitsub.com, server: 116.129.254.47, port: 3385, type: trojan, password: d4e41ff772c7fd45, skip-cert-verify: true, udp: true}
-  - {name: CA 1 → openitsub.com, server: 161.129.60.17, port: 25634, type: trojan, password: 7688df6f-bf65-3368-b55e-d78efea6a582, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇭🇰HK-🇭🇰HK_239, server: solink.ga, port: 443, type: trojan, password: b3f3d494-d74d-4c03-9931-5c7efb75d980, sni: solink.ga, skip-cert-verify: true, udp: true}
-  - {name: US 9 → openitsub.com, server: s3.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s3.hazz.win, skip-cert-verify: true, udp: true}
-  - {name: CN 10 → openitsub.com, server: 116.129.254.47, port: 3382, type: trojan, password: 6222266fcd4ed224, skip-cert-verify: true, udp: true}
-  - {name: unknown 2 → openitsub.com, server: 5.44.249.155, port: 3389, type: trojan, password: d02058f4f819dced, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇳🇱 NL-🇳🇱NL_500, server: api.hostyunjp.frydipxian.top, port: 9018, type: trojan, password: 97ea5c08e262acf366b3b973b91960cb, sni: api.hostyunjp.frydipxian.top, skip-cert-verify: true, udp: true}
+  - {name: US_767, server: 95.169.4.174, port: 254, type: ss, cipher: aes-256-cfb, password: bwhskrskr06, udp: true}
+  - {name: US_1357, server: 107.173.153.147, port: 8765, type: vmess, uuid: d518dec3-f801-46f6-b295-63f4bf16fe12, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 107.173.153.147}, udp: true}
+  - {name: US_796, server: 129.146.84.253, port: 26875, type: vmess, uuid: bb240cb0-a6d2-4b8e-ee85-a976e48ac241, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇨🇳 CN-🇨🇳CN_97, server: api.hostyunhk1.frydipxian.top, port: 444, type: trojan, password: e74fbde60f91cde4f14e336a011ef195, sni: api.hostyunhk1.frydipxian.top, skip-cert-verify: true, udp: true}
+  - {name: ZZ_1381, server: 103.186.148.113, port: 80, type: vmess, uuid: 67468d89-cf87-443c-baca-49f1e73b5991, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /shopvpn.net, ws-headers: {Host: 103.186.148.113}, udp: true}
+  - {name: JP_313, server: 146.56.167.119, port: 6666, type: vmess, uuid: 64779fce-63a5-4faa-b59b-e4af40f4e419, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇨🇳CN-🇬🇧GB_99, server: zj9.fdhsujj.xyz, port: 23557, type: ssr, cipher: aes-256-cfb, password: J3ITPq, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 286652:Ky6KOw, obfs-param: ZGJlOTYyODY2NTIubWljcm9zb2Z0LmNvbQ, udp: true}
+  - {name: SG_729, server: 139.180.140.20, port: 42424, type: vmess, uuid: a3d12a2a-d6b3-4248-bb5d-0c5759f9606d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN 25 → openitsub.com, server: in-us-1.onebox6.org, port: 38401, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: "%257B%2522Host%2522:%2522%25257B%252522Host%252522:%252522%2525257B%25252522Host%25252522:%25252522YouTube-aweikeji%25252522%2525257D%252522%25257D%2522%257D"}, udp: true}
+  - {name: CN 3 → openitsub.com, server: i1.go001.buzz, port: 31905, type: ss, cipher: aes-256-gcm, password: bBEXIq, udp: true}
+  - {name: HU_248, server: 185.225.69.134, port: 45081, type: vmess, uuid: 3c3bfd75-dc30-4e76-8940-47e1137e21f9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
+      - Relay_🇳🇱 NL-🇳🇱NL_500
+      - US_767
+      - US_1357
+      - US_796
+      - Relay_🇨🇳 CN-🇨🇳CN_97
+      - ZZ_1381
+      - JP_313
+      - Relay_🇨🇳CN-🇬🇧GB_99
+      - SG_729
+      - CN 25 → openitsub.com
       - CN 3 → openitsub.com
-      - CN 8 → openitsub.com
-      - CN 6 → openitsub.com
-      - CA 1 → openitsub.com
-      - Relay_🇭🇰HK-🇭🇰HK_239
-      - US 9 → openitsub.com
-      - CN 10 → openitsub.com
-      - unknown 2 → openitsub.com
+      - HU_248
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
+      - Relay_🇳🇱 NL-🇳🇱NL_500
+      - US_767
+      - US_1357
+      - US_796
+      - Relay_🇨🇳 CN-🇨🇳CN_97
+      - ZZ_1381
+      - JP_313
+      - Relay_🇨🇳CN-🇬🇧GB_99
+      - SG_729
+      - CN 25 → openitsub.com
       - CN 3 → openitsub.com
-      - CN 8 → openitsub.com
-      - CN 6 → openitsub.com
-      - CA 1 → openitsub.com
-      - Relay_🇭🇰HK-🇭🇰HK_239
-      - US 9 → openitsub.com
-      - CN 10 → openitsub.com
-      - unknown 2 → openitsub.com
+      - HU_248
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - Relay_🇳🇱 NL-🇳🇱NL_500
+      - US_767
+      - US_1357
+      - US_796
+      - Relay_🇨🇳 CN-🇨🇳CN_97
+      - ZZ_1381
+      - JP_313
+      - Relay_🇨🇳CN-🇬🇧GB_99
+      - SG_729
+      - CN 25 → openitsub.com
       - CN 3 → openitsub.com
-      - CN 8 → openitsub.com
-      - CN 6 → openitsub.com
-      - CA 1 → openitsub.com
-      - Relay_🇭🇰HK-🇭🇰HK_239
-      - US 9 → openitsub.com
-      - CN 10 → openitsub.com
-      - unknown 2 → openitsub.com
+      - HU_248
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -72,14 +88,18 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - Relay_🇳🇱 NL-🇳🇱NL_500
+      - US_767
+      - US_1357
+      - US_796
+      - Relay_🇨🇳 CN-🇨🇳CN_97
+      - ZZ_1381
+      - JP_313
+      - Relay_🇨🇳CN-🇬🇧GB_99
+      - SG_729
+      - CN 25 → openitsub.com
       - CN 3 → openitsub.com
-      - CN 8 → openitsub.com
-      - CN 6 → openitsub.com
-      - CA 1 → openitsub.com
-      - Relay_🇭🇰HK-🇭🇰HK_239
-      - US 9 → openitsub.com
-      - CN 10 → openitsub.com
-      - unknown 2 → openitsub.com
+      - HU_248
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -90,41 +110,53 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
+      - Relay_🇳🇱 NL-🇳🇱NL_500
+      - US_767
+      - US_1357
+      - US_796
+      - Relay_🇨🇳 CN-🇨🇳CN_97
+      - ZZ_1381
+      - JP_313
+      - Relay_🇨🇳CN-🇬🇧GB_99
+      - SG_729
+      - CN 25 → openitsub.com
       - CN 3 → openitsub.com
-      - CN 8 → openitsub.com
-      - CN 6 → openitsub.com
-      - CA 1 → openitsub.com
-      - Relay_🇭🇰HK-🇭🇰HK_239
-      - US 9 → openitsub.com
-      - CN 10 → openitsub.com
-      - unknown 2 → openitsub.com
+      - HU_248
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
+      - Relay_🇳🇱 NL-🇳🇱NL_500
+      - US_767
+      - US_1357
+      - US_796
+      - Relay_🇨🇳 CN-🇨🇳CN_97
+      - ZZ_1381
+      - JP_313
+      - Relay_🇨🇳CN-🇬🇧GB_99
+      - SG_729
+      - CN 25 → openitsub.com
       - CN 3 → openitsub.com
-      - CN 8 → openitsub.com
-      - CN 6 → openitsub.com
-      - CA 1 → openitsub.com
-      - Relay_🇭🇰HK-🇭🇰HK_239
-      - US 9 → openitsub.com
-      - CN 10 → openitsub.com
-      - unknown 2 → openitsub.com
+      - HU_248
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - Relay_🇳🇱 NL-🇳🇱NL_500
+      - US_767
+      - US_1357
+      - US_796
+      - Relay_🇨🇳 CN-🇨🇳CN_97
+      - ZZ_1381
+      - JP_313
+      - Relay_🇨🇳CN-🇬🇧GB_99
+      - SG_729
+      - CN 25 → openitsub.com
       - CN 3 → openitsub.com
-      - CN 8 → openitsub.com
-      - CN 6 → openitsub.com
-      - CA 1 → openitsub.com
-      - Relay_🇭🇰HK-🇭🇰HK_239
-      - US 9 → openitsub.com
-      - CN 10 → openitsub.com
-      - unknown 2 → openitsub.com
+      - HU_248
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -140,14 +172,18 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - Relay_🇳🇱 NL-🇳🇱NL_500
+      - US_767
+      - US_1357
+      - US_796
+      - Relay_🇨🇳 CN-🇨🇳CN_97
+      - ZZ_1381
+      - JP_313
+      - Relay_🇨🇳CN-🇬🇧GB_99
+      - SG_729
+      - CN 25 → openitsub.com
       - CN 3 → openitsub.com
-      - CN 8 → openitsub.com
-      - CN 6 → openitsub.com
-      - CA 1 → openitsub.com
-      - Relay_🇭🇰HK-🇭🇰HK_239
-      - US 9 → openitsub.com
-      - CN 10 → openitsub.com
-      - unknown 2 → openitsub.com
+      - HU_248
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
