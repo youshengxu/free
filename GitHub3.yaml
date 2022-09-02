@@ -5,75 +5,47 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: US 43 → openitsub.com, server: 20.239.195.254, port: 80, type: vmess, uuid: 377a41ba-7324-4fc1-bd7f-e4b8629722a3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 20.239.195.254}, udp: true}
-  - {name: US 32 → openitsub.com, server: 20.24.188.114, port: 80, type: vmess, uuid: bbc60352-fa0b-4ec6-8b33-bd1df051e9c1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 20.24.188.114}, udp: true}
-  - {name: US 34 → openitsub.com, server: 20.89.43.106, port: 80, type: vmess, uuid: bbc60352-fa0b-4ec6-8b33-bd1df051e9c1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 20.89.43.106}, udp: true}
-  - {name: CN 3 → openitsub.com, server: s1.j20xs1.xyz, port: 32002, type: trojan, password: 4e3d2c35-906d-36ae-b796-9f852cc6de4d, sni: s1.j20xs1.xyz, skip-cert-verify: true, udp: true}
-  - {name: US 33 → openitsub.com, server: 20.239.89.71, port: 80, type: vmess, uuid: bbc60352-fa0b-4ec6-8b33-bd1df051e9c1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 20.239.89.71}, udp: true}
-  - {name: US 41 → openitsub.com, server: 20.204.77.115, port: 80, type: vmess, uuid: 377a41ba-7324-4fc1-bd7f-e4b8629722a3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 20.204.77.115}, udp: true}
-  - {name: US 44 → openitsub.com, server: 20.90.249.210, port: 80, type: vmess, uuid: 377a41ba-7324-4fc1-bd7f-e4b8629722a3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 20.90.249.210}, udp: true}
-  - {name: CN 2 → openitsub.com, server: s1.j20xs1.xyz, port: 32003, type: trojan, password: 4e3d2c35-906d-36ae-b796-9f852cc6de4d, sni: s1.j20xs1.xyz, skip-cert-verify: true, udp: true}
+  - {name: US_1349, server: 199.115.228.30, port: 253, type: ss, cipher: aes-256-cfb, password: bwhskrskr05, udp: true}
+  - {name: CA 1 → openitsub.com, server: 730tw01.ok365.cyou, port: 443, type: trojan, password: cca88b23-9ff8-430b-a0fa-368653dce4f8, sni: 730tw01.ok365.cyou, skip-cert-verify: true, udp: true}
   - {name: CN 4 → openitsub.com, server: s1.j20xs1.xyz, port: 32001, type: trojan, password: 4e3d2c35-906d-36ae-b796-9f852cc6de4d, sni: s1.j20xs1.xyz, skip-cert-verify: true, udp: true}
-  - {name: CN 1 → openitsub.com, server: s1.j20xs1.xyz, port: 32000, type: trojan, password: 4e3d2c35-906d-36ae-b796-9f852cc6de4d, sni: s1.j20xs1.xyz, skip-cert-verify: true, udp: true}
-  - {name: US 38 → openitsub.com, server: 20.90.249.210, port: 80, type: vmess, uuid: bbc60352-fa0b-4ec6-8b33-bd1df051e9c1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 20.90.249.210}, udp: true}
-  - {name: 荷兰-2.22MB/s(Youtube:不良林), server: 213.183.59.191, port: 9053, type: ss, cipher: aes-256-cfb, password: SBM7R883jBmnqe6C, udp: true}
-  - {name: CN 7 → openitsub.com, server: aws.raytrack.cloud, port: 20028, type: trojan, password: 1b60a674-a7b7-4322-b6e4-f6db29c7e4c9, sni: aws.raytrack.cloud, skip-cert-verify: true, udp: true}
+  - {name: 荷兰-435.8KB/s(Youtube:不良林), server: 213.183.59.191, port: 9058, type: ss, cipher: aes-256-cfb, password: dML2sfhbVwvtfNPe, udp: true}
+  - {name: 荷兰-1.05MB/s(Youtube:不良林), server: 213.183.59.191, port: 9031, type: ss, cipher: aes-256-cfb, password: BwcAUZk8hUFAkDGN, udp: true}
+  - {name: US 28 → openitsub.com, server: 38.121.43.65, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - US 43 → openitsub.com
-      - US 32 → openitsub.com
-      - US 34 → openitsub.com
-      - CN 3 → openitsub.com
-      - US 33 → openitsub.com
-      - US 41 → openitsub.com
-      - US 44 → openitsub.com
-      - CN 2 → openitsub.com
+      - US_1349
+      - CA 1 → openitsub.com
       - CN 4 → openitsub.com
-      - CN 1 → openitsub.com
-      - US 38 → openitsub.com
-      - 荷兰-2.22MB/s(Youtube:不良林)
-      - CN 7 → openitsub.com
+      - 荷兰-435.8KB/s(Youtube:不良林)
+      - 荷兰-1.05MB/s(Youtube:不良林)
+      - US 28 → openitsub.com
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - US 43 → openitsub.com
-      - US 32 → openitsub.com
-      - US 34 → openitsub.com
-      - CN 3 → openitsub.com
-      - US 33 → openitsub.com
-      - US 41 → openitsub.com
-      - US 44 → openitsub.com
-      - CN 2 → openitsub.com
+      - US_1349
+      - CA 1 → openitsub.com
       - CN 4 → openitsub.com
-      - CN 1 → openitsub.com
-      - US 38 → openitsub.com
-      - 荷兰-2.22MB/s(Youtube:不良林)
-      - CN 7 → openitsub.com
+      - 荷兰-435.8KB/s(Youtube:不良林)
+      - 荷兰-1.05MB/s(Youtube:不良林)
+      - US 28 → openitsub.com
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - US 43 → openitsub.com
-      - US 32 → openitsub.com
-      - US 34 → openitsub.com
-      - CN 3 → openitsub.com
-      - US 33 → openitsub.com
-      - US 41 → openitsub.com
-      - US 44 → openitsub.com
-      - CN 2 → openitsub.com
+      - US_1349
+      - CA 1 → openitsub.com
       - CN 4 → openitsub.com
-      - CN 1 → openitsub.com
-      - US 38 → openitsub.com
-      - 荷兰-2.22MB/s(Youtube:不良林)
-      - CN 7 → openitsub.com
+      - 荷兰-435.8KB/s(Youtube:不良林)
+      - 荷兰-1.05MB/s(Youtube:不良林)
+      - US 28 → openitsub.com
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -92,19 +64,12 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - US 43 → openitsub.com
-      - US 32 → openitsub.com
-      - US 34 → openitsub.com
-      - CN 3 → openitsub.com
-      - US 33 → openitsub.com
-      - US 41 → openitsub.com
-      - US 44 → openitsub.com
-      - CN 2 → openitsub.com
+      - US_1349
+      - CA 1 → openitsub.com
       - CN 4 → openitsub.com
-      - CN 1 → openitsub.com
-      - US 38 → openitsub.com
-      - 荷兰-2.22MB/s(Youtube:不良林)
-      - CN 7 → openitsub.com
+      - 荷兰-435.8KB/s(Youtube:不良林)
+      - 荷兰-1.05MB/s(Youtube:不良林)
+      - US 28 → openitsub.com
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -115,56 +80,35 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - US 43 → openitsub.com
-      - US 32 → openitsub.com
-      - US 34 → openitsub.com
-      - CN 3 → openitsub.com
-      - US 33 → openitsub.com
-      - US 41 → openitsub.com
-      - US 44 → openitsub.com
-      - CN 2 → openitsub.com
+      - US_1349
+      - CA 1 → openitsub.com
       - CN 4 → openitsub.com
-      - CN 1 → openitsub.com
-      - US 38 → openitsub.com
-      - 荷兰-2.22MB/s(Youtube:不良林)
-      - CN 7 → openitsub.com
+      - 荷兰-435.8KB/s(Youtube:不良林)
+      - 荷兰-1.05MB/s(Youtube:不良林)
+      - US 28 → openitsub.com
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - US 43 → openitsub.com
-      - US 32 → openitsub.com
-      - US 34 → openitsub.com
-      - CN 3 → openitsub.com
-      - US 33 → openitsub.com
-      - US 41 → openitsub.com
-      - US 44 → openitsub.com
-      - CN 2 → openitsub.com
+      - US_1349
+      - CA 1 → openitsub.com
       - CN 4 → openitsub.com
-      - CN 1 → openitsub.com
-      - US 38 → openitsub.com
-      - 荷兰-2.22MB/s(Youtube:不良林)
-      - CN 7 → openitsub.com
+      - 荷兰-435.8KB/s(Youtube:不良林)
+      - 荷兰-1.05MB/s(Youtube:不良林)
+      - US 28 → openitsub.com
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - US 43 → openitsub.com
-      - US 32 → openitsub.com
-      - US 34 → openitsub.com
-      - CN 3 → openitsub.com
-      - US 33 → openitsub.com
-      - US 41 → openitsub.com
-      - US 44 → openitsub.com
-      - CN 2 → openitsub.com
+      - US_1349
+      - CA 1 → openitsub.com
       - CN 4 → openitsub.com
-      - CN 1 → openitsub.com
-      - US 38 → openitsub.com
-      - 荷兰-2.22MB/s(Youtube:不良林)
-      - CN 7 → openitsub.com
+      - 荷兰-435.8KB/s(Youtube:不良林)
+      - 荷兰-1.05MB/s(Youtube:不良林)
+      - US 28 → openitsub.com
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -180,19 +124,12 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - US 43 → openitsub.com
-      - US 32 → openitsub.com
-      - US 34 → openitsub.com
-      - CN 3 → openitsub.com
-      - US 33 → openitsub.com
-      - US 41 → openitsub.com
-      - US 44 → openitsub.com
-      - CN 2 → openitsub.com
+      - US_1349
+      - CA 1 → openitsub.com
       - CN 4 → openitsub.com
-      - CN 1 → openitsub.com
-      - US 38 → openitsub.com
-      - 荷兰-2.22MB/s(Youtube:不良林)
-      - CN 7 → openitsub.com
+      - 荷兰-435.8KB/s(Youtube:不良林)
+      - 荷兰-1.05MB/s(Youtube:不良林)
+      - US 28 → openitsub.com
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
