@@ -5,75 +5,59 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: JP_289, server: 5.180.76.172, port: 28443, type: trojan, password: 3b3431ac-05bf-44fd-b93c-10db87d4ff5c, skip-cert-verify: true, udp: true}
-  - {name: AU 3 → openitsub.com, server: ttt1.swiftfalcon.app, port: 8443, type: trojan, password: coldwar2, sni: ttt1.swiftfalcon.app, skip-cert-verify: true, udp: true}
-  - {name: US_1305, server: 137.184.118.47, port: 51649, type: vmess, uuid: 5d0b1709-5c3c-4073-fb3f-67251426571e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US_1312, server: 152.70.235.207, port: 35412, type: vmess, uuid: 70d95308-2a61-4f93-f139-9103d0587fd9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Relay_-🇺🇸US_09, server: xiexi.tk, port: 2096, type: vmess, uuid: 37551ca0-8cc3-432f-ca1f-82aba1db3ef9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: xiexi.tk}, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_1373, server: jgwdj4.gaox.ml, port: 443, type: trojan, password: c09eb137-bf68-4658-84e0-102d94b74168, sni: jgwdj4.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: 欧洲(油管:破解资源君2.0) 11, server: 23.95.215.14, port: 55663, type: vmess, uuid: 65675611-56e4-4635-edd2-81f96665b375, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US 3 → openitsub.com, server: s3.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s3.hazz.win, skip-cert-verify: true, udp: true}
+  - {name: unknown 4 → openitsub.com, server: ty1-3.nigirocloud.com, port: 443, type: trojan, password: 4V4kxVXmcg5Yn2DqF2, sni: ty1-3.nigirocloud.com, skip-cert-verify: true, udp: true}
+  - {name: HK_240, server: 103.103.245.125, port: 50206, type: trojan, password: 789d73af-b985-4778-9872-211047c28015, skip-cert-verify: true, udp: true}
+  - {name: 美国(油管:破解资源君2.0) 28, server: 64.112.42.72, port: 16999, type: ss, cipher: aes-256-gcm, password: CBYyPc0GwoaQ9m2oqWdE, udp: true}
   - {name: US_798, server: 129.146.84.253, port: 26875, type: vmess, uuid: bb240cb0-a6d2-4b8e-ee85-a976e48ac241, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: JP_315, server: 146.56.167.119, port: 6666, type: vmess, uuid: 64779fce-63a5-4faa-b59b-e4af40f4e419, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US_1310, server: 192.3.124.36, port: 29774, type: vmess, uuid: c7f8e9ff-82a6-49af-c772-ccf5b9092825, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇺🇸 US-🇨🇦CA_808, server: 20.239.186.92, port: 38549, type: trojan, password: 1b60a674-a7b7-4322-b6e4-f6db29c7e4c9, skip-cert-verify: true, udp: true}
-  - {name: _10, server: 23.230.146.254, port: 1258, type: vmess, uuid: edeb41cc-a76a-47f2-fa96-b9141e66a2b0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US_1113, server: 97.64.122.63, port: 253, type: ss, cipher: aes-256-cfb, password: bwhskrskr05, udp: true}
-  - {name: Relay_🇸🇬SG-🇸🇬SG_724, server: vsg1.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /chat, ws-headers: {Host: vsg1.0bad.com}, udp: true}
-  - {name: JP 3 → openitsub.com, server: tr03.kaochangonline.online, port: 443, type: trojan, password: 84309a3f-642b-46c7-972e-90653f666215, sni: tr03.kaochangonline.online, skip-cert-verify: true, udp: true}
+  - {name: 日本(油管:破解资源君2.0) 5, server: 193.38.139.204, port: 802, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: 日本-309.6KB/s(Youtube:不良林), server: 172.105.242.17, port: 20020, type: ss, cipher: aes-128-gcm, password: !<str> 200000000000000000000020, plugin: obfs, plugin-opts: {mode: http, host: "TIB2ehlN1U.download.windowsupdate.com,449bff3663.douyincdn.com"}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - JP_289
-      - AU 3 → openitsub.com
-      - US_1305
-      - US_1312
-      - Relay_-🇺🇸US_09
+      - Relay_🇺🇸US-🇺🇸US_1373
+      - 欧洲(油管:破解资源君2.0) 11
+      - US 3 → openitsub.com
+      - unknown 4 → openitsub.com
+      - HK_240
+      - 美国(油管:破解资源君2.0) 28
       - US_798
-      - JP_315
-      - US_1310
-      - Relay_🇺🇸 US-🇨🇦CA_808
-      - _10
-      - US_1113
-      - Relay_🇸🇬SG-🇸🇬SG_724
-      - JP 3 → openitsub.com
+      - 日本(油管:破解资源君2.0) 5
+      - 日本-309.6KB/s(Youtube:不良林)
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - JP_289
-      - AU 3 → openitsub.com
-      - US_1305
-      - US_1312
-      - Relay_-🇺🇸US_09
+      - Relay_🇺🇸US-🇺🇸US_1373
+      - 欧洲(油管:破解资源君2.0) 11
+      - US 3 → openitsub.com
+      - unknown 4 → openitsub.com
+      - HK_240
+      - 美国(油管:破解资源君2.0) 28
       - US_798
-      - JP_315
-      - US_1310
-      - Relay_🇺🇸 US-🇨🇦CA_808
-      - _10
-      - US_1113
-      - Relay_🇸🇬SG-🇸🇬SG_724
-      - JP 3 → openitsub.com
+      - 日本(油管:破解资源君2.0) 5
+      - 日本-309.6KB/s(Youtube:不良林)
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - JP_289
-      - AU 3 → openitsub.com
-      - US_1305
-      - US_1312
-      - Relay_-🇺🇸US_09
+      - Relay_🇺🇸US-🇺🇸US_1373
+      - 欧洲(油管:破解资源君2.0) 11
+      - US 3 → openitsub.com
+      - unknown 4 → openitsub.com
+      - HK_240
+      - 美国(油管:破解资源君2.0) 28
       - US_798
-      - JP_315
-      - US_1310
-      - Relay_🇺🇸 US-🇨🇦CA_808
-      - _10
-      - US_1113
-      - Relay_🇸🇬SG-🇸🇬SG_724
-      - JP 3 → openitsub.com
+      - 日本(油管:破解资源君2.0) 5
+      - 日本-309.6KB/s(Youtube:不良林)
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -92,19 +76,15 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - JP_289
-      - AU 3 → openitsub.com
-      - US_1305
-      - US_1312
-      - Relay_-🇺🇸US_09
+      - Relay_🇺🇸US-🇺🇸US_1373
+      - 欧洲(油管:破解资源君2.0) 11
+      - US 3 → openitsub.com
+      - unknown 4 → openitsub.com
+      - HK_240
+      - 美国(油管:破解资源君2.0) 28
       - US_798
-      - JP_315
-      - US_1310
-      - Relay_🇺🇸 US-🇨🇦CA_808
-      - _10
-      - US_1113
-      - Relay_🇸🇬SG-🇸🇬SG_724
-      - JP 3 → openitsub.com
+      - 日本(油管:破解资源君2.0) 5
+      - 日本-309.6KB/s(Youtube:不良林)
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -115,56 +95,44 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - JP_289
-      - AU 3 → openitsub.com
-      - US_1305
-      - US_1312
-      - Relay_-🇺🇸US_09
+      - Relay_🇺🇸US-🇺🇸US_1373
+      - 欧洲(油管:破解资源君2.0) 11
+      - US 3 → openitsub.com
+      - unknown 4 → openitsub.com
+      - HK_240
+      - 美国(油管:破解资源君2.0) 28
       - US_798
-      - JP_315
-      - US_1310
-      - Relay_🇺🇸 US-🇨🇦CA_808
-      - _10
-      - US_1113
-      - Relay_🇸🇬SG-🇸🇬SG_724
-      - JP 3 → openitsub.com
+      - 日本(油管:破解资源君2.0) 5
+      - 日本-309.6KB/s(Youtube:不良林)
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - JP_289
-      - AU 3 → openitsub.com
-      - US_1305
-      - US_1312
-      - Relay_-🇺🇸US_09
+      - Relay_🇺🇸US-🇺🇸US_1373
+      - 欧洲(油管:破解资源君2.0) 11
+      - US 3 → openitsub.com
+      - unknown 4 → openitsub.com
+      - HK_240
+      - 美国(油管:破解资源君2.0) 28
       - US_798
-      - JP_315
-      - US_1310
-      - Relay_🇺🇸 US-🇨🇦CA_808
-      - _10
-      - US_1113
-      - Relay_🇸🇬SG-🇸🇬SG_724
-      - JP 3 → openitsub.com
+      - 日本(油管:破解资源君2.0) 5
+      - 日本-309.6KB/s(Youtube:不良林)
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - JP_289
-      - AU 3 → openitsub.com
-      - US_1305
-      - US_1312
-      - Relay_-🇺🇸US_09
+      - Relay_🇺🇸US-🇺🇸US_1373
+      - 欧洲(油管:破解资源君2.0) 11
+      - US 3 → openitsub.com
+      - unknown 4 → openitsub.com
+      - HK_240
+      - 美国(油管:破解资源君2.0) 28
       - US_798
-      - JP_315
-      - US_1310
-      - Relay_🇺🇸 US-🇨🇦CA_808
-      - _10
-      - US_1113
-      - Relay_🇸🇬SG-🇸🇬SG_724
-      - JP 3 → openitsub.com
+      - 日本(油管:破解资源君2.0) 5
+      - 日本-309.6KB/s(Youtube:不良林)
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -180,19 +148,15 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - JP_289
-      - AU 3 → openitsub.com
-      - US_1305
-      - US_1312
-      - Relay_-🇺🇸US_09
+      - Relay_🇺🇸US-🇺🇸US_1373
+      - 欧洲(油管:破解资源君2.0) 11
+      - US 3 → openitsub.com
+      - unknown 4 → openitsub.com
+      - HK_240
+      - 美国(油管:破解资源君2.0) 28
       - US_798
-      - JP_315
-      - US_1310
-      - Relay_🇺🇸 US-🇨🇦CA_808
-      - _10
-      - US_1113
-      - Relay_🇸🇬SG-🇸🇬SG_724
-      - JP 3 → openitsub.com
+      - 日本(油管:破解资源君2.0) 5
+      - 日本-309.6KB/s(Youtube:不良林)
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
