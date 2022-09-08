@@ -5,55 +5,91 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: Relay_🇨🇳CN-🇭🇰HK_98, server: cngdcs4.langtg.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 2634:vFr9Fx23xZR(1), obfs-param: "", udp: true}
-  - {name: US 26 → openitsub.com, server: www.chaojiwudiweb.xyz, port: 42534, type: trojan, password: 0253b574-8020-3186-a647-0267295ac9bb, sni: www.chaojiwudiweb.xyz, skip-cert-verify: true, udp: true}
-  - {name: AU 4 → openitsub.com, server: 129.154.61.32, port: 80, type: vmess, uuid: 93c8fd94-17de-4730-8977-d55e304e9a85, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US_1172, server: 97.64.122.63, port: 253, type: ss, cipher: aes-256-cfb, password: bwhskrskr05, udp: true}
+  - {name: Relay_🇺🇸 US-🇺🇸US_774, server: jjkk.usdeth.top, port: 443, type: trojan, password: 71354f48-e8c8-4c4c-a967-47d7ac5e953c, sni: jjkk.usdeth.top, skip-cert-verify: true, udp: true}
+  - {name: JP_250, server: 172.105.242.17, port: 20020, type: ss, cipher: aes-128-gcm, password: !<str> 200000000000000000000020, plugin: obfs, plugin-opts: {mode: http, host: "TIB2ehlN1U.download.windowsupdate.com,449bff3663.douyincdn.com"}, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_1337, server: s3.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s3.hazz.win, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇩🇪 DE-🇩🇪DE_95, server: ty1-2.nigirocloud.com, port: 443, type: trojan, password: 4V4kxVXmcg5Yn2DqF2, sni: ty1-2.nigirocloud.com, skip-cert-verify: true, udp: true}
+  - {name: CN 1 → openitsub.com, server: xi.kanao.xyz, port: 58832, type: trojan, password: 7b78d07f-6382-4e2c-a4bb-dbe3dbef1bd6, sni: xi.kanao.xyz, skip-cert-verify: true, udp: true}
+  - {name: US_781, server: 150.230.249.42, port: 443, type: trojan, password: 0Y9gOHSdRt, skip-cert-verify: true, udp: true}
+  - {name: US_788, server: azgy001.xibai6.top, port: 20786, type: trojan, password: 3d6e81e4-c6df-32ad-a808-e83d4fd1ca1a, sni: azgy001.xibai6.top, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇺🇸 US-🇺🇸US_789, server: ex.755657.xyz, port: 443, type: trojan, password: 11b8206c-8ae2-4ab3-a92c-208cdb8cc73d, sni: ex.755657.xyz, skip-cert-verify: true, udp: true}
+  - {name: US_784, server: 13.40.154.20, port: 443, type: trojan, password: iyinglong, skip-cert-verify: true, udp: true}
+  - {name: US 15 → openitsub.com, server: 18.133.181.177, port: 443, type: trojan, password: iyinglong, skip-cert-verify: true, udp: true}
+  - {name: US_779, server: 34.219.230.191, port: 443, type: trojan, password: iyinglong, skip-cert-verify: true, udp: true}
+  - {name: NL 1 → openitsub.com, server: 41.216.177.41, port: 443, type: trojan, password: 274c1b23-2bfe-40ac-943c-ebc1aa044b22, skip-cert-verify: true, udp: true}
+  - {name: US_1317, server: 168.138.201.208, port: 10328, type: vmess, uuid: bf847bf7-0ba5-4885-bd2b-da4d77afbda8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇯🇵JP-🇯🇵JP_302, server: kr1.api-aws.com, port: 443, type: trojan, password: 33073a7c-e6d5-4271-9b19-4416afcc25b5, sni: kr1.api-aws.com, skip-cert-verify: true, udp: true}
+  - {name: SG_707, server: 139.59.244.143, port: 38941, type: vmess, uuid: 3dc5c1c9-7d8c-432e-daff-4422103a7918, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇯🇵 JP-🇯🇵JP_282, server: kr1.api-aws.com, port: 443, type: trojan, password: da647e58-8f85-450f-b123-568c492c297c, sni: kr1.api-aws.com, skip-cert-verify: true, udp: true}
   - {name: TW 1 → openitsub.com, server: tw.tcpbbr.net, port: 443, type: trojan, password: 80bcf4f2-12f7-11ed-bb74-f23c9164ca5d, sni: tw.tcpbbr.net, skip-cert-verify: true, udp: true}
-  - {name: unknown 2 → openitsub.com, server: 103.173.155.72, port: 28443, type: trojan, password: 3b3431ac-05bf-44fd-b93c-10db87d4ff5c, skip-cert-verify: true, udp: true}
-  - {name: US_780, server: 38.75.136.34, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: NL_561, server: 213.183.59.218, port: 9053, type: ss, cipher: aes-256-cfb, password: SBM7R883jBmnqe6C, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay_🇨🇳CN-🇭🇰HK_98
-      - US 26 → openitsub.com
-      - AU 4 → openitsub.com
-      - US_1172
+      - Relay_🇺🇸 US-🇺🇸US_774
+      - JP_250
+      - Relay_🇺🇸US-🇺🇸US_1337
+      - Relay_🇩🇪 DE-🇩🇪DE_95
+      - CN 1 → openitsub.com
+      - US_781
+      - US_788
+      - Relay_🇺🇸 US-🇺🇸US_789
+      - US_784
+      - US 15 → openitsub.com
+      - US_779
+      - NL 1 → openitsub.com
+      - US_1317
+      - Relay_🇯🇵JP-🇯🇵JP_302
+      - SG_707
+      - Relay_🇯🇵 JP-🇯🇵JP_282
       - TW 1 → openitsub.com
-      - unknown 2 → openitsub.com
-      - US_780
-      - NL_561
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - Relay_🇨🇳CN-🇭🇰HK_98
-      - US 26 → openitsub.com
-      - AU 4 → openitsub.com
-      - US_1172
+      - Relay_🇺🇸 US-🇺🇸US_774
+      - JP_250
+      - Relay_🇺🇸US-🇺🇸US_1337
+      - Relay_🇩🇪 DE-🇩🇪DE_95
+      - CN 1 → openitsub.com
+      - US_781
+      - US_788
+      - Relay_🇺🇸 US-🇺🇸US_789
+      - US_784
+      - US 15 → openitsub.com
+      - US_779
+      - NL 1 → openitsub.com
+      - US_1317
+      - Relay_🇯🇵JP-🇯🇵JP_302
+      - SG_707
+      - Relay_🇯🇵 JP-🇯🇵JP_282
       - TW 1 → openitsub.com
-      - unknown 2 → openitsub.com
-      - US_780
-      - NL_561
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay_🇨🇳CN-🇭🇰HK_98
-      - US 26 → openitsub.com
-      - AU 4 → openitsub.com
-      - US_1172
+      - Relay_🇺🇸 US-🇺🇸US_774
+      - JP_250
+      - Relay_🇺🇸US-🇺🇸US_1337
+      - Relay_🇩🇪 DE-🇩🇪DE_95
+      - CN 1 → openitsub.com
+      - US_781
+      - US_788
+      - Relay_🇺🇸 US-🇺🇸US_789
+      - US_784
+      - US 15 → openitsub.com
+      - US_779
+      - NL 1 → openitsub.com
+      - US_1317
+      - Relay_🇯🇵JP-🇯🇵JP_302
+      - SG_707
+      - Relay_🇯🇵 JP-🇯🇵JP_282
       - TW 1 → openitsub.com
-      - unknown 2 → openitsub.com
-      - US_780
-      - NL_561
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -72,14 +108,23 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay_🇨🇳CN-🇭🇰HK_98
-      - US 26 → openitsub.com
-      - AU 4 → openitsub.com
-      - US_1172
+      - Relay_🇺🇸 US-🇺🇸US_774
+      - JP_250
+      - Relay_🇺🇸US-🇺🇸US_1337
+      - Relay_🇩🇪 DE-🇩🇪DE_95
+      - CN 1 → openitsub.com
+      - US_781
+      - US_788
+      - Relay_🇺🇸 US-🇺🇸US_789
+      - US_784
+      - US 15 → openitsub.com
+      - US_779
+      - NL 1 → openitsub.com
+      - US_1317
+      - Relay_🇯🇵JP-🇯🇵JP_302
+      - SG_707
+      - Relay_🇯🇵 JP-🇯🇵JP_282
       - TW 1 → openitsub.com
-      - unknown 2 → openitsub.com
-      - US_780
-      - NL_561
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -90,41 +135,68 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - Relay_🇨🇳CN-🇭🇰HK_98
-      - US 26 → openitsub.com
-      - AU 4 → openitsub.com
-      - US_1172
+      - Relay_🇺🇸 US-🇺🇸US_774
+      - JP_250
+      - Relay_🇺🇸US-🇺🇸US_1337
+      - Relay_🇩🇪 DE-🇩🇪DE_95
+      - CN 1 → openitsub.com
+      - US_781
+      - US_788
+      - Relay_🇺🇸 US-🇺🇸US_789
+      - US_784
+      - US 15 → openitsub.com
+      - US_779
+      - NL 1 → openitsub.com
+      - US_1317
+      - Relay_🇯🇵JP-🇯🇵JP_302
+      - SG_707
+      - Relay_🇯🇵 JP-🇯🇵JP_282
       - TW 1 → openitsub.com
-      - unknown 2 → openitsub.com
-      - US_780
-      - NL_561
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - Relay_🇨🇳CN-🇭🇰HK_98
-      - US 26 → openitsub.com
-      - AU 4 → openitsub.com
-      - US_1172
+      - Relay_🇺🇸 US-🇺🇸US_774
+      - JP_250
+      - Relay_🇺🇸US-🇺🇸US_1337
+      - Relay_🇩🇪 DE-🇩🇪DE_95
+      - CN 1 → openitsub.com
+      - US_781
+      - US_788
+      - Relay_🇺🇸 US-🇺🇸US_789
+      - US_784
+      - US 15 → openitsub.com
+      - US_779
+      - NL 1 → openitsub.com
+      - US_1317
+      - Relay_🇯🇵JP-🇯🇵JP_302
+      - SG_707
+      - Relay_🇯🇵 JP-🇯🇵JP_282
       - TW 1 → openitsub.com
-      - unknown 2 → openitsub.com
-      - US_780
-      - NL_561
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Relay_🇨🇳CN-🇭🇰HK_98
-      - US 26 → openitsub.com
-      - AU 4 → openitsub.com
-      - US_1172
+      - Relay_🇺🇸 US-🇺🇸US_774
+      - JP_250
+      - Relay_🇺🇸US-🇺🇸US_1337
+      - Relay_🇩🇪 DE-🇩🇪DE_95
+      - CN 1 → openitsub.com
+      - US_781
+      - US_788
+      - Relay_🇺🇸 US-🇺🇸US_789
+      - US_784
+      - US 15 → openitsub.com
+      - US_779
+      - NL 1 → openitsub.com
+      - US_1317
+      - Relay_🇯🇵JP-🇯🇵JP_302
+      - SG_707
+      - Relay_🇯🇵 JP-🇯🇵JP_282
       - TW 1 → openitsub.com
-      - unknown 2 → openitsub.com
-      - US_780
-      - NL_561
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -140,14 +212,23 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Relay_🇨🇳CN-🇭🇰HK_98
-      - US 26 → openitsub.com
-      - AU 4 → openitsub.com
-      - US_1172
+      - Relay_🇺🇸 US-🇺🇸US_774
+      - JP_250
+      - Relay_🇺🇸US-🇺🇸US_1337
+      - Relay_🇩🇪 DE-🇩🇪DE_95
+      - CN 1 → openitsub.com
+      - US_781
+      - US_788
+      - Relay_🇺🇸 US-🇺🇸US_789
+      - US_784
+      - US 15 → openitsub.com
+      - US_779
+      - NL 1 → openitsub.com
+      - US_1317
+      - Relay_🇯🇵JP-🇯🇵JP_302
+      - SG_707
+      - Relay_🇯🇵 JP-🇯🇵JP_282
       - TW 1 → openitsub.com
-      - unknown 2 → openitsub.com
-      - US_780
-      - NL_561
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
