@@ -1,55 +1,147 @@
-port: 7890
+﻿port: 7890
 socks-port: 7891
 allow-lan: true
 mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: CN 14 → openitsub.com, server: apt.v2-install.mipglxi.cn, port: 5418, type: ss, cipher: aes-128-gcm, password: 0a228809-a1d7-4143-944a-071b105ab9c7, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_1476, server: s3.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s3.hazz.win, skip-cert-verify: true, udp: true}
-  - {name: CN_99, server: yum-y.update.mipglxi.cn, port: 6407, type: ss, cipher: aes-128-gcm, password: 3ee653cf-3f43-43e5-b4d0-7bb1cabe9845, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_1418, server: us-am32-5.eqnode.net, port: 8081, type: ssr, cipher: aes-256-cfb, password: YFVrXZgRo, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
-  - {name: US 10 → openitsub.com, server: 64.27.30.211, port: 14815, type: trojan, password: JDpCGXNLHq, skip-cert-verify: true, udp: true}
-  - {name: JP 6 → openitsub.com, server: 172.105.242.17, port: 20020, type: ss, cipher: aes-128-gcm, password: !<str> 200000000000000000000020, plugin: obfs, plugin-opts: {mode: http, host: "TIB2ehlN1U.download.windowsupdate.com,449bff3663.douyincdn.com"}, udp: true}
-  - {name: MD 1 → openitsub.com, server: transfer01.kaochangonline.online, port: 443, type: trojan, password: 62b78c9b-16cb-4ee6-824b-a4f856cf18f3, sni: transfer01.kaochangonline.online, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇯🇵 JP-🇯🇵JP_243, server: kr1.api-aws.com, port: 443, type: trojan, password: 3753719b-eb37-4f34-ab60-ae3a70486b27, sni: kr1.api-aws.com, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇯🇵JP-🇯🇵JP_266, server: kr1.api-aws.com, port: 443, type: trojan, password: 84773125-8f79-481c-a80b-e1f4aad86850, sni: kr1.api-aws.com, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇯🇵 JP-🇯🇵JP_250, server: kr1.api-aws.com, port: 443, type: trojan, password: ddeb5b2c-5a1e-41d4-bb3a-08babe54f1a1, sni: kr1.api-aws.com, skip-cert-verify: true, udp: true}
+  - {name: CN 1 → openitsub.com, server: da.kanao.xyz, port: 58816, type: trojan, password: 7b78d07f-6382-4e2c-a4bb-dbe3dbef1bd6, sni: da.kanao.xyz, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇯🇵 JP-🇯🇵JP_242, server: kr1.api-aws.com, port: 443, type: trojan, password: b70b2ed8-6d35-4fe0-8ae7-4e8fa45ff326, sni: kr1.api-aws.com, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇯🇵 JP-🇯🇵JP_274, server: kr1.api-aws.com, port: 443, type: trojan, password: 881091b5-4172-4329-a0e7-17fca1e72292, sni: kr1.api-aws.com, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇯🇵 JP-🇯🇵JP_271, server: kr1.api-aws.com, port: 443, type: trojan, password: dc26913c-a31c-4b3f-9c03-28a6b4283a89, sni: kr1.api-aws.com, skip-cert-verify: true, udp: true}
+  - {name: SG 4 → openitsub.com, server: 18.140.65.66, port: 39990, type: trojan, password: 4a1f0cde-7fde-41ac-a3d5-e9b4c2f84260, skip-cert-verify: true, udp: true}
+  - {name: JP 4 → openitsub.com, server: 52.198.198.133, port: 35901, type: trojan, password: f6f16e37-c800-46d5-ac12-475b4b61c18b, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇯🇵 JP-🇯🇵JP_246, server: kr1.api-aws.com, port: 443, type: trojan, password: 61f6271b-5e65-46b8-bc80-c6468a1f185e, sni: kr1.api-aws.com, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇯🇵JP-🇯🇵JP_294, server: kr1.api-aws.com, port: 443, type: trojan, password: d30afdba-ca55-463a-b26e-27080698a2a6, sni: kr1.api-aws.com, skip-cert-verify: true, udp: true}
+  - {name: US 23 → openitsub.com, server: 8.9.30.35, port: 29544, type: trojan, password: rmo75mm5xK, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇯🇵 JP-🇯🇵JP_269, server: kr1.api-aws.com, port: 443, type: trojan, password: 1988268c-a841-42f2-acac-7a8c0c7e78e5, sni: kr1.api-aws.com, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇯🇵 JP-🇯🇵JP_275, server: kr1.api-aws.com, port: 443, type: trojan, password: 83985788-df3e-4b91-8f5e-a9de66a79cca, sni: kr1.api-aws.com, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇺🇸 US-🇺🇸US_784, server: ex.755657.xyz, port: 443, type: trojan, password: 11b8206c-8ae2-4ab3-a92c-208cdb8cc73d, sni: ex.755657.xyz, skip-cert-verify: true, udp: true}
+  - {name: 美国(油管:破解资源君2.0) 10, server: 38.91.107.72, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: Relay_🇩🇪 DE-🇩🇪DE_88, server: ty1-2.nigirocloud.com, port: 443, type: trojan, password: 4V4kxVXmcg5Yn2DqF2, sni: ty1-2.nigirocloud.com, skip-cert-verify: true, udp: true}
+  - {name: US 39 → openitsub.com, server: 18.170.39.237, port: 443, type: trojan, password: iyinglong, skip-cert-verify: true, udp: true}
+  - {name: US 32 → openitsub.com, server: ex1.755657.xyz, port: 443, type: trojan, password: 046c4ca7-9c88-4ad5-92e8-591723b52b25, sni: ex1.755657.xyz, skip-cert-verify: true, udp: true}
+  - {name: BE_40, server: 196.196.156.122, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: US_773, server: 54.188.171.13, port: 443, type: trojan, password: iyinglong, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇯🇵 JP-🇯🇵JP_272, server: kr1.api-aws.com, port: 443, type: trojan, password: f2239c58-4684-4747-8985-fbca693f352b, sni: kr1.api-aws.com, skip-cert-verify: true, udp: true}
+  - {name: 美国-4.83MB/s(Youtube:不良林), server: studynew.cn, port: 51340, type: vmess, uuid: bb84725a-f726-4bcb-8131-44df12094005, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /dengqingbo, ws-headers: {Host: studynew.cn}, udp: true}
+  - {name: Relay_🇯🇵 JP-🇯🇵JP_238, server: kr1.api-aws.com, port: 443, type: trojan, password: a153fb4e-6d1b-4db0-b03d-acb4012b7198, sni: kr1.api-aws.com, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇯🇵 JP-🇯🇵JP_254, server: kr1.api-aws.com, port: 443, type: trojan, password: e92293ba-8399-4759-b58e-6416f0702576, sni: kr1.api-aws.com, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇯🇵 JP-🇯🇵JP_270, server: kr1.api-aws.com, port: 443, type: trojan, password: 2e4c54a0-a780-4994-97c0-44eb92857d76, sni: kr1.api-aws.com, skip-cert-verify: true, udp: true}
+  - {name: US 29 → openitsub.com, server: 150.230.249.42, port: 443, type: trojan, password: 0Y9gOHSdRt, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇯🇵 JP-🇯🇵JP_244, server: kr1.api-aws.com, port: 443, type: trojan, password: 4af0d477-0852-4872-a0bc-e333c119b84e, sni: kr1.api-aws.com, skip-cert-verify: true, udp: true}
+  - {name: FR_156, server: 145.239.1.100, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: US 22 → openitsub.com, server: 13.40.154.20, port: 443, type: trojan, password: iyinglong, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN 14 → openitsub.com
-      - Relay_🇺🇸US-🇺🇸US_1476
-      - CN_99
-      - Relay_🇺🇸US-🇺🇸US_1418
-      - US 10 → openitsub.com
-      - JP 6 → openitsub.com
-      - MD 1 → openitsub.com
+      - Relay_🇯🇵 JP-🇯🇵JP_243
+      - Relay_🇯🇵JP-🇯🇵JP_266
+      - Relay_🇯🇵 JP-🇯🇵JP_250
+      - CN 1 → openitsub.com
+      - Relay_🇯🇵 JP-🇯🇵JP_242
+      - Relay_🇯🇵 JP-🇯🇵JP_274
+      - Relay_🇯🇵 JP-🇯🇵JP_271
+      - SG 4 → openitsub.com
+      - JP 4 → openitsub.com
+      - Relay_🇯🇵 JP-🇯🇵JP_246
+      - Relay_🇯🇵JP-🇯🇵JP_294
+      - US 23 → openitsub.com
+      - Relay_🇯🇵 JP-🇯🇵JP_269
+      - Relay_🇯🇵 JP-🇯🇵JP_275
+      - Relay_🇺🇸 US-🇺🇸US_784
+      - 美国(油管:破解资源君2.0) 10
+      - Relay_🇩🇪 DE-🇩🇪DE_88
+      - US 39 → openitsub.com
+      - US 32 → openitsub.com
+      - BE_40
+      - US_773
+      - Relay_🇯🇵 JP-🇯🇵JP_272
+      - 美国-4.83MB/s(Youtube:不良林)
+      - Relay_🇯🇵 JP-🇯🇵JP_238
+      - Relay_🇯🇵 JP-🇯🇵JP_254
+      - Relay_🇯🇵 JP-🇯🇵JP_270
+      - US 29 → openitsub.com
+      - Relay_🇯🇵 JP-🇯🇵JP_244
+      - FR_156
+      - US 22 → openitsub.com
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - CN 14 → openitsub.com
-      - Relay_🇺🇸US-🇺🇸US_1476
-      - CN_99
-      - Relay_🇺🇸US-🇺🇸US_1418
-      - US 10 → openitsub.com
-      - JP 6 → openitsub.com
-      - MD 1 → openitsub.com
+      - Relay_🇯🇵 JP-🇯🇵JP_243
+      - Relay_🇯🇵JP-🇯🇵JP_266
+      - Relay_🇯🇵 JP-🇯🇵JP_250
+      - CN 1 → openitsub.com
+      - Relay_🇯🇵 JP-🇯🇵JP_242
+      - Relay_🇯🇵 JP-🇯🇵JP_274
+      - Relay_🇯🇵 JP-🇯🇵JP_271
+      - SG 4 → openitsub.com
+      - JP 4 → openitsub.com
+      - Relay_🇯🇵 JP-🇯🇵JP_246
+      - Relay_🇯🇵JP-🇯🇵JP_294
+      - US 23 → openitsub.com
+      - Relay_🇯🇵 JP-🇯🇵JP_269
+      - Relay_🇯🇵 JP-🇯🇵JP_275
+      - Relay_🇺🇸 US-🇺🇸US_784
+      - 美国(油管:破解资源君2.0) 10
+      - Relay_🇩🇪 DE-🇩🇪DE_88
+      - US 39 → openitsub.com
+      - US 32 → openitsub.com
+      - BE_40
+      - US_773
+      - Relay_🇯🇵 JP-🇯🇵JP_272
+      - 美国-4.83MB/s(Youtube:不良林)
+      - Relay_🇯🇵 JP-🇯🇵JP_238
+      - Relay_🇯🇵 JP-🇯🇵JP_254
+      - Relay_🇯🇵 JP-🇯🇵JP_270
+      - US 29 → openitsub.com
+      - Relay_🇯🇵 JP-🇯🇵JP_244
+      - FR_156
+      - US 22 → openitsub.com
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN 14 → openitsub.com
-      - Relay_🇺🇸US-🇺🇸US_1476
-      - CN_99
-      - Relay_🇺🇸US-🇺🇸US_1418
-      - US 10 → openitsub.com
-      - JP 6 → openitsub.com
-      - MD 1 → openitsub.com
+      - Relay_🇯🇵 JP-🇯🇵JP_243
+      - Relay_🇯🇵JP-🇯🇵JP_266
+      - Relay_🇯🇵 JP-🇯🇵JP_250
+      - CN 1 → openitsub.com
+      - Relay_🇯🇵 JP-🇯🇵JP_242
+      - Relay_🇯🇵 JP-🇯🇵JP_274
+      - Relay_🇯🇵 JP-🇯🇵JP_271
+      - SG 4 → openitsub.com
+      - JP 4 → openitsub.com
+      - Relay_🇯🇵 JP-🇯🇵JP_246
+      - Relay_🇯🇵JP-🇯🇵JP_294
+      - US 23 → openitsub.com
+      - Relay_🇯🇵 JP-🇯🇵JP_269
+      - Relay_🇯🇵 JP-🇯🇵JP_275
+      - Relay_🇺🇸 US-🇺🇸US_784
+      - 美国(油管:破解资源君2.0) 10
+      - Relay_🇩🇪 DE-🇩🇪DE_88
+      - US 39 → openitsub.com
+      - US 32 → openitsub.com
+      - BE_40
+      - US_773
+      - Relay_🇯🇵 JP-🇯🇵JP_272
+      - 美国-4.83MB/s(Youtube:不良林)
+      - Relay_🇯🇵 JP-🇯🇵JP_238
+      - Relay_🇯🇵 JP-🇯🇵JP_254
+      - Relay_🇯🇵 JP-🇯🇵JP_270
+      - US 29 → openitsub.com
+      - Relay_🇯🇵 JP-🇯🇵JP_244
+      - FR_156
+      - US 22 → openitsub.com
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -68,13 +160,36 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN 14 → openitsub.com
-      - Relay_🇺🇸US-🇺🇸US_1476
-      - CN_99
-      - Relay_🇺🇸US-🇺🇸US_1418
-      - US 10 → openitsub.com
-      - JP 6 → openitsub.com
-      - MD 1 → openitsub.com
+      - Relay_🇯🇵 JP-🇯🇵JP_243
+      - Relay_🇯🇵JP-🇯🇵JP_266
+      - Relay_🇯🇵 JP-🇯🇵JP_250
+      - CN 1 → openitsub.com
+      - Relay_🇯🇵 JP-🇯🇵JP_242
+      - Relay_🇯🇵 JP-🇯🇵JP_274
+      - Relay_🇯🇵 JP-🇯🇵JP_271
+      - SG 4 → openitsub.com
+      - JP 4 → openitsub.com
+      - Relay_🇯🇵 JP-🇯🇵JP_246
+      - Relay_🇯🇵JP-🇯🇵JP_294
+      - US 23 → openitsub.com
+      - Relay_🇯🇵 JP-🇯🇵JP_269
+      - Relay_🇯🇵 JP-🇯🇵JP_275
+      - Relay_🇺🇸 US-🇺🇸US_784
+      - 美国(油管:破解资源君2.0) 10
+      - Relay_🇩🇪 DE-🇩🇪DE_88
+      - US 39 → openitsub.com
+      - US 32 → openitsub.com
+      - BE_40
+      - US_773
+      - Relay_🇯🇵 JP-🇯🇵JP_272
+      - 美国-4.83MB/s(Youtube:不良林)
+      - Relay_🇯🇵 JP-🇯🇵JP_238
+      - Relay_🇯🇵 JP-🇯🇵JP_254
+      - Relay_🇯🇵 JP-🇯🇵JP_270
+      - US 29 → openitsub.com
+      - Relay_🇯🇵 JP-🇯🇵JP_244
+      - FR_156
+      - US 22 → openitsub.com
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -85,38 +200,107 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - CN 14 → openitsub.com
-      - Relay_🇺🇸US-🇺🇸US_1476
-      - CN_99
-      - Relay_🇺🇸US-🇺🇸US_1418
-      - US 10 → openitsub.com
-      - JP 6 → openitsub.com
-      - MD 1 → openitsub.com
+      - Relay_🇯🇵 JP-🇯🇵JP_243
+      - Relay_🇯🇵JP-🇯🇵JP_266
+      - Relay_🇯🇵 JP-🇯🇵JP_250
+      - CN 1 → openitsub.com
+      - Relay_🇯🇵 JP-🇯🇵JP_242
+      - Relay_🇯🇵 JP-🇯🇵JP_274
+      - Relay_🇯🇵 JP-🇯🇵JP_271
+      - SG 4 → openitsub.com
+      - JP 4 → openitsub.com
+      - Relay_🇯🇵 JP-🇯🇵JP_246
+      - Relay_🇯🇵JP-🇯🇵JP_294
+      - US 23 → openitsub.com
+      - Relay_🇯🇵 JP-🇯🇵JP_269
+      - Relay_🇯🇵 JP-🇯🇵JP_275
+      - Relay_🇺🇸 US-🇺🇸US_784
+      - 美国(油管:破解资源君2.0) 10
+      - Relay_🇩🇪 DE-🇩🇪DE_88
+      - US 39 → openitsub.com
+      - US 32 → openitsub.com
+      - BE_40
+      - US_773
+      - Relay_🇯🇵 JP-🇯🇵JP_272
+      - 美国-4.83MB/s(Youtube:不良林)
+      - Relay_🇯🇵 JP-🇯🇵JP_238
+      - Relay_🇯🇵 JP-🇯🇵JP_254
+      - Relay_🇯🇵 JP-🇯🇵JP_270
+      - US 29 → openitsub.com
+      - Relay_🇯🇵 JP-🇯🇵JP_244
+      - FR_156
+      - US 22 → openitsub.com
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - CN 14 → openitsub.com
-      - Relay_🇺🇸US-🇺🇸US_1476
-      - CN_99
-      - Relay_🇺🇸US-🇺🇸US_1418
-      - US 10 → openitsub.com
-      - JP 6 → openitsub.com
-      - MD 1 → openitsub.com
+      - Relay_🇯🇵 JP-🇯🇵JP_243
+      - Relay_🇯🇵JP-🇯🇵JP_266
+      - Relay_🇯🇵 JP-🇯🇵JP_250
+      - CN 1 → openitsub.com
+      - Relay_🇯🇵 JP-🇯🇵JP_242
+      - Relay_🇯🇵 JP-🇯🇵JP_274
+      - Relay_🇯🇵 JP-🇯🇵JP_271
+      - SG 4 → openitsub.com
+      - JP 4 → openitsub.com
+      - Relay_🇯🇵 JP-🇯🇵JP_246
+      - Relay_🇯🇵JP-🇯🇵JP_294
+      - US 23 → openitsub.com
+      - Relay_🇯🇵 JP-🇯🇵JP_269
+      - Relay_🇯🇵 JP-🇯🇵JP_275
+      - Relay_🇺🇸 US-🇺🇸US_784
+      - 美国(油管:破解资源君2.0) 10
+      - Relay_🇩🇪 DE-🇩🇪DE_88
+      - US 39 → openitsub.com
+      - US 32 → openitsub.com
+      - BE_40
+      - US_773
+      - Relay_🇯🇵 JP-🇯🇵JP_272
+      - 美国-4.83MB/s(Youtube:不良林)
+      - Relay_🇯🇵 JP-🇯🇵JP_238
+      - Relay_🇯🇵 JP-🇯🇵JP_254
+      - Relay_🇯🇵 JP-🇯🇵JP_270
+      - US 29 → openitsub.com
+      - Relay_🇯🇵 JP-🇯🇵JP_244
+      - FR_156
+      - US 22 → openitsub.com
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CN 14 → openitsub.com
-      - Relay_🇺🇸US-🇺🇸US_1476
-      - CN_99
-      - Relay_🇺🇸US-🇺🇸US_1418
-      - US 10 → openitsub.com
-      - JP 6 → openitsub.com
-      - MD 1 → openitsub.com
+      - Relay_🇯🇵 JP-🇯🇵JP_243
+      - Relay_🇯🇵JP-🇯🇵JP_266
+      - Relay_🇯🇵 JP-🇯🇵JP_250
+      - CN 1 → openitsub.com
+      - Relay_🇯🇵 JP-🇯🇵JP_242
+      - Relay_🇯🇵 JP-🇯🇵JP_274
+      - Relay_🇯🇵 JP-🇯🇵JP_271
+      - SG 4 → openitsub.com
+      - JP 4 → openitsub.com
+      - Relay_🇯🇵 JP-🇯🇵JP_246
+      - Relay_🇯🇵JP-🇯🇵JP_294
+      - US 23 → openitsub.com
+      - Relay_🇯🇵 JP-🇯🇵JP_269
+      - Relay_🇯🇵 JP-🇯🇵JP_275
+      - Relay_🇺🇸 US-🇺🇸US_784
+      - 美国(油管:破解资源君2.0) 10
+      - Relay_🇩🇪 DE-🇩🇪DE_88
+      - US 39 → openitsub.com
+      - US 32 → openitsub.com
+      - BE_40
+      - US_773
+      - Relay_🇯🇵 JP-🇯🇵JP_272
+      - 美国-4.83MB/s(Youtube:不良林)
+      - Relay_🇯🇵 JP-🇯🇵JP_238
+      - Relay_🇯🇵 JP-🇯🇵JP_254
+      - Relay_🇯🇵 JP-🇯🇵JP_270
+      - US 29 → openitsub.com
+      - Relay_🇯🇵 JP-🇯🇵JP_244
+      - FR_156
+      - US 22 → openitsub.com
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -132,13 +316,36 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CN 14 → openitsub.com
-      - Relay_🇺🇸US-🇺🇸US_1476
-      - CN_99
-      - Relay_🇺🇸US-🇺🇸US_1418
-      - US 10 → openitsub.com
-      - JP 6 → openitsub.com
-      - MD 1 → openitsub.com
+      - Relay_🇯🇵 JP-🇯🇵JP_243
+      - Relay_🇯🇵JP-🇯🇵JP_266
+      - Relay_🇯🇵 JP-🇯🇵JP_250
+      - CN 1 → openitsub.com
+      - Relay_🇯🇵 JP-🇯🇵JP_242
+      - Relay_🇯🇵 JP-🇯🇵JP_274
+      - Relay_🇯🇵 JP-🇯🇵JP_271
+      - SG 4 → openitsub.com
+      - JP 4 → openitsub.com
+      - Relay_🇯🇵 JP-🇯🇵JP_246
+      - Relay_🇯🇵JP-🇯🇵JP_294
+      - US 23 → openitsub.com
+      - Relay_🇯🇵 JP-🇯🇵JP_269
+      - Relay_🇯🇵 JP-🇯🇵JP_275
+      - Relay_🇺🇸 US-🇺🇸US_784
+      - 美国(油管:破解资源君2.0) 10
+      - Relay_🇩🇪 DE-🇩🇪DE_88
+      - US 39 → openitsub.com
+      - US 32 → openitsub.com
+      - BE_40
+      - US_773
+      - Relay_🇯🇵 JP-🇯🇵JP_272
+      - 美国-4.83MB/s(Youtube:不良林)
+      - Relay_🇯🇵 JP-🇯🇵JP_238
+      - Relay_🇯🇵 JP-🇯🇵JP_254
+      - Relay_🇯🇵 JP-🇯🇵JP_270
+      - US 29 → openitsub.com
+      - Relay_🇯🇵 JP-🇯🇵JP_244
+      - FR_156
+      - US 22 → openitsub.com
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
