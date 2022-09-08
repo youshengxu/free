@@ -5,143 +5,71 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: AU 3 → openitsub.com, server: ttt1.swiftfalcon.app, port: 8443, type: trojan, password: coldwar2, sni: ttt1.swiftfalcon.app, skip-cert-verify: true, udp: true}
-  - {name: _08, server: 38.59.224.49, port: 40001, type: vmess, uuid: 97cd14b8-4332-40f9-84fc-3fc235354df9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US 23 推广https://t.me/xingchen0829, server: 199.19.109.30, port: 50330, type: trojan, password: ad9ee6b5-4707-478a-ba5c-0fc7a4b0314c, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇺🇸 US-🇺🇸US_825, server: 144.168.61.107, port: 4441, type: trojan, password: !<str> 1122, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇯🇵 JP-🇯🇵JP_251, server: musashino.freetrade.link, port: 443, type: trojan, password: ZDqCRlxB8uFj9pxNEeanya3DIpDlOYR7K0wOYX3eScA36gTAazCyZ5SC3FS428, sni: musashino.freetrade.link, skip-cert-verify: true, udp: true}
-  - {name: CN 1 推广https://t.me/xingchen0829, server: aws2.raytrack.cloud, port: 59648, type: trojan, password: f6f16e37-c800-46d5-ac12-475b4b61c18b, sni: aws2.raytrack.cloud, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇸🇬 SG-🇸🇬SG_715, server: simpang.freetrade.link, port: 443, type: trojan, password: XEyN0OZ28xxCDO7C83DeAa3YcSjYKTgFA5n9IRpFwuB3qSz4aZClSapy3eRl6D, sni: simpang.freetrade.link, skip-cert-verify: true, udp: true}
-  - {name: 美国(油管:破解资源君2.0) 20, server: 45.10.153.188, port: 37558, type: vmess, uuid: 9d0f86ad-eec3-424f-f69a-fcb37e783d06, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_1364, server: purchases.freetrade.link, port: 443, type: trojan, password: ZeYaxlxBNuyjgp736e8l4I32aAZSOYRcqD3ESC8pwADKSCFDynO3a0FXTzC5R9, sni: purchases.freetrade.link, skip-cert-verify: true, udp: true}
-  - {name: US_1344, server: 168.138.201.208, port: 10328, type: vmess, uuid: bf847bf7-0ba5-4885-bd2b-da4d77afbda8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国(油管:破解资源君2.0) 36, server: 45.10.153.188, port: 37558, type: vmess, uuid: 9d0f86ad-eec3-424f-f69a-fcb37e783d06, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 澳大利亚-818.1KB/s(Youtube:不良林), server: 185.167.116.250, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
-  - {name: 澳大利亚-195.5KB/s(Youtube:不良林), server: 185.167.116.250, port: 9027, type: ss, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8, udp: true}
-  - {name: US_811, server: 8.9.30.35, port: 8080, type: trojan, password: VjXDl4Gf5j, skip-cert-verify: true, udp: true}
-  - {name: 欧洲(油管:破解资源君2.0) 14, server: rbobosz.tk, port: 40762, type: vmess, uuid: 5115f550-3f8c-44fe-a064-eb02e2fbb89b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CA 3 推广https://t.me/xingchen0829, server: 727tw01.ok365.cyou, port: 443, type: trojan, password: d09d2305-24db-43c4-b309-0e1d2737329f, sni: 727tw01.ok365.cyou, skip-cert-verify: true, udp: true}
-  - {name: 澳大利亚-807.3KB/s(Youtube:不良林), server: 185.167.116.250, port: 9038, type: ss, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ, udp: true}
-  - {name: 澳大利亚-825.3KB/s(Youtube:不良林), server: 185.167.116.250, port: 9098, type: ss, cipher: aes-256-cfb, password: aLpQtfEZe445QyHk, udp: true}
-  - {name: 澳大利亚-1.11MB/s(Youtube:不良林), server: 185.167.116.250, port: 9053, type: ss, cipher: aes-256-cfb, password: SBM7R883jBmnqe6C, udp: true}
-  - {name: 澳大利亚-525.8KB/s(Youtube:不良林), server: 185.167.116.250, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_1355, server: listener.freetrade.link, port: 443, type: trojan, password: Z9TS0AeB8S5ZlpFNRea3aypDaXISOyzY67xCO33lF4gKq38jw2uDEnDYRCCxAc, sni: listener.freetrade.link, skip-cert-verify: true, udp: true}
-  - {name: US 5 推广https://t.me/xingchen0829, server: rbobosz.tk, port: 23868, type: trojan, password: gMVN7PbEX2, sni: rbobosz.tk, skip-cert-verify: true, udp: true}
-  - {name: _07, server: 129.159.41.233, port: 32586, type: vmess, uuid: 341a9182-c423-499c-c46e-d17838b29037, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 澳大利亚-1.07MB/s(Youtube:不良林), server: 185.167.116.250, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
-  - {name: 美国(油管:破解资源君2.0) 27, server: 152.67.218.38, port: 443, type: vmess, uuid: b5e9480a-b7aa-40a4-f9a7-5299b5e363b4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 152.67.218.38}, udp: true}
-  - {name: 欧洲(油管:破解资源君2.0) 50, server: 192.3.124.36, port: 29774, type: vmess, uuid: c7f8e9ff-82a6-49af-c772-ccf5b9092825, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 澳大利亚-1.47MB/s(Youtube:不良林), server: 185.167.116.250, port: 9093, type: ss, cipher: aes-256-cfb, password: wfLC2y7rzZyCmuyt, udp: true}
-  - {name: 亚洲(油管:破解资源君2.0) 3, server: 42.186.175.8, port: 443, type: vmess, uuid: 2962b6dc-8de5-40c2-f5fb-5039f72d9a95, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: sgarm.ptuu.ml}, udp: true}
-  - {name: 澳大利亚-286.9KB/s(Youtube:不良林), server: 185.167.116.250, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
-  - {name: 澳大利亚-1.66MB/s(Youtube:不良林), server: 185.167.116.250, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa, udp: true}
+  - {name: Relay_🇯🇵 JP-🇯🇵JP_240, server: kr1.api-aws.com, port: 443, type: trojan, password: 3f087c04-44e6-4c96-a917-ca974de1212b, sni: kr1.api-aws.com, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇯🇵 JP-🇯🇵JP_244, server: kr1.api-aws.com, port: 443, type: trojan, password: 4af0d477-0852-4872-a0bc-e333c119b84e, sni: kr1.api-aws.com, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇯🇵JP-🇯🇵JP_266, server: kr1.api-aws.com, port: 443, type: trojan, password: 84773125-8f79-481c-a80b-e1f4aad86850, sni: kr1.api-aws.com, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇯🇵 JP-🇯🇵JP_245, server: kr1.api-aws.com, port: 443, type: trojan, password: 36443c4f-4487-48a6-8438-57bd7700b916, sni: kr1.api-aws.com, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇯🇵 JP-🇯🇵JP_247, server: kr1.api-aws.com, port: 443, type: trojan, password: 205f8ab6-cb17-4480-93a6-aece90b88742, sni: kr1.api-aws.com, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇯🇵 JP-🇯🇵JP_241, server: kr1.api-aws.com, port: 443, type: trojan, password: 1a74fd5e-50dc-43d2-8119-4bce566d784e, sni: kr1.api-aws.com, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇯🇵JP-🇯🇵JP_265, server: kr1.api-aws.com, port: 443, type: trojan, password: 5491534e-00b5-42ff-853a-723997aadbdb, sni: kr1.api-aws.com, skip-cert-verify: true, udp: true}
+  - {name: 法国-418.3KB/s(Youtube:不良林), server: 13.38.55.14, port: 443, type: trojan, password: iyinglong, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇯🇵 JP-🇯🇵JP_242, server: musashino.freetrade.link, port: 443, type: trojan, password: ZDqCRlxB8uFj9pxNEeanya3DIpDlOYR7K0wOYX3eScA36gTAazCyZ5SC3FS428, sni: musashino.freetrade.link, skip-cert-verify: true, udp: true}
+  - {name: FR_201, server: 145.239.1.100, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: US_773, server: 54.188.171.13, port: 443, type: trojan, password: iyinglong, skip-cert-verify: true, udp: true}
+  - {name: SG_666, server: 52.77.243.140, port: 443, type: trojan, password: iyinglong, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - AU 3 → openitsub.com
-      - _08
-      - US 23 推广https://t.me/xingchen0829
-      - Relay_🇺🇸 US-🇺🇸US_825
-      - Relay_🇯🇵 JP-🇯🇵JP_251
-      - CN 1 推广https://t.me/xingchen0829
-      - Relay_🇸🇬 SG-🇸🇬SG_715
-      - 美国(油管:破解资源君2.0) 20
-      - Relay_🇺🇸US-🇺🇸US_1364
-      - US_1344
-      - 美国(油管:破解资源君2.0) 36
-      - 澳大利亚-818.1KB/s(Youtube:不良林)
-      - 澳大利亚-195.5KB/s(Youtube:不良林)
-      - US_811
-      - 欧洲(油管:破解资源君2.0) 14
-      - CA 3 推广https://t.me/xingchen0829
-      - 澳大利亚-807.3KB/s(Youtube:不良林)
-      - 澳大利亚-825.3KB/s(Youtube:不良林)
-      - 澳大利亚-1.11MB/s(Youtube:不良林)
-      - 澳大利亚-525.8KB/s(Youtube:不良林)
-      - Relay_🇺🇸US-🇺🇸US_1355
-      - US 5 推广https://t.me/xingchen0829
-      - _07
-      - 澳大利亚-1.07MB/s(Youtube:不良林)
-      - 美国(油管:破解资源君2.0) 27
-      - 欧洲(油管:破解资源君2.0) 50
-      - 澳大利亚-1.47MB/s(Youtube:不良林)
-      - 亚洲(油管:破解资源君2.0) 3
-      - 澳大利亚-286.9KB/s(Youtube:不良林)
-      - 澳大利亚-1.66MB/s(Youtube:不良林)
+      - Relay_🇯🇵 JP-🇯🇵JP_240
+      - Relay_🇯🇵 JP-🇯🇵JP_244
+      - Relay_🇯🇵JP-🇯🇵JP_266
+      - Relay_🇯🇵 JP-🇯🇵JP_245
+      - Relay_🇯🇵 JP-🇯🇵JP_247
+      - Relay_🇯🇵 JP-🇯🇵JP_241
+      - Relay_🇯🇵JP-🇯🇵JP_265
+      - 法国-418.3KB/s(Youtube:不良林)
+      - Relay_🇯🇵 JP-🇯🇵JP_242
+      - FR_201
+      - US_773
+      - SG_666
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - AU 3 → openitsub.com
-      - _08
-      - US 23 推广https://t.me/xingchen0829
-      - Relay_🇺🇸 US-🇺🇸US_825
-      - Relay_🇯🇵 JP-🇯🇵JP_251
-      - CN 1 推广https://t.me/xingchen0829
-      - Relay_🇸🇬 SG-🇸🇬SG_715
-      - 美国(油管:破解资源君2.0) 20
-      - Relay_🇺🇸US-🇺🇸US_1364
-      - US_1344
-      - 美国(油管:破解资源君2.0) 36
-      - 澳大利亚-818.1KB/s(Youtube:不良林)
-      - 澳大利亚-195.5KB/s(Youtube:不良林)
-      - US_811
-      - 欧洲(油管:破解资源君2.0) 14
-      - CA 3 推广https://t.me/xingchen0829
-      - 澳大利亚-807.3KB/s(Youtube:不良林)
-      - 澳大利亚-825.3KB/s(Youtube:不良林)
-      - 澳大利亚-1.11MB/s(Youtube:不良林)
-      - 澳大利亚-525.8KB/s(Youtube:不良林)
-      - Relay_🇺🇸US-🇺🇸US_1355
-      - US 5 推广https://t.me/xingchen0829
-      - _07
-      - 澳大利亚-1.07MB/s(Youtube:不良林)
-      - 美国(油管:破解资源君2.0) 27
-      - 欧洲(油管:破解资源君2.0) 50
-      - 澳大利亚-1.47MB/s(Youtube:不良林)
-      - 亚洲(油管:破解资源君2.0) 3
-      - 澳大利亚-286.9KB/s(Youtube:不良林)
-      - 澳大利亚-1.66MB/s(Youtube:不良林)
+      - Relay_🇯🇵 JP-🇯🇵JP_240
+      - Relay_🇯🇵 JP-🇯🇵JP_244
+      - Relay_🇯🇵JP-🇯🇵JP_266
+      - Relay_🇯🇵 JP-🇯🇵JP_245
+      - Relay_🇯🇵 JP-🇯🇵JP_247
+      - Relay_🇯🇵 JP-🇯🇵JP_241
+      - Relay_🇯🇵JP-🇯🇵JP_265
+      - 法国-418.3KB/s(Youtube:不良林)
+      - Relay_🇯🇵 JP-🇯🇵JP_242
+      - FR_201
+      - US_773
+      - SG_666
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - AU 3 → openitsub.com
-      - _08
-      - US 23 推广https://t.me/xingchen0829
-      - Relay_🇺🇸 US-🇺🇸US_825
-      - Relay_🇯🇵 JP-🇯🇵JP_251
-      - CN 1 推广https://t.me/xingchen0829
-      - Relay_🇸🇬 SG-🇸🇬SG_715
-      - 美国(油管:破解资源君2.0) 20
-      - Relay_🇺🇸US-🇺🇸US_1364
-      - US_1344
-      - 美国(油管:破解资源君2.0) 36
-      - 澳大利亚-818.1KB/s(Youtube:不良林)
-      - 澳大利亚-195.5KB/s(Youtube:不良林)
-      - US_811
-      - 欧洲(油管:破解资源君2.0) 14
-      - CA 3 推广https://t.me/xingchen0829
-      - 澳大利亚-807.3KB/s(Youtube:不良林)
-      - 澳大利亚-825.3KB/s(Youtube:不良林)
-      - 澳大利亚-1.11MB/s(Youtube:不良林)
-      - 澳大利亚-525.8KB/s(Youtube:不良林)
-      - Relay_🇺🇸US-🇺🇸US_1355
-      - US 5 推广https://t.me/xingchen0829
-      - _07
-      - 澳大利亚-1.07MB/s(Youtube:不良林)
-      - 美国(油管:破解资源君2.0) 27
-      - 欧洲(油管:破解资源君2.0) 50
-      - 澳大利亚-1.47MB/s(Youtube:不良林)
-      - 亚洲(油管:破解资源君2.0) 3
-      - 澳大利亚-286.9KB/s(Youtube:不良林)
-      - 澳大利亚-1.66MB/s(Youtube:不良林)
+      - Relay_🇯🇵 JP-🇯🇵JP_240
+      - Relay_🇯🇵 JP-🇯🇵JP_244
+      - Relay_🇯🇵JP-🇯🇵JP_266
+      - Relay_🇯🇵 JP-🇯🇵JP_245
+      - Relay_🇯🇵 JP-🇯🇵JP_247
+      - Relay_🇯🇵 JP-🇯🇵JP_241
+      - Relay_🇯🇵JP-🇯🇵JP_265
+      - 法国-418.3KB/s(Youtube:不良林)
+      - Relay_🇯🇵 JP-🇯🇵JP_242
+      - FR_201
+      - US_773
+      - SG_666
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -160,36 +88,18 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - AU 3 → openitsub.com
-      - _08
-      - US 23 推广https://t.me/xingchen0829
-      - Relay_🇺🇸 US-🇺🇸US_825
-      - Relay_🇯🇵 JP-🇯🇵JP_251
-      - CN 1 推广https://t.me/xingchen0829
-      - Relay_🇸🇬 SG-🇸🇬SG_715
-      - 美国(油管:破解资源君2.0) 20
-      - Relay_🇺🇸US-🇺🇸US_1364
-      - US_1344
-      - 美国(油管:破解资源君2.0) 36
-      - 澳大利亚-818.1KB/s(Youtube:不良林)
-      - 澳大利亚-195.5KB/s(Youtube:不良林)
-      - US_811
-      - 欧洲(油管:破解资源君2.0) 14
-      - CA 3 推广https://t.me/xingchen0829
-      - 澳大利亚-807.3KB/s(Youtube:不良林)
-      - 澳大利亚-825.3KB/s(Youtube:不良林)
-      - 澳大利亚-1.11MB/s(Youtube:不良林)
-      - 澳大利亚-525.8KB/s(Youtube:不良林)
-      - Relay_🇺🇸US-🇺🇸US_1355
-      - US 5 推广https://t.me/xingchen0829
-      - _07
-      - 澳大利亚-1.07MB/s(Youtube:不良林)
-      - 美国(油管:破解资源君2.0) 27
-      - 欧洲(油管:破解资源君2.0) 50
-      - 澳大利亚-1.47MB/s(Youtube:不良林)
-      - 亚洲(油管:破解资源君2.0) 3
-      - 澳大利亚-286.9KB/s(Youtube:不良林)
-      - 澳大利亚-1.66MB/s(Youtube:不良林)
+      - Relay_🇯🇵 JP-🇯🇵JP_240
+      - Relay_🇯🇵 JP-🇯🇵JP_244
+      - Relay_🇯🇵JP-🇯🇵JP_266
+      - Relay_🇯🇵 JP-🇯🇵JP_245
+      - Relay_🇯🇵 JP-🇯🇵JP_247
+      - Relay_🇯🇵 JP-🇯🇵JP_241
+      - Relay_🇯🇵JP-🇯🇵JP_265
+      - 法国-418.3KB/s(Youtube:不良林)
+      - Relay_🇯🇵 JP-🇯🇵JP_242
+      - FR_201
+      - US_773
+      - SG_666
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -200,107 +110,53 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - AU 3 → openitsub.com
-      - _08
-      - US 23 推广https://t.me/xingchen0829
-      - Relay_🇺🇸 US-🇺🇸US_825
-      - Relay_🇯🇵 JP-🇯🇵JP_251
-      - CN 1 推广https://t.me/xingchen0829
-      - Relay_🇸🇬 SG-🇸🇬SG_715
-      - 美国(油管:破解资源君2.0) 20
-      - Relay_🇺🇸US-🇺🇸US_1364
-      - US_1344
-      - 美国(油管:破解资源君2.0) 36
-      - 澳大利亚-818.1KB/s(Youtube:不良林)
-      - 澳大利亚-195.5KB/s(Youtube:不良林)
-      - US_811
-      - 欧洲(油管:破解资源君2.0) 14
-      - CA 3 推广https://t.me/xingchen0829
-      - 澳大利亚-807.3KB/s(Youtube:不良林)
-      - 澳大利亚-825.3KB/s(Youtube:不良林)
-      - 澳大利亚-1.11MB/s(Youtube:不良林)
-      - 澳大利亚-525.8KB/s(Youtube:不良林)
-      - Relay_🇺🇸US-🇺🇸US_1355
-      - US 5 推广https://t.me/xingchen0829
-      - _07
-      - 澳大利亚-1.07MB/s(Youtube:不良林)
-      - 美国(油管:破解资源君2.0) 27
-      - 欧洲(油管:破解资源君2.0) 50
-      - 澳大利亚-1.47MB/s(Youtube:不良林)
-      - 亚洲(油管:破解资源君2.0) 3
-      - 澳大利亚-286.9KB/s(Youtube:不良林)
-      - 澳大利亚-1.66MB/s(Youtube:不良林)
+      - Relay_🇯🇵 JP-🇯🇵JP_240
+      - Relay_🇯🇵 JP-🇯🇵JP_244
+      - Relay_🇯🇵JP-🇯🇵JP_266
+      - Relay_🇯🇵 JP-🇯🇵JP_245
+      - Relay_🇯🇵 JP-🇯🇵JP_247
+      - Relay_🇯🇵 JP-🇯🇵JP_241
+      - Relay_🇯🇵JP-🇯🇵JP_265
+      - 法国-418.3KB/s(Youtube:不良林)
+      - Relay_🇯🇵 JP-🇯🇵JP_242
+      - FR_201
+      - US_773
+      - SG_666
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - AU 3 → openitsub.com
-      - _08
-      - US 23 推广https://t.me/xingchen0829
-      - Relay_🇺🇸 US-🇺🇸US_825
-      - Relay_🇯🇵 JP-🇯🇵JP_251
-      - CN 1 推广https://t.me/xingchen0829
-      - Relay_🇸🇬 SG-🇸🇬SG_715
-      - 美国(油管:破解资源君2.0) 20
-      - Relay_🇺🇸US-🇺🇸US_1364
-      - US_1344
-      - 美国(油管:破解资源君2.0) 36
-      - 澳大利亚-818.1KB/s(Youtube:不良林)
-      - 澳大利亚-195.5KB/s(Youtube:不良林)
-      - US_811
-      - 欧洲(油管:破解资源君2.0) 14
-      - CA 3 推广https://t.me/xingchen0829
-      - 澳大利亚-807.3KB/s(Youtube:不良林)
-      - 澳大利亚-825.3KB/s(Youtube:不良林)
-      - 澳大利亚-1.11MB/s(Youtube:不良林)
-      - 澳大利亚-525.8KB/s(Youtube:不良林)
-      - Relay_🇺🇸US-🇺🇸US_1355
-      - US 5 推广https://t.me/xingchen0829
-      - _07
-      - 澳大利亚-1.07MB/s(Youtube:不良林)
-      - 美国(油管:破解资源君2.0) 27
-      - 欧洲(油管:破解资源君2.0) 50
-      - 澳大利亚-1.47MB/s(Youtube:不良林)
-      - 亚洲(油管:破解资源君2.0) 3
-      - 澳大利亚-286.9KB/s(Youtube:不良林)
-      - 澳大利亚-1.66MB/s(Youtube:不良林)
+      - Relay_🇯🇵 JP-🇯🇵JP_240
+      - Relay_🇯🇵 JP-🇯🇵JP_244
+      - Relay_🇯🇵JP-🇯🇵JP_266
+      - Relay_🇯🇵 JP-🇯🇵JP_245
+      - Relay_🇯🇵 JP-🇯🇵JP_247
+      - Relay_🇯🇵 JP-🇯🇵JP_241
+      - Relay_🇯🇵JP-🇯🇵JP_265
+      - 法国-418.3KB/s(Youtube:不良林)
+      - Relay_🇯🇵 JP-🇯🇵JP_242
+      - FR_201
+      - US_773
+      - SG_666
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - AU 3 → openitsub.com
-      - _08
-      - US 23 推广https://t.me/xingchen0829
-      - Relay_🇺🇸 US-🇺🇸US_825
-      - Relay_🇯🇵 JP-🇯🇵JP_251
-      - CN 1 推广https://t.me/xingchen0829
-      - Relay_🇸🇬 SG-🇸🇬SG_715
-      - 美国(油管:破解资源君2.0) 20
-      - Relay_🇺🇸US-🇺🇸US_1364
-      - US_1344
-      - 美国(油管:破解资源君2.0) 36
-      - 澳大利亚-818.1KB/s(Youtube:不良林)
-      - 澳大利亚-195.5KB/s(Youtube:不良林)
-      - US_811
-      - 欧洲(油管:破解资源君2.0) 14
-      - CA 3 推广https://t.me/xingchen0829
-      - 澳大利亚-807.3KB/s(Youtube:不良林)
-      - 澳大利亚-825.3KB/s(Youtube:不良林)
-      - 澳大利亚-1.11MB/s(Youtube:不良林)
-      - 澳大利亚-525.8KB/s(Youtube:不良林)
-      - Relay_🇺🇸US-🇺🇸US_1355
-      - US 5 推广https://t.me/xingchen0829
-      - _07
-      - 澳大利亚-1.07MB/s(Youtube:不良林)
-      - 美国(油管:破解资源君2.0) 27
-      - 欧洲(油管:破解资源君2.0) 50
-      - 澳大利亚-1.47MB/s(Youtube:不良林)
-      - 亚洲(油管:破解资源君2.0) 3
-      - 澳大利亚-286.9KB/s(Youtube:不良林)
-      - 澳大利亚-1.66MB/s(Youtube:不良林)
+      - Relay_🇯🇵 JP-🇯🇵JP_240
+      - Relay_🇯🇵 JP-🇯🇵JP_244
+      - Relay_🇯🇵JP-🇯🇵JP_266
+      - Relay_🇯🇵 JP-🇯🇵JP_245
+      - Relay_🇯🇵 JP-🇯🇵JP_247
+      - Relay_🇯🇵 JP-🇯🇵JP_241
+      - Relay_🇯🇵JP-🇯🇵JP_265
+      - 法国-418.3KB/s(Youtube:不良林)
+      - Relay_🇯🇵 JP-🇯🇵JP_242
+      - FR_201
+      - US_773
+      - SG_666
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -316,36 +172,18 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - AU 3 → openitsub.com
-      - _08
-      - US 23 推广https://t.me/xingchen0829
-      - Relay_🇺🇸 US-🇺🇸US_825
-      - Relay_🇯🇵 JP-🇯🇵JP_251
-      - CN 1 推广https://t.me/xingchen0829
-      - Relay_🇸🇬 SG-🇸🇬SG_715
-      - 美国(油管:破解资源君2.0) 20
-      - Relay_🇺🇸US-🇺🇸US_1364
-      - US_1344
-      - 美国(油管:破解资源君2.0) 36
-      - 澳大利亚-818.1KB/s(Youtube:不良林)
-      - 澳大利亚-195.5KB/s(Youtube:不良林)
-      - US_811
-      - 欧洲(油管:破解资源君2.0) 14
-      - CA 3 推广https://t.me/xingchen0829
-      - 澳大利亚-807.3KB/s(Youtube:不良林)
-      - 澳大利亚-825.3KB/s(Youtube:不良林)
-      - 澳大利亚-1.11MB/s(Youtube:不良林)
-      - 澳大利亚-525.8KB/s(Youtube:不良林)
-      - Relay_🇺🇸US-🇺🇸US_1355
-      - US 5 推广https://t.me/xingchen0829
-      - _07
-      - 澳大利亚-1.07MB/s(Youtube:不良林)
-      - 美国(油管:破解资源君2.0) 27
-      - 欧洲(油管:破解资源君2.0) 50
-      - 澳大利亚-1.47MB/s(Youtube:不良林)
-      - 亚洲(油管:破解资源君2.0) 3
-      - 澳大利亚-286.9KB/s(Youtube:不良林)
-      - 澳大利亚-1.66MB/s(Youtube:不良林)
+      - Relay_🇯🇵 JP-🇯🇵JP_240
+      - Relay_🇯🇵 JP-🇯🇵JP_244
+      - Relay_🇯🇵JP-🇯🇵JP_266
+      - Relay_🇯🇵 JP-🇯🇵JP_245
+      - Relay_🇯🇵 JP-🇯🇵JP_247
+      - Relay_🇯🇵 JP-🇯🇵JP_241
+      - Relay_🇯🇵JP-🇯🇵JP_265
+      - 法国-418.3KB/s(Youtube:不良林)
+      - Relay_🇯🇵 JP-🇯🇵JP_242
+      - FR_201
+      - US_773
+      - SG_666
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
