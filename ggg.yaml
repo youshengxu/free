@@ -5,183 +5,155 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: TW 1 → openitsub.com, server: tw.tcpbbr.net, port: 443, type: trojan, password: 80bcf4f2-12f7-11ed-bb74-f23c9164ca5d, sni: tw.tcpbbr.net, skip-cert-verify: true, udp: true}
-  - {name: unknown 3 → openitsub.com, server: ty1-2.nigirocloud.com, port: 443, type: trojan, password: 4V4kxVXmcg5Yn2DqF2, sni: ty1-2.nigirocloud.com, skip-cert-verify: true, udp: true}
-  - {name: JP_231, server: 172.105.242.17, port: 20020, type: ss, cipher: aes-128-gcm, password: !<str> 200000000000000000000020, plugin: obfs, plugin-opts: {mode: http, host: "TIB2ehlN1U.download.windowsupdate.com,449bff3663.douyincdn.com"}, udp: true}
-  - {name: 欧洲(油管:破解资源君2.0) 33, server: unicomus.mipglxi.cn, port: 6629, type: ss, cipher: aes-128-gcm, password: 269f71b9-c45b-43f3-8c48-eb5f986aa707, udp: true}
-  - {name: 欧洲(油管:破解资源君2.0) 12, server: 129.159.41.233, port: 32586, type: vmess, uuid: 341a9182-c423-499c-c46e-d17838b29037, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN 11 → openitsub.com, server: da.kanao.xyz, port: 58816, type: trojan, password: 7b78d07f-6382-4e2c-a4bb-dbe3dbef1bd6, sni: da.kanao.xyz, skip-cert-verify: true, udp: true}
-  - {name: US_752, server: 34.219.230.191, port: 443, type: trojan, password: iyinglong, skip-cert-verify: true, udp: true}
-  - {name: 欧洲(油管:破解资源君2.0) 7, server: 129.159.41.233, port: 32586, type: vmess, uuid: 341a9182-c423-499c-c46e-d17838b29037, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US 11 → openitsub.com, server: 18.133.181.177, port: 443, type: trojan, password: iyinglong, skip-cert-verify: true, udp: true}
-  - {name: GB 3 → openitsub.com, server: 3.9.175.102, port: 443, type: trojan, password: iyinglong, skip-cert-verify: true, udp: true}
-  - {name: FR 6 → openitsub.com, server: 15.236.218.230, port: 443, type: trojan, password: iyinglong, skip-cert-verify: true, udp: true}
-  - {name: FR 1 → openitsub.com, server: 35.180.122.151, port: 443, type: trojan, password: iyinglong, skip-cert-verify: true, udp: true}
-  - {name: US 40 → openitsub.com, server: 52.12.10.181, port: 443, type: trojan, password: iyinglong, skip-cert-verify: true, udp: true}
-  - {name: NL_537, server: 213.183.59.214, port: 9010, type: ss, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4, udp: true}
-  - {name: ZZ_1381, server: 103.186.148.113, port: 80, type: vmess, uuid: 67468d89-cf87-443c-baca-49f1e73b5991, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /shopvpn.net, ws-headers: {Host: 103.186.148.113}, udp: true}
-  - {name: 中国-338.4KB/s(Youtube:不良林), server: 14.29.124.174, port: 11011, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: GB 4 → openitsub.com, server: 35.176.6.24, port: 443, type: trojan, password: iyinglong, skip-cert-verify: true, udp: true}
-  - {name: US 42 → openitsub.com, server: 54.70.120.130, port: 443, type: trojan, password: iyinglong, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_1254, server: s1.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s1.hazz.win, skip-cert-verify: true, udp: true}
   - {name: _08, server: 129.159.41.233, port: 32586, type: vmess, uuid: 341a9182-c423-499c-c46e-d17838b29037, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US 30 → openitsub.com, server: ex.755657.xyz, port: 443, type: trojan, password: 11b8206c-8ae2-4ab3-a92c-208cdb8cc73d, sni: ex.755657.xyz, skip-cert-verify: true, udp: true}
-  - {name: US_751, server: 13.40.126.229, port: 443, type: trojan, password: iyinglong, skip-cert-verify: true, udp: true}
-  - {name: US 35 → openitsub.com, server: 54.165.2.244, port: 443, type: trojan, password: iyinglong, skip-cert-verify: true, udp: true}
-  - {name: FR 4 → openitsub.com, server: 35.180.247.162, port: 443, type: trojan, password: iyinglong, skip-cert-verify: true, udp: true}
-  - {name: 美国(油管:破解资源君2.0) 3, server: xjp.azzhuangaping.tw, port: 80, type: vmess, uuid: 2c178223-0bd9-3af7-bcd3-32c074f626be, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /adobe, ws-headers: {Host: xjp.azzhuangaping.tw}, udp: true}
-  - {name: US_693, server: 156.146.38.163, port: 443, type: ss, cipher: aes-128-cfb, password: shadowsocks, udp: true}
-  - {name: US 25 → openitsub.com, server: s3.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s3.hazz.win, skip-cert-verify: true, udp: true}
-  - {name: US 24 → openitsub.com, server: 8.9.30.35, port: 29544, type: trojan, password: rmo75mm5xK, skip-cert-verify: true, udp: true}
-  - {name: GB 3 → openitsub.com 2, server: 3.8.216.52, port: 443, type: trojan, password: iyinglong, skip-cert-verify: true, udp: true}
-  - {name: 美国-1.72MB/s(Youtube:不良林), server: 38.91.107.72, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 新加坡(油管:破解资源君2.0) 3, server: in-sg-1.onebox6.org, port: 38701, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: in-sg-1.onebox6.org}, udp: true}
-  - {name: TW 1 → openitsub.com 2, server: tw.tcpbbr.net, port: 443, type: trojan, password: 80bcf4f2-12f7-11ed-bb74-f23c9164ca5d, sni: tw.tcpbbr.net, skip-cert-verify: true, udp: true}
-  - {name: CN 1 → openitsub.com, server: xi.kanao.xyz, port: 58832, type: trojan, password: 7b78d07f-6382-4e2c-a4bb-dbe3dbef1bd6, sni: xi.kanao.xyz, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇯🇵 JP-🇯🇵JP_249, server: kr1.api-aws.com, port: 443, type: trojan, password: e3dcc71e-f058-43bf-bf0d-5bdf20dec071, sni: kr1.api-aws.com, skip-cert-verify: true, udp: true}
-  - {name: 欧洲(油管:破解资源君2.0) 23, server: v2ray.wefuckgfw.ga, port: 2096, type: vmess, uuid: cc71185e-88a2-4364-8610-4006dc1a80a4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /H8VswtUJ/, ws-headers: {Host: v2ray.wefuckgfw.ga}, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_1337, server: s3.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s3.hazz.win, skip-cert-verify: true, udp: true}
   - {name: 欧洲(油管:破解资源君2.0) 5, server: 129.159.41.233, port: 32586, type: vmess, uuid: 341a9182-c423-499c-c46e-d17838b29037, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港(油管:破解资源君2.0) 3, server: 4.hk.zz.xxxxx.x-t-fuckword.network, port: 36676, type: vmess, uuid: 244effd9-0204-3c4a-8537-0dca4e5fd9b5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 欧洲(油管:破解资源君2.0) 7 2, server: v2ray.wefuckgfw.ga, port: 2096, type: vmess, uuid: 400cbd6d-33b2-430c-9914-d3008056f92b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /H8VswtUJ/, ws-headers: {Host: v2ray.wefuckgfw.ga}, udp: true}
-  - {name: 欧洲(油管:破解资源君2.0) 20, server: v2ray.wefuckgfw.ga, port: 2096, type: vmess, uuid: 0c95afc1-3b28-4625-a973-6053f4404599, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /H8VswtUJ/, ws-headers: {Host: v2ray.wefuckgfw.ga}, udp: true}
-  - {name: JP_232, server: 172.105.242.17, port: 20020, type: ss, cipher: aes-128-gcm, password: !<str> 200000000000000000000020, plugin: obfs, plugin-opts: {mode: http, host: "TIB2ehlN1U.download.windowsupdate.com,449bff3663.douyincdn.com"}, udp: true}
-  - {name: US_649, server: 156.146.38.163, port: 443, type: ss, cipher: aes-128-cfb, password: shadowsocks, udp: true}
+  - {name: 美国(油管:破解资源君2.0) 3, server: 152.70.136.12, port: 34401, type: vmess, uuid: 890a284d-5d99-45e7-a982-2c34e5616778, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US 42 → openitsub.com, server: 54.70.120.130, port: 443, type: trojan, password: iyinglong, skip-cert-verify: true, udp: true}
+  - {name: FR 6 → openitsub.com, server: 15.236.218.230, port: 443, type: trojan, password: iyinglong, skip-cert-verify: true, udp: true}
+  - {name: US 40 → openitsub.com, server: 52.12.10.181, port: 443, type: trojan, password: iyinglong, skip-cert-verify: true, udp: true}
+  - {name: FR 2 → openitsub.com, server: 35.180.202.38, port: 443, type: trojan, password: iyinglong, skip-cert-verify: true, udp: true}
+  - {name: US 46 → openitsub.com, server: 54.84.14.46, port: 443, type: trojan, password: iyinglong, skip-cert-verify: true, udp: true}
+  - {name: US_693, server: 156.146.38.163, port: 443, type: ss, cipher: aes-128-cfb, password: shadowsocks, udp: true}
+  - {name: 美国(油管:破解资源君2.0) 3 2, server: xjp.azzhuangaping.tw, port: 80, type: vmess, uuid: 2c178223-0bd9-3af7-bcd3-32c074f626be, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /adobe, ws-headers: {Host: xjp.azzhuangaping.tw}, udp: true}
+  - {name: US_797, server: 13.38.55.14, port: 443, type: trojan, password: iyinglong, skip-cert-verify: true, udp: true}
+  - {name: FR 5 → openitsub.com, server: 15.237.116.79, port: 443, type: trojan, password: iyinglong, skip-cert-verify: true, udp: true}
+  - {name: NL_414, server: 213.183.59.214, port: 9027, type: ss, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8, udp: true}
+  - {name: 美国(油管:破解资源君2.0) 59, server: c90s801.jamjams3.net, port: 19623, type: vmess, uuid: b03a1e7b-f1ad-4d0e-895d-639354e35ff4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US 39 → openitsub.com, server: 18.170.39.237, port: 443, type: trojan, password: iyinglong, skip-cert-verify: true, udp: true}
+  - {name: 欧洲(油管:破解资源君2.0) 12, server: 129.159.41.233, port: 32586, type: vmess, uuid: 341a9182-c423-499c-c46e-d17838b29037, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 欧洲(油管:破解资源君2.0) 48, server: 129.159.41.233, port: 32586, type: vmess, uuid: 341a9182-c423-499c-c46e-d17838b29037, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US_1340, server: 152.70.136.12, port: 34401, type: vmess, uuid: 890a284d-5d99-45e7-a982-2c34e5616778, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: GB 4 → openitsub.com, server: 3.10.180.114, port: 443, type: trojan, password: iyinglong, skip-cert-verify: true, udp: true}
+  - {name: GB 5 → openitsub.com, server: 3.10.209.85, port: 443, type: trojan, password: iyinglong, skip-cert-verify: true, udp: true}
+  - {name: US 15 → openitsub.com, server: 18.133.181.177, port: 443, type: trojan, password: iyinglong, skip-cert-verify: true, udp: true}
+  - {name: FR_146, server: 52.47.99.22, port: 443, type: trojan, password: iyinglong, skip-cert-verify: true, udp: true}
+  - {name: 美国-1.83MB/s(Youtube:不良林), server: 152.70.136.12, port: 34401, type: vmess, uuid: 890a284d-5d99-45e7-a982-2c34e5616778, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US_1108, server: 93.179.112.70, port: 253, type: ss, cipher: aes-256-cfb, password: bwhskrskr06, udp: true}
+  - {name: 香港(油管:破解资源君2.0), server: 4.hk.zz.xxxxx.x-t-fuckword.network, port: 36676, type: vmess, uuid: 244effd9-0204-3c4a-8537-0dca4e5fd9b5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: FR 1 → openitsub.com, server: 35.180.122.151, port: 443, type: trojan, password: iyinglong, skip-cert-verify: true, udp: true}
+  - {name: US 24 → openitsub.com, server: 8.9.30.35, port: 29544, type: trojan, password: rmo75mm5xK, skip-cert-verify: true, udp: true}
+  - {name: US_781, server: 150.230.249.42, port: 443, type: trojan, password: 0Y9gOHSdRt, skip-cert-verify: true, udp: true}
+  - {name: US_784, server: 13.40.154.20, port: 443, type: trojan, password: iyinglong, skip-cert-verify: true, udp: true}
+  - {name: JP 7 → openitsub.com, server: 18.179.136.120, port: 443, type: trojan, password: iyinglong, skip-cert-verify: true, udp: true}
+  - {name: 欧洲(油管:破解资源君2.0) 14, server: 5.181.132.235, port: 31372, type: vmess, uuid: 0bb88eea-73a5-4e37-ac8b-03090a57acba, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - TW 1 → openitsub.com
-      - unknown 3 → openitsub.com
-      - JP_231
-      - 欧洲(油管:破解资源君2.0) 33
-      - 欧洲(油管:破解资源君2.0) 12
-      - CN 11 → openitsub.com
-      - US_752
-      - 欧洲(油管:破解资源君2.0) 7
-      - US 11 → openitsub.com
-      - GB 3 → openitsub.com
-      - FR 6 → openitsub.com
-      - FR 1 → openitsub.com
-      - US 40 → openitsub.com
-      - NL_537
-      - ZZ_1381
-      - 中国-338.4KB/s(Youtube:不良林)
-      - GB 4 → openitsub.com
-      - US 42 → openitsub.com
+      - Relay_🇺🇸US-🇺🇸US_1254
       - _08
-      - US 30 → openitsub.com
-      - US_751
-      - US 35 → openitsub.com
-      - FR 4 → openitsub.com
-      - 美国(油管:破解资源君2.0) 3
-      - US_693
-      - US 25 → openitsub.com
-      - US 24 → openitsub.com
-      - GB 3 → openitsub.com 2
-      - 美国-1.72MB/s(Youtube:不良林)
-      - 新加坡(油管:破解资源君2.0) 3
-      - TW 1 → openitsub.com 2
-      - CN 1 → openitsub.com
-      - Relay_🇯🇵 JP-🇯🇵JP_249
-      - 欧洲(油管:破解资源君2.0) 23
+      - Relay_🇺🇸US-🇺🇸US_1337
       - 欧洲(油管:破解资源君2.0) 5
-      - 香港(油管:破解资源君2.0) 3
-      - 欧洲(油管:破解资源君2.0) 7 2
-      - 欧洲(油管:破解资源君2.0) 20
-      - JP_232
-      - US_649
+      - 美国(油管:破解资源君2.0) 3
+      - US 42 → openitsub.com
+      - FR 6 → openitsub.com
+      - US 40 → openitsub.com
+      - FR 2 → openitsub.com
+      - US 46 → openitsub.com
+      - US_693
+      - 美国(油管:破解资源君2.0) 3 2
+      - US_797
+      - FR 5 → openitsub.com
+      - NL_414
+      - 美国(油管:破解资源君2.0) 59
+      - US 39 → openitsub.com
+      - 欧洲(油管:破解资源君2.0) 12
+      - 欧洲(油管:破解资源君2.0) 48
+      - US_1340
+      - GB 4 → openitsub.com
+      - GB 5 → openitsub.com
+      - US 15 → openitsub.com
+      - FR_146
+      - 美国-1.83MB/s(Youtube:不良林)
+      - US_1108
+      - 香港(油管:破解资源君2.0)
+      - FR 1 → openitsub.com
+      - US 24 → openitsub.com
+      - US_781
+      - US_784
+      - JP 7 → openitsub.com
+      - 欧洲(油管:破解资源君2.0) 14
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - TW 1 → openitsub.com
-      - unknown 3 → openitsub.com
-      - JP_231
-      - 欧洲(油管:破解资源君2.0) 33
-      - 欧洲(油管:破解资源君2.0) 12
-      - CN 11 → openitsub.com
-      - US_752
-      - 欧洲(油管:破解资源君2.0) 7
-      - US 11 → openitsub.com
-      - GB 3 → openitsub.com
-      - FR 6 → openitsub.com
-      - FR 1 → openitsub.com
-      - US 40 → openitsub.com
-      - NL_537
-      - ZZ_1381
-      - 中国-338.4KB/s(Youtube:不良林)
-      - GB 4 → openitsub.com
-      - US 42 → openitsub.com
+      - Relay_🇺🇸US-🇺🇸US_1254
       - _08
-      - US 30 → openitsub.com
-      - US_751
-      - US 35 → openitsub.com
-      - FR 4 → openitsub.com
-      - 美国(油管:破解资源君2.0) 3
-      - US_693
-      - US 25 → openitsub.com
-      - US 24 → openitsub.com
-      - GB 3 → openitsub.com 2
-      - 美国-1.72MB/s(Youtube:不良林)
-      - 新加坡(油管:破解资源君2.0) 3
-      - TW 1 → openitsub.com 2
-      - CN 1 → openitsub.com
-      - Relay_🇯🇵 JP-🇯🇵JP_249
-      - 欧洲(油管:破解资源君2.0) 23
+      - Relay_🇺🇸US-🇺🇸US_1337
       - 欧洲(油管:破解资源君2.0) 5
-      - 香港(油管:破解资源君2.0) 3
-      - 欧洲(油管:破解资源君2.0) 7 2
-      - 欧洲(油管:破解资源君2.0) 20
-      - JP_232
-      - US_649
+      - 美国(油管:破解资源君2.0) 3
+      - US 42 → openitsub.com
+      - FR 6 → openitsub.com
+      - US 40 → openitsub.com
+      - FR 2 → openitsub.com
+      - US 46 → openitsub.com
+      - US_693
+      - 美国(油管:破解资源君2.0) 3 2
+      - US_797
+      - FR 5 → openitsub.com
+      - NL_414
+      - 美国(油管:破解资源君2.0) 59
+      - US 39 → openitsub.com
+      - 欧洲(油管:破解资源君2.0) 12
+      - 欧洲(油管:破解资源君2.0) 48
+      - US_1340
+      - GB 4 → openitsub.com
+      - GB 5 → openitsub.com
+      - US 15 → openitsub.com
+      - FR_146
+      - 美国-1.83MB/s(Youtube:不良林)
+      - US_1108
+      - 香港(油管:破解资源君2.0)
+      - FR 1 → openitsub.com
+      - US 24 → openitsub.com
+      - US_781
+      - US_784
+      - JP 7 → openitsub.com
+      - 欧洲(油管:破解资源君2.0) 14
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - TW 1 → openitsub.com
-      - unknown 3 → openitsub.com
-      - JP_231
-      - 欧洲(油管:破解资源君2.0) 33
-      - 欧洲(油管:破解资源君2.0) 12
-      - CN 11 → openitsub.com
-      - US_752
-      - 欧洲(油管:破解资源君2.0) 7
-      - US 11 → openitsub.com
-      - GB 3 → openitsub.com
-      - FR 6 → openitsub.com
-      - FR 1 → openitsub.com
-      - US 40 → openitsub.com
-      - NL_537
-      - ZZ_1381
-      - 中国-338.4KB/s(Youtube:不良林)
-      - GB 4 → openitsub.com
-      - US 42 → openitsub.com
+      - Relay_🇺🇸US-🇺🇸US_1254
       - _08
-      - US 30 → openitsub.com
-      - US_751
-      - US 35 → openitsub.com
-      - FR 4 → openitsub.com
-      - 美国(油管:破解资源君2.0) 3
-      - US_693
-      - US 25 → openitsub.com
-      - US 24 → openitsub.com
-      - GB 3 → openitsub.com 2
-      - 美国-1.72MB/s(Youtube:不良林)
-      - 新加坡(油管:破解资源君2.0) 3
-      - TW 1 → openitsub.com 2
-      - CN 1 → openitsub.com
-      - Relay_🇯🇵 JP-🇯🇵JP_249
-      - 欧洲(油管:破解资源君2.0) 23
+      - Relay_🇺🇸US-🇺🇸US_1337
       - 欧洲(油管:破解资源君2.0) 5
-      - 香港(油管:破解资源君2.0) 3
-      - 欧洲(油管:破解资源君2.0) 7 2
-      - 欧洲(油管:破解资源君2.0) 20
-      - JP_232
-      - US_649
+      - 美国(油管:破解资源君2.0) 3
+      - US 42 → openitsub.com
+      - FR 6 → openitsub.com
+      - US 40 → openitsub.com
+      - FR 2 → openitsub.com
+      - US 46 → openitsub.com
+      - US_693
+      - 美国(油管:破解资源君2.0) 3 2
+      - US_797
+      - FR 5 → openitsub.com
+      - NL_414
+      - 美国(油管:破解资源君2.0) 59
+      - US 39 → openitsub.com
+      - 欧洲(油管:破解资源君2.0) 12
+      - 欧洲(油管:破解资源君2.0) 48
+      - US_1340
+      - GB 4 → openitsub.com
+      - GB 5 → openitsub.com
+      - US 15 → openitsub.com
+      - FR_146
+      - 美国-1.83MB/s(Youtube:不良林)
+      - US_1108
+      - 香港(油管:破解资源君2.0)
+      - FR 1 → openitsub.com
+      - US 24 → openitsub.com
+      - US_781
+      - US_784
+      - JP 7 → openitsub.com
+      - 欧洲(油管:破解资源君2.0) 14
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -200,188 +172,160 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - TW 1 → openitsub.com
-      - unknown 3 → openitsub.com
-      - JP_231
-      - 欧洲(油管:破解资源君2.0) 33
-      - 欧洲(油管:破解资源君2.0) 12
-      - CN 11 → openitsub.com
-      - US_752
-      - 欧洲(油管:破解资源君2.0) 7
-      - US 11 → openitsub.com
-      - GB 3 → openitsub.com
-      - FR 6 → openitsub.com
-      - FR 1 → openitsub.com
-      - US 40 → openitsub.com
-      - NL_537
-      - ZZ_1381
-      - 中国-338.4KB/s(Youtube:不良林)
-      - GB 4 → openitsub.com
-      - US 42 → openitsub.com
+      - Relay_🇺🇸US-🇺🇸US_1254
       - _08
-      - US 30 → openitsub.com
-      - US_751
-      - US 35 → openitsub.com
-      - FR 4 → openitsub.com
-      - 美国(油管:破解资源君2.0) 3
-      - US_693
-      - US 25 → openitsub.com
-      - US 24 → openitsub.com
-      - GB 3 → openitsub.com 2
-      - 美国-1.72MB/s(Youtube:不良林)
-      - 新加坡(油管:破解资源君2.0) 3
-      - TW 1 → openitsub.com 2
-      - CN 1 → openitsub.com
-      - Relay_🇯🇵 JP-🇯🇵JP_249
-      - 欧洲(油管:破解资源君2.0) 23
+      - Relay_🇺🇸US-🇺🇸US_1337
       - 欧洲(油管:破解资源君2.0) 5
-      - 香港(油管:破解资源君2.0) 3
-      - 欧洲(油管:破解资源君2.0) 7 2
-      - 欧洲(油管:破解资源君2.0) 20
-      - JP_232
-      - US_649
+      - 美国(油管:破解资源君2.0) 3
+      - US 42 → openitsub.com
+      - FR 6 → openitsub.com
+      - US 40 → openitsub.com
+      - FR 2 → openitsub.com
+      - US 46 → openitsub.com
+      - US_693
+      - 美国(油管:破解资源君2.0) 3 2
+      - US_797
+      - FR 5 → openitsub.com
+      - NL_414
+      - 美国(油管:破解资源君2.0) 59
+      - US 39 → openitsub.com
+      - 欧洲(油管:破解资源君2.0) 12
+      - 欧洲(油管:破解资源君2.0) 48
+      - US_1340
+      - GB 4 → openitsub.com
+      - GB 5 → openitsub.com
+      - US 15 → openitsub.com
+      - FR_146
+      - 美国-1.83MB/s(Youtube:不良林)
+      - US_1108
+      - 香港(油管:破解资源君2.0)
+      - FR 1 → openitsub.com
+      - US 24 → openitsub.com
+      - US_781
+      - US_784
+      - JP 7 → openitsub.com
+      - 欧洲(油管:破解资源君2.0) 14
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港(油管:破解资源君2.0) 3
+      - 香港(油管:破解资源君2.0)
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - TW 1 → openitsub.com
-      - unknown 3 → openitsub.com
-      - JP_231
-      - 欧洲(油管:破解资源君2.0) 33
-      - 欧洲(油管:破解资源君2.0) 12
-      - CN 11 → openitsub.com
-      - US_752
-      - 欧洲(油管:破解资源君2.0) 7
-      - US 11 → openitsub.com
-      - GB 3 → openitsub.com
-      - FR 6 → openitsub.com
-      - FR 1 → openitsub.com
-      - US 40 → openitsub.com
-      - NL_537
-      - ZZ_1381
-      - 中国-338.4KB/s(Youtube:不良林)
-      - GB 4 → openitsub.com
-      - US 42 → openitsub.com
+      - Relay_🇺🇸US-🇺🇸US_1254
       - _08
-      - US 30 → openitsub.com
-      - US_751
-      - US 35 → openitsub.com
-      - FR 4 → openitsub.com
-      - 美国(油管:破解资源君2.0) 3
-      - US_693
-      - US 25 → openitsub.com
-      - US 24 → openitsub.com
-      - GB 3 → openitsub.com 2
-      - 美国-1.72MB/s(Youtube:不良林)
-      - 新加坡(油管:破解资源君2.0) 3
-      - TW 1 → openitsub.com 2
-      - CN 1 → openitsub.com
-      - Relay_🇯🇵 JP-🇯🇵JP_249
-      - 欧洲(油管:破解资源君2.0) 23
+      - Relay_🇺🇸US-🇺🇸US_1337
       - 欧洲(油管:破解资源君2.0) 5
-      - 香港(油管:破解资源君2.0) 3
-      - 欧洲(油管:破解资源君2.0) 7 2
-      - 欧洲(油管:破解资源君2.0) 20
-      - JP_232
-      - US_649
+      - 美国(油管:破解资源君2.0) 3
+      - US 42 → openitsub.com
+      - FR 6 → openitsub.com
+      - US 40 → openitsub.com
+      - FR 2 → openitsub.com
+      - US 46 → openitsub.com
+      - US_693
+      - 美国(油管:破解资源君2.0) 3 2
+      - US_797
+      - FR 5 → openitsub.com
+      - NL_414
+      - 美国(油管:破解资源君2.0) 59
+      - US 39 → openitsub.com
+      - 欧洲(油管:破解资源君2.0) 12
+      - 欧洲(油管:破解资源君2.0) 48
+      - US_1340
+      - GB 4 → openitsub.com
+      - GB 5 → openitsub.com
+      - US 15 → openitsub.com
+      - FR_146
+      - 美国-1.83MB/s(Youtube:不良林)
+      - US_1108
+      - 香港(油管:破解资源君2.0)
+      - FR 1 → openitsub.com
+      - US 24 → openitsub.com
+      - US_781
+      - US_784
+      - JP 7 → openitsub.com
+      - 欧洲(油管:破解资源君2.0) 14
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - TW 1 → openitsub.com
-      - unknown 3 → openitsub.com
-      - JP_231
-      - 欧洲(油管:破解资源君2.0) 33
-      - 欧洲(油管:破解资源君2.0) 12
-      - CN 11 → openitsub.com
-      - US_752
-      - 欧洲(油管:破解资源君2.0) 7
-      - US 11 → openitsub.com
-      - GB 3 → openitsub.com
-      - FR 6 → openitsub.com
-      - FR 1 → openitsub.com
-      - US 40 → openitsub.com
-      - NL_537
-      - ZZ_1381
-      - 中国-338.4KB/s(Youtube:不良林)
-      - GB 4 → openitsub.com
-      - US 42 → openitsub.com
+      - Relay_🇺🇸US-🇺🇸US_1254
       - _08
-      - US 30 → openitsub.com
-      - US_751
-      - US 35 → openitsub.com
-      - FR 4 → openitsub.com
-      - 美国(油管:破解资源君2.0) 3
-      - US_693
-      - US 25 → openitsub.com
-      - US 24 → openitsub.com
-      - GB 3 → openitsub.com 2
-      - 美国-1.72MB/s(Youtube:不良林)
-      - 新加坡(油管:破解资源君2.0) 3
-      - TW 1 → openitsub.com 2
-      - CN 1 → openitsub.com
-      - Relay_🇯🇵 JP-🇯🇵JP_249
-      - 欧洲(油管:破解资源君2.0) 23
+      - Relay_🇺🇸US-🇺🇸US_1337
       - 欧洲(油管:破解资源君2.0) 5
-      - 香港(油管:破解资源君2.0) 3
-      - 欧洲(油管:破解资源君2.0) 7 2
-      - 欧洲(油管:破解资源君2.0) 20
-      - JP_232
-      - US_649
+      - 美国(油管:破解资源君2.0) 3
+      - US 42 → openitsub.com
+      - FR 6 → openitsub.com
+      - US 40 → openitsub.com
+      - FR 2 → openitsub.com
+      - US 46 → openitsub.com
+      - US_693
+      - 美国(油管:破解资源君2.0) 3 2
+      - US_797
+      - FR 5 → openitsub.com
+      - NL_414
+      - 美国(油管:破解资源君2.0) 59
+      - US 39 → openitsub.com
+      - 欧洲(油管:破解资源君2.0) 12
+      - 欧洲(油管:破解资源君2.0) 48
+      - US_1340
+      - GB 4 → openitsub.com
+      - GB 5 → openitsub.com
+      - US 15 → openitsub.com
+      - FR_146
+      - 美国-1.83MB/s(Youtube:不良林)
+      - US_1108
+      - 香港(油管:破解资源君2.0)
+      - FR 1 → openitsub.com
+      - US 24 → openitsub.com
+      - US_781
+      - US_784
+      - JP 7 → openitsub.com
+      - 欧洲(油管:破解资源君2.0) 14
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - TW 1 → openitsub.com
-      - unknown 3 → openitsub.com
-      - JP_231
-      - 欧洲(油管:破解资源君2.0) 33
-      - 欧洲(油管:破解资源君2.0) 12
-      - CN 11 → openitsub.com
-      - US_752
-      - 欧洲(油管:破解资源君2.0) 7
-      - US 11 → openitsub.com
-      - GB 3 → openitsub.com
-      - FR 6 → openitsub.com
-      - FR 1 → openitsub.com
-      - US 40 → openitsub.com
-      - NL_537
-      - ZZ_1381
-      - 中国-338.4KB/s(Youtube:不良林)
-      - GB 4 → openitsub.com
-      - US 42 → openitsub.com
+      - Relay_🇺🇸US-🇺🇸US_1254
       - _08
-      - US 30 → openitsub.com
-      - US_751
-      - US 35 → openitsub.com
-      - FR 4 → openitsub.com
-      - 美国(油管:破解资源君2.0) 3
-      - US_693
-      - US 25 → openitsub.com
-      - US 24 → openitsub.com
-      - GB 3 → openitsub.com 2
-      - 美国-1.72MB/s(Youtube:不良林)
-      - 新加坡(油管:破解资源君2.0) 3
-      - TW 1 → openitsub.com 2
-      - CN 1 → openitsub.com
-      - Relay_🇯🇵 JP-🇯🇵JP_249
-      - 欧洲(油管:破解资源君2.0) 23
+      - Relay_🇺🇸US-🇺🇸US_1337
       - 欧洲(油管:破解资源君2.0) 5
-      - 香港(油管:破解资源君2.0) 3
-      - 欧洲(油管:破解资源君2.0) 7 2
-      - 欧洲(油管:破解资源君2.0) 20
-      - JP_232
-      - US_649
+      - 美国(油管:破解资源君2.0) 3
+      - US 42 → openitsub.com
+      - FR 6 → openitsub.com
+      - US 40 → openitsub.com
+      - FR 2 → openitsub.com
+      - US 46 → openitsub.com
+      - US_693
+      - 美国(油管:破解资源君2.0) 3 2
+      - US_797
+      - FR 5 → openitsub.com
+      - NL_414
+      - 美国(油管:破解资源君2.0) 59
+      - US 39 → openitsub.com
+      - 欧洲(油管:破解资源君2.0) 12
+      - 欧洲(油管:破解资源君2.0) 48
+      - US_1340
+      - GB 4 → openitsub.com
+      - GB 5 → openitsub.com
+      - US 15 → openitsub.com
+      - FR_146
+      - 美国-1.83MB/s(Youtube:不良林)
+      - US_1108
+      - 香港(油管:破解资源君2.0)
+      - FR 1 → openitsub.com
+      - US 24 → openitsub.com
+      - US_781
+      - US_784
+      - JP 7 → openitsub.com
+      - 欧洲(油管:破解资源君2.0) 14
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -397,46 +341,39 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - TW 1 → openitsub.com
-      - unknown 3 → openitsub.com
-      - JP_231
-      - 欧洲(油管:破解资源君2.0) 33
-      - 欧洲(油管:破解资源君2.0) 12
-      - CN 11 → openitsub.com
-      - US_752
-      - 欧洲(油管:破解资源君2.0) 7
-      - US 11 → openitsub.com
-      - GB 3 → openitsub.com
-      - FR 6 → openitsub.com
-      - FR 1 → openitsub.com
-      - US 40 → openitsub.com
-      - NL_537
-      - ZZ_1381
-      - 中国-338.4KB/s(Youtube:不良林)
-      - GB 4 → openitsub.com
-      - US 42 → openitsub.com
+      - Relay_🇺🇸US-🇺🇸US_1254
       - _08
-      - US 30 → openitsub.com
-      - US_751
-      - US 35 → openitsub.com
-      - FR 4 → openitsub.com
-      - 美国(油管:破解资源君2.0) 3
-      - US_693
-      - US 25 → openitsub.com
-      - US 24 → openitsub.com
-      - GB 3 → openitsub.com 2
-      - 美国-1.72MB/s(Youtube:不良林)
-      - 新加坡(油管:破解资源君2.0) 3
-      - TW 1 → openitsub.com 2
-      - CN 1 → openitsub.com
-      - Relay_🇯🇵 JP-🇯🇵JP_249
-      - 欧洲(油管:破解资源君2.0) 23
+      - Relay_🇺🇸US-🇺🇸US_1337
       - 欧洲(油管:破解资源君2.0) 5
-      - 香港(油管:破解资源君2.0) 3
-      - 欧洲(油管:破解资源君2.0) 7 2
-      - 欧洲(油管:破解资源君2.0) 20
-      - JP_232
-      - US_649
+      - 美国(油管:破解资源君2.0) 3
+      - US 42 → openitsub.com
+      - FR 6 → openitsub.com
+      - US 40 → openitsub.com
+      - FR 2 → openitsub.com
+      - US 46 → openitsub.com
+      - US_693
+      - 美国(油管:破解资源君2.0) 3 2
+      - US_797
+      - FR 5 → openitsub.com
+      - NL_414
+      - 美国(油管:破解资源君2.0) 59
+      - US 39 → openitsub.com
+      - 欧洲(油管:破解资源君2.0) 12
+      - 欧洲(油管:破解资源君2.0) 48
+      - US_1340
+      - GB 4 → openitsub.com
+      - GB 5 → openitsub.com
+      - US 15 → openitsub.com
+      - FR_146
+      - 美国-1.83MB/s(Youtube:不良林)
+      - US_1108
+      - 香港(油管:破解资源君2.0)
+      - FR 1 → openitsub.com
+      - US 24 → openitsub.com
+      - US_781
+      - US_784
+      - JP 7 → openitsub.com
+      - 欧洲(油管:破解资源君2.0) 14
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
