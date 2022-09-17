@@ -5,223 +5,67 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: JP_253, server: 172.105.242.17, port: 20020, type: ss, cipher: aes-128-gcm, password: !<str> 200000000000000000000020, plugin: obfs, plugin-opts: {mode: http, host: "TIB2ehlN1U.download.windowsupdate.com,449bff3663.douyincdn.com"}, udp: true}
-  - {name: SG 5 → TG@SCINV, server: 52.77.243.140, port: 443, type: trojan, password: iyinglong, skip-cert-verify: true, udp: true}
-  - {name: _07, server: 168.138.207.66, port: 21365, type: vmess, uuid: 905f99b1-e7ba-45e0-ae4d-b0ffdf0ad245, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: SG_650, server: 54.255.235.191, port: 443, type: trojan, password: iyinglong, skip-cert-verify: true, udp: true}
-  - {name: US 31 → TG@SCINV, server: zz123.ml, port: 8087, type: trojan, password: 1A6nxaKuzK, sni: zz123.ml, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇸🇬SG-🇸🇬SG_665, server: sg-am21.eqsunshine.com, port: 8080, type: ssr, cipher: aes-256-cfb, password: jUQAcjhEG, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
-  - {name: JP_263, server: 18.179.205.215, port: 443, type: trojan, password: iyinglong, skip-cert-verify: true, udp: true}
-  - {name: RU_571, server: 91.206.92.176, port: 35030, type: ss, cipher: chacha20-ietf-poly1305, password: FCx0i7b33H9G, udp: true}
-  - {name: US 21 → TG@SCINV, server: 150.230.249.42, port: 443, type: trojan, password: 0Y9gOHSdRt, skip-cert-verify: true, udp: true}
-  - {name: CN_92, server: 106.55.234.95, port: 31372, type: vmess, uuid: 374d3519-455c-45b8-e3b1-0e2e9fcf4411, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US_743, server: 34.219.183.33, port: 443, type: trojan, password: iyinglong, skip-cert-verify: true, udp: true}
-  - {name: US 21 → TG@SCINV 2, server: 34.219.230.191, port: 443, type: trojan, password: iyinglong, skip-cert-verify: true, udp: true}
-  - {name: FR 2 → TG@SCINV, server: 52.47.99.22, port: 443, type: trojan, password: iyinglong, skip-cert-verify: true, udp: true}
-  - {name: SG 2 → TG@SCINV, server: 18.140.67.76, port: 443, type: trojan, password: iyinglong, skip-cert-verify: true, udp: true}
-  - {name: GB 4 → TG@SCINV, server: 3.8.216.52, port: 443, type: trojan, password: iyinglong, skip-cert-verify: true, udp: true}
-  - {name: US_692, server: 38.91.102.74, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: FR_158, server: 35.180.202.38, port: 443, type: trojan, password: iyinglong, skip-cert-verify: true, udp: true}
-  - {name: ZZ_1394, server: 169.197.143.232, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: US 38 → TG@SCINV, server: susan.leosvps.space, port: 443, type: trojan, password: NGyhpgytIJ, sni: susan.leosvps.space, skip-cert-verify: true, udp: true}
-  - {name: FR_159, server: 35.180.122.151, port: 443, type: trojan, password: iyinglong, skip-cert-verify: true, udp: true}
-  - {name: US_741, server: 13.38.55.14, port: 443, type: trojan, password: iyinglong, skip-cert-verify: true, udp: true}
-  - {name: FR 4 → TG@SCINV, server: 35.180.247.162, port: 443, type: trojan, password: iyinglong, skip-cert-verify: true, udp: true}
-  - {name: US 37 → TG@SCINV, server: uk1.turingnet.top, port: 50001, type: trojan, password: 5dba4451-e755-4e5b-9b3f-114865e058d6, sni: uk1.turingnet.top, skip-cert-verify: true, udp: true}
-  - {name: GB_217, server: 35.176.6.24, port: 443, type: trojan, password: iyinglong, skip-cert-verify: true, udp: true}
-  - {name: US_753, server: 3.38.108.94, port: 443, type: trojan, password: xxoo, skip-cert-verify: true, udp: true}
-  - {name: US_1120, server: 142.202.48.7, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: ZZ_1353, server: 134.195.196.149, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: _08, server: 43.142.87.128, port: 4816, type: vmess, uuid: 12bfc8c6-1b07-4f07-d3c3-f185e89e961c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: JP_254, server: 172.105.235.163, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /chat, ws-headers: {Host: 172.105.235.163}, udp: true}
-  - {name: US_738, server: 13.40.126.229, port: 443, type: trojan, password: iyinglong, skip-cert-verify: true, udp: true}
-  - {name: FR_157, server: 15.237.116.79, port: 443, type: trojan, password: iyinglong, skip-cert-verify: true, udp: true}
-  - {name: RU 1 → TG@SCINV, server: 194.156.99.39, port: 443, type: trojan, password: xxoo, skip-cert-verify: true, udp: true}
-  - {name: DE_99, server: 193.108.118.30, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: CA 1 → TG@SCINV, server: 913tw.tfzhc.top, port: 44318, type: trojan, password: d0ad17a2-d7e9-4e78-89fb-71731696c440, sni: 913tw.tfzhc.top, skip-cert-verify: true, udp: true}
-  - {name: GB_221, server: 5.252.24.137, port: 443, type: trojan, password: xxoo, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇦🇺 AU-🇦🇺AU_12, server: wangqifei.ga, port: 41477, type: trojan, password: 3oquVrpxPg, sni: wangqifei.ga, skip-cert-verify: true, udp: true}
-  - {name: AU_16, server: 185.167.116.38, port: 9025, type: ss, cipher: aes-256-cfb, password: XPtzA9sCug3SPR4c, udp: true}
-  - {name: US_717, server: 38.91.101.159, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: NO 2 → TG@SCINV, server: 138.124.183.222, port: 443, type: trojan, password: xxoo, skip-cert-verify: true, udp: true}
-  - {name: NL_479, server: 213.183.51.172, port: 9005, type: ss, cipher: aes-256-cfb, password: ZET59LF6DvCC8KVt, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_1252, server: chess.magicefire.com, port: 443, type: vmess, uuid: 9aa80017-3427-4165-a522-f5f9a11330d0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: ZZ_1297, server: 134.195.196.143, port: 805, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: GB 6 → TG@SCINV, server: 18.130.157.11, port: 443, type: trojan, password: iyinglong, skip-cert-verify: true, udp: true}
-  - {name: SG_669, server: 139.59.244.143, port: 38941, type: vmess, uuid: 3dc5c1c9-7d8c-432e-daff-4422103a7918, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: NL_477, server: 213.183.51.171, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH, udp: true}
-  - {name: NL_494, server: 213.183.51.171, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX, udp: true}
-  - {name: DE_134, server: 165.22.73.126, port: 23335, type: ss, cipher: aes-256-cfb, password: 7d99ae502227454ea998d71e4b62a388, udp: true}
-  - {name: CA_70, server: 196.247.59.156, port: 804, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: JP 3 → TG@SCINV, server: 18.179.136.120, port: 443, type: trojan, password: iyinglong, skip-cert-verify: true, udp: true}
-  - {name: NO_537, server: 138.124.183.226, port: 443, type: trojan, password: xxoo, skip-cert-verify: true, udp: true}
+  - {name: CN_85, server: unicomv3.mipglxi.cn, port: 6616, type: ss, cipher: aes-128-gcm, password: 269f71b9-c45b-43f3-8c48-eb5f986aa707, udp: true}
+  - {name: US_713, server: 13.213.69.245, port: 443, type: trojan, password: iyinglong, skip-cert-verify: true, udp: true}
+  - {name: _04, server: 129.159.41.233, port: 32586, type: vmess, uuid: 341a9182-c423-499c-c46e-d17838b29037, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: JP_251, server: 172.105.235.163, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /chat, ws-headers: {Host: 172.105.235.163}, udp: true}
+  - {name: Relay_🇯🇵JP-🇯🇵JP_312, server: vjp1.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /chat, ws-headers: {Host: vjp1.0bad.com}, udp: true}
+  - {name: US_707, server: 54.245.213.176, port: 443, type: trojan, password: iyinglong, skip-cert-verify: true, udp: true}
+  - {name: US_709, server: 13.38.24.83, port: 443, type: trojan, password: xxoo, skip-cert-verify: true, udp: true}
+  - {name: FR_151, server: 35.180.202.38, port: 443, type: trojan, password: iyinglong, skip-cert-verify: true, udp: true}
+  - {name: JP_289, server: 18.179.205.215, port: 443, type: trojan, password: iyinglong, skip-cert-verify: true, udp: true}
+  - {name: _05, server: 168.138.207.66, port: 21365, type: vmess, uuid: 905f99b1-e7ba-45e0-ae4d-b0ffdf0ad245, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇦🇺AU-🇦🇺AU_49, server: vau1.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /chat, ws-headers: {Host: vau1.0bad.com}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - JP_253
-      - SG 5 → TG@SCINV
-      - _07
-      - SG_650
-      - US 31 → TG@SCINV
-      - Relay_🇸🇬SG-🇸🇬SG_665
-      - JP_263
-      - RU_571
-      - US 21 → TG@SCINV
-      - CN_92
-      - US_743
-      - US 21 → TG@SCINV 2
-      - FR 2 → TG@SCINV
-      - SG 2 → TG@SCINV
-      - GB 4 → TG@SCINV
-      - US_692
-      - FR_158
-      - ZZ_1394
-      - US 38 → TG@SCINV
-      - FR_159
-      - US_741
-      - FR 4 → TG@SCINV
-      - US 37 → TG@SCINV
-      - GB_217
-      - US_753
-      - US_1120
-      - ZZ_1353
-      - _08
-      - JP_254
-      - US_738
-      - FR_157
-      - RU 1 → TG@SCINV
-      - DE_99
-      - CA 1 → TG@SCINV
-      - GB_221
-      - Relay_🇦🇺 AU-🇦🇺AU_12
-      - AU_16
-      - US_717
-      - NO 2 → TG@SCINV
-      - NL_479
-      - Relay_🇺🇸US-🇺🇸US_1252
-      - ZZ_1297
-      - GB 6 → TG@SCINV
-      - SG_669
-      - NL_477
-      - NL_494
-      - DE_134
-      - CA_70
-      - JP 3 → TG@SCINV
-      - NO_537
+      - CN_85
+      - US_713
+      - _04
+      - JP_251
+      - Relay_🇯🇵JP-🇯🇵JP_312
+      - US_707
+      - US_709
+      - FR_151
+      - JP_289
+      - _05
+      - Relay_🇦🇺AU-🇦🇺AU_49
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - JP_253
-      - SG 5 → TG@SCINV
-      - _07
-      - SG_650
-      - US 31 → TG@SCINV
-      - Relay_🇸🇬SG-🇸🇬SG_665
-      - JP_263
-      - RU_571
-      - US 21 → TG@SCINV
-      - CN_92
-      - US_743
-      - US 21 → TG@SCINV 2
-      - FR 2 → TG@SCINV
-      - SG 2 → TG@SCINV
-      - GB 4 → TG@SCINV
-      - US_692
-      - FR_158
-      - ZZ_1394
-      - US 38 → TG@SCINV
-      - FR_159
-      - US_741
-      - FR 4 → TG@SCINV
-      - US 37 → TG@SCINV
-      - GB_217
-      - US_753
-      - US_1120
-      - ZZ_1353
-      - _08
-      - JP_254
-      - US_738
-      - FR_157
-      - RU 1 → TG@SCINV
-      - DE_99
-      - CA 1 → TG@SCINV
-      - GB_221
-      - Relay_🇦🇺 AU-🇦🇺AU_12
-      - AU_16
-      - US_717
-      - NO 2 → TG@SCINV
-      - NL_479
-      - Relay_🇺🇸US-🇺🇸US_1252
-      - ZZ_1297
-      - GB 6 → TG@SCINV
-      - SG_669
-      - NL_477
-      - NL_494
-      - DE_134
-      - CA_70
-      - JP 3 → TG@SCINV
-      - NO_537
+      - CN_85
+      - US_713
+      - _04
+      - JP_251
+      - Relay_🇯🇵JP-🇯🇵JP_312
+      - US_707
+      - US_709
+      - FR_151
+      - JP_289
+      - _05
+      - Relay_🇦🇺AU-🇦🇺AU_49
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - JP_253
-      - SG 5 → TG@SCINV
-      - _07
-      - SG_650
-      - US 31 → TG@SCINV
-      - Relay_🇸🇬SG-🇸🇬SG_665
-      - JP_263
-      - RU_571
-      - US 21 → TG@SCINV
-      - CN_92
-      - US_743
-      - US 21 → TG@SCINV 2
-      - FR 2 → TG@SCINV
-      - SG 2 → TG@SCINV
-      - GB 4 → TG@SCINV
-      - US_692
-      - FR_158
-      - ZZ_1394
-      - US 38 → TG@SCINV
-      - FR_159
-      - US_741
-      - FR 4 → TG@SCINV
-      - US 37 → TG@SCINV
-      - GB_217
-      - US_753
-      - US_1120
-      - ZZ_1353
-      - _08
-      - JP_254
-      - US_738
-      - FR_157
-      - RU 1 → TG@SCINV
-      - DE_99
-      - CA 1 → TG@SCINV
-      - GB_221
-      - Relay_🇦🇺 AU-🇦🇺AU_12
-      - AU_16
-      - US_717
-      - NO 2 → TG@SCINV
-      - NL_479
-      - Relay_🇺🇸US-🇺🇸US_1252
-      - ZZ_1297
-      - GB 6 → TG@SCINV
-      - SG_669
-      - NL_477
-      - NL_494
-      - DE_134
-      - CA_70
-      - JP 3 → TG@SCINV
-      - NO_537
+      - CN_85
+      - US_713
+      - _04
+      - JP_251
+      - Relay_🇯🇵JP-🇯🇵JP_312
+      - US_707
+      - US_709
+      - FR_151
+      - JP_289
+      - _05
+      - Relay_🇦🇺AU-🇦🇺AU_49
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -240,56 +84,17 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - JP_253
-      - SG 5 → TG@SCINV
-      - _07
-      - SG_650
-      - US 31 → TG@SCINV
-      - Relay_🇸🇬SG-🇸🇬SG_665
-      - JP_263
-      - RU_571
-      - US 21 → TG@SCINV
-      - CN_92
-      - US_743
-      - US 21 → TG@SCINV 2
-      - FR 2 → TG@SCINV
-      - SG 2 → TG@SCINV
-      - GB 4 → TG@SCINV
-      - US_692
-      - FR_158
-      - ZZ_1394
-      - US 38 → TG@SCINV
-      - FR_159
-      - US_741
-      - FR 4 → TG@SCINV
-      - US 37 → TG@SCINV
-      - GB_217
-      - US_753
-      - US_1120
-      - ZZ_1353
-      - _08
-      - JP_254
-      - US_738
-      - FR_157
-      - RU 1 → TG@SCINV
-      - DE_99
-      - CA 1 → TG@SCINV
-      - GB_221
-      - Relay_🇦🇺 AU-🇦🇺AU_12
-      - AU_16
-      - US_717
-      - NO 2 → TG@SCINV
-      - NL_479
-      - Relay_🇺🇸US-🇺🇸US_1252
-      - ZZ_1297
-      - GB 6 → TG@SCINV
-      - SG_669
-      - NL_477
-      - NL_494
-      - DE_134
-      - CA_70
-      - JP 3 → TG@SCINV
-      - NO_537
+      - CN_85
+      - US_713
+      - _04
+      - JP_251
+      - Relay_🇯🇵JP-🇯🇵JP_312
+      - US_707
+      - US_709
+      - FR_151
+      - JP_289
+      - _05
+      - Relay_🇦🇺AU-🇦🇺AU_49
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -300,167 +105,50 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - JP_253
-      - SG 5 → TG@SCINV
-      - _07
-      - SG_650
-      - US 31 → TG@SCINV
-      - Relay_🇸🇬SG-🇸🇬SG_665
-      - JP_263
-      - RU_571
-      - US 21 → TG@SCINV
-      - CN_92
-      - US_743
-      - US 21 → TG@SCINV 2
-      - FR 2 → TG@SCINV
-      - SG 2 → TG@SCINV
-      - GB 4 → TG@SCINV
-      - US_692
-      - FR_158
-      - ZZ_1394
-      - US 38 → TG@SCINV
-      - FR_159
-      - US_741
-      - FR 4 → TG@SCINV
-      - US 37 → TG@SCINV
-      - GB_217
-      - US_753
-      - US_1120
-      - ZZ_1353
-      - _08
-      - JP_254
-      - US_738
-      - FR_157
-      - RU 1 → TG@SCINV
-      - DE_99
-      - CA 1 → TG@SCINV
-      - GB_221
-      - Relay_🇦🇺 AU-🇦🇺AU_12
-      - AU_16
-      - US_717
-      - NO 2 → TG@SCINV
-      - NL_479
-      - Relay_🇺🇸US-🇺🇸US_1252
-      - ZZ_1297
-      - GB 6 → TG@SCINV
-      - SG_669
-      - NL_477
-      - NL_494
-      - DE_134
-      - CA_70
-      - JP 3 → TG@SCINV
-      - NO_537
+      - CN_85
+      - US_713
+      - _04
+      - JP_251
+      - Relay_🇯🇵JP-🇯🇵JP_312
+      - US_707
+      - US_709
+      - FR_151
+      - JP_289
+      - _05
+      - Relay_🇦🇺AU-🇦🇺AU_49
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - JP_253
-      - SG 5 → TG@SCINV
-      - _07
-      - SG_650
-      - US 31 → TG@SCINV
-      - Relay_🇸🇬SG-🇸🇬SG_665
-      - JP_263
-      - RU_571
-      - US 21 → TG@SCINV
-      - CN_92
-      - US_743
-      - US 21 → TG@SCINV 2
-      - FR 2 → TG@SCINV
-      - SG 2 → TG@SCINV
-      - GB 4 → TG@SCINV
-      - US_692
-      - FR_158
-      - ZZ_1394
-      - US 38 → TG@SCINV
-      - FR_159
-      - US_741
-      - FR 4 → TG@SCINV
-      - US 37 → TG@SCINV
-      - GB_217
-      - US_753
-      - US_1120
-      - ZZ_1353
-      - _08
-      - JP_254
-      - US_738
-      - FR_157
-      - RU 1 → TG@SCINV
-      - DE_99
-      - CA 1 → TG@SCINV
-      - GB_221
-      - Relay_🇦🇺 AU-🇦🇺AU_12
-      - AU_16
-      - US_717
-      - NO 2 → TG@SCINV
-      - NL_479
-      - Relay_🇺🇸US-🇺🇸US_1252
-      - ZZ_1297
-      - GB 6 → TG@SCINV
-      - SG_669
-      - NL_477
-      - NL_494
-      - DE_134
-      - CA_70
-      - JP 3 → TG@SCINV
-      - NO_537
+      - CN_85
+      - US_713
+      - _04
+      - JP_251
+      - Relay_🇯🇵JP-🇯🇵JP_312
+      - US_707
+      - US_709
+      - FR_151
+      - JP_289
+      - _05
+      - Relay_🇦🇺AU-🇦🇺AU_49
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - JP_253
-      - SG 5 → TG@SCINV
-      - _07
-      - SG_650
-      - US 31 → TG@SCINV
-      - Relay_🇸🇬SG-🇸🇬SG_665
-      - JP_263
-      - RU_571
-      - US 21 → TG@SCINV
-      - CN_92
-      - US_743
-      - US 21 → TG@SCINV 2
-      - FR 2 → TG@SCINV
-      - SG 2 → TG@SCINV
-      - GB 4 → TG@SCINV
-      - US_692
-      - FR_158
-      - ZZ_1394
-      - US 38 → TG@SCINV
-      - FR_159
-      - US_741
-      - FR 4 → TG@SCINV
-      - US 37 → TG@SCINV
-      - GB_217
-      - US_753
-      - US_1120
-      - ZZ_1353
-      - _08
-      - JP_254
-      - US_738
-      - FR_157
-      - RU 1 → TG@SCINV
-      - DE_99
-      - CA 1 → TG@SCINV
-      - GB_221
-      - Relay_🇦🇺 AU-🇦🇺AU_12
-      - AU_16
-      - US_717
-      - NO 2 → TG@SCINV
-      - NL_479
-      - Relay_🇺🇸US-🇺🇸US_1252
-      - ZZ_1297
-      - GB 6 → TG@SCINV
-      - SG_669
-      - NL_477
-      - NL_494
-      - DE_134
-      - CA_70
-      - JP 3 → TG@SCINV
-      - NO_537
+      - CN_85
+      - US_713
+      - _04
+      - JP_251
+      - Relay_🇯🇵JP-🇯🇵JP_312
+      - US_707
+      - US_709
+      - FR_151
+      - JP_289
+      - _05
+      - Relay_🇦🇺AU-🇦🇺AU_49
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -476,56 +164,17 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - JP_253
-      - SG 5 → TG@SCINV
-      - _07
-      - SG_650
-      - US 31 → TG@SCINV
-      - Relay_🇸🇬SG-🇸🇬SG_665
-      - JP_263
-      - RU_571
-      - US 21 → TG@SCINV
-      - CN_92
-      - US_743
-      - US 21 → TG@SCINV 2
-      - FR 2 → TG@SCINV
-      - SG 2 → TG@SCINV
-      - GB 4 → TG@SCINV
-      - US_692
-      - FR_158
-      - ZZ_1394
-      - US 38 → TG@SCINV
-      - FR_159
-      - US_741
-      - FR 4 → TG@SCINV
-      - US 37 → TG@SCINV
-      - GB_217
-      - US_753
-      - US_1120
-      - ZZ_1353
-      - _08
-      - JP_254
-      - US_738
-      - FR_157
-      - RU 1 → TG@SCINV
-      - DE_99
-      - CA 1 → TG@SCINV
-      - GB_221
-      - Relay_🇦🇺 AU-🇦🇺AU_12
-      - AU_16
-      - US_717
-      - NO 2 → TG@SCINV
-      - NL_479
-      - Relay_🇺🇸US-🇺🇸US_1252
-      - ZZ_1297
-      - GB 6 → TG@SCINV
-      - SG_669
-      - NL_477
-      - NL_494
-      - DE_134
-      - CA_70
-      - JP 3 → TG@SCINV
-      - NO_537
+      - CN_85
+      - US_713
+      - _04
+      - JP_251
+      - Relay_🇯🇵JP-🇯🇵JP_312
+      - US_707
+      - US_709
+      - FR_151
+      - JP_289
+      - _05
+      - Relay_🇦🇺AU-🇦🇺AU_49
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
