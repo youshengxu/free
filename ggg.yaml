@@ -5,191 +5,187 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: CN 1 → openitsub.com, server: 52.81.162.162, port: 18952, type: ss, cipher: aes-256-gcm, password: c9e5db7a-f04a-467d-874c-7002449b3ca4, udp: true}
-  - {name: US_548, server: 150.230.217.213, port: 443, type: trojan, password: c09eb137-bf68-4658-84e0-102d94b74168, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇺🇸 US-🇺🇸US_541, server: rben.miaoge.gay, port: 443, type: vmess, uuid: 4893ed3e-8a5f-48dc-aa1e-bbc2e67a065b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: rben.miaoge.gay}, udp: true}
-  - {name: CN 40 → openitsub.com, server: s3.mine.com.cn, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN 38 → openitsub.com, server: s3.mine.com.cn, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 中国-3.27MB/s(Youtube:不良林), server: iepl10.dcnode.me, port: 10050, type: ss, cipher: aes-128-gcm, password: 2daf156a-b9ee-4671-913a-4339ddd39021, udp: true}
-  - {name: CN 40 → openitsub.com 2, server: s3.mine.com.cn, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN_66, server: 106.55.234.95, port: 31372, type: vmess, uuid: 374d3519-455c-45b8-e3b1-0e2e9fcf4411, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国-4.61MB/s(Youtube:不良林), server: 97.64.28.52, port: 254, type: ss, cipher: aes-256-cfb, password: bwhskrskr03, udp: true}
-  - {name: CN_90 3 3, server: 106.55.234.95, port: 31372, type: vmess, uuid: 374d3519-455c-45b8-e3b1-0e2e9fcf4411, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 欧洲(油管:破解资源君2.0) 27, server: 146.56.40.117, port: 27675, type: vmess, uuid: 053ca0f4-057e-493d-ad30-5ba51f00f59c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 146.56.40.117}, udp: true}
-  - {name: ZZ_1430, server: 103.186.148.106, port: 80, type: vmess, uuid: 67468d89-cf87-443c-baca-49f1e73b5991, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /shopvpn.net, ws-headers: {Host: 103.186.148.106}, udp: true}
-  - {name: CN_76 2, server: 106.55.234.95, port: 31372, type: vmess, uuid: 374d3519-455c-45b8-e3b1-0e2e9fcf4411, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国(油管:破解资源君2.0) 3, server: 172.64.144.100, port: 443, type: vmess, uuid: 6e9217de-ad7e-4a67-bd17-a6dca951733b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /dongtaiwang.com, ws-headers: {Host: lg3.zhujicn2.com}, udp: true}
-  - {name: Relay_🇳🇱 NL-🇺🇸US_362, server: yu.miaoge110.cf, port: 443, type: vmess, uuid: 4893ed3e-8a5f-48dc-aa1e-bbc2e67a065b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: yu.miaoge110.cf}, udp: true}
-  - {name: CN_90 3 2, server: 106.55.234.95, port: 31372, type: vmess, uuid: 374d3519-455c-45b8-e3b1-0e2e9fcf4411, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US_713, server: 199.115.228.30, port: 253, type: ss, cipher: aes-256-cfb, password: bwhskrskr05, udp: true}
-  - {name: CN_90, server: 106.55.234.95, port: 31372, type: vmess, uuid: 374d3519-455c-45b8-e3b1-0e2e9fcf4411, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇺🇸 US-🇺🇸US_477, server: riop.miaoge110.cf, port: 443, type: vmess, uuid: 4893ed3e-8a5f-48dc-aa1e-bbc2e67a065b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: riop.miaoge110.cf}, udp: true}
-  - {name: CA_25, server: 149.56.141.11, port: 443, type: trojan, password: 8b6daf15-8342-482d-b894-1239fd98ce7f, skip-cert-verify: true, udp: true}
-  - {name: CN_76 2 7 2, server: 106.55.234.95, port: 31372, type: vmess, uuid: 374d3519-455c-45b8-e3b1-0e2e9fcf4411, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US_543, server: 152.67.160.174, port: 443, type: trojan, password: 54080134-2cba-4535-8599-95650bd9aa54, skip-cert-verify: true, udp: true}
-  - {name: 欧洲(油管:破解资源君2.0) 14 2, server: 5.188.108.208, port: 21008, type: vmess, uuid: 80b5645a-86b7-48af-9252-977ba807a338, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US 47 → openitsub.com, server: cf.naixii.top, port: 443, type: vmess, uuid: 3fad3b4c-8691-42f2-a46d-9875cacaeeb2, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /b472f/, ws-headers: {Host: linode.sharecentre.xyz}, udp: true}
-  - {name: AU_11, server: 140.238.205.173, port: 443, type: trojan, password: cb43b7c2-b744-41c5-bcc2-fd7467b332cf, skip-cert-verify: true, udp: true}
-  - {name: 澳大利亚-1.80MB/s(Youtube:不良林), server: 185.167.116.250, port: 9027, type: ss, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8, udp: true}
-  - {name: CN 40 → openitsub.com 3, server: s3.mine.com.cn, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 瑞士-2.60MB/s(Youtube:不良林), server: 185.126.116.124, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
-  - {name: 瑞士-2.04MB/s(Youtube:不良林), server: 185.126.116.125, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
-  - {name: CN_70 2, server: 106.55.234.95, port: 31372, type: vmess, uuid: 374d3519-455c-45b8-e3b1-0e2e9fcf4411, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 法国-2.75MB/s(Youtube:不良林), server: PL.nexitally.xyz, port: 443, type: vmess, uuid: 54c6c823-4957-4c6c-b10c-359bc51f7cc3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /a54e284cb6/, ws-headers: {Host: PL.nexitally.xyz}, udp: true}
-  - {name: RO 1 → openitsub.com, server: 94.177.8.87, port: 41443, type: vmess, uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: JP_257, server: 168.138.44.176, port: 443, type: trojan, password: 8d2d5953-d649-4034-94f2-72f2df2623da, skip-cert-verify: true, udp: true}
-  - {name: CN_90 3 2 2, server: 106.55.234.95, port: 31372, type: vmess, uuid: 374d3519-455c-45b8-e3b1-0e2e9fcf4411, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 欧洲(油管:破解资源君2.0) 12, server: 5.188.108.208, port: 21008, type: vmess, uuid: 80b5645a-86b7-48af-9252-977ba807a338, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: RO 1 → openitsub.com 2, server: 94.177.8.87, port: 41443, type: vmess, uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇦 CA-🇨🇦CA_28, server: cat1.sshocean.net, port: 443, type: trojan, password: 8b6daf15-8342-482d-b894-1239fd98ce7f, sni: cat1.sshocean.net, skip-cert-verify: true, udp: true}
-  - {name: unknown 5 → TG@SCINV, server: 64.112.42.73, port: 443, type: vmess, uuid: 4946f776-0af3-49f3-acad-d157475d253e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /P0S5U7NK, ws-headers: {Host: "%7B%22Host%22:%2264.112.42.73%22%7D"}, udp: true}
-  - {name: 荷兰-222.3KB/s(Youtube:不良林), server: 213.183.59.218, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
-  - {name: CN_55, server: 106.55.234.95, port: 31372, type: vmess, uuid: 374d3519-455c-45b8-e3b1-0e2e9fcf4411, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: KR 1 → openitsub.com, server: iepl3.dcnode.me, port: 10043, type: ss, cipher: aes-128-gcm, password: 2daf156a-b9ee-4671-913a-4339ddd39021, udp: true}
-  - {name: 美国(油管:破解资源君2.0) 48, server: 198.41.212.2, port: 443, type: vmess, uuid: 07a63fe3-8a46-4f89-b548-9151c61b9dc8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /dongtaiwang.com, ws-headers: {Host: v2ray1.zhujicn2.com}, udp: true}
+  - {name: US_425, server: 150.230.217.213, port: 443, type: trojan, password: c09eb137-bf68-4658-84e0-102d94b74168, skip-cert-verify: true, udp: true}
+  - {name: US 20 → openitsub.com, server: 172.64.153.200, port: 443, type: vmess, uuid: a8030afd-812a-4afe-a766-9c76ff3eddd4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /dongtaiwang.com, ws-headers: {Host: lg4.zhujicn2.com}, udp: true}
+  - {name: github.com/freefq - 美国3COM公司企业网 21, server: 152.67.213.242, port: 443, type: vmess, uuid: 9aa80017-3427-4165-a522-f5f9a11330d0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇨🇳 CN-🇧🇭BH_60, server: 116.129.254.29, port: 3381, type: trojan, password: d4e41ff772c7fd45, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇨🇳 CN-🇧🇭BH_58, server: 116.129.253.134, port: 3381, type: trojan, password: d02058f4f819dced, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 美国CloudFlare节点 24, server: 141.101.115.2, port: 443, type: vmess, uuid: a5ba8b2b-8fc5-4521-a35e-9281be61c1c3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /dongtaiwang.com, ws-headers: {Host: lg1.zhujicn2.com}, udp: true}
+  - {name: US_475, server: 138.2.45.243, port: 443, type: trojan, password: c19d1432-8b3e-4818-8837-3d160cf65908, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 美国CloudFlare公司CDN节点 46, server: sgp.kapok.buzz, port: 443, type: vmess, uuid: c1bac6b8-934a-44e2-9cf2-ee0db1fc1c85, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /4befdd8a6/, ws-headers: {Host: sgp.kapok.buzz}, udp: true}
+  - {name: CN 61, server: 116.162.120.23, port: 610, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 53923:hjgjuy6t655jjg, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
+  - {name: 美国-1.27MB/s(Youtube:不良林), server: 129.146.190.42, port: 443, type: trojan, password: dbf9bf9c-2c3f-474a-8031-d4c00666a989, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇨🇦 CA-🏁ZZ_27, server: 165.154.253.15, port: 49011, type: trojan, password: 6c4e3611-5f2d-4eb5-8c56-3e2b850e4cca, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 美国CloudFlare节点 30, server: 198.41.212.30, port: 443, type: vmess, uuid: 105c635f-918d-4b2a-8c9d-d5426e94eb4b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /dongtaiwang.com, ws-headers: {Host: lg2.zhujicn2.com}, udp: true}
+  - {name: Relay_🇨🇦 CA-🇯🇵JP_20, server: 165.154.253.15, port: 49006, type: trojan, password: 6c4e3611-5f2d-4eb5-8c56-3e2b850e4cca, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇨🇦 CA-🇯🇵JP_26, server: 165.154.253.15, port: 49007, type: trojan, password: 6c4e3611-5f2d-4eb5-8c56-3e2b850e4cca, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 香港阿里云 13, server: 47.87.166.143, port: 44443, type: vmess, uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: US 15 → openitsub.com, server: 172.64.144.100, port: 443, type: vmess, uuid: 6e9217de-ad7e-4a67-bd17-a6dca951733b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /dongtaiwang.com, ws-headers: {Host: lg3.zhujicn2.com}, udp: true}
+  - {name: 中国-2.39MB/s(Youtube:不良林), server: 116.162.120.23, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 53923:hjgjuy6t655jjg, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
+  - {name: github.com/freefq - 美国弗吉尼亚州阿什本Amazon数据中心 15, server: text5.xbywwcp.us, port: 80, type: vmess, uuid: 9050a33f-0306-3dd4-80cf-d833a5328b26, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /a.189.cn, ws-headers: {Host: baidu.com}, udp: true}
+  - {name: Relay_🇯🇵 JP-🇯🇵JP_253, server: kr1.api-aws.com, port: 443, type: trojan, password: 61f6271b-5e65-46b8-bc80-c6468a1f185e, sni: kr1.api-aws.com, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇨🇦 CA-🇨🇦CA_15, server: cat1.sshocean.net, port: 443, type: trojan, password: 8b6daf15-8342-482d-b894-1239fd98ce7f, sni: cat1.sshocean.net, skip-cert-verify: true, udp: true}
+  - {name: 英国-1.81MB/s(Youtube:不良林), server: 142.202.51.98, port: 50000, type: ss, cipher: aes-256-cfb, password: !<str> 3135771619, udp: true}
+  - {name: Relay_🇸🇬 SG-🇸🇬SG_391, server: 111.fastea.top, port: 53311, type: trojan, password: aa11f672-9a73-4840-9290-01da727307ca, sni: 111.fastea.top, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇺🇸 US-🇺🇸US_473, server: 115.fastea.top, port: 53315, type: trojan, password: d90960ab-1a01-401b-a404-0085dc745afe, sni: 115.fastea.top, skip-cert-verify: true, udp: true}
+  - {name: US 14 → openitsub.com, server: 172.64.155.200, port: 443, type: vmess, uuid: a8030afd-812a-4afe-a766-9c76ff3eddd4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /dongtaiwang.com, ws-headers: {Host: lg4.zhujicn2.com}, udp: true}
+  - {name: CA_14, server: 149.56.141.11, port: 443, type: trojan, password: 8b6daf15-8342-482d-b894-1239fd98ce7f, skip-cert-verify: true, udp: true}
+  - {name: SG 2 → openitsub.com, server: 112.fastea.top, port: 53316, type: trojan, password: aa11f672-9a73-4840-9290-01da727307ca, sni: 112.fastea.top, skip-cert-verify: true, udp: true}
+  - {name: 印度-3.01MB/s(Youtube:不良林), server: 152.67.160.174, port: 443, type: trojan, password: 54080134-2cba-4535-8599-95650bd9aa54, skip-cert-verify: true, udp: true}
+  - {name: 澳大利亚-2.71MB/s(Youtube:不良林) 2, server: 185.167.116.250, port: 9084, type: ss, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj, udp: true}
+  - {name: Relay_🇨🇦 CA-🇺🇸US_25, server: 165.154.253.15, port: 49004, type: trojan, password: 562c4c98-00c9-4037-a966-c7fc6a81367c, skip-cert-verify: true, udp: true}
+  - {name: US 18 → openitsub.com, server: cf.naixii.top, port: 443, type: vmess, uuid: 3fad3b4c-8691-42f2-a46d-9875cacaeeb2, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /b472f/, ws-headers: {Host: linode.sharecentre.xyz}, udp: true}
+  - {name: SG 2 → openitsub.com 2, server: sgp.naixii.xyz, port: 443, type: vmess, uuid: 0aabdcbd-805f-4f4c-ba24-b176e736b37d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /b26c74ee96d/, ws-headers: {Host: ip48.ip-139-99-117.net}, udp: true}
+  - {name: US 58 → openitsub.com, server: 152.67.162.166, port: 443, type: trojan, password: e05c749b-7c6b-41b8-9c71-9dcf685edf4a, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇨🇦 CA-🇹🇼TW_24, server: 165.154.253.15, port: 49001, type: trojan, password: 562c4c98-00c9-4037-a966-c7fc6a81367c, skip-cert-verify: true, udp: true}
+  - {name: 澳大利亚-1.27MB/s(Youtube:不良林), server: 185.167.116.250, port: 9053, type: ss, cipher: aes-256-cfb, password: SBM7R883jBmnqe6C, udp: true}
+  - {name: 以色列-254.6KB/s(Youtube:不良林), server: www.flieswiming.tk, port: 443, type: vmess, uuid: b7519a6f-c1de-4667-e606-b60c65d19078, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: www.flieswiming.tk}, udp: true}
+  - {name: 马来西亚-515.1KB/s(Youtube:不良林), server: 202.59.10.116, port: 31372, type: vmess, uuid: cab79370-f135-445b-d480-aaa0d69bb108, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 澳大利亚-874.1KB/s(Youtube:不良林), server: 185.167.116.250, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
+  - {name: US_421, server: 168.138.171.65, port: 443, type: vmess, uuid: 4af6fd9a-e8b4-46f2-da3a-207f4577656c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: FR_121, server: 54.38.144.255, port: 50000, type: ss, cipher: aes-256-cfb, password: !<str> 3135771619, udp: true}
+  - {name: 马来西亚-724.4KB/s(Youtube:不良林), server: 103.159.133.166, port: 31372, type: vmess, uuid: 912864fc-41c2-44e2-dcdf-0b01ef96237e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 香港城市电讯有限公司 43, server: xqtxa-1046-v2-2.hkg-d-hkbn.nd.cjhh.mom, port: 888, type: vmess, uuid: b46e5bfe-739c-4026-91fd-686209ce6d85, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /je5x3pBN1vez3NQudNkB, ws-headers: {Host: edge.cjhh.mom}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN 1 → openitsub.com
-      - US_548
-      - Relay_🇺🇸 US-🇺🇸US_541
-      - CN 40 → openitsub.com
-      - CN 38 → openitsub.com
-      - 中国-3.27MB/s(Youtube:不良林)
-      - CN 40 → openitsub.com 2
-      - CN_66
-      - 美国-4.61MB/s(Youtube:不良林)
-      - CN_90 3 3
-      - 欧洲(油管:破解资源君2.0) 27
-      - ZZ_1430
-      - CN_76 2
-      - 美国(油管:破解资源君2.0) 3
-      - Relay_🇳🇱 NL-🇺🇸US_362
-      - CN_90 3 2
-      - US_713
-      - CN_90
-      - Relay_🇺🇸 US-🇺🇸US_477
-      - CA_25
-      - CN_76 2 7 2
-      - US_543
-      - 欧洲(油管:破解资源君2.0) 14 2
-      - US 47 → openitsub.com
-      - AU_11
-      - 澳大利亚-1.80MB/s(Youtube:不良林)
-      - CN 40 → openitsub.com 3
-      - 瑞士-2.60MB/s(Youtube:不良林)
-      - 瑞士-2.04MB/s(Youtube:不良林)
-      - CN_70 2
-      - 法国-2.75MB/s(Youtube:不良林)
-      - RO 1 → openitsub.com
-      - JP_257
-      - CN_90 3 2 2
-      - 欧洲(油管:破解资源君2.0) 12
-      - RO 1 → openitsub.com 2
-      - Relay_🇨🇦 CA-🇨🇦CA_28
-      - unknown 5 → TG@SCINV
-      - 荷兰-222.3KB/s(Youtube:不良林)
-      - CN_55
-      - KR 1 → openitsub.com
-      - 美国(油管:破解资源君2.0) 48
+      - US_425
+      - US 20 → openitsub.com
+      - github.com/freefq - 美国3COM公司企业网 21
+      - Relay_🇨🇳 CN-🇧🇭BH_60
+      - Relay_🇨🇳 CN-🇧🇭BH_58
+      - github.com/freefq - 美国CloudFlare节点 24
+      - US_475
+      - github.com/freefq - 美国CloudFlare公司CDN节点 46
+      - CN 61
+      - 美国-1.27MB/s(Youtube:不良林)
+      - Relay_🇨🇦 CA-🏁ZZ_27
+      - github.com/freefq - 美国CloudFlare节点 30
+      - Relay_🇨🇦 CA-🇯🇵JP_20
+      - Relay_🇨🇦 CA-🇯🇵JP_26
+      - github.com/freefq - 香港阿里云 13
+      - US 15 → openitsub.com
+      - 中国-2.39MB/s(Youtube:不良林)
+      - github.com/freefq - 美国弗吉尼亚州阿什本Amazon数据中心 15
+      - Relay_🇯🇵 JP-🇯🇵JP_253
+      - Relay_🇨🇦 CA-🇨🇦CA_15
+      - 英国-1.81MB/s(Youtube:不良林)
+      - Relay_🇸🇬 SG-🇸🇬SG_391
+      - Relay_🇺🇸 US-🇺🇸US_473
+      - US 14 → openitsub.com
+      - CA_14
+      - SG 2 → openitsub.com
+      - 印度-3.01MB/s(Youtube:不良林)
+      - 澳大利亚-2.71MB/s(Youtube:不良林) 2
+      - Relay_🇨🇦 CA-🇺🇸US_25
+      - US 18 → openitsub.com
+      - SG 2 → openitsub.com 2
+      - US 58 → openitsub.com
+      - Relay_🇨🇦 CA-🇹🇼TW_24
+      - 澳大利亚-1.27MB/s(Youtube:不良林)
+      - 以色列-254.6KB/s(Youtube:不良林)
+      - 马来西亚-515.1KB/s(Youtube:不良林)
+      - 澳大利亚-874.1KB/s(Youtube:不良林)
+      - US_421
+      - FR_121
+      - 马来西亚-724.4KB/s(Youtube:不良林)
+      - github.com/freefq - 香港城市电讯有限公司 43
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - CN 1 → openitsub.com
-      - US_548
-      - Relay_🇺🇸 US-🇺🇸US_541
-      - CN 40 → openitsub.com
-      - CN 38 → openitsub.com
-      - 中国-3.27MB/s(Youtube:不良林)
-      - CN 40 → openitsub.com 2
-      - CN_66
-      - 美国-4.61MB/s(Youtube:不良林)
-      - CN_90 3 3
-      - 欧洲(油管:破解资源君2.0) 27
-      - ZZ_1430
-      - CN_76 2
-      - 美国(油管:破解资源君2.0) 3
-      - Relay_🇳🇱 NL-🇺🇸US_362
-      - CN_90 3 2
-      - US_713
-      - CN_90
-      - Relay_🇺🇸 US-🇺🇸US_477
-      - CA_25
-      - CN_76 2 7 2
-      - US_543
-      - 欧洲(油管:破解资源君2.0) 14 2
-      - US 47 → openitsub.com
-      - AU_11
-      - 澳大利亚-1.80MB/s(Youtube:不良林)
-      - CN 40 → openitsub.com 3
-      - 瑞士-2.60MB/s(Youtube:不良林)
-      - 瑞士-2.04MB/s(Youtube:不良林)
-      - CN_70 2
-      - 法国-2.75MB/s(Youtube:不良林)
-      - RO 1 → openitsub.com
-      - JP_257
-      - CN_90 3 2 2
-      - 欧洲(油管:破解资源君2.0) 12
-      - RO 1 → openitsub.com 2
-      - Relay_🇨🇦 CA-🇨🇦CA_28
-      - unknown 5 → TG@SCINV
-      - 荷兰-222.3KB/s(Youtube:不良林)
-      - CN_55
-      - KR 1 → openitsub.com
-      - 美国(油管:破解资源君2.0) 48
+      - US_425
+      - US 20 → openitsub.com
+      - github.com/freefq - 美国3COM公司企业网 21
+      - Relay_🇨🇳 CN-🇧🇭BH_60
+      - Relay_🇨🇳 CN-🇧🇭BH_58
+      - github.com/freefq - 美国CloudFlare节点 24
+      - US_475
+      - github.com/freefq - 美国CloudFlare公司CDN节点 46
+      - CN 61
+      - 美国-1.27MB/s(Youtube:不良林)
+      - Relay_🇨🇦 CA-🏁ZZ_27
+      - github.com/freefq - 美国CloudFlare节点 30
+      - Relay_🇨🇦 CA-🇯🇵JP_20
+      - Relay_🇨🇦 CA-🇯🇵JP_26
+      - github.com/freefq - 香港阿里云 13
+      - US 15 → openitsub.com
+      - 中国-2.39MB/s(Youtube:不良林)
+      - github.com/freefq - 美国弗吉尼亚州阿什本Amazon数据中心 15
+      - Relay_🇯🇵 JP-🇯🇵JP_253
+      - Relay_🇨🇦 CA-🇨🇦CA_15
+      - 英国-1.81MB/s(Youtube:不良林)
+      - Relay_🇸🇬 SG-🇸🇬SG_391
+      - Relay_🇺🇸 US-🇺🇸US_473
+      - US 14 → openitsub.com
+      - CA_14
+      - SG 2 → openitsub.com
+      - 印度-3.01MB/s(Youtube:不良林)
+      - 澳大利亚-2.71MB/s(Youtube:不良林) 2
+      - Relay_🇨🇦 CA-🇺🇸US_25
+      - US 18 → openitsub.com
+      - SG 2 → openitsub.com 2
+      - US 58 → openitsub.com
+      - Relay_🇨🇦 CA-🇹🇼TW_24
+      - 澳大利亚-1.27MB/s(Youtube:不良林)
+      - 以色列-254.6KB/s(Youtube:不良林)
+      - 马来西亚-515.1KB/s(Youtube:不良林)
+      - 澳大利亚-874.1KB/s(Youtube:不良林)
+      - US_421
+      - FR_121
+      - 马来西亚-724.4KB/s(Youtube:不良林)
+      - github.com/freefq - 香港城市电讯有限公司 43
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN 1 → openitsub.com
-      - US_548
-      - Relay_🇺🇸 US-🇺🇸US_541
-      - CN 40 → openitsub.com
-      - CN 38 → openitsub.com
-      - 中国-3.27MB/s(Youtube:不良林)
-      - CN 40 → openitsub.com 2
-      - CN_66
-      - 美国-4.61MB/s(Youtube:不良林)
-      - CN_90 3 3
-      - 欧洲(油管:破解资源君2.0) 27
-      - ZZ_1430
-      - CN_76 2
-      - 美国(油管:破解资源君2.0) 3
-      - Relay_🇳🇱 NL-🇺🇸US_362
-      - CN_90 3 2
-      - US_713
-      - CN_90
-      - Relay_🇺🇸 US-🇺🇸US_477
-      - CA_25
-      - CN_76 2 7 2
-      - US_543
-      - 欧洲(油管:破解资源君2.0) 14 2
-      - US 47 → openitsub.com
-      - AU_11
-      - 澳大利亚-1.80MB/s(Youtube:不良林)
-      - CN 40 → openitsub.com 3
-      - 瑞士-2.60MB/s(Youtube:不良林)
-      - 瑞士-2.04MB/s(Youtube:不良林)
-      - CN_70 2
-      - 法国-2.75MB/s(Youtube:不良林)
-      - RO 1 → openitsub.com
-      - JP_257
-      - CN_90 3 2 2
-      - 欧洲(油管:破解资源君2.0) 12
-      - RO 1 → openitsub.com 2
-      - Relay_🇨🇦 CA-🇨🇦CA_28
-      - unknown 5 → TG@SCINV
-      - 荷兰-222.3KB/s(Youtube:不良林)
-      - CN_55
-      - KR 1 → openitsub.com
-      - 美国(油管:破解资源君2.0) 48
+      - US_425
+      - US 20 → openitsub.com
+      - github.com/freefq - 美国3COM公司企业网 21
+      - Relay_🇨🇳 CN-🇧🇭BH_60
+      - Relay_🇨🇳 CN-🇧🇭BH_58
+      - github.com/freefq - 美国CloudFlare节点 24
+      - US_475
+      - github.com/freefq - 美国CloudFlare公司CDN节点 46
+      - CN 61
+      - 美国-1.27MB/s(Youtube:不良林)
+      - Relay_🇨🇦 CA-🏁ZZ_27
+      - github.com/freefq - 美国CloudFlare节点 30
+      - Relay_🇨🇦 CA-🇯🇵JP_20
+      - Relay_🇨🇦 CA-🇯🇵JP_26
+      - github.com/freefq - 香港阿里云 13
+      - US 15 → openitsub.com
+      - 中国-2.39MB/s(Youtube:不良林)
+      - github.com/freefq - 美国弗吉尼亚州阿什本Amazon数据中心 15
+      - Relay_🇯🇵 JP-🇯🇵JP_253
+      - Relay_🇨🇦 CA-🇨🇦CA_15
+      - 英国-1.81MB/s(Youtube:不良林)
+      - Relay_🇸🇬 SG-🇸🇬SG_391
+      - Relay_🇺🇸 US-🇺🇸US_473
+      - US 14 → openitsub.com
+      - CA_14
+      - SG 2 → openitsub.com
+      - 印度-3.01MB/s(Youtube:不良林)
+      - 澳大利亚-2.71MB/s(Youtube:不良林) 2
+      - Relay_🇨🇦 CA-🇺🇸US_25
+      - US 18 → openitsub.com
+      - SG 2 → openitsub.com 2
+      - US 58 → openitsub.com
+      - Relay_🇨🇦 CA-🇹🇼TW_24
+      - 澳大利亚-1.27MB/s(Youtube:不良林)
+      - 以色列-254.6KB/s(Youtube:不良林)
+      - 马来西亚-515.1KB/s(Youtube:不良林)
+      - 澳大利亚-874.1KB/s(Youtube:不良林)
+      - US_421
+      - FR_121
+      - 马来西亚-724.4KB/s(Youtube:不良林)
+      - github.com/freefq - 香港城市电讯有限公司 43
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -208,195 +204,193 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN 1 → openitsub.com
-      - US_548
-      - Relay_🇺🇸 US-🇺🇸US_541
-      - CN 40 → openitsub.com
-      - CN 38 → openitsub.com
-      - 中国-3.27MB/s(Youtube:不良林)
-      - CN 40 → openitsub.com 2
-      - CN_66
-      - 美国-4.61MB/s(Youtube:不良林)
-      - CN_90 3 3
-      - 欧洲(油管:破解资源君2.0) 27
-      - ZZ_1430
-      - CN_76 2
-      - 美国(油管:破解资源君2.0) 3
-      - Relay_🇳🇱 NL-🇺🇸US_362
-      - CN_90 3 2
-      - US_713
-      - CN_90
-      - Relay_🇺🇸 US-🇺🇸US_477
-      - CA_25
-      - CN_76 2 7 2
-      - US_543
-      - 欧洲(油管:破解资源君2.0) 14 2
-      - US 47 → openitsub.com
-      - AU_11
-      - 澳大利亚-1.80MB/s(Youtube:不良林)
-      - CN 40 → openitsub.com 3
-      - 瑞士-2.60MB/s(Youtube:不良林)
-      - 瑞士-2.04MB/s(Youtube:不良林)
-      - CN_70 2
-      - 法国-2.75MB/s(Youtube:不良林)
-      - RO 1 → openitsub.com
-      - JP_257
-      - CN_90 3 2 2
-      - 欧洲(油管:破解资源君2.0) 12
-      - RO 1 → openitsub.com 2
-      - Relay_🇨🇦 CA-🇨🇦CA_28
-      - unknown 5 → TG@SCINV
-      - 荷兰-222.3KB/s(Youtube:不良林)
-      - CN_55
-      - KR 1 → openitsub.com
-      - 美国(油管:破解资源君2.0) 48
+      - US_425
+      - US 20 → openitsub.com
+      - github.com/freefq - 美国3COM公司企业网 21
+      - Relay_🇨🇳 CN-🇧🇭BH_60
+      - Relay_🇨🇳 CN-🇧🇭BH_58
+      - github.com/freefq - 美国CloudFlare节点 24
+      - US_475
+      - github.com/freefq - 美国CloudFlare公司CDN节点 46
+      - CN 61
+      - 美国-1.27MB/s(Youtube:不良林)
+      - Relay_🇨🇦 CA-🏁ZZ_27
+      - github.com/freefq - 美国CloudFlare节点 30
+      - Relay_🇨🇦 CA-🇯🇵JP_20
+      - Relay_🇨🇦 CA-🇯🇵JP_26
+      - github.com/freefq - 香港阿里云 13
+      - US 15 → openitsub.com
+      - 中国-2.39MB/s(Youtube:不良林)
+      - github.com/freefq - 美国弗吉尼亚州阿什本Amazon数据中心 15
+      - Relay_🇯🇵 JP-🇯🇵JP_253
+      - Relay_🇨🇦 CA-🇨🇦CA_15
+      - 英国-1.81MB/s(Youtube:不良林)
+      - Relay_🇸🇬 SG-🇸🇬SG_391
+      - Relay_🇺🇸 US-🇺🇸US_473
+      - US 14 → openitsub.com
+      - CA_14
+      - SG 2 → openitsub.com
+      - 印度-3.01MB/s(Youtube:不良林)
+      - 澳大利亚-2.71MB/s(Youtube:不良林) 2
+      - Relay_🇨🇦 CA-🇺🇸US_25
+      - US 18 → openitsub.com
+      - SG 2 → openitsub.com 2
+      - US 58 → openitsub.com
+      - Relay_🇨🇦 CA-🇹🇼TW_24
+      - 澳大利亚-1.27MB/s(Youtube:不良林)
+      - 以色列-254.6KB/s(Youtube:不良林)
+      - 马来西亚-515.1KB/s(Youtube:不良林)
+      - 澳大利亚-874.1KB/s(Youtube:不良林)
+      - US_421
+      - FR_121
+      - 马来西亚-724.4KB/s(Youtube:不良林)
+      - github.com/freefq - 香港城市电讯有限公司 43
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - github.com/freefq - 香港阿里云 13
+      - github.com/freefq - 香港城市电讯有限公司 43
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - CN 1 → openitsub.com
-      - US_548
-      - Relay_🇺🇸 US-🇺🇸US_541
-      - CN 40 → openitsub.com
-      - CN 38 → openitsub.com
-      - 中国-3.27MB/s(Youtube:不良林)
-      - CN 40 → openitsub.com 2
-      - CN_66
-      - 美国-4.61MB/s(Youtube:不良林)
-      - CN_90 3 3
-      - 欧洲(油管:破解资源君2.0) 27
-      - ZZ_1430
-      - CN_76 2
-      - 美国(油管:破解资源君2.0) 3
-      - Relay_🇳🇱 NL-🇺🇸US_362
-      - CN_90 3 2
-      - US_713
-      - CN_90
-      - Relay_🇺🇸 US-🇺🇸US_477
-      - CA_25
-      - CN_76 2 7 2
-      - US_543
-      - 欧洲(油管:破解资源君2.0) 14 2
-      - US 47 → openitsub.com
-      - AU_11
-      - 澳大利亚-1.80MB/s(Youtube:不良林)
-      - CN 40 → openitsub.com 3
-      - 瑞士-2.60MB/s(Youtube:不良林)
-      - 瑞士-2.04MB/s(Youtube:不良林)
-      - CN_70 2
-      - 法国-2.75MB/s(Youtube:不良林)
-      - RO 1 → openitsub.com
-      - JP_257
-      - CN_90 3 2 2
-      - 欧洲(油管:破解资源君2.0) 12
-      - RO 1 → openitsub.com 2
-      - Relay_🇨🇦 CA-🇨🇦CA_28
-      - unknown 5 → TG@SCINV
-      - 荷兰-222.3KB/s(Youtube:不良林)
-      - CN_55
-      - KR 1 → openitsub.com
-      - 美国(油管:破解资源君2.0) 48
+      - US_425
+      - US 20 → openitsub.com
+      - github.com/freefq - 美国3COM公司企业网 21
+      - Relay_🇨🇳 CN-🇧🇭BH_60
+      - Relay_🇨🇳 CN-🇧🇭BH_58
+      - github.com/freefq - 美国CloudFlare节点 24
+      - US_475
+      - github.com/freefq - 美国CloudFlare公司CDN节点 46
+      - CN 61
+      - 美国-1.27MB/s(Youtube:不良林)
+      - Relay_🇨🇦 CA-🏁ZZ_27
+      - github.com/freefq - 美国CloudFlare节点 30
+      - Relay_🇨🇦 CA-🇯🇵JP_20
+      - Relay_🇨🇦 CA-🇯🇵JP_26
+      - github.com/freefq - 香港阿里云 13
+      - US 15 → openitsub.com
+      - 中国-2.39MB/s(Youtube:不良林)
+      - github.com/freefq - 美国弗吉尼亚州阿什本Amazon数据中心 15
+      - Relay_🇯🇵 JP-🇯🇵JP_253
+      - Relay_🇨🇦 CA-🇨🇦CA_15
+      - 英国-1.81MB/s(Youtube:不良林)
+      - Relay_🇸🇬 SG-🇸🇬SG_391
+      - Relay_🇺🇸 US-🇺🇸US_473
+      - US 14 → openitsub.com
+      - CA_14
+      - SG 2 → openitsub.com
+      - 印度-3.01MB/s(Youtube:不良林)
+      - 澳大利亚-2.71MB/s(Youtube:不良林) 2
+      - Relay_🇨🇦 CA-🇺🇸US_25
+      - US 18 → openitsub.com
+      - SG 2 → openitsub.com 2
+      - US 58 → openitsub.com
+      - Relay_🇨🇦 CA-🇹🇼TW_24
+      - 澳大利亚-1.27MB/s(Youtube:不良林)
+      - 以色列-254.6KB/s(Youtube:不良林)
+      - 马来西亚-515.1KB/s(Youtube:不良林)
+      - 澳大利亚-874.1KB/s(Youtube:不良林)
+      - US_421
+      - FR_121
+      - 马来西亚-724.4KB/s(Youtube:不良林)
+      - github.com/freefq - 香港城市电讯有限公司 43
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - CN 1 → openitsub.com
-      - US_548
-      - Relay_🇺🇸 US-🇺🇸US_541
-      - CN 40 → openitsub.com
-      - CN 38 → openitsub.com
-      - 中国-3.27MB/s(Youtube:不良林)
-      - CN 40 → openitsub.com 2
-      - CN_66
-      - 美国-4.61MB/s(Youtube:不良林)
-      - CN_90 3 3
-      - 欧洲(油管:破解资源君2.0) 27
-      - ZZ_1430
-      - CN_76 2
-      - 美国(油管:破解资源君2.0) 3
-      - Relay_🇳🇱 NL-🇺🇸US_362
-      - CN_90 3 2
-      - US_713
-      - CN_90
-      - Relay_🇺🇸 US-🇺🇸US_477
-      - CA_25
-      - CN_76 2 7 2
-      - US_543
-      - 欧洲(油管:破解资源君2.0) 14 2
-      - US 47 → openitsub.com
-      - AU_11
-      - 澳大利亚-1.80MB/s(Youtube:不良林)
-      - CN 40 → openitsub.com 3
-      - 瑞士-2.60MB/s(Youtube:不良林)
-      - 瑞士-2.04MB/s(Youtube:不良林)
-      - CN_70 2
-      - 法国-2.75MB/s(Youtube:不良林)
-      - RO 1 → openitsub.com
-      - JP_257
-      - CN_90 3 2 2
-      - 欧洲(油管:破解资源君2.0) 12
-      - RO 1 → openitsub.com 2
-      - Relay_🇨🇦 CA-🇨🇦CA_28
-      - unknown 5 → TG@SCINV
-      - 荷兰-222.3KB/s(Youtube:不良林)
-      - CN_55
-      - KR 1 → openitsub.com
-      - 美国(油管:破解资源君2.0) 48
+      - US_425
+      - US 20 → openitsub.com
+      - github.com/freefq - 美国3COM公司企业网 21
+      - Relay_🇨🇳 CN-🇧🇭BH_60
+      - Relay_🇨🇳 CN-🇧🇭BH_58
+      - github.com/freefq - 美国CloudFlare节点 24
+      - US_475
+      - github.com/freefq - 美国CloudFlare公司CDN节点 46
+      - CN 61
+      - 美国-1.27MB/s(Youtube:不良林)
+      - Relay_🇨🇦 CA-🏁ZZ_27
+      - github.com/freefq - 美国CloudFlare节点 30
+      - Relay_🇨🇦 CA-🇯🇵JP_20
+      - Relay_🇨🇦 CA-🇯🇵JP_26
+      - github.com/freefq - 香港阿里云 13
+      - US 15 → openitsub.com
+      - 中国-2.39MB/s(Youtube:不良林)
+      - github.com/freefq - 美国弗吉尼亚州阿什本Amazon数据中心 15
+      - Relay_🇯🇵 JP-🇯🇵JP_253
+      - Relay_🇨🇦 CA-🇨🇦CA_15
+      - 英国-1.81MB/s(Youtube:不良林)
+      - Relay_🇸🇬 SG-🇸🇬SG_391
+      - Relay_🇺🇸 US-🇺🇸US_473
+      - US 14 → openitsub.com
+      - CA_14
+      - SG 2 → openitsub.com
+      - 印度-3.01MB/s(Youtube:不良林)
+      - 澳大利亚-2.71MB/s(Youtube:不良林) 2
+      - Relay_🇨🇦 CA-🇺🇸US_25
+      - US 18 → openitsub.com
+      - SG 2 → openitsub.com 2
+      - US 58 → openitsub.com
+      - Relay_🇨🇦 CA-🇹🇼TW_24
+      - 澳大利亚-1.27MB/s(Youtube:不良林)
+      - 以色列-254.6KB/s(Youtube:不良林)
+      - 马来西亚-515.1KB/s(Youtube:不良林)
+      - 澳大利亚-874.1KB/s(Youtube:不良林)
+      - US_421
+      - FR_121
+      - 马来西亚-724.4KB/s(Youtube:不良林)
+      - github.com/freefq - 香港城市电讯有限公司 43
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CN 1 → openitsub.com
-      - US_548
-      - Relay_🇺🇸 US-🇺🇸US_541
-      - CN 40 → openitsub.com
-      - CN 38 → openitsub.com
-      - 中国-3.27MB/s(Youtube:不良林)
-      - CN 40 → openitsub.com 2
-      - CN_66
-      - 美国-4.61MB/s(Youtube:不良林)
-      - CN_90 3 3
-      - 欧洲(油管:破解资源君2.0) 27
-      - ZZ_1430
-      - CN_76 2
-      - 美国(油管:破解资源君2.0) 3
-      - Relay_🇳🇱 NL-🇺🇸US_362
-      - CN_90 3 2
-      - US_713
-      - CN_90
-      - Relay_🇺🇸 US-🇺🇸US_477
-      - CA_25
-      - CN_76 2 7 2
-      - US_543
-      - 欧洲(油管:破解资源君2.0) 14 2
-      - US 47 → openitsub.com
-      - AU_11
-      - 澳大利亚-1.80MB/s(Youtube:不良林)
-      - CN 40 → openitsub.com 3
-      - 瑞士-2.60MB/s(Youtube:不良林)
-      - 瑞士-2.04MB/s(Youtube:不良林)
-      - CN_70 2
-      - 法国-2.75MB/s(Youtube:不良林)
-      - RO 1 → openitsub.com
-      - JP_257
-      - CN_90 3 2 2
-      - 欧洲(油管:破解资源君2.0) 12
-      - RO 1 → openitsub.com 2
-      - Relay_🇨🇦 CA-🇨🇦CA_28
-      - unknown 5 → TG@SCINV
-      - 荷兰-222.3KB/s(Youtube:不良林)
-      - CN_55
-      - KR 1 → openitsub.com
-      - 美国(油管:破解资源君2.0) 48
+      - US_425
+      - US 20 → openitsub.com
+      - github.com/freefq - 美国3COM公司企业网 21
+      - Relay_🇨🇳 CN-🇧🇭BH_60
+      - Relay_🇨🇳 CN-🇧🇭BH_58
+      - github.com/freefq - 美国CloudFlare节点 24
+      - US_475
+      - github.com/freefq - 美国CloudFlare公司CDN节点 46
+      - CN 61
+      - 美国-1.27MB/s(Youtube:不良林)
+      - Relay_🇨🇦 CA-🏁ZZ_27
+      - github.com/freefq - 美国CloudFlare节点 30
+      - Relay_🇨🇦 CA-🇯🇵JP_20
+      - Relay_🇨🇦 CA-🇯🇵JP_26
+      - github.com/freefq - 香港阿里云 13
+      - US 15 → openitsub.com
+      - 中国-2.39MB/s(Youtube:不良林)
+      - github.com/freefq - 美国弗吉尼亚州阿什本Amazon数据中心 15
+      - Relay_🇯🇵 JP-🇯🇵JP_253
+      - Relay_🇨🇦 CA-🇨🇦CA_15
+      - 英国-1.81MB/s(Youtube:不良林)
+      - Relay_🇸🇬 SG-🇸🇬SG_391
+      - Relay_🇺🇸 US-🇺🇸US_473
+      - US 14 → openitsub.com
+      - CA_14
+      - SG 2 → openitsub.com
+      - 印度-3.01MB/s(Youtube:不良林)
+      - 澳大利亚-2.71MB/s(Youtube:不良林) 2
+      - Relay_🇨🇦 CA-🇺🇸US_25
+      - US 18 → openitsub.com
+      - SG 2 → openitsub.com 2
+      - US 58 → openitsub.com
+      - Relay_🇨🇦 CA-🇹🇼TW_24
+      - 澳大利亚-1.27MB/s(Youtube:不良林)
+      - 以色列-254.6KB/s(Youtube:不良林)
+      - 马来西亚-515.1KB/s(Youtube:不良林)
+      - 澳大利亚-874.1KB/s(Youtube:不良林)
+      - US_421
+      - FR_121
+      - 马来西亚-724.4KB/s(Youtube:不良林)
+      - github.com/freefq - 香港城市电讯有限公司 43
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -412,48 +406,47 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CN 1 → openitsub.com
-      - US_548
-      - Relay_🇺🇸 US-🇺🇸US_541
-      - CN 40 → openitsub.com
-      - CN 38 → openitsub.com
-      - 中国-3.27MB/s(Youtube:不良林)
-      - CN 40 → openitsub.com 2
-      - CN_66
-      - 美国-4.61MB/s(Youtube:不良林)
-      - CN_90 3 3
-      - 欧洲(油管:破解资源君2.0) 27
-      - ZZ_1430
-      - CN_76 2
-      - 美国(油管:破解资源君2.0) 3
-      - Relay_🇳🇱 NL-🇺🇸US_362
-      - CN_90 3 2
-      - US_713
-      - CN_90
-      - Relay_🇺🇸 US-🇺🇸US_477
-      - CA_25
-      - CN_76 2 7 2
-      - US_543
-      - 欧洲(油管:破解资源君2.0) 14 2
-      - US 47 → openitsub.com
-      - AU_11
-      - 澳大利亚-1.80MB/s(Youtube:不良林)
-      - CN 40 → openitsub.com 3
-      - 瑞士-2.60MB/s(Youtube:不良林)
-      - 瑞士-2.04MB/s(Youtube:不良林)
-      - CN_70 2
-      - 法国-2.75MB/s(Youtube:不良林)
-      - RO 1 → openitsub.com
-      - JP_257
-      - CN_90 3 2 2
-      - 欧洲(油管:破解资源君2.0) 12
-      - RO 1 → openitsub.com 2
-      - Relay_🇨🇦 CA-🇨🇦CA_28
-      - unknown 5 → TG@SCINV
-      - 荷兰-222.3KB/s(Youtube:不良林)
-      - CN_55
-      - KR 1 → openitsub.com
-      - 美国(油管:破解资源君2.0) 48
+      - US_425
+      - US 20 → openitsub.com
+      - github.com/freefq - 美国3COM公司企业网 21
+      - Relay_🇨🇳 CN-🇧🇭BH_60
+      - Relay_🇨🇳 CN-🇧🇭BH_58
+      - github.com/freefq - 美国CloudFlare节点 24
+      - US_475
+      - github.com/freefq - 美国CloudFlare公司CDN节点 46
+      - CN 61
+      - 美国-1.27MB/s(Youtube:不良林)
+      - Relay_🇨🇦 CA-🏁ZZ_27
+      - github.com/freefq - 美国CloudFlare节点 30
+      - Relay_🇨🇦 CA-🇯🇵JP_20
+      - Relay_🇨🇦 CA-🇯🇵JP_26
+      - github.com/freefq - 香港阿里云 13
+      - US 15 → openitsub.com
+      - 中国-2.39MB/s(Youtube:不良林)
+      - github.com/freefq - 美国弗吉尼亚州阿什本Amazon数据中心 15
+      - Relay_🇯🇵 JP-🇯🇵JP_253
+      - Relay_🇨🇦 CA-🇨🇦CA_15
+      - 英国-1.81MB/s(Youtube:不良林)
+      - Relay_🇸🇬 SG-🇸🇬SG_391
+      - Relay_🇺🇸 US-🇺🇸US_473
+      - US 14 → openitsub.com
+      - CA_14
+      - SG 2 → openitsub.com
+      - 印度-3.01MB/s(Youtube:不良林)
+      - 澳大利亚-2.71MB/s(Youtube:不良林) 2
+      - Relay_🇨🇦 CA-🇺🇸US_25
+      - US 18 → openitsub.com
+      - SG 2 → openitsub.com 2
+      - US 58 → openitsub.com
+      - Relay_🇨🇦 CA-🇹🇼TW_24
+      - 澳大利亚-1.27MB/s(Youtube:不良林)
+      - 以色列-254.6KB/s(Youtube:不良林)
+      - 马来西亚-515.1KB/s(Youtube:不良林)
+      - 澳大利亚-874.1KB/s(Youtube:不良林)
+      - US_421
+      - FR_121
+      - 马来西亚-724.4KB/s(Youtube:不良林)
+      - github.com/freefq - 香港城市电讯有限公司 43
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
