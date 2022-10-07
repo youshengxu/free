@@ -5,231 +5,95 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: CN 28 → openitsub.com, server: cn-hnct.zeichuan.xyz, port: 22761, type: trojan, password: 9bbd85a4-5dae-4624-bce0-5296b49fb7a2, sni: cn-hnct.zeichuan.xyz, skip-cert-verify: true, udp: true}
-  - {name: CN 75 → openitsub.com, server: cn-hnct.zeichuan.xyz, port: 27023, type: trojan, password: 9bbd85a4-5dae-4624-bce0-5296b49fb7a2, sni: cn-hnct.zeichuan.xyz, skip-cert-verify: true, udp: true}
-  - {name: CN 23 → openitsub.com, server: cn-hnct.zeichuan.xyz, port: 46593, type: trojan, password: 96fbe9be-3790-4336-9ad8-4e2108cb105f, sni: cn-hnct.zeichuan.xyz, skip-cert-verify: true, udp: true}
-  - {name: CN 47 → openitsub.com, server: cn-hnct.zeichuan.xyz, port: 39377, type: trojan, password: 9bbd85a4-5dae-4624-bce0-5296b49fb7a2, sni: cn-hnct.zeichuan.xyz, skip-cert-verify: true, udp: true}
-  - {name: CN 49 → openitsub.com, server: cn-hnct.zeichuan.xyz, port: 56802, type: trojan, password: 9bbd85a4-5dae-4624-bce0-5296b49fb7a2, sni: cn-hnct.zeichuan.xyz, skip-cert-verify: true, udp: true}
-  - {name: CN 45 → openitsub.com, server: cn-hnct.zeichuan.xyz, port: 56512, type: trojan, password: 9bbd85a4-5dae-4624-bce0-5296b49fb7a2, sni: cn-hnct.zeichuan.xyz, skip-cert-verify: true, udp: true}
-  - {name: CN 46 → openitsub.com, server: cn-hnct.zeichuan.xyz, port: 58104, type: trojan, password: 9bbd85a4-5dae-4624-bce0-5296b49fb7a2, sni: cn-hnct.zeichuan.xyz, skip-cert-verify: true, udp: true}
-  - {name: CN 17 → openitsub.com, server: fly1.fastestcloud.xyz, port: 30003, type: vmess, uuid: c8a0314f-a846-4443-aff1-22d5b9831cb6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: fly1.fastestcloud.xyz}, udp: true}
-  - {name: CN 19 → openitsub.com, server: hk-01.bestlink.ml, port: 11608, type: ss, cipher: aes-256-gcm, password: aa72849c-e76f-4c60-8a6e-4b78010ee05d, udp: true}
-  - {name: CN 18 → openitsub.com, server: fly2.fastestcloud.xyz, port: 30002, type: vmess, uuid: c8a0314f-a846-4443-aff1-22d5b9831cb6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /fly, ws-headers: {Host: fly2.fastestcloud.xyz}, udp: true}
-  - {name: CN 30 → openitsub.com, server: cn-hnct.zeichuan.xyz, port: 44011, type: trojan, password: 9bbd85a4-5dae-4624-bce0-5296b49fb7a2, sni: cn-hnct.zeichuan.xyz, skip-cert-verify: true, udp: true}
-  - {name: CN 64 → openitsub.com, server: fly4.fastestcloud.xyz, port: 30007, type: vmess, uuid: c8a0314f-a846-4443-aff1-22d5b9831cb6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /fly, ws-headers: {Host: fly4.fastestcloud.xyz}, udp: true}
-  - {name: Relay_🇦🇺 AU-🇦🇺AU_08, server: 924hk.tfzhc.top, port: 44393, type: trojan, password: ea48cdda-6db7-4f34-9d42-7bd9d41b4740, sni: 924hk.tfzhc.top, skip-cert-verify: true, udp: true}
-  - {name: JP_234, server: 168.138.43.89, port: 443, type: trojan, password: d06a3f01-1ff0-4792-9b8e-a5a604bc74a2, skip-cert-verify: true, udp: true}
-  - {name: CN 31 → openitsub.com, server: fly2.fastestcloud.xyz, port: 30009, type: vmess, uuid: c8a0314f-a846-4443-aff1-22d5b9831cb6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /fly, ws-headers: {Host: fly2.fastestcloud.xyz}, udp: true}
-  - {name: CN 85 → openitsub.com, server: fly1.fastestcloud.xyz, port: 30018, type: vmess, uuid: c8a0314f-a846-4443-aff1-22d5b9831cb6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /fly, ws-headers: {Host: fly1.fastestcloud.xyz}, udp: true}
-  - {name: CN 86 → openitsub.com, server: cn-hnct.zeichuan.xyz, port: 17278, type: trojan, password: 9bbd85a4-5dae-4624-bce0-5296b49fb7a2, sni: cn-hnct.zeichuan.xyz, skip-cert-verify: true, udp: true}
-  - {name: CN 92 → openitsub.com, server: cn-hnct.zeichuan.xyz, port: 52513, type: trojan, password: 9bbd85a4-5dae-4624-bce0-5296b49fb7a2, sni: cn-hnct.zeichuan.xyz, skip-cert-verify: true, udp: true}
-  - {name: US 15 → openitsub.com, server: 172.64.144.100, port: 443, type: vmess, uuid: 6e9217de-ad7e-4a67-bd17-a6dca951733b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /dongtaiwang.com, ws-headers: {Host: lg3.zhujicn2.com}, udp: true}
-  - {name: CN 6 → openitsub.com, server: cn-hnct.zeichuan.xyz, port: 45003, type: trojan, password: 96fbe9be-3790-4336-9ad8-4e2108cb105f, sni: cn-hnct.zeichuan.xyz, skip-cert-verify: true, udp: true}
-  - {name: ZZ_1104, server: 169.197.142.187, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: CN 96 → openitsub.com, server: fly1.fastestcloud.xyz, port: 30004, type: vmess, uuid: c8a0314f-a846-4443-aff1-22d5b9831cb6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /fly, ws-headers: {Host: fly1.fastestcloud.xyz}, udp: true}
-  - {name: US 20 → openitsub.com, server: 172.64.153.200, port: 443, type: vmess, uuid: a8030afd-812a-4afe-a766-9c76ff3eddd4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /dongtaiwang.com, ws-headers: {Host: lg4.zhujicn2.com}, udp: true}
-  - {name: 英国-4.26MB/s(Youtube:不良林), server: aop.ssfree.ru, port: 443, type: vmess, uuid: 6fe01f66-4334-11ed-a11b-000017022008, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /getweather, ws-headers: {Host: aop.ssfree.ru}, udp: true}
-  - {name: US 41 → openitsub.com, server: sgmax08.170203.xyz, port: 30326, type: trojan, password: 9bbd85a4-5dae-4624-bce0-5296b49fb7a2, sni: sgmax08.170203.xyz, skip-cert-verify: true, udp: true}
-  - {name: CA 6 → openitsub.com, server: 1002hk1326.tfzhc.top, port: 443, type: trojan, password: ea48cdda-6db7-4f34-9d42-7bd9d41b4740, sni: 1002hk1326.tfzhc.top, skip-cert-verify: true, udp: true}
-  - {name: US_503, server: 20.210.122.21, port: 443, type: ss, cipher: aes-256-gcm, password: 233blog.com, udp: true}
-  - {name: US_636, server: 167.88.63.82, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 印度-3.01MB/s(Youtube:不良林), server: 152.67.160.174, port: 443, type: trojan, password: 54080134-2cba-4535-8599-95650bd9aa54, skip-cert-verify: true, udp: true}
-  - {name: 澳大利亚-2.71MB/s(Youtube:不良林), server: 185.167.116.250, port: 9027, type: ss, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8, udp: true}
-  - {name: CN 33 → openitsub.com, server: fly2.fastestcloud.xyz, port: 30008, type: vmess, uuid: c8a0314f-a846-4443-aff1-22d5b9831cb6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /fly, ws-headers: {Host: fly2.fastestcloud.xyz}, udp: true}
-  - {name: US_540, server: 150.230.249.42, port: 443, type: trojan, password: 0Y9gOHSdRt, skip-cert-verify: true, udp: true}
-  - {name: GB_178, server: 132.145.51.172, port: 443, type: trojan, password: 02e653c9-7c93-46a9-999d-11834bd0c577, skip-cert-verify: true, udp: true}
-  - {name: AU_09, server: 152.67.98.30, port: 443, type: trojan, password: e8c1ab3c-89b3-4933-92df-682e6dce7819, skip-cert-verify: true, udp: true}
-  - {name: CN 52 → openitsub.com, server: cn-hnct.zeichuan.xyz, port: 13242, type: trojan, password: 9bbd85a4-5dae-4624-bce0-5296b49fb7a2, sni: cn-hnct.zeichuan.xyz, skip-cert-verify: true, udp: true}
-  - {name: CN 22 → openitsub.com, server: cn-hnct.zeichuan.xyz, port: 64721, type: trojan, password: 96fbe9be-3790-4336-9ad8-4e2108cb105f, sni: cn-hnct.zeichuan.xyz, skip-cert-verify: true, udp: true}
-  - {name: CN 76 → openitsub.com, server: cn-hnct.zeichuan.xyz, port: 19755, type: trojan, password: 96fbe9be-3790-4336-9ad8-4e2108cb105f, sni: cn-hnct.zeichuan.xyz, skip-cert-verify: true, udp: true}
-  - {name: CN 44 → openitsub.com, server: cn-hnct.zeichuan.xyz, port: 13103, type: trojan, password: 9bbd85a4-5dae-4624-bce0-5296b49fb7a2, sni: cn-hnct.zeichuan.xyz, skip-cert-verify: true, udp: true}
-  - {name: CN 74 → openitsub.com, server: cn-hnct.zeichuan.xyz, port: 15768, type: trojan, password: 96fbe9be-3790-4336-9ad8-4e2108cb105f, sni: cn-hnct.zeichuan.xyz, skip-cert-verify: true, udp: true}
-  - {name: CN 78 → openitsub.com, server: cn-hnct.zeichuan.xyz, port: 59773, type: trojan, password: 9bbd85a4-5dae-4624-bce0-5296b49fb7a2, sni: cn-hnct.zeichuan.xyz, skip-cert-verify: true, udp: true}
-  - {name: CN 54 → openitsub.com, server: cn-hnct.zeichuan.xyz, port: 45097, type: trojan, password: 96fbe9be-3790-4336-9ad8-4e2108cb105f, sni: cn-hnct.zeichuan.xyz, skip-cert-verify: true, udp: true}
-  - {name: CN 77 → openitsub.com, server: cn-hnct.zeichuan.xyz, port: 57299, type: trojan, password: 9bbd85a4-5dae-4624-bce0-5296b49fb7a2, sni: cn-hnct.zeichuan.xyz, skip-cert-verify: true, udp: true}
-  - {name: CN 60 → openitsub.com, server: fly1.fastestcloud.xyz, port: 30005, type: vmess, uuid: c8a0314f-a846-4443-aff1-22d5b9831cb6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /fly, ws-headers: {Host: fly1.fastestcloud.xyz}, udp: true}
-  - {name: 马来西亚-2.01MB/s(Youtube:不良林), server: 103.159.133.166, port: 31372, type: vmess, uuid: 912864fc-41c2-44e2-dcdf-0b01ef96237e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN 48 → openitsub.com, server: fly1.fastestcloud.xyz, port: 30014, type: vmess, uuid: c8a0314f-a846-4443-aff1-22d5b9831cb6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /fly, ws-headers: {Host: fly1.fastestcloud.xyz}, udp: true}
-  - {name: CN 20 → openitsub.com, server: fly2.fastestcloud.xyz, port: 30001, type: vmess, uuid: c8a0314f-a846-4443-aff1-22d5b9831cb6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /fly, ws-headers: {Host: fly2.fastestcloud.xyz}, udp: true}
-  - {name: CN_56, server: 106.55.234.95, port: 31372, type: vmess, uuid: 374d3519-455c-45b8-e3b1-0e2e9fcf4411, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN 32 → openitsub.com, server: cn-hnct.zeichuan.xyz, port: 13031, type: trojan, password: 9bbd85a4-5dae-4624-bce0-5296b49fb7a2, sni: cn-hnct.zeichuan.xyz, skip-cert-verify: true, udp: true}
-  - {name: US 14 → openitsub.com, server: dlszl.hotfun.buzz, port: 25231, type: vmess, uuid: 6eaf2625-6e24-4c4f-8670-440f40e3b8c9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /hoot, ws-headers: {Host: dlszl.hotfun.buzz}, udp: true}
-  - {name: CN 38 → openitsub.com, server: twa-zf.jiashumao.net, port: 27919, type: trojan, password: d3225e74-8398-332e-8417-faf17753e709, sni: twa-zf.jiashumao.net, skip-cert-verify: true, udp: true}
-  - {name: CN 59 → openitsub.com, server: jpc-zf.jiashumao.net, port: 27301, type: trojan, password: e2afc128-ca51-39b6-897c-eb2649825df9, sni: jpc-zf.jiashumao.net, skip-cert-verify: true, udp: true}
-  - {name: CN 13 → openitsub.com, server: hkd-zf.jiashumao.net, port: 28481, type: trojan, password: e2afc128-ca51-39b6-897c-eb2649825df9, sni: hkd-zf.jiashumao.net, skip-cert-verify: true, udp: true}
+  - {name: JP 5 → openitsub.com, server: kr1.api-aws.com, port: 443, type: trojan, password: e92293ba-8399-4759-b58e-6416f0702576, sni: kr1.api-aws.com, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 美国  9, server: in03.my1188.org, port: 64078, type: vmess, uuid: ca039e98-434d-31a5-9627-051921079ca6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hk-balancer.airport-v2.com}, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_987, server: fhcarm2.gaox.ml, port: 443, type: trojan, password: f39bd244-f5fe-415c-8b98-a1e5250bf178, sni: fhcarm2.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 加拿大  14, server: 1002tw.tfzhc.top, port: 443, type: trojan, password: 0a8df927-324d-463c-a349-1a8144078683, sni: 1002tw.tfzhc.top, skip-cert-verify: true, udp: true}
+  - {name: US_476, server: 138.2.113.248, port: 443, type: trojan, password: 9c822f05-cfdc-479a-9534-60f3d4127435, skip-cert-verify: true, udp: true}
+  - {name: 俄罗斯联邦-269.0KB/s(Youtube:不良林), server: 213.183.53.200, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
+  - {name: 俄罗斯联邦-2.60MB/s(Youtube:不良林), server: 213.183.53.200, port: 9007, type: ss, cipher: aes-256-cfb, password: kSPmvwdFzGMMW5pY, udp: true}
+  - {name: US 18 → openitsub.com, server: 152.67.190.183, port: 443, type: trojan, password: 006baa3f-4bc3-4915-b60d-c8c5dae11a11, skip-cert-verify: true, udp: true}
+  - {name: 俄罗斯联邦-270.7KB/s(Youtube:不良林), server: 213.183.53.200, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
+  - {name: RU_385, server: 194.156.99.39, port: 443, type: trojan, password: xxoo, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 美国  27, server: 129.159.139.101, port: 443, type: vmess, uuid: b7519a6f-c1de-4667-e606-b60c65d19078, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 129.159.139.101}, udp: true}
+  - {name: 新加坡-159.0KB/s(Youtube:不良林), server: 103.172.116.7, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga, udp: true}
+  - {name: 荷兰-253.5KB/s(Youtube:不良林), server: 213.183.59.218, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU, udp: true}
+  - {name: 新加坡-383.4KB/s(Youtube:不良林), server: 103.172.116.7, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
+  - {name: 新加坡-1.07MB/s(Youtube:不良林), server: 103.172.116.7, port: 9057, type: ss, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z, udp: true}
+  - {name: 新加坡-155.7KB/s(Youtube:不良林), server: 103.172.116.7, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
+  - {name: 新加坡-346.0KB/s(Youtube:不良林), server: 103.172.116.7, port: 9007, type: ss, cipher: aes-256-cfb, password: kSPmvwdFzGMMW5pY, udp: true}
+  - {name: 新加坡-385.6KB/s(Youtube:不良林), server: 103.172.116.7, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN 28 → openitsub.com
-      - CN 75 → openitsub.com
-      - CN 23 → openitsub.com
-      - CN 47 → openitsub.com
-      - CN 49 → openitsub.com
-      - CN 45 → openitsub.com
-      - CN 46 → openitsub.com
-      - CN 17 → openitsub.com
-      - CN 19 → openitsub.com
-      - CN 18 → openitsub.com
-      - CN 30 → openitsub.com
-      - CN 64 → openitsub.com
-      - Relay_🇦🇺 AU-🇦🇺AU_08
-      - JP_234
-      - CN 31 → openitsub.com
-      - CN 85 → openitsub.com
-      - CN 86 → openitsub.com
-      - CN 92 → openitsub.com
-      - US 15 → openitsub.com
-      - CN 6 → openitsub.com
-      - ZZ_1104
-      - CN 96 → openitsub.com
-      - US 20 → openitsub.com
-      - 英国-4.26MB/s(Youtube:不良林)
-      - US 41 → openitsub.com
-      - CA 6 → openitsub.com
-      - US_503
-      - US_636
-      - 印度-3.01MB/s(Youtube:不良林)
-      - 澳大利亚-2.71MB/s(Youtube:不良林)
-      - CN 33 → openitsub.com
-      - US_540
-      - GB_178
-      - AU_09
-      - CN 52 → openitsub.com
-      - CN 22 → openitsub.com
-      - CN 76 → openitsub.com
-      - CN 44 → openitsub.com
-      - CN 74 → openitsub.com
-      - CN 78 → openitsub.com
-      - CN 54 → openitsub.com
-      - CN 77 → openitsub.com
-      - CN 60 → openitsub.com
-      - 马来西亚-2.01MB/s(Youtube:不良林)
-      - CN 48 → openitsub.com
-      - CN 20 → openitsub.com
-      - CN_56
-      - CN 32 → openitsub.com
-      - US 14 → openitsub.com
-      - CN 38 → openitsub.com
-      - CN 59 → openitsub.com
-      - CN 13 → openitsub.com
+      - JP 5 → openitsub.com
+      - github.com/freefq - 美国  9
+      - Relay_🇺🇸US-🇺🇸US_987
+      - github.com/freefq - 加拿大  14
+      - US_476
+      - 俄罗斯联邦-269.0KB/s(Youtube:不良林)
+      - 俄罗斯联邦-2.60MB/s(Youtube:不良林)
+      - US 18 → openitsub.com
+      - 俄罗斯联邦-270.7KB/s(Youtube:不良林)
+      - RU_385
+      - github.com/freefq - 美国  27
+      - 新加坡-159.0KB/s(Youtube:不良林)
+      - 荷兰-253.5KB/s(Youtube:不良林)
+      - 新加坡-383.4KB/s(Youtube:不良林)
+      - 新加坡-1.07MB/s(Youtube:不良林)
+      - 新加坡-155.7KB/s(Youtube:不良林)
+      - 新加坡-346.0KB/s(Youtube:不良林)
+      - 新加坡-385.6KB/s(Youtube:不良林)
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - CN 28 → openitsub.com
-      - CN 75 → openitsub.com
-      - CN 23 → openitsub.com
-      - CN 47 → openitsub.com
-      - CN 49 → openitsub.com
-      - CN 45 → openitsub.com
-      - CN 46 → openitsub.com
-      - CN 17 → openitsub.com
-      - CN 19 → openitsub.com
-      - CN 18 → openitsub.com
-      - CN 30 → openitsub.com
-      - CN 64 → openitsub.com
-      - Relay_🇦🇺 AU-🇦🇺AU_08
-      - JP_234
-      - CN 31 → openitsub.com
-      - CN 85 → openitsub.com
-      - CN 86 → openitsub.com
-      - CN 92 → openitsub.com
-      - US 15 → openitsub.com
-      - CN 6 → openitsub.com
-      - ZZ_1104
-      - CN 96 → openitsub.com
-      - US 20 → openitsub.com
-      - 英国-4.26MB/s(Youtube:不良林)
-      - US 41 → openitsub.com
-      - CA 6 → openitsub.com
-      - US_503
-      - US_636
-      - 印度-3.01MB/s(Youtube:不良林)
-      - 澳大利亚-2.71MB/s(Youtube:不良林)
-      - CN 33 → openitsub.com
-      - US_540
-      - GB_178
-      - AU_09
-      - CN 52 → openitsub.com
-      - CN 22 → openitsub.com
-      - CN 76 → openitsub.com
-      - CN 44 → openitsub.com
-      - CN 74 → openitsub.com
-      - CN 78 → openitsub.com
-      - CN 54 → openitsub.com
-      - CN 77 → openitsub.com
-      - CN 60 → openitsub.com
-      - 马来西亚-2.01MB/s(Youtube:不良林)
-      - CN 48 → openitsub.com
-      - CN 20 → openitsub.com
-      - CN_56
-      - CN 32 → openitsub.com
-      - US 14 → openitsub.com
-      - CN 38 → openitsub.com
-      - CN 59 → openitsub.com
-      - CN 13 → openitsub.com
+      - JP 5 → openitsub.com
+      - github.com/freefq - 美国  9
+      - Relay_🇺🇸US-🇺🇸US_987
+      - github.com/freefq - 加拿大  14
+      - US_476
+      - 俄罗斯联邦-269.0KB/s(Youtube:不良林)
+      - 俄罗斯联邦-2.60MB/s(Youtube:不良林)
+      - US 18 → openitsub.com
+      - 俄罗斯联邦-270.7KB/s(Youtube:不良林)
+      - RU_385
+      - github.com/freefq - 美国  27
+      - 新加坡-159.0KB/s(Youtube:不良林)
+      - 荷兰-253.5KB/s(Youtube:不良林)
+      - 新加坡-383.4KB/s(Youtube:不良林)
+      - 新加坡-1.07MB/s(Youtube:不良林)
+      - 新加坡-155.7KB/s(Youtube:不良林)
+      - 新加坡-346.0KB/s(Youtube:不良林)
+      - 新加坡-385.6KB/s(Youtube:不良林)
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN 28 → openitsub.com
-      - CN 75 → openitsub.com
-      - CN 23 → openitsub.com
-      - CN 47 → openitsub.com
-      - CN 49 → openitsub.com
-      - CN 45 → openitsub.com
-      - CN 46 → openitsub.com
-      - CN 17 → openitsub.com
-      - CN 19 → openitsub.com
-      - CN 18 → openitsub.com
-      - CN 30 → openitsub.com
-      - CN 64 → openitsub.com
-      - Relay_🇦🇺 AU-🇦🇺AU_08
-      - JP_234
-      - CN 31 → openitsub.com
-      - CN 85 → openitsub.com
-      - CN 86 → openitsub.com
-      - CN 92 → openitsub.com
-      - US 15 → openitsub.com
-      - CN 6 → openitsub.com
-      - ZZ_1104
-      - CN 96 → openitsub.com
-      - US 20 → openitsub.com
-      - 英国-4.26MB/s(Youtube:不良林)
-      - US 41 → openitsub.com
-      - CA 6 → openitsub.com
-      - US_503
-      - US_636
-      - 印度-3.01MB/s(Youtube:不良林)
-      - 澳大利亚-2.71MB/s(Youtube:不良林)
-      - CN 33 → openitsub.com
-      - US_540
-      - GB_178
-      - AU_09
-      - CN 52 → openitsub.com
-      - CN 22 → openitsub.com
-      - CN 76 → openitsub.com
-      - CN 44 → openitsub.com
-      - CN 74 → openitsub.com
-      - CN 78 → openitsub.com
-      - CN 54 → openitsub.com
-      - CN 77 → openitsub.com
-      - CN 60 → openitsub.com
-      - 马来西亚-2.01MB/s(Youtube:不良林)
-      - CN 48 → openitsub.com
-      - CN 20 → openitsub.com
-      - CN_56
-      - CN 32 → openitsub.com
-      - US 14 → openitsub.com
-      - CN 38 → openitsub.com
-      - CN 59 → openitsub.com
-      - CN 13 → openitsub.com
+      - JP 5 → openitsub.com
+      - github.com/freefq - 美国  9
+      - Relay_🇺🇸US-🇺🇸US_987
+      - github.com/freefq - 加拿大  14
+      - US_476
+      - 俄罗斯联邦-269.0KB/s(Youtube:不良林)
+      - 俄罗斯联邦-2.60MB/s(Youtube:不良林)
+      - US 18 → openitsub.com
+      - 俄罗斯联邦-270.7KB/s(Youtube:不良林)
+      - RU_385
+      - github.com/freefq - 美国  27
+      - 新加坡-159.0KB/s(Youtube:不良林)
+      - 荷兰-253.5KB/s(Youtube:不良林)
+      - 新加坡-383.4KB/s(Youtube:不良林)
+      - 新加坡-1.07MB/s(Youtube:不良林)
+      - 新加坡-155.7KB/s(Youtube:不良林)
+      - 新加坡-346.0KB/s(Youtube:不良林)
+      - 新加坡-385.6KB/s(Youtube:不良林)
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -248,58 +112,24 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN 28 → openitsub.com
-      - CN 75 → openitsub.com
-      - CN 23 → openitsub.com
-      - CN 47 → openitsub.com
-      - CN 49 → openitsub.com
-      - CN 45 → openitsub.com
-      - CN 46 → openitsub.com
-      - CN 17 → openitsub.com
-      - CN 19 → openitsub.com
-      - CN 18 → openitsub.com
-      - CN 30 → openitsub.com
-      - CN 64 → openitsub.com
-      - Relay_🇦🇺 AU-🇦🇺AU_08
-      - JP_234
-      - CN 31 → openitsub.com
-      - CN 85 → openitsub.com
-      - CN 86 → openitsub.com
-      - CN 92 → openitsub.com
-      - US 15 → openitsub.com
-      - CN 6 → openitsub.com
-      - ZZ_1104
-      - CN 96 → openitsub.com
-      - US 20 → openitsub.com
-      - 英国-4.26MB/s(Youtube:不良林)
-      - US 41 → openitsub.com
-      - CA 6 → openitsub.com
-      - US_503
-      - US_636
-      - 印度-3.01MB/s(Youtube:不良林)
-      - 澳大利亚-2.71MB/s(Youtube:不良林)
-      - CN 33 → openitsub.com
-      - US_540
-      - GB_178
-      - AU_09
-      - CN 52 → openitsub.com
-      - CN 22 → openitsub.com
-      - CN 76 → openitsub.com
-      - CN 44 → openitsub.com
-      - CN 74 → openitsub.com
-      - CN 78 → openitsub.com
-      - CN 54 → openitsub.com
-      - CN 77 → openitsub.com
-      - CN 60 → openitsub.com
-      - 马来西亚-2.01MB/s(Youtube:不良林)
-      - CN 48 → openitsub.com
-      - CN 20 → openitsub.com
-      - CN_56
-      - CN 32 → openitsub.com
-      - US 14 → openitsub.com
-      - CN 38 → openitsub.com
-      - CN 59 → openitsub.com
-      - CN 13 → openitsub.com
+      - JP 5 → openitsub.com
+      - github.com/freefq - 美国  9
+      - Relay_🇺🇸US-🇺🇸US_987
+      - github.com/freefq - 加拿大  14
+      - US_476
+      - 俄罗斯联邦-269.0KB/s(Youtube:不良林)
+      - 俄罗斯联邦-2.60MB/s(Youtube:不良林)
+      - US 18 → openitsub.com
+      - 俄罗斯联邦-270.7KB/s(Youtube:不良林)
+      - RU_385
+      - github.com/freefq - 美国  27
+      - 新加坡-159.0KB/s(Youtube:不良林)
+      - 荷兰-253.5KB/s(Youtube:不良林)
+      - 新加坡-383.4KB/s(Youtube:不良林)
+      - 新加坡-1.07MB/s(Youtube:不良林)
+      - 新加坡-155.7KB/s(Youtube:不良林)
+      - 新加坡-346.0KB/s(Youtube:不良林)
+      - 新加坡-385.6KB/s(Youtube:不良林)
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -310,173 +140,71 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - CN 28 → openitsub.com
-      - CN 75 → openitsub.com
-      - CN 23 → openitsub.com
-      - CN 47 → openitsub.com
-      - CN 49 → openitsub.com
-      - CN 45 → openitsub.com
-      - CN 46 → openitsub.com
-      - CN 17 → openitsub.com
-      - CN 19 → openitsub.com
-      - CN 18 → openitsub.com
-      - CN 30 → openitsub.com
-      - CN 64 → openitsub.com
-      - Relay_🇦🇺 AU-🇦🇺AU_08
-      - JP_234
-      - CN 31 → openitsub.com
-      - CN 85 → openitsub.com
-      - CN 86 → openitsub.com
-      - CN 92 → openitsub.com
-      - US 15 → openitsub.com
-      - CN 6 → openitsub.com
-      - ZZ_1104
-      - CN 96 → openitsub.com
-      - US 20 → openitsub.com
-      - 英国-4.26MB/s(Youtube:不良林)
-      - US 41 → openitsub.com
-      - CA 6 → openitsub.com
-      - US_503
-      - US_636
-      - 印度-3.01MB/s(Youtube:不良林)
-      - 澳大利亚-2.71MB/s(Youtube:不良林)
-      - CN 33 → openitsub.com
-      - US_540
-      - GB_178
-      - AU_09
-      - CN 52 → openitsub.com
-      - CN 22 → openitsub.com
-      - CN 76 → openitsub.com
-      - CN 44 → openitsub.com
-      - CN 74 → openitsub.com
-      - CN 78 → openitsub.com
-      - CN 54 → openitsub.com
-      - CN 77 → openitsub.com
-      - CN 60 → openitsub.com
-      - 马来西亚-2.01MB/s(Youtube:不良林)
-      - CN 48 → openitsub.com
-      - CN 20 → openitsub.com
-      - CN_56
-      - CN 32 → openitsub.com
-      - US 14 → openitsub.com
-      - CN 38 → openitsub.com
-      - CN 59 → openitsub.com
-      - CN 13 → openitsub.com
+      - JP 5 → openitsub.com
+      - github.com/freefq - 美国  9
+      - Relay_🇺🇸US-🇺🇸US_987
+      - github.com/freefq - 加拿大  14
+      - US_476
+      - 俄罗斯联邦-269.0KB/s(Youtube:不良林)
+      - 俄罗斯联邦-2.60MB/s(Youtube:不良林)
+      - US 18 → openitsub.com
+      - 俄罗斯联邦-270.7KB/s(Youtube:不良林)
+      - RU_385
+      - github.com/freefq - 美国  27
+      - 新加坡-159.0KB/s(Youtube:不良林)
+      - 荷兰-253.5KB/s(Youtube:不良林)
+      - 新加坡-383.4KB/s(Youtube:不良林)
+      - 新加坡-1.07MB/s(Youtube:不良林)
+      - 新加坡-155.7KB/s(Youtube:不良林)
+      - 新加坡-346.0KB/s(Youtube:不良林)
+      - 新加坡-385.6KB/s(Youtube:不良林)
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - CN 28 → openitsub.com
-      - CN 75 → openitsub.com
-      - CN 23 → openitsub.com
-      - CN 47 → openitsub.com
-      - CN 49 → openitsub.com
-      - CN 45 → openitsub.com
-      - CN 46 → openitsub.com
-      - CN 17 → openitsub.com
-      - CN 19 → openitsub.com
-      - CN 18 → openitsub.com
-      - CN 30 → openitsub.com
-      - CN 64 → openitsub.com
-      - Relay_🇦🇺 AU-🇦🇺AU_08
-      - JP_234
-      - CN 31 → openitsub.com
-      - CN 85 → openitsub.com
-      - CN 86 → openitsub.com
-      - CN 92 → openitsub.com
-      - US 15 → openitsub.com
-      - CN 6 → openitsub.com
-      - ZZ_1104
-      - CN 96 → openitsub.com
-      - US 20 → openitsub.com
-      - 英国-4.26MB/s(Youtube:不良林)
-      - US 41 → openitsub.com
-      - CA 6 → openitsub.com
-      - US_503
-      - US_636
-      - 印度-3.01MB/s(Youtube:不良林)
-      - 澳大利亚-2.71MB/s(Youtube:不良林)
-      - CN 33 → openitsub.com
-      - US_540
-      - GB_178
-      - AU_09
-      - CN 52 → openitsub.com
-      - CN 22 → openitsub.com
-      - CN 76 → openitsub.com
-      - CN 44 → openitsub.com
-      - CN 74 → openitsub.com
-      - CN 78 → openitsub.com
-      - CN 54 → openitsub.com
-      - CN 77 → openitsub.com
-      - CN 60 → openitsub.com
-      - 马来西亚-2.01MB/s(Youtube:不良林)
-      - CN 48 → openitsub.com
-      - CN 20 → openitsub.com
-      - CN_56
-      - CN 32 → openitsub.com
-      - US 14 → openitsub.com
-      - CN 38 → openitsub.com
-      - CN 59 → openitsub.com
-      - CN 13 → openitsub.com
+      - JP 5 → openitsub.com
+      - github.com/freefq - 美国  9
+      - Relay_🇺🇸US-🇺🇸US_987
+      - github.com/freefq - 加拿大  14
+      - US_476
+      - 俄罗斯联邦-269.0KB/s(Youtube:不良林)
+      - 俄罗斯联邦-2.60MB/s(Youtube:不良林)
+      - US 18 → openitsub.com
+      - 俄罗斯联邦-270.7KB/s(Youtube:不良林)
+      - RU_385
+      - github.com/freefq - 美国  27
+      - 新加坡-159.0KB/s(Youtube:不良林)
+      - 荷兰-253.5KB/s(Youtube:不良林)
+      - 新加坡-383.4KB/s(Youtube:不良林)
+      - 新加坡-1.07MB/s(Youtube:不良林)
+      - 新加坡-155.7KB/s(Youtube:不良林)
+      - 新加坡-346.0KB/s(Youtube:不良林)
+      - 新加坡-385.6KB/s(Youtube:不良林)
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CN 28 → openitsub.com
-      - CN 75 → openitsub.com
-      - CN 23 → openitsub.com
-      - CN 47 → openitsub.com
-      - CN 49 → openitsub.com
-      - CN 45 → openitsub.com
-      - CN 46 → openitsub.com
-      - CN 17 → openitsub.com
-      - CN 19 → openitsub.com
-      - CN 18 → openitsub.com
-      - CN 30 → openitsub.com
-      - CN 64 → openitsub.com
-      - Relay_🇦🇺 AU-🇦🇺AU_08
-      - JP_234
-      - CN 31 → openitsub.com
-      - CN 85 → openitsub.com
-      - CN 86 → openitsub.com
-      - CN 92 → openitsub.com
-      - US 15 → openitsub.com
-      - CN 6 → openitsub.com
-      - ZZ_1104
-      - CN 96 → openitsub.com
-      - US 20 → openitsub.com
-      - 英国-4.26MB/s(Youtube:不良林)
-      - US 41 → openitsub.com
-      - CA 6 → openitsub.com
-      - US_503
-      - US_636
-      - 印度-3.01MB/s(Youtube:不良林)
-      - 澳大利亚-2.71MB/s(Youtube:不良林)
-      - CN 33 → openitsub.com
-      - US_540
-      - GB_178
-      - AU_09
-      - CN 52 → openitsub.com
-      - CN 22 → openitsub.com
-      - CN 76 → openitsub.com
-      - CN 44 → openitsub.com
-      - CN 74 → openitsub.com
-      - CN 78 → openitsub.com
-      - CN 54 → openitsub.com
-      - CN 77 → openitsub.com
-      - CN 60 → openitsub.com
-      - 马来西亚-2.01MB/s(Youtube:不良林)
-      - CN 48 → openitsub.com
-      - CN 20 → openitsub.com
-      - CN_56
-      - CN 32 → openitsub.com
-      - US 14 → openitsub.com
-      - CN 38 → openitsub.com
-      - CN 59 → openitsub.com
-      - CN 13 → openitsub.com
+      - JP 5 → openitsub.com
+      - github.com/freefq - 美国  9
+      - Relay_🇺🇸US-🇺🇸US_987
+      - github.com/freefq - 加拿大  14
+      - US_476
+      - 俄罗斯联邦-269.0KB/s(Youtube:不良林)
+      - 俄罗斯联邦-2.60MB/s(Youtube:不良林)
+      - US 18 → openitsub.com
+      - 俄罗斯联邦-270.7KB/s(Youtube:不良林)
+      - RU_385
+      - github.com/freefq - 美国  27
+      - 新加坡-159.0KB/s(Youtube:不良林)
+      - 荷兰-253.5KB/s(Youtube:不良林)
+      - 新加坡-383.4KB/s(Youtube:不良林)
+      - 新加坡-1.07MB/s(Youtube:不良林)
+      - 新加坡-155.7KB/s(Youtube:不良林)
+      - 新加坡-346.0KB/s(Youtube:不良林)
+      - 新加坡-385.6KB/s(Youtube:不良林)
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -492,58 +220,24 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CN 28 → openitsub.com
-      - CN 75 → openitsub.com
-      - CN 23 → openitsub.com
-      - CN 47 → openitsub.com
-      - CN 49 → openitsub.com
-      - CN 45 → openitsub.com
-      - CN 46 → openitsub.com
-      - CN 17 → openitsub.com
-      - CN 19 → openitsub.com
-      - CN 18 → openitsub.com
-      - CN 30 → openitsub.com
-      - CN 64 → openitsub.com
-      - Relay_🇦🇺 AU-🇦🇺AU_08
-      - JP_234
-      - CN 31 → openitsub.com
-      - CN 85 → openitsub.com
-      - CN 86 → openitsub.com
-      - CN 92 → openitsub.com
-      - US 15 → openitsub.com
-      - CN 6 → openitsub.com
-      - ZZ_1104
-      - CN 96 → openitsub.com
-      - US 20 → openitsub.com
-      - 英国-4.26MB/s(Youtube:不良林)
-      - US 41 → openitsub.com
-      - CA 6 → openitsub.com
-      - US_503
-      - US_636
-      - 印度-3.01MB/s(Youtube:不良林)
-      - 澳大利亚-2.71MB/s(Youtube:不良林)
-      - CN 33 → openitsub.com
-      - US_540
-      - GB_178
-      - AU_09
-      - CN 52 → openitsub.com
-      - CN 22 → openitsub.com
-      - CN 76 → openitsub.com
-      - CN 44 → openitsub.com
-      - CN 74 → openitsub.com
-      - CN 78 → openitsub.com
-      - CN 54 → openitsub.com
-      - CN 77 → openitsub.com
-      - CN 60 → openitsub.com
-      - 马来西亚-2.01MB/s(Youtube:不良林)
-      - CN 48 → openitsub.com
-      - CN 20 → openitsub.com
-      - CN_56
-      - CN 32 → openitsub.com
-      - US 14 → openitsub.com
-      - CN 38 → openitsub.com
-      - CN 59 → openitsub.com
-      - CN 13 → openitsub.com
+      - JP 5 → openitsub.com
+      - github.com/freefq - 美国  9
+      - Relay_🇺🇸US-🇺🇸US_987
+      - github.com/freefq - 加拿大  14
+      - US_476
+      - 俄罗斯联邦-269.0KB/s(Youtube:不良林)
+      - 俄罗斯联邦-2.60MB/s(Youtube:不良林)
+      - US 18 → openitsub.com
+      - 俄罗斯联邦-270.7KB/s(Youtube:不良林)
+      - RU_385
+      - github.com/freefq - 美国  27
+      - 新加坡-159.0KB/s(Youtube:不良林)
+      - 荷兰-253.5KB/s(Youtube:不良林)
+      - 新加坡-383.4KB/s(Youtube:不良林)
+      - 新加坡-1.07MB/s(Youtube:不良林)
+      - 新加坡-155.7KB/s(Youtube:不良林)
+      - 新加坡-346.0KB/s(Youtube:不良林)
+      - 新加坡-385.6KB/s(Youtube:不良林)
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
