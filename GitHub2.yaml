@@ -5,75 +5,187 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 中国-10.78MB/s(Youtube:不良林), server: 117.164.185.222, port: 11001, type: trojan, password: 24913fd0-a94b-4ed9-9b0e-fddb06af63d3, skip-cert-verify: true, udp: true}
-  - {name: 中国-12.48MB/s(Youtube:不良林), server: 111.29.60.217, port: 11002, type: trojan, password: 24913fd0-a94b-4ed9-9b0e-fddb06af63d3, skip-cert-verify: true, udp: true}
-  - {name: _08, server: 111.29.60.217, port: 61006, type: trojan, password: 24913fd0-a94b-4ed9-9b0e-fddb06af63d3, skip-cert-verify: true, udp: true}
-  - {name: 中国-10.42MB/s(Youtube:不良林), server: 183.245.146.6, port: 11001, type: trojan, password: 24913fd0-a94b-4ed9-9b0e-fddb06af63d3, skip-cert-verify: true, udp: true}
-  - {name: 美国-4.32MB/s(Youtube:不良林), server: 172.64.154.102, port: 443, type: vmess, uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /dongtaiwang.com, ws-headers: {Host: clash6.ssr-free.xyz}, udp: true}
-  - {name: _10, server: 111.29.60.217, port: 21003, type: trojan, password: 24913fd0-a94b-4ed9-9b0e-fddb06af63d3, skip-cert-verify: true, udp: true}
-  - {name: 中国-12.28MB/s(Youtube:不良林), server: 117.164.185.222, port: 21002, type: trojan, password: 24913fd0-a94b-4ed9-9b0e-fddb06af63d3, skip-cert-verify: true, udp: true}
-  - {name: 日本-20.43MB/s(Youtube:不良林), server: 139.162.84.30, port: 20020, type: ss, cipher: aes-128-gcm, password: !<str> 202022100000000000000020, plugin: obfs, plugin-opts: {mode: http, host: securevpn.cc}, udp: true}
-  - {name: US_1260, server: 143.198.220.29, port: 20359, type: vmess, uuid: 40d44ede-909a-46db-ada8-cb62fd7266fc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇳CN-🇺🇸US_66, server: 42.157.195.241, port: 12127, type: ssr, cipher: aes-256-cfb, password: 68xdgu9eyif, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 600777:154T8b, obfs-param: MGYwOTk2MDA3NzcudjIzZjduTTA, udp: true}
-  - {name: Relay_-🇯🇵JP_01, server: 14.152.92.78, port: 12127, type: ssr, cipher: aes-256-cfb, password: 68xdgu9eyif, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 600777:154T8b, obfs-param: MGYwOTk2MDA3NzcudjIzZjduTTA=, udp: true}
-  - {name: Relay_-🇳🇱NL_02, server: 221.181.185.171, port: 16278, type: vmess, uuid: f1d39fe1-bfa3-34ff-86a2-29250af03183, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇳CN-🇺🇸US_64, server: 42.157.195.231, port: 12127, type: ssr, cipher: aes-256-cfb, password: 68xdgu9eyif, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 600777:154T8b, obfs-param: MGYwOTk2MDA3NzcudjIzZjduTTA, udp: true}
+  - {name: Relay_🇳🇱NL-🇳🇱NL_546, server: s1.cray.eu.org, port: 27522, type: vmess, uuid: 52dd176a-6a57-4827-ffdf-aaa5a7ade1ed, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: s1.cray.eu.org}, udp: true}
+  - {name: Relay_-🇺🇸US_08, server: sg1.sanfen001.pics, port: 443, type: trojan, password: 9010950e-8e09-486a-bf96-3b0cf22097b4, sni: sg1.sanfen001.pics, skip-cert-verify: true, udp: true}
+  - {name: Relay_-🇺🇸US_07, server: sg2.sanfen001.pics, port: 443, type: trojan, password: 9010950e-8e09-486a-bf96-3b0cf22097b4, sni: sg2.sanfen001.pics, skip-cert-verify: true, udp: true}
+  - {name: Relay_-🇺🇸US_16, server: us2.sanfen001.pics, port: 443, type: trojan, password: 9010950e-8e09-486a-bf96-3b0cf22097b4, sni: us2.sanfen001.pics, skip-cert-verify: true, udp: true}
+  - {name: 未知国家-7.09MB/s(Youtube:不良林), server: 141.101.115.20, port: 443, type: vmess, uuid: 176b598f-445b-41ac-9d2a-430c5c4df26a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /dongtaiwang.com, ws-headers: {Host: clash1.trump2023.net}, udp: true}
+  - {name: github.com/freefq - 江苏省扬州市移动 2, server: 223.111.122.199, port: 38080, type: vmess, uuid: 16c267c7-9734-4703-b3fb-5a23c2ab7fda, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /guolicheng/us2, ws-headers: {Host: www.189.cn}, udp: true}
+  - {name: 欧洲(油管:破解资源君2.0) 38, server: 141.101.114.120, port: 443, type: vmess, uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: lg30.cfcdn3.xyz}, udp: true}
+  - {name: 未知国家-5.06MB/s(Youtube:不良林), server: 141.101.114.20, port: 443, type: vmess, uuid: 176b598f-445b-41ac-9d2a-430c5c4df26a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /dongtaiwang.com, ws-headers: {Host: clash1.trump2023.net}, udp: true}
+  - {name: 欧洲(油管:破解资源君2.0) 29, server: 198.41.212.150, port: 443, type: vmess, uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /dongtaiwang.com, ws-headers: {Host: clash6.ssr-free.xyz}, udp: true}
+  - {name: Relay_🇯🇵JP-🇺🇸US_231, server: 54.238.118.5, port: 34100, type: ss, cipher: aes-256-gcm, password: cVFVNW9RMVNxd0xtbUxaRG5EY1kwcGZRQmhJaXNPTEVnWUlTWHlxR2M5RDc3d09idExENWZBR3ZCZFl0TGE4Ng==, udp: true}
+  - {name: Relay_-🇺🇸US_01, server: us1.sanfen001.pics, port: 443, type: trojan, password: 9010950e-8e09-486a-bf96-3b0cf22097b4, sni: us1.sanfen001.pics, skip-cert-verify: true, udp: true}
+  - {name: 未知国家-3.54MB/s(Youtube:不良林), server: 198.41.212.100, port: 443, type: vmess, uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: lg30.cfcdn3.xyz}, udp: true}
+  - {name: github.com/freefq - 美国CloudFlare节点 9, server: 172.64.154.222, port: 443, type: vmess, uuid: fcfaec91-6096-44d8-956c-7868d9e874b1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: lg1.cfcdn1.xyz}, udp: true}
+  - {name: "", server: vus3.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /chat, ws-headers: {Host: vus3.0bad.com}, udp: true}
+  - {name: 欧洲(油管:破解资源君2.0), server: 104.18.28.19, port: 80, type: vmess, uuid: 35556863-22b9-40b9-8722-a192b8526edc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /p9Dq67Nx/, ws-headers: {Host: fr1.cachexy.ga}, udp: true}
+  - {name: 未知国家-4.03MB/s(Youtube:不良林), server: v122.aagogo.cf, port: 443, type: vmess, uuid: c7ba8e84-2d65-38e6-92e8-2c13bb6dd512, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v122-EthelloAcU, ws-headers: {Host: v122.aagogo.cf}, udp: true}
+  - {name: 未知国家-3.09MB/s(Youtube:不良林), server: 141.101.115.111, port: 443, type: vmess, uuid: f33957e8-372e-4fba-99ed-f4db32cce9e5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: fr2.cfcdn4.xyz}, udp: true}
+  - {name: US 8 → openitsub.com, server: vus2.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /chat, ws-headers: {Host: vus2.0bad.com}, udp: true}
+  - {name: 未知国家-5.55MB/s(Youtube:不良林), server: 141.101.114.200, port: 443, type: vmess, uuid: 0479eb9d-999d-4bff-ae3f-4f7cc440ce46, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /dongtaiwang.com, ws-headers: {Host: v2ray2.ssr-free2.xyz}, udp: true}
+  - {name: 韩国-1.65MB/s(Youtube:不良林), server: 146.56.149.205, port: 443, type: vmess, uuid: 9dc0c6aa-39a1-46be-9938-85999e3c3498, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /fastssh/1731390093/6357cedd7a199/, ws-headers: {Host: sg1.31vpn.com}, udp: true}
+  - {name: Relay_-🇹🇼TW_13, server: tw1.sanfen001.pics, port: 443, type: trojan, password: 9010950e-8e09-486a-bf96-3b0cf22097b4, sni: tw1.sanfen001.pics, skip-cert-verify: true, udp: true}
+  - {name: 美国-4.09MB/s(Youtube:不良林), server: 172.64.154.150, port: 443, type: vmess, uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /dongtaiwang.com, ws-headers: {Host: clash6.ssr-free.xyz}, udp: true}
+  - {name: 未知国家-6.03MB/s(Youtube:不良林), server: v122.aagogo.cf, port: 443, type: vmess, uuid: 9d226234-2952-32ef-b632-c9a5261774d7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v122-EthelloAcU, ws-headers: {Host: v122.aagogo.cf}, udp: true}
+  - {name: 韩国-378.7KB/s(Youtube:不良林), server: 146.56.166.153, port: 443, type: vmess, uuid: 9dc0c6aa-39a1-46be-9938-85999e3c3498, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /fastssh/1731390093/6357cedd7a199/, ws-headers: {Host: sg1.31vpn.com}, udp: true}
+  - {name: 中国-3.59MB/s(Youtube:不良林), server: a-cm1.jsmmm.cyou, port: 39811, type: vmess, uuid: 5e307b0b-2e97-3a7a-a2a2-09bc60afe40b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 未知国家-4.13MB/s(Youtube:不良林), server: 104.17.146.10, port: 80, type: vmess, uuid: 80a7f429-049b-4e94-9f16-aed2a42c529f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /tlfmWciG/, ws-headers: {Host: us1.cachexy.ga}, udp: true}
+  - {name: 未知国家-4.26MB/s(Youtube:不良林), server: 198.41.212.122, port: 443, type: vmess, uuid: f33957e8-372e-4fba-99ed-f4db32cce9e5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: fr2.cfcdn4.xyz}, udp: true}
+  - {name: 美国(油管:破解资源君2.0) 3, server: 141.101.115.120, port: 443, type: vmess, uuid: 33aa57df-1c93-4318-9fce-e850437ee781, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /dongtaiwang.com, ws-headers: {Host: lg1.cfcdn3.xyz}, udp: true}
+  - {name: 欧洲(油管:破解资源君2.0) 30, server: 211.72.35.110, port: 443, type: vmess, uuid: f6d7b072-de00-45dc-9e24-49f8cf43530d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /linod, ws-headers: {Host: lindo.cnabc.eu.org}, udp: true}
+  - {name: 欧洲(油管:破解资源君2.0) 20, server: 141.101.114.150, port: 443, type: vmess, uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /dongtaiwang.com, ws-headers: {Host: clash6.ssr-free.xyz}, udp: true}
+  - {name: 俄罗斯(油管:破解资源君2.0), server: pf.napsternetv.com, port: 34142, type: vmess, uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 欧洲(油管:破解资源君2.0) 42, server: pf.napsternetv.com, port: 34142, type: vmess, uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: " 2", server: 103.217.210.16, port: 443, type: vmess, uuid: fc9c12e0-f4f2-4fc4-a30e-fc488bac7121, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: 103.217.210.16}, udp: true}
+  - {name: " 3", server: idnusa2.vpn-akcelluler.my.id, port: 443, type: vmess, uuid: fc9c12e0-f4f2-4fc4-a30e-fc488bac7121, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: idnusa2.vpn-akcelluler.my.id}, udp: true}
+  - {name: 欧洲(油管:破解资源君2.0) 28, server: nl7a.aagogo.cf, port: 443, type: vmess, uuid: 10759c14-d72f-346d-8d6a-af349e5ecd69, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /nl7-EcxxxOvD, ws-headers: {Host: nl7a.aagogo.cf}, udp: true}
+  - {name: 欧洲(油管:破解资源君2.0) 33, server: pf.napsternetv.com, port: 34142, type: vmess, uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 美国(油管:破解资源君2.0) 2, server: 141.101.114.120, port: 443, type: vmess, uuid: 33aa57df-1c93-4318-9fce-e850437ee781, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /dongtaiwang.com, ws-headers: {Host: lg1.cfcdn3.xyz}, udp: true}
+  - {name: 未知国家-4.57MB/s(Youtube:不良林), server: 141.101.115.133, port: 443, type: vmess, uuid: fcfaec91-6096-44d8-956c-7868d9e874b1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: lg1.cfcdn1.xyz}, udp: true}
+  - {name: 中国-2.73MB/s(Youtube:不良林), server: gz.daxun.cyou, port: 20631, type: vmess, uuid: 2d937fbe-0e13-448a-be8b-0d2f276ef8d1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /UK03, ws-headers: {Host: www.baidu.com}, udp: true}
+  - {name: 中国-2.60MB/s(Youtube:不良林), server: gz.daxun.cyou, port: 20631, type: vmess, uuid: 2d937fbe-0e13-448a-be8b-0d2f276ef8d1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jgwhg01, ws-headers: {Host: www.baidu.com}, udp: true}
+  - {name: 欧洲(油管:破解资源君2.0) 36, server: v122.aagogo.cf, port: 443, type: vmess, uuid: 5d3e4f62-135d-3224-80cb-7463a6464c67, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v122-EthelloAcU, ws-headers: {Host: v122.aagogo.cf}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 中国-10.78MB/s(Youtube:不良林)
-      - 中国-12.48MB/s(Youtube:不良林)
-      - _08
-      - 中国-10.42MB/s(Youtube:不良林)
-      - 美国-4.32MB/s(Youtube:不良林)
-      - _10
-      - 中国-12.28MB/s(Youtube:不良林)
-      - 日本-20.43MB/s(Youtube:不良林)
-      - US_1260
-      - Relay_🇨🇳CN-🇺🇸US_66
-      - Relay_-🇯🇵JP_01
-      - Relay_-🇳🇱NL_02
-      - Relay_🇨🇳CN-🇺🇸US_64
+      - Relay_🇳🇱NL-🇳🇱NL_546
+      - Relay_-🇺🇸US_08
+      - Relay_-🇺🇸US_07
+      - Relay_-🇺🇸US_16
+      - 未知国家-7.09MB/s(Youtube:不良林)
+      - github.com/freefq - 江苏省扬州市移动 2
+      - 欧洲(油管:破解资源君2.0) 38
+      - 未知国家-5.06MB/s(Youtube:不良林)
+      - 欧洲(油管:破解资源君2.0) 29
+      - Relay_🇯🇵JP-🇺🇸US_231
+      - Relay_-🇺🇸US_01
+      - 未知国家-3.54MB/s(Youtube:不良林)
+      - github.com/freefq - 美国CloudFlare节点 9
+      - ""
+      - 欧洲(油管:破解资源君2.0)
+      - 未知国家-4.03MB/s(Youtube:不良林)
+      - 未知国家-3.09MB/s(Youtube:不良林)
+      - US 8 → openitsub.com
+      - 未知国家-5.55MB/s(Youtube:不良林)
+      - 韩国-1.65MB/s(Youtube:不良林)
+      - Relay_-🇹🇼TW_13
+      - 美国-4.09MB/s(Youtube:不良林)
+      - 未知国家-6.03MB/s(Youtube:不良林)
+      - 韩国-378.7KB/s(Youtube:不良林)
+      - 中国-3.59MB/s(Youtube:不良林)
+      - 未知国家-4.13MB/s(Youtube:不良林)
+      - 未知国家-4.26MB/s(Youtube:不良林)
+      - 美国(油管:破解资源君2.0) 3
+      - 欧洲(油管:破解资源君2.0) 30
+      - 欧洲(油管:破解资源君2.0) 20
+      - 俄罗斯(油管:破解资源君2.0)
+      - 欧洲(油管:破解资源君2.0) 42
+      - " 2"
+      - " 3"
+      - 欧洲(油管:破解资源君2.0) 28
+      - 欧洲(油管:破解资源君2.0) 33
+      - 美国(油管:破解资源君2.0) 2
+      - 未知国家-4.57MB/s(Youtube:不良林)
+      - 中国-2.73MB/s(Youtube:不良林)
+      - 中国-2.60MB/s(Youtube:不良林)
+      - 欧洲(油管:破解资源君2.0) 36
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 中国-10.78MB/s(Youtube:不良林)
-      - 中国-12.48MB/s(Youtube:不良林)
-      - _08
-      - 中国-10.42MB/s(Youtube:不良林)
-      - 美国-4.32MB/s(Youtube:不良林)
-      - _10
-      - 中国-12.28MB/s(Youtube:不良林)
-      - 日本-20.43MB/s(Youtube:不良林)
-      - US_1260
-      - Relay_🇨🇳CN-🇺🇸US_66
-      - Relay_-🇯🇵JP_01
-      - Relay_-🇳🇱NL_02
-      - Relay_🇨🇳CN-🇺🇸US_64
+      - Relay_🇳🇱NL-🇳🇱NL_546
+      - Relay_-🇺🇸US_08
+      - Relay_-🇺🇸US_07
+      - Relay_-🇺🇸US_16
+      - 未知国家-7.09MB/s(Youtube:不良林)
+      - github.com/freefq - 江苏省扬州市移动 2
+      - 欧洲(油管:破解资源君2.0) 38
+      - 未知国家-5.06MB/s(Youtube:不良林)
+      - 欧洲(油管:破解资源君2.0) 29
+      - Relay_🇯🇵JP-🇺🇸US_231
+      - Relay_-🇺🇸US_01
+      - 未知国家-3.54MB/s(Youtube:不良林)
+      - github.com/freefq - 美国CloudFlare节点 9
+      - ""
+      - 欧洲(油管:破解资源君2.0)
+      - 未知国家-4.03MB/s(Youtube:不良林)
+      - 未知国家-3.09MB/s(Youtube:不良林)
+      - US 8 → openitsub.com
+      - 未知国家-5.55MB/s(Youtube:不良林)
+      - 韩国-1.65MB/s(Youtube:不良林)
+      - Relay_-🇹🇼TW_13
+      - 美国-4.09MB/s(Youtube:不良林)
+      - 未知国家-6.03MB/s(Youtube:不良林)
+      - 韩国-378.7KB/s(Youtube:不良林)
+      - 中国-3.59MB/s(Youtube:不良林)
+      - 未知国家-4.13MB/s(Youtube:不良林)
+      - 未知国家-4.26MB/s(Youtube:不良林)
+      - 美国(油管:破解资源君2.0) 3
+      - 欧洲(油管:破解资源君2.0) 30
+      - 欧洲(油管:破解资源君2.0) 20
+      - 俄罗斯(油管:破解资源君2.0)
+      - 欧洲(油管:破解资源君2.0) 42
+      - " 2"
+      - " 3"
+      - 欧洲(油管:破解资源君2.0) 28
+      - 欧洲(油管:破解资源君2.0) 33
+      - 美国(油管:破解资源君2.0) 2
+      - 未知国家-4.57MB/s(Youtube:不良林)
+      - 中国-2.73MB/s(Youtube:不良林)
+      - 中国-2.60MB/s(Youtube:不良林)
+      - 欧洲(油管:破解资源君2.0) 36
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 中国-10.78MB/s(Youtube:不良林)
-      - 中国-12.48MB/s(Youtube:不良林)
-      - _08
-      - 中国-10.42MB/s(Youtube:不良林)
-      - 美国-4.32MB/s(Youtube:不良林)
-      - _10
-      - 中国-12.28MB/s(Youtube:不良林)
-      - 日本-20.43MB/s(Youtube:不良林)
-      - US_1260
-      - Relay_🇨🇳CN-🇺🇸US_66
-      - Relay_-🇯🇵JP_01
-      - Relay_-🇳🇱NL_02
-      - Relay_🇨🇳CN-🇺🇸US_64
+      - Relay_🇳🇱NL-🇳🇱NL_546
+      - Relay_-🇺🇸US_08
+      - Relay_-🇺🇸US_07
+      - Relay_-🇺🇸US_16
+      - 未知国家-7.09MB/s(Youtube:不良林)
+      - github.com/freefq - 江苏省扬州市移动 2
+      - 欧洲(油管:破解资源君2.0) 38
+      - 未知国家-5.06MB/s(Youtube:不良林)
+      - 欧洲(油管:破解资源君2.0) 29
+      - Relay_🇯🇵JP-🇺🇸US_231
+      - Relay_-🇺🇸US_01
+      - 未知国家-3.54MB/s(Youtube:不良林)
+      - github.com/freefq - 美国CloudFlare节点 9
+      - ""
+      - 欧洲(油管:破解资源君2.0)
+      - 未知国家-4.03MB/s(Youtube:不良林)
+      - 未知国家-3.09MB/s(Youtube:不良林)
+      - US 8 → openitsub.com
+      - 未知国家-5.55MB/s(Youtube:不良林)
+      - 韩国-1.65MB/s(Youtube:不良林)
+      - Relay_-🇹🇼TW_13
+      - 美国-4.09MB/s(Youtube:不良林)
+      - 未知国家-6.03MB/s(Youtube:不良林)
+      - 韩国-378.7KB/s(Youtube:不良林)
+      - 中国-3.59MB/s(Youtube:不良林)
+      - 未知国家-4.13MB/s(Youtube:不良林)
+      - 未知国家-4.26MB/s(Youtube:不良林)
+      - 美国(油管:破解资源君2.0) 3
+      - 欧洲(油管:破解资源君2.0) 30
+      - 欧洲(油管:破解资源君2.0) 20
+      - 俄罗斯(油管:破解资源君2.0)
+      - 欧洲(油管:破解资源君2.0) 42
+      - " 2"
+      - " 3"
+      - 欧洲(油管:破解资源君2.0) 28
+      - 欧洲(油管:破解资源君2.0) 33
+      - 美国(油管:破解资源君2.0) 2
+      - 未知国家-4.57MB/s(Youtube:不良林)
+      - 中国-2.73MB/s(Youtube:不良林)
+      - 中国-2.60MB/s(Youtube:不良林)
+      - 欧洲(油管:破解资源君2.0) 36
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -92,19 +204,47 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 中国-10.78MB/s(Youtube:不良林)
-      - 中国-12.48MB/s(Youtube:不良林)
-      - _08
-      - 中国-10.42MB/s(Youtube:不良林)
-      - 美国-4.32MB/s(Youtube:不良林)
-      - _10
-      - 中国-12.28MB/s(Youtube:不良林)
-      - 日本-20.43MB/s(Youtube:不良林)
-      - US_1260
-      - Relay_🇨🇳CN-🇺🇸US_66
-      - Relay_-🇯🇵JP_01
-      - Relay_-🇳🇱NL_02
-      - Relay_🇨🇳CN-🇺🇸US_64
+      - Relay_🇳🇱NL-🇳🇱NL_546
+      - Relay_-🇺🇸US_08
+      - Relay_-🇺🇸US_07
+      - Relay_-🇺🇸US_16
+      - 未知国家-7.09MB/s(Youtube:不良林)
+      - github.com/freefq - 江苏省扬州市移动 2
+      - 欧洲(油管:破解资源君2.0) 38
+      - 未知国家-5.06MB/s(Youtube:不良林)
+      - 欧洲(油管:破解资源君2.0) 29
+      - Relay_🇯🇵JP-🇺🇸US_231
+      - Relay_-🇺🇸US_01
+      - 未知国家-3.54MB/s(Youtube:不良林)
+      - github.com/freefq - 美国CloudFlare节点 9
+      - ""
+      - 欧洲(油管:破解资源君2.0)
+      - 未知国家-4.03MB/s(Youtube:不良林)
+      - 未知国家-3.09MB/s(Youtube:不良林)
+      - US 8 → openitsub.com
+      - 未知国家-5.55MB/s(Youtube:不良林)
+      - 韩国-1.65MB/s(Youtube:不良林)
+      - Relay_-🇹🇼TW_13
+      - 美国-4.09MB/s(Youtube:不良林)
+      - 未知国家-6.03MB/s(Youtube:不良林)
+      - 韩国-378.7KB/s(Youtube:不良林)
+      - 中国-3.59MB/s(Youtube:不良林)
+      - 未知国家-4.13MB/s(Youtube:不良林)
+      - 未知国家-4.26MB/s(Youtube:不良林)
+      - 美国(油管:破解资源君2.0) 3
+      - 欧洲(油管:破解资源君2.0) 30
+      - 欧洲(油管:破解资源君2.0) 20
+      - 俄罗斯(油管:破解资源君2.0)
+      - 欧洲(油管:破解资源君2.0) 42
+      - " 2"
+      - " 3"
+      - 欧洲(油管:破解资源君2.0) 28
+      - 欧洲(油管:破解资源君2.0) 33
+      - 美国(油管:破解资源君2.0) 2
+      - 未知国家-4.57MB/s(Youtube:不良林)
+      - 中国-2.73MB/s(Youtube:不良林)
+      - 中国-2.60MB/s(Youtube:不良林)
+      - 欧洲(油管:破解资源君2.0) 36
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -115,56 +255,140 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 中国-10.78MB/s(Youtube:不良林)
-      - 中国-12.48MB/s(Youtube:不良林)
-      - _08
-      - 中国-10.42MB/s(Youtube:不良林)
-      - 美国-4.32MB/s(Youtube:不良林)
-      - _10
-      - 中国-12.28MB/s(Youtube:不良林)
-      - 日本-20.43MB/s(Youtube:不良林)
-      - US_1260
-      - Relay_🇨🇳CN-🇺🇸US_66
-      - Relay_-🇯🇵JP_01
-      - Relay_-🇳🇱NL_02
-      - Relay_🇨🇳CN-🇺🇸US_64
+      - Relay_🇳🇱NL-🇳🇱NL_546
+      - Relay_-🇺🇸US_08
+      - Relay_-🇺🇸US_07
+      - Relay_-🇺🇸US_16
+      - 未知国家-7.09MB/s(Youtube:不良林)
+      - github.com/freefq - 江苏省扬州市移动 2
+      - 欧洲(油管:破解资源君2.0) 38
+      - 未知国家-5.06MB/s(Youtube:不良林)
+      - 欧洲(油管:破解资源君2.0) 29
+      - Relay_🇯🇵JP-🇺🇸US_231
+      - Relay_-🇺🇸US_01
+      - 未知国家-3.54MB/s(Youtube:不良林)
+      - github.com/freefq - 美国CloudFlare节点 9
+      - ""
+      - 欧洲(油管:破解资源君2.0)
+      - 未知国家-4.03MB/s(Youtube:不良林)
+      - 未知国家-3.09MB/s(Youtube:不良林)
+      - US 8 → openitsub.com
+      - 未知国家-5.55MB/s(Youtube:不良林)
+      - 韩国-1.65MB/s(Youtube:不良林)
+      - Relay_-🇹🇼TW_13
+      - 美国-4.09MB/s(Youtube:不良林)
+      - 未知国家-6.03MB/s(Youtube:不良林)
+      - 韩国-378.7KB/s(Youtube:不良林)
+      - 中国-3.59MB/s(Youtube:不良林)
+      - 未知国家-4.13MB/s(Youtube:不良林)
+      - 未知国家-4.26MB/s(Youtube:不良林)
+      - 美国(油管:破解资源君2.0) 3
+      - 欧洲(油管:破解资源君2.0) 30
+      - 欧洲(油管:破解资源君2.0) 20
+      - 俄罗斯(油管:破解资源君2.0)
+      - 欧洲(油管:破解资源君2.0) 42
+      - " 2"
+      - " 3"
+      - 欧洲(油管:破解资源君2.0) 28
+      - 欧洲(油管:破解资源君2.0) 33
+      - 美国(油管:破解资源君2.0) 2
+      - 未知国家-4.57MB/s(Youtube:不良林)
+      - 中国-2.73MB/s(Youtube:不良林)
+      - 中国-2.60MB/s(Youtube:不良林)
+      - 欧洲(油管:破解资源君2.0) 36
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 中国-10.78MB/s(Youtube:不良林)
-      - 中国-12.48MB/s(Youtube:不良林)
-      - _08
-      - 中国-10.42MB/s(Youtube:不良林)
-      - 美国-4.32MB/s(Youtube:不良林)
-      - _10
-      - 中国-12.28MB/s(Youtube:不良林)
-      - 日本-20.43MB/s(Youtube:不良林)
-      - US_1260
-      - Relay_🇨🇳CN-🇺🇸US_66
-      - Relay_-🇯🇵JP_01
-      - Relay_-🇳🇱NL_02
-      - Relay_🇨🇳CN-🇺🇸US_64
+      - Relay_🇳🇱NL-🇳🇱NL_546
+      - Relay_-🇺🇸US_08
+      - Relay_-🇺🇸US_07
+      - Relay_-🇺🇸US_16
+      - 未知国家-7.09MB/s(Youtube:不良林)
+      - github.com/freefq - 江苏省扬州市移动 2
+      - 欧洲(油管:破解资源君2.0) 38
+      - 未知国家-5.06MB/s(Youtube:不良林)
+      - 欧洲(油管:破解资源君2.0) 29
+      - Relay_🇯🇵JP-🇺🇸US_231
+      - Relay_-🇺🇸US_01
+      - 未知国家-3.54MB/s(Youtube:不良林)
+      - github.com/freefq - 美国CloudFlare节点 9
+      - ""
+      - 欧洲(油管:破解资源君2.0)
+      - 未知国家-4.03MB/s(Youtube:不良林)
+      - 未知国家-3.09MB/s(Youtube:不良林)
+      - US 8 → openitsub.com
+      - 未知国家-5.55MB/s(Youtube:不良林)
+      - 韩国-1.65MB/s(Youtube:不良林)
+      - Relay_-🇹🇼TW_13
+      - 美国-4.09MB/s(Youtube:不良林)
+      - 未知国家-6.03MB/s(Youtube:不良林)
+      - 韩国-378.7KB/s(Youtube:不良林)
+      - 中国-3.59MB/s(Youtube:不良林)
+      - 未知国家-4.13MB/s(Youtube:不良林)
+      - 未知国家-4.26MB/s(Youtube:不良林)
+      - 美国(油管:破解资源君2.0) 3
+      - 欧洲(油管:破解资源君2.0) 30
+      - 欧洲(油管:破解资源君2.0) 20
+      - 俄罗斯(油管:破解资源君2.0)
+      - 欧洲(油管:破解资源君2.0) 42
+      - " 2"
+      - " 3"
+      - 欧洲(油管:破解资源君2.0) 28
+      - 欧洲(油管:破解资源君2.0) 33
+      - 美国(油管:破解资源君2.0) 2
+      - 未知国家-4.57MB/s(Youtube:不良林)
+      - 中国-2.73MB/s(Youtube:不良林)
+      - 中国-2.60MB/s(Youtube:不良林)
+      - 欧洲(油管:破解资源君2.0) 36
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 中国-10.78MB/s(Youtube:不良林)
-      - 中国-12.48MB/s(Youtube:不良林)
-      - _08
-      - 中国-10.42MB/s(Youtube:不良林)
-      - 美国-4.32MB/s(Youtube:不良林)
-      - _10
-      - 中国-12.28MB/s(Youtube:不良林)
-      - 日本-20.43MB/s(Youtube:不良林)
-      - US_1260
-      - Relay_🇨🇳CN-🇺🇸US_66
-      - Relay_-🇯🇵JP_01
-      - Relay_-🇳🇱NL_02
-      - Relay_🇨🇳CN-🇺🇸US_64
+      - Relay_🇳🇱NL-🇳🇱NL_546
+      - Relay_-🇺🇸US_08
+      - Relay_-🇺🇸US_07
+      - Relay_-🇺🇸US_16
+      - 未知国家-7.09MB/s(Youtube:不良林)
+      - github.com/freefq - 江苏省扬州市移动 2
+      - 欧洲(油管:破解资源君2.0) 38
+      - 未知国家-5.06MB/s(Youtube:不良林)
+      - 欧洲(油管:破解资源君2.0) 29
+      - Relay_🇯🇵JP-🇺🇸US_231
+      - Relay_-🇺🇸US_01
+      - 未知国家-3.54MB/s(Youtube:不良林)
+      - github.com/freefq - 美国CloudFlare节点 9
+      - ""
+      - 欧洲(油管:破解资源君2.0)
+      - 未知国家-4.03MB/s(Youtube:不良林)
+      - 未知国家-3.09MB/s(Youtube:不良林)
+      - US 8 → openitsub.com
+      - 未知国家-5.55MB/s(Youtube:不良林)
+      - 韩国-1.65MB/s(Youtube:不良林)
+      - Relay_-🇹🇼TW_13
+      - 美国-4.09MB/s(Youtube:不良林)
+      - 未知国家-6.03MB/s(Youtube:不良林)
+      - 韩国-378.7KB/s(Youtube:不良林)
+      - 中国-3.59MB/s(Youtube:不良林)
+      - 未知国家-4.13MB/s(Youtube:不良林)
+      - 未知国家-4.26MB/s(Youtube:不良林)
+      - 美国(油管:破解资源君2.0) 3
+      - 欧洲(油管:破解资源君2.0) 30
+      - 欧洲(油管:破解资源君2.0) 20
+      - 俄罗斯(油管:破解资源君2.0)
+      - 欧洲(油管:破解资源君2.0) 42
+      - " 2"
+      - " 3"
+      - 欧洲(油管:破解资源君2.0) 28
+      - 欧洲(油管:破解资源君2.0) 33
+      - 美国(油管:破解资源君2.0) 2
+      - 未知国家-4.57MB/s(Youtube:不良林)
+      - 中国-2.73MB/s(Youtube:不良林)
+      - 中国-2.60MB/s(Youtube:不良林)
+      - 欧洲(油管:破解资源君2.0) 36
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -180,19 +404,47 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 中国-10.78MB/s(Youtube:不良林)
-      - 中国-12.48MB/s(Youtube:不良林)
-      - _08
-      - 中国-10.42MB/s(Youtube:不良林)
-      - 美国-4.32MB/s(Youtube:不良林)
-      - _10
-      - 中国-12.28MB/s(Youtube:不良林)
-      - 日本-20.43MB/s(Youtube:不良林)
-      - US_1260
-      - Relay_🇨🇳CN-🇺🇸US_66
-      - Relay_-🇯🇵JP_01
-      - Relay_-🇳🇱NL_02
-      - Relay_🇨🇳CN-🇺🇸US_64
+      - Relay_🇳🇱NL-🇳🇱NL_546
+      - Relay_-🇺🇸US_08
+      - Relay_-🇺🇸US_07
+      - Relay_-🇺🇸US_16
+      - 未知国家-7.09MB/s(Youtube:不良林)
+      - github.com/freefq - 江苏省扬州市移动 2
+      - 欧洲(油管:破解资源君2.0) 38
+      - 未知国家-5.06MB/s(Youtube:不良林)
+      - 欧洲(油管:破解资源君2.0) 29
+      - Relay_🇯🇵JP-🇺🇸US_231
+      - Relay_-🇺🇸US_01
+      - 未知国家-3.54MB/s(Youtube:不良林)
+      - github.com/freefq - 美国CloudFlare节点 9
+      - ""
+      - 欧洲(油管:破解资源君2.0)
+      - 未知国家-4.03MB/s(Youtube:不良林)
+      - 未知国家-3.09MB/s(Youtube:不良林)
+      - US 8 → openitsub.com
+      - 未知国家-5.55MB/s(Youtube:不良林)
+      - 韩国-1.65MB/s(Youtube:不良林)
+      - Relay_-🇹🇼TW_13
+      - 美国-4.09MB/s(Youtube:不良林)
+      - 未知国家-6.03MB/s(Youtube:不良林)
+      - 韩国-378.7KB/s(Youtube:不良林)
+      - 中国-3.59MB/s(Youtube:不良林)
+      - 未知国家-4.13MB/s(Youtube:不良林)
+      - 未知国家-4.26MB/s(Youtube:不良林)
+      - 美国(油管:破解资源君2.0) 3
+      - 欧洲(油管:破解资源君2.0) 30
+      - 欧洲(油管:破解资源君2.0) 20
+      - 俄罗斯(油管:破解资源君2.0)
+      - 欧洲(油管:破解资源君2.0) 42
+      - " 2"
+      - " 3"
+      - 欧洲(油管:破解资源君2.0) 28
+      - 欧洲(油管:破解资源君2.0) 33
+      - 美国(油管:破解资源君2.0) 2
+      - 未知国家-4.57MB/s(Youtube:不良林)
+      - 中国-2.73MB/s(Youtube:不良林)
+      - 中国-2.60MB/s(Youtube:不良林)
+      - 欧洲(油管:破解资源君2.0) 36
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
