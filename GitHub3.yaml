@@ -5,275 +5,127 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: Relay_🇯🇵 JP-🇯🇵JP_234, server: kr1.api-aws.com, port: 443, type: trojan, password: edeb6377-0d40-483b-869a-8b3be9d74850, sni: kr1.api-aws.com, skip-cert-verify: true, udp: true}
-  - {name: 日本(油管:破解资源君2.0) 2, server: 221.131.165.72, port: 9035, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇯🇵 JP-🇯🇵JP_235, server: kr1.api-aws.com, port: 443, type: trojan, password: a153fb4e-6d1b-4db0-b03d-acb4012b7198, sni: kr1.api-aws.com, skip-cert-verify: true, udp: true}
-  - {name: Pool_🇯🇵JP_241, server: 193.38.139.204, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: 亚洲(油管:破解资源君2.0) 9, server: 221.131.165.72, port: 9022, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: JP 5 → openitsub.com, server: kr1.api-aws.com, port: 443, type: trojan, password: db9b6698-f01c-4fe1-93ca-d752c956c2d3, sni: kr1.api-aws.com, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇯🇵 JP-🇯🇵JP_229, server: kr1.api-aws.com, port: 443, type: trojan, password: 881091b5-4172-4329-a0e7-17fca1e72292, sni: kr1.api-aws.com, skip-cert-verify: true, udp: true}
-  - {name: 美国(油管:破解资源君2.0) 14, server: 116.129.254.6, port: 9022, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: github.com/freefq - 美国加利福尼亚州洛杉矶Dedipath 5, server: gs.jisudashi.top, port: 15234, type: vmess, uuid: bb81313e-a9bc-435c-b6cb-b1f6485332ff, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jisudashi.top, ws-headers: {Host: gs.jisudashi.top}, udp: true}
-  - {name: JP_252, server: 172.105.219.18, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /chat, ws-headers: {Host: 172.105.219.18}, udp: true}
-  - {name: github.com/freefq - 江苏省宿迁市移动 19, server: 221.131.165.72, port: 9041, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN 4 → openitsub.com, server: 116.129.254.29, port: 3381, type: trojan, password: d4e41ff772c7fd45, skip-cert-verify: true, udp: true}
-  - {name: 美国(油管:破解资源君2.0) 9, server: 111.45.22.152, port: 9029, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇯🇵 JP-🇯🇵JP_233, server: kr1.api-aws.com, port: 443, type: trojan, password: 2e4c54a0-a780-4994-97c0-44eb92857d76, sni: kr1.api-aws.com, skip-cert-verify: true, udp: true}
-  - {name: 美国(油管:破解资源君2.0) 10, server: 111.45.22.151, port: 9029, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: JP_248, server: 168.138.43.89, port: 443, type: trojan, password: d06a3f01-1ff0-4792-9b8e-a5a604bc74a2, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇳 CN-🇧🇭BH_65, server: 116.129.253.134, port: 3381, type: trojan, password: d02058f4f819dced, skip-cert-verify: true, udp: true}
-  - {name: US_516, server: 129.146.242.130, port: 443, type: trojan, password: 05742120-ce23-4cc8-88f5-6d221ce45bf4, skip-cert-verify: true, udp: true}
-  - {name: github.com/freefq - 美国CloudFlare节点 24, server: 141.101.115.2, port: 443, type: vmess, uuid: a5ba8b2b-8fc5-4521-a35e-9281be61c1c3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /dongtaiwang.com, ws-headers: {Host: lg1.zhujicn2.com}, udp: true}
-  - {name: 亚洲(油管:破解资源君2.0) 3, server: 4.3.1.fuckppppp.today, port: 58418, type: vmess, uuid: 244effd9-0204-3c4a-8537-0dca4e5fd9b5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: github.com/freefq - 意大利  3, server: 212.102.53.194, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
-  - {name: CN 67, server: 116.162.120.23, port: 610, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 53923:hjgjuy6t655jjg, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: github.com/freefq - 美国CloudFlare节点 20, server: 172.64.144.100, port: 443, type: vmess, uuid: 6e9217de-ad7e-4a67-bd17-a6dca951733b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /dongtaiwang.com, ws-headers: {Host: lg3.zhujicn2.com}, udp: true}
-  - {name: 美国(油管:破解资源君2.0) 25, server: shopify.com, port: 80, type: vmess, uuid: 36bd9969-bb96-4bdd-a6df-960bbd8e4439, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /aries, ws-headers: {Host: tguk.cloudflare.quest}, udp: true}
-  - {name: 亚洲(油管:破解资源君2.0), server: 111.45.22.151, port: 11905, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 西班牙(油管:破解资源君2.0) 2, server: 116.129.254.6, port: 11926, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 欧洲(油管:破解资源君2.0) 4, server: 64.112.42.72, port: 16999, type: vmess, uuid: b5a01f44-b981-421a-bdc0-6d9d53da07fd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 西班牙(油管:破解资源君2.0), server: 111.45.22.151, port: 11926, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: github.com/freefq - 美国CloudFlare节点 17, server: 172.64.153.150, port: 443, type: vmess, uuid: bf4619e4-01dc-48ca-be08-0976b54968ce, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /dongtaiwang.com, ws-headers: {Host: lg5.zhujicn2.com}, udp: true}
-  - {name: 美国(油管:破解资源君2.0) 7, server: 116.129.254.6, port: 9025, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 英国(油管:破解资源君2.0), server: 111.45.22.151, port: 11901, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN 59, server: 116.162.120.23, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 53923:hjgjuy6t655jjg, obfs-param: ZEM1dFpTOTJjRzVvWVhR, udp: true}
-  - {name: US 14 → openitsub.com, server: 172.64.155.200, port: 443, type: vmess, uuid: a8030afd-812a-4afe-a766-9c76ff3eddd4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /dongtaiwang.com, ws-headers: {Host: lg4.zhujicn2.com}, udp: true}
-  - {name: 英国(油管:破解资源君2.0) 2, server: 111.45.22.152, port: 11901, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 亚洲(油管:破解资源君2.0) 5, server: shopify.com, port: 80, type: vmess, uuid: 90e35d9e-d5a0-4ffa-fdeb-f5c14f957b21, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /aries, ws-headers: {Host: tgsg.cloudflare.quest}, udp: true}
-  - {name: US 20 → openitsub.com, server: 172.64.153.200, port: 443, type: vmess, uuid: a8030afd-812a-4afe-a766-9c76ff3eddd4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /dongtaiwang.com, ws-headers: {Host: lg4.zhujicn2.com}, udp: true}
-  - {name: US_511, server: 129.146.190.42, port: 443, type: trojan, password: dbf9bf9c-2c3f-474a-8031-d4c00666a989, skip-cert-verify: true, udp: true}
-  - {name: github.com/freefq - 美国CloudFlare节点 30, server: 198.41.212.30, port: 443, type: vmess, uuid: 105c635f-918d-4b2a-8c9d-d5426e94eb4b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /dongtaiwang.com, ws-headers: {Host: lg2.zhujicn2.com}, udp: true}
-  - {name: github.com/freefq - 美国CloudFlare节点 26, server: 198.41.212.20, port: 443, type: vmess, uuid: a5ba8b2b-8fc5-4521-a35e-9281be61c1c3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /dongtaiwang.com, ws-headers: {Host: lg1.zhujicn2.com}, udp: true}
-  - {name: github.com/freefq - 香港阿里云 8, server: 47.87.166.143, port: 44443, type: vmess, uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 亚洲(油管:破解资源君2.0) 13, server: 111.45.22.152, port: 11915, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: FR_118, server: 146.19.230.241, port: 443, type: trojan, password: xxoo, skip-cert-verify: true, udp: true}
-  - {name: 欧洲(油管:破解资源君2.0) 6, server: 111.45.22.151, port: 11922, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 亚洲(油管:破解资源君2.0) 20, server: 221.131.165.72, port: 11908, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 亚洲(油管:破解资源君2.0) 10, server: 111.45.22.152, port: 11902, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 荷兰-2.91MB/s(Youtube:不良林), server: 213.183.59.185, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
-  - {name: Relay_🇯🇵 JP-🇯🇵JP_231, server: kr1.api-aws.com, port: 443, type: trojan, password: ca3a57c6-9bb5-4d19-876d-4552de4bb959, sni: kr1.api-aws.com, skip-cert-verify: true, udp: true}
-  - {name: github.com/freefq - 香港阿里云 9 2, server: 47.87.166.143, port: 44443, type: vmess, uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: github.com/freefq - 香港阿里云 9, server: 47.87.166.143, port: 44443, type: vmess, uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: github.com/freefq - 美国  27, server: 129.159.139.101, port: 443, type: vmess, uuid: b7519a6f-c1de-4667-e606-b60c65d19078, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 129.159.139.101}, udp: true}
-  - {name: 亚洲(油管:破解资源君2.0) 3 2, server: 111.45.22.151, port: 11902, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US_512, server: 152.67.160.174, port: 443, type: trojan, password: 54080134-2cba-4535-8599-95650bd9aa54, skip-cert-verify: true, udp: true}
-  - {name: 欧洲(油管:破解资源君2.0) 19, server: 111.45.22.151, port: 11909, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 欧洲(油管:破解资源君2.0) 25, server: 221.131.165.72, port: 11931, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 欧洲(油管:破解资源君2.0) 11, server: 221.131.165.72, port: 11909, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇯🇵 JP-🇯🇵JP_232, server: kr1.api-aws.com, port: 443, type: trojan, password: 1988268c-a841-42f2-acac-7a8c0c7e78e5, sni: kr1.api-aws.com, skip-cert-verify: true, udp: true}
-  - {name: 亚洲(油管:破解资源君2.0) 11, server: 221.131.165.72, port: 11930, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: github.com/freefq - 美国  27 2, server: 129.159.139.101, port: 443, type: vmess, uuid: b7519a6f-c1de-4667-e606-b60c65d19078, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 129.159.139.101}, udp: true}
-  - {name: 新加坡-711.8KB/s(Youtube:不良林), server: 103.172.116.6, port: 9098, type: ss, cipher: aes-256-cfb, password: aLpQtfEZe445QyHk, udp: true}
-  - {name: 新加坡-1.33MB/s(Youtube:不良林), server: 103.172.116.6, port: 9088, type: ss, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn, udp: true}
-  - {name: US_471, server: 168.138.171.65, port: 443, type: vmess, uuid: 4af6fd9a-e8b4-46f2-da3a-207f4577656c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 新加坡-1.63MB/s(Youtube:不良林), server: 103.172.116.6, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
-  - {name: 新加坡-377.4KB/s(Youtube:不良林), server: 103.172.116.6, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
+  - {name: 亚洲(油管:破解资源君2.0), server: 8.210.119.159, port: 443, type: vmess, uuid: fc9c12e0-f4f2-4fc4-a30e-fc488bac7121, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: idnusa2.vpn-akcelluler.my.id}, udp: true}
+  - {name: 亚洲(油管:破解资源君2.0) 2, server: 47.243.92.11, port: 443, type: vmess, uuid: fc9c12e0-f4f2-4fc4-a30e-fc488bac7121, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: idnusa2.vpn-akcelluler.my.id}, udp: true}
+  - {name: 亚洲(油管:破解资源君2.0) 3, server: 47.74.21.12, port: 443, type: vmess, uuid: fc9c12e0-f4f2-4fc4-a30e-fc488bac7121, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: idnusa2.vpn-akcelluler.my.id}, udp: true}
+  - {name: 亚洲(油管:破解资源君2.0) 4, server: 47.91.11.23, port: 443, type: vmess, uuid: fc9c12e0-f4f2-4fc4-a30e-fc488bac7121, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: idnusa2.vpn-akcelluler.my.id}, udp: true}
+  - {name: 亚洲(油管:破解资源君2.0) 5, server: 47.74.51.122, port: 443, type: vmess, uuid: fc9c12e0-f4f2-4fc4-a30e-fc488bac7121, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: idnusa2.vpn-akcelluler.my.id}, udp: true}
+  - {name: 亚洲(油管:破解资源君2.0) 6, server: 47.74.43.158, port: 443, type: vmess, uuid: fc9c12e0-f4f2-4fc4-a30e-fc488bac7121, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: idnusa2.vpn-akcelluler.my.id}, udp: true}
+  - {name: 亚洲(油管:破解资源君2.0) 7, server: 47.245.25.67, port: 443, type: vmess, uuid: fc9c12e0-f4f2-4fc4-a30e-fc488bac7121, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: idnusa2.vpn-akcelluler.my.id}, udp: true}
+  - {name: Relay_-🇨🇦CA_47, server: 1024tw01.tfzhc.top, port: 443, type: trojan, password: 6064db30-b46e-432d-bbec-f12b947422a2, sni: 1024tw01.tfzhc.top, skip-cert-verify: true, udp: true}
+  - {name: 亚洲(油管:破解资源君2.0) 8, server: 138.2.122.225, port: 443, type: vmess, uuid: fc9c12e0-f4f2-4fc4-a30e-fc488bac7121, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: idnusa2.vpn-akcelluler.my.id}, udp: true}
+  - {name: 亚洲(油管:破解资源君2.0) 9, server: 146.56.149.205, port: 443, type: vmess, uuid: fc9c12e0-f4f2-4fc4-a30e-fc488bac7121, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: idnusa2.vpn-akcelluler.my.id}, udp: true}
+  - {name: 日本-3.65MB/s(Youtube:不良林), server: 85.208.108.60, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: 欧洲(油管:破解资源君2.0), server: 104.18.28.19, port: 80, type: vmess, uuid: 35556863-22b9-40b9-8722-a192b8526edc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /p9Dq67Nx/, ws-headers: {Host: fr1.cachexy.ga}, udp: true}
+  - {name: 亚洲(油管:破解资源君2.0) 10, server: 146.56.162.25, port: 443, type: vmess, uuid: fc9c12e0-f4f2-4fc4-a30e-fc488bac7121, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: idnusa2.vpn-akcelluler.my.id}, udp: true}
+  - {name: 亚洲(油管:破解资源君2.0) 11, server: 47.254.132.101, port: 443, type: vmess, uuid: fc9c12e0-f4f2-4fc4-a30e-fc488bac7121, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: idnusa2.vpn-akcelluler.my.id}, udp: true}
+  - {name: 亚洲(油管:破解资源君2.0) 12, server: 47.254.156.141, port: 443, type: vmess, uuid: fc9c12e0-f4f2-4fc4-a30e-fc488bac7121, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: idnusa2.vpn-akcelluler.my.id}, udp: true}
+  - {name: 亚洲(油管:破解资源君2.0) 13, server: 47.254.135.214, port: 443, type: vmess, uuid: fc9c12e0-f4f2-4fc4-a30e-fc488bac7121, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: idnusa2.vpn-akcelluler.my.id}, udp: true}
+  - {name: 亚洲(油管:破解资源君2.0) 14, server: 47.254.171.171, port: 443, type: vmess, uuid: fc9c12e0-f4f2-4fc4-a30e-fc488bac7121, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: idnusa2.vpn-akcelluler.my.id}, udp: true}
+  - {name: 亚洲(油管:破解资源君2.0) 15, server: 47.254.175.195, port: 443, type: vmess, uuid: fc9c12e0-f4f2-4fc4-a30e-fc488bac7121, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: idnusa2.vpn-akcelluler.my.id}, udp: true}
+  - {name: 亚洲(油管:破解资源君2.0) 16, server: 47.254.128.86, port: 443, type: vmess, uuid: fc9c12e0-f4f2-4fc4-a30e-fc488bac7121, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: idnusa2.vpn-akcelluler.my.id}, udp: true}
+  - {name: "", server: idnusa2.vpn-akcelluler.my.id, port: 443, type: vmess, uuid: fc9c12e0-f4f2-4fc4-a30e-fc488bac7121, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: idnusa2.vpn-akcelluler.my.id}, udp: true}
+  - {name: 亚洲(油管:破解资源君2.0) 17, server: 47.254.146.203, port: 443, type: vmess, uuid: fc9c12e0-f4f2-4fc4-a30e-fc488bac7121, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: idnusa2.vpn-akcelluler.my.id}, udp: true}
+  - {name: 亚洲(油管:破解资源君2.0) 18, server: 47.254.155.155, port: 443, type: vmess, uuid: fc9c12e0-f4f2-4fc4-a30e-fc488bac7121, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: idnusa2.vpn-akcelluler.my.id}, udp: true}
+  - {name: 亚洲(油管:破解资源君2.0) 19, server: 47.254.155.106, port: 443, type: vmess, uuid: fc9c12e0-f4f2-4fc4-a30e-fc488bac7121, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: idnusa2.vpn-akcelluler.my.id}, udp: true}
+  - {name: Relay_🇷🇺RU-🇩🇪DE_519, server: pf.napsternetv.com, port: 34147, type: vmess, uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 亚洲(油管:破解资源君2.0) 20, server: 47.254.131.159, port: 443, type: vmess, uuid: fc9c12e0-f4f2-4fc4-a30e-fc488bac7121, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: idnusa2.vpn-akcelluler.my.id}, udp: true}
+  - {name: 俄罗斯联邦-1.04MB/s(Youtube:不良林), server: pf.napsternetv.com, port: 34146, type: vmess, uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay_🇯🇵 JP-🇯🇵JP_234
-      - 日本(油管:破解资源君2.0) 2
-      - Relay_🇯🇵 JP-🇯🇵JP_235
-      - Pool_🇯🇵JP_241
-      - 亚洲(油管:破解资源君2.0) 9
-      - JP 5 → openitsub.com
-      - Relay_🇯🇵 JP-🇯🇵JP_229
-      - 美国(油管:破解资源君2.0) 14
-      - github.com/freefq - 美国加利福尼亚州洛杉矶Dedipath 5
-      - JP_252
-      - github.com/freefq - 江苏省宿迁市移动 19
-      - CN 4 → openitsub.com
-      - 美国(油管:破解资源君2.0) 9
-      - Relay_🇯🇵 JP-🇯🇵JP_233
-      - 美国(油管:破解资源君2.0) 10
-      - JP_248
-      - Relay_🇨🇳 CN-🇧🇭BH_65
-      - US_516
-      - github.com/freefq - 美国CloudFlare节点 24
-      - 亚洲(油管:破解资源君2.0) 3
-      - github.com/freefq - 意大利  3
-      - CN 67
-      - github.com/freefq - 美国CloudFlare节点 20
-      - 美国(油管:破解资源君2.0) 25
       - 亚洲(油管:破解资源君2.0)
-      - 西班牙(油管:破解资源君2.0) 2
-      - 欧洲(油管:破解资源君2.0) 4
-      - 西班牙(油管:破解资源君2.0)
-      - github.com/freefq - 美国CloudFlare节点 17
-      - 美国(油管:破解资源君2.0) 7
-      - 英国(油管:破解资源君2.0)
-      - CN 59
-      - US 14 → openitsub.com
-      - 英国(油管:破解资源君2.0) 2
+      - 亚洲(油管:破解资源君2.0) 2
+      - 亚洲(油管:破解资源君2.0) 3
+      - 亚洲(油管:破解资源君2.0) 4
       - 亚洲(油管:破解资源君2.0) 5
-      - US 20 → openitsub.com
-      - US_511
-      - github.com/freefq - 美国CloudFlare节点 30
-      - github.com/freefq - 美国CloudFlare节点 26
-      - github.com/freefq - 香港阿里云 8
-      - 亚洲(油管:破解资源君2.0) 13
-      - FR_118
-      - 欧洲(油管:破解资源君2.0) 6
-      - 亚洲(油管:破解资源君2.0) 20
+      - 亚洲(油管:破解资源君2.0) 6
+      - 亚洲(油管:破解资源君2.0) 7
+      - Relay_-🇨🇦CA_47
+      - 亚洲(油管:破解资源君2.0) 8
+      - 亚洲(油管:破解资源君2.0) 9
+      - 日本-3.65MB/s(Youtube:不良林)
+      - 欧洲(油管:破解资源君2.0)
       - 亚洲(油管:破解资源君2.0) 10
-      - 荷兰-2.91MB/s(Youtube:不良林)
-      - Relay_🇯🇵 JP-🇯🇵JP_231
-      - github.com/freefq - 香港阿里云 9 2
-      - github.com/freefq - 香港阿里云 9
-      - github.com/freefq - 美国  27
-      - 亚洲(油管:破解资源君2.0) 3 2
-      - US_512
-      - 欧洲(油管:破解资源君2.0) 19
-      - 欧洲(油管:破解资源君2.0) 25
-      - 欧洲(油管:破解资源君2.0) 11
-      - Relay_🇯🇵 JP-🇯🇵JP_232
       - 亚洲(油管:破解资源君2.0) 11
-      - github.com/freefq - 美国  27 2
-      - 新加坡-711.8KB/s(Youtube:不良林)
-      - 新加坡-1.33MB/s(Youtube:不良林)
-      - US_471
-      - 新加坡-1.63MB/s(Youtube:不良林)
-      - 新加坡-377.4KB/s(Youtube:不良林)
+      - 亚洲(油管:破解资源君2.0) 12
+      - 亚洲(油管:破解资源君2.0) 13
+      - 亚洲(油管:破解资源君2.0) 14
+      - 亚洲(油管:破解资源君2.0) 15
+      - 亚洲(油管:破解资源君2.0) 16
+      - ""
+      - 亚洲(油管:破解资源君2.0) 17
+      - 亚洲(油管:破解资源君2.0) 18
+      - 亚洲(油管:破解资源君2.0) 19
+      - Relay_🇷🇺RU-🇩🇪DE_519
+      - 亚洲(油管:破解资源君2.0) 20
+      - 俄罗斯联邦-1.04MB/s(Youtube:不良林)
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - Relay_🇯🇵 JP-🇯🇵JP_234
-      - 日本(油管:破解资源君2.0) 2
-      - Relay_🇯🇵 JP-🇯🇵JP_235
-      - Pool_🇯🇵JP_241
-      - 亚洲(油管:破解资源君2.0) 9
-      - JP 5 → openitsub.com
-      - Relay_🇯🇵 JP-🇯🇵JP_229
-      - 美国(油管:破解资源君2.0) 14
-      - github.com/freefq - 美国加利福尼亚州洛杉矶Dedipath 5
-      - JP_252
-      - github.com/freefq - 江苏省宿迁市移动 19
-      - CN 4 → openitsub.com
-      - 美国(油管:破解资源君2.0) 9
-      - Relay_🇯🇵 JP-🇯🇵JP_233
-      - 美国(油管:破解资源君2.0) 10
-      - JP_248
-      - Relay_🇨🇳 CN-🇧🇭BH_65
-      - US_516
-      - github.com/freefq - 美国CloudFlare节点 24
-      - 亚洲(油管:破解资源君2.0) 3
-      - github.com/freefq - 意大利  3
-      - CN 67
-      - github.com/freefq - 美国CloudFlare节点 20
-      - 美国(油管:破解资源君2.0) 25
       - 亚洲(油管:破解资源君2.0)
-      - 西班牙(油管:破解资源君2.0) 2
-      - 欧洲(油管:破解资源君2.0) 4
-      - 西班牙(油管:破解资源君2.0)
-      - github.com/freefq - 美国CloudFlare节点 17
-      - 美国(油管:破解资源君2.0) 7
-      - 英国(油管:破解资源君2.0)
-      - CN 59
-      - US 14 → openitsub.com
-      - 英国(油管:破解资源君2.0) 2
+      - 亚洲(油管:破解资源君2.0) 2
+      - 亚洲(油管:破解资源君2.0) 3
+      - 亚洲(油管:破解资源君2.0) 4
       - 亚洲(油管:破解资源君2.0) 5
-      - US 20 → openitsub.com
-      - US_511
-      - github.com/freefq - 美国CloudFlare节点 30
-      - github.com/freefq - 美国CloudFlare节点 26
-      - github.com/freefq - 香港阿里云 8
-      - 亚洲(油管:破解资源君2.0) 13
-      - FR_118
-      - 欧洲(油管:破解资源君2.0) 6
-      - 亚洲(油管:破解资源君2.0) 20
+      - 亚洲(油管:破解资源君2.0) 6
+      - 亚洲(油管:破解资源君2.0) 7
+      - Relay_-🇨🇦CA_47
+      - 亚洲(油管:破解资源君2.0) 8
+      - 亚洲(油管:破解资源君2.0) 9
+      - 日本-3.65MB/s(Youtube:不良林)
+      - 欧洲(油管:破解资源君2.0)
       - 亚洲(油管:破解资源君2.0) 10
-      - 荷兰-2.91MB/s(Youtube:不良林)
-      - Relay_🇯🇵 JP-🇯🇵JP_231
-      - github.com/freefq - 香港阿里云 9 2
-      - github.com/freefq - 香港阿里云 9
-      - github.com/freefq - 美国  27
-      - 亚洲(油管:破解资源君2.0) 3 2
-      - US_512
-      - 欧洲(油管:破解资源君2.0) 19
-      - 欧洲(油管:破解资源君2.0) 25
-      - 欧洲(油管:破解资源君2.0) 11
-      - Relay_🇯🇵 JP-🇯🇵JP_232
       - 亚洲(油管:破解资源君2.0) 11
-      - github.com/freefq - 美国  27 2
-      - 新加坡-711.8KB/s(Youtube:不良林)
-      - 新加坡-1.33MB/s(Youtube:不良林)
-      - US_471
-      - 新加坡-1.63MB/s(Youtube:不良林)
-      - 新加坡-377.4KB/s(Youtube:不良林)
+      - 亚洲(油管:破解资源君2.0) 12
+      - 亚洲(油管:破解资源君2.0) 13
+      - 亚洲(油管:破解资源君2.0) 14
+      - 亚洲(油管:破解资源君2.0) 15
+      - 亚洲(油管:破解资源君2.0) 16
+      - ""
+      - 亚洲(油管:破解资源君2.0) 17
+      - 亚洲(油管:破解资源君2.0) 18
+      - 亚洲(油管:破解资源君2.0) 19
+      - Relay_🇷🇺RU-🇩🇪DE_519
+      - 亚洲(油管:破解资源君2.0) 20
+      - 俄罗斯联邦-1.04MB/s(Youtube:不良林)
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay_🇯🇵 JP-🇯🇵JP_234
-      - 日本(油管:破解资源君2.0) 2
-      - Relay_🇯🇵 JP-🇯🇵JP_235
-      - Pool_🇯🇵JP_241
-      - 亚洲(油管:破解资源君2.0) 9
-      - JP 5 → openitsub.com
-      - Relay_🇯🇵 JP-🇯🇵JP_229
-      - 美国(油管:破解资源君2.0) 14
-      - github.com/freefq - 美国加利福尼亚州洛杉矶Dedipath 5
-      - JP_252
-      - github.com/freefq - 江苏省宿迁市移动 19
-      - CN 4 → openitsub.com
-      - 美国(油管:破解资源君2.0) 9
-      - Relay_🇯🇵 JP-🇯🇵JP_233
-      - 美国(油管:破解资源君2.0) 10
-      - JP_248
-      - Relay_🇨🇳 CN-🇧🇭BH_65
-      - US_516
-      - github.com/freefq - 美国CloudFlare节点 24
-      - 亚洲(油管:破解资源君2.0) 3
-      - github.com/freefq - 意大利  3
-      - CN 67
-      - github.com/freefq - 美国CloudFlare节点 20
-      - 美国(油管:破解资源君2.0) 25
       - 亚洲(油管:破解资源君2.0)
-      - 西班牙(油管:破解资源君2.0) 2
-      - 欧洲(油管:破解资源君2.0) 4
-      - 西班牙(油管:破解资源君2.0)
-      - github.com/freefq - 美国CloudFlare节点 17
-      - 美国(油管:破解资源君2.0) 7
-      - 英国(油管:破解资源君2.0)
-      - CN 59
-      - US 14 → openitsub.com
-      - 英国(油管:破解资源君2.0) 2
+      - 亚洲(油管:破解资源君2.0) 2
+      - 亚洲(油管:破解资源君2.0) 3
+      - 亚洲(油管:破解资源君2.0) 4
       - 亚洲(油管:破解资源君2.0) 5
-      - US 20 → openitsub.com
-      - US_511
-      - github.com/freefq - 美国CloudFlare节点 30
-      - github.com/freefq - 美国CloudFlare节点 26
-      - github.com/freefq - 香港阿里云 8
-      - 亚洲(油管:破解资源君2.0) 13
-      - FR_118
-      - 欧洲(油管:破解资源君2.0) 6
-      - 亚洲(油管:破解资源君2.0) 20
+      - 亚洲(油管:破解资源君2.0) 6
+      - 亚洲(油管:破解资源君2.0) 7
+      - Relay_-🇨🇦CA_47
+      - 亚洲(油管:破解资源君2.0) 8
+      - 亚洲(油管:破解资源君2.0) 9
+      - 日本-3.65MB/s(Youtube:不良林)
+      - 欧洲(油管:破解资源君2.0)
       - 亚洲(油管:破解资源君2.0) 10
-      - 荷兰-2.91MB/s(Youtube:不良林)
-      - Relay_🇯🇵 JP-🇯🇵JP_231
-      - github.com/freefq - 香港阿里云 9 2
-      - github.com/freefq - 香港阿里云 9
-      - github.com/freefq - 美国  27
-      - 亚洲(油管:破解资源君2.0) 3 2
-      - US_512
-      - 欧洲(油管:破解资源君2.0) 19
-      - 欧洲(油管:破解资源君2.0) 25
-      - 欧洲(油管:破解资源君2.0) 11
-      - Relay_🇯🇵 JP-🇯🇵JP_232
       - 亚洲(油管:破解资源君2.0) 11
-      - github.com/freefq - 美国  27 2
-      - 新加坡-711.8KB/s(Youtube:不良林)
-      - 新加坡-1.33MB/s(Youtube:不良林)
-      - US_471
-      - 新加坡-1.63MB/s(Youtube:不良林)
-      - 新加坡-377.4KB/s(Youtube:不良林)
+      - 亚洲(油管:破解资源君2.0) 12
+      - 亚洲(油管:破解资源君2.0) 13
+      - 亚洲(油管:破解资源君2.0) 14
+      - 亚洲(油管:破解资源君2.0) 15
+      - 亚洲(油管:破解资源君2.0) 16
+      - ""
+      - 亚洲(油管:破解资源君2.0) 17
+      - 亚洲(油管:破解资源君2.0) 18
+      - 亚洲(油管:破解资源君2.0) 19
+      - Relay_🇷🇺RU-🇩🇪DE_519
+      - 亚洲(油管:破解资源君2.0) 20
+      - 俄罗斯联邦-1.04MB/s(Youtube:不良林)
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -292,282 +144,131 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay_🇯🇵 JP-🇯🇵JP_234
-      - 日本(油管:破解资源君2.0) 2
-      - Relay_🇯🇵 JP-🇯🇵JP_235
-      - Pool_🇯🇵JP_241
-      - 亚洲(油管:破解资源君2.0) 9
-      - JP 5 → openitsub.com
-      - Relay_🇯🇵 JP-🇯🇵JP_229
-      - 美国(油管:破解资源君2.0) 14
-      - github.com/freefq - 美国加利福尼亚州洛杉矶Dedipath 5
-      - JP_252
-      - github.com/freefq - 江苏省宿迁市移动 19
-      - CN 4 → openitsub.com
-      - 美国(油管:破解资源君2.0) 9
-      - Relay_🇯🇵 JP-🇯🇵JP_233
-      - 美国(油管:破解资源君2.0) 10
-      - JP_248
-      - Relay_🇨🇳 CN-🇧🇭BH_65
-      - US_516
-      - github.com/freefq - 美国CloudFlare节点 24
-      - 亚洲(油管:破解资源君2.0) 3
-      - github.com/freefq - 意大利  3
-      - CN 67
-      - github.com/freefq - 美国CloudFlare节点 20
-      - 美国(油管:破解资源君2.0) 25
       - 亚洲(油管:破解资源君2.0)
-      - 西班牙(油管:破解资源君2.0) 2
-      - 欧洲(油管:破解资源君2.0) 4
-      - 西班牙(油管:破解资源君2.0)
-      - github.com/freefq - 美国CloudFlare节点 17
-      - 美国(油管:破解资源君2.0) 7
-      - 英国(油管:破解资源君2.0)
-      - CN 59
-      - US 14 → openitsub.com
-      - 英国(油管:破解资源君2.0) 2
+      - 亚洲(油管:破解资源君2.0) 2
+      - 亚洲(油管:破解资源君2.0) 3
+      - 亚洲(油管:破解资源君2.0) 4
       - 亚洲(油管:破解资源君2.0) 5
-      - US 20 → openitsub.com
-      - US_511
-      - github.com/freefq - 美国CloudFlare节点 30
-      - github.com/freefq - 美国CloudFlare节点 26
-      - github.com/freefq - 香港阿里云 8
-      - 亚洲(油管:破解资源君2.0) 13
-      - FR_118
-      - 欧洲(油管:破解资源君2.0) 6
-      - 亚洲(油管:破解资源君2.0) 20
+      - 亚洲(油管:破解资源君2.0) 6
+      - 亚洲(油管:破解资源君2.0) 7
+      - Relay_-🇨🇦CA_47
+      - 亚洲(油管:破解资源君2.0) 8
+      - 亚洲(油管:破解资源君2.0) 9
+      - 日本-3.65MB/s(Youtube:不良林)
+      - 欧洲(油管:破解资源君2.0)
       - 亚洲(油管:破解资源君2.0) 10
-      - 荷兰-2.91MB/s(Youtube:不良林)
-      - Relay_🇯🇵 JP-🇯🇵JP_231
-      - github.com/freefq - 香港阿里云 9 2
-      - github.com/freefq - 香港阿里云 9
-      - github.com/freefq - 美国  27
-      - 亚洲(油管:破解资源君2.0) 3 2
-      - US_512
-      - 欧洲(油管:破解资源君2.0) 19
-      - 欧洲(油管:破解资源君2.0) 25
-      - 欧洲(油管:破解资源君2.0) 11
-      - Relay_🇯🇵 JP-🇯🇵JP_232
       - 亚洲(油管:破解资源君2.0) 11
-      - github.com/freefq - 美国  27 2
-      - 新加坡-711.8KB/s(Youtube:不良林)
-      - 新加坡-1.33MB/s(Youtube:不良林)
-      - US_471
-      - 新加坡-1.63MB/s(Youtube:不良林)
-      - 新加坡-377.4KB/s(Youtube:不良林)
+      - 亚洲(油管:破解资源君2.0) 12
+      - 亚洲(油管:破解资源君2.0) 13
+      - 亚洲(油管:破解资源君2.0) 14
+      - 亚洲(油管:破解资源君2.0) 15
+      - 亚洲(油管:破解资源君2.0) 16
+      - ""
+      - 亚洲(油管:破解资源君2.0) 17
+      - 亚洲(油管:破解资源君2.0) 18
+      - 亚洲(油管:破解资源君2.0) 19
+      - Relay_🇷🇺RU-🇩🇪DE_519
+      - 亚洲(油管:破解资源君2.0) 20
+      - 俄罗斯联邦-1.04MB/s(Youtube:不良林)
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - github.com/freefq - 香港阿里云 8
-      - github.com/freefq - 香港阿里云 9 2
-      - github.com/freefq - 香港阿里云 9
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - Relay_🇯🇵 JP-🇯🇵JP_234
-      - 日本(油管:破解资源君2.0) 2
-      - Relay_🇯🇵 JP-🇯🇵JP_235
-      - Pool_🇯🇵JP_241
-      - 亚洲(油管:破解资源君2.0) 9
-      - JP 5 → openitsub.com
-      - Relay_🇯🇵 JP-🇯🇵JP_229
-      - 美国(油管:破解资源君2.0) 14
-      - github.com/freefq - 美国加利福尼亚州洛杉矶Dedipath 5
-      - JP_252
-      - github.com/freefq - 江苏省宿迁市移动 19
-      - CN 4 → openitsub.com
-      - 美国(油管:破解资源君2.0) 9
-      - Relay_🇯🇵 JP-🇯🇵JP_233
-      - 美国(油管:破解资源君2.0) 10
-      - JP_248
-      - Relay_🇨🇳 CN-🇧🇭BH_65
-      - US_516
-      - github.com/freefq - 美国CloudFlare节点 24
-      - 亚洲(油管:破解资源君2.0) 3
-      - github.com/freefq - 意大利  3
-      - CN 67
-      - github.com/freefq - 美国CloudFlare节点 20
-      - 美国(油管:破解资源君2.0) 25
       - 亚洲(油管:破解资源君2.0)
-      - 西班牙(油管:破解资源君2.0) 2
-      - 欧洲(油管:破解资源君2.0) 4
-      - 西班牙(油管:破解资源君2.0)
-      - github.com/freefq - 美国CloudFlare节点 17
-      - 美国(油管:破解资源君2.0) 7
-      - 英国(油管:破解资源君2.0)
-      - CN 59
-      - US 14 → openitsub.com
-      - 英国(油管:破解资源君2.0) 2
+      - 亚洲(油管:破解资源君2.0) 2
+      - 亚洲(油管:破解资源君2.0) 3
+      - 亚洲(油管:破解资源君2.0) 4
       - 亚洲(油管:破解资源君2.0) 5
-      - US 20 → openitsub.com
-      - US_511
-      - github.com/freefq - 美国CloudFlare节点 30
-      - github.com/freefq - 美国CloudFlare节点 26
-      - github.com/freefq - 香港阿里云 8
-      - 亚洲(油管:破解资源君2.0) 13
-      - FR_118
-      - 欧洲(油管:破解资源君2.0) 6
-      - 亚洲(油管:破解资源君2.0) 20
+      - 亚洲(油管:破解资源君2.0) 6
+      - 亚洲(油管:破解资源君2.0) 7
+      - Relay_-🇨🇦CA_47
+      - 亚洲(油管:破解资源君2.0) 8
+      - 亚洲(油管:破解资源君2.0) 9
+      - 日本-3.65MB/s(Youtube:不良林)
+      - 欧洲(油管:破解资源君2.0)
       - 亚洲(油管:破解资源君2.0) 10
-      - 荷兰-2.91MB/s(Youtube:不良林)
-      - Relay_🇯🇵 JP-🇯🇵JP_231
-      - github.com/freefq - 香港阿里云 9 2
-      - github.com/freefq - 香港阿里云 9
-      - github.com/freefq - 美国  27
-      - 亚洲(油管:破解资源君2.0) 3 2
-      - US_512
-      - 欧洲(油管:破解资源君2.0) 19
-      - 欧洲(油管:破解资源君2.0) 25
-      - 欧洲(油管:破解资源君2.0) 11
-      - Relay_🇯🇵 JP-🇯🇵JP_232
       - 亚洲(油管:破解资源君2.0) 11
-      - github.com/freefq - 美国  27 2
-      - 新加坡-711.8KB/s(Youtube:不良林)
-      - 新加坡-1.33MB/s(Youtube:不良林)
-      - US_471
-      - 新加坡-1.63MB/s(Youtube:不良林)
-      - 新加坡-377.4KB/s(Youtube:不良林)
+      - 亚洲(油管:破解资源君2.0) 12
+      - 亚洲(油管:破解资源君2.0) 13
+      - 亚洲(油管:破解资源君2.0) 14
+      - 亚洲(油管:破解资源君2.0) 15
+      - 亚洲(油管:破解资源君2.0) 16
+      - ""
+      - 亚洲(油管:破解资源君2.0) 17
+      - 亚洲(油管:破解资源君2.0) 18
+      - 亚洲(油管:破解资源君2.0) 19
+      - Relay_🇷🇺RU-🇩🇪DE_519
+      - 亚洲(油管:破解资源君2.0) 20
+      - 俄罗斯联邦-1.04MB/s(Youtube:不良林)
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - Relay_🇯🇵 JP-🇯🇵JP_234
-      - 日本(油管:破解资源君2.0) 2
-      - Relay_🇯🇵 JP-🇯🇵JP_235
-      - Pool_🇯🇵JP_241
-      - 亚洲(油管:破解资源君2.0) 9
-      - JP 5 → openitsub.com
-      - Relay_🇯🇵 JP-🇯🇵JP_229
-      - 美国(油管:破解资源君2.0) 14
-      - github.com/freefq - 美国加利福尼亚州洛杉矶Dedipath 5
-      - JP_252
-      - github.com/freefq - 江苏省宿迁市移动 19
-      - CN 4 → openitsub.com
-      - 美国(油管:破解资源君2.0) 9
-      - Relay_🇯🇵 JP-🇯🇵JP_233
-      - 美国(油管:破解资源君2.0) 10
-      - JP_248
-      - Relay_🇨🇳 CN-🇧🇭BH_65
-      - US_516
-      - github.com/freefq - 美国CloudFlare节点 24
-      - 亚洲(油管:破解资源君2.0) 3
-      - github.com/freefq - 意大利  3
-      - CN 67
-      - github.com/freefq - 美国CloudFlare节点 20
-      - 美国(油管:破解资源君2.0) 25
       - 亚洲(油管:破解资源君2.0)
-      - 西班牙(油管:破解资源君2.0) 2
-      - 欧洲(油管:破解资源君2.0) 4
-      - 西班牙(油管:破解资源君2.0)
-      - github.com/freefq - 美国CloudFlare节点 17
-      - 美国(油管:破解资源君2.0) 7
-      - 英国(油管:破解资源君2.0)
-      - CN 59
-      - US 14 → openitsub.com
-      - 英国(油管:破解资源君2.0) 2
+      - 亚洲(油管:破解资源君2.0) 2
+      - 亚洲(油管:破解资源君2.0) 3
+      - 亚洲(油管:破解资源君2.0) 4
       - 亚洲(油管:破解资源君2.0) 5
-      - US 20 → openitsub.com
-      - US_511
-      - github.com/freefq - 美国CloudFlare节点 30
-      - github.com/freefq - 美国CloudFlare节点 26
-      - github.com/freefq - 香港阿里云 8
-      - 亚洲(油管:破解资源君2.0) 13
-      - FR_118
-      - 欧洲(油管:破解资源君2.0) 6
-      - 亚洲(油管:破解资源君2.0) 20
+      - 亚洲(油管:破解资源君2.0) 6
+      - 亚洲(油管:破解资源君2.0) 7
+      - Relay_-🇨🇦CA_47
+      - 亚洲(油管:破解资源君2.0) 8
+      - 亚洲(油管:破解资源君2.0) 9
+      - 日本-3.65MB/s(Youtube:不良林)
+      - 欧洲(油管:破解资源君2.0)
       - 亚洲(油管:破解资源君2.0) 10
-      - 荷兰-2.91MB/s(Youtube:不良林)
-      - Relay_🇯🇵 JP-🇯🇵JP_231
-      - github.com/freefq - 香港阿里云 9 2
-      - github.com/freefq - 香港阿里云 9
-      - github.com/freefq - 美国  27
-      - 亚洲(油管:破解资源君2.0) 3 2
-      - US_512
-      - 欧洲(油管:破解资源君2.0) 19
-      - 欧洲(油管:破解资源君2.0) 25
-      - 欧洲(油管:破解资源君2.0) 11
-      - Relay_🇯🇵 JP-🇯🇵JP_232
       - 亚洲(油管:破解资源君2.0) 11
-      - github.com/freefq - 美国  27 2
-      - 新加坡-711.8KB/s(Youtube:不良林)
-      - 新加坡-1.33MB/s(Youtube:不良林)
-      - US_471
-      - 新加坡-1.63MB/s(Youtube:不良林)
-      - 新加坡-377.4KB/s(Youtube:不良林)
+      - 亚洲(油管:破解资源君2.0) 12
+      - 亚洲(油管:破解资源君2.0) 13
+      - 亚洲(油管:破解资源君2.0) 14
+      - 亚洲(油管:破解资源君2.0) 15
+      - 亚洲(油管:破解资源君2.0) 16
+      - ""
+      - 亚洲(油管:破解资源君2.0) 17
+      - 亚洲(油管:破解资源君2.0) 18
+      - 亚洲(油管:破解资源君2.0) 19
+      - Relay_🇷🇺RU-🇩🇪DE_519
+      - 亚洲(油管:破解资源君2.0) 20
+      - 俄罗斯联邦-1.04MB/s(Youtube:不良林)
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Relay_🇯🇵 JP-🇯🇵JP_234
-      - 日本(油管:破解资源君2.0) 2
-      - Relay_🇯🇵 JP-🇯🇵JP_235
-      - Pool_🇯🇵JP_241
-      - 亚洲(油管:破解资源君2.0) 9
-      - JP 5 → openitsub.com
-      - Relay_🇯🇵 JP-🇯🇵JP_229
-      - 美国(油管:破解资源君2.0) 14
-      - github.com/freefq - 美国加利福尼亚州洛杉矶Dedipath 5
-      - JP_252
-      - github.com/freefq - 江苏省宿迁市移动 19
-      - CN 4 → openitsub.com
-      - 美国(油管:破解资源君2.0) 9
-      - Relay_🇯🇵 JP-🇯🇵JP_233
-      - 美国(油管:破解资源君2.0) 10
-      - JP_248
-      - Relay_🇨🇳 CN-🇧🇭BH_65
-      - US_516
-      - github.com/freefq - 美国CloudFlare节点 24
-      - 亚洲(油管:破解资源君2.0) 3
-      - github.com/freefq - 意大利  3
-      - CN 67
-      - github.com/freefq - 美国CloudFlare节点 20
-      - 美国(油管:破解资源君2.0) 25
       - 亚洲(油管:破解资源君2.0)
-      - 西班牙(油管:破解资源君2.0) 2
-      - 欧洲(油管:破解资源君2.0) 4
-      - 西班牙(油管:破解资源君2.0)
-      - github.com/freefq - 美国CloudFlare节点 17
-      - 美国(油管:破解资源君2.0) 7
-      - 英国(油管:破解资源君2.0)
-      - CN 59
-      - US 14 → openitsub.com
-      - 英国(油管:破解资源君2.0) 2
+      - 亚洲(油管:破解资源君2.0) 2
+      - 亚洲(油管:破解资源君2.0) 3
+      - 亚洲(油管:破解资源君2.0) 4
       - 亚洲(油管:破解资源君2.0) 5
-      - US 20 → openitsub.com
-      - US_511
-      - github.com/freefq - 美国CloudFlare节点 30
-      - github.com/freefq - 美国CloudFlare节点 26
-      - github.com/freefq - 香港阿里云 8
-      - 亚洲(油管:破解资源君2.0) 13
-      - FR_118
-      - 欧洲(油管:破解资源君2.0) 6
-      - 亚洲(油管:破解资源君2.0) 20
+      - 亚洲(油管:破解资源君2.0) 6
+      - 亚洲(油管:破解资源君2.0) 7
+      - Relay_-🇨🇦CA_47
+      - 亚洲(油管:破解资源君2.0) 8
+      - 亚洲(油管:破解资源君2.0) 9
+      - 日本-3.65MB/s(Youtube:不良林)
+      - 欧洲(油管:破解资源君2.0)
       - 亚洲(油管:破解资源君2.0) 10
-      - 荷兰-2.91MB/s(Youtube:不良林)
-      - Relay_🇯🇵 JP-🇯🇵JP_231
-      - github.com/freefq - 香港阿里云 9 2
-      - github.com/freefq - 香港阿里云 9
-      - github.com/freefq - 美国  27
-      - 亚洲(油管:破解资源君2.0) 3 2
-      - US_512
-      - 欧洲(油管:破解资源君2.0) 19
-      - 欧洲(油管:破解资源君2.0) 25
-      - 欧洲(油管:破解资源君2.0) 11
-      - Relay_🇯🇵 JP-🇯🇵JP_232
       - 亚洲(油管:破解资源君2.0) 11
-      - github.com/freefq - 美国  27 2
-      - 新加坡-711.8KB/s(Youtube:不良林)
-      - 新加坡-1.33MB/s(Youtube:不良林)
-      - US_471
-      - 新加坡-1.63MB/s(Youtube:不良林)
-      - 新加坡-377.4KB/s(Youtube:不良林)
+      - 亚洲(油管:破解资源君2.0) 12
+      - 亚洲(油管:破解资源君2.0) 13
+      - 亚洲(油管:破解资源君2.0) 14
+      - 亚洲(油管:破解资源君2.0) 15
+      - 亚洲(油管:破解资源君2.0) 16
+      - ""
+      - 亚洲(油管:破解资源君2.0) 17
+      - 亚洲(油管:破解资源君2.0) 18
+      - 亚洲(油管:破解资源君2.0) 19
+      - Relay_🇷🇺RU-🇩🇪DE_519
+      - 亚洲(油管:破解资源君2.0) 20
+      - 俄罗斯联邦-1.04MB/s(Youtube:不良林)
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -583,69 +284,32 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Relay_🇯🇵 JP-🇯🇵JP_234
-      - 日本(油管:破解资源君2.0) 2
-      - Relay_🇯🇵 JP-🇯🇵JP_235
-      - Pool_🇯🇵JP_241
-      - 亚洲(油管:破解资源君2.0) 9
-      - JP 5 → openitsub.com
-      - Relay_🇯🇵 JP-🇯🇵JP_229
-      - 美国(油管:破解资源君2.0) 14
-      - github.com/freefq - 美国加利福尼亚州洛杉矶Dedipath 5
-      - JP_252
-      - github.com/freefq - 江苏省宿迁市移动 19
-      - CN 4 → openitsub.com
-      - 美国(油管:破解资源君2.0) 9
-      - Relay_🇯🇵 JP-🇯🇵JP_233
-      - 美国(油管:破解资源君2.0) 10
-      - JP_248
-      - Relay_🇨🇳 CN-🇧🇭BH_65
-      - US_516
-      - github.com/freefq - 美国CloudFlare节点 24
-      - 亚洲(油管:破解资源君2.0) 3
-      - github.com/freefq - 意大利  3
-      - CN 67
-      - github.com/freefq - 美国CloudFlare节点 20
-      - 美国(油管:破解资源君2.0) 25
       - 亚洲(油管:破解资源君2.0)
-      - 西班牙(油管:破解资源君2.0) 2
-      - 欧洲(油管:破解资源君2.0) 4
-      - 西班牙(油管:破解资源君2.0)
-      - github.com/freefq - 美国CloudFlare节点 17
-      - 美国(油管:破解资源君2.0) 7
-      - 英国(油管:破解资源君2.0)
-      - CN 59
-      - US 14 → openitsub.com
-      - 英国(油管:破解资源君2.0) 2
+      - 亚洲(油管:破解资源君2.0) 2
+      - 亚洲(油管:破解资源君2.0) 3
+      - 亚洲(油管:破解资源君2.0) 4
       - 亚洲(油管:破解资源君2.0) 5
-      - US 20 → openitsub.com
-      - US_511
-      - github.com/freefq - 美国CloudFlare节点 30
-      - github.com/freefq - 美国CloudFlare节点 26
-      - github.com/freefq - 香港阿里云 8
-      - 亚洲(油管:破解资源君2.0) 13
-      - FR_118
-      - 欧洲(油管:破解资源君2.0) 6
-      - 亚洲(油管:破解资源君2.0) 20
+      - 亚洲(油管:破解资源君2.0) 6
+      - 亚洲(油管:破解资源君2.0) 7
+      - Relay_-🇨🇦CA_47
+      - 亚洲(油管:破解资源君2.0) 8
+      - 亚洲(油管:破解资源君2.0) 9
+      - 日本-3.65MB/s(Youtube:不良林)
+      - 欧洲(油管:破解资源君2.0)
       - 亚洲(油管:破解资源君2.0) 10
-      - 荷兰-2.91MB/s(Youtube:不良林)
-      - Relay_🇯🇵 JP-🇯🇵JP_231
-      - github.com/freefq - 香港阿里云 9 2
-      - github.com/freefq - 香港阿里云 9
-      - github.com/freefq - 美国  27
-      - 亚洲(油管:破解资源君2.0) 3 2
-      - US_512
-      - 欧洲(油管:破解资源君2.0) 19
-      - 欧洲(油管:破解资源君2.0) 25
-      - 欧洲(油管:破解资源君2.0) 11
-      - Relay_🇯🇵 JP-🇯🇵JP_232
       - 亚洲(油管:破解资源君2.0) 11
-      - github.com/freefq - 美国  27 2
-      - 新加坡-711.8KB/s(Youtube:不良林)
-      - 新加坡-1.33MB/s(Youtube:不良林)
-      - US_471
-      - 新加坡-1.63MB/s(Youtube:不良林)
-      - 新加坡-377.4KB/s(Youtube:不良林)
+      - 亚洲(油管:破解资源君2.0) 12
+      - 亚洲(油管:破解资源君2.0) 13
+      - 亚洲(油管:破解资源君2.0) 14
+      - 亚洲(油管:破解资源君2.0) 15
+      - 亚洲(油管:破解资源君2.0) 16
+      - ""
+      - 亚洲(油管:破解资源君2.0) 17
+      - 亚洲(油管:破解资源君2.0) 18
+      - 亚洲(油管:破解资源君2.0) 19
+      - Relay_🇷🇺RU-🇩🇪DE_519
+      - 亚洲(油管:破解资源君2.0) 20
+      - 俄罗斯联邦-1.04MB/s(Youtube:不良林)
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
