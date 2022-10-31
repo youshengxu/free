@@ -5,6 +5,18 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
+  - {name: CN_57, server: cnallaz2.eucdurl.me, port: 568, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 41755:q13433801326, obfs-param: "", udp: true}
+  - {name: CN_56, server: cnallaz2.eucdurl.me, port: 567, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 41755:q13433801326, obfs-param: "", udp: true}
+  - {name: Relay_🇸🇬SG-🇸🇬SG_499, server: sg-am3.eqsunshine.com, port: 32001, type: ssr, cipher: aes-256-cfb, password: 3g0dHlKME, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
+  - {name: Relay_🇯🇵JP-🇯🇵JP_216, server: jp-am48-6.eqnode.net, port: 8081, type: ssr, cipher: aes-256-cfb, password: eAokbaDN6, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
+  - {name: github.com/freefq - 中国阿里云 4, server: 8.219.105.225, port: 443, type: vmess, uuid: 572126f8-5301-83c2-0a26-c30ced3db7c4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /wmzmvws, ws-headers: {Host: goodfamily19.site}, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_1080, server: vus3.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /chat, ws-headers: {Host: vus3.0bad.com}, udp: true}
+  - {name: US_1087, server: 170.187.185.37, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /chat, ws-headers: {Host: 170.187.185.37}, udp: true}
+  - {name: CN_55, server: cnallaz2.eucdurl.me, port: 566, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 41755:q13433801326, obfs-param: "", udp: true}
+  - {name: BE_19, server: 57.128.45.161, port: 80, type: vmess, uuid: 35d25899-ed20-46d9-9c7c-99c0d414d5e4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /user, ws-headers: {Host: 57.128.45.161}, udp: true}
+  - {name: github.com/freefq - 俄罗斯  10, server: pf.napsternetv.com, port: 34141, type: vmess, uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇸🇬SG-🇺🇸US_158, server: vsg1.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /chat, ws-headers: {Host: vsg1.0bad.com}, udp: true}
+  - {name: US_1067, server: 154.85.62.219, port: 56924, type: vmess, uuid: 6c086fcc-6b05-4a28-9c3d-30a949585b25, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [154.85.62.219]}}, udp: true}
   - {name: Relay_🇲🇴MO-🇯🇵JP_272, server: 45.64.22.55, port: 443, type: trojan, password: ZEIR0qFZau9jOp7x6e8e4y3AaXwS2SzD3llxTyRYKCF8DCD3c5Y3pgNnaSOBAC, skip-cert-verify: true, udp: true}
   - {name: Relay_🇲🇴MO-🇺🇸US_276, server: 45.64.22.55, port: 443, type: trojan, password: Ty33ylFA4u6A5e0NE3wRFp3DIa8lZOzC87CeKnxYgpSOSa2ZaXBjDDSY9qCcxR, skip-cert-verify: true, udp: true}
   - {name: 美国(油管:破解资源君2.0) 2, server: 141.101.114.200, port: 443, type: vmess, uuid: 0479eb9d-999d-4bff-ae3f-4f7cc440ce46, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /dongtaiwang.com, ws-headers: {Host: v2ray2.ssr-free2.xyz}, udp: true}
@@ -56,13 +68,24 @@ proxies:
   - {name: Relay_🇺🇸US-🇺🇸US_1057, server: namer-us-sea-01-edgecast.qdns.live, port: 2053, type: vmess, uuid: 94898122-6f57-3272-8ccf-87ab366b29ed, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: namer-us-sea-01-edgecast.qdns.live}, udp: true}
   - {name: Relay_🇷🇺RU-🇩🇪DE_494, server: pf.napsternetv.com, port: 34147, type: vmess, uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
   - {name: NL 3 → openitsub.com, server: 91.243.82.15, port: 34147, type: vmess, uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇷🇺RU-🇩🇪DE_495, server: 91.243.82.15, port: 34147, type: vmess, uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
+      - CN_57
+      - CN_56
+      - Relay_🇸🇬SG-🇸🇬SG_499
+      - Relay_🇯🇵JP-🇯🇵JP_216
+      - github.com/freefq - 中国阿里云 4
+      - Relay_🇺🇸US-🇺🇸US_1080
+      - US_1087
+      - CN_55
+      - BE_19
+      - github.com/freefq - 俄罗斯  10
+      - Relay_🇸🇬SG-🇺🇸US_158
+      - US_1067
       - Relay_🇲🇴MO-🇯🇵JP_272
       - Relay_🇲🇴MO-🇺🇸US_276
       - 美国(油管:破解资源君2.0) 2
@@ -114,12 +137,23 @@ proxy-groups:
       - Relay_🇺🇸US-🇺🇸US_1057
       - Relay_🇷🇺RU-🇩🇪DE_494
       - NL 3 → openitsub.com
-      - Relay_🇷🇺RU-🇩🇪DE_495
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
+      - CN_57
+      - CN_56
+      - Relay_🇸🇬SG-🇸🇬SG_499
+      - Relay_🇯🇵JP-🇯🇵JP_216
+      - github.com/freefq - 中国阿里云 4
+      - Relay_🇺🇸US-🇺🇸US_1080
+      - US_1087
+      - CN_55
+      - BE_19
+      - github.com/freefq - 俄罗斯  10
+      - Relay_🇸🇬SG-🇺🇸US_158
+      - US_1067
       - Relay_🇲🇴MO-🇯🇵JP_272
       - Relay_🇲🇴MO-🇺🇸US_276
       - 美国(油管:破解资源君2.0) 2
@@ -171,13 +205,24 @@ proxy-groups:
       - Relay_🇺🇸US-🇺🇸US_1057
       - Relay_🇷🇺RU-🇩🇪DE_494
       - NL 3 → openitsub.com
-      - Relay_🇷🇺RU-🇩🇪DE_495
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - CN_57
+      - CN_56
+      - Relay_🇸🇬SG-🇸🇬SG_499
+      - Relay_🇯🇵JP-🇯🇵JP_216
+      - github.com/freefq - 中国阿里云 4
+      - Relay_🇺🇸US-🇺🇸US_1080
+      - US_1087
+      - CN_55
+      - BE_19
+      - github.com/freefq - 俄罗斯  10
+      - Relay_🇸🇬SG-🇺🇸US_158
+      - US_1067
       - Relay_🇲🇴MO-🇯🇵JP_272
       - Relay_🇲🇴MO-🇺🇸US_276
       - 美国(油管:破解资源君2.0) 2
@@ -229,7 +274,6 @@ proxy-groups:
       - Relay_🇺🇸US-🇺🇸US_1057
       - Relay_🇷🇺RU-🇩🇪DE_494
       - NL 3 → openitsub.com
-      - Relay_🇷🇺RU-🇩🇪DE_495
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -248,6 +292,18 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - CN_57
+      - CN_56
+      - Relay_🇸🇬SG-🇸🇬SG_499
+      - Relay_🇯🇵JP-🇯🇵JP_216
+      - github.com/freefq - 中国阿里云 4
+      - Relay_🇺🇸US-🇺🇸US_1080
+      - US_1087
+      - CN_55
+      - BE_19
+      - github.com/freefq - 俄罗斯  10
+      - Relay_🇸🇬SG-🇺🇸US_158
+      - US_1067
       - Relay_🇲🇴MO-🇯🇵JP_272
       - Relay_🇲🇴MO-🇺🇸US_276
       - 美国(油管:破解资源君2.0) 2
@@ -299,7 +355,6 @@ proxy-groups:
       - Relay_🇺🇸US-🇺🇸US_1057
       - Relay_🇷🇺RU-🇩🇪DE_494
       - NL 3 → openitsub.com
-      - Relay_🇷🇺RU-🇩🇪DE_495
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -312,6 +367,18 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
+      - CN_57
+      - CN_56
+      - Relay_🇸🇬SG-🇸🇬SG_499
+      - Relay_🇯🇵JP-🇯🇵JP_216
+      - github.com/freefq - 中国阿里云 4
+      - Relay_🇺🇸US-🇺🇸US_1080
+      - US_1087
+      - CN_55
+      - BE_19
+      - github.com/freefq - 俄罗斯  10
+      - Relay_🇸🇬SG-🇺🇸US_158
+      - US_1067
       - Relay_🇲🇴MO-🇯🇵JP_272
       - Relay_🇲🇴MO-🇺🇸US_276
       - 美国(油管:破解资源君2.0) 2
@@ -363,12 +430,23 @@ proxy-groups:
       - Relay_🇺🇸US-🇺🇸US_1057
       - Relay_🇷🇺RU-🇩🇪DE_494
       - NL 3 → openitsub.com
-      - Relay_🇷🇺RU-🇩🇪DE_495
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
+      - CN_57
+      - CN_56
+      - Relay_🇸🇬SG-🇸🇬SG_499
+      - Relay_🇯🇵JP-🇯🇵JP_216
+      - github.com/freefq - 中国阿里云 4
+      - Relay_🇺🇸US-🇺🇸US_1080
+      - US_1087
+      - CN_55
+      - BE_19
+      - github.com/freefq - 俄罗斯  10
+      - Relay_🇸🇬SG-🇺🇸US_158
+      - US_1067
       - Relay_🇲🇴MO-🇯🇵JP_272
       - Relay_🇲🇴MO-🇺🇸US_276
       - 美国(油管:破解资源君2.0) 2
@@ -420,13 +498,24 @@ proxy-groups:
       - Relay_🇺🇸US-🇺🇸US_1057
       - Relay_🇷🇺RU-🇩🇪DE_494
       - NL 3 → openitsub.com
-      - Relay_🇷🇺RU-🇩🇪DE_495
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - CN_57
+      - CN_56
+      - Relay_🇸🇬SG-🇸🇬SG_499
+      - Relay_🇯🇵JP-🇯🇵JP_216
+      - github.com/freefq - 中国阿里云 4
+      - Relay_🇺🇸US-🇺🇸US_1080
+      - US_1087
+      - CN_55
+      - BE_19
+      - github.com/freefq - 俄罗斯  10
+      - Relay_🇸🇬SG-🇺🇸US_158
+      - US_1067
       - Relay_🇲🇴MO-🇯🇵JP_272
       - Relay_🇲🇴MO-🇺🇸US_276
       - 美国(油管:破解资源君2.0) 2
@@ -478,7 +567,6 @@ proxy-groups:
       - Relay_🇺🇸US-🇺🇸US_1057
       - Relay_🇷🇺RU-🇩🇪DE_494
       - NL 3 → openitsub.com
-      - Relay_🇷🇺RU-🇩🇪DE_495
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -494,6 +582,18 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - CN_57
+      - CN_56
+      - Relay_🇸🇬SG-🇸🇬SG_499
+      - Relay_🇯🇵JP-🇯🇵JP_216
+      - github.com/freefq - 中国阿里云 4
+      - Relay_🇺🇸US-🇺🇸US_1080
+      - US_1087
+      - CN_55
+      - BE_19
+      - github.com/freefq - 俄罗斯  10
+      - Relay_🇸🇬SG-🇺🇸US_158
+      - US_1067
       - Relay_🇲🇴MO-🇯🇵JP_272
       - Relay_🇲🇴MO-🇺🇸US_276
       - 美国(油管:破解资源君2.0) 2
@@ -545,7 +645,6 @@ proxy-groups:
       - Relay_🇺🇸US-🇺🇸US_1057
       - Relay_🇷🇺RU-🇩🇪DE_494
       - NL 3 → openitsub.com
-      - Relay_🇷🇺RU-🇩🇪DE_495
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
