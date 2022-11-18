@@ -5,431 +5,1155 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: SG 1 → openitsub.com, server: cdn.chigua.tk, port: 443, type: vmess, uuid: 2cc54dbd-d448-4cc0-b61c-1d1ba6317307, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /2cc54dbd, ws-headers: {Host: earth-identity-devel-pubmed.trycloudflare.com}, udp: true}
-  - {name: HK_149, server: kh.iamnotagoodman.com, port: 443, type: trojan, password: f8d19ba5-8684-45f2-8523-77dbea588955, sni: kh.iamnotagoodman.com, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇸🇬SG-🇧🇩BD_219, server: kh.iamnotagoodman.com, port: 443, type: trojan, password: 28bccca2-43d2-47f8-bd63-b1361ce7d362, sni: kh.iamnotagoodman.com, skip-cert-verify: true, udp: true}
-  - {name: 香港(油管:破解资源君2.0) 4, server: cs.daxun.cyou, port: 48002, type: trojan, password: fde7ae9b-c0c8-4ec1-9300-299450a4a304, sni: cs.daxun.cyou, skip-cert-verify: true, udp: true}
-  - {name: 德国(油管:破解资源君2.0) 16, server: 8.209.89.195, port: 443, type: vmess, uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: lg30.cfcdn3.xyz}, udp: true}
-  - {name: NONE, server: 155.248.172.87, port: 28443, type: trojan, password: 750a29bf-0a40-437f-b120-38de74ae7eaf, skip-cert-verify: true, udp: true}
-  - {name: 美国(油管:破解资源君2.0) 19, server: cdn.chigua.tk, port: 443, type: vmess, uuid: bea4a9b4-2ba4-4ed6-8247-7ea68d7f0112, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /bea4a9b4, ws-headers: {Host: reduction-accomplish-entities-surname.trycloudflare.com}, udp: true}
-  - {name: SG 13 → openitsub.com, server: 8.218.73.227, port: 58641, type: vmess, uuid: 4821f5d8-dc31-4bb4-811c-8babcb8aec1a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [8.218.73.227]}}, udp: true}
-  - {name: NONE 2, server: 223.111.202.148, port: 30030, type: trojan, password: 6b4ced5e-835a-4a7a-9d03-6a46e94668cb, skip-cert-verify: true, udp: true}
-  - {name: NONE 3, server: jp.liangyuandian.top, port: 443, type: trojan, password: 53f20cd4-b381-4a80-8059-7bcd484bbb52, sni: jp.liangyuandian.top, skip-cert-verify: true, udp: true}
-  - {name: NONE 4, server: 138.2.114.255, port: 443, type: trojan, password: 81d93f62-15a2-4994-adb9-0b5d906aac7e, skip-cert-verify: true, udp: true}
-  - {name: NONE 5, server: 168.138.189.17, port: 28443, type: trojan, password: 750a29bf-0a40-437f-b120-38de74ae7eaf, skip-cert-verify: true, udp: true}
-  - {name: TW 1 → openitsub.com, server: tw.xibai6.top, port: 31007, type: trojan, password: ca2345ba-46e7-3991-b1b7-45d18954caf1, sni: tw.xibai6.top, skip-cert-verify: true, udp: true}
-  - {name: github.com/freefq - 俄罗斯  16, server: 194.38.9.6, port: 48081, type: vmess, uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: US 3 → openitsub.com, server: 128.14.140.254, port: 443, type: vmess, uuid: 0479eb9d-999d-4bff-ae3f-4f7cc440ce46, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /dongtaiwang.com, ws-headers: {Host: v2ray2.ssr-free2.xyz}, udp: true}
-  - {name: SG 3 → openitsub.com, server: 8.218.63.184, port: 20113, type: vmess, uuid: cdc72c7d-6ab8-4cb4-a0f7-18b0ec7bfbfa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [8.218.63.184]}}, udp: true}
-  - {name: US 8 → openitsub.com, server: 168.138.171.65, port: 443, type: vmess, uuid: 4af6fd9a-e8b4-46f2-da3a-207f4577656c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: SG 5 → openitsub.com, server: 8.210.203.189, port: 37309, type: vmess, uuid: 74cdcc28-a0bc-421f-bd15-c6a6e401b523, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [8.210.203.189]}}, udp: true}
-  - {name: 美国(油管:破解资源君2.0) 66, server: kr-direct.node002.xyz, port: 5432, type: vmess, uuid: 531e6c4b-2f5f-363f-8556-3531b85422d5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: CN 12 → openitsub.com, server: i.j20xs1.xyz, port: 34005, type: trojan, password: 60dfab0b-ee68-3252-bba6-285ec64da53d, sni: i.j20xs1.xyz, skip-cert-verify: true, udp: true}
-  - {name: NONE 6, server: kr1.api-aws.com, port: 443, type: trojan, password: 10f81a15-c7c8-473b-a12a-a09f098b6236, sni: kr1.api-aws.com, skip-cert-verify: true, udp: true}
-  - {name: NONE 7, server: lux.iamnotagoodman.com, port: 443, type: trojan, password: 4f8c0e41-dbdb-40f1-99cb-2c2a0b909b52, sni: lux.iamnotagoodman.com, skip-cert-verify: true, udp: true}
-  - {name: NONE 8, server: kr1.api-aws.com, port: 443, type: trojan, password: edeb6377-0d40-483b-869a-8b3be9d74850, sni: kr1.api-aws.com, skip-cert-verify: true, udp: true}
-  - {name: 78.129.253.9:809, server: 78.129.253.9, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: NONE 9, server: 51.75.76.22, port: 443, type: trojan, password: c60fbf90-4b55-11ed-b935-225401db9d57, skip-cert-verify: true, udp: true}
+  - {name: NONE, server: ar.iamnotagoodman.com, port: 443, type: trojan, password: 4f8c0e41-dbdb-40f1-99cb-2c2a0b909b52, sni: ar.iamnotagoodman.com, skip-cert-verify: true, udp: true}
+  - {name: CN 8 → openitsub.com, server: bs1.jymzffbquawl.com, port: 3601, type: ss, cipher: rc4-md5, password: RenzheCloudSS, plugin: obfs, plugin-opts: {mode: http, host: c7ea4198729.microsoft.com}, udp: true}
+  - {name: NONE 2, server: 51.81.82.15, port: 443, type: trojan, password: c2b0a060-44b0-11ed-ad2e-1239d0255272, skip-cert-verify: true, udp: true}
+  - {name: CN 20 → openitsub.com, server: bs1.jymzffbquawl.com, port: 3608, type: ss, cipher: rc4-md5, password: RenzheCloudSS, plugin: obfs, plugin-opts: {mode: http, host: c7ea4198729.microsoft.com}, udp: true}
+  - {name: CN 142 → openitsub.com, server: cdn-cn.nekocloud.cn, port: 19023, type: ssr, cipher: aes-128-cfb, password: iluulrzviik, protocol: auth_aes128_md5, obfs: plain, protocol-param: 135594:8SRFZ2, obfs-param: 43235135594.wns.windows.com, udp: true}
+  - {name: CN 86 → openitsub.com, server: cdn-cn.nekocloud.cn, port: 10005, type: ssr, cipher: aes-128-cfb, password: iluulrzviik, protocol: auth_aes128_md5, obfs: plain, protocol-param: 135594:8SRFZ2, obfs-param: 43235135594.wns.windows.com, udp: true}
+  - {name: CN 25 → openitsub.com, server: bs3.jymzffbquawl.com, port: 6600, type: ss, cipher: rc4-md5, password: RenzheCloudSS, plugin: obfs, plugin-opts: {mode: http, host: c7ea4198729.microsoft.com}, udp: true}
+  - {name: "", server: v2.clsnet.online, port: 543, type: vmess, uuid: 7ee5a840-75d1-34a8-bd2a-187cdb286792, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN 21 → openitsub.com, server: bs3.jymzffbquawl.com, port: 3046, type: ss, cipher: rc4-md5, password: RenzheCloudSS, plugin: obfs, plugin-opts: {mode: http, host: c7ea4198729.microsoft.com}, udp: true}
+  - {name: NONE 3, server: sg.iamnotagoodman.com, port: 443, type: trojan, password: 4f8c0e41-dbdb-40f1-99cb-2c2a0b909b52, sni: sg.iamnotagoodman.com, skip-cert-verify: true, udp: true}
+  - {name: NONE 4, server: 20009.purefast2.com, port: 20009, type: trojan, password: a71df8e7-d563-3ebc-a26a-168c8dc8c9f3, sni: 20009.purefast2.com, skip-cert-verify: true, udp: true}
+  - {name: NONE 5, server: 51.75.76.22, port: 443, type: trojan, password: c60fbf90-4b55-11ed-b935-225401db9d57, skip-cert-verify: true, udp: true}
+  - {name: NONE 6, server: 20003.purefast2.com, port: 20003, type: trojan, password: bab40563-cafe-39c1-9d76-c3e627d73758, sni: 20003.purefast2.com, skip-cert-verify: true, udp: true}
+  - {name: NONE 7, server: jp1.happyfree.top, port: 443, type: trojan, password: 6578df36-8b6f-4411-b42a-521877145573, sni: jp1.happyfree.top, skip-cert-verify: true, udp: true}
+  - {name: NONE 8, server: 20011.purefast2.com, port: 20011, type: trojan, password: 0989fa4f-7b43-34fd-8f7f-ce06427dce06, sni: 20011.purefast2.com, skip-cert-verify: true, udp: true}
+  - {name: US_310, server: kh.iamnotagoodman.com, port: 443, type: trojan, password: 4f8c0e41-dbdb-40f1-99cb-2c2a0b909b52, sni: kh.iamnotagoodman.com, skip-cert-verify: true, udp: true}
+  - {name: NONE 9, server: 20012.purefast2.com, port: 20012, type: trojan, password: 83a3b688-04e5-3c28-85b7-82698a174e41, sni: 20012.purefast2.com, skip-cert-verify: true, udp: true}
+  - {name: NONE 10, server: 138.2.113.248, port: 443, type: trojan, password: 9c822f05-cfdc-479a-9534-60f3d4127435, skip-cert-verify: true, udp: true}
+  - {name: NONE 11, server: h15r.centaur.network, port: 16804, type: trojan, password: 6eab3d62-eeb2-4b07-a174-944a09fe805a, sni: h15r.centaur.network, skip-cert-verify: true, udp: true}
   - {name: 美国(油管:破解资源君2.0) 14, server: 172.64.154.222, port: 443, type: vmess, uuid: fcfaec91-6096-44d8-956c-7868d9e874b1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: lg1.cfcdn1.xyz}, udp: true}
-  - {name: NONE 10, server: sg.liangyuandian.top, port: 443, type: trojan, password: b341f309-7e2b-45c4-a316-9e23037e3711, sni: sg.liangyuandian.top, skip-cert-verify: true, udp: true}
-  - {name: NONE 11, server: 129.146.190.42, port: 443, type: trojan, password: dbf9bf9c-2c3f-474a-8031-d4c00666a989, skip-cert-verify: true, udp: true}
-  - {name: NONE 12, server: 60.72img.xyz, port: 443, type: trojan, password: 81d93f62-15a2-4994-adb9-0b5d906aac7e, sni: 60.72img.xyz, skip-cert-verify: true, udp: true}
-  - {name: NONE 13, server: content-provider26.cdn-delivery.akamaicd.com, port: 443, type: trojan, password: origin, sni: content-provider26.cdn-delivery.akamaicd.com, skip-cert-verify: true, udp: true}
-  - {name: US_1085, server: 47.243.36.34, port: 55986, type: vmess, uuid: 87ed289f-cae3-49b4-bbe3-23da298c0e81, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [47.243.36.34]}}, udp: true}
-  - {name: NONE 14, server: ap.liangyuandian.top, port: 443, type: trojan, password: 18304160-03d4-4c55-95c1-586c0a5f3a0a, sni: ap.liangyuandian.top, skip-cert-verify: true, udp: true}
-  - {name: CN 13 → openitsub.com, server: kqs-unicom.gatknqh.cn, port: 51875, type: ss, cipher: aes-256-gcm, password: fd46c872-b3c7-4276-a9fd-bc00ba07de8b, udp: true}
-  - {name: github.com/freefq - 美国CloudFlare节点 18, server: uicdn.cf, port: 80, type: vmess, uuid: c6747da4-fb2e-4a2a-bdb7-8614bdd6b0b3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /sshkit/1736960111/635cb6dd4206c/, ws-headers: {Host: sg3-v2ray.sshkit.org}, udp: true}
-  - {name: github.com/freefq - 越南  2, server: 103.98.151.144, port: 80, type: vmess, uuid: 7fd77cee-282f-4f59-8e78-27146725ba89, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: dl.ops.kgvn.garenanow.com}, udp: true}
-  - {name: SG 9 → openitsub.com, server: 8.218.80.207, port: 58793, type: vmess, uuid: 652919af-4b0f-4211-8f06-952958d05038, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [8.218.80.207]}}, udp: true}
+  - {name: NONE 12, server: v2cross.com.04.v2ce.com, port: 443, type: trojan, password: vGWCNNfBHwSY6m6M, sni: v2cross.com.04.v2ce.com, skip-cert-verify: true, udp: true}
+  - {name: NONE 13, server: 42.240.131.142, port: 3389, type: trojan, password: 36fe28a331638747, skip-cert-verify: true, udp: true}
+  - {name: NONE 14, server: 20007.purefast2.com, port: 20007, type: trojan, password: bab40563-cafe-39c1-9d76-c3e627d73758, sni: 20007.purefast2.com, skip-cert-verify: true, udp: true}
+  - {name: 美国(油管:破解资源君2.0) 28, server: 138.2.122.225, port: 443, type: vmess, uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: lg30.cfcdn3.xyz}, udp: true}
+  - {name: NONE 15, server: 20001.purefast2.com, port: 20001, type: trojan, password: 83a3b688-04e5-3c28-85b7-82698a174e41, sni: 20001.purefast2.com, skip-cert-verify: true, udp: true}
+  - {name: NONE 16, server: 20012.purefast2.com, port: 20012, type: trojan, password: a71df8e7-d563-3ebc-a26a-168c8dc8c9f3, sni: 20012.purefast2.com, skip-cert-verify: true, udp: true}
+  - {name: NONE 17, server: 20007.purefast2.com, port: 20007, type: trojan, password: 83a3b688-04e5-3c28-85b7-82698a174e41, sni: 20007.purefast2.com, skip-cert-verify: true, udp: true}
+  - {name: NONE 18, server: 106.75.154.24, port: 3389, type: trojan, password: 182228812d1e0f23, skip-cert-verify: true, udp: true}
+  - {name: NONE 19, server: 20015.purefast2.com, port: 20015, type: trojan, password: 83a3b688-04e5-3c28-85b7-82698a174e41, sni: 20015.purefast2.com, skip-cert-verify: true, udp: true}
+  - {name: NONE 20, server: zf1.windowsupdate1.com, port: 50080, type: trojan, password: 275d9aa8-b271-43d1-b1cf-1f3e6e881047, sni: zf1.windowsupdate1.com, skip-cert-verify: true, udp: true}
+  - {name: NONE 21, server: 20011.purefast2.com, port: 20011, type: trojan, password: bab40563-cafe-39c1-9d76-c3e627d73758, sni: 20011.purefast2.com, skip-cert-verify: true, udp: true}
+  - {name: NONE 22, server: ap.liangyuandian.top, port: 443, type: trojan, password: b341f309-7e2b-45c4-a316-9e23037e3711, sni: ap.liangyuandian.top, skip-cert-verify: true, udp: true}
+  - {name: NONE 23, server: 106.75.173.173, port: 3389, type: trojan, password: 182228812d1e0f23, skip-cert-verify: true, udp: true}
+  - {name: NONE 24, server: zf1.windowsupdate1.com, port: 50030, type: trojan, password: 275d9aa8-b271-43d1-b1cf-1f3e6e881047, sni: zf1.windowsupdate1.com, skip-cert-verify: true, udp: true}
+  - {name: NONE 25, server: 223.111.202.148, port: 30040, type: trojan, password: ae7cc604-d970-4200-9a9b-eb45087b4fc1, skip-cert-verify: true, udp: true}
+  - {name: NONE 26, server: p3r.centaur.network, port: 16802, type: trojan, password: e199b516-00f9-469e-9ee5-fe609b4bc34e, sni: p3r.centaur.network, skip-cert-verify: true, udp: true}
+  - {name: NONE 27, server: de.tjvpn.org, port: 443, type: trojan, password: c60fbf90-4b55-11ed-b935-225401db9d57, sni: de.tjvpn.org, skip-cert-verify: true, udp: true}
+  - {name: NONE 28, server: zf1.windowsupdate1.com, port: 50040, type: trojan, password: 275d9aa8-b271-43d1-b1cf-1f3e6e881047, sni: zf1.windowsupdate1.com, skip-cert-verify: true, udp: true}
+  - {name: NONE 29, server: 20002.purefast2.com, port: 20002, type: trojan, password: a1d4c471-61d1-3f61-8502-63b14b8b56be, sni: 20002.purefast2.com, skip-cert-verify: true, udp: true}
+  - {name: CN_65, server: 20013.purefast2.com, port: 20013, type: trojan, password: bab40563-cafe-39c1-9d76-c3e627d73758, sni: 20013.purefast2.com, skip-cert-verify: true, udp: true}
+  - {name: NONE 30, server: 120.132.12.22, port: 3389, type: trojan, password: 3c4e10af98c30972, skip-cert-verify: true, udp: true}
+  - {name: NONE 31, server: lux.iamnotagoodman.com, port: 443, type: trojan, password: 4f8c0e41-dbdb-40f1-99cb-2c2a0b909b52, sni: lux.iamnotagoodman.com, skip-cert-verify: true, udp: true}
+  - {name: NONE 32, server: 211.72.35.155, port: 3389, type: trojan, password: b09d2aaa443af97a, skip-cert-verify: true, udp: true}
+  - {name: NONE 33, server: dba.happyfree.top, port: 443, type: trojan, password: 6578df36-8b6f-4411-b42a-521877145573, sni: dba.happyfree.top, skip-cert-verify: true, udp: true}
+  - {name: NONE 34, server: 223.111.202.148, port: 30070, type: trojan, password: 6b4ced5e-835a-4a7a-9d03-6a46e94668cb, skip-cert-verify: true, udp: true}
+  - {name: NONE 35, server: zf1.windowsupdate1.com, port: 50020, type: trojan, password: 275d9aa8-b271-43d1-b1cf-1f3e6e881047, sni: zf1.windowsupdate1.com, skip-cert-verify: true, udp: true}
+  - {name: NONE 36, server: kr01.happyfree.top, port: 443, type: trojan, password: 6578df36-8b6f-4411-b42a-521877145573, sni: kr01.happyfree.top, skip-cert-verify: true, udp: true}
+  - {name: NONE 37, server: 129.146.190.42, port: 443, type: trojan, password: dbf9bf9c-2c3f-474a-8031-d4c00666a989, skip-cert-verify: true, udp: true}
+  - {name: NONE 38, server: v1r.centaur.network, port: 16803, type: trojan, password: 86114b8a-078f-4c7b-acdd-bfc91b2e9a3b, sni: v1r.centaur.network, skip-cert-verify: true, udp: true}
+  - {name: NONE 39, server: 20004.purefast2.com, port: 20004, type: trojan, password: bab40563-cafe-39c1-9d76-c3e627d73758, sni: 20004.purefast2.com, skip-cert-verify: true, udp: true}
+  - {name: NONE 40, server: 20005.purefast2.com, port: 20005, type: trojan, password: bab40563-cafe-39c1-9d76-c3e627d73758, sni: 20005.purefast2.com, skip-cert-verify: true, udp: true}
+  - {name: NONE 41, server: 106.75.239.176, port: 3389, type: trojan, password: 3febb05ea76a940f, skip-cert-verify: true, udp: true}
+  - {name: NONE 42, server: 20002.purefast2.com, port: 20002, type: trojan, password: a71df8e7-d563-3ebc-a26a-168c8dc8c9f3, sni: 20002.purefast2.com, skip-cert-verify: true, udp: true}
+  - {name: NONE 43, server: 106.75.157.65, port: 3389, type: trojan, password: 8b475d9e868e43e0, skip-cert-verify: true, udp: true}
+  - {name: NONE 44, server: v1r.centaur.network, port: 16805, type: trojan, password: 86114b8a-078f-4c7b-acdd-bfc91b2e9a3b, sni: v1r.centaur.network, skip-cert-verify: true, udp: true}
+  - {name: NONE 45, server: 20002.purefast2.com, port: 20002, type: trojan, password: 83a3b688-04e5-3c28-85b7-82698a174e41, sni: 20002.purefast2.com, skip-cert-verify: true, udp: true}
+  - {name: NONE 46, server: zf1.windowsupdate1.com, port: 50060, type: trojan, password: 275d9aa8-b271-43d1-b1cf-1f3e6e881047, sni: zf1.windowsupdate1.com, skip-cert-verify: true, udp: true}
+  - {name: NONE 47, server: 110.80.3.24, port: 21004, type: trojan, password: f97edc29-1c8b-49d7-80b2-c246984a6f64, skip-cert-verify: true, udp: true}
+  - {name: NONE 48, server: h15r.centaur.network, port: 16802, type: trojan, password: 6eab3d62-eeb2-4b07-a174-944a09fe805a, sni: h15r.centaur.network, skip-cert-verify: true, udp: true}
+  - {name: 台湾(油管:破解资源君2.0), server: tw.xibai6.top, port: 31009, type: trojan, password: ca2345ba-46e7-3991-b1b7-45d18954caf1, sni: tw.xibai6.top, skip-cert-verify: true, udp: true}
+  - {name: NONE 49, server: zf1.windowsupdate1.com, port: 50010, type: trojan, password: 275d9aa8-b271-43d1-b1cf-1f3e6e881047, sni: zf1.windowsupdate1.com, skip-cert-verify: true, udp: true}
+  - {name: NONE 50, server: 110.80.3.24, port: 21001, type: trojan, password: f97edc29-1c8b-49d7-80b2-c246984a6f64, skip-cert-verify: true, udp: true}
+  - {name: NONE 51, server: 223.111.202.148, port: 30020, type: trojan, password: 6b4ced5e-835a-4a7a-9d03-6a46e94668cb, skip-cert-verify: true, udp: true}
+  - {name: NONE 52, server: 223.111.202.148, port: 30100, type: trojan, password: 6b4ced5e-835a-4a7a-9d03-6a46e94668cb, skip-cert-verify: true, udp: true}
+  - {name: NONE 53, server: 20013.purefast2.com, port: 20013, type: trojan, password: 357827e5-a45d-3f09-9b73-ef4431dfb323, sni: 20013.purefast2.com, skip-cert-verify: true, udp: true}
+  - {name: NONE 54, server: 20013.purefast2.com, port: 20013, type: trojan, password: a71df8e7-d563-3ebc-a26a-168c8dc8c9f3, sni: 20013.purefast2.com, skip-cert-verify: true, udp: true}
+  - {name: CN 24 → openitsub.com, server: bs3.jymzffbquawl.com, port: 6601, type: ss, cipher: rc4-md5, password: RenzheCloudSS, plugin: obfs, plugin-opts: {mode: http, host: c7ea4198729.microsoft.com}, udp: true}
+  - {name: 台湾(油管:破解资源君2.0) 2, server: tw.xibai6.top, port: 31008, type: trojan, password: ca2345ba-46e7-3991-b1b7-45d18954caf1, sni: tw.xibai6.top, skip-cert-verify: true, udp: true}
+  - {name: NONE 55, server: 20013.purefast2.com, port: 20013, type: trojan, password: 83a3b688-04e5-3c28-85b7-82698a174e41, sni: 20013.purefast2.com, skip-cert-verify: true, udp: true}
+  - {name: NONE 56, server: 20003.purefast2.com, port: 20003, type: trojan, password: 83a3b688-04e5-3c28-85b7-82698a174e41, sni: 20003.purefast2.com, skip-cert-verify: true, udp: true}
+  - {name: " 2", server: hkg-cm.clsnet.online, port: 543, type: vmess, uuid: 7ee5a840-75d1-34a8-bd2a-187cdb286792, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: NONE 57, server: v1r.centaur.network, port: 16801, type: trojan, password: 86114b8a-078f-4c7b-acdd-bfc91b2e9a3b, sni: v1r.centaur.network, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 罗马尼亚  18, server: 46.102.156.61, port: 48080, type: vmess, uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: NONE 58, server: 223.111.202.148, port: 30050, type: trojan, password: 6b4ced5e-835a-4a7a-9d03-6a46e94668cb, skip-cert-verify: true, udp: true}
+  - {name: vpin-20.gito.cc:54328, server: vpin-20.gito.cc, port: 54328, type: ssr, cipher: aes-256-cfb, password: 9ifast, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 12965:7g0tCI, obfs-param: 27e6c12965.download.windowsupdate.com, udp: true}
+  - {name: NONE 59, server: 20004.purefast2.com, port: 20004, type: trojan, password: 07730e7a-427a-35b5-8095-b70a6535fd23, sni: 20004.purefast2.com, skip-cert-verify: true, udp: true}
+  - {name: NONE 60, server: 20010.purefast2.com, port: 20010, type: trojan, password: bab40563-cafe-39c1-9d76-c3e627d73758, sni: 20010.purefast2.com, skip-cert-verify: true, udp: true}
+  - {name: NONE 61, server: 20011.purefast2.com, port: 20011, type: trojan, password: 83a3b688-04e5-3c28-85b7-82698a174e41, sni: 20011.purefast2.com, skip-cert-verify: true, udp: true}
+  - {name: NONE 62, server: 223.111.202.148, port: 30010, type: trojan, password: 6b4ced5e-835a-4a7a-9d03-6a46e94668cb, skip-cert-verify: true, udp: true}
+  - {name: NONE 63, server: 20009.purefast2.com, port: 20009, type: trojan, password: 83a3b688-04e5-3c28-85b7-82698a174e41, sni: 20009.purefast2.com, skip-cert-verify: true, udp: true}
+  - {name: NONE 64, server: 20014.purefast2.com, port: 20014, type: trojan, password: 83a3b688-04e5-3c28-85b7-82698a174e41, sni: 20014.purefast2.com, skip-cert-verify: true, udp: true}
+  - {name: CN_87, server: 20004.purefast2.com, port: 20004, type: trojan, password: a1d4c471-61d1-3f61-8502-63b14b8b56be, sni: 20004.purefast2.com, skip-cert-verify: true, udp: true}
+  - {name: NONE 65, server: 20005.purefast2.com, port: 20005, type: trojan, password: 83a3b688-04e5-3c28-85b7-82698a174e41, sni: 20005.purefast2.com, skip-cert-verify: true, udp: true}
+  - {name: NONE 66, server: 120.132.12.54, port: 3389, type: trojan, password: 0cc6b4268dea0ba8, skip-cert-verify: true, udp: true}
+  - {name: CN_106, server: 20010.purefast2.com, port: 20010, type: trojan, password: 5f42a7e5-1b5a-3f89-a75a-306e68d8ac1a, sni: 20010.purefast2.com, skip-cert-verify: true, udp: true}
+  - {name: NONE 67, server: 20003.purefast2.com, port: 20003, type: trojan, password: a71df8e7-d563-3ebc-a26a-168c8dc8c9f3, sni: 20003.purefast2.com, skip-cert-verify: true, udp: true}
+  - {name: _68, server: v1r.centaur.network, port: 16804, type: trojan, password: 86114b8a-078f-4c7b-acdd-bfc91b2e9a3b, sni: v1r.centaur.network, skip-cert-verify: true, udp: true}
+  - {name: NONE 68, server: 23.247.137.70, port: 3389, type: trojan, password: d4e41ff772c7fd45, skip-cert-verify: true, udp: true}
+  - {name: NONE 69, server: 20010.purefast2.com, port: 20010, type: trojan, password: 83a3b688-04e5-3c28-85b7-82698a174e41, sni: 20010.purefast2.com, skip-cert-verify: true, udp: true}
+  - {name: NONE 70, server: 20006.purefast2.com, port: 20006, type: trojan, password: 83a3b688-04e5-3c28-85b7-82698a174e41, sni: 20006.purefast2.com, skip-cert-verify: true, udp: true}
+  - {name: NONE 71, server: 20008.purefast2.com, port: 20008, type: trojan, password: a71df8e7-d563-3ebc-a26a-168c8dc8c9f3, sni: 20008.purefast2.com, skip-cert-verify: true, udp: true}
+  - {name: NONE 72, server: 106.75.154.24, port: 3389, type: trojan, password: faf42aa0a9ad4c1e, skip-cert-verify: true, udp: true}
+  - {name: NONE 73, server: 106.75.128.213, port: 3389, type: trojan, password: 0cc6b4268dea0ba8, skip-cert-verify: true, udp: true}
+  - {name: NONE 74, server: 20000.purefast2.com, port: 20000, type: trojan, password: a71df8e7-d563-3ebc-a26a-168c8dc8c9f3, sni: 20000.purefast2.com, skip-cert-verify: true, udp: true}
+  - {name: NONE 75, server: zf1.windowsupdate1.com, port: 50070, type: trojan, password: 275d9aa8-b271-43d1-b1cf-1f3e6e881047, sni: zf1.windowsupdate1.com, skip-cert-verify: true, udp: true}
+  - {name: NONE 76, server: v1r.centaur.network, port: 16802, type: trojan, password: 86114b8a-078f-4c7b-acdd-bfc91b2e9a3b, sni: v1r.centaur.network, skip-cert-verify: true, udp: true}
+  - {name: RO 1 → openitsub.com, server: 46.102.156.61, port: 48080, type: vmess, uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: NONE 77, server: 20004.purefast2.com, port: 20004, type: trojan, password: a71df8e7-d563-3ebc-a26a-168c8dc8c9f3, sni: 20004.purefast2.com, skip-cert-verify: true, udp: true}
+  - {name: NONE 78, server: 20005.purefast2.com, port: 20005, type: trojan, password: a71df8e7-d563-3ebc-a26a-168c8dc8c9f3, sni: 20005.purefast2.com, skip-cert-verify: true, udp: true}
+  - {name: NONE 79, server: 20007.purefast2.com, port: 20007, type: trojan, password: a71df8e7-d563-3ebc-a26a-168c8dc8c9f3, sni: 20007.purefast2.com, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 美国  17, server: 155.248.241.52, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 155.248.241.52}, udp: true}
+  - {name: NONE 80, server: 19244tj.matrixxx888.com, port: 19244, type: trojan, password: 2147db6c-3b80-3f0e-add8-1dbabb9743ad, sni: 19244tj.matrixxx888.com, skip-cert-verify: true, udp: true}
+  - {name: 香港(油管:破解资源君2.0) 12, server: 167.179.32.53, port: 443, type: vmess, uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: lg30.cfcdn3.xyz}, udp: true}
+  - {name: NONE 81, server: 223.111.202.148, port: 30030, type: trojan, password: ae7cc604-d970-4200-9a9b-eb45087b4fc1, skip-cert-verify: true, udp: true}
   - {name: 美国(油管:破解资源君2.0) 33, server: 172.64.152.150, port: 443, type: vmess, uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /dongtaiwang.com, ws-headers: {Host: clash6.ssr-free.xyz}, udp: true}
   - {name: 亚洲(油管:破解资源君2.0) 2, server: 113.31.124.147, port: 443, type: vmess, uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: lg30.cfcdn3.xyz}, udp: true}
-  - {name: 欧洲(油管:破解资源君2.0) 24, server: 198.41.203.2, port: 443, type: vmess, uuid: 176b598f-445b-41ac-9d2a-430c5c4df26a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /dongtaiwang.com, ws-headers: {Host: clash1.trump2023.net}, udp: true}
-  - {name: 美国(油管:破解资源君2.0) 54, server: 141.101.114.200, port: 443, type: vmess, uuid: 0479eb9d-999d-4bff-ae3f-4f7cc440ce46, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /dongtaiwang.com, ws-headers: {Host: v2ray2.ssr-free2.xyz}, udp: true}
-  - {name: 香港(油管:破解资源君2.0) 12, server: 167.179.32.53, port: 443, type: vmess, uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: lg30.cfcdn3.xyz}, udp: true}
-  - {name: 美国(油管:破解资源君2.0) 55, server: 141.101.114.100, port: 443, type: vmess, uuid: 4679f00e-90ce-430d-9714-6a19367ba112, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /dongtaiwang.com, ws-headers: {Host: v2ray1.zhujicn2.org}, udp: true}
-  - {name: github.com/freefq - 台湾省台北市中华电信 25, server: 111.241.127.198, port: 39998, type: vmess, uuid: 67c50f6a-816d-3555-89b4-19dd29608f8b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 美国(油管:破解资源君2.0) 60, server: jm.jshsxxxy.top, port: 443, type: vmess, uuid: ac29ef42-7100-4fdd-a5ee-5bb07b146e61, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /MokonaModokiMkv2Rentry, ws-headers: {Host: jm.jshsxxxy.top}, udp: true}
-  - {name: RO 1 → openitsub.com, server: 46.102.156.61, port: 48080, type: vmess, uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 台湾(油管:破解资源君2.0) 2, server: tw.xibai6.top, port: 31008, type: trojan, password: ca2345ba-46e7-3991-b1b7-45d18954caf1, sni: tw.xibai6.top, skip-cert-verify: true, udp: true}
-  - {name: 美国(油管:破解资源君2.0) 42, server: 141.101.114.133, port: 443, type: vmess, uuid: fcfaec91-6096-44d8-956c-7868d9e874b1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: lg1.cfcdn1.xyz}, udp: true}
-  - {name: 德国(油管:破解资源君2.0) 2, server: 141.101.114.120, port: 443, type: vmess, uuid: 33aa57df-1c93-4318-9fce-e850437ee781, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /dongtaiwang.com, ws-headers: {Host: lg1.cfcdn3.xyz}, udp: true}
-  - {name: 欧洲(油管:破解资源君2.0) 13, server: 141.101.114.120, port: 443, type: vmess, uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: lg30.cfcdn3.xyz}, udp: true}
-  - {name: 欧洲(油管:破解资源君2.0) 12, server: 198.41.212.100, port: 443, type: vmess, uuid: 33aa57df-1c93-4318-9fce-e850437ee781, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /dongtaiwang.com, ws-headers: {Host: lg1.cfcdn3.xyz}, udp: true}
-  - {name: 香港(油管:破解资源君2.0) 5, server: 159.100.206.88, port: 443, type: vmess, uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: lg30.cfcdn3.xyz}, udp: true}
-  - {name: 美国(油管:破解资源君2.0) 11, server: 198.41.203.3, port: 443, type: vmess, uuid: 33aa57df-1c93-4318-9fce-e850437ee781, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /dongtaiwang.com, ws-headers: {Host: lg1.cfcdn3.xyz}, udp: true}
-  - {name: 欧洲(油管:破解资源君2.0) 17, server: 141.101.114.100, port: 443, type: vmess, uuid: 267a9f38-40d8-4ed6-ab58-cafc67e9c933, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /VHONOFZ3, ws-headers: {Host: lg1.cfcdn2.xyz}, udp: true}
-  - {name: 美国(油管:破解资源君2.0) 52, server: 66.212.20.3, port: 443, type: vmess, uuid: 0479eb9d-999d-4bff-ae3f-4f7cc440ce46, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /dongtaiwang.com, ws-headers: {Host: v2ray2.ssr-free2.xyz}, udp: true}
-  - {name: 欧洲(油管:破解资源君2.0) 12 2, server: zfd-moble.gatknqh.cn, port: 16131, type: vmess, uuid: f1d39fe1-bfa3-34ff-86a2-29250af03183, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 欧洲(油管:破解资源君2.0) 9, server: az.hk01.paopaocloud.cyou, port: 10018, type: vmess, uuid: d8c5b486-84bb-3887-a1d9-07455ea608f2, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: ssru.v2.us03.2yun.win}, udp: true}
-  - {name: 欧洲(油管:破解资源君2.0), server: 141.101.114.20, port: 443, type: vmess, uuid: 176b598f-445b-41ac-9d2a-430c5c4df26a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /dongtaiwang.com, ws-headers: {Host: clash1.trump2023.net}, udp: true}
-  - {name: SG 7 → openitsub.com, server: 8.210.1.44, port: 63020, type: vmess, uuid: 2afd0c9f-57fa-4773-8686-b480e8be5814, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [8.210.1.44]}}, udp: true}
-  - {name: 韩国(油管:破解资源君2.0) 4, server: 146.56.162.25, port: 443, type: vmess, uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: lg30.cfcdn3.xyz}, udp: true}
-  - {name: "", server: vde2.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /chat, ws-headers: {Host: vde2.0bad.com}, udp: true}
-  - {name: NONE 15, server: v2cross.com.04.v2ce.com, port: 443, type: trojan, password: vGWCNNfBHwSY6m6M, sni: v2cross.com.04.v2ce.com, skip-cert-verify: true, udp: true}
-  - {name: 日本(油管:破解资源君2.0), server: 47.91.23.182, port: 443, type: vmess, uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: lg30.cfcdn3.xyz}, udp: true}
-  - {name: NONE 16, server: ap.liangyuandian.top, port: 443, type: trojan, password: b341f309-7e2b-45c4-a316-9e23037e3711, sni: ap.liangyuandian.top, skip-cert-verify: true, udp: true}
-  - {name: LA_261, server: 8.218.83.148, port: 63239, type: vmess, uuid: bc035c93-4a47-4f06-8833-fadc03527539, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [8.218.83.148]}}, udp: true}
-  - {name: NONE 17, server: 20010.purefast2.com, port: 20010, type: trojan, password: 83a3b688-04e5-3c28-85b7-82698a174e41, sni: 20010.purefast2.com, skip-cert-verify: true, udp: true}
-  - {name: NONE 18, server: 20006.purefast2.com, port: 20006, type: trojan, password: 83a3b688-04e5-3c28-85b7-82698a174e41, sni: 20006.purefast2.com, skip-cert-verify: true, udp: true}
-  - {name: NONE 19, server: 20007.purefast2.com, port: 20007, type: trojan, password: a71df8e7-d563-3ebc-a26a-168c8dc8c9f3, sni: 20007.purefast2.com, skip-cert-verify: true, udp: true}
-  - {name: NONE 20, server: 20004.purefast2.com, port: 20004, type: trojan, password: a71df8e7-d563-3ebc-a26a-168c8dc8c9f3, sni: 20004.purefast2.com, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇭🇰HK-🇨🇦CA_150, server: ca.liangyuandian.top, port: 443, type: trojan, password: b7bc6b1c-610d-4d39-ad29-18a0d6902348, sni: ca.liangyuandian.top, skip-cert-verify: true, udp: true}
-  - {name: NONE 21, server: 20000.purefast2.com, port: 20000, type: trojan, password: a71df8e7-d563-3ebc-a26a-168c8dc8c9f3, sni: 20000.purefast2.com, skip-cert-verify: true, udp: true}
-  - {name: _68, server: v1r.centaur.network, port: 16804, type: trojan, password: 86114b8a-078f-4c7b-acdd-bfc91b2e9a3b, sni: v1r.centaur.network, skip-cert-verify: true, udp: true}
-  - {name: NONE 22, server: 20003.purefast2.com, port: 20003, type: trojan, password: a71df8e7-d563-3ebc-a26a-168c8dc8c9f3, sni: 20003.purefast2.com, skip-cert-verify: true, udp: true}
-  - {name: 欧洲(油管:破解资源君2.0) 4, server: zfd-moble.gatknqh.cn, port: 16131, type: vmess, uuid: f1d39fe1-bfa3-34ff-86a2-29250af03183, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 台湾(油管:破解资源君2.0), server: tw.xibai6.top, port: 31009, type: trojan, password: ca2345ba-46e7-3991-b1b7-45d18954caf1, sni: tw.xibai6.top, skip-cert-verify: true, udp: true}
-  - {name: 美国(油管:破解资源君2.0) 16, server: 141.101.115.100, port: 443, type: vmess, uuid: 267a9f38-40d8-4ed6-ab58-cafc67e9c933, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /VHONOFZ3, ws-headers: {Host: lg1.cfcdn2.xyz}, udp: true}
-  - {name: CN 11 → openitsub.com, server: 125.94.215.64, port: 45535, type: ss, cipher: chacha20-ietf-poly1305, password: 8a4b7ed7-3e24-48d5-93d2-2c58a2e8305d, udp: true}
-  - {name: 美国(油管:破解资源君2.0) 28, server: 138.2.122.225, port: 443, type: vmess, uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: lg30.cfcdn3.xyz}, udp: true}
-  - {name: NONE 23, server: trojan-ctb-sg01.globalssh.xyz, port: 443, type: trojan, password: !<str> 123456, sni: trojan-ctb-sg01.globalssh.xyz, skip-cert-verify: true, udp: true}
-  - {name: US_310, server: kh.iamnotagoodman.com, port: 443, type: trojan, password: 4f8c0e41-dbdb-40f1-99cb-2c2a0b909b52, sni: kh.iamnotagoodman.com, skip-cert-verify: true, udp: true}
-  - {name: 欧洲(油管:破解资源君2.0) 12 3, server: 159.100.206.88, port: 443, type: vmess, uuid: 0764a598-82c4-4b41-ba10-551a625beed5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /sshocean, ws-headers: {Host: uk2.v2rayserv.com}, udp: true}
-  - {name: 欧洲(油管:破解资源君2.0) 32, server: vau1.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /chat, ws-headers: {Host: vau1.0bad.com}, udp: true}
-  - {name: NONE 24, server: 211.72.35.155, port: 3389, type: trojan, password: b09d2aaa443af97a, skip-cert-verify: true, udp: true}
-  - {name: NONE 25, server: 20014.purefast2.com, port: 20014, type: trojan, password: 83a3b688-04e5-3c28-85b7-82698a174e41, sni: 20014.purefast2.com, skip-cert-verify: true, udp: true}
-  - {name: NONE 26, server: 20016.purefast2.com, port: 20016, type: trojan, password: 83a3b688-04e5-3c28-85b7-82698a174e41, sni: 20016.purefast2.com, skip-cert-verify: true, udp: true}
-  - {name: NONE 27, server: 20012.purefast2.com, port: 20012, type: trojan, password: a71df8e7-d563-3ebc-a26a-168c8dc8c9f3, sni: 20012.purefast2.com, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇭🇰HK-🇺🇸US_152, server: usa.liangyuandian.top, port: 443, type: trojan, password: b7bc6b1c-610d-4d39-ad29-18a0d6902348, sni: usa.liangyuandian.top, skip-cert-verify: true, udp: true}
-  - {name: NONE 28, server: 223.111.202.148, port: 30050, type: trojan, password: 6b4ced5e-835a-4a7a-9d03-6a46e94668cb, skip-cert-verify: true, udp: true}
-  - {name: NONE 29, server: 20008.purefast2.com, port: 20008, type: trojan, password: a71df8e7-d563-3ebc-a26a-168c8dc8c9f3, sni: 20008.purefast2.com, skip-cert-verify: true, udp: true}
-  - {name: CN_106, server: 20010.purefast2.com, port: 20010, type: trojan, password: 5f42a7e5-1b5a-3f89-a75a-306e68d8ac1a, sni: 20010.purefast2.com, skip-cert-verify: true, udp: true}
-  - {name: CN_87, server: 20004.purefast2.com, port: 20004, type: trojan, password: a1d4c471-61d1-3f61-8502-63b14b8b56be, sni: 20004.purefast2.com, skip-cert-verify: true, udp: true}
-  - {name: US 12 → openitsub.com, server: 100.42.78.170, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 100.42.78.170}, udp: true}
-  - {name: Relay_🇸🇬SG-🇯🇵JP_217, server: ap.liangyuandian.top, port: 443, type: trojan, password: 176196e4-7cf7-4561-87a9-21a1b4e344be, sni: ap.liangyuandian.top, skip-cert-verify: true, udp: true}
-  - {name: NONE 30, server: 20005.purefast2.com, port: 20005, type: trojan, password: 83a3b688-04e5-3c28-85b7-82698a174e41, sni: 20005.purefast2.com, skip-cert-verify: true, udp: true}
-  - {name: github.com/freefq - 罗马尼亚  18, server: 46.102.156.61, port: 48080, type: vmess, uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: NONE 31, server: 20013.purefast2.com, port: 20013, type: trojan, password: 83a3b688-04e5-3c28-85b7-82698a174e41, sni: 20013.purefast2.com, skip-cert-verify: true, udp: true}
-  - {name: US 11 → openitsub.com, server: 47.242.56.3, port: 37064, type: vmess, uuid: d2a10a17-6191-472c-896b-782331f49fb9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [47.242.56.3]}}, udp: true}
-  - {name: github.com/freefq - 美国  17, server: 155.248.241.52, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 155.248.241.52}, udp: true}
-  - {name: NONE 32, server: 20003.purefast2.com, port: 20003, type: trojan, password: 83a3b688-04e5-3c28-85b7-82698a174e41, sni: 20003.purefast2.com, skip-cert-verify: true, udp: true}
-  - {name: NONE 33, server: 20002.purefast2.com, port: 20002, type: trojan, password: 83a3b688-04e5-3c28-85b7-82698a174e41, sni: 20002.purefast2.com, skip-cert-verify: true, udp: true}
-  - {name: NONE 34, server: de.tjvpn.org, port: 443, type: trojan, password: c60fbf90-4b55-11ed-b935-225401db9d57, sni: de.tjvpn.org, skip-cert-verify: true, udp: true}
-  - {name: 美国-5.30MB/s(Youtube:不良林), server: 172.64.148.111, port: 443, type: vmess, uuid: f33957e8-372e-4fba-99ed-f4db32cce9e5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: fr2.cfcdn4.xyz}, udp: true}
-  - {name: CN_65, server: 20013.purefast2.com, port: 20013, type: trojan, password: bab40563-cafe-39c1-9d76-c3e627d73758, sni: 20013.purefast2.com, skip-cert-verify: true, udp: true}
+  - {name: NONE 82, server: 106.75.233.91, port: 3389, type: trojan, password: 3c4e10af98c30972, skip-cert-verify: true, udp: true}
+  - {name: NONE 83, server: 223.111.202.148, port: 30020, type: trojan, password: ae7cc604-d970-4200-9a9b-eb45087b4fc1, skip-cert-verify: true, udp: true}
+  - {name: NONE 84, server: 60.72img.xyz, port: 443, type: trojan, password: 81d93f62-15a2-4994-adb9-0b5d906aac7e, sni: 60.72img.xyz, skip-cert-verify: true, udp: true}
+  - {name: NONE 85, server: p3r.centaur.network, port: 16809, type: trojan, password: e199b516-00f9-469e-9ee5-fe609b4bc34e, sni: p3r.centaur.network, skip-cert-verify: true, udp: true}
+  - {name: NONE 86, server: 20010.purefast2.com, port: 20010, type: trojan, password: a71df8e7-d563-3ebc-a26a-168c8dc8c9f3, sni: 20010.purefast2.com, skip-cert-verify: true, udp: true}
+  - {name: CN 136 → openitsub.com, server: cdn-cn.nekocloud.cn, port: 19020, type: ssr, cipher: aes-128-cfb, password: iluulrzviik, protocol: auth_aes128_md5, obfs: plain, protocol-param: 135594:8SRFZ2, obfs-param: 43235135594.wns.windows.com, udp: true}
+  - {name: CN 117 → openitsub.com, server: cdn-cn.nekocloud.cn, port: 19093, type: ssr, cipher: aes-128-cfb, password: iluulrzviik, protocol: auth_aes128_md5, obfs: plain, protocol-param: 135594:8SRFZ2, obfs-param: 43235135594.wns.windows.com, udp: true}
+  - {name: CN 97 → openitsub.com, server: cdn-cn.nekocloud.cn, port: 18995, type: ssr, cipher: aes-128-cfb, password: iluulrzviik, protocol: auth_aes128_md5, obfs: plain, protocol-param: 135594:8SRFZ2, obfs-param: 43235135594.wns.windows.com, udp: true}
+  - {name: CN 148 → openitsub.com, server: cdn-cn.nekocloud.cn, port: 19027, type: ssr, cipher: aes-128-cfb, password: iluulrzviik, protocol: auth_aes128_md5, obfs: plain, protocol-param: 135594:8SRFZ2, obfs-param: 43235135594.wns.windows.com, udp: true}
+  - {name: 欧洲(油管:破解资源君2.0) 42, server: 198.244.148.214, port: 443, type: vmess, uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: lg30.cfcdn3.xyz}, udp: true}
+  - {name: CN 112 → openitsub.com, server: cdn-cn.nekocloud.cn, port: 19060, type: ssr, cipher: aes-128-cfb, password: iluulrzviik, protocol: auth_aes128_md5, obfs: plain, protocol-param: 135594:8SRFZ2, obfs-param: 43235135594.wns.windows.com, udp: true}
+  - {name: CN 101 → openitsub.com, server: cdn-cn.nekocloud.cn, port: 19051, type: ssr, cipher: aes-128-cfb, password: iluulrzviik, protocol: auth_aes128_md5, obfs: plain, protocol-param: 135594:8SRFZ2, obfs-param: 43235135594.wns.windows.com, udp: true}
+  - {name: CN 128 → openitsub.com, server: cdn-cn.nekocloud.cn, port: 19017, type: ssr, cipher: aes-128-cfb, password: iluulrzviik, protocol: auth_aes128_md5, obfs: plain, protocol-param: 135594:8SRFZ2, obfs-param: 43235135594.wns.windows.com, udp: true}
+  - {name: 法国(油管:破解资源君2.0), server: 152.228.191.232, port: 443, type: vmess, uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: lg30.cfcdn3.xyz}, udp: true}
+  - {name: 欧洲(油管:破解资源君2.0) 48, server: 51.75.70.34, port: 443, type: vmess, uuid: 176b598f-445b-41ac-9d2a-430c5c4df26a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /dongtaiwang.com, ws-headers: {Host: clash1.trump2023.net}, udp: true}
+  - {name: CN 129 → openitsub.com, server: cdn-cn.nekocloud.cn, port: 19025, type: ssr, cipher: aes-128-cfb, password: iluulrzviik, protocol: auth_aes128_md5, obfs: plain, protocol-param: 135594:8SRFZ2, obfs-param: 43235135594.wns.windows.com, udp: true}
+  - {name: CN 132 → openitsub.com, server: cdn-cn.nekocloud.cn, port: 19031, type: ssr, cipher: aes-128-cfb, password: iluulrzviik, protocol: auth_aes128_md5, obfs: plain, protocol-param: 135594:8SRFZ2, obfs-param: 43235135594.wns.windows.com, udp: true}
+  - {name: US 4 → openitsub.com, server: 161.129.34.102, port: 443, type: vmess, uuid: ec736482-173e-3eff-9114-b49df8056e7d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 161.129.34.102}, udp: true}
+  - {name: CN 91 → openitsub.com, server: cdn-cn.nekocloud.cn, port: 10003, type: ssr, cipher: aes-128-cfb, password: iluulrzviik, protocol: auth_aes128_md5, obfs: plain, protocol-param: 135594:8SRFZ2, obfs-param: 43235135594.wns.windows.com, udp: true}
+  - {name: CN 115 → openitsub.com, server: cdn-cn.nekocloud.cn, port: 19069, type: ssr, cipher: aes-128-cfb, password: iluulrzviik, protocol: auth_aes128_md5, obfs: plain, protocol-param: 135594:8SRFZ2, obfs-param: 43235135594.wns.windows.com, udp: true}
+  - {name: CN 126 → openitsub.com, server: cdn-cn.nekocloud.cn, port: 19015, type: ssr, cipher: aes-128-cfb, password: iluulrzviik, protocol: auth_aes128_md5, obfs: plain, protocol-param: 135594:8SRFZ2, obfs-param: 43235135594.wns.windows.com, udp: true}
+  - {name: CN 138 → openitsub.com, server: cdn-cn.nekocloud.cn, port: 19039, type: ssr, cipher: aes-128-cfb, password: iluulrzviik, protocol: auth_aes128_md5, obfs: plain, protocol-param: 135594:8SRFZ2, obfs-param: 43235135594.wns.windows.com, udp: true}
+  - {name: CN 107 → openitsub.com, server: cdn-cn.nekocloud.cn, port: 19070, type: ssr, cipher: aes-128-cfb, password: iluulrzviik, protocol: auth_aes128_md5, obfs: plain, protocol-param: 135594:8SRFZ2, obfs-param: 43235135594.wns.windows.com, udp: true}
+  - {name: CN 131 → openitsub.com, server: cdn-cn.nekocloud.cn, port: 19026, type: ssr, cipher: aes-128-cfb, password: iluulrzviik, protocol: auth_aes128_md5, obfs: plain, protocol-param: 135594:8SRFZ2, obfs-param: 43235135594.wns.windows.com, udp: true}
+  - {name: CN 143 → openitsub.com, server: shcuzxhk.eucdurl.me, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 55956:111111, obfs-param: "", udp: true}
+  - {name: CN 102 → openitsub.com, server: cdn-cn.nekocloud.cn, port: 19066, type: ssr, cipher: aes-128-cfb, password: iluulrzviik, protocol: auth_aes128_md5, obfs: plain, protocol-param: 135594:8SRFZ2, obfs-param: 43235135594.wns.windows.com, udp: true}
+  - {name: CN 104 → openitsub.com, server: cdn-cn.nekocloud.cn, port: 19054, type: ssr, cipher: aes-128-cfb, password: iluulrzviik, protocol: auth_aes128_md5, obfs: plain, protocol-param: 135594:8SRFZ2, obfs-param: 43235135594.wns.windows.com, udp: true}
+  - {name: CN 98 → openitsub.com, server: cdn-cn.nekocloud.cn, port: 18997, type: ssr, cipher: aes-128-cfb, password: iluulrzviik, protocol: auth_aes128_md5, obfs: plain, protocol-param: 135594:8SRFZ2, obfs-param: 43235135594.wns.windows.com, udp: true}
+  - {name: CN 96 → openitsub.com, server: cdn-cn.nekocloud.cn, port: 19052, type: ssr, cipher: aes-128-cfb, password: iluulrzviik, protocol: auth_aes128_md5, obfs: plain, protocol-param: 135594:8SRFZ2, obfs-param: 43235135594.wns.windows.com, udp: true}
+  - {name: CN 121 → openitsub.com, server: cdn-cn.nekocloud.cn, port: 19073, type: ssr, cipher: aes-128-cfb, password: iluulrzviik, protocol: auth_aes128_md5, obfs: plain, protocol-param: 135594:8SRFZ2, obfs-param: 43235135594.wns.windows.com, udp: true}
+  - {name: CN 94 → openitsub.com, server: cdn-cn.nekocloud.cn, port: 19053, type: ssr, cipher: aes-128-cfb, password: iluulrzviik, protocol: auth_aes128_md5, obfs: plain, protocol-param: 135594:8SRFZ2, obfs-param: 43235135594.wns.windows.com, udp: true}
+  - {name: CN 110 → openitsub.com, server: cdn-cn.nekocloud.cn, port: 19087, type: ssr, cipher: aes-128-cfb, password: iluulrzviik, protocol: auth_aes128_md5, obfs: plain, protocol-param: 135594:8SRFZ2, obfs-param: 43235135594.wns.windows.com, udp: true}
+  - {name: CN 139 → openitsub.com, server: cucshk4.debugex.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 55956:111111, obfs-param: "", udp: true}
+  - {name: CN 103 → openitsub.com, server: cdn-cn.nekocloud.cn, port: 19063, type: ssr, cipher: aes-128-cfb, password: iluulrzviik, protocol: auth_aes128_md5, obfs: plain, protocol-param: 135594:8SRFZ2, obfs-param: 43235135594.wns.windows.com, udp: true}
+  - {name: CN 88 → openitsub.com, server: cdn-cn.nekocloud.cn, port: 10004, type: ssr, cipher: aes-128-cfb, password: iluulrzviik, protocol: auth_aes128_md5, obfs: plain, protocol-param: 135594:8SRFZ2, obfs-param: 43235135594.wns.windows.com, udp: true}
+  - {name: CN 146 → openitsub.com, server: cdn-cn.nekocloud.cn, port: 19028, type: ssr, cipher: aes-128-cfb, password: iluulrzviik, protocol: auth_aes128_md5, obfs: plain, protocol-param: 135594:8SRFZ2, obfs-param: 43235135594.wns.windows.com, udp: true}
+  - {name: CN 122 → openitsub.com, server: cdn-cn.nekocloud.cn, port: 19005, type: ssr, cipher: aes-128-cfb, password: iluulrzviik, protocol: auth_aes128_md5, obfs: plain, protocol-param: 135594:8SRFZ2, obfs-param: 43235135594.wns.windows.com, udp: true}
+  - {name: CN 140 → openitsub.com, server: cdn-cn.nekocloud.cn, port: 19024, type: ssr, cipher: aes-128-cfb, password: iluulrzviik, protocol: auth_aes128_md5, obfs: plain, protocol-param: 135594:8SRFZ2, obfs-param: 43235135594.wns.windows.com, udp: true}
+  - {name: CN 114 → openitsub.com, server: cdn-cn.nekocloud.cn, port: 19086, type: ssr, cipher: aes-128-cfb, password: iluulrzviik, protocol: auth_aes128_md5, obfs: plain, protocol-param: 135594:8SRFZ2, obfs-param: 43235135594.wns.windows.com, udp: true}
+  - {name: CN 93 → openitsub.com, server: cdn-cn.nekocloud.cn, port: 18998, type: ssr, cipher: aes-128-cfb, password: iluulrzviik, protocol: auth_aes128_md5, obfs: plain, protocol-param: 135594:8SRFZ2, obfs-param: 43235135594.wns.windows.com, udp: true}
+  - {name: CN 90 → openitsub.com, server: cdn-cn.nekocloud.cn, port: 19058, type: ssr, cipher: aes-128-cfb, password: iluulrzviik, protocol: auth_aes128_md5, obfs: plain, protocol-param: 135594:8SRFZ2, obfs-param: 43235135594.wns.windows.com, udp: true}
+  - {name: US 8 → openitsub.com, server: 138.2.113.84, port: 443, type: trojan, password: b291d129-ee55-4801-a9b8-b5316e5c37b7, skip-cert-verify: true, udp: true}
+  - {name: CN 113 → openitsub.com, server: cdn-cn.nekocloud.cn, port: 19091, type: ssr, cipher: aes-128-cfb, password: iluulrzviik, protocol: auth_aes128_md5, obfs: plain, protocol-param: 135594:8SRFZ2, obfs-param: 43235135594.wns.windows.com, udp: true}
+  - {name: CN 127 → openitsub.com, server: cdn-cn.nekocloud.cn, port: 19019, type: ssr, cipher: aes-128-cfb, password: iluulrzviik, protocol: auth_aes128_md5, obfs: plain, protocol-param: 135594:8SRFZ2, obfs-param: 43235135594.wns.windows.com, udp: true}
+  - {name: CN 151 → openitsub.com, server: eduall.buzzline.org, port: 613, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 55956:111111, obfs-param: "", udp: true}
+  - {name: CN 87 → openitsub.com, server: cdn-cn.nekocloud.cn, port: 19056, type: ssr, cipher: aes-128-cfb, password: iluulrzviik, protocol: auth_aes128_md5, obfs: plain, protocol-param: 135594:8SRFZ2, obfs-param: 43235135594.wns.windows.com, udp: true}
+  - {name: CN 95 → openitsub.com, server: cdn-cn.nekocloud.cn, port: 10001, type: ssr, cipher: aes-128-cfb, password: iluulrzviik, protocol: auth_aes128_md5, obfs: plain, protocol-param: 135594:8SRFZ2, obfs-param: 43235135594.wns.windows.com, udp: true}
+  - {name: CN 100 → openitsub.com, server: cdn-cn.nekocloud.cn, port: 19061, type: ssr, cipher: aes-128-cfb, password: iluulrzviik, protocol: auth_aes128_md5, obfs: plain, protocol-param: 135594:8SRFZ2, obfs-param: 43235135594.wns.windows.com, udp: true}
+  - {name: CN 118 → openitsub.com, server: cdn-cn.nekocloud.cn, port: 19002, type: ssr, cipher: aes-128-cfb, password: iluulrzviik, protocol: auth_aes128_md5, obfs: plain, protocol-param: 135594:8SRFZ2, obfs-param: 43235135594.wns.windows.com, udp: true}
+  - {name: CN 137 → openitsub.com, server: cucshk4.debugex.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 55956:111111, obfs-param: "", udp: true}
+  - {name: CN 125 → openitsub.com, server: cdn-cn.nekocloud.cn, port: 19013, type: ssr, cipher: aes-128-cfb, password: iluulrzviik, protocol: auth_aes128_md5, obfs: plain, protocol-param: 135594:8SRFZ2, obfs-param: 43235135594.wns.windows.com, udp: true}
+  - {name: CN 119 → openitsub.com, server: cdn-cn.nekocloud.cn, port: 19001, type: ssr, cipher: aes-128-cfb, password: iluulrzviik, protocol: auth_aes128_md5, obfs: plain, protocol-param: 135594:8SRFZ2, obfs-param: 43235135594.wns.windows.com, udp: true}
+  - {name: CN 141 → openitsub.com, server: cdn-cn.nekocloud.cn, port: 19018, type: ssr, cipher: aes-128-cfb, password: iluulrzviik, protocol: auth_aes128_md5, obfs: plain, protocol-param: 135594:8SRFZ2, obfs-param: 43235135594.wns.windows.com, udp: true}
+  - {name: US 3 → openitsub.com, server: vde1.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /chat, ws-headers: {Host: vde1.0bad.com}, udp: true}
+  - {name: CN 150 → openitsub.com, server: eduall.buzzline.org, port: 614, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 55956:111111, obfs-param: "", udp: true}
+  - {name: CN 123 → openitsub.com, server: cdn-cn.nekocloud.cn, port: 19098, type: ssr, cipher: aes-128-cfb, password: iluulrzviik, protocol: auth_aes128_md5, obfs: plain, protocol-param: 135594:8SRFZ2, obfs-param: 43235135594.wns.windows.com, udp: true}
+  - {name: CN 108 → openitsub.com, server: cdn-cn.nekocloud.cn, port: 19076, type: ssr, cipher: aes-128-cfb, password: iluulrzviik, protocol: auth_aes128_md5, obfs: plain, protocol-param: 135594:8SRFZ2, obfs-param: 43235135594.wns.windows.com, udp: true}
+  - {name: US 2 → openitsub.com, server: 168.138.94.194, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 168.138.94.194}, udp: true}
+  - {name: CN 149 → openitsub.com, server: eduall.buzzline.org, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 55956:111111, obfs-param: "", udp: true}
+  - {name: CN 147 → openitsub.com, server: cdn-cn.nekocloud.cn, port: 19036, type: ssr, cipher: aes-128-cfb, password: iluulrzviik, protocol: auth_aes128_md5, obfs: plain, protocol-param: 135594:8SRFZ2, obfs-param: 43235135594.wns.windows.com, udp: true}
+  - {name: 欧洲(油管:破解资源君2.0) 11, server: 119.247.119.212, port: 443, type: vmess, uuid: 6093eefb-7ab6-41df-aba0-d5fa58147e10, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /reffs7y26g0ua, ws-headers: {Host: surongwei.eu.org}, udp: true}
+  - {name: CN 92 → openitsub.com, server: cdn-cn.nekocloud.cn, port: 10008, type: ssr, cipher: aes-128-cfb, password: iluulrzviik, protocol: auth_aes128_md5, obfs: plain, protocol-param: 135594:8SRFZ2, obfs-param: 43235135594.wns.windows.com, udp: true}
+  - {name: CN 145 → openitsub.com, server: eduall.buzzline.org, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 55956:111111, obfs-param: "", udp: true}
+  - {name: CN 130 → openitsub.com, server: cdn-cn.nekocloud.cn, port: 19012, type: ssr, cipher: aes-128-cfb, password: iluulrzviik, protocol: auth_aes128_md5, obfs: plain, protocol-param: 135594:8SRFZ2, obfs-param: 43235135594.wns.windows.com, udp: true}
+  - {name: 欧洲(油管:破解资源君2.0) 6, server: 220.130.80.179, port: 443, type: vmess, uuid: 70206490-8292-4242-b263-e7d11589362e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /down, ws-headers: {Host: wx.adbse.xyz}, udp: true}
+  - {name: CN 116 → openitsub.com, server: cdn-cn.nekocloud.cn, port: 19068, type: ssr, cipher: aes-128-cfb, password: iluulrzviik, protocol: auth_aes128_md5, obfs: plain, protocol-param: 135594:8SRFZ2, obfs-param: 43235135594.wns.windows.com, udp: true}
+  - {name: CN 144 → openitsub.com, server: eduall.buzzline.org, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 55956:111111, obfs-param: "", udp: true}
+  - {name: US 7 → openitsub.com, server: fhcarm2.gaox.ml, port: 443, type: trojan, password: f39bd244-f5fe-415c-8b98-a1e5250bf178, sni: fhcarm2.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: CN 124 → openitsub.com, server: cdn-cn.nekocloud.cn, port: 19006, type: ssr, cipher: aes-128-cfb, password: iluulrzviik, protocol: auth_aes128_md5, obfs: plain, protocol-param: 135594:8SRFZ2, obfs-param: 43235135594.wns.windows.com, udp: true}
+  - {name: US 8 → openitsub.com 2, server: 168.138.171.65, port: 443, type: vmess, uuid: 4af6fd9a-e8b4-46f2-da3a-207f4577656c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: CN 120 → openitsub.com, server: cdn-cn.nekocloud.cn, port: 19082, type: ssr, cipher: aes-128-cfb, password: iluulrzviik, protocol: auth_aes128_md5, obfs: plain, protocol-param: 135594:8SRFZ2, obfs-param: 43235135594.wns.windows.com, udp: true}
+  - {name: CN 89 → openitsub.com, server: cdn-cn.nekocloud.cn, port: 19041, type: ssr, cipher: aes-128-cfb, password: iluulrzviik, protocol: auth_aes128_md5, obfs: plain, protocol-param: 135594:8SRFZ2, obfs-param: 43235135594.wns.windows.com, udp: true}
+  - {name: CN 105 → openitsub.com, server: cdn-cn.nekocloud.cn, port: 19071, type: ssr, cipher: aes-128-cfb, password: iluulrzviik, protocol: auth_aes128_md5, obfs: plain, protocol-param: 135594:8SRFZ2, obfs-param: 43235135594.wns.windows.com, udp: true}
+  - {name: CN 29 → openitsub.com, server: pr3.jymzffbquawl.com, port: 6601, type: ss, cipher: rc4-md5, password: RenzheCloudSS, plugin: obfs, plugin-opts: {mode: http, host: c7ea4198729.microsoft.com}, udp: true}
+  - {name: CN 71 → openitsub.com, server: sh.cm.izhimajiasu.com, port: 45771, type: ss, cipher: chacha20-ietf-poly1305, password: 79a55a5b-4d2a-4143-8484-1cc5b3b471da, udp: true}
+  - {name: CN 16 → openitsub.com, server: pr1.jymzffbquawl.com, port: 3605, type: ss, cipher: rc4-md5, password: RenzheCloudSS, plugin: obfs, plugin-opts: {mode: http, host: c7ea4198729.microsoft.com}, udp: true}
+  - {name: CN 133 → openitsub.com, server: cdn-cn.nekocloud.cn, port: 19022, type: ssr, cipher: aes-128-cfb, password: iluulrzviik, protocol: auth_aes128_md5, obfs: plain, protocol-param: 135594:8SRFZ2, obfs-param: 43235135594.wns.windows.com, udp: true}
+  - {name: CN 26 → openitsub.com, server: pr3.jymzffbquawl.com, port: 6600, type: ss, cipher: rc4-md5, password: RenzheCloudSS, plugin: obfs, plugin-opts: {mode: http, host: c7ea4198729.microsoft.com}, udp: true}
+  - {name: CN 76 → openitsub.com, server: sh.cm.izhimajiasu.com, port: 45794, type: ss, cipher: chacha20-ietf-poly1305, password: 79a55a5b-4d2a-4143-8484-1cc5b3b471da, udp: true}
+  - {name: CN 61 → openitsub.com, server: sh.cm.izhimajiasu.com, port: 41712, type: ss, cipher: chacha20-ietf-poly1305, password: 79a55a5b-4d2a-4143-8484-1cc5b3b471da, udp: true}
+  - {name: CN 72 → openitsub.com, server: sh.cm.izhimajiasu.com, port: 45221, type: ss, cipher: chacha20-ietf-poly1305, password: 79a55a5b-4d2a-4143-8484-1cc5b3b471da, udp: true}
+  - {name: CN 54 → openitsub.com, server: cos-ap-beijing.westdatacloud.xyz, port: 20052, type: trojan, password: EFE0BE1C-2E13-0FF6-A24D-EBB4A43BC9E1, sni: cos-ap-beijing.westdatacloud.xyz, skip-cert-verify: true, udp: true}
+  - {name: TW 1 → openitsub.com, server: tw-tb-b.zc20200426.club, port: 39998, type: vmess, uuid: 67c50f6a-816d-3555-89b4-19dd29608f8b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: NONE 87, server: 211.72.35.155, port: 3389, type: trojan, password: 7b06d22a8a7c764f, skip-cert-verify: true, udp: true}
+  - {name: CN 31 → openitsub.com, server: bs3.jymzffbquawl.com, port: 4603, type: ss, cipher: rc4-md5, password: RenzheCloudSS, plugin: obfs, plugin-opts: {mode: http, host: c7ea4198729.microsoft.com}, udp: true}
+  - {name: CN 66 → openitsub.com, server: sh.cm.izhimajiasu.com, port: 45077, type: ss, cipher: chacha20-ietf-poly1305, password: 79a55a5b-4d2a-4143-8484-1cc5b3b471da, udp: true}
+  - {name: CN 41 → openitsub.com, server: pr3.jymzffbquawl.com, port: 5601, type: ss, cipher: rc4-md5, password: RenzheCloudSS, plugin: obfs, plugin-opts: {mode: http, host: c7ea4198729.microsoft.com}, udp: true}
+  - {name: NONE 88, server: jp.iamnotagoodman.com, port: 443, type: trojan, password: f8d19ba5-8684-45f2-8523-77dbea588955, sni: jp.iamnotagoodman.com, skip-cert-verify: true, udp: true}
+  - {name: CN 68 → openitsub.com, server: gz.cm.izhimajiasu.com, port: 45730, type: ss, cipher: chacha20-ietf-poly1305, password: 79a55a5b-4d2a-4143-8484-1cc5b3b471da, udp: true}
+  - {name: CN 44 → openitsub.com, server: pr3.jymzffbquawl.com, port: 3036, type: ss, cipher: rc4-md5, password: RenzheCloudSS, plugin: obfs, plugin-opts: {mode: http, host: c7ea4198729.microsoft.com}, udp: true}
+  - {name: NONE 89, server: de.iamnotagoodman.com, port: 443, type: trojan, password: 28bccca2-43d2-47f8-bd63-b1361ce7d362, sni: de.iamnotagoodman.com, skip-cert-verify: true, udp: true}
+  - {name: CN 34 → openitsub.com, server: bs3.jymzffbquawl.com, port: 5600, type: ss, cipher: rc4-md5, password: RenzheCloudSS, plugin: obfs, plugin-opts: {mode: http, host: c7ea4198729.microsoft.com}, udp: true}
+  - {name: CN 39 → openitsub.com, server: bs3.jymzffbquawl.com, port: 4602, type: ss, cipher: rc4-md5, password: RenzheCloudSS, plugin: obfs, plugin-opts: {mode: http, host: c7ea4198729.microsoft.com}, udp: true}
+  - {name: NONE 90, server: ru.iamnotagoodman.com, port: 443, type: trojan, password: f8d19ba5-8684-45f2-8523-77dbea588955, sni: ru.iamnotagoodman.com, skip-cert-verify: true, udp: true}
+  - {name: CN 12 → openitsub.com, server: bs2.jymzffbquawl.com, port: 3600, type: ss, cipher: rc4-md5, password: RenzheCloudSS, plugin: obfs, plugin-opts: {mode: http, host: c7ea4198729.microsoft.com}, udp: true}
+  - {name: CN 17 → openitsub.com, server: pr1.jymzffbquawl.com, port: 3607, type: ss, cipher: rc4-md5, password: RenzheCloudSS, plugin: obfs, plugin-opts: {mode: http, host: c7ea4198729.microsoft.com}, udp: true}
+  - {name: CN 30 → openitsub.com, server: bs3.jymzffbquawl.com, port: 4601, type: ss, cipher: rc4-md5, password: RenzheCloudSS, plugin: obfs, plugin-opts: {mode: http, host: c7ea4198729.microsoft.com}, udp: true}
+  - {name: CN 62 → openitsub.com, server: sh.cm.izhimajiasu.com, port: 45001, type: ss, cipher: chacha20-ietf-poly1305, password: 79a55a5b-4d2a-4143-8484-1cc5b3b471da, udp: true}
+  - {name: CN 106 → openitsub.com, server: cdn-cn.nekocloud.cn, port: 19072, type: ssr, cipher: aes-128-cfb, password: iluulrzviik, protocol: auth_aes128_md5, obfs: plain, protocol-param: 135594:8SRFZ2, obfs-param: 43235135594.wns.windows.com, udp: true}
+  - {name: CN 67 → openitsub.com, server: gz.cm.izhimajiasu.com, port: 39999, type: ss, cipher: chacha20-ietf-poly1305, password: 79a55a5b-4d2a-4143-8484-1cc5b3b471da, udp: true}
+  - {name: CN 109 → openitsub.com, server: cdn-cn.nekocloud.cn, port: 19065, type: ssr, cipher: aes-128-cfb, password: iluulrzviik, protocol: auth_aes128_md5, obfs: plain, protocol-param: 135594:8SRFZ2, obfs-param: 43235135594.wns.windows.com, udp: true}
+  - {name: CN 85 → openitsub.com, server: cdn-cn.nekocloud.cn, port: 18996, type: ssr, cipher: aes-128-cfb, password: iluulrzviik, protocol: auth_aes128_md5, obfs: plain, protocol-param: 135594:8SRFZ2, obfs-param: 43235135594.wns.windows.com, udp: true}
+  - {name: FR 2 → openitsub.com, server: 51.77.71.131, port: 443, type: trojan, password: Sp3eDVp, skip-cert-verify: true, udp: true}
+  - {name: NONE 91, server: usa.liangyuandian.top, port: 443, type: trojan, password: 176196e4-7cf7-4561-87a9-21a1b4e344be, sni: usa.liangyuandian.top, skip-cert-verify: true, udp: true}
+  - {name: CN 55 → openitsub.com, server: cos-ap-beijing.westdatacloud.top, port: 20052, type: trojan, password: 331931E5-8AB4-CBCB-CB56-065473727C5D, sni: cos-ap-beijing.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: CN 33 → openitsub.com, server: bs3.jymzffbquawl.com, port: 5603, type: ss, cipher: rc4-md5, password: RenzheCloudSS, plugin: obfs, plugin-opts: {mode: http, host: c7ea4198729.microsoft.com}, udp: true}
+  - {name: CN 15 → openitsub.com, server: bs1.jymzffbquawl.com, port: 3602, type: ss, cipher: rc4-md5, password: RenzheCloudSS, plugin: obfs, plugin-opts: {mode: http, host: c7ea4198729.microsoft.com}, udp: true}
+  - {name: CN 3 → openitsub.com, server: pr1.jymzffbquawl.com, port: 3604, type: ss, cipher: rc4-md5, password: RenzheCloudSS, plugin: obfs, plugin-opts: {mode: http, host: c7ea4198729.microsoft.com}, udp: true}
+  - {name: 欧洲(油管:破解资源君2.0) 20, server: jgwcc3.gaox.ml, port: 443, type: trojan, password: b291d129-ee55-4801-a9b8-b5316e5c37b7, sni: jgwcc3.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: NONE 92, server: 60.249.3.125, port: 3389, type: trojan, password: 182228812d1e0f23, skip-cert-verify: true, udp: true}
+  - {name: CN 35 → openitsub.com, server: bs1.jymzffbquawl.com, port: 3600, type: ss, cipher: rc4-md5, password: RenzheCloudSS, plugin: obfs, plugin-opts: {mode: http, host: c7ea4198729.microsoft.com}, udp: true}
+  - {name: NONE 93, server: download2hkt.windowsupdate.lol, port: 443, type: trojan, password: 7778e684-f435-4166-bf9e-0256cb28bf10, sni: download2hkt.windowsupdate.lol, skip-cert-verify: true, udp: true}
+  - {name: CN 77 → openitsub.com, server: cminit.debugspace.work, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 55956:111111, obfs-param: "", udp: true}
+  - {name: CN 84 → openitsub.com, server: sh.cm.izhimajiasu.com, port: 45004, type: ss, cipher: chacha20-ietf-poly1305, password: 79a55a5b-4d2a-4143-8484-1cc5b3b471da, udp: true}
+  - {name: CN 82 → openitsub.com, server: cnrefhk01.standurl.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 55956:111111, obfs-param: "", udp: true}
+  - {name: NONE 94, server: 211.72.35.157, port: 3389, type: trojan, password: 7b06d22a8a7c764f, skip-cert-verify: true, udp: true}
+  - {name: CN 83 → openitsub.com, server: cnrefhk2.standurl.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 55956:111111, obfs-param: "", udp: true}
+  - {name: NONE 95, server: download2hkt.windowsupdate.lol, port: 443, type: trojan, password: 5d07a7bd-3696-4bc2-ab37-e7082c86f5cb, sni: download2hkt.windowsupdate.lol, skip-cert-verify: true, udp: true}
+  - {name: CN 58 → openitsub.com, server: gz.cm.izhimajiasu.com, port: 45013, type: ss, cipher: chacha20-ietf-poly1305, password: 79a55a5b-4d2a-4143-8484-1cc5b3b471da, udp: true}
+  - {name: JP 8 → openitsub.com, server: 49.212.221.47, port: 2053, type: trojan, password: 96983eb4-c8f1-316e-ab00-500014ed3d8b, skip-cert-verify: true, udp: true}
+  - {name: CN 78 → openitsub.com, server: sh.cm.izhimajiasu.com, port: 45673, type: ss, cipher: chacha20-ietf-poly1305, password: 79a55a5b-4d2a-4143-8484-1cc5b3b471da, udp: true}
+  - {name: CN 46 → openitsub.com, server: pr3.jymzffbquawl.com, port: 5600, type: ss, cipher: rc4-md5, password: RenzheCloudSS, plugin: obfs, plugin-opts: {mode: http, host: c7ea4198729.microsoft.com}, udp: true}
+  - {name: CN 27 → openitsub.com, server: bs3.jymzffbquawl.com, port: 4600, type: ss, cipher: rc4-md5, password: RenzheCloudSS, plugin: obfs, plugin-opts: {mode: http, host: c7ea4198729.microsoft.com}, udp: true}
+  - {name: NONE 96, server: 152.67.160.174, port: 443, type: trojan, password: 54080134-2cba-4535-8599-95650bd9aa54, skip-cert-verify: true, udp: true}
+  - {name: CN 79 → openitsub.com, server: sh.cm.izhimajiasu.com, port: 45030, type: ss, cipher: chacha20-ietf-poly1305, password: 79a55a5b-4d2a-4143-8484-1cc5b3b471da, udp: true}
+  - {name: NONE 97, server: 211.72.35.154, port: 3389, type: trojan, password: 7b06d22a8a7c764f, skip-cert-verify: true, udp: true}
+  - {name: CN 14 → openitsub.com, server: bs1.jymzffbquawl.com, port: 3609, type: ss, cipher: rc4-md5, password: RenzheCloudSS, plugin: obfs, plugin-opts: {mode: http, host: c7ea4198729.microsoft.com}, udp: true}
+  - {name: CN 5 → openitsub.com, server: bs1.jymzffbquawl.com, port: 3605, type: ss, cipher: rc4-md5, password: RenzheCloudSS, plugin: obfs, plugin-opts: {mode: http, host: c7ea4198729.microsoft.com}, udp: true}
+  - {name: CN 111 → openitsub.com, server: cdn-cn.nekocloud.cn, port: 19089, type: ssr, cipher: aes-128-cfb, password: iluulrzviik, protocol: auth_aes128_md5, obfs: plain, protocol-param: 135594:8SRFZ2, obfs-param: 43235135594.wns.windows.com, udp: true}
+  - {name: CN 51 → openitsub.com, server: cos-ap-beijing.westdatacloud.xyz, port: 20052, type: trojan, password: 0C08119F-D81C-7BB6-A0AD-5D1D26A9B9E1, sni: cos-ap-beijing.westdatacloud.xyz, skip-cert-verify: true, udp: true}
+  - {name: CN 38 → openitsub.com, server: pr3.jymzffbquawl.com, port: 4600, type: ss, cipher: rc4-md5, password: RenzheCloudSS, plugin: obfs, plugin-opts: {mode: http, host: c7ea4198729.microsoft.com}, udp: true}
+  - {name: CN 13 → openitsub.com, server: pr1.jymzffbquawl.com, port: 3600, type: ss, cipher: rc4-md5, password: RenzheCloudSS, plugin: obfs, plugin-opts: {mode: http, host: c7ea4198729.microsoft.com}, udp: true}
+  - {name: CN 75 → openitsub.com, server: sh.cm.izhimajiasu.com, port: 45125, type: ss, cipher: chacha20-ietf-poly1305, password: 79a55a5b-4d2a-4143-8484-1cc5b3b471da, udp: true}
+  - {name: CN 69 → openitsub.com, server: sh.cm.izhimajiasu.com, port: 45325, type: ss, cipher: chacha20-ietf-poly1305, password: 79a55a5b-4d2a-4143-8484-1cc5b3b471da, udp: true}
+  - {name: GB 1 → openitsub.com, server: 144.24.150.126, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 144.24.150.126}, udp: true}
+  - {name: CN 56 → openitsub.com, server: cos-ap-beijing.westdatacloud.top, port: 20052, type: trojan, password: CBEB3A14-4164-69EE-CF9E-18AAD001BA54, sni: cos-ap-beijing.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: NONE 98, server: 60.249.3.230, port: 3389, type: trojan, password: 182228812d1e0f23, skip-cert-verify: true, udp: true}
+  - {name: CN 22 → openitsub.com, server: bs3.jymzffbquawl.com, port: 6603, type: ss, cipher: rc4-md5, password: RenzheCloudSS, plugin: obfs, plugin-opts: {mode: http, host: c7ea4198729.microsoft.com}, udp: true}
+  - {name: CN 53 → openitsub.com, server: cos-ap-beijing.westdatacloud.xyz, port: 20052, type: trojan, password: 5315F677-66DA-E326-6796-40451AC2B9EB, sni: cos-ap-beijing.westdatacloud.xyz, skip-cert-verify: true, udp: true}
+  - {name: CN 73 → openitsub.com, server: sh.cm.izhimajiasu.com, port: 45772, type: ss, cipher: chacha20-ietf-poly1305, password: 79a55a5b-4d2a-4143-8484-1cc5b3b471da, udp: true}
+  - {name: CN 74 → openitsub.com, server: sh.cm.izhimajiasu.com, port: 45313, type: ss, cipher: chacha20-ietf-poly1305, password: 79a55a5b-4d2a-4143-8484-1cc5b3b471da, udp: true}
+  - {name: CN 43 → openitsub.com, server: pr3.jymzffbquawl.com, port: 3026, type: ss, cipher: rc4-md5, password: RenzheCloudSS, plugin: obfs, plugin-opts: {mode: http, host: c7ea4198729.microsoft.com}, udp: true}
+  - {name: CN 6 → openitsub.com, server: bs1.jymzffbquawl.com, port: 3603, type: ss, cipher: rc4-md5, password: RenzheCloudSS, plugin: obfs, plugin-opts: {mode: http, host: c7ea4198729.microsoft.com}, udp: true}
+  - {name: US 11 → openitsub.com, server: 146.190.2.54, port: 443, type: vmess, uuid: 2a4918de-adce-4c4e-aa00-88a4227cf6ea, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /didi, ws-headers: {Host: 146.190.2.54}, udp: true}
+  - {name: NONE 99, server: 60.249.3.125, port: 3389, type: trojan, password: 3febb05ea76a940f, skip-cert-verify: true, udp: true}
+  - {name: CN 60 → openitsub.com, server: sh.cm.izhimajiasu.com, port: 45002, type: ss, cipher: chacha20-ietf-poly1305, password: 79a55a5b-4d2a-4143-8484-1cc5b3b471da, udp: true}
+  - {name: NONE 100, server: sg.iamnotagoodman.com, port: 443, type: trojan, password: f8d19ba5-8684-45f2-8523-77dbea588955, sni: sg.iamnotagoodman.com, skip-cert-verify: true, udp: true}
+  - {name: CN 52 → openitsub.com, server: cos-ap-beijing.westdatacloud.xyz, port: 20052, type: trojan, password: 6938D15E-3DFD-2697-C761-96BA3E33E402, sni: cos-ap-beijing.westdatacloud.xyz, skip-cert-verify: true, udp: true}
+  - {name: CN 37 → openitsub.com, server: bs3.jymzffbquawl.com, port: 5601, type: ss, cipher: rc4-md5, password: RenzheCloudSS, plugin: obfs, plugin-opts: {mode: http, host: c7ea4198729.microsoft.com}, udp: true}
+  - {name: CN 36 → openitsub.com, server: bs3.jymzffbquawl.com, port: 5602, type: ss, cipher: rc4-md5, password: RenzheCloudSS, plugin: obfs, plugin-opts: {mode: http, host: c7ea4198729.microsoft.com}, udp: true}
+  - {name: CN 19 → openitsub.com, server: pr1.jymzffbquawl.com, port: 3609, type: ss, cipher: rc4-md5, password: RenzheCloudSS, plugin: obfs, plugin-opts: {mode: http, host: c7ea4198729.microsoft.com}, udp: true}
+  - {name: CN 81 → openitsub.com, server: gz.cm.izhimajiasu.com, port: 57002, type: ss, cipher: chacha20-ietf-poly1305, password: 79a55a5b-4d2a-4143-8484-1cc5b3b471da, udp: true}
+  - {name: CN 18 → openitsub.com, server: pr1.jymzffbquawl.com, port: 3602, type: ss, cipher: rc4-md5, password: RenzheCloudSS, plugin: obfs, plugin-opts: {mode: http, host: c7ea4198729.microsoft.com}, udp: true}
+  - {name: NONE 101, server: download2hkt.windowsupdate.lol, port: 443, type: trojan, password: b1171e62-aad8-46dc-8014-1478a9aabb04, sni: download2hkt.windowsupdate.lol, skip-cert-verify: true, udp: true}
+  - {name: CN 10 → openitsub.com, server: pr1.jymzffbquawl.com, port: 3608, type: ss, cipher: rc4-md5, password: RenzheCloudSS, plugin: obfs, plugin-opts: {mode: http, host: c7ea4198729.microsoft.com}, udp: true}
+  - {name: NONE 102, server: de.iamnotagoodman.com, port: 443, type: trojan, password: 4f8c0e41-dbdb-40f1-99cb-2c2a0b909b52, sni: de.iamnotagoodman.com, skip-cert-verify: true, udp: true}
+  - {name: CN 9 → openitsub.com, server: bs1.jymzffbquawl.com, port: 3604, type: ss, cipher: rc4-md5, password: RenzheCloudSS, plugin: obfs, plugin-opts: {mode: http, host: c7ea4198729.microsoft.com}, udp: true}
+  - {name: NONE 103, server: jp.iamnotagoodman.com, port: 443, type: trojan, password: 2ac7fc8a-68b5-4809-8bd2-73a593bae292, sni: jp.iamnotagoodman.com, skip-cert-verify: true, udp: true}
+  - {name: CN 23 → openitsub.com, server: bs3.jymzffbquawl.com, port: 6602, type: ss, cipher: rc4-md5, password: RenzheCloudSS, plugin: obfs, plugin-opts: {mode: http, host: c7ea4198729.microsoft.com}, udp: true}
+  - {name: NONE 104, server: trs12.bolab.net, port: 443, type: trojan, password: 14bdba6dede262387ebdebaa706e1c90, sni: trs12.bolab.net, skip-cert-verify: true, udp: true}
+  - {name: CN 2 → openitsub.com, server: pr1.jymzffbquawl.com, port: 3603, type: ss, cipher: rc4-md5, password: RenzheCloudSS, plugin: obfs, plugin-opts: {mode: http, host: c7ea4198729.microsoft.com}, udp: true}
+  - {name: NONE 105, server: 31.72img.xyz, port: 443, type: trojan, password: 81d93f62-15a2-4994-adb9-0b5d906aac7e, sni: 31.72img.xyz, skip-cert-verify: true, udp: true}
+  - {name: CN 4 → openitsub.com, server: bs1.jymzffbquawl.com, port: 3606, type: ss, cipher: rc4-md5, password: RenzheCloudSS, plugin: obfs, plugin-opts: {mode: http, host: c7ea4198729.microsoft.com}, udp: true}
+  - {name: CN 11 → openitsub.com, server: bs1.jymzffbquawl.com, port: 3607, type: ss, cipher: rc4-md5, password: RenzheCloudSS, plugin: obfs, plugin-opts: {mode: http, host: c7ea4198729.microsoft.com}, udp: true}
+  - {name: CN 7 → openitsub.com, server: pr1.jymzffbquawl.com, port: 3601, type: ss, cipher: rc4-md5, password: RenzheCloudSS, plugin: obfs, plugin-opts: {mode: http, host: c7ea4198729.microsoft.com}, udp: true}
+  - {name: NONE 106, server: download2hkt.windowsupdate.lol, port: 443, type: trojan, password: b27c853c-714a-45a5-be55-6451595a1b69, sni: download2hkt.windowsupdate.lol, skip-cert-verify: true, udp: true}
+  - {name: NONE 107, server: ocrb1.happyfree.top, port: 443, type: trojan, password: 6578df36-8b6f-4411-b42a-521877145573, sni: ocrb1.happyfree.top, skip-cert-verify: true, udp: true}
+  - {name: NONE 108, server: 45.11.104.94, port: 3389, type: trojan, password: d4e41ff772c7fd45, skip-cert-verify: true, udp: true}
+  - {name: US 12 → openitsub.com, server: 155.248.241.52, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 155.248.241.52}, udp: true}
+  - {name: NONE 109, server: jgwcc2.gaox.ml, port: 443, type: trojan, password: 9c822f05-cfdc-479a-9534-60f3d4127435, sni: jgwcc2.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 美国CloudFlare节点 15, server: 172.67.225.31, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 38.72img.xyz}, udp: true}
+  - {name: NONE 110, server: lux.iamnotagoodman.com, port: 443, type: trojan, password: 2ac7fc8a-68b5-4809-8bd2-73a593bae292, sni: lux.iamnotagoodman.com, skip-cert-verify: true, udp: true}
+  - {name: NONE 111, server: 141.147.191.85, port: 28443, type: trojan, password: 750a29bf-0a40-437f-b120-38de74ae7eaf, skip-cert-verify: true, udp: true}
+  - {name: NONE 112, server: 32.72img.xyz, port: 443, type: trojan, password: 81d93f62-15a2-4994-adb9-0b5d906aac7e, sni: 32.72img.xyz, skip-cert-verify: true, udp: true}
+  - {name: HK_149, server: kh.iamnotagoodman.com, port: 443, type: trojan, password: f8d19ba5-8684-45f2-8523-77dbea588955, sni: kh.iamnotagoodman.com, skip-cert-verify: true, udp: true}
+  - {name: 美国(油管:破解资源君2.0) 19, server: cdn.chigua.tk, port: 443, type: vmess, uuid: bea4a9b4-2ba4-4ed6-8247-7ea68d7f0112, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /bea4a9b4, ws-headers: {Host: reduction-accomplish-entities-surname.trycloudflare.com}, udp: true}
+  - {name: SG 1 → openitsub.com, server: cdn.chigua.tk, port: 443, type: vmess, uuid: 2cc54dbd-d448-4cc0-b61c-1d1ba6317307, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /2cc54dbd, ws-headers: {Host: earth-identity-devel-pubmed.trycloudflare.com}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - SG 1 → openitsub.com
-      - HK_149
-      - Relay_🇸🇬SG-🇧🇩BD_219
-      - 香港(油管:破解资源君2.0) 4
-      - 德国(油管:破解资源君2.0) 16
       - NONE
-      - 美国(油管:破解资源君2.0) 19
-      - SG 13 → openitsub.com
+      - CN 8 → openitsub.com
       - NONE 2
+      - CN 20 → openitsub.com
+      - CN 142 → openitsub.com
+      - CN 86 → openitsub.com
+      - CN 25 → openitsub.com
+      - ""
+      - CN 21 → openitsub.com
       - NONE 3
       - NONE 4
       - NONE 5
-      - TW 1 → openitsub.com
-      - github.com/freefq - 俄罗斯  16
-      - US 3 → openitsub.com
-      - SG 3 → openitsub.com
-      - US 8 → openitsub.com
-      - SG 5 → openitsub.com
-      - 美国(油管:破解资源君2.0) 66
-      - CN 12 → openitsub.com
       - NONE 6
       - NONE 7
       - NONE 8
-      - 78.129.253.9:809
+      - US_310
       - NONE 9
-      - 美国(油管:破解资源君2.0) 14
       - NONE 10
       - NONE 11
+      - 美国(油管:破解资源君2.0) 14
       - NONE 12
       - NONE 13
-      - US_1085
       - NONE 14
-      - CN 13 → openitsub.com
-      - github.com/freefq - 美国CloudFlare节点 18
-      - github.com/freefq - 越南  2
-      - SG 9 → openitsub.com
-      - 美国(油管:破解资源君2.0) 33
-      - 亚洲(油管:破解资源君2.0) 2
-      - 欧洲(油管:破解资源君2.0) 24
-      - 美国(油管:破解资源君2.0) 54
-      - 香港(油管:破解资源君2.0) 12
-      - 美国(油管:破解资源君2.0) 55
-      - github.com/freefq - 台湾省台北市中华电信 25
-      - 美国(油管:破解资源君2.0) 60
-      - RO 1 → openitsub.com
-      - 台湾(油管:破解资源君2.0) 2
-      - 美国(油管:破解资源君2.0) 42
-      - 德国(油管:破解资源君2.0) 2
-      - 欧洲(油管:破解资源君2.0) 13
-      - 欧洲(油管:破解资源君2.0) 12
-      - 香港(油管:破解资源君2.0) 5
-      - 美国(油管:破解资源君2.0) 11
-      - 欧洲(油管:破解资源君2.0) 17
-      - 美国(油管:破解资源君2.0) 52
-      - 欧洲(油管:破解资源君2.0) 12 2
-      - 欧洲(油管:破解资源君2.0) 9
-      - 欧洲(油管:破解资源君2.0)
-      - SG 7 → openitsub.com
-      - 韩国(油管:破解资源君2.0) 4
-      - ""
+      - 美国(油管:破解资源君2.0) 28
       - NONE 15
-      - 日本(油管:破解资源君2.0)
       - NONE 16
-      - LA_261
       - NONE 17
       - NONE 18
       - NONE 19
       - NONE 20
-      - Relay_🇭🇰HK-🇨🇦CA_150
       - NONE 21
-      - _68
       - NONE 22
-      - 欧洲(油管:破解资源君2.0) 4
-      - 台湾(油管:破解资源君2.0)
-      - 美国(油管:破解资源君2.0) 16
-      - CN 11 → openitsub.com
-      - 美国(油管:破解资源君2.0) 28
       - NONE 23
-      - US_310
-      - 欧洲(油管:破解资源君2.0) 12 3
-      - 欧洲(油管:破解资源君2.0) 32
       - NONE 24
       - NONE 25
       - NONE 26
       - NONE 27
-      - Relay_🇭🇰HK-🇺🇸US_152
       - NONE 28
       - NONE 29
-      - CN_106
-      - CN_87
-      - US 12 → openitsub.com
-      - Relay_🇸🇬SG-🇯🇵JP_217
+      - CN_65
       - NONE 30
-      - github.com/freefq - 罗马尼亚  18
       - NONE 31
-      - US 11 → openitsub.com
-      - github.com/freefq - 美国  17
       - NONE 32
       - NONE 33
       - NONE 34
-      - 美国-5.30MB/s(Youtube:不良林)
-      - CN_65
+      - NONE 35
+      - NONE 36
+      - NONE 37
+      - NONE 38
+      - NONE 39
+      - NONE 40
+      - NONE 41
+      - NONE 42
+      - NONE 43
+      - NONE 44
+      - NONE 45
+      - NONE 46
+      - NONE 47
+      - NONE 48
+      - 台湾(油管:破解资源君2.0)
+      - NONE 49
+      - NONE 50
+      - NONE 51
+      - NONE 52
+      - NONE 53
+      - NONE 54
+      - CN 24 → openitsub.com
+      - 台湾(油管:破解资源君2.0) 2
+      - NONE 55
+      - NONE 56
+      - " 2"
+      - NONE 57
+      - github.com/freefq - 罗马尼亚  18
+      - NONE 58
+      - vpin-20.gito.cc:54328
+      - NONE 59
+      - NONE 60
+      - NONE 61
+      - NONE 62
+      - NONE 63
+      - NONE 64
+      - CN_87
+      - NONE 65
+      - NONE 66
+      - CN_106
+      - NONE 67
+      - _68
+      - NONE 68
+      - NONE 69
+      - NONE 70
+      - NONE 71
+      - NONE 72
+      - NONE 73
+      - NONE 74
+      - NONE 75
+      - NONE 76
+      - RO 1 → openitsub.com
+      - NONE 77
+      - NONE 78
+      - NONE 79
+      - github.com/freefq - 美国  17
+      - NONE 80
+      - 香港(油管:破解资源君2.0) 12
+      - NONE 81
+      - 美国(油管:破解资源君2.0) 33
+      - 亚洲(油管:破解资源君2.0) 2
+      - NONE 82
+      - NONE 83
+      - NONE 84
+      - NONE 85
+      - NONE 86
+      - CN 136 → openitsub.com
+      - CN 117 → openitsub.com
+      - CN 97 → openitsub.com
+      - CN 148 → openitsub.com
+      - 欧洲(油管:破解资源君2.0) 42
+      - CN 112 → openitsub.com
+      - CN 101 → openitsub.com
+      - CN 128 → openitsub.com
+      - 法国(油管:破解资源君2.0)
+      - 欧洲(油管:破解资源君2.0) 48
+      - CN 129 → openitsub.com
+      - CN 132 → openitsub.com
+      - US 4 → openitsub.com
+      - CN 91 → openitsub.com
+      - CN 115 → openitsub.com
+      - CN 126 → openitsub.com
+      - CN 138 → openitsub.com
+      - CN 107 → openitsub.com
+      - CN 131 → openitsub.com
+      - CN 143 → openitsub.com
+      - CN 102 → openitsub.com
+      - CN 104 → openitsub.com
+      - CN 98 → openitsub.com
+      - CN 96 → openitsub.com
+      - CN 121 → openitsub.com
+      - CN 94 → openitsub.com
+      - CN 110 → openitsub.com
+      - CN 139 → openitsub.com
+      - CN 103 → openitsub.com
+      - CN 88 → openitsub.com
+      - CN 146 → openitsub.com
+      - CN 122 → openitsub.com
+      - CN 140 → openitsub.com
+      - CN 114 → openitsub.com
+      - CN 93 → openitsub.com
+      - CN 90 → openitsub.com
+      - US 8 → openitsub.com
+      - CN 113 → openitsub.com
+      - CN 127 → openitsub.com
+      - CN 151 → openitsub.com
+      - CN 87 → openitsub.com
+      - CN 95 → openitsub.com
+      - CN 100 → openitsub.com
+      - CN 118 → openitsub.com
+      - CN 137 → openitsub.com
+      - CN 125 → openitsub.com
+      - CN 119 → openitsub.com
+      - CN 141 → openitsub.com
+      - US 3 → openitsub.com
+      - CN 150 → openitsub.com
+      - CN 123 → openitsub.com
+      - CN 108 → openitsub.com
+      - US 2 → openitsub.com
+      - CN 149 → openitsub.com
+      - CN 147 → openitsub.com
+      - 欧洲(油管:破解资源君2.0) 11
+      - CN 92 → openitsub.com
+      - CN 145 → openitsub.com
+      - CN 130 → openitsub.com
+      - 欧洲(油管:破解资源君2.0) 6
+      - CN 116 → openitsub.com
+      - CN 144 → openitsub.com
+      - US 7 → openitsub.com
+      - CN 124 → openitsub.com
+      - US 8 → openitsub.com 2
+      - CN 120 → openitsub.com
+      - CN 89 → openitsub.com
+      - CN 105 → openitsub.com
+      - CN 29 → openitsub.com
+      - CN 71 → openitsub.com
+      - CN 16 → openitsub.com
+      - CN 133 → openitsub.com
+      - CN 26 → openitsub.com
+      - CN 76 → openitsub.com
+      - CN 61 → openitsub.com
+      - CN 72 → openitsub.com
+      - CN 54 → openitsub.com
+      - TW 1 → openitsub.com
+      - NONE 87
+      - CN 31 → openitsub.com
+      - CN 66 → openitsub.com
+      - CN 41 → openitsub.com
+      - NONE 88
+      - CN 68 → openitsub.com
+      - CN 44 → openitsub.com
+      - NONE 89
+      - CN 34 → openitsub.com
+      - CN 39 → openitsub.com
+      - NONE 90
+      - CN 12 → openitsub.com
+      - CN 17 → openitsub.com
+      - CN 30 → openitsub.com
+      - CN 62 → openitsub.com
+      - CN 106 → openitsub.com
+      - CN 67 → openitsub.com
+      - CN 109 → openitsub.com
+      - CN 85 → openitsub.com
+      - FR 2 → openitsub.com
+      - NONE 91
+      - CN 55 → openitsub.com
+      - CN 33 → openitsub.com
+      - CN 15 → openitsub.com
+      - CN 3 → openitsub.com
+      - 欧洲(油管:破解资源君2.0) 20
+      - NONE 92
+      - CN 35 → openitsub.com
+      - NONE 93
+      - CN 77 → openitsub.com
+      - CN 84 → openitsub.com
+      - CN 82 → openitsub.com
+      - NONE 94
+      - CN 83 → openitsub.com
+      - NONE 95
+      - CN 58 → openitsub.com
+      - JP 8 → openitsub.com
+      - CN 78 → openitsub.com
+      - CN 46 → openitsub.com
+      - CN 27 → openitsub.com
+      - NONE 96
+      - CN 79 → openitsub.com
+      - NONE 97
+      - CN 14 → openitsub.com
+      - CN 5 → openitsub.com
+      - CN 111 → openitsub.com
+      - CN 51 → openitsub.com
+      - CN 38 → openitsub.com
+      - CN 13 → openitsub.com
+      - CN 75 → openitsub.com
+      - CN 69 → openitsub.com
+      - GB 1 → openitsub.com
+      - CN 56 → openitsub.com
+      - NONE 98
+      - CN 22 → openitsub.com
+      - CN 53 → openitsub.com
+      - CN 73 → openitsub.com
+      - CN 74 → openitsub.com
+      - CN 43 → openitsub.com
+      - CN 6 → openitsub.com
+      - US 11 → openitsub.com
+      - NONE 99
+      - CN 60 → openitsub.com
+      - NONE 100
+      - CN 52 → openitsub.com
+      - CN 37 → openitsub.com
+      - CN 36 → openitsub.com
+      - CN 19 → openitsub.com
+      - CN 81 → openitsub.com
+      - CN 18 → openitsub.com
+      - NONE 101
+      - CN 10 → openitsub.com
+      - NONE 102
+      - CN 9 → openitsub.com
+      - NONE 103
+      - CN 23 → openitsub.com
+      - NONE 104
+      - CN 2 → openitsub.com
+      - NONE 105
+      - CN 4 → openitsub.com
+      - CN 11 → openitsub.com
+      - CN 7 → openitsub.com
+      - NONE 106
+      - NONE 107
+      - NONE 108
+      - US 12 → openitsub.com
+      - NONE 109
+      - github.com/freefq - 美国CloudFlare节点 15
+      - NONE 110
+      - NONE 111
+      - NONE 112
+      - HK_149
+      - 美国(油管:破解资源君2.0) 19
+      - SG 1 → openitsub.com
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - SG 1 → openitsub.com
-      - HK_149
-      - Relay_🇸🇬SG-🇧🇩BD_219
-      - 香港(油管:破解资源君2.0) 4
-      - 德国(油管:破解资源君2.0) 16
       - NONE
-      - 美国(油管:破解资源君2.0) 19
-      - SG 13 → openitsub.com
+      - CN 8 → openitsub.com
       - NONE 2
+      - CN 20 → openitsub.com
+      - CN 142 → openitsub.com
+      - CN 86 → openitsub.com
+      - CN 25 → openitsub.com
+      - ""
+      - CN 21 → openitsub.com
       - NONE 3
       - NONE 4
       - NONE 5
-      - TW 1 → openitsub.com
-      - github.com/freefq - 俄罗斯  16
-      - US 3 → openitsub.com
-      - SG 3 → openitsub.com
-      - US 8 → openitsub.com
-      - SG 5 → openitsub.com
-      - 美国(油管:破解资源君2.0) 66
-      - CN 12 → openitsub.com
       - NONE 6
       - NONE 7
       - NONE 8
-      - 78.129.253.9:809
+      - US_310
       - NONE 9
-      - 美国(油管:破解资源君2.0) 14
       - NONE 10
       - NONE 11
+      - 美国(油管:破解资源君2.0) 14
       - NONE 12
       - NONE 13
-      - US_1085
       - NONE 14
-      - CN 13 → openitsub.com
-      - github.com/freefq - 美国CloudFlare节点 18
-      - github.com/freefq - 越南  2
-      - SG 9 → openitsub.com
-      - 美国(油管:破解资源君2.0) 33
-      - 亚洲(油管:破解资源君2.0) 2
-      - 欧洲(油管:破解资源君2.0) 24
-      - 美国(油管:破解资源君2.0) 54
-      - 香港(油管:破解资源君2.0) 12
-      - 美国(油管:破解资源君2.0) 55
-      - github.com/freefq - 台湾省台北市中华电信 25
-      - 美国(油管:破解资源君2.0) 60
-      - RO 1 → openitsub.com
-      - 台湾(油管:破解资源君2.0) 2
-      - 美国(油管:破解资源君2.0) 42
-      - 德国(油管:破解资源君2.0) 2
-      - 欧洲(油管:破解资源君2.0) 13
-      - 欧洲(油管:破解资源君2.0) 12
-      - 香港(油管:破解资源君2.0) 5
-      - 美国(油管:破解资源君2.0) 11
-      - 欧洲(油管:破解资源君2.0) 17
-      - 美国(油管:破解资源君2.0) 52
-      - 欧洲(油管:破解资源君2.0) 12 2
-      - 欧洲(油管:破解资源君2.0) 9
-      - 欧洲(油管:破解资源君2.0)
-      - SG 7 → openitsub.com
-      - 韩国(油管:破解资源君2.0) 4
-      - ""
+      - 美国(油管:破解资源君2.0) 28
       - NONE 15
-      - 日本(油管:破解资源君2.0)
       - NONE 16
-      - LA_261
       - NONE 17
       - NONE 18
       - NONE 19
       - NONE 20
-      - Relay_🇭🇰HK-🇨🇦CA_150
       - NONE 21
-      - _68
       - NONE 22
-      - 欧洲(油管:破解资源君2.0) 4
-      - 台湾(油管:破解资源君2.0)
-      - 美国(油管:破解资源君2.0) 16
-      - CN 11 → openitsub.com
-      - 美国(油管:破解资源君2.0) 28
       - NONE 23
-      - US_310
-      - 欧洲(油管:破解资源君2.0) 12 3
-      - 欧洲(油管:破解资源君2.0) 32
       - NONE 24
       - NONE 25
       - NONE 26
       - NONE 27
-      - Relay_🇭🇰HK-🇺🇸US_152
       - NONE 28
       - NONE 29
-      - CN_106
-      - CN_87
-      - US 12 → openitsub.com
-      - Relay_🇸🇬SG-🇯🇵JP_217
+      - CN_65
       - NONE 30
-      - github.com/freefq - 罗马尼亚  18
       - NONE 31
-      - US 11 → openitsub.com
-      - github.com/freefq - 美国  17
       - NONE 32
       - NONE 33
       - NONE 34
-      - 美国-5.30MB/s(Youtube:不良林)
-      - CN_65
+      - NONE 35
+      - NONE 36
+      - NONE 37
+      - NONE 38
+      - NONE 39
+      - NONE 40
+      - NONE 41
+      - NONE 42
+      - NONE 43
+      - NONE 44
+      - NONE 45
+      - NONE 46
+      - NONE 47
+      - NONE 48
+      - 台湾(油管:破解资源君2.0)
+      - NONE 49
+      - NONE 50
+      - NONE 51
+      - NONE 52
+      - NONE 53
+      - NONE 54
+      - CN 24 → openitsub.com
+      - 台湾(油管:破解资源君2.0) 2
+      - NONE 55
+      - NONE 56
+      - " 2"
+      - NONE 57
+      - github.com/freefq - 罗马尼亚  18
+      - NONE 58
+      - vpin-20.gito.cc:54328
+      - NONE 59
+      - NONE 60
+      - NONE 61
+      - NONE 62
+      - NONE 63
+      - NONE 64
+      - CN_87
+      - NONE 65
+      - NONE 66
+      - CN_106
+      - NONE 67
+      - _68
+      - NONE 68
+      - NONE 69
+      - NONE 70
+      - NONE 71
+      - NONE 72
+      - NONE 73
+      - NONE 74
+      - NONE 75
+      - NONE 76
+      - RO 1 → openitsub.com
+      - NONE 77
+      - NONE 78
+      - NONE 79
+      - github.com/freefq - 美国  17
+      - NONE 80
+      - 香港(油管:破解资源君2.0) 12
+      - NONE 81
+      - 美国(油管:破解资源君2.0) 33
+      - 亚洲(油管:破解资源君2.0) 2
+      - NONE 82
+      - NONE 83
+      - NONE 84
+      - NONE 85
+      - NONE 86
+      - CN 136 → openitsub.com
+      - CN 117 → openitsub.com
+      - CN 97 → openitsub.com
+      - CN 148 → openitsub.com
+      - 欧洲(油管:破解资源君2.0) 42
+      - CN 112 → openitsub.com
+      - CN 101 → openitsub.com
+      - CN 128 → openitsub.com
+      - 法国(油管:破解资源君2.0)
+      - 欧洲(油管:破解资源君2.0) 48
+      - CN 129 → openitsub.com
+      - CN 132 → openitsub.com
+      - US 4 → openitsub.com
+      - CN 91 → openitsub.com
+      - CN 115 → openitsub.com
+      - CN 126 → openitsub.com
+      - CN 138 → openitsub.com
+      - CN 107 → openitsub.com
+      - CN 131 → openitsub.com
+      - CN 143 → openitsub.com
+      - CN 102 → openitsub.com
+      - CN 104 → openitsub.com
+      - CN 98 → openitsub.com
+      - CN 96 → openitsub.com
+      - CN 121 → openitsub.com
+      - CN 94 → openitsub.com
+      - CN 110 → openitsub.com
+      - CN 139 → openitsub.com
+      - CN 103 → openitsub.com
+      - CN 88 → openitsub.com
+      - CN 146 → openitsub.com
+      - CN 122 → openitsub.com
+      - CN 140 → openitsub.com
+      - CN 114 → openitsub.com
+      - CN 93 → openitsub.com
+      - CN 90 → openitsub.com
+      - US 8 → openitsub.com
+      - CN 113 → openitsub.com
+      - CN 127 → openitsub.com
+      - CN 151 → openitsub.com
+      - CN 87 → openitsub.com
+      - CN 95 → openitsub.com
+      - CN 100 → openitsub.com
+      - CN 118 → openitsub.com
+      - CN 137 → openitsub.com
+      - CN 125 → openitsub.com
+      - CN 119 → openitsub.com
+      - CN 141 → openitsub.com
+      - US 3 → openitsub.com
+      - CN 150 → openitsub.com
+      - CN 123 → openitsub.com
+      - CN 108 → openitsub.com
+      - US 2 → openitsub.com
+      - CN 149 → openitsub.com
+      - CN 147 → openitsub.com
+      - 欧洲(油管:破解资源君2.0) 11
+      - CN 92 → openitsub.com
+      - CN 145 → openitsub.com
+      - CN 130 → openitsub.com
+      - 欧洲(油管:破解资源君2.0) 6
+      - CN 116 → openitsub.com
+      - CN 144 → openitsub.com
+      - US 7 → openitsub.com
+      - CN 124 → openitsub.com
+      - US 8 → openitsub.com 2
+      - CN 120 → openitsub.com
+      - CN 89 → openitsub.com
+      - CN 105 → openitsub.com
+      - CN 29 → openitsub.com
+      - CN 71 → openitsub.com
+      - CN 16 → openitsub.com
+      - CN 133 → openitsub.com
+      - CN 26 → openitsub.com
+      - CN 76 → openitsub.com
+      - CN 61 → openitsub.com
+      - CN 72 → openitsub.com
+      - CN 54 → openitsub.com
+      - TW 1 → openitsub.com
+      - NONE 87
+      - CN 31 → openitsub.com
+      - CN 66 → openitsub.com
+      - CN 41 → openitsub.com
+      - NONE 88
+      - CN 68 → openitsub.com
+      - CN 44 → openitsub.com
+      - NONE 89
+      - CN 34 → openitsub.com
+      - CN 39 → openitsub.com
+      - NONE 90
+      - CN 12 → openitsub.com
+      - CN 17 → openitsub.com
+      - CN 30 → openitsub.com
+      - CN 62 → openitsub.com
+      - CN 106 → openitsub.com
+      - CN 67 → openitsub.com
+      - CN 109 → openitsub.com
+      - CN 85 → openitsub.com
+      - FR 2 → openitsub.com
+      - NONE 91
+      - CN 55 → openitsub.com
+      - CN 33 → openitsub.com
+      - CN 15 → openitsub.com
+      - CN 3 → openitsub.com
+      - 欧洲(油管:破解资源君2.0) 20
+      - NONE 92
+      - CN 35 → openitsub.com
+      - NONE 93
+      - CN 77 → openitsub.com
+      - CN 84 → openitsub.com
+      - CN 82 → openitsub.com
+      - NONE 94
+      - CN 83 → openitsub.com
+      - NONE 95
+      - CN 58 → openitsub.com
+      - JP 8 → openitsub.com
+      - CN 78 → openitsub.com
+      - CN 46 → openitsub.com
+      - CN 27 → openitsub.com
+      - NONE 96
+      - CN 79 → openitsub.com
+      - NONE 97
+      - CN 14 → openitsub.com
+      - CN 5 → openitsub.com
+      - CN 111 → openitsub.com
+      - CN 51 → openitsub.com
+      - CN 38 → openitsub.com
+      - CN 13 → openitsub.com
+      - CN 75 → openitsub.com
+      - CN 69 → openitsub.com
+      - GB 1 → openitsub.com
+      - CN 56 → openitsub.com
+      - NONE 98
+      - CN 22 → openitsub.com
+      - CN 53 → openitsub.com
+      - CN 73 → openitsub.com
+      - CN 74 → openitsub.com
+      - CN 43 → openitsub.com
+      - CN 6 → openitsub.com
+      - US 11 → openitsub.com
+      - NONE 99
+      - CN 60 → openitsub.com
+      - NONE 100
+      - CN 52 → openitsub.com
+      - CN 37 → openitsub.com
+      - CN 36 → openitsub.com
+      - CN 19 → openitsub.com
+      - CN 81 → openitsub.com
+      - CN 18 → openitsub.com
+      - NONE 101
+      - CN 10 → openitsub.com
+      - NONE 102
+      - CN 9 → openitsub.com
+      - NONE 103
+      - CN 23 → openitsub.com
+      - NONE 104
+      - CN 2 → openitsub.com
+      - NONE 105
+      - CN 4 → openitsub.com
+      - CN 11 → openitsub.com
+      - CN 7 → openitsub.com
+      - NONE 106
+      - NONE 107
+      - NONE 108
+      - US 12 → openitsub.com
+      - NONE 109
+      - github.com/freefq - 美国CloudFlare节点 15
+      - NONE 110
+      - NONE 111
+      - NONE 112
+      - HK_149
+      - 美国(油管:破解资源君2.0) 19
+      - SG 1 → openitsub.com
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - SG 1 → openitsub.com
-      - HK_149
-      - Relay_🇸🇬SG-🇧🇩BD_219
-      - 香港(油管:破解资源君2.0) 4
-      - 德国(油管:破解资源君2.0) 16
       - NONE
-      - 美国(油管:破解资源君2.0) 19
-      - SG 13 → openitsub.com
+      - CN 8 → openitsub.com
       - NONE 2
+      - CN 20 → openitsub.com
+      - CN 142 → openitsub.com
+      - CN 86 → openitsub.com
+      - CN 25 → openitsub.com
+      - ""
+      - CN 21 → openitsub.com
       - NONE 3
       - NONE 4
       - NONE 5
-      - TW 1 → openitsub.com
-      - github.com/freefq - 俄罗斯  16
-      - US 3 → openitsub.com
-      - SG 3 → openitsub.com
-      - US 8 → openitsub.com
-      - SG 5 → openitsub.com
-      - 美国(油管:破解资源君2.0) 66
-      - CN 12 → openitsub.com
       - NONE 6
       - NONE 7
       - NONE 8
-      - 78.129.253.9:809
+      - US_310
       - NONE 9
-      - 美国(油管:破解资源君2.0) 14
       - NONE 10
       - NONE 11
+      - 美国(油管:破解资源君2.0) 14
       - NONE 12
       - NONE 13
-      - US_1085
       - NONE 14
-      - CN 13 → openitsub.com
-      - github.com/freefq - 美国CloudFlare节点 18
-      - github.com/freefq - 越南  2
-      - SG 9 → openitsub.com
-      - 美国(油管:破解资源君2.0) 33
-      - 亚洲(油管:破解资源君2.0) 2
-      - 欧洲(油管:破解资源君2.0) 24
-      - 美国(油管:破解资源君2.0) 54
-      - 香港(油管:破解资源君2.0) 12
-      - 美国(油管:破解资源君2.0) 55
-      - github.com/freefq - 台湾省台北市中华电信 25
-      - 美国(油管:破解资源君2.0) 60
-      - RO 1 → openitsub.com
-      - 台湾(油管:破解资源君2.0) 2
-      - 美国(油管:破解资源君2.0) 42
-      - 德国(油管:破解资源君2.0) 2
-      - 欧洲(油管:破解资源君2.0) 13
-      - 欧洲(油管:破解资源君2.0) 12
-      - 香港(油管:破解资源君2.0) 5
-      - 美国(油管:破解资源君2.0) 11
-      - 欧洲(油管:破解资源君2.0) 17
-      - 美国(油管:破解资源君2.0) 52
-      - 欧洲(油管:破解资源君2.0) 12 2
-      - 欧洲(油管:破解资源君2.0) 9
-      - 欧洲(油管:破解资源君2.0)
-      - SG 7 → openitsub.com
-      - 韩国(油管:破解资源君2.0) 4
-      - ""
+      - 美国(油管:破解资源君2.0) 28
       - NONE 15
-      - 日本(油管:破解资源君2.0)
       - NONE 16
-      - LA_261
       - NONE 17
       - NONE 18
       - NONE 19
       - NONE 20
-      - Relay_🇭🇰HK-🇨🇦CA_150
       - NONE 21
-      - _68
       - NONE 22
-      - 欧洲(油管:破解资源君2.0) 4
-      - 台湾(油管:破解资源君2.0)
-      - 美国(油管:破解资源君2.0) 16
-      - CN 11 → openitsub.com
-      - 美国(油管:破解资源君2.0) 28
       - NONE 23
-      - US_310
-      - 欧洲(油管:破解资源君2.0) 12 3
-      - 欧洲(油管:破解资源君2.0) 32
       - NONE 24
       - NONE 25
       - NONE 26
       - NONE 27
-      - Relay_🇭🇰HK-🇺🇸US_152
       - NONE 28
       - NONE 29
-      - CN_106
-      - CN_87
-      - US 12 → openitsub.com
-      - Relay_🇸🇬SG-🇯🇵JP_217
+      - CN_65
       - NONE 30
-      - github.com/freefq - 罗马尼亚  18
       - NONE 31
-      - US 11 → openitsub.com
-      - github.com/freefq - 美国  17
       - NONE 32
       - NONE 33
       - NONE 34
-      - 美国-5.30MB/s(Youtube:不良林)
-      - CN_65
+      - NONE 35
+      - NONE 36
+      - NONE 37
+      - NONE 38
+      - NONE 39
+      - NONE 40
+      - NONE 41
+      - NONE 42
+      - NONE 43
+      - NONE 44
+      - NONE 45
+      - NONE 46
+      - NONE 47
+      - NONE 48
+      - 台湾(油管:破解资源君2.0)
+      - NONE 49
+      - NONE 50
+      - NONE 51
+      - NONE 52
+      - NONE 53
+      - NONE 54
+      - CN 24 → openitsub.com
+      - 台湾(油管:破解资源君2.0) 2
+      - NONE 55
+      - NONE 56
+      - " 2"
+      - NONE 57
+      - github.com/freefq - 罗马尼亚  18
+      - NONE 58
+      - vpin-20.gito.cc:54328
+      - NONE 59
+      - NONE 60
+      - NONE 61
+      - NONE 62
+      - NONE 63
+      - NONE 64
+      - CN_87
+      - NONE 65
+      - NONE 66
+      - CN_106
+      - NONE 67
+      - _68
+      - NONE 68
+      - NONE 69
+      - NONE 70
+      - NONE 71
+      - NONE 72
+      - NONE 73
+      - NONE 74
+      - NONE 75
+      - NONE 76
+      - RO 1 → openitsub.com
+      - NONE 77
+      - NONE 78
+      - NONE 79
+      - github.com/freefq - 美国  17
+      - NONE 80
+      - 香港(油管:破解资源君2.0) 12
+      - NONE 81
+      - 美国(油管:破解资源君2.0) 33
+      - 亚洲(油管:破解资源君2.0) 2
+      - NONE 82
+      - NONE 83
+      - NONE 84
+      - NONE 85
+      - NONE 86
+      - CN 136 → openitsub.com
+      - CN 117 → openitsub.com
+      - CN 97 → openitsub.com
+      - CN 148 → openitsub.com
+      - 欧洲(油管:破解资源君2.0) 42
+      - CN 112 → openitsub.com
+      - CN 101 → openitsub.com
+      - CN 128 → openitsub.com
+      - 法国(油管:破解资源君2.0)
+      - 欧洲(油管:破解资源君2.0) 48
+      - CN 129 → openitsub.com
+      - CN 132 → openitsub.com
+      - US 4 → openitsub.com
+      - CN 91 → openitsub.com
+      - CN 115 → openitsub.com
+      - CN 126 → openitsub.com
+      - CN 138 → openitsub.com
+      - CN 107 → openitsub.com
+      - CN 131 → openitsub.com
+      - CN 143 → openitsub.com
+      - CN 102 → openitsub.com
+      - CN 104 → openitsub.com
+      - CN 98 → openitsub.com
+      - CN 96 → openitsub.com
+      - CN 121 → openitsub.com
+      - CN 94 → openitsub.com
+      - CN 110 → openitsub.com
+      - CN 139 → openitsub.com
+      - CN 103 → openitsub.com
+      - CN 88 → openitsub.com
+      - CN 146 → openitsub.com
+      - CN 122 → openitsub.com
+      - CN 140 → openitsub.com
+      - CN 114 → openitsub.com
+      - CN 93 → openitsub.com
+      - CN 90 → openitsub.com
+      - US 8 → openitsub.com
+      - CN 113 → openitsub.com
+      - CN 127 → openitsub.com
+      - CN 151 → openitsub.com
+      - CN 87 → openitsub.com
+      - CN 95 → openitsub.com
+      - CN 100 → openitsub.com
+      - CN 118 → openitsub.com
+      - CN 137 → openitsub.com
+      - CN 125 → openitsub.com
+      - CN 119 → openitsub.com
+      - CN 141 → openitsub.com
+      - US 3 → openitsub.com
+      - CN 150 → openitsub.com
+      - CN 123 → openitsub.com
+      - CN 108 → openitsub.com
+      - US 2 → openitsub.com
+      - CN 149 → openitsub.com
+      - CN 147 → openitsub.com
+      - 欧洲(油管:破解资源君2.0) 11
+      - CN 92 → openitsub.com
+      - CN 145 → openitsub.com
+      - CN 130 → openitsub.com
+      - 欧洲(油管:破解资源君2.0) 6
+      - CN 116 → openitsub.com
+      - CN 144 → openitsub.com
+      - US 7 → openitsub.com
+      - CN 124 → openitsub.com
+      - US 8 → openitsub.com 2
+      - CN 120 → openitsub.com
+      - CN 89 → openitsub.com
+      - CN 105 → openitsub.com
+      - CN 29 → openitsub.com
+      - CN 71 → openitsub.com
+      - CN 16 → openitsub.com
+      - CN 133 → openitsub.com
+      - CN 26 → openitsub.com
+      - CN 76 → openitsub.com
+      - CN 61 → openitsub.com
+      - CN 72 → openitsub.com
+      - CN 54 → openitsub.com
+      - TW 1 → openitsub.com
+      - NONE 87
+      - CN 31 → openitsub.com
+      - CN 66 → openitsub.com
+      - CN 41 → openitsub.com
+      - NONE 88
+      - CN 68 → openitsub.com
+      - CN 44 → openitsub.com
+      - NONE 89
+      - CN 34 → openitsub.com
+      - CN 39 → openitsub.com
+      - NONE 90
+      - CN 12 → openitsub.com
+      - CN 17 → openitsub.com
+      - CN 30 → openitsub.com
+      - CN 62 → openitsub.com
+      - CN 106 → openitsub.com
+      - CN 67 → openitsub.com
+      - CN 109 → openitsub.com
+      - CN 85 → openitsub.com
+      - FR 2 → openitsub.com
+      - NONE 91
+      - CN 55 → openitsub.com
+      - CN 33 → openitsub.com
+      - CN 15 → openitsub.com
+      - CN 3 → openitsub.com
+      - 欧洲(油管:破解资源君2.0) 20
+      - NONE 92
+      - CN 35 → openitsub.com
+      - NONE 93
+      - CN 77 → openitsub.com
+      - CN 84 → openitsub.com
+      - CN 82 → openitsub.com
+      - NONE 94
+      - CN 83 → openitsub.com
+      - NONE 95
+      - CN 58 → openitsub.com
+      - JP 8 → openitsub.com
+      - CN 78 → openitsub.com
+      - CN 46 → openitsub.com
+      - CN 27 → openitsub.com
+      - NONE 96
+      - CN 79 → openitsub.com
+      - NONE 97
+      - CN 14 → openitsub.com
+      - CN 5 → openitsub.com
+      - CN 111 → openitsub.com
+      - CN 51 → openitsub.com
+      - CN 38 → openitsub.com
+      - CN 13 → openitsub.com
+      - CN 75 → openitsub.com
+      - CN 69 → openitsub.com
+      - GB 1 → openitsub.com
+      - CN 56 → openitsub.com
+      - NONE 98
+      - CN 22 → openitsub.com
+      - CN 53 → openitsub.com
+      - CN 73 → openitsub.com
+      - CN 74 → openitsub.com
+      - CN 43 → openitsub.com
+      - CN 6 → openitsub.com
+      - US 11 → openitsub.com
+      - NONE 99
+      - CN 60 → openitsub.com
+      - NONE 100
+      - CN 52 → openitsub.com
+      - CN 37 → openitsub.com
+      - CN 36 → openitsub.com
+      - CN 19 → openitsub.com
+      - CN 81 → openitsub.com
+      - CN 18 → openitsub.com
+      - NONE 101
+      - CN 10 → openitsub.com
+      - NONE 102
+      - CN 9 → openitsub.com
+      - NONE 103
+      - CN 23 → openitsub.com
+      - NONE 104
+      - CN 2 → openitsub.com
+      - NONE 105
+      - CN 4 → openitsub.com
+      - CN 11 → openitsub.com
+      - CN 7 → openitsub.com
+      - NONE 106
+      - NONE 107
+      - NONE 108
+      - US 12 → openitsub.com
+      - NONE 109
+      - github.com/freefq - 美国CloudFlare节点 15
+      - NONE 110
+      - NONE 111
+      - NONE 112
+      - HK_149
+      - 美国(油管:破解资源君2.0) 19
+      - SG 1 → openitsub.com
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -448,441 +1172,1162 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - SG 1 → openitsub.com
-      - HK_149
-      - Relay_🇸🇬SG-🇧🇩BD_219
-      - 香港(油管:破解资源君2.0) 4
-      - 德国(油管:破解资源君2.0) 16
       - NONE
-      - 美国(油管:破解资源君2.0) 19
-      - SG 13 → openitsub.com
+      - CN 8 → openitsub.com
       - NONE 2
+      - CN 20 → openitsub.com
+      - CN 142 → openitsub.com
+      - CN 86 → openitsub.com
+      - CN 25 → openitsub.com
+      - ""
+      - CN 21 → openitsub.com
       - NONE 3
       - NONE 4
       - NONE 5
-      - TW 1 → openitsub.com
-      - github.com/freefq - 俄罗斯  16
-      - US 3 → openitsub.com
-      - SG 3 → openitsub.com
-      - US 8 → openitsub.com
-      - SG 5 → openitsub.com
-      - 美国(油管:破解资源君2.0) 66
-      - CN 12 → openitsub.com
       - NONE 6
       - NONE 7
       - NONE 8
-      - 78.129.253.9:809
+      - US_310
       - NONE 9
-      - 美国(油管:破解资源君2.0) 14
       - NONE 10
       - NONE 11
+      - 美国(油管:破解资源君2.0) 14
       - NONE 12
       - NONE 13
-      - US_1085
       - NONE 14
-      - CN 13 → openitsub.com
-      - github.com/freefq - 美国CloudFlare节点 18
-      - github.com/freefq - 越南  2
-      - SG 9 → openitsub.com
-      - 美国(油管:破解资源君2.0) 33
-      - 亚洲(油管:破解资源君2.0) 2
-      - 欧洲(油管:破解资源君2.0) 24
-      - 美国(油管:破解资源君2.0) 54
-      - 香港(油管:破解资源君2.0) 12
-      - 美国(油管:破解资源君2.0) 55
-      - github.com/freefq - 台湾省台北市中华电信 25
-      - 美国(油管:破解资源君2.0) 60
-      - RO 1 → openitsub.com
-      - 台湾(油管:破解资源君2.0) 2
-      - 美国(油管:破解资源君2.0) 42
-      - 德国(油管:破解资源君2.0) 2
-      - 欧洲(油管:破解资源君2.0) 13
-      - 欧洲(油管:破解资源君2.0) 12
-      - 香港(油管:破解资源君2.0) 5
-      - 美国(油管:破解资源君2.0) 11
-      - 欧洲(油管:破解资源君2.0) 17
-      - 美国(油管:破解资源君2.0) 52
-      - 欧洲(油管:破解资源君2.0) 12 2
-      - 欧洲(油管:破解资源君2.0) 9
-      - 欧洲(油管:破解资源君2.0)
-      - SG 7 → openitsub.com
-      - 韩国(油管:破解资源君2.0) 4
-      - ""
+      - 美国(油管:破解资源君2.0) 28
       - NONE 15
-      - 日本(油管:破解资源君2.0)
       - NONE 16
-      - LA_261
       - NONE 17
       - NONE 18
       - NONE 19
       - NONE 20
-      - Relay_🇭🇰HK-🇨🇦CA_150
       - NONE 21
-      - _68
       - NONE 22
-      - 欧洲(油管:破解资源君2.0) 4
-      - 台湾(油管:破解资源君2.0)
-      - 美国(油管:破解资源君2.0) 16
-      - CN 11 → openitsub.com
-      - 美国(油管:破解资源君2.0) 28
       - NONE 23
-      - US_310
-      - 欧洲(油管:破解资源君2.0) 12 3
-      - 欧洲(油管:破解资源君2.0) 32
       - NONE 24
       - NONE 25
       - NONE 26
       - NONE 27
-      - Relay_🇭🇰HK-🇺🇸US_152
       - NONE 28
       - NONE 29
-      - CN_106
-      - CN_87
-      - US 12 → openitsub.com
-      - Relay_🇸🇬SG-🇯🇵JP_217
+      - CN_65
       - NONE 30
-      - github.com/freefq - 罗马尼亚  18
       - NONE 31
-      - US 11 → openitsub.com
-      - github.com/freefq - 美国  17
       - NONE 32
       - NONE 33
       - NONE 34
-      - 美国-5.30MB/s(Youtube:不良林)
-      - CN_65
+      - NONE 35
+      - NONE 36
+      - NONE 37
+      - NONE 38
+      - NONE 39
+      - NONE 40
+      - NONE 41
+      - NONE 42
+      - NONE 43
+      - NONE 44
+      - NONE 45
+      - NONE 46
+      - NONE 47
+      - NONE 48
+      - 台湾(油管:破解资源君2.0)
+      - NONE 49
+      - NONE 50
+      - NONE 51
+      - NONE 52
+      - NONE 53
+      - NONE 54
+      - CN 24 → openitsub.com
+      - 台湾(油管:破解资源君2.0) 2
+      - NONE 55
+      - NONE 56
+      - " 2"
+      - NONE 57
+      - github.com/freefq - 罗马尼亚  18
+      - NONE 58
+      - vpin-20.gito.cc:54328
+      - NONE 59
+      - NONE 60
+      - NONE 61
+      - NONE 62
+      - NONE 63
+      - NONE 64
+      - CN_87
+      - NONE 65
+      - NONE 66
+      - CN_106
+      - NONE 67
+      - _68
+      - NONE 68
+      - NONE 69
+      - NONE 70
+      - NONE 71
+      - NONE 72
+      - NONE 73
+      - NONE 74
+      - NONE 75
+      - NONE 76
+      - RO 1 → openitsub.com
+      - NONE 77
+      - NONE 78
+      - NONE 79
+      - github.com/freefq - 美国  17
+      - NONE 80
+      - 香港(油管:破解资源君2.0) 12
+      - NONE 81
+      - 美国(油管:破解资源君2.0) 33
+      - 亚洲(油管:破解资源君2.0) 2
+      - NONE 82
+      - NONE 83
+      - NONE 84
+      - NONE 85
+      - NONE 86
+      - CN 136 → openitsub.com
+      - CN 117 → openitsub.com
+      - CN 97 → openitsub.com
+      - CN 148 → openitsub.com
+      - 欧洲(油管:破解资源君2.0) 42
+      - CN 112 → openitsub.com
+      - CN 101 → openitsub.com
+      - CN 128 → openitsub.com
+      - 法国(油管:破解资源君2.0)
+      - 欧洲(油管:破解资源君2.0) 48
+      - CN 129 → openitsub.com
+      - CN 132 → openitsub.com
+      - US 4 → openitsub.com
+      - CN 91 → openitsub.com
+      - CN 115 → openitsub.com
+      - CN 126 → openitsub.com
+      - CN 138 → openitsub.com
+      - CN 107 → openitsub.com
+      - CN 131 → openitsub.com
+      - CN 143 → openitsub.com
+      - CN 102 → openitsub.com
+      - CN 104 → openitsub.com
+      - CN 98 → openitsub.com
+      - CN 96 → openitsub.com
+      - CN 121 → openitsub.com
+      - CN 94 → openitsub.com
+      - CN 110 → openitsub.com
+      - CN 139 → openitsub.com
+      - CN 103 → openitsub.com
+      - CN 88 → openitsub.com
+      - CN 146 → openitsub.com
+      - CN 122 → openitsub.com
+      - CN 140 → openitsub.com
+      - CN 114 → openitsub.com
+      - CN 93 → openitsub.com
+      - CN 90 → openitsub.com
+      - US 8 → openitsub.com
+      - CN 113 → openitsub.com
+      - CN 127 → openitsub.com
+      - CN 151 → openitsub.com
+      - CN 87 → openitsub.com
+      - CN 95 → openitsub.com
+      - CN 100 → openitsub.com
+      - CN 118 → openitsub.com
+      - CN 137 → openitsub.com
+      - CN 125 → openitsub.com
+      - CN 119 → openitsub.com
+      - CN 141 → openitsub.com
+      - US 3 → openitsub.com
+      - CN 150 → openitsub.com
+      - CN 123 → openitsub.com
+      - CN 108 → openitsub.com
+      - US 2 → openitsub.com
+      - CN 149 → openitsub.com
+      - CN 147 → openitsub.com
+      - 欧洲(油管:破解资源君2.0) 11
+      - CN 92 → openitsub.com
+      - CN 145 → openitsub.com
+      - CN 130 → openitsub.com
+      - 欧洲(油管:破解资源君2.0) 6
+      - CN 116 → openitsub.com
+      - CN 144 → openitsub.com
+      - US 7 → openitsub.com
+      - CN 124 → openitsub.com
+      - US 8 → openitsub.com 2
+      - CN 120 → openitsub.com
+      - CN 89 → openitsub.com
+      - CN 105 → openitsub.com
+      - CN 29 → openitsub.com
+      - CN 71 → openitsub.com
+      - CN 16 → openitsub.com
+      - CN 133 → openitsub.com
+      - CN 26 → openitsub.com
+      - CN 76 → openitsub.com
+      - CN 61 → openitsub.com
+      - CN 72 → openitsub.com
+      - CN 54 → openitsub.com
+      - TW 1 → openitsub.com
+      - NONE 87
+      - CN 31 → openitsub.com
+      - CN 66 → openitsub.com
+      - CN 41 → openitsub.com
+      - NONE 88
+      - CN 68 → openitsub.com
+      - CN 44 → openitsub.com
+      - NONE 89
+      - CN 34 → openitsub.com
+      - CN 39 → openitsub.com
+      - NONE 90
+      - CN 12 → openitsub.com
+      - CN 17 → openitsub.com
+      - CN 30 → openitsub.com
+      - CN 62 → openitsub.com
+      - CN 106 → openitsub.com
+      - CN 67 → openitsub.com
+      - CN 109 → openitsub.com
+      - CN 85 → openitsub.com
+      - FR 2 → openitsub.com
+      - NONE 91
+      - CN 55 → openitsub.com
+      - CN 33 → openitsub.com
+      - CN 15 → openitsub.com
+      - CN 3 → openitsub.com
+      - 欧洲(油管:破解资源君2.0) 20
+      - NONE 92
+      - CN 35 → openitsub.com
+      - NONE 93
+      - CN 77 → openitsub.com
+      - CN 84 → openitsub.com
+      - CN 82 → openitsub.com
+      - NONE 94
+      - CN 83 → openitsub.com
+      - NONE 95
+      - CN 58 → openitsub.com
+      - JP 8 → openitsub.com
+      - CN 78 → openitsub.com
+      - CN 46 → openitsub.com
+      - CN 27 → openitsub.com
+      - NONE 96
+      - CN 79 → openitsub.com
+      - NONE 97
+      - CN 14 → openitsub.com
+      - CN 5 → openitsub.com
+      - CN 111 → openitsub.com
+      - CN 51 → openitsub.com
+      - CN 38 → openitsub.com
+      - CN 13 → openitsub.com
+      - CN 75 → openitsub.com
+      - CN 69 → openitsub.com
+      - GB 1 → openitsub.com
+      - CN 56 → openitsub.com
+      - NONE 98
+      - CN 22 → openitsub.com
+      - CN 53 → openitsub.com
+      - CN 73 → openitsub.com
+      - CN 74 → openitsub.com
+      - CN 43 → openitsub.com
+      - CN 6 → openitsub.com
+      - US 11 → openitsub.com
+      - NONE 99
+      - CN 60 → openitsub.com
+      - NONE 100
+      - CN 52 → openitsub.com
+      - CN 37 → openitsub.com
+      - CN 36 → openitsub.com
+      - CN 19 → openitsub.com
+      - CN 81 → openitsub.com
+      - CN 18 → openitsub.com
+      - NONE 101
+      - CN 10 → openitsub.com
+      - NONE 102
+      - CN 9 → openitsub.com
+      - NONE 103
+      - CN 23 → openitsub.com
+      - NONE 104
+      - CN 2 → openitsub.com
+      - NONE 105
+      - CN 4 → openitsub.com
+      - CN 11 → openitsub.com
+      - CN 7 → openitsub.com
+      - NONE 106
+      - NONE 107
+      - NONE 108
+      - US 12 → openitsub.com
+      - NONE 109
+      - github.com/freefq - 美国CloudFlare节点 15
+      - NONE 110
+      - NONE 111
+      - NONE 112
+      - HK_149
+      - 美国(油管:破解资源君2.0) 19
+      - SG 1 → openitsub.com
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港(油管:破解资源君2.0) 4
-      - 香港(油管:破解资源君2.0) 12
-      - github.com/freefq - 台湾省台北市中华电信 25
-      - 台湾(油管:破解资源君2.0) 2
-      - 香港(油管:破解资源君2.0) 5
       - 台湾(油管:破解资源君2.0)
+      - 台湾(油管:破解资源君2.0) 2
+      - 香港(油管:破解资源君2.0) 12
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - SG 1 → openitsub.com
-      - HK_149
-      - Relay_🇸🇬SG-🇧🇩BD_219
-      - 香港(油管:破解资源君2.0) 4
-      - 德国(油管:破解资源君2.0) 16
       - NONE
-      - 美国(油管:破解资源君2.0) 19
-      - SG 13 → openitsub.com
+      - CN 8 → openitsub.com
       - NONE 2
+      - CN 20 → openitsub.com
+      - CN 142 → openitsub.com
+      - CN 86 → openitsub.com
+      - CN 25 → openitsub.com
+      - ""
+      - CN 21 → openitsub.com
       - NONE 3
       - NONE 4
       - NONE 5
-      - TW 1 → openitsub.com
-      - github.com/freefq - 俄罗斯  16
-      - US 3 → openitsub.com
-      - SG 3 → openitsub.com
-      - US 8 → openitsub.com
-      - SG 5 → openitsub.com
-      - 美国(油管:破解资源君2.0) 66
-      - CN 12 → openitsub.com
       - NONE 6
       - NONE 7
       - NONE 8
-      - 78.129.253.9:809
+      - US_310
       - NONE 9
-      - 美国(油管:破解资源君2.0) 14
       - NONE 10
       - NONE 11
+      - 美国(油管:破解资源君2.0) 14
       - NONE 12
       - NONE 13
-      - US_1085
       - NONE 14
-      - CN 13 → openitsub.com
-      - github.com/freefq - 美国CloudFlare节点 18
-      - github.com/freefq - 越南  2
-      - SG 9 → openitsub.com
-      - 美国(油管:破解资源君2.0) 33
-      - 亚洲(油管:破解资源君2.0) 2
-      - 欧洲(油管:破解资源君2.0) 24
-      - 美国(油管:破解资源君2.0) 54
-      - 香港(油管:破解资源君2.0) 12
-      - 美国(油管:破解资源君2.0) 55
-      - github.com/freefq - 台湾省台北市中华电信 25
-      - 美国(油管:破解资源君2.0) 60
-      - RO 1 → openitsub.com
-      - 台湾(油管:破解资源君2.0) 2
-      - 美国(油管:破解资源君2.0) 42
-      - 德国(油管:破解资源君2.0) 2
-      - 欧洲(油管:破解资源君2.0) 13
-      - 欧洲(油管:破解资源君2.0) 12
-      - 香港(油管:破解资源君2.0) 5
-      - 美国(油管:破解资源君2.0) 11
-      - 欧洲(油管:破解资源君2.0) 17
-      - 美国(油管:破解资源君2.0) 52
-      - 欧洲(油管:破解资源君2.0) 12 2
-      - 欧洲(油管:破解资源君2.0) 9
-      - 欧洲(油管:破解资源君2.0)
-      - SG 7 → openitsub.com
-      - 韩国(油管:破解资源君2.0) 4
-      - ""
+      - 美国(油管:破解资源君2.0) 28
       - NONE 15
-      - 日本(油管:破解资源君2.0)
       - NONE 16
-      - LA_261
       - NONE 17
       - NONE 18
       - NONE 19
       - NONE 20
-      - Relay_🇭🇰HK-🇨🇦CA_150
       - NONE 21
-      - _68
       - NONE 22
-      - 欧洲(油管:破解资源君2.0) 4
-      - 台湾(油管:破解资源君2.0)
-      - 美国(油管:破解资源君2.0) 16
-      - CN 11 → openitsub.com
-      - 美国(油管:破解资源君2.0) 28
       - NONE 23
-      - US_310
-      - 欧洲(油管:破解资源君2.0) 12 3
-      - 欧洲(油管:破解资源君2.0) 32
       - NONE 24
       - NONE 25
       - NONE 26
       - NONE 27
-      - Relay_🇭🇰HK-🇺🇸US_152
       - NONE 28
       - NONE 29
-      - CN_106
-      - CN_87
-      - US 12 → openitsub.com
-      - Relay_🇸🇬SG-🇯🇵JP_217
+      - CN_65
       - NONE 30
-      - github.com/freefq - 罗马尼亚  18
       - NONE 31
-      - US 11 → openitsub.com
-      - github.com/freefq - 美国  17
       - NONE 32
       - NONE 33
       - NONE 34
-      - 美国-5.30MB/s(Youtube:不良林)
-      - CN_65
+      - NONE 35
+      - NONE 36
+      - NONE 37
+      - NONE 38
+      - NONE 39
+      - NONE 40
+      - NONE 41
+      - NONE 42
+      - NONE 43
+      - NONE 44
+      - NONE 45
+      - NONE 46
+      - NONE 47
+      - NONE 48
+      - 台湾(油管:破解资源君2.0)
+      - NONE 49
+      - NONE 50
+      - NONE 51
+      - NONE 52
+      - NONE 53
+      - NONE 54
+      - CN 24 → openitsub.com
+      - 台湾(油管:破解资源君2.0) 2
+      - NONE 55
+      - NONE 56
+      - " 2"
+      - NONE 57
+      - github.com/freefq - 罗马尼亚  18
+      - NONE 58
+      - vpin-20.gito.cc:54328
+      - NONE 59
+      - NONE 60
+      - NONE 61
+      - NONE 62
+      - NONE 63
+      - NONE 64
+      - CN_87
+      - NONE 65
+      - NONE 66
+      - CN_106
+      - NONE 67
+      - _68
+      - NONE 68
+      - NONE 69
+      - NONE 70
+      - NONE 71
+      - NONE 72
+      - NONE 73
+      - NONE 74
+      - NONE 75
+      - NONE 76
+      - RO 1 → openitsub.com
+      - NONE 77
+      - NONE 78
+      - NONE 79
+      - github.com/freefq - 美国  17
+      - NONE 80
+      - 香港(油管:破解资源君2.0) 12
+      - NONE 81
+      - 美国(油管:破解资源君2.0) 33
+      - 亚洲(油管:破解资源君2.0) 2
+      - NONE 82
+      - NONE 83
+      - NONE 84
+      - NONE 85
+      - NONE 86
+      - CN 136 → openitsub.com
+      - CN 117 → openitsub.com
+      - CN 97 → openitsub.com
+      - CN 148 → openitsub.com
+      - 欧洲(油管:破解资源君2.0) 42
+      - CN 112 → openitsub.com
+      - CN 101 → openitsub.com
+      - CN 128 → openitsub.com
+      - 法国(油管:破解资源君2.0)
+      - 欧洲(油管:破解资源君2.0) 48
+      - CN 129 → openitsub.com
+      - CN 132 → openitsub.com
+      - US 4 → openitsub.com
+      - CN 91 → openitsub.com
+      - CN 115 → openitsub.com
+      - CN 126 → openitsub.com
+      - CN 138 → openitsub.com
+      - CN 107 → openitsub.com
+      - CN 131 → openitsub.com
+      - CN 143 → openitsub.com
+      - CN 102 → openitsub.com
+      - CN 104 → openitsub.com
+      - CN 98 → openitsub.com
+      - CN 96 → openitsub.com
+      - CN 121 → openitsub.com
+      - CN 94 → openitsub.com
+      - CN 110 → openitsub.com
+      - CN 139 → openitsub.com
+      - CN 103 → openitsub.com
+      - CN 88 → openitsub.com
+      - CN 146 → openitsub.com
+      - CN 122 → openitsub.com
+      - CN 140 → openitsub.com
+      - CN 114 → openitsub.com
+      - CN 93 → openitsub.com
+      - CN 90 → openitsub.com
+      - US 8 → openitsub.com
+      - CN 113 → openitsub.com
+      - CN 127 → openitsub.com
+      - CN 151 → openitsub.com
+      - CN 87 → openitsub.com
+      - CN 95 → openitsub.com
+      - CN 100 → openitsub.com
+      - CN 118 → openitsub.com
+      - CN 137 → openitsub.com
+      - CN 125 → openitsub.com
+      - CN 119 → openitsub.com
+      - CN 141 → openitsub.com
+      - US 3 → openitsub.com
+      - CN 150 → openitsub.com
+      - CN 123 → openitsub.com
+      - CN 108 → openitsub.com
+      - US 2 → openitsub.com
+      - CN 149 → openitsub.com
+      - CN 147 → openitsub.com
+      - 欧洲(油管:破解资源君2.0) 11
+      - CN 92 → openitsub.com
+      - CN 145 → openitsub.com
+      - CN 130 → openitsub.com
+      - 欧洲(油管:破解资源君2.0) 6
+      - CN 116 → openitsub.com
+      - CN 144 → openitsub.com
+      - US 7 → openitsub.com
+      - CN 124 → openitsub.com
+      - US 8 → openitsub.com 2
+      - CN 120 → openitsub.com
+      - CN 89 → openitsub.com
+      - CN 105 → openitsub.com
+      - CN 29 → openitsub.com
+      - CN 71 → openitsub.com
+      - CN 16 → openitsub.com
+      - CN 133 → openitsub.com
+      - CN 26 → openitsub.com
+      - CN 76 → openitsub.com
+      - CN 61 → openitsub.com
+      - CN 72 → openitsub.com
+      - CN 54 → openitsub.com
+      - TW 1 → openitsub.com
+      - NONE 87
+      - CN 31 → openitsub.com
+      - CN 66 → openitsub.com
+      - CN 41 → openitsub.com
+      - NONE 88
+      - CN 68 → openitsub.com
+      - CN 44 → openitsub.com
+      - NONE 89
+      - CN 34 → openitsub.com
+      - CN 39 → openitsub.com
+      - NONE 90
+      - CN 12 → openitsub.com
+      - CN 17 → openitsub.com
+      - CN 30 → openitsub.com
+      - CN 62 → openitsub.com
+      - CN 106 → openitsub.com
+      - CN 67 → openitsub.com
+      - CN 109 → openitsub.com
+      - CN 85 → openitsub.com
+      - FR 2 → openitsub.com
+      - NONE 91
+      - CN 55 → openitsub.com
+      - CN 33 → openitsub.com
+      - CN 15 → openitsub.com
+      - CN 3 → openitsub.com
+      - 欧洲(油管:破解资源君2.0) 20
+      - NONE 92
+      - CN 35 → openitsub.com
+      - NONE 93
+      - CN 77 → openitsub.com
+      - CN 84 → openitsub.com
+      - CN 82 → openitsub.com
+      - NONE 94
+      - CN 83 → openitsub.com
+      - NONE 95
+      - CN 58 → openitsub.com
+      - JP 8 → openitsub.com
+      - CN 78 → openitsub.com
+      - CN 46 → openitsub.com
+      - CN 27 → openitsub.com
+      - NONE 96
+      - CN 79 → openitsub.com
+      - NONE 97
+      - CN 14 → openitsub.com
+      - CN 5 → openitsub.com
+      - CN 111 → openitsub.com
+      - CN 51 → openitsub.com
+      - CN 38 → openitsub.com
+      - CN 13 → openitsub.com
+      - CN 75 → openitsub.com
+      - CN 69 → openitsub.com
+      - GB 1 → openitsub.com
+      - CN 56 → openitsub.com
+      - NONE 98
+      - CN 22 → openitsub.com
+      - CN 53 → openitsub.com
+      - CN 73 → openitsub.com
+      - CN 74 → openitsub.com
+      - CN 43 → openitsub.com
+      - CN 6 → openitsub.com
+      - US 11 → openitsub.com
+      - NONE 99
+      - CN 60 → openitsub.com
+      - NONE 100
+      - CN 52 → openitsub.com
+      - CN 37 → openitsub.com
+      - CN 36 → openitsub.com
+      - CN 19 → openitsub.com
+      - CN 81 → openitsub.com
+      - CN 18 → openitsub.com
+      - NONE 101
+      - CN 10 → openitsub.com
+      - NONE 102
+      - CN 9 → openitsub.com
+      - NONE 103
+      - CN 23 → openitsub.com
+      - NONE 104
+      - CN 2 → openitsub.com
+      - NONE 105
+      - CN 4 → openitsub.com
+      - CN 11 → openitsub.com
+      - CN 7 → openitsub.com
+      - NONE 106
+      - NONE 107
+      - NONE 108
+      - US 12 → openitsub.com
+      - NONE 109
+      - github.com/freefq - 美国CloudFlare节点 15
+      - NONE 110
+      - NONE 111
+      - NONE 112
+      - HK_149
+      - 美国(油管:破解资源君2.0) 19
+      - SG 1 → openitsub.com
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - SG 1 → openitsub.com
-      - HK_149
-      - Relay_🇸🇬SG-🇧🇩BD_219
-      - 香港(油管:破解资源君2.0) 4
-      - 德国(油管:破解资源君2.0) 16
       - NONE
-      - 美国(油管:破解资源君2.0) 19
-      - SG 13 → openitsub.com
+      - CN 8 → openitsub.com
       - NONE 2
+      - CN 20 → openitsub.com
+      - CN 142 → openitsub.com
+      - CN 86 → openitsub.com
+      - CN 25 → openitsub.com
+      - ""
+      - CN 21 → openitsub.com
       - NONE 3
       - NONE 4
       - NONE 5
-      - TW 1 → openitsub.com
-      - github.com/freefq - 俄罗斯  16
-      - US 3 → openitsub.com
-      - SG 3 → openitsub.com
-      - US 8 → openitsub.com
-      - SG 5 → openitsub.com
-      - 美国(油管:破解资源君2.0) 66
-      - CN 12 → openitsub.com
       - NONE 6
       - NONE 7
       - NONE 8
-      - 78.129.253.9:809
+      - US_310
       - NONE 9
-      - 美国(油管:破解资源君2.0) 14
       - NONE 10
       - NONE 11
+      - 美国(油管:破解资源君2.0) 14
       - NONE 12
       - NONE 13
-      - US_1085
       - NONE 14
-      - CN 13 → openitsub.com
-      - github.com/freefq - 美国CloudFlare节点 18
-      - github.com/freefq - 越南  2
-      - SG 9 → openitsub.com
-      - 美国(油管:破解资源君2.0) 33
-      - 亚洲(油管:破解资源君2.0) 2
-      - 欧洲(油管:破解资源君2.0) 24
-      - 美国(油管:破解资源君2.0) 54
-      - 香港(油管:破解资源君2.0) 12
-      - 美国(油管:破解资源君2.0) 55
-      - github.com/freefq - 台湾省台北市中华电信 25
-      - 美国(油管:破解资源君2.0) 60
-      - RO 1 → openitsub.com
-      - 台湾(油管:破解资源君2.0) 2
-      - 美国(油管:破解资源君2.0) 42
-      - 德国(油管:破解资源君2.0) 2
-      - 欧洲(油管:破解资源君2.0) 13
-      - 欧洲(油管:破解资源君2.0) 12
-      - 香港(油管:破解资源君2.0) 5
-      - 美国(油管:破解资源君2.0) 11
-      - 欧洲(油管:破解资源君2.0) 17
-      - 美国(油管:破解资源君2.0) 52
-      - 欧洲(油管:破解资源君2.0) 12 2
-      - 欧洲(油管:破解资源君2.0) 9
-      - 欧洲(油管:破解资源君2.0)
-      - SG 7 → openitsub.com
-      - 韩国(油管:破解资源君2.0) 4
-      - ""
+      - 美国(油管:破解资源君2.0) 28
       - NONE 15
-      - 日本(油管:破解资源君2.0)
       - NONE 16
-      - LA_261
       - NONE 17
       - NONE 18
       - NONE 19
       - NONE 20
-      - Relay_🇭🇰HK-🇨🇦CA_150
       - NONE 21
-      - _68
       - NONE 22
-      - 欧洲(油管:破解资源君2.0) 4
-      - 台湾(油管:破解资源君2.0)
-      - 美国(油管:破解资源君2.0) 16
-      - CN 11 → openitsub.com
-      - 美国(油管:破解资源君2.0) 28
       - NONE 23
-      - US_310
-      - 欧洲(油管:破解资源君2.0) 12 3
-      - 欧洲(油管:破解资源君2.0) 32
       - NONE 24
       - NONE 25
       - NONE 26
       - NONE 27
-      - Relay_🇭🇰HK-🇺🇸US_152
       - NONE 28
       - NONE 29
-      - CN_106
-      - CN_87
-      - US 12 → openitsub.com
-      - Relay_🇸🇬SG-🇯🇵JP_217
+      - CN_65
       - NONE 30
-      - github.com/freefq - 罗马尼亚  18
       - NONE 31
-      - US 11 → openitsub.com
-      - github.com/freefq - 美国  17
       - NONE 32
       - NONE 33
       - NONE 34
-      - 美国-5.30MB/s(Youtube:不良林)
-      - CN_65
+      - NONE 35
+      - NONE 36
+      - NONE 37
+      - NONE 38
+      - NONE 39
+      - NONE 40
+      - NONE 41
+      - NONE 42
+      - NONE 43
+      - NONE 44
+      - NONE 45
+      - NONE 46
+      - NONE 47
+      - NONE 48
+      - 台湾(油管:破解资源君2.0)
+      - NONE 49
+      - NONE 50
+      - NONE 51
+      - NONE 52
+      - NONE 53
+      - NONE 54
+      - CN 24 → openitsub.com
+      - 台湾(油管:破解资源君2.0) 2
+      - NONE 55
+      - NONE 56
+      - " 2"
+      - NONE 57
+      - github.com/freefq - 罗马尼亚  18
+      - NONE 58
+      - vpin-20.gito.cc:54328
+      - NONE 59
+      - NONE 60
+      - NONE 61
+      - NONE 62
+      - NONE 63
+      - NONE 64
+      - CN_87
+      - NONE 65
+      - NONE 66
+      - CN_106
+      - NONE 67
+      - _68
+      - NONE 68
+      - NONE 69
+      - NONE 70
+      - NONE 71
+      - NONE 72
+      - NONE 73
+      - NONE 74
+      - NONE 75
+      - NONE 76
+      - RO 1 → openitsub.com
+      - NONE 77
+      - NONE 78
+      - NONE 79
+      - github.com/freefq - 美国  17
+      - NONE 80
+      - 香港(油管:破解资源君2.0) 12
+      - NONE 81
+      - 美国(油管:破解资源君2.0) 33
+      - 亚洲(油管:破解资源君2.0) 2
+      - NONE 82
+      - NONE 83
+      - NONE 84
+      - NONE 85
+      - NONE 86
+      - CN 136 → openitsub.com
+      - CN 117 → openitsub.com
+      - CN 97 → openitsub.com
+      - CN 148 → openitsub.com
+      - 欧洲(油管:破解资源君2.0) 42
+      - CN 112 → openitsub.com
+      - CN 101 → openitsub.com
+      - CN 128 → openitsub.com
+      - 法国(油管:破解资源君2.0)
+      - 欧洲(油管:破解资源君2.0) 48
+      - CN 129 → openitsub.com
+      - CN 132 → openitsub.com
+      - US 4 → openitsub.com
+      - CN 91 → openitsub.com
+      - CN 115 → openitsub.com
+      - CN 126 → openitsub.com
+      - CN 138 → openitsub.com
+      - CN 107 → openitsub.com
+      - CN 131 → openitsub.com
+      - CN 143 → openitsub.com
+      - CN 102 → openitsub.com
+      - CN 104 → openitsub.com
+      - CN 98 → openitsub.com
+      - CN 96 → openitsub.com
+      - CN 121 → openitsub.com
+      - CN 94 → openitsub.com
+      - CN 110 → openitsub.com
+      - CN 139 → openitsub.com
+      - CN 103 → openitsub.com
+      - CN 88 → openitsub.com
+      - CN 146 → openitsub.com
+      - CN 122 → openitsub.com
+      - CN 140 → openitsub.com
+      - CN 114 → openitsub.com
+      - CN 93 → openitsub.com
+      - CN 90 → openitsub.com
+      - US 8 → openitsub.com
+      - CN 113 → openitsub.com
+      - CN 127 → openitsub.com
+      - CN 151 → openitsub.com
+      - CN 87 → openitsub.com
+      - CN 95 → openitsub.com
+      - CN 100 → openitsub.com
+      - CN 118 → openitsub.com
+      - CN 137 → openitsub.com
+      - CN 125 → openitsub.com
+      - CN 119 → openitsub.com
+      - CN 141 → openitsub.com
+      - US 3 → openitsub.com
+      - CN 150 → openitsub.com
+      - CN 123 → openitsub.com
+      - CN 108 → openitsub.com
+      - US 2 → openitsub.com
+      - CN 149 → openitsub.com
+      - CN 147 → openitsub.com
+      - 欧洲(油管:破解资源君2.0) 11
+      - CN 92 → openitsub.com
+      - CN 145 → openitsub.com
+      - CN 130 → openitsub.com
+      - 欧洲(油管:破解资源君2.0) 6
+      - CN 116 → openitsub.com
+      - CN 144 → openitsub.com
+      - US 7 → openitsub.com
+      - CN 124 → openitsub.com
+      - US 8 → openitsub.com 2
+      - CN 120 → openitsub.com
+      - CN 89 → openitsub.com
+      - CN 105 → openitsub.com
+      - CN 29 → openitsub.com
+      - CN 71 → openitsub.com
+      - CN 16 → openitsub.com
+      - CN 133 → openitsub.com
+      - CN 26 → openitsub.com
+      - CN 76 → openitsub.com
+      - CN 61 → openitsub.com
+      - CN 72 → openitsub.com
+      - CN 54 → openitsub.com
+      - TW 1 → openitsub.com
+      - NONE 87
+      - CN 31 → openitsub.com
+      - CN 66 → openitsub.com
+      - CN 41 → openitsub.com
+      - NONE 88
+      - CN 68 → openitsub.com
+      - CN 44 → openitsub.com
+      - NONE 89
+      - CN 34 → openitsub.com
+      - CN 39 → openitsub.com
+      - NONE 90
+      - CN 12 → openitsub.com
+      - CN 17 → openitsub.com
+      - CN 30 → openitsub.com
+      - CN 62 → openitsub.com
+      - CN 106 → openitsub.com
+      - CN 67 → openitsub.com
+      - CN 109 → openitsub.com
+      - CN 85 → openitsub.com
+      - FR 2 → openitsub.com
+      - NONE 91
+      - CN 55 → openitsub.com
+      - CN 33 → openitsub.com
+      - CN 15 → openitsub.com
+      - CN 3 → openitsub.com
+      - 欧洲(油管:破解资源君2.0) 20
+      - NONE 92
+      - CN 35 → openitsub.com
+      - NONE 93
+      - CN 77 → openitsub.com
+      - CN 84 → openitsub.com
+      - CN 82 → openitsub.com
+      - NONE 94
+      - CN 83 → openitsub.com
+      - NONE 95
+      - CN 58 → openitsub.com
+      - JP 8 → openitsub.com
+      - CN 78 → openitsub.com
+      - CN 46 → openitsub.com
+      - CN 27 → openitsub.com
+      - NONE 96
+      - CN 79 → openitsub.com
+      - NONE 97
+      - CN 14 → openitsub.com
+      - CN 5 → openitsub.com
+      - CN 111 → openitsub.com
+      - CN 51 → openitsub.com
+      - CN 38 → openitsub.com
+      - CN 13 → openitsub.com
+      - CN 75 → openitsub.com
+      - CN 69 → openitsub.com
+      - GB 1 → openitsub.com
+      - CN 56 → openitsub.com
+      - NONE 98
+      - CN 22 → openitsub.com
+      - CN 53 → openitsub.com
+      - CN 73 → openitsub.com
+      - CN 74 → openitsub.com
+      - CN 43 → openitsub.com
+      - CN 6 → openitsub.com
+      - US 11 → openitsub.com
+      - NONE 99
+      - CN 60 → openitsub.com
+      - NONE 100
+      - CN 52 → openitsub.com
+      - CN 37 → openitsub.com
+      - CN 36 → openitsub.com
+      - CN 19 → openitsub.com
+      - CN 81 → openitsub.com
+      - CN 18 → openitsub.com
+      - NONE 101
+      - CN 10 → openitsub.com
+      - NONE 102
+      - CN 9 → openitsub.com
+      - NONE 103
+      - CN 23 → openitsub.com
+      - NONE 104
+      - CN 2 → openitsub.com
+      - NONE 105
+      - CN 4 → openitsub.com
+      - CN 11 → openitsub.com
+      - CN 7 → openitsub.com
+      - NONE 106
+      - NONE 107
+      - NONE 108
+      - US 12 → openitsub.com
+      - NONE 109
+      - github.com/freefq - 美国CloudFlare节点 15
+      - NONE 110
+      - NONE 111
+      - NONE 112
+      - HK_149
+      - 美国(油管:破解资源君2.0) 19
+      - SG 1 → openitsub.com
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - SG 1 → openitsub.com
-      - HK_149
-      - Relay_🇸🇬SG-🇧🇩BD_219
-      - 香港(油管:破解资源君2.0) 4
-      - 德国(油管:破解资源君2.0) 16
       - NONE
-      - 美国(油管:破解资源君2.0) 19
-      - SG 13 → openitsub.com
+      - CN 8 → openitsub.com
       - NONE 2
+      - CN 20 → openitsub.com
+      - CN 142 → openitsub.com
+      - CN 86 → openitsub.com
+      - CN 25 → openitsub.com
+      - ""
+      - CN 21 → openitsub.com
       - NONE 3
       - NONE 4
       - NONE 5
-      - TW 1 → openitsub.com
-      - github.com/freefq - 俄罗斯  16
-      - US 3 → openitsub.com
-      - SG 3 → openitsub.com
-      - US 8 → openitsub.com
-      - SG 5 → openitsub.com
-      - 美国(油管:破解资源君2.0) 66
-      - CN 12 → openitsub.com
       - NONE 6
       - NONE 7
       - NONE 8
-      - 78.129.253.9:809
+      - US_310
       - NONE 9
-      - 美国(油管:破解资源君2.0) 14
       - NONE 10
       - NONE 11
+      - 美国(油管:破解资源君2.0) 14
       - NONE 12
       - NONE 13
-      - US_1085
       - NONE 14
-      - CN 13 → openitsub.com
-      - github.com/freefq - 美国CloudFlare节点 18
-      - github.com/freefq - 越南  2
-      - SG 9 → openitsub.com
-      - 美国(油管:破解资源君2.0) 33
-      - 亚洲(油管:破解资源君2.0) 2
-      - 欧洲(油管:破解资源君2.0) 24
-      - 美国(油管:破解资源君2.0) 54
-      - 香港(油管:破解资源君2.0) 12
-      - 美国(油管:破解资源君2.0) 55
-      - github.com/freefq - 台湾省台北市中华电信 25
-      - 美国(油管:破解资源君2.0) 60
-      - RO 1 → openitsub.com
-      - 台湾(油管:破解资源君2.0) 2
-      - 美国(油管:破解资源君2.0) 42
-      - 德国(油管:破解资源君2.0) 2
-      - 欧洲(油管:破解资源君2.0) 13
-      - 欧洲(油管:破解资源君2.0) 12
-      - 香港(油管:破解资源君2.0) 5
-      - 美国(油管:破解资源君2.0) 11
-      - 欧洲(油管:破解资源君2.0) 17
-      - 美国(油管:破解资源君2.0) 52
-      - 欧洲(油管:破解资源君2.0) 12 2
-      - 欧洲(油管:破解资源君2.0) 9
-      - 欧洲(油管:破解资源君2.0)
-      - SG 7 → openitsub.com
-      - 韩国(油管:破解资源君2.0) 4
-      - ""
+      - 美国(油管:破解资源君2.0) 28
       - NONE 15
-      - 日本(油管:破解资源君2.0)
       - NONE 16
-      - LA_261
       - NONE 17
       - NONE 18
       - NONE 19
       - NONE 20
-      - Relay_🇭🇰HK-🇨🇦CA_150
       - NONE 21
-      - _68
       - NONE 22
-      - 欧洲(油管:破解资源君2.0) 4
-      - 台湾(油管:破解资源君2.0)
-      - 美国(油管:破解资源君2.0) 16
-      - CN 11 → openitsub.com
-      - 美国(油管:破解资源君2.0) 28
       - NONE 23
-      - US_310
-      - 欧洲(油管:破解资源君2.0) 12 3
-      - 欧洲(油管:破解资源君2.0) 32
       - NONE 24
       - NONE 25
       - NONE 26
       - NONE 27
-      - Relay_🇭🇰HK-🇺🇸US_152
       - NONE 28
       - NONE 29
-      - CN_106
-      - CN_87
-      - US 12 → openitsub.com
-      - Relay_🇸🇬SG-🇯🇵JP_217
+      - CN_65
       - NONE 30
-      - github.com/freefq - 罗马尼亚  18
       - NONE 31
-      - US 11 → openitsub.com
-      - github.com/freefq - 美国  17
       - NONE 32
       - NONE 33
       - NONE 34
-      - 美国-5.30MB/s(Youtube:不良林)
-      - CN_65
+      - NONE 35
+      - NONE 36
+      - NONE 37
+      - NONE 38
+      - NONE 39
+      - NONE 40
+      - NONE 41
+      - NONE 42
+      - NONE 43
+      - NONE 44
+      - NONE 45
+      - NONE 46
+      - NONE 47
+      - NONE 48
+      - 台湾(油管:破解资源君2.0)
+      - NONE 49
+      - NONE 50
+      - NONE 51
+      - NONE 52
+      - NONE 53
+      - NONE 54
+      - CN 24 → openitsub.com
+      - 台湾(油管:破解资源君2.0) 2
+      - NONE 55
+      - NONE 56
+      - " 2"
+      - NONE 57
+      - github.com/freefq - 罗马尼亚  18
+      - NONE 58
+      - vpin-20.gito.cc:54328
+      - NONE 59
+      - NONE 60
+      - NONE 61
+      - NONE 62
+      - NONE 63
+      - NONE 64
+      - CN_87
+      - NONE 65
+      - NONE 66
+      - CN_106
+      - NONE 67
+      - _68
+      - NONE 68
+      - NONE 69
+      - NONE 70
+      - NONE 71
+      - NONE 72
+      - NONE 73
+      - NONE 74
+      - NONE 75
+      - NONE 76
+      - RO 1 → openitsub.com
+      - NONE 77
+      - NONE 78
+      - NONE 79
+      - github.com/freefq - 美国  17
+      - NONE 80
+      - 香港(油管:破解资源君2.0) 12
+      - NONE 81
+      - 美国(油管:破解资源君2.0) 33
+      - 亚洲(油管:破解资源君2.0) 2
+      - NONE 82
+      - NONE 83
+      - NONE 84
+      - NONE 85
+      - NONE 86
+      - CN 136 → openitsub.com
+      - CN 117 → openitsub.com
+      - CN 97 → openitsub.com
+      - CN 148 → openitsub.com
+      - 欧洲(油管:破解资源君2.0) 42
+      - CN 112 → openitsub.com
+      - CN 101 → openitsub.com
+      - CN 128 → openitsub.com
+      - 法国(油管:破解资源君2.0)
+      - 欧洲(油管:破解资源君2.0) 48
+      - CN 129 → openitsub.com
+      - CN 132 → openitsub.com
+      - US 4 → openitsub.com
+      - CN 91 → openitsub.com
+      - CN 115 → openitsub.com
+      - CN 126 → openitsub.com
+      - CN 138 → openitsub.com
+      - CN 107 → openitsub.com
+      - CN 131 → openitsub.com
+      - CN 143 → openitsub.com
+      - CN 102 → openitsub.com
+      - CN 104 → openitsub.com
+      - CN 98 → openitsub.com
+      - CN 96 → openitsub.com
+      - CN 121 → openitsub.com
+      - CN 94 → openitsub.com
+      - CN 110 → openitsub.com
+      - CN 139 → openitsub.com
+      - CN 103 → openitsub.com
+      - CN 88 → openitsub.com
+      - CN 146 → openitsub.com
+      - CN 122 → openitsub.com
+      - CN 140 → openitsub.com
+      - CN 114 → openitsub.com
+      - CN 93 → openitsub.com
+      - CN 90 → openitsub.com
+      - US 8 → openitsub.com
+      - CN 113 → openitsub.com
+      - CN 127 → openitsub.com
+      - CN 151 → openitsub.com
+      - CN 87 → openitsub.com
+      - CN 95 → openitsub.com
+      - CN 100 → openitsub.com
+      - CN 118 → openitsub.com
+      - CN 137 → openitsub.com
+      - CN 125 → openitsub.com
+      - CN 119 → openitsub.com
+      - CN 141 → openitsub.com
+      - US 3 → openitsub.com
+      - CN 150 → openitsub.com
+      - CN 123 → openitsub.com
+      - CN 108 → openitsub.com
+      - US 2 → openitsub.com
+      - CN 149 → openitsub.com
+      - CN 147 → openitsub.com
+      - 欧洲(油管:破解资源君2.0) 11
+      - CN 92 → openitsub.com
+      - CN 145 → openitsub.com
+      - CN 130 → openitsub.com
+      - 欧洲(油管:破解资源君2.0) 6
+      - CN 116 → openitsub.com
+      - CN 144 → openitsub.com
+      - US 7 → openitsub.com
+      - CN 124 → openitsub.com
+      - US 8 → openitsub.com 2
+      - CN 120 → openitsub.com
+      - CN 89 → openitsub.com
+      - CN 105 → openitsub.com
+      - CN 29 → openitsub.com
+      - CN 71 → openitsub.com
+      - CN 16 → openitsub.com
+      - CN 133 → openitsub.com
+      - CN 26 → openitsub.com
+      - CN 76 → openitsub.com
+      - CN 61 → openitsub.com
+      - CN 72 → openitsub.com
+      - CN 54 → openitsub.com
+      - TW 1 → openitsub.com
+      - NONE 87
+      - CN 31 → openitsub.com
+      - CN 66 → openitsub.com
+      - CN 41 → openitsub.com
+      - NONE 88
+      - CN 68 → openitsub.com
+      - CN 44 → openitsub.com
+      - NONE 89
+      - CN 34 → openitsub.com
+      - CN 39 → openitsub.com
+      - NONE 90
+      - CN 12 → openitsub.com
+      - CN 17 → openitsub.com
+      - CN 30 → openitsub.com
+      - CN 62 → openitsub.com
+      - CN 106 → openitsub.com
+      - CN 67 → openitsub.com
+      - CN 109 → openitsub.com
+      - CN 85 → openitsub.com
+      - FR 2 → openitsub.com
+      - NONE 91
+      - CN 55 → openitsub.com
+      - CN 33 → openitsub.com
+      - CN 15 → openitsub.com
+      - CN 3 → openitsub.com
+      - 欧洲(油管:破解资源君2.0) 20
+      - NONE 92
+      - CN 35 → openitsub.com
+      - NONE 93
+      - CN 77 → openitsub.com
+      - CN 84 → openitsub.com
+      - CN 82 → openitsub.com
+      - NONE 94
+      - CN 83 → openitsub.com
+      - NONE 95
+      - CN 58 → openitsub.com
+      - JP 8 → openitsub.com
+      - CN 78 → openitsub.com
+      - CN 46 → openitsub.com
+      - CN 27 → openitsub.com
+      - NONE 96
+      - CN 79 → openitsub.com
+      - NONE 97
+      - CN 14 → openitsub.com
+      - CN 5 → openitsub.com
+      - CN 111 → openitsub.com
+      - CN 51 → openitsub.com
+      - CN 38 → openitsub.com
+      - CN 13 → openitsub.com
+      - CN 75 → openitsub.com
+      - CN 69 → openitsub.com
+      - GB 1 → openitsub.com
+      - CN 56 → openitsub.com
+      - NONE 98
+      - CN 22 → openitsub.com
+      - CN 53 → openitsub.com
+      - CN 73 → openitsub.com
+      - CN 74 → openitsub.com
+      - CN 43 → openitsub.com
+      - CN 6 → openitsub.com
+      - US 11 → openitsub.com
+      - NONE 99
+      - CN 60 → openitsub.com
+      - NONE 100
+      - CN 52 → openitsub.com
+      - CN 37 → openitsub.com
+      - CN 36 → openitsub.com
+      - CN 19 → openitsub.com
+      - CN 81 → openitsub.com
+      - CN 18 → openitsub.com
+      - NONE 101
+      - CN 10 → openitsub.com
+      - NONE 102
+      - CN 9 → openitsub.com
+      - NONE 103
+      - CN 23 → openitsub.com
+      - NONE 104
+      - CN 2 → openitsub.com
+      - NONE 105
+      - CN 4 → openitsub.com
+      - CN 11 → openitsub.com
+      - CN 7 → openitsub.com
+      - NONE 106
+      - NONE 107
+      - NONE 108
+      - US 12 → openitsub.com
+      - NONE 109
+      - github.com/freefq - 美国CloudFlare节点 15
+      - NONE 110
+      - NONE 111
+      - NONE 112
+      - HK_149
+      - 美国(油管:破解资源君2.0) 19
+      - SG 1 → openitsub.com
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -898,108 +2343,289 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - SG 1 → openitsub.com
-      - HK_149
-      - Relay_🇸🇬SG-🇧🇩BD_219
-      - 香港(油管:破解资源君2.0) 4
-      - 德国(油管:破解资源君2.0) 16
       - NONE
-      - 美国(油管:破解资源君2.0) 19
-      - SG 13 → openitsub.com
+      - CN 8 → openitsub.com
       - NONE 2
+      - CN 20 → openitsub.com
+      - CN 142 → openitsub.com
+      - CN 86 → openitsub.com
+      - CN 25 → openitsub.com
+      - ""
+      - CN 21 → openitsub.com
       - NONE 3
       - NONE 4
       - NONE 5
-      - TW 1 → openitsub.com
-      - github.com/freefq - 俄罗斯  16
-      - US 3 → openitsub.com
-      - SG 3 → openitsub.com
-      - US 8 → openitsub.com
-      - SG 5 → openitsub.com
-      - 美国(油管:破解资源君2.0) 66
-      - CN 12 → openitsub.com
       - NONE 6
       - NONE 7
       - NONE 8
-      - 78.129.253.9:809
+      - US_310
       - NONE 9
-      - 美国(油管:破解资源君2.0) 14
       - NONE 10
       - NONE 11
+      - 美国(油管:破解资源君2.0) 14
       - NONE 12
       - NONE 13
-      - US_1085
       - NONE 14
-      - CN 13 → openitsub.com
-      - github.com/freefq - 美国CloudFlare节点 18
-      - github.com/freefq - 越南  2
-      - SG 9 → openitsub.com
-      - 美国(油管:破解资源君2.0) 33
-      - 亚洲(油管:破解资源君2.0) 2
-      - 欧洲(油管:破解资源君2.0) 24
-      - 美国(油管:破解资源君2.0) 54
-      - 香港(油管:破解资源君2.0) 12
-      - 美国(油管:破解资源君2.0) 55
-      - github.com/freefq - 台湾省台北市中华电信 25
-      - 美国(油管:破解资源君2.0) 60
-      - RO 1 → openitsub.com
-      - 台湾(油管:破解资源君2.0) 2
-      - 美国(油管:破解资源君2.0) 42
-      - 德国(油管:破解资源君2.0) 2
-      - 欧洲(油管:破解资源君2.0) 13
-      - 欧洲(油管:破解资源君2.0) 12
-      - 香港(油管:破解资源君2.0) 5
-      - 美国(油管:破解资源君2.0) 11
-      - 欧洲(油管:破解资源君2.0) 17
-      - 美国(油管:破解资源君2.0) 52
-      - 欧洲(油管:破解资源君2.0) 12 2
-      - 欧洲(油管:破解资源君2.0) 9
-      - 欧洲(油管:破解资源君2.0)
-      - SG 7 → openitsub.com
-      - 韩国(油管:破解资源君2.0) 4
-      - ""
+      - 美国(油管:破解资源君2.0) 28
       - NONE 15
-      - 日本(油管:破解资源君2.0)
       - NONE 16
-      - LA_261
       - NONE 17
       - NONE 18
       - NONE 19
       - NONE 20
-      - Relay_🇭🇰HK-🇨🇦CA_150
       - NONE 21
-      - _68
       - NONE 22
-      - 欧洲(油管:破解资源君2.0) 4
-      - 台湾(油管:破解资源君2.0)
-      - 美国(油管:破解资源君2.0) 16
-      - CN 11 → openitsub.com
-      - 美国(油管:破解资源君2.0) 28
       - NONE 23
-      - US_310
-      - 欧洲(油管:破解资源君2.0) 12 3
-      - 欧洲(油管:破解资源君2.0) 32
       - NONE 24
       - NONE 25
       - NONE 26
       - NONE 27
-      - Relay_🇭🇰HK-🇺🇸US_152
       - NONE 28
       - NONE 29
-      - CN_106
-      - CN_87
-      - US 12 → openitsub.com
-      - Relay_🇸🇬SG-🇯🇵JP_217
+      - CN_65
       - NONE 30
-      - github.com/freefq - 罗马尼亚  18
       - NONE 31
-      - US 11 → openitsub.com
-      - github.com/freefq - 美国  17
       - NONE 32
       - NONE 33
       - NONE 34
-      - 美国-5.30MB/s(Youtube:不良林)
-      - CN_65
+      - NONE 35
+      - NONE 36
+      - NONE 37
+      - NONE 38
+      - NONE 39
+      - NONE 40
+      - NONE 41
+      - NONE 42
+      - NONE 43
+      - NONE 44
+      - NONE 45
+      - NONE 46
+      - NONE 47
+      - NONE 48
+      - 台湾(油管:破解资源君2.0)
+      - NONE 49
+      - NONE 50
+      - NONE 51
+      - NONE 52
+      - NONE 53
+      - NONE 54
+      - CN 24 → openitsub.com
+      - 台湾(油管:破解资源君2.0) 2
+      - NONE 55
+      - NONE 56
+      - " 2"
+      - NONE 57
+      - github.com/freefq - 罗马尼亚  18
+      - NONE 58
+      - vpin-20.gito.cc:54328
+      - NONE 59
+      - NONE 60
+      - NONE 61
+      - NONE 62
+      - NONE 63
+      - NONE 64
+      - CN_87
+      - NONE 65
+      - NONE 66
+      - CN_106
+      - NONE 67
+      - _68
+      - NONE 68
+      - NONE 69
+      - NONE 70
+      - NONE 71
+      - NONE 72
+      - NONE 73
+      - NONE 74
+      - NONE 75
+      - NONE 76
+      - RO 1 → openitsub.com
+      - NONE 77
+      - NONE 78
+      - NONE 79
+      - github.com/freefq - 美国  17
+      - NONE 80
+      - 香港(油管:破解资源君2.0) 12
+      - NONE 81
+      - 美国(油管:破解资源君2.0) 33
+      - 亚洲(油管:破解资源君2.0) 2
+      - NONE 82
+      - NONE 83
+      - NONE 84
+      - NONE 85
+      - NONE 86
+      - CN 136 → openitsub.com
+      - CN 117 → openitsub.com
+      - CN 97 → openitsub.com
+      - CN 148 → openitsub.com
+      - 欧洲(油管:破解资源君2.0) 42
+      - CN 112 → openitsub.com
+      - CN 101 → openitsub.com
+      - CN 128 → openitsub.com
+      - 法国(油管:破解资源君2.0)
+      - 欧洲(油管:破解资源君2.0) 48
+      - CN 129 → openitsub.com
+      - CN 132 → openitsub.com
+      - US 4 → openitsub.com
+      - CN 91 → openitsub.com
+      - CN 115 → openitsub.com
+      - CN 126 → openitsub.com
+      - CN 138 → openitsub.com
+      - CN 107 → openitsub.com
+      - CN 131 → openitsub.com
+      - CN 143 → openitsub.com
+      - CN 102 → openitsub.com
+      - CN 104 → openitsub.com
+      - CN 98 → openitsub.com
+      - CN 96 → openitsub.com
+      - CN 121 → openitsub.com
+      - CN 94 → openitsub.com
+      - CN 110 → openitsub.com
+      - CN 139 → openitsub.com
+      - CN 103 → openitsub.com
+      - CN 88 → openitsub.com
+      - CN 146 → openitsub.com
+      - CN 122 → openitsub.com
+      - CN 140 → openitsub.com
+      - CN 114 → openitsub.com
+      - CN 93 → openitsub.com
+      - CN 90 → openitsub.com
+      - US 8 → openitsub.com
+      - CN 113 → openitsub.com
+      - CN 127 → openitsub.com
+      - CN 151 → openitsub.com
+      - CN 87 → openitsub.com
+      - CN 95 → openitsub.com
+      - CN 100 → openitsub.com
+      - CN 118 → openitsub.com
+      - CN 137 → openitsub.com
+      - CN 125 → openitsub.com
+      - CN 119 → openitsub.com
+      - CN 141 → openitsub.com
+      - US 3 → openitsub.com
+      - CN 150 → openitsub.com
+      - CN 123 → openitsub.com
+      - CN 108 → openitsub.com
+      - US 2 → openitsub.com
+      - CN 149 → openitsub.com
+      - CN 147 → openitsub.com
+      - 欧洲(油管:破解资源君2.0) 11
+      - CN 92 → openitsub.com
+      - CN 145 → openitsub.com
+      - CN 130 → openitsub.com
+      - 欧洲(油管:破解资源君2.0) 6
+      - CN 116 → openitsub.com
+      - CN 144 → openitsub.com
+      - US 7 → openitsub.com
+      - CN 124 → openitsub.com
+      - US 8 → openitsub.com 2
+      - CN 120 → openitsub.com
+      - CN 89 → openitsub.com
+      - CN 105 → openitsub.com
+      - CN 29 → openitsub.com
+      - CN 71 → openitsub.com
+      - CN 16 → openitsub.com
+      - CN 133 → openitsub.com
+      - CN 26 → openitsub.com
+      - CN 76 → openitsub.com
+      - CN 61 → openitsub.com
+      - CN 72 → openitsub.com
+      - CN 54 → openitsub.com
+      - TW 1 → openitsub.com
+      - NONE 87
+      - CN 31 → openitsub.com
+      - CN 66 → openitsub.com
+      - CN 41 → openitsub.com
+      - NONE 88
+      - CN 68 → openitsub.com
+      - CN 44 → openitsub.com
+      - NONE 89
+      - CN 34 → openitsub.com
+      - CN 39 → openitsub.com
+      - NONE 90
+      - CN 12 → openitsub.com
+      - CN 17 → openitsub.com
+      - CN 30 → openitsub.com
+      - CN 62 → openitsub.com
+      - CN 106 → openitsub.com
+      - CN 67 → openitsub.com
+      - CN 109 → openitsub.com
+      - CN 85 → openitsub.com
+      - FR 2 → openitsub.com
+      - NONE 91
+      - CN 55 → openitsub.com
+      - CN 33 → openitsub.com
+      - CN 15 → openitsub.com
+      - CN 3 → openitsub.com
+      - 欧洲(油管:破解资源君2.0) 20
+      - NONE 92
+      - CN 35 → openitsub.com
+      - NONE 93
+      - CN 77 → openitsub.com
+      - CN 84 → openitsub.com
+      - CN 82 → openitsub.com
+      - NONE 94
+      - CN 83 → openitsub.com
+      - NONE 95
+      - CN 58 → openitsub.com
+      - JP 8 → openitsub.com
+      - CN 78 → openitsub.com
+      - CN 46 → openitsub.com
+      - CN 27 → openitsub.com
+      - NONE 96
+      - CN 79 → openitsub.com
+      - NONE 97
+      - CN 14 → openitsub.com
+      - CN 5 → openitsub.com
+      - CN 111 → openitsub.com
+      - CN 51 → openitsub.com
+      - CN 38 → openitsub.com
+      - CN 13 → openitsub.com
+      - CN 75 → openitsub.com
+      - CN 69 → openitsub.com
+      - GB 1 → openitsub.com
+      - CN 56 → openitsub.com
+      - NONE 98
+      - CN 22 → openitsub.com
+      - CN 53 → openitsub.com
+      - CN 73 → openitsub.com
+      - CN 74 → openitsub.com
+      - CN 43 → openitsub.com
+      - CN 6 → openitsub.com
+      - US 11 → openitsub.com
+      - NONE 99
+      - CN 60 → openitsub.com
+      - NONE 100
+      - CN 52 → openitsub.com
+      - CN 37 → openitsub.com
+      - CN 36 → openitsub.com
+      - CN 19 → openitsub.com
+      - CN 81 → openitsub.com
+      - CN 18 → openitsub.com
+      - NONE 101
+      - CN 10 → openitsub.com
+      - NONE 102
+      - CN 9 → openitsub.com
+      - NONE 103
+      - CN 23 → openitsub.com
+      - NONE 104
+      - CN 2 → openitsub.com
+      - NONE 105
+      - CN 4 → openitsub.com
+      - CN 11 → openitsub.com
+      - CN 7 → openitsub.com
+      - NONE 106
+      - NONE 107
+      - NONE 108
+      - US 12 → openitsub.com
+      - NONE 109
+      - github.com/freefq - 美国CloudFlare节点 15
+      - NONE 110
+      - NONE 111
+      - NONE 112
+      - HK_149
+      - 美国(油管:破解资源君2.0) 19
+      - SG 1 → openitsub.com
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
