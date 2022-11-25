@@ -5,271 +5,835 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: NONE, server: sg02.awcloud.top, port: 443, type: trojan, password: b88a1a71-5250-4ddc-8337-3a28594b6192, sni: sg02.awcloud.top, skip-cert-verify: true, udp: true}
-  - {name: NONE 2, server: 51.75.76.22, port: 443, type: trojan, password: c60fbf90-4b55-11ed-b935-225401db9d57, skip-cert-verify: true, udp: true}
-  - {name: NONE 3, server: download2hkt.windowsupdate.lol, port: 443, type: trojan, password: b1171e62-aad8-46dc-8014-1478a9aabb04, sni: download2hkt.windowsupdate.lol, skip-cert-verify: true, udp: true}
-  - {name: NONE 4, server: kr1.api-aws.com, port: 443, type: trojan, password: 5491534e-00b5-42ff-853a-723997aadbdb, sni: kr1.api-aws.com, skip-cert-verify: true, udp: true}
-  - {name: NONE 5, server: download2hkt.windowsupdate.lol, port: 443, type: trojan, password: b27c853c-714a-45a5-be55-6451595a1b69, sni: download2hkt.windowsupdate.lol, skip-cert-verify: true, udp: true}
-  - {name: NONE 6, server: sg.iamnotagoodman.com, port: 443, type: trojan, password: f8d19ba5-8684-45f2-8523-77dbea588955, sni: sg.iamnotagoodman.com, skip-cert-verify: true, udp: true}
-  - {name: "", server: 84.32.4.25, port: 3389, type: vmess, uuid: 886868e2-b3fc-4a2c-8c66-1d2691861671, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 84.32.4.25}, udp: true}
-  - {name: NONE 7, server: jp.iamnotagoodman.com, port: 443, type: trojan, password: f8d19ba5-8684-45f2-8523-77dbea588955, sni: jp.iamnotagoodman.com, skip-cert-verify: true, udp: true}
-  - {name: NONE 8, server: idc1.vpn-akcelluler.my.id, port: 443, type: trojan, password: idc117okt, sni: idc1.vpn-akcelluler.my.id, skip-cert-verify: true, udp: true}
-  - {name: NONE 9, server: uk01.awcloud.top, port: 443, type: trojan, password: 59e806eb-8f89-4c37-a961-86ee23211300, sni: uk01.awcloud.top, skip-cert-verify: true, udp: true}
-  - {name: NONE 10, server: download2hkt.windowsupdate.lol, port: 443, type: trojan, password: 5d07a7bd-3696-4bc2-ab37-e7082c86f5cb, sni: download2hkt.windowsupdate.lol, skip-cert-verify: true, udp: true}
-  - {name: NONE 11, server: ca.liangyuandian.top, port: 443, type: trojan, password: b7bc6b1c-610d-4d39-ad29-18a0d6902348, sni: ca.liangyuandian.top, skip-cert-verify: true, udp: true}
-  - {name: " 2", server: 172.104.162.207, port: 16520, type: vmess, uuid: 1f145a5f-24dc-4252-e19f-8bfede2d15d8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hkaa0, ws-headers: {Host: 172.104.162.207}, udp: true}
-  - {name: NONE 12, server: usa.liangyuandian.top, port: 443, type: trojan, password: 53f20cd4-b381-4a80-8059-7bcd484bbb52, sni: usa.liangyuandian.top, skip-cert-verify: true, udp: true}
-  - {name: NONE 13, server: download2hkt.windowsupdate.lol, port: 443, type: trojan, password: 7778e684-f435-4166-bf9e-0256cb28bf10, sni: download2hkt.windowsupdate.lol, skip-cert-verify: true, udp: true}
-  - {name: NONE 14, server: 210.0.158.220, port: 28443, type: trojan, password: 750a29bf-0a40-437f-b120-38de74ae7eaf, skip-cert-verify: true, udp: true}
-  - {name: NONE 15, server: kr1.api-aws.com, port: 443, type: trojan, password: 1988268c-a841-42f2-acac-7a8c0c7e78e5, sni: kr1.api-aws.com, skip-cert-verify: true, udp: true}
-  - {name: NONE 16, server: kh.iamnotagoodman.com, port: 443, type: trojan, password: f8d19ba5-8684-45f2-8523-77dbea588955, sni: kh.iamnotagoodman.com, skip-cert-verify: true, udp: true}
-  - {name: US 2 → openitsub.com, server: ap.liangyuandian.top, port: 443, type: trojan, password: ceaea123-1b4b-469b-8358-bcd5f5529305, sni: ap.liangyuandian.top, skip-cert-verify: true, udp: true}
-  - {name: CN 10 → openitsub.com, server: 117.149.247.11, port: 20048, type: trojan, password: 6CF89406-B124-EF62-C121-E1189081F0DF, skip-cert-verify: true, udp: true}
-  - {name: SG 1 → openitsub.com, server: usa.liangyuandian.top, port: 443, type: trojan, password: ceaea123-1b4b-469b-8358-bcd5f5529305, sni: usa.liangyuandian.top, skip-cert-verify: true, udp: true}
-  - {name: US 9 → openitsub.com, server: 14.72img.xyz, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 14.72img.xyz}, udp: true}
-  - {name: CN 11 → openitsub.com, server: oss-cn-shanghai.westdatacloud.top, port: 20048, type: trojan, password: C66435F1-5582-9D56-D7CA-4F5E271BCBAC, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇺🇸US-🇩🇪DE_1066, server: 54.72img.xyz, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 54.72img.xyz}, udp: true}
-  - {name: NONE 17, server: content-provider12.cdn-delivery.akamaicd.com, port: 443, type: trojan, password: origin, sni: content-provider12.cdn-delivery.akamaicd.com, skip-cert-verify: true, udp: true}
-  - {name: 韩国(油管:破解资源君2.0), server: 146.56.149.205, port: 443, type: vmess, uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: lg30.cfcdn3.xyz}, udp: true}
-  - {name: NONE 18, server: 20005.purefast2.com, port: 20005, type: trojan, password: bab40563-cafe-39c1-9d76-c3e627d73758, sni: 20005.purefast2.com, skip-cert-verify: true, udp: true}
-  - {name: NONE 19, server: 20012.purefast2.com, port: 20012, type: trojan, password: a71df8e7-d563-3ebc-a26a-168c8dc8c9f3, sni: 20012.purefast2.com, skip-cert-verify: true, udp: true}
-  - {name: NONE 20, server: 20013.purefast2.com, port: 20013, type: trojan, password: a71df8e7-d563-3ebc-a26a-168c8dc8c9f3, sni: 20013.purefast2.com, skip-cert-verify: true, udp: true}
-  - {name: NONE 21, server: 20007.purefast2.com, port: 20007, type: trojan, password: a71df8e7-d563-3ebc-a26a-168c8dc8c9f3, sni: 20007.purefast2.com, skip-cert-verify: true, udp: true}
-  - {name: NONE 22, server: 20005.purefast2.com, port: 20005, type: trojan, password: a71df8e7-d563-3ebc-a26a-168c8dc8c9f3, sni: 20005.purefast2.com, skip-cert-verify: true, udp: true}
-  - {name: NONE 23, server: 20010.purefast2.com, port: 20010, type: trojan, password: a71df8e7-d563-3ebc-a26a-168c8dc8c9f3, sni: 20010.purefast2.com, skip-cert-verify: true, udp: true}
-  - {name: 未知国家-3.32MB/s(Youtube:不良林), server: 198.41.212.122, port: 443, type: vmess, uuid: fcfaec91-6096-44d8-956c-7868d9e874b1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: lg1.cfcdn1.xyz}, udp: true}
-  - {name: NONE 24, server: 20007.purefast2.com, port: 20007, type: trojan, password: bab40563-cafe-39c1-9d76-c3e627d73758, sni: 20007.purefast2.com, skip-cert-verify: true, udp: true}
-  - {name: NONE 25, server: 20013.purefast2.com, port: 20013, type: trojan, password: bab40563-cafe-39c1-9d76-c3e627d73758, sni: 20013.purefast2.com, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇺🇸US-🇷🇺RU_1104, server: 9.72img.xyz, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 9.72img.xyz}, udp: true}
-  - {name: 未知国家-5.32MB/s(Youtube:不良林), server: 141.101.115.111, port: 443, type: vmess, uuid: f33957e8-372e-4fba-99ed-f4db32cce9e5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: fr2.cfcdn4.xyz}, udp: true}
-  - {name: US 5 → openitsub.com, server: 150.230.149.55, port: 6374, type: vmess, uuid: 80f25361-877d-46d4-8404-f0dce1faf84f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 150.230.149.55}, udp: true}
-  - {name: NONE 26, server: 20004.purefast2.com, port: 20004, type: trojan, password: bab40563-cafe-39c1-9d76-c3e627d73758, sni: 20004.purefast2.com, skip-cert-verify: true, udp: true}
+  - {name: 欧洲(油管:破解资源君2.0) 10, server: 152.228.191.232, port: 443, type: vmess, uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: lg30.cfcdn3.xyz}, udp: true}
+  - {name: GB 1 → openitsub.com, server: 144.24.150.126, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 144.24.150.126}, udp: true}
+  - {name: Pool__218, server: 211.72.35.155, port: 3389, type: trojan, password: b09d2aaa443af97a, skip-cert-verify: true, udp: true}
+  - {name: Relay_-🇺🇦UA_232, server: v2cross.com.04.v2ce.com, port: 443, type: trojan, password: vGWCNNfBHwSY6m6M, sni: v2cross.com.04.v2ce.com, skip-cert-verify: true, udp: true}
+  - {name: NONE, server: 20005.purefast2.com, port: 20005, type: trojan, password: bab40563-cafe-39c1-9d76-c3e627d73758, sni: 20005.purefast2.com, skip-cert-verify: true, udp: true}
+  - {name: _40, server: 20012.purefast2.com, port: 20012, type: trojan, password: a71df8e7-d563-3ebc-a26a-168c8dc8c9f3, sni: 20012.purefast2.com, skip-cert-verify: true, udp: true}
+  - {name: Relay_-🇺🇸US_298, server: lux.iamnotagoodman.com, port: 443, type: trojan, password: 2ac7fc8a-68b5-4809-8bd2-73a593bae292, sni: lux.iamnotagoodman.com, skip-cert-verify: true, udp: true}
+  - {name: NONE 2, server: download2hkt.windowsupdate.lol, port: 443, type: trojan, password: b27c853c-714a-45a5-be55-6451595a1b69, sni: download2hkt.windowsupdate.lol, skip-cert-verify: true, udp: true}
+  - {name: NONE 3, server: 20002.purefast2.com, port: 20002, type: trojan, password: bab40563-cafe-39c1-9d76-c3e627d73758, sni: 20002.purefast2.com, skip-cert-verify: true, udp: true}
+  - {name: NONE 4, server: 60.249.3.230, port: 3389, type: trojan, password: 182228812d1e0f23, skip-cert-verify: true, udp: true}
+  - {name: NONE 5, server: 155.248.172.87, port: 28443, type: trojan, password: 750a29bf-0a40-437f-b120-38de74ae7eaf, skip-cert-verify: true, udp: true}
+  - {name: NONE 6, server: 20012.purefast2.com, port: 20012, type: trojan, password: bab40563-cafe-39c1-9d76-c3e627d73758, sni: 20012.purefast2.com, skip-cert-verify: true, udp: true}
+  - {name: NONE 7, server: 223.111.202.148, port: 30010, type: trojan, password: 6b4ced5e-835a-4a7a-9d03-6a46e94668cb, skip-cert-verify: true, udp: true}
+  - {name: Relay_-🇷🇺RU_67, server: 20012.purefast2.com, port: 20012, type: trojan, password: 83a3b688-04e5-3c28-85b7-82698a174e41, sni: 20012.purefast2.com, skip-cert-verify: true, udp: true}
+  - {name: CN_106, server: 20010.purefast2.com, port: 20010, type: trojan, password: 5f42a7e5-1b5a-3f89-a75a-306e68d8ac1a, sni: 20010.purefast2.com, skip-cert-verify: true, udp: true}
+  - {name: 美国(油管:破解资源君2.0) 25, server: 138.2.122.225, port: 80, type: vmess, uuid: 461aed20-0743-4f13-ee68-43394e875e42, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: h1.800876.xyz}, udp: true}
+  - {name: CN 8 → openitsub.com, server: h217022.waihuizhibiaowang.com, port: 15143, type: ss, cipher: chacha20-ietf-poly1305, password: 3dbdf038-ef96-4b51-834e-ac7e5ce94fe2, udp: true}
+  - {name: CN 60 → openitsub.com, server: vc-1.gito.cc, port: 33666, type: ssr, cipher: aes-256-cfb, password: 9ifast, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 12965:7g0tCI, obfs-param: 27e6c12965.download.windowsupdate.com, udp: true}
+  - {name: NONE 8, server: 223.111.202.148, port: 30020, type: trojan, password: 6b4ced5e-835a-4a7a-9d03-6a46e94668cb, skip-cert-verify: true, udp: true}
+  - {name: _119, server: 51.75.76.22, port: 443, type: trojan, password: c60fbf90-4b55-11ed-b935-225401db9d57, skip-cert-verify: true, udp: true}
+  - {name: NONE 9, server: 223.111.202.148, port: 30100, type: trojan, password: 6b4ced5e-835a-4a7a-9d03-6a46e94668cb, skip-cert-verify: true, udp: true}
+  - {name: 美国(油管:破解资源君2.0) 40, server: 47.88.52.220, port: 80, type: vmess, uuid: c9fe8359-5878-4413-c80e-3ffeabc47b02, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/?ed=2048", ws-headers: {Host: w.800876.xyz}, udp: true}
+  - {name: NONE 10, server: 138.2.114.255, port: 443, type: trojan, password: 81d93f62-15a2-4994-adb9-0b5d906aac7e, skip-cert-verify: true, udp: true}
+  - {name: NONE 11, server: 20004.purefast2.com, port: 20004, type: trojan, password: bab40563-cafe-39c1-9d76-c3e627d73758, sni: 20004.purefast2.com, skip-cert-verify: true, udp: true}
+  - {name: CN 18 → openitsub.com, server: guangzhouddns.xyz, port: 11846, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 29039:HWVD5doPgr2nnp5o, obfs-param: 6436f29039.microsoft.com, udp: true}
+  - {name: 新加坡(油管:破解资源君2.0) 4, server: 172.104.162.207, port: 16510, type: vmess, uuid: 5f38801e-527a-4253-9a74-02a2eca9d88d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hkaa0, ws-headers: {Host: 172.104.162.207}, udp: true}
+  - {name: NONE 12, server: 20010.purefast2.com, port: 20010, type: trojan, password: a71df8e7-d563-3ebc-a26a-168c8dc8c9f3, sni: 20010.purefast2.com, skip-cert-verify: true, udp: true}
+  - {name: NONE 13, server: 60.249.3.231, port: 3389, type: trojan, password: 0cc6b4268dea0ba8, skip-cert-verify: true, udp: true}
+  - {name: NONE 14, server: 223.111.202.148, port: 30030, type: trojan, password: 6b4ced5e-835a-4a7a-9d03-6a46e94668cb, skip-cert-verify: true, udp: true}
+  - {name: _227, server: 211.72.35.152, port: 3389, type: trojan, password: 0cc6b4268dea0ba8, skip-cert-verify: true, udp: true}
+  - {name: NONE 15, server: jp.liangyuandian.top, port: 443, type: trojan, password: 18304160-03d4-4c55-95c1-586c0a5f3a0a, sni: jp.liangyuandian.top, skip-cert-verify: true, udp: true}
+  - {name: NONE 16, server: 60.249.3.231, port: 3389, type: trojan, password: 182228812d1e0f23, skip-cert-verify: true, udp: true}
+  - {name: NONE 17, server: 211.72.35.154, port: 3389, type: trojan, password: 7b06d22a8a7c764f, skip-cert-verify: true, udp: true}
+  - {name: 欧洲(油管:破解资源君2.0) 11, server: 167.179.32.53, port: 443, type: vmess, uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: lg30.cfcdn3.xyz}, udp: true}
+  - {name: NONE 18, server: 23.247.137.70, port: 3389, type: trojan, password: d4e41ff772c7fd45, skip-cert-verify: true, udp: true}
+  - {name: TW 2 → openitsub.com, server: tw.xibai6.top, port: 31007, type: trojan, password: ca2345ba-46e7-3991-b1b7-45d18954caf1, sni: tw.xibai6.top, skip-cert-verify: true, udp: true}
+  - {name: Relay_-🇺🇸US_333, server: lux.iamnotagoodman.com, port: 443, type: trojan, password: 4f8c0e41-dbdb-40f1-99cb-2c2a0b909b52, sni: lux.iamnotagoodman.com, skip-cert-verify: true, udp: true}
+  - {name: NONE 19, server: 211.72.35.157, port: 3389, type: trojan, password: 7b06d22a8a7c764f, skip-cert-verify: true, udp: true}
+  - {name: US 4 → openitsub.com, server: 128.14.140.254, port: 443, type: vmess, uuid: 0479eb9d-999d-4bff-ae3f-4f7cc440ce46, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /dongtaiwang.com, ws-headers: {Host: v2ray2.ssr-free2.xyz}, udp: true}
+  - {name: NONE 20, server: download2hkt.windowsupdate.lol, port: 443, type: trojan, password: b1171e62-aad8-46dc-8014-1478a9aabb04, sni: download2hkt.windowsupdate.lol, skip-cert-verify: true, udp: true}
+  - {name: NONE 21, server: ru.iamnotagoodman.com, port: 443, type: trojan, password: f8d19ba5-8684-45f2-8523-77dbea588955, sni: ru.iamnotagoodman.com, skip-cert-verify: true, udp: true}
+  - {name: _229, server: 211.72.35.152, port: 3389, type: trojan, password: 182228812d1e0f23, skip-cert-verify: true, udp: true}
+  - {name: NONE 22, server: v2cross.com.02.v2ce.com, port: 443, type: trojan, password: 3gLlCYBipVwr6Y5F, sni: v2cross.com.02.v2ce.com, skip-cert-verify: true, udp: true}
+  - {name: TW 3 → openitsub.com, server: tw-tb-c.zc20200426.club, port: 39999, type: vmess, uuid: 67c50f6a-816d-3555-89b4-19dd29608f8b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: NONE 23, server: 211.72.35.157, port: 3389, type: trojan, password: 0cc6b4268dea0ba8, skip-cert-verify: true, udp: true}
+  - {name: Relay_-🇦🇺AU_193, server: ap.liangyuandian.top, port: 443, type: trojan, password: cc55e294-b76f-425a-9301-c18afbecaa22, sni: ap.liangyuandian.top, skip-cert-verify: true, udp: true}
+  - {name: NONE 24, server: 20008.purefast2.com, port: 20008, type: trojan, password: bab40563-cafe-39c1-9d76-c3e627d73758, sni: 20008.purefast2.com, skip-cert-verify: true, udp: true}
+  - {name: NONE 25, server: de.iamnotagoodman.com, port: 443, type: trojan, password: 28bccca2-43d2-47f8-bd63-b1361ce7d362, sni: de.iamnotagoodman.com, skip-cert-verify: true, udp: true}
+  - {name: Relay_-🇫🇷FR_117, server: de.tjvpn.org, port: 443, type: trojan, password: c60fbf90-4b55-11ed-b935-225401db9d57, sni: de.tjvpn.org, skip-cert-verify: true, udp: true}
+  - {name: NONE 26, server: 20010.purefast2.com, port: 20010, type: trojan, password: bab40563-cafe-39c1-9d76-c3e627d73758, sni: 20010.purefast2.com, skip-cert-verify: true, udp: true}
+  - {name: NONE 27, server: 20004.purefast2.com, port: 20004, type: trojan, password: 07730e7a-427a-35b5-8095-b70a6535fd23, sni: 20004.purefast2.com, skip-cert-verify: true, udp: true}
+  - {name: CN 10 → openitsub.com, server: frontend.yijianlian.app, port: 54430, type: trojan, password: ae3d8af4-4e4f-47a8-a4d7-fda41150d71a, sni: frontend.yijianlian.app, skip-cert-verify: true, udp: true}
+  - {name: NONE 14 2, server: 210.0.158.220, port: 28443, type: trojan, password: 750a29bf-0a40-437f-b120-38de74ae7eaf, skip-cert-verify: true, udp: true}
+  - {name: NONE 28, server: 223.111.202.148, port: 30030, type: trojan, password: ae7cc604-d970-4200-9a9b-eb45087b4fc1, skip-cert-verify: true, udp: true}
+  - {name: CN 8 → openitsub.com 2, server: shzz.ikuncloud.com, port: 46498, type: ss, cipher: chacha20-ietf-poly1305, password: 954fde49-dc73-4d54-af6f-310b999e3c57, udp: true}
+  - {name: NONE 29, server: jp.iamnotagoodman.com, port: 443, type: trojan, password: 2ac7fc8a-68b5-4809-8bd2-73a593bae292, sni: jp.iamnotagoodman.com, skip-cert-verify: true, udp: true}
+  - {name: _66, server: 20015.purefast2.com, port: 20015, type: trojan, password: 83a3b688-04e5-3c28-85b7-82698a174e41, sni: 20015.purefast2.com, skip-cert-verify: true, udp: true}
+  - {name: NONE 30, server: 110.80.3.24, port: 21004, type: trojan, password: f97edc29-1c8b-49d7-80b2-c246984a6f64, skip-cert-verify: true, udp: true}
+  - {name: _85, server: 20007.purefast2.com, port: 20007, type: trojan, password: 83a3b688-04e5-3c28-85b7-82698a174e41, sni: 20007.purefast2.com, skip-cert-verify: true, udp: true}
+  - {name: NONE 31, server: 19244tj.matrixxx888.com, port: 19244, type: trojan, password: 2147db6c-3b80-3f0e-add8-1dbabb9743ad, sni: 19244tj.matrixxx888.com, skip-cert-verify: true, udp: true}
+  - {name: NONE 32, server: 20004.purefast2.com, port: 20004, type: trojan, password: a71df8e7-d563-3ebc-a26a-168c8dc8c9f3, sni: 20004.purefast2.com, skip-cert-verify: true, udp: true}
+  - {name: NONE 33, server: 20000.purefast2.com, port: 20000, type: trojan, password: a71df8e7-d563-3ebc-a26a-168c8dc8c9f3, sni: 20000.purefast2.com, skip-cert-verify: true, udp: true}
+  - {name: TW 1 → openitsub.com, server: tw-tb-b.zc20200426.club, port: 39998, type: vmess, uuid: 67c50f6a-816d-3555-89b4-19dd29608f8b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: NONE 34, server: 89.163.220.99, port: 28443, type: trojan, password: 750a29bf-0a40-437f-b120-38de74ae7eaf, skip-cert-verify: true, udp: true}
+  - {name: NONE 35, server: 20000.purefast2.com, port: 20000, type: trojan, password: a1d4c471-61d1-3f61-8502-63b14b8b56be, sni: 20000.purefast2.com, skip-cert-verify: true, udp: true}
+  - {name: CN 2 → openitsub.com, server: hnzz.ikuncloud.com, port: 62405, type: ss, cipher: chacha20-ietf-poly1305, password: 954fde49-dc73-4d54-af6f-310b999e3c57, udp: true}
+  - {name: NONE 20 2, server: 20013.purefast2.com, port: 20013, type: trojan, password: a71df8e7-d563-3ebc-a26a-168c8dc8c9f3, sni: 20013.purefast2.com, skip-cert-verify: true, udp: true}
+  - {name: NONE 36, server: 223.111.202.148, port: 30080, type: trojan, password: a1b16d10-4f43-4dd9-8c4f-52065b2b0910, skip-cert-verify: true, udp: true}
+  - {name: NONE 37, server: de.iamnotagoodman.com, port: 443, type: trojan, password: 4f8c0e41-dbdb-40f1-99cb-2c2a0b909b52, sni: de.iamnotagoodman.com, skip-cert-verify: true, udp: true}
+  - {name: sg-1.gito.cc:831, server: sg-1.gito.cc, port: 831, type: ssr, cipher: aes-256-cfb, password: 9ifast, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 12965:7g0tCI, obfs-param: 27e6c12965.download.windowsupdate.com, udp: true}
+  - {name: US 2 → openitsub.com, server: 44.72img.xyz, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 44.72img.xyz}, udp: true}
+  - {name: Relay_-🇨🇦CA_334, server: sg.iamnotagoodman.com, port: 443, type: trojan, password: 4f8c0e41-dbdb-40f1-99cb-2c2a0b909b52, sni: sg.iamnotagoodman.com, skip-cert-verify: true, udp: true}
+  - {name: 美国(油管:破解资源君2.0) 9, server: 66.212.20.3, port: 443, type: vmess, uuid: 0479eb9d-999d-4bff-ae3f-4f7cc440ce46, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /dongtaiwang.com, ws-headers: {Host: v2ray2.ssr-free2.xyz}, udp: true}
+  - {name: NONE 38, server: 20006.purefast2.com, port: 20006, type: trojan, password: 83a3b688-04e5-3c28-85b7-82698a174e41, sni: 20006.purefast2.com, skip-cert-verify: true, udp: true}
+  - {name: CN 29 → openitsub.com, server: official.tokyometropolis.kiev.ua, port: 2053, type: trojan, password: 96983eb4-c8f1-316e-ab00-500014ed3d8b, sni: official.tokyometropolis.kiev.ua, skip-cert-verify: true, udp: true}
+  - {name: NONE 39, server: 20014.purefast2.com, port: 20014, type: trojan, password: 83a3b688-04e5-3c28-85b7-82698a174e41, sni: 20014.purefast2.com, skip-cert-verify: true, udp: true}
+  - {name: NONE 40, server: v1r.centaur.network, port: 16805, type: trojan, password: 86114b8a-078f-4c7b-acdd-bfc91b2e9a3b, sni: v1r.centaur.network, skip-cert-verify: true, udp: true}
+  - {name: NONE 41, server: 89.163.220.99, port: 28443, type: trojan, password: 6b4ced5e-835a-4a7a-9d03-6a46e94668cb, skip-cert-verify: true, udp: true}
+  - {name: _313, server: 138.2.113.84, port: 443, type: trojan, password: b291d129-ee55-4801-a9b8-b5316e5c37b7, skip-cert-verify: true, udp: true}
+  - {name: _294, server: 51.81.82.15, port: 443, type: trojan, password: c2b0a060-44b0-11ed-ad2e-1239d0255272, skip-cert-verify: true, udp: true}
+  - {name: CN_87, server: 20004.purefast2.com, port: 20004, type: trojan, password: a1d4c471-61d1-3f61-8502-63b14b8b56be, sni: 20004.purefast2.com, skip-cert-verify: true, udp: true}
+  - {name: CN 3 → openitsub.com, server: frontend.yijianlian.app, port: 54570, type: trojan, password: ae3d8af4-4e4f-47a8-a4d7-fda41150d71a, sni: frontend.yijianlian.app, skip-cert-verify: true, udp: true}
+  - {name: NONE 42, server: 211.72.35.158, port: 3389, type: trojan, password: 7b06d22a8a7c764f, skip-cert-verify: true, udp: true}
+  - {name: US 17 → openitsub.com, server: azgy001.xibai6.top, port: 20790, type: trojan, password: ca2345ba-46e7-3991-b1b7-45d18954caf1, sni: azgy001.xibai6.top, skip-cert-verify: true, udp: true}
+  - {name: NONE 43, server: 20005.purefast2.com, port: 20005, type: trojan, password: a71df8e7-d563-3ebc-a26a-168c8dc8c9f3, sni: 20005.purefast2.com, skip-cert-verify: true, udp: true}
+  - {name: _65, server: 20001.purefast2.com, port: 20001, type: trojan, password: 83a3b688-04e5-3c28-85b7-82698a174e41, sni: 20001.purefast2.com, skip-cert-verify: true, udp: true}
+  - {name: Relay_-🇺🇸US_318, server: ar.iamnotagoodman.com, port: 443, type: trojan, password: 4f8c0e41-dbdb-40f1-99cb-2c2a0b909b52, sni: ar.iamnotagoodman.com, skip-cert-verify: true, udp: true}
+  - {name: NONE 44, server: v1r.centaur.network, port: 16801, type: trojan, password: 86114b8a-078f-4c7b-acdd-bfc91b2e9a3b, sni: v1r.centaur.network, skip-cert-verify: true, udp: true}
+  - {name: NONE 45, server: 223.111.202.148, port: 30020, type: trojan, password: ae7cc604-d970-4200-9a9b-eb45087b4fc1, skip-cert-verify: true, udp: true}
+  - {name: TW 2 → openitsub.com 2, server: tw-tb-b.zc20200426.club, port: 39998, type: vmess, uuid: 67c50f6a-816d-3555-89b4-19dd29608f8b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 香港电讯盈科有限公司 17, server: 119.237.43.217, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: tgunivstar.168-138-94-194.sslip.io}, udp: true}
+  - {name: _323, server: 51.81.211.171, port: 443, type: trojan, password: 2dab5d78-5c56-4252-850d-c037753a40db, skip-cert-verify: true, udp: true}
+  - {name: NONE 46, server: 110.80.3.24, port: 21001, type: trojan, password: f97edc29-1c8b-49d7-80b2-c246984a6f64, skip-cert-verify: true, udp: true}
+  - {name: NONE 47, server: 20010.purefast2.com, port: 20010, type: trojan, password: 83a3b688-04e5-3c28-85b7-82698a174e41, sni: 20010.purefast2.com, skip-cert-verify: true, udp: true}
+  - {name: Relay_-🇨🇦CA_147, server: sg.iamnotagoodman.com, port: 443, type: trojan, password: f8d19ba5-8684-45f2-8523-77dbea588955, sni: sg.iamnotagoodman.com, skip-cert-verify: true, udp: true}
+  - {name: NONE 48, server: 20005.purefast2.com, port: 20005, type: trojan, password: 83a3b688-04e5-3c28-85b7-82698a174e41, sni: 20005.purefast2.com, skip-cert-verify: true, udp: true}
+  - {name: US 2 → openitsub.com 2, server: ap.liangyuandian.top, port: 443, type: trojan, password: ceaea123-1b4b-469b-8358-bcd5f5529305, sni: ap.liangyuandian.top, skip-cert-verify: true, udp: true}
+  - {name: TW 2 → openitsub.com 3, server: tw-tb-b.zc20200426.club, port: 39998, type: vmess, uuid: 67c50f6a-816d-3555-89b4-19dd29608f8b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇯🇵JP-🇯🇵JP_173, server: kr1.api-aws.com, port: 443, type: trojan, password: 1988268c-a841-42f2-acac-7a8c0c7e78e5, sni: kr1.api-aws.com, skip-cert-verify: true, udp: true}
+  - {name: CN_54, server: 20003.purefast2.com, port: 20003, type: trojan, password: bab40563-cafe-39c1-9d76-c3e627d73758, sni: 20003.purefast2.com, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇸🇬SG-🇬🇧GB_224, server: uk.liangyuandian.top, port: 443, type: trojan, password: ceaea123-1b4b-469b-8358-bcd5f5529305, sni: uk.liangyuandian.top, skip-cert-verify: true, udp: true}
+  - {name: 新加坡(油管:破解资源君2.0) 7, server: lll.277428.xyz, port: 40771, type: vmess, uuid: 61194810-5193-48bc-eb0a-7978a059d681, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇸🇬SG-🇸🇬SG_211, server: sg.liangyuandian.top, port: 443, type: trojan, password: 192a5fc9-2baa-4043-8655-d840d370cb86, sni: sg.liangyuandian.top, skip-cert-verify: true, udp: true}
+  - {name: NL_199, server: 5.255.103.209, port: 443, type: trojan, password: 3dacbaa8-784b-430c-9c1e-57d33648981d, skip-cert-verify: true, udp: true}
+  - {name: NONE 7 2, server: jp.iamnotagoodman.com, port: 443, type: trojan, password: f8d19ba5-8684-45f2-8523-77dbea588955, sni: jp.iamnotagoodman.com, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇸🇬SG-🇧🇩BD_240, server: kh.iamnotagoodman.com, port: 443, type: trojan, password: 28bccca2-43d2-47f8-bd63-b1361ce7d362, sni: kh.iamnotagoodman.com, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇸🇬SG-🇺🇸US_232, server: usa.liangyuandian.top, port: 443, type: trojan, password: 176196e4-7cf7-4561-87a9-21a1b4e344be, sni: usa.liangyuandian.top, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇸🇬SG-🇯🇵JP_225, server: jp.liangyuandian.top, port: 443, type: trojan, password: 192a5fc9-2baa-4043-8655-d840d370cb86, sni: jp.liangyuandian.top, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇨🇳CN-🇹🇼TW_28, server: 20016.purefast2.com, port: 20016, type: trojan, password: 83a3b688-04e5-3c28-85b7-82698a174e41, sni: 20016.purefast2.com, skip-cert-verify: true, udp: true}
+  - {name: NONE 21 2, server: 20007.purefast2.com, port: 20007, type: trojan, password: a71df8e7-d563-3ebc-a26a-168c8dc8c9f3, sni: 20007.purefast2.com, skip-cert-verify: true, udp: true}
+  - {name: HK_163, server: uk01.awcloud.top, port: 443, type: trojan, password: 7f9ef59e-20fb-4343-bafc-3a84fa22fe70, sni: uk01.awcloud.top, skip-cert-verify: true, udp: true}
+  - {name: JP_182, server: 49.212.221.47, port: 2053, type: trojan, password: 96983eb4-c8f1-316e-ab00-500014ed3d8b, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇸🇬SG-🇯🇵JP_216, server: jp.liangyuandian.top, port: 443, type: trojan, password: 176196e4-7cf7-4561-87a9-21a1b4e344be, sni: jp.liangyuandian.top, skip-cert-verify: true, udp: true}
+  - {name: JP_177, server: 168.138.44.176, port: 443, type: trojan, password: 8d2d5953-d649-4034-94f2-72f2df2623da, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇯🇵JP-🇯🇵JP_172, server: kr1.api-aws.com, port: 443, type: trojan, password: e3dcc71e-f058-43bf-bf0d-5bdf20dec071, sni: kr1.api-aws.com, skip-cert-verify: true, udp: true}
+  - {name: KR_188, server: 52.141.26.55, port: 443, type: trojan, password: 3dacbaa8-784b-430c-9c1e-57d33648981d, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇸🇬SG-🇨🇦CA_215, server: ca.liangyuandian.top, port: 443, type: trojan, password: ceaea123-1b4b-469b-8358-bcd5f5529305, sni: ca.liangyuandian.top, skip-cert-verify: true, udp: true}
+  - {name: Relay_Relay_-🇫🇷FR_119🇫🇷FR-🇫🇷FR_129, server: content-provider26.cdn-delivery.akamaicd.com, port: 443, type: trojan, password: origin, sni: content-provider26.cdn-delivery.akamaicd.com, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇯🇵JP-🇯🇵JP_176, server: kr1.api-aws.com, port: 443, type: trojan, password: ca3a57c6-9bb5-4d19-876d-4552de4bb959, sni: kr1.api-aws.com, skip-cert-verify: true, udp: true}
+  - {name: CN 19 → openitsub.com, server: 117.149.247.11, port: 20048, type: trojan, password: 6CF89406-B124-EF62-C121-E1189081F0DF, skip-cert-verify: true, udp: true}
   - {name: 美国-406.4KB/s(Youtube:不良林), server: 172.64.148.111, port: 443, type: vmess, uuid: f33957e8-372e-4fba-99ed-f4db32cce9e5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: fr2.cfcdn4.xyz}, udp: true}
-  - {name: NONE 27, server: 223.111.202.148, port: 30080, type: trojan, password: a1b16d10-4f43-4dd9-8c4f-52065b2b0910, skip-cert-verify: true, udp: true}
-  - {name: 未知国家-2.42MB/s(Youtube:不良林), server: 141.101.114.120, port: 443, type: vmess, uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: lg30.cfcdn3.xyz}, udp: true}
-  - {name: 未知国家-1.80MB/s(Youtube:不良林), server: 22.72img.xyz, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 22.72img.xyz}, udp: true}
-  - {name: 未知国家-4.45MB/s(Youtube:不良林), server: ip.skk.moe, port: 2086, type: vmess, uuid: e91c45c9-2c0f-46a9-c56d-21663b9e2c18, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /aries, ws-headers: {Host: buyvm.cloudflare.quest}, udp: true}
-  - {name: NONE 28, server: 20011.purefast2.com, port: 20011, type: trojan, password: bab40563-cafe-39c1-9d76-c3e627d73758, sni: 20011.purefast2.com, skip-cert-verify: true, udp: true}
-  - {name: 美国-1.53MB/s(Youtube:不良林), server: 24.72img.xyz, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 24.72img.xyz}, udp: true}
-  - {name: NONE 29, server: 223.111.202.148, port: 30070, type: trojan, password: a1b16d10-4f43-4dd9-8c4f-52065b2b0910, skip-cert-verify: true, udp: true}
-  - {name: 未知国家-2.37MB/s(Youtube:不良林), server: 15.72img.xyz, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 15.72img.xyz}, udp: true}
-  - {name: NONE 30, server: 20012.purefast2.com, port: 20012, type: trojan, password: bab40563-cafe-39c1-9d76-c3e627d73758, sni: 20012.purefast2.com, skip-cert-verify: true, udp: true}
-  - {name: 42.157.195.242:12127, server: 42.157.195.242, port: 12127, type: ssr, cipher: aes-256-cfb, password: 68xdgu9eyif, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 600777:154T8b, obfs-param: 0f099600777.v23f7nM0, udp: true}
-  - {name: 欧洲(油管:破解资源君2.0) 44, server: 198.41.203.2, port: 443, type: vmess, uuid: 176b598f-445b-41ac-9d2a-430c5c4df26a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /dongtaiwang.com, ws-headers: {Host: clash1.trump2023.net}, udp: true}
-  - {name: 196.247.59.154:801, server: 196.247.59.154, port: 801, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: NONE 31, server: p3r.centaur.network, port: 16809, type: trojan, password: e199b516-00f9-469e-9ee5-fe609b4bc34e, sni: p3r.centaur.network, skip-cert-verify: true, udp: true}
-  - {name: 14.152.92.79:12127, server: 14.152.92.79, port: 12127, type: ssr, cipher: aes-256-cfb, password: 68xdgu9eyif, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 600777:154T8b, obfs-param: 0f099600777.v23f7nM0, udp: true}
-  - {name: US 11 → openitsub.com, server: hynesconstruction.com, port: 443, type: vmess, uuid: c6747da4-fb2e-4a2a-bdb7-8614bdd6b0b3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /sshkit/401452697/635b464921141/, ws-headers: {Host: sg1-v2ray.sshkit.org}, udp: true}
-  - {name: CN 9 → openitsub.com, server: initest08.initcloud.pro, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 60431:123456, obfs-param: "", udp: true}
-  - {name: 欧洲(油管:破解资源君2.0) 47, server: 6.72img.xyz, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 6.72img.xyz}, udp: true}
-  - {name: CN 5 → openitsub.com, server: 14.152.92.73, port: 12127, type: ssr, cipher: aes-256-cfb, password: 68xdgu9eyif, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 600777:154T8b, obfs-param: 0f099600777.v23f7nM0, udp: true}
-  - {name: NONE 32, server: p3r.centaur.network, port: 16802, type: trojan, password: e199b516-00f9-469e-9ee5-fe609b4bc34e, sni: p3r.centaur.network, skip-cert-verify: true, udp: true}
-  - {name: CN_62, server: 106.55.234.95, port: 31372, type: vmess, uuid: 374d3519-455c-45b8-e3b1-0e2e9fcf4411, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 42.157.195.238:12127, server: 42.157.195.238, port: 12127, type: ssr, cipher: aes-256-cfb, password: 68xdgu9eyif, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 600777:154T8b, obfs-param: 0f099600777.v23f7nM0, udp: true}
-  - {name: Relay_🇺🇸US-🇨🇦CA_1085, server: 43.72img.xyz, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 43.72img.xyz}, udp: true}
+  - {name: CN 7 → openitsub.com, server: shzz.ikuncloud.com, port: 23029, type: ss, cipher: chacha20-ietf-poly1305, password: 954fde49-dc73-4d54-af6f-310b999e3c57, udp: true}
+  - {name: HK_160, server: in01.awcloud.top, port: 443, type: trojan, password: 7f9ef59e-20fb-4343-bafc-3a84fa22fe70, sni: in01.awcloud.top, skip-cert-verify: true, udp: true}
+  - {name: NONE 49, server: sg02.awcloud.top, port: 443, type: trojan, password: b88a1a71-5250-4ddc-8337-3a28594b6192, sni: sg02.awcloud.top, skip-cert-verify: true, udp: true}
+  - {name: CN 3 → openitsub.com 2, server: hnzz.ikuncloud.com, port: 30711, type: ss, cipher: chacha20-ietf-poly1305, password: 954fde49-dc73-4d54-af6f-310b999e3c57, udp: true}
+  - {name: 欧洲(油管:破解资源君2.0) 17, server: 45.72img.xyz, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 45.72img.xyz}, udp: true}
+  - {name: CN_31, server: us-2.gito.cc, port: 33431, type: ssr, cipher: aes-256-cfb, password: 9ifast, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 12965:7g0tCI, obfs-param: 27e6c12965.download.windowsupdate.com, udp: true}
+  - {name: CN_55, server: 20002.purefast2.com, port: 20002, type: trojan, password: a1d4c471-61d1-3f61-8502-63b14b8b56be, sni: 20002.purefast2.com, skip-cert-verify: true, udp: true}
+  - {name: CN 6 → openitsub.com, server: hnzz.ikuncloud.com, port: 11074, type: ss, cipher: chacha20-ietf-poly1305, password: 954fde49-dc73-4d54-af6f-310b999e3c57, udp: true}
+  - {name: Relay_🇭🇰HK-🇺🇸US_154, server: usa.liangyuandian.top, port: 443, type: trojan, password: b7bc6b1c-610d-4d39-ad29-18a0d6902348, sni: usa.liangyuandian.top, skip-cert-verify: true, udp: true}
+  - {name: CN 10 → openitsub.com 2, server: cu.kapoknode.com, port: 25897, type: vmess, uuid: 8b1b6169-d4af-474c-826d-5e7b3308ab26, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cu.kapoknode.com}, udp: true}
+  - {name: CN_52, server: 223.111.202.148, port: 30040, type: trojan, password: ae7cc604-d970-4200-9a9b-eb45087b4fc1, skip-cert-verify: true, udp: true}
+  - {name: HK_165, server: in01.awcloud.top, port: 443, type: trojan, password: 59e806eb-8f89-4c37-a961-86ee23211300, sni: in01.awcloud.top, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇯🇵JP-🇯🇵JP_184, server: kr1.api-aws.com, port: 443, type: trojan, password: d66dccd1-90c1-4713-8972-2417a2854df2, sni: kr1.api-aws.com, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇹🇼TW-🇹🇼TW_260, server: 60.249.3.227, port: 3389, type: trojan, password: 182228812d1e0f23, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇨🇳CN-🇹🇼TW_92, server: official.taipeicitygovernment.chernovtsy.ua, port: 8443, type: trojan, password: 96983eb4-c8f1-316e-ab00-500014ed3d8b, sni: official.taipeicitygovernment.chernovtsy.ua, skip-cert-verify: true, udp: true}
+  - {name: CN_48, server: v1r.centaur.network, port: 16804, type: trojan, password: 86114b8a-078f-4c7b-acdd-bfc91b2e9a3b, sni: v1r.centaur.network, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇸🇬SG-🇩🇪DE_241, server: de.liangyuandian.top, port: 443, type: trojan, password: 176196e4-7cf7-4561-87a9-21a1b4e344be, sni: de.liangyuandian.top, skip-cert-verify: true, udp: true}
+  - {name: CN_85, server: 223.111.202.148, port: 30050, type: trojan, password: 6b4ced5e-835a-4a7a-9d03-6a46e94668cb, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇸🇬SG-🇯🇵JP_218, server: ap.liangyuandian.top, port: 443, type: trojan, password: 176196e4-7cf7-4561-87a9-21a1b4e344be, sni: ap.liangyuandian.top, skip-cert-verify: true, udp: true}
+  - {name: 美国(油管:破解资源君2.0) 41, server: 47.88.52.220, port: 80, type: vmess, uuid: c9fe8359-5878-4413-c80e-3ffeabc47b02, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: w.800876.xyz}, udp: true}
+  - {name: Relay_🇭🇰HK-🇭🇰HK_149, server: hk01.awcloud.top, port: 443, type: trojan, password: 7f9ef59e-20fb-4343-bafc-3a84fa22fe70, sni: hk01.awcloud.top, skip-cert-verify: true, udp: true}
+  - {name: NONE 29 2, server: 223.111.202.148, port: 30070, type: trojan, password: a1b16d10-4f43-4dd9-8c4f-52065b2b0910, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇭🇰HK-🇩🇪DE_147, server: de01.awcloud.top, port: 443, type: trojan, password: 7f9ef59e-20fb-4343-bafc-3a84fa22fe70, sni: de01.awcloud.top, skip-cert-verify: true, udp: true}
+  - {name: SG_222, server: sg.liangyuandian.top, port: 443, type: trojan, password: 2b2b1b4f-3372-47f7-9f90-26097c7683f9, sni: sg.liangyuandian.top, skip-cert-verify: true, udp: true}
+  - {name: NONE 8 2, server: idc1.vpn-akcelluler.my.id, port: 443, type: trojan, password: idc117okt, sni: idc1.vpn-akcelluler.my.id, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇭🇰HK-🇸🇬SG_153, server: sg.liangyuandian.top, port: 443, type: trojan, password: b7bc6b1c-610d-4d39-ad29-18a0d6902348, sni: sg.liangyuandian.top, skip-cert-verify: true, udp: true}
+  - {name: HK_162, server: ru01.awcloud.top, port: 443, type: trojan, password: 7f9ef59e-20fb-4343-bafc-3a84fa22fe70, sni: ru01.awcloud.top, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇸🇬SG-🇯🇵JP_219, server: ap.liangyuandian.top, port: 443, type: trojan, password: 192a5fc9-2baa-4043-8655-d840d370cb86, sni: ap.liangyuandian.top, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇯🇵JP-🇯🇵JP_168, server: jp-am48-6.eqnode.net, port: 8081, type: ssr, cipher: aes-256-cfb, password: eAokbaDN6, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
+  - {name: Relay_🇸🇬SG-🇩🇪DE_214, server: de.liangyuandian.top, port: 443, type: trojan, password: ceaea123-1b4b-469b-8358-bcd5f5529305, sni: de.liangyuandian.top, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇸🇬SG-🇸🇬SG_227, server: sg.liangyuandian.top, port: 443, type: trojan, password: ceaea123-1b4b-469b-8358-bcd5f5529305, sni: sg.liangyuandian.top, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇸🇬SG-🇸🇬SG_239, server: sg.liangyuandian.top, port: 443, type: trojan, password: 51c44c4e-f8c2-4419-a52b-b4b7bd915078, sni: sg.liangyuandian.top, skip-cert-verify: true, udp: true}
+  - {name: CN_33, server: 20011.purefast2.com, port: 20011, type: trojan, password: 0989fa4f-7b43-34fd-8f7f-ce06427dce06, sni: 20011.purefast2.com, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇨🇳CN-🇨🇦CA_61, server: 20003.purefast2.com, port: 20003, type: trojan, password: 83a3b688-04e5-3c28-85b7-82698a174e41, sni: 20003.purefast2.com, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇸🇬SG-🇺🇸US_217, server: usa.liangyuandian.top, port: 443, type: trojan, password: ceaea123-1b4b-469b-8358-bcd5f5529305, sni: usa.liangyuandian.top, skip-cert-verify: true, udp: true}
+  - {name: CN_51, server: v1r.centaur.network, port: 16803, type: trojan, password: 86114b8a-078f-4c7b-acdd-bfc91b2e9a3b, sni: v1r.centaur.network, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇨🇳CN-🇨🇦CA_58, server: 20002.purefast2.com, port: 20002, type: trojan, password: 83a3b688-04e5-3c28-85b7-82698a174e41, sni: 20002.purefast2.com, skip-cert-verify: true, udp: true}
+  - {name: HK_155, server: sg02.awcloud.top, port: 443, type: trojan, password: 7f9ef59e-20fb-4343-bafc-3a84fa22fe70, sni: sg02.awcloud.top, skip-cert-verify: true, udp: true}
+  - {name: _51, server: 20007.purefast2.com, port: 20007, type: trojan, password: bab40563-cafe-39c1-9d76-c3e627d73758, sni: 20007.purefast2.com, skip-cert-verify: true, udp: true}
+  - {name: CN 15 → openitsub.com, server: 202.110.80.135, port: 48336, type: ss, cipher: chacha20-ietf-poly1305, password: 954fde49-dc73-4d54-af6f-310b999e3c57, udp: true}
+  - {name: CN_83, server: 223.111.202.148, port: 30070, type: trojan, password: 6b4ced5e-835a-4a7a-9d03-6a46e94668cb, skip-cert-verify: true, udp: true}
+  - {name: 亚洲(油管:破解资源君2.0) 8, server: h649960.waihuizhibiaowang.com, port: 15443, type: ss, cipher: chacha20-ietf-poly1305, password: 3dbdf038-ef96-4b51-834e-ac7e5ce94fe2, udp: true}
+  - {name: NONE 12 2, server: usa.liangyuandian.top, port: 443, type: trojan, password: 53f20cd4-b381-4a80-8059-7bcd484bbb52, sni: usa.liangyuandian.top, skip-cert-verify: true, udp: true}
+  - {name: SG_231, server: uk.liangyuandian.top, port: 443, type: trojan, password: 18304160-03d4-4c55-95c1-586c0a5f3a0a, sni: uk.liangyuandian.top, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇫🇷FR-🇫🇷FR_130, server: content-provider12.cdn-delivery.akamaicd.com, port: 443, type: trojan, password: origin, sni: content-provider12.cdn-delivery.akamaicd.com, skip-cert-verify: true, udp: true}
+  - {name: CN 5 → openitsub.com, server: hnzz.ikuncloud.com, port: 60099, type: ss, cipher: chacha20-ietf-poly1305, password: 954fde49-dc73-4d54-af6f-310b999e3c57, udp: true}
+  - {name: CN 4 → openitsub.com, server: hnzz.ikuncloud.com, port: 14029, type: ss, cipher: chacha20-ietf-poly1305, password: 954fde49-dc73-4d54-af6f-310b999e3c57, udp: true}
+  - {name: Relay_🇭🇰HK-🇷🇺RU_143, server: ru01.awcloud.top, port: 443, type: trojan, password: b88a1a71-5250-4ddc-8337-3a28594b6192, sni: ru01.awcloud.top, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇨🇳CN-🇷🇺RU_69, server: 20011.purefast2.com, port: 20011, type: trojan, password: 83a3b688-04e5-3c28-85b7-82698a174e41, sni: 20011.purefast2.com, skip-cert-verify: true, udp: true}
+  - {name: CN_62, server: 20013.purefast2.com, port: 20013, type: trojan, password: 83a3b688-04e5-3c28-85b7-82698a174e41, sni: 20013.purefast2.com, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_356, server: fhcarm2.gaox.ml, port: 443, type: trojan, password: f39bd244-f5fe-415c-8b98-a1e5250bf178, sni: fhcarm2.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: 美国-美国@univstar-6, server: 138.2.122.225, port: 443, type: vmess, uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: lg30.cfcdn3.xyz}, udp: true}
+  - {name: US_349, server: 148.113.141.99, port: 443, type: trojan, password: HdsUZmsHQW, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_311, server: 00000000000000000000000000000000000000000000000000000000000014a.rui77.com, port: 12659, type: vmess, uuid: 78065c14-fc80-40b5-a46c-0e34efdf82fa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_376, server: fhcarm1.gaox.ml, port: 443, type: trojan, password: 05742120-ce23-4cc8-88f5-6d221ce45bf4, sni: fhcarm1.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇺🇸US-🇸🇬SG_338, server: sg.liangyuandian.top, port: 443, type: trojan, password: 53f20cd4-b381-4a80-8059-7bcd484bbb52, sni: sg.liangyuandian.top, skip-cert-verify: true, udp: true}
+  - {name: US_357, server: 129.146.135.157, port: 443, type: trojan, password: e23f408a-012e-4030-8b31-02022031cb50, skip-cert-verify: true, udp: true}
+  - {name: 欧洲(油管:破解资源君2.0) 12, server: cf.fovi.tk, port: 2053, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /eisasqa, ws-headers: {Host: foxdeovz1.fovi.tk}, udp: true}
+  - {name: US_325, server: in01.awcloud.top, port: 443, type: trojan, password: 42f54d42-b1c8-4244-805e-8c4c02f86b5b, sni: in01.awcloud.top, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇺🇸US-🇯🇵JP_348, server: jp.liangyuandian.top, port: 443, type: trojan, password: 53f20cd4-b381-4a80-8059-7bcd484bbb52, sni: jp.liangyuandian.top, skip-cert-verify: true, udp: true}
+  - {name: 欧洲(油管:破解资源君2.0) 21, server: vau1.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /chat, ws-headers: {Host: vau1.0bad.com}, udp: true}
+  - {name: CN 27 → openitsub.com, server: us02.internetsmartrouting.asia, port: 10329, type: vmess, uuid: 86155150-d86d-42e2-af55-986e3d72323a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /Patti$Freud$4Clubs$spendable$lamar7$mollie7, ws-headers: {Host: us02.internetsmartrouting.asia}, udp: true}
+  - {name: Relay_🇺🇸US-🇯🇵JP_373, server: jp.iamnotagoodman.com, port: 443, type: trojan, password: 4f8c0e41-dbdb-40f1-99cb-2c2a0b909b52, sni: jp.iamnotagoodman.com, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_329, server: 60.72img.xyz, port: 443, type: trojan, password: 81d93f62-15a2-4994-adb9-0b5d906aac7e, sni: 60.72img.xyz, skip-cert-verify: true, udp: true}
+  - {name: US_277, server: 38.75.136.21, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: 美国(油管:破解资源君2.0) 14, server: 35.72img.xyz, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 35.72img.xyz}, udp: true}
+  - {name: Relay_🇹🇼TW-🇹🇼TW_262, server: 60.249.3.228, port: 3389, type: trojan, password: 182228812d1e0f23, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇹🇼TW-🇹🇼TW_263, server: 60.249.3.229, port: 3389, type: trojan, password: 182228812d1e0f23, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 台湾省新北市中华电信 8, server: tw-tb-c.zc20200426.club, port: 39999, type: vmess, uuid: 67c50f6a-816d-3555-89b4-19dd29608f8b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: US_337, server: 129.146.190.42, port: 443, type: trojan, password: dbf9bf9c-2c3f-474a-8031-d4c00666a989, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 香港电讯盈科有限公司 4, server: 219.76.13.169, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: tgunivstar.168-138-94-194.sslip.io}, udp: true}
+  - {name: 日本(油管:破解资源君2.0) 2, server: vjp1.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /chat, ws-headers: {Host: vjp1.0bad.com}, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_335, server: fhcamd2.gaox.ml, port: 443, type: trojan, password: dbf9bf9c-2c3f-474a-8031-d4c00666a989, sni: fhcamd2.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: 欧洲(油管:破解资源君2.0) 14, server: 54.72img.xyz, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 54.72img.xyz}, udp: true}
+  - {name: 俄罗斯(油管:破解资源君2.0) 3, server: 30.72img.xyz, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 30.72img.xyz}, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_359, server: ust-2.opensvr.net, port: 443, type: trojan, password: opentunnel.net-j6rtj4rtjrs56j, sni: ust-2.opensvr.net, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 美国  10, server: 168.138.171.65, port: 443, type: vmess, uuid: 4af6fd9a-e8b4-46f2-da3a-207f4577656c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 欧洲(油管:破解资源君2.0) 15, server: 53.72img.xyz, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 53.72img.xyz}, udp: true}
+  - {name: CN 11 → openitsub.com, server: oss-cn-shanghai.westdatacloud.top, port: 20048, type: trojan, password: C66435F1-5582-9D56-D7CA-4F5E271BCBAC, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: CN 25 → openitsub.com, server: guangzhouddns.xyz, port: 22848, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 29039:HWVD5doPgr2nnp5o, obfs-param: 6436f29039.microsoft.com, udp: true}
+  - {name: 美国(油管:破解资源君2.0) 16, server: lu1.gogogoo.cyou, port: 443, type: vmess, uuid: db5d1aa3-908b-44d1-be0a-4e6a8d4e4cda, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /go, ws-headers: {Host: lu1.gogogoo.cyou}, udp: true}
+  - {name: 亚洲(油管:破解资源君2.0), server: 103.147.126.127, port: 80, type: vmess, uuid: c863dd9d-55f2-4615-b1a1-549da098722e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /nkpvpn.site, ws-headers: {Host: 103.147.126.127}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 欧洲(油管:破解资源君2.0) 10
+      - GB 1 → openitsub.com
+      - Pool__218
+      - Relay_-🇺🇦UA_232
       - NONE
+      - _40
+      - Relay_-🇺🇸US_298
       - NONE 2
       - NONE 3
       - NONE 4
       - NONE 5
       - NONE 6
-      - ""
       - NONE 7
+      - Relay_-🇷🇺RU_67
+      - CN_106
+      - 美国(油管:破解资源君2.0) 25
+      - CN 8 → openitsub.com
+      - CN 60 → openitsub.com
       - NONE 8
+      - _119
       - NONE 9
+      - 美国(油管:破解资源君2.0) 40
       - NONE 10
       - NONE 11
-      - " 2"
+      - CN 18 → openitsub.com
+      - 新加坡(油管:破解资源君2.0) 4
       - NONE 12
       - NONE 13
       - NONE 14
+      - _227
       - NONE 15
       - NONE 16
-      - US 2 → openitsub.com
-      - CN 10 → openitsub.com
-      - SG 1 → openitsub.com
-      - US 9 → openitsub.com
-      - CN 11 → openitsub.com
-      - Relay_🇺🇸US-🇩🇪DE_1066
       - NONE 17
-      - 韩国(油管:破解资源君2.0)
+      - 欧洲(油管:破解资源君2.0) 11
       - NONE 18
+      - TW 2 → openitsub.com
+      - Relay_-🇺🇸US_333
       - NONE 19
+      - US 4 → openitsub.com
       - NONE 20
       - NONE 21
+      - _229
       - NONE 22
+      - TW 3 → openitsub.com
       - NONE 23
-      - 未知国家-3.32MB/s(Youtube:不良林)
+      - Relay_-🇦🇺AU_193
       - NONE 24
       - NONE 25
-      - Relay_🇺🇸US-🇷🇺RU_1104
-      - 未知国家-5.32MB/s(Youtube:不良林)
-      - US 5 → openitsub.com
+      - Relay_-🇫🇷FR_117
       - NONE 26
-      - 美国-406.4KB/s(Youtube:不良林)
       - NONE 27
-      - 未知国家-2.42MB/s(Youtube:不良林)
-      - 未知国家-1.80MB/s(Youtube:不良林)
-      - 未知国家-4.45MB/s(Youtube:不良林)
+      - CN 10 → openitsub.com
+      - NONE 14 2
       - NONE 28
-      - 美国-1.53MB/s(Youtube:不良林)
+      - CN 8 → openitsub.com 2
       - NONE 29
-      - 未知国家-2.37MB/s(Youtube:不良林)
+      - _66
       - NONE 30
-      - 42.157.195.242:12127
-      - 欧洲(油管:破解资源君2.0) 44
-      - 196.247.59.154:801
+      - _85
       - NONE 31
-      - 14.152.92.79:12127
-      - US 11 → openitsub.com
-      - CN 9 → openitsub.com
-      - 欧洲(油管:破解资源君2.0) 47
-      - CN 5 → openitsub.com
       - NONE 32
+      - NONE 33
+      - TW 1 → openitsub.com
+      - NONE 34
+      - NONE 35
+      - CN 2 → openitsub.com
+      - NONE 20 2
+      - NONE 36
+      - NONE 37
+      - sg-1.gito.cc:831
+      - US 2 → openitsub.com
+      - Relay_-🇨🇦CA_334
+      - 美国(油管:破解资源君2.0) 9
+      - NONE 38
+      - CN 29 → openitsub.com
+      - NONE 39
+      - NONE 40
+      - NONE 41
+      - _313
+      - _294
+      - CN_87
+      - CN 3 → openitsub.com
+      - NONE 42
+      - US 17 → openitsub.com
+      - NONE 43
+      - _65
+      - Relay_-🇺🇸US_318
+      - NONE 44
+      - NONE 45
+      - TW 2 → openitsub.com 2
+      - github.com/freefq - 香港电讯盈科有限公司 17
+      - _323
+      - NONE 46
+      - NONE 47
+      - Relay_-🇨🇦CA_147
+      - NONE 48
+      - US 2 → openitsub.com 2
+      - TW 2 → openitsub.com 3
+      - Relay_🇯🇵JP-🇯🇵JP_173
+      - CN_54
+      - Relay_🇸🇬SG-🇬🇧GB_224
+      - 新加坡(油管:破解资源君2.0) 7
+      - Relay_🇸🇬SG-🇸🇬SG_211
+      - NL_199
+      - NONE 7 2
+      - Relay_🇸🇬SG-🇧🇩BD_240
+      - Relay_🇸🇬SG-🇺🇸US_232
+      - Relay_🇸🇬SG-🇯🇵JP_225
+      - Relay_🇨🇳CN-🇹🇼TW_28
+      - NONE 21 2
+      - HK_163
+      - JP_182
+      - Relay_🇸🇬SG-🇯🇵JP_216
+      - JP_177
+      - Relay_🇯🇵JP-🇯🇵JP_172
+      - KR_188
+      - Relay_🇸🇬SG-🇨🇦CA_215
+      - Relay_Relay_-🇫🇷FR_119🇫🇷FR-🇫🇷FR_129
+      - Relay_🇯🇵JP-🇯🇵JP_176
+      - CN 19 → openitsub.com
+      - 美国-406.4KB/s(Youtube:不良林)
+      - CN 7 → openitsub.com
+      - HK_160
+      - NONE 49
+      - CN 3 → openitsub.com 2
+      - 欧洲(油管:破解资源君2.0) 17
+      - CN_31
+      - CN_55
+      - CN 6 → openitsub.com
+      - Relay_🇭🇰HK-🇺🇸US_154
+      - CN 10 → openitsub.com 2
+      - CN_52
+      - HK_165
+      - Relay_🇯🇵JP-🇯🇵JP_184
+      - Relay_🇹🇼TW-🇹🇼TW_260
+      - Relay_🇨🇳CN-🇹🇼TW_92
+      - CN_48
+      - Relay_🇸🇬SG-🇩🇪DE_241
+      - CN_85
+      - Relay_🇸🇬SG-🇯🇵JP_218
+      - 美国(油管:破解资源君2.0) 41
+      - Relay_🇭🇰HK-🇭🇰HK_149
+      - NONE 29 2
+      - Relay_🇭🇰HK-🇩🇪DE_147
+      - SG_222
+      - NONE 8 2
+      - Relay_🇭🇰HK-🇸🇬SG_153
+      - HK_162
+      - Relay_🇸🇬SG-🇯🇵JP_219
+      - Relay_🇯🇵JP-🇯🇵JP_168
+      - Relay_🇸🇬SG-🇩🇪DE_214
+      - Relay_🇸🇬SG-🇸🇬SG_227
+      - Relay_🇸🇬SG-🇸🇬SG_239
+      - CN_33
+      - Relay_🇨🇳CN-🇨🇦CA_61
+      - Relay_🇸🇬SG-🇺🇸US_217
+      - CN_51
+      - Relay_🇨🇳CN-🇨🇦CA_58
+      - HK_155
+      - _51
+      - CN 15 → openitsub.com
+      - CN_83
+      - 亚洲(油管:破解资源君2.0) 8
+      - NONE 12 2
+      - SG_231
+      - Relay_🇫🇷FR-🇫🇷FR_130
+      - CN 5 → openitsub.com
+      - CN 4 → openitsub.com
+      - Relay_🇭🇰HK-🇷🇺RU_143
+      - Relay_🇨🇳CN-🇷🇺RU_69
       - CN_62
-      - 42.157.195.238:12127
-      - Relay_🇺🇸US-🇨🇦CA_1085
+      - Relay_🇺🇸US-🇺🇸US_356
+      - 美国-美国@univstar-6
+      - US_349
+      - Relay_🇺🇸US-🇺🇸US_311
+      - Relay_🇺🇸US-🇺🇸US_376
+      - Relay_🇺🇸US-🇸🇬SG_338
+      - US_357
+      - 欧洲(油管:破解资源君2.0) 12
+      - US_325
+      - Relay_🇺🇸US-🇯🇵JP_348
+      - 欧洲(油管:破解资源君2.0) 21
+      - CN 27 → openitsub.com
+      - Relay_🇺🇸US-🇯🇵JP_373
+      - Relay_🇺🇸US-🇺🇸US_329
+      - US_277
+      - 美国(油管:破解资源君2.0) 14
+      - Relay_🇹🇼TW-🇹🇼TW_262
+      - Relay_🇹🇼TW-🇹🇼TW_263
+      - github.com/freefq - 台湾省新北市中华电信 8
+      - US_337
+      - github.com/freefq - 香港电讯盈科有限公司 4
+      - 日本(油管:破解资源君2.0) 2
+      - Relay_🇺🇸US-🇺🇸US_335
+      - 欧洲(油管:破解资源君2.0) 14
+      - 俄罗斯(油管:破解资源君2.0) 3
+      - Relay_🇺🇸US-🇺🇸US_359
+      - github.com/freefq - 美国  10
+      - 欧洲(油管:破解资源君2.0) 15
+      - CN 11 → openitsub.com
+      - CN 25 → openitsub.com
+      - 美国(油管:破解资源君2.0) 16
+      - 亚洲(油管:破解资源君2.0)
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
+      - 欧洲(油管:破解资源君2.0) 10
+      - GB 1 → openitsub.com
+      - Pool__218
+      - Relay_-🇺🇦UA_232
       - NONE
+      - _40
+      - Relay_-🇺🇸US_298
       - NONE 2
       - NONE 3
       - NONE 4
       - NONE 5
       - NONE 6
-      - ""
       - NONE 7
+      - Relay_-🇷🇺RU_67
+      - CN_106
+      - 美国(油管:破解资源君2.0) 25
+      - CN 8 → openitsub.com
+      - CN 60 → openitsub.com
       - NONE 8
+      - _119
       - NONE 9
+      - 美国(油管:破解资源君2.0) 40
       - NONE 10
       - NONE 11
-      - " 2"
+      - CN 18 → openitsub.com
+      - 新加坡(油管:破解资源君2.0) 4
       - NONE 12
       - NONE 13
       - NONE 14
+      - _227
       - NONE 15
       - NONE 16
-      - US 2 → openitsub.com
-      - CN 10 → openitsub.com
-      - SG 1 → openitsub.com
-      - US 9 → openitsub.com
-      - CN 11 → openitsub.com
-      - Relay_🇺🇸US-🇩🇪DE_1066
       - NONE 17
-      - 韩国(油管:破解资源君2.0)
+      - 欧洲(油管:破解资源君2.0) 11
       - NONE 18
+      - TW 2 → openitsub.com
+      - Relay_-🇺🇸US_333
       - NONE 19
+      - US 4 → openitsub.com
       - NONE 20
       - NONE 21
+      - _229
       - NONE 22
+      - TW 3 → openitsub.com
       - NONE 23
-      - 未知国家-3.32MB/s(Youtube:不良林)
+      - Relay_-🇦🇺AU_193
       - NONE 24
       - NONE 25
-      - Relay_🇺🇸US-🇷🇺RU_1104
-      - 未知国家-5.32MB/s(Youtube:不良林)
-      - US 5 → openitsub.com
+      - Relay_-🇫🇷FR_117
       - NONE 26
-      - 美国-406.4KB/s(Youtube:不良林)
       - NONE 27
-      - 未知国家-2.42MB/s(Youtube:不良林)
-      - 未知国家-1.80MB/s(Youtube:不良林)
-      - 未知国家-4.45MB/s(Youtube:不良林)
+      - CN 10 → openitsub.com
+      - NONE 14 2
       - NONE 28
-      - 美国-1.53MB/s(Youtube:不良林)
+      - CN 8 → openitsub.com 2
       - NONE 29
-      - 未知国家-2.37MB/s(Youtube:不良林)
+      - _66
       - NONE 30
-      - 42.157.195.242:12127
-      - 欧洲(油管:破解资源君2.0) 44
-      - 196.247.59.154:801
+      - _85
       - NONE 31
-      - 14.152.92.79:12127
-      - US 11 → openitsub.com
-      - CN 9 → openitsub.com
-      - 欧洲(油管:破解资源君2.0) 47
-      - CN 5 → openitsub.com
       - NONE 32
+      - NONE 33
+      - TW 1 → openitsub.com
+      - NONE 34
+      - NONE 35
+      - CN 2 → openitsub.com
+      - NONE 20 2
+      - NONE 36
+      - NONE 37
+      - sg-1.gito.cc:831
+      - US 2 → openitsub.com
+      - Relay_-🇨🇦CA_334
+      - 美国(油管:破解资源君2.0) 9
+      - NONE 38
+      - CN 29 → openitsub.com
+      - NONE 39
+      - NONE 40
+      - NONE 41
+      - _313
+      - _294
+      - CN_87
+      - CN 3 → openitsub.com
+      - NONE 42
+      - US 17 → openitsub.com
+      - NONE 43
+      - _65
+      - Relay_-🇺🇸US_318
+      - NONE 44
+      - NONE 45
+      - TW 2 → openitsub.com 2
+      - github.com/freefq - 香港电讯盈科有限公司 17
+      - _323
+      - NONE 46
+      - NONE 47
+      - Relay_-🇨🇦CA_147
+      - NONE 48
+      - US 2 → openitsub.com 2
+      - TW 2 → openitsub.com 3
+      - Relay_🇯🇵JP-🇯🇵JP_173
+      - CN_54
+      - Relay_🇸🇬SG-🇬🇧GB_224
+      - 新加坡(油管:破解资源君2.0) 7
+      - Relay_🇸🇬SG-🇸🇬SG_211
+      - NL_199
+      - NONE 7 2
+      - Relay_🇸🇬SG-🇧🇩BD_240
+      - Relay_🇸🇬SG-🇺🇸US_232
+      - Relay_🇸🇬SG-🇯🇵JP_225
+      - Relay_🇨🇳CN-🇹🇼TW_28
+      - NONE 21 2
+      - HK_163
+      - JP_182
+      - Relay_🇸🇬SG-🇯🇵JP_216
+      - JP_177
+      - Relay_🇯🇵JP-🇯🇵JP_172
+      - KR_188
+      - Relay_🇸🇬SG-🇨🇦CA_215
+      - Relay_Relay_-🇫🇷FR_119🇫🇷FR-🇫🇷FR_129
+      - Relay_🇯🇵JP-🇯🇵JP_176
+      - CN 19 → openitsub.com
+      - 美国-406.4KB/s(Youtube:不良林)
+      - CN 7 → openitsub.com
+      - HK_160
+      - NONE 49
+      - CN 3 → openitsub.com 2
+      - 欧洲(油管:破解资源君2.0) 17
+      - CN_31
+      - CN_55
+      - CN 6 → openitsub.com
+      - Relay_🇭🇰HK-🇺🇸US_154
+      - CN 10 → openitsub.com 2
+      - CN_52
+      - HK_165
+      - Relay_🇯🇵JP-🇯🇵JP_184
+      - Relay_🇹🇼TW-🇹🇼TW_260
+      - Relay_🇨🇳CN-🇹🇼TW_92
+      - CN_48
+      - Relay_🇸🇬SG-🇩🇪DE_241
+      - CN_85
+      - Relay_🇸🇬SG-🇯🇵JP_218
+      - 美国(油管:破解资源君2.0) 41
+      - Relay_🇭🇰HK-🇭🇰HK_149
+      - NONE 29 2
+      - Relay_🇭🇰HK-🇩🇪DE_147
+      - SG_222
+      - NONE 8 2
+      - Relay_🇭🇰HK-🇸🇬SG_153
+      - HK_162
+      - Relay_🇸🇬SG-🇯🇵JP_219
+      - Relay_🇯🇵JP-🇯🇵JP_168
+      - Relay_🇸🇬SG-🇩🇪DE_214
+      - Relay_🇸🇬SG-🇸🇬SG_227
+      - Relay_🇸🇬SG-🇸🇬SG_239
+      - CN_33
+      - Relay_🇨🇳CN-🇨🇦CA_61
+      - Relay_🇸🇬SG-🇺🇸US_217
+      - CN_51
+      - Relay_🇨🇳CN-🇨🇦CA_58
+      - HK_155
+      - _51
+      - CN 15 → openitsub.com
+      - CN_83
+      - 亚洲(油管:破解资源君2.0) 8
+      - NONE 12 2
+      - SG_231
+      - Relay_🇫🇷FR-🇫🇷FR_130
+      - CN 5 → openitsub.com
+      - CN 4 → openitsub.com
+      - Relay_🇭🇰HK-🇷🇺RU_143
+      - Relay_🇨🇳CN-🇷🇺RU_69
       - CN_62
-      - 42.157.195.238:12127
-      - Relay_🇺🇸US-🇨🇦CA_1085
+      - Relay_🇺🇸US-🇺🇸US_356
+      - 美国-美国@univstar-6
+      - US_349
+      - Relay_🇺🇸US-🇺🇸US_311
+      - Relay_🇺🇸US-🇺🇸US_376
+      - Relay_🇺🇸US-🇸🇬SG_338
+      - US_357
+      - 欧洲(油管:破解资源君2.0) 12
+      - US_325
+      - Relay_🇺🇸US-🇯🇵JP_348
+      - 欧洲(油管:破解资源君2.0) 21
+      - CN 27 → openitsub.com
+      - Relay_🇺🇸US-🇯🇵JP_373
+      - Relay_🇺🇸US-🇺🇸US_329
+      - US_277
+      - 美国(油管:破解资源君2.0) 14
+      - Relay_🇹🇼TW-🇹🇼TW_262
+      - Relay_🇹🇼TW-🇹🇼TW_263
+      - github.com/freefq - 台湾省新北市中华电信 8
+      - US_337
+      - github.com/freefq - 香港电讯盈科有限公司 4
+      - 日本(油管:破解资源君2.0) 2
+      - Relay_🇺🇸US-🇺🇸US_335
+      - 欧洲(油管:破解资源君2.0) 14
+      - 俄罗斯(油管:破解资源君2.0) 3
+      - Relay_🇺🇸US-🇺🇸US_359
+      - github.com/freefq - 美国  10
+      - 欧洲(油管:破解资源君2.0) 15
+      - CN 11 → openitsub.com
+      - CN 25 → openitsub.com
+      - 美国(油管:破解资源君2.0) 16
+      - 亚洲(油管:破解资源君2.0)
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 欧洲(油管:破解资源君2.0) 10
+      - GB 1 → openitsub.com
+      - Pool__218
+      - Relay_-🇺🇦UA_232
       - NONE
+      - _40
+      - Relay_-🇺🇸US_298
       - NONE 2
       - NONE 3
       - NONE 4
       - NONE 5
       - NONE 6
-      - ""
       - NONE 7
+      - Relay_-🇷🇺RU_67
+      - CN_106
+      - 美国(油管:破解资源君2.0) 25
+      - CN 8 → openitsub.com
+      - CN 60 → openitsub.com
       - NONE 8
+      - _119
       - NONE 9
+      - 美国(油管:破解资源君2.0) 40
       - NONE 10
       - NONE 11
-      - " 2"
+      - CN 18 → openitsub.com
+      - 新加坡(油管:破解资源君2.0) 4
       - NONE 12
       - NONE 13
       - NONE 14
+      - _227
       - NONE 15
       - NONE 16
-      - US 2 → openitsub.com
-      - CN 10 → openitsub.com
-      - SG 1 → openitsub.com
-      - US 9 → openitsub.com
-      - CN 11 → openitsub.com
-      - Relay_🇺🇸US-🇩🇪DE_1066
       - NONE 17
-      - 韩国(油管:破解资源君2.0)
+      - 欧洲(油管:破解资源君2.0) 11
       - NONE 18
+      - TW 2 → openitsub.com
+      - Relay_-🇺🇸US_333
       - NONE 19
+      - US 4 → openitsub.com
       - NONE 20
       - NONE 21
+      - _229
       - NONE 22
+      - TW 3 → openitsub.com
       - NONE 23
-      - 未知国家-3.32MB/s(Youtube:不良林)
+      - Relay_-🇦🇺AU_193
       - NONE 24
       - NONE 25
-      - Relay_🇺🇸US-🇷🇺RU_1104
-      - 未知国家-5.32MB/s(Youtube:不良林)
-      - US 5 → openitsub.com
+      - Relay_-🇫🇷FR_117
       - NONE 26
-      - 美国-406.4KB/s(Youtube:不良林)
       - NONE 27
-      - 未知国家-2.42MB/s(Youtube:不良林)
-      - 未知国家-1.80MB/s(Youtube:不良林)
-      - 未知国家-4.45MB/s(Youtube:不良林)
+      - CN 10 → openitsub.com
+      - NONE 14 2
       - NONE 28
-      - 美国-1.53MB/s(Youtube:不良林)
+      - CN 8 → openitsub.com 2
       - NONE 29
-      - 未知国家-2.37MB/s(Youtube:不良林)
+      - _66
       - NONE 30
-      - 42.157.195.242:12127
-      - 欧洲(油管:破解资源君2.0) 44
-      - 196.247.59.154:801
+      - _85
       - NONE 31
-      - 14.152.92.79:12127
-      - US 11 → openitsub.com
-      - CN 9 → openitsub.com
-      - 欧洲(油管:破解资源君2.0) 47
-      - CN 5 → openitsub.com
       - NONE 32
+      - NONE 33
+      - TW 1 → openitsub.com
+      - NONE 34
+      - NONE 35
+      - CN 2 → openitsub.com
+      - NONE 20 2
+      - NONE 36
+      - NONE 37
+      - sg-1.gito.cc:831
+      - US 2 → openitsub.com
+      - Relay_-🇨🇦CA_334
+      - 美国(油管:破解资源君2.0) 9
+      - NONE 38
+      - CN 29 → openitsub.com
+      - NONE 39
+      - NONE 40
+      - NONE 41
+      - _313
+      - _294
+      - CN_87
+      - CN 3 → openitsub.com
+      - NONE 42
+      - US 17 → openitsub.com
+      - NONE 43
+      - _65
+      - Relay_-🇺🇸US_318
+      - NONE 44
+      - NONE 45
+      - TW 2 → openitsub.com 2
+      - github.com/freefq - 香港电讯盈科有限公司 17
+      - _323
+      - NONE 46
+      - NONE 47
+      - Relay_-🇨🇦CA_147
+      - NONE 48
+      - US 2 → openitsub.com 2
+      - TW 2 → openitsub.com 3
+      - Relay_🇯🇵JP-🇯🇵JP_173
+      - CN_54
+      - Relay_🇸🇬SG-🇬🇧GB_224
+      - 新加坡(油管:破解资源君2.0) 7
+      - Relay_🇸🇬SG-🇸🇬SG_211
+      - NL_199
+      - NONE 7 2
+      - Relay_🇸🇬SG-🇧🇩BD_240
+      - Relay_🇸🇬SG-🇺🇸US_232
+      - Relay_🇸🇬SG-🇯🇵JP_225
+      - Relay_🇨🇳CN-🇹🇼TW_28
+      - NONE 21 2
+      - HK_163
+      - JP_182
+      - Relay_🇸🇬SG-🇯🇵JP_216
+      - JP_177
+      - Relay_🇯🇵JP-🇯🇵JP_172
+      - KR_188
+      - Relay_🇸🇬SG-🇨🇦CA_215
+      - Relay_Relay_-🇫🇷FR_119🇫🇷FR-🇫🇷FR_129
+      - Relay_🇯🇵JP-🇯🇵JP_176
+      - CN 19 → openitsub.com
+      - 美国-406.4KB/s(Youtube:不良林)
+      - CN 7 → openitsub.com
+      - HK_160
+      - NONE 49
+      - CN 3 → openitsub.com 2
+      - 欧洲(油管:破解资源君2.0) 17
+      - CN_31
+      - CN_55
+      - CN 6 → openitsub.com
+      - Relay_🇭🇰HK-🇺🇸US_154
+      - CN 10 → openitsub.com 2
+      - CN_52
+      - HK_165
+      - Relay_🇯🇵JP-🇯🇵JP_184
+      - Relay_🇹🇼TW-🇹🇼TW_260
+      - Relay_🇨🇳CN-🇹🇼TW_92
+      - CN_48
+      - Relay_🇸🇬SG-🇩🇪DE_241
+      - CN_85
+      - Relay_🇸🇬SG-🇯🇵JP_218
+      - 美国(油管:破解资源君2.0) 41
+      - Relay_🇭🇰HK-🇭🇰HK_149
+      - NONE 29 2
+      - Relay_🇭🇰HK-🇩🇪DE_147
+      - SG_222
+      - NONE 8 2
+      - Relay_🇭🇰HK-🇸🇬SG_153
+      - HK_162
+      - Relay_🇸🇬SG-🇯🇵JP_219
+      - Relay_🇯🇵JP-🇯🇵JP_168
+      - Relay_🇸🇬SG-🇩🇪DE_214
+      - Relay_🇸🇬SG-🇸🇬SG_227
+      - Relay_🇸🇬SG-🇸🇬SG_239
+      - CN_33
+      - Relay_🇨🇳CN-🇨🇦CA_61
+      - Relay_🇸🇬SG-🇺🇸US_217
+      - CN_51
+      - Relay_🇨🇳CN-🇨🇦CA_58
+      - HK_155
+      - _51
+      - CN 15 → openitsub.com
+      - CN_83
+      - 亚洲(油管:破解资源君2.0) 8
+      - NONE 12 2
+      - SG_231
+      - Relay_🇫🇷FR-🇫🇷FR_130
+      - CN 5 → openitsub.com
+      - CN 4 → openitsub.com
+      - Relay_🇭🇰HK-🇷🇺RU_143
+      - Relay_🇨🇳CN-🇷🇺RU_69
       - CN_62
-      - 42.157.195.238:12127
-      - Relay_🇺🇸US-🇨🇦CA_1085
+      - Relay_🇺🇸US-🇺🇸US_356
+      - 美国-美国@univstar-6
+      - US_349
+      - Relay_🇺🇸US-🇺🇸US_311
+      - Relay_🇺🇸US-🇺🇸US_376
+      - Relay_🇺🇸US-🇸🇬SG_338
+      - US_357
+      - 欧洲(油管:破解资源君2.0) 12
+      - US_325
+      - Relay_🇺🇸US-🇯🇵JP_348
+      - 欧洲(油管:破解资源君2.0) 21
+      - CN 27 → openitsub.com
+      - Relay_🇺🇸US-🇯🇵JP_373
+      - Relay_🇺🇸US-🇺🇸US_329
+      - US_277
+      - 美国(油管:破解资源君2.0) 14
+      - Relay_🇹🇼TW-🇹🇼TW_262
+      - Relay_🇹🇼TW-🇹🇼TW_263
+      - github.com/freefq - 台湾省新北市中华电信 8
+      - US_337
+      - github.com/freefq - 香港电讯盈科有限公司 4
+      - 日本(油管:破解资源君2.0) 2
+      - Relay_🇺🇸US-🇺🇸US_335
+      - 欧洲(油管:破解资源君2.0) 14
+      - 俄罗斯(油管:破解资源君2.0) 3
+      - Relay_🇺🇸US-🇺🇸US_359
+      - github.com/freefq - 美国  10
+      - 欧洲(油管:破解资源君2.0) 15
+      - CN 11 → openitsub.com
+      - CN 25 → openitsub.com
+      - 美国(油管:破解资源君2.0) 16
+      - 亚洲(油管:破解资源君2.0)
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -288,275 +852,842 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 欧洲(油管:破解资源君2.0) 10
+      - GB 1 → openitsub.com
+      - Pool__218
+      - Relay_-🇺🇦UA_232
       - NONE
+      - _40
+      - Relay_-🇺🇸US_298
       - NONE 2
       - NONE 3
       - NONE 4
       - NONE 5
       - NONE 6
-      - ""
       - NONE 7
+      - Relay_-🇷🇺RU_67
+      - CN_106
+      - 美国(油管:破解资源君2.0) 25
+      - CN 8 → openitsub.com
+      - CN 60 → openitsub.com
       - NONE 8
+      - _119
       - NONE 9
+      - 美国(油管:破解资源君2.0) 40
       - NONE 10
       - NONE 11
-      - " 2"
+      - CN 18 → openitsub.com
+      - 新加坡(油管:破解资源君2.0) 4
       - NONE 12
       - NONE 13
       - NONE 14
+      - _227
       - NONE 15
       - NONE 16
-      - US 2 → openitsub.com
-      - CN 10 → openitsub.com
-      - SG 1 → openitsub.com
-      - US 9 → openitsub.com
-      - CN 11 → openitsub.com
-      - Relay_🇺🇸US-🇩🇪DE_1066
       - NONE 17
-      - 韩国(油管:破解资源君2.0)
+      - 欧洲(油管:破解资源君2.0) 11
       - NONE 18
+      - TW 2 → openitsub.com
+      - Relay_-🇺🇸US_333
       - NONE 19
+      - US 4 → openitsub.com
       - NONE 20
       - NONE 21
+      - _229
       - NONE 22
+      - TW 3 → openitsub.com
       - NONE 23
-      - 未知国家-3.32MB/s(Youtube:不良林)
+      - Relay_-🇦🇺AU_193
       - NONE 24
       - NONE 25
-      - Relay_🇺🇸US-🇷🇺RU_1104
-      - 未知国家-5.32MB/s(Youtube:不良林)
-      - US 5 → openitsub.com
+      - Relay_-🇫🇷FR_117
       - NONE 26
-      - 美国-406.4KB/s(Youtube:不良林)
       - NONE 27
-      - 未知国家-2.42MB/s(Youtube:不良林)
-      - 未知国家-1.80MB/s(Youtube:不良林)
-      - 未知国家-4.45MB/s(Youtube:不良林)
+      - CN 10 → openitsub.com
+      - NONE 14 2
       - NONE 28
-      - 美国-1.53MB/s(Youtube:不良林)
+      - CN 8 → openitsub.com 2
       - NONE 29
-      - 未知国家-2.37MB/s(Youtube:不良林)
+      - _66
       - NONE 30
-      - 42.157.195.242:12127
-      - 欧洲(油管:破解资源君2.0) 44
-      - 196.247.59.154:801
+      - _85
       - NONE 31
-      - 14.152.92.79:12127
-      - US 11 → openitsub.com
-      - CN 9 → openitsub.com
-      - 欧洲(油管:破解资源君2.0) 47
-      - CN 5 → openitsub.com
       - NONE 32
+      - NONE 33
+      - TW 1 → openitsub.com
+      - NONE 34
+      - NONE 35
+      - CN 2 → openitsub.com
+      - NONE 20 2
+      - NONE 36
+      - NONE 37
+      - sg-1.gito.cc:831
+      - US 2 → openitsub.com
+      - Relay_-🇨🇦CA_334
+      - 美国(油管:破解资源君2.0) 9
+      - NONE 38
+      - CN 29 → openitsub.com
+      - NONE 39
+      - NONE 40
+      - NONE 41
+      - _313
+      - _294
+      - CN_87
+      - CN 3 → openitsub.com
+      - NONE 42
+      - US 17 → openitsub.com
+      - NONE 43
+      - _65
+      - Relay_-🇺🇸US_318
+      - NONE 44
+      - NONE 45
+      - TW 2 → openitsub.com 2
+      - github.com/freefq - 香港电讯盈科有限公司 17
+      - _323
+      - NONE 46
+      - NONE 47
+      - Relay_-🇨🇦CA_147
+      - NONE 48
+      - US 2 → openitsub.com 2
+      - TW 2 → openitsub.com 3
+      - Relay_🇯🇵JP-🇯🇵JP_173
+      - CN_54
+      - Relay_🇸🇬SG-🇬🇧GB_224
+      - 新加坡(油管:破解资源君2.0) 7
+      - Relay_🇸🇬SG-🇸🇬SG_211
+      - NL_199
+      - NONE 7 2
+      - Relay_🇸🇬SG-🇧🇩BD_240
+      - Relay_🇸🇬SG-🇺🇸US_232
+      - Relay_🇸🇬SG-🇯🇵JP_225
+      - Relay_🇨🇳CN-🇹🇼TW_28
+      - NONE 21 2
+      - HK_163
+      - JP_182
+      - Relay_🇸🇬SG-🇯🇵JP_216
+      - JP_177
+      - Relay_🇯🇵JP-🇯🇵JP_172
+      - KR_188
+      - Relay_🇸🇬SG-🇨🇦CA_215
+      - Relay_Relay_-🇫🇷FR_119🇫🇷FR-🇫🇷FR_129
+      - Relay_🇯🇵JP-🇯🇵JP_176
+      - CN 19 → openitsub.com
+      - 美国-406.4KB/s(Youtube:不良林)
+      - CN 7 → openitsub.com
+      - HK_160
+      - NONE 49
+      - CN 3 → openitsub.com 2
+      - 欧洲(油管:破解资源君2.0) 17
+      - CN_31
+      - CN_55
+      - CN 6 → openitsub.com
+      - Relay_🇭🇰HK-🇺🇸US_154
+      - CN 10 → openitsub.com 2
+      - CN_52
+      - HK_165
+      - Relay_🇯🇵JP-🇯🇵JP_184
+      - Relay_🇹🇼TW-🇹🇼TW_260
+      - Relay_🇨🇳CN-🇹🇼TW_92
+      - CN_48
+      - Relay_🇸🇬SG-🇩🇪DE_241
+      - CN_85
+      - Relay_🇸🇬SG-🇯🇵JP_218
+      - 美国(油管:破解资源君2.0) 41
+      - Relay_🇭🇰HK-🇭🇰HK_149
+      - NONE 29 2
+      - Relay_🇭🇰HK-🇩🇪DE_147
+      - SG_222
+      - NONE 8 2
+      - Relay_🇭🇰HK-🇸🇬SG_153
+      - HK_162
+      - Relay_🇸🇬SG-🇯🇵JP_219
+      - Relay_🇯🇵JP-🇯🇵JP_168
+      - Relay_🇸🇬SG-🇩🇪DE_214
+      - Relay_🇸🇬SG-🇸🇬SG_227
+      - Relay_🇸🇬SG-🇸🇬SG_239
+      - CN_33
+      - Relay_🇨🇳CN-🇨🇦CA_61
+      - Relay_🇸🇬SG-🇺🇸US_217
+      - CN_51
+      - Relay_🇨🇳CN-🇨🇦CA_58
+      - HK_155
+      - _51
+      - CN 15 → openitsub.com
+      - CN_83
+      - 亚洲(油管:破解资源君2.0) 8
+      - NONE 12 2
+      - SG_231
+      - Relay_🇫🇷FR-🇫🇷FR_130
+      - CN 5 → openitsub.com
+      - CN 4 → openitsub.com
+      - Relay_🇭🇰HK-🇷🇺RU_143
+      - Relay_🇨🇳CN-🇷🇺RU_69
       - CN_62
-      - 42.157.195.238:12127
-      - Relay_🇺🇸US-🇨🇦CA_1085
+      - Relay_🇺🇸US-🇺🇸US_356
+      - 美国-美国@univstar-6
+      - US_349
+      - Relay_🇺🇸US-🇺🇸US_311
+      - Relay_🇺🇸US-🇺🇸US_376
+      - Relay_🇺🇸US-🇸🇬SG_338
+      - US_357
+      - 欧洲(油管:破解资源君2.0) 12
+      - US_325
+      - Relay_🇺🇸US-🇯🇵JP_348
+      - 欧洲(油管:破解资源君2.0) 21
+      - CN 27 → openitsub.com
+      - Relay_🇺🇸US-🇯🇵JP_373
+      - Relay_🇺🇸US-🇺🇸US_329
+      - US_277
+      - 美国(油管:破解资源君2.0) 14
+      - Relay_🇹🇼TW-🇹🇼TW_262
+      - Relay_🇹🇼TW-🇹🇼TW_263
+      - github.com/freefq - 台湾省新北市中华电信 8
+      - US_337
+      - github.com/freefq - 香港电讯盈科有限公司 4
+      - 日本(油管:破解资源君2.0) 2
+      - Relay_🇺🇸US-🇺🇸US_335
+      - 欧洲(油管:破解资源君2.0) 14
+      - 俄罗斯(油管:破解资源君2.0) 3
+      - Relay_🇺🇸US-🇺🇸US_359
+      - github.com/freefq - 美国  10
+      - 欧洲(油管:破解资源君2.0) 15
+      - CN 11 → openitsub.com
+      - CN 25 → openitsub.com
+      - 美国(油管:破解资源君2.0) 16
+      - 亚洲(油管:破解资源君2.0)
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - github.com/freefq - 香港电讯盈科有限公司 17
+      - github.com/freefq - 台湾省新北市中华电信 8
+      - github.com/freefq - 香港电讯盈科有限公司 4
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
+      - 欧洲(油管:破解资源君2.0) 10
+      - GB 1 → openitsub.com
+      - Pool__218
+      - Relay_-🇺🇦UA_232
       - NONE
+      - _40
+      - Relay_-🇺🇸US_298
       - NONE 2
       - NONE 3
       - NONE 4
       - NONE 5
       - NONE 6
-      - ""
       - NONE 7
+      - Relay_-🇷🇺RU_67
+      - CN_106
+      - 美国(油管:破解资源君2.0) 25
+      - CN 8 → openitsub.com
+      - CN 60 → openitsub.com
       - NONE 8
+      - _119
       - NONE 9
+      - 美国(油管:破解资源君2.0) 40
       - NONE 10
       - NONE 11
-      - " 2"
+      - CN 18 → openitsub.com
+      - 新加坡(油管:破解资源君2.0) 4
       - NONE 12
       - NONE 13
       - NONE 14
+      - _227
       - NONE 15
       - NONE 16
-      - US 2 → openitsub.com
-      - CN 10 → openitsub.com
-      - SG 1 → openitsub.com
-      - US 9 → openitsub.com
-      - CN 11 → openitsub.com
-      - Relay_🇺🇸US-🇩🇪DE_1066
       - NONE 17
-      - 韩国(油管:破解资源君2.0)
+      - 欧洲(油管:破解资源君2.0) 11
       - NONE 18
+      - TW 2 → openitsub.com
+      - Relay_-🇺🇸US_333
       - NONE 19
+      - US 4 → openitsub.com
       - NONE 20
       - NONE 21
+      - _229
       - NONE 22
+      - TW 3 → openitsub.com
       - NONE 23
-      - 未知国家-3.32MB/s(Youtube:不良林)
+      - Relay_-🇦🇺AU_193
       - NONE 24
       - NONE 25
-      - Relay_🇺🇸US-🇷🇺RU_1104
-      - 未知国家-5.32MB/s(Youtube:不良林)
-      - US 5 → openitsub.com
+      - Relay_-🇫🇷FR_117
       - NONE 26
-      - 美国-406.4KB/s(Youtube:不良林)
       - NONE 27
-      - 未知国家-2.42MB/s(Youtube:不良林)
-      - 未知国家-1.80MB/s(Youtube:不良林)
-      - 未知国家-4.45MB/s(Youtube:不良林)
+      - CN 10 → openitsub.com
+      - NONE 14 2
       - NONE 28
-      - 美国-1.53MB/s(Youtube:不良林)
+      - CN 8 → openitsub.com 2
       - NONE 29
-      - 未知国家-2.37MB/s(Youtube:不良林)
+      - _66
       - NONE 30
-      - 42.157.195.242:12127
-      - 欧洲(油管:破解资源君2.0) 44
-      - 196.247.59.154:801
+      - _85
       - NONE 31
-      - 14.152.92.79:12127
-      - US 11 → openitsub.com
-      - CN 9 → openitsub.com
-      - 欧洲(油管:破解资源君2.0) 47
-      - CN 5 → openitsub.com
       - NONE 32
+      - NONE 33
+      - TW 1 → openitsub.com
+      - NONE 34
+      - NONE 35
+      - CN 2 → openitsub.com
+      - NONE 20 2
+      - NONE 36
+      - NONE 37
+      - sg-1.gito.cc:831
+      - US 2 → openitsub.com
+      - Relay_-🇨🇦CA_334
+      - 美国(油管:破解资源君2.0) 9
+      - NONE 38
+      - CN 29 → openitsub.com
+      - NONE 39
+      - NONE 40
+      - NONE 41
+      - _313
+      - _294
+      - CN_87
+      - CN 3 → openitsub.com
+      - NONE 42
+      - US 17 → openitsub.com
+      - NONE 43
+      - _65
+      - Relay_-🇺🇸US_318
+      - NONE 44
+      - NONE 45
+      - TW 2 → openitsub.com 2
+      - github.com/freefq - 香港电讯盈科有限公司 17
+      - _323
+      - NONE 46
+      - NONE 47
+      - Relay_-🇨🇦CA_147
+      - NONE 48
+      - US 2 → openitsub.com 2
+      - TW 2 → openitsub.com 3
+      - Relay_🇯🇵JP-🇯🇵JP_173
+      - CN_54
+      - Relay_🇸🇬SG-🇬🇧GB_224
+      - 新加坡(油管:破解资源君2.0) 7
+      - Relay_🇸🇬SG-🇸🇬SG_211
+      - NL_199
+      - NONE 7 2
+      - Relay_🇸🇬SG-🇧🇩BD_240
+      - Relay_🇸🇬SG-🇺🇸US_232
+      - Relay_🇸🇬SG-🇯🇵JP_225
+      - Relay_🇨🇳CN-🇹🇼TW_28
+      - NONE 21 2
+      - HK_163
+      - JP_182
+      - Relay_🇸🇬SG-🇯🇵JP_216
+      - JP_177
+      - Relay_🇯🇵JP-🇯🇵JP_172
+      - KR_188
+      - Relay_🇸🇬SG-🇨🇦CA_215
+      - Relay_Relay_-🇫🇷FR_119🇫🇷FR-🇫🇷FR_129
+      - Relay_🇯🇵JP-🇯🇵JP_176
+      - CN 19 → openitsub.com
+      - 美国-406.4KB/s(Youtube:不良林)
+      - CN 7 → openitsub.com
+      - HK_160
+      - NONE 49
+      - CN 3 → openitsub.com 2
+      - 欧洲(油管:破解资源君2.0) 17
+      - CN_31
+      - CN_55
+      - CN 6 → openitsub.com
+      - Relay_🇭🇰HK-🇺🇸US_154
+      - CN 10 → openitsub.com 2
+      - CN_52
+      - HK_165
+      - Relay_🇯🇵JP-🇯🇵JP_184
+      - Relay_🇹🇼TW-🇹🇼TW_260
+      - Relay_🇨🇳CN-🇹🇼TW_92
+      - CN_48
+      - Relay_🇸🇬SG-🇩🇪DE_241
+      - CN_85
+      - Relay_🇸🇬SG-🇯🇵JP_218
+      - 美国(油管:破解资源君2.0) 41
+      - Relay_🇭🇰HK-🇭🇰HK_149
+      - NONE 29 2
+      - Relay_🇭🇰HK-🇩🇪DE_147
+      - SG_222
+      - NONE 8 2
+      - Relay_🇭🇰HK-🇸🇬SG_153
+      - HK_162
+      - Relay_🇸🇬SG-🇯🇵JP_219
+      - Relay_🇯🇵JP-🇯🇵JP_168
+      - Relay_🇸🇬SG-🇩🇪DE_214
+      - Relay_🇸🇬SG-🇸🇬SG_227
+      - Relay_🇸🇬SG-🇸🇬SG_239
+      - CN_33
+      - Relay_🇨🇳CN-🇨🇦CA_61
+      - Relay_🇸🇬SG-🇺🇸US_217
+      - CN_51
+      - Relay_🇨🇳CN-🇨🇦CA_58
+      - HK_155
+      - _51
+      - CN 15 → openitsub.com
+      - CN_83
+      - 亚洲(油管:破解资源君2.0) 8
+      - NONE 12 2
+      - SG_231
+      - Relay_🇫🇷FR-🇫🇷FR_130
+      - CN 5 → openitsub.com
+      - CN 4 → openitsub.com
+      - Relay_🇭🇰HK-🇷🇺RU_143
+      - Relay_🇨🇳CN-🇷🇺RU_69
       - CN_62
-      - 42.157.195.238:12127
-      - Relay_🇺🇸US-🇨🇦CA_1085
+      - Relay_🇺🇸US-🇺🇸US_356
+      - 美国-美国@univstar-6
+      - US_349
+      - Relay_🇺🇸US-🇺🇸US_311
+      - Relay_🇺🇸US-🇺🇸US_376
+      - Relay_🇺🇸US-🇸🇬SG_338
+      - US_357
+      - 欧洲(油管:破解资源君2.0) 12
+      - US_325
+      - Relay_🇺🇸US-🇯🇵JP_348
+      - 欧洲(油管:破解资源君2.0) 21
+      - CN 27 → openitsub.com
+      - Relay_🇺🇸US-🇯🇵JP_373
+      - Relay_🇺🇸US-🇺🇸US_329
+      - US_277
+      - 美国(油管:破解资源君2.0) 14
+      - Relay_🇹🇼TW-🇹🇼TW_262
+      - Relay_🇹🇼TW-🇹🇼TW_263
+      - github.com/freefq - 台湾省新北市中华电信 8
+      - US_337
+      - github.com/freefq - 香港电讯盈科有限公司 4
+      - 日本(油管:破解资源君2.0) 2
+      - Relay_🇺🇸US-🇺🇸US_335
+      - 欧洲(油管:破解资源君2.0) 14
+      - 俄罗斯(油管:破解资源君2.0) 3
+      - Relay_🇺🇸US-🇺🇸US_359
+      - github.com/freefq - 美国  10
+      - 欧洲(油管:破解资源君2.0) 15
+      - CN 11 → openitsub.com
+      - CN 25 → openitsub.com
+      - 美国(油管:破解资源君2.0) 16
+      - 亚洲(油管:破解资源君2.0)
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
+      - 欧洲(油管:破解资源君2.0) 10
+      - GB 1 → openitsub.com
+      - Pool__218
+      - Relay_-🇺🇦UA_232
       - NONE
+      - _40
+      - Relay_-🇺🇸US_298
       - NONE 2
       - NONE 3
       - NONE 4
       - NONE 5
       - NONE 6
-      - ""
       - NONE 7
+      - Relay_-🇷🇺RU_67
+      - CN_106
+      - 美国(油管:破解资源君2.0) 25
+      - CN 8 → openitsub.com
+      - CN 60 → openitsub.com
       - NONE 8
+      - _119
       - NONE 9
+      - 美国(油管:破解资源君2.0) 40
       - NONE 10
       - NONE 11
-      - " 2"
+      - CN 18 → openitsub.com
+      - 新加坡(油管:破解资源君2.0) 4
       - NONE 12
       - NONE 13
       - NONE 14
+      - _227
       - NONE 15
       - NONE 16
-      - US 2 → openitsub.com
-      - CN 10 → openitsub.com
-      - SG 1 → openitsub.com
-      - US 9 → openitsub.com
-      - CN 11 → openitsub.com
-      - Relay_🇺🇸US-🇩🇪DE_1066
       - NONE 17
-      - 韩国(油管:破解资源君2.0)
+      - 欧洲(油管:破解资源君2.0) 11
       - NONE 18
+      - TW 2 → openitsub.com
+      - Relay_-🇺🇸US_333
       - NONE 19
+      - US 4 → openitsub.com
       - NONE 20
       - NONE 21
+      - _229
       - NONE 22
+      - TW 3 → openitsub.com
       - NONE 23
-      - 未知国家-3.32MB/s(Youtube:不良林)
+      - Relay_-🇦🇺AU_193
       - NONE 24
       - NONE 25
-      - Relay_🇺🇸US-🇷🇺RU_1104
-      - 未知国家-5.32MB/s(Youtube:不良林)
-      - US 5 → openitsub.com
+      - Relay_-🇫🇷FR_117
       - NONE 26
-      - 美国-406.4KB/s(Youtube:不良林)
       - NONE 27
-      - 未知国家-2.42MB/s(Youtube:不良林)
-      - 未知国家-1.80MB/s(Youtube:不良林)
-      - 未知国家-4.45MB/s(Youtube:不良林)
+      - CN 10 → openitsub.com
+      - NONE 14 2
       - NONE 28
-      - 美国-1.53MB/s(Youtube:不良林)
+      - CN 8 → openitsub.com 2
       - NONE 29
-      - 未知国家-2.37MB/s(Youtube:不良林)
+      - _66
       - NONE 30
-      - 42.157.195.242:12127
-      - 欧洲(油管:破解资源君2.0) 44
-      - 196.247.59.154:801
+      - _85
       - NONE 31
-      - 14.152.92.79:12127
-      - US 11 → openitsub.com
-      - CN 9 → openitsub.com
-      - 欧洲(油管:破解资源君2.0) 47
-      - CN 5 → openitsub.com
       - NONE 32
+      - NONE 33
+      - TW 1 → openitsub.com
+      - NONE 34
+      - NONE 35
+      - CN 2 → openitsub.com
+      - NONE 20 2
+      - NONE 36
+      - NONE 37
+      - sg-1.gito.cc:831
+      - US 2 → openitsub.com
+      - Relay_-🇨🇦CA_334
+      - 美国(油管:破解资源君2.0) 9
+      - NONE 38
+      - CN 29 → openitsub.com
+      - NONE 39
+      - NONE 40
+      - NONE 41
+      - _313
+      - _294
+      - CN_87
+      - CN 3 → openitsub.com
+      - NONE 42
+      - US 17 → openitsub.com
+      - NONE 43
+      - _65
+      - Relay_-🇺🇸US_318
+      - NONE 44
+      - NONE 45
+      - TW 2 → openitsub.com 2
+      - github.com/freefq - 香港电讯盈科有限公司 17
+      - _323
+      - NONE 46
+      - NONE 47
+      - Relay_-🇨🇦CA_147
+      - NONE 48
+      - US 2 → openitsub.com 2
+      - TW 2 → openitsub.com 3
+      - Relay_🇯🇵JP-🇯🇵JP_173
+      - CN_54
+      - Relay_🇸🇬SG-🇬🇧GB_224
+      - 新加坡(油管:破解资源君2.0) 7
+      - Relay_🇸🇬SG-🇸🇬SG_211
+      - NL_199
+      - NONE 7 2
+      - Relay_🇸🇬SG-🇧🇩BD_240
+      - Relay_🇸🇬SG-🇺🇸US_232
+      - Relay_🇸🇬SG-🇯🇵JP_225
+      - Relay_🇨🇳CN-🇹🇼TW_28
+      - NONE 21 2
+      - HK_163
+      - JP_182
+      - Relay_🇸🇬SG-🇯🇵JP_216
+      - JP_177
+      - Relay_🇯🇵JP-🇯🇵JP_172
+      - KR_188
+      - Relay_🇸🇬SG-🇨🇦CA_215
+      - Relay_Relay_-🇫🇷FR_119🇫🇷FR-🇫🇷FR_129
+      - Relay_🇯🇵JP-🇯🇵JP_176
+      - CN 19 → openitsub.com
+      - 美国-406.4KB/s(Youtube:不良林)
+      - CN 7 → openitsub.com
+      - HK_160
+      - NONE 49
+      - CN 3 → openitsub.com 2
+      - 欧洲(油管:破解资源君2.0) 17
+      - CN_31
+      - CN_55
+      - CN 6 → openitsub.com
+      - Relay_🇭🇰HK-🇺🇸US_154
+      - CN 10 → openitsub.com 2
+      - CN_52
+      - HK_165
+      - Relay_🇯🇵JP-🇯🇵JP_184
+      - Relay_🇹🇼TW-🇹🇼TW_260
+      - Relay_🇨🇳CN-🇹🇼TW_92
+      - CN_48
+      - Relay_🇸🇬SG-🇩🇪DE_241
+      - CN_85
+      - Relay_🇸🇬SG-🇯🇵JP_218
+      - 美国(油管:破解资源君2.0) 41
+      - Relay_🇭🇰HK-🇭🇰HK_149
+      - NONE 29 2
+      - Relay_🇭🇰HK-🇩🇪DE_147
+      - SG_222
+      - NONE 8 2
+      - Relay_🇭🇰HK-🇸🇬SG_153
+      - HK_162
+      - Relay_🇸🇬SG-🇯🇵JP_219
+      - Relay_🇯🇵JP-🇯🇵JP_168
+      - Relay_🇸🇬SG-🇩🇪DE_214
+      - Relay_🇸🇬SG-🇸🇬SG_227
+      - Relay_🇸🇬SG-🇸🇬SG_239
+      - CN_33
+      - Relay_🇨🇳CN-🇨🇦CA_61
+      - Relay_🇸🇬SG-🇺🇸US_217
+      - CN_51
+      - Relay_🇨🇳CN-🇨🇦CA_58
+      - HK_155
+      - _51
+      - CN 15 → openitsub.com
+      - CN_83
+      - 亚洲(油管:破解资源君2.0) 8
+      - NONE 12 2
+      - SG_231
+      - Relay_🇫🇷FR-🇫🇷FR_130
+      - CN 5 → openitsub.com
+      - CN 4 → openitsub.com
+      - Relay_🇭🇰HK-🇷🇺RU_143
+      - Relay_🇨🇳CN-🇷🇺RU_69
       - CN_62
-      - 42.157.195.238:12127
-      - Relay_🇺🇸US-🇨🇦CA_1085
+      - Relay_🇺🇸US-🇺🇸US_356
+      - 美国-美国@univstar-6
+      - US_349
+      - Relay_🇺🇸US-🇺🇸US_311
+      - Relay_🇺🇸US-🇺🇸US_376
+      - Relay_🇺🇸US-🇸🇬SG_338
+      - US_357
+      - 欧洲(油管:破解资源君2.0) 12
+      - US_325
+      - Relay_🇺🇸US-🇯🇵JP_348
+      - 欧洲(油管:破解资源君2.0) 21
+      - CN 27 → openitsub.com
+      - Relay_🇺🇸US-🇯🇵JP_373
+      - Relay_🇺🇸US-🇺🇸US_329
+      - US_277
+      - 美国(油管:破解资源君2.0) 14
+      - Relay_🇹🇼TW-🇹🇼TW_262
+      - Relay_🇹🇼TW-🇹🇼TW_263
+      - github.com/freefq - 台湾省新北市中华电信 8
+      - US_337
+      - github.com/freefq - 香港电讯盈科有限公司 4
+      - 日本(油管:破解资源君2.0) 2
+      - Relay_🇺🇸US-🇺🇸US_335
+      - 欧洲(油管:破解资源君2.0) 14
+      - 俄罗斯(油管:破解资源君2.0) 3
+      - Relay_🇺🇸US-🇺🇸US_359
+      - github.com/freefq - 美国  10
+      - 欧洲(油管:破解资源君2.0) 15
+      - CN 11 → openitsub.com
+      - CN 25 → openitsub.com
+      - 美国(油管:破解资源君2.0) 16
+      - 亚洲(油管:破解资源君2.0)
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 欧洲(油管:破解资源君2.0) 10
+      - GB 1 → openitsub.com
+      - Pool__218
+      - Relay_-🇺🇦UA_232
       - NONE
+      - _40
+      - Relay_-🇺🇸US_298
       - NONE 2
       - NONE 3
       - NONE 4
       - NONE 5
       - NONE 6
-      - ""
       - NONE 7
+      - Relay_-🇷🇺RU_67
+      - CN_106
+      - 美国(油管:破解资源君2.0) 25
+      - CN 8 → openitsub.com
+      - CN 60 → openitsub.com
       - NONE 8
+      - _119
       - NONE 9
+      - 美国(油管:破解资源君2.0) 40
       - NONE 10
       - NONE 11
-      - " 2"
+      - CN 18 → openitsub.com
+      - 新加坡(油管:破解资源君2.0) 4
       - NONE 12
       - NONE 13
       - NONE 14
+      - _227
       - NONE 15
       - NONE 16
-      - US 2 → openitsub.com
-      - CN 10 → openitsub.com
-      - SG 1 → openitsub.com
-      - US 9 → openitsub.com
-      - CN 11 → openitsub.com
-      - Relay_🇺🇸US-🇩🇪DE_1066
       - NONE 17
-      - 韩国(油管:破解资源君2.0)
+      - 欧洲(油管:破解资源君2.0) 11
       - NONE 18
+      - TW 2 → openitsub.com
+      - Relay_-🇺🇸US_333
       - NONE 19
+      - US 4 → openitsub.com
       - NONE 20
       - NONE 21
+      - _229
       - NONE 22
+      - TW 3 → openitsub.com
       - NONE 23
-      - 未知国家-3.32MB/s(Youtube:不良林)
+      - Relay_-🇦🇺AU_193
       - NONE 24
       - NONE 25
-      - Relay_🇺🇸US-🇷🇺RU_1104
-      - 未知国家-5.32MB/s(Youtube:不良林)
-      - US 5 → openitsub.com
+      - Relay_-🇫🇷FR_117
       - NONE 26
-      - 美国-406.4KB/s(Youtube:不良林)
       - NONE 27
-      - 未知国家-2.42MB/s(Youtube:不良林)
-      - 未知国家-1.80MB/s(Youtube:不良林)
-      - 未知国家-4.45MB/s(Youtube:不良林)
+      - CN 10 → openitsub.com
+      - NONE 14 2
       - NONE 28
-      - 美国-1.53MB/s(Youtube:不良林)
+      - CN 8 → openitsub.com 2
       - NONE 29
-      - 未知国家-2.37MB/s(Youtube:不良林)
+      - _66
       - NONE 30
-      - 42.157.195.242:12127
-      - 欧洲(油管:破解资源君2.0) 44
-      - 196.247.59.154:801
+      - _85
       - NONE 31
-      - 14.152.92.79:12127
-      - US 11 → openitsub.com
-      - CN 9 → openitsub.com
-      - 欧洲(油管:破解资源君2.0) 47
-      - CN 5 → openitsub.com
       - NONE 32
+      - NONE 33
+      - TW 1 → openitsub.com
+      - NONE 34
+      - NONE 35
+      - CN 2 → openitsub.com
+      - NONE 20 2
+      - NONE 36
+      - NONE 37
+      - sg-1.gito.cc:831
+      - US 2 → openitsub.com
+      - Relay_-🇨🇦CA_334
+      - 美国(油管:破解资源君2.0) 9
+      - NONE 38
+      - CN 29 → openitsub.com
+      - NONE 39
+      - NONE 40
+      - NONE 41
+      - _313
+      - _294
+      - CN_87
+      - CN 3 → openitsub.com
+      - NONE 42
+      - US 17 → openitsub.com
+      - NONE 43
+      - _65
+      - Relay_-🇺🇸US_318
+      - NONE 44
+      - NONE 45
+      - TW 2 → openitsub.com 2
+      - github.com/freefq - 香港电讯盈科有限公司 17
+      - _323
+      - NONE 46
+      - NONE 47
+      - Relay_-🇨🇦CA_147
+      - NONE 48
+      - US 2 → openitsub.com 2
+      - TW 2 → openitsub.com 3
+      - Relay_🇯🇵JP-🇯🇵JP_173
+      - CN_54
+      - Relay_🇸🇬SG-🇬🇧GB_224
+      - 新加坡(油管:破解资源君2.0) 7
+      - Relay_🇸🇬SG-🇸🇬SG_211
+      - NL_199
+      - NONE 7 2
+      - Relay_🇸🇬SG-🇧🇩BD_240
+      - Relay_🇸🇬SG-🇺🇸US_232
+      - Relay_🇸🇬SG-🇯🇵JP_225
+      - Relay_🇨🇳CN-🇹🇼TW_28
+      - NONE 21 2
+      - HK_163
+      - JP_182
+      - Relay_🇸🇬SG-🇯🇵JP_216
+      - JP_177
+      - Relay_🇯🇵JP-🇯🇵JP_172
+      - KR_188
+      - Relay_🇸🇬SG-🇨🇦CA_215
+      - Relay_Relay_-🇫🇷FR_119🇫🇷FR-🇫🇷FR_129
+      - Relay_🇯🇵JP-🇯🇵JP_176
+      - CN 19 → openitsub.com
+      - 美国-406.4KB/s(Youtube:不良林)
+      - CN 7 → openitsub.com
+      - HK_160
+      - NONE 49
+      - CN 3 → openitsub.com 2
+      - 欧洲(油管:破解资源君2.0) 17
+      - CN_31
+      - CN_55
+      - CN 6 → openitsub.com
+      - Relay_🇭🇰HK-🇺🇸US_154
+      - CN 10 → openitsub.com 2
+      - CN_52
+      - HK_165
+      - Relay_🇯🇵JP-🇯🇵JP_184
+      - Relay_🇹🇼TW-🇹🇼TW_260
+      - Relay_🇨🇳CN-🇹🇼TW_92
+      - CN_48
+      - Relay_🇸🇬SG-🇩🇪DE_241
+      - CN_85
+      - Relay_🇸🇬SG-🇯🇵JP_218
+      - 美国(油管:破解资源君2.0) 41
+      - Relay_🇭🇰HK-🇭🇰HK_149
+      - NONE 29 2
+      - Relay_🇭🇰HK-🇩🇪DE_147
+      - SG_222
+      - NONE 8 2
+      - Relay_🇭🇰HK-🇸🇬SG_153
+      - HK_162
+      - Relay_🇸🇬SG-🇯🇵JP_219
+      - Relay_🇯🇵JP-🇯🇵JP_168
+      - Relay_🇸🇬SG-🇩🇪DE_214
+      - Relay_🇸🇬SG-🇸🇬SG_227
+      - Relay_🇸🇬SG-🇸🇬SG_239
+      - CN_33
+      - Relay_🇨🇳CN-🇨🇦CA_61
+      - Relay_🇸🇬SG-🇺🇸US_217
+      - CN_51
+      - Relay_🇨🇳CN-🇨🇦CA_58
+      - HK_155
+      - _51
+      - CN 15 → openitsub.com
+      - CN_83
+      - 亚洲(油管:破解资源君2.0) 8
+      - NONE 12 2
+      - SG_231
+      - Relay_🇫🇷FR-🇫🇷FR_130
+      - CN 5 → openitsub.com
+      - CN 4 → openitsub.com
+      - Relay_🇭🇰HK-🇷🇺RU_143
+      - Relay_🇨🇳CN-🇷🇺RU_69
       - CN_62
-      - 42.157.195.238:12127
-      - Relay_🇺🇸US-🇨🇦CA_1085
+      - Relay_🇺🇸US-🇺🇸US_356
+      - 美国-美国@univstar-6
+      - US_349
+      - Relay_🇺🇸US-🇺🇸US_311
+      - Relay_🇺🇸US-🇺🇸US_376
+      - Relay_🇺🇸US-🇸🇬SG_338
+      - US_357
+      - 欧洲(油管:破解资源君2.0) 12
+      - US_325
+      - Relay_🇺🇸US-🇯🇵JP_348
+      - 欧洲(油管:破解资源君2.0) 21
+      - CN 27 → openitsub.com
+      - Relay_🇺🇸US-🇯🇵JP_373
+      - Relay_🇺🇸US-🇺🇸US_329
+      - US_277
+      - 美国(油管:破解资源君2.0) 14
+      - Relay_🇹🇼TW-🇹🇼TW_262
+      - Relay_🇹🇼TW-🇹🇼TW_263
+      - github.com/freefq - 台湾省新北市中华电信 8
+      - US_337
+      - github.com/freefq - 香港电讯盈科有限公司 4
+      - 日本(油管:破解资源君2.0) 2
+      - Relay_🇺🇸US-🇺🇸US_335
+      - 欧洲(油管:破解资源君2.0) 14
+      - 俄罗斯(油管:破解资源君2.0) 3
+      - Relay_🇺🇸US-🇺🇸US_359
+      - github.com/freefq - 美国  10
+      - 欧洲(油管:破解资源君2.0) 15
+      - CN 11 → openitsub.com
+      - CN 25 → openitsub.com
+      - 美国(油管:破解资源君2.0) 16
+      - 亚洲(油管:破解资源君2.0)
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -572,68 +1703,209 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 欧洲(油管:破解资源君2.0) 10
+      - GB 1 → openitsub.com
+      - Pool__218
+      - Relay_-🇺🇦UA_232
       - NONE
+      - _40
+      - Relay_-🇺🇸US_298
       - NONE 2
       - NONE 3
       - NONE 4
       - NONE 5
       - NONE 6
-      - ""
       - NONE 7
+      - Relay_-🇷🇺RU_67
+      - CN_106
+      - 美国(油管:破解资源君2.0) 25
+      - CN 8 → openitsub.com
+      - CN 60 → openitsub.com
       - NONE 8
+      - _119
       - NONE 9
+      - 美国(油管:破解资源君2.0) 40
       - NONE 10
       - NONE 11
-      - " 2"
+      - CN 18 → openitsub.com
+      - 新加坡(油管:破解资源君2.0) 4
       - NONE 12
       - NONE 13
       - NONE 14
+      - _227
       - NONE 15
       - NONE 16
-      - US 2 → openitsub.com
-      - CN 10 → openitsub.com
-      - SG 1 → openitsub.com
-      - US 9 → openitsub.com
-      - CN 11 → openitsub.com
-      - Relay_🇺🇸US-🇩🇪DE_1066
       - NONE 17
-      - 韩国(油管:破解资源君2.0)
+      - 欧洲(油管:破解资源君2.0) 11
       - NONE 18
+      - TW 2 → openitsub.com
+      - Relay_-🇺🇸US_333
       - NONE 19
+      - US 4 → openitsub.com
       - NONE 20
       - NONE 21
+      - _229
       - NONE 22
+      - TW 3 → openitsub.com
       - NONE 23
-      - 未知国家-3.32MB/s(Youtube:不良林)
+      - Relay_-🇦🇺AU_193
       - NONE 24
       - NONE 25
-      - Relay_🇺🇸US-🇷🇺RU_1104
-      - 未知国家-5.32MB/s(Youtube:不良林)
-      - US 5 → openitsub.com
+      - Relay_-🇫🇷FR_117
       - NONE 26
-      - 美国-406.4KB/s(Youtube:不良林)
       - NONE 27
-      - 未知国家-2.42MB/s(Youtube:不良林)
-      - 未知国家-1.80MB/s(Youtube:不良林)
-      - 未知国家-4.45MB/s(Youtube:不良林)
+      - CN 10 → openitsub.com
+      - NONE 14 2
       - NONE 28
-      - 美国-1.53MB/s(Youtube:不良林)
+      - CN 8 → openitsub.com 2
       - NONE 29
-      - 未知国家-2.37MB/s(Youtube:不良林)
+      - _66
       - NONE 30
-      - 42.157.195.242:12127
-      - 欧洲(油管:破解资源君2.0) 44
-      - 196.247.59.154:801
+      - _85
       - NONE 31
-      - 14.152.92.79:12127
-      - US 11 → openitsub.com
-      - CN 9 → openitsub.com
-      - 欧洲(油管:破解资源君2.0) 47
-      - CN 5 → openitsub.com
       - NONE 32
+      - NONE 33
+      - TW 1 → openitsub.com
+      - NONE 34
+      - NONE 35
+      - CN 2 → openitsub.com
+      - NONE 20 2
+      - NONE 36
+      - NONE 37
+      - sg-1.gito.cc:831
+      - US 2 → openitsub.com
+      - Relay_-🇨🇦CA_334
+      - 美国(油管:破解资源君2.0) 9
+      - NONE 38
+      - CN 29 → openitsub.com
+      - NONE 39
+      - NONE 40
+      - NONE 41
+      - _313
+      - _294
+      - CN_87
+      - CN 3 → openitsub.com
+      - NONE 42
+      - US 17 → openitsub.com
+      - NONE 43
+      - _65
+      - Relay_-🇺🇸US_318
+      - NONE 44
+      - NONE 45
+      - TW 2 → openitsub.com 2
+      - github.com/freefq - 香港电讯盈科有限公司 17
+      - _323
+      - NONE 46
+      - NONE 47
+      - Relay_-🇨🇦CA_147
+      - NONE 48
+      - US 2 → openitsub.com 2
+      - TW 2 → openitsub.com 3
+      - Relay_🇯🇵JP-🇯🇵JP_173
+      - CN_54
+      - Relay_🇸🇬SG-🇬🇧GB_224
+      - 新加坡(油管:破解资源君2.0) 7
+      - Relay_🇸🇬SG-🇸🇬SG_211
+      - NL_199
+      - NONE 7 2
+      - Relay_🇸🇬SG-🇧🇩BD_240
+      - Relay_🇸🇬SG-🇺🇸US_232
+      - Relay_🇸🇬SG-🇯🇵JP_225
+      - Relay_🇨🇳CN-🇹🇼TW_28
+      - NONE 21 2
+      - HK_163
+      - JP_182
+      - Relay_🇸🇬SG-🇯🇵JP_216
+      - JP_177
+      - Relay_🇯🇵JP-🇯🇵JP_172
+      - KR_188
+      - Relay_🇸🇬SG-🇨🇦CA_215
+      - Relay_Relay_-🇫🇷FR_119🇫🇷FR-🇫🇷FR_129
+      - Relay_🇯🇵JP-🇯🇵JP_176
+      - CN 19 → openitsub.com
+      - 美国-406.4KB/s(Youtube:不良林)
+      - CN 7 → openitsub.com
+      - HK_160
+      - NONE 49
+      - CN 3 → openitsub.com 2
+      - 欧洲(油管:破解资源君2.0) 17
+      - CN_31
+      - CN_55
+      - CN 6 → openitsub.com
+      - Relay_🇭🇰HK-🇺🇸US_154
+      - CN 10 → openitsub.com 2
+      - CN_52
+      - HK_165
+      - Relay_🇯🇵JP-🇯🇵JP_184
+      - Relay_🇹🇼TW-🇹🇼TW_260
+      - Relay_🇨🇳CN-🇹🇼TW_92
+      - CN_48
+      - Relay_🇸🇬SG-🇩🇪DE_241
+      - CN_85
+      - Relay_🇸🇬SG-🇯🇵JP_218
+      - 美国(油管:破解资源君2.0) 41
+      - Relay_🇭🇰HK-🇭🇰HK_149
+      - NONE 29 2
+      - Relay_🇭🇰HK-🇩🇪DE_147
+      - SG_222
+      - NONE 8 2
+      - Relay_🇭🇰HK-🇸🇬SG_153
+      - HK_162
+      - Relay_🇸🇬SG-🇯🇵JP_219
+      - Relay_🇯🇵JP-🇯🇵JP_168
+      - Relay_🇸🇬SG-🇩🇪DE_214
+      - Relay_🇸🇬SG-🇸🇬SG_227
+      - Relay_🇸🇬SG-🇸🇬SG_239
+      - CN_33
+      - Relay_🇨🇳CN-🇨🇦CA_61
+      - Relay_🇸🇬SG-🇺🇸US_217
+      - CN_51
+      - Relay_🇨🇳CN-🇨🇦CA_58
+      - HK_155
+      - _51
+      - CN 15 → openitsub.com
+      - CN_83
+      - 亚洲(油管:破解资源君2.0) 8
+      - NONE 12 2
+      - SG_231
+      - Relay_🇫🇷FR-🇫🇷FR_130
+      - CN 5 → openitsub.com
+      - CN 4 → openitsub.com
+      - Relay_🇭🇰HK-🇷🇺RU_143
+      - Relay_🇨🇳CN-🇷🇺RU_69
       - CN_62
-      - 42.157.195.238:12127
-      - Relay_🇺🇸US-🇨🇦CA_1085
+      - Relay_🇺🇸US-🇺🇸US_356
+      - 美国-美国@univstar-6
+      - US_349
+      - Relay_🇺🇸US-🇺🇸US_311
+      - Relay_🇺🇸US-🇺🇸US_376
+      - Relay_🇺🇸US-🇸🇬SG_338
+      - US_357
+      - 欧洲(油管:破解资源君2.0) 12
+      - US_325
+      - Relay_🇺🇸US-🇯🇵JP_348
+      - 欧洲(油管:破解资源君2.0) 21
+      - CN 27 → openitsub.com
+      - Relay_🇺🇸US-🇯🇵JP_373
+      - Relay_🇺🇸US-🇺🇸US_329
+      - US_277
+      - 美国(油管:破解资源君2.0) 14
+      - Relay_🇹🇼TW-🇹🇼TW_262
+      - Relay_🇹🇼TW-🇹🇼TW_263
+      - github.com/freefq - 台湾省新北市中华电信 8
+      - US_337
+      - github.com/freefq - 香港电讯盈科有限公司 4
+      - 日本(油管:破解资源君2.0) 2
+      - Relay_🇺🇸US-🇺🇸US_335
+      - 欧洲(油管:破解资源君2.0) 14
+      - 俄罗斯(油管:破解资源君2.0) 3
+      - Relay_🇺🇸US-🇺🇸US_359
+      - github.com/freefq - 美国  10
+      - 欧洲(油管:破解资源君2.0) 15
+      - CN 11 → openitsub.com
+      - CN 25 → openitsub.com
+      - 美国(油管:破解资源君2.0) 16
+      - 亚洲(油管:破解资源君2.0)
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
