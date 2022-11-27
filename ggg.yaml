@@ -5,639 +5,711 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: CN 24 → openitsub.com, server: av69.cdn.node.a.ddns-ounk.com, port: 40374, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 79632:d2k078clxfa, obfs-param: "", udp: true}
-  - {name: CN 2 → openitsub.com, server: hnzz.ikuncloud.com, port: 62405, type: ss, cipher: chacha20-ietf-poly1305, password: 954fde49-dc73-4d54-af6f-310b999e3c57, udp: true}
-  - {name: CN 57 → openitsub.com, server: jkxc1.cdn.node.a.ddns-ounk.com, port: 40239, type: vmess, uuid: e3e0d326-86fb-3e26-9a13-01d5deb3a7a1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /a49dcd8b-ae4f-4c06-bbe3-d8a229363187.j.live002.m3u8, ws-headers: {Host: jkxc1.cdn.node.a.ddns-ounk.com}, udp: true}
-  - {name: 美国(油管:破解资源君2.0) 13, server: 34.72img.xyz, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 34.72img.xyz}, udp: true}
-  - {name: CN 8 → openitsub.com, server: shzz.ikuncloud.com, port: 46498, type: ss, cipher: chacha20-ietf-poly1305, password: 954fde49-dc73-4d54-af6f-310b999e3c57, udp: true}
-  - {name: CN 45 → openitsub.com, server: w69tr.cdn.node.a.ddns-ounk.com, port: 40048, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 79632:d2k078clxfa, obfs-param: "", udp: true}
-  - {name: CN 51 → openitsub.com, server: b9v6w.cdn.node.a.ddns-ounk.com, port: 40297, type: vmess, uuid: e3e0d326-86fb-3e26-9a13-01d5deb3a7a1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /80b48db1-7a27-4d2b-a12b-009feb033b04.j.live001.m3u8, ws-headers: {Host: b9v6w.cdn.node.a.ddns-ounk.com}, udp: true}
-  - {name: CN 74 → openitsub.com, server: kqs-moble.gatknqh.cn, port: 22284, type: ss, cipher: aes-256-gcm, password: 717e4533-dc2f-4978-848b-cab323a4da86, udp: true}
-  - {name: 欧洲(油管:破解资源君2.0) 47, server: 6.72img.xyz, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 6.72img.xyz}, udp: true}
+  - {name: Relay_Relay_🇭🇰HK-🇷🇺RU_294🇭🇰HK-🇷🇺RU_295, server: ru01.awcloud.top, port: 443, type: trojan, password: b88a1a71-5250-4ddc-8337-3a28594b6192, sni: ru01.awcloud.top, skip-cert-verify: true, udp: true}
+  - {name: Relay_Relay_🇯🇵JP-🇯🇵JP_338🇯🇵JP-🇯🇵JP_338, server: trs12.bolab.net, port: 443, type: trojan, password: 14bdba6dede262387ebdebaa706e1c90, sni: trs12.bolab.net, skip-cert-verify: true, udp: true}
+  - {name: HK_296🇭🇰HK_290, server: uk01.awcloud.top, port: 443, type: trojan, password: 1a283480-59e2-408a-99cb-dbbb6902a7ff, sni: uk01.awcloud.top, skip-cert-verify: true, udp: true}
+  - {name: Relay_Relay_🇯🇵JP-🇺🇸US_321🇯🇵JP-🇺🇸US_317, server: jp-am48-6.eqnode.net, port: 8081, type: ssr, cipher: aes-256-cfb, password: eAokbaDN6, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
+  - {name: US_554🇺🇸US_536, server: 212.90.123.133, port: 28443, type: trojan, password: a1b16d10-4f43-4dd9-8c4f-52065b2b0910, skip-cert-verify: true, udp: true}
+  - {name: Relay_Relay_🇺🇸US-🇨🇦CA_531🇺🇸US-🇨🇦CA_550, server: sg.iamnotagoodman.com, port: 443, type: trojan, password: 4f8c0e41-dbdb-40f1-99cb-2c2a0b909b52, sni: sg.iamnotagoodman.com, skip-cert-verify: true, udp: true}
+  - {name: CN 212 → openitsub.com, server: 111.45.22.246, port: 9040, type: vmess, uuid: 2bb31413-7b35-3eb7-b59a-3f5b11a4e385, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN 201 → openitsub.com, server: 111.45.22.246, port: 9008, type: vmess, uuid: 2bb31413-7b35-3eb7-b59a-3f5b11a4e385, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN 35 → openitsub.com, server: 111.45.22.246, port: 11929, type: vmess, uuid: 2bb31413-7b35-3eb7-b59a-3f5b11a4e385, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN 13 → openitsub.com, server: 111.45.22.246, port: 9009, type: vmess, uuid: 2bb31413-7b35-3eb7-b59a-3f5b11a4e385, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN 16 → openitsub.com, server: 111.45.22.139, port: 9045, type: vmess, uuid: 2bb31413-7b35-3eb7-b59a-3f5b11a4e385, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN 46 → openitsub.com, server: 111.45.22.246, port: 9004, type: vmess, uuid: 2bb31413-7b35-3eb7-b59a-3f5b11a4e385, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN 155 → openitsub.com, server: 111.45.22.246, port: 9024, type: vmess, uuid: 2bb31413-7b35-3eb7-b59a-3f5b11a4e385, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN 156 → openitsub.com, server: 111.45.22.246, port: 11931, type: vmess, uuid: 2bb31413-7b35-3eb7-b59a-3f5b11a4e385, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN 61 → openitsub.com, server: 111.45.22.246, port: 11923, type: vmess, uuid: 2bb31413-7b35-3eb7-b59a-3f5b11a4e385, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN 126 → openitsub.com, server: 120.233.11.136, port: 11926, type: vmess, uuid: 2bb31413-7b35-3eb7-b59a-3f5b11a4e385, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN 40 → openitsub.com, server: 111.45.22.246, port: 11919, type: vmess, uuid: 2bb31413-7b35-3eb7-b59a-3f5b11a4e385, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: NL 1 → openitsub.com, server: 185.212.200.75, port: 443, type: trojan, password: Sp3eDVp, skip-cert-verify: true, udp: true}
+  - {name: KR_351🇰🇷KR_357, server: 52.141.26.55, port: 443, type: trojan, password: 3dacbaa8-784b-430c-9c1e-57d33648981d, skip-cert-verify: true, udp: true}
+  - {name: CN 21 → openitsub.com, server: 111.45.22.246, port: 11934, type: vmess, uuid: 2bb31413-7b35-3eb7-b59a-3f5b11a4e385, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN 99 → openitsub.com, server: 111.45.22.246, port: 11935, type: vmess, uuid: 2bb31413-7b35-3eb7-b59a-3f5b11a4e385, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: NL_365🇳🇱NL_369, server: 5.255.103.209, port: 443, type: trojan, password: 3dacbaa8-784b-430c-9c1e-57d33648981d, skip-cert-verify: true, udp: true}
+  - {name: US_558🇺🇸US_531, server: 148.113.141.99, port: 443, type: trojan, password: HdsUZmsHQW, skip-cert-verify: true, udp: true}
+  - {name: Relay_Relay_🇭🇰HK-🇩🇪DE_304🇭🇰HK-🇩🇪DE_301, server: de01.awcloud.top, port: 443, type: trojan, password: 7f9ef59e-20fb-4343-bafc-3a84fa22fe70, sni: de01.awcloud.top, skip-cert-verify: true, udp: true}
+  - {name: Relay_Relay_🇸🇬SG-🇸🇬SG_395🇸🇬SG-🇸🇬SG_412, server: sg-relay.iqyun.zone, port: 443, type: trojan, password: fbb2cc06-b018-4ad0-bb27-baa4a834807f, sni: sg-relay.iqyun.zone, skip-cert-verify: true, udp: true}
+  - {name: CN 186 → openitsub.com, server: 111.45.22.246, port: 11907, type: vmess, uuid: 2bb31413-7b35-3eb7-b59a-3f5b11a4e385, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN 213 → openitsub.com, server: 111.45.22.246, port: 9042, type: vmess, uuid: 2bb31413-7b35-3eb7-b59a-3f5b11a4e385, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN 94 → openitsub.com, server: 111.45.22.246, port: 9003, type: vmess, uuid: 2bb31413-7b35-3eb7-b59a-3f5b11a4e385, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN 187 → openitsub.com, server: 111.45.22.246, port: 11910, type: vmess, uuid: 2bb31413-7b35-3eb7-b59a-3f5b11a4e385, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN 202 → openitsub.com, server: 111.45.22.246, port: 9028, type: vmess, uuid: 2bb31413-7b35-3eb7-b59a-3f5b11a4e385, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN 18 → openitsub.com, server: 111.45.22.246, port: 11901, type: vmess, uuid: 2bb31413-7b35-3eb7-b59a-3f5b11a4e385, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN 33 → openitsub.com, server: 111.45.22.246, port: 9015, type: vmess, uuid: 2bb31413-7b35-3eb7-b59a-3f5b11a4e385, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_Relay_🇺🇸US-🇺🇸US_527🇺🇸US-🇺🇸US_546, server: ar.iamnotagoodman.com, port: 443, type: trojan, password: 4f8c0e41-dbdb-40f1-99cb-2c2a0b909b52, sni: ar.iamnotagoodman.com, skip-cert-verify: true, udp: true}
+  - {name: Relay_Relay_🇺🇸US-🇯🇵JP_529🇺🇸US-🇯🇵JP_548, server: jp.iamnotagoodman.com, port: 443, type: trojan, password: 4f8c0e41-dbdb-40f1-99cb-2c2a0b909b52, sni: jp.iamnotagoodman.com, skip-cert-verify: true, udp: true}
+  - {name: CN 20 → openitsub.com, server: 111.45.22.246, port: 11913, type: vmess, uuid: 2bb31413-7b35-3eb7-b59a-3f5b11a4e385, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN 6 → openitsub.com, server: 111.45.22.246, port: 11904, type: vmess, uuid: 2bb31413-7b35-3eb7-b59a-3f5b11a4e385, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN 14 → openitsub.com, server: 111.45.22.139, port: 11901, type: vmess, uuid: 2bb31413-7b35-3eb7-b59a-3f5b11a4e385, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN 23 → openitsub.com, server: 111.45.22.246, port: 9026, type: vmess, uuid: 2bb31413-7b35-3eb7-b59a-3f5b11a4e385, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: GB_287🇬🇧GB_282, server: 144.24.72.126, port: 443, type: trojan, password: 7118b5f4-0ea4-4c11-be7f-11471cb91e4a, skip-cert-verify: true, udp: true}
+  - {name: SG_412🇸🇬SG_413, server: sg.liangyuandian.top, port: 443, type: trojan, password: 2b2b1b4f-3372-47f7-9f90-26097c7683f9, sni: sg.liangyuandian.top, skip-cert-verify: true, udp: true}
+  - {name: US 2 → openitsub.com, server: 129.146.242.130, port: 443, type: trojan, password: 05742120-ce23-4cc8-88f5-6d221ce45bf4, skip-cert-verify: true, udp: true}
+  - {name: HK_299🇭🇰HK_310, server: uk01.awcloud.top, port: 443, type: trojan, password: 7f9ef59e-20fb-4343-bafc-3a84fa22fe70, sni: uk01.awcloud.top, skip-cert-verify: true, udp: true}
+  - {name: CN 50 → openitsub.com, server: 111.45.22.246, port: 9013, type: vmess, uuid: 2bb31413-7b35-3eb7-b59a-3f5b11a4e385, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN 57 → openitsub.com, server: 111.45.22.246, port: 9006, type: vmess, uuid: 2bb31413-7b35-3eb7-b59a-3f5b11a4e385, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN 150 → openitsub.com, server: 120.233.11.136, port: 9025, type: vmess, uuid: 2bb31413-7b35-3eb7-b59a-3f5b11a4e385, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN 179 → openitsub.com, server: 111.45.22.246, port: 9011, type: vmess, uuid: 2bb31413-7b35-3eb7-b59a-3f5b11a4e385, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN 39 → openitsub.com, server: 111.45.22.246, port: 9016, type: vmess, uuid: 2bb31413-7b35-3eb7-b59a-3f5b11a4e385, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US_533🇺🇸US_552, server: kh.iamnotagoodman.com, port: 443, type: trojan, password: 4f8c0e41-dbdb-40f1-99cb-2c2a0b909b52, sni: kh.iamnotagoodman.com, skip-cert-verify: true, udp: true}
+  - {name: CN 7 → openitsub.com, server: 111.45.22.139, port: 11904, type: vmess, uuid: 2bb31413-7b35-3eb7-b59a-3f5b11a4e385, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN 29 → openitsub.com, server: 111.45.22.246, port: 11917, type: vmess, uuid: 2bb31413-7b35-3eb7-b59a-3f5b11a4e385, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: HK_313🇭🇰HK_307, server: in01.awcloud.top, port: 443, type: trojan, password: 7f9ef59e-20fb-4343-bafc-3a84fa22fe70, sni: in01.awcloud.top, skip-cert-verify: true, udp: true}
+  - {name: Relay_Relay_🇸🇬SG-🇫🇷FR_411🇸🇬SG-🇫🇷FR_403, server: de.iamnotagoodman.com, port: 443, type: trojan, password: 28bccca2-43d2-47f8-bd63-b1361ce7d362, sni: de.iamnotagoodman.com, skip-cert-verify: true, udp: true}
+  - {name: CN 44 → openitsub.com, server: 111.45.22.246, port: 9012, type: vmess, uuid: 2bb31413-7b35-3eb7-b59a-3f5b11a4e385, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: NONE 35, server: 20000.purefast2.com, port: 20000, type: trojan, password: a1d4c471-61d1-3f61-8502-63b14b8b56be, sni: 20000.purefast2.com, skip-cert-verify: true, udp: true}
+  - {name: HK 1 → openitsub.com, server: hkbn-home-a.zc20200426.club, port: 39999, type: vmess, uuid: 67c50f6a-816d-3555-89b4-19dd29608f8b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: Relay_Relay_🇺🇸US-🇺🇸US_532🇺🇸US-🇺🇸US_551, server: usla.iamnotagoodman.com, port: 443, type: trojan, password: 4f8c0e41-dbdb-40f1-99cb-2c2a0b909b52, sni: usla.iamnotagoodman.com, skip-cert-verify: true, udp: true}
+  - {name: Relay_Relay_🇭🇰HK-🇭🇰HK_308🇭🇰HK-🇭🇰HK_304, server: hk01.awcloud.top, port: 443, type: trojan, password: 7f9ef59e-20fb-4343-bafc-3a84fa22fe70, sni: hk01.awcloud.top, skip-cert-verify: true, udp: true}
+  - {name: CN 89 → openitsub.com, server: 120.233.11.136, port: 9039, type: vmess, uuid: 2bb31413-7b35-3eb7-b59a-3f5b11a4e385, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN 34 → openitsub.com, server: 111.45.22.246, port: 11911, type: vmess, uuid: 2bb31413-7b35-3eb7-b59a-3f5b11a4e385, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_Relay_🇹🇼TW-🇹🇼TW_419🇹🇼TW-🇹🇼TW_425, server: 60.249.3.229, port: 3389, type: trojan, password: 182228812d1e0f23, skip-cert-verify: true, udp: true}
+  - {name: HK_315🇭🇰HK_308, server: ru01.awcloud.top, port: 443, type: trojan, password: 7f9ef59e-20fb-4343-bafc-3a84fa22fe70, sni: ru01.awcloud.top, skip-cert-verify: true, udp: true}
+  - {name: SG_405🇸🇬SG_416, server: ap.liangyuandian.top, port: 443, type: trojan, password: 18304160-03d4-4c55-95c1-586c0a5f3a0a, sni: ap.liangyuandian.top, skip-cert-verify: true, udp: true}
+  - {name: CN 64 → openitsub.com, server: 111.45.22.246, port: 9014, type: vmess, uuid: 2bb31413-7b35-3eb7-b59a-3f5b11a4e385, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN 115 → openitsub.com, server: 111.45.22.246, port: 11928, type: vmess, uuid: 2bb31413-7b35-3eb7-b59a-3f5b11a4e385, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN 88 → openitsub.com, server: 111.45.22.246, port: 11933, type: vmess, uuid: 2bb31413-7b35-3eb7-b59a-3f5b11a4e385, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN 241 → openitsub.com, server: 111.45.22.246, port: 9010, type: vmess, uuid: 2bb31413-7b35-3eb7-b59a-3f5b11a4e385, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_Relay_🇭🇰HK-🇷🇺RU_310🇭🇰HK-🇷🇺RU_302, server: ru.iamnotagoodman.com, port: 443, type: trojan, password: f8d19ba5-8684-45f2-8523-77dbea588955, sni: ru.iamnotagoodman.com, skip-cert-verify: true, udp: true}
+  - {name: Relay_Relay_🇸🇬SG-🇧🇩BD_408🇸🇬SG-🇧🇩BD_411, server: kh.iamnotagoodman.com, port: 443, type: trojan, password: 28bccca2-43d2-47f8-bd63-b1361ce7d362, sni: kh.iamnotagoodman.com, skip-cert-verify: true, udp: true}
+  - {name: CN 91 → openitsub.com, server: 111.45.22.246, port: 11908, type: vmess, uuid: 2bb31413-7b35-3eb7-b59a-3f5b11a4e385, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: HK_309🇭🇰HK_314, server: sg02.awcloud.top, port: 443, type: trojan, password: 7f9ef59e-20fb-4343-bafc-3a84fa22fe70, sni: sg02.awcloud.top, skip-cert-verify: true, udp: true}
+  - {name: Relay_Relay_🇨🇳CN-🇨🇦CA_129🇨🇳CN-🇨🇦CA_73, server: 111.45.22.139, port: 11923, type: vmess, uuid: 2bb31413-7b35-3eb7-b59a-3f5b11a4e385, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: NONE 24, server: 20007.purefast2.com, port: 20007, type: trojan, password: bab40563-cafe-39c1-9d76-c3e627d73758, sni: 20007.purefast2.com, skip-cert-verify: true, udp: true}
-  - {name: US 2 → openitsub.com, server: ap.liangyuandian.top, port: 443, type: trojan, password: ceaea123-1b4b-469b-8358-bcd5f5529305, sni: ap.liangyuandian.top, skip-cert-verify: true, udp: true}
-  - {name: NONE 56, server: 110.80.3.24, port: 21004, type: trojan, password: f97edc29-1c8b-49d7-80b2-c246984a6f64, skip-cert-verify: true, udp: true}
-  - {name: NONE 20, server: 211.72.35.155, port: 3389, type: trojan, password: 7b06d22a8a7c764f, skip-cert-verify: true, udp: true}
-  - {name: NONE 18, server: 20005.purefast2.com, port: 20005, type: trojan, password: bab40563-cafe-39c1-9d76-c3e627d73758, sni: 20005.purefast2.com, skip-cert-verify: true, udp: true}
-  - {name: 欧洲(油管:破解资源君2.0) 10, server: 152.228.191.232, port: 443, type: vmess, uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: lg30.cfcdn3.xyz}, udp: true}
-  - {name: NONE 22, server: 20005.purefast2.com, port: 20005, type: trojan, password: a71df8e7-d563-3ebc-a26a-168c8dc8c9f3, sni: 20005.purefast2.com, skip-cert-verify: true, udp: true}
+  - {name: Relay_Relay_🇨🇳CN-🇧🇷BR_80🇨🇳CN-🇧🇷BR_74, server: 116.129.254.184, port: 11935, type: vmess, uuid: 2bb31413-7b35-3eb7-b59a-3f5b11a4e385, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_Relay_🇨🇳CN-🇧🇭BH_122🇨🇳CN-🇧🇭BH_90, server: 111.45.22.139, port: 9023, type: vmess, uuid: 2bb31413-7b35-3eb7-b59a-3f5b11a4e385, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: NONE 21, server: 211.72.35.154, port: 3389, type: trojan, password: 7b06d22a8a7c764f, skip-cert-verify: true, udp: true}
-  - {name: CN 12 → openitsub.com 2, server: h745768.waihuizhibiaowang.com, port: 15443, type: ss, cipher: chacha20-ietf-poly1305, password: 3dbdf038-ef96-4b51-834e-ac7e5ce94fe2, udp: true}
-  - {name: NONE 14, server: 210.0.158.220, port: 28443, type: trojan, password: 750a29bf-0a40-437f-b120-38de74ae7eaf, skip-cert-verify: true, udp: true}
-  - {name: CN_36, server: 20000.purefast2.com, port: 20000, type: trojan, password: a71df8e7-d563-3ebc-a26a-168c8dc8c9f3, sni: 20000.purefast2.com, skip-cert-verify: true, udp: true}
-  - {name: NONE 20 2, server: 20013.purefast2.com, port: 20013, type: trojan, password: a71df8e7-d563-3ebc-a26a-168c8dc8c9f3, sni: 20013.purefast2.com, skip-cert-verify: true, udp: true}
-  - {name: CN_39, server: 20016.purefast2.com, port: 20016, type: trojan, password: a71df8e7-d563-3ebc-a26a-168c8dc8c9f3, sni: 20016.purefast2.com, skip-cert-verify: true, udp: true}
   - {name: CN_50, server: 20009.purefast2.com, port: 20009, type: trojan, password: bab40563-cafe-39c1-9d76-c3e627d73758, sni: 20009.purefast2.com, skip-cert-verify: true, udp: true}
-  - {name: NONE 32, server: p3r.centaur.network, port: 16802, type: trojan, password: e199b516-00f9-469e-9ee5-fe609b4bc34e, sni: p3r.centaur.network, skip-cert-verify: true, udp: true}
-  - {name: _85, server: 20007.purefast2.com, port: 20007, type: trojan, password: 83a3b688-04e5-3c28-85b7-82698a174e41, sni: 20007.purefast2.com, skip-cert-verify: true, udp: true}
-  - {name: CN_37, server: 20002.purefast2.com, port: 20002, type: trojan, password: a71df8e7-d563-3ebc-a26a-168c8dc8c9f3, sni: 20002.purefast2.com, skip-cert-verify: true, udp: true}
-  - {name: NONE 26, server: 20004.purefast2.com, port: 20004, type: trojan, password: bab40563-cafe-39c1-9d76-c3e627d73758, sni: 20004.purefast2.com, skip-cert-verify: true, udp: true}
-  - {name: CN_29, server: 20003.purefast2.com, port: 20003, type: trojan, password: a71df8e7-d563-3ebc-a26a-168c8dc8c9f3, sni: 20003.purefast2.com, skip-cert-verify: true, udp: true}
-  - {name: CN_46, server: 20008.purefast2.com, port: 20008, type: trojan, password: bab40563-cafe-39c1-9d76-c3e627d73758, sni: 20008.purefast2.com, skip-cert-verify: true, udp: true}
+  - {name: Relay_Relay_🇨🇳CN-🇷🇴RO_58🇨🇳CN-🇷🇴RO_57, server: 116.129.254.184, port: 9011, type: vmess, uuid: 2bb31413-7b35-3eb7-b59a-3f5b11a4e385, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: CN_62, server: 106.55.234.95, port: 31372, type: vmess, uuid: 374d3519-455c-45b8-e3b1-0e2e9fcf4411, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: NONE 13, server: download2hkt.windowsupdate.lol, port: 443, type: trojan, password: 7778e684-f435-4166-bf9e-0256cb28bf10, sni: download2hkt.windowsupdate.lol, skip-cert-verify: true, udp: true}
-  - {name: NONE 28, server: 20011.purefast2.com, port: 20011, type: trojan, password: bab40563-cafe-39c1-9d76-c3e627d73758, sni: 20011.purefast2.com, skip-cert-verify: true, udp: true}
-  - {name: NONE 31, server: p3r.centaur.network, port: 16809, type: trojan, password: e199b516-00f9-469e-9ee5-fe609b4bc34e, sni: p3r.centaur.network, skip-cert-verify: true, udp: true}
-  - {name: CN_63, server: v1r.centaur.network, port: 16806, type: trojan, password: 86114b8a-078f-4c7b-acdd-bfc91b2e9a3b, sni: v1r.centaur.network, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇳CN-🇭🇰HK_57, server: v1r.centaur.network, port: 16802, type: trojan, password: 86114b8a-078f-4c7b-acdd-bfc91b2e9a3b, sni: v1r.centaur.network, skip-cert-verify: true, udp: true}
-  - {name: CN 11 → openitsub.com, server: oss-cn-shanghai.westdatacloud.top, port: 20048, type: trojan, password: C66435F1-5582-9D56-D7CA-4F5E271BCBAC, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: true, udp: true}
-  - {name: Relay_-🇺🇸US_298, server: lux.iamnotagoodman.com, port: 443, type: trojan, password: 2ac7fc8a-68b5-4809-8bd2-73a593bae292, sni: lux.iamnotagoodman.com, skip-cert-verify: true, udp: true}
-  - {name: NONE 26 2, server: 60.249.3.231, port: 3389, type: trojan, password: 182228812d1e0f23, skip-cert-verify: true, udp: true}
-  - {name: NONE 25, server: 20013.purefast2.com, port: 20013, type: trojan, password: bab40563-cafe-39c1-9d76-c3e627d73758, sni: 20013.purefast2.com, skip-cert-verify: true, udp: true}
-  - {name: NONE 29, server: 223.111.202.148, port: 30070, type: trojan, password: a1b16d10-4f43-4dd9-8c4f-52065b2b0910, skip-cert-verify: true, udp: true}
-  - {name: NONE 23, server: 20010.purefast2.com, port: 20010, type: trojan, password: a71df8e7-d563-3ebc-a26a-168c8dc8c9f3, sni: 20010.purefast2.com, skip-cert-verify: true, udp: true}
-  - {name: NONE 21 2, server: 20007.purefast2.com, port: 20007, type: trojan, password: a71df8e7-d563-3ebc-a26a-168c8dc8c9f3, sni: 20007.purefast2.com, skip-cert-verify: true, udp: true}
-  - {name: CN_59, server: 20009.purefast2.com, port: 20009, type: trojan, password: a71df8e7-d563-3ebc-a26a-168c8dc8c9f3, sni: 20009.purefast2.com, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇳CN-🇹🇼TW_28, server: 20016.purefast2.com, port: 20016, type: trojan, password: 83a3b688-04e5-3c28-85b7-82698a174e41, sni: 20016.purefast2.com, skip-cert-verify: true, udp: true}
-  - {name: 未知国家-1.80MB/s(Youtube:不良林), server: 22.72img.xyz, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 22.72img.xyz}, udp: true}
-  - {name: CN_60, server: 20010.purefast2.com, port: 20010, type: trojan, password: 5f42a7e5-1b5a-3f89-a75a-306e68d8ac1a, sni: 20010.purefast2.com, skip-cert-verify: true, udp: true}
-  - {name: NONE 27, server: 223.111.202.148, port: 30080, type: trojan, password: a1b16d10-4f43-4dd9-8c4f-52065b2b0910, skip-cert-verify: true, udp: true}
-  - {name: NONE 24 2, server: 211.72.35.157, port: 3389, type: trojan, password: 7b06d22a8a7c764f, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇳CN-🇨🇦CA_45, server: 20001.purefast2.com, port: 20001, type: trojan, password: 357827e5-a45d-3f09-9b73-ef4431dfb323, sni: 20001.purefast2.com, skip-cert-verify: true, udp: true}
-  - {name: CN_51, server: 20002.purefast2.com, port: 20002, type: trojan, password: bab40563-cafe-39c1-9d76-c3e627d73758, sni: 20002.purefast2.com, skip-cert-verify: true, udp: true}
-  - {name: NONE 29 2, server: 60.249.3.231, port: 3389, type: trojan, password: 0cc6b4268dea0ba8, skip-cert-verify: true, udp: true}
-  - {name: CN_54, server: 20003.purefast2.com, port: 20003, type: trojan, password: bab40563-cafe-39c1-9d76-c3e627d73758, sni: 20003.purefast2.com, skip-cert-verify: true, udp: true}
-  - {name: Relay_-🇯🇵JP_212, server: jp.liangyuandian.top, port: 443, type: trojan, password: cc55e294-b76f-425a-9301-c18afbecaa22, sni: jp.liangyuandian.top, skip-cert-verify: true, udp: true}
-  - {name: NONE 16, server: kh.iamnotagoodman.com, port: 443, type: trojan, password: f8d19ba5-8684-45f2-8523-77dbea588955, sni: kh.iamnotagoodman.com, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇳CN-🇨🇦CA_56, server: 20005.purefast2.com, port: 20005, type: trojan, password: 357827e5-a45d-3f09-9b73-ef4431dfb323, sni: 20005.purefast2.com, skip-cert-verify: true, udp: true}
-  - {name: CN_33, server: 20011.purefast2.com, port: 20011, type: trojan, password: 0989fa4f-7b43-34fd-8f7f-ce06427dce06, sni: 20011.purefast2.com, skip-cert-verify: true, udp: true}
-  - {name: CN_48, server: 20010.purefast2.com, port: 20010, type: trojan, password: bab40563-cafe-39c1-9d76-c3e627d73758, sni: 20010.purefast2.com, skip-cert-verify: true, udp: true}
-  - {name: CN_34, server: 20008.purefast2.com, port: 20008, type: trojan, password: a71df8e7-d563-3ebc-a26a-168c8dc8c9f3, sni: 20008.purefast2.com, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇳CN-🇮🇳IN_52, server: 20013.purefast2.com, port: 20013, type: trojan, password: 357827e5-a45d-3f09-9b73-ef4431dfb323, sni: 20013.purefast2.com, skip-cert-verify: true, udp: true}
-  - {name: NONE 3, server: download2hkt.windowsupdate.lol, port: 443, type: trojan, password: b1171e62-aad8-46dc-8014-1478a9aabb04, sni: download2hkt.windowsupdate.lol, skip-cert-verify: true, udp: true}
-  - {name: 美国-406.4KB/s(Youtube:不良林), server: 172.64.148.111, port: 443, type: vmess, uuid: f33957e8-372e-4fba-99ed-f4db32cce9e5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: fr2.cfcdn4.xyz}, udp: true}
-  - {name: Relay_-🇺🇦UA_232, server: v2cross.com.04.v2ce.com, port: 443, type: trojan, password: vGWCNNfBHwSY6m6M, sni: v2cross.com.04.v2ce.com, skip-cert-verify: true, udp: true}
-  - {name: NONE 47, server: 223.111.202.148, port: 30020, type: trojan, password: ae7cc604-d970-4200-9a9b-eb45087b4fc1, skip-cert-verify: true, udp: true}
-  - {name: NONE 30, server: 20012.purefast2.com, port: 20012, type: trojan, password: bab40563-cafe-39c1-9d76-c3e627d73758, sni: 20012.purefast2.com, skip-cert-verify: true, udp: true}
-  - {name: NONE 41, server: 23.247.137.70, port: 3389, type: trojan, password: d4e41ff772c7fd45, skip-cert-verify: true, udp: true}
-  - {name: NONE 32 2, server: 110.80.3.24, port: 21001, type: trojan, password: f97edc29-1c8b-49d7-80b2-c246984a6f64, skip-cert-verify: true, udp: true}
-  - {name: NONE 25 2, server: 211.72.35.158, port: 3389, type: trojan, password: 7b06d22a8a7c764f, skip-cert-verify: true, udp: true}
-  - {name: NONE 34, server: 19244tj.matrixxx888.com, port: 19244, type: trojan, password: 2147db6c-3b80-3f0e-add8-1dbabb9743ad, sni: 19244tj.matrixxx888.com, skip-cert-verify: true, udp: true}
-  - {name: NONE 42, server: 20004.purefast2.com, port: 20004, type: trojan, password: 07730e7a-427a-35b5-8095-b70a6535fd23, sni: 20004.purefast2.com, skip-cert-verify: true, udp: true}
-  - {name: NONE 8, server: idc1.vpn-akcelluler.my.id, port: 443, type: trojan, password: idc117okt, sni: idc1.vpn-akcelluler.my.id, skip-cert-verify: true, udp: true}
-  - {name: _294, server: 51.81.82.15, port: 443, type: trojan, password: c2b0a060-44b0-11ed-ad2e-1239d0255272, skip-cert-verify: true, udp: true}
-  - {name: NONE 2, server: 51.75.76.22, port: 443, type: trojan, password: c60fbf90-4b55-11ed-b935-225401db9d57, skip-cert-verify: true, udp: true}
+  - {name: Relay_Relay_🇨🇳CN-🇷🇺RU_232🇨🇳CN-🇷🇺RU_75, server: 111.45.22.139, port: 11931, type: vmess, uuid: 2bb31413-7b35-3eb7-b59a-3f5b11a4e385, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: NONE 7, server: jp.iamnotagoodman.com, port: 443, type: trojan, password: f8d19ba5-8684-45f2-8523-77dbea588955, sni: jp.iamnotagoodman.com, skip-cert-verify: true, udp: true}
-  - {name: NONE 12, server: usa.liangyuandian.top, port: 443, type: trojan, password: 53f20cd4-b381-4a80-8059-7bcd484bbb52, sni: usa.liangyuandian.top, skip-cert-verify: true, udp: true}
   - {name: NONE 48, server: v1r.centaur.network, port: 16805, type: trojan, password: 86114b8a-078f-4c7b-acdd-bfc91b2e9a3b, sni: v1r.centaur.network, skip-cert-verify: true, udp: true}
-  - {name: GB 2 → openitsub.com, server: 144.24.150.126, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 144.24.150.126}, udp: true}
-  - {name: NONE 5, server: download2hkt.windowsupdate.lol, port: 443, type: trojan, password: b27c853c-714a-45a5-be55-6451595a1b69, sni: download2hkt.windowsupdate.lol, skip-cert-verify: true, udp: true}
-  - {name: CN 18 → openitsub.com, server: guangzhouddns.xyz, port: 11846, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 29039:HWVD5doPgr2nnp5o, obfs-param: 6436f29039.microsoft.com, udp: true}
-  - {name: NONE 19, server: 20012.purefast2.com, port: 20012, type: trojan, password: a71df8e7-d563-3ebc-a26a-168c8dc8c9f3, sni: 20012.purefast2.com, skip-cert-verify: true, udp: true}
-  - {name: NONE 23 2, server: 223.111.202.148, port: 30100, type: trojan, password: 6b4ced5e-835a-4a7a-9d03-6a46e94668cb, skip-cert-verify: true, udp: true}
-  - {name: NONE 60, server: de.iamnotagoodman.com, port: 443, type: trojan, password: 4f8c0e41-dbdb-40f1-99cb-2c2a0b909b52, sni: de.iamnotagoodman.com, skip-cert-verify: true, udp: true}
-  - {name: US 2 → openitsub.com 2, server: 44.72img.xyz, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 44.72img.xyz}, udp: true}
-  - {name: Relay_-🇺🇸US_333, server: lux.iamnotagoodman.com, port: 443, type: trojan, password: 4f8c0e41-dbdb-40f1-99cb-2c2a0b909b52, sni: lux.iamnotagoodman.com, skip-cert-verify: true, udp: true}
-  - {name: NONE 36, server: 223.111.202.148, port: 30030, type: trojan, password: 6b4ced5e-835a-4a7a-9d03-6a46e94668cb, skip-cert-verify: true, udp: true}
-  - {name: NONE, server: sg02.awcloud.top, port: 443, type: trojan, password: b88a1a71-5250-4ddc-8337-3a28594b6192, sni: sg02.awcloud.top, skip-cert-verify: true, udp: true}
-  - {name: Relay_-🇹🇼TW_217, server: 211.72.35.153, port: 3389, type: trojan, password: 7b06d22a8a7c764f, skip-cert-verify: true, udp: true}
-  - {name: NONE 35, server: 138.2.114.255, port: 443, type: trojan, password: 81d93f62-15a2-4994-adb9-0b5d906aac7e, skip-cert-verify: true, udp: true}
-  - {name: 美国(油管:破解资源君2.0) 25, server: 138.2.122.225, port: 80, type: vmess, uuid: 461aed20-0743-4f13-ee68-43394e875e42, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: h1.800876.xyz}, udp: true}
-  - {name: NONE 6, server: sg.iamnotagoodman.com, port: 443, type: trojan, password: f8d19ba5-8684-45f2-8523-77dbea588955, sni: sg.iamnotagoodman.com, skip-cert-verify: true, udp: true}
-  - {name: NONE 55, server: 20005.purefast2.com, port: 20005, type: trojan, password: 83a3b688-04e5-3c28-85b7-82698a174e41, sni: 20005.purefast2.com, skip-cert-verify: true, udp: true}
-  - {name: NONE 46, server: 223.111.202.148, port: 30030, type: trojan, password: ae7cc604-d970-4200-9a9b-eb45087b4fc1, skip-cert-verify: true, udp: true}
-  - {name: NONE 50, server: 20006.purefast2.com, port: 20006, type: trojan, password: 83a3b688-04e5-3c28-85b7-82698a174e41, sni: 20006.purefast2.com, skip-cert-verify: true, udp: true}
-  - {name: NONE 9, server: uk01.awcloud.top, port: 443, type: trojan, password: 59e806eb-8f89-4c37-a961-86ee23211300, sni: uk01.awcloud.top, skip-cert-verify: true, udp: true}
-  - {name: Relay_-🇫🇷FR_117, server: de.tjvpn.org, port: 443, type: trojan, password: c60fbf90-4b55-11ed-b935-225401db9d57, sni: de.tjvpn.org, skip-cert-verify: true, udp: true}
-  - {name: NONE 11, server: ca.liangyuandian.top, port: 443, type: trojan, password: b7bc6b1c-610d-4d39-ad29-18a0d6902348, sni: ca.liangyuandian.top, skip-cert-verify: true, udp: true}
-  - {name: Relay_-🇸🇬SG_194, server: sg.liangyuandian.top, port: 443, type: trojan, password: cc55e294-b76f-425a-9301-c18afbecaa22, sni: sg.liangyuandian.top, skip-cert-verify: true, udp: true}
-  - {name: NONE 54, server: 20004.purefast2.com, port: 20004, type: trojan, password: a71df8e7-d563-3ebc-a26a-168c8dc8c9f3, sni: 20004.purefast2.com, skip-cert-verify: true, udp: true}
-  - {name: NONE 10, server: download2hkt.windowsupdate.lol, port: 443, type: trojan, password: 5d07a7bd-3696-4bc2-ab37-e7082c86f5cb, sni: download2hkt.windowsupdate.lol, skip-cert-verify: true, udp: true}
-  - {name: NONE 49, server: jp.iamnotagoodman.com, port: 443, type: trojan, password: 2ac7fc8a-68b5-4809-8bd2-73a593bae292, sni: jp.iamnotagoodman.com, skip-cert-verify: true, udp: true}
-  - {name: NONE 28 2, server: 155.248.172.87, port: 28443, type: trojan, password: 750a29bf-0a40-437f-b120-38de74ae7eaf, skip-cert-verify: true, udp: true}
-  - {name: NONE 57, server: 89.163.220.99, port: 28443, type: trojan, password: 6b4ced5e-835a-4a7a-9d03-6a46e94668cb, skip-cert-verify: true, udp: true}
-  - {name: Relay_Relay_-🇫🇷FR_119🇫🇷FR-🇫🇷FR_129, server: content-provider26.cdn-delivery.akamaicd.com, port: 443, type: trojan, password: origin, sni: content-provider26.cdn-delivery.akamaicd.com, skip-cert-verify: true, udp: true}
-  - {name: NONE 39, server: 223.111.202.148, port: 30010, type: trojan, password: 6b4ced5e-835a-4a7a-9d03-6a46e94668cb, skip-cert-verify: true, udp: true}
+  - {name: Relay_Relay_🇨🇳CN-🇷🇺RU_126🇨🇳CN-🇷🇺RU_84, server: 111.45.22.139, port: 9042, type: vmess, uuid: 2bb31413-7b35-3eb7-b59a-3f5b11a4e385, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_Relay_🇨🇳CN-🇧🇭BH_120🇨🇳CN-🇧🇭BH_99, server: 111.45.22.139, port: 9029, type: vmess, uuid: 2bb31413-7b35-3eb7-b59a-3f5b11a4e385, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _85, server: 20007.purefast2.com, port: 20007, type: trojan, password: 83a3b688-04e5-3c28-85b7-82698a174e41, sni: 20007.purefast2.com, skip-cert-verify: true, udp: true}
+  - {name: Relay_Relay_🇨🇳CN-🇺🇸US_68🇨🇳CN-🇺🇸US_96, server: 116.129.254.184, port: 11921, type: vmess, uuid: 2bb31413-7b35-3eb7-b59a-3f5b11a4e385, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_Relay_🇨🇳CN-🇷🇺RU_53🇨🇳CN-🇷🇺RU_48, server: 111.45.22.139, port: 9039, type: vmess, uuid: 2bb31413-7b35-3eb7-b59a-3f5b11a4e385, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_Relay_🇨🇳CN-🇺🇦UA_75🇨🇳CN-🇺🇦UA_69, server: 111.45.22.139, port: 11914, type: vmess, uuid: 2bb31413-7b35-3eb7-b59a-3f5b11a4e385, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: NONE 20 2, server: 20013.purefast2.com, port: 20013, type: trojan, password: a71df8e7-d563-3ebc-a26a-168c8dc8c9f3, sni: 20013.purefast2.com, skip-cert-verify: true, udp: true}
+  - {name: Relay_Relay_🇨🇳CN-🇱🇻LV_56🇨🇳CN-🇱🇻LV_55, server: 116.129.254.184, port: 11917, type: vmess, uuid: 2bb31413-7b35-3eb7-b59a-3f5b11a4e385, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: GB 2 → openitsub.com 2, server: ukt-2.opensvr.net, port: 443, type: trojan, password: opentunnel.net-trhrst5ju45s, sni: ukt-2.opensvr.net, skip-cert-verify: true, udp: true}
-  - {name: _323, server: 51.81.211.171, port: 443, type: trojan, password: 2dab5d78-5c56-4252-850d-c037753a40db, skip-cert-verify: true, udp: true}
-  - {name: CN 3 → openitsub.com, server: frontend.yijianlian.app, port: 54570, type: trojan, password: ae3d8af4-4e4f-47a8-a4d7-fda41150d71a, sni: frontend.yijianlian.app, skip-cert-verify: true, udp: true}
-  - {name: CN 19 → openitsub.com, server: 117.149.247.11, port: 20048, type: trojan, password: 6CF89406-B124-EF62-C121-E1189081F0DF, skip-cert-verify: true, udp: true}
-  - {name: NONE 37, server: 223.111.202.148, port: 30020, type: trojan, password: 6b4ced5e-835a-4a7a-9d03-6a46e94668cb, skip-cert-verify: true, udp: true}
-  - {name: CN 38 → openitsub.com, server: mhf6.cdn.node.a.ddns-ounk.com, port: 40195, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 79632:d2k078clxfa, obfs-param: "", udp: true}
-  - {name: CN 9 → openitsub.com, server: 17w69r.cdn.node.a.ddns-ounk.com, port: 40234, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 79632:d2k078clxfa, obfs-param: "", udp: true}
-  - {name: CN 5 → openitsub.com, server: hnzz.ikuncloud.com, port: 60099, type: ss, cipher: chacha20-ietf-poly1305, password: 954fde49-dc73-4d54-af6f-310b999e3c57, udp: true}
-  - {name: CN 16 → openitsub.com, server: 7a6rs.cdn.node.a.ddns-ounk.com, port: 40040, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 79632:d2k078clxfa, obfs-param: "", udp: true}
-  - {name: CN 33 → openitsub.com, server: dtbv9a56r.cdn.node.a.ddns-ounk.com, port: 40350, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 79632:d2k078clxfa, obfs-param: "", udp: true}
-  - {name: CN 39 → openitsub.com, server: wevd87.cdn.node.a.ddns-ounk.com, port: 40313, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 79632:d2k078clxfa, obfs-param: "", udp: true}
-  - {name: CN 3 → openitsub.com 2, server: hnzz.ikuncloud.com, port: 30711, type: ss, cipher: chacha20-ietf-poly1305, password: 954fde49-dc73-4d54-af6f-310b999e3c57, udp: true}
-  - {name: CN 4 → openitsub.com, server: hnzz.ikuncloud.com, port: 14029, type: ss, cipher: chacha20-ietf-poly1305, password: 954fde49-dc73-4d54-af6f-310b999e3c57, udp: true}
-  - {name: CN 27 → openitsub.com, server: mhf6.cdn.node.a.ddns-ounk.com, port: 40335, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 79632:d2k078clxfa, obfs-param: "", udp: true}
-  - {name: CN 35 → openitsub.com, server: wevd87.cdn.node.a.ddns-ounk.com, port: 40312, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 79632:d2k078clxfa, obfs-param: "", udp: true}
-  - {name: CN 20 → openitsub.com, server: dtbv9a56r.cdn.node.a.ddns-ounk.com, port: 40052, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 79632:d2k078clxfa, obfs-param: "", udp: true}
-  - {name: CN 13 → openitsub.com, server: 17w69r.cdn.node.a.ddns-ounk.com, port: 40058, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 79632:d2k078clxfa, obfs-param: "", udp: true}
-  - {name: CN 7 → openitsub.com, server: shzz.ikuncloud.com, port: 23029, type: ss, cipher: chacha20-ietf-poly1305, password: 954fde49-dc73-4d54-af6f-310b999e3c57, udp: true}
-  - {name: CN 6 → openitsub.com, server: hnzz.ikuncloud.com, port: 11074, type: ss, cipher: chacha20-ietf-poly1305, password: 954fde49-dc73-4d54-af6f-310b999e3c57, udp: true}
-  - {name: CN 31 → openitsub.com, server: dtbv9a56r.cdn.node.a.ddns-ounk.com, port: 40275, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 79632:d2k078clxfa, obfs-param: "", udp: true}
-  - {name: CN 41 → openitsub.com, server: rngnb9.cdn.node.a.ddns-ounk.com, port: 40245, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 79632:d2k078clxfa, obfs-param: "", udp: true}
-  - {name: CN 34 → openitsub.com, server: wdda438.cdn.node.a.ddns-ounk.com, port: 40132, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 79632:d2k078clxfa, obfs-param: "", udp: true}
-  - {name: CN 10 → openitsub.com, server: 17w69r.cdn.node.a.ddns-ounk.com, port: 40020, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 79632:d2k078clxfa, obfs-param: "", udp: true}
-  - {name: CN 43 → openitsub.com, server: w69tr.cdn.node.a.ddns-ounk.com, port: 40364, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 79632:d2k078clxfa, obfs-param: "", udp: true}
-  - {name: CN 23 → openitsub.com, server: 6q59.cdn.node.a.ddns-ounk.com, port: 40255, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 79632:d2k078clxfa, obfs-param: "", udp: true}
-  - {name: CN 52 → openitsub.com, server: wevd87.cdn.node.a.ddns-ounk.com, port: 40321, type: vmess, uuid: e3e0d326-86fb-3e26-9a13-01d5deb3a7a1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /a49dcd8b-ae4f-4c06-bbe3-d8a229363187.j.live002.m3u8, ws-headers: {Host: wevd87.cdn.node.a.ddns-ounk.com}, udp: true}
-  - {name: CN 30 → openitsub.com, server: dtbv9a56r.cdn.node.a.ddns-ounk.com, port: 40140, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 79632:d2k078clxfa, obfs-param: "", udp: true}
-  - {name: CN 26 → openitsub.com, server: dtbv9a56r.cdn.node.a.ddns-ounk.com, port: 40276, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 79632:d2k078clxfa, obfs-param: "", udp: true}
-  - {name: CN 40 → openitsub.com, server: wevd87.cdn.node.a.ddns-ounk.com, port: 40311, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 79632:d2k078clxfa, obfs-param: "", udp: true}
-  - {name: 欧洲(油管:破解资源君2.0) 24, server: 45.64.22.6, port: 443, type: vmess, uuid: d217db0c-0faa-4270-ea38-e6093d9774e3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: h2.800876.xyz}, udp: true}
-  - {name: CN 60 → openitsub.com, server: b9v6w.cdn.node.a.ddns-ounk.com, port: 40367, type: vmess, uuid: e3e0d326-86fb-3e26-9a13-01d5deb3a7a1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /80b48db1-7a27-4d2b-a12b-009feb033b04.j.live001.m3u8, ws-headers: {Host: b9v6w.cdn.node.a.ddns-ounk.com}, udp: true}
-  - {name: CN 71 → openitsub.com, server: wdda438.cdn.node.a.ddns-ounk.com, port: 40201, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 79632:d2k078clxfa, obfs-param: "", udp: true}
-  - {name: CN 15 → openitsub.com, server: 202.110.80.135, port: 48336, type: ss, cipher: chacha20-ietf-poly1305, password: 954fde49-dc73-4d54-af6f-310b999e3c57, udp: true}
-  - {name: CN 18 → openitsub.com 2, server: aj8sd.cdn.node.a.ddns-ounk.com, port: 40274, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 79632:d2k078clxfa, obfs-param: "", udp: true}
-  - {name: CN 29 → openitsub.com, server: gg15d.cdn.node.a.ddns-ounk.com, port: 40327, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 79632:d2k078clxfa, obfs-param: "", udp: true}
-  - {name: CN 63 → openitsub.com, server: pg57.cdn.node.a.ddns-ounk.com, port: 40307, type: vmess, uuid: e3e0d326-86fb-3e26-9a13-01d5deb3a7a1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /9e66ba-7635-451c-ae7e-457b17.j.live.m3u8, ws-headers: {Host: pg57.cdn.node.a.ddns-ounk.com}, udp: true}
-  - {name: CN 72 → openitsub.com, server: zfd-moble.gatknqh.cn, port: 16108, type: vmess, uuid: f1d39fe1-bfa3-34ff-86a2-29250af03183, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: GB 2 → openitsub.com 3, server: 132.145.51.172, port: 443, type: trojan, password: 02e653c9-7c93-46a9-999d-11834bd0c577, skip-cert-verify: true, udp: true}
-  - {name: 美国(油管:破解资源君2.0) 41, server: 47.88.52.220, port: 80, type: vmess, uuid: c9fe8359-5878-4413-c80e-3ffeabc47b02, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: w.800876.xyz}, udp: true}
-  - {name: 美国(油管:破解资源君2.0) 27, server: 66.212.20.3, port: 443, type: vmess, uuid: 0479eb9d-999d-4bff-ae3f-4f7cc440ce46, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /dongtaiwang.com, ws-headers: {Host: v2ray2.ssr-free2.xyz}, udp: true}
-  - {name: CN 14 → openitsub.com, server: 6q59.cdn.node.a.ddns-ounk.com, port: 40344, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 79632:d2k078clxfa, obfs-param: "", udp: true}
-  - {name: CN 42 → openitsub.com, server: w69tr.cdn.node.a.ddns-ounk.com, port: 40036, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 79632:d2k078clxfa, obfs-param: "", udp: true}
-  - {name: CN 44 → openitsub.com, server: w69tr.cdn.node.a.ddns-ounk.com, port: 40361, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 79632:d2k078clxfa, obfs-param: "", udp: true}
-  - {name: CN 68 → openitsub.com, server: 6q59.cdn.node.a.ddns-ounk.com, port: 40101, type: vmess, uuid: e3e0d326-86fb-3e26-9a13-01d5deb3a7a1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /d1af668b-cff6-464a-9415-a7782ead72d5.j.live003.m3u8, ws-headers: {Host: 6q59.cdn.node.a.ddns-ounk.com}, udp: true}
-  - {name: CN 62 → openitsub.com, server: pg57.cdn.node.a.ddns-ounk.com, port: 40295, type: vmess, uuid: e3e0d326-86fb-3e26-9a13-01d5deb3a7a1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /a49dcd8b-ae4f-4c06-bbe3-d8a229363187.j.live002.m3u8, ws-headers: {Host: pg57.cdn.node.a.ddns-ounk.com}, udp: true}
-  - {name: CN 69 → openitsub.com, server: gg15d.cdn.node.a.ddns-ounk.com, port: 40328, type: vmess, uuid: e3e0d326-86fb-3e26-9a13-01d5deb3a7a1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /9e66ba-7635-451c-ae7e-457b17.j.live.m3u8, ws-headers: {Host: gg15d.cdn.node.a.ddns-ounk.com}, udp: true}
-  - {name: CN 53 → openitsub.com, server: w69tr.cdn.node.a.ddns-ounk.com, port: 40359, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 79632:d2k078clxfa, obfs-param: "", udp: true}
-  - {name: CN 46 → openitsub.com, server: b9v6w.cdn.node.a.ddns-ounk.com, port: 40366, type: vmess, uuid: e3e0d326-86fb-3e26-9a13-01d5deb3a7a1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /80b48db1-7a27-4d2b-a12b-009feb033b04.j.live001.m3u8, ws-headers: {Host: b9v6w.cdn.node.a.ddns-ounk.com}, udp: true}
-  - {name: CN 47 → openitsub.com, server: w69tr.cdn.node.a.ddns-ounk.com, port: 40044, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 79632:d2k078clxfa, obfs-param: "", udp: true}
-  - {name: CN 56 → openitsub.com, server: jkxc1.cdn.node.a.ddns-ounk.com, port: 40198, type: vmess, uuid: e3e0d326-86fb-3e26-9a13-01d5deb3a7a1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /a49dcd8b-ae4f-4c06-bbe3-d8a229363187.j.live002.m3u8, ws-headers: {Host: jkxc1.cdn.node.a.ddns-ounk.com}, udp: true}
-  - {name: 欧洲(油管:破解资源君2.0) 17, server: 45.72img.xyz, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 45.72img.xyz}, udp: true}
+  - {name: NONE 23, server: 20010.purefast2.com, port: 20010, type: trojan, password: a71df8e7-d563-3ebc-a26a-168c8dc8c9f3, sni: 20010.purefast2.com, skip-cert-verify: true, udp: true}
+  - {name: Relay_Relay_🇨🇳CN-🇷🇺RU_81🇨🇳CN-🇷🇺RU_76, server: 116.129.254.184, port: 9044, type: vmess, uuid: 2bb31413-7b35-3eb7-b59a-3f5b11a4e385, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_Relay_🇨🇳CN-🇷🇴RO_124🇨🇳CN-🇷🇴RO_112, server: 116.129.254.184, port: 9007, type: vmess, uuid: 2bb31413-7b35-3eb7-b59a-3f5b11a4e385, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: NONE 31, server: p3r.centaur.network, port: 16809, type: trojan, password: e199b516-00f9-469e-9ee5-fe609b4bc34e, sni: p3r.centaur.network, skip-cert-verify: true, udp: true}
+  - {name: NONE 22, server: 20005.purefast2.com, port: 20005, type: trojan, password: a71df8e7-d563-3ebc-a26a-168c8dc8c9f3, sni: 20005.purefast2.com, skip-cert-verify: true, udp: true}
+  - {name: CN_46, server: 20008.purefast2.com, port: 20008, type: trojan, password: bab40563-cafe-39c1-9d76-c3e627d73758, sni: 20008.purefast2.com, skip-cert-verify: true, udp: true}
+  - {name: Relay_-🇺🇦UA_232, server: v2cross.com.04.v2ce.com, port: 443, type: trojan, password: vGWCNNfBHwSY6m6M, sni: v2cross.com.04.v2ce.com, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇨🇳CN-🏁ZZ_43, server: 116.129.254.184, port: 11932, type: vmess, uuid: 2bb31413-7b35-3eb7-b59a-3f5b11a4e385, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: NONE 6, server: sg.iamnotagoodman.com, port: 443, type: trojan, password: f8d19ba5-8684-45f2-8523-77dbea588955, sni: sg.iamnotagoodman.com, skip-cert-verify: true, udp: true}
+  - {name: Relay_Relay_🇨🇳CN-🇺🇸US_130🇨🇳CN-🇺🇸US_111, server: 116.129.254.184, port: 9030, type: vmess, uuid: 2bb31413-7b35-3eb7-b59a-3f5b11a4e385, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: NONE 18, server: 20005.purefast2.com, port: 20005, type: trojan, password: bab40563-cafe-39c1-9d76-c3e627d73758, sni: 20005.purefast2.com, skip-cert-verify: true, udp: true}
+  - {name: NONE 27, server: 223.111.202.148, port: 30080, type: trojan, password: a1b16d10-4f43-4dd9-8c4f-52065b2b0910, skip-cert-verify: true, udp: true}
+  - {name: CN_51, server: 20002.purefast2.com, port: 20002, type: trojan, password: bab40563-cafe-39c1-9d76-c3e627d73758, sni: 20002.purefast2.com, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇨🇳CN-🇮🇳IN_52, server: 20013.purefast2.com, port: 20013, type: trojan, password: 357827e5-a45d-3f09-9b73-ef4431dfb323, sni: 20013.purefast2.com, skip-cert-verify: true, udp: true}
+  - {name: Relay_Relay_🇨🇳CN-🇹🇼TW_123🇨🇳CN-🇹🇼TW_101, server: 116.129.254.184, port: 9012, type: vmess, uuid: 2bb31413-7b35-3eb7-b59a-3f5b11a4e385, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: NONE 26, server: 20004.purefast2.com, port: 20004, type: trojan, password: bab40563-cafe-39c1-9d76-c3e627d73758, sni: 20004.purefast2.com, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇨🇳CN-🇨🇦CA_45, server: 20001.purefast2.com, port: 20001, type: trojan, password: 357827e5-a45d-3f09-9b73-ef4431dfb323, sni: 20001.purefast2.com, skip-cert-verify: true, udp: true}
+  - {name: CN_34, server: 20008.purefast2.com, port: 20008, type: trojan, password: a71df8e7-d563-3ebc-a26a-168c8dc8c9f3, sni: 20008.purefast2.com, skip-cert-verify: true, udp: true}
+  - {name: Relay_Relay_🇨🇳CN-🇷🇺RU_70🇨🇳CN-🇷🇺RU_66, server: 116.129.254.184, port: 9043, type: vmess, uuid: 2bb31413-7b35-3eb7-b59a-3f5b11a4e385, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_Relay_🇨🇳CN-🇹🇼TW_96🇨🇳CN-🇹🇼TW_86, server: 116.129.254.184, port: 9004, type: vmess, uuid: 2bb31413-7b35-3eb7-b59a-3f5b11a4e385, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇨🇳CN-🇺🇸US_107, server: 120.233.11.136, port: 11922, type: vmess, uuid: 2bb31413-7b35-3eb7-b59a-3f5b11a4e385, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_Relay_🇨🇳CN-🇺🇸US_59🇨🇳CN-🇺🇸US_58, server: 116.129.254.184, port: 9001, type: vmess, uuid: 2bb31413-7b35-3eb7-b59a-3f5b11a4e385, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_Relay_🇨🇳CN-🇦🇿AZ_114🇨🇳CN-🇦🇿AZ_93, server: 120.233.11.136, port: 11930, type: vmess, uuid: 2bb31413-7b35-3eb7-b59a-3f5b11a4e385, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: NONE 32, server: p3r.centaur.network, port: 16802, type: trojan, password: e199b516-00f9-469e-9ee5-fe609b4bc34e, sni: p3r.centaur.network, skip-cert-verify: true, udp: true}
+  - {name: NONE 13, server: download2hkt.windowsupdate.lol, port: 443, type: trojan, password: 7778e684-f435-4166-bf9e-0256cb28bf10, sni: download2hkt.windowsupdate.lol, skip-cert-verify: true, udp: true}
+  - {name: NONE 3, server: download2hkt.windowsupdate.lol, port: 443, type: trojan, password: b1171e62-aad8-46dc-8014-1478a9aabb04, sni: download2hkt.windowsupdate.lol, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇨🇳CN-🇷🇺RU_51, server: 111.45.22.139, port: 9041, type: vmess, uuid: 2bb31413-7b35-3eb7-b59a-3f5b11a4e385, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_Relay_🇨🇳CN-🇦🇹AT_131🇨🇳CN-🇦🇹AT_61, server: 111.45.22.139, port: 11927, type: vmess, uuid: 2bb31413-7b35-3eb7-b59a-3f5b11a4e385, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_Relay_🇨🇳CN-🇺🇸US_148🇨🇳CN-🇺🇸US_100, server: 120.233.11.136, port: 11929, type: vmess, uuid: 2bb31413-7b35-3eb7-b59a-3f5b11a4e385, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇨🇳CN-🇨🇦CA_56, server: 20005.purefast2.com, port: 20005, type: trojan, password: 357827e5-a45d-3f09-9b73-ef4431dfb323, sni: 20005.purefast2.com, skip-cert-verify: true, udp: true}
+  - {name: Relay_Relay_🇨🇳CN-🇺🇸US_110🇨🇳CN-🇺🇸US_89, server: 116.129.254.184, port: 9034, type: vmess, uuid: 2bb31413-7b35-3eb7-b59a-3f5b11a4e385, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: NONE 28, server: 20011.purefast2.com, port: 20011, type: trojan, password: bab40563-cafe-39c1-9d76-c3e627d73758, sni: 20011.purefast2.com, skip-cert-verify: true, udp: true}
+  - {name: Relay_Relay_🇨🇳CN-🇺🇸US_128🇨🇳CN-🇺🇸US_110, server: 116.129.254.184, port: 9033, type: vmess, uuid: 2bb31413-7b35-3eb7-b59a-3f5b11a4e385, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_Relay_🇨🇳CN-🇧🇭BH_116🇨🇳CN-🇧🇭BH_113, server: 111.45.22.139, port: 9027, type: vmess, uuid: 2bb31413-7b35-3eb7-b59a-3f5b11a4e385, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: NONE 8, server: idc1.vpn-akcelluler.my.id, port: 443, type: trojan, password: idc117okt, sni: idc1.vpn-akcelluler.my.id, skip-cert-verify: true, udp: true}
+  - {name: Relay_Relay_🇨🇳CN-🏁ZZ_146🇨🇳CN-🏁ZZ_65, server: 111.45.22.139, port: 11932, type: vmess, uuid: 2bb31413-7b35-3eb7-b59a-3f5b11a4e385, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_Relay_🇨🇳CN-🇹🇼TW_117🇨🇳CN-🇹🇼TW_94, server: 116.129.254.184, port: 9006, type: vmess, uuid: 2bb31413-7b35-3eb7-b59a-3f5b11a4e385, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN_48, server: 20010.purefast2.com, port: 20010, type: trojan, password: bab40563-cafe-39c1-9d76-c3e627d73758, sni: 20010.purefast2.com, skip-cert-verify: true, udp: true}
+  - {name: NONE 2, server: 51.75.76.22, port: 443, type: trojan, password: c60fbf90-4b55-11ed-b935-225401db9d57, skip-cert-verify: true, udp: true}
+  - {name: CN_63, server: v1r.centaur.network, port: 16806, type: trojan, password: 86114b8a-078f-4c7b-acdd-bfc91b2e9a3b, sni: v1r.centaur.network, skip-cert-verify: true, udp: true}
+  - {name: Relay_Relay_🇨🇳CN-🇺🇸US_95🇨🇳CN-🇺🇸US_85, server: 116.129.254.184, port: 9035, type: vmess, uuid: 2bb31413-7b35-3eb7-b59a-3f5b11a4e385, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _294, server: 51.81.82.15, port: 443, type: trojan, password: c2b0a060-44b0-11ed-ad2e-1239d0255272, skip-cert-verify: true, udp: true}
+  - {name: Relay_Relay_🇨🇳CN-🇹🇼TW_109🇨🇳CN-🇹🇼TW_88, server: 116.129.254.184, port: 9003, type: vmess, uuid: 2bb31413-7b35-3eb7-b59a-3f5b11a4e385, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_Relay_🇨🇳CN-🇺🇸US_125🇨🇳CN-🇺🇸US_106, server: 111.45.22.139, port: 11910, type: vmess, uuid: 2bb31413-7b35-3eb7-b59a-3f5b11a4e385, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_Relay_🇨🇳CN-🇷🇺RU_138🇨🇳CN-🇷🇺RU_52, server: 111.45.22.139, port: 9040, type: vmess, uuid: 2bb31413-7b35-3eb7-b59a-3f5b11a4e385, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_Relay_🇨🇳CN-🇷🇺RU_147🇨🇳CN-🇷🇺RU_98, server: 111.45.22.139, port: 9043, type: vmess, uuid: 2bb31413-7b35-3eb7-b59a-3f5b11a4e385, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_Relay_🇨🇳CN-🇳🇱NL_216🇨🇳CN-🇳🇱NL_102, server: 116.129.254.184, port: 11915, type: vmess, uuid: 2bb31413-7b35-3eb7-b59a-3f5b11a4e385, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: NONE 21 2, server: 20007.purefast2.com, port: 20007, type: trojan, password: a71df8e7-d563-3ebc-a26a-168c8dc8c9f3, sni: 20007.purefast2.com, skip-cert-verify: true, udp: true}
+  - {name: Relay_Relay_🇨🇳CN-🏁ZZ_47🇨🇳CN-🏁ZZ_47, server: 116.129.254.184, port: 11904, type: vmess, uuid: 2bb31413-7b35-3eb7-b59a-3f5b11a4e385, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_Relay_🇨🇳CN-🇧🇭BH_118🇨🇳CN-🇧🇭BH_103, server: 111.45.22.139, port: 9028, type: vmess, uuid: 2bb31413-7b35-3eb7-b59a-3f5b11a4e385, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN_62 2, server: 106.55.234.95, port: 31372, type: vmess, uuid: 374d3519-455c-45b8-e3b1-0e2e9fcf4411, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: NONE 47, server: 223.111.202.148, port: 30020, type: trojan, password: ae7cc604-d970-4200-9a9b-eb45087b4fc1, skip-cert-verify: true, udp: true}
+  - {name: NONE 32 2, server: 110.80.3.24, port: 21001, type: trojan, password: f97edc29-1c8b-49d7-80b2-c246984a6f64, skip-cert-verify: true, udp: true}
+  - {name: Relay_Relay_🇨🇳CN-🇷🇴RO_42🇨🇳CN-🇷🇴RO_87, server: 116.129.254.184, port: 9009, type: vmess, uuid: 2bb31413-7b35-3eb7-b59a-3f5b11a4e385, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_Relay_🇨🇳CN-🇺🇸US_113🇨🇳CN-🇺🇸US_92, server: 111.45.22.139, port: 11907, type: vmess, uuid: 2bb31413-7b35-3eb7-b59a-3f5b11a4e385, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_-🇺🇸US_298, server: lux.iamnotagoodman.com, port: 443, type: trojan, password: 2ac7fc8a-68b5-4809-8bd2-73a593bae292, sni: lux.iamnotagoodman.com, skip-cert-verify: true, udp: true}
+  - {name: CN_37, server: 20002.purefast2.com, port: 20002, type: trojan, password: a71df8e7-d563-3ebc-a26a-168c8dc8c9f3, sni: 20002.purefast2.com, skip-cert-verify: true, udp: true}
+  - {name: CN_54, server: 20003.purefast2.com, port: 20003, type: trojan, password: bab40563-cafe-39c1-9d76-c3e627d73758, sni: 20003.purefast2.com, skip-cert-verify: true, udp: true}
+  - {name: NONE 42, server: 20004.purefast2.com, port: 20004, type: trojan, password: 07730e7a-427a-35b5-8095-b70a6535fd23, sni: 20004.purefast2.com, skip-cert-verify: true, udp: true}
+  - {name: CN_59, server: 20009.purefast2.com, port: 20009, type: trojan, password: a71df8e7-d563-3ebc-a26a-168c8dc8c9f3, sni: 20009.purefast2.com, skip-cert-verify: true, udp: true}
+  - {name: CN 22 → openitsub.com, server: 111.45.22.246, port: 11925, type: vmess, uuid: 2bb31413-7b35-3eb7-b59a-3f5b11a4e385, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN 10 → openitsub.com, server: frontend.yijianlian.app, port: 54430, type: trojan, password: ae3d8af4-4e4f-47a8-a4d7-fda41150d71a, sni: frontend.yijianlian.app, skip-cert-verify: true, udp: true}
+  - {name: Relay_Relay_🇨🇳CN-🇮🇱IL_48🇨🇳CN-🇮🇱IL_41, server: 111.45.22.139, port: 11934, type: vmess, uuid: 2bb31413-7b35-3eb7-b59a-3f5b11a4e385, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: NONE 30, server: 20012.purefast2.com, port: 20012, type: trojan, password: bab40563-cafe-39c1-9d76-c3e627d73758, sni: 20012.purefast2.com, skip-cert-verify: true, udp: true}
+  - {name: Relay_Relay_🇨🇳CN-🇦🇹AT_91🇨🇳CN-🇦🇹AT_82, server: 116.129.254.184, port: 11927, type: vmess, uuid: 2bb31413-7b35-3eb7-b59a-3f5b11a4e385, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US_556🇺🇸US_534, server: 45.88.148.237, port: 28443, type: trojan, password: a1b16d10-4f43-4dd9-8c4f-52065b2b0910, skip-cert-verify: true, udp: true}
+  - {name: CN_33, server: 20011.purefast2.com, port: 20011, type: trojan, password: 0989fa4f-7b43-34fd-8f7f-ce06427dce06, sni: 20011.purefast2.com, skip-cert-verify: true, udp: true}
+  - {name: Relay_Relay_🇨🇳CN-🇺🇸US_168🇨🇳CN-🇺🇸US_97, server: 111.45.22.139, port: 11921, type: vmess, uuid: 2bb31413-7b35-3eb7-b59a-3f5b11a4e385, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_Relay_-🇫🇷FR_119🇫🇷FR-🇫🇷FR_129, server: content-provider26.cdn-delivery.akamaicd.com, port: 443, type: trojan, password: origin, sni: content-provider26.cdn-delivery.akamaicd.com, skip-cert-verify: true, udp: true}
+  - {name: NONE 56, server: 110.80.3.24, port: 21004, type: trojan, password: f97edc29-1c8b-49d7-80b2-c246984a6f64, skip-cert-verify: true, udp: true}
+  - {name: Relay_Relay_🇨🇳CN-🇺🇸US_165🇨🇳CN-🇺🇸US_67, server: 111.45.22.139, port: 11929, type: vmess, uuid: 2bb31413-7b35-3eb7-b59a-3f5b11a4e385, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN 58 → openitsub.com, server: 111.45.22.246, port: 9018, type: vmess, uuid: 2bb31413-7b35-3eb7-b59a-3f5b11a4e385, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: NONE 25, server: 20013.purefast2.com, port: 20013, type: trojan, password: bab40563-cafe-39c1-9d76-c3e627d73758, sni: 20013.purefast2.com, skip-cert-verify: true, udp: true}
+  - {name: Relay_Relay_🇨🇳CN-🇧🇭BH_84🇨🇳CN-🇧🇭BH_78, server: 116.129.254.184, port: 9027, type: vmess, uuid: 2bb31413-7b35-3eb7-b59a-3f5b11a4e385, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: NONE 16, server: kh.iamnotagoodman.com, port: 443, type: trojan, password: f8d19ba5-8684-45f2-8523-77dbea588955, sni: kh.iamnotagoodman.com, skip-cert-verify: true, udp: true}
+  - {name: CN_29, server: 20003.purefast2.com, port: 20003, type: trojan, password: a71df8e7-d563-3ebc-a26a-168c8dc8c9f3, sni: 20003.purefast2.com, skip-cert-verify: true, udp: true}
+  - {name: Relay_Relay_🇨🇳CN-🇫🇷FR_57🇨🇳CN-🇫🇷FR_56, server: 116.129.254.184, port: 11901, type: vmess, uuid: 2bb31413-7b35-3eb7-b59a-3f5b11a4e385, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_Relay_🇨🇳CN-🇫🇷FR_45🇨🇳CN-🇫🇷FR_42, server: 116.129.254.184, port: 9008, type: vmess, uuid: 2bb31413-7b35-3eb7-b59a-3f5b11a4e385, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_Relay_🇨🇳CN-🇨🇦CA_86🇨🇳CN-🇨🇦CA_80, server: 116.129.254.184, port: 11923, type: vmess, uuid: 2bb31413-7b35-3eb7-b59a-3f5b11a4e385, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: NONE 29, server: 223.111.202.148, port: 30070, type: trojan, password: a1b16d10-4f43-4dd9-8c4f-52065b2b0910, skip-cert-verify: true, udp: true}
+  - {name: FR_274🇫🇷FR_276, server: 176.31.83.90, port: 443, type: trojan, password: origin, skip-cert-verify: true, udp: true}
+  - {name: CN 25 → openitsub.com, server: guangzhouddns.xyz, port: 22848, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 29039:HWVD5doPgr2nnp5o, obfs-param: 6436f29039.microsoft.com, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN 24 → openitsub.com
-      - CN 2 → openitsub.com
-      - CN 57 → openitsub.com
-      - 美国(油管:破解资源君2.0) 13
-      - CN 8 → openitsub.com
-      - CN 45 → openitsub.com
-      - CN 51 → openitsub.com
-      - CN 74 → openitsub.com
-      - 欧洲(油管:破解资源君2.0) 47
-      - NONE 24
-      - US 2 → openitsub.com
-      - NONE 56
-      - NONE 20
-      - NONE 18
-      - 欧洲(油管:破解资源君2.0) 10
-      - NONE 22
-      - NONE 21
-      - CN 12 → openitsub.com 2
-      - NONE 14
-      - CN_36
-      - NONE 20 2
-      - CN_39
-      - CN_50
-      - NONE 32
-      - _85
-      - CN_37
-      - NONE 26
-      - CN_29
-      - CN_46
-      - CN_62
-      - NONE 13
-      - NONE 28
-      - NONE 31
-      - CN_63
-      - Relay_🇨🇳CN-🇭🇰HK_57
-      - CN 11 → openitsub.com
-      - Relay_-🇺🇸US_298
-      - NONE 26 2
-      - NONE 25
-      - NONE 29
-      - NONE 23
-      - NONE 21 2
-      - CN_59
-      - Relay_🇨🇳CN-🇹🇼TW_28
-      - 未知国家-1.80MB/s(Youtube:不良林)
-      - CN_60
-      - NONE 27
-      - NONE 24 2
-      - Relay_🇨🇳CN-🇨🇦CA_45
-      - CN_51
-      - NONE 29 2
-      - CN_54
-      - Relay_-🇯🇵JP_212
-      - NONE 16
-      - Relay_🇨🇳CN-🇨🇦CA_56
-      - CN_33
-      - CN_48
-      - CN_34
-      - Relay_🇨🇳CN-🇮🇳IN_52
-      - NONE 3
-      - 美国-406.4KB/s(Youtube:不良林)
-      - Relay_-🇺🇦UA_232
-      - NONE 47
-      - NONE 30
-      - NONE 41
-      - NONE 32 2
-      - NONE 25 2
-      - NONE 34
-      - NONE 42
-      - NONE 8
-      - _294
-      - NONE 2
-      - NONE 7
-      - NONE 12
-      - NONE 48
-      - GB 2 → openitsub.com
-      - NONE 5
-      - CN 18 → openitsub.com
-      - NONE 19
-      - NONE 23 2
-      - NONE 60
-      - US 2 → openitsub.com 2
-      - Relay_-🇺🇸US_333
-      - NONE 36
-      - NONE
-      - Relay_-🇹🇼TW_217
-      - NONE 35
-      - 美国(油管:破解资源君2.0) 25
-      - NONE 6
-      - NONE 55
-      - NONE 46
-      - NONE 50
-      - NONE 9
-      - Relay_-🇫🇷FR_117
-      - NONE 11
-      - Relay_-🇸🇬SG_194
-      - NONE 54
-      - NONE 10
-      - NONE 49
-      - NONE 28 2
-      - NONE 57
-      - Relay_Relay_-🇫🇷FR_119🇫🇷FR-🇫🇷FR_129
-      - NONE 39
-      - GB 2 → openitsub.com 2
-      - _323
-      - CN 3 → openitsub.com
-      - CN 19 → openitsub.com
-      - NONE 37
-      - CN 38 → openitsub.com
-      - CN 9 → openitsub.com
-      - CN 5 → openitsub.com
-      - CN 16 → openitsub.com
-      - CN 33 → openitsub.com
-      - CN 39 → openitsub.com
-      - CN 3 → openitsub.com 2
-      - CN 4 → openitsub.com
-      - CN 27 → openitsub.com
+      - Relay_Relay_🇭🇰HK-🇷🇺RU_294🇭🇰HK-🇷🇺RU_295
+      - Relay_Relay_🇯🇵JP-🇯🇵JP_338🇯🇵JP-🇯🇵JP_338
+      - HK_296🇭🇰HK_290
+      - Relay_Relay_🇯🇵JP-🇺🇸US_321🇯🇵JP-🇺🇸US_317
+      - US_554🇺🇸US_536
+      - Relay_Relay_🇺🇸US-🇨🇦CA_531🇺🇸US-🇨🇦CA_550
+      - CN 212 → openitsub.com
+      - CN 201 → openitsub.com
       - CN 35 → openitsub.com
-      - CN 20 → openitsub.com
       - CN 13 → openitsub.com
-      - CN 7 → openitsub.com
-      - CN 6 → openitsub.com
-      - CN 31 → openitsub.com
-      - CN 41 → openitsub.com
-      - CN 34 → openitsub.com
-      - CN 10 → openitsub.com
-      - CN 43 → openitsub.com
-      - CN 23 → openitsub.com
-      - CN 52 → openitsub.com
-      - CN 30 → openitsub.com
-      - CN 26 → openitsub.com
-      - CN 40 → openitsub.com
-      - 欧洲(油管:破解资源君2.0) 24
-      - CN 60 → openitsub.com
-      - CN 71 → openitsub.com
-      - CN 15 → openitsub.com
-      - CN 18 → openitsub.com 2
-      - CN 29 → openitsub.com
-      - CN 63 → openitsub.com
-      - CN 72 → openitsub.com
-      - GB 2 → openitsub.com 3
-      - 美国(油管:破解资源君2.0) 41
-      - 美国(油管:破解资源君2.0) 27
-      - CN 14 → openitsub.com
-      - CN 42 → openitsub.com
-      - CN 44 → openitsub.com
-      - CN 68 → openitsub.com
-      - CN 62 → openitsub.com
-      - CN 69 → openitsub.com
-      - CN 53 → openitsub.com
+      - CN 16 → openitsub.com
       - CN 46 → openitsub.com
-      - CN 47 → openitsub.com
-      - CN 56 → openitsub.com
-      - 欧洲(油管:破解资源君2.0) 17
+      - CN 155 → openitsub.com
+      - CN 156 → openitsub.com
+      - CN 61 → openitsub.com
+      - CN 126 → openitsub.com
+      - CN 40 → openitsub.com
+      - NL 1 → openitsub.com
+      - KR_351🇰🇷KR_357
+      - CN 21 → openitsub.com
+      - CN 99 → openitsub.com
+      - NL_365🇳🇱NL_369
+      - US_558🇺🇸US_531
+      - Relay_Relay_🇭🇰HK-🇩🇪DE_304🇭🇰HK-🇩🇪DE_301
+      - Relay_Relay_🇸🇬SG-🇸🇬SG_395🇸🇬SG-🇸🇬SG_412
+      - CN 186 → openitsub.com
+      - CN 213 → openitsub.com
+      - CN 94 → openitsub.com
+      - CN 187 → openitsub.com
+      - CN 202 → openitsub.com
+      - CN 18 → openitsub.com
+      - CN 33 → openitsub.com
+      - Relay_Relay_🇺🇸US-🇺🇸US_527🇺🇸US-🇺🇸US_546
+      - Relay_Relay_🇺🇸US-🇯🇵JP_529🇺🇸US-🇯🇵JP_548
+      - CN 20 → openitsub.com
+      - CN 6 → openitsub.com
+      - CN 14 → openitsub.com
+      - CN 23 → openitsub.com
+      - GB_287🇬🇧GB_282
+      - SG_412🇸🇬SG_413
+      - US 2 → openitsub.com
+      - HK_299🇭🇰HK_310
+      - CN 50 → openitsub.com
+      - CN 57 → openitsub.com
+      - CN 150 → openitsub.com
+      - CN 179 → openitsub.com
+      - CN 39 → openitsub.com
+      - US_533🇺🇸US_552
+      - CN 7 → openitsub.com
+      - CN 29 → openitsub.com
+      - HK_313🇭🇰HK_307
+      - Relay_Relay_🇸🇬SG-🇫🇷FR_411🇸🇬SG-🇫🇷FR_403
+      - CN 44 → openitsub.com
+      - NONE 35
+      - HK 1 → openitsub.com
+      - Relay_Relay_🇺🇸US-🇺🇸US_532🇺🇸US-🇺🇸US_551
+      - Relay_Relay_🇭🇰HK-🇭🇰HK_308🇭🇰HK-🇭🇰HK_304
+      - CN 89 → openitsub.com
+      - CN 34 → openitsub.com
+      - Relay_Relay_🇹🇼TW-🇹🇼TW_419🇹🇼TW-🇹🇼TW_425
+      - HK_315🇭🇰HK_308
+      - SG_405🇸🇬SG_416
+      - CN 64 → openitsub.com
+      - CN 115 → openitsub.com
+      - CN 88 → openitsub.com
+      - CN 241 → openitsub.com
+      - Relay_Relay_🇭🇰HK-🇷🇺RU_310🇭🇰HK-🇷🇺RU_302
+      - Relay_Relay_🇸🇬SG-🇧🇩BD_408🇸🇬SG-🇧🇩BD_411
+      - CN 91 → openitsub.com
+      - HK_309🇭🇰HK_314
+      - Relay_Relay_🇨🇳CN-🇨🇦CA_129🇨🇳CN-🇨🇦CA_73
+      - NONE 24
+      - Relay_Relay_🇨🇳CN-🇧🇷BR_80🇨🇳CN-🇧🇷BR_74
+      - Relay_Relay_🇨🇳CN-🇧🇭BH_122🇨🇳CN-🇧🇭BH_90
+      - NONE 21
+      - CN_50
+      - Relay_Relay_🇨🇳CN-🇷🇴RO_58🇨🇳CN-🇷🇴RO_57
+      - CN_62
+      - Relay_Relay_🇨🇳CN-🇷🇺RU_232🇨🇳CN-🇷🇺RU_75
+      - NONE 7
+      - NONE 48
+      - Relay_Relay_🇨🇳CN-🇷🇺RU_126🇨🇳CN-🇷🇺RU_84
+      - Relay_Relay_🇨🇳CN-🇧🇭BH_120🇨🇳CN-🇧🇭BH_99
+      - _85
+      - Relay_Relay_🇨🇳CN-🇺🇸US_68🇨🇳CN-🇺🇸US_96
+      - Relay_Relay_🇨🇳CN-🇷🇺RU_53🇨🇳CN-🇷🇺RU_48
+      - Relay_Relay_🇨🇳CN-🇺🇦UA_75🇨🇳CN-🇺🇦UA_69
+      - NONE 20 2
+      - Relay_Relay_🇨🇳CN-🇱🇻LV_56🇨🇳CN-🇱🇻LV_55
+      - GB 2 → openitsub.com 2
+      - NONE 23
+      - Relay_Relay_🇨🇳CN-🇷🇺RU_81🇨🇳CN-🇷🇺RU_76
+      - Relay_Relay_🇨🇳CN-🇷🇴RO_124🇨🇳CN-🇷🇴RO_112
+      - NONE 31
+      - NONE 22
+      - CN_46
+      - Relay_-🇺🇦UA_232
+      - Relay_🇨🇳CN-🏁ZZ_43
+      - NONE 6
+      - Relay_Relay_🇨🇳CN-🇺🇸US_130🇨🇳CN-🇺🇸US_111
+      - NONE 18
+      - NONE 27
+      - CN_51
+      - Relay_🇨🇳CN-🇮🇳IN_52
+      - Relay_Relay_🇨🇳CN-🇹🇼TW_123🇨🇳CN-🇹🇼TW_101
+      - NONE 26
+      - Relay_🇨🇳CN-🇨🇦CA_45
+      - CN_34
+      - Relay_Relay_🇨🇳CN-🇷🇺RU_70🇨🇳CN-🇷🇺RU_66
+      - Relay_Relay_🇨🇳CN-🇹🇼TW_96🇨🇳CN-🇹🇼TW_86
+      - Relay_🇨🇳CN-🇺🇸US_107
+      - Relay_Relay_🇨🇳CN-🇺🇸US_59🇨🇳CN-🇺🇸US_58
+      - Relay_Relay_🇨🇳CN-🇦🇿AZ_114🇨🇳CN-🇦🇿AZ_93
+      - NONE 32
+      - NONE 13
+      - NONE 3
+      - Relay_🇨🇳CN-🇷🇺RU_51
+      - Relay_Relay_🇨🇳CN-🇦🇹AT_131🇨🇳CN-🇦🇹AT_61
+      - Relay_Relay_🇨🇳CN-🇺🇸US_148🇨🇳CN-🇺🇸US_100
+      - Relay_🇨🇳CN-🇨🇦CA_56
+      - Relay_Relay_🇨🇳CN-🇺🇸US_110🇨🇳CN-🇺🇸US_89
+      - NONE 28
+      - Relay_Relay_🇨🇳CN-🇺🇸US_128🇨🇳CN-🇺🇸US_110
+      - Relay_Relay_🇨🇳CN-🇧🇭BH_116🇨🇳CN-🇧🇭BH_113
+      - NONE 8
+      - Relay_Relay_🇨🇳CN-🏁ZZ_146🇨🇳CN-🏁ZZ_65
+      - Relay_Relay_🇨🇳CN-🇹🇼TW_117🇨🇳CN-🇹🇼TW_94
+      - CN_48
+      - NONE 2
+      - CN_63
+      - Relay_Relay_🇨🇳CN-🇺🇸US_95🇨🇳CN-🇺🇸US_85
+      - _294
+      - Relay_Relay_🇨🇳CN-🇹🇼TW_109🇨🇳CN-🇹🇼TW_88
+      - Relay_Relay_🇨🇳CN-🇺🇸US_125🇨🇳CN-🇺🇸US_106
+      - Relay_Relay_🇨🇳CN-🇷🇺RU_138🇨🇳CN-🇷🇺RU_52
+      - Relay_Relay_🇨🇳CN-🇷🇺RU_147🇨🇳CN-🇷🇺RU_98
+      - Relay_Relay_🇨🇳CN-🇳🇱NL_216🇨🇳CN-🇳🇱NL_102
+      - NONE 21 2
+      - Relay_Relay_🇨🇳CN-🏁ZZ_47🇨🇳CN-🏁ZZ_47
+      - Relay_Relay_🇨🇳CN-🇧🇭BH_118🇨🇳CN-🇧🇭BH_103
+      - CN_62 2
+      - NONE 47
+      - NONE 32 2
+      - Relay_Relay_🇨🇳CN-🇷🇴RO_42🇨🇳CN-🇷🇴RO_87
+      - Relay_Relay_🇨🇳CN-🇺🇸US_113🇨🇳CN-🇺🇸US_92
+      - Relay_-🇺🇸US_298
+      - CN_37
+      - CN_54
+      - NONE 42
+      - CN_59
+      - CN 22 → openitsub.com
+      - CN 10 → openitsub.com
+      - Relay_Relay_🇨🇳CN-🇮🇱IL_48🇨🇳CN-🇮🇱IL_41
+      - NONE 30
+      - Relay_Relay_🇨🇳CN-🇦🇹AT_91🇨🇳CN-🇦🇹AT_82
+      - US_556🇺🇸US_534
+      - CN_33
+      - Relay_Relay_🇨🇳CN-🇺🇸US_168🇨🇳CN-🇺🇸US_97
+      - Relay_Relay_-🇫🇷FR_119🇫🇷FR-🇫🇷FR_129
+      - NONE 56
+      - Relay_Relay_🇨🇳CN-🇺🇸US_165🇨🇳CN-🇺🇸US_67
+      - CN 58 → openitsub.com
+      - NONE 25
+      - Relay_Relay_🇨🇳CN-🇧🇭BH_84🇨🇳CN-🇧🇭BH_78
+      - NONE 16
+      - CN_29
+      - Relay_Relay_🇨🇳CN-🇫🇷FR_57🇨🇳CN-🇫🇷FR_56
+      - Relay_Relay_🇨🇳CN-🇫🇷FR_45🇨🇳CN-🇫🇷FR_42
+      - Relay_Relay_🇨🇳CN-🇨🇦CA_86🇨🇳CN-🇨🇦CA_80
+      - NONE 29
+      - FR_274🇫🇷FR_276
+      - CN 25 → openitsub.com
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - CN 24 → openitsub.com
-      - CN 2 → openitsub.com
-      - CN 57 → openitsub.com
-      - 美国(油管:破解资源君2.0) 13
-      - CN 8 → openitsub.com
-      - CN 45 → openitsub.com
-      - CN 51 → openitsub.com
-      - CN 74 → openitsub.com
-      - 欧洲(油管:破解资源君2.0) 47
-      - NONE 24
-      - US 2 → openitsub.com
-      - NONE 56
-      - NONE 20
-      - NONE 18
-      - 欧洲(油管:破解资源君2.0) 10
-      - NONE 22
-      - NONE 21
-      - CN 12 → openitsub.com 2
-      - NONE 14
-      - CN_36
-      - NONE 20 2
-      - CN_39
-      - CN_50
-      - NONE 32
-      - _85
-      - CN_37
-      - NONE 26
-      - CN_29
-      - CN_46
-      - CN_62
-      - NONE 13
-      - NONE 28
-      - NONE 31
-      - CN_63
-      - Relay_🇨🇳CN-🇭🇰HK_57
-      - CN 11 → openitsub.com
-      - Relay_-🇺🇸US_298
-      - NONE 26 2
-      - NONE 25
-      - NONE 29
-      - NONE 23
-      - NONE 21 2
-      - CN_59
-      - Relay_🇨🇳CN-🇹🇼TW_28
-      - 未知国家-1.80MB/s(Youtube:不良林)
-      - CN_60
-      - NONE 27
-      - NONE 24 2
-      - Relay_🇨🇳CN-🇨🇦CA_45
-      - CN_51
-      - NONE 29 2
-      - CN_54
-      - Relay_-🇯🇵JP_212
-      - NONE 16
-      - Relay_🇨🇳CN-🇨🇦CA_56
-      - CN_33
-      - CN_48
-      - CN_34
-      - Relay_🇨🇳CN-🇮🇳IN_52
-      - NONE 3
-      - 美国-406.4KB/s(Youtube:不良林)
-      - Relay_-🇺🇦UA_232
-      - NONE 47
-      - NONE 30
-      - NONE 41
-      - NONE 32 2
-      - NONE 25 2
-      - NONE 34
-      - NONE 42
-      - NONE 8
-      - _294
-      - NONE 2
-      - NONE 7
-      - NONE 12
-      - NONE 48
-      - GB 2 → openitsub.com
-      - NONE 5
-      - CN 18 → openitsub.com
-      - NONE 19
-      - NONE 23 2
-      - NONE 60
-      - US 2 → openitsub.com 2
-      - Relay_-🇺🇸US_333
-      - NONE 36
-      - NONE
-      - Relay_-🇹🇼TW_217
-      - NONE 35
-      - 美国(油管:破解资源君2.0) 25
-      - NONE 6
-      - NONE 55
-      - NONE 46
-      - NONE 50
-      - NONE 9
-      - Relay_-🇫🇷FR_117
-      - NONE 11
-      - Relay_-🇸🇬SG_194
-      - NONE 54
-      - NONE 10
-      - NONE 49
-      - NONE 28 2
-      - NONE 57
-      - Relay_Relay_-🇫🇷FR_119🇫🇷FR-🇫🇷FR_129
-      - NONE 39
-      - GB 2 → openitsub.com 2
-      - _323
-      - CN 3 → openitsub.com
-      - CN 19 → openitsub.com
-      - NONE 37
-      - CN 38 → openitsub.com
-      - CN 9 → openitsub.com
-      - CN 5 → openitsub.com
-      - CN 16 → openitsub.com
-      - CN 33 → openitsub.com
-      - CN 39 → openitsub.com
-      - CN 3 → openitsub.com 2
-      - CN 4 → openitsub.com
-      - CN 27 → openitsub.com
+      - Relay_Relay_🇭🇰HK-🇷🇺RU_294🇭🇰HK-🇷🇺RU_295
+      - Relay_Relay_🇯🇵JP-🇯🇵JP_338🇯🇵JP-🇯🇵JP_338
+      - HK_296🇭🇰HK_290
+      - Relay_Relay_🇯🇵JP-🇺🇸US_321🇯🇵JP-🇺🇸US_317
+      - US_554🇺🇸US_536
+      - Relay_Relay_🇺🇸US-🇨🇦CA_531🇺🇸US-🇨🇦CA_550
+      - CN 212 → openitsub.com
+      - CN 201 → openitsub.com
       - CN 35 → openitsub.com
-      - CN 20 → openitsub.com
       - CN 13 → openitsub.com
-      - CN 7 → openitsub.com
-      - CN 6 → openitsub.com
-      - CN 31 → openitsub.com
-      - CN 41 → openitsub.com
-      - CN 34 → openitsub.com
-      - CN 10 → openitsub.com
-      - CN 43 → openitsub.com
-      - CN 23 → openitsub.com
-      - CN 52 → openitsub.com
-      - CN 30 → openitsub.com
-      - CN 26 → openitsub.com
-      - CN 40 → openitsub.com
-      - 欧洲(油管:破解资源君2.0) 24
-      - CN 60 → openitsub.com
-      - CN 71 → openitsub.com
-      - CN 15 → openitsub.com
-      - CN 18 → openitsub.com 2
-      - CN 29 → openitsub.com
-      - CN 63 → openitsub.com
-      - CN 72 → openitsub.com
-      - GB 2 → openitsub.com 3
-      - 美国(油管:破解资源君2.0) 41
-      - 美国(油管:破解资源君2.0) 27
-      - CN 14 → openitsub.com
-      - CN 42 → openitsub.com
-      - CN 44 → openitsub.com
-      - CN 68 → openitsub.com
-      - CN 62 → openitsub.com
-      - CN 69 → openitsub.com
-      - CN 53 → openitsub.com
+      - CN 16 → openitsub.com
       - CN 46 → openitsub.com
-      - CN 47 → openitsub.com
-      - CN 56 → openitsub.com
-      - 欧洲(油管:破解资源君2.0) 17
+      - CN 155 → openitsub.com
+      - CN 156 → openitsub.com
+      - CN 61 → openitsub.com
+      - CN 126 → openitsub.com
+      - CN 40 → openitsub.com
+      - NL 1 → openitsub.com
+      - KR_351🇰🇷KR_357
+      - CN 21 → openitsub.com
+      - CN 99 → openitsub.com
+      - NL_365🇳🇱NL_369
+      - US_558🇺🇸US_531
+      - Relay_Relay_🇭🇰HK-🇩🇪DE_304🇭🇰HK-🇩🇪DE_301
+      - Relay_Relay_🇸🇬SG-🇸🇬SG_395🇸🇬SG-🇸🇬SG_412
+      - CN 186 → openitsub.com
+      - CN 213 → openitsub.com
+      - CN 94 → openitsub.com
+      - CN 187 → openitsub.com
+      - CN 202 → openitsub.com
+      - CN 18 → openitsub.com
+      - CN 33 → openitsub.com
+      - Relay_Relay_🇺🇸US-🇺🇸US_527🇺🇸US-🇺🇸US_546
+      - Relay_Relay_🇺🇸US-🇯🇵JP_529🇺🇸US-🇯🇵JP_548
+      - CN 20 → openitsub.com
+      - CN 6 → openitsub.com
+      - CN 14 → openitsub.com
+      - CN 23 → openitsub.com
+      - GB_287🇬🇧GB_282
+      - SG_412🇸🇬SG_413
+      - US 2 → openitsub.com
+      - HK_299🇭🇰HK_310
+      - CN 50 → openitsub.com
+      - CN 57 → openitsub.com
+      - CN 150 → openitsub.com
+      - CN 179 → openitsub.com
+      - CN 39 → openitsub.com
+      - US_533🇺🇸US_552
+      - CN 7 → openitsub.com
+      - CN 29 → openitsub.com
+      - HK_313🇭🇰HK_307
+      - Relay_Relay_🇸🇬SG-🇫🇷FR_411🇸🇬SG-🇫🇷FR_403
+      - CN 44 → openitsub.com
+      - NONE 35
+      - HK 1 → openitsub.com
+      - Relay_Relay_🇺🇸US-🇺🇸US_532🇺🇸US-🇺🇸US_551
+      - Relay_Relay_🇭🇰HK-🇭🇰HK_308🇭🇰HK-🇭🇰HK_304
+      - CN 89 → openitsub.com
+      - CN 34 → openitsub.com
+      - Relay_Relay_🇹🇼TW-🇹🇼TW_419🇹🇼TW-🇹🇼TW_425
+      - HK_315🇭🇰HK_308
+      - SG_405🇸🇬SG_416
+      - CN 64 → openitsub.com
+      - CN 115 → openitsub.com
+      - CN 88 → openitsub.com
+      - CN 241 → openitsub.com
+      - Relay_Relay_🇭🇰HK-🇷🇺RU_310🇭🇰HK-🇷🇺RU_302
+      - Relay_Relay_🇸🇬SG-🇧🇩BD_408🇸🇬SG-🇧🇩BD_411
+      - CN 91 → openitsub.com
+      - HK_309🇭🇰HK_314
+      - Relay_Relay_🇨🇳CN-🇨🇦CA_129🇨🇳CN-🇨🇦CA_73
+      - NONE 24
+      - Relay_Relay_🇨🇳CN-🇧🇷BR_80🇨🇳CN-🇧🇷BR_74
+      - Relay_Relay_🇨🇳CN-🇧🇭BH_122🇨🇳CN-🇧🇭BH_90
+      - NONE 21
+      - CN_50
+      - Relay_Relay_🇨🇳CN-🇷🇴RO_58🇨🇳CN-🇷🇴RO_57
+      - CN_62
+      - Relay_Relay_🇨🇳CN-🇷🇺RU_232🇨🇳CN-🇷🇺RU_75
+      - NONE 7
+      - NONE 48
+      - Relay_Relay_🇨🇳CN-🇷🇺RU_126🇨🇳CN-🇷🇺RU_84
+      - Relay_Relay_🇨🇳CN-🇧🇭BH_120🇨🇳CN-🇧🇭BH_99
+      - _85
+      - Relay_Relay_🇨🇳CN-🇺🇸US_68🇨🇳CN-🇺🇸US_96
+      - Relay_Relay_🇨🇳CN-🇷🇺RU_53🇨🇳CN-🇷🇺RU_48
+      - Relay_Relay_🇨🇳CN-🇺🇦UA_75🇨🇳CN-🇺🇦UA_69
+      - NONE 20 2
+      - Relay_Relay_🇨🇳CN-🇱🇻LV_56🇨🇳CN-🇱🇻LV_55
+      - GB 2 → openitsub.com 2
+      - NONE 23
+      - Relay_Relay_🇨🇳CN-🇷🇺RU_81🇨🇳CN-🇷🇺RU_76
+      - Relay_Relay_🇨🇳CN-🇷🇴RO_124🇨🇳CN-🇷🇴RO_112
+      - NONE 31
+      - NONE 22
+      - CN_46
+      - Relay_-🇺🇦UA_232
+      - Relay_🇨🇳CN-🏁ZZ_43
+      - NONE 6
+      - Relay_Relay_🇨🇳CN-🇺🇸US_130🇨🇳CN-🇺🇸US_111
+      - NONE 18
+      - NONE 27
+      - CN_51
+      - Relay_🇨🇳CN-🇮🇳IN_52
+      - Relay_Relay_🇨🇳CN-🇹🇼TW_123🇨🇳CN-🇹🇼TW_101
+      - NONE 26
+      - Relay_🇨🇳CN-🇨🇦CA_45
+      - CN_34
+      - Relay_Relay_🇨🇳CN-🇷🇺RU_70🇨🇳CN-🇷🇺RU_66
+      - Relay_Relay_🇨🇳CN-🇹🇼TW_96🇨🇳CN-🇹🇼TW_86
+      - Relay_🇨🇳CN-🇺🇸US_107
+      - Relay_Relay_🇨🇳CN-🇺🇸US_59🇨🇳CN-🇺🇸US_58
+      - Relay_Relay_🇨🇳CN-🇦🇿AZ_114🇨🇳CN-🇦🇿AZ_93
+      - NONE 32
+      - NONE 13
+      - NONE 3
+      - Relay_🇨🇳CN-🇷🇺RU_51
+      - Relay_Relay_🇨🇳CN-🇦🇹AT_131🇨🇳CN-🇦🇹AT_61
+      - Relay_Relay_🇨🇳CN-🇺🇸US_148🇨🇳CN-🇺🇸US_100
+      - Relay_🇨🇳CN-🇨🇦CA_56
+      - Relay_Relay_🇨🇳CN-🇺🇸US_110🇨🇳CN-🇺🇸US_89
+      - NONE 28
+      - Relay_Relay_🇨🇳CN-🇺🇸US_128🇨🇳CN-🇺🇸US_110
+      - Relay_Relay_🇨🇳CN-🇧🇭BH_116🇨🇳CN-🇧🇭BH_113
+      - NONE 8
+      - Relay_Relay_🇨🇳CN-🏁ZZ_146🇨🇳CN-🏁ZZ_65
+      - Relay_Relay_🇨🇳CN-🇹🇼TW_117🇨🇳CN-🇹🇼TW_94
+      - CN_48
+      - NONE 2
+      - CN_63
+      - Relay_Relay_🇨🇳CN-🇺🇸US_95🇨🇳CN-🇺🇸US_85
+      - _294
+      - Relay_Relay_🇨🇳CN-🇹🇼TW_109🇨🇳CN-🇹🇼TW_88
+      - Relay_Relay_🇨🇳CN-🇺🇸US_125🇨🇳CN-🇺🇸US_106
+      - Relay_Relay_🇨🇳CN-🇷🇺RU_138🇨🇳CN-🇷🇺RU_52
+      - Relay_Relay_🇨🇳CN-🇷🇺RU_147🇨🇳CN-🇷🇺RU_98
+      - Relay_Relay_🇨🇳CN-🇳🇱NL_216🇨🇳CN-🇳🇱NL_102
+      - NONE 21 2
+      - Relay_Relay_🇨🇳CN-🏁ZZ_47🇨🇳CN-🏁ZZ_47
+      - Relay_Relay_🇨🇳CN-🇧🇭BH_118🇨🇳CN-🇧🇭BH_103
+      - CN_62 2
+      - NONE 47
+      - NONE 32 2
+      - Relay_Relay_🇨🇳CN-🇷🇴RO_42🇨🇳CN-🇷🇴RO_87
+      - Relay_Relay_🇨🇳CN-🇺🇸US_113🇨🇳CN-🇺🇸US_92
+      - Relay_-🇺🇸US_298
+      - CN_37
+      - CN_54
+      - NONE 42
+      - CN_59
+      - CN 22 → openitsub.com
+      - CN 10 → openitsub.com
+      - Relay_Relay_🇨🇳CN-🇮🇱IL_48🇨🇳CN-🇮🇱IL_41
+      - NONE 30
+      - Relay_Relay_🇨🇳CN-🇦🇹AT_91🇨🇳CN-🇦🇹AT_82
+      - US_556🇺🇸US_534
+      - CN_33
+      - Relay_Relay_🇨🇳CN-🇺🇸US_168🇨🇳CN-🇺🇸US_97
+      - Relay_Relay_-🇫🇷FR_119🇫🇷FR-🇫🇷FR_129
+      - NONE 56
+      - Relay_Relay_🇨🇳CN-🇺🇸US_165🇨🇳CN-🇺🇸US_67
+      - CN 58 → openitsub.com
+      - NONE 25
+      - Relay_Relay_🇨🇳CN-🇧🇭BH_84🇨🇳CN-🇧🇭BH_78
+      - NONE 16
+      - CN_29
+      - Relay_Relay_🇨🇳CN-🇫🇷FR_57🇨🇳CN-🇫🇷FR_56
+      - Relay_Relay_🇨🇳CN-🇫🇷FR_45🇨🇳CN-🇫🇷FR_42
+      - Relay_Relay_🇨🇳CN-🇨🇦CA_86🇨🇳CN-🇨🇦CA_80
+      - NONE 29
+      - FR_274🇫🇷FR_276
+      - CN 25 → openitsub.com
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN 24 → openitsub.com
-      - CN 2 → openitsub.com
-      - CN 57 → openitsub.com
-      - 美国(油管:破解资源君2.0) 13
-      - CN 8 → openitsub.com
-      - CN 45 → openitsub.com
-      - CN 51 → openitsub.com
-      - CN 74 → openitsub.com
-      - 欧洲(油管:破解资源君2.0) 47
-      - NONE 24
-      - US 2 → openitsub.com
-      - NONE 56
-      - NONE 20
-      - NONE 18
-      - 欧洲(油管:破解资源君2.0) 10
-      - NONE 22
-      - NONE 21
-      - CN 12 → openitsub.com 2
-      - NONE 14
-      - CN_36
-      - NONE 20 2
-      - CN_39
-      - CN_50
-      - NONE 32
-      - _85
-      - CN_37
-      - NONE 26
-      - CN_29
-      - CN_46
-      - CN_62
-      - NONE 13
-      - NONE 28
-      - NONE 31
-      - CN_63
-      - Relay_🇨🇳CN-🇭🇰HK_57
-      - CN 11 → openitsub.com
-      - Relay_-🇺🇸US_298
-      - NONE 26 2
-      - NONE 25
-      - NONE 29
-      - NONE 23
-      - NONE 21 2
-      - CN_59
-      - Relay_🇨🇳CN-🇹🇼TW_28
-      - 未知国家-1.80MB/s(Youtube:不良林)
-      - CN_60
-      - NONE 27
-      - NONE 24 2
-      - Relay_🇨🇳CN-🇨🇦CA_45
-      - CN_51
-      - NONE 29 2
-      - CN_54
-      - Relay_-🇯🇵JP_212
-      - NONE 16
-      - Relay_🇨🇳CN-🇨🇦CA_56
-      - CN_33
-      - CN_48
-      - CN_34
-      - Relay_🇨🇳CN-🇮🇳IN_52
-      - NONE 3
-      - 美国-406.4KB/s(Youtube:不良林)
-      - Relay_-🇺🇦UA_232
-      - NONE 47
-      - NONE 30
-      - NONE 41
-      - NONE 32 2
-      - NONE 25 2
-      - NONE 34
-      - NONE 42
-      - NONE 8
-      - _294
-      - NONE 2
-      - NONE 7
-      - NONE 12
-      - NONE 48
-      - GB 2 → openitsub.com
-      - NONE 5
-      - CN 18 → openitsub.com
-      - NONE 19
-      - NONE 23 2
-      - NONE 60
-      - US 2 → openitsub.com 2
-      - Relay_-🇺🇸US_333
-      - NONE 36
-      - NONE
-      - Relay_-🇹🇼TW_217
-      - NONE 35
-      - 美国(油管:破解资源君2.0) 25
-      - NONE 6
-      - NONE 55
-      - NONE 46
-      - NONE 50
-      - NONE 9
-      - Relay_-🇫🇷FR_117
-      - NONE 11
-      - Relay_-🇸🇬SG_194
-      - NONE 54
-      - NONE 10
-      - NONE 49
-      - NONE 28 2
-      - NONE 57
-      - Relay_Relay_-🇫🇷FR_119🇫🇷FR-🇫🇷FR_129
-      - NONE 39
-      - GB 2 → openitsub.com 2
-      - _323
-      - CN 3 → openitsub.com
-      - CN 19 → openitsub.com
-      - NONE 37
-      - CN 38 → openitsub.com
-      - CN 9 → openitsub.com
-      - CN 5 → openitsub.com
-      - CN 16 → openitsub.com
-      - CN 33 → openitsub.com
-      - CN 39 → openitsub.com
-      - CN 3 → openitsub.com 2
-      - CN 4 → openitsub.com
-      - CN 27 → openitsub.com
+      - Relay_Relay_🇭🇰HK-🇷🇺RU_294🇭🇰HK-🇷🇺RU_295
+      - Relay_Relay_🇯🇵JP-🇯🇵JP_338🇯🇵JP-🇯🇵JP_338
+      - HK_296🇭🇰HK_290
+      - Relay_Relay_🇯🇵JP-🇺🇸US_321🇯🇵JP-🇺🇸US_317
+      - US_554🇺🇸US_536
+      - Relay_Relay_🇺🇸US-🇨🇦CA_531🇺🇸US-🇨🇦CA_550
+      - CN 212 → openitsub.com
+      - CN 201 → openitsub.com
       - CN 35 → openitsub.com
-      - CN 20 → openitsub.com
       - CN 13 → openitsub.com
-      - CN 7 → openitsub.com
-      - CN 6 → openitsub.com
-      - CN 31 → openitsub.com
-      - CN 41 → openitsub.com
-      - CN 34 → openitsub.com
-      - CN 10 → openitsub.com
-      - CN 43 → openitsub.com
-      - CN 23 → openitsub.com
-      - CN 52 → openitsub.com
-      - CN 30 → openitsub.com
-      - CN 26 → openitsub.com
-      - CN 40 → openitsub.com
-      - 欧洲(油管:破解资源君2.0) 24
-      - CN 60 → openitsub.com
-      - CN 71 → openitsub.com
-      - CN 15 → openitsub.com
-      - CN 18 → openitsub.com 2
-      - CN 29 → openitsub.com
-      - CN 63 → openitsub.com
-      - CN 72 → openitsub.com
-      - GB 2 → openitsub.com 3
-      - 美国(油管:破解资源君2.0) 41
-      - 美国(油管:破解资源君2.0) 27
-      - CN 14 → openitsub.com
-      - CN 42 → openitsub.com
-      - CN 44 → openitsub.com
-      - CN 68 → openitsub.com
-      - CN 62 → openitsub.com
-      - CN 69 → openitsub.com
-      - CN 53 → openitsub.com
+      - CN 16 → openitsub.com
       - CN 46 → openitsub.com
-      - CN 47 → openitsub.com
-      - CN 56 → openitsub.com
-      - 欧洲(油管:破解资源君2.0) 17
+      - CN 155 → openitsub.com
+      - CN 156 → openitsub.com
+      - CN 61 → openitsub.com
+      - CN 126 → openitsub.com
+      - CN 40 → openitsub.com
+      - NL 1 → openitsub.com
+      - KR_351🇰🇷KR_357
+      - CN 21 → openitsub.com
+      - CN 99 → openitsub.com
+      - NL_365🇳🇱NL_369
+      - US_558🇺🇸US_531
+      - Relay_Relay_🇭🇰HK-🇩🇪DE_304🇭🇰HK-🇩🇪DE_301
+      - Relay_Relay_🇸🇬SG-🇸🇬SG_395🇸🇬SG-🇸🇬SG_412
+      - CN 186 → openitsub.com
+      - CN 213 → openitsub.com
+      - CN 94 → openitsub.com
+      - CN 187 → openitsub.com
+      - CN 202 → openitsub.com
+      - CN 18 → openitsub.com
+      - CN 33 → openitsub.com
+      - Relay_Relay_🇺🇸US-🇺🇸US_527🇺🇸US-🇺🇸US_546
+      - Relay_Relay_🇺🇸US-🇯🇵JP_529🇺🇸US-🇯🇵JP_548
+      - CN 20 → openitsub.com
+      - CN 6 → openitsub.com
+      - CN 14 → openitsub.com
+      - CN 23 → openitsub.com
+      - GB_287🇬🇧GB_282
+      - SG_412🇸🇬SG_413
+      - US 2 → openitsub.com
+      - HK_299🇭🇰HK_310
+      - CN 50 → openitsub.com
+      - CN 57 → openitsub.com
+      - CN 150 → openitsub.com
+      - CN 179 → openitsub.com
+      - CN 39 → openitsub.com
+      - US_533🇺🇸US_552
+      - CN 7 → openitsub.com
+      - CN 29 → openitsub.com
+      - HK_313🇭🇰HK_307
+      - Relay_Relay_🇸🇬SG-🇫🇷FR_411🇸🇬SG-🇫🇷FR_403
+      - CN 44 → openitsub.com
+      - NONE 35
+      - HK 1 → openitsub.com
+      - Relay_Relay_🇺🇸US-🇺🇸US_532🇺🇸US-🇺🇸US_551
+      - Relay_Relay_🇭🇰HK-🇭🇰HK_308🇭🇰HK-🇭🇰HK_304
+      - CN 89 → openitsub.com
+      - CN 34 → openitsub.com
+      - Relay_Relay_🇹🇼TW-🇹🇼TW_419🇹🇼TW-🇹🇼TW_425
+      - HK_315🇭🇰HK_308
+      - SG_405🇸🇬SG_416
+      - CN 64 → openitsub.com
+      - CN 115 → openitsub.com
+      - CN 88 → openitsub.com
+      - CN 241 → openitsub.com
+      - Relay_Relay_🇭🇰HK-🇷🇺RU_310🇭🇰HK-🇷🇺RU_302
+      - Relay_Relay_🇸🇬SG-🇧🇩BD_408🇸🇬SG-🇧🇩BD_411
+      - CN 91 → openitsub.com
+      - HK_309🇭🇰HK_314
+      - Relay_Relay_🇨🇳CN-🇨🇦CA_129🇨🇳CN-🇨🇦CA_73
+      - NONE 24
+      - Relay_Relay_🇨🇳CN-🇧🇷BR_80🇨🇳CN-🇧🇷BR_74
+      - Relay_Relay_🇨🇳CN-🇧🇭BH_122🇨🇳CN-🇧🇭BH_90
+      - NONE 21
+      - CN_50
+      - Relay_Relay_🇨🇳CN-🇷🇴RO_58🇨🇳CN-🇷🇴RO_57
+      - CN_62
+      - Relay_Relay_🇨🇳CN-🇷🇺RU_232🇨🇳CN-🇷🇺RU_75
+      - NONE 7
+      - NONE 48
+      - Relay_Relay_🇨🇳CN-🇷🇺RU_126🇨🇳CN-🇷🇺RU_84
+      - Relay_Relay_🇨🇳CN-🇧🇭BH_120🇨🇳CN-🇧🇭BH_99
+      - _85
+      - Relay_Relay_🇨🇳CN-🇺🇸US_68🇨🇳CN-🇺🇸US_96
+      - Relay_Relay_🇨🇳CN-🇷🇺RU_53🇨🇳CN-🇷🇺RU_48
+      - Relay_Relay_🇨🇳CN-🇺🇦UA_75🇨🇳CN-🇺🇦UA_69
+      - NONE 20 2
+      - Relay_Relay_🇨🇳CN-🇱🇻LV_56🇨🇳CN-🇱🇻LV_55
+      - GB 2 → openitsub.com 2
+      - NONE 23
+      - Relay_Relay_🇨🇳CN-🇷🇺RU_81🇨🇳CN-🇷🇺RU_76
+      - Relay_Relay_🇨🇳CN-🇷🇴RO_124🇨🇳CN-🇷🇴RO_112
+      - NONE 31
+      - NONE 22
+      - CN_46
+      - Relay_-🇺🇦UA_232
+      - Relay_🇨🇳CN-🏁ZZ_43
+      - NONE 6
+      - Relay_Relay_🇨🇳CN-🇺🇸US_130🇨🇳CN-🇺🇸US_111
+      - NONE 18
+      - NONE 27
+      - CN_51
+      - Relay_🇨🇳CN-🇮🇳IN_52
+      - Relay_Relay_🇨🇳CN-🇹🇼TW_123🇨🇳CN-🇹🇼TW_101
+      - NONE 26
+      - Relay_🇨🇳CN-🇨🇦CA_45
+      - CN_34
+      - Relay_Relay_🇨🇳CN-🇷🇺RU_70🇨🇳CN-🇷🇺RU_66
+      - Relay_Relay_🇨🇳CN-🇹🇼TW_96🇨🇳CN-🇹🇼TW_86
+      - Relay_🇨🇳CN-🇺🇸US_107
+      - Relay_Relay_🇨🇳CN-🇺🇸US_59🇨🇳CN-🇺🇸US_58
+      - Relay_Relay_🇨🇳CN-🇦🇿AZ_114🇨🇳CN-🇦🇿AZ_93
+      - NONE 32
+      - NONE 13
+      - NONE 3
+      - Relay_🇨🇳CN-🇷🇺RU_51
+      - Relay_Relay_🇨🇳CN-🇦🇹AT_131🇨🇳CN-🇦🇹AT_61
+      - Relay_Relay_🇨🇳CN-🇺🇸US_148🇨🇳CN-🇺🇸US_100
+      - Relay_🇨🇳CN-🇨🇦CA_56
+      - Relay_Relay_🇨🇳CN-🇺🇸US_110🇨🇳CN-🇺🇸US_89
+      - NONE 28
+      - Relay_Relay_🇨🇳CN-🇺🇸US_128🇨🇳CN-🇺🇸US_110
+      - Relay_Relay_🇨🇳CN-🇧🇭BH_116🇨🇳CN-🇧🇭BH_113
+      - NONE 8
+      - Relay_Relay_🇨🇳CN-🏁ZZ_146🇨🇳CN-🏁ZZ_65
+      - Relay_Relay_🇨🇳CN-🇹🇼TW_117🇨🇳CN-🇹🇼TW_94
+      - CN_48
+      - NONE 2
+      - CN_63
+      - Relay_Relay_🇨🇳CN-🇺🇸US_95🇨🇳CN-🇺🇸US_85
+      - _294
+      - Relay_Relay_🇨🇳CN-🇹🇼TW_109🇨🇳CN-🇹🇼TW_88
+      - Relay_Relay_🇨🇳CN-🇺🇸US_125🇨🇳CN-🇺🇸US_106
+      - Relay_Relay_🇨🇳CN-🇷🇺RU_138🇨🇳CN-🇷🇺RU_52
+      - Relay_Relay_🇨🇳CN-🇷🇺RU_147🇨🇳CN-🇷🇺RU_98
+      - Relay_Relay_🇨🇳CN-🇳🇱NL_216🇨🇳CN-🇳🇱NL_102
+      - NONE 21 2
+      - Relay_Relay_🇨🇳CN-🏁ZZ_47🇨🇳CN-🏁ZZ_47
+      - Relay_Relay_🇨🇳CN-🇧🇭BH_118🇨🇳CN-🇧🇭BH_103
+      - CN_62 2
+      - NONE 47
+      - NONE 32 2
+      - Relay_Relay_🇨🇳CN-🇷🇴RO_42🇨🇳CN-🇷🇴RO_87
+      - Relay_Relay_🇨🇳CN-🇺🇸US_113🇨🇳CN-🇺🇸US_92
+      - Relay_-🇺🇸US_298
+      - CN_37
+      - CN_54
+      - NONE 42
+      - CN_59
+      - CN 22 → openitsub.com
+      - CN 10 → openitsub.com
+      - Relay_Relay_🇨🇳CN-🇮🇱IL_48🇨🇳CN-🇮🇱IL_41
+      - NONE 30
+      - Relay_Relay_🇨🇳CN-🇦🇹AT_91🇨🇳CN-🇦🇹AT_82
+      - US_556🇺🇸US_534
+      - CN_33
+      - Relay_Relay_🇨🇳CN-🇺🇸US_168🇨🇳CN-🇺🇸US_97
+      - Relay_Relay_-🇫🇷FR_119🇫🇷FR-🇫🇷FR_129
+      - NONE 56
+      - Relay_Relay_🇨🇳CN-🇺🇸US_165🇨🇳CN-🇺🇸US_67
+      - CN 58 → openitsub.com
+      - NONE 25
+      - Relay_Relay_🇨🇳CN-🇧🇭BH_84🇨🇳CN-🇧🇭BH_78
+      - NONE 16
+      - CN_29
+      - Relay_Relay_🇨🇳CN-🇫🇷FR_57🇨🇳CN-🇫🇷FR_56
+      - Relay_Relay_🇨🇳CN-🇫🇷FR_45🇨🇳CN-🇫🇷FR_42
+      - Relay_Relay_🇨🇳CN-🇨🇦CA_86🇨🇳CN-🇨🇦CA_80
+      - NONE 29
+      - FR_274🇫🇷FR_276
+      - CN 25 → openitsub.com
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -656,160 +728,178 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN 24 → openitsub.com
-      - CN 2 → openitsub.com
-      - CN 57 → openitsub.com
-      - 美国(油管:破解资源君2.0) 13
-      - CN 8 → openitsub.com
-      - CN 45 → openitsub.com
-      - CN 51 → openitsub.com
-      - CN 74 → openitsub.com
-      - 欧洲(油管:破解资源君2.0) 47
-      - NONE 24
-      - US 2 → openitsub.com
-      - NONE 56
-      - NONE 20
-      - NONE 18
-      - 欧洲(油管:破解资源君2.0) 10
-      - NONE 22
-      - NONE 21
-      - CN 12 → openitsub.com 2
-      - NONE 14
-      - CN_36
-      - NONE 20 2
-      - CN_39
-      - CN_50
-      - NONE 32
-      - _85
-      - CN_37
-      - NONE 26
-      - CN_29
-      - CN_46
-      - CN_62
-      - NONE 13
-      - NONE 28
-      - NONE 31
-      - CN_63
-      - Relay_🇨🇳CN-🇭🇰HK_57
-      - CN 11 → openitsub.com
-      - Relay_-🇺🇸US_298
-      - NONE 26 2
-      - NONE 25
-      - NONE 29
-      - NONE 23
-      - NONE 21 2
-      - CN_59
-      - Relay_🇨🇳CN-🇹🇼TW_28
-      - 未知国家-1.80MB/s(Youtube:不良林)
-      - CN_60
-      - NONE 27
-      - NONE 24 2
-      - Relay_🇨🇳CN-🇨🇦CA_45
-      - CN_51
-      - NONE 29 2
-      - CN_54
-      - Relay_-🇯🇵JP_212
-      - NONE 16
-      - Relay_🇨🇳CN-🇨🇦CA_56
-      - CN_33
-      - CN_48
-      - CN_34
-      - Relay_🇨🇳CN-🇮🇳IN_52
-      - NONE 3
-      - 美国-406.4KB/s(Youtube:不良林)
-      - Relay_-🇺🇦UA_232
-      - NONE 47
-      - NONE 30
-      - NONE 41
-      - NONE 32 2
-      - NONE 25 2
-      - NONE 34
-      - NONE 42
-      - NONE 8
-      - _294
-      - NONE 2
-      - NONE 7
-      - NONE 12
-      - NONE 48
-      - GB 2 → openitsub.com
-      - NONE 5
-      - CN 18 → openitsub.com
-      - NONE 19
-      - NONE 23 2
-      - NONE 60
-      - US 2 → openitsub.com 2
-      - Relay_-🇺🇸US_333
-      - NONE 36
-      - NONE
-      - Relay_-🇹🇼TW_217
-      - NONE 35
-      - 美国(油管:破解资源君2.0) 25
-      - NONE 6
-      - NONE 55
-      - NONE 46
-      - NONE 50
-      - NONE 9
-      - Relay_-🇫🇷FR_117
-      - NONE 11
-      - Relay_-🇸🇬SG_194
-      - NONE 54
-      - NONE 10
-      - NONE 49
-      - NONE 28 2
-      - NONE 57
-      - Relay_Relay_-🇫🇷FR_119🇫🇷FR-🇫🇷FR_129
-      - NONE 39
-      - GB 2 → openitsub.com 2
-      - _323
-      - CN 3 → openitsub.com
-      - CN 19 → openitsub.com
-      - NONE 37
-      - CN 38 → openitsub.com
-      - CN 9 → openitsub.com
-      - CN 5 → openitsub.com
-      - CN 16 → openitsub.com
-      - CN 33 → openitsub.com
-      - CN 39 → openitsub.com
-      - CN 3 → openitsub.com 2
-      - CN 4 → openitsub.com
-      - CN 27 → openitsub.com
+      - Relay_Relay_🇭🇰HK-🇷🇺RU_294🇭🇰HK-🇷🇺RU_295
+      - Relay_Relay_🇯🇵JP-🇯🇵JP_338🇯🇵JP-🇯🇵JP_338
+      - HK_296🇭🇰HK_290
+      - Relay_Relay_🇯🇵JP-🇺🇸US_321🇯🇵JP-🇺🇸US_317
+      - US_554🇺🇸US_536
+      - Relay_Relay_🇺🇸US-🇨🇦CA_531🇺🇸US-🇨🇦CA_550
+      - CN 212 → openitsub.com
+      - CN 201 → openitsub.com
       - CN 35 → openitsub.com
-      - CN 20 → openitsub.com
       - CN 13 → openitsub.com
-      - CN 7 → openitsub.com
-      - CN 6 → openitsub.com
-      - CN 31 → openitsub.com
-      - CN 41 → openitsub.com
-      - CN 34 → openitsub.com
-      - CN 10 → openitsub.com
-      - CN 43 → openitsub.com
-      - CN 23 → openitsub.com
-      - CN 52 → openitsub.com
-      - CN 30 → openitsub.com
-      - CN 26 → openitsub.com
-      - CN 40 → openitsub.com
-      - 欧洲(油管:破解资源君2.0) 24
-      - CN 60 → openitsub.com
-      - CN 71 → openitsub.com
-      - CN 15 → openitsub.com
-      - CN 18 → openitsub.com 2
-      - CN 29 → openitsub.com
-      - CN 63 → openitsub.com
-      - CN 72 → openitsub.com
-      - GB 2 → openitsub.com 3
-      - 美国(油管:破解资源君2.0) 41
-      - 美国(油管:破解资源君2.0) 27
-      - CN 14 → openitsub.com
-      - CN 42 → openitsub.com
-      - CN 44 → openitsub.com
-      - CN 68 → openitsub.com
-      - CN 62 → openitsub.com
-      - CN 69 → openitsub.com
-      - CN 53 → openitsub.com
+      - CN 16 → openitsub.com
       - CN 46 → openitsub.com
-      - CN 47 → openitsub.com
-      - CN 56 → openitsub.com
-      - 欧洲(油管:破解资源君2.0) 17
+      - CN 155 → openitsub.com
+      - CN 156 → openitsub.com
+      - CN 61 → openitsub.com
+      - CN 126 → openitsub.com
+      - CN 40 → openitsub.com
+      - NL 1 → openitsub.com
+      - KR_351🇰🇷KR_357
+      - CN 21 → openitsub.com
+      - CN 99 → openitsub.com
+      - NL_365🇳🇱NL_369
+      - US_558🇺🇸US_531
+      - Relay_Relay_🇭🇰HK-🇩🇪DE_304🇭🇰HK-🇩🇪DE_301
+      - Relay_Relay_🇸🇬SG-🇸🇬SG_395🇸🇬SG-🇸🇬SG_412
+      - CN 186 → openitsub.com
+      - CN 213 → openitsub.com
+      - CN 94 → openitsub.com
+      - CN 187 → openitsub.com
+      - CN 202 → openitsub.com
+      - CN 18 → openitsub.com
+      - CN 33 → openitsub.com
+      - Relay_Relay_🇺🇸US-🇺🇸US_527🇺🇸US-🇺🇸US_546
+      - Relay_Relay_🇺🇸US-🇯🇵JP_529🇺🇸US-🇯🇵JP_548
+      - CN 20 → openitsub.com
+      - CN 6 → openitsub.com
+      - CN 14 → openitsub.com
+      - CN 23 → openitsub.com
+      - GB_287🇬🇧GB_282
+      - SG_412🇸🇬SG_413
+      - US 2 → openitsub.com
+      - HK_299🇭🇰HK_310
+      - CN 50 → openitsub.com
+      - CN 57 → openitsub.com
+      - CN 150 → openitsub.com
+      - CN 179 → openitsub.com
+      - CN 39 → openitsub.com
+      - US_533🇺🇸US_552
+      - CN 7 → openitsub.com
+      - CN 29 → openitsub.com
+      - HK_313🇭🇰HK_307
+      - Relay_Relay_🇸🇬SG-🇫🇷FR_411🇸🇬SG-🇫🇷FR_403
+      - CN 44 → openitsub.com
+      - NONE 35
+      - HK 1 → openitsub.com
+      - Relay_Relay_🇺🇸US-🇺🇸US_532🇺🇸US-🇺🇸US_551
+      - Relay_Relay_🇭🇰HK-🇭🇰HK_308🇭🇰HK-🇭🇰HK_304
+      - CN 89 → openitsub.com
+      - CN 34 → openitsub.com
+      - Relay_Relay_🇹🇼TW-🇹🇼TW_419🇹🇼TW-🇹🇼TW_425
+      - HK_315🇭🇰HK_308
+      - SG_405🇸🇬SG_416
+      - CN 64 → openitsub.com
+      - CN 115 → openitsub.com
+      - CN 88 → openitsub.com
+      - CN 241 → openitsub.com
+      - Relay_Relay_🇭🇰HK-🇷🇺RU_310🇭🇰HK-🇷🇺RU_302
+      - Relay_Relay_🇸🇬SG-🇧🇩BD_408🇸🇬SG-🇧🇩BD_411
+      - CN 91 → openitsub.com
+      - HK_309🇭🇰HK_314
+      - Relay_Relay_🇨🇳CN-🇨🇦CA_129🇨🇳CN-🇨🇦CA_73
+      - NONE 24
+      - Relay_Relay_🇨🇳CN-🇧🇷BR_80🇨🇳CN-🇧🇷BR_74
+      - Relay_Relay_🇨🇳CN-🇧🇭BH_122🇨🇳CN-🇧🇭BH_90
+      - NONE 21
+      - CN_50
+      - Relay_Relay_🇨🇳CN-🇷🇴RO_58🇨🇳CN-🇷🇴RO_57
+      - CN_62
+      - Relay_Relay_🇨🇳CN-🇷🇺RU_232🇨🇳CN-🇷🇺RU_75
+      - NONE 7
+      - NONE 48
+      - Relay_Relay_🇨🇳CN-🇷🇺RU_126🇨🇳CN-🇷🇺RU_84
+      - Relay_Relay_🇨🇳CN-🇧🇭BH_120🇨🇳CN-🇧🇭BH_99
+      - _85
+      - Relay_Relay_🇨🇳CN-🇺🇸US_68🇨🇳CN-🇺🇸US_96
+      - Relay_Relay_🇨🇳CN-🇷🇺RU_53🇨🇳CN-🇷🇺RU_48
+      - Relay_Relay_🇨🇳CN-🇺🇦UA_75🇨🇳CN-🇺🇦UA_69
+      - NONE 20 2
+      - Relay_Relay_🇨🇳CN-🇱🇻LV_56🇨🇳CN-🇱🇻LV_55
+      - GB 2 → openitsub.com 2
+      - NONE 23
+      - Relay_Relay_🇨🇳CN-🇷🇺RU_81🇨🇳CN-🇷🇺RU_76
+      - Relay_Relay_🇨🇳CN-🇷🇴RO_124🇨🇳CN-🇷🇴RO_112
+      - NONE 31
+      - NONE 22
+      - CN_46
+      - Relay_-🇺🇦UA_232
+      - Relay_🇨🇳CN-🏁ZZ_43
+      - NONE 6
+      - Relay_Relay_🇨🇳CN-🇺🇸US_130🇨🇳CN-🇺🇸US_111
+      - NONE 18
+      - NONE 27
+      - CN_51
+      - Relay_🇨🇳CN-🇮🇳IN_52
+      - Relay_Relay_🇨🇳CN-🇹🇼TW_123🇨🇳CN-🇹🇼TW_101
+      - NONE 26
+      - Relay_🇨🇳CN-🇨🇦CA_45
+      - CN_34
+      - Relay_Relay_🇨🇳CN-🇷🇺RU_70🇨🇳CN-🇷🇺RU_66
+      - Relay_Relay_🇨🇳CN-🇹🇼TW_96🇨🇳CN-🇹🇼TW_86
+      - Relay_🇨🇳CN-🇺🇸US_107
+      - Relay_Relay_🇨🇳CN-🇺🇸US_59🇨🇳CN-🇺🇸US_58
+      - Relay_Relay_🇨🇳CN-🇦🇿AZ_114🇨🇳CN-🇦🇿AZ_93
+      - NONE 32
+      - NONE 13
+      - NONE 3
+      - Relay_🇨🇳CN-🇷🇺RU_51
+      - Relay_Relay_🇨🇳CN-🇦🇹AT_131🇨🇳CN-🇦🇹AT_61
+      - Relay_Relay_🇨🇳CN-🇺🇸US_148🇨🇳CN-🇺🇸US_100
+      - Relay_🇨🇳CN-🇨🇦CA_56
+      - Relay_Relay_🇨🇳CN-🇺🇸US_110🇨🇳CN-🇺🇸US_89
+      - NONE 28
+      - Relay_Relay_🇨🇳CN-🇺🇸US_128🇨🇳CN-🇺🇸US_110
+      - Relay_Relay_🇨🇳CN-🇧🇭BH_116🇨🇳CN-🇧🇭BH_113
+      - NONE 8
+      - Relay_Relay_🇨🇳CN-🏁ZZ_146🇨🇳CN-🏁ZZ_65
+      - Relay_Relay_🇨🇳CN-🇹🇼TW_117🇨🇳CN-🇹🇼TW_94
+      - CN_48
+      - NONE 2
+      - CN_63
+      - Relay_Relay_🇨🇳CN-🇺🇸US_95🇨🇳CN-🇺🇸US_85
+      - _294
+      - Relay_Relay_🇨🇳CN-🇹🇼TW_109🇨🇳CN-🇹🇼TW_88
+      - Relay_Relay_🇨🇳CN-🇺🇸US_125🇨🇳CN-🇺🇸US_106
+      - Relay_Relay_🇨🇳CN-🇷🇺RU_138🇨🇳CN-🇷🇺RU_52
+      - Relay_Relay_🇨🇳CN-🇷🇺RU_147🇨🇳CN-🇷🇺RU_98
+      - Relay_Relay_🇨🇳CN-🇳🇱NL_216🇨🇳CN-🇳🇱NL_102
+      - NONE 21 2
+      - Relay_Relay_🇨🇳CN-🏁ZZ_47🇨🇳CN-🏁ZZ_47
+      - Relay_Relay_🇨🇳CN-🇧🇭BH_118🇨🇳CN-🇧🇭BH_103
+      - CN_62 2
+      - NONE 47
+      - NONE 32 2
+      - Relay_Relay_🇨🇳CN-🇷🇴RO_42🇨🇳CN-🇷🇴RO_87
+      - Relay_Relay_🇨🇳CN-🇺🇸US_113🇨🇳CN-🇺🇸US_92
+      - Relay_-🇺🇸US_298
+      - CN_37
+      - CN_54
+      - NONE 42
+      - CN_59
+      - CN 22 → openitsub.com
+      - CN 10 → openitsub.com
+      - Relay_Relay_🇨🇳CN-🇮🇱IL_48🇨🇳CN-🇮🇱IL_41
+      - NONE 30
+      - Relay_Relay_🇨🇳CN-🇦🇹AT_91🇨🇳CN-🇦🇹AT_82
+      - US_556🇺🇸US_534
+      - CN_33
+      - Relay_Relay_🇨🇳CN-🇺🇸US_168🇨🇳CN-🇺🇸US_97
+      - Relay_Relay_-🇫🇷FR_119🇫🇷FR-🇫🇷FR_129
+      - NONE 56
+      - Relay_Relay_🇨🇳CN-🇺🇸US_165🇨🇳CN-🇺🇸US_67
+      - CN 58 → openitsub.com
+      - NONE 25
+      - Relay_Relay_🇨🇳CN-🇧🇭BH_84🇨🇳CN-🇧🇭BH_78
+      - NONE 16
+      - CN_29
+      - Relay_Relay_🇨🇳CN-🇫🇷FR_57🇨🇳CN-🇫🇷FR_56
+      - Relay_Relay_🇨🇳CN-🇫🇷FR_45🇨🇳CN-🇫🇷FR_42
+      - Relay_Relay_🇨🇳CN-🇨🇦CA_86🇨🇳CN-🇨🇦CA_80
+      - NONE 29
+      - FR_274🇫🇷FR_276
+      - CN 25 → openitsub.com
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -820,479 +910,533 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - CN 24 → openitsub.com
-      - CN 2 → openitsub.com
-      - CN 57 → openitsub.com
-      - 美国(油管:破解资源君2.0) 13
-      - CN 8 → openitsub.com
-      - CN 45 → openitsub.com
-      - CN 51 → openitsub.com
-      - CN 74 → openitsub.com
-      - 欧洲(油管:破解资源君2.0) 47
-      - NONE 24
-      - US 2 → openitsub.com
-      - NONE 56
-      - NONE 20
-      - NONE 18
-      - 欧洲(油管:破解资源君2.0) 10
-      - NONE 22
-      - NONE 21
-      - CN 12 → openitsub.com 2
-      - NONE 14
-      - CN_36
-      - NONE 20 2
-      - CN_39
-      - CN_50
-      - NONE 32
-      - _85
-      - CN_37
-      - NONE 26
-      - CN_29
-      - CN_46
-      - CN_62
-      - NONE 13
-      - NONE 28
-      - NONE 31
-      - CN_63
-      - Relay_🇨🇳CN-🇭🇰HK_57
-      - CN 11 → openitsub.com
-      - Relay_-🇺🇸US_298
-      - NONE 26 2
-      - NONE 25
-      - NONE 29
-      - NONE 23
-      - NONE 21 2
-      - CN_59
-      - Relay_🇨🇳CN-🇹🇼TW_28
-      - 未知国家-1.80MB/s(Youtube:不良林)
-      - CN_60
-      - NONE 27
-      - NONE 24 2
-      - Relay_🇨🇳CN-🇨🇦CA_45
-      - CN_51
-      - NONE 29 2
-      - CN_54
-      - Relay_-🇯🇵JP_212
-      - NONE 16
-      - Relay_🇨🇳CN-🇨🇦CA_56
-      - CN_33
-      - CN_48
-      - CN_34
-      - Relay_🇨🇳CN-🇮🇳IN_52
-      - NONE 3
-      - 美国-406.4KB/s(Youtube:不良林)
-      - Relay_-🇺🇦UA_232
-      - NONE 47
-      - NONE 30
-      - NONE 41
-      - NONE 32 2
-      - NONE 25 2
-      - NONE 34
-      - NONE 42
-      - NONE 8
-      - _294
-      - NONE 2
-      - NONE 7
-      - NONE 12
-      - NONE 48
-      - GB 2 → openitsub.com
-      - NONE 5
-      - CN 18 → openitsub.com
-      - NONE 19
-      - NONE 23 2
-      - NONE 60
-      - US 2 → openitsub.com 2
-      - Relay_-🇺🇸US_333
-      - NONE 36
-      - NONE
-      - Relay_-🇹🇼TW_217
-      - NONE 35
-      - 美国(油管:破解资源君2.0) 25
-      - NONE 6
-      - NONE 55
-      - NONE 46
-      - NONE 50
-      - NONE 9
-      - Relay_-🇫🇷FR_117
-      - NONE 11
-      - Relay_-🇸🇬SG_194
-      - NONE 54
-      - NONE 10
-      - NONE 49
-      - NONE 28 2
-      - NONE 57
-      - Relay_Relay_-🇫🇷FR_119🇫🇷FR-🇫🇷FR_129
-      - NONE 39
-      - GB 2 → openitsub.com 2
-      - _323
-      - CN 3 → openitsub.com
-      - CN 19 → openitsub.com
-      - NONE 37
-      - CN 38 → openitsub.com
-      - CN 9 → openitsub.com
-      - CN 5 → openitsub.com
-      - CN 16 → openitsub.com
-      - CN 33 → openitsub.com
-      - CN 39 → openitsub.com
-      - CN 3 → openitsub.com 2
-      - CN 4 → openitsub.com
-      - CN 27 → openitsub.com
+      - Relay_Relay_🇭🇰HK-🇷🇺RU_294🇭🇰HK-🇷🇺RU_295
+      - Relay_Relay_🇯🇵JP-🇯🇵JP_338🇯🇵JP-🇯🇵JP_338
+      - HK_296🇭🇰HK_290
+      - Relay_Relay_🇯🇵JP-🇺🇸US_321🇯🇵JP-🇺🇸US_317
+      - US_554🇺🇸US_536
+      - Relay_Relay_🇺🇸US-🇨🇦CA_531🇺🇸US-🇨🇦CA_550
+      - CN 212 → openitsub.com
+      - CN 201 → openitsub.com
       - CN 35 → openitsub.com
-      - CN 20 → openitsub.com
       - CN 13 → openitsub.com
-      - CN 7 → openitsub.com
-      - CN 6 → openitsub.com
-      - CN 31 → openitsub.com
-      - CN 41 → openitsub.com
-      - CN 34 → openitsub.com
-      - CN 10 → openitsub.com
-      - CN 43 → openitsub.com
-      - CN 23 → openitsub.com
-      - CN 52 → openitsub.com
-      - CN 30 → openitsub.com
-      - CN 26 → openitsub.com
-      - CN 40 → openitsub.com
-      - 欧洲(油管:破解资源君2.0) 24
-      - CN 60 → openitsub.com
-      - CN 71 → openitsub.com
-      - CN 15 → openitsub.com
-      - CN 18 → openitsub.com 2
-      - CN 29 → openitsub.com
-      - CN 63 → openitsub.com
-      - CN 72 → openitsub.com
-      - GB 2 → openitsub.com 3
-      - 美国(油管:破解资源君2.0) 41
-      - 美国(油管:破解资源君2.0) 27
-      - CN 14 → openitsub.com
-      - CN 42 → openitsub.com
-      - CN 44 → openitsub.com
-      - CN 68 → openitsub.com
-      - CN 62 → openitsub.com
-      - CN 69 → openitsub.com
-      - CN 53 → openitsub.com
+      - CN 16 → openitsub.com
       - CN 46 → openitsub.com
-      - CN 47 → openitsub.com
-      - CN 56 → openitsub.com
-      - 欧洲(油管:破解资源君2.0) 17
+      - CN 155 → openitsub.com
+      - CN 156 → openitsub.com
+      - CN 61 → openitsub.com
+      - CN 126 → openitsub.com
+      - CN 40 → openitsub.com
+      - NL 1 → openitsub.com
+      - KR_351🇰🇷KR_357
+      - CN 21 → openitsub.com
+      - CN 99 → openitsub.com
+      - NL_365🇳🇱NL_369
+      - US_558🇺🇸US_531
+      - Relay_Relay_🇭🇰HK-🇩🇪DE_304🇭🇰HK-🇩🇪DE_301
+      - Relay_Relay_🇸🇬SG-🇸🇬SG_395🇸🇬SG-🇸🇬SG_412
+      - CN 186 → openitsub.com
+      - CN 213 → openitsub.com
+      - CN 94 → openitsub.com
+      - CN 187 → openitsub.com
+      - CN 202 → openitsub.com
+      - CN 18 → openitsub.com
+      - CN 33 → openitsub.com
+      - Relay_Relay_🇺🇸US-🇺🇸US_527🇺🇸US-🇺🇸US_546
+      - Relay_Relay_🇺🇸US-🇯🇵JP_529🇺🇸US-🇯🇵JP_548
+      - CN 20 → openitsub.com
+      - CN 6 → openitsub.com
+      - CN 14 → openitsub.com
+      - CN 23 → openitsub.com
+      - GB_287🇬🇧GB_282
+      - SG_412🇸🇬SG_413
+      - US 2 → openitsub.com
+      - HK_299🇭🇰HK_310
+      - CN 50 → openitsub.com
+      - CN 57 → openitsub.com
+      - CN 150 → openitsub.com
+      - CN 179 → openitsub.com
+      - CN 39 → openitsub.com
+      - US_533🇺🇸US_552
+      - CN 7 → openitsub.com
+      - CN 29 → openitsub.com
+      - HK_313🇭🇰HK_307
+      - Relay_Relay_🇸🇬SG-🇫🇷FR_411🇸🇬SG-🇫🇷FR_403
+      - CN 44 → openitsub.com
+      - NONE 35
+      - HK 1 → openitsub.com
+      - Relay_Relay_🇺🇸US-🇺🇸US_532🇺🇸US-🇺🇸US_551
+      - Relay_Relay_🇭🇰HK-🇭🇰HK_308🇭🇰HK-🇭🇰HK_304
+      - CN 89 → openitsub.com
+      - CN 34 → openitsub.com
+      - Relay_Relay_🇹🇼TW-🇹🇼TW_419🇹🇼TW-🇹🇼TW_425
+      - HK_315🇭🇰HK_308
+      - SG_405🇸🇬SG_416
+      - CN 64 → openitsub.com
+      - CN 115 → openitsub.com
+      - CN 88 → openitsub.com
+      - CN 241 → openitsub.com
+      - Relay_Relay_🇭🇰HK-🇷🇺RU_310🇭🇰HK-🇷🇺RU_302
+      - Relay_Relay_🇸🇬SG-🇧🇩BD_408🇸🇬SG-🇧🇩BD_411
+      - CN 91 → openitsub.com
+      - HK_309🇭🇰HK_314
+      - Relay_Relay_🇨🇳CN-🇨🇦CA_129🇨🇳CN-🇨🇦CA_73
+      - NONE 24
+      - Relay_Relay_🇨🇳CN-🇧🇷BR_80🇨🇳CN-🇧🇷BR_74
+      - Relay_Relay_🇨🇳CN-🇧🇭BH_122🇨🇳CN-🇧🇭BH_90
+      - NONE 21
+      - CN_50
+      - Relay_Relay_🇨🇳CN-🇷🇴RO_58🇨🇳CN-🇷🇴RO_57
+      - CN_62
+      - Relay_Relay_🇨🇳CN-🇷🇺RU_232🇨🇳CN-🇷🇺RU_75
+      - NONE 7
+      - NONE 48
+      - Relay_Relay_🇨🇳CN-🇷🇺RU_126🇨🇳CN-🇷🇺RU_84
+      - Relay_Relay_🇨🇳CN-🇧🇭BH_120🇨🇳CN-🇧🇭BH_99
+      - _85
+      - Relay_Relay_🇨🇳CN-🇺🇸US_68🇨🇳CN-🇺🇸US_96
+      - Relay_Relay_🇨🇳CN-🇷🇺RU_53🇨🇳CN-🇷🇺RU_48
+      - Relay_Relay_🇨🇳CN-🇺🇦UA_75🇨🇳CN-🇺🇦UA_69
+      - NONE 20 2
+      - Relay_Relay_🇨🇳CN-🇱🇻LV_56🇨🇳CN-🇱🇻LV_55
+      - GB 2 → openitsub.com 2
+      - NONE 23
+      - Relay_Relay_🇨🇳CN-🇷🇺RU_81🇨🇳CN-🇷🇺RU_76
+      - Relay_Relay_🇨🇳CN-🇷🇴RO_124🇨🇳CN-🇷🇴RO_112
+      - NONE 31
+      - NONE 22
+      - CN_46
+      - Relay_-🇺🇦UA_232
+      - Relay_🇨🇳CN-🏁ZZ_43
+      - NONE 6
+      - Relay_Relay_🇨🇳CN-🇺🇸US_130🇨🇳CN-🇺🇸US_111
+      - NONE 18
+      - NONE 27
+      - CN_51
+      - Relay_🇨🇳CN-🇮🇳IN_52
+      - Relay_Relay_🇨🇳CN-🇹🇼TW_123🇨🇳CN-🇹🇼TW_101
+      - NONE 26
+      - Relay_🇨🇳CN-🇨🇦CA_45
+      - CN_34
+      - Relay_Relay_🇨🇳CN-🇷🇺RU_70🇨🇳CN-🇷🇺RU_66
+      - Relay_Relay_🇨🇳CN-🇹🇼TW_96🇨🇳CN-🇹🇼TW_86
+      - Relay_🇨🇳CN-🇺🇸US_107
+      - Relay_Relay_🇨🇳CN-🇺🇸US_59🇨🇳CN-🇺🇸US_58
+      - Relay_Relay_🇨🇳CN-🇦🇿AZ_114🇨🇳CN-🇦🇿AZ_93
+      - NONE 32
+      - NONE 13
+      - NONE 3
+      - Relay_🇨🇳CN-🇷🇺RU_51
+      - Relay_Relay_🇨🇳CN-🇦🇹AT_131🇨🇳CN-🇦🇹AT_61
+      - Relay_Relay_🇨🇳CN-🇺🇸US_148🇨🇳CN-🇺🇸US_100
+      - Relay_🇨🇳CN-🇨🇦CA_56
+      - Relay_Relay_🇨🇳CN-🇺🇸US_110🇨🇳CN-🇺🇸US_89
+      - NONE 28
+      - Relay_Relay_🇨🇳CN-🇺🇸US_128🇨🇳CN-🇺🇸US_110
+      - Relay_Relay_🇨🇳CN-🇧🇭BH_116🇨🇳CN-🇧🇭BH_113
+      - NONE 8
+      - Relay_Relay_🇨🇳CN-🏁ZZ_146🇨🇳CN-🏁ZZ_65
+      - Relay_Relay_🇨🇳CN-🇹🇼TW_117🇨🇳CN-🇹🇼TW_94
+      - CN_48
+      - NONE 2
+      - CN_63
+      - Relay_Relay_🇨🇳CN-🇺🇸US_95🇨🇳CN-🇺🇸US_85
+      - _294
+      - Relay_Relay_🇨🇳CN-🇹🇼TW_109🇨🇳CN-🇹🇼TW_88
+      - Relay_Relay_🇨🇳CN-🇺🇸US_125🇨🇳CN-🇺🇸US_106
+      - Relay_Relay_🇨🇳CN-🇷🇺RU_138🇨🇳CN-🇷🇺RU_52
+      - Relay_Relay_🇨🇳CN-🇷🇺RU_147🇨🇳CN-🇷🇺RU_98
+      - Relay_Relay_🇨🇳CN-🇳🇱NL_216🇨🇳CN-🇳🇱NL_102
+      - NONE 21 2
+      - Relay_Relay_🇨🇳CN-🏁ZZ_47🇨🇳CN-🏁ZZ_47
+      - Relay_Relay_🇨🇳CN-🇧🇭BH_118🇨🇳CN-🇧🇭BH_103
+      - CN_62 2
+      - NONE 47
+      - NONE 32 2
+      - Relay_Relay_🇨🇳CN-🇷🇴RO_42🇨🇳CN-🇷🇴RO_87
+      - Relay_Relay_🇨🇳CN-🇺🇸US_113🇨🇳CN-🇺🇸US_92
+      - Relay_-🇺🇸US_298
+      - CN_37
+      - CN_54
+      - NONE 42
+      - CN_59
+      - CN 22 → openitsub.com
+      - CN 10 → openitsub.com
+      - Relay_Relay_🇨🇳CN-🇮🇱IL_48🇨🇳CN-🇮🇱IL_41
+      - NONE 30
+      - Relay_Relay_🇨🇳CN-🇦🇹AT_91🇨🇳CN-🇦🇹AT_82
+      - US_556🇺🇸US_534
+      - CN_33
+      - Relay_Relay_🇨🇳CN-🇺🇸US_168🇨🇳CN-🇺🇸US_97
+      - Relay_Relay_-🇫🇷FR_119🇫🇷FR-🇫🇷FR_129
+      - NONE 56
+      - Relay_Relay_🇨🇳CN-🇺🇸US_165🇨🇳CN-🇺🇸US_67
+      - CN 58 → openitsub.com
+      - NONE 25
+      - Relay_Relay_🇨🇳CN-🇧🇭BH_84🇨🇳CN-🇧🇭BH_78
+      - NONE 16
+      - CN_29
+      - Relay_Relay_🇨🇳CN-🇫🇷FR_57🇨🇳CN-🇫🇷FR_56
+      - Relay_Relay_🇨🇳CN-🇫🇷FR_45🇨🇳CN-🇫🇷FR_42
+      - Relay_Relay_🇨🇳CN-🇨🇦CA_86🇨🇳CN-🇨🇦CA_80
+      - NONE 29
+      - FR_274🇫🇷FR_276
+      - CN 25 → openitsub.com
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - CN 24 → openitsub.com
-      - CN 2 → openitsub.com
-      - CN 57 → openitsub.com
-      - 美国(油管:破解资源君2.0) 13
-      - CN 8 → openitsub.com
-      - CN 45 → openitsub.com
-      - CN 51 → openitsub.com
-      - CN 74 → openitsub.com
-      - 欧洲(油管:破解资源君2.0) 47
-      - NONE 24
-      - US 2 → openitsub.com
-      - NONE 56
-      - NONE 20
-      - NONE 18
-      - 欧洲(油管:破解资源君2.0) 10
-      - NONE 22
-      - NONE 21
-      - CN 12 → openitsub.com 2
-      - NONE 14
-      - CN_36
-      - NONE 20 2
-      - CN_39
-      - CN_50
-      - NONE 32
-      - _85
-      - CN_37
-      - NONE 26
-      - CN_29
-      - CN_46
-      - CN_62
-      - NONE 13
-      - NONE 28
-      - NONE 31
-      - CN_63
-      - Relay_🇨🇳CN-🇭🇰HK_57
-      - CN 11 → openitsub.com
-      - Relay_-🇺🇸US_298
-      - NONE 26 2
-      - NONE 25
-      - NONE 29
-      - NONE 23
-      - NONE 21 2
-      - CN_59
-      - Relay_🇨🇳CN-🇹🇼TW_28
-      - 未知国家-1.80MB/s(Youtube:不良林)
-      - CN_60
-      - NONE 27
-      - NONE 24 2
-      - Relay_🇨🇳CN-🇨🇦CA_45
-      - CN_51
-      - NONE 29 2
-      - CN_54
-      - Relay_-🇯🇵JP_212
-      - NONE 16
-      - Relay_🇨🇳CN-🇨🇦CA_56
-      - CN_33
-      - CN_48
-      - CN_34
-      - Relay_🇨🇳CN-🇮🇳IN_52
-      - NONE 3
-      - 美国-406.4KB/s(Youtube:不良林)
-      - Relay_-🇺🇦UA_232
-      - NONE 47
-      - NONE 30
-      - NONE 41
-      - NONE 32 2
-      - NONE 25 2
-      - NONE 34
-      - NONE 42
-      - NONE 8
-      - _294
-      - NONE 2
-      - NONE 7
-      - NONE 12
-      - NONE 48
-      - GB 2 → openitsub.com
-      - NONE 5
-      - CN 18 → openitsub.com
-      - NONE 19
-      - NONE 23 2
-      - NONE 60
-      - US 2 → openitsub.com 2
-      - Relay_-🇺🇸US_333
-      - NONE 36
-      - NONE
-      - Relay_-🇹🇼TW_217
-      - NONE 35
-      - 美国(油管:破解资源君2.0) 25
-      - NONE 6
-      - NONE 55
-      - NONE 46
-      - NONE 50
-      - NONE 9
-      - Relay_-🇫🇷FR_117
-      - NONE 11
-      - Relay_-🇸🇬SG_194
-      - NONE 54
-      - NONE 10
-      - NONE 49
-      - NONE 28 2
-      - NONE 57
-      - Relay_Relay_-🇫🇷FR_119🇫🇷FR-🇫🇷FR_129
-      - NONE 39
-      - GB 2 → openitsub.com 2
-      - _323
-      - CN 3 → openitsub.com
-      - CN 19 → openitsub.com
-      - NONE 37
-      - CN 38 → openitsub.com
-      - CN 9 → openitsub.com
-      - CN 5 → openitsub.com
-      - CN 16 → openitsub.com
-      - CN 33 → openitsub.com
-      - CN 39 → openitsub.com
-      - CN 3 → openitsub.com 2
-      - CN 4 → openitsub.com
-      - CN 27 → openitsub.com
+      - Relay_Relay_🇭🇰HK-🇷🇺RU_294🇭🇰HK-🇷🇺RU_295
+      - Relay_Relay_🇯🇵JP-🇯🇵JP_338🇯🇵JP-🇯🇵JP_338
+      - HK_296🇭🇰HK_290
+      - Relay_Relay_🇯🇵JP-🇺🇸US_321🇯🇵JP-🇺🇸US_317
+      - US_554🇺🇸US_536
+      - Relay_Relay_🇺🇸US-🇨🇦CA_531🇺🇸US-🇨🇦CA_550
+      - CN 212 → openitsub.com
+      - CN 201 → openitsub.com
       - CN 35 → openitsub.com
-      - CN 20 → openitsub.com
       - CN 13 → openitsub.com
-      - CN 7 → openitsub.com
-      - CN 6 → openitsub.com
-      - CN 31 → openitsub.com
-      - CN 41 → openitsub.com
-      - CN 34 → openitsub.com
-      - CN 10 → openitsub.com
-      - CN 43 → openitsub.com
-      - CN 23 → openitsub.com
-      - CN 52 → openitsub.com
-      - CN 30 → openitsub.com
-      - CN 26 → openitsub.com
-      - CN 40 → openitsub.com
-      - 欧洲(油管:破解资源君2.0) 24
-      - CN 60 → openitsub.com
-      - CN 71 → openitsub.com
-      - CN 15 → openitsub.com
-      - CN 18 → openitsub.com 2
-      - CN 29 → openitsub.com
-      - CN 63 → openitsub.com
-      - CN 72 → openitsub.com
-      - GB 2 → openitsub.com 3
-      - 美国(油管:破解资源君2.0) 41
-      - 美国(油管:破解资源君2.0) 27
-      - CN 14 → openitsub.com
-      - CN 42 → openitsub.com
-      - CN 44 → openitsub.com
-      - CN 68 → openitsub.com
-      - CN 62 → openitsub.com
-      - CN 69 → openitsub.com
-      - CN 53 → openitsub.com
+      - CN 16 → openitsub.com
       - CN 46 → openitsub.com
-      - CN 47 → openitsub.com
-      - CN 56 → openitsub.com
-      - 欧洲(油管:破解资源君2.0) 17
+      - CN 155 → openitsub.com
+      - CN 156 → openitsub.com
+      - CN 61 → openitsub.com
+      - CN 126 → openitsub.com
+      - CN 40 → openitsub.com
+      - NL 1 → openitsub.com
+      - KR_351🇰🇷KR_357
+      - CN 21 → openitsub.com
+      - CN 99 → openitsub.com
+      - NL_365🇳🇱NL_369
+      - US_558🇺🇸US_531
+      - Relay_Relay_🇭🇰HK-🇩🇪DE_304🇭🇰HK-🇩🇪DE_301
+      - Relay_Relay_🇸🇬SG-🇸🇬SG_395🇸🇬SG-🇸🇬SG_412
+      - CN 186 → openitsub.com
+      - CN 213 → openitsub.com
+      - CN 94 → openitsub.com
+      - CN 187 → openitsub.com
+      - CN 202 → openitsub.com
+      - CN 18 → openitsub.com
+      - CN 33 → openitsub.com
+      - Relay_Relay_🇺🇸US-🇺🇸US_527🇺🇸US-🇺🇸US_546
+      - Relay_Relay_🇺🇸US-🇯🇵JP_529🇺🇸US-🇯🇵JP_548
+      - CN 20 → openitsub.com
+      - CN 6 → openitsub.com
+      - CN 14 → openitsub.com
+      - CN 23 → openitsub.com
+      - GB_287🇬🇧GB_282
+      - SG_412🇸🇬SG_413
+      - US 2 → openitsub.com
+      - HK_299🇭🇰HK_310
+      - CN 50 → openitsub.com
+      - CN 57 → openitsub.com
+      - CN 150 → openitsub.com
+      - CN 179 → openitsub.com
+      - CN 39 → openitsub.com
+      - US_533🇺🇸US_552
+      - CN 7 → openitsub.com
+      - CN 29 → openitsub.com
+      - HK_313🇭🇰HK_307
+      - Relay_Relay_🇸🇬SG-🇫🇷FR_411🇸🇬SG-🇫🇷FR_403
+      - CN 44 → openitsub.com
+      - NONE 35
+      - HK 1 → openitsub.com
+      - Relay_Relay_🇺🇸US-🇺🇸US_532🇺🇸US-🇺🇸US_551
+      - Relay_Relay_🇭🇰HK-🇭🇰HK_308🇭🇰HK-🇭🇰HK_304
+      - CN 89 → openitsub.com
+      - CN 34 → openitsub.com
+      - Relay_Relay_🇹🇼TW-🇹🇼TW_419🇹🇼TW-🇹🇼TW_425
+      - HK_315🇭🇰HK_308
+      - SG_405🇸🇬SG_416
+      - CN 64 → openitsub.com
+      - CN 115 → openitsub.com
+      - CN 88 → openitsub.com
+      - CN 241 → openitsub.com
+      - Relay_Relay_🇭🇰HK-🇷🇺RU_310🇭🇰HK-🇷🇺RU_302
+      - Relay_Relay_🇸🇬SG-🇧🇩BD_408🇸🇬SG-🇧🇩BD_411
+      - CN 91 → openitsub.com
+      - HK_309🇭🇰HK_314
+      - Relay_Relay_🇨🇳CN-🇨🇦CA_129🇨🇳CN-🇨🇦CA_73
+      - NONE 24
+      - Relay_Relay_🇨🇳CN-🇧🇷BR_80🇨🇳CN-🇧🇷BR_74
+      - Relay_Relay_🇨🇳CN-🇧🇭BH_122🇨🇳CN-🇧🇭BH_90
+      - NONE 21
+      - CN_50
+      - Relay_Relay_🇨🇳CN-🇷🇴RO_58🇨🇳CN-🇷🇴RO_57
+      - CN_62
+      - Relay_Relay_🇨🇳CN-🇷🇺RU_232🇨🇳CN-🇷🇺RU_75
+      - NONE 7
+      - NONE 48
+      - Relay_Relay_🇨🇳CN-🇷🇺RU_126🇨🇳CN-🇷🇺RU_84
+      - Relay_Relay_🇨🇳CN-🇧🇭BH_120🇨🇳CN-🇧🇭BH_99
+      - _85
+      - Relay_Relay_🇨🇳CN-🇺🇸US_68🇨🇳CN-🇺🇸US_96
+      - Relay_Relay_🇨🇳CN-🇷🇺RU_53🇨🇳CN-🇷🇺RU_48
+      - Relay_Relay_🇨🇳CN-🇺🇦UA_75🇨🇳CN-🇺🇦UA_69
+      - NONE 20 2
+      - Relay_Relay_🇨🇳CN-🇱🇻LV_56🇨🇳CN-🇱🇻LV_55
+      - GB 2 → openitsub.com 2
+      - NONE 23
+      - Relay_Relay_🇨🇳CN-🇷🇺RU_81🇨🇳CN-🇷🇺RU_76
+      - Relay_Relay_🇨🇳CN-🇷🇴RO_124🇨🇳CN-🇷🇴RO_112
+      - NONE 31
+      - NONE 22
+      - CN_46
+      - Relay_-🇺🇦UA_232
+      - Relay_🇨🇳CN-🏁ZZ_43
+      - NONE 6
+      - Relay_Relay_🇨🇳CN-🇺🇸US_130🇨🇳CN-🇺🇸US_111
+      - NONE 18
+      - NONE 27
+      - CN_51
+      - Relay_🇨🇳CN-🇮🇳IN_52
+      - Relay_Relay_🇨🇳CN-🇹🇼TW_123🇨🇳CN-🇹🇼TW_101
+      - NONE 26
+      - Relay_🇨🇳CN-🇨🇦CA_45
+      - CN_34
+      - Relay_Relay_🇨🇳CN-🇷🇺RU_70🇨🇳CN-🇷🇺RU_66
+      - Relay_Relay_🇨🇳CN-🇹🇼TW_96🇨🇳CN-🇹🇼TW_86
+      - Relay_🇨🇳CN-🇺🇸US_107
+      - Relay_Relay_🇨🇳CN-🇺🇸US_59🇨🇳CN-🇺🇸US_58
+      - Relay_Relay_🇨🇳CN-🇦🇿AZ_114🇨🇳CN-🇦🇿AZ_93
+      - NONE 32
+      - NONE 13
+      - NONE 3
+      - Relay_🇨🇳CN-🇷🇺RU_51
+      - Relay_Relay_🇨🇳CN-🇦🇹AT_131🇨🇳CN-🇦🇹AT_61
+      - Relay_Relay_🇨🇳CN-🇺🇸US_148🇨🇳CN-🇺🇸US_100
+      - Relay_🇨🇳CN-🇨🇦CA_56
+      - Relay_Relay_🇨🇳CN-🇺🇸US_110🇨🇳CN-🇺🇸US_89
+      - NONE 28
+      - Relay_Relay_🇨🇳CN-🇺🇸US_128🇨🇳CN-🇺🇸US_110
+      - Relay_Relay_🇨🇳CN-🇧🇭BH_116🇨🇳CN-🇧🇭BH_113
+      - NONE 8
+      - Relay_Relay_🇨🇳CN-🏁ZZ_146🇨🇳CN-🏁ZZ_65
+      - Relay_Relay_🇨🇳CN-🇹🇼TW_117🇨🇳CN-🇹🇼TW_94
+      - CN_48
+      - NONE 2
+      - CN_63
+      - Relay_Relay_🇨🇳CN-🇺🇸US_95🇨🇳CN-🇺🇸US_85
+      - _294
+      - Relay_Relay_🇨🇳CN-🇹🇼TW_109🇨🇳CN-🇹🇼TW_88
+      - Relay_Relay_🇨🇳CN-🇺🇸US_125🇨🇳CN-🇺🇸US_106
+      - Relay_Relay_🇨🇳CN-🇷🇺RU_138🇨🇳CN-🇷🇺RU_52
+      - Relay_Relay_🇨🇳CN-🇷🇺RU_147🇨🇳CN-🇷🇺RU_98
+      - Relay_Relay_🇨🇳CN-🇳🇱NL_216🇨🇳CN-🇳🇱NL_102
+      - NONE 21 2
+      - Relay_Relay_🇨🇳CN-🏁ZZ_47🇨🇳CN-🏁ZZ_47
+      - Relay_Relay_🇨🇳CN-🇧🇭BH_118🇨🇳CN-🇧🇭BH_103
+      - CN_62 2
+      - NONE 47
+      - NONE 32 2
+      - Relay_Relay_🇨🇳CN-🇷🇴RO_42🇨🇳CN-🇷🇴RO_87
+      - Relay_Relay_🇨🇳CN-🇺🇸US_113🇨🇳CN-🇺🇸US_92
+      - Relay_-🇺🇸US_298
+      - CN_37
+      - CN_54
+      - NONE 42
+      - CN_59
+      - CN 22 → openitsub.com
+      - CN 10 → openitsub.com
+      - Relay_Relay_🇨🇳CN-🇮🇱IL_48🇨🇳CN-🇮🇱IL_41
+      - NONE 30
+      - Relay_Relay_🇨🇳CN-🇦🇹AT_91🇨🇳CN-🇦🇹AT_82
+      - US_556🇺🇸US_534
+      - CN_33
+      - Relay_Relay_🇨🇳CN-🇺🇸US_168🇨🇳CN-🇺🇸US_97
+      - Relay_Relay_-🇫🇷FR_119🇫🇷FR-🇫🇷FR_129
+      - NONE 56
+      - Relay_Relay_🇨🇳CN-🇺🇸US_165🇨🇳CN-🇺🇸US_67
+      - CN 58 → openitsub.com
+      - NONE 25
+      - Relay_Relay_🇨🇳CN-🇧🇭BH_84🇨🇳CN-🇧🇭BH_78
+      - NONE 16
+      - CN_29
+      - Relay_Relay_🇨🇳CN-🇫🇷FR_57🇨🇳CN-🇫🇷FR_56
+      - Relay_Relay_🇨🇳CN-🇫🇷FR_45🇨🇳CN-🇫🇷FR_42
+      - Relay_Relay_🇨🇳CN-🇨🇦CA_86🇨🇳CN-🇨🇦CA_80
+      - NONE 29
+      - FR_274🇫🇷FR_276
+      - CN 25 → openitsub.com
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CN 24 → openitsub.com
-      - CN 2 → openitsub.com
-      - CN 57 → openitsub.com
-      - 美国(油管:破解资源君2.0) 13
-      - CN 8 → openitsub.com
-      - CN 45 → openitsub.com
-      - CN 51 → openitsub.com
-      - CN 74 → openitsub.com
-      - 欧洲(油管:破解资源君2.0) 47
-      - NONE 24
-      - US 2 → openitsub.com
-      - NONE 56
-      - NONE 20
-      - NONE 18
-      - 欧洲(油管:破解资源君2.0) 10
-      - NONE 22
-      - NONE 21
-      - CN 12 → openitsub.com 2
-      - NONE 14
-      - CN_36
-      - NONE 20 2
-      - CN_39
-      - CN_50
-      - NONE 32
-      - _85
-      - CN_37
-      - NONE 26
-      - CN_29
-      - CN_46
-      - CN_62
-      - NONE 13
-      - NONE 28
-      - NONE 31
-      - CN_63
-      - Relay_🇨🇳CN-🇭🇰HK_57
-      - CN 11 → openitsub.com
-      - Relay_-🇺🇸US_298
-      - NONE 26 2
-      - NONE 25
-      - NONE 29
-      - NONE 23
-      - NONE 21 2
-      - CN_59
-      - Relay_🇨🇳CN-🇹🇼TW_28
-      - 未知国家-1.80MB/s(Youtube:不良林)
-      - CN_60
-      - NONE 27
-      - NONE 24 2
-      - Relay_🇨🇳CN-🇨🇦CA_45
-      - CN_51
-      - NONE 29 2
-      - CN_54
-      - Relay_-🇯🇵JP_212
-      - NONE 16
-      - Relay_🇨🇳CN-🇨🇦CA_56
-      - CN_33
-      - CN_48
-      - CN_34
-      - Relay_🇨🇳CN-🇮🇳IN_52
-      - NONE 3
-      - 美国-406.4KB/s(Youtube:不良林)
-      - Relay_-🇺🇦UA_232
-      - NONE 47
-      - NONE 30
-      - NONE 41
-      - NONE 32 2
-      - NONE 25 2
-      - NONE 34
-      - NONE 42
-      - NONE 8
-      - _294
-      - NONE 2
-      - NONE 7
-      - NONE 12
-      - NONE 48
-      - GB 2 → openitsub.com
-      - NONE 5
-      - CN 18 → openitsub.com
-      - NONE 19
-      - NONE 23 2
-      - NONE 60
-      - US 2 → openitsub.com 2
-      - Relay_-🇺🇸US_333
-      - NONE 36
-      - NONE
-      - Relay_-🇹🇼TW_217
-      - NONE 35
-      - 美国(油管:破解资源君2.0) 25
-      - NONE 6
-      - NONE 55
-      - NONE 46
-      - NONE 50
-      - NONE 9
-      - Relay_-🇫🇷FR_117
-      - NONE 11
-      - Relay_-🇸🇬SG_194
-      - NONE 54
-      - NONE 10
-      - NONE 49
-      - NONE 28 2
-      - NONE 57
-      - Relay_Relay_-🇫🇷FR_119🇫🇷FR-🇫🇷FR_129
-      - NONE 39
-      - GB 2 → openitsub.com 2
-      - _323
-      - CN 3 → openitsub.com
-      - CN 19 → openitsub.com
-      - NONE 37
-      - CN 38 → openitsub.com
-      - CN 9 → openitsub.com
-      - CN 5 → openitsub.com
-      - CN 16 → openitsub.com
-      - CN 33 → openitsub.com
-      - CN 39 → openitsub.com
-      - CN 3 → openitsub.com 2
-      - CN 4 → openitsub.com
-      - CN 27 → openitsub.com
+      - Relay_Relay_🇭🇰HK-🇷🇺RU_294🇭🇰HK-🇷🇺RU_295
+      - Relay_Relay_🇯🇵JP-🇯🇵JP_338🇯🇵JP-🇯🇵JP_338
+      - HK_296🇭🇰HK_290
+      - Relay_Relay_🇯🇵JP-🇺🇸US_321🇯🇵JP-🇺🇸US_317
+      - US_554🇺🇸US_536
+      - Relay_Relay_🇺🇸US-🇨🇦CA_531🇺🇸US-🇨🇦CA_550
+      - CN 212 → openitsub.com
+      - CN 201 → openitsub.com
       - CN 35 → openitsub.com
-      - CN 20 → openitsub.com
       - CN 13 → openitsub.com
-      - CN 7 → openitsub.com
-      - CN 6 → openitsub.com
-      - CN 31 → openitsub.com
-      - CN 41 → openitsub.com
-      - CN 34 → openitsub.com
-      - CN 10 → openitsub.com
-      - CN 43 → openitsub.com
-      - CN 23 → openitsub.com
-      - CN 52 → openitsub.com
-      - CN 30 → openitsub.com
-      - CN 26 → openitsub.com
-      - CN 40 → openitsub.com
-      - 欧洲(油管:破解资源君2.0) 24
-      - CN 60 → openitsub.com
-      - CN 71 → openitsub.com
-      - CN 15 → openitsub.com
-      - CN 18 → openitsub.com 2
-      - CN 29 → openitsub.com
-      - CN 63 → openitsub.com
-      - CN 72 → openitsub.com
-      - GB 2 → openitsub.com 3
-      - 美国(油管:破解资源君2.0) 41
-      - 美国(油管:破解资源君2.0) 27
-      - CN 14 → openitsub.com
-      - CN 42 → openitsub.com
-      - CN 44 → openitsub.com
-      - CN 68 → openitsub.com
-      - CN 62 → openitsub.com
-      - CN 69 → openitsub.com
-      - CN 53 → openitsub.com
+      - CN 16 → openitsub.com
       - CN 46 → openitsub.com
-      - CN 47 → openitsub.com
-      - CN 56 → openitsub.com
-      - 欧洲(油管:破解资源君2.0) 17
+      - CN 155 → openitsub.com
+      - CN 156 → openitsub.com
+      - CN 61 → openitsub.com
+      - CN 126 → openitsub.com
+      - CN 40 → openitsub.com
+      - NL 1 → openitsub.com
+      - KR_351🇰🇷KR_357
+      - CN 21 → openitsub.com
+      - CN 99 → openitsub.com
+      - NL_365🇳🇱NL_369
+      - US_558🇺🇸US_531
+      - Relay_Relay_🇭🇰HK-🇩🇪DE_304🇭🇰HK-🇩🇪DE_301
+      - Relay_Relay_🇸🇬SG-🇸🇬SG_395🇸🇬SG-🇸🇬SG_412
+      - CN 186 → openitsub.com
+      - CN 213 → openitsub.com
+      - CN 94 → openitsub.com
+      - CN 187 → openitsub.com
+      - CN 202 → openitsub.com
+      - CN 18 → openitsub.com
+      - CN 33 → openitsub.com
+      - Relay_Relay_🇺🇸US-🇺🇸US_527🇺🇸US-🇺🇸US_546
+      - Relay_Relay_🇺🇸US-🇯🇵JP_529🇺🇸US-🇯🇵JP_548
+      - CN 20 → openitsub.com
+      - CN 6 → openitsub.com
+      - CN 14 → openitsub.com
+      - CN 23 → openitsub.com
+      - GB_287🇬🇧GB_282
+      - SG_412🇸🇬SG_413
+      - US 2 → openitsub.com
+      - HK_299🇭🇰HK_310
+      - CN 50 → openitsub.com
+      - CN 57 → openitsub.com
+      - CN 150 → openitsub.com
+      - CN 179 → openitsub.com
+      - CN 39 → openitsub.com
+      - US_533🇺🇸US_552
+      - CN 7 → openitsub.com
+      - CN 29 → openitsub.com
+      - HK_313🇭🇰HK_307
+      - Relay_Relay_🇸🇬SG-🇫🇷FR_411🇸🇬SG-🇫🇷FR_403
+      - CN 44 → openitsub.com
+      - NONE 35
+      - HK 1 → openitsub.com
+      - Relay_Relay_🇺🇸US-🇺🇸US_532🇺🇸US-🇺🇸US_551
+      - Relay_Relay_🇭🇰HK-🇭🇰HK_308🇭🇰HK-🇭🇰HK_304
+      - CN 89 → openitsub.com
+      - CN 34 → openitsub.com
+      - Relay_Relay_🇹🇼TW-🇹🇼TW_419🇹🇼TW-🇹🇼TW_425
+      - HK_315🇭🇰HK_308
+      - SG_405🇸🇬SG_416
+      - CN 64 → openitsub.com
+      - CN 115 → openitsub.com
+      - CN 88 → openitsub.com
+      - CN 241 → openitsub.com
+      - Relay_Relay_🇭🇰HK-🇷🇺RU_310🇭🇰HK-🇷🇺RU_302
+      - Relay_Relay_🇸🇬SG-🇧🇩BD_408🇸🇬SG-🇧🇩BD_411
+      - CN 91 → openitsub.com
+      - HK_309🇭🇰HK_314
+      - Relay_Relay_🇨🇳CN-🇨🇦CA_129🇨🇳CN-🇨🇦CA_73
+      - NONE 24
+      - Relay_Relay_🇨🇳CN-🇧🇷BR_80🇨🇳CN-🇧🇷BR_74
+      - Relay_Relay_🇨🇳CN-🇧🇭BH_122🇨🇳CN-🇧🇭BH_90
+      - NONE 21
+      - CN_50
+      - Relay_Relay_🇨🇳CN-🇷🇴RO_58🇨🇳CN-🇷🇴RO_57
+      - CN_62
+      - Relay_Relay_🇨🇳CN-🇷🇺RU_232🇨🇳CN-🇷🇺RU_75
+      - NONE 7
+      - NONE 48
+      - Relay_Relay_🇨🇳CN-🇷🇺RU_126🇨🇳CN-🇷🇺RU_84
+      - Relay_Relay_🇨🇳CN-🇧🇭BH_120🇨🇳CN-🇧🇭BH_99
+      - _85
+      - Relay_Relay_🇨🇳CN-🇺🇸US_68🇨🇳CN-🇺🇸US_96
+      - Relay_Relay_🇨🇳CN-🇷🇺RU_53🇨🇳CN-🇷🇺RU_48
+      - Relay_Relay_🇨🇳CN-🇺🇦UA_75🇨🇳CN-🇺🇦UA_69
+      - NONE 20 2
+      - Relay_Relay_🇨🇳CN-🇱🇻LV_56🇨🇳CN-🇱🇻LV_55
+      - GB 2 → openitsub.com 2
+      - NONE 23
+      - Relay_Relay_🇨🇳CN-🇷🇺RU_81🇨🇳CN-🇷🇺RU_76
+      - Relay_Relay_🇨🇳CN-🇷🇴RO_124🇨🇳CN-🇷🇴RO_112
+      - NONE 31
+      - NONE 22
+      - CN_46
+      - Relay_-🇺🇦UA_232
+      - Relay_🇨🇳CN-🏁ZZ_43
+      - NONE 6
+      - Relay_Relay_🇨🇳CN-🇺🇸US_130🇨🇳CN-🇺🇸US_111
+      - NONE 18
+      - NONE 27
+      - CN_51
+      - Relay_🇨🇳CN-🇮🇳IN_52
+      - Relay_Relay_🇨🇳CN-🇹🇼TW_123🇨🇳CN-🇹🇼TW_101
+      - NONE 26
+      - Relay_🇨🇳CN-🇨🇦CA_45
+      - CN_34
+      - Relay_Relay_🇨🇳CN-🇷🇺RU_70🇨🇳CN-🇷🇺RU_66
+      - Relay_Relay_🇨🇳CN-🇹🇼TW_96🇨🇳CN-🇹🇼TW_86
+      - Relay_🇨🇳CN-🇺🇸US_107
+      - Relay_Relay_🇨🇳CN-🇺🇸US_59🇨🇳CN-🇺🇸US_58
+      - Relay_Relay_🇨🇳CN-🇦🇿AZ_114🇨🇳CN-🇦🇿AZ_93
+      - NONE 32
+      - NONE 13
+      - NONE 3
+      - Relay_🇨🇳CN-🇷🇺RU_51
+      - Relay_Relay_🇨🇳CN-🇦🇹AT_131🇨🇳CN-🇦🇹AT_61
+      - Relay_Relay_🇨🇳CN-🇺🇸US_148🇨🇳CN-🇺🇸US_100
+      - Relay_🇨🇳CN-🇨🇦CA_56
+      - Relay_Relay_🇨🇳CN-🇺🇸US_110🇨🇳CN-🇺🇸US_89
+      - NONE 28
+      - Relay_Relay_🇨🇳CN-🇺🇸US_128🇨🇳CN-🇺🇸US_110
+      - Relay_Relay_🇨🇳CN-🇧🇭BH_116🇨🇳CN-🇧🇭BH_113
+      - NONE 8
+      - Relay_Relay_🇨🇳CN-🏁ZZ_146🇨🇳CN-🏁ZZ_65
+      - Relay_Relay_🇨🇳CN-🇹🇼TW_117🇨🇳CN-🇹🇼TW_94
+      - CN_48
+      - NONE 2
+      - CN_63
+      - Relay_Relay_🇨🇳CN-🇺🇸US_95🇨🇳CN-🇺🇸US_85
+      - _294
+      - Relay_Relay_🇨🇳CN-🇹🇼TW_109🇨🇳CN-🇹🇼TW_88
+      - Relay_Relay_🇨🇳CN-🇺🇸US_125🇨🇳CN-🇺🇸US_106
+      - Relay_Relay_🇨🇳CN-🇷🇺RU_138🇨🇳CN-🇷🇺RU_52
+      - Relay_Relay_🇨🇳CN-🇷🇺RU_147🇨🇳CN-🇷🇺RU_98
+      - Relay_Relay_🇨🇳CN-🇳🇱NL_216🇨🇳CN-🇳🇱NL_102
+      - NONE 21 2
+      - Relay_Relay_🇨🇳CN-🏁ZZ_47🇨🇳CN-🏁ZZ_47
+      - Relay_Relay_🇨🇳CN-🇧🇭BH_118🇨🇳CN-🇧🇭BH_103
+      - CN_62 2
+      - NONE 47
+      - NONE 32 2
+      - Relay_Relay_🇨🇳CN-🇷🇴RO_42🇨🇳CN-🇷🇴RO_87
+      - Relay_Relay_🇨🇳CN-🇺🇸US_113🇨🇳CN-🇺🇸US_92
+      - Relay_-🇺🇸US_298
+      - CN_37
+      - CN_54
+      - NONE 42
+      - CN_59
+      - CN 22 → openitsub.com
+      - CN 10 → openitsub.com
+      - Relay_Relay_🇨🇳CN-🇮🇱IL_48🇨🇳CN-🇮🇱IL_41
+      - NONE 30
+      - Relay_Relay_🇨🇳CN-🇦🇹AT_91🇨🇳CN-🇦🇹AT_82
+      - US_556🇺🇸US_534
+      - CN_33
+      - Relay_Relay_🇨🇳CN-🇺🇸US_168🇨🇳CN-🇺🇸US_97
+      - Relay_Relay_-🇫🇷FR_119🇫🇷FR-🇫🇷FR_129
+      - NONE 56
+      - Relay_Relay_🇨🇳CN-🇺🇸US_165🇨🇳CN-🇺🇸US_67
+      - CN 58 → openitsub.com
+      - NONE 25
+      - Relay_Relay_🇨🇳CN-🇧🇭BH_84🇨🇳CN-🇧🇭BH_78
+      - NONE 16
+      - CN_29
+      - Relay_Relay_🇨🇳CN-🇫🇷FR_57🇨🇳CN-🇫🇷FR_56
+      - Relay_Relay_🇨🇳CN-🇫🇷FR_45🇨🇳CN-🇫🇷FR_42
+      - Relay_Relay_🇨🇳CN-🇨🇦CA_86🇨🇳CN-🇨🇦CA_80
+      - NONE 29
+      - FR_274🇫🇷FR_276
+      - CN 25 → openitsub.com
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1308,160 +1452,178 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CN 24 → openitsub.com
-      - CN 2 → openitsub.com
-      - CN 57 → openitsub.com
-      - 美国(油管:破解资源君2.0) 13
-      - CN 8 → openitsub.com
-      - CN 45 → openitsub.com
-      - CN 51 → openitsub.com
-      - CN 74 → openitsub.com
-      - 欧洲(油管:破解资源君2.0) 47
-      - NONE 24
-      - US 2 → openitsub.com
-      - NONE 56
-      - NONE 20
-      - NONE 18
-      - 欧洲(油管:破解资源君2.0) 10
-      - NONE 22
-      - NONE 21
-      - CN 12 → openitsub.com 2
-      - NONE 14
-      - CN_36
-      - NONE 20 2
-      - CN_39
-      - CN_50
-      - NONE 32
-      - _85
-      - CN_37
-      - NONE 26
-      - CN_29
-      - CN_46
-      - CN_62
-      - NONE 13
-      - NONE 28
-      - NONE 31
-      - CN_63
-      - Relay_🇨🇳CN-🇭🇰HK_57
-      - CN 11 → openitsub.com
-      - Relay_-🇺🇸US_298
-      - NONE 26 2
-      - NONE 25
-      - NONE 29
-      - NONE 23
-      - NONE 21 2
-      - CN_59
-      - Relay_🇨🇳CN-🇹🇼TW_28
-      - 未知国家-1.80MB/s(Youtube:不良林)
-      - CN_60
-      - NONE 27
-      - NONE 24 2
-      - Relay_🇨🇳CN-🇨🇦CA_45
-      - CN_51
-      - NONE 29 2
-      - CN_54
-      - Relay_-🇯🇵JP_212
-      - NONE 16
-      - Relay_🇨🇳CN-🇨🇦CA_56
-      - CN_33
-      - CN_48
-      - CN_34
-      - Relay_🇨🇳CN-🇮🇳IN_52
-      - NONE 3
-      - 美国-406.4KB/s(Youtube:不良林)
-      - Relay_-🇺🇦UA_232
-      - NONE 47
-      - NONE 30
-      - NONE 41
-      - NONE 32 2
-      - NONE 25 2
-      - NONE 34
-      - NONE 42
-      - NONE 8
-      - _294
-      - NONE 2
-      - NONE 7
-      - NONE 12
-      - NONE 48
-      - GB 2 → openitsub.com
-      - NONE 5
-      - CN 18 → openitsub.com
-      - NONE 19
-      - NONE 23 2
-      - NONE 60
-      - US 2 → openitsub.com 2
-      - Relay_-🇺🇸US_333
-      - NONE 36
-      - NONE
-      - Relay_-🇹🇼TW_217
-      - NONE 35
-      - 美国(油管:破解资源君2.0) 25
-      - NONE 6
-      - NONE 55
-      - NONE 46
-      - NONE 50
-      - NONE 9
-      - Relay_-🇫🇷FR_117
-      - NONE 11
-      - Relay_-🇸🇬SG_194
-      - NONE 54
-      - NONE 10
-      - NONE 49
-      - NONE 28 2
-      - NONE 57
-      - Relay_Relay_-🇫🇷FR_119🇫🇷FR-🇫🇷FR_129
-      - NONE 39
-      - GB 2 → openitsub.com 2
-      - _323
-      - CN 3 → openitsub.com
-      - CN 19 → openitsub.com
-      - NONE 37
-      - CN 38 → openitsub.com
-      - CN 9 → openitsub.com
-      - CN 5 → openitsub.com
-      - CN 16 → openitsub.com
-      - CN 33 → openitsub.com
-      - CN 39 → openitsub.com
-      - CN 3 → openitsub.com 2
-      - CN 4 → openitsub.com
-      - CN 27 → openitsub.com
+      - Relay_Relay_🇭🇰HK-🇷🇺RU_294🇭🇰HK-🇷🇺RU_295
+      - Relay_Relay_🇯🇵JP-🇯🇵JP_338🇯🇵JP-🇯🇵JP_338
+      - HK_296🇭🇰HK_290
+      - Relay_Relay_🇯🇵JP-🇺🇸US_321🇯🇵JP-🇺🇸US_317
+      - US_554🇺🇸US_536
+      - Relay_Relay_🇺🇸US-🇨🇦CA_531🇺🇸US-🇨🇦CA_550
+      - CN 212 → openitsub.com
+      - CN 201 → openitsub.com
       - CN 35 → openitsub.com
-      - CN 20 → openitsub.com
       - CN 13 → openitsub.com
-      - CN 7 → openitsub.com
-      - CN 6 → openitsub.com
-      - CN 31 → openitsub.com
-      - CN 41 → openitsub.com
-      - CN 34 → openitsub.com
-      - CN 10 → openitsub.com
-      - CN 43 → openitsub.com
-      - CN 23 → openitsub.com
-      - CN 52 → openitsub.com
-      - CN 30 → openitsub.com
-      - CN 26 → openitsub.com
-      - CN 40 → openitsub.com
-      - 欧洲(油管:破解资源君2.0) 24
-      - CN 60 → openitsub.com
-      - CN 71 → openitsub.com
-      - CN 15 → openitsub.com
-      - CN 18 → openitsub.com 2
-      - CN 29 → openitsub.com
-      - CN 63 → openitsub.com
-      - CN 72 → openitsub.com
-      - GB 2 → openitsub.com 3
-      - 美国(油管:破解资源君2.0) 41
-      - 美国(油管:破解资源君2.0) 27
-      - CN 14 → openitsub.com
-      - CN 42 → openitsub.com
-      - CN 44 → openitsub.com
-      - CN 68 → openitsub.com
-      - CN 62 → openitsub.com
-      - CN 69 → openitsub.com
-      - CN 53 → openitsub.com
+      - CN 16 → openitsub.com
       - CN 46 → openitsub.com
-      - CN 47 → openitsub.com
-      - CN 56 → openitsub.com
-      - 欧洲(油管:破解资源君2.0) 17
+      - CN 155 → openitsub.com
+      - CN 156 → openitsub.com
+      - CN 61 → openitsub.com
+      - CN 126 → openitsub.com
+      - CN 40 → openitsub.com
+      - NL 1 → openitsub.com
+      - KR_351🇰🇷KR_357
+      - CN 21 → openitsub.com
+      - CN 99 → openitsub.com
+      - NL_365🇳🇱NL_369
+      - US_558🇺🇸US_531
+      - Relay_Relay_🇭🇰HK-🇩🇪DE_304🇭🇰HK-🇩🇪DE_301
+      - Relay_Relay_🇸🇬SG-🇸🇬SG_395🇸🇬SG-🇸🇬SG_412
+      - CN 186 → openitsub.com
+      - CN 213 → openitsub.com
+      - CN 94 → openitsub.com
+      - CN 187 → openitsub.com
+      - CN 202 → openitsub.com
+      - CN 18 → openitsub.com
+      - CN 33 → openitsub.com
+      - Relay_Relay_🇺🇸US-🇺🇸US_527🇺🇸US-🇺🇸US_546
+      - Relay_Relay_🇺🇸US-🇯🇵JP_529🇺🇸US-🇯🇵JP_548
+      - CN 20 → openitsub.com
+      - CN 6 → openitsub.com
+      - CN 14 → openitsub.com
+      - CN 23 → openitsub.com
+      - GB_287🇬🇧GB_282
+      - SG_412🇸🇬SG_413
+      - US 2 → openitsub.com
+      - HK_299🇭🇰HK_310
+      - CN 50 → openitsub.com
+      - CN 57 → openitsub.com
+      - CN 150 → openitsub.com
+      - CN 179 → openitsub.com
+      - CN 39 → openitsub.com
+      - US_533🇺🇸US_552
+      - CN 7 → openitsub.com
+      - CN 29 → openitsub.com
+      - HK_313🇭🇰HK_307
+      - Relay_Relay_🇸🇬SG-🇫🇷FR_411🇸🇬SG-🇫🇷FR_403
+      - CN 44 → openitsub.com
+      - NONE 35
+      - HK 1 → openitsub.com
+      - Relay_Relay_🇺🇸US-🇺🇸US_532🇺🇸US-🇺🇸US_551
+      - Relay_Relay_🇭🇰HK-🇭🇰HK_308🇭🇰HK-🇭🇰HK_304
+      - CN 89 → openitsub.com
+      - CN 34 → openitsub.com
+      - Relay_Relay_🇹🇼TW-🇹🇼TW_419🇹🇼TW-🇹🇼TW_425
+      - HK_315🇭🇰HK_308
+      - SG_405🇸🇬SG_416
+      - CN 64 → openitsub.com
+      - CN 115 → openitsub.com
+      - CN 88 → openitsub.com
+      - CN 241 → openitsub.com
+      - Relay_Relay_🇭🇰HK-🇷🇺RU_310🇭🇰HK-🇷🇺RU_302
+      - Relay_Relay_🇸🇬SG-🇧🇩BD_408🇸🇬SG-🇧🇩BD_411
+      - CN 91 → openitsub.com
+      - HK_309🇭🇰HK_314
+      - Relay_Relay_🇨🇳CN-🇨🇦CA_129🇨🇳CN-🇨🇦CA_73
+      - NONE 24
+      - Relay_Relay_🇨🇳CN-🇧🇷BR_80🇨🇳CN-🇧🇷BR_74
+      - Relay_Relay_🇨🇳CN-🇧🇭BH_122🇨🇳CN-🇧🇭BH_90
+      - NONE 21
+      - CN_50
+      - Relay_Relay_🇨🇳CN-🇷🇴RO_58🇨🇳CN-🇷🇴RO_57
+      - CN_62
+      - Relay_Relay_🇨🇳CN-🇷🇺RU_232🇨🇳CN-🇷🇺RU_75
+      - NONE 7
+      - NONE 48
+      - Relay_Relay_🇨🇳CN-🇷🇺RU_126🇨🇳CN-🇷🇺RU_84
+      - Relay_Relay_🇨🇳CN-🇧🇭BH_120🇨🇳CN-🇧🇭BH_99
+      - _85
+      - Relay_Relay_🇨🇳CN-🇺🇸US_68🇨🇳CN-🇺🇸US_96
+      - Relay_Relay_🇨🇳CN-🇷🇺RU_53🇨🇳CN-🇷🇺RU_48
+      - Relay_Relay_🇨🇳CN-🇺🇦UA_75🇨🇳CN-🇺🇦UA_69
+      - NONE 20 2
+      - Relay_Relay_🇨🇳CN-🇱🇻LV_56🇨🇳CN-🇱🇻LV_55
+      - GB 2 → openitsub.com 2
+      - NONE 23
+      - Relay_Relay_🇨🇳CN-🇷🇺RU_81🇨🇳CN-🇷🇺RU_76
+      - Relay_Relay_🇨🇳CN-🇷🇴RO_124🇨🇳CN-🇷🇴RO_112
+      - NONE 31
+      - NONE 22
+      - CN_46
+      - Relay_-🇺🇦UA_232
+      - Relay_🇨🇳CN-🏁ZZ_43
+      - NONE 6
+      - Relay_Relay_🇨🇳CN-🇺🇸US_130🇨🇳CN-🇺🇸US_111
+      - NONE 18
+      - NONE 27
+      - CN_51
+      - Relay_🇨🇳CN-🇮🇳IN_52
+      - Relay_Relay_🇨🇳CN-🇹🇼TW_123🇨🇳CN-🇹🇼TW_101
+      - NONE 26
+      - Relay_🇨🇳CN-🇨🇦CA_45
+      - CN_34
+      - Relay_Relay_🇨🇳CN-🇷🇺RU_70🇨🇳CN-🇷🇺RU_66
+      - Relay_Relay_🇨🇳CN-🇹🇼TW_96🇨🇳CN-🇹🇼TW_86
+      - Relay_🇨🇳CN-🇺🇸US_107
+      - Relay_Relay_🇨🇳CN-🇺🇸US_59🇨🇳CN-🇺🇸US_58
+      - Relay_Relay_🇨🇳CN-🇦🇿AZ_114🇨🇳CN-🇦🇿AZ_93
+      - NONE 32
+      - NONE 13
+      - NONE 3
+      - Relay_🇨🇳CN-🇷🇺RU_51
+      - Relay_Relay_🇨🇳CN-🇦🇹AT_131🇨🇳CN-🇦🇹AT_61
+      - Relay_Relay_🇨🇳CN-🇺🇸US_148🇨🇳CN-🇺🇸US_100
+      - Relay_🇨🇳CN-🇨🇦CA_56
+      - Relay_Relay_🇨🇳CN-🇺🇸US_110🇨🇳CN-🇺🇸US_89
+      - NONE 28
+      - Relay_Relay_🇨🇳CN-🇺🇸US_128🇨🇳CN-🇺🇸US_110
+      - Relay_Relay_🇨🇳CN-🇧🇭BH_116🇨🇳CN-🇧🇭BH_113
+      - NONE 8
+      - Relay_Relay_🇨🇳CN-🏁ZZ_146🇨🇳CN-🏁ZZ_65
+      - Relay_Relay_🇨🇳CN-🇹🇼TW_117🇨🇳CN-🇹🇼TW_94
+      - CN_48
+      - NONE 2
+      - CN_63
+      - Relay_Relay_🇨🇳CN-🇺🇸US_95🇨🇳CN-🇺🇸US_85
+      - _294
+      - Relay_Relay_🇨🇳CN-🇹🇼TW_109🇨🇳CN-🇹🇼TW_88
+      - Relay_Relay_🇨🇳CN-🇺🇸US_125🇨🇳CN-🇺🇸US_106
+      - Relay_Relay_🇨🇳CN-🇷🇺RU_138🇨🇳CN-🇷🇺RU_52
+      - Relay_Relay_🇨🇳CN-🇷🇺RU_147🇨🇳CN-🇷🇺RU_98
+      - Relay_Relay_🇨🇳CN-🇳🇱NL_216🇨🇳CN-🇳🇱NL_102
+      - NONE 21 2
+      - Relay_Relay_🇨🇳CN-🏁ZZ_47🇨🇳CN-🏁ZZ_47
+      - Relay_Relay_🇨🇳CN-🇧🇭BH_118🇨🇳CN-🇧🇭BH_103
+      - CN_62 2
+      - NONE 47
+      - NONE 32 2
+      - Relay_Relay_🇨🇳CN-🇷🇴RO_42🇨🇳CN-🇷🇴RO_87
+      - Relay_Relay_🇨🇳CN-🇺🇸US_113🇨🇳CN-🇺🇸US_92
+      - Relay_-🇺🇸US_298
+      - CN_37
+      - CN_54
+      - NONE 42
+      - CN_59
+      - CN 22 → openitsub.com
+      - CN 10 → openitsub.com
+      - Relay_Relay_🇨🇳CN-🇮🇱IL_48🇨🇳CN-🇮🇱IL_41
+      - NONE 30
+      - Relay_Relay_🇨🇳CN-🇦🇹AT_91🇨🇳CN-🇦🇹AT_82
+      - US_556🇺🇸US_534
+      - CN_33
+      - Relay_Relay_🇨🇳CN-🇺🇸US_168🇨🇳CN-🇺🇸US_97
+      - Relay_Relay_-🇫🇷FR_119🇫🇷FR-🇫🇷FR_129
+      - NONE 56
+      - Relay_Relay_🇨🇳CN-🇺🇸US_165🇨🇳CN-🇺🇸US_67
+      - CN 58 → openitsub.com
+      - NONE 25
+      - Relay_Relay_🇨🇳CN-🇧🇭BH_84🇨🇳CN-🇧🇭BH_78
+      - NONE 16
+      - CN_29
+      - Relay_Relay_🇨🇳CN-🇫🇷FR_57🇨🇳CN-🇫🇷FR_56
+      - Relay_Relay_🇨🇳CN-🇫🇷FR_45🇨🇳CN-🇫🇷FR_42
+      - Relay_Relay_🇨🇳CN-🇨🇦CA_86🇨🇳CN-🇨🇦CA_80
+      - NONE 29
+      - FR_274🇫🇷FR_276
+      - CN 25 → openitsub.com
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
