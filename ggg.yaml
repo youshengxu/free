@@ -5,435 +5,143 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: US 2 → openitsub.com, server: sg.liangyuandian.top, port: 443, type: trojan, password: 58dcd460-65df-47b1-b062-517df30bef29, sni: sg.liangyuandian.top, skip-cert-verify: true, udp: true}
-  - {name: HK 4 → openitsub.com, server: de.liangyuandian.top, port: 443, type: trojan, password: 58dcd460-65df-47b1-b062-517df30bef29, sni: de.liangyuandian.top, skip-cert-verify: true, udp: true}
-  - {name: 美国(油管:破解资源君2.0) 8, server: bb29cs.cdn.node.a.ddns-ounk.com, port: 13660, type: vmess, uuid: 00c902b5-5fce-3845-bc55-e7517d30fcc1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, ws-headers: {Host: bb29cs.cdn.node.a.ddns-ounk.com}, udp: true}
-  - {name: 日本(油管:破解资源君2.0) 2, server: j-p01.niuniucloud.xyz, port: 53044, type: trojan, password: ae54202f-6e78-4362-b24f-528d18e79674, sni: j-p01.niuniucloud.xyz, skip-cert-verify: true, udp: true}
-  - {name: 美国(油管:破解资源君2.0) 16, server: v1.cdn.node02.ddns-ounk.com, port: 13647, type: vmess, uuid: 00c902b5-5fce-3845-bc55-e7517d30fcc1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /9974f731e8cb457b17143895.v1.live.m3u8, ws-headers: {Host: v1.cdn.node02.ddns-ounk.com}, udp: true}
-  - {name: 美国(油管:破解资源君2.0) 11, server: bb29cs.cdn.node.a.ddns-ounk.com, port: 13664, type: vmess, uuid: 00c902b5-5fce-3845-bc55-e7517d30fcc1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, ws-headers: {Host: bb29cs.cdn.node.a.ddns-ounk.com}, udp: true}
-  - {name: 美国(油管:破解资源君2.0) 7, server: bb29cs.cdn.node.a.ddns-ounk.com, port: 13659, type: vmess, uuid: 00c902b5-5fce-3845-bc55-e7517d30fcc1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, ws-headers: {Host: bb29cs.cdn.node.a.ddns-ounk.com}, udp: true}
-  - {name: 美国(油管:破解资源君2.0) 15, server: v1.cdn.node02.ddns-ounk.com, port: 13646, type: vmess, uuid: 00c902b5-5fce-3845-bc55-e7517d30fcc1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /9974f731e8cb457b17143895.v1.live.m3u8, ws-headers: {Host: v1.cdn.node02.ddns-ounk.com}, udp: true}
-  - {name: 美国(油管:破解资源君2.0) 20, server: gonggao04.niuniucloud.xyz, port: 53006, type: trojan, password: ae54202f-6e78-4362-b24f-528d18e79674, sni: gonggao04.niuniucloud.xyz, skip-cert-verify: true, udp: true}
-  - {name: 美国(油管:破解资源君2.0) 9, server: bb29cs.cdn.node.a.ddns-ounk.com, port: 13662, type: vmess, uuid: 00c902b5-5fce-3845-bc55-e7517d30fcc1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, ws-headers: {Host: bb29cs.cdn.node.a.ddns-ounk.com}, udp: true}
-  - {name: US 4 → openitsub.com, server: ap.liangyuandian.top, port: 443, type: trojan, password: 58dcd460-65df-47b1-b062-517df30bef29, sni: ap.liangyuandian.top, skip-cert-verify: true, udp: true}
-  - {name: US 5 → openitsub.com, server: ca.liangyuandian.top, port: 443, type: trojan, password: 58dcd460-65df-47b1-b062-517df30bef29, sni: ca.liangyuandian.top, skip-cert-verify: true, udp: true}
-  - {name: 美国(油管:破解资源君2.0) 18, server: v1.cdn.node02.ddns-ounk.com, port: 13649, type: vmess, uuid: 00c902b5-5fce-3845-bc55-e7517d30fcc1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /80080f42e36c6478a808050e.v1.live.m3u8, ws-headers: {Host: v1.cdn.node02.ddns-ounk.com}, udp: true}
-  - {name: US 3 → openitsub.com, server: usa.liangyuandian.top, port: 443, type: trojan, password: 58dcd460-65df-47b1-b062-517df30bef29, sni: usa.liangyuandian.top, skip-cert-verify: true, udp: true}
-  - {name: 美国(油管:破解资源君2.0) 21, server: gonggao03.niuniucloud.xyz, port: 53004, type: trojan, password: ae54202f-6e78-4362-b24f-528d18e79674, sni: gonggao03.niuniucloud.xyz, skip-cert-verify: true, udp: true}
-  - {name: 新加坡(油管:破解资源君2.0) 39, server: r97q.cdn.node.a.ddns-ounk.com, port: 13563, type: vmess, uuid: 00c902b5-5fce-3845-bc55-e7517d30fcc1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /2294-44e2-a528-d9fb1adaa35f.v4..live01.m3u8, ws-headers: {Host: r97q.cdn.node.a.ddns-ounk.com}, udp: true}
-  - {name: 新加坡(油管:破解资源君2.0) 24, server: qgd6.cdn.node.a.ddns-ounk.com, port: 13577, type: vmess, uuid: 00c902b5-5fce-3845-bc55-e7517d30fcc1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, ws-headers: {Host: qgd6.cdn.node.a.ddns-ounk.com}, udp: true}
-  - {name: 新加坡(油管:破解资源君2.0) 41, server: r97q.cdn.node.a.ddns-ounk.com, port: 13569, type: vmess, uuid: 00c902b5-5fce-3845-bc55-e7517d30fcc1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /2294-44e2-a528-d9fb1adaa35f.v4..live01.m3u8, ws-headers: {Host: r97q.cdn.node.a.ddns-ounk.com}, udp: true}
-  - {name: 新加坡(油管:破解资源君2.0) 14, server: qgd6.cdn.node.a.ddns-ounk.com, port: 13059, type: vmess, uuid: 00c902b5-5fce-3845-bc55-e7517d30fcc1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, ws-headers: {Host: qgd6.cdn.node.a.ddns-ounk.com}, udp: true}
-  - {name: 新加坡(油管:破解资源君2.0) 32, server: r97q.cdn.node.a.ddns-ounk.com, port: 12991, type: vmess, uuid: 00c902b5-5fce-3845-bc55-e7517d30fcc1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /2294-44e2-a528-d9fb1adaa35f.v4..live01.m3u8, ws-headers: {Host: r97q.cdn.node.a.ddns-ounk.com}, udp: true}
-  - {name: 新加坡(油管:破解资源君2.0) 36, server: r97q.cdn.node.a.ddns-ounk.com, port: 13368, type: vmess, uuid: 00c902b5-5fce-3845-bc55-e7517d30fcc1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /2294-44e2-a528-d9fb1adaa35f.v4..live01.m3u8, ws-headers: {Host: r97q.cdn.node.a.ddns-ounk.com}, udp: true}
-  - {name: 新加坡(油管:破解资源君2.0) 38, server: r97q.cdn.node.a.ddns-ounk.com, port: 13561, type: vmess, uuid: 00c902b5-5fce-3845-bc55-e7517d30fcc1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /2294-44e2-a528-d9fb1adaa35f.v4..live01.m3u8, ws-headers: {Host: r97q.cdn.node.a.ddns-ounk.com}, udp: true}
-  - {name: 新加坡(油管:破解资源君2.0) 52, server: wegm63.cdn.node.a.ddns-ounk.com, port: 13529, type: vmess, uuid: 00c902b5-5fce-3845-bc55-e7517d30fcc1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /4900-495a-aa20-da0626e0e87d.v2..live03.m3u8, ws-headers: {Host: wegm63.cdn.node.a.ddns-ounk.com}, udp: true}
-  - {name: 香港(油管:破解资源君2.0) 7, server: cd69.cdn.node.a.ddns-ounk.com, port: 13671, type: vmess, uuid: 00c902b5-5fce-3845-bc55-e7517d30fcc1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /2294-44e2-a528-d9fb1adaa35f.v4..live01.m3u8, ws-headers: {Host: cd69.cdn.node.a.ddns-ounk.com}, udp: true}
-  - {name: 香港(油管:破解资源君2.0) 6, server: cd69.cdn.node.a.ddns-ounk.com, port: 13504, type: vmess, uuid: 00c902b5-5fce-3845-bc55-e7517d30fcc1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, ws-headers: {Host: cd69.cdn.node.a.ddns-ounk.com}, udp: true}
-  - {name: 香港(油管:破解资源君2.0) 5, server: cd69.cdn.node.a.ddns-ounk.com, port: 13343, type: vmess, uuid: 00c902b5-5fce-3845-bc55-e7517d30fcc1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, ws-headers: {Host: cd69.cdn.node.a.ddns-ounk.com}, udp: true}
-  - {name: 新加坡(油管:破解资源君2.0) 28, server: r97q.cdn.node.a.ddns-ounk.com, port: 51200, type: vmess, uuid: 00c902b5-5fce-3845-bc55-e7517d30fcc1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /2294-44e2-a528-d9fb1adaa35f.v4..live01.m3u8, ws-headers: {Host: r97q.cdn.node.a.ddns-ounk.com}, udp: true}
-  - {name: 新加坡(油管:破解资源君2.0) 35, server: r97q.cdn.node.a.ddns-ounk.com, port: 13367, type: vmess, uuid: 00c902b5-5fce-3845-bc55-e7517d30fcc1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /2294-44e2-a528-d9fb1adaa35f.v4..live01.m3u8, ws-headers: {Host: r97q.cdn.node.a.ddns-ounk.com}, udp: true}
-  - {name: 香港(油管:破解资源君2.0) 13, server: x321.cdn.node.a.ddns-ounk.com, port: 13544, type: vmess, uuid: 00c902b5-5fce-3845-bc55-e7517d30fcc1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /2294-44e2-a528-d9fb1adaa35f.v4..live01.m3u8, ws-headers: {Host: x321.cdn.node.a.ddns-ounk.com}, udp: true}
-  - {name: 美国(油管:破解资源君2.0) 17, server: v1.cdn.node02.ddns-ounk.com, port: 13648, type: vmess, uuid: 00c902b5-5fce-3845-bc55-e7517d30fcc1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /80080f42e36c6478a808050e.v1.live.m3u8, ws-headers: {Host: v1.cdn.node02.ddns-ounk.com}, udp: true}
-  - {name: 新加坡(油管:破解资源君2.0) 13, server: qgd6.cdn.node.a.ddns-ounk.com, port: 13058, type: vmess, uuid: 00c902b5-5fce-3845-bc55-e7517d30fcc1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, ws-headers: {Host: qgd6.cdn.node.a.ddns-ounk.com}, udp: true}
-  - {name: 新加坡(油管:破解资源君2.0) 42, server: r97q.cdn.node.a.ddns-ounk.com, port: 13688, type: vmess, uuid: 00c902b5-5fce-3845-bc55-e7517d30fcc1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6d22-4232-9e87-9670c18b4a60.v1..live04.m3u8, ws-headers: {Host: r97q.cdn.node.a.ddns-ounk.com}, udp: true}
-  - {name: 新加坡(油管:破解资源君2.0) 34, server: r97q.cdn.node.a.ddns-ounk.com, port: 13362, type: vmess, uuid: 00c902b5-5fce-3845-bc55-e7517d30fcc1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /2294-44e2-a528-d9fb1adaa35f.v4..live01.m3u8, ws-headers: {Host: r97q.cdn.node.a.ddns-ounk.com}, udp: true}
-  - {name: 台湾(油管:破解资源君2.0) 19, server: z65d.cdn.node.a.ddns-ounk.com, port: 13522, type: vmess, uuid: 00c902b5-5fce-3845-bc55-e7517d30fcc1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /4900-495a-aa20-da0626e0e87d.v2..live03.m3u8, ws-headers: {Host: z65d.cdn.node.a.ddns-ounk.com}, udp: true}
-  - {name: 新加坡(油管:破解资源君2.0) 45, server: tata12.cdn.node.a.ddns-ounk.com, port: 13546, type: vmess, uuid: 00c902b5-5fce-3845-bc55-e7517d30fcc1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, ws-headers: {Host: tata12.cdn.node.a.ddns-ounk.com}, udp: true}
-  - {name: 新加坡(油管:破解资源君2.0) 55, server: wegm63.cdn.node.a.ddns-ounk.com, port: 13585, type: vmess, uuid: 00c902b5-5fce-3845-bc55-e7517d30fcc1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /4900-495a-aa20-da0626e0e87d.v2..live03.m3u8, ws-headers: {Host: wegm63.cdn.node.a.ddns-ounk.com}, udp: true}
-  - {name: 新加坡(油管:破解资源君2.0) 23, server: qgd6.cdn.node.a.ddns-ounk.com, port: 13575, type: vmess, uuid: 00c902b5-5fce-3845-bc55-e7517d30fcc1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, ws-headers: {Host: qgd6.cdn.node.a.ddns-ounk.com}, udp: true}
-  - {name: 新加坡(油管:破解资源君2.0) 17, server: qgd6.cdn.node.a.ddns-ounk.com, port: 13376, type: vmess, uuid: 00c902b5-5fce-3845-bc55-e7517d30fcc1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, ws-headers: {Host: qgd6.cdn.node.a.ddns-ounk.com}, udp: true}
-  - {name: 新加坡(油管:破解资源君2.0) 21, server: qgd6.cdn.node.a.ddns-ounk.com, port: 13571, type: vmess, uuid: 00c902b5-5fce-3845-bc55-e7517d30fcc1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, ws-headers: {Host: qgd6.cdn.node.a.ddns-ounk.com}, udp: true}
-  - {name: 新加坡(油管:破解资源君2.0) 30, server: r97q.cdn.node.a.ddns-ounk.com, port: 12988, type: vmess, uuid: 00c902b5-5fce-3845-bc55-e7517d30fcc1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /2294-44e2-a528-d9fb1adaa35f.v4..live01.m3u8, ws-headers: {Host: r97q.cdn.node.a.ddns-ounk.com}, udp: true}
-  - {name: 新加坡(油管:破解资源君2.0) 43, server: tata12.cdn.node.a.ddns-ounk.com, port: 13515, type: vmess, uuid: 00c902b5-5fce-3845-bc55-e7517d30fcc1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /4900-495a-aa20-da0626e0e87d.v2..live03.m3u8, ws-headers: {Host: tata12.cdn.node.a.ddns-ounk.com}, udp: true}
-  - {name: 新加坡(油管:破解资源君2.0) 6, server: ngs9.cdn.node.a.ddns-ounk.com, port: 13048, type: vmess, uuid: 00c902b5-5fce-3845-bc55-e7517d30fcc1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /4900-495a-aa20-da0626e0e87d.v2..live03.m3u8, ws-headers: {Host: ngs9.cdn.node.a.ddns-ounk.com}, udp: true}
-  - {name: 新加坡(油管:破解资源君2.0) 18, server: qgd6.cdn.node.a.ddns-ounk.com, port: 13377, type: vmess, uuid: 00c902b5-5fce-3845-bc55-e7517d30fcc1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, ws-headers: {Host: qgd6.cdn.node.a.ddns-ounk.com}, udp: true}
-  - {name: 新加坡(油管:破解资源君2.0) 26, server: qgd6.cdn.node.a.ddns-ounk.com, port: 13587, type: vmess, uuid: 00c902b5-5fce-3845-bc55-e7517d30fcc1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, ws-headers: {Host: qgd6.cdn.node.a.ddns-ounk.com}, udp: true}
-  - {name: 新加坡(油管:破解资源君2.0) 47, server: wegm63.cdn.node.a.ddns-ounk.com, port: 13055, type: vmess, uuid: 00c902b5-5fce-3845-bc55-e7517d30fcc1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6d22-4232-9e87-9670c18b4a60.v1..live04.m3u8, ws-headers: {Host: wegm63.cdn.node.a.ddns-ounk.com}, udp: true}
-  - {name: 香港(油管:破解资源君2.0) 21, server: z5sa6is.cdn.node.a.ddns-ounk.com, port: 13537, type: vmess, uuid: 00c902b5-5fce-3845-bc55-e7517d30fcc1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6d22-4232-9e87-9670c18b4a60.v1..live04.m3u8, ws-headers: {Host: z5sa6is.cdn.node.a.ddns-ounk.com}, udp: true}
-  - {name: 香港(油管:破解资源君2.0) 19, server: z5is.cdn.node.a.ddns-ounk.com, port: 13194, type: vmess, uuid: 00c902b5-5fce-3845-bc55-e7517d30fcc1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, ws-headers: {Host: z5is.cdn.node.a.ddns-ounk.com}, udp: true}
-  - {name: 香港(油管:破解资源君2.0) 8, server: cd69.cdn.node.a.ddns-ounk.com, port: 13665, type: vmess, uuid: 00c902b5-5fce-3845-bc55-e7517d30fcc1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /2294-44e2-a528-d9fb1adaa35f.v4..live01.m3u8, ws-headers: {Host: cd69.cdn.node.a.ddns-ounk.com}, udp: true}
-  - {name: 新加坡(油管:破解资源君2.0) 12, server: qgd6.cdn.node.a.ddns-ounk.com, port: 12942, type: vmess, uuid: 00c902b5-5fce-3845-bc55-e7517d30fcc1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, ws-headers: {Host: qgd6.cdn.node.a.ddns-ounk.com}, udp: true}
-  - {name: 台湾(油管:破解资源君2.0) 17, server: z65d.cdn.node.a.ddns-ounk.com, port: 13521, type: vmess, uuid: 00c902b5-5fce-3845-bc55-e7517d30fcc1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6d22-4232-9e87-9670c18b4a60.v1..live04.m3u8, ws-headers: {Host: z65d.cdn.node.a.ddns-ounk.com}, udp: true}
-  - {name: 台湾(油管:破解资源君2.0) 12, server: lld9k6.cdn.node.a.ddns-ounk.com, port: 13320, type: vmess, uuid: 00c902b5-5fce-3845-bc55-e7517d30fcc1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, ws-headers: {Host: lld9k6.cdn.node.a.ddns-ounk.com}, udp: true}
-  - {name: 新加坡(油管:破解资源君2.0) 27, server: qgd6.cdn.node.a.ddns-ounk.com, port: 13588, type: vmess, uuid: 00c902b5-5fce-3845-bc55-e7517d30fcc1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, ws-headers: {Host: qgd6.cdn.node.a.ddns-ounk.com}, udp: true}
-  - {name: 新加坡(油管:破解资源君2.0) 20, server: qgd6.cdn.node.a.ddns-ounk.com, port: 13379, type: vmess, uuid: 00c902b5-5fce-3845-bc55-e7517d30fcc1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, ws-headers: {Host: qgd6.cdn.node.a.ddns-ounk.com}, udp: true}
-  - {name: 新加坡(油管:破解资源君2.0) 19, server: qgd6.cdn.node.a.ddns-ounk.com, port: 13378, type: vmess, uuid: 00c902b5-5fce-3845-bc55-e7517d30fcc1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, ws-headers: {Host: qgd6.cdn.node.a.ddns-ounk.com}, udp: true}
-  - {name: 香港(油管:破解资源君2.0) 14, server: z5is.cdn.node.a.ddns-ounk.com, port: 13686, type: vmess, uuid: 00c902b5-5fce-3845-bc55-e7517d30fcc1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /4900-495a-aa20-da0626e0e87d.v2..live03.m3u8, ws-headers: {Host: z5is.cdn.node.a.ddns-ounk.com}, udp: true}
-  - {name: 新加坡(油管:破解资源君2.0) 51, server: wegm63.cdn.node.a.ddns-ounk.com, port: 13469, type: vmess, uuid: 00c902b5-5fce-3845-bc55-e7517d30fcc1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /4900-495a-aa20-da0626e0e87d.v2..live03.m3u8, ws-headers: {Host: wegm63.cdn.node.a.ddns-ounk.com}, udp: true}
-  - {name: 台湾(油管:破解资源君2.0) 18, server: z65d.cdn.node.a.ddns-ounk.com, port: 13710, type: vmess, uuid: 00c902b5-5fce-3845-bc55-e7517d30fcc1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6d22-4232-9e87-9670c18b4a60.v1..live04.m3u8, ws-headers: {Host: z65d.cdn.node.a.ddns-ounk.com}, udp: true}
-  - {name: 台湾(油管:破解资源君2.0) 11, server: lld9k6.cdn.node.a.ddns-ounk.com, port: 13319, type: vmess, uuid: 00c902b5-5fce-3845-bc55-e7517d30fcc1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, ws-headers: {Host: lld9k6.cdn.node.a.ddns-ounk.com}, udp: true}
-  - {name: 香港(油管:破解资源君2.0) 22, server: z5sa6is.cdn.node.a.ddns-ounk.com, port: 13687, type: vmess, uuid: 00c902b5-5fce-3845-bc55-e7517d30fcc1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6d22-4232-9e87-9670c18b4a60.v1..live04.m3u8, ws-headers: {Host: z5sa6is.cdn.node.a.ddns-ounk.com}, udp: true}
-  - {name: 香港(油管:破解资源君2.0) 15, server: z5is.cdn.node.a.ddns-ounk.com, port: 13172, type: vmess, uuid: 00c902b5-5fce-3845-bc55-e7517d30fcc1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, ws-headers: {Host: z5is.cdn.node.a.ddns-ounk.com}, udp: true}
-  - {name: 新加坡(油管:破解资源君2.0) 15, server: qgd6.cdn.node.a.ddns-ounk.com, port: 13060, type: vmess, uuid: 00c902b5-5fce-3845-bc55-e7517d30fcc1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, ws-headers: {Host: qgd6.cdn.node.a.ddns-ounk.com}, udp: true}
-  - {name: 新加坡(油管:破解资源君2.0) 25, server: qgd6.cdn.node.a.ddns-ounk.com, port: 13579, type: vmess, uuid: 00c902b5-5fce-3845-bc55-e7517d30fcc1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, ws-headers: {Host: qgd6.cdn.node.a.ddns-ounk.com}, udp: true}
-  - {name: US_276, server: 00000000000000000000000000000000000000000000000000000000000036a.rui77.com, port: 12356, type: vmess, uuid: 1617ff1b-4e85-4a8a-81c3-511b3c2efad8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 台湾(油管:破解资源君2.0) 8, server: dr64.cdn.node.a.ddns-ounk.com, port: 13527, type: vmess, uuid: 00c902b5-5fce-3845-bc55-e7517d30fcc1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /4900-495a-aa20-da0626e0e87d.v2..live03.m3u8, ws-headers: {Host: dr64.cdn.node.a.ddns-ounk.com}, udp: true}
-  - {name: 台湾(油管:破解资源君2.0) 6, server: dr64.cdn.node.a.ddns-ounk.com, port: 13391, type: vmess, uuid: 00c902b5-5fce-3845-bc55-e7517d30fcc1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /4900-495a-aa20-da0626e0e87d.v2..live03.m3u8, ws-headers: {Host: dr64.cdn.node.a.ddns-ounk.com}, udp: true}
-  - {name: 香港(油管:破解资源君2.0) 17, server: z5is.cdn.node.a.ddns-ounk.com, port: 13192, type: vmess, uuid: 00c902b5-5fce-3845-bc55-e7517d30fcc1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, ws-headers: {Host: z5is.cdn.node.a.ddns-ounk.com}, udp: true}
-  - {name: 新加坡(油管:破解资源君2.0) 44, server: tata12.cdn.node.a.ddns-ounk.com, port: 13275, type: vmess, uuid: 00c902b5-5fce-3845-bc55-e7517d30fcc1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, ws-headers: {Host: tata12.cdn.node.a.ddns-ounk.com}, udp: true}
-  - {name: 新加坡(油管:破解资源君2.0) 59, server: yyds08.cdn.node02.ddns-ounk.com, port: 13459, type: vmess, uuid: 00c902b5-5fce-3845-bc55-e7517d30fcc1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /80080f42e36c6478a808050e.v1.live.m3u8, ws-headers: {Host: yyds08.cdn.node02.ddns-ounk.com}, udp: true}
-  - {name: 新加坡(油管:破解资源君2.0) 40, server: r97q.cdn.node.a.ddns-ounk.com, port: 13565, type: vmess, uuid: 00c902b5-5fce-3845-bc55-e7517d30fcc1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /2294-44e2-a528-d9fb1adaa35f.v4..live01.m3u8, ws-headers: {Host: r97q.cdn.node.a.ddns-ounk.com}, udp: true}
-  - {name: 日本(油管:破解资源君2.0) 4, server: j-p04.niuniucloud.xyz, port: 53050, type: trojan, password: ae54202f-6e78-4362-b24f-528d18e79674, sni: j-p04.niuniucloud.xyz, skip-cert-verify: true, udp: true}
-  - {name: 台湾(油管:破解资源君2.0) 14, server: lld9k6.cdn.node.a.ddns-ounk.com, port: 13389, type: vmess, uuid: 00c902b5-5fce-3845-bc55-e7517d30fcc1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, ws-headers: {Host: lld9k6.cdn.node.a.ddns-ounk.com}, udp: true}
-  - {name: 香港(油管:破解资源君2.0) 24, server: z5sa6is.cdn.node.a.ddns-ounk.com, port: 13685, type: vmess, uuid: 00c902b5-5fce-3845-bc55-e7517d30fcc1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /4900-495a-aa20-da0626e0e87d.v2..live03.m3u8, ws-headers: {Host: z5sa6is.cdn.node.a.ddns-ounk.com}, udp: true}
-  - {name: 新加坡(油管:破解资源君2.0) 31, server: r97q.cdn.node.a.ddns-ounk.com, port: 12989, type: vmess, uuid: 00c902b5-5fce-3845-bc55-e7517d30fcc1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /2294-44e2-a528-d9fb1adaa35f.v4..live01.m3u8, ws-headers: {Host: r97q.cdn.node.a.ddns-ounk.com}, udp: true}
-  - {name: 新加坡(油管:破解资源君2.0) 48, server: wegm63.cdn.node.a.ddns-ounk.com, port: 13678, type: vmess, uuid: 00c902b5-5fce-3845-bc55-e7517d30fcc1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6d22-4232-9e87-9670c18b4a60.v1..live04.m3u8, ws-headers: {Host: wegm63.cdn.node.a.ddns-ounk.com}, udp: true}
-  - {name: 香港(油管:破解资源君2.0) 20, server: z5is.cdn.node.a.ddns-ounk.com, port: 13195, type: vmess, uuid: 00c902b5-5fce-3845-bc55-e7517d30fcc1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, ws-headers: {Host: z5is.cdn.node.a.ddns-ounk.com}, udp: true}
-  - {name: 台湾(油管:破解资源君2.0) 9, server: dr64.cdn.node.a.ddns-ounk.com, port: 13657, type: vmess, uuid: 00c902b5-5fce-3845-bc55-e7517d30fcc1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /4900-495a-aa20-da0626e0e87d.v2..live03.m3u8, ws-headers: {Host: dr64.cdn.node.a.ddns-ounk.com}, udp: true}
-  - {name: 台湾(油管:破解资源君2.0) 10, server: dr64.cdn.node.a.ddns-ounk.com, port: 13388, type: vmess, uuid: 00c902b5-5fce-3845-bc55-e7517d30fcc1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, ws-headers: {Host: dr64.cdn.node.a.ddns-ounk.com}, udp: true}
-  - {name: 新加坡(油管:破解资源君2.0) 10, server: qgd6.cdn.node.a.ddns-ounk.com, port: 12940, type: vmess, uuid: 00c902b5-5fce-3845-bc55-e7517d30fcc1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, ws-headers: {Host: qgd6.cdn.node.a.ddns-ounk.com}, udp: true}
-  - {name: 香港(油管:破解资源君2.0) 18, server: z5is.cdn.node.a.ddns-ounk.com, port: 13193, type: vmess, uuid: 00c902b5-5fce-3845-bc55-e7517d30fcc1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, ws-headers: {Host: z5is.cdn.node.a.ddns-ounk.com}, udp: true}
-  - {name: 新加坡(油管:破解资源君2.0) 56, server: yyds08.cdn.node02.ddns-ounk.com, port: 13426, type: vmess, uuid: 00c902b5-5fce-3845-bc55-e7517d30fcc1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /80080f42e36c6478a808050e.v1.live.m3u8, ws-headers: {Host: yyds08.cdn.node02.ddns-ounk.com}, udp: true}
-  - {name: 台湾(油管:破解资源君2.0) 7, server: dr64.cdn.node.a.ddns-ounk.com, port: 13393, type: vmess, uuid: 00c902b5-5fce-3845-bc55-e7517d30fcc1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /4900-495a-aa20-da0626e0e87d.v2..live03.m3u8, ws-headers: {Host: dr64.cdn.node.a.ddns-ounk.com}, udp: true}
-  - {name: 新加坡(油管:破解资源君2.0) 5, server: ngs9.cdn.node.a.ddns-ounk.com, port: 13047, type: vmess, uuid: 00c902b5-5fce-3845-bc55-e7517d30fcc1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /4900-495a-aa20-da0626e0e87d.v2..live03.m3u8, ws-headers: {Host: ngs9.cdn.node.a.ddns-ounk.com}, udp: true}
-  - {name: 美国(油管:破解资源君2.0) 22, server: gonggao01.niuniucloud.xyz, port: 53000, type: trojan, password: ae54202f-6e78-4362-b24f-528d18e79674, sni: gonggao01.niuniucloud.xyz, skip-cert-verify: true, udp: true}
-  - {name: 台湾(油管:破解资源君2.0) 2, server: bzdss9z1.cdn.node04.ddns-ounk.com, port: 13339, type: vmess, uuid: 00c902b5-5fce-3845-bc55-e7517d30fcc1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /9974f731e8cb457b17143895.v1.live.m3u8, ws-headers: {Host: bzdss9z1.cdn.node04.ddns-ounk.com}, udp: true}
-  - {name: 日本(油管:破解资源君2.0) 5, server: q8eq.cdn.node.a.ddns-ounk.com, port: 13602, type: vmess, uuid: 00c902b5-5fce-3845-bc55-e7517d30fcc1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6d22-4232-9e87-9670c18b4a60.v1..live04.m3u8, ws-headers: {Host: q8eq.cdn.node.a.ddns-ounk.com}, udp: true}
-  - {name: 台湾(油管:破解资源君2.0) 5, server: dr64.cdn.node.a.ddns-ounk.com, port: 13390, type: vmess, uuid: 00c902b5-5fce-3845-bc55-e7517d30fcc1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /4900-495a-aa20-da0626e0e87d.v2..live03.m3u8, ws-headers: {Host: dr64.cdn.node.a.ddns-ounk.com}, udp: true}
-  - {name: 日本(油管:破解资源君2.0) 8, server: q8eq.cdn.node.a.ddns-ounk.com, port: 13074, type: vmess, uuid: 00c902b5-5fce-3845-bc55-e7517d30fcc1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, ws-headers: {Host: q8eq.cdn.node.a.ddns-ounk.com}, udp: true}
-  - {name: 日本(油管:破解资源君2.0) 14, server: q8eq.cdn.node.a.ddns-ounk.com, port: 13094, type: vmess, uuid: 00c902b5-5fce-3845-bc55-e7517d30fcc1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /2294-44e2-a528-d9fb1adaa35f.v4..live01.m3u8, ws-headers: {Host: q8eq.cdn.node.a.ddns-ounk.com}, udp: true}
-  - {name: 台湾(油管:破解资源君2.0) 3, server: bzdss9z1.cdn.node04.ddns-ounk.com, port: 13708, type: vmess, uuid: 00c902b5-5fce-3845-bc55-e7517d30fcc1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6d22-4232-9e87-9670c18b4a60.v1..live04.m3u8, ws-headers: {Host: bzdss9z1.cdn.node04.ddns-ounk.com}, udp: true}
-  - {name: 日本(油管:破解资源君2.0) 15, server: q8eq.cdn.node.a.ddns-ounk.com, port: 13608, type: vmess, uuid: 00c902b5-5fce-3845-bc55-e7517d30fcc1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /2294-44e2-a528-d9fb1adaa35f.v4..live01.m3u8, ws-headers: {Host: q8eq.cdn.node.a.ddns-ounk.com}, udp: true}
-  - {name: 日本(油管:破解资源君2.0) 10, server: q8eq.cdn.node.a.ddns-ounk.com, port: 13598, type: vmess, uuid: 00c902b5-5fce-3845-bc55-e7517d30fcc1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, ws-headers: {Host: q8eq.cdn.node.a.ddns-ounk.com}, udp: true}
-  - {name: 新加坡(油管:破解资源君2.0) 4, server: ngs9.cdn.node.a.ddns-ounk.com, port: 13046, type: vmess, uuid: 00c902b5-5fce-3845-bc55-e7517d30fcc1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /4900-495a-aa20-da0626e0e87d.v2..live03.m3u8, ws-headers: {Host: ngs9.cdn.node.a.ddns-ounk.com}, udp: true}
-  - {name: 欧洲(油管:破解资源君2.0) 3, server: 203.24.108.8, port: 443, type: vmess, uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ECTCJ0DF, ws-headers: {Host: lg1.trump2023.us}, udp: true}
-  - {name: 日本(油管:破解资源君2.0) 6, server: q8eq.cdn.node.a.ddns-ounk.com, port: 13603, type: vmess, uuid: 00c902b5-5fce-3845-bc55-e7517d30fcc1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /4900-495a-aa20-da0626e0e87d.v2..live03.m3u8, ws-headers: {Host: q8eq.cdn.node.a.ddns-ounk.com}, udp: true}
-  - {name: 日本(油管:破解资源君2.0) 9, server: q8eq.cdn.node.a.ddns-ounk.com, port: 13596, type: vmess, uuid: 00c902b5-5fce-3845-bc55-e7517d30fcc1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, ws-headers: {Host: q8eq.cdn.node.a.ddns-ounk.com}, udp: true}
-  - {name: 日本(油管:破解资源君2.0) 12, server: q8eq.cdn.node.a.ddns-ounk.com, port: 13600, type: vmess, uuid: 00c902b5-5fce-3845-bc55-e7517d30fcc1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, ws-headers: {Host: q8eq.cdn.node.a.ddns-ounk.com}, udp: true}
-  - {name: 日本(油管:破解资源君2.0) 13, server: q8eq.cdn.node.a.ddns-ounk.com, port: 13604, type: vmess, uuid: 00c902b5-5fce-3845-bc55-e7517d30fcc1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, ws-headers: {Host: q8eq.cdn.node.a.ddns-ounk.com}, udp: true}
-  - {name: 日本(油管:破解资源君2.0) 11, server: q8eq.cdn.node.a.ddns-ounk.com, port: 13599, type: vmess, uuid: 00c902b5-5fce-3845-bc55-e7517d30fcc1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, ws-headers: {Host: q8eq.cdn.node.a.ddns-ounk.com}, udp: true}
-  - {name: 日本(油管:破解资源君2.0) 7, server: q8eq.cdn.node.a.ddns-ounk.com, port: 12960, type: vmess, uuid: 00c902b5-5fce-3845-bc55-e7517d30fcc1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, ws-headers: {Host: q8eq.cdn.node.a.ddns-ounk.com}, udp: true}
-  - {name: 台湾(油管:破解资源君2.0) 20, server: z65d.cdn.node.a.ddns-ounk.com, port: 13711, type: vmess, uuid: 00c902b5-5fce-3845-bc55-e7517d30fcc1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /6d22-4232-9e87-9670c18b4a60.v1..live04.m3u8, ws-headers: {Host: z65d.cdn.node.a.ddns-ounk.com}, udp: true}
-  - {name: 新加坡(油管:破解资源君2.0) 57, server: yyds08.cdn.node02.ddns-ounk.com, port: 13455, type: vmess, uuid: 00c902b5-5fce-3845-bc55-e7517d30fcc1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /80080f42e36c6478a808050e.v1.live.m3u8, ws-headers: {Host: yyds08.cdn.node02.ddns-ounk.com}, udp: true}
-  - {name: 日本(油管:破解资源君2.0) 3, server: j-p02.niuniucloud.xyz, port: 53046, type: trojan, password: ae54202f-6e78-4362-b24f-528d18e79674, sni: j-p02.niuniucloud.xyz, skip-cert-verify: true, udp: true}
-  - {name: 新加坡(油管:破解资源君2.0) 7, server: bp.i809.ml, port: 12087, type: trojan, password: b9c4f30f-0e95-4c23-80f8-b134414f43ec, sni: bp.i809.ml, skip-cert-verify: true, udp: true}
+  - {name: 美国(油管:破解资源君2.0), server: 47.90.164.120, port: 80, type: vmess, uuid: 0f1f1cca-56dc-4feb-8b4b-50ab074f4467, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: w1.800876.xyz}, udp: true}
+  - {name: NONE, server: 51.81.82.15, port: 443, type: trojan, password: c2b0a060-44b0-11ed-ad2e-1239d0255272, skip-cert-verify: true, udp: true}
+  - {name: NONE 2, server: usla.iamnotagoodman.com, port: 443, type: trojan, password: 4f8c0e41-dbdb-40f1-99cb-2c2a0b909b52, sni: usla.iamnotagoodman.com, skip-cert-verify: true, udp: true}
+  - {name: NONE 3, server: 60.249.3.231, port: 3389, type: trojan, password: 0cc6b4268dea0ba8, skip-cert-verify: true, udp: true}
+  - {name: NONE 4, server: 60.249.3.230, port: 3389, type: trojan, password: 182228812d1e0f23, skip-cert-verify: true, udp: true}
+  - {name: NONE 5, server: 103.195.236.24, port: 443, type: trojan, password: 52171d41-9367-429f-baa6-43660a6c84e4, skip-cert-verify: true, udp: true}
+  - {name: NONE 6, server: kh.iamnotagoodman.com, port: 443, type: trojan, password: 4f8c0e41-dbdb-40f1-99cb-2c2a0b909b52, sni: kh.iamnotagoodman.com, skip-cert-verify: true, udp: true}
+  - {name: NONE 7, server: 211.72.35.157, port: 3389, type: trojan, password: 7ac49a893e0bd10c, skip-cert-verify: true, udp: true}
+  - {name: NONE 8, server: 60.249.3.228, port: 3389, type: trojan, password: 182228812d1e0f23, skip-cert-verify: true, udp: true}
+  - {name: NONE 9, server: jp.iamnotagoodman.com, port: 443, type: trojan, password: 2ac7fc8a-68b5-4809-8bd2-73a593bae292, sni: jp.iamnotagoodman.com, skip-cert-verify: true, udp: true}
+  - {name: NONE 10, server: v2cross.com.04.v2ce.com, port: 443, type: trojan, password: vGWCNNfBHwSY6m6M, sni: v2cross.com.04.v2ce.com, skip-cert-verify: true, udp: true}
+  - {name: NONE 11, server: 20.24.80.87, port: 443, type: trojan, password: ee287ed9-e928-47aa-bfa7-033a8c183e8b, skip-cert-verify: true, udp: true}
+  - {name: NONE 12, server: ap.liangyuandian.top, port: 443, type: trojan, password: 53f20cd4-b381-4a80-8059-7bcd484bbb52, sni: ap.liangyuandian.top, skip-cert-verify: true, udp: true}
+  - {name: 欧洲(油管:破解资源君2.0) 24, server: vau1.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /chat, ws-headers: {Host: vau1.0bad.com}, udp: true}
+  - {name: "", server: 00000000000000000000000000000000000000000000000000000000000023a.rui77.com, port: 52356, type: vmess, uuid: 1617ff1b-4e85-4a8a-81c3-511b3c2efad8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 欧洲(油管:破解资源君2.0) 16, server: 203.24.108.8, port: 443, type: vmess, uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ECTCJ0DF, ws-headers: {Host: lg1.trump2023.us}, udp: true}
+  - {name: NONE 13, server: 211.72.35.152, port: 3389, type: trojan, password: b84d16a244460e09, skip-cert-verify: true, udp: true}
+  - {name: NONE 14, server: sg.liangyuandian.top, port: 443, type: trojan, password: 53f20cd4-b381-4a80-8059-7bcd484bbb52, sni: sg.liangyuandian.top, skip-cert-verify: true, udp: true}
+  - {name: NONE 15, server: jp.iamnotagoodman.com, port: 443, type: trojan, password: 4f8c0e41-dbdb-40f1-99cb-2c2a0b909b52, sni: jp.iamnotagoodman.com, skip-cert-verify: true, udp: true}
+  - {name: NONE 16, server: lux.iamnotagoodman.com, port: 443, type: trojan, password: 2ac7fc8a-68b5-4809-8bd2-73a593bae292, sni: lux.iamnotagoodman.com, skip-cert-verify: true, udp: true}
+  - {name: 欧洲(油管:破解资源君2.0) 10, server: 45.64.22.55, port: 443, type: vmess, uuid: d217db0c-0faa-4270-ea38-e6093d9774e3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: h2.800876.xyz}, udp: true}
+  - {name: 亚洲(油管:破解资源君2.0) 3, server: a976632911.fun, port: 5888, type: vmess, uuid: 294eecf0-1194-4007-aa23-653099029a82, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: a976632911.fun}, udp: true}
+  - {name: NONE 17, server: de.iamnotagoodman.com, port: 443, type: trojan, password: 4f8c0e41-dbdb-40f1-99cb-2c2a0b909b52, sni: de.iamnotagoodman.com, skip-cert-verify: true, udp: true}
+  - {name: 欧洲(油管:破解资源君2.0) 57, server: 203.30.190.190, port: 443, type: vmess, uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ECTCJ0DF, ws-headers: {Host: lg1.trump2023.us}, udp: true}
+  - {name: NONE 18, server: 103.81.85.238, port: 443, type: trojan, password: 6b4ced5e-835a-4a7a-9d03-6a46e94668cb, skip-cert-verify: true, udp: true}
+  - {name: NONE 19, server: ar.iamnotagoodman.com, port: 443, type: trojan, password: 4f8c0e41-dbdb-40f1-99cb-2c2a0b909b52, sni: ar.iamnotagoodman.com, skip-cert-verify: true, udp: true}
+  - {name: NONE 20, server: 211.72.35.155, port: 3389, type: trojan, password: b84d16a244460e09, skip-cert-verify: true, udp: true}
+  - {name: NONE 21, server: jp.liangyuandian.top, port: 443, type: trojan, password: 53f20cd4-b381-4a80-8059-7bcd484bbb52, sni: jp.liangyuandian.top, skip-cert-verify: true, udp: true}
+  - {name: " 2", server: 195.201.151.14, port: 80, type: vmess, uuid: 2aac77de-b3e4-4017-845c-ca1380f2e8d0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /telegram-id-@privatevpns, ws-headers: {Host: 195.201.151.14}, udp: true}
+  - {name: NONE 22, server: 103.195.236.24, port: 443, type: trojan, password: 8078dd51-d4d9-4024-89df-50e358a00a54, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - US 2 → openitsub.com
-      - HK 4 → openitsub.com
-      - 美国(油管:破解资源君2.0) 8
-      - 日本(油管:破解资源君2.0) 2
-      - 美国(油管:破解资源君2.0) 16
-      - 美国(油管:破解资源君2.0) 11
-      - 美国(油管:破解资源君2.0) 7
-      - 美国(油管:破解资源君2.0) 15
-      - 美国(油管:破解资源君2.0) 20
-      - 美国(油管:破解资源君2.0) 9
-      - US 4 → openitsub.com
-      - US 5 → openitsub.com
-      - 美国(油管:破解资源君2.0) 18
-      - US 3 → openitsub.com
-      - 美国(油管:破解资源君2.0) 21
-      - 新加坡(油管:破解资源君2.0) 39
-      - 新加坡(油管:破解资源君2.0) 24
-      - 新加坡(油管:破解资源君2.0) 41
-      - 新加坡(油管:破解资源君2.0) 14
-      - 新加坡(油管:破解资源君2.0) 32
-      - 新加坡(油管:破解资源君2.0) 36
-      - 新加坡(油管:破解资源君2.0) 38
-      - 新加坡(油管:破解资源君2.0) 52
-      - 香港(油管:破解资源君2.0) 7
-      - 香港(油管:破解资源君2.0) 6
-      - 香港(油管:破解资源君2.0) 5
-      - 新加坡(油管:破解资源君2.0) 28
-      - 新加坡(油管:破解资源君2.0) 35
-      - 香港(油管:破解资源君2.0) 13
-      - 美国(油管:破解资源君2.0) 17
-      - 新加坡(油管:破解资源君2.0) 13
-      - 新加坡(油管:破解资源君2.0) 42
-      - 新加坡(油管:破解资源君2.0) 34
-      - 台湾(油管:破解资源君2.0) 19
-      - 新加坡(油管:破解资源君2.0) 45
-      - 新加坡(油管:破解资源君2.0) 55
-      - 新加坡(油管:破解资源君2.0) 23
-      - 新加坡(油管:破解资源君2.0) 17
-      - 新加坡(油管:破解资源君2.0) 21
-      - 新加坡(油管:破解资源君2.0) 30
-      - 新加坡(油管:破解资源君2.0) 43
-      - 新加坡(油管:破解资源君2.0) 6
-      - 新加坡(油管:破解资源君2.0) 18
-      - 新加坡(油管:破解资源君2.0) 26
-      - 新加坡(油管:破解资源君2.0) 47
-      - 香港(油管:破解资源君2.0) 21
-      - 香港(油管:破解资源君2.0) 19
-      - 香港(油管:破解资源君2.0) 8
-      - 新加坡(油管:破解资源君2.0) 12
-      - 台湾(油管:破解资源君2.0) 17
-      - 台湾(油管:破解资源君2.0) 12
-      - 新加坡(油管:破解资源君2.0) 27
-      - 新加坡(油管:破解资源君2.0) 20
-      - 新加坡(油管:破解资源君2.0) 19
-      - 香港(油管:破解资源君2.0) 14
-      - 新加坡(油管:破解资源君2.0) 51
-      - 台湾(油管:破解资源君2.0) 18
-      - 台湾(油管:破解资源君2.0) 11
-      - 香港(油管:破解资源君2.0) 22
-      - 香港(油管:破解资源君2.0) 15
-      - 新加坡(油管:破解资源君2.0) 15
-      - 新加坡(油管:破解资源君2.0) 25
-      - US_276
-      - 台湾(油管:破解资源君2.0) 8
-      - 台湾(油管:破解资源君2.0) 6
-      - 香港(油管:破解资源君2.0) 17
-      - 新加坡(油管:破解资源君2.0) 44
-      - 新加坡(油管:破解资源君2.0) 59
-      - 新加坡(油管:破解资源君2.0) 40
-      - 日本(油管:破解资源君2.0) 4
-      - 台湾(油管:破解资源君2.0) 14
-      - 香港(油管:破解资源君2.0) 24
-      - 新加坡(油管:破解资源君2.0) 31
-      - 新加坡(油管:破解资源君2.0) 48
-      - 香港(油管:破解资源君2.0) 20
-      - 台湾(油管:破解资源君2.0) 9
-      - 台湾(油管:破解资源君2.0) 10
-      - 新加坡(油管:破解资源君2.0) 10
-      - 香港(油管:破解资源君2.0) 18
-      - 新加坡(油管:破解资源君2.0) 56
-      - 台湾(油管:破解资源君2.0) 7
-      - 新加坡(油管:破解资源君2.0) 5
-      - 美国(油管:破解资源君2.0) 22
-      - 台湾(油管:破解资源君2.0) 2
-      - 日本(油管:破解资源君2.0) 5
-      - 台湾(油管:破解资源君2.0) 5
-      - 日本(油管:破解资源君2.0) 8
-      - 日本(油管:破解资源君2.0) 14
-      - 台湾(油管:破解资源君2.0) 3
-      - 日本(油管:破解资源君2.0) 15
-      - 日本(油管:破解资源君2.0) 10
-      - 新加坡(油管:破解资源君2.0) 4
-      - 欧洲(油管:破解资源君2.0) 3
-      - 日本(油管:破解资源君2.0) 6
-      - 日本(油管:破解资源君2.0) 9
-      - 日本(油管:破解资源君2.0) 12
-      - 日本(油管:破解资源君2.0) 13
-      - 日本(油管:破解资源君2.0) 11
-      - 日本(油管:破解资源君2.0) 7
-      - 台湾(油管:破解资源君2.0) 20
-      - 新加坡(油管:破解资源君2.0) 57
-      - 日本(油管:破解资源君2.0) 3
-      - 新加坡(油管:破解资源君2.0) 7
+      - 美国(油管:破解资源君2.0)
+      - NONE
+      - NONE 2
+      - NONE 3
+      - NONE 4
+      - NONE 5
+      - NONE 6
+      - NONE 7
+      - NONE 8
+      - NONE 9
+      - NONE 10
+      - NONE 11
+      - NONE 12
+      - 欧洲(油管:破解资源君2.0) 24
+      - ""
+      - 欧洲(油管:破解资源君2.0) 16
+      - NONE 13
+      - NONE 14
+      - NONE 15
+      - NONE 16
+      - 欧洲(油管:破解资源君2.0) 10
+      - 亚洲(油管:破解资源君2.0) 3
+      - NONE 17
+      - 欧洲(油管:破解资源君2.0) 57
+      - NONE 18
+      - NONE 19
+      - NONE 20
+      - NONE 21
+      - " 2"
+      - NONE 22
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - US 2 → openitsub.com
-      - HK 4 → openitsub.com
-      - 美国(油管:破解资源君2.0) 8
-      - 日本(油管:破解资源君2.0) 2
-      - 美国(油管:破解资源君2.0) 16
-      - 美国(油管:破解资源君2.0) 11
-      - 美国(油管:破解资源君2.0) 7
-      - 美国(油管:破解资源君2.0) 15
-      - 美国(油管:破解资源君2.0) 20
-      - 美国(油管:破解资源君2.0) 9
-      - US 4 → openitsub.com
-      - US 5 → openitsub.com
-      - 美国(油管:破解资源君2.0) 18
-      - US 3 → openitsub.com
-      - 美国(油管:破解资源君2.0) 21
-      - 新加坡(油管:破解资源君2.0) 39
-      - 新加坡(油管:破解资源君2.0) 24
-      - 新加坡(油管:破解资源君2.0) 41
-      - 新加坡(油管:破解资源君2.0) 14
-      - 新加坡(油管:破解资源君2.0) 32
-      - 新加坡(油管:破解资源君2.0) 36
-      - 新加坡(油管:破解资源君2.0) 38
-      - 新加坡(油管:破解资源君2.0) 52
-      - 香港(油管:破解资源君2.0) 7
-      - 香港(油管:破解资源君2.0) 6
-      - 香港(油管:破解资源君2.0) 5
-      - 新加坡(油管:破解资源君2.0) 28
-      - 新加坡(油管:破解资源君2.0) 35
-      - 香港(油管:破解资源君2.0) 13
-      - 美国(油管:破解资源君2.0) 17
-      - 新加坡(油管:破解资源君2.0) 13
-      - 新加坡(油管:破解资源君2.0) 42
-      - 新加坡(油管:破解资源君2.0) 34
-      - 台湾(油管:破解资源君2.0) 19
-      - 新加坡(油管:破解资源君2.0) 45
-      - 新加坡(油管:破解资源君2.0) 55
-      - 新加坡(油管:破解资源君2.0) 23
-      - 新加坡(油管:破解资源君2.0) 17
-      - 新加坡(油管:破解资源君2.0) 21
-      - 新加坡(油管:破解资源君2.0) 30
-      - 新加坡(油管:破解资源君2.0) 43
-      - 新加坡(油管:破解资源君2.0) 6
-      - 新加坡(油管:破解资源君2.0) 18
-      - 新加坡(油管:破解资源君2.0) 26
-      - 新加坡(油管:破解资源君2.0) 47
-      - 香港(油管:破解资源君2.0) 21
-      - 香港(油管:破解资源君2.0) 19
-      - 香港(油管:破解资源君2.0) 8
-      - 新加坡(油管:破解资源君2.0) 12
-      - 台湾(油管:破解资源君2.0) 17
-      - 台湾(油管:破解资源君2.0) 12
-      - 新加坡(油管:破解资源君2.0) 27
-      - 新加坡(油管:破解资源君2.0) 20
-      - 新加坡(油管:破解资源君2.0) 19
-      - 香港(油管:破解资源君2.0) 14
-      - 新加坡(油管:破解资源君2.0) 51
-      - 台湾(油管:破解资源君2.0) 18
-      - 台湾(油管:破解资源君2.0) 11
-      - 香港(油管:破解资源君2.0) 22
-      - 香港(油管:破解资源君2.0) 15
-      - 新加坡(油管:破解资源君2.0) 15
-      - 新加坡(油管:破解资源君2.0) 25
-      - US_276
-      - 台湾(油管:破解资源君2.0) 8
-      - 台湾(油管:破解资源君2.0) 6
-      - 香港(油管:破解资源君2.0) 17
-      - 新加坡(油管:破解资源君2.0) 44
-      - 新加坡(油管:破解资源君2.0) 59
-      - 新加坡(油管:破解资源君2.0) 40
-      - 日本(油管:破解资源君2.0) 4
-      - 台湾(油管:破解资源君2.0) 14
-      - 香港(油管:破解资源君2.0) 24
-      - 新加坡(油管:破解资源君2.0) 31
-      - 新加坡(油管:破解资源君2.0) 48
-      - 香港(油管:破解资源君2.0) 20
-      - 台湾(油管:破解资源君2.0) 9
-      - 台湾(油管:破解资源君2.0) 10
-      - 新加坡(油管:破解资源君2.0) 10
-      - 香港(油管:破解资源君2.0) 18
-      - 新加坡(油管:破解资源君2.0) 56
-      - 台湾(油管:破解资源君2.0) 7
-      - 新加坡(油管:破解资源君2.0) 5
-      - 美国(油管:破解资源君2.0) 22
-      - 台湾(油管:破解资源君2.0) 2
-      - 日本(油管:破解资源君2.0) 5
-      - 台湾(油管:破解资源君2.0) 5
-      - 日本(油管:破解资源君2.0) 8
-      - 日本(油管:破解资源君2.0) 14
-      - 台湾(油管:破解资源君2.0) 3
-      - 日本(油管:破解资源君2.0) 15
-      - 日本(油管:破解资源君2.0) 10
-      - 新加坡(油管:破解资源君2.0) 4
-      - 欧洲(油管:破解资源君2.0) 3
-      - 日本(油管:破解资源君2.0) 6
-      - 日本(油管:破解资源君2.0) 9
-      - 日本(油管:破解资源君2.0) 12
-      - 日本(油管:破解资源君2.0) 13
-      - 日本(油管:破解资源君2.0) 11
-      - 日本(油管:破解资源君2.0) 7
-      - 台湾(油管:破解资源君2.0) 20
-      - 新加坡(油管:破解资源君2.0) 57
-      - 日本(油管:破解资源君2.0) 3
-      - 新加坡(油管:破解资源君2.0) 7
+      - 美国(油管:破解资源君2.0)
+      - NONE
+      - NONE 2
+      - NONE 3
+      - NONE 4
+      - NONE 5
+      - NONE 6
+      - NONE 7
+      - NONE 8
+      - NONE 9
+      - NONE 10
+      - NONE 11
+      - NONE 12
+      - 欧洲(油管:破解资源君2.0) 24
+      - ""
+      - 欧洲(油管:破解资源君2.0) 16
+      - NONE 13
+      - NONE 14
+      - NONE 15
+      - NONE 16
+      - 欧洲(油管:破解资源君2.0) 10
+      - 亚洲(油管:破解资源君2.0) 3
+      - NONE 17
+      - 欧洲(油管:破解资源君2.0) 57
+      - NONE 18
+      - NONE 19
+      - NONE 20
+      - NONE 21
+      - " 2"
+      - NONE 22
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - US 2 → openitsub.com
-      - HK 4 → openitsub.com
-      - 美国(油管:破解资源君2.0) 8
-      - 日本(油管:破解资源君2.0) 2
-      - 美国(油管:破解资源君2.0) 16
-      - 美国(油管:破解资源君2.0) 11
-      - 美国(油管:破解资源君2.0) 7
-      - 美国(油管:破解资源君2.0) 15
-      - 美国(油管:破解资源君2.0) 20
-      - 美国(油管:破解资源君2.0) 9
-      - US 4 → openitsub.com
-      - US 5 → openitsub.com
-      - 美国(油管:破解资源君2.0) 18
-      - US 3 → openitsub.com
-      - 美国(油管:破解资源君2.0) 21
-      - 新加坡(油管:破解资源君2.0) 39
-      - 新加坡(油管:破解资源君2.0) 24
-      - 新加坡(油管:破解资源君2.0) 41
-      - 新加坡(油管:破解资源君2.0) 14
-      - 新加坡(油管:破解资源君2.0) 32
-      - 新加坡(油管:破解资源君2.0) 36
-      - 新加坡(油管:破解资源君2.0) 38
-      - 新加坡(油管:破解资源君2.0) 52
-      - 香港(油管:破解资源君2.0) 7
-      - 香港(油管:破解资源君2.0) 6
-      - 香港(油管:破解资源君2.0) 5
-      - 新加坡(油管:破解资源君2.0) 28
-      - 新加坡(油管:破解资源君2.0) 35
-      - 香港(油管:破解资源君2.0) 13
-      - 美国(油管:破解资源君2.0) 17
-      - 新加坡(油管:破解资源君2.0) 13
-      - 新加坡(油管:破解资源君2.0) 42
-      - 新加坡(油管:破解资源君2.0) 34
-      - 台湾(油管:破解资源君2.0) 19
-      - 新加坡(油管:破解资源君2.0) 45
-      - 新加坡(油管:破解资源君2.0) 55
-      - 新加坡(油管:破解资源君2.0) 23
-      - 新加坡(油管:破解资源君2.0) 17
-      - 新加坡(油管:破解资源君2.0) 21
-      - 新加坡(油管:破解资源君2.0) 30
-      - 新加坡(油管:破解资源君2.0) 43
-      - 新加坡(油管:破解资源君2.0) 6
-      - 新加坡(油管:破解资源君2.0) 18
-      - 新加坡(油管:破解资源君2.0) 26
-      - 新加坡(油管:破解资源君2.0) 47
-      - 香港(油管:破解资源君2.0) 21
-      - 香港(油管:破解资源君2.0) 19
-      - 香港(油管:破解资源君2.0) 8
-      - 新加坡(油管:破解资源君2.0) 12
-      - 台湾(油管:破解资源君2.0) 17
-      - 台湾(油管:破解资源君2.0) 12
-      - 新加坡(油管:破解资源君2.0) 27
-      - 新加坡(油管:破解资源君2.0) 20
-      - 新加坡(油管:破解资源君2.0) 19
-      - 香港(油管:破解资源君2.0) 14
-      - 新加坡(油管:破解资源君2.0) 51
-      - 台湾(油管:破解资源君2.0) 18
-      - 台湾(油管:破解资源君2.0) 11
-      - 香港(油管:破解资源君2.0) 22
-      - 香港(油管:破解资源君2.0) 15
-      - 新加坡(油管:破解资源君2.0) 15
-      - 新加坡(油管:破解资源君2.0) 25
-      - US_276
-      - 台湾(油管:破解资源君2.0) 8
-      - 台湾(油管:破解资源君2.0) 6
-      - 香港(油管:破解资源君2.0) 17
-      - 新加坡(油管:破解资源君2.0) 44
-      - 新加坡(油管:破解资源君2.0) 59
-      - 新加坡(油管:破解资源君2.0) 40
-      - 日本(油管:破解资源君2.0) 4
-      - 台湾(油管:破解资源君2.0) 14
-      - 香港(油管:破解资源君2.0) 24
-      - 新加坡(油管:破解资源君2.0) 31
-      - 新加坡(油管:破解资源君2.0) 48
-      - 香港(油管:破解资源君2.0) 20
-      - 台湾(油管:破解资源君2.0) 9
-      - 台湾(油管:破解资源君2.0) 10
-      - 新加坡(油管:破解资源君2.0) 10
-      - 香港(油管:破解资源君2.0) 18
-      - 新加坡(油管:破解资源君2.0) 56
-      - 台湾(油管:破解资源君2.0) 7
-      - 新加坡(油管:破解资源君2.0) 5
-      - 美国(油管:破解资源君2.0) 22
-      - 台湾(油管:破解资源君2.0) 2
-      - 日本(油管:破解资源君2.0) 5
-      - 台湾(油管:破解资源君2.0) 5
-      - 日本(油管:破解资源君2.0) 8
-      - 日本(油管:破解资源君2.0) 14
-      - 台湾(油管:破解资源君2.0) 3
-      - 日本(油管:破解资源君2.0) 15
-      - 日本(油管:破解资源君2.0) 10
-      - 新加坡(油管:破解资源君2.0) 4
-      - 欧洲(油管:破解资源君2.0) 3
-      - 日本(油管:破解资源君2.0) 6
-      - 日本(油管:破解资源君2.0) 9
-      - 日本(油管:破解资源君2.0) 12
-      - 日本(油管:破解资源君2.0) 13
-      - 日本(油管:破解资源君2.0) 11
-      - 日本(油管:破解资源君2.0) 7
-      - 台湾(油管:破解资源君2.0) 20
-      - 新加坡(油管:破解资源君2.0) 57
-      - 日本(油管:破解资源君2.0) 3
-      - 新加坡(油管:破解资源君2.0) 7
+      - 美国(油管:破解资源君2.0)
+      - NONE
+      - NONE 2
+      - NONE 3
+      - NONE 4
+      - NONE 5
+      - NONE 6
+      - NONE 7
+      - NONE 8
+      - NONE 9
+      - NONE 10
+      - NONE 11
+      - NONE 12
+      - 欧洲(油管:破解资源君2.0) 24
+      - ""
+      - 欧洲(油管:破解资源君2.0) 16
+      - NONE 13
+      - NONE 14
+      - NONE 15
+      - NONE 16
+      - 欧洲(油管:破解资源君2.0) 10
+      - 亚洲(油管:破解资源君2.0) 3
+      - NONE 17
+      - 欧洲(油管:破解资源君2.0) 57
+      - NONE 18
+      - NONE 19
+      - NONE 20
+      - NONE 21
+      - " 2"
+      - NONE 22
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -452,468 +160,147 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - US 2 → openitsub.com
-      - HK 4 → openitsub.com
-      - 美国(油管:破解资源君2.0) 8
-      - 日本(油管:破解资源君2.0) 2
-      - 美国(油管:破解资源君2.0) 16
-      - 美国(油管:破解资源君2.0) 11
-      - 美国(油管:破解资源君2.0) 7
-      - 美国(油管:破解资源君2.0) 15
-      - 美国(油管:破解资源君2.0) 20
-      - 美国(油管:破解资源君2.0) 9
-      - US 4 → openitsub.com
-      - US 5 → openitsub.com
-      - 美国(油管:破解资源君2.0) 18
-      - US 3 → openitsub.com
-      - 美国(油管:破解资源君2.0) 21
-      - 新加坡(油管:破解资源君2.0) 39
-      - 新加坡(油管:破解资源君2.0) 24
-      - 新加坡(油管:破解资源君2.0) 41
-      - 新加坡(油管:破解资源君2.0) 14
-      - 新加坡(油管:破解资源君2.0) 32
-      - 新加坡(油管:破解资源君2.0) 36
-      - 新加坡(油管:破解资源君2.0) 38
-      - 新加坡(油管:破解资源君2.0) 52
-      - 香港(油管:破解资源君2.0) 7
-      - 香港(油管:破解资源君2.0) 6
-      - 香港(油管:破解资源君2.0) 5
-      - 新加坡(油管:破解资源君2.0) 28
-      - 新加坡(油管:破解资源君2.0) 35
-      - 香港(油管:破解资源君2.0) 13
-      - 美国(油管:破解资源君2.0) 17
-      - 新加坡(油管:破解资源君2.0) 13
-      - 新加坡(油管:破解资源君2.0) 42
-      - 新加坡(油管:破解资源君2.0) 34
-      - 台湾(油管:破解资源君2.0) 19
-      - 新加坡(油管:破解资源君2.0) 45
-      - 新加坡(油管:破解资源君2.0) 55
-      - 新加坡(油管:破解资源君2.0) 23
-      - 新加坡(油管:破解资源君2.0) 17
-      - 新加坡(油管:破解资源君2.0) 21
-      - 新加坡(油管:破解资源君2.0) 30
-      - 新加坡(油管:破解资源君2.0) 43
-      - 新加坡(油管:破解资源君2.0) 6
-      - 新加坡(油管:破解资源君2.0) 18
-      - 新加坡(油管:破解资源君2.0) 26
-      - 新加坡(油管:破解资源君2.0) 47
-      - 香港(油管:破解资源君2.0) 21
-      - 香港(油管:破解资源君2.0) 19
-      - 香港(油管:破解资源君2.0) 8
-      - 新加坡(油管:破解资源君2.0) 12
-      - 台湾(油管:破解资源君2.0) 17
-      - 台湾(油管:破解资源君2.0) 12
-      - 新加坡(油管:破解资源君2.0) 27
-      - 新加坡(油管:破解资源君2.0) 20
-      - 新加坡(油管:破解资源君2.0) 19
-      - 香港(油管:破解资源君2.0) 14
-      - 新加坡(油管:破解资源君2.0) 51
-      - 台湾(油管:破解资源君2.0) 18
-      - 台湾(油管:破解资源君2.0) 11
-      - 香港(油管:破解资源君2.0) 22
-      - 香港(油管:破解资源君2.0) 15
-      - 新加坡(油管:破解资源君2.0) 15
-      - 新加坡(油管:破解资源君2.0) 25
-      - US_276
-      - 台湾(油管:破解资源君2.0) 8
-      - 台湾(油管:破解资源君2.0) 6
-      - 香港(油管:破解资源君2.0) 17
-      - 新加坡(油管:破解资源君2.0) 44
-      - 新加坡(油管:破解资源君2.0) 59
-      - 新加坡(油管:破解资源君2.0) 40
-      - 日本(油管:破解资源君2.0) 4
-      - 台湾(油管:破解资源君2.0) 14
-      - 香港(油管:破解资源君2.0) 24
-      - 新加坡(油管:破解资源君2.0) 31
-      - 新加坡(油管:破解资源君2.0) 48
-      - 香港(油管:破解资源君2.0) 20
-      - 台湾(油管:破解资源君2.0) 9
-      - 台湾(油管:破解资源君2.0) 10
-      - 新加坡(油管:破解资源君2.0) 10
-      - 香港(油管:破解资源君2.0) 18
-      - 新加坡(油管:破解资源君2.0) 56
-      - 台湾(油管:破解资源君2.0) 7
-      - 新加坡(油管:破解资源君2.0) 5
-      - 美国(油管:破解资源君2.0) 22
-      - 台湾(油管:破解资源君2.0) 2
-      - 日本(油管:破解资源君2.0) 5
-      - 台湾(油管:破解资源君2.0) 5
-      - 日本(油管:破解资源君2.0) 8
-      - 日本(油管:破解资源君2.0) 14
-      - 台湾(油管:破解资源君2.0) 3
-      - 日本(油管:破解资源君2.0) 15
-      - 日本(油管:破解资源君2.0) 10
-      - 新加坡(油管:破解资源君2.0) 4
-      - 欧洲(油管:破解资源君2.0) 3
-      - 日本(油管:破解资源君2.0) 6
-      - 日本(油管:破解资源君2.0) 9
-      - 日本(油管:破解资源君2.0) 12
-      - 日本(油管:破解资源君2.0) 13
-      - 日本(油管:破解资源君2.0) 11
-      - 日本(油管:破解资源君2.0) 7
-      - 台湾(油管:破解资源君2.0) 20
-      - 新加坡(油管:破解资源君2.0) 57
-      - 日本(油管:破解资源君2.0) 3
-      - 新加坡(油管:破解资源君2.0) 7
+      - 美国(油管:破解资源君2.0)
+      - NONE
+      - NONE 2
+      - NONE 3
+      - NONE 4
+      - NONE 5
+      - NONE 6
+      - NONE 7
+      - NONE 8
+      - NONE 9
+      - NONE 10
+      - NONE 11
+      - NONE 12
+      - 欧洲(油管:破解资源君2.0) 24
+      - ""
+      - 欧洲(油管:破解资源君2.0) 16
+      - NONE 13
+      - NONE 14
+      - NONE 15
+      - NONE 16
+      - 欧洲(油管:破解资源君2.0) 10
+      - 亚洲(油管:破解资源君2.0) 3
+      - NONE 17
+      - 欧洲(油管:破解资源君2.0) 57
+      - NONE 18
+      - NONE 19
+      - NONE 20
+      - NONE 21
+      - " 2"
+      - NONE 22
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港(油管:破解资源君2.0) 7
-      - 香港(油管:破解资源君2.0) 6
-      - 香港(油管:破解资源君2.0) 5
-      - 香港(油管:破解资源君2.0) 13
-      - 台湾(油管:破解资源君2.0) 19
-      - 香港(油管:破解资源君2.0) 21
-      - 香港(油管:破解资源君2.0) 19
-      - 香港(油管:破解资源君2.0) 8
-      - 台湾(油管:破解资源君2.0) 17
-      - 台湾(油管:破解资源君2.0) 12
-      - 香港(油管:破解资源君2.0) 14
-      - 台湾(油管:破解资源君2.0) 18
-      - 台湾(油管:破解资源君2.0) 11
-      - 香港(油管:破解资源君2.0) 22
-      - 香港(油管:破解资源君2.0) 15
-      - 台湾(油管:破解资源君2.0) 8
-      - 台湾(油管:破解资源君2.0) 6
-      - 香港(油管:破解资源君2.0) 17
-      - 台湾(油管:破解资源君2.0) 14
-      - 香港(油管:破解资源君2.0) 24
-      - 香港(油管:破解资源君2.0) 20
-      - 台湾(油管:破解资源君2.0) 9
-      - 台湾(油管:破解资源君2.0) 10
-      - 香港(油管:破解资源君2.0) 18
-      - 台湾(油管:破解资源君2.0) 7
-      - 台湾(油管:破解资源君2.0) 2
-      - 台湾(油管:破解资源君2.0) 5
-      - 台湾(油管:破解资源君2.0) 3
-      - 台湾(油管:破解资源君2.0) 20
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - US 2 → openitsub.com
-      - HK 4 → openitsub.com
-      - 美国(油管:破解资源君2.0) 8
-      - 日本(油管:破解资源君2.0) 2
-      - 美国(油管:破解资源君2.0) 16
-      - 美国(油管:破解资源君2.0) 11
-      - 美国(油管:破解资源君2.0) 7
-      - 美国(油管:破解资源君2.0) 15
-      - 美国(油管:破解资源君2.0) 20
-      - 美国(油管:破解资源君2.0) 9
-      - US 4 → openitsub.com
-      - US 5 → openitsub.com
-      - 美国(油管:破解资源君2.0) 18
-      - US 3 → openitsub.com
-      - 美国(油管:破解资源君2.0) 21
-      - 新加坡(油管:破解资源君2.0) 39
-      - 新加坡(油管:破解资源君2.0) 24
-      - 新加坡(油管:破解资源君2.0) 41
-      - 新加坡(油管:破解资源君2.0) 14
-      - 新加坡(油管:破解资源君2.0) 32
-      - 新加坡(油管:破解资源君2.0) 36
-      - 新加坡(油管:破解资源君2.0) 38
-      - 新加坡(油管:破解资源君2.0) 52
-      - 香港(油管:破解资源君2.0) 7
-      - 香港(油管:破解资源君2.0) 6
-      - 香港(油管:破解资源君2.0) 5
-      - 新加坡(油管:破解资源君2.0) 28
-      - 新加坡(油管:破解资源君2.0) 35
-      - 香港(油管:破解资源君2.0) 13
-      - 美国(油管:破解资源君2.0) 17
-      - 新加坡(油管:破解资源君2.0) 13
-      - 新加坡(油管:破解资源君2.0) 42
-      - 新加坡(油管:破解资源君2.0) 34
-      - 台湾(油管:破解资源君2.0) 19
-      - 新加坡(油管:破解资源君2.0) 45
-      - 新加坡(油管:破解资源君2.0) 55
-      - 新加坡(油管:破解资源君2.0) 23
-      - 新加坡(油管:破解资源君2.0) 17
-      - 新加坡(油管:破解资源君2.0) 21
-      - 新加坡(油管:破解资源君2.0) 30
-      - 新加坡(油管:破解资源君2.0) 43
-      - 新加坡(油管:破解资源君2.0) 6
-      - 新加坡(油管:破解资源君2.0) 18
-      - 新加坡(油管:破解资源君2.0) 26
-      - 新加坡(油管:破解资源君2.0) 47
-      - 香港(油管:破解资源君2.0) 21
-      - 香港(油管:破解资源君2.0) 19
-      - 香港(油管:破解资源君2.0) 8
-      - 新加坡(油管:破解资源君2.0) 12
-      - 台湾(油管:破解资源君2.0) 17
-      - 台湾(油管:破解资源君2.0) 12
-      - 新加坡(油管:破解资源君2.0) 27
-      - 新加坡(油管:破解资源君2.0) 20
-      - 新加坡(油管:破解资源君2.0) 19
-      - 香港(油管:破解资源君2.0) 14
-      - 新加坡(油管:破解资源君2.0) 51
-      - 台湾(油管:破解资源君2.0) 18
-      - 台湾(油管:破解资源君2.0) 11
-      - 香港(油管:破解资源君2.0) 22
-      - 香港(油管:破解资源君2.0) 15
-      - 新加坡(油管:破解资源君2.0) 15
-      - 新加坡(油管:破解资源君2.0) 25
-      - US_276
-      - 台湾(油管:破解资源君2.0) 8
-      - 台湾(油管:破解资源君2.0) 6
-      - 香港(油管:破解资源君2.0) 17
-      - 新加坡(油管:破解资源君2.0) 44
-      - 新加坡(油管:破解资源君2.0) 59
-      - 新加坡(油管:破解资源君2.0) 40
-      - 日本(油管:破解资源君2.0) 4
-      - 台湾(油管:破解资源君2.0) 14
-      - 香港(油管:破解资源君2.0) 24
-      - 新加坡(油管:破解资源君2.0) 31
-      - 新加坡(油管:破解资源君2.0) 48
-      - 香港(油管:破解资源君2.0) 20
-      - 台湾(油管:破解资源君2.0) 9
-      - 台湾(油管:破解资源君2.0) 10
-      - 新加坡(油管:破解资源君2.0) 10
-      - 香港(油管:破解资源君2.0) 18
-      - 新加坡(油管:破解资源君2.0) 56
-      - 台湾(油管:破解资源君2.0) 7
-      - 新加坡(油管:破解资源君2.0) 5
-      - 美国(油管:破解资源君2.0) 22
-      - 台湾(油管:破解资源君2.0) 2
-      - 日本(油管:破解资源君2.0) 5
-      - 台湾(油管:破解资源君2.0) 5
-      - 日本(油管:破解资源君2.0) 8
-      - 日本(油管:破解资源君2.0) 14
-      - 台湾(油管:破解资源君2.0) 3
-      - 日本(油管:破解资源君2.0) 15
-      - 日本(油管:破解资源君2.0) 10
-      - 新加坡(油管:破解资源君2.0) 4
-      - 欧洲(油管:破解资源君2.0) 3
-      - 日本(油管:破解资源君2.0) 6
-      - 日本(油管:破解资源君2.0) 9
-      - 日本(油管:破解资源君2.0) 12
-      - 日本(油管:破解资源君2.0) 13
-      - 日本(油管:破解资源君2.0) 11
-      - 日本(油管:破解资源君2.0) 7
-      - 台湾(油管:破解资源君2.0) 20
-      - 新加坡(油管:破解资源君2.0) 57
-      - 日本(油管:破解资源君2.0) 3
-      - 新加坡(油管:破解资源君2.0) 7
+      - 美国(油管:破解资源君2.0)
+      - NONE
+      - NONE 2
+      - NONE 3
+      - NONE 4
+      - NONE 5
+      - NONE 6
+      - NONE 7
+      - NONE 8
+      - NONE 9
+      - NONE 10
+      - NONE 11
+      - NONE 12
+      - 欧洲(油管:破解资源君2.0) 24
+      - ""
+      - 欧洲(油管:破解资源君2.0) 16
+      - NONE 13
+      - NONE 14
+      - NONE 15
+      - NONE 16
+      - 欧洲(油管:破解资源君2.0) 10
+      - 亚洲(油管:破解资源君2.0) 3
+      - NONE 17
+      - 欧洲(油管:破解资源君2.0) 57
+      - NONE 18
+      - NONE 19
+      - NONE 20
+      - NONE 21
+      - " 2"
+      - NONE 22
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - US 2 → openitsub.com
-      - HK 4 → openitsub.com
-      - 美国(油管:破解资源君2.0) 8
-      - 日本(油管:破解资源君2.0) 2
-      - 美国(油管:破解资源君2.0) 16
-      - 美国(油管:破解资源君2.0) 11
-      - 美国(油管:破解资源君2.0) 7
-      - 美国(油管:破解资源君2.0) 15
-      - 美国(油管:破解资源君2.0) 20
-      - 美国(油管:破解资源君2.0) 9
-      - US 4 → openitsub.com
-      - US 5 → openitsub.com
-      - 美国(油管:破解资源君2.0) 18
-      - US 3 → openitsub.com
-      - 美国(油管:破解资源君2.0) 21
-      - 新加坡(油管:破解资源君2.0) 39
-      - 新加坡(油管:破解资源君2.0) 24
-      - 新加坡(油管:破解资源君2.0) 41
-      - 新加坡(油管:破解资源君2.0) 14
-      - 新加坡(油管:破解资源君2.0) 32
-      - 新加坡(油管:破解资源君2.0) 36
-      - 新加坡(油管:破解资源君2.0) 38
-      - 新加坡(油管:破解资源君2.0) 52
-      - 香港(油管:破解资源君2.0) 7
-      - 香港(油管:破解资源君2.0) 6
-      - 香港(油管:破解资源君2.0) 5
-      - 新加坡(油管:破解资源君2.0) 28
-      - 新加坡(油管:破解资源君2.0) 35
-      - 香港(油管:破解资源君2.0) 13
-      - 美国(油管:破解资源君2.0) 17
-      - 新加坡(油管:破解资源君2.0) 13
-      - 新加坡(油管:破解资源君2.0) 42
-      - 新加坡(油管:破解资源君2.0) 34
-      - 台湾(油管:破解资源君2.0) 19
-      - 新加坡(油管:破解资源君2.0) 45
-      - 新加坡(油管:破解资源君2.0) 55
-      - 新加坡(油管:破解资源君2.0) 23
-      - 新加坡(油管:破解资源君2.0) 17
-      - 新加坡(油管:破解资源君2.0) 21
-      - 新加坡(油管:破解资源君2.0) 30
-      - 新加坡(油管:破解资源君2.0) 43
-      - 新加坡(油管:破解资源君2.0) 6
-      - 新加坡(油管:破解资源君2.0) 18
-      - 新加坡(油管:破解资源君2.0) 26
-      - 新加坡(油管:破解资源君2.0) 47
-      - 香港(油管:破解资源君2.0) 21
-      - 香港(油管:破解资源君2.0) 19
-      - 香港(油管:破解资源君2.0) 8
-      - 新加坡(油管:破解资源君2.0) 12
-      - 台湾(油管:破解资源君2.0) 17
-      - 台湾(油管:破解资源君2.0) 12
-      - 新加坡(油管:破解资源君2.0) 27
-      - 新加坡(油管:破解资源君2.0) 20
-      - 新加坡(油管:破解资源君2.0) 19
-      - 香港(油管:破解资源君2.0) 14
-      - 新加坡(油管:破解资源君2.0) 51
-      - 台湾(油管:破解资源君2.0) 18
-      - 台湾(油管:破解资源君2.0) 11
-      - 香港(油管:破解资源君2.0) 22
-      - 香港(油管:破解资源君2.0) 15
-      - 新加坡(油管:破解资源君2.0) 15
-      - 新加坡(油管:破解资源君2.0) 25
-      - US_276
-      - 台湾(油管:破解资源君2.0) 8
-      - 台湾(油管:破解资源君2.0) 6
-      - 香港(油管:破解资源君2.0) 17
-      - 新加坡(油管:破解资源君2.0) 44
-      - 新加坡(油管:破解资源君2.0) 59
-      - 新加坡(油管:破解资源君2.0) 40
-      - 日本(油管:破解资源君2.0) 4
-      - 台湾(油管:破解资源君2.0) 14
-      - 香港(油管:破解资源君2.0) 24
-      - 新加坡(油管:破解资源君2.0) 31
-      - 新加坡(油管:破解资源君2.0) 48
-      - 香港(油管:破解资源君2.0) 20
-      - 台湾(油管:破解资源君2.0) 9
-      - 台湾(油管:破解资源君2.0) 10
-      - 新加坡(油管:破解资源君2.0) 10
-      - 香港(油管:破解资源君2.0) 18
-      - 新加坡(油管:破解资源君2.0) 56
-      - 台湾(油管:破解资源君2.0) 7
-      - 新加坡(油管:破解资源君2.0) 5
-      - 美国(油管:破解资源君2.0) 22
-      - 台湾(油管:破解资源君2.0) 2
-      - 日本(油管:破解资源君2.0) 5
-      - 台湾(油管:破解资源君2.0) 5
-      - 日本(油管:破解资源君2.0) 8
-      - 日本(油管:破解资源君2.0) 14
-      - 台湾(油管:破解资源君2.0) 3
-      - 日本(油管:破解资源君2.0) 15
-      - 日本(油管:破解资源君2.0) 10
-      - 新加坡(油管:破解资源君2.0) 4
-      - 欧洲(油管:破解资源君2.0) 3
-      - 日本(油管:破解资源君2.0) 6
-      - 日本(油管:破解资源君2.0) 9
-      - 日本(油管:破解资源君2.0) 12
-      - 日本(油管:破解资源君2.0) 13
-      - 日本(油管:破解资源君2.0) 11
-      - 日本(油管:破解资源君2.0) 7
-      - 台湾(油管:破解资源君2.0) 20
-      - 新加坡(油管:破解资源君2.0) 57
-      - 日本(油管:破解资源君2.0) 3
-      - 新加坡(油管:破解资源君2.0) 7
+      - 美国(油管:破解资源君2.0)
+      - NONE
+      - NONE 2
+      - NONE 3
+      - NONE 4
+      - NONE 5
+      - NONE 6
+      - NONE 7
+      - NONE 8
+      - NONE 9
+      - NONE 10
+      - NONE 11
+      - NONE 12
+      - 欧洲(油管:破解资源君2.0) 24
+      - ""
+      - 欧洲(油管:破解资源君2.0) 16
+      - NONE 13
+      - NONE 14
+      - NONE 15
+      - NONE 16
+      - 欧洲(油管:破解资源君2.0) 10
+      - 亚洲(油管:破解资源君2.0) 3
+      - NONE 17
+      - 欧洲(油管:破解资源君2.0) 57
+      - NONE 18
+      - NONE 19
+      - NONE 20
+      - NONE 21
+      - " 2"
+      - NONE 22
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - US 2 → openitsub.com
-      - HK 4 → openitsub.com
-      - 美国(油管:破解资源君2.0) 8
-      - 日本(油管:破解资源君2.0) 2
-      - 美国(油管:破解资源君2.0) 16
-      - 美国(油管:破解资源君2.0) 11
-      - 美国(油管:破解资源君2.0) 7
-      - 美国(油管:破解资源君2.0) 15
-      - 美国(油管:破解资源君2.0) 20
-      - 美国(油管:破解资源君2.0) 9
-      - US 4 → openitsub.com
-      - US 5 → openitsub.com
-      - 美国(油管:破解资源君2.0) 18
-      - US 3 → openitsub.com
-      - 美国(油管:破解资源君2.0) 21
-      - 新加坡(油管:破解资源君2.0) 39
-      - 新加坡(油管:破解资源君2.0) 24
-      - 新加坡(油管:破解资源君2.0) 41
-      - 新加坡(油管:破解资源君2.0) 14
-      - 新加坡(油管:破解资源君2.0) 32
-      - 新加坡(油管:破解资源君2.0) 36
-      - 新加坡(油管:破解资源君2.0) 38
-      - 新加坡(油管:破解资源君2.0) 52
-      - 香港(油管:破解资源君2.0) 7
-      - 香港(油管:破解资源君2.0) 6
-      - 香港(油管:破解资源君2.0) 5
-      - 新加坡(油管:破解资源君2.0) 28
-      - 新加坡(油管:破解资源君2.0) 35
-      - 香港(油管:破解资源君2.0) 13
-      - 美国(油管:破解资源君2.0) 17
-      - 新加坡(油管:破解资源君2.0) 13
-      - 新加坡(油管:破解资源君2.0) 42
-      - 新加坡(油管:破解资源君2.0) 34
-      - 台湾(油管:破解资源君2.0) 19
-      - 新加坡(油管:破解资源君2.0) 45
-      - 新加坡(油管:破解资源君2.0) 55
-      - 新加坡(油管:破解资源君2.0) 23
-      - 新加坡(油管:破解资源君2.0) 17
-      - 新加坡(油管:破解资源君2.0) 21
-      - 新加坡(油管:破解资源君2.0) 30
-      - 新加坡(油管:破解资源君2.0) 43
-      - 新加坡(油管:破解资源君2.0) 6
-      - 新加坡(油管:破解资源君2.0) 18
-      - 新加坡(油管:破解资源君2.0) 26
-      - 新加坡(油管:破解资源君2.0) 47
-      - 香港(油管:破解资源君2.0) 21
-      - 香港(油管:破解资源君2.0) 19
-      - 香港(油管:破解资源君2.0) 8
-      - 新加坡(油管:破解资源君2.0) 12
-      - 台湾(油管:破解资源君2.0) 17
-      - 台湾(油管:破解资源君2.0) 12
-      - 新加坡(油管:破解资源君2.0) 27
-      - 新加坡(油管:破解资源君2.0) 20
-      - 新加坡(油管:破解资源君2.0) 19
-      - 香港(油管:破解资源君2.0) 14
-      - 新加坡(油管:破解资源君2.0) 51
-      - 台湾(油管:破解资源君2.0) 18
-      - 台湾(油管:破解资源君2.0) 11
-      - 香港(油管:破解资源君2.0) 22
-      - 香港(油管:破解资源君2.0) 15
-      - 新加坡(油管:破解资源君2.0) 15
-      - 新加坡(油管:破解资源君2.0) 25
-      - US_276
-      - 台湾(油管:破解资源君2.0) 8
-      - 台湾(油管:破解资源君2.0) 6
-      - 香港(油管:破解资源君2.0) 17
-      - 新加坡(油管:破解资源君2.0) 44
-      - 新加坡(油管:破解资源君2.0) 59
-      - 新加坡(油管:破解资源君2.0) 40
-      - 日本(油管:破解资源君2.0) 4
-      - 台湾(油管:破解资源君2.0) 14
-      - 香港(油管:破解资源君2.0) 24
-      - 新加坡(油管:破解资源君2.0) 31
-      - 新加坡(油管:破解资源君2.0) 48
-      - 香港(油管:破解资源君2.0) 20
-      - 台湾(油管:破解资源君2.0) 9
-      - 台湾(油管:破解资源君2.0) 10
-      - 新加坡(油管:破解资源君2.0) 10
-      - 香港(油管:破解资源君2.0) 18
-      - 新加坡(油管:破解资源君2.0) 56
-      - 台湾(油管:破解资源君2.0) 7
-      - 新加坡(油管:破解资源君2.0) 5
-      - 美国(油管:破解资源君2.0) 22
-      - 台湾(油管:破解资源君2.0) 2
-      - 日本(油管:破解资源君2.0) 5
-      - 台湾(油管:破解资源君2.0) 5
-      - 日本(油管:破解资源君2.0) 8
-      - 日本(油管:破解资源君2.0) 14
-      - 台湾(油管:破解资源君2.0) 3
-      - 日本(油管:破解资源君2.0) 15
-      - 日本(油管:破解资源君2.0) 10
-      - 新加坡(油管:破解资源君2.0) 4
-      - 欧洲(油管:破解资源君2.0) 3
-      - 日本(油管:破解资源君2.0) 6
-      - 日本(油管:破解资源君2.0) 9
-      - 日本(油管:破解资源君2.0) 12
-      - 日本(油管:破解资源君2.0) 13
-      - 日本(油管:破解资源君2.0) 11
-      - 日本(油管:破解资源君2.0) 7
-      - 台湾(油管:破解资源君2.0) 20
-      - 新加坡(油管:破解资源君2.0) 57
-      - 日本(油管:破解资源君2.0) 3
-      - 新加坡(油管:破解资源君2.0) 7
+      - 美国(油管:破解资源君2.0)
+      - NONE
+      - NONE 2
+      - NONE 3
+      - NONE 4
+      - NONE 5
+      - NONE 6
+      - NONE 7
+      - NONE 8
+      - NONE 9
+      - NONE 10
+      - NONE 11
+      - NONE 12
+      - 欧洲(油管:破解资源君2.0) 24
+      - ""
+      - 欧洲(油管:破解资源君2.0) 16
+      - NONE 13
+      - NONE 14
+      - NONE 15
+      - NONE 16
+      - 欧洲(油管:破解资源君2.0) 10
+      - 亚洲(油管:破解资源君2.0) 3
+      - NONE 17
+      - 欧洲(油管:破解资源君2.0) 57
+      - NONE 18
+      - NONE 19
+      - NONE 20
+      - NONE 21
+      - " 2"
+      - NONE 22
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -929,109 +316,36 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - US 2 → openitsub.com
-      - HK 4 → openitsub.com
-      - 美国(油管:破解资源君2.0) 8
-      - 日本(油管:破解资源君2.0) 2
-      - 美国(油管:破解资源君2.0) 16
-      - 美国(油管:破解资源君2.0) 11
-      - 美国(油管:破解资源君2.0) 7
-      - 美国(油管:破解资源君2.0) 15
-      - 美国(油管:破解资源君2.0) 20
-      - 美国(油管:破解资源君2.0) 9
-      - US 4 → openitsub.com
-      - US 5 → openitsub.com
-      - 美国(油管:破解资源君2.0) 18
-      - US 3 → openitsub.com
-      - 美国(油管:破解资源君2.0) 21
-      - 新加坡(油管:破解资源君2.0) 39
-      - 新加坡(油管:破解资源君2.0) 24
-      - 新加坡(油管:破解资源君2.0) 41
-      - 新加坡(油管:破解资源君2.0) 14
-      - 新加坡(油管:破解资源君2.0) 32
-      - 新加坡(油管:破解资源君2.0) 36
-      - 新加坡(油管:破解资源君2.0) 38
-      - 新加坡(油管:破解资源君2.0) 52
-      - 香港(油管:破解资源君2.0) 7
-      - 香港(油管:破解资源君2.0) 6
-      - 香港(油管:破解资源君2.0) 5
-      - 新加坡(油管:破解资源君2.0) 28
-      - 新加坡(油管:破解资源君2.0) 35
-      - 香港(油管:破解资源君2.0) 13
-      - 美国(油管:破解资源君2.0) 17
-      - 新加坡(油管:破解资源君2.0) 13
-      - 新加坡(油管:破解资源君2.0) 42
-      - 新加坡(油管:破解资源君2.0) 34
-      - 台湾(油管:破解资源君2.0) 19
-      - 新加坡(油管:破解资源君2.0) 45
-      - 新加坡(油管:破解资源君2.0) 55
-      - 新加坡(油管:破解资源君2.0) 23
-      - 新加坡(油管:破解资源君2.0) 17
-      - 新加坡(油管:破解资源君2.0) 21
-      - 新加坡(油管:破解资源君2.0) 30
-      - 新加坡(油管:破解资源君2.0) 43
-      - 新加坡(油管:破解资源君2.0) 6
-      - 新加坡(油管:破解资源君2.0) 18
-      - 新加坡(油管:破解资源君2.0) 26
-      - 新加坡(油管:破解资源君2.0) 47
-      - 香港(油管:破解资源君2.0) 21
-      - 香港(油管:破解资源君2.0) 19
-      - 香港(油管:破解资源君2.0) 8
-      - 新加坡(油管:破解资源君2.0) 12
-      - 台湾(油管:破解资源君2.0) 17
-      - 台湾(油管:破解资源君2.0) 12
-      - 新加坡(油管:破解资源君2.0) 27
-      - 新加坡(油管:破解资源君2.0) 20
-      - 新加坡(油管:破解资源君2.0) 19
-      - 香港(油管:破解资源君2.0) 14
-      - 新加坡(油管:破解资源君2.0) 51
-      - 台湾(油管:破解资源君2.0) 18
-      - 台湾(油管:破解资源君2.0) 11
-      - 香港(油管:破解资源君2.0) 22
-      - 香港(油管:破解资源君2.0) 15
-      - 新加坡(油管:破解资源君2.0) 15
-      - 新加坡(油管:破解资源君2.0) 25
-      - US_276
-      - 台湾(油管:破解资源君2.0) 8
-      - 台湾(油管:破解资源君2.0) 6
-      - 香港(油管:破解资源君2.0) 17
-      - 新加坡(油管:破解资源君2.0) 44
-      - 新加坡(油管:破解资源君2.0) 59
-      - 新加坡(油管:破解资源君2.0) 40
-      - 日本(油管:破解资源君2.0) 4
-      - 台湾(油管:破解资源君2.0) 14
-      - 香港(油管:破解资源君2.0) 24
-      - 新加坡(油管:破解资源君2.0) 31
-      - 新加坡(油管:破解资源君2.0) 48
-      - 香港(油管:破解资源君2.0) 20
-      - 台湾(油管:破解资源君2.0) 9
-      - 台湾(油管:破解资源君2.0) 10
-      - 新加坡(油管:破解资源君2.0) 10
-      - 香港(油管:破解资源君2.0) 18
-      - 新加坡(油管:破解资源君2.0) 56
-      - 台湾(油管:破解资源君2.0) 7
-      - 新加坡(油管:破解资源君2.0) 5
-      - 美国(油管:破解资源君2.0) 22
-      - 台湾(油管:破解资源君2.0) 2
-      - 日本(油管:破解资源君2.0) 5
-      - 台湾(油管:破解资源君2.0) 5
-      - 日本(油管:破解资源君2.0) 8
-      - 日本(油管:破解资源君2.0) 14
-      - 台湾(油管:破解资源君2.0) 3
-      - 日本(油管:破解资源君2.0) 15
-      - 日本(油管:破解资源君2.0) 10
-      - 新加坡(油管:破解资源君2.0) 4
-      - 欧洲(油管:破解资源君2.0) 3
-      - 日本(油管:破解资源君2.0) 6
-      - 日本(油管:破解资源君2.0) 9
-      - 日本(油管:破解资源君2.0) 12
-      - 日本(油管:破解资源君2.0) 13
-      - 日本(油管:破解资源君2.0) 11
-      - 日本(油管:破解资源君2.0) 7
-      - 台湾(油管:破解资源君2.0) 20
-      - 新加坡(油管:破解资源君2.0) 57
-      - 日本(油管:破解资源君2.0) 3
-      - 新加坡(油管:破解资源君2.0) 7
+      - 美国(油管:破解资源君2.0)
+      - NONE
+      - NONE 2
+      - NONE 3
+      - NONE 4
+      - NONE 5
+      - NONE 6
+      - NONE 7
+      - NONE 8
+      - NONE 9
+      - NONE 10
+      - NONE 11
+      - NONE 12
+      - 欧洲(油管:破解资源君2.0) 24
+      - ""
+      - 欧洲(油管:破解资源君2.0) 16
+      - NONE 13
+      - NONE 14
+      - NONE 15
+      - NONE 16
+      - 欧洲(油管:破解资源君2.0) 10
+      - 亚洲(油管:破解资源君2.0) 3
+      - NONE 17
+      - 欧洲(油管:破解资源君2.0) 57
+      - NONE 18
+      - NONE 19
+      - NONE 20
+      - NONE 21
+      - " 2"
+      - NONE 22
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
