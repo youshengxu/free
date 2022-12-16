@@ -5,343 +5,163 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: catnet-sg.gatknqh.cn:11017, server: catnet-sg.gatknqh.cn, port: 11017, type: ss, cipher: aes-128-gcm, password: 09a40621-1c88-482c-9d2a-2cb56a12dc77, udp: true}
-  - {name: catnet-sg.gatknqh.cn:11019, server: catnet-sg.gatknqh.cn, port: 11019, type: ss, cipher: aes-128-gcm, password: 09a40621-1c88-482c-9d2a-2cb56a12dc77, udp: true}
-  - {name: catnet-moble.gatknqh.cn:11034, server: catnet-moble.gatknqh.cn, port: 11034, type: ss, cipher: aes-128-gcm, password: 09a40621-1c88-482c-9d2a-2cb56a12dc77, udp: true}
-  - {name: 亚洲(油管:破解资源君2.0) 11, server: hn.xiaohouzi.club, port: 18438, type: trojan, password: 6a5cb4b7-8dad-3077-b21c-6f47e8dfb9af, sni: hn.xiaohouzi.club, skip-cert-verify: true, udp: true}
-  - {name: github.com/freefq - 香港城市电讯有限公司 1, server: hkbn03.tizi1.net, port: 443, type: vmess, uuid: 0565f51e-f7e9-4962-ab9c-61407ef581c8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /clientarea, ws-headers: {Host: hkbn03.tizi1.net}, udp: true}
-  - {name: 中国-8.76MB/s(Youtube:不良林), server: bp.i809.ml, port: 12087, type: trojan, password: b9c4f30f-0e95-4c23-80f8-b134414f43ec, sni: bp.i809.ml, skip-cert-verify: true, udp: true}
-  - {name: 亚洲(油管:破解资源君2.0), server: zf.hpar.tk, port: 20014, type: vmess, uuid: 88b256e8-84dd-353b-99ed-2ab27cec0bf5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 亚洲(油管:破解资源君2.0) 2, server: zf.hpar.tk, port: 20014, type: vmess, uuid: 88b256e8-84dd-353b-99ed-2ab27cec0bf5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 亚洲(油管:破解资源君2.0) 15, server: hn.xiaohouzi.club, port: 18437, type: trojan, password: 6a5cb4b7-8dad-3077-b21c-6f47e8dfb9af, sni: hn.xiaohouzi.club, skip-cert-verify: true, udp: true}
-  - {name: catnet-moble.gatknqh.cn:11045, server: catnet-moble.gatknqh.cn, port: 11045, type: ss, cipher: aes-128-gcm, password: 09a40621-1c88-482c-9d2a-2cb56a12dc77, udp: true}
-  - {name: 亚洲(油管:破解资源君2.0) 21, server: hnn.xiaohouzi.club, port: 47454, type: trojan, password: 6a5cb4b7-8dad-3077-b21c-6f47e8dfb9af, sni: hnn.xiaohouzi.club, skip-cert-verify: true, udp: true}
-  - {name: catnet-moble.gatknqh.cn:11040, server: catnet-moble.gatknqh.cn, port: 11040, type: ss, cipher: aes-128-gcm, password: 09a40621-1c88-482c-9d2a-2cb56a12dc77, udp: true}
-  - {name: 美国(油管:破解资源君2.0), server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /shirker, ws-headers: {Host: lvryzenkvm1gb.sharecentre.online}, udp: true}
-  - {name: 欧洲(油管:破解资源君2.0) 12, server: cf.fovi.tk, port: 2053, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /eisasqa, ws-headers: {Host: foxusovz3.fovi.tk}, udp: true}
-  - {name: 亚洲(油管:破解资源君2.0) 13, server: iplc.xiaohouzi.club, port: 20012, type: trojan, password: 6a5cb4b7-8dad-3077-b21c-6f47e8dfb9af, sni: iplc.xiaohouzi.club, skip-cert-verify: true, udp: true}
-  - {name: 欧洲(油管:破解资源君2.0), server: 190.93.246.2, port: 443, type: vmess, uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ECTCJ0DF, ws-headers: {Host: lg1.trump2023.us}, udp: true}
-  - {name: github.com/freefq - 美国RF Engineering 5, server: news.microsoft.com, port: 443, type: vmess, uuid: 532a5f12-cadb-46e4-963f-ee7c075e40f0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /pkhhvws, ws-headers: {Host: amshare.jingledev.me}, udp: true}
-  - {name: github.com/freefq - 美国CloudFlare节点 42, server: els200.jslist.tk, port: 8443, type: vmess, uuid: e30cfa80-bc2c-43df-e808-97876aee77e2, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /wo.php, ws-headers: {Host: els200.jslist.tk}, udp: true}
-  - {name: 亚洲(油管:破解资源君2.0) 20, server: hnm.xiaohouzi.club, port: 47555, type: trojan, password: 6a5cb4b7-8dad-3077-b21c-6f47e8dfb9af, sni: hnm.xiaohouzi.club, skip-cert-verify: true, udp: true}
-  - {name: "", server: hucloud.tk, port: 443, type: vmess, uuid: 2df3ed4a-4313-45f9-b742-2f02ce593a6e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /huhu, ws-headers: {Host: hucloud.tk}, udp: true}
-  - {name: 英国-2.67MB/s(Youtube:不良林), server: 172.99.190.7, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 美国(油管:破解资源君2.0) 19, server: 203.30.188.188, port: 443, type: vmess, uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ECTCJ0DF, ws-headers: {Host: lg1.trump2023.us}, udp: true}
-  - {name: 美国(油管:破解资源君2.0) 32, server: 203.30.191.191, port: 443, type: vmess, uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ECTCJ0DF, ws-headers: {Host: lg1.trump2023.us}, udp: true}
-  - {name: github.com/freefq - 美国CloudFlare节点 7, server: 190.93.244.2, port: 443, type: vmess, uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ECTCJ0DF, ws-headers: {Host: lg1.trump2023.us}, udp: true}
-  - {name: github.com/freefq - 美国RF Engineering 32, server: news.microsoft.com, port: 443, type: vmess, uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ECTCJ0DF, ws-headers: {Host: lg1.trump2023.us}, udp: true}
+  - {name: 台湾(油管:破解资源君), server: hinet1261.gfwisbest.xyz, port: 224, type: vmess, uuid: 2285133e-b9ba-3fb5-a246-9c7ddcc2cd7a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: ZZ_497, server: 103.172.116.5, port: 9003, type: ss, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP, udp: true}
+  - {name: 欧洲(油管:破解资源君2.0) 15, server: 185.162.228.229, port: 443, type: vmess, uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /5QNROSRV, ws-headers: {Host: oplg1.zhujicn2.com}, udp: true}
+  - {name: 亚洲(油管:破解资源君2.0) 9, server: hnm.xiaohouzi.club, port: 47555, type: trojan, password: 6a5cb4b7-8dad-3077-b21c-6f47e8dfb9af, sni: hnm.xiaohouzi.club, skip-cert-verify: true, udp: true}
+  - {name: ZZ_494, server: 103.172.116.5, port: 9045, type: ss, cipher: aes-256-cfb, password: Lp27rqyJq72bZsqX, udp: true}
+  - {name: 亚洲(油管:破解资源君) 6, server: hn.xiaohouzi.club, port: 16012, type: trojan, password: 6a5cb4b7-8dad-3077-b21c-6f47e8dfb9af, sni: hn.xiaohouzi.club, skip-cert-verify: true, udp: true}
+  - {name: 亚洲(油管:破解资源君), server: 103.167.196.48, port: 80, type: vmess, uuid: 56716a96-a265-448c-8969-03e626889580, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: dl.kgvn.garenanow.com}, udp: true}
+  - {name: 欧洲(油管:破解资源君) 3, server: 15.235.147.186, port: 80, type: vmess, uuid: 6fea1649-425b-4092-bf53-29792152c925, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /sshkit/Ertusg86/635014638c264/, ws-headers: {Host: 15.235.147.186}, udp: true}
+  - {name: Relay_🇹🇼TW-🏁ZZ_275, server: 211.72.35.158, port: 3389, type: trojan, password: 7b06d22a8a7c764f, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 台湾省台北市中华电信 4, server: 1.171.191.234, port: 224, type: vmess, uuid: 2285133e-b9ba-3fb5-a246-9c7ddcc2cd7a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 亚洲(油管:破解资源君2.0) 6, server: hnn.xiaohouzi.club, port: 47454, type: trojan, password: 6a5cb4b7-8dad-3077-b21c-6f47e8dfb9af, sni: hnn.xiaohouzi.club, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 美国CloudFlare公司CDN节点 21, server: hohm.microsoft.com, port: 443, type: vmess, uuid: 4612618c-24cd-4379-9924-cfdf3d61fa5a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /IYKLD53M, ws-headers: {Host: opfr1.v2rayfree1.xyz}, udp: true}
+  - {name: 亚洲(油管:破解资源君2.0) 10, server: hn.xiaohouzi.club, port: 18437, type: trojan, password: 6a5cb4b7-8dad-3077-b21c-6f47e8dfb9af, sni: hn.xiaohouzi.club, skip-cert-verify: true, udp: true}
+  - {name: 美国(油管:破解资源君) 3, server: xjp4h.mayaa.ml, port: 443, type: vmess, uuid: 82d5ea73-8002-4319-cd3c-29d1560bd290, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /dsadsa1dsadsa33434, ws-headers: {Host: xjp4h.mayaa.ml}, udp: true}
+  - {name: 美国(油管:破解资源君2.0) 15 3, server: sg-lb.vhax.net, port: 80, type: vmess, uuid: 6fea1649-425b-4092-bf53-29792152c925, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /sshkit/Ertusg86/635014638c264/, ws-headers: {Host: zoom.us}, udp: true}
+  - {name: Relay_🇨🇳CN-🇹🇼TW_36, server: official.taipeicitygovernment.cn.ua, port: 8443, type: trojan, password: 96983eb4-c8f1-316e-ab00-500014ed3d8b, sni: official.taipeicitygovernment.cn.ua, skip-cert-verify: true, udp: true}
+  - {name: CA_32, server: cat-1.opensvr.net, port: 443, type: trojan, password: opentunnel.net-sdertyuijh, sni: cat-1.opensvr.net, skip-cert-verify: true, udp: true}
+  - {name: 美国(油管:破解资源君2.0) 13, server: 23.227.38.40, port: 443, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /A2DJOPFT, ws-headers: {Host: lg10.cfcdn1.xyz}, udp: true}
+  - {name: 欧洲(油管:破解资源君2.0) 17, server: 45.64.22.22, port: 443, type: vmess, uuid: 4bd74c27-d23a-4083-be2a-5c2c139dadb4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /P3gjm, ws-headers: {Host: g.pgypgykmoljklj.xyz}, udp: true}
+  - {name: Relay_🏁ZZ-🇱🇹LT_505, server: 45.11.104.94, port: 3389, type: trojan, password: d4e41ff772c7fd45, skip-cert-verify: true, udp: true}
+  - {name: DE_63, server: 165.227.155.35, port: 80, type: vmess, uuid: fb8cab39-962f-4a70-8ed5-48aad413dd9d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /graphql, ws-headers: {Host: 165.227.155.35}, udp: true}
+  - {name: Relay_🇯🇵JP-🇯🇵JP_178, server: trs17.bolab.net, port: 22, type: trojan, password: 40c89b10235c40321e7a3cef82b53a03, sni: trs17.bolab.net, skip-cert-verify: true, udp: true}
   - {name: 欧洲(油管:破解资源君2.0) 5, server: sun.prxpro.cc, port: 80, type: vmess, uuid: 4ddd24d6-d901-5e5f-9a7c-080015c2e246, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /p3573l6m92h1ham3q23t, ws-headers: {Host: sun.prxpro.cc}, udp: true}
-  - {name: 欧洲(油管:破解资源君2.0) 2, server: 141.101.114.30, port: 443, type: vmess, uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ECTCJ0DF, ws-headers: {Host: lg1.trump2023.us}, udp: true}
-  - {name: 美国(油管:破解资源君) 34, server: 172.67.199.34, port: 443, type: vmess, uuid: c6747da4-fb2e-4a2a-bdb7-8614bdd6b0b3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /sshkit/1736960111/63859b5b38f53/, ws-headers: {Host: sg1-v2ray.sshkit.org}, udp: true}
-  - {name: 未知国家-2.52MB/s(Youtube:不良林), server: 198.41.203.6, port: 443, type: vmess, uuid: 2b214122-1906-428a-bbb7-a039cbb7cd5c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /9JZFDTKE, ws-headers: {Host: fr1.trump2023.org}, udp: true}
-  - {name: 美国-3.06MB/s(Youtube:不良林), server: 172.67.151.163, port: 2082, type: vmess, uuid: cf4a47e2-f2be-4121-d7f4-67f0c7789796, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /aries, ws-headers: {Host: Fi.CLOUDFLARE.QUEST}, udp: true}
-  - {name: 亚洲(油管:破解资源君2.0) 17, server: hn.xiaohouzi.club, port: 18460, type: trojan, password: 6a5cb4b7-8dad-3077-b21c-6f47e8dfb9af, sni: hn.xiaohouzi.club, skip-cert-verify: true, udp: true}
-  - {name: 美国(油管:破解资源君2.0) 2, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /shirker, ws-headers: {Host: sg-gcore-2.sharecentre.online}, udp: true}
-  - {name: 美国(油管:破解资源君2.0) 4, server: news.microsoft.com, port: 443, type: vmess, uuid: e3eba3ac-5bea-409f-ac5c-6c964e04d0c4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /sshocean, ws-headers: {Host: ca2.v2rayserv.com}, udp: true}
-  - {name: 美国(油管:破解资源君2.0) 42, server: 188.114.99.9, port: 443, type: vmess, uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ECTCJ0DF, ws-headers: {Host: lg1.trump2023.us}, udp: true}
-  - {name: catnet-moble.gatknqh.cn:11047, server: catnet-moble.gatknqh.cn, port: 11047, type: ss, cipher: aes-128-gcm, password: 09a40621-1c88-482c-9d2a-2cb56a12dc77, udp: true}
-  - {name: github.com/freefq - 美国CloudFlare节点 38, server: amshare.jingledev.me, port: 443, type: vmess, uuid: 532a5f12-cadb-46e4-963f-ee7c075e40f0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /pkhhvws, ws-headers: {Host: amshare.jingledev.me}, udp: true}
-  - {name: catnet-moble.gatknqh.cn:11048, server: catnet-moble.gatknqh.cn, port: 11048, type: ss, cipher: aes-128-gcm, password: 09a40621-1c88-482c-9d2a-2cb56a12dc77, udp: true}
-  - {name: 美国(油管:破解资源君) 36, server: 172.67.199.34, port: 443, type: vmess, uuid: 6fea1649-425b-4092-bf53-29792152c925, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /sshkit/fdfadsfa/63848bfe228fd/, ws-headers: {Host: us-lb.sshkit.org}, udp: true}
-  - {name: 欧洲(油管:破解资源君2.0) 25, server: 198.41.212.123, port: 443, type: vmess, uuid: 4612618c-24cd-4379-9924-cfdf3d61fa5a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /IYKLD53M, ws-headers: {Host: opfr1.v2rayfree1.xyz}, udp: true}
-  - {name: 亚洲(油管:破解资源君2.0) 22, server: hnm.xiaohouzi.club, port: 19354, type: trojan, password: 6a5cb4b7-8dad-3077-b21c-6f47e8dfb9af, sni: hnm.xiaohouzi.club, skip-cert-verify: true, udp: true}
-  - {name: 伯利兹-3.46MB/s(Youtube:不良林), server: 203.30.189.189, port: 443, type: vmess, uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ECTCJ0DF, ws-headers: {Host: lg1.trump2023.us}, udp: true}
-  - {name: 塞浦路斯-1.92MB/s(Youtube:不良林), server: 203.24.108.9, port: 443, type: vmess, uuid: 4612618c-24cd-4379-9924-cfdf3d61fa5a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /IYKLD53M, ws-headers: {Host: opfr1.v2rayfree1.xyz}, udp: true}
-  - {name: 欧洲(油管:破解资源君) 43, server: 141.193.213.20, port: 443, type: vmess, uuid: c6747da4-fb2e-4a2a-bdb7-8614bdd6b0b3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /sshkit/1736960111/63859b5b38f53/, ws-headers: {Host: sg1-v2ray.sshkit.org}, udp: true}
-  - {name: 中国-5.88MB/s(Youtube:不良林), server: hkt-detour-05.wallthefool.org, port: 15105, type: vmess, uuid: 82e1bd96-731a-446e-a859-a036cd2cbab8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 欧洲(油管:破解资源君2.0) 3, server: 198.41.203.5, port: 443, type: vmess, uuid: 4612618c-24cd-4379-9924-cfdf3d61fa5a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /IYKLD53M, ws-headers: {Host: opfr1.v2rayfree1.xyz}, udp: true}
-  - {name: 伯利兹-4.26MB/s(Youtube:不良林), server: 203.30.190.190, port: 443, type: vmess, uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ECTCJ0DF, ws-headers: {Host: lg1.trump2023.us}, udp: true}
-  - {name: 欧洲(油管:破解资源君2.0) 19, server: 141.101.114.134, port: 443, type: vmess, uuid: 4612618c-24cd-4379-9924-cfdf3d61fa5a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /IYKLD53M, ws-headers: {Host: opfr1.v2rayfree1.xyz}, udp: true}
-  - {name: 欧洲(油管:破解资源君2.0) 28, server: uicdn.cf, port: 80, type: vmess, uuid: c6747da4-fb2e-4a2a-bdb7-8614bdd6b0b3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /sshkit/1736960111/63859bc177a33/, ws-headers: {Host: sg3-v2ray.sshkit.org}, udp: true}
-  - {name: 美国(油管:破解资源君2.0) 17, server: 23.227.38.38, port: 443, type: vmess, uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ECTCJ0DF, ws-headers: {Host: lg1.trump2023.us}, udp: true}
-  - {name: 亚美尼亚-5.43MB/s(Youtube:不良林), server: 185.162.228.228, port: 443, type: vmess, uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ECTCJ0DF, ws-headers: {Host: lg1.trump2023.us}, udp: true}
-  - {name: 美国(油管:破解资源君2.0) 3, server: 141.101.115.30, port: 443, type: vmess, uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ECTCJ0DF, ws-headers: {Host: lg1.trump2023.us}, udp: true}
-  - {name: 亚洲(油管:破解资源君2.0) 18, server: gz01.xiaohouzi.club, port: 37548, type: trojan, password: 6a5cb4b7-8dad-3077-b21c-6f47e8dfb9af, sni: gz01.xiaohouzi.club, skip-cert-verify: true, udp: true}
-  - {name: 欧洲(油管:破解资源君2.0) 14, server: fbi.gov, port: 2086, type: vmess, uuid: 929029a5-9d88-4e2f-ee35-918fea716b77, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /@heinuhome, ws-headers: {Host: heinuhome-gcore-singapore.heinu.cf}, udp: true}
-  - {name: github.com/freefq - 美国CloudFlare节点 16, server: hohm.microsoft.com, port: 443, type: vmess, uuid: e3eba3ac-5bea-409f-ac5c-6c964e04d0c4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: ca2.v2rayserv.com}, udp: true}
-  - {name: 未知国家-4.81MB/s(Youtube:不良林), server: 141.101.115.100, port: 443, type: vmess, uuid: 2b214122-1906-428a-bbb7-a039cbb7cd5c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /9JZFDTKE, ws-headers: {Host: fr1.trump2023.org}, udp: true}
-  - {name: 美国-6.25MB/s(Youtube:不良林), server: 141.193.213.20, port: 2053, type: vmess, uuid: ce02a636-88ac-4c29-963d-e09961ec3b3d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /DQsafRJn/, ws-headers: {Host: v2ray.wefuckgfw.ga}, udp: true}
-  - {name: 欧洲(油管:破解资源君) 18, server: 196.247.59.156, port: 801, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: 欧洲(油管:破解资源君2.0) 16, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /shirker, ws-headers: {Host: sg-gcore.sharecentre.online}, udp: true}
+  - {name: 欧洲(油管:破解资源君) 38, server: 203.30.189.190, port: 443, type: vmess, uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /5QNROSRV, ws-headers: {Host: oplg1.zhujicn2.com}, udp: true}
   - {name: 亚美尼亚-4.23MB/s(Youtube:不良林), server: 185.162.228.229, port: 443, type: vmess, uuid: 4612618c-24cd-4379-9924-cfdf3d61fa5a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /IYKLD53M, ws-headers: {Host: opfr1.v2rayfree1.xyz}, udp: true}
-  - {name: 欧洲(油管:破解资源君2.0) 4, server: 203.24.108.8, port: 443, type: vmess, uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ECTCJ0DF, ws-headers: {Host: lg1.trump2023.us}, udp: true}
-  - {name: 加拿大-926.4KB/s(Youtube:不良林), server: 196.247.59.156, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: 美国-3.38MB/s(Youtube:不良林), server: xjp4h.mayaa.ml, port: 443, type: vmess, uuid: 82d5ea73-8002-4319-cd3c-29d1560bd290, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /dsadsa1dsadsa33434, ws-headers: {Host: xjp4h.mayaa.ml}, udp: true}
-  - {name: 德国-2.26MB/s(Youtube:不良林), server: 193.176.86.190, port: 810, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: 荷兰-1.67MB/s(Youtube:不良林), server: 213.183.59.209, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
-  - {name: 欧洲(油管:破解资源君) 22, server: 196.247.59.156, port: 804, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: 欧洲(油管:破解资源君) 20, server: 196.247.59.156, port: 811, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: 未知国家-1.28MB/s(Youtube:不良林), server: 198.41.212.122, port: 443, type: vmess, uuid: 2b214122-1906-428a-bbb7-a039cbb7cd5c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /9JZFDTKE, ws-headers: {Host: fr1.trump2023.org}, udp: true}
-  - {name: 欧洲(油管:破解资源君) 24, server: 196.247.59.156, port: 808, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: 欧洲(油管:破解资源君) 21, server: 196.247.59.156, port: 803, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: 欧洲(油管:破解资源君2.0) 24, server: 190.93.244.200, port: 443, type: vmess, uuid: 4612618c-24cd-4379-9924-cfdf3d61fa5a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /IYKLD53M, ws-headers: {Host: opfr1.v2rayfree1.xyz}, udp: true}
-  - {name: 欧洲(油管:破解资源君2.0) 20, server: 141.101.115.134, port: 443, type: vmess, uuid: 4612618c-24cd-4379-9924-cfdf3d61fa5a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /IYKLD53M, ws-headers: {Host: opfr1.v2rayfree1.xyz}, udp: true}
-  - {name: 美国(油管:破解资源君2.0) 5, server: 141.193.213.20, port: 443, type: vmess, uuid: 4612618c-24cd-4379-9924-cfdf3d61fa5a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /IYKLD53M, ws-headers: {Host: opfr1.v2rayfree1.xyz}, udp: true}
-  - {name: 欧洲(油管:破解资源君) 23, server: 196.247.59.156, port: 806, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: 美国(油管:破解资源君2.0) 6, server: cacerts.digicert.com, port: 443, type: vmess, uuid: c6747da4-fb2e-4a2a-bdb7-8614bdd6b0b3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /sshkit/1736960111/63859b5b38f53/, ws-headers: {Host: sg1-v2ray.sshkit.org}, udp: true}
-  - {name: 欧洲(油管:破解资源君2.0) 23, server: 103.21.244.160, port: 2086, type: vmess, uuid: e3cfb09c-deb9-4a83-d5e3-1c96ea2d93b1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /aries, ws-headers: {Host: azstu.cloudflare.quest}, udp: true}
-  - {name: 未知国家-3.68MB/s(Youtube:不良林), server: 190.93.245.170, port: 443, type: vmess, uuid: 4612618c-24cd-4379-9924-cfdf3d61fa5a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /IYKLD53M, ws-headers: {Host: opfr1.v2rayfree1.xyz}, udp: true}
-  - {name: 美国-4.68MB/s(Youtube:不良林), server: 172.67.199.34, port: 443, type: vmess, uuid: c6747da4-fb2e-4a2a-bdb7-8614bdd6b0b3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /sshkit/1736960111/63859bc177a33/, ws-headers: {Host: sg3-v2ray.sshkit.org}, udp: true}
-  - {name: 荷兰-1.38MB/s(Youtube:不良林), server: 213.183.59.209, port: 9050, type: ss, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE, udp: true}
-  - {name: 美国(油管:破解资源君2.0) 17 2, server: main.millionaireaisle.com, port: 443, type: vmess, uuid: 2b214122-1906-428a-bbb7-a039cbb7cd5c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /9JZFDTKE, ws-headers: {Host: fr1.trump2023.org}, udp: true}
-  - {name: 美国(油管:破解资源君2.0) 7, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /shirker, ws-headers: {Host: jp-gcore.sharecentre.online}, udp: true}
-  - {name: 欧洲(油管:破解资源君2.0) 22, server: 190.93.246.195, port: 443, type: vmess, uuid: 4612618c-24cd-4379-9924-cfdf3d61fa5a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /IYKLD53M, ws-headers: {Host: opfr1.v2rayfree1.xyz}, udp: true}
+  - {name: 美国(油管:破解资源君) 4, server: els200.jslist.tk, port: 8443, type: vmess, uuid: e30cfa80-bc2c-43df-e808-97876aee77e2, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /wo.php, ws-headers: {Host: els200.jslist.tk}, udp: true}
+  - {name: 亚洲(油管:破解资源君) 3, server: 103.167.196.48, port: 80, type: vmess, uuid: 56716a96-a265-448c-8969-03e626889580, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 103.167.196.48}, udp: true}
+  - {name: 欧洲(油管:破解资源君) 26, server: 203.30.190.191, port: 443, type: vmess, uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /5QNROSRV, ws-headers: {Host: oplg1.zhujicn2.com}, udp: true}
+  - {name: ZZ_506, server: 103.173.255.21, port: 443, type: trojan, password: 5623be5f-c9da-4511-81a9-b4b39b16edae, skip-cert-verify: true, udp: true}
+  - {name: ZZ_504, server: 103.173.255.234, port: 443, type: trojan, password: 5623be5f-c9da-4511-81a9-b4b39b16edae, skip-cert-verify: true, udp: true}
+  - {name: 欧洲(油管:破解资源君) 23, server: 23.227.38.39, port: 443, type: vmess, uuid: 4612618c-24cd-4379-9924-cfdf3d61fa5a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /IYKLD53M, ws-headers: {Host: opfr1.v2rayfree1.xyz}, udp: true}
+  - {name: 欧洲(油管:破解资源君2.0) 2 2, server: v2ray.wefuckgfw.ga, port: 2053, type: vmess, uuid: 2c23eb31-1133-4807-818e-484d9a473b9b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /DQsafRJn/, ws-headers: {Host: v2ray.wefuckgfw.ga}, udp: true}
+  - {name: ZZ_485, server: 103.172.116.5, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
+  - {name: 美国(油管:破解资源君2.0) 7, server: 203.30.191.192, port: 443, type: vmess, uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /5QNROSRV, ws-headers: {Host: oplg1.zhujicn2.com}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - catnet-sg.gatknqh.cn:11017
-      - catnet-sg.gatknqh.cn:11019
-      - catnet-moble.gatknqh.cn:11034
-      - 亚洲(油管:破解资源君2.0) 11
-      - github.com/freefq - 香港城市电讯有限公司 1
-      - 中国-8.76MB/s(Youtube:不良林)
-      - 亚洲(油管:破解资源君2.0)
-      - 亚洲(油管:破解资源君2.0) 2
-      - 亚洲(油管:破解资源君2.0) 15
-      - catnet-moble.gatknqh.cn:11045
-      - 亚洲(油管:破解资源君2.0) 21
-      - catnet-moble.gatknqh.cn:11040
-      - 美国(油管:破解资源君2.0)
-      - 欧洲(油管:破解资源君2.0) 12
-      - 亚洲(油管:破解资源君2.0) 13
-      - 欧洲(油管:破解资源君2.0)
-      - github.com/freefq - 美国RF Engineering 5
-      - github.com/freefq - 美国CloudFlare节点 42
-      - 亚洲(油管:破解资源君2.0) 20
-      - ""
-      - 英国-2.67MB/s(Youtube:不良林)
-      - 美国(油管:破解资源君2.0) 19
-      - 美国(油管:破解资源君2.0) 32
-      - github.com/freefq - 美国CloudFlare节点 7
-      - github.com/freefq - 美国RF Engineering 32
+      - 台湾(油管:破解资源君)
+      - ZZ_497
+      - 欧洲(油管:破解资源君2.0) 15
+      - 亚洲(油管:破解资源君2.0) 9
+      - ZZ_494
+      - 亚洲(油管:破解资源君) 6
+      - 亚洲(油管:破解资源君)
+      - 欧洲(油管:破解资源君) 3
+      - Relay_🇹🇼TW-🏁ZZ_275
+      - github.com/freefq - 台湾省台北市中华电信 4
+      - 亚洲(油管:破解资源君2.0) 6
+      - github.com/freefq - 美国CloudFlare公司CDN节点 21
+      - 亚洲(油管:破解资源君2.0) 10
+      - 美国(油管:破解资源君) 3
+      - 美国(油管:破解资源君2.0) 15 3
+      - Relay_🇨🇳CN-🇹🇼TW_36
+      - CA_32
+      - 美国(油管:破解资源君2.0) 13
+      - 欧洲(油管:破解资源君2.0) 17
+      - Relay_🏁ZZ-🇱🇹LT_505
+      - DE_63
+      - Relay_🇯🇵JP-🇯🇵JP_178
       - 欧洲(油管:破解资源君2.0) 5
-      - 欧洲(油管:破解资源君2.0) 2
-      - 美国(油管:破解资源君) 34
-      - 未知国家-2.52MB/s(Youtube:不良林)
-      - 美国-3.06MB/s(Youtube:不良林)
-      - 亚洲(油管:破解资源君2.0) 17
-      - 美国(油管:破解资源君2.0) 2
-      - 美国(油管:破解资源君2.0) 4
-      - 美国(油管:破解资源君2.0) 42
-      - catnet-moble.gatknqh.cn:11047
-      - github.com/freefq - 美国CloudFlare节点 38
-      - catnet-moble.gatknqh.cn:11048
-      - 美国(油管:破解资源君) 36
-      - 欧洲(油管:破解资源君2.0) 25
-      - 亚洲(油管:破解资源君2.0) 22
-      - 伯利兹-3.46MB/s(Youtube:不良林)
-      - 塞浦路斯-1.92MB/s(Youtube:不良林)
-      - 欧洲(油管:破解资源君) 43
-      - 中国-5.88MB/s(Youtube:不良林)
-      - 欧洲(油管:破解资源君2.0) 3
-      - 伯利兹-4.26MB/s(Youtube:不良林)
-      - 欧洲(油管:破解资源君2.0) 19
-      - 欧洲(油管:破解资源君2.0) 28
-      - 美国(油管:破解资源君2.0) 17
-      - 亚美尼亚-5.43MB/s(Youtube:不良林)
-      - 美国(油管:破解资源君2.0) 3
-      - 亚洲(油管:破解资源君2.0) 18
-      - 欧洲(油管:破解资源君2.0) 14
-      - github.com/freefq - 美国CloudFlare节点 16
-      - 未知国家-4.81MB/s(Youtube:不良林)
-      - 美国-6.25MB/s(Youtube:不良林)
-      - 欧洲(油管:破解资源君) 18
+      - 欧洲(油管:破解资源君2.0) 16
+      - 欧洲(油管:破解资源君) 38
       - 亚美尼亚-4.23MB/s(Youtube:不良林)
-      - 欧洲(油管:破解资源君2.0) 4
-      - 加拿大-926.4KB/s(Youtube:不良林)
-      - 美国-3.38MB/s(Youtube:不良林)
-      - 德国-2.26MB/s(Youtube:不良林)
-      - 荷兰-1.67MB/s(Youtube:不良林)
-      - 欧洲(油管:破解资源君) 22
-      - 欧洲(油管:破解资源君) 20
-      - 未知国家-1.28MB/s(Youtube:不良林)
-      - 欧洲(油管:破解资源君) 24
-      - 欧洲(油管:破解资源君) 21
-      - 欧洲(油管:破解资源君2.0) 24
-      - 欧洲(油管:破解资源君2.0) 20
-      - 美国(油管:破解资源君2.0) 5
+      - 美国(油管:破解资源君) 4
+      - 亚洲(油管:破解资源君) 3
+      - 欧洲(油管:破解资源君) 26
+      - ZZ_506
+      - ZZ_504
       - 欧洲(油管:破解资源君) 23
-      - 美国(油管:破解资源君2.0) 6
-      - 欧洲(油管:破解资源君2.0) 23
-      - 未知国家-3.68MB/s(Youtube:不良林)
-      - 美国-4.68MB/s(Youtube:不良林)
-      - 荷兰-1.38MB/s(Youtube:不良林)
-      - 美国(油管:破解资源君2.0) 17 2
+      - 欧洲(油管:破解资源君2.0) 2 2
+      - ZZ_485
       - 美国(油管:破解资源君2.0) 7
-      - 欧洲(油管:破解资源君2.0) 22
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - catnet-sg.gatknqh.cn:11017
-      - catnet-sg.gatknqh.cn:11019
-      - catnet-moble.gatknqh.cn:11034
-      - 亚洲(油管:破解资源君2.0) 11
-      - github.com/freefq - 香港城市电讯有限公司 1
-      - 中国-8.76MB/s(Youtube:不良林)
-      - 亚洲(油管:破解资源君2.0)
-      - 亚洲(油管:破解资源君2.0) 2
-      - 亚洲(油管:破解资源君2.0) 15
-      - catnet-moble.gatknqh.cn:11045
-      - 亚洲(油管:破解资源君2.0) 21
-      - catnet-moble.gatknqh.cn:11040
-      - 美国(油管:破解资源君2.0)
-      - 欧洲(油管:破解资源君2.0) 12
-      - 亚洲(油管:破解资源君2.0) 13
-      - 欧洲(油管:破解资源君2.0)
-      - github.com/freefq - 美国RF Engineering 5
-      - github.com/freefq - 美国CloudFlare节点 42
-      - 亚洲(油管:破解资源君2.0) 20
-      - ""
-      - 英国-2.67MB/s(Youtube:不良林)
-      - 美国(油管:破解资源君2.0) 19
-      - 美国(油管:破解资源君2.0) 32
-      - github.com/freefq - 美国CloudFlare节点 7
-      - github.com/freefq - 美国RF Engineering 32
+      - 台湾(油管:破解资源君)
+      - ZZ_497
+      - 欧洲(油管:破解资源君2.0) 15
+      - 亚洲(油管:破解资源君2.0) 9
+      - ZZ_494
+      - 亚洲(油管:破解资源君) 6
+      - 亚洲(油管:破解资源君)
+      - 欧洲(油管:破解资源君) 3
+      - Relay_🇹🇼TW-🏁ZZ_275
+      - github.com/freefq - 台湾省台北市中华电信 4
+      - 亚洲(油管:破解资源君2.0) 6
+      - github.com/freefq - 美国CloudFlare公司CDN节点 21
+      - 亚洲(油管:破解资源君2.0) 10
+      - 美国(油管:破解资源君) 3
+      - 美国(油管:破解资源君2.0) 15 3
+      - Relay_🇨🇳CN-🇹🇼TW_36
+      - CA_32
+      - 美国(油管:破解资源君2.0) 13
+      - 欧洲(油管:破解资源君2.0) 17
+      - Relay_🏁ZZ-🇱🇹LT_505
+      - DE_63
+      - Relay_🇯🇵JP-🇯🇵JP_178
       - 欧洲(油管:破解资源君2.0) 5
-      - 欧洲(油管:破解资源君2.0) 2
-      - 美国(油管:破解资源君) 34
-      - 未知国家-2.52MB/s(Youtube:不良林)
-      - 美国-3.06MB/s(Youtube:不良林)
-      - 亚洲(油管:破解资源君2.0) 17
-      - 美国(油管:破解资源君2.0) 2
-      - 美国(油管:破解资源君2.0) 4
-      - 美国(油管:破解资源君2.0) 42
-      - catnet-moble.gatknqh.cn:11047
-      - github.com/freefq - 美国CloudFlare节点 38
-      - catnet-moble.gatknqh.cn:11048
-      - 美国(油管:破解资源君) 36
-      - 欧洲(油管:破解资源君2.0) 25
-      - 亚洲(油管:破解资源君2.0) 22
-      - 伯利兹-3.46MB/s(Youtube:不良林)
-      - 塞浦路斯-1.92MB/s(Youtube:不良林)
-      - 欧洲(油管:破解资源君) 43
-      - 中国-5.88MB/s(Youtube:不良林)
-      - 欧洲(油管:破解资源君2.0) 3
-      - 伯利兹-4.26MB/s(Youtube:不良林)
-      - 欧洲(油管:破解资源君2.0) 19
-      - 欧洲(油管:破解资源君2.0) 28
-      - 美国(油管:破解资源君2.0) 17
-      - 亚美尼亚-5.43MB/s(Youtube:不良林)
-      - 美国(油管:破解资源君2.0) 3
-      - 亚洲(油管:破解资源君2.0) 18
-      - 欧洲(油管:破解资源君2.0) 14
-      - github.com/freefq - 美国CloudFlare节点 16
-      - 未知国家-4.81MB/s(Youtube:不良林)
-      - 美国-6.25MB/s(Youtube:不良林)
-      - 欧洲(油管:破解资源君) 18
+      - 欧洲(油管:破解资源君2.0) 16
+      - 欧洲(油管:破解资源君) 38
       - 亚美尼亚-4.23MB/s(Youtube:不良林)
-      - 欧洲(油管:破解资源君2.0) 4
-      - 加拿大-926.4KB/s(Youtube:不良林)
-      - 美国-3.38MB/s(Youtube:不良林)
-      - 德国-2.26MB/s(Youtube:不良林)
-      - 荷兰-1.67MB/s(Youtube:不良林)
-      - 欧洲(油管:破解资源君) 22
-      - 欧洲(油管:破解资源君) 20
-      - 未知国家-1.28MB/s(Youtube:不良林)
-      - 欧洲(油管:破解资源君) 24
-      - 欧洲(油管:破解资源君) 21
-      - 欧洲(油管:破解资源君2.0) 24
-      - 欧洲(油管:破解资源君2.0) 20
-      - 美国(油管:破解资源君2.0) 5
+      - 美国(油管:破解资源君) 4
+      - 亚洲(油管:破解资源君) 3
+      - 欧洲(油管:破解资源君) 26
+      - ZZ_506
+      - ZZ_504
       - 欧洲(油管:破解资源君) 23
-      - 美国(油管:破解资源君2.0) 6
-      - 欧洲(油管:破解资源君2.0) 23
-      - 未知国家-3.68MB/s(Youtube:不良林)
-      - 美国-4.68MB/s(Youtube:不良林)
-      - 荷兰-1.38MB/s(Youtube:不良林)
-      - 美国(油管:破解资源君2.0) 17 2
+      - 欧洲(油管:破解资源君2.0) 2 2
+      - ZZ_485
       - 美国(油管:破解资源君2.0) 7
-      - 欧洲(油管:破解资源君2.0) 22
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - catnet-sg.gatknqh.cn:11017
-      - catnet-sg.gatknqh.cn:11019
-      - catnet-moble.gatknqh.cn:11034
-      - 亚洲(油管:破解资源君2.0) 11
-      - github.com/freefq - 香港城市电讯有限公司 1
-      - 中国-8.76MB/s(Youtube:不良林)
-      - 亚洲(油管:破解资源君2.0)
-      - 亚洲(油管:破解资源君2.0) 2
-      - 亚洲(油管:破解资源君2.0) 15
-      - catnet-moble.gatknqh.cn:11045
-      - 亚洲(油管:破解资源君2.0) 21
-      - catnet-moble.gatknqh.cn:11040
-      - 美国(油管:破解资源君2.0)
-      - 欧洲(油管:破解资源君2.0) 12
-      - 亚洲(油管:破解资源君2.0) 13
-      - 欧洲(油管:破解资源君2.0)
-      - github.com/freefq - 美国RF Engineering 5
-      - github.com/freefq - 美国CloudFlare节点 42
-      - 亚洲(油管:破解资源君2.0) 20
-      - ""
-      - 英国-2.67MB/s(Youtube:不良林)
-      - 美国(油管:破解资源君2.0) 19
-      - 美国(油管:破解资源君2.0) 32
-      - github.com/freefq - 美国CloudFlare节点 7
-      - github.com/freefq - 美国RF Engineering 32
+      - 台湾(油管:破解资源君)
+      - ZZ_497
+      - 欧洲(油管:破解资源君2.0) 15
+      - 亚洲(油管:破解资源君2.0) 9
+      - ZZ_494
+      - 亚洲(油管:破解资源君) 6
+      - 亚洲(油管:破解资源君)
+      - 欧洲(油管:破解资源君) 3
+      - Relay_🇹🇼TW-🏁ZZ_275
+      - github.com/freefq - 台湾省台北市中华电信 4
+      - 亚洲(油管:破解资源君2.0) 6
+      - github.com/freefq - 美国CloudFlare公司CDN节点 21
+      - 亚洲(油管:破解资源君2.0) 10
+      - 美国(油管:破解资源君) 3
+      - 美国(油管:破解资源君2.0) 15 3
+      - Relay_🇨🇳CN-🇹🇼TW_36
+      - CA_32
+      - 美国(油管:破解资源君2.0) 13
+      - 欧洲(油管:破解资源君2.0) 17
+      - Relay_🏁ZZ-🇱🇹LT_505
+      - DE_63
+      - Relay_🇯🇵JP-🇯🇵JP_178
       - 欧洲(油管:破解资源君2.0) 5
-      - 欧洲(油管:破解资源君2.0) 2
-      - 美国(油管:破解资源君) 34
-      - 未知国家-2.52MB/s(Youtube:不良林)
-      - 美国-3.06MB/s(Youtube:不良林)
-      - 亚洲(油管:破解资源君2.0) 17
-      - 美国(油管:破解资源君2.0) 2
-      - 美国(油管:破解资源君2.0) 4
-      - 美国(油管:破解资源君2.0) 42
-      - catnet-moble.gatknqh.cn:11047
-      - github.com/freefq - 美国CloudFlare节点 38
-      - catnet-moble.gatknqh.cn:11048
-      - 美国(油管:破解资源君) 36
-      - 欧洲(油管:破解资源君2.0) 25
-      - 亚洲(油管:破解资源君2.0) 22
-      - 伯利兹-3.46MB/s(Youtube:不良林)
-      - 塞浦路斯-1.92MB/s(Youtube:不良林)
-      - 欧洲(油管:破解资源君) 43
-      - 中国-5.88MB/s(Youtube:不良林)
-      - 欧洲(油管:破解资源君2.0) 3
-      - 伯利兹-4.26MB/s(Youtube:不良林)
-      - 欧洲(油管:破解资源君2.0) 19
-      - 欧洲(油管:破解资源君2.0) 28
-      - 美国(油管:破解资源君2.0) 17
-      - 亚美尼亚-5.43MB/s(Youtube:不良林)
-      - 美国(油管:破解资源君2.0) 3
-      - 亚洲(油管:破解资源君2.0) 18
-      - 欧洲(油管:破解资源君2.0) 14
-      - github.com/freefq - 美国CloudFlare节点 16
-      - 未知国家-4.81MB/s(Youtube:不良林)
-      - 美国-6.25MB/s(Youtube:不良林)
-      - 欧洲(油管:破解资源君) 18
+      - 欧洲(油管:破解资源君2.0) 16
+      - 欧洲(油管:破解资源君) 38
       - 亚美尼亚-4.23MB/s(Youtube:不良林)
-      - 欧洲(油管:破解资源君2.0) 4
-      - 加拿大-926.4KB/s(Youtube:不良林)
-      - 美国-3.38MB/s(Youtube:不良林)
-      - 德国-2.26MB/s(Youtube:不良林)
-      - 荷兰-1.67MB/s(Youtube:不良林)
-      - 欧洲(油管:破解资源君) 22
-      - 欧洲(油管:破解资源君) 20
-      - 未知国家-1.28MB/s(Youtube:不良林)
-      - 欧洲(油管:破解资源君) 24
-      - 欧洲(油管:破解资源君) 21
-      - 欧洲(油管:破解资源君2.0) 24
-      - 欧洲(油管:破解资源君2.0) 20
-      - 美国(油管:破解资源君2.0) 5
+      - 美国(油管:破解资源君) 4
+      - 亚洲(油管:破解资源君) 3
+      - 欧洲(油管:破解资源君) 26
+      - ZZ_506
+      - ZZ_504
       - 欧洲(油管:破解资源君) 23
-      - 美国(油管:破解资源君2.0) 6
-      - 欧洲(油管:破解资源君2.0) 23
-      - 未知国家-3.68MB/s(Youtube:不良林)
-      - 美国-4.68MB/s(Youtube:不良林)
-      - 荷兰-1.38MB/s(Youtube:不良林)
-      - 美国(油管:破解资源君2.0) 17 2
+      - 欧洲(油管:破解资源君2.0) 2 2
+      - ZZ_485
       - 美国(油管:破解资源君2.0) 7
-      - 欧洲(油管:破解资源君2.0) 22
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -360,348 +180,169 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - catnet-sg.gatknqh.cn:11017
-      - catnet-sg.gatknqh.cn:11019
-      - catnet-moble.gatknqh.cn:11034
-      - 亚洲(油管:破解资源君2.0) 11
-      - github.com/freefq - 香港城市电讯有限公司 1
-      - 中国-8.76MB/s(Youtube:不良林)
-      - 亚洲(油管:破解资源君2.0)
-      - 亚洲(油管:破解资源君2.0) 2
-      - 亚洲(油管:破解资源君2.0) 15
-      - catnet-moble.gatknqh.cn:11045
-      - 亚洲(油管:破解资源君2.0) 21
-      - catnet-moble.gatknqh.cn:11040
-      - 美国(油管:破解资源君2.0)
-      - 欧洲(油管:破解资源君2.0) 12
-      - 亚洲(油管:破解资源君2.0) 13
-      - 欧洲(油管:破解资源君2.0)
-      - github.com/freefq - 美国RF Engineering 5
-      - github.com/freefq - 美国CloudFlare节点 42
-      - 亚洲(油管:破解资源君2.0) 20
-      - ""
-      - 英国-2.67MB/s(Youtube:不良林)
-      - 美国(油管:破解资源君2.0) 19
-      - 美国(油管:破解资源君2.0) 32
-      - github.com/freefq - 美国CloudFlare节点 7
-      - github.com/freefq - 美国RF Engineering 32
+      - 台湾(油管:破解资源君)
+      - ZZ_497
+      - 欧洲(油管:破解资源君2.0) 15
+      - 亚洲(油管:破解资源君2.0) 9
+      - ZZ_494
+      - 亚洲(油管:破解资源君) 6
+      - 亚洲(油管:破解资源君)
+      - 欧洲(油管:破解资源君) 3
+      - Relay_🇹🇼TW-🏁ZZ_275
+      - github.com/freefq - 台湾省台北市中华电信 4
+      - 亚洲(油管:破解资源君2.0) 6
+      - github.com/freefq - 美国CloudFlare公司CDN节点 21
+      - 亚洲(油管:破解资源君2.0) 10
+      - 美国(油管:破解资源君) 3
+      - 美国(油管:破解资源君2.0) 15 3
+      - Relay_🇨🇳CN-🇹🇼TW_36
+      - CA_32
+      - 美国(油管:破解资源君2.0) 13
+      - 欧洲(油管:破解资源君2.0) 17
+      - Relay_🏁ZZ-🇱🇹LT_505
+      - DE_63
+      - Relay_🇯🇵JP-🇯🇵JP_178
       - 欧洲(油管:破解资源君2.0) 5
-      - 欧洲(油管:破解资源君2.0) 2
-      - 美国(油管:破解资源君) 34
-      - 未知国家-2.52MB/s(Youtube:不良林)
-      - 美国-3.06MB/s(Youtube:不良林)
-      - 亚洲(油管:破解资源君2.0) 17
-      - 美国(油管:破解资源君2.0) 2
-      - 美国(油管:破解资源君2.0) 4
-      - 美国(油管:破解资源君2.0) 42
-      - catnet-moble.gatknqh.cn:11047
-      - github.com/freefq - 美国CloudFlare节点 38
-      - catnet-moble.gatknqh.cn:11048
-      - 美国(油管:破解资源君) 36
-      - 欧洲(油管:破解资源君2.0) 25
-      - 亚洲(油管:破解资源君2.0) 22
-      - 伯利兹-3.46MB/s(Youtube:不良林)
-      - 塞浦路斯-1.92MB/s(Youtube:不良林)
-      - 欧洲(油管:破解资源君) 43
-      - 中国-5.88MB/s(Youtube:不良林)
-      - 欧洲(油管:破解资源君2.0) 3
-      - 伯利兹-4.26MB/s(Youtube:不良林)
-      - 欧洲(油管:破解资源君2.0) 19
-      - 欧洲(油管:破解资源君2.0) 28
-      - 美国(油管:破解资源君2.0) 17
-      - 亚美尼亚-5.43MB/s(Youtube:不良林)
-      - 美国(油管:破解资源君2.0) 3
-      - 亚洲(油管:破解资源君2.0) 18
-      - 欧洲(油管:破解资源君2.0) 14
-      - github.com/freefq - 美国CloudFlare节点 16
-      - 未知国家-4.81MB/s(Youtube:不良林)
-      - 美国-6.25MB/s(Youtube:不良林)
-      - 欧洲(油管:破解资源君) 18
+      - 欧洲(油管:破解资源君2.0) 16
+      - 欧洲(油管:破解资源君) 38
       - 亚美尼亚-4.23MB/s(Youtube:不良林)
-      - 欧洲(油管:破解资源君2.0) 4
-      - 加拿大-926.4KB/s(Youtube:不良林)
-      - 美国-3.38MB/s(Youtube:不良林)
-      - 德国-2.26MB/s(Youtube:不良林)
-      - 荷兰-1.67MB/s(Youtube:不良林)
-      - 欧洲(油管:破解资源君) 22
-      - 欧洲(油管:破解资源君) 20
-      - 未知国家-1.28MB/s(Youtube:不良林)
-      - 欧洲(油管:破解资源君) 24
-      - 欧洲(油管:破解资源君) 21
-      - 欧洲(油管:破解资源君2.0) 24
-      - 欧洲(油管:破解资源君2.0) 20
-      - 美国(油管:破解资源君2.0) 5
+      - 美国(油管:破解资源君) 4
+      - 亚洲(油管:破解资源君) 3
+      - 欧洲(油管:破解资源君) 26
+      - ZZ_506
+      - ZZ_504
       - 欧洲(油管:破解资源君) 23
-      - 美国(油管:破解资源君2.0) 6
-      - 欧洲(油管:破解资源君2.0) 23
-      - 未知国家-3.68MB/s(Youtube:不良林)
-      - 美国-4.68MB/s(Youtube:不良林)
-      - 荷兰-1.38MB/s(Youtube:不良林)
-      - 美国(油管:破解资源君2.0) 17 2
+      - 欧洲(油管:破解资源君2.0) 2 2
+      - ZZ_485
       - 美国(油管:破解资源君2.0) 7
-      - 欧洲(油管:破解资源君2.0) 22
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - github.com/freefq - 香港城市电讯有限公司 1
+      - 台湾(油管:破解资源君)
+      - github.com/freefq - 台湾省台北市中华电信 4
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - catnet-sg.gatknqh.cn:11017
-      - catnet-sg.gatknqh.cn:11019
-      - catnet-moble.gatknqh.cn:11034
-      - 亚洲(油管:破解资源君2.0) 11
-      - github.com/freefq - 香港城市电讯有限公司 1
-      - 中国-8.76MB/s(Youtube:不良林)
-      - 亚洲(油管:破解资源君2.0)
-      - 亚洲(油管:破解资源君2.0) 2
-      - 亚洲(油管:破解资源君2.0) 15
-      - catnet-moble.gatknqh.cn:11045
-      - 亚洲(油管:破解资源君2.0) 21
-      - catnet-moble.gatknqh.cn:11040
-      - 美国(油管:破解资源君2.0)
-      - 欧洲(油管:破解资源君2.0) 12
-      - 亚洲(油管:破解资源君2.0) 13
-      - 欧洲(油管:破解资源君2.0)
-      - github.com/freefq - 美国RF Engineering 5
-      - github.com/freefq - 美国CloudFlare节点 42
-      - 亚洲(油管:破解资源君2.0) 20
-      - ""
-      - 英国-2.67MB/s(Youtube:不良林)
-      - 美国(油管:破解资源君2.0) 19
-      - 美国(油管:破解资源君2.0) 32
-      - github.com/freefq - 美国CloudFlare节点 7
-      - github.com/freefq - 美国RF Engineering 32
+      - 台湾(油管:破解资源君)
+      - ZZ_497
+      - 欧洲(油管:破解资源君2.0) 15
+      - 亚洲(油管:破解资源君2.0) 9
+      - ZZ_494
+      - 亚洲(油管:破解资源君) 6
+      - 亚洲(油管:破解资源君)
+      - 欧洲(油管:破解资源君) 3
+      - Relay_🇹🇼TW-🏁ZZ_275
+      - github.com/freefq - 台湾省台北市中华电信 4
+      - 亚洲(油管:破解资源君2.0) 6
+      - github.com/freefq - 美国CloudFlare公司CDN节点 21
+      - 亚洲(油管:破解资源君2.0) 10
+      - 美国(油管:破解资源君) 3
+      - 美国(油管:破解资源君2.0) 15 3
+      - Relay_🇨🇳CN-🇹🇼TW_36
+      - CA_32
+      - 美国(油管:破解资源君2.0) 13
+      - 欧洲(油管:破解资源君2.0) 17
+      - Relay_🏁ZZ-🇱🇹LT_505
+      - DE_63
+      - Relay_🇯🇵JP-🇯🇵JP_178
       - 欧洲(油管:破解资源君2.0) 5
-      - 欧洲(油管:破解资源君2.0) 2
-      - 美国(油管:破解资源君) 34
-      - 未知国家-2.52MB/s(Youtube:不良林)
-      - 美国-3.06MB/s(Youtube:不良林)
-      - 亚洲(油管:破解资源君2.0) 17
-      - 美国(油管:破解资源君2.0) 2
-      - 美国(油管:破解资源君2.0) 4
-      - 美国(油管:破解资源君2.0) 42
-      - catnet-moble.gatknqh.cn:11047
-      - github.com/freefq - 美国CloudFlare节点 38
-      - catnet-moble.gatknqh.cn:11048
-      - 美国(油管:破解资源君) 36
-      - 欧洲(油管:破解资源君2.0) 25
-      - 亚洲(油管:破解资源君2.0) 22
-      - 伯利兹-3.46MB/s(Youtube:不良林)
-      - 塞浦路斯-1.92MB/s(Youtube:不良林)
-      - 欧洲(油管:破解资源君) 43
-      - 中国-5.88MB/s(Youtube:不良林)
-      - 欧洲(油管:破解资源君2.0) 3
-      - 伯利兹-4.26MB/s(Youtube:不良林)
-      - 欧洲(油管:破解资源君2.0) 19
-      - 欧洲(油管:破解资源君2.0) 28
-      - 美国(油管:破解资源君2.0) 17
-      - 亚美尼亚-5.43MB/s(Youtube:不良林)
-      - 美国(油管:破解资源君2.0) 3
-      - 亚洲(油管:破解资源君2.0) 18
-      - 欧洲(油管:破解资源君2.0) 14
-      - github.com/freefq - 美国CloudFlare节点 16
-      - 未知国家-4.81MB/s(Youtube:不良林)
-      - 美国-6.25MB/s(Youtube:不良林)
-      - 欧洲(油管:破解资源君) 18
+      - 欧洲(油管:破解资源君2.0) 16
+      - 欧洲(油管:破解资源君) 38
       - 亚美尼亚-4.23MB/s(Youtube:不良林)
-      - 欧洲(油管:破解资源君2.0) 4
-      - 加拿大-926.4KB/s(Youtube:不良林)
-      - 美国-3.38MB/s(Youtube:不良林)
-      - 德国-2.26MB/s(Youtube:不良林)
-      - 荷兰-1.67MB/s(Youtube:不良林)
-      - 欧洲(油管:破解资源君) 22
-      - 欧洲(油管:破解资源君) 20
-      - 未知国家-1.28MB/s(Youtube:不良林)
-      - 欧洲(油管:破解资源君) 24
-      - 欧洲(油管:破解资源君) 21
-      - 欧洲(油管:破解资源君2.0) 24
-      - 欧洲(油管:破解资源君2.0) 20
-      - 美国(油管:破解资源君2.0) 5
+      - 美国(油管:破解资源君) 4
+      - 亚洲(油管:破解资源君) 3
+      - 欧洲(油管:破解资源君) 26
+      - ZZ_506
+      - ZZ_504
       - 欧洲(油管:破解资源君) 23
-      - 美国(油管:破解资源君2.0) 6
-      - 欧洲(油管:破解资源君2.0) 23
-      - 未知国家-3.68MB/s(Youtube:不良林)
-      - 美国-4.68MB/s(Youtube:不良林)
-      - 荷兰-1.38MB/s(Youtube:不良林)
-      - 美国(油管:破解资源君2.0) 17 2
+      - 欧洲(油管:破解资源君2.0) 2 2
+      - ZZ_485
       - 美国(油管:破解资源君2.0) 7
-      - 欧洲(油管:破解资源君2.0) 22
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - catnet-sg.gatknqh.cn:11017
-      - catnet-sg.gatknqh.cn:11019
-      - catnet-moble.gatknqh.cn:11034
-      - 亚洲(油管:破解资源君2.0) 11
-      - github.com/freefq - 香港城市电讯有限公司 1
-      - 中国-8.76MB/s(Youtube:不良林)
-      - 亚洲(油管:破解资源君2.0)
-      - 亚洲(油管:破解资源君2.0) 2
-      - 亚洲(油管:破解资源君2.0) 15
-      - catnet-moble.gatknqh.cn:11045
-      - 亚洲(油管:破解资源君2.0) 21
-      - catnet-moble.gatknqh.cn:11040
-      - 美国(油管:破解资源君2.0)
-      - 欧洲(油管:破解资源君2.0) 12
-      - 亚洲(油管:破解资源君2.0) 13
-      - 欧洲(油管:破解资源君2.0)
-      - github.com/freefq - 美国RF Engineering 5
-      - github.com/freefq - 美国CloudFlare节点 42
-      - 亚洲(油管:破解资源君2.0) 20
-      - ""
-      - 英国-2.67MB/s(Youtube:不良林)
-      - 美国(油管:破解资源君2.0) 19
-      - 美国(油管:破解资源君2.0) 32
-      - github.com/freefq - 美国CloudFlare节点 7
-      - github.com/freefq - 美国RF Engineering 32
+      - 台湾(油管:破解资源君)
+      - ZZ_497
+      - 欧洲(油管:破解资源君2.0) 15
+      - 亚洲(油管:破解资源君2.0) 9
+      - ZZ_494
+      - 亚洲(油管:破解资源君) 6
+      - 亚洲(油管:破解资源君)
+      - 欧洲(油管:破解资源君) 3
+      - Relay_🇹🇼TW-🏁ZZ_275
+      - github.com/freefq - 台湾省台北市中华电信 4
+      - 亚洲(油管:破解资源君2.0) 6
+      - github.com/freefq - 美国CloudFlare公司CDN节点 21
+      - 亚洲(油管:破解资源君2.0) 10
+      - 美国(油管:破解资源君) 3
+      - 美国(油管:破解资源君2.0) 15 3
+      - Relay_🇨🇳CN-🇹🇼TW_36
+      - CA_32
+      - 美国(油管:破解资源君2.0) 13
+      - 欧洲(油管:破解资源君2.0) 17
+      - Relay_🏁ZZ-🇱🇹LT_505
+      - DE_63
+      - Relay_🇯🇵JP-🇯🇵JP_178
       - 欧洲(油管:破解资源君2.0) 5
-      - 欧洲(油管:破解资源君2.0) 2
-      - 美国(油管:破解资源君) 34
-      - 未知国家-2.52MB/s(Youtube:不良林)
-      - 美国-3.06MB/s(Youtube:不良林)
-      - 亚洲(油管:破解资源君2.0) 17
-      - 美国(油管:破解资源君2.0) 2
-      - 美国(油管:破解资源君2.0) 4
-      - 美国(油管:破解资源君2.0) 42
-      - catnet-moble.gatknqh.cn:11047
-      - github.com/freefq - 美国CloudFlare节点 38
-      - catnet-moble.gatknqh.cn:11048
-      - 美国(油管:破解资源君) 36
-      - 欧洲(油管:破解资源君2.0) 25
-      - 亚洲(油管:破解资源君2.0) 22
-      - 伯利兹-3.46MB/s(Youtube:不良林)
-      - 塞浦路斯-1.92MB/s(Youtube:不良林)
-      - 欧洲(油管:破解资源君) 43
-      - 中国-5.88MB/s(Youtube:不良林)
-      - 欧洲(油管:破解资源君2.0) 3
-      - 伯利兹-4.26MB/s(Youtube:不良林)
-      - 欧洲(油管:破解资源君2.0) 19
-      - 欧洲(油管:破解资源君2.0) 28
-      - 美国(油管:破解资源君2.0) 17
-      - 亚美尼亚-5.43MB/s(Youtube:不良林)
-      - 美国(油管:破解资源君2.0) 3
-      - 亚洲(油管:破解资源君2.0) 18
-      - 欧洲(油管:破解资源君2.0) 14
-      - github.com/freefq - 美国CloudFlare节点 16
-      - 未知国家-4.81MB/s(Youtube:不良林)
-      - 美国-6.25MB/s(Youtube:不良林)
-      - 欧洲(油管:破解资源君) 18
+      - 欧洲(油管:破解资源君2.0) 16
+      - 欧洲(油管:破解资源君) 38
       - 亚美尼亚-4.23MB/s(Youtube:不良林)
-      - 欧洲(油管:破解资源君2.0) 4
-      - 加拿大-926.4KB/s(Youtube:不良林)
-      - 美国-3.38MB/s(Youtube:不良林)
-      - 德国-2.26MB/s(Youtube:不良林)
-      - 荷兰-1.67MB/s(Youtube:不良林)
-      - 欧洲(油管:破解资源君) 22
-      - 欧洲(油管:破解资源君) 20
-      - 未知国家-1.28MB/s(Youtube:不良林)
-      - 欧洲(油管:破解资源君) 24
-      - 欧洲(油管:破解资源君) 21
-      - 欧洲(油管:破解资源君2.0) 24
-      - 欧洲(油管:破解资源君2.0) 20
-      - 美国(油管:破解资源君2.0) 5
+      - 美国(油管:破解资源君) 4
+      - 亚洲(油管:破解资源君) 3
+      - 欧洲(油管:破解资源君) 26
+      - ZZ_506
+      - ZZ_504
       - 欧洲(油管:破解资源君) 23
-      - 美国(油管:破解资源君2.0) 6
-      - 欧洲(油管:破解资源君2.0) 23
-      - 未知国家-3.68MB/s(Youtube:不良林)
-      - 美国-4.68MB/s(Youtube:不良林)
-      - 荷兰-1.38MB/s(Youtube:不良林)
-      - 美国(油管:破解资源君2.0) 17 2
+      - 欧洲(油管:破解资源君2.0) 2 2
+      - ZZ_485
       - 美国(油管:破解资源君2.0) 7
-      - 欧洲(油管:破解资源君2.0) 22
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - catnet-sg.gatknqh.cn:11017
-      - catnet-sg.gatknqh.cn:11019
-      - catnet-moble.gatknqh.cn:11034
-      - 亚洲(油管:破解资源君2.0) 11
-      - github.com/freefq - 香港城市电讯有限公司 1
-      - 中国-8.76MB/s(Youtube:不良林)
-      - 亚洲(油管:破解资源君2.0)
-      - 亚洲(油管:破解资源君2.0) 2
-      - 亚洲(油管:破解资源君2.0) 15
-      - catnet-moble.gatknqh.cn:11045
-      - 亚洲(油管:破解资源君2.0) 21
-      - catnet-moble.gatknqh.cn:11040
-      - 美国(油管:破解资源君2.0)
-      - 欧洲(油管:破解资源君2.0) 12
-      - 亚洲(油管:破解资源君2.0) 13
-      - 欧洲(油管:破解资源君2.0)
-      - github.com/freefq - 美国RF Engineering 5
-      - github.com/freefq - 美国CloudFlare节点 42
-      - 亚洲(油管:破解资源君2.0) 20
-      - ""
-      - 英国-2.67MB/s(Youtube:不良林)
-      - 美国(油管:破解资源君2.0) 19
-      - 美国(油管:破解资源君2.0) 32
-      - github.com/freefq - 美国CloudFlare节点 7
-      - github.com/freefq - 美国RF Engineering 32
+      - 台湾(油管:破解资源君)
+      - ZZ_497
+      - 欧洲(油管:破解资源君2.0) 15
+      - 亚洲(油管:破解资源君2.0) 9
+      - ZZ_494
+      - 亚洲(油管:破解资源君) 6
+      - 亚洲(油管:破解资源君)
+      - 欧洲(油管:破解资源君) 3
+      - Relay_🇹🇼TW-🏁ZZ_275
+      - github.com/freefq - 台湾省台北市中华电信 4
+      - 亚洲(油管:破解资源君2.0) 6
+      - github.com/freefq - 美国CloudFlare公司CDN节点 21
+      - 亚洲(油管:破解资源君2.0) 10
+      - 美国(油管:破解资源君) 3
+      - 美国(油管:破解资源君2.0) 15 3
+      - Relay_🇨🇳CN-🇹🇼TW_36
+      - CA_32
+      - 美国(油管:破解资源君2.0) 13
+      - 欧洲(油管:破解资源君2.0) 17
+      - Relay_🏁ZZ-🇱🇹LT_505
+      - DE_63
+      - Relay_🇯🇵JP-🇯🇵JP_178
       - 欧洲(油管:破解资源君2.0) 5
-      - 欧洲(油管:破解资源君2.0) 2
-      - 美国(油管:破解资源君) 34
-      - 未知国家-2.52MB/s(Youtube:不良林)
-      - 美国-3.06MB/s(Youtube:不良林)
-      - 亚洲(油管:破解资源君2.0) 17
-      - 美国(油管:破解资源君2.0) 2
-      - 美国(油管:破解资源君2.0) 4
-      - 美国(油管:破解资源君2.0) 42
-      - catnet-moble.gatknqh.cn:11047
-      - github.com/freefq - 美国CloudFlare节点 38
-      - catnet-moble.gatknqh.cn:11048
-      - 美国(油管:破解资源君) 36
-      - 欧洲(油管:破解资源君2.0) 25
-      - 亚洲(油管:破解资源君2.0) 22
-      - 伯利兹-3.46MB/s(Youtube:不良林)
-      - 塞浦路斯-1.92MB/s(Youtube:不良林)
-      - 欧洲(油管:破解资源君) 43
-      - 中国-5.88MB/s(Youtube:不良林)
-      - 欧洲(油管:破解资源君2.0) 3
-      - 伯利兹-4.26MB/s(Youtube:不良林)
-      - 欧洲(油管:破解资源君2.0) 19
-      - 欧洲(油管:破解资源君2.0) 28
-      - 美国(油管:破解资源君2.0) 17
-      - 亚美尼亚-5.43MB/s(Youtube:不良林)
-      - 美国(油管:破解资源君2.0) 3
-      - 亚洲(油管:破解资源君2.0) 18
-      - 欧洲(油管:破解资源君2.0) 14
-      - github.com/freefq - 美国CloudFlare节点 16
-      - 未知国家-4.81MB/s(Youtube:不良林)
-      - 美国-6.25MB/s(Youtube:不良林)
-      - 欧洲(油管:破解资源君) 18
+      - 欧洲(油管:破解资源君2.0) 16
+      - 欧洲(油管:破解资源君) 38
       - 亚美尼亚-4.23MB/s(Youtube:不良林)
-      - 欧洲(油管:破解资源君2.0) 4
-      - 加拿大-926.4KB/s(Youtube:不良林)
-      - 美国-3.38MB/s(Youtube:不良林)
-      - 德国-2.26MB/s(Youtube:不良林)
-      - 荷兰-1.67MB/s(Youtube:不良林)
-      - 欧洲(油管:破解资源君) 22
-      - 欧洲(油管:破解资源君) 20
-      - 未知国家-1.28MB/s(Youtube:不良林)
-      - 欧洲(油管:破解资源君) 24
-      - 欧洲(油管:破解资源君) 21
-      - 欧洲(油管:破解资源君2.0) 24
-      - 欧洲(油管:破解资源君2.0) 20
-      - 美国(油管:破解资源君2.0) 5
+      - 美国(油管:破解资源君) 4
+      - 亚洲(油管:破解资源君) 3
+      - 欧洲(油管:破解资源君) 26
+      - ZZ_506
+      - ZZ_504
       - 欧洲(油管:破解资源君) 23
-      - 美国(油管:破解资源君2.0) 6
-      - 欧洲(油管:破解资源君2.0) 23
-      - 未知国家-3.68MB/s(Youtube:不良林)
-      - 美国-4.68MB/s(Youtube:不良林)
-      - 荷兰-1.38MB/s(Youtube:不良林)
-      - 美国(油管:破解资源君2.0) 17 2
+      - 欧洲(油管:破解资源君2.0) 2 2
+      - ZZ_485
       - 美国(油管:破解资源君2.0) 7
-      - 欧洲(油管:破解资源君2.0) 22
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -717,86 +358,41 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - catnet-sg.gatknqh.cn:11017
-      - catnet-sg.gatknqh.cn:11019
-      - catnet-moble.gatknqh.cn:11034
-      - 亚洲(油管:破解资源君2.0) 11
-      - github.com/freefq - 香港城市电讯有限公司 1
-      - 中国-8.76MB/s(Youtube:不良林)
-      - 亚洲(油管:破解资源君2.0)
-      - 亚洲(油管:破解资源君2.0) 2
-      - 亚洲(油管:破解资源君2.0) 15
-      - catnet-moble.gatknqh.cn:11045
-      - 亚洲(油管:破解资源君2.0) 21
-      - catnet-moble.gatknqh.cn:11040
-      - 美国(油管:破解资源君2.0)
-      - 欧洲(油管:破解资源君2.0) 12
-      - 亚洲(油管:破解资源君2.0) 13
-      - 欧洲(油管:破解资源君2.0)
-      - github.com/freefq - 美国RF Engineering 5
-      - github.com/freefq - 美国CloudFlare节点 42
-      - 亚洲(油管:破解资源君2.0) 20
-      - ""
-      - 英国-2.67MB/s(Youtube:不良林)
-      - 美国(油管:破解资源君2.0) 19
-      - 美国(油管:破解资源君2.0) 32
-      - github.com/freefq - 美国CloudFlare节点 7
-      - github.com/freefq - 美国RF Engineering 32
+      - 台湾(油管:破解资源君)
+      - ZZ_497
+      - 欧洲(油管:破解资源君2.0) 15
+      - 亚洲(油管:破解资源君2.0) 9
+      - ZZ_494
+      - 亚洲(油管:破解资源君) 6
+      - 亚洲(油管:破解资源君)
+      - 欧洲(油管:破解资源君) 3
+      - Relay_🇹🇼TW-🏁ZZ_275
+      - github.com/freefq - 台湾省台北市中华电信 4
+      - 亚洲(油管:破解资源君2.0) 6
+      - github.com/freefq - 美国CloudFlare公司CDN节点 21
+      - 亚洲(油管:破解资源君2.0) 10
+      - 美国(油管:破解资源君) 3
+      - 美国(油管:破解资源君2.0) 15 3
+      - Relay_🇨🇳CN-🇹🇼TW_36
+      - CA_32
+      - 美国(油管:破解资源君2.0) 13
+      - 欧洲(油管:破解资源君2.0) 17
+      - Relay_🏁ZZ-🇱🇹LT_505
+      - DE_63
+      - Relay_🇯🇵JP-🇯🇵JP_178
       - 欧洲(油管:破解资源君2.0) 5
-      - 欧洲(油管:破解资源君2.0) 2
-      - 美国(油管:破解资源君) 34
-      - 未知国家-2.52MB/s(Youtube:不良林)
-      - 美国-3.06MB/s(Youtube:不良林)
-      - 亚洲(油管:破解资源君2.0) 17
-      - 美国(油管:破解资源君2.0) 2
-      - 美国(油管:破解资源君2.0) 4
-      - 美国(油管:破解资源君2.0) 42
-      - catnet-moble.gatknqh.cn:11047
-      - github.com/freefq - 美国CloudFlare节点 38
-      - catnet-moble.gatknqh.cn:11048
-      - 美国(油管:破解资源君) 36
-      - 欧洲(油管:破解资源君2.0) 25
-      - 亚洲(油管:破解资源君2.0) 22
-      - 伯利兹-3.46MB/s(Youtube:不良林)
-      - 塞浦路斯-1.92MB/s(Youtube:不良林)
-      - 欧洲(油管:破解资源君) 43
-      - 中国-5.88MB/s(Youtube:不良林)
-      - 欧洲(油管:破解资源君2.0) 3
-      - 伯利兹-4.26MB/s(Youtube:不良林)
-      - 欧洲(油管:破解资源君2.0) 19
-      - 欧洲(油管:破解资源君2.0) 28
-      - 美国(油管:破解资源君2.0) 17
-      - 亚美尼亚-5.43MB/s(Youtube:不良林)
-      - 美国(油管:破解资源君2.0) 3
-      - 亚洲(油管:破解资源君2.0) 18
-      - 欧洲(油管:破解资源君2.0) 14
-      - github.com/freefq - 美国CloudFlare节点 16
-      - 未知国家-4.81MB/s(Youtube:不良林)
-      - 美国-6.25MB/s(Youtube:不良林)
-      - 欧洲(油管:破解资源君) 18
+      - 欧洲(油管:破解资源君2.0) 16
+      - 欧洲(油管:破解资源君) 38
       - 亚美尼亚-4.23MB/s(Youtube:不良林)
-      - 欧洲(油管:破解资源君2.0) 4
-      - 加拿大-926.4KB/s(Youtube:不良林)
-      - 美国-3.38MB/s(Youtube:不良林)
-      - 德国-2.26MB/s(Youtube:不良林)
-      - 荷兰-1.67MB/s(Youtube:不良林)
-      - 欧洲(油管:破解资源君) 22
-      - 欧洲(油管:破解资源君) 20
-      - 未知国家-1.28MB/s(Youtube:不良林)
-      - 欧洲(油管:破解资源君) 24
-      - 欧洲(油管:破解资源君) 21
-      - 欧洲(油管:破解资源君2.0) 24
-      - 欧洲(油管:破解资源君2.0) 20
-      - 美国(油管:破解资源君2.0) 5
+      - 美国(油管:破解资源君) 4
+      - 亚洲(油管:破解资源君) 3
+      - 欧洲(油管:破解资源君) 26
+      - ZZ_506
+      - ZZ_504
       - 欧洲(油管:破解资源君) 23
-      - 美国(油管:破解资源君2.0) 6
-      - 欧洲(油管:破解资源君2.0) 23
-      - 未知国家-3.68MB/s(Youtube:不良林)
-      - 美国-4.68MB/s(Youtube:不良林)
-      - 荷兰-1.38MB/s(Youtube:不良林)
-      - 美国(油管:破解资源君2.0) 17 2
+      - 欧洲(油管:破解资源君2.0) 2 2
+      - ZZ_485
       - 美国(油管:破解资源君2.0) 7
-      - 欧洲(油管:破解资源君2.0) 22
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
