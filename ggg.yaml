@@ -5,415 +5,135 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: sg-am3.eqsunshine.com:32001, server: sg-am3.eqsunshine.com, port: 32001, type: ssr, cipher: aes-256-cfb, password: 3g0dHlKME, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
-  - {name: Relay_🇹🇼TW-🇱🇹LT_390, server: 211.72.35.152, port: 3389, type: trojan, password: faf42aa0a9ad4c1e, skip-cert-verify: true, udp: true}
-  - {name: 欧洲(油管:破解资源君) 26, server: suzhihan.eu.org, port: 443, type: vmess, uuid: 0b873cff-11ab-4716-c41a-04f886135091, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /roewesu, ws-headers: {Host: suzhihan.eu.org}, udp: true}
-  - {name: Relay_🇹🇼TW-🇱🇹LT_396, server: 211.72.35.152, port: 3389, type: trojan, password: 26a663656e575c0b, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇹🇼TW-🇱🇹LT_399, server: 211.72.35.157, port: 3389, type: trojan, password: 8b475d9e868e43e0, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇹🇼TW-🇱🇹LT_403, server: 211.72.35.152, port: 3389, type: trojan, password: 3c4e10af98c30972, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇹🇼TW-🇱🇹LT_391, server: 211.72.35.152, port: 3389, type: trojan, password: 7ac49a893e0bd10c, skip-cert-verify: true, udp: true}
-  - {name: ZZ_707, server: 103.173.255.127, port: 443, type: trojan, password: 5623be5f-c9da-4511-81a9-b4b39b16edae, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇹🇼TW-🇱🇹LT_397, server: 211.72.35.152, port: 3389, type: trojan, password: 4bacb8f1a089763b, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇹🇼TW-🇱🇹LT_404, server: 211.72.35.155, port: 3389, type: trojan, password: 0cc6b4268dea0ba8, skip-cert-verify: true, udp: true}
-  - {name: 欧洲(油管:破解资源君) 41, server: 172.67.199.34, port: 443, type: vmess, uuid: 8b6dd709-4d4e-4b92-f542-54a676efbfe4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /shares, ws-headers: {Host: la.awsbest.com}, udp: true}
-  - {name: 美国(油管:破解资源君) 59, server: 172.67.200.107, port: 8443, type: vmess, uuid: a6a37e04-5e81-44c9-be53-baa3ff46eb8b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /8cda48b3, ws-headers: {Host: us-171-78.shoptunnel.live}, udp: true}
-  - {name: 美国(油管:破解资源君) 58, server: 173.245.49.23, port: 8443, type: vmess, uuid: a6a37e04-5e81-44c9-be53-baa3ff46eb8b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /8cda48b3, ws-headers: {Host: us-171-78.shoptunnel.live}, udp: true}
-  - {name: 新加坡(油管:破解资源君), server: 119-8-122-159.ipv4.rush.ml, port: 8443, type: trojan, password: cf4295378e209e70d12c5bdd017144dfd1c772d3, sni: 119-8-122-159.ipv4.rush.ml, skip-cert-verify: true, udp: true}
-  - {name: 俄罗斯(油管:破解资源君) 5, server: 162.159.128.7, port: 443, type: vmess, uuid: 19924be7-db1c-4b32-8dbc-aec68e0bbf3e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: pl1.v2rayserv.com}, udp: true}
-  - {name: 欧洲(油管:破解资源君) 3, server: 51.77.212.145, port: 80, type: vmess, uuid: 5f6e42bb-2fd1-478b-8f0f-e52b2d6f7652, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /vmess, ws-headers: {Host: 51.77.212.145}, udp: true}
-  - {name: 俄罗斯(油管:破解资源君) 6, server: 185.143.220.25, port: 443, type: vmess, uuid: f28e354e-c2d1-4983-9b07-5acaf1b3b3e5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /6e9EtZ2dL, ws-headers: {Host: dengxin.one}, udp: true}
-  - {name: VN_681, server: 103.81.85.238, port: 443, type: trojan, password: 6b4ced5e-835a-4a7a-9d03-6a46e94668cb, skip-cert-verify: true, udp: true}
-  - {name: VN_680, server: 103.195.236.24, port: 443, type: trojan, password: 5623be5f-c9da-4511-81a9-b4b39b16edae, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_672, server: 170-187-134-190.ipv4.rush.ml, port: 8443, type: trojan, password: cf4295378e209e70d12c5bdd017144dfd1c772d3, sni: 170-187-134-190.ipv4.rush.ml, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇹🇼TW-🇱🇹LT_420, server: 211.72.35.152, port: 3389, type: trojan, password: b09d2aaa443af97a, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇺🇦UA-🇺🇦UA_422, server: v2cross.com.04.v2ce.com, port: 443, type: trojan, password: vGWCNNfBHwSY6m6M, sni: v2cross.com.04.v2ce.com, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_669, server: 141.147.191.85, port: 28443, type: trojan, password: 750a29bf-0a40-437f-b120-38de74ae7eaf, skip-cert-verify: true, udp: true}
-  - {name: NONE 39, server: 20016.purefast2.com, port: 20016, type: trojan, password: a71df8e7-d563-3ebc-a26a-168c8dc8c9f3, sni: 20016.purefast2.com, skip-cert-verify: true, udp: true}
-  - {name: NONE 46, server: 20004.purefast2.com, port: 20004, type: trojan, password: a71df8e7-d563-3ebc-a26a-168c8dc8c9f3, sni: 20004.purefast2.com, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇹🇼TW-🏁ZZ_419, server: 211.72.35.158, port: 3389, type: trojan, password: 7b06d22a8a7c764f, skip-cert-verify: true, udp: true}
-  - {name: NONE, server: 20011.purefast2.com, port: 20011, type: trojan, password: 357827e5-a45d-3f09-9b73-ef4431dfb323, sni: 20011.purefast2.com, skip-cert-verify: true, udp: true}
-  - {name: 亚洲(油管:破解资源君) 2, server: 103.56.160.184, port: 80, type: vmess, uuid: ef919c67-6638-4416-91af-9a13ffe5b9ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /tandung288.click, ws-headers: {Host: 103.56.160.184}, udp: true}
-  - {name: NONE 41, server: 20007.purefast2.com, port: 20007, type: trojan, password: 357827e5-a45d-3f09-9b73-ef4431dfb323, sni: 20007.purefast2.com, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇹🇼TW-🇱🇹LT_406, server: 211.72.35.155, port: 3389, type: trojan, password: 3febb05ea76a940f, skip-cert-verify: true, udp: true}
-  - {name: NONE 52, server: 20000.purefast2.com, port: 20000, type: trojan, password: a1d4c471-61d1-3f61-8502-63b14b8b56be, sni: 20000.purefast2.com, skip-cert-verify: true, udp: true}
-  - {name: NONE 53, server: 20009.purefast2.com, port: 20009, type: trojan, password: ed3ccb1e-7057-3d40-b794-630ef18fb7d2, sni: 20009.purefast2.com, skip-cert-verify: true, udp: true}
-  - {name: NONE 68, server: 20016.purefast2.com, port: 20016, type: trojan, password: 83a3b688-04e5-3c28-85b7-82698a174e41, sni: 20016.purefast2.com, skip-cert-verify: true, udp: true}
-  - {name: CN_67, server: 20007.purefast2.com, port: 20007, type: trojan, password: a71df8e7-d563-3ebc-a26a-168c8dc8c9f3, sni: 20007.purefast2.com, skip-cert-verify: true, udp: true}
-  - {name: NONE 26, server: 20009.purefast2.com, port: 20009, type: trojan, password: a71df8e7-d563-3ebc-a26a-168c8dc8c9f3, sni: 20009.purefast2.com, skip-cert-verify: true, udp: true}
-  - {name: NONE 44, server: 20011.purefast2.com, port: 20011, type: trojan, password: ed3ccb1e-7057-3d40-b794-630ef18fb7d2, sni: 20011.purefast2.com, skip-cert-verify: true, udp: true}
-  - {name: NONE 16, server: 20009.purefast2.com, port: 20009, type: trojan, password: 357827e5-a45d-3f09-9b73-ef4431dfb323, sni: 20009.purefast2.com, skip-cert-verify: true, udp: true}
-  - {name: CN_69, server: 20008.purefast2.com, port: 20008, type: trojan, password: a71df8e7-d563-3ebc-a26a-168c8dc8c9f3, sni: 20008.purefast2.com, skip-cert-verify: true, udp: true}
-  - {name: CN_51, server: 20012.purefast2.com, port: 20012, type: trojan, password: bab40563-cafe-39c1-9d76-c3e627d73758, sni: 20012.purefast2.com, skip-cert-verify: true, udp: true}
-  - {name: 亚洲(油管:破解资源君) 3, server: usa.daleng.org, port: 25001, type: vmess, uuid: 1bf2cb70-9fde-4b60-8df7-29e932fdf763, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇹🇼TW-🇹🇼TW_414, server: 60.249.3.231, port: 3389, type: trojan, password: 0cc6b4268dea0ba8, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇹🇼TW-🇱🇹LT_417, server: 211.72.35.157, port: 3389, type: trojan, password: 7b06d22a8a7c764f, skip-cert-verify: true, udp: true}
-  - {name: NONE 79, server: 20002.purefast2.com, port: 20002, type: trojan, password: 83a3b688-04e5-3c28-85b7-82698a174e41, sni: 20002.purefast2.com, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇹🇼TW-🇱🇹LT_418, server: 211.72.35.155, port: 3389, type: trojan, password: b84d16a244460e09, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇹🇼TW-🇱🇹LT_413, server: 60.249.3.226, port: 3389, type: trojan, password: 36fe28a331638747, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇹🇼TW-🇱🇹LT_409, server: 60.249.3.228, port: 3389, type: trojan, password: 7ac49a893e0bd10c, skip-cert-verify: true, udp: true}
-  - {name: NONE 63, server: 20005.purefast2.com, port: 20005, type: trojan, password: ed3ccb1e-7057-3d40-b794-630ef18fb7d2, sni: 20005.purefast2.com, skip-cert-verify: true, udp: true}
-  - {name: NONE 77, server: 20011.purefast2.com, port: 20011, type: trojan, password: 83a3b688-04e5-3c28-85b7-82698a174e41, sni: 20011.purefast2.com, skip-cert-verify: true, udp: true}
-  - {name: CN_48, server: 20008.purefast2.com, port: 20008, type: trojan, password: 83a3b688-04e5-3c28-85b7-82698a174e41, sni: 20008.purefast2.com, skip-cert-verify: true, udp: true}
-  - {name: NONE 4, server: 20002.purefast2.com, port: 20002, type: trojan, password: a71df8e7-d563-3ebc-a26a-168c8dc8c9f3, sni: 20002.purefast2.com, skip-cert-verify: true, udp: true}
-  - {name: CN_43, server: 20013.purefast2.com, port: 20013, type: trojan, password: bab40563-cafe-39c1-9d76-c3e627d73758, sni: 20013.purefast2.com, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇹🇼TW-🏁ZZ_416, server: 211.72.35.154, port: 3389, type: trojan, password: 7b06d22a8a7c764f, skip-cert-verify: true, udp: true}
-  - {name: 美国(油管:破解资源君) 45, server: 172.67.199.34, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /shirker, ws-headers: {Host: lu.sharecentre.online}, udp: true}
-  - {name: Relay_🇹🇼TW-🇱🇹LT_415, server: 211.72.35.152, port: 3389, type: trojan, password: b84d16a244460e09, skip-cert-verify: true, udp: true}
-  - {name: jp-am48-6.eqnode.net:8081, server: jp-am48-6.eqnode.net, port: 8081, type: ssr, cipher: aes-256-cfb, password: eAokbaDN6, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
-  - {name: 85.208.108.60:5004, server: 85.208.108.60, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 85.208.108.60:5001, server: 85.208.108.60, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 85.208.108.60:443, server: 85.208.108.60, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 欧洲(油管:破解资源君) 25, server: 172.67.199.34, port: 443, type: vmess, uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ECTCJ0DF, ws-headers: {Host: lg1.trump2023.us}, udp: true}
-  - {name: 美国(油管:破解资源君) 22, server: cf.515188.xyz, port: 8080, type: vmess, uuid: 930eaab6-5a04-48fb-9c15-7545ab3ec0bd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /api/v3/download.getFile, ws-headers: {Host: ssrsub.v01.asuka.buzz}, udp: true}
-  - {name: 欧洲(油管:破解资源君) 36, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /shirker, ws-headers: {Host: sg-gcore.sharecentre.online}, udp: true}
-  - {name: 欧洲(油管:破解资源君) 14, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /shirker, ws-headers: {Host: lu.sharecentre.online}, udp: true}
-  - {name: Relay_🇬🇧GB-🇬🇧GB_138, server: content-provider4.cdn-delivery.akamaicd.com, port: 443, type: trojan, password: shefelnak, sni: content-provider4.cdn-delivery.akamaicd.com, skip-cert-verify: true, udp: true}
-  - {name: 美国(油管:破解资源君), server: 141.193.213.10, port: 443, type: vmess, uuid: 615a1285-5848-42a1-9859-d4cb37b1fbd8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /share, ws-headers: {Host: us.awsbest.com}, udp: true}
-  - {name: 美国(油管:破解资源君) 51 2, server: 172.67.199.34, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /shirker, ws-headers: {Host: sg-gcore.sharecentre.online}, udp: true}
-  - {name: 美国(油管:破解资源君) 49, server: 172.67.222.46, port: 80, type: vmess, uuid: 6fea1649-425b-4092-bf53-29792152c925, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /sshkit/fdfadsfa/63848bfe228fd/, ws-headers: {Host: us-lb.sshkit.org}, udp: true}
-  - {name: 美国(油管:破解资源君) 4 2, server: 172.67.199.34, port: 80, type: vmess, uuid: 6fea1649-425b-4092-bf53-29792152c925, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /sshkit/fdfadsfa/63848bfe228fd/, ws-headers: {Host: us-lb.sshkit.org}, udp: true}
-  - {name: 欧洲(油管:破解资源君) 43, server: 172.67.199.34, port: 443, type: vmess, uuid: 3f52e850-b697-4f61-c82c-6d1ca0e6d1b1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /myblog, ws-headers: {Host: 51vfly1.win}, udp: true}
-  - {name: 美国(油管:破解资源君) 36 2, server: 162.159.135.42, port: 80, type: vmess, uuid: 8b6dd709-4d4e-4b92-f542-54a676efbfe4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /shares, ws-headers: {Host: la.awsbest.com}, udp: true}
-  - {name: 美国(油管:破解资源君) 10, server: 172.67.199.34, port: 443, type: vmess, uuid: e3eba3ac-5bea-409f-ac5c-6c964e04d0c4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: ca2.v2rayserv.com}, udp: true}
-  - {name: 美国(油管:破解资源君) 2, server: uicdn.cf, port: 80, type: vmess, uuid: 6fea1649-425b-4092-bf53-29792152c925, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /sshkit/fdfadsfa/63848bfe228fd/, ws-headers: {Host: us-lb.sshkit.org}, udp: true}
-  - {name: github.com/freefq - 美国  28, server: cdn.decli.6641634715834932.me, port: 80, type: vmess, uuid: fcd76421-6b33-4563-b590-85dd74a200b5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /aln/15, ws-headers: {Host: wangsu.com}, udp: true}
-  - {name: github.com/freefq - 美国CloudFlare节点 34, server: 172.67.199.34, port: 80, type: vmess, uuid: 8b6dd709-4d4e-4b92-f542-54a676efbfe4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /shares, ws-headers: {Host: la.awsbest.com}, udp: true}
-  - {name: 美国(油管:破解资源君) 10 2, server: xjp4h.mayaa.ml, port: 443, type: vmess, uuid: 82d5ea73-8002-4319-cd3c-29d1560bd290, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /dsadsa1dsadsa33434, ws-headers: {Host: xjp4h.mayaa.ml}, udp: true}
-  - {name: Relay_🇭🇰HK-🇺🇸US_188, server: ap.stablize.top, port: 443, type: trojan, password: 1bf16b43-0ad5-4512-a0e8-34bb8966278e, sni: ap.stablize.top, skip-cert-verify: true, udp: true}
-  - {name: JP_249, server: 2d1t5w06.mcfront.xyz, port: 31311, type: trojan, password: 7b6991cf-2d91-4e2d-a59a-148b52edec75, sni: 2d1t5w06.mcfront.xyz, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇯🇵JP-🇯🇵JP_230, server: official.tokyometropolis.kherson.ua, port: 2053, type: trojan, password: 96983eb4-c8f1-316e-ab00-500014ed3d8b, sni: official.tokyometropolis.kherson.ua, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇯🇵JP-🇯🇵JP_228, server: official.tokyometropolis.ivano-frankivsk.ua, port: 2053, type: trojan, password: 96983eb4-c8f1-316e-ab00-500014ed3d8b, sni: official.tokyometropolis.ivano-frankivsk.ua, skip-cert-verify: true, udp: true}
-  - {name: JP_210, server: 2d1t5w06.mcfront.xyz, port: 31311, type: trojan, password: bdebf62a-ac8a-42b0-9188-b4d8e00ea4c7, sni: 2d1t5w06.mcfront.xyz, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇹🇼TW-🇱🇹LT_382, server: 60.249.3.229, port: 3389, type: trojan, password: 182228812d1e0f23, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇹🇼TW-🇹🇼TW_384, server: 60.249.3.230, port: 3389, type: trojan, password: 182228812d1e0f23, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇹🇼TW-🇹🇼TW_385, server: official.taipeicitygovernment.net.ua, port: 8443, type: trojan, password: 96983eb4-c8f1-316e-ab00-500014ed3d8b, sni: official.taipeicitygovernment.net.ua, skip-cert-verify: true, udp: true}
-  - {name: HK_200, server: download2hkt.windowsupdate.lol, port: 443, type: trojan, password: b1171e62-aad8-46dc-8014-1478a9aabb04, sni: download2hkt.windowsupdate.lol, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇹🇼TW-🇱🇹LT_378, server: 211.72.35.152, port: 3389, type: trojan, password: 182228812d1e0f23, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇹🇼TW-🇱🇹LT_376, server: 211.72.35.155, port: 3389, type: trojan, password: b09d2aaa443af97a, skip-cert-verify: true, udp: true}
-  - {name: TW_387, server: 60.249.3.227, port: 3389, type: trojan, password: 7ac49a893e0bd10c, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇹🇼TW-🇱🇹LT_381, server: 60.249.3.228, port: 3389, type: trojan, password: 182228812d1e0f23, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇹🇼TW-🇱🇹LT_379, server: 60.249.3.227, port: 3389, type: trojan, password: 182228812d1e0f23, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇹🇼TW-🇱🇹LT_375, server: 211.72.35.157, port: 3389, type: trojan, password: 6c8b18adb11737af, skip-cert-verify: true, udp: true}
-  - {name: 美国(油管:破解资源君) 2 2, server: 162.159.135.42, port: 443, type: vmess, uuid: 82d5ea73-8002-4319-cd3c-29d1560bd290, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /dsadsa1dsadsa33434, ws-headers: {Host: xjp4h.mayaa.ml}, udp: true}
-  - {name: 欧洲(油管:破解资源君) 7, server: 45.136.244.181, port: 80, type: vmess, uuid: a25881f3-967f-3265-bc7f-9e66857b016b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /fr-unlimitxxx, ws-headers: {Host: 45.136.244.181}, udp: true}
-  - {name: github.com/freefq - 美国惠普公司 49, server: 15.235.202.196, port: 80, type: vmess, uuid: 66f7af16-9d20-4df2-9849-0f65a8bb5527, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /vmess, ws-headers: {Host: 15.235.202.196}, udp: true}
-  - {name: 美国(油管:破解资源君) 55, server: cfhk.oppo.quest, port: 80, type: vmess, uuid: 8b6dd709-4d4e-4b92-f542-54a676efbfe4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /shares, ws-headers: {Host: la.awsbest.com}, udp: true}
-  - {name: 欧洲(油管:破解资源君) 33, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /shirker, ws-headers: {Host: us-dp.sharecentre.online}, udp: true}
-  - {name: 美国(油管:破解资源君) 8, server: 15.235.147.186, port: 80, type: vmess, uuid: 6fea1649-425b-4092-bf53-29792152c925, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /sshkit/Ertusg86/635014638c264/, ws-headers: {Host: 15.235.147.186}, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_711, server: vfly3.win, port: 443, type: vmess, uuid: f4ef14c4-d811-455c-a4c3-c63dfeffb0a6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /myblog, ws-headers: {Host: vfly3.win}, udp: true}
-  - {name: github.com/freefq - 美国CloudFlare公司CDN节点 44, server: cf-lt-dns.sharecentre.online, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /shirker, ws-headers: {Host: us-dp.sharecentre.online}, udp: true}
-  - {name: github.com/freefq - 江苏省镇江市移动 1, server: 223.112.227.24, port: 50012, type: vmess, uuid: 1bf2cb70-9fde-4b60-8df7-29e932fdf763, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Pool_🇳🇱NL_113, server: 85.208.108.60, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: Pool_🇳🇱NL_101, server: 85.208.108.60, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: Pool_🇳🇱NL_97, server: 85.208.108.60, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: Pool_🇳🇱NL_91, server: 85.208.108.60, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 美国(油管:破解资源君) 17, server: de1.trojan-lite.com, port: 443, type: trojan, password: bs6KJkPBW9MP74uHEa, sni: de1.trojan-lite.com, skip-cert-verify: true, udp: true}
+  - {name: Pool_🇳🇱NL_100, server: 85.208.108.60, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: Pool_🇳🇱NL_93, server: 85.208.108.60, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: Pool_🇳🇱NL_95, server: 85.208.108.60, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: Pool_🇳🇱NL_98, server: 85.208.108.60, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: github.com/freefq - 美国CloudFlare公司CDN节点 22, server: h2.arsalanv3.sbs, port: 80, type: vmess, uuid: 01ab0022-5806-4f44-a983-7df176d4080d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: h2.arsalanv3.sbs}, udp: true}
+  - {name: Pool_🇳🇱NL_116, server: 85.208.108.60, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: Pool_🇳🇱NL_94, server: 85.208.108.60, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: Pool_🇳🇱NL_88, server: 85.208.108.60, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: Pool_🇳🇱NL_99, server: 85.208.108.60, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: 美国(油管:破解资源君) 22, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /shirker, ws-headers: {Host: uk-2.sharecentre.online}, udp: true}
+  - {name: Pool_🇳🇱NL_107, server: 85.208.108.60, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: Pool_🇳🇱NL_114, server: 85.208.108.60, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: Pool_🇳🇱NL_86, server: 85.208.108.60, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: github.com/freefq - 美国RF Engineering 24, server: 141.193.213.20, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /shirker, ws-headers: {Host: opc-jp.sharecentre.online}, udp: true}
+  - {name: github.com/freefq - 美国CloudFlare公司CDN节点 29, server: h1.arsalanv3.sbs, port: 80, type: vmess, uuid: 0b0049c4-a909-41fb-ac8c-80be1ee93afe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: h1.arsalanv3.sbs}, udp: true}
+  - {name: github.com/freefq - 美国CloudFlare节点 25, server: 172.67.1.182, port: 8443, type: vmess, uuid: a6a37e04-5e81-44c9-be53-baa3ff46eb8b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /8cda48b3, ws-headers: {Host: CA-177-89.shoptunnel.live}, udp: true}
+  - {name: 欧洲(油管:破解资源君) 10, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /shirker, ws-headers: {Host: us-dp2.sharecentre.online}, udp: true}
+  - {name: github.com/freefq - 美国弗吉尼亚州阿什本NV NEXT数据中心 42, server: 173.245.49.5, port: 8443, type: vmess, uuid: a6a37e04-5e81-44c9-be53-baa3ff46eb8b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /8cda48b3, ws-headers: {Host: CA-177-89.shoptunnel.live}, udp: true}
+  - {name: github.com/freefq - 英国社会保险安全部 5, server: ak1617.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou, port: 802, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: github.com/freefq - 美国弗吉尼亚州阿什本NV NEXT数据中心 42 2, server: 173.245.49.5, port: 8443, type: vmess, uuid: a6a37e04-5e81-44c9-be53-baa3ff46eb8b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /8cda48b3, ws-headers: {Host: CA-177-89.shoptunnel.live}, udp: true}
+  - {name: 欧洲(油管:破解资源君) 7, server: 23.227.38.38, port: 443, type: vmess, uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ECTCJ0DF, ws-headers: {Host: lg1.trump2023.us}, udp: true}
+  - {name: US_230, server: 172.99.188.99, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: 美国(油管:破解资源君) 57, server: 38.91.102.123, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - sg-am3.eqsunshine.com:32001
-      - Relay_🇹🇼TW-🇱🇹LT_390
-      - 欧洲(油管:破解资源君) 26
-      - Relay_🇹🇼TW-🇱🇹LT_396
-      - Relay_🇹🇼TW-🇱🇹LT_399
-      - Relay_🇹🇼TW-🇱🇹LT_403
-      - Relay_🇹🇼TW-🇱🇹LT_391
-      - ZZ_707
-      - Relay_🇹🇼TW-🇱🇹LT_397
-      - Relay_🇹🇼TW-🇱🇹LT_404
-      - 欧洲(油管:破解资源君) 41
-      - 美国(油管:破解资源君) 59
-      - 美国(油管:破解资源君) 58
-      - 新加坡(油管:破解资源君)
-      - 俄罗斯(油管:破解资源君) 5
-      - 欧洲(油管:破解资源君) 3
-      - 俄罗斯(油管:破解资源君) 6
-      - VN_681
-      - VN_680
-      - Relay_🇺🇸US-🇺🇸US_672
-      - Relay_🇹🇼TW-🇱🇹LT_420
-      - Relay_🇺🇦UA-🇺🇦UA_422
-      - Relay_🇺🇸US-🇺🇸US_669
-      - NONE 39
-      - NONE 46
-      - Relay_🇹🇼TW-🏁ZZ_419
-      - NONE
-      - 亚洲(油管:破解资源君) 2
-      - NONE 41
-      - Relay_🇹🇼TW-🇱🇹LT_406
-      - NONE 52
-      - NONE 53
-      - NONE 68
-      - CN_67
-      - NONE 26
-      - NONE 44
-      - NONE 16
-      - CN_69
-      - CN_51
-      - 亚洲(油管:破解资源君) 3
-      - Relay_🇹🇼TW-🇹🇼TW_414
-      - Relay_🇹🇼TW-🇱🇹LT_417
-      - NONE 79
-      - Relay_🇹🇼TW-🇱🇹LT_418
-      - Relay_🇹🇼TW-🇱🇹LT_413
-      - Relay_🇹🇼TW-🇱🇹LT_409
-      - NONE 63
-      - NONE 77
-      - CN_48
-      - NONE 4
-      - CN_43
-      - Relay_🇹🇼TW-🏁ZZ_416
-      - 美国(油管:破解资源君) 45
-      - Relay_🇹🇼TW-🇱🇹LT_415
-      - jp-am48-6.eqnode.net:8081
-      - 85.208.108.60:5004
-      - 85.208.108.60:5001
-      - 85.208.108.60:443
-      - 欧洲(油管:破解资源君) 25
+      - Pool_🇳🇱NL_113
+      - Pool_🇳🇱NL_101
+      - Pool_🇳🇱NL_97
+      - Pool_🇳🇱NL_91
+      - 美国(油管:破解资源君) 17
+      - Pool_🇳🇱NL_100
+      - Pool_🇳🇱NL_93
+      - Pool_🇳🇱NL_95
+      - Pool_🇳🇱NL_98
+      - github.com/freefq - 美国CloudFlare公司CDN节点 22
+      - Pool_🇳🇱NL_116
+      - Pool_🇳🇱NL_94
+      - Pool_🇳🇱NL_88
+      - Pool_🇳🇱NL_99
       - 美国(油管:破解资源君) 22
-      - 欧洲(油管:破解资源君) 36
-      - 欧洲(油管:破解资源君) 14
-      - Relay_🇬🇧GB-🇬🇧GB_138
-      - 美国(油管:破解资源君)
-      - 美国(油管:破解资源君) 51 2
-      - 美国(油管:破解资源君) 49
-      - 美国(油管:破解资源君) 4 2
-      - 欧洲(油管:破解资源君) 43
-      - 美国(油管:破解资源君) 36 2
-      - 美国(油管:破解资源君) 10
-      - 美国(油管:破解资源君) 2
-      - github.com/freefq - 美国  28
-      - github.com/freefq - 美国CloudFlare节点 34
-      - 美国(油管:破解资源君) 10 2
-      - Relay_🇭🇰HK-🇺🇸US_188
-      - JP_249
-      - Relay_🇯🇵JP-🇯🇵JP_230
-      - Relay_🇯🇵JP-🇯🇵JP_228
-      - JP_210
-      - Relay_🇹🇼TW-🇱🇹LT_382
-      - Relay_🇹🇼TW-🇹🇼TW_384
-      - Relay_🇹🇼TW-🇹🇼TW_385
-      - HK_200
-      - Relay_🇹🇼TW-🇱🇹LT_378
-      - Relay_🇹🇼TW-🇱🇹LT_376
-      - TW_387
-      - Relay_🇹🇼TW-🇱🇹LT_381
-      - Relay_🇹🇼TW-🇱🇹LT_379
-      - Relay_🇹🇼TW-🇱🇹LT_375
-      - 美国(油管:破解资源君) 2 2
+      - Pool_🇳🇱NL_107
+      - Pool_🇳🇱NL_114
+      - Pool_🇳🇱NL_86
+      - github.com/freefq - 美国RF Engineering 24
+      - github.com/freefq - 美国CloudFlare公司CDN节点 29
+      - github.com/freefq - 美国CloudFlare节点 25
+      - 欧洲(油管:破解资源君) 10
+      - github.com/freefq - 美国弗吉尼亚州阿什本NV NEXT数据中心 42
+      - github.com/freefq - 英国社会保险安全部 5
+      - github.com/freefq - 美国弗吉尼亚州阿什本NV NEXT数据中心 42 2
       - 欧洲(油管:破解资源君) 7
-      - github.com/freefq - 美国惠普公司 49
-      - 美国(油管:破解资源君) 55
-      - 欧洲(油管:破解资源君) 33
-      - 美国(油管:破解资源君) 8
-      - Relay_🇺🇸US-🇺🇸US_711
-      - github.com/freefq - 美国CloudFlare公司CDN节点 44
-      - github.com/freefq - 江苏省镇江市移动 1
+      - US_230
+      - 美国(油管:破解资源君) 57
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - sg-am3.eqsunshine.com:32001
-      - Relay_🇹🇼TW-🇱🇹LT_390
-      - 欧洲(油管:破解资源君) 26
-      - Relay_🇹🇼TW-🇱🇹LT_396
-      - Relay_🇹🇼TW-🇱🇹LT_399
-      - Relay_🇹🇼TW-🇱🇹LT_403
-      - Relay_🇹🇼TW-🇱🇹LT_391
-      - ZZ_707
-      - Relay_🇹🇼TW-🇱🇹LT_397
-      - Relay_🇹🇼TW-🇱🇹LT_404
-      - 欧洲(油管:破解资源君) 41
-      - 美国(油管:破解资源君) 59
-      - 美国(油管:破解资源君) 58
-      - 新加坡(油管:破解资源君)
-      - 俄罗斯(油管:破解资源君) 5
-      - 欧洲(油管:破解资源君) 3
-      - 俄罗斯(油管:破解资源君) 6
-      - VN_681
-      - VN_680
-      - Relay_🇺🇸US-🇺🇸US_672
-      - Relay_🇹🇼TW-🇱🇹LT_420
-      - Relay_🇺🇦UA-🇺🇦UA_422
-      - Relay_🇺🇸US-🇺🇸US_669
-      - NONE 39
-      - NONE 46
-      - Relay_🇹🇼TW-🏁ZZ_419
-      - NONE
-      - 亚洲(油管:破解资源君) 2
-      - NONE 41
-      - Relay_🇹🇼TW-🇱🇹LT_406
-      - NONE 52
-      - NONE 53
-      - NONE 68
-      - CN_67
-      - NONE 26
-      - NONE 44
-      - NONE 16
-      - CN_69
-      - CN_51
-      - 亚洲(油管:破解资源君) 3
-      - Relay_🇹🇼TW-🇹🇼TW_414
-      - Relay_🇹🇼TW-🇱🇹LT_417
-      - NONE 79
-      - Relay_🇹🇼TW-🇱🇹LT_418
-      - Relay_🇹🇼TW-🇱🇹LT_413
-      - Relay_🇹🇼TW-🇱🇹LT_409
-      - NONE 63
-      - NONE 77
-      - CN_48
-      - NONE 4
-      - CN_43
-      - Relay_🇹🇼TW-🏁ZZ_416
-      - 美国(油管:破解资源君) 45
-      - Relay_🇹🇼TW-🇱🇹LT_415
-      - jp-am48-6.eqnode.net:8081
-      - 85.208.108.60:5004
-      - 85.208.108.60:5001
-      - 85.208.108.60:443
-      - 欧洲(油管:破解资源君) 25
+      - Pool_🇳🇱NL_113
+      - Pool_🇳🇱NL_101
+      - Pool_🇳🇱NL_97
+      - Pool_🇳🇱NL_91
+      - 美国(油管:破解资源君) 17
+      - Pool_🇳🇱NL_100
+      - Pool_🇳🇱NL_93
+      - Pool_🇳🇱NL_95
+      - Pool_🇳🇱NL_98
+      - github.com/freefq - 美国CloudFlare公司CDN节点 22
+      - Pool_🇳🇱NL_116
+      - Pool_🇳🇱NL_94
+      - Pool_🇳🇱NL_88
+      - Pool_🇳🇱NL_99
       - 美国(油管:破解资源君) 22
-      - 欧洲(油管:破解资源君) 36
-      - 欧洲(油管:破解资源君) 14
-      - Relay_🇬🇧GB-🇬🇧GB_138
-      - 美国(油管:破解资源君)
-      - 美国(油管:破解资源君) 51 2
-      - 美国(油管:破解资源君) 49
-      - 美国(油管:破解资源君) 4 2
-      - 欧洲(油管:破解资源君) 43
-      - 美国(油管:破解资源君) 36 2
-      - 美国(油管:破解资源君) 10
-      - 美国(油管:破解资源君) 2
-      - github.com/freefq - 美国  28
-      - github.com/freefq - 美国CloudFlare节点 34
-      - 美国(油管:破解资源君) 10 2
-      - Relay_🇭🇰HK-🇺🇸US_188
-      - JP_249
-      - Relay_🇯🇵JP-🇯🇵JP_230
-      - Relay_🇯🇵JP-🇯🇵JP_228
-      - JP_210
-      - Relay_🇹🇼TW-🇱🇹LT_382
-      - Relay_🇹🇼TW-🇹🇼TW_384
-      - Relay_🇹🇼TW-🇹🇼TW_385
-      - HK_200
-      - Relay_🇹🇼TW-🇱🇹LT_378
-      - Relay_🇹🇼TW-🇱🇹LT_376
-      - TW_387
-      - Relay_🇹🇼TW-🇱🇹LT_381
-      - Relay_🇹🇼TW-🇱🇹LT_379
-      - Relay_🇹🇼TW-🇱🇹LT_375
-      - 美国(油管:破解资源君) 2 2
+      - Pool_🇳🇱NL_107
+      - Pool_🇳🇱NL_114
+      - Pool_🇳🇱NL_86
+      - github.com/freefq - 美国RF Engineering 24
+      - github.com/freefq - 美国CloudFlare公司CDN节点 29
+      - github.com/freefq - 美国CloudFlare节点 25
+      - 欧洲(油管:破解资源君) 10
+      - github.com/freefq - 美国弗吉尼亚州阿什本NV NEXT数据中心 42
+      - github.com/freefq - 英国社会保险安全部 5
+      - github.com/freefq - 美国弗吉尼亚州阿什本NV NEXT数据中心 42 2
       - 欧洲(油管:破解资源君) 7
-      - github.com/freefq - 美国惠普公司 49
-      - 美国(油管:破解资源君) 55
-      - 欧洲(油管:破解资源君) 33
-      - 美国(油管:破解资源君) 8
-      - Relay_🇺🇸US-🇺🇸US_711
-      - github.com/freefq - 美国CloudFlare公司CDN节点 44
-      - github.com/freefq - 江苏省镇江市移动 1
+      - US_230
+      - 美国(油管:破解资源君) 57
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - sg-am3.eqsunshine.com:32001
-      - Relay_🇹🇼TW-🇱🇹LT_390
-      - 欧洲(油管:破解资源君) 26
-      - Relay_🇹🇼TW-🇱🇹LT_396
-      - Relay_🇹🇼TW-🇱🇹LT_399
-      - Relay_🇹🇼TW-🇱🇹LT_403
-      - Relay_🇹🇼TW-🇱🇹LT_391
-      - ZZ_707
-      - Relay_🇹🇼TW-🇱🇹LT_397
-      - Relay_🇹🇼TW-🇱🇹LT_404
-      - 欧洲(油管:破解资源君) 41
-      - 美国(油管:破解资源君) 59
-      - 美国(油管:破解资源君) 58
-      - 新加坡(油管:破解资源君)
-      - 俄罗斯(油管:破解资源君) 5
-      - 欧洲(油管:破解资源君) 3
-      - 俄罗斯(油管:破解资源君) 6
-      - VN_681
-      - VN_680
-      - Relay_🇺🇸US-🇺🇸US_672
-      - Relay_🇹🇼TW-🇱🇹LT_420
-      - Relay_🇺🇦UA-🇺🇦UA_422
-      - Relay_🇺🇸US-🇺🇸US_669
-      - NONE 39
-      - NONE 46
-      - Relay_🇹🇼TW-🏁ZZ_419
-      - NONE
-      - 亚洲(油管:破解资源君) 2
-      - NONE 41
-      - Relay_🇹🇼TW-🇱🇹LT_406
-      - NONE 52
-      - NONE 53
-      - NONE 68
-      - CN_67
-      - NONE 26
-      - NONE 44
-      - NONE 16
-      - CN_69
-      - CN_51
-      - 亚洲(油管:破解资源君) 3
-      - Relay_🇹🇼TW-🇹🇼TW_414
-      - Relay_🇹🇼TW-🇱🇹LT_417
-      - NONE 79
-      - Relay_🇹🇼TW-🇱🇹LT_418
-      - Relay_🇹🇼TW-🇱🇹LT_413
-      - Relay_🇹🇼TW-🇱🇹LT_409
-      - NONE 63
-      - NONE 77
-      - CN_48
-      - NONE 4
-      - CN_43
-      - Relay_🇹🇼TW-🏁ZZ_416
-      - 美国(油管:破解资源君) 45
-      - Relay_🇹🇼TW-🇱🇹LT_415
-      - jp-am48-6.eqnode.net:8081
-      - 85.208.108.60:5004
-      - 85.208.108.60:5001
-      - 85.208.108.60:443
-      - 欧洲(油管:破解资源君) 25
+      - Pool_🇳🇱NL_113
+      - Pool_🇳🇱NL_101
+      - Pool_🇳🇱NL_97
+      - Pool_🇳🇱NL_91
+      - 美国(油管:破解资源君) 17
+      - Pool_🇳🇱NL_100
+      - Pool_🇳🇱NL_93
+      - Pool_🇳🇱NL_95
+      - Pool_🇳🇱NL_98
+      - github.com/freefq - 美国CloudFlare公司CDN节点 22
+      - Pool_🇳🇱NL_116
+      - Pool_🇳🇱NL_94
+      - Pool_🇳🇱NL_88
+      - Pool_🇳🇱NL_99
       - 美国(油管:破解资源君) 22
-      - 欧洲(油管:破解资源君) 36
-      - 欧洲(油管:破解资源君) 14
-      - Relay_🇬🇧GB-🇬🇧GB_138
-      - 美国(油管:破解资源君)
-      - 美国(油管:破解资源君) 51 2
-      - 美国(油管:破解资源君) 49
-      - 美国(油管:破解资源君) 4 2
-      - 欧洲(油管:破解资源君) 43
-      - 美国(油管:破解资源君) 36 2
-      - 美国(油管:破解资源君) 10
-      - 美国(油管:破解资源君) 2
-      - github.com/freefq - 美国  28
-      - github.com/freefq - 美国CloudFlare节点 34
-      - 美国(油管:破解资源君) 10 2
-      - Relay_🇭🇰HK-🇺🇸US_188
-      - JP_249
-      - Relay_🇯🇵JP-🇯🇵JP_230
-      - Relay_🇯🇵JP-🇯🇵JP_228
-      - JP_210
-      - Relay_🇹🇼TW-🇱🇹LT_382
-      - Relay_🇹🇼TW-🇹🇼TW_384
-      - Relay_🇹🇼TW-🇹🇼TW_385
-      - HK_200
-      - Relay_🇹🇼TW-🇱🇹LT_378
-      - Relay_🇹🇼TW-🇱🇹LT_376
-      - TW_387
-      - Relay_🇹🇼TW-🇱🇹LT_381
-      - Relay_🇹🇼TW-🇱🇹LT_379
-      - Relay_🇹🇼TW-🇱🇹LT_375
-      - 美国(油管:破解资源君) 2 2
+      - Pool_🇳🇱NL_107
+      - Pool_🇳🇱NL_114
+      - Pool_🇳🇱NL_86
+      - github.com/freefq - 美国RF Engineering 24
+      - github.com/freefq - 美国CloudFlare公司CDN节点 29
+      - github.com/freefq - 美国CloudFlare节点 25
+      - 欧洲(油管:破解资源君) 10
+      - github.com/freefq - 美国弗吉尼亚州阿什本NV NEXT数据中心 42
+      - github.com/freefq - 英国社会保险安全部 5
+      - github.com/freefq - 美国弗吉尼亚州阿什本NV NEXT数据中心 42 2
       - 欧洲(油管:破解资源君) 7
-      - github.com/freefq - 美国惠普公司 49
-      - 美国(油管:破解资源君) 55
-      - 欧洲(油管:破解资源君) 33
-      - 美国(油管:破解资源君) 8
-      - Relay_🇺🇸US-🇺🇸US_711
-      - github.com/freefq - 美国CloudFlare公司CDN节点 44
-      - github.com/freefq - 江苏省镇江市移动 1
+      - US_230
+      - 美国(油管:破解资源君) 57
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -432,104 +152,34 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - sg-am3.eqsunshine.com:32001
-      - Relay_🇹🇼TW-🇱🇹LT_390
-      - 欧洲(油管:破解资源君) 26
-      - Relay_🇹🇼TW-🇱🇹LT_396
-      - Relay_🇹🇼TW-🇱🇹LT_399
-      - Relay_🇹🇼TW-🇱🇹LT_403
-      - Relay_🇹🇼TW-🇱🇹LT_391
-      - ZZ_707
-      - Relay_🇹🇼TW-🇱🇹LT_397
-      - Relay_🇹🇼TW-🇱🇹LT_404
-      - 欧洲(油管:破解资源君) 41
-      - 美国(油管:破解资源君) 59
-      - 美国(油管:破解资源君) 58
-      - 新加坡(油管:破解资源君)
-      - 俄罗斯(油管:破解资源君) 5
-      - 欧洲(油管:破解资源君) 3
-      - 俄罗斯(油管:破解资源君) 6
-      - VN_681
-      - VN_680
-      - Relay_🇺🇸US-🇺🇸US_672
-      - Relay_🇹🇼TW-🇱🇹LT_420
-      - Relay_🇺🇦UA-🇺🇦UA_422
-      - Relay_🇺🇸US-🇺🇸US_669
-      - NONE 39
-      - NONE 46
-      - Relay_🇹🇼TW-🏁ZZ_419
-      - NONE
-      - 亚洲(油管:破解资源君) 2
-      - NONE 41
-      - Relay_🇹🇼TW-🇱🇹LT_406
-      - NONE 52
-      - NONE 53
-      - NONE 68
-      - CN_67
-      - NONE 26
-      - NONE 44
-      - NONE 16
-      - CN_69
-      - CN_51
-      - 亚洲(油管:破解资源君) 3
-      - Relay_🇹🇼TW-🇹🇼TW_414
-      - Relay_🇹🇼TW-🇱🇹LT_417
-      - NONE 79
-      - Relay_🇹🇼TW-🇱🇹LT_418
-      - Relay_🇹🇼TW-🇱🇹LT_413
-      - Relay_🇹🇼TW-🇱🇹LT_409
-      - NONE 63
-      - NONE 77
-      - CN_48
-      - NONE 4
-      - CN_43
-      - Relay_🇹🇼TW-🏁ZZ_416
-      - 美国(油管:破解资源君) 45
-      - Relay_🇹🇼TW-🇱🇹LT_415
-      - jp-am48-6.eqnode.net:8081
-      - 85.208.108.60:5004
-      - 85.208.108.60:5001
-      - 85.208.108.60:443
-      - 欧洲(油管:破解资源君) 25
+      - Pool_🇳🇱NL_113
+      - Pool_🇳🇱NL_101
+      - Pool_🇳🇱NL_97
+      - Pool_🇳🇱NL_91
+      - 美国(油管:破解资源君) 17
+      - Pool_🇳🇱NL_100
+      - Pool_🇳🇱NL_93
+      - Pool_🇳🇱NL_95
+      - Pool_🇳🇱NL_98
+      - github.com/freefq - 美国CloudFlare公司CDN节点 22
+      - Pool_🇳🇱NL_116
+      - Pool_🇳🇱NL_94
+      - Pool_🇳🇱NL_88
+      - Pool_🇳🇱NL_99
       - 美国(油管:破解资源君) 22
-      - 欧洲(油管:破解资源君) 36
-      - 欧洲(油管:破解资源君) 14
-      - Relay_🇬🇧GB-🇬🇧GB_138
-      - 美国(油管:破解资源君)
-      - 美国(油管:破解资源君) 51 2
-      - 美国(油管:破解资源君) 49
-      - 美国(油管:破解资源君) 4 2
-      - 欧洲(油管:破解资源君) 43
-      - 美国(油管:破解资源君) 36 2
-      - 美国(油管:破解资源君) 10
-      - 美国(油管:破解资源君) 2
-      - github.com/freefq - 美国  28
-      - github.com/freefq - 美国CloudFlare节点 34
-      - 美国(油管:破解资源君) 10 2
-      - Relay_🇭🇰HK-🇺🇸US_188
-      - JP_249
-      - Relay_🇯🇵JP-🇯🇵JP_230
-      - Relay_🇯🇵JP-🇯🇵JP_228
-      - JP_210
-      - Relay_🇹🇼TW-🇱🇹LT_382
-      - Relay_🇹🇼TW-🇹🇼TW_384
-      - Relay_🇹🇼TW-🇹🇼TW_385
-      - HK_200
-      - Relay_🇹🇼TW-🇱🇹LT_378
-      - Relay_🇹🇼TW-🇱🇹LT_376
-      - TW_387
-      - Relay_🇹🇼TW-🇱🇹LT_381
-      - Relay_🇹🇼TW-🇱🇹LT_379
-      - Relay_🇹🇼TW-🇱🇹LT_375
-      - 美国(油管:破解资源君) 2 2
+      - Pool_🇳🇱NL_107
+      - Pool_🇳🇱NL_114
+      - Pool_🇳🇱NL_86
+      - github.com/freefq - 美国RF Engineering 24
+      - github.com/freefq - 美国CloudFlare公司CDN节点 29
+      - github.com/freefq - 美国CloudFlare节点 25
+      - 欧洲(油管:破解资源君) 10
+      - github.com/freefq - 美国弗吉尼亚州阿什本NV NEXT数据中心 42
+      - github.com/freefq - 英国社会保险安全部 5
+      - github.com/freefq - 美国弗吉尼亚州阿什本NV NEXT数据中心 42 2
       - 欧洲(油管:破解资源君) 7
-      - github.com/freefq - 美国惠普公司 49
-      - 美国(油管:破解资源君) 55
-      - 欧洲(油管:破解资源君) 33
-      - 美国(油管:破解资源君) 8
-      - Relay_🇺🇸US-🇺🇸US_711
-      - github.com/freefq - 美国CloudFlare公司CDN节点 44
-      - github.com/freefq - 江苏省镇江市移动 1
+      - US_230
+      - 美国(油管:破解资源君) 57
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -540,311 +190,101 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - sg-am3.eqsunshine.com:32001
-      - Relay_🇹🇼TW-🇱🇹LT_390
-      - 欧洲(油管:破解资源君) 26
-      - Relay_🇹🇼TW-🇱🇹LT_396
-      - Relay_🇹🇼TW-🇱🇹LT_399
-      - Relay_🇹🇼TW-🇱🇹LT_403
-      - Relay_🇹🇼TW-🇱🇹LT_391
-      - ZZ_707
-      - Relay_🇹🇼TW-🇱🇹LT_397
-      - Relay_🇹🇼TW-🇱🇹LT_404
-      - 欧洲(油管:破解资源君) 41
-      - 美国(油管:破解资源君) 59
-      - 美国(油管:破解资源君) 58
-      - 新加坡(油管:破解资源君)
-      - 俄罗斯(油管:破解资源君) 5
-      - 欧洲(油管:破解资源君) 3
-      - 俄罗斯(油管:破解资源君) 6
-      - VN_681
-      - VN_680
-      - Relay_🇺🇸US-🇺🇸US_672
-      - Relay_🇹🇼TW-🇱🇹LT_420
-      - Relay_🇺🇦UA-🇺🇦UA_422
-      - Relay_🇺🇸US-🇺🇸US_669
-      - NONE 39
-      - NONE 46
-      - Relay_🇹🇼TW-🏁ZZ_419
-      - NONE
-      - 亚洲(油管:破解资源君) 2
-      - NONE 41
-      - Relay_🇹🇼TW-🇱🇹LT_406
-      - NONE 52
-      - NONE 53
-      - NONE 68
-      - CN_67
-      - NONE 26
-      - NONE 44
-      - NONE 16
-      - CN_69
-      - CN_51
-      - 亚洲(油管:破解资源君) 3
-      - Relay_🇹🇼TW-🇹🇼TW_414
-      - Relay_🇹🇼TW-🇱🇹LT_417
-      - NONE 79
-      - Relay_🇹🇼TW-🇱🇹LT_418
-      - Relay_🇹🇼TW-🇱🇹LT_413
-      - Relay_🇹🇼TW-🇱🇹LT_409
-      - NONE 63
-      - NONE 77
-      - CN_48
-      - NONE 4
-      - CN_43
-      - Relay_🇹🇼TW-🏁ZZ_416
-      - 美国(油管:破解资源君) 45
-      - Relay_🇹🇼TW-🇱🇹LT_415
-      - jp-am48-6.eqnode.net:8081
-      - 85.208.108.60:5004
-      - 85.208.108.60:5001
-      - 85.208.108.60:443
-      - 欧洲(油管:破解资源君) 25
+      - Pool_🇳🇱NL_113
+      - Pool_🇳🇱NL_101
+      - Pool_🇳🇱NL_97
+      - Pool_🇳🇱NL_91
+      - 美国(油管:破解资源君) 17
+      - Pool_🇳🇱NL_100
+      - Pool_🇳🇱NL_93
+      - Pool_🇳🇱NL_95
+      - Pool_🇳🇱NL_98
+      - github.com/freefq - 美国CloudFlare公司CDN节点 22
+      - Pool_🇳🇱NL_116
+      - Pool_🇳🇱NL_94
+      - Pool_🇳🇱NL_88
+      - Pool_🇳🇱NL_99
       - 美国(油管:破解资源君) 22
-      - 欧洲(油管:破解资源君) 36
-      - 欧洲(油管:破解资源君) 14
-      - Relay_🇬🇧GB-🇬🇧GB_138
-      - 美国(油管:破解资源君)
-      - 美国(油管:破解资源君) 51 2
-      - 美国(油管:破解资源君) 49
-      - 美国(油管:破解资源君) 4 2
-      - 欧洲(油管:破解资源君) 43
-      - 美国(油管:破解资源君) 36 2
-      - 美国(油管:破解资源君) 10
-      - 美国(油管:破解资源君) 2
-      - github.com/freefq - 美国  28
-      - github.com/freefq - 美国CloudFlare节点 34
-      - 美国(油管:破解资源君) 10 2
-      - Relay_🇭🇰HK-🇺🇸US_188
-      - JP_249
-      - Relay_🇯🇵JP-🇯🇵JP_230
-      - Relay_🇯🇵JP-🇯🇵JP_228
-      - JP_210
-      - Relay_🇹🇼TW-🇱🇹LT_382
-      - Relay_🇹🇼TW-🇹🇼TW_384
-      - Relay_🇹🇼TW-🇹🇼TW_385
-      - HK_200
-      - Relay_🇹🇼TW-🇱🇹LT_378
-      - Relay_🇹🇼TW-🇱🇹LT_376
-      - TW_387
-      - Relay_🇹🇼TW-🇱🇹LT_381
-      - Relay_🇹🇼TW-🇱🇹LT_379
-      - Relay_🇹🇼TW-🇱🇹LT_375
-      - 美国(油管:破解资源君) 2 2
+      - Pool_🇳🇱NL_107
+      - Pool_🇳🇱NL_114
+      - Pool_🇳🇱NL_86
+      - github.com/freefq - 美国RF Engineering 24
+      - github.com/freefq - 美国CloudFlare公司CDN节点 29
+      - github.com/freefq - 美国CloudFlare节点 25
+      - 欧洲(油管:破解资源君) 10
+      - github.com/freefq - 美国弗吉尼亚州阿什本NV NEXT数据中心 42
+      - github.com/freefq - 英国社会保险安全部 5
+      - github.com/freefq - 美国弗吉尼亚州阿什本NV NEXT数据中心 42 2
       - 欧洲(油管:破解资源君) 7
-      - github.com/freefq - 美国惠普公司 49
-      - 美国(油管:破解资源君) 55
-      - 欧洲(油管:破解资源君) 33
-      - 美国(油管:破解资源君) 8
-      - Relay_🇺🇸US-🇺🇸US_711
-      - github.com/freefq - 美国CloudFlare公司CDN节点 44
-      - github.com/freefq - 江苏省镇江市移动 1
+      - US_230
+      - 美国(油管:破解资源君) 57
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - sg-am3.eqsunshine.com:32001
-      - Relay_🇹🇼TW-🇱🇹LT_390
-      - 欧洲(油管:破解资源君) 26
-      - Relay_🇹🇼TW-🇱🇹LT_396
-      - Relay_🇹🇼TW-🇱🇹LT_399
-      - Relay_🇹🇼TW-🇱🇹LT_403
-      - Relay_🇹🇼TW-🇱🇹LT_391
-      - ZZ_707
-      - Relay_🇹🇼TW-🇱🇹LT_397
-      - Relay_🇹🇼TW-🇱🇹LT_404
-      - 欧洲(油管:破解资源君) 41
-      - 美国(油管:破解资源君) 59
-      - 美国(油管:破解资源君) 58
-      - 新加坡(油管:破解资源君)
-      - 俄罗斯(油管:破解资源君) 5
-      - 欧洲(油管:破解资源君) 3
-      - 俄罗斯(油管:破解资源君) 6
-      - VN_681
-      - VN_680
-      - Relay_🇺🇸US-🇺🇸US_672
-      - Relay_🇹🇼TW-🇱🇹LT_420
-      - Relay_🇺🇦UA-🇺🇦UA_422
-      - Relay_🇺🇸US-🇺🇸US_669
-      - NONE 39
-      - NONE 46
-      - Relay_🇹🇼TW-🏁ZZ_419
-      - NONE
-      - 亚洲(油管:破解资源君) 2
-      - NONE 41
-      - Relay_🇹🇼TW-🇱🇹LT_406
-      - NONE 52
-      - NONE 53
-      - NONE 68
-      - CN_67
-      - NONE 26
-      - NONE 44
-      - NONE 16
-      - CN_69
-      - CN_51
-      - 亚洲(油管:破解资源君) 3
-      - Relay_🇹🇼TW-🇹🇼TW_414
-      - Relay_🇹🇼TW-🇱🇹LT_417
-      - NONE 79
-      - Relay_🇹🇼TW-🇱🇹LT_418
-      - Relay_🇹🇼TW-🇱🇹LT_413
-      - Relay_🇹🇼TW-🇱🇹LT_409
-      - NONE 63
-      - NONE 77
-      - CN_48
-      - NONE 4
-      - CN_43
-      - Relay_🇹🇼TW-🏁ZZ_416
-      - 美国(油管:破解资源君) 45
-      - Relay_🇹🇼TW-🇱🇹LT_415
-      - jp-am48-6.eqnode.net:8081
-      - 85.208.108.60:5004
-      - 85.208.108.60:5001
-      - 85.208.108.60:443
-      - 欧洲(油管:破解资源君) 25
+      - Pool_🇳🇱NL_113
+      - Pool_🇳🇱NL_101
+      - Pool_🇳🇱NL_97
+      - Pool_🇳🇱NL_91
+      - 美国(油管:破解资源君) 17
+      - Pool_🇳🇱NL_100
+      - Pool_🇳🇱NL_93
+      - Pool_🇳🇱NL_95
+      - Pool_🇳🇱NL_98
+      - github.com/freefq - 美国CloudFlare公司CDN节点 22
+      - Pool_🇳🇱NL_116
+      - Pool_🇳🇱NL_94
+      - Pool_🇳🇱NL_88
+      - Pool_🇳🇱NL_99
       - 美国(油管:破解资源君) 22
-      - 欧洲(油管:破解资源君) 36
-      - 欧洲(油管:破解资源君) 14
-      - Relay_🇬🇧GB-🇬🇧GB_138
-      - 美国(油管:破解资源君)
-      - 美国(油管:破解资源君) 51 2
-      - 美国(油管:破解资源君) 49
-      - 美国(油管:破解资源君) 4 2
-      - 欧洲(油管:破解资源君) 43
-      - 美国(油管:破解资源君) 36 2
-      - 美国(油管:破解资源君) 10
-      - 美国(油管:破解资源君) 2
-      - github.com/freefq - 美国  28
-      - github.com/freefq - 美国CloudFlare节点 34
-      - 美国(油管:破解资源君) 10 2
-      - Relay_🇭🇰HK-🇺🇸US_188
-      - JP_249
-      - Relay_🇯🇵JP-🇯🇵JP_230
-      - Relay_🇯🇵JP-🇯🇵JP_228
-      - JP_210
-      - Relay_🇹🇼TW-🇱🇹LT_382
-      - Relay_🇹🇼TW-🇹🇼TW_384
-      - Relay_🇹🇼TW-🇹🇼TW_385
-      - HK_200
-      - Relay_🇹🇼TW-🇱🇹LT_378
-      - Relay_🇹🇼TW-🇱🇹LT_376
-      - TW_387
-      - Relay_🇹🇼TW-🇱🇹LT_381
-      - Relay_🇹🇼TW-🇱🇹LT_379
-      - Relay_🇹🇼TW-🇱🇹LT_375
-      - 美国(油管:破解资源君) 2 2
+      - Pool_🇳🇱NL_107
+      - Pool_🇳🇱NL_114
+      - Pool_🇳🇱NL_86
+      - github.com/freefq - 美国RF Engineering 24
+      - github.com/freefq - 美国CloudFlare公司CDN节点 29
+      - github.com/freefq - 美国CloudFlare节点 25
+      - 欧洲(油管:破解资源君) 10
+      - github.com/freefq - 美国弗吉尼亚州阿什本NV NEXT数据中心 42
+      - github.com/freefq - 英国社会保险安全部 5
+      - github.com/freefq - 美国弗吉尼亚州阿什本NV NEXT数据中心 42 2
       - 欧洲(油管:破解资源君) 7
-      - github.com/freefq - 美国惠普公司 49
-      - 美国(油管:破解资源君) 55
-      - 欧洲(油管:破解资源君) 33
-      - 美国(油管:破解资源君) 8
-      - Relay_🇺🇸US-🇺🇸US_711
-      - github.com/freefq - 美国CloudFlare公司CDN节点 44
-      - github.com/freefq - 江苏省镇江市移动 1
+      - US_230
+      - 美国(油管:破解资源君) 57
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - sg-am3.eqsunshine.com:32001
-      - Relay_🇹🇼TW-🇱🇹LT_390
-      - 欧洲(油管:破解资源君) 26
-      - Relay_🇹🇼TW-🇱🇹LT_396
-      - Relay_🇹🇼TW-🇱🇹LT_399
-      - Relay_🇹🇼TW-🇱🇹LT_403
-      - Relay_🇹🇼TW-🇱🇹LT_391
-      - ZZ_707
-      - Relay_🇹🇼TW-🇱🇹LT_397
-      - Relay_🇹🇼TW-🇱🇹LT_404
-      - 欧洲(油管:破解资源君) 41
-      - 美国(油管:破解资源君) 59
-      - 美国(油管:破解资源君) 58
-      - 新加坡(油管:破解资源君)
-      - 俄罗斯(油管:破解资源君) 5
-      - 欧洲(油管:破解资源君) 3
-      - 俄罗斯(油管:破解资源君) 6
-      - VN_681
-      - VN_680
-      - Relay_🇺🇸US-🇺🇸US_672
-      - Relay_🇹🇼TW-🇱🇹LT_420
-      - Relay_🇺🇦UA-🇺🇦UA_422
-      - Relay_🇺🇸US-🇺🇸US_669
-      - NONE 39
-      - NONE 46
-      - Relay_🇹🇼TW-🏁ZZ_419
-      - NONE
-      - 亚洲(油管:破解资源君) 2
-      - NONE 41
-      - Relay_🇹🇼TW-🇱🇹LT_406
-      - NONE 52
-      - NONE 53
-      - NONE 68
-      - CN_67
-      - NONE 26
-      - NONE 44
-      - NONE 16
-      - CN_69
-      - CN_51
-      - 亚洲(油管:破解资源君) 3
-      - Relay_🇹🇼TW-🇹🇼TW_414
-      - Relay_🇹🇼TW-🇱🇹LT_417
-      - NONE 79
-      - Relay_🇹🇼TW-🇱🇹LT_418
-      - Relay_🇹🇼TW-🇱🇹LT_413
-      - Relay_🇹🇼TW-🇱🇹LT_409
-      - NONE 63
-      - NONE 77
-      - CN_48
-      - NONE 4
-      - CN_43
-      - Relay_🇹🇼TW-🏁ZZ_416
-      - 美国(油管:破解资源君) 45
-      - Relay_🇹🇼TW-🇱🇹LT_415
-      - jp-am48-6.eqnode.net:8081
-      - 85.208.108.60:5004
-      - 85.208.108.60:5001
-      - 85.208.108.60:443
-      - 欧洲(油管:破解资源君) 25
+      - Pool_🇳🇱NL_113
+      - Pool_🇳🇱NL_101
+      - Pool_🇳🇱NL_97
+      - Pool_🇳🇱NL_91
+      - 美国(油管:破解资源君) 17
+      - Pool_🇳🇱NL_100
+      - Pool_🇳🇱NL_93
+      - Pool_🇳🇱NL_95
+      - Pool_🇳🇱NL_98
+      - github.com/freefq - 美国CloudFlare公司CDN节点 22
+      - Pool_🇳🇱NL_116
+      - Pool_🇳🇱NL_94
+      - Pool_🇳🇱NL_88
+      - Pool_🇳🇱NL_99
       - 美国(油管:破解资源君) 22
-      - 欧洲(油管:破解资源君) 36
-      - 欧洲(油管:破解资源君) 14
-      - Relay_🇬🇧GB-🇬🇧GB_138
-      - 美国(油管:破解资源君)
-      - 美国(油管:破解资源君) 51 2
-      - 美国(油管:破解资源君) 49
-      - 美国(油管:破解资源君) 4 2
-      - 欧洲(油管:破解资源君) 43
-      - 美国(油管:破解资源君) 36 2
-      - 美国(油管:破解资源君) 10
-      - 美国(油管:破解资源君) 2
-      - github.com/freefq - 美国  28
-      - github.com/freefq - 美国CloudFlare节点 34
-      - 美国(油管:破解资源君) 10 2
-      - Relay_🇭🇰HK-🇺🇸US_188
-      - JP_249
-      - Relay_🇯🇵JP-🇯🇵JP_230
-      - Relay_🇯🇵JP-🇯🇵JP_228
-      - JP_210
-      - Relay_🇹🇼TW-🇱🇹LT_382
-      - Relay_🇹🇼TW-🇹🇼TW_384
-      - Relay_🇹🇼TW-🇹🇼TW_385
-      - HK_200
-      - Relay_🇹🇼TW-🇱🇹LT_378
-      - Relay_🇹🇼TW-🇱🇹LT_376
-      - TW_387
-      - Relay_🇹🇼TW-🇱🇹LT_381
-      - Relay_🇹🇼TW-🇱🇹LT_379
-      - Relay_🇹🇼TW-🇱🇹LT_375
-      - 美国(油管:破解资源君) 2 2
+      - Pool_🇳🇱NL_107
+      - Pool_🇳🇱NL_114
+      - Pool_🇳🇱NL_86
+      - github.com/freefq - 美国RF Engineering 24
+      - github.com/freefq - 美国CloudFlare公司CDN节点 29
+      - github.com/freefq - 美国CloudFlare节点 25
+      - 欧洲(油管:破解资源君) 10
+      - github.com/freefq - 美国弗吉尼亚州阿什本NV NEXT数据中心 42
+      - github.com/freefq - 英国社会保险安全部 5
+      - github.com/freefq - 美国弗吉尼亚州阿什本NV NEXT数据中心 42 2
       - 欧洲(油管:破解资源君) 7
-      - github.com/freefq - 美国惠普公司 49
-      - 美国(油管:破解资源君) 55
-      - 欧洲(油管:破解资源君) 33
-      - 美国(油管:破解资源君) 8
-      - Relay_🇺🇸US-🇺🇸US_711
-      - github.com/freefq - 美国CloudFlare公司CDN节点 44
-      - github.com/freefq - 江苏省镇江市移动 1
+      - US_230
+      - 美国(油管:破解资源君) 57
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -860,104 +300,34 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - sg-am3.eqsunshine.com:32001
-      - Relay_🇹🇼TW-🇱🇹LT_390
-      - 欧洲(油管:破解资源君) 26
-      - Relay_🇹🇼TW-🇱🇹LT_396
-      - Relay_🇹🇼TW-🇱🇹LT_399
-      - Relay_🇹🇼TW-🇱🇹LT_403
-      - Relay_🇹🇼TW-🇱🇹LT_391
-      - ZZ_707
-      - Relay_🇹🇼TW-🇱🇹LT_397
-      - Relay_🇹🇼TW-🇱🇹LT_404
-      - 欧洲(油管:破解资源君) 41
-      - 美国(油管:破解资源君) 59
-      - 美国(油管:破解资源君) 58
-      - 新加坡(油管:破解资源君)
-      - 俄罗斯(油管:破解资源君) 5
-      - 欧洲(油管:破解资源君) 3
-      - 俄罗斯(油管:破解资源君) 6
-      - VN_681
-      - VN_680
-      - Relay_🇺🇸US-🇺🇸US_672
-      - Relay_🇹🇼TW-🇱🇹LT_420
-      - Relay_🇺🇦UA-🇺🇦UA_422
-      - Relay_🇺🇸US-🇺🇸US_669
-      - NONE 39
-      - NONE 46
-      - Relay_🇹🇼TW-🏁ZZ_419
-      - NONE
-      - 亚洲(油管:破解资源君) 2
-      - NONE 41
-      - Relay_🇹🇼TW-🇱🇹LT_406
-      - NONE 52
-      - NONE 53
-      - NONE 68
-      - CN_67
-      - NONE 26
-      - NONE 44
-      - NONE 16
-      - CN_69
-      - CN_51
-      - 亚洲(油管:破解资源君) 3
-      - Relay_🇹🇼TW-🇹🇼TW_414
-      - Relay_🇹🇼TW-🇱🇹LT_417
-      - NONE 79
-      - Relay_🇹🇼TW-🇱🇹LT_418
-      - Relay_🇹🇼TW-🇱🇹LT_413
-      - Relay_🇹🇼TW-🇱🇹LT_409
-      - NONE 63
-      - NONE 77
-      - CN_48
-      - NONE 4
-      - CN_43
-      - Relay_🇹🇼TW-🏁ZZ_416
-      - 美国(油管:破解资源君) 45
-      - Relay_🇹🇼TW-🇱🇹LT_415
-      - jp-am48-6.eqnode.net:8081
-      - 85.208.108.60:5004
-      - 85.208.108.60:5001
-      - 85.208.108.60:443
-      - 欧洲(油管:破解资源君) 25
+      - Pool_🇳🇱NL_113
+      - Pool_🇳🇱NL_101
+      - Pool_🇳🇱NL_97
+      - Pool_🇳🇱NL_91
+      - 美国(油管:破解资源君) 17
+      - Pool_🇳🇱NL_100
+      - Pool_🇳🇱NL_93
+      - Pool_🇳🇱NL_95
+      - Pool_🇳🇱NL_98
+      - github.com/freefq - 美国CloudFlare公司CDN节点 22
+      - Pool_🇳🇱NL_116
+      - Pool_🇳🇱NL_94
+      - Pool_🇳🇱NL_88
+      - Pool_🇳🇱NL_99
       - 美国(油管:破解资源君) 22
-      - 欧洲(油管:破解资源君) 36
-      - 欧洲(油管:破解资源君) 14
-      - Relay_🇬🇧GB-🇬🇧GB_138
-      - 美国(油管:破解资源君)
-      - 美国(油管:破解资源君) 51 2
-      - 美国(油管:破解资源君) 49
-      - 美国(油管:破解资源君) 4 2
-      - 欧洲(油管:破解资源君) 43
-      - 美国(油管:破解资源君) 36 2
-      - 美国(油管:破解资源君) 10
-      - 美国(油管:破解资源君) 2
-      - github.com/freefq - 美国  28
-      - github.com/freefq - 美国CloudFlare节点 34
-      - 美国(油管:破解资源君) 10 2
-      - Relay_🇭🇰HK-🇺🇸US_188
-      - JP_249
-      - Relay_🇯🇵JP-🇯🇵JP_230
-      - Relay_🇯🇵JP-🇯🇵JP_228
-      - JP_210
-      - Relay_🇹🇼TW-🇱🇹LT_382
-      - Relay_🇹🇼TW-🇹🇼TW_384
-      - Relay_🇹🇼TW-🇹🇼TW_385
-      - HK_200
-      - Relay_🇹🇼TW-🇱🇹LT_378
-      - Relay_🇹🇼TW-🇱🇹LT_376
-      - TW_387
-      - Relay_🇹🇼TW-🇱🇹LT_381
-      - Relay_🇹🇼TW-🇱🇹LT_379
-      - Relay_🇹🇼TW-🇱🇹LT_375
-      - 美国(油管:破解资源君) 2 2
+      - Pool_🇳🇱NL_107
+      - Pool_🇳🇱NL_114
+      - Pool_🇳🇱NL_86
+      - github.com/freefq - 美国RF Engineering 24
+      - github.com/freefq - 美国CloudFlare公司CDN节点 29
+      - github.com/freefq - 美国CloudFlare节点 25
+      - 欧洲(油管:破解资源君) 10
+      - github.com/freefq - 美国弗吉尼亚州阿什本NV NEXT数据中心 42
+      - github.com/freefq - 英国社会保险安全部 5
+      - github.com/freefq - 美国弗吉尼亚州阿什本NV NEXT数据中心 42 2
       - 欧洲(油管:破解资源君) 7
-      - github.com/freefq - 美国惠普公司 49
-      - 美国(油管:破解资源君) 55
-      - 欧洲(油管:破解资源君) 33
-      - 美国(油管:破解资源君) 8
-      - Relay_🇺🇸US-🇺🇸US_711
-      - github.com/freefq - 美国CloudFlare公司CDN节点 44
-      - github.com/freefq - 江苏省镇江市移动 1
+      - US_230
+      - 美国(油管:破解资源君) 57
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
